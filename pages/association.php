@@ -34,7 +34,4 @@
 			</div>
 		</div>
 	</div>
-	<div>
-		<p><i class="icon-share-alt">&nbsp;</i> 我們通常於每月第四個禮拜六下午兩點左右固定舉行自由軟體相關的研討會, 由參與活動者輪流主講Topic.<br />We usually hold free software-related seminars at the 4th Saturday 2:00PM each month. Talks are given by people who attend our seminars by turns .</p>
-	</div>
 </div>

@@ -3,7 +3,8 @@
 		'location' => 'pages/location.php',
 		'association' => 'pages/association.php',
 		'sessions' => 'pages/sessions.php',
-		'sponsors' => 'pages/sponsors.php'
+		'sponsors' => 'pages/sponsors.php',
+		'register' => 'pages/register.php',
 		);
 	if (!isset($pages[$_GET['to']])) {
 		header('location:index.php');
