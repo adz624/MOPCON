@@ -2,10 +2,7 @@
 	<div id="mainFooter">
 		<div class="sponsors">
 			<dl>
-				<dt>主辦單位／讚助商</dt>
-				<dd><a href="ttt.html"><img src="img/base/quanta.png" width="" alt="quanta" /></a></dd>
-				<dd><a href="ttt.html"><img src="img/base/microsoft.png" alt="MS" /></a></dd>
-				<dd><a href="ttt.html"><img src="img/base/yahootw.png" alt="YAHOO!" /></a></dd>
+				<dt>贊助商</dt>
 			</dl>
 		</div>
 		<address class="copyright">
