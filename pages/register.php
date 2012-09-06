@@ -17,7 +17,7 @@
 		</dd>
 		<dt><i class="icon-th">&nbsp;</i> 報名人數</dt>
 		<dd>
-			140(尚餘140名額)
+			140
 		</dd>
 		<dt><i class="icon-tags">&nbsp;</i> 票種 - 入埸券</dt>
 		<dd>
