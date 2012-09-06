@@ -1,0 +1,4 @@
+Sitemap: http://mopcon.org/sitemap.xml
+
+User-agent: *
+Disallow:
