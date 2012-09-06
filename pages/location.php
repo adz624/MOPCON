@@ -6,6 +6,7 @@
 		<dd><i class="icon-road">&nbsp;</i> 地址：高雄市前鎮區復興四路12號1F</dd>
 	</dl>
 	<div id="map_canvas" style="width:622px; height:462px">Google Maps</div>
+	<p><img src="img/bus_r16.jpg" alt="R16公車路線圖" /></p>
 	<table class="table table-striped table-hover">
 		<caption>高雄市 政府公車處 紅16 接駁公車假 日延駛至高軟發車時間表</caption>
 		<thead>
