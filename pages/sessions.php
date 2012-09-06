@@ -1,7 +1,7 @@
 <p class="anchor"><a href="#mainContenftKey" id="mainContentKey" accesskey="c">主要內容區</a></p>
 <div class="article">
 	<h2>活動行程</h2>
-	<table class="table table-hover table-bordered sessionList">
+	<table class="table table-hover table-bordered table-striped sessionList">
 		<thead>
 			<tr>
 				<th rowspan="2">時間 \ 地點</th>
