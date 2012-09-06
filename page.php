@@ -27,8 +27,8 @@
 				<?php include($pagePath); ?>
 			</div>
 			<hr />
-			<?php include_once('nav.php'); ?>
 		</div>
+		<?php include_once('nav.php'); ?>
 	</div>
 	<?php include_once('footer.php'); ?>
 </body>
