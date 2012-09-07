@@ -5,11 +5,11 @@
 		<dt><i class="icon-time">&nbsp;</i> 活動日期</dt>
 		<dd>
 	 		2012/10/27 09:00 ~ 10/28 17:00<br />
-	 		( iCal/Outlook, Google Calendar )
+<!--	 		( iCal/Outlook, Google Calendar )       -->
 		</dd>
 		<dt><i class="icon-pencil">&nbsp;</i> 報名日期</dt>
 		<dd>
-			2012/09/10 00:00 ~ 10/21 14:00
+			2012/09/10 00:00 ~ 10/12 23:59
 		</dd>
 		<dt><i class="icon-road">&nbsp;</i> 活動地點</dt>
 		<dd>

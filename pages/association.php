@@ -8,7 +8,7 @@
 				<div class="arrow">&nbsp;</div>
 				<h3 class="popover-title"><abbr title="Kaohsiung Software Developer Group">KSDG</abbr></h3>
 				<div class="popover-content">
-				 	<p>高雄從事軟體開發、網路技術開發者一起交流的園地,由中山大學促進產業發展研究中心主辦,多家業界軟體/網路公司支持,期成為高雄定期技術交流之常態性社群.</p>
+				 	<p>高雄從事軟體開發、網路技術開發者一起交流的園地,由中山大學促進產業發展研究中心主辦,多家業界軟體/網路公司支持,期成為高雄定期技術交流之常態性社群。</p>
 				</div>
 			</div>
 		</div>

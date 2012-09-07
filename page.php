@@ -19,6 +19,19 @@
 	<meta charset="UTF-8">
 	<title>Mobile Open Platform Conference</title>
 	<link rel="stylesheet" href="css/style.css">
+        <script>
+            function click_ev (ev) {
+                var ee = '';
+                var elem = ev.target.parentNode;
+
+                if((typeof elem.href) == 'string') {
+                    window.open(elem.href, '');
+                    return false;
+                }
+            }
+            document.onclick = click_ev;
+            document.captureEvents(Event.CLICK);
+        </script>
 </head>
 <body id="<?php echo join('', $arr) ?>" class="normalLayout">
 	<div id="wrap">

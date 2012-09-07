@@ -2,8 +2,15 @@
 <div class="article">
 	<h2>交通資訊</h2>
 	<dl>
-		<dt><i class="icon-user">&nbsp;</i> 活動地點：高雄軟體園區A棟頂樓 海景會議廳</dt>
+		<dd><i class="icon-user">&nbsp;</i> 活動地點：高雄軟體園區A棟頂樓 海景會議廳</dd>
 		<dd><i class="icon-road">&nbsp;</i> 地址：高雄市前鎮區復興四路12號1F</dd>
+		<dd><i class="icon-user">&nbsp;</i> 專屬接駁：
+                    <ul>
+                        <li>時間：10/27、10/28 08:00-10:00、17:00-18:30接駁行駛
+                        <li>路線：高雄捷運獅甲站3號出口←→高軟園區A棟
+                        <li>附註：其它時間欲使用大眾運輸工具者，請選搭公車R16接駁
+                    </ul>
+                </dd>
 	</dl>
 	<div id="map_canvas" style="width: 800px; height:462px">Google Maps</div>
 	<p><img src="img/bus_r16.jpg" alt="R16公車路線圖" /></p>
@@ -11,7 +18,7 @@
 		<caption>高雄市 政府公車處 紅16 接駁公車假 日延駛至高軟發車時間表</caption>
 		<thead>
 			<tr>
-				<th scope="col" colspan="4">R16假 日延駛至高軟時間表</th>
+				<th scope="col" colspan="4">R16假日延駛至高軟時間表</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -91,7 +98,7 @@ src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6BiLTKUqjVWtMenArjWWYio8K
 		      map: map,
 		      position: results[0].geometry.location,
 		      animation: google.maps.Animation.DROP,
-		      title: "Too Fat Cake"
+		      title: "MOPCON"
 		  });
 		  infowindow.open(map,marker);
 	      } else {
