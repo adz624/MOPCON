@@ -6,7 +6,7 @@
 			<h3>主辦單位：經濟部加工出口區 &amp; 中山大學促進產業發展中心</h3>
 			<ul class="thumbnails">
 				<li class="span2"><a href="http://www.facebook.com/groups/KSDGroup/" class="thumbnail"><span class="fontLogo">KSDG</span></a></li>
-				<li class="span2"><a href="http://www.facebook.com/groups/cocoaheads.kaohsiung/" class="thumbnail"><img alt="CocoaHeads Kaohsiung logo" src="img/cocoaheads.jpg"></a></li>				
+				<li class="span2"><a href="http://www.facebook.com/gr``oups/cocoaheads.kaohsiung/" class="thumbnail"><img alt="CocoaHeads Kaohsiung logo" src="img/cocoaheads.jpg"></a></li>				
 				<li class="span2"><a href="http://www.facebook.com/groups/mosut" class="thumbnail"><img alt="MOSUT logo" src="img/mosut.png" /></a></li>
 				
 			</ul>

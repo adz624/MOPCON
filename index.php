@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mobile Open Platform Conference</title>
-  <link rel="icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="<?php echo join('', $arr); ?>">
@@ -33,7 +33,7 @@
 				</div>
 				
 				<div class="fbWall span3">
-					<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmopcon&amp;width=198&amp;height=326&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23eeeeee&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border: 1px solid #eeeeee; background-color: #f7f7f7; overflow:hidden; width:198px; height:326px;" allowTransparency="true"></iframe>
+					<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmopcon&amp;width=198&amp;height=374&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23eeeeee&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border: 1px solid #eeeeee; background-color: #f7f7f7; overflow:hidden; width:198px; height:374px;" allowTransparency="true"></iframe>
 				</div>
 			</div>
 		</div>
