@@ -43,7 +43,7 @@
 							<li><i class="icon-user"></i>主題：MOPCON 2012議程主軸為「電子票劵」，此議題之應用因近年手機硬體相機、NFC，軟體如雲端服務、QR code等技術發展逐漸成形，預計明年將發酵引發產業中新應用，故MOPCON將針對此主題尋求相關實作經驗的工程人員與廠商來產業上、中、下游進行完整探討與經驗分享。</li>
 						</ul>
 						<p class="toRegLink">
-							<a class="btn btn-success" href="https://registrano.com/login">立即註冊</a>
+							<a class="btn btn-success" href="http://registrano.com/events/mopcon2012" target="_blank">立即註冊</a>
 							<span class="logo"><img src="img/registrano-logo.png" alt="Registrano logo" /></span>
 						</p>
 					</div>

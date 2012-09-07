@@ -30,7 +30,7 @@
 		</dd>
 	</dl>
 	<p class="toRegLink">
-		<a class="btn btn-success" href="https://registrano.com/login">立即註冊</a>
+		<a class="btn btn-success" href="https://registrano.com/events/mopcon2012" target="_blank">立即註冊</a>
 		<span class="logo"><img src="img/registrano-logo.png" alt="Registrano logo" /></span>
 	</p>
 </div>
