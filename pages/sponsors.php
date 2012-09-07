@@ -3,14 +3,14 @@
 	<h2>主辦單位／贊助商</h2>
 	<div id="sponsorList">
 		<div class="main">
-			<h3>主辦單位</h3>
+			<h3>主辦單位：經濟部加工出口區 &amp; 中山大學促進產業發展中心</h3>
 			<ul class="thumbnails">
 				<li class="span2"><a href="http://www.facebook.com/groups/KSDGroup/" class="thumbnail"><span class="fontLogo">KSDG</span></a></li>
 				<li class="span2"><a href="http://www.facebook.com/groups/cocoaheads.kaohsiung/" class="thumbnail"><img alt="CocoaHeads Kaohsiung logo" src="img/cocoaheads.jpg"></a></li>				
 				<li class="span2"><a href="http://www.facebook.com/groups/mosut" class="thumbnail"><img alt="MOSUT logo" src="img/mosut.png" /></a></li>
 				
 			</ul>
-			<p>感謝高雄市政府對產業與社群發展的支持</p>
+			<p>感謝經濟部加工出口區對產業與社群發展的支持</p>
 		</div>
 		<div class="second">
 			<h3>贊助商</h3>

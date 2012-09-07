@@ -1,4 +1,5 @@
 .gitignore
+.project
 css/sass-twitter-bootstrap/
 .DS_Store
 img/.DS_Store
