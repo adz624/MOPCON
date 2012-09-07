@@ -5,6 +5,7 @@
 		'sessions' => 'pages/sessions.php',
 		'sponsors' => 'pages/sponsors.php',
 		'register' => 'pages/register.php',
+		'contact' => 'pages/contact.php',
 		);
 	if (!isset($pages[$_GET['to']])) {
 		header('location:index.php');

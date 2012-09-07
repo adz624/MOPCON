@@ -8,6 +8,7 @@
 			<li<?php if($thisPage == 'sponsors') echo ' class="active"'; ?>><a href="page.php?to=sponsors">主辦/贊助商</a></li>
 			<li<?php if($thisPage == 'register') echo ' class="active"'; ?>><a href="page.php?to=register">報名資訊</a></li>
 			<li<?php if($thisPage == 'location') echo ' class="active"'; ?>><a href="page.php?to=location">交通資訊</a></li>
+			<li<?php if($thisPage == 'contact') echo ' class="active"'; ?>><a href="page.php?to=contact">聯絡我們</a></li>
 		</ul>
 	</div>
 </div>

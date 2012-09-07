@@ -4,7 +4,7 @@
 	<dl>
 		<dd><i class="icon-user">&nbsp;</i> 活動地點：高雄軟體園區A棟頂樓 海景會議廳</dd>
 		<dd><i class="icon-road">&nbsp;</i> 地址：高雄市前鎮區復興四路12號1F</dd>
-		<dd><i class="icon-user">&nbsp;</i> 專屬接駁：
+		<dd><i class="icon-refresh">&nbsp;</i> 專屬接駁：
                     <ul>
                         <li>時間：10/27、10/28 08:00-10:00、17:00-18:30接駁行駛
                         <li>路線：高雄捷運獅甲站3號出口←→高軟園區A棟
