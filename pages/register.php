@@ -29,5 +29,8 @@
 			MOPCON 主辦小組
 		</dd>
 	</dl>
-	<p class="toRegLink"><a href="#" title="前往報名註冊頁面"><img src="img/registrano-logo.png" alt="Registrano logo" /></a></p>
+	<p class="toRegLink">
+		<a class="btn btn-success" href="https://registrano.com/login">立即註冊</a>
+		<span class="logo"><img src="img/registrano-logo.png" alt="Registrano logo" /></span>
+	</p>
 </div>
