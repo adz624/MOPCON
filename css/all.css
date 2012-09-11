@@ -1,0 +1,71 @@
+/* @override http://test.mopcon.org/css/all.css */
+
+/* @override http://test.mopcon.org/css/all.css */
+
+/* @override http://test.mopcon.org/css/all.css */
+
+html,body{
+	font-size:16px;
+	line-height:24px;
+	-webkit-text-size-adjust:100%;
+	padding:0;
+}
+
+@media ( max-width: 979px ){
+	body{padding-top:0}
+	body .brand{text-align:center}
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+	#top .span6{float:none;width:auto}
+}
+
+#functionSeprate {
+	list-style:none;
+	background-color: #1b75bc;
+	height: 4px;
+}
+
+#top .container {
+	margin-top: 16px;
+}
+
+div#top.container {
+	background: url(http://test.mopcon.org/img/main_m01.png) no-repeat right top;
+	height: 540px;
+}
+
+#top div.row div.span6 ul.like-buttons li {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+#top li{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto}
+
+#top .date .start,#top .date .end{
+	display:-moz-inline-box;
+	-moz-box-orient:vertical;
+	display:inline-block;
+	vertical-align:middle;
+	*vertical-align:auto;
+	width: 180px;
+}
+
+span.wd.ct10,span.slash {
+	color: #b7b7b7;
+}
+
+#top .date {
+	margin: 262px 0 0;
+	font: 1.4em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#top .date .start,#top .date .end{*display:inline}
+
+#top div.date.wf {
+	margin-left: 21px;
+}
+
+#homePage #mainContent .article .section{margin-top:20px;margin-left:20px;padding:10px 30px;border-style:solid;border-color:rgba(192,192,192,0.2);border-width:0;border-right-width:1px;border-bottom-width:1px;letter-spacing:.1em;-moz-box-shadow:1px 1px 5px -4px #99b6f5;-webkit-box-shadow:1px 1px 5px -4px #99b6f5;box-shadow:1px 1px 5px -4px #99b6f5;text-align:justify;text-justify:inter-ideograph;-moz-border-radius:0 0 40px/20px 0;-webkit-border-radius:0 0 40px/20px 0;-ms-border-radius:0 0 40px/20px 0;border-radius:0 0 40px/20px 0;background-color:#fcfcfc;line-height:2}
+
