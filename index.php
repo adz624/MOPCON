@@ -15,7 +15,7 @@
                 var elem = ev.target.parentNode;
 
                 if((typeof elem.href) == 'string') {
-                    window.open(elem.href, '');
+                    window.open(elem.href, 'new_w_'+(new Date).getTime(), '');
                     return false;
                 }
             }
