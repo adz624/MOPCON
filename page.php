@@ -20,6 +20,7 @@
 	<meta charset="UTF-8">
 	<title>Mobile Open Platform Conference</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/addional.css">
         <script>
             function click_ev (ev) {
                 var ee = '';
