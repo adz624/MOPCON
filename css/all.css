@@ -11,7 +11,7 @@ html,body{
 }
 
 @media (min-width: 768px) and (max-width: 979px){
-	#top .span6{float:none;width:auto}
+	.span6{float:none;width:auto}
 }
 
 #functionSeprate {
@@ -20,26 +20,18 @@ html,body{
 	height: 4px;
 }
 
-@media (min-width:980) {
-	#main_content {margin-top: 90px;}
-}
-
 @media (min-width:979) {
-	#main_content {margin-top: 16px;}
+	#main_content {
+		margin-top: 90px;
+	}
+	#container {
+		border-radius: 5px;
+		box-shadow:inset 1px 1px 5px #666666;
+	}
 }
 
-div#top.container {
-	background: url(http://test.mopcon.org/img/main_m01.png) no-repeat right top;
-	height: 540px;
+#main_content {
 }
-
-#top div.row div.span6 ul.like-buttons li {
-	margin:0;
-	padding:0;
-	list-style:none
-}
-
-#top li{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto}
 
 .date {
 	font: 1.4em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -52,15 +44,10 @@ div#top.container {
 	display:inline-block;
 	vertical-align:middle;
 	*vertical-align:auto;
-	width: 180px;
+	width: 200px;
 	*display:inline
 }
 
 span.wd.ct10,span.slash {
 	color: #b7b7b7;
-}
-
-#top div.article div.section p {padding:10px 30px;border-style:solid;border-color:rgba(192,192,192,0.2);border-width:0;border-right-width:1px;border-bottom-width:1px;letter-spacing:.1em;-moz-box-shadow:1px 1px 5px -4px #99b6f5;-webkit-box-shadow:1px 1px 5px -4px #99b6f5;box-shadow:1px 1px 5px -4px #99b6f5;text-align:justify;text-justify:inter-ideograph;-moz-border-radius:0 0 40px/20px 0;-webkit-border-radius:0 0 40px/20px 0;-ms-border-radius:0 0 40px/20px 0;border-radius:0 0 40px/20px 0;background-color: #feffff;line-height:2;
-	width: 388px;
-	margin-top: 10px;
 }
