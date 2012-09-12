@@ -24,13 +24,6 @@ html,body{
 	#main_content {
 		margin-top: 90px;
 	}
-	#container {
-		border-radius: 5px;
-		box-shadow:inset 1px 1px 5px #666666;
-	}
-}
-
-#main_content {
 }
 
 .date {
