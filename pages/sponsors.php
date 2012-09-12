@@ -17,6 +17,7 @@
 			<h3>贊助商</h3>
 			<p>感謝以下各贊助單位</p>
 			<ul class="thumbnails">
+				<li class="span2"><a href="http://www.acomotech.com/" class="thumbnail"><img src="img/logo/acomotech-logo.png" alt="KKBOX" /></a></li>
 				<li class="span2"><a href="http://www.kkbox.com" class="thumbnail"><img src="img/logo/kkbox-logo.png" alt="KKBOX" /></a></li>
 				<li class="span2"><a href="http://www.mobilogics.com.tw" class="thumbnail"><img src="img/logo/mobilogics-logo.png" alt="明錄國際" /></a></li>
 				<li class="span2"><a href="http://www.moko365.com" class="thumbnail"><img src="img/logo/moko-logo.png" alt="Moko365" /></a></li>

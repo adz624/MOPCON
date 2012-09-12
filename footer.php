@@ -3,9 +3,9 @@
 		<div class="sponsors">
 			<dl>
 				<dt>贊助商</dt>
-				<!-- <dd><a href="ttt.html"><img src="img/base/quanta.png" width="" alt="quanta" /></a></dd>
-				<dd><a href="ttt.html"><img src="img/base/microsoft.png" alt="MS" /></a></dd>
-				<dd><a href="ttt.html"><img src="img/base/yahootw.png" alt="YAHOO!" /></a></dd> -->
+				<dd>
+					<a href="http://www.acomotech.com/"><img src="img/logo/acomotech_f.png" alt="杏昕科技" /></a>
+				</dd>
 				<dd>
 					<a href="http://www.kkbox.com"><img src="img/logo/kkbox_f.png" alt="KKBOX" /></a>
 				</dd>
