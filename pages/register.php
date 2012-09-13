@@ -28,6 +28,10 @@
 		<dd>
 			MOPCON 主辦小組
 		</dd>
+		<dt><i class="icon-glass">&nbsp;</i> 備註</dt>
+		<dd>
+			本活動供應早、午餐及午茶
+		</dd>
 	</dl>
 	<p class="toRegLink">
 		<a class="btn btn-success" href="https://registrano.com/events/mopcon2012" target="_blank">立即註冊</a>
