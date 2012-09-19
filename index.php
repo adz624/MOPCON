@@ -5,31 +5,8 @@
   <head><?php include_once("header.php");?></head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
-    
-    <section id="main_content">
-  <div class="page-header">
-    <div class="date">
-      <div class="start">
-              2012
-              <span class="slash">/</span>
-              10
-              <span class="slash">/</span>
-              27
-              <span class="wd ct10" style="visibility: visible; ">(六)</span>
-      </div>
-      ~
-      <div class="end">
-              2012
-              <span class="slash">/</span>
-              10
-              <span class="slash">/</span>
-              28
-              <span class="wd ct10" style="visibility: visible; ">(日)</span>
-      </div>
-    </div>
-    <div class="social"></div>
-  </div>
-    
+
+<div class="container span10" id="bd">
   <div class="span7">
       <h3>MOPCON 2012</h3>
       <p>MOPCON 全名為 Mobile Open Platform Conference，為非營利的技術研討會，成立宗旨為針對移動通訊領域結合實際的產業面與工程研發(平台工具、後台服務、移動應用)做比較深入的探討。</p>
@@ -38,7 +15,8 @@
 
   <div class="span5 hidden-phone"><img src="img/main_m02.png"/></div>
 </section>
-<section id="register_content">
+
+<section id="register_content" class="span10">
   <div class="span12 well">
     <div class="span9 offset1">
     <h3>報名資訊</h3>
@@ -50,6 +28,6 @@
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">立即註冊</a></p>
   </div>
   </div>
-</section>
+</div>
   </body>
 </html>

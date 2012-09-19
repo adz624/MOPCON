@@ -13,7 +13,7 @@
         <div class="nav-collapse">
           <ul class="nav">
             <li class="<?php echo $function['home']; ?>"><a href="http://test.mopcon.org">首頁</a></li>
-            <li class="<?php echo $function['session']; ?>"><a href="session.html">議程</a></li>
+            <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
             <li class="<?php echo $function['social']; ?>"><a href="#">社群</a></li>
             <li class="<?php echo $function['sponser']; ?>"><a href="#">贊助</a></li>
             <li class="dropdown">
@@ -45,3 +45,28 @@
 
 <script src="scripts/jquery-1.8.1.min.js"></script>
 <script src="css/bootstrap/js/bootstrap.js"></script>
+
+<div class="container" id="top">
+  <div class="page-header">
+    <div class="date">
+      <div class="start">
+              2012
+              <span class="slash">/</span>
+              10
+              <span class="slash">/</span>
+              27
+              <span class="wd ct10" style="visibility: visible; ">(六)</span>
+      </div>
+      ~
+      <div class="end">
+              2012
+              <span class="slash">/</span>
+              10
+              <span class="slash">/</span>
+              28
+              <span class="wd ct10" style="visibility: visible; ">(日)</span>
+      </div>
+    </div>
+    <div class="social"></div>
+  </div>    
+</div>
