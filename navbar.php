@@ -3,7 +3,7 @@
 ?>
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <div class="container" style="width: auto;">
+      <div class="" style="width: auto;">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -14,7 +14,7 @@
           <ul class="nav">
             <li class="<?php echo $function['home']; ?>"><a href="http://test.mopcon.org">首頁</a></li>
             <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
-            <li class="<?php echo $function['social']; ?>"><a href="#">社群</a></li>
+            <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
             <li class="<?php echo $function['sponser']; ?>"><a href="#">贊助</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
@@ -46,7 +46,7 @@
 <script src="scripts/jquery-1.8.1.min.js"></script>
 <script src="css/bootstrap/js/bootstrap.js"></script>
 
-<div class="container" id="top">
+<div class="" id="top">
   <div class="page-header">
     <div class="date">
       <div class="start">

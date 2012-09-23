@@ -1,24 +1,25 @@
 <?php
   $page = "home";
 ?>
-<html lang="zh-TW">
+<html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
+  <div class="container" id="all">
     <?php include_once("navbar.php");?>
 
-<div class="container span10" id="bd">
-  <div class="span7">
+<div class="" id="bd">
+  <div class="span4 offset1">
       <h3>MOPCON 2012</h3>
       <p>MOPCON 全名為 Mobile Open Platform Conference，為非營利的技術研討會，成立宗旨為針對移動通訊領域結合實際的產業面與工程研發(平台工具、後台服務、移動應用)做比較深入的探討。</p>
       <p>希望藉由年度固定聚會持續專注這個領域, 培養台灣移動式領域人才或促使更多人投入這個領域的發展，並增加此領域廠商的能見度與第三方各種合作機會。我們將會邀請國外移動式領域廠商、專家增加與國內廠商、開發者更多交流與互動的機會。</p>
   </div>
 
   <div class="span5 hidden-phone"><img src="img/main_m02.png"/></div>
-</section>
+  <div class="span1"></div>
+</div>
 
-<section id="register_content" class="span10">
-  <div class="span12 well">
-    <div class="span9 offset1">
+<div class="span9 well offset1">
+    <div class="span7 offset1">
     <h3>報名資訊</h3>
     <ul class="sessionList">
 		  <li><i class="icon-time"></i>&nbsp;&nbsp;時間：2012/10/27-28（六日兩天）</li>
@@ -29,5 +30,6 @@
   </div>
   </div>
 </div>
+
   </body>
 </html>

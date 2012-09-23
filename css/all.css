@@ -1,8 +1,13 @@
+/* @override http://test.mopcon.org/css/all.css */
+
+/* @override http://test.mopcon.org/css/all.css */
+
 html,body{
 	font-size:16px;
 	line-height:24px;
 	-webkit-text-size-adjust:100%;
 	padding:0;
+	background-color: rgb(215, 216, 218);
 }
 
 @media ( max-width: 979px ){
@@ -20,9 +25,17 @@ html,body{
 	height: 4px;
 }
 
+.container {
+	overflow:hidden;
+	-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 1px 5px rgba(0,0,0,0.8);
+	box-shadow:0 1px 5px rgba(0,0,0,0.8);
+	background-color:white;
+}
+
 @media (min-width:979) {
-	#main_content {
-		margin-top: 90px;
+	#all.container {
+		margin-top: 74px;
 	}
 }
 
@@ -43,4 +56,134 @@ html,body{
 
 span.wd.ct10,span.slash {
 	color: #b7b7b7;
+}
+
+.agenda:first-child {
+	padding-bottom: 0;
+}
+
+.agenda {
+	padding: 24px;
+}
+
+.agenda .border {
+	border: 2px solid black;
+	border-color: rgba(0,0,0,0.7);
+}
+
+.agenda .line {
+	border: 3px double black;
+	border-color: rgba(0,0,0,0.7);
+	padding: 48px;
+}
+
+.agenda hgroup {
+	padding-bottom: 24px;
+}
+
+.agenda h2 {
+	font-size: 2em;
+}
+
+.agenda .agenda-group {
+	border: 1px solid black;
+	border-width: 1px 0;
+	margin-bottom: -1px;
+}
+
+.agenda .agenda-title {
+	color: #000;
+	color: inherit;
+	text-decoration: inherit;
+	cursor: inherit;
+	display: block;
+}
+
+.agenda .text-wrapper {
+	padding: 8px 0 12px;
+}
+
+.text-wrapper {
+	padding: 20px;
+}
+
+.agenda .agenda-title .time {
+	text-align: left;
+	font-family: monospace;
+	font-size: 0.75em;
+	line-height: 1.333em;
+}
+
+.agenda .agenda-title .name {
+	font-size: 1.25em;
+	line-height: 1.8em;
+}
+
+.agenda .span10 {
+	border-left: 1px dashed rgba(0,0,0,0.3);
+	margin-left: -1px;
+}
+
+.agenda .span10 .text-wrapper {
+	padding-left: 12px;
+}
+
+.agenda .text-wrapper {
+	padding: 8px 0 12px;
+}
+
+.agenda .agenda-group {
+	border: 1px solid black;
+	border-width: 1px 0;
+	margin-bottom: -1px;
+}
+
+.agenda .rest {
+	background: black;
+	color: #e7cbb5;
+	text-align: center;
+}
+
+.agenda .rest .name {
+	font-size: 0.75em;
+	line-height: 2em;
+}
+
+.wf-active .wf-h2 {
+	opacity: 1;
+	position: relative;
+	top: .15em;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.wf-active .wf {
+	font-weight: normal;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.wf-h2, .name {
+	font-family: "ff-netto-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 0.333em;
+}
+
+i.icon {
+	font-family: 'Pictos Custom';
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
 }
