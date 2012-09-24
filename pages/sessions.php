@@ -89,4 +89,13 @@
 			</tr>
 		</tbody>
 	</table>
+        <div class="session_legend">
+                <div class="session_backend">後端服務議程</div>
+        </div>
+        <div class="session_legend">
+                <div class="session_frontend">前端應用議程</div>
+        </div>
+        <div class="session_legend">
+                <div class="session_tools">底層與開發工具議程</div>
+        </div>
 </div>

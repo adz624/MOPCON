@@ -20,3 +20,12 @@
     background-color: #b4a7d6;
 }
 
+.session_legend {
+    margin-left: 8px;
+    margin-bottom: 3px;
+    float: left;
+    width: 150px;
+    height: 22px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
