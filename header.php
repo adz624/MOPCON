@@ -15,3 +15,15 @@
 <link type="text/css" href="css/all.css" media="screen" rel="stylesheet">
 <style type="text/css"> @font-face { font-family: "ct10"; src: url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=eot); src: local(" "),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=ttf) format("truetype"),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=woff) format("woff");} #ct10 { font-family: "ct10"; }.ct10 { font-family: "ct10"; }
 </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="css/bootstrap/js/bootstrap.js"></script>
+<script>
+$(function () {
+    $("a").click(function () {
+/*
+        window.open(this.href, 'new_w_'+(new Date).getTime(), '');
+        return false;
+*/
+    });
+});
+</script>

@@ -44,10 +44,6 @@
     <div id="functionSeprate"></div>
   </div><!-- /navbar -->
 
-
-<script src="scripts/jquery-1.8.1.min.js"></script>
-<script src="css/bootstrap/js/bootstrap.js"></script>
-
 <div class="" id="top">
   <div class="page-header">
     <div class="date">
