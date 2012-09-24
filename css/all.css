@@ -1,7 +1,5 @@
 /* @override http://test.mopcon.org/css/all.css */
 
-/* @override http://test.mopcon.org/css/all.css */
-
 html,body{
 	font-size:16px;
 	line-height:24px;
@@ -27,6 +25,13 @@ html,body{
 
 .container {
 	overflow:hidden;
+	
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
 	-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.8);
 	-moz-box-shadow:0 1px 5px rgba(0,0,0,0.8);
 	box-shadow:0 1px 5px rgba(0,0,0,0.8);
@@ -149,6 +154,13 @@ span.wd.ct10,span.slash {
 	line-height: 2em;
 }
 
+.copyright {
+	font-size: 0.75em;
+	line-height: 0.75em;
+	text-align: center;
+	padding-top: 16px;
+}
+
 .wf-active .wf-h2 {
 	opacity: 1;
 	position: relative;
@@ -186,4 +198,153 @@ i.icon {
 	-webkit-font-smoothing: antialiased;
 	font-style: normal;
 	font-weight: normal;
+}
+
+a {
+	color: #08c;
+	text-decoration: none;
+}
+
+// 社群頁面
+.thumbnail {
+	display: block;
+	padding: 4px;
+	line-height: 20px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.055);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.thumbnail > img {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	border: 0;
+	height: 15em;
+}
+
+#aboutUs {
+	padding-bottom: 1.5em;
+	border-bottom: 1px dashed #a8a8a8;
+	margin-bottom: 1.5em;
+}
+
+#aboutUs .section {
+	display: inline-block;
+	width: 250px;
+	margin-left: 2em;
+	vertical-align: top;
+	position: relative;
+}
+
+#aboutUs .section .fontLogo {
+	padding: 2.3em 0;
+}
+
+.fontLogo {
+	font-size: 3em;
+	padding: 1.75em 0;
+	text-align: center;
+	text-shadow: -1px 0 #687da8,0 1px #687da8,1px 0 #687da8,0 -1px #687da8,1px 1px 1px #333;
+	display: block;
+	font-family: Georgia, sans-serif;
+}
+
+#aboutUs .section .popover {
+	margin: 1.5em auto 0;
+	display: block;
+	position: relative;
+}
+
+.popover.bottom {
+	margin-top: 10px;
+}
+
+.popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1010;
+	display: none;
+	width: 236px;
+	padding: 1px;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.popover.bottom .arrow {
+	top: -10px;
+	left: 50%;
+	margin-left: -10px;
+	border-width: 0 10px 10px;
+	border-bottom-color: #fff;
+}
+
+.popover .arrow, .popover .arrow::after {
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.popover .arrow::after {
+	content: "";
+	z-index: -1;
+}
+
+.popover .arrow, .popover .arrow::after {
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.popover-title {
+	margin: 0;
+	padding: 8px 14px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ebebeb;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+abbr[title] {
+	cursor: help;
+	border-bottom: 1px dotted #999;
+}
+
+.popover-content {
+	padding: 9px 14px;
+}
+
+.popover-content p, .popover-content ul, .popover-content ol {
+	margin-bottom: 0;
 }

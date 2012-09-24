@@ -15,14 +15,16 @@
             <li class="<?php echo $function['home']; ?>"><a href="http://test.mopcon.org">首頁</a></li>
             <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
             <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
-            <li class="<?php echo $function['sponser']; ?>"><a href="#">贊助</a></li>
-            <li class="dropdown">
+            <li class="<?php echo $function['sponser']; ?>"><a href="sponser.php">贊助</a></li>
+            <li class="dropdown <?php echo $function['other']; ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">報名資訊</a></li>
-                <li><a href="#">贊助資訊</a></li>
+                <li class="<?php echo $function['map']; ?>"><a href="map.php">交通</a></li>                
+                <li class="<?php echo $function['register']; ?>"><a href="register.php">報名</a></li>
+                <li class="<?php echo $function['cfp']; ?>"><a href="cfp.php">議程投稿</a></li>
                 <li class="divider"></li>
-                <li><a class="<?php echo $function['map']; ?>" href="#">交通</a></li>
+                <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li>
+                <li class="<?php echo $function['contact']; ?>"><a href="contact.php">聯絡我們</a></li>
               </ul>
             </li>
           </ul>
