@@ -21,7 +21,7 @@
 			<p>感謝以下各贊助單位</p>
 			<ul class="thumbnails">
 				<li class="span2 box_space"><a href="http://www.acomotech.com/" class="thumbnail"><img src="img/logo/acomotech-logo.png" alt="杏昕科技" /></a></li>
-				<li class="span2 box_space"><a href="http://www.EZoUI.com/" class="thumbnail"><img src="img/logo/ezo-logo.png" alt="中冠資訊" /></a></li>
+				<li class="span2 box_space"><a href="http://www.EZoUI.com/" class="thumbnail"><img src="img/logo/Ezo-logo.png" alt="中冠資訊" /></a></li>
                         </ul>
                 </div>
 		<div class="second">
