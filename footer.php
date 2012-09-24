@@ -7,6 +7,9 @@
 					<a href="http://www.acomotech.com/"><img src="img/logo/acomotech_f.png" alt="杏昕科技" /></a>
 				</dd>
 				<dd>
+					<a href="http://www.EZoUI.com/"><img src="img/logo/ezo_f.png" alt="中冠資訊" /></a>
+				</dd>
+				<dd>
 					<a href="http://www.kkbox.com"><img src="img/logo/kkbox_f.png" alt="KKBOX" /></a>
 				</dd>
 				<dd>
