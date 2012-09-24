@@ -14,7 +14,7 @@
               <div class="span12">
                 <hgroup>
                   <h2 class="wf wf-h2">
-                    <i class="icon">l</i>
+                    <!-- <i class="icon">l</i> -->
                     Agenda 10/27
                   </h2>
                 </hgroup>
@@ -110,7 +110,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">hlb (布丁)</div>
+                          <div class="name">hlb</div>
                           <div class="head">XXXXXX</div>
                         </div>
                       </div>
@@ -258,7 +258,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name">中冠資訊</div>
+                      <div class="name">Hacker級贊助：中冠資訊</div>
                       <div class="head">XXXXX</div>
                     </div>
                   </div>
@@ -284,78 +284,40 @@
                 <div class="name">中場休息</div>
               </div>
             </div>
-            <div class="row-fluid two-col">
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">海景會議廳<br>14:30 ~ 15:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name">Jserv</div>
-                          <div class="head">XXXXX</div>
-                        </div>
-                      </div>
+            <div class="agenda-group off">
+              <a class="agenda-title" href="#">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      <div class="time">海景會議廳<br>14:30 ~ 15:20</div>
                     </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          講者介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="slide"><a href="">投影片下載</a></div>
-                          <p>介紹介紹</p>
-                          
-                          <p><a href="http://reverse.put.as">http://reverse.put.as</a><br>
-                          &lt;email: reverser@put.as&gt;<br>
-                          Twitter: <a href="http://twitter.com/osxreverse">@osxreverse</a></p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <div class="name">Jserv</div>
+                      <div class="head">XXXXX</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="agenda-content">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      講者介紹
+                    </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <p>介紹介紹。</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">小型會議室<br>14:30 ~ 15:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name"></div>
-                          <div class="head"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          講者介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="slide"><a href="">投影片下載</a></div>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="agenda-group rest">
+              <div class="agenda-title">
+                <div class="name">中場休息</div>
               </div>
             </div>
             <div class="row-fluid two-col">
@@ -468,8 +430,8 @@
               <div class="span12">
                 <hgroup>
                   <h2 class="wf wf-h2">
-                    <i class="icon">l</i>
-                    Agenda 10/27
+                    <!-- <i class="icon">l</i> -->
+                    Agenda 10/28
                   </h2>
                 </hgroup>
               </div>
@@ -495,13 +457,13 @@
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
-                      <div class="time">海景會議廳<br>09:00 ~ 09:30</div>
+                      <div class="time">海景會議廳<br>09:00 ~ 09:50</div>
                     </div>
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name">長官</div>
-                      <div class="head">長官致詞</div>
+                      <div class="name">Hacker級贊助商：</div>
+                      <div class="head">XXXXXX</div>
                     </div>
                   </div>
                 </div>
@@ -521,35 +483,9 @@
                 </div>
               </div>
             </div>
-            <div class="agenda-group off">
-              <a class="agenda-title" href="#">
-                <div class="row-fluid">
-                  <div class="span2">
-                    <div class="text-wrapper">
-                      <div class="time">海景會議廳<br>09:30 ~ 10:00</div>
-                    </div>
-                  </div>
-                  <div class="span10">
-                    <div class="text-wrapper">
-                      <div class="name">Ericpi、Jserv、Mikimoto</div>
-                      <div class="head">議程導引與簡介</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="agenda-content">
-                <div class="row-fluid">
-                  <div class="span2">
-                    <div class="text-wrapper">
-                      講者介紹
-                    </div>
-                  </div>
-                  <div class="span10">
-                    <div class="text-wrapper">
-                      <p>介紹介紹</p>
-                    </div>
-                  </div>
-                </div>
+            <div class="agenda-group rest">
+              <div class="agenda-title">
+                <div class="name">中場休息</div>
               </div>
             </div>
             <div class="row-fluid two-col">
@@ -564,7 +500,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">hlb (布丁)</div>
+                          <div class="name">BlueT</div>
                           <div class="head">XXXXXX</div>
                         </div>
                       </div>
@@ -598,7 +534,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Sam Ding</div>
+                          <div class="name">Mikimoto</div>
                           <div class="head">XXXXXX</div>
                         </div>
                       </div>
@@ -639,7 +575,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">xdite</div>
+                          <div class="name">Sleepnova</div>
                           <div class="head">XXXXXX</div>
                         </div>
                       </div>
@@ -673,7 +609,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">許益祥</div>
+                          <div class="name">Ericpi</div>
                           <div class="head">XXXXXX</div>
                         </div>
                       </div>
@@ -712,7 +648,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name">中冠資訊</div>
+                      <div class="name">Hacker級贊助商：杏昕科技</div>
                       <div class="head">XXXXX</div>
                     </div>
                   </div>
@@ -738,146 +674,63 @@
                 <div class="name">中場休息</div>
               </div>
             </div>
-            <div class="row-fluid two-col">
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">海景會議廳<br>14:30 ~ 15:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name">Jserv</div>
-                          <div class="head">XXXXX</div>
-                        </div>
-                      </div>
+            <div class="agenda-group off">
+              <a class="agenda-title" href="#">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      <div class="time">海景會議廳<br>14:30 ~ 15:20</div>
                     </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          講者介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="slide"><a href="">投影片下載</a></div>
-                          <p>介紹介紹</p>
-                          
-                          <p><a href="http://reverse.put.as">http://reverse.put.as</a><br>
-                          &lt;email: reverser@put.as&gt;<br>
-                          Twitter: <a href="http://twitter.com/osxreverse">@osxreverse</a></p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <div class="name">Gea-Suan Lin</div>
+                      <div class="head">XXXXX</div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">小型會議室<br>14:30 ~ 15:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name"></div>
-                          <div class="head"></div>
-                        </div>
-                      </div>
+              </a>
+              <div class="agenda-content">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      講者介紹
                     </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          講者介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="slide"><a href="">投影片下載</a></div>
-                          <p></p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <p>介紹介紹。</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row-fluid two-col">
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">海景會議廳<br>15:30 ~ 16:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name">Shaka</div>
-                          <div class="head">議程尚未公佈</div>
-                        </div>
-                      </div>
+            <div class="agenda-group off">
+              <a class="agenda-title" href="#">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      <div class="time">海景會議廳<br>15:30 ~ 16:20</div>
                     </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          講者介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="slide"><a href="">投影片下載</a></div>
-                          <div class="slide"><a href="">Slide Download</a></div>
-                          <p>介紹介紹</p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <div class="name">Lightening talk & 閉幕</div>
+                      <div class="head">XXXXX</div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">小型會議室<br>15:30 ~ 16:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name">Caesar</div>
-                          <div class="head">議程尚未公佈</div>
-                        </div>
-                      </div>
+              </a>
+              <div class="agenda-content">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      講者介紹
                     </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          講者介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="slide"><a href="">投影片下載</a></div>
-                          <p>尚無資料</p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <p>介紹介紹。</p>
                     </div>
                   </div>
                 </div>

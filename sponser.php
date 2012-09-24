@@ -7,10 +7,9 @@
     <div class="container" id="all">
       <?php include_once("navbar.php");?>
       <div class="article">
-	      <h2>主辦單位／贊助商</h2>
 	      <div id="sponsorList">
 		      <div class="main">
-		            <h3>主辦單位：<br>&nbsp;&nbsp;&nbsp;經濟部加工出口區管理處<br>&nbsp;&nbsp;&nbsp;國立中山大學南部促進產業發展研究中心</h3>
+		           <h3>主辦單位：<br>&nbsp;&nbsp;&nbsp;經濟部加工出口區管理處<br>&nbsp;&nbsp;&nbsp;國立中山大學南部促進產業發展研究中心</h3>
 			<p>感謝經濟部加工出口區對產業與社群發展的支持</p>
 		</div>
 		<div class="second">

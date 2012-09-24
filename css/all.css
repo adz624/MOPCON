@@ -205,7 +205,7 @@ a {
 	text-decoration: none;
 }
 
-// 社群頁面
+/* 社群頁面 */
 .thumbnail {
 	display: block;
 	padding: 4px;
@@ -347,4 +347,44 @@ abbr[title] {
 
 .popover-content p, .popover-content ul, .popover-content ol {
 	margin-bottom: 0;
+}
+
+/* 贊助商 */
+#sponsorList .main, #sponsorList .second, #sponsorList .special {
+	margin: 10px;
+	border-bottom: 1px dashed #a8a8a8;
+	padding-left: 2em;
+}
+#sponsorList h3 {
+	font-size: 1.6em;
+	margin: 0;
+	margin-left: -1em;
+}
+#sponsorList .thumbnails {
+	margin-left: -20px;
+	list-style: none;
+}
+#sponsorList .thumbnails::before, #sponsorList .thumbnails::after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+#sponsorList .thumbnails::after {
+	clear: both;
+}
+#sponsorList .thumbnails li {
+	margin-bottom: 0;
+}
+.thumbnails > li {
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+#sponsorList .span2 {
+	width: 140px;
+}
+
+#sponsorList .fontLogo {
+	padding: 1em 0;
 }
