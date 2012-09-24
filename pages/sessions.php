@@ -19,7 +19,7 @@
 			<tr>			
 				<td>9:00 ~ 9:50</td>
 				<td colspan="2" rowspan="2">電子票券 key note</td>
-				<td colspan="2">最高級贊助商1</td>
+				<td colspan="2">hacker級贊助商</td>
 			</tr>
 			<tr>
 				<td>9:50 ~ 10:00</td>
@@ -28,10 +28,10 @@
 			</tr>
 			<tr>
 				<td>10:00 ~ 10:50</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_backend">hlb</div></td>
+				<td><div class="session_tools">Sam Ding</div></td>
+				<td><div class="session_frontend">許益祥</div></td>
+				<td><div class="session_backend">BlueT</div></td>
 			</tr>
 			<tr>
 				<td>10:50 ~ 11:00</td>
@@ -42,10 +42,10 @@
 			</tr>
 			<tr>
 				<td>11:00 ~ 11:50</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_backend">Xdite</div></td>
+				<td><div class="session_frontend">Mikimoto</div></td>
+				<td><div class="session_frontend">Sleepnova</div></td>
+				<td><div class="session_backend">Ericpi</div></td>
 			</tr>
 			<tr>			
 				<td>11:50 ~ 13:30</td>
@@ -54,8 +54,8 @@
 			</tr>
 			<tr>			
 				<td>13:30 ~ 14:20</td>
-				<td colspan="2">最高級贊助商3</td>
-				<td colspan="2">最高級贊助商2</td>
+				<td colspan="2">Hacker級贊助: 中冠資訊</td>
+				<td colspan="2">hacker級贊助: 杏昕科技</td>
 			</tr>
 			<tr>
 				<td>14:20 ~ 14:30</td>
@@ -66,10 +66,8 @@
 			</tr>
 			<tr>
 				<td>14:30 ~ 15:20</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td colspan="2"><div class="session_tools">Jserv</div></td>
+				<td colspan="2"><div class="session_backend">Gea-Suan Lin</div></td>
 			</tr>
 			<tr>
 				<td>15:20 ~ 15:30</td>
@@ -80,8 +78,8 @@
 			</tr>
 			<tr>
 				<td>15:30 ~ 16:20</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_frontend">Shaka</div></td>
+				<td><div class="session_backend">Caesar Chi</div></td>
 				<td colspan="2">lightning talk &amp; 閉幕</td>
 			</tr>
 			<tr>
