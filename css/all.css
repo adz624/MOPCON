@@ -233,6 +233,10 @@ a {
 	height: 15em;
 }
 
+.thumbnail:hover {
+        border: 1px solid #aaf; 
+}
+
 #aboutUs {
 	padding-bottom: 1.5em;
 	border-bottom: 1px dashed #a8a8a8;
@@ -351,7 +355,8 @@ abbr[title] {
 
 /* 贊助商 */
 #sponsorList .main, #sponsorList .second, #sponsorList .special {
-	margin: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-bottom: 1px dashed #a8a8a8;
 	padding-left: 2em;
 }
@@ -387,4 +392,10 @@ abbr[title] {
 
 #sponsorList .fontLogo {
 	padding: 1em 0;
+}
+
+.hidden_box {
+    float: left;
+    width: 90%;
+    height: 32px;
 }

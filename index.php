@@ -29,6 +29,7 @@
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">立刻報名</a></p>
   </div>
   </div>
+        <div class="hidden_box"></div>
         <div class="span10 offset1 container-fluid">
                 <h4>贊助商</h4>
                 <ul class="thumbnails">
@@ -41,6 +42,7 @@
                     <li class="thumbnail"><a rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock_f.png" alt="鈞達資訊" /></a>
                 </ul>
         </div>
+        <div class="hidden_box"></div>
   </div>
     <?php include_once("footer.html");?>
   </body>
