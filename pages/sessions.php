@@ -16,22 +16,27 @@
 			</tr>
 		</thead>
 		<tbody>
+			<tr>
+				<td>8:30 ~ 09:00</td>
+				<td colspan="2">報到</td>
+				<td colspan="2">報到</td>
+			</tr>
 			<tr>			
-				<td>9:00 ~ 9:50</td>
-				<td colspan="2" rowspan="2">電子票券 key note</td>
-				<td colspan="2">最高級贊助商1</td>
+				<td>09:00 ~ 09:50</td>
+				<td colspan="2">電子票券 key note</td>
+				<td colspan="2">hacker級贊助商</td>
 			</tr>
 			<tr>
-				<td>9:50 ~ 10:00</td>
-				<td>休息</td>
-				<td>休息</td>
+				<td>09:50 ~ 10:00</td>
+				<td colspan="2">休息</td>
+				<td colspan="2">休息</td>
 			</tr>
 			<tr>
 				<td>10:00 ~ 10:50</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_backend">hlb</div></td>
+				<td><div class="session_tools">Sam Ding</div></td>
+				<td><div class="session_backend">BlueT</div></td>
+				<td><div class="session_frontend">Mikimoto</div></td>
 			</tr>
 			<tr>
 				<td>10:50 ~ 11:00</td>
@@ -42,10 +47,10 @@
 			</tr>
 			<tr>
 				<td>11:00 ~ 11:50</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_backend">Xdite</div></td>
+				<td><div class="session_frontend">Marty</div></td>
+				<td><div class="session_backend">Gea-Suan Lin</div></td>
+				<td><div class="session_frontend">Yuren Ju</div></td>
 			</tr>
 			<tr>			
 				<td>11:50 ~ 13:30</td>
@@ -54,8 +59,8 @@
 			</tr>
 			<tr>			
 				<td>13:30 ~ 14:20</td>
-				<td colspan="2">最高級贊助商3</td>
-				<td colspan="2">最高級贊助商2</td>
+				<td colspan="2">Hacker級贊助: 中冠資訊</td>
+				<td colspan="2">hacker級贊助: 杏昕科技</td>
 			</tr>
 			<tr>
 				<td>14:20 ~ 14:30</td>
@@ -66,10 +71,10 @@
 			</tr>
 			<tr>
 				<td>14:30 ~ 15:20</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_tools">Jserv</div></td>
+				<td><div class="session_frontend">Ecowork</div></td>
+				<td><div class="session_frontend">Sleepnova</div></td>
+				<td><div class="session_backend">Ericpi</div></td>
 			</tr>
 			<tr>
 				<td>15:20 ~ 15:30</td>
@@ -80,8 +85,8 @@
 			</tr>
 			<tr>
 				<td>15:30 ~ 16:20</td>
-				<td>議程</td>
-				<td>議程</td>
+				<td><div class="session_frontend">Shaka</div></td>
+				<td><div class="session_backend">Caesar Chi</div></td>
 				<td colspan="2">lightning talk &amp; 閉幕</td>
 			</tr>
 			<tr>
@@ -91,4 +96,13 @@
 			</tr>
 		</tbody>
 	</table>
+        <div class="session_legend">
+                <div class="session_backend">後端服務議程</div>
+        </div>
+        <div class="session_legend">
+                <div class="session_frontend">前端應用議程</div>
+        </div>
+        <div class="session_legend">
+                <div class="session_tools">底層與開發工具議程</div>
+        </div>
 </div>
