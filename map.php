@@ -74,7 +74,7 @@
 			</tr>
 		</tbody>
 	</table>
-        <p><a href="http://www.southeastbus.com/index/kcg/R16.html">東南客運R16公車路線圖</a></p>
+        <p><a rel="external" href="http://www.southeastbus.com/index/kcg/R16.html">東南客運R16公車路線圖</a></p>
     </div>
   </div>
 </div>
