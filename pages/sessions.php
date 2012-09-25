@@ -35,8 +35,8 @@
 				<td>10:00 ~ 10:50</td>
 				<td><div class="session_backend">hlb</div></td>
 				<td><div class="session_tools">Sam Ding</div></td>
-				<td><div class="session_frontend">Mikimoto</div></td>
 				<td><div class="session_backend">BlueT</div></td>
+				<td><div class="session_frontend">Mikimoto</div></td>
 			</tr>
 			<tr>
 				<td>10:50 ~ 11:00</td>
@@ -49,8 +49,8 @@
 				<td>11:00 ~ 11:50</td>
 				<td><div class="session_backend">Xdite</div></td>
 				<td><div class="session_frontend">Marty</div></td>
-				<td><div class="session_frontend">Sleepnova</div></td>
-				<td><div class="session_backend">Ericpi</div></td>
+				<td><div class="session_backend">Gea-Suan Lin</div></td>
+				<td><div class="session_frontend">Yuren Ju</div></td>
 			</tr>
 			<tr>			
 				<td>11:50 ~ 13:30</td>
@@ -72,9 +72,9 @@
 			<tr>
 				<td>14:30 ~ 15:20</td>
 				<td><div class="session_tools">Jserv</div></td>
-				<td><div class="">議程未定</div></td>
-				<td><div class="session_backend">Gea-Suan Lin</div></td>
-				<td><div class="session_frontend">Yuren Ju</div></td>
+				<td><div class="session_frontend">Ecowork</div></td>
+				<td><div class="session_frontend">Sleepnova</div></td>
+				<td><div class="session_backend">Ericpi</div></td>
 			</tr>
 			<tr>
 				<td>15:20 ~ 15:30</td>
