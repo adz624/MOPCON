@@ -19,11 +19,8 @@
 <script src="css/bootstrap/js/bootstrap.js"></script>
 <script>
 $(function () {
-    $("a").click(function () {
-/*
-        window.open(this.href, 'new_w_'+(new Date).getTime(), '');
-        return false;
-*/
+    $("a[rel='external']").click(function () {
+        this.target = "_blank";
     });
 });
 </script>

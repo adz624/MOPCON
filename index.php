@@ -29,6 +29,18 @@
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">立刻報名</a></p>
   </div>
   </div>
+        <div class="span10 offset1 container-fluid">
+                <h4>贊助商</h4>
+                <ul class="thumbnails">
+                    <li class="thumbnail"><a rel="external" href="http://www.acomotech.com/"><img src="img/logo/acomotech_f.png" alt="杏昕科技" /></a>
+                    <li class="thumbnail"><a rel="external" href="http://www.EZoUI.com/"><img src="img/logo/Ezo_f.png" alt="中冠資訊" /></a>
+                    <li class="thumbnail"><a rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox_f.png" alt="KKBOX" /></a>
+                    <li class="thumbnail"><a rel="external" href="http://www.mobilogics.com.tw"><img src="img/logo/mobilogics_f.png" alt="明錄國際" /></a>
+                    <li class="thumbnail"><a rel="external" href="http://www.moko365.com"><img src="img/logo/moko_f.png" alt="Moko365" /></a>
+                    <li class="thumbnail"><a rel="external" href="http://www.moregeek.com"><img src="img/logo/moregeek_f.png" alt="摩鉅科技" /></a>
+                    <li class="thumbnail"><a rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock_f.png" alt="鈞達資訊" /></a>
+                </ul>
+        </div>
   </div>
     <?php include_once("footer.html");?>
   </body>
