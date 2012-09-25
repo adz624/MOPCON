@@ -23,7 +23,7 @@
 			</tr>
 			<tr>			
 				<td>09:00 ~ 09:50</td>
-				<td colspan="2">電子票券 key note</td>
+				<td colspan="2">本次大會議程引導與簡介<br>(Jserv, Ericpi, Mikimoto)</td>
 				<td colspan="2">hacker級贊助商</td>
 			</tr>
 			<tr>
