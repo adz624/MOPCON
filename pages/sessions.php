@@ -16,21 +16,26 @@
 			</tr>
 		</thead>
 		<tbody>
+			<tr>
+				<td>8:30 ~ 09:00</td>
+				<td colspan="2">報到</td>
+				<td colspan="2">報到</td>
+			</tr>
 			<tr>			
-				<td>9:00 ~ 9:50</td>
-				<td colspan="2" rowspan="2">電子票券 key note</td>
+				<td>09:00 ~ 09:50</td>
+				<td colspan="2">電子票券 key note</td>
 				<td colspan="2">hacker級贊助商</td>
 			</tr>
 			<tr>
-				<td>9:50 ~ 10:00</td>
-				<td>休息</td>
-				<td>休息</td>
+				<td>09:50 ~ 10:00</td>
+				<td colspan="2">休息</td>
+				<td colspan="2">休息</td>
 			</tr>
 			<tr>
 				<td>10:00 ~ 10:50</td>
 				<td><div class="session_backend">hlb</div></td>
 				<td><div class="session_tools">Sam Ding</div></td>
-				<td><div class="session_frontend">許益祥</div></td>
+				<td><div class="session_frontend">Mikimoto</div></td>
 				<td><div class="session_backend">BlueT</div></td>
 			</tr>
 			<tr>
@@ -43,7 +48,7 @@
 			<tr>
 				<td>11:00 ~ 11:50</td>
 				<td><div class="session_backend">Xdite</div></td>
-				<td><div class="session_frontend">Mikimoto</div></td>
+				<td><div class="session_frontend">Marty</div></td>
 				<td><div class="session_frontend">Sleepnova</div></td>
 				<td><div class="session_backend">Ericpi</div></td>
 			</tr>
@@ -66,8 +71,10 @@
 			</tr>
 			<tr>
 				<td>14:30 ~ 15:20</td>
-				<td colspan="2"><div class="session_tools">Jserv</div></td>
-				<td colspan="2"><div class="session_backend">Gea-Suan Lin</div></td>
+				<td><div class="session_tools">Jserv</div></td>
+				<td><div class="">議程未定</div></td>
+				<td><div class="session_backend">Gea-Suan Lin</div></td>
+				<td><div class="session_frontend">Yuren Ju</div></td>
 			</tr>
 			<tr>
 				<td>15:20 ~ 15:30</td>
