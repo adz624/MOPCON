@@ -63,96 +63,70 @@ span.wd.ct10,span.slash {
 	color: #b7b7b7;
 }
 
-.agenda:first-child {
-	padding-bottom: 0;
-}
+/* session */
 
 .agenda {
-	padding: 24px;
+	padding:24px;
+	/*background:#e8ceb7 url('../images/agenda-bg.jpg');*/
 }
-
+.agenda:first-child {
+	padding-bottom:0
+}
 .agenda .border {
-	border: 2px solid black;
-	border-color: rgba(0,0,0,0.7);
+	border:2px solid black;
+	border-color:rgba(0,0,0,0.7)
 }
-
-.agenda .line {
-	border: 3px double black;
-	border-color: rgba(0,0,0,0.7);
-	padding: 48px;
-}
-
-.agenda hgroup {
-	padding-bottom: 24px;
-}
-
 .agenda h2 {
-	font-size: 2em;
+	font-size:2em
 }
-
-.agenda .agenda-group {
-	border: 1px solid black;
-	border-width: 1px 0;
-	margin-bottom: -1px;
+@media ( max-width: 767px ) {
+	.agenda h2{
+		font-size:1.5em
+	}
 }
-
-.agenda .agenda-title {
-	color: #000;
-	color: inherit;
-	text-decoration: inherit;
-	cursor: inherit;
-	display: block;
+.agenda .line {
+	border:3px double black;
+	border-color:rgba(0,0,0,0.7);
+	padding:48px
 }
-
+@media (max-width: 767px) {
+	.agenda .line{
+		padding-left:12px;
+		padding-right:12px
+	}
+}
 .agenda .text-wrapper {
-	padding: 8px 0 12px;
+	padding:8px 0 12px
 }
-
-.text-wrapper {
-	padding: 20px;
+.agenda .span2 {
+	margin-left:-1px
 }
-
-.agenda .agenda-title .time {
-	text-align: left;
-	font-family: monospace;
-	font-size: 0.75em;
-	line-height: 1.333em;
+.agenda hgroup {
+	padding-bottom:24px
 }
-
-.agenda .agenda-title .name {
-	font-size: 1.25em;
-	line-height: 1.8em;
-}
-
 .agenda .span10 {
-	border-left: 1px dashed rgba(0,0,0,0.3);
-	margin-left: -1px;
+	border-left:1px dashed rgba(0,0,0,0.3);
+	margin-left:-1px
 }
-
+@media (max-width: 767px) {
+	.agenda .span10{
+		border-left:none;margin-left:0
+	}
+}
 .agenda .span10 .text-wrapper {
-	padding-left: 12px;
+	padding-left:12px
 }
-
-.agenda .text-wrapper {
-	padding: 8px 0 12px;
+@media (max-width: 767px) {
+	.agenda .span10 .text-wrapper {
+		padding-left:0;padding-top:0
+	}
 }
-
 .agenda .agenda-group {
-	border: 1px solid black;
-	border-width: 1px 0;
-	margin-bottom: -1px;
+	border:1px solid black;
+	border-width:1px 0;
+	margin-bottom:-1px
 }
-
-.agenda .rest {
-	background: black;
-	color: #e7cbb5;
-	text-align: center;
-}
-
-.agenda .rest .name {
-	font-size: 0.75em;
-	line-height: 2em;
-}
+.agenda .agenda-group.off .agenda-content{height:0px;opacity:0}.agenda .agenda-group.on .agenda-content{height:auto;opacity:1}.agenda .two-col .agenda-group{border:none}.agenda .two-col{border-top:1px solid black}.agenda .agenda-title{color:#000;color:inherit;text-decoration:inherit;cursor:inherit;display:block}.agenda .agenda-title:active,.agenda .agenda-title:focus{outline:none}.agenda .agenda-title .time{text-align:left;font-family:monospace;font-size:0.75em;line-height:1.333em}@media (max-width: 767px){.agenda .agenda-title .time{text-align:left;line-height:1}}.agenda .agenda-title .head{font-size:0.938em;line-height:1.6em;color:#900;color:rgba(153,0,0,0.9)}.agenda .agenda-title .name{font-size:1.25em;line-height:1.8em}@media (max-width: 767px){.agenda .agenda-title .name{font-size:0.875em;line-height:1.714em}}.agenda a.agenda-title:hover{background:rgba(0,0,0,0.05)}.agenda .rest{background:black;color:#e7cbb5;text-align:center}.agenda .rest .name{font-size:0.75em;line-height:2em}.agenda .agenda-content{-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s;overflow:hidden}.agenda .agenda-content .span2{text-align:left}@media (max-width: 767px){.agenda .agenda-content .span2{text-align:left;line-height:1}}.agenda .agenda-content .slide,.agenda .agenda-content .span2,.agenda .agenda-content p{font-size:0.75em;line-height:2em}.agenda .agenda-content p:last-child{margin-bottom:12px}.agenda .agenda-content a{color:rgba(0,0,0,0.7);text-decoration:underline}.agenda .agenda-content a:hover{color:#000}.agenda .last-text{padding:24px 0 0;text-align:center}.agenda .slide a{font-weight:bold;color:#366}html.no-js .agenda .agenda-group.off .agenda-content{height:auto;opacity:1}#agenda-old{background:#4b76a7;color:rgba(255,255,255,0.9);padding:20px;position:relative;overflow:hidden}#agenda-old .line{height:374px;position:relative;border:3px solid rgba(255,255,255,0.5);padding:10px;z-index:3}#agenda-old hgroup{margin:0 20px;padding-bottom:24px}#agenda-old hgroup .icon{font-size:48px;line-height:1;position:relative;top:.15em;z-index:3}#agenda-old hgroup h2{font-size:2em;line-height:1.5em;position:relative;z-index:3}#agenda-old hgroup h3{position:absolute;bottom:120px;right:24px;font-size:2.25em;line-height:1.333em;margin-bottom:0.667em;z-index:2;color:rgba(255,255,255,0.7)}@media (max-width: 979px){#agenda-old hgroup h3{font-size:25px}}@media (max-width: 767px){#agenda-old hgroup h3{bottom:24px;right:24px;left:24px;margin-bottom:0;font-size:25px;line-height:1.2}}@media (min-width: 1200px){#agenda-old hgroup h3{font-size:48px}}#agenda-old .fo{position:absolute;left:80px;bottom:-23px;z-index:1;opacity:.5}@media (max-width: 979px){#agenda-old .fo{left:0}}@media (max-width: 767px){#agenda-old .fo{left:-80px}}#agenda-old .fo-text{opacity:.5;position:absolute;top:24px;right:24px}@media (max-width: 979px){#agenda-old .fo-text img{width:300px}}@media (max-width: 767px){#agenda-old .fo-text img{width:220px}}#agenda-old .grid{z-index:0;position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden}#agenda-old .grid .h-line{height:19px;border-bottom:1px dashed #5c83af}#agenda-old .grid .v-line{height:100%;width:19px;float:left;border-right:1px dashed #5c83af}
 
 .copyright {
 	font-size: 0.75em;
