@@ -1,5 +1,7 @@
 /* @override http://test.mopcon.org/css/all.css */
 
+/* @override http://test.mopcon.org/css/all.css */
+
 html,body{
 	font-size:16px;
 	line-height:24px;
@@ -67,7 +69,7 @@ span.wd.ct10,span.slash {
 
 .agenda {
 	padding:24px;
-	/*background:#e8ceb7 url('../images/agenda-bg.jpg');*/
+	background: #f0dec0 url('../img/370381012896.jpeg') repeat;
 }
 .agenda:first-child {
 	padding-bottom:0

@@ -1,5 +1,18 @@
 <div class="copyright">Copyright © 2012 MOPCON. Designed by Donna Chuang、OpenHack、CocoaHeads Kaohsiung</div>
 <script type="text/javascript">
+$(".agenda-title").each(function(){
+  var $this = $(this);
+  var $parent = $this.parent();
+  $this.toggle(function(e){
+    $parent.addClass("on").removeClass("off");
+    e.preventDefault();
+  },function(e){
+    $parent.addClass("off").removeClass("on");
+    e.preventDefault();
+  });
+});
+</script>
+<script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-34651129-1']);
 _gaq.push(['_setDomainName', 'mopcon.org']);

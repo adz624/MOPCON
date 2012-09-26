@@ -17,7 +17,7 @@
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <script src="css/bootstrap/js/bootstrap.js"></script>
-<script>
+<script type="text/javascript">
 $(function () {
     $("a[rel='external']").click(function () {
         this.target = "_blank";
