@@ -31,7 +31,7 @@
   </div>
         <div class="hidden_box"></div>
         <div class="span10 offset1 container-fluid">
-                <h4>贊助商</h4>
+                <legend>贊助商</legend>
                 <ul class="thumbnails">
                     <li class="thumbnail"><a rel="external" href="http://www.acomotech.com/"><img src="img/logo/acomotech_f.png" alt="杏昕科技" /></a>
                     <li class="thumbnail"><a rel="external" href="http://www.EZoUI.com/"><img src="img/logo/Ezo_f.png" alt="中冠資訊" /></a>
