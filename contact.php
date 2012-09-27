@@ -5,9 +5,9 @@
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
+    <?php include_once("navbar.php");?>
     <div class="container" id="all">
-      <?php include_once("navbar.php");?>
-      
+      <div class="space"></div>
       <div class="span9 well offset1">
         <h3>聯絡方式</h3>
       <dl>

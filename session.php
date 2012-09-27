@@ -5,7 +5,7 @@
   <head><?php include_once("header.php");?></head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
-    <div class="container" id="all">
+    <div class="container" id="session">
     <div class="agenda">
         <div class="border">
           <div class="line">
