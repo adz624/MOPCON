@@ -118,8 +118,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Ecowork</div>
-                          <div class="head">(議題審核中)</div>
+                          <div class="name">Michael Su (Ecowork Inc.)</div>
+                          <div class="head">Passbook 應用分享：「pokPass 口袋卡片」行動熟客卡平台</div>
                         </div>
                       </div>
                     </div>
@@ -136,7 +136,11 @@
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p>                          
-                          <p></p>
+                          <p>講者為益科總經理 (General Manager, Ecowork)，交通大學資訊管理研究所</p>
+                          <p>演講大綱為：<br>＊pokPass 是什麼樣的平台？<br>
+＊Passbook 技術簡介<br>
+＊pokPass X Passbook 整合方式介紹<br>
+＊底層服務平台技術介紹</p>
                         </div>
                       </div>
                     </div>
@@ -162,7 +166,7 @@
                       <div class="span10">
                         <div class="text-wrapper">
                           <div class="name">Cervantes (Mozilla Taiwan)</div>
-                          <div class="head">以 HTML 5 打造的新世代移動作業系統 - Firefox OS</div>
+                          <div class="head">以HTML5打造的新世代移動作業系統-Firefox OS</div>
                         </div>
                       </div>
                     </div>
