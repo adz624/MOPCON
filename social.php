@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="section">
-			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/mosut"><img src="img/mosut.jpg" alt="MOSUT logo"></a></p>
+			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/mosut"><img src="img/mosut-b.jpg" alt="MOSUT logo"></a></p>
 			<div class="popover bottom">
 				<div class="arrow">&nbsp;</div>
 				<h3 class="popover-title"><abbr title="台南開放原始碼系統使用者聚會">MOSUT</abbr></h3>
