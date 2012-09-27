@@ -13,8 +13,7 @@
               <div class="span12">
                 <hgroup>
                   <h2 class="wf wf-h2">
-                    <i class="icon">1</i>
-                    Agenda 10/27
+                    10/27 議程表
                   </h2>
                 </hgroup>
               </div>
@@ -279,75 +278,35 @@
                 <div class="name">中場休息</div>
               </div>
             </div>
-            <div class="row-fluid two-col">
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">海景會議廳<br>14:30 ~ 15:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name">Jserv</div>
-                          <div class="head">(議題審核中)</div>
-                        </div>
-                      </div>
+            <div class="agenda-group off">
+              <a class="agenda-title" href="#">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      <div class="time">海景會議廳<br>14:30 ~ 15:20</div>
                     </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          議程介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
+                      <div class="name">Jserv</div>
+                      <div class="head">(議題審核中)</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="agenda-content">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      議程介紹
+                    </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">底層/開發工具議程</p>
                           <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="span6">
-                <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          <div class="time">小型會議室<br>14:30 ~ 15:20</div>
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <div class="name">Sam Ding</div>
-                          <div class="head">敏捷開發行動社群服務架構經驗談</div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="agenda-content">
-                    <div class="row-fluid">
-                      <div class="span2">
-                        <div class="text-wrapper">
-                          議程介紹
-                        </div>
-                      </div>
-                      <div class="span10">
-                        <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
-                          <!-- <div class="video"><a href="">錄影下載</a></div> -->
-                          <p class="sessionType">底層/開發工具議程</p>                          
-                          <p>(大綱審核中)</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -471,8 +430,7 @@
               <div class="span12">
                 <hgroup>
                   <h2 class="wf wf-h2">
-                    <i class="icon">l</i>
-                    Agenda 10/28
+                    10/28 議程表
                   </h2>
                 </hgroup>
               </div>
@@ -541,8 +499,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">未定</div>
-                          <div class="head"></div>
+                          <div class="name">Sam Ding</div>
+                          <div class="head">敏捷開發行動社群服務架構經驗談</div>
                         </div>
                       </div>
                     </div>
@@ -558,7 +516,8 @@
                         <div class="text-wrapper">
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
-                          <p></p>
+                          <p class="sessionType">底層/開發工具議程</p>                          
+                          <p>(大綱審核中)</p>
                         </div>
                       </div>
                     </div>
