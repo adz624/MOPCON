@@ -1,7 +1,5 @@
 /* @override http://test.mopcon.org/css/all.css */
 
-/* @override http://test.mopcon.org/css/all.css */
-
 html,body{
 	font-size:16px;
 	line-height:24px;
@@ -12,11 +10,21 @@ html,body{
 
 @media ( max-width: 979px ){
 	body{padding-top:0}
-	body .brand{text-align:center}
+	body .brand {
+		text-align:center;
+	}	
 }
 
 @media (min-width: 768px) and (max-width: 979px){
 	.span6{float:none;width:auto}
+}
+
+#main_logo.brand {
+	padding-left: 86px;
+}
+
+#language.nav.pull-right {
+	padding-right: 66px;
 }
 
 #functionSeprate {
@@ -42,6 +50,9 @@ html,body{
 
 @media (min-width:979) {
 	#all.container {
+		margin-top: 16px;
+	}
+	.page-header {
 		margin-top: 74px;
 	}
 }

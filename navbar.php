@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a id="main_logo" class="brand" href="index.php"><img class="offset1" src="img/logo.png"/></a>
+        <a id="main_logo" class="brand" href="index.php"><img src="img/logo.png"/></a>
         <div class="nav-collapse">
           <ul class="nav">
             <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
@@ -27,7 +27,7 @@
               </ul>
             </li>
           </ul>
-          <ul class="nav pull-right">
+          <ul id="language" class="nav pull-right">
             <li class="divider-vertical"></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>

@@ -4,9 +4,8 @@
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
-    <div class="container" id="all">
     <?php include_once("navbar.php");?>
-
+    <div class="container" id="all">
     <div class="agenda">
         <div class="border">
           <div class="line">
