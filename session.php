@@ -166,7 +166,7 @@
                       <div class="span10">
                         <div class="text-wrapper">
                           <div class="name">Cervantes (Mozilla Taiwan)</div>
-                          <div class="head">以HTML5打造的新世代移動作業系統-Firefox OS</div>
+                          <div class="head">以 HTML 5 打造的新世代移動作業系統-Firefox OS</div>
                         </div>
                       </div>
                     </div>
@@ -333,7 +333,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Shaka</div>
+                          <div class="name">shakalaca</div>
                           <div class="head">老爹必備的奶瓶與鍵盤駕馭之道</div>
                         </div>
                       </div>
@@ -351,7 +351,7 @@
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
-                          <p>(大綱審核中)</p>
+                          <p>講者由國防役開始在手機品牌廠 / ODM 廠做了 7 年死 RD， 後來莫名其妙就跟朋友合資開了間公司，妄想要做產品改善人類生活。同時也是摩卡兔團隊的 coding monkey，除了寫寫 app 還得當老闆的座騎。</p> <p>本議程分享某位新手爸爸在一個月內一手拿奶瓶餵小孩一手敲鍵盤寫程式參加比賽贏得尿布錢除了愛恨交織更是內牛滿面的故事。透過現成好用的 open source library，開發手機應用程式不必辛苦重新造輪，也不必苦苦等著使用者回報 debug，更可輕鬆加入付費機制突破天龍國的封鎖向鄉民收錢。</p>
                         </div>
                       </div>
                     </div>

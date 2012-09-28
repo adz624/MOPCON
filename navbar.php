@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a id="main_logo" class="brand" href="index.php"><img src="img/logo.png"/></a>
+        <a id="main_logo" class="brand" href="/"><img src="img/logo.png"/></a>
         <div class="nav-collapse">
           <ul class="nav">
             <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
@@ -64,6 +64,8 @@
               <span class="wd ct10" style="visibility: visible; ">(日)</span>
       </div>
     </div>
-    <div class="social"></div>
+    <div class="social">
+      <div class="fb-like" data-href="https://www.facebook.com/mopcon" data-send="false" data-layout="button_count" data-width="50" data-show-faces="true"></div>
+    </div>
   </div>    
 </div>
