@@ -83,8 +83,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">hlb</div>
-                          <div class="head">(議題審核中)</div>
+                          <div class="name">hlb (Handlino)</div>
+                          <div class="head">Registrano: 網路售票平台的技術與挑戰</div>
                         </div>
                       </div>
                     </div>
@@ -101,6 +101,11 @@
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p>
+                          <p>講者為和多 Handlino Inc. 的設計師兼創辦人，快樂網頁設計師 HappyDesigner 社群核心成員。</p>
+                          <p>議程大綱：<br>* Registrano 平台<br>
+* API<br>
+* 系統架構<br>
+* 網路售票平台面臨的挑戰</p>
                         </div>
                       </div>
                     </div>
@@ -118,7 +123,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Michael Su (Ecowork Inc.)</div>
+                          <div class="name">Michael Su (Ecowork)</div>
                           <div class="head">Passbook 應用分享：「pokPass 口袋卡片」行動熟客卡平台</div>
                         </div>
                       </div>
