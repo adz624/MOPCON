@@ -467,8 +467,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">xdite</div>
-                          <div class="head">(議題審核中)</div>
+                          <div class="name">xdite (Rocodev)</div>
+                          <div class="head">pjax : push-state + ajax</div>
                         </div>
                       </div>
                     </div>
@@ -485,7 +485,7 @@
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
-                          <p></p>
+                          <p>講者為中文世界最知名的 Rails Blogger / Developer。熱愛技術分享與網站開發。2007年接觸 Rails 後不可自拔。全能、全棧型球員。獨立開發中小型項目或是組建團隊建構大型項目皆游刃自如。曾就職於台灣城邦集團、HTC ，擔任資深技術主管。現獨立開設軟體顧問公司 Rocodev創業中。</p>
                         </div>
                       </div>
                     </div>
