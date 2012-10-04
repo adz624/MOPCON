@@ -298,7 +298,7 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">Jserv</div>
-                      <div class="head">(議題審核中)</div>
+                      <div class="head">生醫資訊走入移動裝置的新機會</div>
                     </div>
                   </div>
                 </div>
@@ -587,8 +587,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Mikimoto</div>
-                          <div class="head">如何用 Passbook 實作會議報名系統</div>
+                          <div class="name">Mikimoto (Mobilogics)</div>
+                          <div class="head">Kiss your wallet goodbye - 談 Passbook 的實作與應用</div>
                         </div>
                       </div>
                     </div>
@@ -605,7 +605,8 @@
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
-                          <p>(大綱審核中)</p>
+                          <p>講者為 Mobilogics 總工程師，同時也是 MOPCON 發起人、CocoaHeads Kaohsiung Chapter、Code for Kaohsiung 發起人，「Making a difference. One app at a time.」現在正為了下一代致力於改變世界中。</p>
+                          <p>Passbook 是 Apple 在 iOS 6 上新推出的應用，一般人常拿它來跟 NFC 比較，不過這樣的比較並不恰當，在這個議程中我們會帶您從工程觀點來瞭解 Passbook 的經濟體系，以及深入的介紹 Passbook 的實作與範例。</p>
                         </div>
                       </div>
                     </div>
@@ -667,8 +668,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Yuren Ju</div>
-                          <div class="head">Writing Android RESTful client with Google APIs Client library</div>
+                          <div class="name">Yuren Ju (Mozilla Taiwan)</div>
+                          <div class="head">別再手刻 APIs Client 了 - 使用 Google APIs Client for Android</div>
                         </div>
                       </div>
                     </div>
@@ -684,8 +685,9 @@
                         <div class="text-wrapper">
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
-                          <p class="sessionType">前端議程</p> 
-                          <p>(大綱審核中)</p>
+                          <p class="sessionType">前端議程</p>
+                          <p>講者參與台灣開放源碼社群多年，喜歡跟技術的同好聊天，開發專案。也希望能夠有朝一日可以透過自己的能力改變世界。</p>
+                          <p>在 Android 上自己刻 APIs 的歲月結束了！Google 釋出的 APIs Client 在去年正式的提供 Beta 版本，意味著我們多了一種官方提供的途徑解決幾乎每個網路相關 app 都需要撰寫的功能。官方出的 Client 究竟有什麼好用的地方，就讓我們繼續看下去。</p>
                         </div>
                       </div>
                     </div>
