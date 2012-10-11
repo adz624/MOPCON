@@ -83,7 +83,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">hlb (Handlino)</div>
+                          <div class="name">hlb</div>
                           <div class="head">Registrano: 網路售票平台的技術與挑戰</div>
                         </div>
                       </div>
@@ -123,7 +123,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Michael Su (Ecowork)</div>
+                          <div class="name">Michael Su</div>
                           <div class="head">Passbook 應用分享：「pokPass 口袋卡片」行動熟客卡平台</div>
                         </div>
                       </div>
@@ -170,7 +170,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Cervantes (Mozilla Taiwan)</div>
+                          <div class="name">Cervantes</div>
                           <div class="head">以 HTML 5 打造的新世代移動作業系統-Firefox OS</div>
                         </div>
                       </div>
@@ -214,7 +214,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Marty (中冠資訊)</div>
+                          <div class="name">Marty</div>
                           <div class="head">沒有銀彈也不用硬幹~開發行動App新體驗</div>
                         </div>
                       </div>
@@ -297,8 +297,8 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name">Jserv</div>
-                      <div class="head">生醫資訊走入移動裝置的新機會</div>
+                      <div class="name">Jserv, Tix Lo</div>
+                      <div class="head">iPhone 遊戲開發者經驗談：從開發工具到營運</div>
                     </div>
                   </div>
                 </div>
@@ -314,8 +314,19 @@
                     <div class="text-wrapper">
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
-                          <p class="sessionType">底層/開發工具議程</p>
-                          <p></p>
+                          <p class="sessionType">底層/開發工具議程、前端議程</p>
+                          <p>Tix Lo 多年來投入手機系統程式的開發，離開 Sunplus 集團後，共同創立伊洛帕科技 (
+http://www.erawppa.com/ )，致力於開發 iOS 以及 Android
+上的遊戲、應用程式以及資訊科技相關服務，並已累積 Apple AppStore 多項熱門下載紀錄。
+http://www.imobileappsoft.com/aboutme</p>
+                          <p>Jim Huang (黃敬群)，慣用網路暱稱為 "jserv"，熱血工讀生。自 1999 年開始參與開放原始碼 / 自由軟體開發， 曾投入
+Kaffe / GCJ (GCC for Java), 新酷音輸入法, LXDE, Linaro, Android Open Source
+Project, Codezero 等 專案的發展工作。基於對電腦技術與自由軟體的熱愛，於 2009 年共同創立
+0xlab，期許能透過開放發展模式， 拉近台灣硬體廠商與開放原始碼系統的距離，而又執著於自幹作業系統，於 2011 年起活躍於
+JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生活後，邀約同好在古色古香的府城，成立關注開放規格 / 開放原始碼
+/ 開放硬體的社群活動 MOSUT (Meet Open Source Users in Tainan)。</p>
+                          <p>本議程由一位實際投入兩年 iPhone 遊戲的開發者，第一手揭露幾十萬下載的遊戲背後的箇中創作考量，
+從開發工具的選擇、使用，以及調整，進而探討實際上線時的種種議題。</p>
                     </div>
                   </div>
                 </div>
@@ -374,8 +385,8 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Caesar</div>
-                          <div class="head">善用雲端，佈署及備援探討</div>
+                          <div class="name">Caesar Chi</div>
+                          <div class="head">服務永駐，雲端萬歲</div>
                         </div>
                       </div>
                     </div>
@@ -392,7 +403,8 @@
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
-                          <p>(大綱審核中)</p>
+                          <p>講者為人善也，待人親也，南部鄉親是也。敝人一介攻城師，好腳本語言，推廣腳本語言編程，盼跟隨眾賢腳步，邁向康莊大道。</p>
+                          <p>隨著時代的進步，很多事情可以自己做，但是不一定要自己來。很多事情要自己掌控，最慘的就是失控。網站應用服務越來越多，需求越來越龐大，技術幅度也越來越廣。『雲端』到底能夠為開發者做到什麼？做到哪些事情？就讓我們繼續看下去...</p>
                         </div>
                       </div>
                     </div>
@@ -472,7 +484,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">xdite (Rocodev)</div>
+                          <div class="name">xdite</div>
                           <div class="head">pjax : push-state + ajax</div>
                         </div>
                       </div>
@@ -587,7 +599,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Mikimoto (Mobilogics)</div>
+                          <div class="name">Mikimoto</div>
                           <div class="head">Kiss your wallet goodbye - 談 Passbook 的實作與應用</div>
                         </div>
                       </div>
@@ -668,7 +680,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Yuren Ju (Mozilla Taiwan)</div>
+                          <div class="name">Yuren Ju</div>
                           <div class="head">別再手刻 APIs Client 了 - 使用 Google APIs Client for Android</div>
                         </div>
                       </div>
