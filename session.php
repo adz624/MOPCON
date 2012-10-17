@@ -484,7 +484,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">xdite</div>
+                          <div class="name">XDite</div>
                           <div class="head">pjax : push-state + ajax</div>
                         </div>
                       </div>
@@ -502,7 +502,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
-                          <p>講者為中文世界最知名的 Rails Blogger / Developer。熱愛技術分享與網站開發。2007年接觸 Rails 後不可自拔。全能、全棧型球員。獨立開發中小型項目或是組建團隊建構大型項目皆游刃自如。曾就職於台灣城邦集團、HTC ，擔任資深技術主管。現獨立開設軟體顧問公司 Rocodev創業中。</p>
+                          <p>講者為中文世界最知名的 Rails Blogger / Developer。熱愛技術分享與網站開發。2007 年接觸 Rails 後不可自拔。全能、全棧型球員。獨立開發中小型項目或是組建團隊建構大型項目皆游刃自如。曾就職於台灣城邦集團、HTC ，擔任資深技術主管。現獨立開設軟體顧問公司 Rocodev創業中。並於今年與合作團隊一起奪下了臉書世界駭客程式大賽 (Facebook Developers World Hack) 的最大獎。</p>
+                          <p>Turbolinks 是一個即將在 Rails 4 引入的新技術。架構與 pjax - pushState + Ajax 類似。本場講題將會簡介什麼是 pjax，pjax 的概念以及沿革、html5 pushState。Rails ecoystem 如何做到 ultimate fast by default。</p>
                         </div>
                       </div>
                     </div>
@@ -538,7 +539,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">底層/開發工具議程</p>                          
-                          <p>(大綱審核中)</p>
+                          <p>講者 2009 年開始從事系統軟體的研究，經過兩年的研發，於 2011 年完成 PQEMU (多核心系統平行模擬器) 與 ARMVisor (基於ARMv6處理器的虛擬化核心)。有感台灣校園內缺乏創新與創作的風氣，在 2011年10月創立 AppUniverz，立志打造校園內最棒的軟體創作與創業環境，未來將關注行動軟體與社會企業的發展，運用軟體技術解決社會問題。</p>
+                          <p>議程會闡述行動社群服務架構，以及如何運用資源敏捷開發來親自動手打造一個服務</p>
                         </div>
                       </div>
                     </div>
@@ -564,7 +566,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       <div class="span10">
                         <div class="text-wrapper">
                           <div class="name">BlueT</div>
-                          <div class="head">(議題審核中)</div>
+                          <div class="head">家後、小三，攜手並進、美夢成真</div>
                         </div>
                       </div>
                     </div>
@@ -582,6 +584,9 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p></p>
+                          <p>分享從傳統機房式網路服務架構轉向雲端時的改變，以及自身在建立第三方服務時的經歷與掙扎、規劃。
+分享一個以此第三方 LBS 服務建制的 FPS 遊戲，最後當然有 LiveDemo。</p>
+                          <p>講者目前為意門科技 黑手工頭（CTO）、Ubuntu-TW 水電工頭（Founder/Leader）以及國立暨南大學資管系講師。曾多年在 HITCON Wargame 得名，也活躍在 COSCUP、OSDC、KaLUG (since 1998)。熱愛 Perl / Linux / OpenSource。</p>
                         </div>
                       </div>
                     </div>
@@ -780,7 +785,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
-                          <p>(大綱審核中)</p>
+                          <p>台灣雲端應用現況與APP接案甘苦談</p>
+                          <p>講者為頑皮工坊 Sleepnova, Inc. 創辦人</p>
                         </div>
                       </div>
                     </div>
