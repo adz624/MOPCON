@@ -728,7 +728,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">Hacker級贊助商：杏昕科技</div>
-                      <div class="head">(議題審核中)</div>
+                      <div class="head">Mobile devices encounter Bio server</div>
                     </div>
                   </div>
                 </div>
@@ -744,7 +744,11 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                     <div class="text-wrapper">
                       <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
-                      <p></p>
+                      <p>本議程分為下面幾項重點：
+                      1. What is matter with medical device and signal with me.
+                      2. Why I need to monitor my heart?
+                      3. When I encounter Bio cloud....
+                      4. Mobile device rules</p>
                     </div>
                   </div>
                 </div>
@@ -847,7 +851,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">Lightening talk & 閉幕</div>
-                      <div class="head"></div>
+                      <div class="head">開放現場報名</div>
                     </div>
                   </div>
                 </div>
@@ -863,7 +867,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                     <div class="text-wrapper">
                       <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
-                      <p></p>
+                      <p>Lightening Talk 也就是一般通稱的「閃電講」，遊戲規則是每個報名上台的人擁有 5 min 在台上自由發揮的時間，時間一到就必須下台，因為演講的內容必須壓縮在很短的時間內，所以特別有趣且吸引人，常常會有神來之作。
+                      本活動自第一天開始就開放現場報名，額滿為止，請儘速報名以免向隅。</p>
                     </div>
                   </div>
                 </div>
