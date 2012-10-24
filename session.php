@@ -385,8 +385,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Caesar Chi</div>
-                          <div class="head">服務永駐，雲端萬歲</div>
+                          <div class="name">Ericpi</div>
+                          <div class="head">網路服務從 K 到 M</div>
                         </div>
                       </div>
                     </div>
@@ -403,8 +403,9 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
-                          <p>講者為人善也，待人親也，南部鄉親是也。敝人一介攻城師，好腳本語言，推廣腳本語言編程，盼跟隨眾賢腳步，邁向康莊大道。</p>
-                          <p>隨著時代的進步，很多事情可以自己做，但是不一定要自己來。很多事情要自己掌控，最慘的就是失控。網站應用服務越來越多，需求越來越龐大，技術幅度也越來越廣。『雲端』到底能夠為開發者做到什麼？做到哪些事情？就讓我們繼續看下去...</p>
+                          <p>講者為 KKBOX 南部研發中心經理 / 前研發中心資深工程師。</p>
+                          <p>探討網路服務量膨脹時，實務上碰到的問題與因應經驗。</p>
+
                         </div>
                       </div>
                     </div>
@@ -808,8 +809,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <div class="name">Ericpi</div>
-                          <div class="head">網路服務從 K 到 M</div>
+                          <div class="name">Caesar Chi</div>
+                          <div class="head">服務永駐，雲端萬歲</div>
                         </div>
                       </div>
                     </div>
@@ -826,8 +827,8 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <!-- <div class="slide"><a href="">投影片下載</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
-                          <p>講者為 KKBOX 南部研發中心經理 / 前研發中心資深工程師。</p>
-                          <p>探討網路服務量膨脹時，實務上碰到的問題與因應經驗。</p>
+                          <p>講者為人善也，待人親也，南部鄉親是也。敝人一介攻城師，好腳本語言，推廣腳本語言編程，盼跟隨眾賢腳步，邁向康莊大道。</p>
+                          <p>隨著時代的進步，很多事情可以自己做，但是不一定要自己來。很多事情要自己掌控，最慘的就是失控。網站應用服務越來越多，需求越來越龐大，技術幅度也越來越廣。『雲端』到底能夠為開發者做到什麼？做到哪些事情？就讓我們繼續看下去...</p>
                         </div>
                       </div>
                     </div>
