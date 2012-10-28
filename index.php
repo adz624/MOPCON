@@ -42,6 +42,12 @@
                     <li class="thumbnail"><a rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock_f.png" alt="鈞達資訊" /></a>
                 </ul>
         </div>
+        <div class="span10 offset1 container-fluid">
+                <legend>特別感謝</legend>
+                <ul class="thumbnails">
+                    <li class="thumbnail"><a rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu_logo_f.png" alt="樹德科技大學 電算中心" /></a>
+                </ul>
+        </div>
         <div class="hidden_box"></div>
   </div>
     <?php include_once("footer.html");?>
