@@ -42,6 +42,11 @@
                             <li class="thumbnail"><a rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a>
 			</ul>
 		</div>
+			<h3>特別感謝以下單位協助與支持</h3>
+			<ul class="thumbnails">
+                            <li class="thumbnail"><a rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu-logo.png" alt="樹德科技大學" /></a>
+			</ul>
+		</div>
                 <div class="hidden_box"></div>
 <!--		<div class="special">
 			<h3>特別感謝</h3>
