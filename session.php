@@ -98,7 +98,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/hlb/registrano-technology-and-challenge" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p>
                           <p>講者為和多 Handlino Inc. 的設計師兼創辦人，快樂網頁設計師 HappyDesigner 社群核心成員。</p>
@@ -138,7 +138,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/ecowork/ios-passbook-service-platform-pokpass-dot-com-digital-pass-publishing-service" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p>                          
                           <p>講者為益科總經理 (General Manager, Ecowork)，交通大學資訊管理研究所</p>
@@ -185,7 +185,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">底層/開發工具議程</p>                          
                           <p>講者為 PTT 鄉民與阿宅一枚，現任 Mozilla Taiwan 軟體工程師，興趣是 Linux C/C++ 開發與除錯。</p>
@@ -229,7 +229,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p>
                           <p>講者為 EZoEngine OpenSource發起人，現職於中冠資訊</p>
@@ -271,7 +271,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                      <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
                       <p class="sessionType">底層/開發工具議程</p>                      
                       <p>講者為 EZo UIBuilder開發團隊核心技術人員，從事 Java 技術相關的應用開發之平民工程師。</p>
@@ -312,7 +312,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/open?id=0B4BVC6LphSYoRTl2Tk1iZzUtYzA" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">底層/開發工具議程、前端議程</p>
                           <p>Tix Lo 多年來投入手機系統程式的開發，離開 Sunplus 集團後，共同創立伊洛帕科技 (
@@ -364,7 +364,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/file/d/0B2d-OReULXokNUw2WjBJNWRwUmM/edit" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>講者由國防役開始在手機品牌廠 / ODM 廠做了 7 年死 RD， 後來莫名其妙就跟朋友合資開了間公司，妄想要做產品改善人類生活。同時也是摩卡兔團隊的 coding monkey，除了寫寫 app 還得當老闆的座騎。</p> <p>本議程分享某位新手爸爸在一個月內一手拿奶瓶餵小孩一手敲鍵盤寫程式參加比賽贏得尿布錢除了愛恨交織更是內牛滿面的故事。透過現成好用的 open source library，開發手機應用程式不必辛苦重新造輪，也不必苦苦等著使用者回報 debug，更可輕鬆加入付費機制突破天龍國的封鎖向鄉民收錢。</p>
@@ -400,12 +400,11 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/presentation/d/1vhaXPuy5b4Nk3s3cEvkQaSxUXS0y-cgDmjwB8wY0yr4/present" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為 KKBOX 南部研發中心經理 / 前研發中心資深工程師。</p>
                           <p>探討網路服務量膨脹時，實務上碰到的問題與因應經驗。</p>
-
                         </div>
                       </div>
                     </div>
@@ -500,7 +499,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/xdite/turbolinks" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為中文世界最知名的 Rails Blogger / Developer。熱愛技術分享與網站開發。2007 年接觸 Rails 後不可自拔。全能、全棧型球員。獨立開發中小型項目或是組建團隊建構大型項目皆游刃自如。曾就職於台灣城邦集團、HTC ，擔任資深技術主管。現獨立開設軟體顧問公司 Rocodev創業中。並於今年與合作團隊一起奪下了臉書世界駭客程式大賽 (Facebook Developers World Hack) 的最大獎。</p>
@@ -537,7 +536,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">底層/開發工具議程</p>                          
                           <p>講者 2009 年開始從事系統軟體的研究，經過兩年的研發，於 2011 年完成 PQEMU (多核心系統平行模擬器) 與 ARMVisor (基於ARMv6處理器的虛擬化核心)。有感台灣校園內缺乏創新與創作的風氣，在 2011年10月創立 AppUniverz，立志打造校園內最棒的軟體創作與創業環境，未來將關注行動軟體與社會企業的發展，運用軟體技術解決社會問題。</p>
@@ -581,7 +580,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p></p>
@@ -620,7 +619,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>講者為 Mobilogics 總工程師，同時也是 MOPCON 發起人、CocoaHeads Kaohsiung Chapter、Code for Kaohsiung 發起人，「Making a difference. One app at a time.」現在正為了下一代致力於改變世界中。</p>
@@ -664,7 +663,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為 KKBOX 平台技術首席工程師。</p>
@@ -701,7 +700,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="http://yurinfore.blogspot.tw/2012/10/using-google-apis-client-for-android.html" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p>
                           <p>講者參與台灣開放源碼社群多年，喜歡跟技術的同好聊天，開發專案。也希望能夠有朝一日可以透過自己的能力改變世界。</p>
@@ -743,7 +742,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                      <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
                       <p>本議程分為下面幾項重點：
                       1. What is matter with medical device and signal with me.
@@ -787,7 +786,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/presentation/pub?id=1ww6VZl_sFpQ_uBBJivwNNfN8U4ItJj6kTNNorGLzTss&start=false&loop=false&delayms=3000" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>台灣雲端應用現況與APP接案甘苦談</p>
@@ -824,7 +823,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <!-- <div class="slide"><a href="https://docs.google.com/presentation/pub?id=1ww6VZl_sFpQ_uBBJivwNNfN8U4ItJj6kTNNorGLzTss&start=false&loop=false&delayms=3000" rel="external">投影片網址</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為人善也，待人親也，南部鄉親是也。敝人一介攻城師，好腳本語言，推廣腳本語言編程，盼跟隨眾賢腳步，邁向康莊大道。</p>
@@ -866,7 +865,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                      <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
                       <p>Lightening Talk 也就是一般通稱的「閃電講」，遊戲規則是每個報名上台的人擁有 5 min 在台上自由發揮的時間，時間一到就必須下台，因為演講的內容必須壓縮在很短的時間內，所以特別有趣且吸引人，常常會有神來之作。
                       本活動自第一天開始就開放現場報名，額滿為止，請儘速報名以免向隅。</p>
