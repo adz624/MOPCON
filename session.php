@@ -98,7 +98,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/hlb/registrano-technology-and-challenge"  target="_blank">投影片</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p>
                           <p>講者為和多 Handlino Inc. 的設計師兼創辦人，快樂網頁設計師 HappyDesigner 社群核心成員。</p>
@@ -138,7 +138,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/ecowork/ios-passbook-service-platform-pokpass-dot-com-digital-pass-publishing-service" target="_blank">投影片</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p>                          
                           <p>講者為益科總經理 (General Manager, Ecowork)，交通大學資訊管理研究所</p>
@@ -364,7 +364,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/shakalaca/lao-die-bi-bei-de-nai-ping-yu-jian-pan-zhi-dao" target="_blank">投影片</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>講者由國防役開始在手機品牌廠 / ODM 廠做了 7 年死 RD， 後來莫名其妙就跟朋友合資開了間公司，妄想要做產品改善人類生活。同時也是摩卡兔團隊的 coding monkey，除了寫寫 app 還得當老闆的座騎。</p> <p>本議程分享某位新手爸爸在一個月內一手拿奶瓶餵小孩一手敲鍵盤寫程式參加比賽贏得尿布錢除了愛恨交織更是內牛滿面的故事。透過現成好用的 open source library，開發手機應用程式不必辛苦重新造輪，也不必苦苦等著使用者回報 debug，更可輕鬆加入付費機制突破天龍國的封鎖向鄉民收錢。</p>
@@ -400,7 +400,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/presentation/d/1vhaXPuy5b4Nk3s3cEvkQaSxUXS0y-cgDmjwB8wY0yr4/edit" target="_blank">投影片</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為 KKBOX 南部研發中心經理 / 前研發中心資深工程師。</p>
@@ -500,7 +500,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/xdite/turbolinks" target="_blank">投影片</a></div> -->
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為中文世界最知名的 Rails Blogger / Developer。熱愛技術分享與網站開發。2007 年接觸 Rails 後不可自拔。全能、全棧型球員。獨立開發中小型項目或是組建團隊建構大型項目皆游刃自如。曾就職於台灣城邦集團、HTC ，擔任資深技術主管。現獨立開設軟體顧問公司 Rocodev創業中。並於今年與合作團隊一起奪下了臉書世界駭客程式大賽 (Facebook Developers World Hack) 的最大獎。</p>
@@ -620,7 +620,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/mikimoto/kiss-your-wallet-goodbye" target="_blank">投影片</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>講者為 Mobilogics 總工程師，同時也是 MOPCON 發起人、CocoaHeads Kaohsiung Chapter、Code for Kaohsiung 發起人，「Making a difference. One app at a time.」現在正為了下一代致力於改變世界中。</p>
@@ -787,7 +787,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="">投影片下載</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/presentation/pub?id=1ww6VZl_sFpQ_uBBJivwNNfN8U4ItJj6kTNNorGLzTss&start=false&loop=false&delayms=3000" target="_blank">投影片</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>台灣雲端應用現況與APP接案甘苦談</p>
