@@ -229,7 +229,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                          <div class="slide"><a href="http://www.ezoui.com/ppt/2012-10-27/index.html" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p>
                           <p>講者為 EZoEngine OpenSource發起人，現職於中冠資訊</p>
@@ -663,7 +663,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/gslin/api-design-optimized-for-mobile-platform" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為 KKBOX 平台技術首席工程師。</p>
@@ -742,7 +742,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                      <div class="slide"><a href="https://docs.google.com/open?id=0B4BVC6LphSYoT2tIdkZ6Y2VWY1k" rel="external">投影片網址</a></div>
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
                       <p>本議程分為下面幾項重點：
                       1. What is matter with medical device and signal with me.
@@ -823,7 +823,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="https://docs.google.com/presentation/pub?id=1ww6VZl_sFpQ_uBBJivwNNfN8U4ItJj6kTNNorGLzTss&start=false&loop=false&delayms=3000" rel="external">投影片網址</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/open?id=0B4BVC6LphSYoUFRQeWNLT3dBSHM" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">後端議程</p> 
                           <p>講者為人善也，待人親也，南部鄉親是也。敝人一介攻城師，好腳本語言，推廣腳本語言編程，盼跟隨眾賢腳步，邁向康莊大道。</p>
