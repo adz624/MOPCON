@@ -619,7 +619,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                          <div class="slide"><a href="https://speakerdeck.com/mikimoto/kiss-your-wallet-goodbye" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">前端議程</p> 
                           <p>講者為 Mobilogics 總工程師，同時也是 MOPCON 發起人、CocoaHeads Kaohsiung Chapter、Code for Kaohsiung 發起人，「Making a difference. One app at a time.」現在正為了下一代致力於改變世界中。</p>
