@@ -1,6 +1,5 @@
 <?php
   $page = "social";
-  $function["other"] = 'active';  
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>

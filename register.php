@@ -1,6 +1,6 @@
 <?php
   $page = "register";
-//  $function["other"] = 'active';  
+  $function["other"] = 'active';  
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
@@ -26,7 +26,7 @@
 			<li><i class="icon-globe"></i>&nbsp;&nbsp;執行：國立中山大學南部促進產業發展研究中心、KSDG、MOSUT、CocoaHeads Kaohsiung</li>
 			<li><i class="icon-list"></i>&nbsp;&nbsp;備註：本活動供應早、午餐及午茶</li>
 		</ul>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">查看報名現況</a></p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">查看有誰來過</a></p>
   </div>
   </div>
       

@@ -26,7 +26,7 @@
 			<li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄軟體園區A棟頂樓海景會議廳</li>
 			<li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON 2012議程主軸為「電子票劵」，此議題之應用因近年手機硬體相機、NFC，軟體如雲端服務、QR code等技術發展逐漸成形，預計明年將發酵引發產業中新應用，故MOPCON將針對此主題尋求相關實作經驗的工程人員與廠商來產業上、中、下游進行完整探討與經驗分享</li>
 		</ul>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">立刻報名</a></p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">查看有誰來過</a></p>
   </div>
   </div>
         <div class="hidden_box"></div>
