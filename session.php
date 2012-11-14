@@ -185,7 +185,7 @@
                       </div>
                       <div class="span10">
                         <div class="text-wrapper">
-                          <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                          <div class="slide"><a href="https://docs.google.com/open?id=0B4BVC6LphSYodlFWeUloa2F6MGM" rel="external">投影片網址</a></div>
                           <!-- <div class="video"><a href="">錄影下載</a></div> -->
                           <p class="sessionType">底層/開發工具議程</p>                          
                           <p>講者為 PTT 鄉民與阿宅一枚，現任 Mozilla Taiwan 軟體工程師，興趣是 Linux C/C++ 開發與除錯。</p>
@@ -271,7 +271,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                      <div class="slide"><a href="https://docs.google.com/open?id=0B2o_vpv3pSiDdW44bXZRTU95MW8" rel="external">投影片網址</a></div>
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
                       <p class="sessionType">底層/開發工具議程</p>                      
                       <p>講者為 EZo UIBuilder開發團隊核心技術人員，從事 Java 技術相關的應用開發之平民工程師。</p>
@@ -865,7 +865,22 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <!-- <div class="slide"><a href="" rel="external">投影片網址</a></div> -->
+                      <div class="slide">投影片網址：
+                        <ol>
+                          <li><a href="https://docs.google.com/open?id=0B4BVC6LphSYoT0VKZXNxUWpaajQ" rel="external">DOFI - App 3.0 and MVC</a>
+                          <li><a href="https://docs.google.com/open?id=0B4BVC6LphSYoZjJEM1ZxTENrMTg" rel="external">RJ - URP1210 promote</a>
+                          <li>D-Eye - 手寫注音 <!-- <a href="" rel="external"></a> -->
+                          <li><a href="https://docs.google.com/open?id=0B4BVC6LphSYoVDFySVVjTXFnU0E" rel="external">Wayne Liu - App行銷經驗談</a>
+                          <li><a href="https://speakerdeck.com/hlb/fire-dot-app-in-5-minutes-lightning-talk" rel="external">hlb - Fire.app</a>
+                          <li><a href="http://www.slideshare.net/toomore/mopcon-lightning-talk-14919783" rel="external">Toomore - 用照片說故事 - 影像紀錄區</a>
+                          <li>Irvin - Thunderbird上irc | <a href="http://blog.bobchao.net/2012/09/thunderbird-mozilla.html" rel="external">參考連結1</a> | <a href="https://support.mozillamessaging.com/zh-TW/kb/instant-messaging-and-chat" rel="external">參考連結2</a>
+                          <li>宅勳 - App Store與Indie Game Dev. <!-- <a href="" rel="external"></a> -->
+                          <li>Lavey - Startup Digest <!-- <a href="" rel="external"></a> -->
+                          <li><a href="https://docs.google.com/presentation/d/1k7jnNw-6Sw2_JRZ0coFSBZ3WKX9XFs43TMBut27VopQ/edit#slide=id.p" rel="external">legist強&Bob - (可能不叫做)COSCCO研討會</a>
+                          <li>CQD - <!-- <a href="" rel="external"></a> -->
+                          <li><a href="https://docs.google.com/open?id=0B4BVC6LphSYoQnJjWnROODNBbTg" rel="external">Caesar Chi - Node KO talk</a>
+                        </ol>
+                      </div>
                       <!-- <div class="video"><a href="">錄影下載</a></div> -->
                       <p>Lightening Talk 也就是一般通稱的「閃電講」，遊戲規則是每個報名上台的人擁有 5 min 在台上自由發揮的時間，時間一到就必須下台，因為演講的內容必須壓縮在很短的時間內，所以特別有趣且吸引人，常常會有神來之作。
                       本活動自第一天開始就開放現場報名，額滿為止，請儘速報名以免向隅。</p>
