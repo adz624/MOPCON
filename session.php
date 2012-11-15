@@ -877,7 +877,7 @@ JuluOSDev 系統開發者社群。2012 年春季，嘗試搬去台灣南部生�
                           <li>宅勳 - App Store與Indie Game Dev. <!-- <a href="" rel="external"></a> -->
                           <li>Lavey - Startup Digest <!-- <a href="" rel="external"></a> -->
                           <li><a href="https://docs.google.com/presentation/d/1k7jnNw-6Sw2_JRZ0coFSBZ3WKX9XFs43TMBut27VopQ/edit#slide=id.p" rel="external">legist強&Bob - (可能不叫做)COSCCO研討會</a>
-                          <li>CQD - <!-- <a href="" rel="external"></a> -->
+                          <li><a href="https://docs.google.com/open?id=0B4BVC6LphSYodzZHdTJpSnZ5LWs" rel="external">CQD - Open Sourceded commerical Games</a>
                           <li><a href="https://docs.google.com/open?id=0B4BVC6LphSYoQnJjWnROODNBbTg" rel="external">Caesar Chi - Node KO talk</a>
                         </ol>
                       </div>
