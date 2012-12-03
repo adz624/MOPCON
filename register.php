@@ -1,6 +1,6 @@
 <?php
   $page = "register";
-//  $function["other"] = 'active';  
+  $function["other"] = 'active';  
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
@@ -13,6 +13,9 @@
     <div class="span8">
     <h3>報名資訊</h3>
     <ul class="sessionList">
+                  <p class="text-warning"><h3>感謝大家支持，目前已報名額滿，現場報名規則如下：</h3></p>
+                  <p class="text-warning"><h4>活動日將視現場報到率，依時評估是否開放現場報名，預計10/27(六)09:30-10:00、10/28(日)09:50-10:00開放現場候補入場，此時間內依規定入場者，仍會供應午餐；逾時，則否。</h4></p>
+                  <hr />
 		  <li><i class="icon-calendar"></i>&nbsp;&nbsp;活動日期：2012/10/27-28（六日兩天）</li>
 		  <li><i class="icon-time"></i>&nbsp;&nbsp;報名時間：2012/09/10-2012/10/15</li>
 			<li><i class="icon-road"></i>&nbsp;&nbsp;活動地點：高雄軟體園區A棟頂樓海景會議廳 / 高雄市前鎮區復興四路 12 號</li>
@@ -23,7 +26,7 @@
 			<li><i class="icon-globe"></i>&nbsp;&nbsp;執行：國立中山大學南部促進產業發展研究中心、KSDG、MOSUT、CocoaHeads Kaohsiung</li>
 			<li><i class="icon-list"></i>&nbsp;&nbsp;備註：本活動供應早、午餐及午茶</li>
 		</ul>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">立刻報名</a></p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon2012" target="_blank">查看有誰來過</a></p>
   </div>
   </div>
       
