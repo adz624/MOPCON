@@ -32,10 +32,10 @@
             <li class="divider-vertical"></li>
             <li class="dropdown">
             <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,ja'}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-34651129-1'}, 'google_translate_element');
+            }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         
 <!--              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
               <ul class="dropdown-menu">
