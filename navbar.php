@@ -31,10 +31,16 @@
           <ul id="language" class="nav pull-right">
             <li class="divider-vertical"></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+            <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,ja'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+<!--              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">繁體中文</a></li>
-<!--                <li><a href="#">English</a></li>    -->
+                <li><a href="#">English</a></li>    -->
               </ul>
             </li>
           </ul>
