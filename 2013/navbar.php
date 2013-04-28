@@ -54,20 +54,20 @@
   <div class="page-header">
     <div class="date">
       <div class="start">
-              2012
+              2013
               <span class="slash">/</span>
               10
               <span class="slash">/</span>
-              27
+              26
               <span class="wd ct10" style="visibility: visible; ">(六)</span>
       </div>
       ~
       <div class="end">
-              2012
+              2013
               <span class="slash">/</span>
               10
               <span class="slash">/</span>
-              28
+              27
               <span class="wd ct10" style="visibility: visible; ">(日)</span>
       </div>
     </div>
