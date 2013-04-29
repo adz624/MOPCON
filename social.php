@@ -40,10 +40,20 @@
 					<p>台南開放原始碼系統使用者聚會</p>
 				</div>
 			</div>
-		</div>
-	</div>
+        </div>
+		<div class="section">
+			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/kimugroup"><img src="img/kimu.png" alt="MOSUT logo"></a></p>
+			<div class="popover bottom">
+				<div class="arrow">&nbsp;</div>
+			<h3 class="popover-title"><abbr title="高雄獨立遊戲開發者聚會">KIMU</abbr></h3>
+				<div class="popover-content">
+					<p>高雄獨立遊戲開發者聚會(Kaohsiung Indies Meet Up)，簡稱KIMU。2012年由中山大學促進產業發展研究中心協助成立，是一個以高雄為活動據點，推動南臺灣獨立遊戲開發國際化與相關產業活動的非營利性社群組織。</p>
+                </div>
+			</div>
+        </div>
+    </div>
 </div>
-    </div>      
+</div>
   </div>
     <?php include_once("footer.html");?>
   </body>
