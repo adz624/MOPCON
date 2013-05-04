@@ -16,7 +16,7 @@ html,body{
 	body{padding-top:0}
 	body .brand {
 		text-align:center;
-	}	
+	}
 }
 
 @media (min-width: 768px) and (max-width: 979px){
@@ -51,13 +51,13 @@ a.btn.btn-navbar {
 
 .container {
 	overflow:hidden;
-	
+
 	border: 1px solid #ccc;
 	border: 1px solid rgba(0,0,0,0.2);
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	
+
 	-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.8);
 	-moz-box-shadow:0 1px 5px rgba(0,0,0,0.8);
 	box-shadow:0 1px 5px rgba(0,0,0,0.8);
@@ -245,7 +245,7 @@ a {
 }
 
 .thumbnail:hover {
-    border: 1px solid #aaf; 
+    border: 1px solid #aaf;
 }
 
 #aboutUs {
@@ -256,7 +256,7 @@ a {
 
 #aboutUs .section {
 	display: inline-block;
-	width: 250px;
+	width: 225px;
 	margin-left: 2em;
 	vertical-align: top;
 	position: relative;
@@ -291,7 +291,7 @@ a {
 	left: 0;
 	z-index: 1010;
 	display: none;
-	width: 236px;
+	width: 227px;
 	padding: 1px;
 	background-color: #fff;
 	-webkit-background-clip: padding-box;
