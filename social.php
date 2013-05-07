@@ -43,7 +43,7 @@
 			</div>
         </div>
 		<div class="section">
-			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/kimugroup"><img src="img/kimu.png" alt="MOSUT logo"></a></p>
+			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/kimugroup"><img src="img/kimu.png" alt="KIMU logo"></a></p>
 			<div class="popover bottom">
 				<div class="arrow">&nbsp;</div>
 			<h3 class="popover-title"><abbr title="高雄獨立遊戲開發者聚會">KIMU</abbr></h3>
