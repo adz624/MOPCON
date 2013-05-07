@@ -32,12 +32,13 @@
 			</div>
 		</div>
 		<div class="section">
-			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/mosut"><img src="img/mosut-b.jpg" alt="MOSUT logo"></a></p>
+			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/mosut"><img src="img/mosut-c.png" alt="MOSUT logo"></a></p>
 			<div class="popover bottom">
 				<div class="arrow">&nbsp;</div>
 				<h3 class="popover-title"><abbr title="台南開放原始碼系統使用者聚會">MOSUT</abbr></h3>
 				<div class="popover-content">
-					<p>台南開放原始碼系統使用者聚會</p>
+                    <p>台南開放原始碼系統使用者聚會</p>
+                    <a class="tumbnail" href="https://code.google.com/p/mosut/">官方網站</a>
 				</div>
 			</div>
         </div>
