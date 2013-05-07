@@ -24,7 +24,7 @@
 			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/cocoaheads.kaohsiung/"><img src="img/cocoaheads.jpg" alt="CocoaHeads Kaohsiung logo"></a></p>
 			<div class="popover bottom">
 				<div class="arrow">&nbsp;</div>
-				<h3 class="popover-title"><abbr title="Kaohsiung Software Developer Group">CocoaHeads Kaohsiung</abbr></h3>
+				<h3 class="popover-title"><abbr title="CocoaHeads Kaohsiung">CocoaHeads Kaohsiung</abbr></h3>
 				<div class="popover-content">
 				 	<p>CocoaHeads Kaohsiung 定位為南台灣 Mac/iOS 開發者的固定聚會。聚會不定期邀請各地講者與會員特定主題或經驗分享。
 			您可能會遇到：開發者在聚會上分享各自的心得與點子。也可能會遇到：開發者在聚會上與使用者面對面溝通，與其他開發人員面對面分享。您可能會在此找到新合作夥伴或更有挑戰性的工作、甚至新的商機。</p>
