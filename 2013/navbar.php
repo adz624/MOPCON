@@ -49,30 +49,3 @@
     </div><!-- /navbar-inner -->
     <div id="functionSeprate"></div>
   </div><!-- /navbar -->
-
-<div class="" id="top">
-  <div class="page-header">
-    <div class="date">
-      <div class="start">
-              2013
-              <span class="slash">/</span>
-              10
-              <span class="slash">/</span>
-              26
-              <span class="wd ct10" style="visibility: visible; ">(六)</span>
-      </div>
-      ~
-      <div class="end">
-              2013
-              <span class="slash">/</span>
-              10
-              <span class="slash">/</span>
-              27
-              <span class="wd ct10" style="visibility: visible; ">(日)</span>
-      </div>
-    </div>
-    <div class="social">
-      <div class="fb-like" data-href="https://www.facebook.com/mopcon" data-send="false" data-layout="button_count" data-width="50" data-show-faces="true"></div>
-    </div>
-  </div>    
-</div>
