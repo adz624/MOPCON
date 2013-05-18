@@ -252,12 +252,13 @@ a {
 	padding-bottom: 1.5em;
 	border-bottom: 1px dashed #a8a8a8;
 	margin-bottom: 1.5em;
+    text-align:center;
 }
 
 #aboutUs .section {
 	display: inline-block;
-	width: 225px;
-	margin-left: 2em;
+	width: 250px;
+	margin: 2em;
 	vertical-align: top;
 	position: relative;
 }
@@ -358,6 +359,7 @@ abbr[title] {
 
 .popover-content {
 	padding: 9px 14px;
+    text-align:left;
 }
 
 .popover-content p, .popover-content ul, .popover-content ol {
