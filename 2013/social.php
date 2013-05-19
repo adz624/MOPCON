@@ -38,12 +38,16 @@
 				<h3 class="popover-title"><abbr title="台南開放原始碼系統使用者聚會">MOSUT</abbr></h3>
 				<div class="popover-content">
 					<p>台南開放原始碼系統使用者聚會</p>
+		    <p><a href="https://code.google.com/p/mosut/">官方網站</a></p>
+		</div>
+			</div>
+	</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-    </div>      
+    </div>
   </div>
     <?php include_once("footer.html");?>
   </body>
