@@ -24,6 +24,7 @@
                 <li class="divider"></li>
                 <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li>
                 <li class="<?php echo $function['contact']; ?>"><a href="contact.php">聯絡我們</a></li>
+                <li class="divider"></li>
                 <li class="<?php echo $function['activity']; ?>"><a href="activity.php">2012 花絮</a></li>
               </ul>
             </li>
