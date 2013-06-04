@@ -15,7 +15,6 @@
             <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
             <li class="<?php echo $function['sponser']; ?>"><a href="sponser.php">贊助</a></li>
             <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
-            <li class="<?php echo $function['activity']; ?>"><a href="activity.php">花絮</a></li>
             <li class="dropdown <?php echo $function['other']; ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -25,6 +24,7 @@
                 <li class="divider"></li>
                 <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li>
                 <li class="<?php echo $function['contact']; ?>"><a href="contact.php">聯絡我們</a></li>
+                <li class="<?php echo $function['activity']; ?>"><a href="activity.php">2012 花絮</a></li>
               </ul>
             </li>
           </ul>
