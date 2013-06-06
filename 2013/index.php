@@ -4,49 +4,14 @@
 <html lang="zh-TW" class="">
   <head>
     <?php include_once("header.php");?>
-    <style type="text/css">
-
-    section {
-      padding: 100px 0 100px 0;
-    }
-
-    #hero-section {
-      background-color: #0066CC;
-      color: #fff;
-    }
-
-    #registeration-section {
-      background-color: #E0E0E0;
-    }
-
-    .data-cell {
-      vertical-align: middle;
-    }
-
-    .hero-unit {
-      background-color: #0066CC;
-    }
-
-    .bottom-band {
-      height: 15px;
-      background-color: #E6E600;
-    }
-    </style>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
-    <section id="hero-section">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="hero-unit">
-              <h1>I code, I spread, I connect.</h1>
-              <p style="margin-top: 20px;">-- <i>MOPCON 2013.</i></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="slogon">
+      <img src="img/MOPCON_2013Web_index.png">
+        <!--<h1>I code, I spread, I connect.</h1>
+        <p style="margin-top: 20px;">-- <i>MOPCON 2013.</i></p> -->
+    </div>
     <section>
       <div class="container">
         <div class="row">
@@ -74,34 +39,6 @@
         <div class="row">
           <div class="span4 offset4 data-cell">
             <p>本屆活動日期訂於 2013 年 10 月 26 ~ 27 日於高雄國際會議中心 (ICCK) 盛大舉行，請密切關注我們的發展。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="registeration-section">
-      <div class="container">
-        <div class="span8 offset2">
-          <h3 class="text-center">報名資訊</h3>
-          <ul class="sessionList unstyled">
-            <li><i class="icon-time"></i>&nbsp;&nbsp;時間：2013/10/26-27（六日兩天）</li>
-            <li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心 (ICCK) <i class="icon-map-marker"></i></li>
-            <!--
-            <li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON 2012議程主軸為「電子票劵」，此議題之應用因近年手機硬體相機、NFC，軟體如雲端服務、QR code等技術發展逐漸成形，預計明年將發酵引發產業中新應用，故MOPCON將針對此主題尋求相關實作經驗的工程人員與廠商來產業上、中、下游進行完整探討與經驗分享</li>
-            -->
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="sponsor-section">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <legend class="text-center">贊助商</legend>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span12">
-            <legend class="text-center">特別感謝</legend>
           </div>
         </div>
       </div>

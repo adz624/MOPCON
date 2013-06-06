@@ -429,3 +429,8 @@ abbr[title] {
   font-style: normal; /* Semi Bold */
   font-weight: 600;
 }
+
+.slogon {
+	padding-bottom: 30px;
+	margin-top: 60px;
+}

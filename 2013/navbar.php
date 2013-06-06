@@ -13,7 +13,7 @@
         <div class="nav-collapse">
           <ul class="nav">
             <!-- <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li> -->
-            <li class="<?php echo $function['sponser']; ?>"><a href="sponser.php">贊助</a></li>
+            <li class="<?php echo $function['sponsor']; ?>"><a href="sponsor.php">贊助</a></li>
             <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
             <li class="dropdown <?php echo $function['other']; ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
