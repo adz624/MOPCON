@@ -11,8 +11,7 @@
 	      <div id="sponsorList">
 		<div class="offset1 span9 main well-large">
 			<h3>徵求贊助商</h3>
-      <p>我們目前強力徵求贊助廠商，請快與我們<a href="mailto:sponsor@mopcon.org?subject=我想贊助 2013 年的行動科技應用開發者年會(MOPCON)
-                                               &body=非常歡迎您願意贊助 2013 年的行動科技應用開發者年會(MOPCON)，請留下資料索取贊助手冊，我們會有專人跟您聯繫。">聯繫</a></p>
+      <p>強力徵求贊助廠商，請快與我們（ sponsor [at] mopcon.org ）聯繫</a></p>
 		</div>
 		<div class="offset1 span9 second well-large">
 			<h3>執行單位：</h3>

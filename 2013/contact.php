@@ -1,6 +1,6 @@
 <?php
   $page = "contact";
-  $function["other"] = 'active';  
+  $function["other"] = 'active';
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
@@ -11,8 +11,8 @@
       <div class="span9 well offset1">
         <h3>聯絡方式</h3>
       		<dl>
-            <dd>&nbsp;&nbsp;MOPCON&nbsp;&nbsp;2013&nbsp;&nbsp;聯繫人</dd>
-		    <dd><i class="icon-envelope">&nbsp;</i>&nbsp;E-mail：<a href="mailto:sponsor@mopcon.org?Subject=[MOPCON] web site feedback">sponsor@mopcon.org</a></dd>
+            <dd>MOPCON&nbsp;&nbsp;2013&nbsp;&nbsp;聯繫人</dd>
+		        <dd><i class="icon-envelope">&nbsp;</i>&nbsp;E-mail： sponsor [at] mopcon.org</dd>
 		    </dl>
       		<p>&nbsp;</p>
       		<p>&nbsp;</p>

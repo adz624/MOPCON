@@ -1,7 +1,7 @@
 <?php
   $function[$page] = 'active';
 ?>
-  <div class="navbar navbar-fixed-top">
+  <div class="navbar">
     <div class="navbar-inner ">
       <div class="" style="width: auto;">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -18,14 +18,14 @@
             <li class="dropdown <?php echo $function['other']; ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="<?php echo $function['map']; ?>"><a href="map.php">交通</a></li>
+                <!-- <li class="<?php echo $function['map']; ?>"><a href="map.php">交通</a></li> -->
                 <!-- <li class="<?php echo $function['register']; ?>"><a href="register.php">報名</a></li> -->
 <!--                <li class="<?php echo $function['cfp']; ?>"><a href="cfp.php">議程投稿</a></li>     -->
-                <li class="divider"></li>
-                <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li>
+                <!-- <li class="divider"></li> -->
+                <!-- <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li> -->
                 <li class="<?php echo $function['contact']; ?>"><a href="contact.php">聯絡我們</a></li>
                 <li class="divider"></li>
-                <li class="<?php echo $function['activity']; ?>"><a href="activity.php">2012 花絮</a></li>
+                <li class="<?php echo $function['activity']; ?>"><a href="../2012/activity.php">2012 花絮</a></li>
               </ul>
             </li>
           </ul>
