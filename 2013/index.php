@@ -8,7 +8,7 @@
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
     <div class="slogon">
-      <img src="img/MOPCON_2013Web_index.png">
+      <img src="img/MOPCON_2013Web_index.jpg"/>
         <!--<h1>I code, I spread, I connect.</h1>
         <p style="margin-top: 20px;">-- <i>MOPCON 2013.</i></p> -->
     </div>
