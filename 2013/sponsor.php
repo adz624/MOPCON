@@ -6,7 +6,7 @@
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
     <div class="container" id="all">
-      <div class="space"></div>
+      <!-- <div class="space"></div> -->
       <div class="article">
 	      <div id="sponsorList">
 		<div class="offset1 span9 main well-large">

@@ -60,9 +60,6 @@ a.btn.btn-navbar {
 }
 
 @media (min-width:979) {
-	#all.container {
-		margin-top: 16px;
-	}
 	.page-header {
 		margin-top: 74px;
 	}
@@ -432,5 +429,5 @@ abbr[title] {
 
 .slogon {
 	padding-bottom: 30px;
-	margin-top: 60px;
+	margin-top: -20px;
 }
