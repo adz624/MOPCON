@@ -25,7 +25,7 @@
                 <!-- <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li> -->
                 <li class="<?php echo $function['contact']; ?>"><a href="contact.php">聯絡我們</a></li>
                 <li class="divider"></li>
-                <li class="<?php echo $function['activity']; ?>"><a href="../2012/activity.php">2012 花絮</a></li>
+                <li class="<?php echo $function['session']; ?>"><a href="../2012/session.php">MOPCON 2012</a></li>
               </ul>
             </li>
           </ul>
