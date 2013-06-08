@@ -12,7 +12,7 @@
 		<div class="offset1 span9 second well-large">
 			<h3>照片集：</h3>
 			<ul class="thumbnails">
-                            <li class="thumbnail">整理中，敬請期待</li>
+        <li class="thumbnail"><a href="gallery.php">MOPCON 2012照片集</a></li>
 			</ul>
 		</div>
 		<div class="offset1 span9 second well-large">
