@@ -18,8 +18,8 @@
 		<div class="offset1 span9 second well-large">
 			<h3>irc log：(感謝 chusaing 協助紀錄)</h3>
 			<ul class="thumbnails">
-                            <li class="thumbnail"><a rel="external" href="https://raw.github.com/chusaing/irc_log/master/mopcon/irc-mopcon-20121027.log">day 1 (10/27)</a></li>
-                            <li class="thumbnail"><a rel="external" href="https://raw.github.com/chusaing/irc_log/master/mopcon/irc-mopcon-20121028.log">day 2 (10/28)</a></li>
+        <li class="thumbnail"><a rel="external" href="irclog/day1.log">day 1 (10/27)</a></li>
+        <li class="thumbnail"><a rel="external" href="irclog/day2.log">day 2 (10/28)</a></li>
 			</ul>
 		</div>
 		<div class="offset1 span9 second well-large">
