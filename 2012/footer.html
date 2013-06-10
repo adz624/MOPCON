@@ -11,6 +11,23 @@ $(".agenda-title").each(function(){
     e.preventDefault();
   });
 });
+
+$(".worker-title").each(function(){
+  var $this = $(this);
+  var $parent = $this.parent();
+  $this.toggle(function(e){
+    $parent.addClass("on").removeClass("off");
+	$this.html("ｃｌｏｓｅ");
+    e.preventDefault();
+  },function(e){
+    $parent.addClass("off").removeClass("on");
+	$this.html("ｍｏｒｅ");
+    e.preventDefault();
+  });
+});
+
+
+
 </script>
 <script type="text/javascript">
 var _gaq = _gaq || [];
