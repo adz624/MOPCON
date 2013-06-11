@@ -431,3 +431,10 @@ abbr[title] {
 	padding-bottom: 30px;
 	margin-top: -20px;
 }
+
+.fb-like {
+	top: 370px;
+	float: left;
+	clear: both;
+	display: block;
+}
