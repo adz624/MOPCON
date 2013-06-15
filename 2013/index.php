@@ -5,6 +5,13 @@
   <head>
     <?php include_once("header.php");?>
     <link rel="stylesheet" type="text/css" href="css/shareme.css"/>
+    <style type="text/css">
+      .copyright {
+        background-color: #292929;
+        color: #cccccc;
+        padding-bottom: 10px;
+      }
+    </style>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
@@ -47,7 +54,7 @@
           </div>
         </div>
     </div>
-    <?php include_once("footer.html");?>
+    <?php include_once("footer.html"); ?>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/sharrre/1.3.4/jquery.sharrre-1.3.4.min.js"></script>
     <script type="text/javascript" src="scripts/shareme.js"></script>
   </body>
