@@ -1,9 +1,23 @@
+/* @override http://mopcon.org/css/all.css */
+
+/* @override http://test.mopcon.org/css/all.css */
+
+/* @override http://test.mopcon.org/css/all.css */
+
 html,body{
 	font-size:16px;
 	line-height:24px;
 	-webkit-text-size-adjust:100%;
 	padding:0;
 	background-color: rgb(215, 216, 218);
+}
+
+.navbar-inner div {
+  padding-top: 5px;
+}
+
+#google_translate_elemnt {
+  margin-top: -8px;
 }
 
 @media ( max-width: 979px ){
@@ -208,14 +222,6 @@ a {
 	text-decoration: none;
 }
 
-.navbar-inner div {
-	padding-top: 5px;
-}
-
-#google_translate_element {
-	margin-top: -8px;
-}
-
 /* 社群頁面 */
 .thumbnail {
 	display: block;
@@ -252,15 +258,15 @@ a {
 	padding-bottom: 1.5em;
 	border-bottom: 1px dashed #a8a8a8;
 	margin-bottom: 1.5em;
+    text-align:center;
 }
 
 #aboutUs .section {
 	display: inline-block;
 	width: 250px;
-	margin-left: 2em;
+	margin: 2em;
 	vertical-align: top;
 	position: relative;
-    padding: 20px 0px;
 }
 
 #aboutUs .section .fontLogo {
@@ -292,7 +298,7 @@ a {
 	left: 0;
 	z-index: 1010;
 	display: none;
-	width: 236px;
+	width: 227px;
 	padding: 1px;
 	background-color: #fff;
 	-webkit-background-clip: padding-box;
@@ -359,6 +365,7 @@ abbr[title] {
 
 .popover-content {
 	padding: 9px 14px;
+    text-align:left;
 }
 
 .popover-content p, .popover-content ul, .popover-content ol {
@@ -428,12 +435,12 @@ abbr[title] {
 }
 
 .slogon {
-	padding-bottom: 30px;
-	margin-top: -20px;
+  padding-bottom: 30px;
+  margin-top: -20px;
 }
 
 .fb-like {
-	float: left;
-	clear: both;
-	display: block;
+       float: left;
+       clear: both;
+       display: block;
 }
