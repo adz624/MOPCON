@@ -4,26 +4,21 @@
 <html lang="zh-TW" class="">
   <head>
     <?php include_once("header.php");?>
+    <link rel="stylesheet" type="text/css" href="css/shareme.css"/>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
     <div class="slogon">
       <img src="img/MOPCON_2013Web_index.jpg"/>
-        <!--<h1>I code, I spread, I connect.</h1>
-        <p style="margin-top: 20px;">-- <i>MOPCON 2013.</i></p> -->
     </div>
     <div class="container" id="all">
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=191415824227657";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-like" data-href="https://www.facebook.com/mopcon"
-           data-send="false" data-width="30" data-show-faces="true"></div>
-
+        <div class="row">
+          <div class="span12">
+            <div class="" id="shareme-box">
+              <div id="shareme" data-url="http://mopcon.org/" data-text="推薦 MOPCON" data-title="推薦 MOPCON"></div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="span4 data-cell">
             <img src="pic/index/300x200/DSC_3338.jpg" class="img-rounded"/>
@@ -53,5 +48,7 @@
         </div>
     </div>
     <?php include_once("footer.html");?>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/sharrre/1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+    <script type="text/javascript" src="scripts/shareme.js"></script>
   </body>
 </html>
