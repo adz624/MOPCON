@@ -292,7 +292,7 @@ a {
 	left: 0;
 	z-index: 1010;
 	display: none;
-	width: 227px;
+	width: 260px;
 	padding: 1px;
 	background-color: #fff;
 	-webkit-background-clip: padding-box;
@@ -365,6 +365,39 @@ abbr[title] {
 .popover-content p, .popover-content ul, .popover-content ol {
 	margin-bottom: 0;
 }
+
+/* 花絮 */
+#about {
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+}
+#about .section {
+	display: inline-block;
+	width: 220px;
+	margin-right: 4em;
+	vertical-align: top;
+	position: relative;
+}
+#about .section .popover {
+	margin: 1.5em auto 0;
+	display: block;
+	position: relative;
+}
+.worker-title{
+	position:absolute;
+	right:9px;
+	bottom:9px;
+}
+.worker .worker-group.off .worker-content {
+	height:0px;
+	opacity:0
+}
+.worker .worker-group.on .worker-content{
+	height:auto;
+	opacity:1
+}
+
+
 
 /* 贊助商 */
 #sponsorList .main, #sponsorList .second, #sponsorList .special {
