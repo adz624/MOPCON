@@ -1,2 +1,0 @@
-<!DOCTYPE html>
-<img src="https://lh4.googleusercontent.com/-XQl3NiqqxVA/UUmuEc9ZezI/AAAAAAAAAPE/PJmeycMAF9c/w683-h455-p-o/IMG_8499.JPG" class="tDMXke" style=" width: 488px; height: 325px; margin-top: 0px;margin-left: 0px;" alt="¬Û¤ù"/>
