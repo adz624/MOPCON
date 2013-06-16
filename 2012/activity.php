@@ -55,7 +55,64 @@
 					<div class="popover bottom">
 						<p class="popover-title" >Ericpi</p>
 						<div class="popover-content">
-							<p>這是個打群架的時代
+							<p>我已經不想再講好日子不長的悲苦狀況
+								 <br></br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="popover bottom">
+						<p class="popover-title" >Ericpi</p>
+						<div class="popover-content">
+							<p>因為，這是個打群架的時代...
+								 <br></br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="popover bottom">
+						<p class="popover-title" >Ericpi</p>
+						<div class="popover-content">
+							<p>祝福大家都能開發出需要煩惱數量級問題的服務
+								 <br></br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="popover bottom">
+						<p class="popover-title" >Shakalaca</p>
+						<div class="popover-content">
+							<p>寫 App 一定有風險，離職寫 App 有轉有賠，
+								 想寫 App 賺錢前應詳閱 Google 網站，
+								 公開搜尋 "App 賠錢" 結果。
+								 <br></br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="popover bottom">
+						<p class="popover-title" >Sleepnova</p>
+						<div class="popover-content">
+							<p>你以為你在創新，其實是在代工。
+								 <br></br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="popover bottom">
+						<p class="popover-title" >Casesar</p>
+						<div class="popover-content">
+							<p>雲端？那些神才有辦法碰到的東西？
 								 <br></br>
 							</p>
 						</div>
@@ -123,8 +180,8 @@
 					<div class="offset1 span9 second well-large">
 			<h3>irc log：(感謝 chusaing 協助紀錄)</h3>
 			<ul class="thumbnails">
-        <li class="thumbnail"><a rel="external" href="day1.php">day 1 (10/27) 共計 130 人與會</a></li>
-        <li class="thumbnail"><a rel="external" href="irclog/day2.log">day 2 (10/28) 共計 116 人與會</a></li>
+        <li class="thumbnail"><a rel="" href="day1.php">day 1 (10/27) 共計 130 人與會</a></li>
+        <li class="thumbnail"><a rel="" href="day2.php">day 2 (10/28) 共計 116 人與會</a></li>
 			</ul>
 					</div>
 
