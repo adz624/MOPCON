@@ -460,3 +460,10 @@ abbr[title] {
   font-style: normal; /* Semi Bold */
   font-weight: 600;
 }
+
+.copyright {
+  background-color: #292929;
+  color: #cccccc;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
