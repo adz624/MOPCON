@@ -3,7 +3,11 @@
 ?>
   <div class="navbar">
     <div class="navbar-inner">
-      <div class="container">
+      <?php
+      // the overrided class 'container' in the 'navbar' will make dropdown-menu can't be display correctly.
+      // <div class="container">
+      ?>
+      <div class="navbar-container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -17,7 +21,7 @@
             <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
             <li class="dropdown <?php echo $function['other']; ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" role="menu">
                 <!-- <li class="<?php echo $function['map']; ?>"><a href="map.php">交通</a></li> -->
                 <!-- <li class="<?php echo $function['register']; ?>"><a href="register.php">報名</a></li> -->
 <!--                <li class="<?php echo $function['cfp']; ?>"><a href="cfp.php">議程投稿</a></li>     -->
@@ -37,12 +41,13 @@
                   new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-34651129-1'}, 'google_translate_element');
             }
             </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<!--              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+<!--
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">繁體中文</a></li>
-                <li><a href="#">English</a></li>    -->
+                <li><a href="#">English</a></li>
               </ul>
+-->
             </li>
           </ul>
         </div><!-- /.nav-collapse -->
