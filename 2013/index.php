@@ -5,13 +5,6 @@
   <head>
     <?php include_once("header.php");?>
     <link rel="stylesheet" type="text/css" href="css/shareme.css"/>
-    <style type="text/css">
-      .copyright {
-        background-color: #292929;
-        color: #cccccc;
-        padding-bottom: 10px;
-      }
-    </style>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>

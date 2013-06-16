@@ -444,3 +444,9 @@ abbr[title] {
        clear: both;
        display: block;
 }
+
+.copyright {
+  background-color: #292929;
+  color: #cccccc;
+  padding-bottom: 10px;
+}
