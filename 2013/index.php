@@ -15,7 +15,7 @@
         <div class="row">
           <div class="span12">
             <div class="" id="shareme-box">
-              <div id="shareme" data-url="http://mopcon.org/" data-text="推薦 MOPCON" data-title="推薦 MOPCON"></div>
+              <div id="shareme" data-url="https://www.facebook.com/mopcon" data-text="推薦 MOPCON" data-title="推薦 MOPCON"></div>
             </div>
           </div>
         </div>
