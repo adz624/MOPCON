@@ -15,7 +15,7 @@
 		      <div class="offset1 span9 second well-large">
             <h3>執行單位：</h3>
             <ul class="thumbnails">
-				      <li class="thumbnail"><a rel="external" href="http://www.facebook.com/groups/KSDGroup/"><img alt="Kaohsiung Software Developer Group logo" src="img/logo/ksdg-logo.png" /></a></li>
+				      <li class="thumbnail"><a rel="external" href="http://www.facebook.com/groups/KSDGroup/"><img alt="Kaohsiung Software Developer Group logo" src="img/logo/ksdg.png" /></a></li>
 				      <li class="thumbnail"><a rel="external" href="http://www.facebook.com/groups/cocoaheads.kaohsiung/"><img alt="CocoaHeads Kaohsiung logo" src="img/logo/cocoaheads-logo.png" /></a></li>
 				      <li class="thumbnail"><a rel="external" href="http://www.facebook.com/groups/mosut"><img alt="MOSUT logo" src="img/logo/mosut-logo.png" /></a></li>
               <li class="thumbnail"><a rel="external" href=""><img alt="KIMU logo" src="img/logo/kimu.jpeg" /></a></li>
