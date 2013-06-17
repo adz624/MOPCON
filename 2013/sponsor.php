@@ -19,6 +19,7 @@
 				      <li class="thumbnail"><a rel="external" href="http://www.facebook.com/groups/cocoaheads.kaohsiung/"><img alt="CocoaHeads Kaohsiung logo" src="img/logo/cocoaheads-logo.png" /></a></li>
 				      <li class="thumbnail"><a rel="external" href="http://www.facebook.com/groups/mosut"><img alt="MOSUT logo" src="img/logo/mosut-logo.png" /></a></li>
               <li class="thumbnail"><a rel="external" href=""><img alt="KIMU logo" src="img/logo/kimu.jpeg" /></a></li>
+              <li class="thumbnail"><a rel="external" href="http://kalug.linux.org.tw/"><img alt="KaLUG logo" src="img/logo/kalug.png"/></a></li>
             </ul>
           </div>
 		      <div class="offset1 span9 second well-large">
