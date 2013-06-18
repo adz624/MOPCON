@@ -8,7 +8,7 @@
   <div class="container" id="all">
     <div class="space"></div>
     <div class="span11">
-      <div class="article" style="background-color: #FFF;">
+      <div class="article">
 	<div id="aboutUs">
 		<div class="section">
 			<p class="myLogo"><a class="thumbnail" href="http://www.facebook.com/groups/KSDGroup/"><img src="img/ksdg.png" alt="Kaohsiung Software Developer Group"</img></a></p>

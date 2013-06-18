@@ -11,7 +11,7 @@
     <div class="slogon">
       <img src="img/MOPCON_2013Web_index.jpg"/>
     </div>
-    <div class="container" id="all">
+    <div class="container" id="all" style="padding: 10px;">
         <div class="row">
           <div class="span12">
             <div class="" id="shareme-box">
