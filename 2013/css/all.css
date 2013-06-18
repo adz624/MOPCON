@@ -59,7 +59,7 @@ a.btn.btn-navbar {
 
 .container {
 	overflow:hidden;
-/*
+
 	border: 1px solid #ccc;
 	border: 1px solid rgba(0,0,0,0.2);
 	-webkit-border-radius: 6px;
@@ -70,7 +70,8 @@ a.btn.btn-navbar {
 	-moz-box-shadow:0 1px 5px rgba(0,0,0,0.8);
 	box-shadow:0 1px 5px rgba(0,0,0,0.8);
 	background-color:white;
-*/
+
+margin-bottom: 20px;
 }
 
 @media (min-width:979) {
