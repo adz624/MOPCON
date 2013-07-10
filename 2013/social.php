@@ -37,7 +37,9 @@
 				<div class="arrow">&nbsp;</div>
 				<h3 class="popover-title"><abbr title="台南開放原始碼系統使用者聚會">MOSUT</abbr></h3>
 				<div class="popover-content">
-                    <p>台南開放原始碼系統使用者聚會</p>
+          <p>MOSUT </br>(Meet Open Source Users in Tainan)
+          是一群生活在台南、對資訊科技有熱情的朋友共同發起的聚會，關注開放標準/開放規格、自由軟體 /
+          開放原始碼，進而到開放硬體等議題，每兩周舉辦一次聚會，提供大學院校、公司團體，以及個人作技術討論交流的機會。</p>
                     <a href="https://code.google.com/p/mosut/">官方網站</a>
 				</div>
 			</div>
