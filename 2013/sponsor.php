@@ -34,7 +34,7 @@
             <h3>Geek級贊助商</h3>
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
-              <li class="thumbnail"><a rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
+              <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
               <!-- <li class="thumbnail"><a rel="external" href="http://www.mobilogics.com.tw"><img src="img/logo/mobilogics-logo.png" alt="明錄國際" /></a> -->
               <!-- <li class="thumbnail"><a rel="external" href="http://www.moko365.com"><img src="img/logo/moko-logo.png" alt="Moko365" /></a> -->
               <!-- <li class="thumbnail"><a rel="external" href="http://www.moregeek.com"><img src="img/logo/moregeek-logo.png" alt="摩鉅科技" /></a> -->
