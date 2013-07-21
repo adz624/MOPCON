@@ -10,22 +10,57 @@
     // $fixer = "checksuexec ".escapeshellarg($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']);
     // echo `$fixer`;
   }
+  
+  $full_url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
 <html lang="zh-TW">
   <head>
     <?php include_once("../2013/header.php");?>
+    <style>
+    body {
+      text-align:center;
+      color:#444;
+    }
+    .container {
+      text-align:left;
+      width:800px;
+      margin:3em auto;
+    }
+    h1 {
+      font-size:180px;
+      margin:0;
+    }
+    .text {
+      margin:1em;
+      width:350px;
+      text-align:center;
+    }
+    .text, #mascut {
+      float:left;
+    }
+    .box {
+      line-height:1.5em;
+      background-color:#eee;
+      padding:1px 5px;
+      border-radius:8px;
+      box-shadow:-3px 3px 3px #bbb inset, 1px -1px 1px #ddd inset;
+      text-shadow:1px 1px #fff;
+      text-wrap: normal;
+      word-wrap:break-word;
+    }
+    </style>
   </head>
-  <body bgcolor=white>
-    <h1>Uh-Oh! Huston, We got problem!</h1>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1>404</h1>
+        <div class="box">
+        <p>找不到您想看的網頁<br><a rel="nofollow" href="<? echo $full_url ?>"><? echo $full_url ?></a>
+        <p>要不要到<a href="/">首頁</a>去看看呢？</p>
 
-    別說<a href="http://mopcon.org">這個</a>了，你看過以下失蹤兒童嗎？
-    <hr>
-
-    <center>
-      <iframe src="http://childnotfound.tw/404" width="650" height="500" marginwidth="0" #marginheight="0" scrolling="no" frameborder="0" align="center"></iframe>
-      <br>
-      <a href="http://mopcon.org">返回首頁</a>
-    </center>
-
+        </div>
+      </div>
+      <img id="mascut" src="/err/mascut.jpg">
+    </div>
   </body>
 </html>
