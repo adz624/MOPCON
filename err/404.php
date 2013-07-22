@@ -28,6 +28,7 @@
     }
     h1 {
       font-size:180px;
+      line-height:1em;
       margin:0;
     }
     .text {
@@ -41,7 +42,7 @@
     .box {
       line-height:1.5em;
       background-color:#eee;
-      padding:1px 5px;
+      padding:3px 5px;
       border-radius:8px;
       box-shadow:-3px 3px 3px #bbb inset, 1px -1px 1px #ddd inset;
       text-shadow:1px 1px #fff;
