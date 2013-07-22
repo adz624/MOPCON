@@ -66,7 +66,7 @@
 
         </div>
       </div>
-      <img id="mascut" src="/err/mascut.jpg">
+      <img id="mascut" src="/err/mascot.jpg">
     </div>
   </body>
 </html>
