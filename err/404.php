@@ -1,5 +1,6 @@
-<!-- PHP Wrapper - 404 Not Found -->
 <?php
+/* PHP Wrapper - 404 Not Found */
+
   if ( file_exists(dirname(__FILE__)."/../2012".$_SERVER['REQUEST_URI']) ) {
     // 2012 link exists
     header("HTTP/1.1 302 Redirect");
