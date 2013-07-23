@@ -46,6 +46,10 @@
             <p>本屆活動日期訂於 2013 年 10 月 26 ~ 27 日於高雄國際會議中心 (ICCK) 盛大舉行，請密切關注我們的發展。</p>
           </div>
         </div>
+    <div class="span4 offset9 data-cell">
+      <p><h3>Follow us</h3></p>
+      <p><a href="https://www.facebook.com/mopcon">Facebook</a> | <a href="https://plus.google.com/116768206884057057248" rel="publisher">Google+</a> | <a href="https://twitter.com/mopcon">Twitter</a></p>
+    </div>
     </div>
     <?php include_once("footer.html"); ?>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/sharrre/1.3.4/jquery.sharrre-1.3.4.min.js"></script>
