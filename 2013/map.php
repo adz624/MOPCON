@@ -1,5 +1,5 @@
 <?php
-  $page = "sponsor";
+  $page = "map";
 ?>
 <html lang="zh-TW" class="">
   <head>
