@@ -26,7 +26,7 @@
     <?php include_once("navbar.php");?>
     <div class="container" id="all">
       <div class="jumbotron">
-        <h1>徵求演講，Call For Paper！</h1>
+        <h1>徵求投稿，Call For Paper！</h1>
         <p class="lead">MOPCON 2013  將於十月底盛大舉辦，歡迎您前來與我們分享各種心得，看法，與經驗。</p>
       </div>
       <hr>
