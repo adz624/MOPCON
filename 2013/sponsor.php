@@ -23,22 +23,17 @@
             </ul>
           </div>
 		      <div class="offset1 span9 second well-large">
-            <h3>Hacker級贊助商</h3>
-            <p>感謝以下各贊助單位</p>
-            <ul class="thumbnails">
-              <!-- <li class="thumbnail"><a rel="external" href="http://www.acomotech.com/"><img src="img/logo/acomotech-logo.png" alt="杏昕科技" /></a> -->
-              <!-- <li class="thumbnail"><a rel="external" href="http://www.EZoUI.com/"><img src="img/logo/Ezo-logo.png" alt="中冠資訊" /></a> -->
-            </ul>
-          </div>
-		      <div class="offset1 span9 second well-large">
             <h3>Geek級贊助商</h3>
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
-              <!-- <li class="thumbnail"><a rel="external" href="http://www.mobilogics.com.tw"><img src="img/logo/mobilogics-logo.png" alt="明錄國際" /></a> -->
-              <!-- <li class="thumbnail"><a rel="external" href="http://www.moko365.com"><img src="img/logo/moko-logo.png" alt="Moko365" /></a> -->
-              <!-- <li class="thumbnail"><a rel="external" href="http://www.moregeek.com"><img src="img/logo/moregeek-logo.png" alt="摩鉅科技" /></a> -->
-              <!-- <li class="thumbnail"><a rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a> -->
+            </ul>
+		      </div>
+		      <div class="offset1 span9 second well-large">
+            <h3>Developer級贊助商</h3>
+            <p>感謝以下各贊助單位</p>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
