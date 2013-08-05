@@ -1,5 +1,7 @@
 <?php
   $page = "map";
+  $title = "交通資訊";
+  $og_descr = "今年度擴大於高雄國際會議中心(ICCK)舉辦，歡迎大家蒞臨指教";
 ?>
 <html lang="zh-TW" class="">
   <head>
