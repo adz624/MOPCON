@@ -12,8 +12,7 @@
 <div style="float:left;" class="fb-like" data-href="https://www.facebook.com/mopcon" data-width="650" data-layout="button_count" data-show-faces="false" data-send="false"></div>
 -->
 <div style="float:left; width:88px;">
-	<iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;width=450&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=226197467449987" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true">
-    </iframe>
+	<iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href=https%3A%2F%2Fwww.facebook.com%2Fmopcon&amp;width=450&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=226197467449987" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
 </div>
 <!--  twitter  -->
 <div style="float:left; padding-left:5px; padding-right:5px;">|</div>
