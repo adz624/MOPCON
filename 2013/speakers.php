@@ -67,11 +67,6 @@
       </div>
 
       <div class="speaker">
-      <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
-<p><br>還有其他講者將會陸續登場，敬請期待。
-      </div>
-<?/*
-      <div class="speaker">
       <img src="speaker_img/scott.jpg" alt="Scott">
       <h2>程士恒<br>Scott Cheng</h2>
 <p>博晶醫電 / 共同創辦人
@@ -83,7 +78,27 @@
 最後竟演變成「設計是為了製造問題」。講者以其參與的運動器材「HeartWave
 心浪體能配置機」的開發經驗，分享如何避開軟硬整合設計的慣性陷阱。
       </div>
+
+
+<?/*
+      <div class="speaker">
+      <img src="speaker_img/weiwei.jpg" alt="Scott">
+      <h2>魏蘶</h2>
+<p>曾是 DJ、音樂人，出過一張唱片，後來擔任出版社外文主編，曾寫過一本小說與17本德語法語教學書籍。目前獨立開發 iPhone 與
+Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全部都一手包辦。
+<p>題目：<br>我已經不能說自己是程式界的菜鳥了：CORONA SDK 開發跨平台手機遊戲
+<ol>
+<li>CORONA SDK簡介</li>
+<li>製作遊戲心得分享</li>
+</ol>
+      </div>
 */?>
+
+      <div class="speaker">
+      <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
+<p><br>還有其他講者將會陸續登場，敬請期待。
+      </div>
+
       </div>
     </div>
   </div>
