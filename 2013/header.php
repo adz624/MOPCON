@@ -14,7 +14,7 @@
     <meta content="<?=$og_descr ?>" property="og:description">
     <meta content="http://mopcon.org/img/snapshot.jpg" property="og:image">
     <meta content="website" property="og:type">
-    <meta content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference" property="og:site_name">
+    <meta content="<?=$title ?>" property="og:site_name">
     <meta name="description" content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference">
     <meta name="google-translate-customization" content="872662db03c1ade2-296aa6b139f3956d-gb831f9b020eaa381-a"></meta>
     <link type="text/css" href="css/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
