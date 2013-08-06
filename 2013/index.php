@@ -3,22 +3,16 @@
 ?>
 <html lang="zh-TW" class="">
   <head>
-    <?php include_once("header.php");?>
+    <?php include_once("header.php"); ?>
     <link rel="stylesheet" type="text/css" href="css/shareme.css"/>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
-    <?php include_once("navbar.php");?>
+    <?php include_once("navbar.php"); ?>
     <div class="slogon">
       <img src="img/MOPCON_2013Web_index.jpg"/>
     </div>
     <div class="container" id="all" style="padding: 10px;">
-        <div class="row">
-          <div class="span12">
-            <div class="" id="shareme-box">
-              <div id="shareme" data-url="https://www.facebook.com/mopcon" data-text="推薦 MOPCON" data-title="推薦 MOPCON"></div>
-            </div>
-          </div>
-        </div>
+        
         <div class="row">
           <div class="span4 data-cell">
             <img src="pic/index/370x245/DSC_3338.jpg" class="img-rounded"/>
@@ -46,9 +40,9 @@
             <p>本屆活動日期訂於 2013 年 10 月 26 ~ 27 日於高雄國際會議中心 (ICCK) 盛大舉行，請密切關注我們的發展。</p>
           </div>
         </div>
-    <div class="span4 offset9 data-cell">
+    <div class="span4 offset8 data-cell">
       <p><h3>Follow us</h3></p>
-      <p><a href="https://www.facebook.com/mopcon">Facebook</a> | <a href="https://plus.google.com/116768206884057057248" rel="publisher">Google+</a> | <a href="https://twitter.com/mopcon">Twitter</a></p>
+      <? include("./share.php"); ?>
     </div>
     </div>
     <?php include_once("footer.html"); ?>
