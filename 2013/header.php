@@ -1,6 +1,7 @@
 <?
     $title = isset($title) ? "MOPCON 2013 | ".$title : "行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference";
     $og_descr = isset($og_descr) ? "MOPCON 2013 | ".$og_descr : "Mobile Open Platform Conference (MOPCON) 行動科技應用開發者年會 是全台第一個針對移動式裝置的技術研討會，希望大家共同來參與。";
+    $page_file = isset($page_file) ? $page_file : "";
 ?>
     <meta charset="utf-8">
     <title><?=$title ?></title>
@@ -9,7 +10,7 @@
     <![endif]-->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="<?=$title ?>" property="og:title">
-    <meta content="http://mopcon.org" property="og:url">
+    <meta content="http://mopcon.org<?=$page_file ?>" property="og:url">
     <meta content="<?=$og_descr ?>" property="og:description">
     <meta content="http://mopcon.org/img/snapshot.jpg" property="og:image">
     <meta content="website" property="og:type">

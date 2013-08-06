@@ -3,6 +3,7 @@
   $function['cfp'] = "active";
   $title = "徵求投稿，Call For Paper";
   $og_descr = "歡迎來 MOPCO N與我們分享行動應用開發技術的各種心得，看法與經驗";
+  $page_file = $_SERVER['PHP_SELF'];
 ?>
 <html lang="zh-TW" class="">
   <head>

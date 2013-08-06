@@ -2,6 +2,7 @@
   $page = "social";
   $title = "主辦社群";
   $og_descr = "本年度由 KaLUG、KSDG、Cocoaheads Kaohsiung、MOSUT、KIMU 五大南部社群舉辦";
+  $page_file = $_SERVER['PHP_SELF'];
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>

@@ -2,6 +2,7 @@
   $page = "speakers";
   $title = "講者介紹";
   $og_descr = "講者匯集國內知名行動技術開發者，10/26~27兩日議程提供最先進與實務之開發技術饗宴";
+  $page_file = $_SERVER['PHP_SELF'];
 ?>
 <html lang="zh-TW" class="">
   <head>

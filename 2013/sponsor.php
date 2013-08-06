@@ -2,6 +2,7 @@
   $page = "sponsor";
   $title = "贊助商介紹";
   $og_descr = "感謝全球各地關注行動應用的贊助單位支持 MOPCON";
+  $page_file = $_SERVER['PHP_SELF'];
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
