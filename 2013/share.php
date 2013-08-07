@@ -16,10 +16,21 @@
 </div>
 <!--  twitter  -->
 <div style="float:left; padding-left:5px; padding-right:5px;">|</div>
-<div style="float:left; width:140px;">
-    <span id="followers"></span>
-    <a  href="https://twitter.com/mopcon" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" lang="uk"></a>
+<div style="float:left; width:90px;">
+    <div id="titter-div">
+    	<span id="followers"></span>
+    	<a  href="https://twitter.com/mopcon" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" lang="uk"></a>
+    </div>
 </div>
+<style>
+#titter-div {
+    border-radius: 4px; /* to mimic the curved edges of the count box */
+    border-right: 1px solid #AAAAAA; /* this is the width and color of the count box border */
+    height: 20px; /* this height works for the medium button */
+    width: 85px; /* precise width to hide the word */
+    overflow: hidden; /* actually hides the word */
+}
+</style>
 <script>
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
