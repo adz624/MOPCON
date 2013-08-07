@@ -79,8 +79,6 @@
 心浪體能配置機」的開發經驗，分享如何避開軟硬整合設計的慣性陷阱。
       </div>
 
-
-<?/*
       <div class="speaker">
       <img src="speaker_img/weiwei.jpg" alt="Scott">
       <h2>魏蘶</h2>
@@ -92,7 +90,6 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
 <li>製作遊戲心得分享</li>
 </ol>
       </div>
-*/?>
 
       <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
