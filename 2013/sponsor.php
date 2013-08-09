@@ -40,6 +40,13 @@
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
+            <h3>Coder級贊助商</h3>
+            <p>感謝以下各贊助單位</p>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a>
+            </ul>
+		      </div>
+		      <div class="offset1 span9 second well-large">
             <h3>特別感謝</h3>
             <p>感謝以下單位協助與支持</p>
             <ul class="thumbnails">
