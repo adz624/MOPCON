@@ -25,7 +25,7 @@
       margin-bottom:3.5em;
     }
     .speaker {
-      width:21em;
+      width:336px;
       margin:0.3em;
       border: 1px solid #ccc;
       padding: 0.5em;
@@ -39,6 +39,22 @@
     .speaker h2 {
         font-size:1.5em;
         border-bottom: 6px solid #ccc;
+    }
+
+    @media (min-width: 980px) and (max-width: 1199px) {
+        .speaker {
+          width:400px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 979px) {
+        .speaker {
+          width:304px;
+        }
+    }
+    @media (max-width: 767px) {
+        .speaker {
+          width:95%;
+        }
     }
   </style>
   </head>
