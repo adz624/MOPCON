@@ -40,9 +40,12 @@
             <p>本屆活動日期訂於 2013 年 10 月 26 ~ 27 日於高雄國際會議中心 (ICCK) 盛大舉行，請密切關注我們的發展。</p>
           </div>
         </div>
-    <div class="span4 offset8 data-cell">
+    <div class="row">
+      <div style="float:right; width:300px;">
       <p><h3>Follow us</h3></p>
       <? include("./share.php"); ?>
+      </div>
+      <div style="clear:both;"></div>
     </div>
     </div>
     <?php include_once("footer.html"); ?>
