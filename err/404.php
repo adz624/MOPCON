@@ -30,7 +30,6 @@
       text-align:left;
       width:800px;
       margin:3em auto;
-             background-color:red;
     }
     h1 {
       font-size:180px;
