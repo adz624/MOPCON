@@ -41,7 +41,7 @@
           </div>
         </div>
     <div class="row">
-      <div style="float:right; width:300px;">
+      <div style="float:right;">
       <p><h3>Follow us</h3></p>
       <? include("./share.php"); ?>
       </div>
