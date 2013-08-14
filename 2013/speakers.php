@@ -50,6 +50,7 @@
       <div id="speakerpool">
 
       <div class="speaker">
+      <a id="segacheng"></a> 
       <img src="speaker_img/sega.jpg" alt="Sega">
       <h2>程世嘉<br>Sega Cheng</h2>
 <p>經歷： (前兩者為現職)
@@ -67,6 +68,7 @@
       </div>
 
       <div class="speaker">
+      <a id="scottcheng"></a> 
       <img src="speaker_img/scott.jpg" alt="Scott">
       <h2>程士恒<br>Scott Cheng</h2>
 <p>博晶醫電 / 共同創辦人
@@ -80,6 +82,7 @@
       </div>
 
       <div class="speaker">
+      <a id="weiwei"></a> 
       <img src="speaker_img/weiwei.jpg" alt="Scott">
       <h2>魏蘶</h2>
 <p>曾是 DJ、音樂人，出過一張唱片，後來擔任出版社外文主編，曾寫過一本小說與17本德語法語教學書籍。目前獨立開發 iPhone 與
