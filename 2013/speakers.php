@@ -99,7 +99,7 @@
 
       <div class="speaker">
       <a id="weiwei"></a> 
-      <img src="speaker_img/weiwei.jpg" alt="Scott">
+      <img src="speaker_img/weiwei.jpg" alt="魏蘶">
       <h2>魏蘶</h2>
 <p>曾是 DJ、音樂人，出過一張唱片，後來擔任出版社外文主編，曾寫過一本小說與17本德語法語教學書籍。目前獨立開發 iPhone 與
 Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全部都一手包辦。
