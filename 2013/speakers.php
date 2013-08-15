@@ -99,8 +99,13 @@
 
       <div class="speaker">
       <a id="weiwei"></a> 
-      <img src="speaker_img/weiwei.jpg" alt="魏蘶">
-      <h2>魏蘶</h2>
+      <img src="speaker_img/weiwei.jpg" alt="魏巍">
+      <h2>魏巍</h2>
+<!--
+ (之前打錯名字了真對不起)
+                \
+                 Orz
+-->
 <p>曾是 DJ、音樂人，出過一張唱片，後來擔任出版社外文主編，曾寫過一本小說與17本德語法語教學書籍。目前獨立開發 iPhone 與
 Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全部都一手包辦。
 <p>題目：<br>我已經不能說自己是程式界的菜鳥了：CORONA SDK 開發跨平台手機遊戲
