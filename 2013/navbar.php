@@ -36,13 +36,7 @@
           </ul>
           <ul id="language" class="nav pull-right">
             <li class="divider-vertical"></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">繁體中文</a></li>
-                <li><a href="#">English</a></li>
-              </ul>
-            </li>
+            <li><a href="index_en.php">English</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div>
