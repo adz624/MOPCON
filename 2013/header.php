@@ -16,7 +16,6 @@
     <meta content="website" property="og:type">
     <meta content="<?=$title ?>" property="og:site_name">
     <meta name="description" content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference">
-    <meta name="google-translate-customization" content="872662db03c1ade2-296aa6b139f3956d-gb831f9b020eaa381-a"></meta>
     <link type="text/css" href="css/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
     <link type="text/css" href="css/all.css" media="screen" rel="stylesheet">
     <link rel="SHORTCUT ICON" href="favicon.ico">
