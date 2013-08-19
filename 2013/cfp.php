@@ -2,7 +2,7 @@
   $page = "cfp";
   $function['cfp'] = "active";
   $title = "徵求投稿，Call For Paper";
-  $og_descr = "歡迎來 MOPCO N與我們分享行動應用開發技術的各種心得，看法與經驗";
+  $og_descr = "歡迎來 MOPCON 與我們分享行動應用開發技術的各種心得，看法與經驗";
   $page_file = $_SERVER['PHP_SELF'];
 ?>
 <html lang="zh-TW" class="">
@@ -35,7 +35,7 @@
     <div class="container" id="all">
       <div class="jumbotron">
         <h1>徵求投稿，Call For Paper！</h1>
-        <p class="lead">MOPCON 2013  將於十月底盛大舉辦，歡迎您前來與我們分享各種心得，看法，與經驗。</p>
+        <p class="lead">MOPCON 2013 將於十月底盛大舉辦，歡迎您前來與我們分享各種心得、看法，與經驗。</p>
         <a target="_blank" class="btn btn-primary" href="http://registrano.com/events/MOPCON2013-cfp">我要投稿</a>
 
       </div>
@@ -59,13 +59,13 @@
         </div>
 
         <div class="span6">
-          <p>MOPCON 2013  邀請您針對下列三個主題發表演說
+          <p>MOPCON 2013 邀請您針對下列三個主題發表演說
           <ul>
             <li>行動應用營運具體案例</li>
             <li>行動應用開發</li>
             <li>數位內容</li>
           </ul>
-          <p>並且別忘了除此三個主題以外，我們也歡迎各種環繞於行動應用發展的演說主題，諸如穿戴式技術和基於 HTML5 的可攜式跨裝置應用程式。
+          <p>除此三個主題以外，我們也歡迎各種環繞於行動應用發展的演說主題，諸如穿戴式技術和基於 HTML5 的可攜式跨裝置應用程式。
           <p>細節請參考<a target="_blank" href="MOPCON-CallForPaper.pdf">行動科技應用開發者年會演講徵求書</a>
         </div>
       </div>
