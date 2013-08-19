@@ -17,7 +17,7 @@
         <div class="nav-collapse">
           <ul class="nav">
             <!-- <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li> -->
-            <!--<li class="<?php echo $function['sponsor']; ?>"><a href="sponsor_en.php">Sponsors</a></li>-->
+            <li class="<?php echo $function['sponsor']; ?>"><a href="sponsor_en.php">Sponsors</a></li>
             <li class="<?php echo $function['cfp']; ?>"><a href="cfp_en.php">Call for Papers</a></li>
             <li class="<?php echo $function['map']; ?>"><a href="map_en.php">Location</a></li>
           </ul>
