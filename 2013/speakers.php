@@ -127,6 +127,17 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
       </div>
 
       <div class="speaker">
+      <a id="shakalaca"></a>
+      <img src="speaker_img/shakalaca.jpg" alt="Shakalaca">
+      <h2>Shakalaca</h2>
+<p>身兼數職：尿布管理員, 搖籃推進器, 嘴砲攻城獅, 鈔票劊子手。
+<p>目前與朋友創業打怪中，最愛 Android (App) 開發，常出沒於 Taipei GTUG 聽取各路好手分享技術，也樂於跟大家分享程序員有興趣的小技巧或小工具
+<p><a href="http://about.me/shakalaca">http://about.me/shakalaca</a>
+<p>題目：深入淺出桌椅組裝器材 (Head First Android Dev Tools)
+<p>摘要：傳授 gradle，genymotion...等工具的使用心法，歡迎喜愛桌椅組裝的朋友切磋交流。
+      </div>
+
+      <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
       </div>
