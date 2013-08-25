@@ -19,21 +19,21 @@
 
 		      <div class="offset1 span9 second well-large">
             <h3>Geek class sponsors</h3>
-            <p>We thank you for your invaluableinvaluabl.</p>
+            <p>We thank you for your invaluable support.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
             <h3>Developer class sponsors</h3>
-            <p>We thank you for your invaluableinvaluabl.</p>
+            <p>We thank you for your invaluable support.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
             <h3>Coder class sponsors</h3>
-            <p>We thank you for your invaluableinvaluabl.</p>
+            <p>We thank you for your invaluable support.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a>
             </ul>
