@@ -18,7 +18,7 @@
             <img src="pic/index/370x245/DSC_3338.jpg" class="img-rounded"/>
           </div>
           <div class="span4 data-cell">
-            <p>Recently, mobile applications have been put under the spot light. E-commerce, digital content, business service, consumer applications...are all expanding their reach to mobile market. MOPCON (Mobile Open Platform Conference) focuses on the development and operation of mobile applications. And is also the largest conference driven by software community in southern Taiwan.
+            <p>Recently, mobile applications have been put under the spot light. E-commerce, digital content, business service, consumer applications...are all expanding their reach to mobile market. MOPCON (Mobile/Open/Platform Conference) focuses on the development and operation of mobile applications. And is also the largest conference driven by software community in southern Taiwan.
           </div>
           <div class="span4 data-cell">
             <img src="pic/index/370x245/IMG_8797.jpg" class="img-rounded"/>

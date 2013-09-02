@@ -115,6 +115,28 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
 </ol>
       </div>
 
+
+      <div class="speaker">
+      <a id="kny"></a>
+      <img src="speaker_img/kny.jpg" alt="KNY">
+      <h2>KNY</h2>
+<p>中華民國 App 跨界交流協會理事長
+<p>於 2012 年11月獲得 Google Play Top Developer 徽章。
+<p>長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望能透過科技與開放的力量，建構更美好的未來。
+<p>題目: (敬請期待)
+      </div>
+
+      <div class="speaker">
+      <a id="shakalaca"></a>
+      <img src="speaker_img/shakalaca.jpg" alt="Shakalaca">
+      <h2>Shakalaca</h2>
+<p>身兼數職：尿布管理員, 搖籃推進器, 嘴砲攻城獅, 鈔票劊子手。
+<p>目前與朋友創業打怪中，最愛 Android (App) 開發，常出沒於 Taipei GTUG 聽取各路好手分享技術，也樂於跟大家分享程序員有興趣的小技巧或小工具
+<p><a href="http://about.me/shakalaca">http://about.me/shakalaca</a>
+<p>題目：深入淺出桌椅組裝器材 (Head First Android Dev Tools)
+<p>摘要：傳授 gradle，genymotion...等工具的使用心法，歡迎喜愛桌椅組裝的朋友切磋交流。
+      </div>
+
       <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
