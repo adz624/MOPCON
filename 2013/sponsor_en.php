@@ -16,7 +16,13 @@
             <p>We are looking for conference sponsors.<br>
                If you or the organization you represents is intrested, please contact "sponsor [at] mopcon.org"</p>
 		      </div>
-
+		      <div class="offset1 span9 second well-large">
+            <h3>Hacker class sponsors</h3>
+            <p>We thank you for your invaluable support.</p>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="aws" rel="external" href="http://aws.amazon.com"><img src="img/logo/aws_logo.png" alt="Amazon Web Service" /></a>
+            </ul>
+		      </div>
 		      <div class="offset1 span9 second well-large">
             <h3>Geek class sponsors</h3>
             <p>We thank you for your invaluable support.</p>

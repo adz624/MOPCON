@@ -16,6 +16,13 @@
                 <p>強力徵求贊助廠商，請快與我們（ sponsor [at] mopcon.org ）聯繫</p>
             </div>
             <div class="offset1 span9 second well-large">
+            <h3>Hacker級贊助商</h3>
+            <p>感謝以下各贊助單位</p>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="aws" rel="external" href="http://aws.amazon.com"><img src="img/logo/aws_logo.png" alt="Amazon Web Service" /></a>
+            </ul>
+		      </div>
+            <div class="offset1 span9 second well-large">
             <h3>Geek級贊助商</h3>
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
