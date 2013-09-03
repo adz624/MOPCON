@@ -1,4 +1,5 @@
 <?php
+  ini_set('error_reporting', E_ALL^E_NOTICE^E_STRICT);
   $page = "speakers";
   $title = "講者介紹";
   $og_descr = "講者匯集國內知名行動技術開發者，10/26~27兩日議程提供最先進與實務之開發技術饗宴";
@@ -7,16 +8,6 @@
 <html lang="zh-TW" class="">
   <head>
   <?php include_once("header.php");?>
-  <script src="scripts/masonry.pkgd.min.js"></script>
-  <script>
-  $(function(){
-      var container = document.getElementById('speakerpool');
-      var msnry = new Masonry( container, {
-          // options
-          itemSelector: '.speaker'
-      });
-  });
-  </script>
   <style>
     #all {
       padding: 10px;
@@ -143,7 +134,7 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
       <h2>古傑芳<br>Joseph Ku</h2>
 <p>themobiapps.com (英商移動應用) / 研發副總
 <p>程式設計師一枚。十歲時開始撰寫 x86 組合語言程式，二十歲寫 C 維生，三十歲愛上 Ruby。曾主導開發多種嵌入式設備產品，並於 2008年投身行動應用開發迄今。
-<p>題目：RubyMotion: Use It & Hack It
+<p>題目：RubyMotion: Use It &amp; Hack It
 <p>摘要：Ruby 是替代 Objective-C 的最佳程式語言，RubyMotion 的誕生更是讓全球 Rub
 愛好者磨拳擦掌想要跳入行動應用的領域。無論您是不是熟悉 Ruby，接觸 RubyMotion
 後都一定會醉倒在它那極簡、優雅、迅捷的開發體驗。議程中除了介紹 RubyMotion
@@ -217,5 +208,20 @@ google提供的UI元件不夠滿足產品需求？
     </div>
   </div>
   <?php include_once("footer.html");?>
+
+  <script src="scripts/masonry.pkgd.min.js"></script>
+  <script>
+  $(function(){
+      var container = document.getElementById('speakerpool');
+      //$('#speakerpool').masonry({itemSelector: '.speaker'});
+      $('#speakerpool').masonry({itemSelector: '.speaker'});
+
+      // xxx re-layout again after page load complete
+      // 用來避免發生.masonry() 算錯物件高度的詭異狀況
+      setTimeout(function() {
+          $('#speakerpool').masonry();
+      }, 350);
+  });
+  </script>
   </body>
 </html>
