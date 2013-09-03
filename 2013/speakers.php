@@ -169,7 +169,7 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
 
       <div class="speaker">
       <a id="rogery"></a>
-      <img src="speaker_img/question_mark.jpg" alt="Rogery">
+      <img src="speaker_img/rogery.jpg" alt="Rogery">
       <h2>楊哲豪<br>Rogery</h2>
 <p>熱愛音樂創作的工程師，從 Android 1.0 開始研發 KKBOX Android，開發經
    驗至今已四年以上，目前在 KKBOX 擔任 Android Team Leader。
