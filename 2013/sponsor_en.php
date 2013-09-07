@@ -21,6 +21,8 @@
             <p>We thank you for your invaluable support.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="aws" rel="external" href="http://aws.amazon.com"><img src="img/logo/aws_logo.png" alt="Amazon Web Service" /></a>
+              <li class="thumbnail"><a id="nokia" rel="external" href="http://www.nokia.com"><img src="img/logo/nokia_logo.png" alt="NOKIA" /></a>
+              <li class="thumbnail"><a id="winphone" rel="external" href="http://dev.windowsphone.com"><img src="img/logo/winphone_logo.png" alt="Microsoft Windows Phone" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
