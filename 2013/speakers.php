@@ -63,6 +63,7 @@
 <p>經歷： (前兩者為現職)
 <ul>
 <li>CEO, <a href="http://www.ikala.tv">iKala</a></li>
+<li>CEO, <a href="https://livehouse.in/">LIVEhouse</a></li>
 <li>Gamania (遊戲橘子) 董事</li>
 <li>Google 軟體工程師</li>
 <li>史丹佛大學電腦科學碩士、台大資訊工程系</li>
