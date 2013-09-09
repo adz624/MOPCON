@@ -201,6 +201,16 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
+      <a id="monkeypotion"></a>
+      <img src="speaker_img/monkeypotion.jpg" alt="Monkey Potion">
+      <h2> 鄭暐橋/半路<br>Monkey Potion</h2>
+<p>一半的腦袋是理性邏輯的工程師，另一半是感性的文字寫作者；一半的靈魂是藝術工作者，另一半是商人。
+在找到工作之前，是個獨立遊戲開發者，曾參與製作的遊戲App包括《邦妮早午餐》系列和《勾玉忍者》，並著有《半路叛逃》一書。
+<p>題目：遊戲App開發營運實務：那些成功者沒說的事
+<p>摘要：這世界往往是成功者說了算，但如果你剛好有那麼一點反骨，請來聽聽「不成功者」如何在遊戲App獨立開發這條路上，於理想與現實的之間擺盪，奮力掙扎的真實故事。
+      </div>
+
+      <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
       </div>
