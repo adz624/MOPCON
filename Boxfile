@@ -1,0 +1,18 @@
+web1:
+    ################################################
+    ## WEB SPECIFIC SETTINGS
+    ################################################
+    index_list: [index.php]
+
+    ################################################
+    ## PHP SPECIFIC SETTINGS
+    ################################################
+    php_version: 5.3.8
+    php_extensions: [curl, gd, mbstring]
+    php_date_timezone: Asia/Taipei
+    php_max_execution_time: 30
+    php_max_input_time: 60
+    php_post_max_size: 25M
+    php_file_uploads: On
+    php_upload_max_filesize: 20M
+    php_max_file_uploads: 20
