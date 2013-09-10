@@ -33,6 +33,27 @@ $data['sessions'][] = array(
         "end_time"    => strtotime("2013-10-26 10:30:00")
         );
 
+$data['sessions'][] = array(
+        "id"          => 221,
+        "name"        => "進擊的Mikimoto",
+        "speaker"     => "Mikimoto",
+        "speaker_bio" => "熱血宅宅",
+        "keyword"     => "iOS",
+        "loc"         => "企業號收發室",
+        "start_time"  => strtotime("2013-10-27 13:30:00"),
+        "end_time"    => strtotime("2013-10-27 14:40:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 222,
+        "name"        => "進擊的Mikimoto PartII",
+        "speaker"     => "Mikimoto",
+        "speaker_bio" => "熱血宅宅",
+        "keyword"     => "Android",
+        "loc"         => "企業號魚雷室",
+        "start_time"  => strtotime("2013-10-27 13:30:00"),
+        "end_time"    => strtotime("2013-10-27 14:40:00")
+        );
 
 echo json_encode($data);
 
