@@ -12,7 +12,7 @@
         <h3>聯絡方式</h3>
       		<dl>
             <dd>MOPCON&nbsp;&nbsp;2013&nbsp;&nbsp;聯繫人</dd>
-		        <dd><i class="icon-envelope">&nbsp;</i>&nbsp;E-mail： sponsor [at] mopcon.org</dd>
+		        <dd><i class="icon-envelope">&nbsp;</i>&nbsp;E-mail： contact [at] mopcon.org</dd>
 		    </dl>
       		<p>&nbsp;</p>
       		<p>&nbsp;</p>
