@@ -53,6 +53,13 @@
               <li class="thumbnail"><a id="ossf" rel="external" href="http://openfoundry.org/"><img src="img/logo/openfoundry_logo.png" alt="OSSF自由軟體鑄造場" /></a>
             </ul>
 		      </div>
+		      <div class="offset1 span9 second well-large">
+            <h3>媒體合作</h3>
+            <p>感謝以下媒體支持</p>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="App情報誌" /></a>
+            </ul>
+		      </div>
 
             <div class="offset1 span9 main well-large">
                 <h3>主辦單位：&nbsp;&nbsp;&nbsp;經濟部加工出口區管理處</h3>

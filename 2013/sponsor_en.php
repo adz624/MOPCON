@@ -51,9 +51,15 @@
             <p>We also want to thank these who helps us so much.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu_logo.png" alt="Shu-Te University Computer Center" /></a>
+              <li class="thumbnail"><a id="ossf" rel="external" href="http://openfoundry.org/"><img src="img/logo/openfoundry_logo.png" alt="Openfoundry" /></a>
             </ul>
 		      </div>
-
+		      <div class="offset1 span9 second well-large">
+            <h3>Media Corperation</h3>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="AppShooting" /></a>
+            </ul>
+		      </div>
 		      <div class="offset1 span9 second well-large">
             <h3>Organizer:</h3>
             <ul class="thumbnails">
