@@ -43,6 +43,7 @@
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a>
+              <li class="thumbnail"><a rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
