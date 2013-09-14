@@ -36,6 +36,18 @@ $data['sessions'][] = array(
         );
 
 $data['sessions'][] = array(
+        "id"          => 110,
+        "name"        => "Open is the new norm.",
+        "content"     => "Big data, open data, open mobile platform, quantified self, internet of things, 這些進幾年來興起的領域，代表著網際網路和全世界的大趨勢，正快速地把我們推向一個更為開放的世界。「開放已是常態、封閉無法生存」，這一個 session 中將與各位分享，在這樣開放的新世界，我們應該如何應對？",
+        "speaker"     => "程世嘉 Sega Cheng",
+        "speaker_bio" => "經歷： (前兩者為現職) CEO, iKala CEO, LIVEhouse, Gamania (遊戲橘子), 董事 Google 軟體工程師, 史丹佛大學電腦科學碩士、台大資訊工程系",
+        "keyword"     => "",
+        "loc"         => "404 會議室",
+        "start_time"  => strtotime("2013-10-26 10:20:00"),
+        "end_time"    => strtotime("2013-10-26 11:20:00")
+        );
+
+$data['sessions'][] = array(
         "id"          => 130,
         "name"        => "Mikimoto假面的告白",
         "content"     => "Mokimoto生活",
