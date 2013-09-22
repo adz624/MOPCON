@@ -45,6 +45,7 @@
               <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a>
               <li class="thumbnail"><a id="wiwistock" rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a>
               <li class="thumbnail"><a id="userxper" rel="external" href="http://www.userxper.com/"><img src="img/logo/userxper_logo.png" alt="悠識數位" /></a>
+              <li class="thumbnail"><a id="moko365" rel="external" href="http://www.moko365.com/"><img src="img/logo/moko-logo.png" alt="Moko365" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
