@@ -29,13 +29,14 @@
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
+              <li class="thumbnail"><a id="infinitiessoft" rel="external" href="http://infinitiessoft.com"><img src="img/logo/infinitiessoft-logo.png" alt="Infinities Soft" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
             <h3>Developer級贊助商</h3>
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
-              <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan" /></a>
+              <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
