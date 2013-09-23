@@ -30,6 +30,7 @@
             <p>We thank you for your invaluable support.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
+              <li class="thumbnail"><a id="infinitiessoft" rel="external" href="http://infinitiessoft.com"><img src="img/logo/infinitiessoft-logo.png" alt="Infinities Soft" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
