@@ -18,6 +18,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "天真可愛的愛貓人士",
         "keyword"     => "cat",
         "loc"         => "403 會議室",
+        "catalog"     => "1",
         "start_time"  => strtotime("2013-10-26 09:00:00"),
         "end_time"    => strtotime("2013-10-26 09:40:00")
         );
@@ -31,6 +32,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "天真可愛的愛狗人士",
         "keyword"     => "dog",
         "loc"         => "404 會議室",
+        "catalog"     => "1",
         "start_time"  => strtotime("2013-10-26 09:50:00"),
         "end_time"    => strtotime("2013-10-26 10:30:00")
         );
@@ -43,6 +45,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "經歷： (前兩者為現職) CEO, iKala CEO, LIVEhouse, Gamania (遊戲橘子), 董事 Google 軟體工程師, 史丹佛大學電腦科學碩士、台大資訊工程系",
         "keyword"     => "",
         "loc"         => "404 會議室",
+        "catalog"     => "2",
         "start_time"  => strtotime("2013-10-26 10:20:00"),
         "end_time"    => strtotime("2013-10-26 11:20:00")
         );
@@ -55,18 +58,59 @@ $data['sessions'][] = array(
         "speaker_bio" => "熱血宅宅",
         "keyword"     => "開發工具",
         "loc"         => "企業號儲藏室",
+        "catalog"     => "3",
         "start_time"  => strtotime("2013-10-26 15:10:00"),
         "end_time"    => strtotime("2013-10-26 16:40:00")
         );
 
 $data['sessions'][] = array(
-        "id"          => 210,
-        "name"        => "進擊的Mikimoto",
+        "id"          => 200,
+        "name"        => "進擊的Mikimoto 前傳",
         "content"     => "Mokimoto的一天",
         "speaker"     => "Mikimoto",
         "speaker_bio" => "熱血宅宅",
         "keyword"     => "iOS",
+        "loc"         => "企業號輪機室",
+        "catalog"     => "9",
+        "start_time"  => strtotime("2013-10-27 10:20:00"),
+        "end_time"    => strtotime("2013-10-27 11:20:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 201,
+        "name"        => "進擊的Mikimoto 今傳",
+        "content"     => "Mokimoto的明天",
+        "speaker"     => "Mikimoto",
+        "speaker_bio" => "熱血宅宅",
+        "keyword"     => "iOS",
+        "loc"         => "企業號輪機室",
+        "catalog"     => "5",
+        "start_time"  => strtotime("2013-10-27 10:20:00"),
+        "end_time"    => strtotime("2013-10-27 11:20:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 203,
+        "name"        => "進擊的Mikimoto 不死傳說",
+        "content"     => "Mokimoto的後天",
+        "speaker"     => "Mikimoto",
+        "speaker_bio" => "熱血宅宅",
+        "keyword"     => "iOS",
+        "loc"         => "企業號輪機室",
+        "catalog"     => "10",
+        "start_time"  => strtotime("2013-10-27 10:20:00"),
+        "end_time"    => strtotime("2013-10-27 11:20:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 210,
+        "name"        => "進擊的Mikimoto",
+        "content"     => "Mokimoto的昨天",
+        "speaker"     => "Mikimoto",
+        "speaker_bio" => "熱血宅宅",
+        "keyword"     => "iOS",
         "loc"         => "企業號收發室",
+        "catalog"     => "4",
         "start_time"  => strtotime("2013-10-27 10:20:00"),
         "end_time"    => strtotime("2013-10-27 11:20:00")
         );
@@ -79,6 +123,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "熱血宅宅",
         "keyword"     => "Android",
         "loc"         => "企業號魚雷室",
+        "catalog"     => "5",
         "start_time"  => strtotime("2013-10-27 13:30:00"),
         "end_time"    => strtotime("2013-10-27 14:40:00")
         );
@@ -91,6 +136,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "熱血宅宅",
         "keyword"     => "數位內容",
         "loc"         => "企業號艦橋",
+        "catalog"     => "6",
         "start_time"  => strtotime("2013-10-27 13:30:00"),
         "end_time"    => strtotime("2013-10-27 14:40:00")
         );
@@ -103,6 +149,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "熱血宅宅",
         "keyword"     => "開發平台",
         "loc"         => "企業號輪機室",
+        "catalog"     => "7",
         "start_time"  => strtotime("2013-10-27 13:30:00"),
         "end_time"    => strtotime("2013-10-27 14:40:00")
         );
@@ -115,6 +162,7 @@ $data['sessions'][] = array(
         "speaker_bio" => "熱血宅宅",
         "keyword"     => "數位內容",
         "loc"         => "企業號甲板",
+        "catalog"     => "8",
         "start_time"  => strtotime("2013-10-27 15:10:00"),
         "end_time"    => strtotime("2013-10-27 16:40:00")
         );
