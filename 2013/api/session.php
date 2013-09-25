@@ -90,7 +90,7 @@ $data['sessions'][] = array(
         );
 
 $data['sessions'][] = array(
-        "id"          => 203,
+        "id"          => 202,
         "name"        => "進擊的Mikimoto 不死傳說",
         "content"     => "Mokimoto的後天",
         "speaker"     => "Mikimoto",
