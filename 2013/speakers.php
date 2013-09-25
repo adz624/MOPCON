@@ -211,6 +211,17 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
+      <a id="zonble"></a>
+      <img src="speaker_img/zonble.jpg" alt="Zonble">
+      <h2>楊維中<br>Zonble</h2>
+<p>網路代號 zonble。Mac OS X 應用程式開發經驗八年、iOS 應用程式開發經驗五年，一個身上有 Objective-C 程式碼刺青的軟體工程師。
+<p>曾參與 OpenVanilla、Yahoo! 輸入法、嘸蝦米輸入法 X1、教育部閩南語漢字輸入法等軟體開發專案，目前任職於 KKBOX，負責 Mac OS X 與 iOS 平台各項產品開發。
+<p>題目：為視障朋友打造行動應用
+<p>摘要：觸控介面以及語音合成（TTS）技術的普及，現在的智慧型手機與平板電腦，可說是自電腦問世以來，對視障朋友最為方便的資訊應用工具。然而，要讓視障朋友可以方便地使用各項服務，除了作業系統本身所提供的能力外，更需要的是所有應用程式開發者對於無障礙議題的關心與努力。
+<p>本講題以 iOS 平台為例，說明視障朋友如何操作行動裝置，開發者如何在應用程式中、甚至是複雜操作介面中加入無障礙支援，以及其他需要注意之處。
+      </div>
+
+      <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
       </div>
