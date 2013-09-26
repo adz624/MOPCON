@@ -41,6 +41,57 @@
           </div>
         </div>
     <div class="row">
+      <div class="span10 offset1">
+            <legend>贊助商</legend>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="aws" rel="external" href="http://aws.amazon.com"><img src="img/logo/aws_logo.png" alt="Amazon Web Service" /></a></li>
+              <li class="thumbnail"><a id="nokia" rel="external" href="http://www.nokia.com"><img src="img/logo/nokia_logo.png" alt="NOKIA" /></a></li>
+              <li class="thumbnail"><a id="winphone" rel="external" href="http://dev.windowsphone.com"><img src="img/logo/winphone_logo.png" alt="Microsoft Windows Phone" /></a></li>
+              <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a></li>
+              <li class="thumbnail"><a id="infinitiessoft" rel="external" href="http://infinitiessoft.com"><img src="img/logo/infinitiessoft-logo.png" alt="Infinities Soft" /></a></li>
+              <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a></li>
+              <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a></li>
+              <li class="thumbnail"><a id="wiwistock" rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a></li>
+              <li class="thumbnail"><a id="userxper" rel="external" href="http://www.userxper.com/"><img src="img/logo/userxper_logo.png" alt="悠識數位" /></a></li>
+              <li class="thumbnail"><a id="moko365" rel="external" href="http://www.moko365.com/"><img src="img/logo/moko-logo.png" alt="Moko365" /></a></li>
+              <li class="thumbnail"><a id="mobilogics" rel="external" href="http://www.mobilogics.com.tw/"><img src="img/logo/mobilogics-r_logo.png" alt="Mobilogics" /></a></li>
+            </ul>
+      </div>
+      <div class="span10 offset1">
+            <legend >特別感謝</legend>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="stu" rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu_logo.png" alt="樹德科技大學 電算中心" /></a></li>
+              <li class="thumbnail"><a id="ossf" rel="external" href="http://openfoundry.org/"><img src="img/logo/openfoundry_logo.png" alt="OSSF自由軟體鑄造場" /></a></li>
+            </ul>
+      </div>
+
+      <div class="span10 offset1">
+            <legend>媒體合作</legend>
+            <p>感謝以下媒體支持</p>
+            <ul class="thumbnails">
+              <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="App情報誌" /></a>
+            </ul>
+      </div>
+
+      <div class="span10 offset1">
+                <legend>主辦單位：</legend>
+            <ul>
+              <li><a rel="external" href="http://www.epza.gov.tw/">經濟部加工出口區管理處</a>
+            </ul>
+      </div>
+      <div class="span10 offset1">
+                <legend>執行單位：</legend>
+                    <ul class="thumbnails">
+                        <li class="thumbnail"><a id="stipc" rel="external" href="http://www.stipc.nsysu.edu.tw/"><img alt="NSYSU STIPC logo" src="img/logo/nsysu_stipc-logo.png"></a></li>
+                        <li class="thumbnail"><a id="ksdg" rel="external" href="http://www.facebook.com/groups/KSDGroup/"><img alt="Kaohsiung Software Developer Group logo" src="img/logo/ksdg.png" /></a></li>
+                        <li class="thumbnail"><a id="chk" rel="external" href="http://www.facebook.com/groups/cocoaheads.kaohsiung/"><img alt="CocoaHeads Kaohsiung logo" src="img/logo/cocoaheads-logo.png" /></a></li>
+                        <li class="thumbnail"><a id="mosut" rel="external" href="http://www.facebook.com/groups/mosut"><img alt="MOSUT logo" src="img/logo/mosut-logo.png" /></a></li>
+                        <li class="thumbnail"><a id="kimu" rel="external" href=""><img alt="KIMU logo" src="img/logo/kimu.jpeg" /></a></li>
+                        <li class="thumbnail"><a id="kalug" rel="external" href="http://kalug.linux.org.tw/"><img alt="KaLUG logo" src="img/logo/kalug.png"/></a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="row">
       <div style="float:right;">
       <p><h3>Follow us</h3></p>
       <? include("./share.php"); ?>
