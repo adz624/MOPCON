@@ -48,7 +48,7 @@
 
       <div class="row">
         <div class="span12">
-          <h1>議程表</h1>
+          <h1>議程簡表</h1>
         </div>
       </div>
 
@@ -70,7 +70,7 @@
         <td><div class='session_block'>致詞 + 議程導覽</div></td></tr>
       <tr>
         <td><div class='time_block'>9:25</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: AWS</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 - Amazon Web Service</div></td></tr>
       <tr>
         <td><div class='time_block'>10:15</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -78,9 +78,9 @@
         <td><div class='time_block'>10:30</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): KKBOX 在 Android 實作串流音樂的挑戰
-            <p>二廳 (議程 B): 遊戲 App 開發營運實務：那些成功者沒說的事
-            <p>三廳 (議程 C): Nokia-MS hand-on
+            <p>一廳 (議程 A): KKBOX 在 Android 實作串流音樂的挑戰 (Rogery)
+            <p>二廳 (議程 B): 遊戲 App 開發營運實務：那些成功者沒說的事 (半路)
+            <p>三廳 (議程 C): 議題確認中 - Nokia/Microsoft
           </div>
         </td>
       </tr>
@@ -91,9 +91,9 @@
         <td><div class='time_block'>11:20</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 深入淺出桌椅組裝器材
-            <p>二廳 (議程 B): 我已經不能說自己是程式界的菜鳥了
-            <p>三廳 (議程 C): Nokia-MS hand-on
+            <p>一廳 (議程 A): 深入淺出桌椅組裝器材 (Shaka)
+            <p>二廳 (議程 B): 我已經不能說自己是程式界的菜鳥了 (魏巍)
+            <p>三廳 (議程 C): 議題確認中 - Nokia/Microsoft
           </div>
         </td>
       </tr>
@@ -102,7 +102,7 @@
         <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
       <tr>
         <td><div class='time_block'>13:20</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: Open is the new norm</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: Open is the new norm (Sega)</div></td></tr>
       <tr>
         <td><div class='time_block'>14:10</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -110,9 +110,9 @@
         <td><div class='time_block'>14:20</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 利用 CloudBox 開發跨平台行動遊戲
-            <p>二廳 (議程 B): App 與改變世界的力量
-            <p>三廳 (議程 C): iOS 上的文字描繪基礎
+            <p>一廳 (議程 A): 利用 CloudBox 開發跨平台行動遊戲 (Cloudhsu)
+            <p>二廳 (議程 B): App 與改變世界的力量 (KNY)
+            <p>三廳 (議程 C): iOS 上的文字描繪基礎 (Yllan)
           </div>
         </td>
       </tr>
@@ -123,9 +123,9 @@
         <td><div class='time_block'>15:20</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 用 KKBOX Android Toolkit 加速 Android Apps 開發
-            <p>二廳 (議程 B): 軟硬整合設計
-            <p>三廳 (議程 C): RubyMotion: Use It & Hack It
+            <p>一廳 (議程 A): 用 KKBOX Android Toolkit 加速 Android Apps 開發 (Peter/Allan)
+            <p>二廳 (議程 B): 軟硬整合設計 (Scott)
+            <p>三廳 (議程 C): RubyMotion: Use It & Hack It (Joseph)
           </div>
         </td>
       </tr>
@@ -136,9 +136,9 @@
         <td><div class='time_block'>16:10</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 讓你 App 優雅的 crash 三部曲
-            <p>二廳 (議程 B): Hiiir
-            <p>三廳 (議程 C): 從手機程式到網頁開發
+            <p>一廳 (議程 A): 讓你 App 優雅的 crash 三部曲 (Hokila)
+            <p>二廳 (議程 B): 議題確認中 - Hiiir
+            <p>三廳 (議程 C): 從手機程式到網頁開發 (Walkingice)
           </div>
         </td>
       </tr>
@@ -162,7 +162,7 @@
       </tr>
       <tr>
         <td><div class='time_block'>9:00</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: Microsoft</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 - Microsoft</div></td></tr>
       <tr>
         <td><div class='time_block'>9:50</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -170,9 +170,9 @@
         <td><div class='time_block'>10:00</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): Fingers Party：從一代至二代經驗分享
-            <p>二廳 (議程 B): Industry Hacking: 聊，傳統產業，玩，軟硬體整合
-            <p>三廳 (議程 C): 在行動裝置的即時影像辨識開發經驗分享 —— 以 FindDog.net 尋狗網為例
+            <p>一廳 (議程 A): Fingers Party: 從一代至二代經驗分享 (炎羅)
+            <p>二廳 (議程 B): Industry Hacking: 聊，傳統產業，玩，軟硬體整合 (Dwchiang)
+            <p>三廳 (議程 C): 在行動裝置的即時影像辨識開發經驗分享: 以 FindDog.net 尋狗網為例 (Jamesyeh)
           </div>
         </td>
       </tr>
@@ -183,9 +183,9 @@
         <td><div class='time_block'>10:50</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): Mobile Web Application 甘苦談
-            <p>二廳 (議程 B): 為了環遊世界而誕生的世界迷霧
-            <p>三廳 (議程 C): AWS Hand-on
+            <p>一廳 (議程 A): Mobile Web Application 甘苦談 (Othree)
+            <p>二廳 (議程 B): 為了環遊世界而誕生的世界迷霧 (Olli)
+            <p>三廳 (議程 C): 議題確認中 - Amazon Web Service
           </div>
         </td>
       </tr>
@@ -193,9 +193,9 @@
         <td><div class='time_block'>11:30</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 為視障朋友打造行動應用
-            <p>二廳 (議程 B): 數位無限軟體
-            <p>三廳 (議程 C): AWS Hand-on
+            <p>一廳 (議程 A): 為視障朋友打造行動應用 (Zonble)
+            <p>二廳 (議程 B): 議題確認中 - 數位無限軟體
+            <p>三廳 (議程 C): 議題確認中 - Amazon Web Service
           </div>
         </td>
       </tr>
@@ -204,7 +204,7 @@
         <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
       <tr>
         <td><div class='time_block'>13:30</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: Mobile App 開發 —— 創意 理想與現實之間</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: Mobile App 開發: 創意 理想與現實之間 - 凱鈿行動科技</div></td></tr>
       <tr>
         <td><div class='time_block'>14:20</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -212,9 +212,9 @@
         <td><div class='time_block'>14:30</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): The web backend of android mobile
-            <p>二廳 (議程 B): App 急速視覺 UX 回饋應用  —— 以 AR 應用為例
-            <p>三廳 (議程 C): AllJoyn
+            <p>一廳 (議程 A): The web backend of android mobile (TonyQ)
+            <p>二廳 (議程 B): App 急速視覺 UX 回饋應用: 以 AR 應用為例 (Anistar)
+            <p>三廳 (議程 C): AllJoyn (Awaw)
           </div>
         </td>
       </tr>
@@ -225,8 +225,8 @@
         <td><div class='time_block'>15:30</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 挖掘低耗電藍芽的寶藏
-            <p>二廳 (議程 B): Apps 製作心得分享
+            <p>一廳 (議程 A): 挖掘低耗電藍芽的寶藏 (Evan Wu)
+            <p>二廳 (議程 B): Apps 製作心得分享 (Nokimi)
             <p>三廳 (議程 C):
           </div>
         </td>
