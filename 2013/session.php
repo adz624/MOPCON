@@ -72,6 +72,9 @@
         <td><div class='time_block'>9:25</div></td>
         <td><div class='break_block'>Keynote 三廳聯播: AWS</div></td></tr>
       <tr>
+        <td><div class='time_block'>10:15</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
         <td><div class='time_block'>10:30</div></td>
         <td>
           <div class='session_block'>
@@ -82,24 +85,65 @@
         </td>
       </tr>
       <tr>
-        <td><div class='time_block'>11:20</div></td>
-        <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
-      <tr>
-        <td><div class='time_block'>13:30</div></td>
-        <td>
-          <div class='session_block'>
-            <p><i class="icon-windows red"></i> 一廳 (Keynote 1)
-            <p>二廳 (Keynote 2)<p>三廳 (議程 C)
-          </div>
-        </td></tr>
-      <tr>
-        <td><div class='time_block'>14:40</div></td>
+        <td><div class='time_block'>11:10</div></td>
         <td><div class='break_block'>休息</div></td></tr>
       <tr>
-        <td><div class='time_block'>15:10</div></td>
-        <td><div class='session_block'><p>議程(D*2)<p>議程+座談(E*2)</div></td></tr>
+        <td><div class='time_block'>11:20</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): 深入淺出桌椅組裝器材
+            <p>二廳 (議程 B): 我已經不能說自己是程式界的菜鳥了
+            <p>三廳 (議程 C): Nokia-MS hand-on
+          </div>
+        </td>
+      </tr>
       <tr>
-        <td><div class='time_block'>16:40</div></td>
+        <td><div class='time_block'>12:00</div></td>
+        <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
+      <tr>
+        <td><div class='time_block'>13:20</div></td>
+        <td><div class='break_block'>Keynote 三廳聯播: Open is the new norm</div></td></tr>
+      <tr>
+        <td><div class='time_block'>14:10</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
+        <td><div class='time_block'>14:20</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): 利用 CloudBox 開發跨平台行動遊戲
+            <p>二廳 (議程 B): App 與改變世界的力量
+            <p>三廳 (議程 C): iOS 上的文字描繪基礎
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class='time_block'>15:00</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
+        <td><div class='time_block'>15:20</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): 用 KKBOX Android Toolkit 加速 Android Apps 開發
+            <p>二廳 (議程 B): 軟硬整合設計
+            <p>三廳 (議程 C): RubyMotion: Use It & Hack It
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class='time_block'>16:00</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
+        <td><div class='time_block'>16:10</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): 讓你 App 優雅的 crash 三部曲
+            <p>二廳 (議程 B): Hiiir
+            <p>三廳 (議程 C): 從手機程式到網頁開發
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class='time_block'>17:00</div></td>
         <td><div class='session_block'>公告/散場</div></td></tr>
     </table>
         </div>
