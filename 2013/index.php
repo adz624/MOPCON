@@ -13,17 +13,17 @@
     </div>
     <div class="container" id="all" style="padding: 10px;">
         <div class="row">
-    <div class="span9 well offset1">
-    <div class="span7">
-    <h3>報名資訊</h3>
-    <ul class="sessionList">
-		  <li><i class="icon-time"></i>&nbsp;&nbsp;時間：2013/10/26-27（六日兩天）</li>
-			<li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心</li>
-			<li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON (Mobile Open Platform Conference)2013將以 "I code, I spread, I connect" 作為主要精神意涵，議程以行動開發技術議程為核心，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</li>
-		</ul>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="#" >即將開放報名</a></p>
-  </div>
-  </div>
+          <div class="span8 well offset2">
+            <div class="span7">
+              <h3>報名資訊</h3>
+              <ul class="sessionList">
+		            <li><i class="icon-time"></i>&nbsp;&nbsp;時間：2013/10/26-27（六日兩天）</li>
+                <li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心</li>
+                <li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON (Mobile Open Platform Conference)2013將以 "I code, I spread, I connect" 作為主要精神意涵，議程以行動開發技術議程為核心，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</li>
+		          </ul>
+		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" href="http://registrano.com/events/mopcon-2013" >9/28 20:00 開放報名</a></p>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="span4 data-cell">
