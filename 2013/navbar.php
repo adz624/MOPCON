@@ -16,9 +16,9 @@
         <a id="main_logo" class="brand" href="/"><img src="img/logo.png"/></a>
         <div class="nav-collapse">
           <ul class="nav">
-            <!-- <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li> -->
+            <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
             <li class="<?php echo $function['sponsor']; ?>"><a href="sponsor.php">贊助</a></li>
-            <li class="<?php echo $function['cfp']; ?>"><a href="cfp.php">議程投稿</a></li>
+            <!-- <li class="<?php echo $function['cfp']; ?>"><a href="cfp.php">議程投稿</a></li> -->
             <li class="<?php echo $function['speakers']; ?>"><a href="speakers.php">講者</a></li>
             <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
             <li class="<?php echo $function['map']; ?>"><a href="map.php">交通</a></li>
