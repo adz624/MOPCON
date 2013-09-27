@@ -58,8 +58,12 @@
     <table class="schd_table">
       <tr>
         <td><div class='time_block'>8:30</div></td>
-        <td><div class='session_block'>大會報到</div></td>
-        <td><div class='session_block'>video playback (議程預覽 + 工商服務 + 早餐時間)</div>
+        <td>
+          <div class='session_block'>
+            <p>大會報到
+            <p>video playback (議程預覽 + 工商服務 + 早餐時間)
+          </div>
+        </td>
       </tr>
       <tr>
         <td><div class='time_block'>9:05</div></td>
