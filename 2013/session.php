@@ -57,24 +57,23 @@
     <h3> 10/26 第一日 </h3>
     <table class="schd_table">
       <tr>
-        <td><div class='time_block'>8:00</div></td>
+        <td><div class='time_block'>8:30</div></td>
         <td><div class='session_block'>大會報到</div></td>
+        <td><div class='session_block'>video playback (議程預覽 + 工商服務 + 早餐時間)</div>
       </tr>
       <tr>
-        <td><div class='time_block'>8:30</div></td>
-        <td><div class='session_block'>video playback (議程預覽 + 工商服務 + 早餐時間)</div></td></tr>
+        <td><div class='time_block'>9:05</div></td>
+        <td><div class='session_block'>致詞 + 議程導覽</div></td></tr>
       <tr>
-        <td><div class='time_block'>9:00</div></td>
-        <td><div class='session_block'>致詞 + Keynote(1) + 議程導覽 (三廳聯播)</div></td></tr>
+        <td><div class='time_block'>9:25</div></td>
+        <td><div class='break_block'>Keynote 三廳聯播: AWS</div></td></tr>
       <tr>
-        <td><div class='time_block'>10:00</div></td>
-        <td><div class='break_block'>休息</div></td></tr>
-      <tr>
-        <td><div class='time_block'>10:20</div></td>
+        <td><div class='time_block'>10:30</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A)
-            <p>二廳 (議程 B)
+            <p>一廳 (議程 A): KKBOX 在 Android 實作串流音樂的挑戰
+            <p>二廳 (議程 B): 遊戲 App 開發營運實務：那些成功者沒說的事
+            <p>三廳 (議程 C): Nokia-MS hand-on
           </div>
         </td>
       </tr>
