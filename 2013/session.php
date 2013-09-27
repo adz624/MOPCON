@@ -70,7 +70,7 @@
         <td><div class='session_block'>致詞 + 議程導覽</div></td></tr>
       <tr>
         <td><div class='time_block'>9:25</div></td>
-        <td><div class='break_block'>Keynote 三廳聯播: AWS</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: AWS</div></td></tr>
       <tr>
         <td><div class='time_block'>10:15</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -102,7 +102,7 @@
         <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
       <tr>
         <td><div class='time_block'>13:20</div></td>
-        <td><div class='break_block'>Keynote 三廳聯播: Open is the new norm</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: Open is the new norm</div></td></tr>
       <tr>
         <td><div class='time_block'>14:10</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -152,34 +152,93 @@
     <h3> 10/27 第二日 </h3>
     <table class="schd_table">
       <tr>
-        <td><div class='time_block'>8:00</div></td>
-        <td><div class='session_block'>大會報到</div></td></tr>
-      <tr>
         <td><div class='time_block'>8:30</div></td>
-        <td><div class='session_block'>video playback (議程預覽 + 工商服務 + 早餐時間)</div></td></tr>
+        <td>
+          <div class='session_block'>
+            <p>大會報到
+            <p>video playback (議程預覽 + 工商服務 + 早餐時間)
+          </div>
+        </td>
+      </tr>
       <tr>
         <td><div class='time_block'>9:00</div></td>
-        <td><div class='session_block'>致詞 + Keynote(1) + 議程導覽 (三廳聯播)</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: Microsoft</div></td></tr>
       <tr>
-        <td><div class='time_block'>10:00</div></td>
+        <td><div class='time_block'>9:50</div></td>
         <td><div class='break_block'>休息</div></td></tr>
       <tr>
-        <td><div class='time_block'>10:20</div></td>
-        <td><div class='session_block'><p>一廳 (議程 A)<p>二廳 (議程 B)</div></td></tr>
+        <td><div class='time_block'>10:00</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): Fingers Party：從一代至二代經驗分享
+            <p>二廳 (議程 B): Industry Hacking: 聊，傳統產業，玩，軟硬體整合
+            <p>三廳 (議程 C): 在行動裝置的即時影像辨識開發經驗分享 —— 以 FindDog.net 尋狗網為例
+          </div>
+        </td>
+      </tr>
       <tr>
-        <td><div class='time_block'>11:20</div></td>
+        <td><div class='time_block'>10:40</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
+        <td><div class='time_block'>10:50</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): Mobile Web Application 甘苦談
+            <p>二廳 (議程 B): 為了環遊世界而誕生的世界迷霧
+            <p>三廳 (議程 C): AWS Hand-on
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class='time_block'>11:30</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): 為視障朋友打造行動應用
+            <p>二廳 (議程 B): 數位無限軟體
+            <p>三廳 (議程 C): AWS Hand-on
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class='time_block'>12:20</div></td>
         <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
       <tr>
         <td><div class='time_block'>13:30</div></td>
-        <td><div class='session_block'><p>一廳 (Keynote 1)<p>二廳 (Keynote 2)<p>三廳 (議程 C)</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: Mobile App 開發 —— 創意 理想與現實之間</div></td></tr>
       <tr>
-        <td><div class='time_block'>14:40</div></td>
+        <td><div class='time_block'>14:20</div></td>
         <td><div class='break_block'>休息</div></td></tr>
       <tr>
-        <td><div class='time_block'>15:10</div></td>
-        <td><div class='session_block'><p>議程(D*2)<p>議程+座談(E*2)</div></td></tr>
+        <td><div class='time_block'>14:30</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): The web backend of android mobile
+            <p>二廳 (議程 B): App 急速視覺 UX 回饋應用  —— 以 AR 應用為例
+            <p>三廳 (議程 C): AllJoyn
+          </div>
+        </td>
+      </tr>
       <tr>
-        <td><div class='time_block'>16:40</div></td>
+        <td><div class='time_block'>15:10</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
+        <td><div class='time_block'>15:30</div></td>
+        <td>
+          <div class='session_block'>
+            <p>一廳 (議程 A): 挖掘低耗電藍芽的寶藏
+            <p>二廳 (議程 B): Apps 製作心得分享
+            <p>三廳 (議程 C):
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class='time_block'>16:10</div></td>
+        <td><div class='break_block'>休息</div></td></tr>
+      <tr>
+        <td><div class='time_block'>16:20</div></td>
+        <td><div class='session_block'>Microsoft 抽獎 + Lightening Talk</div></td></tr>
+      <tr>
+        <td><div class='time_block'>17:30</div></td>
         <td><div class='session_block'>公告/散場</div></td></tr>
     </table>
         </div>
