@@ -227,7 +227,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): 挖掘低耗電藍芽的寶藏 (Evan Wu)
             <p>二廳 (議程 B): Apps 製作心得分享 (Nokimi)
-            <p>三廳 (議程 C):
+            <p>三廳 (議程 C): 有沒有那條線很重要嗎？ (Stanely)
           </div>
         </td>
       </tr>
