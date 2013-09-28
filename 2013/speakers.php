@@ -222,6 +222,47 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
+      <a id="Ollix"></a>
+      <img src="speaker_img/ollix.jpg" alt="Ollix">
+      <h2>Ollix</h2>
+<p>獨立開發者，Ollix 創辦人，只做只自已想要的 App，夢想是要和老婆帶兩台小折去環遊世界。
+<p>http://about.me/olliwang
+<p>題目：為了環遊世界而誕生的世界迷霧
+<p>議程大綱：
+<p>* Ollix團隊介紹
+<p>* 世界迷霧的發想綠起
+<p>* 世界迷霧的設計過程
+<p>* 世界迷霧上架一年來的心得分享題目：為視障朋友打造行動應用
+      </div>
+
+      <div class="speaker">
+      <a id="Markku Lepisto"></a>
+      <img src="speaker_img/MarkkuLepisto.jpg" alt="MarkkuLepisto">
+      <h2>Markku Lepisto</h2>
+<p>Speaker: Markku Lepisto, Technology Evangelist, Amazon Web Services
+<p>Bio: "Markku is the APAC Technology Evangelist at Amazon Web Services. 
+<p>He has been in the IT industry for 14 years, and has held various technical and management positions, covering R&D, technical support and architecture.
+<p>For the past couple of years, Markku was responsible for the cloud computing architecture and technology transformation of Nokia Siemens Networks' global business units.
+<p>Markku has worked out of Finland, China and Singapore."
+<p>Title: Rethinking the Mobile Universe with Amazon Web Services
+<p>Synopsis: Learn how you can develop and run a multi-tiered Mobile App without a single server, leveraging the power of Amazon Web Services.
+      </div>
+
+      <div class="speaker">
+      <a id="Ollix"></a>
+      <img src="speaker_img/ollix.jpg" alt="ollix">
+      <h2>Ollix</h2>
+<p>獨立開發者，Ollix 創辦人，只做只自已想要的 App，夢想是要和老婆帶兩台小折去環遊世界。
+<p>http://about.me/olliwang
+<p>題目：為了環遊世界而誕生的世界迷霧
+<p>議程大綱：
+<p>* Ollix團隊介紹
+<p>* 世界迷霧的發想綠起
+<p>* 世界迷霧的設計過程
+<p>* 世界迷霧上架一年來的心得分享題目：為視障朋友打造行動應用
+      </div>
+
+      <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
       </div>
