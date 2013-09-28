@@ -70,7 +70,7 @@
         <td><div class='session_block'>致詞 + 議程導覽</div></td></tr>
       <tr>
         <td><div class='time_block'>9:25</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 - Amazon Web Service</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 (Markku Lepisto) - Amazon Web Service</div></td></tr>
       <tr>
         <td><div class='time_block'>10:15</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -137,7 +137,7 @@
         <td>
           <div class='session_block'>
             <p>一廳 (議程 A): 讓你 App 優雅的 crash 三部曲 (Hokila)
-            <p>二廳 (議程 B): 議題確認中 - Hiiir
+            <p>二廳 (議程 B): 議題確認中 (Neil Lee) - Hiiir
             <p>三廳 (議程 C): 從手機程式到網頁開發 (Walkingice)
           </div>
         </td>
@@ -162,7 +162,7 @@
       </tr>
       <tr>
         <td><div class='time_block'>9:00</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 - Microsoft</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 (Ptt, PTT創辦人) - Microsoft</div></td></tr>
       <tr>
         <td><div class='time_block'>9:50</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -185,7 +185,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): Mobile Web Application 甘苦談 (Othree)
             <p>二廳 (議程 B): 為了環遊世界而誕生的世界迷霧 (Olli)
-            <p>三廳 (議程 C): 議題確認中 - Amazon Web Service
+            <p>三廳 (議程 C): 議題確認中 (Joe Ziegler) - Amazon Web Service
           </div>
         </td>
       </tr>
