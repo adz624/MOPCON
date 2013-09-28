@@ -249,17 +249,27 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
-      <a id="Ollix"></a>
-      <img src="speaker_img/ollix.jpg" alt="ollix">
-      <h2>Ollix</h2>
-<p>獨立開發者，Ollix 創辦人，只做只自已想要的 App，夢想是要和老婆帶兩台小折去環遊世界。
-<p>http://about.me/olliwang
-<p>題目：為了環遊世界而誕生的世界迷霧
-<p>議程大綱：
-<p>* Ollix團隊介紹
-<p>* 世界迷霧的發想綠起
-<p>* 世界迷霧的設計過程
-<p>* 世界迷霧上架一年來的心得分享題目：為視障朋友打造行動應用
+      <a id="Joe Ziegler"></a>
+      <img src="speaker_img/JoeZiegler.jpg" alt="JoeZiegler">
+      <h2>Joe Ziegler</h2>
+<p>Speaker: Joe Ziegler, Start-Up Business Development Manager, Amazon Web Services
+<p>Bio: “Joe works across Asia Pacific as the AWS Start-Up Business Development Manager, enabling the ecosystem and working with amazing start-up companies.
+<p>Originally from Texas, he began his career in Silicon Valley. In 1995, he worked on some of the first e-commerce applications at Netscape, and worked at NetGravity during the time of its IPO, as a technical executive responsible for the company IP, and managing engineering groups.
+<p>After that, Joe built several startups from the ground up as the Director of Technical Services in his recent venture, Iris Data Services, which was listed as one of the “Forbes 500 Fastest Growing Companies in the US”.
+<p>Joe has lived on five continents and has studied Mandarin Chinese, Japanese and Korean.”
+<p>Title: Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS
+<p>Synopsis: Push notifications are alerts you can send to users even when they are not actively using your app.
+<p>Join us to see a Live Demo of how you can easily send push notifications to Apple, Google and Amazon devices through a simple, Unified API, using Amazon Simple Notification Service.
+      </div>
+
+
+      <div class="speaker">
+      <a id="Neil Lee"></a>
+      <img src="speaker_img/NeilLee.jpg" alt="NeilLee">
+      <h2>Neil Lee</h2>
+<p>Hiiir 時間軸科技副總經理
+<p>經歷簡述：專長於技術整合及三網架構，擅於整合市場需求提供最佳技術解決方案，目前擔任Hiiir時間軸科技市場技術總監
+<p>帶領30多位網站及行動技術團隊提供源源不絕的技術整合創意，同時也為國內企業行動技術顧問、業界講師及大專院校講師。
       </div>
 
       <div class="speaker">
