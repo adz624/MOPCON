@@ -171,7 +171,7 @@
         <td>
           <div class='session_block'>
             <p>一廳 (議程 A): Fingers Party: 從一代至二代經驗分享 (炎羅)
-            <p>二廳 (議程 B): Industry Hacking: 聊，傳統產業，玩，軟硬體整合 (Dwchiang)
+            <p>二廳 (議程 B): Industry Hacking: 聊，傳統產業健身器材，玩，軟硬體整合 (Ernest Chiang)
             <p>三廳 (議程 C): 在行動裝置的即時影像辨識開發經驗分享: 以 FindDog.net 尋狗網為例 (Jamesyeh)
           </div>
         </td>
