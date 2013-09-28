@@ -70,7 +70,7 @@
         <td><div class='session_block'>致詞 + 議程導覽</div></td></tr>
       <tr>
         <td><div class='time_block'>9:25</div></td>
-        <td><div class='session_block'>Keynote 三廳聯播: 議題確認中 (Markku Lepisto) - Amazon Web Service</div></td></tr>
+        <td><div class='session_block'>Keynote 三廳聯播: Rethinking the Mobile Universe with Amazon Web Services (Markku Lepisto) - Amazon Web Service</div></td></tr>
       <tr>
         <td><div class='time_block'>10:15</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -185,7 +185,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): Mobile Web Application 甘苦談 (Othree)
             <p>二廳 (議程 B): 為了環遊世界而誕生的世界迷霧 (Olli)
-            <p>三廳 (議程 C): 議題確認中 (Joe Ziegler) - Amazon Web Service
+            <p>三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service
           </div>
         </td>
       </tr>
@@ -195,7 +195,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): 為視障朋友打造行動應用 (Zonble)
             <p>二廳 (議程 B): 議題確認中 - 數位無限軟體
-            <p>三廳 (議程 C): 議題確認中 - Amazon Web Service
+            <p>三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service
           </div>
         </td>
       </tr>
