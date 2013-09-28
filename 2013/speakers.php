@@ -225,7 +225,7 @@ google提供的UI元件不夠滿足產品需求？
       <a id="Ollix"></a>
       <img src="speaker_img/ollix.jpg" alt="Ollix">
       <h2>Ollix</h2>
-<p>獨立開發者，Ollix 創辦人，只做只自已想要的 App，夢想是要和老婆帶兩台小折去環遊世界。<a href="https://livehouse.in/">http://about.me/olliwang</a>
+<p>獨立開發者，Ollix 創辦人，只做只自已想要的 App，夢想是要和老婆帶兩台小折去環遊世界。<a href="http://about.me/olliwang">Olli Wang</a>
 <p>題目：為了環遊世界而誕生的世界迷霧
 <p>議程大綱：
 <li>Ollix團隊介紹</li>
