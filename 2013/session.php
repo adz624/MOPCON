@@ -112,7 +112,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): 利用 CloudBox 開發跨平台行動遊戲 (Cloudhsu)
             <p>二廳 (議程 B): App 與改變世界的力量 (KNY)
-            <p>三廳 (議程 C): iOS 上的文字描繪基礎 (Yllan)
+            <p>三廳 (議程 C): iOS 上的文字描繪基礎 (yllan)
           </div>
         </td>
       </tr>
@@ -136,7 +136,7 @@
         <td><div class='time_block'>16:10</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 讓你 App 優雅的 crash 三部曲 (Hokila)
+            <p>一廳 (議程 A): 讓你 App 優雅的 crash 三部曲 (hokila)
             <p>二廳 (議程 B): 議題確認中 (Neil Lee) - Hiiir
             <p>三廳 (議程 C): 從手機程式到網頁開發 (Walkingice)
           </div>
@@ -183,7 +183,7 @@
         <td><div class='time_block'>10:50</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): Mobile Web Application 甘苦談 (Othree)
+            <p>一廳 (議程 A): Mobile Web Application 甘苦談 (othree)
             <p>二廳 (議程 B): 為了環遊世界而誕生的世界迷霧 (Olli)
             <p>三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service
           </div>
@@ -193,7 +193,7 @@
         <td><div class='time_block'>11:30</div></td>
         <td>
           <div class='session_block'>
-            <p>一廳 (議程 A): 為視障朋友打造行動應用 (Zonble)
+            <p>一廳 (議程 A): 為視障朋友打造行動應用 (zonble)
             <p>二廳 (議程 B): 議題確認中 - 數位無限軟體
             <p>三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service
           </div>
@@ -214,7 +214,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): The web backend of android mobile (TonyQ)
             <p>二廳 (議程 B): App 急速視覺 UX 回饋應用: 以 AR 應用為例 (Anistar)
-            <p>三廳 (議程 C): AllJoyn (Awaw)
+            <p>三廳 (議程 C): AllJoyn (awaw)
           </div>
         </td>
       </tr>
@@ -227,7 +227,7 @@
           <div class='session_block'>
             <p>一廳 (議程 A): 挖掘低耗電藍芽的寶藏 (Evan Wu)
             <p>二廳 (議程 B): Apps 製作心得分享 (Nokimi)
-            <p>三廳 (議程 C): 有沒有那條線很重要嗎？ (Stanely)
+            <p>三廳 (議程 C): 有沒有那條線很重要嗎？ (stanely)
           </div>
         </td>
       </tr>

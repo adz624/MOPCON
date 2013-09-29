@@ -111,11 +111,12 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
       <div class="speaker">
       <a id="kny"></a>
       <img src="speaker_img/kny.jpg" alt="KNY">
-      <h2>KNY</h2>
+      <h2>陳坤助<br>KNY</h2>
 <p>中華民國 App 跨界交流協會理事長
 <p>於 2012 年11月獲得 Google Play Top Developer 徽章。
 <p>長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望能透過科技與開放的力量，建構更美好的未來。
-<p>題目: (敬請期待)
+<p>題目: App 與 改變世界的力量
+<p>如何透過微小的 App ，獲得巨大的力量，進而改變世界
       </div>
 
       <div class="speaker">
