@@ -213,7 +213,7 @@ google提供的UI元件不夠滿足產品需求？
       <div class="speaker">
       <a id="zonble"></a>
       <img src="speaker_img/zonble.jpg" alt="Zonble">
-      <h2>楊維中<br>Zonble</h2>
+      <h2>楊維中<br>zonble</h2>
 <p>網路代號 zonble。Mac OS X 應用程式開發經驗八年、iOS 應用程式開發經驗五年，一個身上有 Objective-C 程式碼刺青的軟體工程師。
 <p>曾參與 OpenVanilla、Yahoo! 輸入法、嘸蝦米輸入法 X1、教育部閩南語漢字輸入法等軟體開發專案，目前任職於 KKBOX，負責 Mac OS X 與 iOS 平台各項產品開發。
 <p>題目：為視障朋友打造行動應用
