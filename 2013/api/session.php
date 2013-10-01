@@ -247,106 +247,132 @@ $data['sessions'][] = array(
 
 $data['sessions'][] = array(
         "id"          => 200,
-        "name"        => "進擊的Mikimoto 前傳",
-        "content"     => "Mokimoto的一天",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "iOS",
-        "loc"         => "企業號輪機室",
+        "name"        => "Keynote 三廳聯播: 議題確認中 (Ptt, PTT創辦人) - Microsoft",
+        "content"     => "",
+        "speaker"     => "Ptt, PTT創辦人",
+        "speaker_bio" => "",
+        "keyword"     => "",
+        "loc"         => "Keynote 三廳聯播",
         "catalog"     => "9",
-        "start_time"  => strtotime("2013-10-27 10:20:00"),
-        "end_time"    => strtotime("2013-10-27 11:20:00")
-        );
-
-$data['sessions'][] = array(
-        "id"          => 201,
-        "name"        => "進擊的Mikimoto 今傳",
-        "content"     => "Mokimoto的明天",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "iOS",
-        "loc"         => "企業號輪機室",
-        "catalog"     => "5",
-        "start_time"  => strtotime("2013-10-27 10:20:00"),
-        "end_time"    => strtotime("2013-10-27 11:20:00")
-        );
-
-$data['sessions'][] = array(
-        "id"          => 202,
-        "name"        => "進擊的Mikimoto 不死傳說",
-        "content"     => "Mokimoto的後天",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "iOS",
-        "loc"         => "企業號輪機室",
-        "catalog"     => "10",
-        "start_time"  => strtotime("2013-10-27 10:20:00"),
-        "end_time"    => strtotime("2013-10-27 11:20:00")
+        "start_time"  => strtotime("2013-10-27 09:00:00"),
+        "end_time"    => strtotime("2013-10-27 09:50:00")
         );
 
 $data['sessions'][] = array(
         "id"          => 210,
-        "name"        => "進擊的Mikimoto",
-        "content"     => "Mokimoto的昨天",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "iOS",
-        "loc"         => "企業號收發室",
+        "name"        => "一廳 (議程 A): Fingers Party: 從一代至二代經驗分享",
+        "content"     => "我們是高雄的小型遊戲開發團隊，成員多半是學生及剛畢業的新鮮人，因為平常會在幾間不同的Cafe作業，團隊才以Nomads命名，游牧民族的意思。Fingers Party是團隊成立後第一個成功完成並且順利在App Store上架的作品，從開發到營運都是由團隊成員自己來做。作品上市累積一些市場經驗之後，我們就擬定了二代作品的更新方向，但一直到今年暑假新的實習學生加入後，我們才有足夠的人力來開發二代。本次演講主要分享我們的團隊、開發，和營運經驗，同時比較(驗收)一代及二代的差異。",
+        "speaker"     => "炎羅",
+        "speaker_bio" => "- 奧爾資訊工程師【作品: Oh! Cube】\n- 先進量子工程師【專案: Arcalet遊戲平台的API及Unity lib】\n- 與Garena Taiwan合作：魔獸爭霸-信長野望（2007~2008）\n- 大宇資訊客服專員（2005~2007）\n- 業界講師\n-- 明道大學數位設計學系（Unity3D遊戲開發）\n-- 樹德科大資工系（遊戲設計概論、Scirra Construct 2）\n-- 樹德科大動遊系（Unity3D遊戲開發）\n-- 南台科大畢業製作評審委員\n-- 樹德科大校外課程委員\n-- 樹德科大教師專業成長社群講師（遊戲開發與教學）",
+        "keyword"     => "",
+        "loc"         => "一廳 (議程 A)",
+        "catalog"     => "5",
+        "start_time"  => strtotime("2013-10-27 10:00:00"),
+        "end_time"    => strtotime("2013-10-27 10:40:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 211,
+        "name"        => "二廳 (議程 B): Industry Hacking: 聊，傳統產業健身器材，玩，軟硬體整合",
+        "content"     => "台灣經濟體與外匯結構的組成除了高科技產業、電子業之外，傳統產業也是不可或缺的一環。傳統產業升級所面臨的挑戰，也許遇上了這一波軟硬體整合、軟硬體開放，會碰撞出一些新的火花？有的傳統產業不大不小，但規模未到調研機構願意為之出市場研究報告，一切摸黑前進。在 PAFERS Tech 這兒有一群認真但不願認輸的跨領域挑戰者，正在挑戰從台灣迎向全球健身器材產業之神鬼迷航。（你認真了！但不一定會輸:）聊 www.pafers.com 的創業歷程。結合科技、商業模型、行動應用、軟硬體整合、法務的神奇航道。",
+        "speaker"     => "Ernest Chiang",
+        "speaker_bio" => "Ernest。這小孩一路在玩，挑了個英文名字假裝練習寫小說，後來才知道跟海明威撞名。小時候玩 MS-DOS, OS/2, Windows 3.1, Slackware，玩著玩著玩到大學申請少了零點多分沒法進資工系玩，改玩半導體製程和微小機電，幸運地進入台積研究所玩製程整合從研發、試產玩到量產。熱愛開放與不務正業的精神，曾經玩網路創業，現在上班在玩傳統產業 + 軟硬體整合，試著把無線通訊塞進健身器材中。下班參與 Mozilla 台灣社群 MozTW SUMO 專案，以及支援朋友們玩各種創業。夢想與大家玩出各種可能性。愛台灣，不解釋 XD",
+        "keyword"     => "",
+        "loc"         => "二廳 (議程 B)",
+        "catalog"     => "10",
+        "start_time"  => strtotime("2013-10-27 10:00:00"),
+        "end_time"    => strtotime("2013-10-27 10:40:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 212,
+        "name"        => "三廳 (議程 C): 在行動裝置的即時影像辨識開發經驗分享: 以 FindDog.net 尋狗網為例",
+        "content"     => "分享一個創新服務-FindDog.net APP的開發過程。這是一項可以使用行動裝置隨時拍照、即時比對、社群分享、軟硬整合晶片掃描的尋狗服務。將介紹其開發緣由、在行動裝置前端的低階影像處理、AWS後端平台的辨識整合架構、資料處理及型別比對技術等。",
+        "speaker"     => "Jamesyeh",
+        "speaker_bio" => "James原是舒適圈的大學助理教授，主攻情意計算，資工出身卻常在設計、心理及行銷系打混，做過無人載具、禪修、颱風預測、情緒分析、語音處理、消費者行為分析、訊號軟硬整合...等多元的案子。近兩年已經歷四家獲利的新創公司，去年成立了一間「想要顛覆舊思維」的公司，主要專注於多媒體處理、行為分析、軟硬整合，並結合手持裝置應用的創新服務。",
+        "keyword"     => "",
+        "loc"         => "三廳 (議程 C)",
         "catalog"     => "4",
-        "start_time"  => strtotime("2013-10-27 10:20:00"),
-        "end_time"    => strtotime("2013-10-27 11:20:00")
+        "start_time"  => strtotime("2013-10-27 10:00:00"),
+        "end_time"    => strtotime("2013-10-27 10:40:00")
         );
 
 $data['sessions'][] = array(
         "id"          => 220,
-        "name"        => "進擊的Mikimoto PartII",
-        "content"     => "轉職的Mokimoto",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "Android",
-        "loc"         => "企業號魚雷室",
+        "name"        => "一廳 (議程 A): Mobile Web Application 甘苦談",
+        "content"     => "在 Web Standard 成為網路主流後，開發人員沒想到的是，後面還有更艱苦的 Mobile Web 在等著他們，雖然各家手機的瀏覽器都照著標準走，不過接著而來的是各種靈異現象、不同的標準實作以及更不友善的除錯環境。本議程將分享講者在開發 Mobile Web Application 時，所遇到的各種疑難雜症。",
+        "speaker"     => "othree",
+        "speaker_bio" => "othree，十年前為了製作個人網頁而自學起 HTML、CSS 和 JavaScript，接著便一頭栽進網路標準的世界，並持續關注網路前端技術的發展，不時在部落格及各活動分享新知，近期關注 HTML5、CSS3、Web API、語意網等議題，被認為專長於 JavaScript，其實最喜歡寫的是漂亮的 HTML Markup，現職為 HTC 前端工程師（F2E）兼博士生。",
+        "keyword"     => "",
+        "loc"         => "一廳 (議程 A)",
         "catalog"     => "5",
-        "start_time"  => strtotime("2013-10-27 13:30:00"),
-        "end_time"    => strtotime("2013-10-27 14:40:00")
+        "start_time"  => strtotime("2013-10-27 10:50:00"),
+        "end_time"    => strtotime("2013-10-27 11:30:00")
         );
 
 $data['sessions'][] = array(
         "id"          => 221,
-        "name"        => "Mikimotoo與娜美",
-        "content"     => "在偉大航道的Mokimoto",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "數位內容",
-        "loc"         => "企業號艦橋",
+        "name"        => "二廳 (議程 B): 為了環遊世界而誕生的世界迷霧",
+        "content"     => "有一個不接case的兩人團隊，有一個想要環遊世界的大大夢想，而為了紀錄這一輩子的旅程，做了一個結合真實人生的小小遊戲，就叫作世界迷霧，歡迎來聽聽世界迷霧的成長故事。",
+        "speaker"     => "Olli",
+        "speaker_bio" => "獨立開發者，Ollix創辦人，只做只自已想要的app，夢想是要和老婆帶兩台小折去環遊世界。",
+        "keyword"     => "",
+        "loc"         => "二廳 (議程 B)",
         "catalog"     => "6",
-        "start_time"  => strtotime("2013-10-27 13:30:00"),
-        "end_time"    => strtotime("2013-10-27 14:40:00")
+        "start_time"  => strtotime("2013-10-27 10:50:00"),
+        "end_time"    => strtotime("2013-10-27 11:30:00")
         );
 
 $data['sessions'][] = array(
         "id"          => 222,
-        "name"        => "Mikimotoo與涼宮春日的浪漫夏天",
-        "content"     => "Mokimoto的愛情",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "開發平台",
-        "loc"         => "企業號輪機室",
+        "name"        => "三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service",
+        "content"     => "Synopsis: Push notifications are alerts you can send to users even when they are not actively using your app. Join us to see a Live Demo of how you can easily send push notifications to Apple, Google and Amazon devices through a simple, Unified API, using Amazon Simple Notification Service.",
+        "speaker"     => "Joe Ziegler",
+        "speaker_bio" => "Joe works across Asia Pacific as the AWS Start-Up Business Development Manager, enabling the ecosystem and working with amazing start-up companies. Originally from Texas, he began his career in Silicon Valley. In 1995, he worked on some of the first e-commerce applications at Netscape, and worked at NetGravity during the time of its IPO, as a technical executive responsible for the company IP, and managing engineering groups. After that, Joe built several startups from the ground up as the Director of Technical Services in his recent venture, Iris Data Services, which was listed as one of the “Forbes 500 Fastest Growing Companies in the US”. Joe has lived on five continents and has studied Mandarin Chinese, Japanese and Korean.",
+        "keyword"     => "",
+        "loc"         => "三廳 (議程 C)",
         "catalog"     => "7",
-        "start_time"  => strtotime("2013-10-27 13:30:00"),
-        "end_time"    => strtotime("2013-10-27 14:40:00")
+        "start_time"  => strtotime("2013-10-27 10:50:00"),
+        "end_time"    => strtotime("2013-10-27 11:30:00")
         );
 
 $data['sessions'][] = array(
         "id"          => 230,
-        "name"        => "你所不知道的Mikimotoo",
-        "content"     => "Mokimoto演講內容",
-        "speaker"     => "Mikimoto",
-        "speaker_bio" => "熱血宅宅",
-        "keyword"     => "數位內容",
-        "loc"         => "企業號甲板",
+        "name"        => "一廳 (議程 A): 為視障朋友打造行動應用",
+        "content"     => "觸控介面以及語音合成（TTS）技術的普及，現在的智慧型手機與平板電腦，可說是自電腦問世以來，對視障朋友最為方便的資訊應用工具。然而，要讓視障朋友可以方便地使用各項服務，除了作業系統本身所提供的能力外，更需要的是所有應用程式開發者對於無障礙議題的關心與努力。\n\n本講題以 iOS 平台為例，說明視障朋友如何操作行動裝置，開發者如何在應用程式中、甚至是複雜操作介面中加入無障礙支援，以及其他需要注意之處。",
+        "speaker"     => "zonble",
+        "speaker_bio" => "網路代號 zonble。Mac OS X 應用程式開發經驗八年、iOS 應用程式開發經驗五年，一個身上有 Objective-C 程式碼刺青的軟體工程師。曾參與 OpenVanilla、Yahoo! 輸入法、嘸蝦米輸入法 X1、教育部閩南語漢字輸入法等軟體開發專案，目前任職於 KKBOX，負責 Mac OS X 與 iOS 平台各項產品開發。",
+        "keyword"     => "",
+        "loc"         => "一廳 (議程 A)",
         "catalog"     => "8",
-        "start_time"  => strtotime("2013-10-27 15:10:00"),
-        "end_time"    => strtotime("2013-10-27 16:40:00")
+        "start_time"  => strtotime("2013-10-27 11:30:00"),
+        "end_time"    => strtotime("2013-10-27 12:20:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 231,
+        "name"        => "二廳 (議程 B): 議題確認中 - 數位無限軟體",
+        "content"     => "",
+        "speaker"     => "",
+        "speaker_bio" => "",
+        "keyword"     => "",
+        "loc"         => "二廳 (議程 B)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 11:30:00"),
+        "end_time"    => strtotime("2013-10-27 12:20:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 232,
+        "name"        => "三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service",
+        "content"     => "Synopsis: Push notifications are alerts you can send to users even when they are not actively using your app. Join us to see a Live Demo of how you can easily send push notifications to Apple, Google and Amazon devices through a simple, Unified API, using Amazon Simple Notification Service.",
+        "speaker"     => "Joe Ziegler",
+        "speaker_bio" => "Joe works across Asia Pacific as the AWS Start-Up Business Development Manager, enabling the ecosystem and working with amazing start-up companies. Originally from Texas, he began his career in Silicon Valley. In 1995, he worked on some of the first e-commerce applications at Netscape, and worked at NetGravity during the time of its IPO, as a technical executive responsible for the company IP, and managing engineering groups. After that, Joe built several startups from the ground up as the Director of Technical Services in his recent venture, Iris Data Services, which was listed as one of the “Forbes 500 Fastest Growing Companies in the US”. Joe has lived on five continents and has studied Mandarin Chinese, Japanese and Korean.",
+        "keyword"     => "",
+        "loc"         => "三廳 (議程 C)",
+        "catalog"     => "7",
+        "start_time"  => strtotime("2013-10-27 11:30:00"),
+        "end_time"    => strtotime("2013-10-27 12:20:00")
         );
 
 echo json_encode($data);
