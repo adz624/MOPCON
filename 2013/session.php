@@ -194,7 +194,7 @@
         <td>
           <div class='session_block'>
             <p>一廳 (議程 A): 為視障朋友打造行動應用 (zonble)
-            <p>二廳 (議程 B): 議題確認中 - 數位無限軟體
+            <p>二廳 (議程 B): 多雲及混合雲管理平台的開發實踐 - 數位無限軟體 總經理 陳文裕
             <p>三廳 (議程 C): Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS (Joe Ziegler) - Amazon Web Service
           </div>
         </td>
