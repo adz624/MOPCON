@@ -111,11 +111,12 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
       <div class="speaker">
       <a id="kny"></a>
       <img src="speaker_img/kny.jpg" alt="KNY">
-      <h2>KNY</h2>
+      <h2>陳坤助<br>KNY</h2>
 <p>中華民國 App 跨界交流協會理事長
 <p>於 2012 年11月獲得 Google Play Top Developer 徽章。
 <p>長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望能透過科技與開放的力量，建構更美好的未來。
-<p>題目: (敬請期待)
+<p>題目: App 與 改變世界的力量
+<p>如何透過微小的 App ，獲得巨大的力量，進而改變世界
       </div>
 
       <div class="speaker">
@@ -213,12 +214,53 @@ google提供的UI元件不夠滿足產品需求？
       <div class="speaker">
       <a id="zonble"></a>
       <img src="speaker_img/zonble.jpg" alt="Zonble">
-      <h2>楊維中<br>Zonble</h2>
+      <h2>楊維中<br>zonble</h2>
 <p>網路代號 zonble。Mac OS X 應用程式開發經驗八年、iOS 應用程式開發經驗五年，一個身上有 Objective-C 程式碼刺青的軟體工程師。
 <p>曾參與 OpenVanilla、Yahoo! 輸入法、嘸蝦米輸入法 X1、教育部閩南語漢字輸入法等軟體開發專案，目前任職於 KKBOX，負責 Mac OS X 與 iOS 平台各項產品開發。
 <p>題目：為視障朋友打造行動應用
 <p>摘要：觸控介面以及語音合成（TTS）技術的普及，現在的智慧型手機與平板電腦，可說是自電腦問世以來，對視障朋友最為方便的資訊應用工具。然而，要讓視障朋友可以方便地使用各項服務，除了作業系統本身所提供的能力外，更需要的是所有應用程式開發者對於無障礙議題的關心與努力。
 <p>本講題以 iOS 平台為例，說明視障朋友如何操作行動裝置，開發者如何在應用程式中、甚至是複雜操作介面中加入無障礙支援，以及其他需要注意之處。
+      </div>
+
+      <div class="speaker">
+      <a id="Olli"></a>
+      <img src="speaker_img/Olli.jpg" alt="Olli">
+      <h2>Olli</h2>
+<p>獨立開發者，Ollix 創辦人，只做只自已想要的 App，夢想是要和老婆帶兩台小折去環遊世界。<a href="http://about.me/olliwang">Olli Wang</a>
+<p>題目：為了環遊世界而誕生的世界迷霧
+<p>議程大綱：
+<li>Ollix團隊介紹</li>
+<li>世界迷霧的發想綠起</li>
+<li>世界迷霧的設計過程</li>
+<li>世界迷霧上架一年來的心得分享題目</li>
+      </div>
+
+      <div class="speaker">
+      <a id="Markku Lepisto"></a>
+      <img src="speaker_img/MarkkuLepisto.jpg" alt="MarkkuLepisto">
+      <h2>Markku Lepisto</h2>
+<p>Speaker: Markku Lepisto, Technology Evangelist, Amazon Web Services
+<p>Bio: "Markku is the APAC Technology Evangelist at Amazon Web Services. He has been in the IT industry for 14 years, and has held various technical and management positions, covering R&D, technical support and architecture. For the past couple of years, Markku was responsible for the cloud computing architecture and technology transformation of Nokia Siemens Networks' global business units. Markku has worked out of Finland, China and Singapore."
+<p>Title: Rethinking the Mobile Universe with Amazon Web Services
+<p>Synopsis: Learn how you can develop and run a multi-tiered Mobile App without a single server, leveraging the power of Amazon Web Services.
+      </div>
+
+      <div class="speaker">
+      <a id="Joe Ziegler"></a>
+      <img src="speaker_img/JoeZiegler.jpg" alt="JoeZiegler">
+      <h2>Joe Ziegler</h2>
+<p>Speaker: Joe Ziegler, Start-Up Business Development Manager, Amazon Web Services
+<p>Bio: “Joe works across Asia Pacific as the AWS Start-Up Business Development Manager, enabling the ecosystem and working with amazing start-up companies. Originally from Texas, he began his career in Silicon Valley. In 1995, he worked on some of the first e-commerce applications at Netscape, and worked at NetGravity during the time of its IPO, as a technical executive responsible for the company IP, and managing engineering groups. After that, Joe built several startups from the ground up as the Director of Technical Services in his recent venture, Iris Data Services, which was listed as one of the “Forbes 500 Fastest Growing Companies in the US”. Joe has lived on five continents and has studied Mandarin Chinese, Japanese and Korean.”
+<p>Title: Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS
+<p>Synopsis: Push notifications are alerts you can send to users even when they are not actively using your app. Join us to see a Live Demo of how you can easily send push notifications to Apple, Google and Amazon devices through a simple, Unified API, using Amazon Simple Notification Service.
+      </div>
+
+      <div class="speaker">
+      <a id="Neil Lee"></a>
+      <img src="speaker_img/NeilLee.jpg" alt="NeilLee">
+      <h2>Neil Lee</h2>
+<p>Hiiir 時間軸科技副總經理
+<p>經歷簡述：專長於技術整合及三網架構，擅於整合市場需求提供最佳技術解決方案，目前擔任Hiiir時間軸科技市場技術總監，帶領30多位網站及行動技術團隊提供源源不絕的技術整合創意，同時也為國內企業行動技術顧問、業界講師及大專院校講師。
       </div>
 
       <div class="speaker">
