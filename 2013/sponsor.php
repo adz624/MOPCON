@@ -48,6 +48,8 @@
               <li class="thumbnail"><a id="userxper" rel="external" href="http://www.userxper.com/"><img src="img/logo/userxper_logo.png" alt="悠識數位" /></a>
               <li class="thumbnail"><a id="moko365" rel="external" href="http://www.moko365.com/"><img src="img/logo/moko-logo.png" alt="Moko365" /></a>
               <li class="thumbnail"><a id="mobilogics" rel="external" href="http://www.mobilogics.com.tw/"><img src="img/logo/mobilogics-r_logo.png" alt="Mobilogics" /></a>
+              <li class="thumbnail"><a id="appuniverz" rel="external" href="http://appuniverz.org/"><img src="img/logo/appuniverz-logo.png" alt="appuniverz" /></a>
+              <li class="thumbnail"><a id="acomo" rel="external" href="http://www.acomotech.com/"><img src="img/logo/acomo-logo.png" alt="acomo" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
