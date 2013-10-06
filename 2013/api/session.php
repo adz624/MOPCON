@@ -375,5 +375,110 @@ $data['sessions'][] = array(
         "end_time"    => strtotime("2013-10-27 12:20:00")
         );
 
+$data['sessions'][] = array(
+        "id"          => 240,
+        "name"        => "Mobile App 開發: 創意 理想與現實之間 - 凱鈿行動科技",
+        "content"     => "介紹KdanMobile在開發上的實務經驗,從一個設計師的角度從創意到概念收斂,以及與各部門協同合作的開發經驗.",
+        "speaker"     => "蘇俊欽",
+        "speaker_bio" => "",
+        "keyword"     => "",
+        "loc"         => "Keynote 三廳聯播",
+        "catalog"     => "7",
+        "start_time"  => strtotime("2013-10-27 13:30:00"),
+        "end_time"    => strtotime("2013-10-27 14:20:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 250,
+        "name"        => "一廳 (議程 A): The web backend of android mobile",
+        "content"     => "",
+        "speaker"     => "TonyQ",
+        "speaker_bio" => "簡介講者開發 android app 經驗中時，面臨的一些 web server 作為 android 資料來源跟身份驗證的一些細節，著重在 Android 與 remote web server 之間的資料交換策略，講題屬入門經驗分享。預計是 web API 開發過程分享(60%)、client auth (30% )、push notification (10%) 等比重進行分享。",
+        "keyword"     => "",
+        "loc"         => "一廳 (議程 A)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 14:30:00"),
+        "end_time"    => strtotime("2013-10-27 15:10:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 251,
+        "name"        => "二廳 (議程 B): App 急速視覺 UX 回饋應用: 以 AR 應用為例",
+        "content"     => "在APP中最重要的一環就是UX，而且這常常是非常視覺化的，要如何以快速的方法回應使用者的操作，一直都是一個不可忽略的重要主題，此議題在解說在建立APP UX時該如何透過一些該注意的編程技巧，讓使用者的體驗可以順暢的被延續，而不會因為劣質的程式結構而造成中斷，並以AR應用為案例主軸，分析如何設計AR擴充實境應用。",
+        "speaker"     => "Anistar",
+        "speaker_bio" => "現任：台灣區 Yahoo! 專長： Objective C、iOS SDK、Android SDK、Flex 4、RIA、ActrionScript 3、HTML5、CSS3、JQuery、JQuery Mobile、C++、PHP、MySQL...等整合運用。著作：《Run!PC雜誌》專欄作家、《CADesigner雜誌》專欄作家、《Flash CS3 Professional ActionScript 3.0 打造互動設計力與美》、《新一代互動體驗Flex+AIR程式開發》。" ,
+        "keyword"     => "",
+        "loc"         => "二廳 (議程 B)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 14:30:00"),
+        "end_time"    => strtotime("2013-10-27 15:10:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 252,
+        "name"        => "三廳 (議程 C): AllJoyn",
+        "content"     => "AllJoyn - The cross platform, cross technology (WiFi BT) mobile communication library. This talk will give an introduction to the AllJoyn framework within the context of building a p2p photo discovery/sharing app on both iOS and Android. The aim is to help everyone get the project configured correctly and key concepts understood in the shortest amount time, so that hopefully previously deemed difficult ideas related to mobile p2p communication can be rendered possible and implemented easily.",
+        "speaker"     => "awaw",
+        "speaker_bio" => "I work at Cardinalblue mainly on server side stuff, and occasionally on some iOS and Android features or bug fixes. In my past time, I like to create web apps in Rails and try out new features of iOS and Android such as Bluetooth and the UICollectionView. My github account is https://github.com/fumin" ,
+        "keyword"     => "",
+        "loc"         => "三廳 (議程 C)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 14:30:00"),
+        "end_time"    => strtotime("2013-10-27 15:10:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 260,
+        "name"        => "一廳 (議程 A): 挖掘低耗電藍芽的寶藏",
+        "content"     => "藍芽聯盟 SIG 極力推廣新一代低耗電藍芽技術 Bluetooth 4.0, BLE的超低耗電表現, 以及高速度的傳輪, 使其應用範圍更為擴展為生活各層面. 尤其是 Bluetooth Smart 裝置只需使用鈕扣型電池, 可應用於各式超級輕量化的資料擷取器與感應器. 本議程將分享在 iOS 如何快速開發 Bluetooth 4.0, 以及開發中會遭遇的問題與如何界定產品開發方向, 並且帶來有趣的相關應用. 讓我們一起 Working with Bluetooth Low Energy, 挖掘出連結世界的無限可能.",
+        "speaker"     => "Evan Wu",
+        "speaker_bio" => "Evan Wu the Grey, Code for Kaohsiung 與 CocoaHeads Kaohsiung 共同發起人, 在 Mobilogics 擔任 Code Monkey 與 Treasure Hunter, 喜歡簡單設計與架構, 討厭 Muggle 與肥豬肉",
+        "keyword"     => "",
+        "loc"         => "一廳 (議程 A)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 15:30:00"),
+        "end_time"    => strtotime("2013-10-27 16:10:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 261,
+        "name"        => "二廳 (議程 B): Apps 製作心得分享",
+        "content"     => "不會寫程式如何製作 App？如何組成 App 製作團隊？開發者與設計師如何溝通？如何用最低成本創造最大效益？諾基米透過本身製作 Apps 的經驗，分享這些實際問題的心得。",
+        "speaker"     => "Nokimi",
+        "speaker_bio" => "曾在知名企業工作，為了堅持理想而離開。目前正在創業中，身份是 App 製作人。喜歡從生活中觀察發現需求，並運用優雅而有效率的方式滿足需求。已上架的 App 產品 ” Instacram ” 曾獲得泰國分類榜冠軍，其他國家亦有優異成績。",
+        "keyword"     => "",
+        "loc"         => "二廳 (議程 B)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 15:30:00"),
+        "end_time"    => strtotime("2013-10-27 16:10:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 262,
+        "name"        => "三廳 (議程 C): 有沒有那條線很重要嗎？",
+        "content"     => "想要跟大家分享的是關於Wireless Display的現況. 除了proprietary的技術外,目前最火紅的莫過於Wi-Fi Alliance主導的Miracast和Intel推廣的WiDi. Wireless Display Source端主要涵括有NB, SmartPhone和Tablet,尤其是Android 4.2之後更是原生支援Miracast技術,許多廠商得已很快速的端出產品來賣. 這些技術瞄準的是現有的使用情境,目前必須要先用HDMI線將NB/手機/平板跟家裡的大TV連接,才能投影Source端的內容. 有了這個產品後end user只需要有支援的NB/手機/平板即可以隨時將畫面分享出去. 除了screen mirror外,有趣的back channel也是值得探討的.",
+        "speaker"     => "stanely",
+        "speaker_bio" => "網路代號: stanely 一個不是資訊相關背景的工程師,憑著一股熱情和傻勁在這行業跟大家一齊打拼,希望台灣能在國際上發光發熱. 我的例子是可以證明只要有熱情是可以排除任何困難的. 要玩Open Source不需要任何條件,只要有電腦人人都可以來參與. 目前在螃蟹公司服務,每天過著被人家盯,盯人家的日子.",
+        "keyword"     => "",
+        "loc"         => "三廳 (議程 C)",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 15:30:00"),
+        "end_time"    => strtotime("2013-10-27 16:10:00")
+        );
+
+$data['sessions'][] = array(
+        "id"          => 270,
+        "name"        => "Microsoft 抽獎 + Lightening Talk",
+        "content"     => "",
+        "speaker"     => "",
+        "speaker_bio" => "",
+        "keyword"     => "",
+        "loc"         => "三廳聯播",
+        "catalog"     => "8",
+        "start_time"  => strtotime("2013-10-27 16:20:00"),
+        "end_time"    => strtotime("2013-10-27 17:00:00")
+        );
+
+
 echo json_encode($data);
 
