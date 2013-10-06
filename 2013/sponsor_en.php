@@ -31,6 +31,7 @@
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
               <li class="thumbnail"><a id="infinitiessoft" rel="external" href="http://infinitiessoft.com"><img src="img/logo/infinitiessoft-logo.png" alt="Infinities Soft" /></a>
+              <li class="thumbnail"><a id="hiiir" rel="external" href="http://www.hiiir.com/"><img src="img/logo/hiiir-logo.png" alt="hiiir" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
@@ -38,6 +39,7 @@
             <p>We thank you for your invaluable support.</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan" /></a>
+              <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
