@@ -78,7 +78,7 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">Markku Lepisto</div>
-					  <div class="head">Keynote : Rethinking the Mobile Universe with Amazon Web ServicesAmazon Web Service</div>
+					  <div class="head">Keynote : Learn how you can develop and run a multi-tiered Mobile App without a single server, leveraging the power 	of Amazon Web Services.</div>
                     </div>
                   </div>
                 </div>
