@@ -309,7 +309,7 @@ google提供的UI元件不夠滿足產品需求？
       // 用來避免發生.masonry() 算錯物件高度的詭異狀況
       setTimeout(function() {
           $('#speakerpool').masonry();
-      }, 350);
+      }, 450);
   });
   </script>
   </body>
