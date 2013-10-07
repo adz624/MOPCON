@@ -264,6 +264,31 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
+      <a id="PTT"></a>
+      <img src="speaker_img/ptt.jpg" alt="PTT">
+      <h2>杜奕瑾<br>PTT</h2>
+<p>經歷簡述
+<ul>
+<li>台大批踢踢創辦人</li>
+<li>蕃薯藤網托邦創辦人</li>
+<li>美國國家衛生研究院程式組長</li>
+<li>美國微軟研究院網際網路服務研究所資深研究開發員</li>
+<li>現任中文微軟Bing行動軟體開發組 Senior Development Lead</li>
+</ul>
+<p>題目：Mobile Development, Bing Services and Big Data
+<p>摘要：行動裝置, 雲端服務與巨量資料是當前資訊科技發展的重點。我們邀請到台大批踢踢創辦人，現任中文微軟Bing行動軟體開發組 Senior Development Lead 杜奕瑾先生(PTT)回來台灣。從微軟的角度，介紹當前的軟體巨擘如何看待這樣的趨勢發展，並且投入各項Bing技術服務與應用的規劃與研發。 同時杜奕瑾也希望招募更多新血投入研發團隊。
+      </div>
+
+      <div class="speaker">
+      <a id="Moli"></a>
+      <img src="speaker_img/moli.jpg" alt="Moli">
+      <h2>王森<br>Moli</h2>
+<p>經歷簡述：目前為微軟全球最有價值 Kinect專家(Kinect MVP)。 曾任Sun教育訓練中心經理、微軟資深經理。撰寫過多本深入 Java 程式設計與 Java 手機開發的書籍。目前從事行動開發與體感互動開發顧問工作，並積極從事校園中的教育訓練。閒暇之餘，喜歡研究 Intel PerC、Leap Motion 的應用與 Raspberry Pi、Arduino整合開發，企盼找出未來人機互動的新形態。
+<p>題目：搶拿Lumia 1020 - Windows Phone開發入門與應用 : 以Kinect體感裝置與 Windows Phone整合為例
+<p>摘要：搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 本講次邀請Moli 介紹Windows Phone 開發的入門以及Kinect 整合Windows Phone應用實例。有興趣的學員可以在本講次中了解Windows Phone的開發技術，開發Windows Phone App 參加現場活動。有機會贏得4100萬像素的Lumia 1020 手機。
+      </div>
+
+      <div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
       </div>
