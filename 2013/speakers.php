@@ -283,12 +283,12 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
-      <a id="Moli"></a>
-      <img src="speaker_img/moli.jpg" alt="Moli">
-      <h2>王森<br>Moli</h2>
-<p>經歷簡述：目前為微軟全球最有價值 Kinect專家(Kinect MVP)。 曾任Sun教育訓練中心經理、微軟資深經理。撰寫過多本深入 Java 程式設計與 Java 手機開發的書籍。目前從事行動開發與體感互動開發顧問工作，並積極從事校園中的教育訓練。閒暇之餘，喜歡研究 Intel PerC、Leap Motion 的應用與 Raspberry Pi、Arduino整合開發，企盼找出未來人機互動的新形態。
-<p>題目：搶拿Lumia 1020 - Windows Phone開發入門與應用 : 以Kinect體感裝置與 Windows Phone整合為例
-<p>摘要：搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 本講次邀請Moli 介紹Windows Phone 開發的入門以及Kinect 整合Windows Phone應用實例。有興趣的學員可以在本講次中了解Windows Phone的開發技術，開發Windows Phone App 參加現場活動。有機會贏得4100萬像素的Lumia 1020 手機。
+      <a id="ERICSK"></a>
+      <img src="speaker_img/ERICSK.png" alt="ERICSK">
+      <h2>上官林傑<br>ERICSK</h2>
+<p>曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。
+<p>題目：搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計
+<p>摘要：搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 本講次邀請ERICSK 介紹Windows Phone 開發的入門以及如何結合APP跟Mobile Web , 有效的Reuse Mobile Web 的程式碼 。支援不同平台行動裝置逐漸成為App規劃設計的重要技巧。本講次以Windows Phone平台為範例 ，介紹如何結合Mobile Web 與Native App，發揮雙方的優點與長處，同時減少開發與維護的成本。現場開發Windows Phone App 參加Nokia/微軟活動，還有機會贏得4100萬像素的Lumia 1020 手機。
       </div>
 
       <div class="speaker">
