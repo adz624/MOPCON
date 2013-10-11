@@ -68,6 +68,9 @@ foreach ($session_raw_data as $session) {
         $session['end_time'] = $time_def[$id12]['end'];
     }
 
+    // 去頭尾空白
+    $session['content'] = trim($session['content']);
+
     // 資料整理完成
     $output['sessions'][] = $session;
 }
