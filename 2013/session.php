@@ -11,6 +11,10 @@
 <html lang="zh-TW" class="">
   <head>
   <?php include_once("header.php");?>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+  <link rel="stylesheet" href="css/colorbox.css" />
+  <script src="scripts/jquery.colorbox.js"></script>
+  <script src="scripts/lightbox.js"></script>
 <!--link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"-->
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <!--[if IE 7]>
@@ -71,18 +75,18 @@
       <tr>
         <td><div class='time_block'>9:05</div></td>
         <td><div class='session_block'>
-		
-		<?php
-			echo $session_object->sessions[0]->loc . " : " .  $session_object->sessions[0]->name;
-		?>
+		<div class='inline' href="#inline_content">
+		  <p>致詞 ＋ 議程導覽
+		</div>
 		</div></td></tr>
       <tr>
         <td><div class='time_block'>9:25</div></td>
-        <td><div class='session_block'>
-		<?php
-			echo $session_object->sessions[1]->loc . " : " .  $session_object->sessions[1]->name;
-		?>
-		</div></td></tr>
+        <td>
+		  <div class='session_block'>
+			<p class='inline' href="#inline_content0"><?php echo $session_object->sessions[0]->loc . "<br>" .  $session_object->sessions[0]->name . "<br>" . $session_object->sessions[0]->speaker; ?></p>
+		  </div>
+		</td>
+	  </tr>
       <tr>
         <td><div class='time_block'>10:15</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -90,9 +94,12 @@
         <td><div class='time_block'>10:30</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[2]->loc . " : " .  $session_object->sessions[2]->name; ?>
-            <p><?php echo $session_object->sessions[3]->loc . " : " .  $session_object->sessions[3]->name; ?>
-            <p><?php echo $session_object->sessions[4]->loc . " : " .  $session_object->sessions[4]->name; ?>
+            <?php
+				for($i=1 ; $i<4 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -103,9 +110,12 @@
         <td><div class='time_block'>11:20</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[5]->loc . " : " .  $session_object->sessions[5]->name; ?>
-            <p><?php echo $session_object->sessions[6]->loc . " : " .  $session_object->sessions[6]->name; ?>
-            <p><?php echo $session_object->sessions[7]->loc . " : " .  $session_object->sessions[7]->name; ?>
+            <?php
+				for($i=4 ; $i<7 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -114,7 +124,10 @@
         <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
       <tr>
         <td><div class='time_block'>13:20</div></td>
-        <td><div class='session_block'><?php echo $session_object->sessions[8]->loc . " : " .  $session_object->sessions[8]->name; ?></div></td></tr>
+        <td>
+		  <div class='session_block'>
+			<p class='inline' href="#inline_content7"><?php echo $session_object->sessions[7]->loc . "<br>" .  $session_object->sessions[7]->name. "<br>" . $session_object->sessions[7]->speaker; ?></p>
+		  </div></td></tr>
       <tr>
         <td><div class='time_block'>14:10</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -122,9 +135,12 @@
         <td><div class='time_block'>14:20</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[9]->loc . " : " .  $session_object->sessions[9]->name; ?>
-            <p><?php echo $session_object->sessions[10]->loc . " : " .  $session_object->sessions[10]->name; ?>
-            <p><?php echo $session_object->sessions[11]->loc . " : " .  $session_object->sessions[11]->name; ?>
+            <?php
+				for($i=8 ; $i<11 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -135,9 +151,12 @@
         <td><div class='time_block'>15:20</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[12]->loc . " : " .  $session_object->sessions[12]->name; ?>
-            <p><?php echo $session_object->sessions[13]->loc . " : " .  $session_object->sessions[13]->name; ?>
-            <p><?php echo $session_object->sessions[14]->loc . " : " .  $session_object->sessions[14]->name; ?>
+             <?php
+				for($i=11 ; $i<14 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -148,9 +167,12 @@
         <td><div class='time_block'>16:10</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[15]->loc . " : " .  $session_object->sessions[15]->name; ?>
-            <p><?php echo $session_object->sessions[16]->loc . " : " .  $session_object->sessions[16]->name; ?>
-            <p><?php echo $session_object->sessions[17]->loc . " : " .  $session_object->sessions[17]->name; ?>
+			<?php
+				for($i=14 ; $i<17 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -175,7 +197,7 @@
       <tr>
         <td><div class='time_block'>9:00</div></td>
         <td><div class='session_block'>
-			<?php echo $session_object->sessions[18]->loc . " : " .  $session_object->sessions[18]->name; ?>
+			<p class='inline' href="#inline_content17"><?php echo $session_object->sessions[17]->loc . "<br>" .  $session_object->sessions[17]->name. "<br>" . $session_object->sessions[17]->speaker; ?></p>
 			</div>
 		</td>
 	  </tr>
@@ -186,9 +208,12 @@
         <td><div class='time_block'>10:00</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[19]->loc . " : " .  $session_object->sessions[19]->name; ?>
-            <p><?php echo $session_object->sessions[20]->loc . " : " .  $session_object->sessions[20]->name; ?>
-            <p><?php echo $session_object->sessions[21]->loc . " : " .  $session_object->sessions[21]->name; ?>
+			<?php
+				for($i=18 ; $i<21 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -199,9 +224,12 @@
         <td><div class='time_block'>10:50</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[22]->loc . " : " .  $session_object->sessions[22]->name; ?>
-            <p><?php echo $session_object->sessions[23]->loc . " : " .  $session_object->sessions[23]->name; ?>
-            <p><?php echo $session_object->sessions[24]->loc . " : " .  $session_object->sessions[24]->name; ?>
+            <?php
+				for($i=21 ; $i<24 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -209,9 +237,12 @@
         <td><div class='time_block'>11:30</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[25]->loc . " : " .  $session_object->sessions[25]->name; ?>
-            <p><?php echo $session_object->sessions[26]->loc . " : " .  $session_object->sessions[26]->name; ?>
-            <p><?php echo $session_object->sessions[27]->loc . " : " .  $session_object->sessions[27]->name; ?>
+            <?php
+				for($i=24 ; $i<27 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -220,7 +251,9 @@
         <td><div class='break_block'>午餐，小聚會，現場展示</div></td></tr>
       <tr>
         <td><div class='time_block'>13:30</div></td>
-        <td><div class='session_block'><?php echo $session_object->sessions[28]->loc . " : " .  $session_object->sessions[28]->name; ?></div></td></tr>
+        <td><div class='session_block'>
+			<p class='inline' href="#inline_content27"><?php echo $session_object->sessions[27]->loc . "<br>" .  $session_object->sessions[27]->name. "<br>" . $session_object->sessions[27]->speaker; ?></p>
+		</div></td></tr>
       <tr>
         <td><div class='time_block'>14:20</div></td>
         <td><div class='break_block'>休息</div></td></tr>
@@ -228,9 +261,12 @@
         <td><div class='time_block'>14:30</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[29]->loc . " : " .  $session_object->sessions[29]->name; ?>
-            <p><?php echo $session_object->sessions[30]->loc . " : " .  $session_object->sessions[30]->name; ?>
-            <p><?php echo $session_object->sessions[31]->loc . " : " .  $session_object->sessions[31]->name; ?>
+            <?php
+				for($i=28 ; $i<31 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -241,9 +277,12 @@
         <td><div class='time_block'>15:30</div></td>
         <td>
           <div class='session_block'>
-            <p><?php echo $session_object->sessions[32]->loc . " : " .  $session_object->sessions[32]->name; ?>
-            <p><?php echo $session_object->sessions[33]->loc . " : " .  $session_object->sessions[33]->name; ?>
-            <p><?php echo $session_object->sessions[34]->loc . " : " .  $session_object->sessions[34]->name; ?>
+            <?php
+				for($i=31 ; $i<34 ; $i++)
+				{
+					echo "<p class='inline' href='#inline_content".$i."'>". $session_object->sessions[$i]->loc . "<br>" .  $session_object->sessions[$i]->name. "<br>" . $session_object->sessions[$i]->speaker . "</p><br>";
+				}
+			?>
           </div>
         </td>
       </tr>
@@ -253,7 +292,7 @@
       <tr>
         <td><div class='time_block'>16:20</div></td>
         <td><div class='session_block'>
-			<?php echo $session_object->sessions[35]->loc . " : " .  $session_object->sessions[35]->name; ?>
+			<p class='inline'>Microsoft 抽獎 + Lightening Talk</p>
 			</div>
 		</td>
 	  </tr>
@@ -265,6 +304,20 @@
       </div>
 
     </div>
+	
+	
+	<div style='display:none'>
+		<?php
+		for($i=0 ; $i<34 ; $i++)
+		{
+			
+			echo "<div id='inline_content" . $i . "' style='padding:10px; background:#fff;'>";
+			echo "<p>議程定位：<br>" . $session_object->sessions[$i]->class . "<br>";
+			echo "<p>議題介紹：<br>" . $session_object->sessions[$i]->content;
+			echo "</div>" ;
+		}
+		?>
+	</div>
     <?php include_once("footer.html");?>
   </body>
 </html>
