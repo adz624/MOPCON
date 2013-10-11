@@ -1,6 +1,6 @@
 <?php
 
-define('LAST_UPDATE', '2013-10-10');
+define('LAST_UPDATE', '2013-10-10 18:42:00');
 
 
 /////////////////////////////////////
@@ -67,6 +67,9 @@ foreach ($session_raw_data as $session) {
         $session['start_time'] = $time_def[$id12]['start'];
         $session['end_time'] = $time_def[$id12]['end'];
     }
+
+    // 去頭尾空白
+    $session['content'] = trim($session['content']);
 
     // 資料整理完成
     $output['sessions'][] = $session;
