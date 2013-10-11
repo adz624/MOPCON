@@ -58,7 +58,7 @@ foreach ($session_raw_data as $session) {
     // loc 顯示文字轉換
     $loc = $session['loc'];
     if (array_key_exists($loc, $loc_def)) {
-        $session['loc'] = $loc_def["1"];
+        $session['loc'] = $loc_def[$loc];
     }
 
     // 時間轉換
