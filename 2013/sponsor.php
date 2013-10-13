@@ -39,6 +39,7 @@
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a>
               <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
+              <li class="thumbnail"><a id="hamiapps" rel="external" href="http://hamiweb.emome.net/pages/content/1/5"><img src="img/logo/hami_apps-logo.png" alt="HamiApps" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
