@@ -65,6 +65,7 @@
               <li class="thumbnail"><a id="hiiir" rel="external" href="http://www.hiiir.com/"><img src="img/logo/hiiir-logo.png" alt="hiiir" /></a>
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a></li>
               <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
+              <li class="thumbnail"><a id="hamiapps" rel="external" href="http://hamiweb.emome.net/pages/content/1/5"><img src="img/logo/hami_apps-logo.png" alt="HamiApps" /></a>
               <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a></li>
               <li class="thumbnail"><a id="wiwistock" rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a></li>
               <li class="thumbnail"><a id="userxper" rel="external" href="http://www.userxper.com/"><img src="img/logo/userxper_logo.png" alt="悠識數位" /></a></li>
