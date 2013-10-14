@@ -290,7 +290,7 @@
       <tr>
         <td><div class='time_block'>16:20</div></td>
         <td><div class='session_block'>
-			<p class='inline'>Microsoft 抽獎 + Lightening Talk</p>
+			Microsoft 抽獎 + Lightening Talk
 			</div>
 		</td>
 	  </tr>
