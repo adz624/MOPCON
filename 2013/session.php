@@ -75,9 +75,7 @@
       <tr>
         <td><div class='time_block'>9:05</div></td>
         <td><div class='session_block'>
-		<div class='inline' href="#inline_content">
 		  <p>致詞 ＋ 議程導覽
-		</div>
 		</div></td></tr>
       <tr>
         <td><div class='time_block'>9:25</div></td>
