@@ -312,6 +312,7 @@
 		{
 			
 			echo "<div id='inline_content" . $i . "' style='padding:10px; background:#fff;'>";
+			echo "<p>講者簡介：<br>" . $session_object->sessions[$i]->speaker_bio . "<br>";
 			echo "<p>議程定位：<br>" . $session_object->sessions[$i]->class . "<br>";
 			echo "<p>議題介紹：<br>" . $session_object->sessions[$i]->content;
 			echo "</div>" ;
