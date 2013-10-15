@@ -280,7 +280,7 @@ google提供的UI元件不夠滿足產品需求？
 <li>現任中文微軟Bing行動軟體開發組 Senior Development Lead</li>
 </ul>
 <p>題目：Mobile Development, Bing Services and Big Data
-<p>摘要：行動裝置, 雲端服務與巨量資料是當前資訊科技發展的重點。我們邀請到台大批踢踢創辦人，現任中文微軟Bing行動軟體開發組 Senior Development Lead 杜奕瑾先生(PTT)回來台灣。從微軟的角度，介紹當前的軟體巨擘如何看待這樣的趨勢發展，並且投入各項Bing技術服務與應用的規劃與研發。 同時杜奕瑾也希望招募更多新血投入研發團隊。
+<p>摘要：行動裝置, 雲端服務與巨量資料是當前資訊科技發展的重點。我們邀請到台大批踢踢創辦人，現任中文微軟Bing行動軟體開發組 Senior Development Lead 杜奕瑾先生回來台灣。從微軟的角度，介紹當前的軟體巨擘如何看待這樣的趨勢發展，並且投入各項Bing技術服務與應用的規劃與研發. 同時杜奕瑾也希望招募更多新血投入研發團隊。
       </div>
 
       <div class="speaker">
