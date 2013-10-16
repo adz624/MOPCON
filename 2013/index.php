@@ -66,6 +66,7 @@
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a></li>
               <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
               <li class="thumbnail"><a id="hamiapps" rel="external" href="http://hamiweb.emome.net/pages/content/1/5"><img src="img/logo/hami_apps-logo.png" alt="HamiApps" /></a>
+              <li class="thumbnail"><a id="water-start" rel="external" href="http://www.water-start.net/"><img src="img/logo/water_start-logo.jpg" alt="水啟動" /></a>
               <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a></li>
               <li class="thumbnail"><a id="wiwistock" rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a></li>
               <li class="thumbnail"><a id="userxper" rel="external" href="http://www.userxper.com/"><img src="img/logo/userxper_logo.png" alt="悠識數位" /></a></li>
@@ -89,6 +90,7 @@
             <p>感謝以下媒體支持</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="App情報誌" /></a>
+              <li class="thumbnail"><a id="cool3c" rel="external" href="http://www.cool3c.com/"><img src="img/logo/cool3c-logo.png" alt="癮科技" /></a>
             </ul>
       </div>
 

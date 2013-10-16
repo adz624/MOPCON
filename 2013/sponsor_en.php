@@ -41,6 +41,7 @@
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan" /></a>
               <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
               <li class="thumbnail"><a id="hamiapps" rel="external" href="http://hamiweb.emome.net/pages/content/1/5"><img src="img/logo/hami_apps-logo.png" alt="HamiApps" /></a>
+              <li class="thumbnail"><a id="water-start" rel="external" href="http://www.water-start.net/"><img src="img/logo/water_start-logo.jpg" alt="水啟動" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
@@ -68,6 +69,7 @@
             <h3>Media Corperation</h3>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="AppShooting" /></a>
+              <li class="thumbnail"><a id="cool3c" rel="external" href="http://www.cool3c.com/"><img src="img/logo/cool3c-logo.png" alt="癮科技" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
