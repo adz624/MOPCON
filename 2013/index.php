@@ -21,7 +21,7 @@
                   <li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心</li>
                   <li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON (Mobile Open Platform Conference)2013將以 "I code, I spread, I connect" 作為主要精神意涵，議程以行動開發技術議程為核心，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</li>
 		            </ul>
-		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" rel="external" href="http://registrano.com/events/mopcon-2013">第一階段報名人數已滿，請等待第二階段開放報名</a></p>
+		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" rel="external" href="http://registrano.com/events/mopcon-2013">第二階段開放報名中，不定期釋出取消報名名額</a></p>
             </div>
           </div>
         </div>
@@ -62,7 +62,11 @@
               <li class="thumbnail"><a id="winphone" rel="external" href="http://dev.windowsphone.com"><img src="img/logo/winphone_logo.png" alt="Microsoft Windows Phone" /></a></li>
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a></li>
               <li class="thumbnail"><a id="infinitiessoft" rel="external" href="http://infinitiessoft.com"><img src="img/logo/infinitiessoft-logo.png" alt="Infinities Soft" /></a></li>
+              <li class="thumbnail"><a id="hiiir" rel="external" href="http://www.hiiir.com/"><img src="img/logo/hiiir-logo.png" alt="hiiir" /></a>
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a></li>
+              <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
+              <li class="thumbnail"><a id="hamiapps" rel="external" href="http://hamiweb.emome.net/pages/content/1/5"><img src="img/logo/hami_apps-logo.png" alt="HamiApps" /></a>
+              <li class="thumbnail"><a id="water-start" rel="external" href="http://www.water-start.net/"><img src="img/logo/water_start-logo.jpg" alt="水啟動" /></a>
               <li class="thumbnail"><a id="kny" rel="external" href="http://kny.tw"><img src="img/logo/kny_logo.jpg" alt="KNY" /></a></li>
               <li class="thumbnail"><a id="wiwistock" rel="external" href="http://www.wiwistock.com.tw"><img src="img/logo/wiwistock-logo.png" alt="鈞達資訊" /></a></li>
               <li class="thumbnail"><a id="userxper" rel="external" href="http://www.userxper.com/"><img src="img/logo/userxper_logo.png" alt="悠識數位" /></a></li>
@@ -77,6 +81,7 @@
             <ul class="thumbnails">
               <li class="thumbnail"><a id="stu" rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu_logo.png" alt="樹德科技大學 電算中心" /></a></li>
               <li class="thumbnail"><a id="ossf" rel="external" href="http://openfoundry.org/"><img src="img/logo/openfoundry_logo.png" alt="OSSF自由軟體鑄造場" /></a></li>
+              <li class="thumbnail"><a id="zd" rel="external" href=""><img src="img/logo/ZD_logo.jpg" alt="零距離股份有限公司" /></a></li>
             </ul>
       </div>
 
@@ -85,6 +90,7 @@
             <p>感謝以下媒體支持</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="App情報誌" /></a>
+              <li class="thumbnail"><a id="cool3c" rel="external" href="http://www.cool3c.com/"><img src="img/logo/cool3c-logo.png" alt="癮科技" /></a>
             </ul>
       </div>
 

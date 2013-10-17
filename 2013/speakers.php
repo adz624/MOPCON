@@ -157,7 +157,8 @@ Android 程式與遊戲，上架 19 個App，從企畫、美術、寫程式全�
 <p>目前任職於凱鈿行動科技產品設計總監職務。
 <p>主要專長項目為多媒體人機互動、3D 擴增實境與概念性產品開發，在公司負責制定產品設計規劃。
 <p>題目：Mobile APP開發-創意 理想與現實之間
-<p>摘要：介紹KdanMobile在開發上的實務經驗，從一個設計師的角度，從創意到概念收斂，以及與各部門協同合作的開發經驗。
+<p>摘要：以一個設計師的角度，分享Kdan Mobile在開發實務上從創意到概念的收斂，再落實與各部門協同合作的過程，
+並且將帶回北京中關村首屆美國矽谷創新創業大賽中各新創企業的第一手資訊與現場同仁交流。
       </div>
 
       <div class="speaker">
@@ -261,6 +262,34 @@ google提供的UI元件不夠滿足產品需求？
       <h2>Neil Lee</h2>
 <p>Hiiir 時間軸科技副總經理
 <p>經歷簡述：專長於技術整合及三網架構，擅於整合市場需求提供最佳技術解決方案，目前擔任Hiiir時間軸科技市場技術總監，帶領30多位網站及行動技術團隊提供源源不絕的技術整合創意，同時也為國內企業行動技術顧問、業界講師及大專院校講師。
+<p>題目：協助開發者創造成功 APP 的營運體驗 - APP 點圈新經濟
+<p>摘要：APP 開發除了好創意外每個開發團隊都會遇到，如果有一天我的APP爆紅了，那之後怎麼辦？
+<p>一個好的 APP 要顧住流量、掌握營收、創造體驗，如何在團隊規模不足的情況下找到平衡點。善用各種第三方平台和工具減少開發時間，將心力專注於創會是其中的訣竅！從APP連結擴散到整個生態圈，創造出APP 點圈新經濟。
+      </div>
+
+      <div class="speaker">
+      <a id="PTT"></a>
+      <img src="speaker_img/ptt.jpg" alt="PTT">
+      <h2>杜奕瑾<br>PTT</h2>
+<p>經歷簡述
+<ul>
+<li>台大批踢踢創辦人</li>
+<li>蕃薯藤網托邦創辦人</li>
+<li>美國國家衛生研究院程式組長</li>
+<li>美國微軟研究院網際網路服務研究所資深研究開發員</li>
+<li>現任中文微軟Bing行動軟體開發組 Senior Development Lead</li>
+</ul>
+<p>題目：Mobile Development, Bing Services and Big Data
+<p>摘要：行動裝置, 雲端服務與巨量資料是當前資訊科技發展的重點。我們邀請到台大批踢踢創辦人，現任中文微軟Bing行動軟體開發組 Senior Development Lead 杜奕瑾先生回來台灣。從微軟的角度，介紹當前的軟體巨擘如何看待這樣的趨勢發展，並且投入各項Bing技術服務與應用的規劃與研發. 同時杜奕瑾也希望招募更多新血投入研發團隊。
+      </div>
+
+      <div class="speaker">
+      <a id="ERICSK"></a>
+      <img src="speaker_img/ERICSK.png" alt="ERICSK">
+      <h2>上官林傑<br>ERICSK</h2>
+<p>曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。
+<p>題目：搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計
+<p>摘要：搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 本講次邀請ERICSK 介紹Windows Phone 開發的入門以及如何結合APP跟Mobile Web , 有效的Reuse Mobile Web 的程式碼 。支援不同平台行動裝置逐漸成為App規劃設計的重要技巧。本講次以Windows Phone平台為範例 ，介紹如何結合Mobile Web 與Native App，發揮雙方的優點與長處，同時減少開發與維護的成本。現場開發Windows Phone App 參加Nokia/微軟活動，還有機會贏得4100萬像素的Lumia 1020 手機。
       </div>
 
       <div class="speaker">
@@ -284,7 +313,7 @@ google提供的UI元件不夠滿足產品需求？
       // 用來避免發生.masonry() 算錯物件高度的詭異狀況
       setTimeout(function() {
           $('#speakerpool').masonry();
-      }, 350);
+      }, 450);
   });
   </script>
   </body>

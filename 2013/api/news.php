@@ -4,43 +4,80 @@ header("Content-type: application/json");
 date_default_timezone_set("Asia/Taipei");
 
 
-// 新聞們
-$data['news'][] = array(
-        "id"        => 2,
-        "title"     => "MOPCON 充滿愛狗人士",
-        "content"   => 
-            "他待我漸漸不同往日，他總仍舊是偷！他深深的倒抽了一口氣。熊是只吃四個掌，對不起。\n".
-            "\n".
-            "納豆。\n".
-            "\n".
-            "千字常常寫成十字，一面回轉頭去對著女辛道，我敢相信，他看一眼面前的一大堆木札，姐，我的箭法掌太巧妙了。\n".
-            "\n".
-            "差不多先生的名字！再也忍不住的你技癢。可愛，天色蒼蒼，真是好空氣。他那裡會有戀愛故事呢。",
-        "publisher" => "假文產生器",
-        "pub_time"  => strtotime("2013-8-22 23:00:00"),
-        );
+$fb_access_token = "166742843389959|rq-8DFKJm8fcIf5BVFaaCTmlIIA"; // CQD: 這個 token 從我手上的測試 FB App 來的，可以換成其他任何有效的 token
+$fb_feed_url = "https://graph.facebook.com/219967208129003/?fields=posts.fields%28message,created_time,from.name,link%29&access_token={$fb_access_token}";
+
+/////////////////////////
+// read facebook data
+/////////////////////////
+
+$result = file_get_contents($fb_feed_url);
+
+// Data validation
+if(!is_string($result)){
+    echo '{"error":"無法取得 Facebook 資料(1)"}';
+    die();
+}
+
+$feed_data = @json_decode($result, true);
+if (!is_array($feed_data) || !is_array($feed_data['posts'])) {
+    echo '{"error":"無法解析 Facebook 回傳資料(2)"}';
+    die();
+}
 
 
-$data['news'][] = array(
-        "id"        => 1,
-        "title"     => "MOPCON 充滿愛貓人士",
-        "content"   => 
-            "她也何嘗有一天接近過快樂與幸福。\n".
-            "\n".
-            "離別。自己搖頭說？進化為大葛格後，黃袍，不好！倒並沒有壓壞。惟膀子疼痛利害？使女們發一聲喊。\n".
-            "\n".
-            "代表們認這結果為滿意。\n".
-            "\n".
-            "放一碗湯罷。",
-        "publisher" => "假文產生器",
-        "pub_time"  => strtotime("2013-8-22 22:00:00"),
-        );
+
+/////////////////////////
+// 把 FB 河道資訊整理成
+// 餵給 APP 用的格式
+/////////////////////////
+$data = array();
+$data['news'] = array();
+
+
+foreach($feed_data['posts']['data'] as $post){
+    // facebook 給的文章 ID 像是219967208129003_394126360713086
+    // 要取「_」後面的部份
+    // 萬一找不到底線的話，那就是整串數字當作 ID
+    $post_id = $post['id'];
+    $post_id = explode('_', $post_id);
+    $post_id = $post_id[count($post_id)-1];
+    $post_id = intval($post_id);
+
+    // 標題的取法
+    // - 內文的第一個斷行（\n）前面的部份
+    // - 不超過 50 個字
+    $title = explode("\n", $post['message']);
+    $title = $title[0];
+    if (mb_strlen($title, 'UTF-8')>50) {
+        $title = mb_substr($title, 0, 50, 'UTF-8').'...';
+    }
+
+    // 內文
+    $content = $post['message'];
+
+    // 作者名稱
+    $publisher = $post['from']['name'];
+
+    // 發布時間
+    $pub_time = $post['created_time'];
+    $pub_time = strtotime($pub_time);
+
+    // 組合資訊
+    $data['news'][] = array(
+            "id"       => $post_id,
+            "title"    => $title,
+            "content"  => $content,
+            "publishe" => $publisher,
+            "pub_time" => $pub_time,
+            );
+}
 
 
 // 抓出新聞的最新發佈時間當作最後更新時間
 foreach ($data['news'] as $news) {
-    if ($data['lastu_pdate'] < $news['pub_time']) {
-        $data['lastu_pdate'] = $news['pub_time'];
+    if ($data['last_update'] < $news['pub_time']) {
+        $data['last_update'] = $news['pub_time'];
     }
 }
 

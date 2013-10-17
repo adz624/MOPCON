@@ -30,6 +30,7 @@
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kkbox" rel="external" href="http://www.kkbox.com"><img src="img/logo/kkbox-logo2.png" alt="KKBOX" /></a>
               <li class="thumbnail"><a id="infinitiessoft" rel="external" href="http://infinitiessoft.com"><img src="img/logo/infinitiessoft-logo.png" alt="Infinities Soft" /></a>
+              <li class="thumbnail"><a id="hiiir" rel="external" href="http://www.hiiir.com/"><img src="img/logo/hiiir-logo.png" alt="hiiir" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
@@ -37,6 +38,9 @@
             <p>感謝以下各贊助單位</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="kdan" rel="external" href="http://www.kdanmobile.com/"><img src="img/logo/Kdan-logo.png" alt="Kdan Mobile" /></a>
+              <li class="thumbnail"><a id="moregeek" rel="external" href="http://www.moregeek.com/"><img src="img/logo/moregeek-new-logo.png" alt="Moregeek" /></a>
+              <li class="thumbnail"><a id="hamiapps" rel="external" href="http://hamiweb.emome.net/pages/content/1/5"><img src="img/logo/hami_apps-logo.png" alt="HamiApps" /></a>
+              <li class="thumbnail"><a id="water-start" rel="external" href="http://www.water-start.net/"><img src="img/logo/water_start-logo.jpg" alt="水啟動" /></a>
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
@@ -58,6 +62,7 @@
             <ul class="thumbnails">
               <li class="thumbnail"><a id="stu" rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu_logo.png" alt="樹德科技大學 電算中心" /></a>
               <li class="thumbnail"><a id="ossf" rel="external" href="http://openfoundry.org/"><img src="img/logo/openfoundry_logo.png" alt="OSSF自由軟體鑄造場" /></a>
+              <li class="thumbnail"><a id="zd" rel="external" href=""><img src="img/logo/ZD_logo.jpg" alt="零距離股份有限公司" /></a></li>  
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
@@ -65,6 +70,7 @@
             <p>感謝以下媒體支持</p>
             <ul class="thumbnails">
               <li class="thumbnail"><a id="appshooting" rel="external" href="http://www.facebook.com/appshooting"><img src="img/logo/AppShooting_Logo.png" alt="App情報誌" /></a>
+              <li class="thumbnail"><a id="cool3c" rel="external" href="http://www.cool3c.com/"><img src="img/logo/cool3c-logo.png" alt="癮科技" /></a>
             </ul>
 		      </div>
 
