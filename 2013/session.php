@@ -1293,7 +1293,7 @@
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
-                          <div class="time"><?php echo $session_object->sessions[31]->loc ; ?><br />15:20 ~ 16:00</div>
+                          <div class="time"><?php echo $session_object->sessions[31]->loc ; ?><br />15:30 ~ 16:10</div>
                         </div>
                       </div>
                       <div class="span10">
@@ -1328,7 +1328,7 @@
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
-                          <div class="time"><?php echo $session_object->sessions[32]->loc ; ?><br />15:20 ~ 16:00</div>
+                          <div class="time"><?php echo $session_object->sessions[32]->loc ; ?><br />15:30 ~ 16:10</div>
                         </div>
                       </div>
                       <div class="span10">
