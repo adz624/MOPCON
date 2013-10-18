@@ -16,8 +16,6 @@ $json_str = file_get_contents('session_raw.json');
 // curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 // $json_str = curl_exec($curl);
 // curl_close($curl);
-echo "test2<br>";
-echo $json_str;
 $session_raw_data = json_decode($json_str, true);
 
 
@@ -79,6 +77,9 @@ foreach ($session_raw_data as $session) {
 
     // 資料整理完成
     $output['sessions'][] = $session;
+    echo $session;
+    echo "<br>=====================================<br>";
+    echo json_encode($output);
 }
 
 
