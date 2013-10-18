@@ -24,6 +24,8 @@ echo $json_str;
 echo "\n\r\n\r=============================================================\n\r\n\r";
 $session_raw_data = json_decode($json_str, true);
 echo $session_raw_data;
+echo "\n\r\n\r=============================================================\n\r\n\r";
+echo json_last_error();
 
 $catalog_def = array();
 $catalog_def['雲端服務'] = "1";
