@@ -12,14 +12,6 @@ $output['last_update'] = strtotime(LAST_UPDATE);
 
 // 讀入資料來源 JSON
 $json_str = file_get_contents('session_raw.json');
-iconv('big5','utf-8', $json_str);
-// if(preg_match('/^\xEF\xBB\xBF/',$json_str))
-//         {
-//              $json_str = substr($json_str,3);
-//         }
-//         //trim
-//         $json_str = t($json_str);
-
 echo $json_str;
 echo "\n\r\n\r=============================================================\n\r\n\r";
 $session_raw_data = json_decode($json_str, true);
