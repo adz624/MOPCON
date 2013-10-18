@@ -16,6 +16,8 @@ $curl = curl_init('http://test.mopcon.net/2013/api/session_raw.json');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 $json_str = curl_exec($curl);
 curl_close($curl);
+echo "test<br>";
+echo $json_str;
 $session_raw_data = json_decode($json_str, true);
 
 
