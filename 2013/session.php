@@ -25,8 +25,8 @@
                 </hgroup>
               </div>
             </div>
-            <div class="agenda-group">
-              <div class="agenda-title">
+            <div class="agenda-group off">
+              <a class="agenda-title" href="#">
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
@@ -36,7 +36,20 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">大會報到</div>
-					  <div class="head">video playback (議程預覽 + 工商服務 + 早餐時間)</div>
+                      <div class="head">video playback (議程預覽 + 工商服務 + 早餐時間)</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="agenda-content">
+                <div class="row-fluid">
+                  <div class="span2">
+                    <div class="text-wrapper">
+                      議程介紹
+                    </div>
+                  </div>
+                  <div class="span10">
+                    <div class="text-wrapper">
                     </div>
                   </div>
                 </div>
