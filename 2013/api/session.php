@@ -15,7 +15,7 @@ $json_str = file_get_contents('session_raw.json');
 echo $json_str;
 echo "\n\r\n\r=============================================================\n\r\n\r";
 $session_raw_data = json_decode($json_str, true);
-echo $session_raw_data;
+var_dump($session_raw_data);
 echo "\n\r\n\r=============================================================\n\r\n\r";
 echo json_last_error();
 
