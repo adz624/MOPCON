@@ -16,6 +16,8 @@ $json_str = file_get_contents('session_raw.json');
 // curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 // $json_str = curl_exec($curl);
 // curl_close($curl);
+echo $json_str;
+echo "<br><br>=============================================================<br><br>";
 $session_raw_data = json_decode($json_str, true);
 echo $session_raw_data;
 
