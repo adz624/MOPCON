@@ -1,8 +1,4 @@
-/* @override http://mopcon.org/css/all.css */
-
-/* @override http://test.mopcon.org/css/all.css */
-
-/* @override http://test.mopcon.org/css/all.css */
+/* @override http://test.mopcon.net/2013/css/all.css */
 
 html,body{
 	font-size:16px;
@@ -60,7 +56,6 @@ a.btn.btn-navbar {
 .container {
 	overflow:hidden;
 
-	border: 1px solid #ccc;
 	border: 1px solid rgba(0,0,0,0.2);
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -107,14 +102,14 @@ span.wd.ct10,span.slash {
 
 .agenda {
 	padding:24px;
-	background: #f0dec0 url('../img/370381012896.jpeg') repeat;
+	/*background: #f0dec0 url('../img/370381012896.jpeg') repeat;*/
 }
 .agenda:first-child {
 	padding-bottom:0
 }
 .agenda .border {
 	border:2px solid black;
-	border-color:rgba(0,0,0,0.7)
+	border-color:#1176bc;
 }
 .agenda h2 {
 	font-size:2em
@@ -126,7 +121,7 @@ span.wd.ct10,span.slash {
 }
 .agenda .line {
 	border:3px double black;
-	border-color:rgba(0,0,0,0.7);
+	border-color:#1176bc;
 	padding:48px
 }
 @media (max-width: 767px) {
@@ -145,7 +140,7 @@ span.wd.ct10,span.slash {
 	padding-bottom:24px
 }
 .agenda .span10 {
-	border-left:1px dashed rgba(0,0,0,0.3);
+	border-left:1px dashed #1176bc;
 	margin-left:-1px
 }
 @media (max-width: 767px) {
@@ -163,6 +158,7 @@ span.wd.ct10,span.slash {
 }
 .agenda .agenda-group {
 	border:1px solid black;
+	border-color: #1176bc;
 	border-width:1px 0;
 	margin-bottom:-1px
 }
