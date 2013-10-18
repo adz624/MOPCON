@@ -1,8 +1,10 @@
 [
   {
-    "bar": "baz"
+    "bar": "baz",
+    "loc":"三廳聯播"
   },
   {
-    "bar": "baz"
+    "bar": "baz",
+    "loc":"1"
   }
 ]
