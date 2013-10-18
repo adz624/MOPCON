@@ -1,4 +1,4 @@
-{
+[
   {
     "loc":"三廳聯播",
     "speaker_bio":"Markku is the APAC Technology Evangelist at Amazon Web Services, and has been in the IT industry for 14 years. Before joining AWS, Markku was responsible for the cloud computing architecture and technology transformation of Nokia Siemens Networks' global business units.",
@@ -308,4 +308,4 @@
     "id":"262",
     "speaker":"stanely"
   }
-}
+]
