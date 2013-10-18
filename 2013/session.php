@@ -680,7 +680,7 @@
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
-                          <div class="time"><?php echo $session_object->sessions[16]->loc ; ?><br />15:20 ~ 16:00</div>
+                          <div class="time"><?php echo $session_object->sessions[16]->loc ; ?><br />16:10 ~ 16:50</div>
                         </div>
                       </div>
                       <div class="span10">
