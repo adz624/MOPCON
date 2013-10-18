@@ -2,11 +2,20 @@
   {
     "loc":"三廳聯播",
     "speaker_bio":"Markku is the APAC Technology Evangelist at Amazon Web Services, and has been in the IT industry for 14 years. Before joining AWS, Markku was responsible for the cloud computing architecture and technology transformation of Nokia Siemens Networks' global business units.",
-    "class":"雲端服務"
+    "class":"雲端服務",
+    "content":"Learn how you can develop and run a multi-tiered Mobile App without a single server, leveraging the power of Amazon Web Services. XD
+                - Are Desktop and Mobile that different?
+                - Mobile Web or Rich (Native) App?
+                - HTML 5, App Stores, Discovery, Distribution and, Monetization",
+    "name":"Rethinking the Mobile Universe with Amazon Web Services",
+    "id":"110"
   },
   {
     "loc":"1",
     "speaker_bio":"",
-    "class":"技術; 軟體品質 "
+    "class":"技術; 軟體品質 ",
+    "content":"KKBOX 從 Android 1.0 就開始投入開發 KKBOX Android，在面臨 Android 平台不斷的演進與不同裝置之間的差異，提供給每一個 Android 裝置都擁有一致穩定的串流音樂服務體驗是開發團隊的極大挑戰。本議程會講述 KKBOX 在實作串流音樂服務中在 Android 平台所遇到的各種挑戰，並且簡述如何在實作上克服這些問題的經驗談。",
+    "name":"KKBOX 在 Android 實作串流音樂的挑戰",
+    "id":"120"
   }
 ]
