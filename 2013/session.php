@@ -4,7 +4,7 @@
   $title = "議程";
   $og_descr = "MOPCON 的議程";
   $page_file = $_SERVER['PHP_SELF'];
-  
+
   $session_json = file_get_contents('http://mopcon.org/2013/api/session.php');
   $session_object = json_decode($session_json);
 ?>
@@ -36,7 +36,7 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">大會報到</div>
-					  <div class="head">video playback (議程預覽 + 工商服務 + 早餐時間)</div>					  
+					  <div class="head">video playback (議程預覽 + 工商服務 + 早餐時間)</div>
                     </div>
                   </div>
                 </div>
@@ -47,7 +47,7 @@
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
-                      <div class="time">09:00 ~ 09:25</div>
+                      <div class="time">09:05 ~ 09:25</div>
                     </div>
                   </div>
                   <div class="span10">
@@ -71,15 +71,6 @@
                 </div>
               </div>
             </div>
-            <div class="agenda-group rest">
-              <div class="agenda-title">
-                <div class="name">中場休息</div>
-              </div>
-            </div>
-			
-			
-			
-			
 			<div class="agenda-group off">
               <a class="agenda-title" href="#">
                 <div class="row-fluid">
@@ -121,7 +112,7 @@
               </div>
             </div>
 
-			
+
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
@@ -610,8 +601,8 @@
                 <div class="name">中場休息</div>
               </div>
             </div>
-			
-			
+
+
 			<div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
@@ -729,7 +720,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name">公告 + 散場</div>				  
+                      <div class="name">公告 + 散場</div>
                     </div>
                   </div>
                 </div>
@@ -737,7 +728,7 @@
             </div>
           </div>
         </div>
-      </div>   
+      </div>
 
 	  <div class="agenda">
         <div class="border">
@@ -762,7 +753,7 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name">大會報到</div>
-					  <div class="head">video playback (議程預覽 + 工商服務 + 早餐時間)</div>					  
+					  <div class="head">video playback (議程預覽 + 工商服務 + 早餐時間)</div>
                     </div>
                   </div>
                 </div>
@@ -1028,9 +1019,9 @@
                 </div>
               </div>
             </div>
-			
-			
-			
+
+
+
 			<div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
@@ -1181,8 +1172,8 @@
                 <div class="name">中場休息</div>
               </div>
             </div>
-			
-			
+
+
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
@@ -1407,8 +1398,8 @@
                 <div class="name">中場休息</div>
               </div>
             </div>
-			
-			
+
+
 			<div class="agenda-group off">
               <a class="agenda-title" href="#">
                 <div class="row-fluid">
@@ -1450,7 +1441,7 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name">公告 + 散場</div>				  
+                      <div class="name">公告 + 散場</div>
                     </div>
                   </div>
                 </div>
@@ -1458,8 +1449,8 @@
             </div>
           </div>
         </div>
-      </div>   
-      
+      </div>
+
   </div>
     <?php include_once("footer.html");?>
   </body>
