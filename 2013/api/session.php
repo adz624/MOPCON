@@ -17,7 +17,7 @@ $json_str = file_get_contents('session_raw.json');
 // $json_str = curl_exec($curl);
 // curl_close($curl);
 $session_raw_data = json_decode($json_str, true);
-
+echo $session_raw_data;
 
 $catalog_def = array();
 $catalog_def['雲端服務'] = "1";
