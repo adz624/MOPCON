@@ -11,11 +11,11 @@ $output['last_update'] = strtotime(LAST_UPDATE);
 
 
 // 讀入資料來源 JSON
-//$json_str = file_get_contents('2013/api/session_raw.json');
-$curl = curl_init('http://test.mopcon.net/2013/api/session_raw.json');
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-$json_str = curl_exec($curl);
-curl_close($curl);
+$json_str = file_get_contents('session_raw.json');
+// $curl = curl_init('http://test.mopcon.net/2013/api/session_raw.json');
+// curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+// $json_str = curl_exec($curl);
+// curl_close($curl);
 echo "test<br>";
 echo $json_str;
 $session_raw_data = json_decode($json_str, true);
