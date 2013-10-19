@@ -208,7 +208,7 @@
   },
   {
     "loc":"3",
-    "speaker_bio":"",
+    "speaker_bio":"Joe works across Asia Pacific as the AWS Start-Up Business Development Manager. Before AWS, Joe worked at NetGravity during the time of its IPO and on some of the first e-commerce applications at Netscape. Joe has built several start-ups as Director of Technical Services; his recent venture, Iris Data Services, was listed as one of the “Forbes 500 Fastest Growing Companies in the US”",
     "class":"雲端服務",
     "content":"Push notifications are alerts you can send to users even when they are not actively using your app. Join us to see a Live Demo of how you can easily send push notifications to Apple, Google and Amazon devices through a simple, Unified API, using Amazon Simple Notification Service.",
     "name":"Hands-on: Mobile Push Notifications to Android, iOS and Kindle Fire with AWS",
