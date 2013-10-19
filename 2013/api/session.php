@@ -47,9 +47,6 @@ var_dump($session_raw_data);
 echo "\n\r\n\r=============================================================\n\r\n\r";
 // 把 session 資料塞入$data 中
 foreach ($session_raw_data as $session) {
-
-    echo "in to the loop";
-
     // class -> catalog
     $class = $session['class'];
     $class = explode(';', $class);
@@ -79,9 +76,9 @@ foreach ($session_raw_data as $session) {
 
     // 資料整理完成
     $output['sessions'][] = $session;
-    var_dump($session);
-    echo "\n\r\n\r =====================================\n\r\n\r";
-    var_dump(json_encode($output));
+    // var_dump($session);
+    // echo "\n\r\n\r =====================================\n\r\n\r";
+    // var_dump(json_encode($output));
 }
 
 
