@@ -55,16 +55,16 @@
   },
   {
     "loc":"3",
-    "speaker_bio":"",
+    "speaker_bio":"曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。",
     "class":"Windows Phone",
     "content":"搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 本講次邀請Moli 介紹Windows Phone 開發的入門以及Kinect 整合Windows Phone應用實例。有興趣的學員可以在本講次中了解Windows Phone的開發技術，開發Windows Phone App 參加現場活動。有機會贏得4100萬像素的Lumia 1020 手機。",
     "name":"搶拿Lumia 1020 - Windows Phone開發入門與應用 : 以Kinect體感裝置與 Windows Phone整合為例",
     "id":"132",
-    "speaker":"Moli (王森)"
+    "speaker":"ERICSK (上官林傑)"
   },
   {
     "loc":"三廳聯播",
-    "speaker_bio":"",
+    "speaker_bio":"CEO iKala, CEO, LIVEhouse, Gamania (遊戲橘子) 董事, Google 軟體工程師, 史丹佛大學電腦科學碩士、台大資訊工程系",
     "class":"營運; 新創服務, 數位內容",
     "content":"Big data, open data, open mobile platform, quantified self, internet of things, 這些進幾年來興起的領域，代表著網際網路和全世界的大趨勢，正快速地把我們推向一個更為開放的世界。「開放已是常態、封閉無法生存」，這一個 session 中將與各位分享，在這樣開放的新世界，我們應該如何應對？",
     "name":"Open is the new norm.",
@@ -73,7 +73,7 @@
   },
   {
     "loc":"1",
-    "speaker_bio":"許靖昕 半導體業混跡的軟體架構師 業餘獨立開發者 於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬 小品作品為賓果,神樂透...等 曾於2011年由中國三星舉辦的星空大賽獲獎 CSDN博客專家(http://blog.csdn.net/cloudhsu) Devdiv論壇iOS版主 CodeProject論壇,Gold級Anthor",
+    "speaker_bio":"許靖昕 半導體業混跡的軟體架構師 業餘獨立開發者 於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬 小品作品為賓果,神樂透...等 曾於2011年由中國三星舉辦的星空大賽獲獎 CSDN博客專家(http://blog.csdn.net/cloudhsu) Devdiv論壇iOS版主 CodeProject論壇,Gold級Author",
     "class":"技術; 開發工具, 遊戲 ",
     "content":"如何使用CloudBox開發跨平台的手機遊戲 CloudBox為基於C/C++的open source project 目前支援Windows/iOS/Android,為cross-platform engine 支援xcode, eclipse, visual studio 2008 目前已用CloudBox開發的產品有Super Baby Pig(超級寶貝豬),已於App Store/Play Store上架",
     "name":"利用 CloudBox 開發 cross-platform mobile game",
@@ -82,7 +82,7 @@
   },
   {
     "loc":"2",
-    "speaker_bio":"",
+    "speaker_bio":"於 2010 年 11 月獲得 Google Play Top Developer 徽章。長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望透過科技與開放的力量，建構更美好的未來。",
     "class":"營運; 新創服務",
     "content":"如何透過微小的 App ，獲得巨大的力量，進而改變世界。",
     "name":"App 與改變世界的力量",
