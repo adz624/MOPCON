@@ -14,7 +14,7 @@
       <div class="article">
         <div id="sponsorList">
           <div class="offset1 span9 second well-large">
-            <h3>本屆金句：</h3>
+            <h3>官方活動 Mobile Apps：</h3>
             <div id="about">
               <div class="section">
                 <div class="popover bottom">
@@ -29,3 +29,7 @@
         </div>
       </div>
     </div>
+
+    <?php include_once("footer.html");?>
+  </body>
+</html>
