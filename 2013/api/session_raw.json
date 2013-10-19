@@ -3,7 +3,7 @@
     "loc":"三廳聯播",
     "speaker_bio":"Markku is the APAC Technology Evangelist at Amazon Web Services, and has been in the IT industry for 14 years. Before joining AWS, Markku was responsible for the cloud computing architecture and technology transformation of Nokia Siemens Networks' global business units.",
     "class":"雲端服務",
-    "content":"Learn how you can develop and run a multi-tiered Mobile App without a single server, leveraging the power of Amazon Web Services. - Are Desktop and Mobile that different? - Mobile Web or Rich (Native) App? - HTML 5, App Stores, Discovery, Distribution and, Monetization",
+    "content":"Learn how you can develop and run a multi-tiered Mobile App without a single server, leveraging the power of Amazon Web Services. Are Desktop and Mobile that different? Mobile Web or Rich (Native) App? HTML 5, App Stores, Discovery, Distribution and, Monetization Does Cloud Computing make a difference? AWS Mobile SDK: Developer tools, Demo, SDKs integration into your applications. Security and Ctedentials.",
     "name":"Rethinking the Mobile Universe with Amazon Web Services",
     "id":"110",
     "speaker":"Markku Lepistö (AWS)"
@@ -19,9 +19,9 @@
   },
   {
     "loc":"2",
-    "speaker_bio":"",
+    "speaker_bio":"一半的腦袋是理性邏輯的工程師，另一半是感性的文字寫作者；一半的靈魂是藝術工作者，另一半是商人。在找到工作之前，是個獨立遊戲開發者，曾參與製作的遊戲 App 包括《邦尼的早午餐》系列和《勾玉忍者》，並著有《半路叛逃》一書。",
     "class":"營運; 數位內容, 遊戲 ",
-    "content":"探討遊戲 App 營運經驗",
+    "content":"這個世界往往是成功者說了算，但如果你剛好有那麼一點反骨，請來聽聽「不成功者」如何在遊戲 App 獨立開發這條路上，於理想與現實之間擺盪，奮力掙扎的真實故事。",
     "name":"遊戲 App 開發營運實務：那些成功者沒說的事",
     "id":"121",
     "speaker":"半路 (鄭暐橋)"
