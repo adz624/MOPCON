@@ -12,8 +12,8 @@ $output['last_update'] = strtotime(LAST_UPDATE);
 
 // 讀入資料來源 JSON
 $json_str = file_get_contents('session_raw.json');
-$session_raw_data = json_decode($json_str, true);
-
+// echo $json_str;
+// echo "\n\r\n\r=============================================================\n\r\n\r";
 
 $catalog_def = array();
 $catalog_def['雲端服務'] = "1";
@@ -42,6 +42,9 @@ $time_def['25'] = array('start'=>strtotime("2013-10-27 14:30:00"), 'end'=>strtot
 $time_def['26'] = array('start'=>strtotime("2013-10-27 15:30:00"), 'end'=>strtotime("2013-10-27 16:10:00"));
 $time_def['27'] = array('start'=>strtotime("2013-10-27 16:20:00"), 'end'=>strtotime("2013-10-27 17:30:00"));
 
+$session_raw_data = json_decode($json_str, true);
+// var_dump($session_raw_data);
+// echo "\n\r\n\r=============================================================\n\r\n\r";
 // 把 session 資料塞入$data 中
 foreach ($session_raw_data as $session) {
     // class -> catalog
