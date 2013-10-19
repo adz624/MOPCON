@@ -293,9 +293,162 @@ google提供的UI元件不夠滿足產品需求？
       </div>
 
       <div class="speaker">
+      <a id="cloudhsu"></a>
+      <img src="speaker_img/CloudHsu.jpg" alt="cloudhsu">
+      <h2>cloudhsu</h2>
+<p>許靖昕
+<li>半導體業混跡的軟體架構師</li>
+<li>業餘獨立開發者</li>
+<li>於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬</li>
+<li>小品作品為賓果,神樂透...等</li>
+<li>曾於2011年由中國三星舉辦的星空大賽獲獎</li>
+<li>CSDN博客專家(http://blog.csdn.net/cloudhsu)</li>
+<li>Devdiv論壇iOS版主</li>
+<li>CodeProject論壇,Gold級Anthor</li>
+<p>題目：利用 CloudBox 開發 cross-platform mobile game
+<p>摘要：如何使用CloudBox開發跨平台的手機遊戲, CloudBox為基於C/C++的open source project, 目前支援Windows/iOS/Android, 為cross-platform engine, 支援xcode, eclipse, visual studio 2008 目前已用CloudBox開發的產品有Super Baby Pig(超級寶貝豬),已於App Store/Play Store上架
+      </div>
+
+      <div class="speaker">
+      <a id="yllan"></a>
+      <img src="speaker_img/yllan.jpg" alt="yllan">
+      <h2>yllan</h2>
+<p>題目：iOS 上的文字描繪基礎
+<p>摘要：
+<li>現代文字描繪系統的特性</li>
+<li>iOS 上的排版與文字描繪</li>
+<li>小心陷阱</li>
+<p>無論是現行哪種作業系統，「文字的呈現」都佔了使用者界面很大的一環。每天看網頁、回 email 甚至寫程式，都面對大量的文字。此議程旨在介紹文字描繪的基礎原理，以及 iOS 上的實作，到最後分享親身體驗到的陷阱。希望能夠帶領聽眾入門文字描繪，做出更細膩的使用者介面。
+      </div>
+
+      <div class="speaker">
+      <a id="hokila"></a>
+      <img src="speaker_img/hokila.jpg" alt="hokila">
+      <h2>hokila</h2>
+<p>Hokila，福氣啦，因為不想取英文名字所以直接把台語發音翻過來。熱愛分享、自我挑戰與捉弄朋友，常去的聚會是Cocoaheads Taipei，寫過幾個app，現任職Splashtop <a href="http://about.me/hokilaJ">hokila</a>
+<p>題目：讓你 App 優雅的 crash 三部曲
+<p>摘要：使用者看到crash，最常做的是直接給一顆星，絕大部分都不會回報開發者。將會介紹許多種防堵機制、在crash的前中後設下重重保護，讓app優雅的crash
+      </div>
+
+      <div class="speaker">
+      <a id="walkingice"></a>
+      <img src="speaker_img/walkingice.jpg" alt="walkingice">
+      <h2>walkingice</h2>
+<p>0xlab co-founder, 熟悉 Android Framework/Application。喜歡 Open Source 且聚焦在前端開發的 software developer，希望能用程式碼回饋社會。
+<p>題目：從手機程式到網頁開發
+<p>摘要：一個好的 APP 要顧住流量、掌握營收、創造體驗，如何在團隊規模不足的情況下找到平衡點
+      </div>
+      
+      <div class="speaker">
+      <a id="yanlo"></a>
+      <img src="speaker_img/yanlo.jpg" alt="yanlo">
+      <h2>炎羅</h2>
+<li>奧爾資訊工程師【作品: Oh! Cube】
+<li>先進量子工程師【專案: Arcalet遊戲平台的API及Unity lib】
+<li>與Garena Taiwan合作：魔獸爭霸-信長野望（2007~2008）
+<li>大宇資訊客服專員（2005~2007）
+<li>業界講師
+<li>明道大學數位設計學系（Unity3D遊戲開發）
+<li>樹德科大資工系（遊戲設計概論、Scirra Construct 2）
+<li>樹德科大動遊系（Unity3D遊戲開發）
+<li>南台科大畢業製作評審委員
+<li>樹德科大校外課程委員
+<li>樹德科大教師專業成長社群講師（遊戲開發與教學
+<p>題目：Fingers Party：從一代至二代經驗分享
+<p>摘要：從APP連結擴散到整個生態圈，創造出APP 點圈新經濟
+      </div>
+
+      <div class="speaker">
+      <a id="Ernest"></a>
+      <img src="speaker_img/Ernest_1.jpg" alt="Ernest">
+      <h2>Ernest Chiang</h2>
+<p>Ernest。這小孩一路在玩，挑了個英文名字假裝練習寫小說，後來才知道跟海明威撞名。小時候玩 MS-DOS, OS/2, Windows 3.1, Slackware，玩著玩著玩到大學申請少了零點多分沒法進資工系玩，改玩半導體製程和微小機電，幸運地進入台積研究所玩製程整合從研發、試產玩到量產。熱愛開放與不務正業的精神，曾經玩網路創業，現在上班在玩傳統產業 + 軟硬體整合，試著把無線通訊塞進健身器材中。下班參與 Mozilla 台灣社群 MozTW SUMO 專案，以及支援朋友們玩各種創業。夢想與大家玩出各種可能性。愛台灣，不解釋 XD
+<p>題目：Industry Hacking: 聊，傳統產業健身器材；玩，軟硬體整合
+<p>摘要：台灣經濟體與外匯結構的組成除了高科技產業、電子業之外，傳統產業也是不可或缺的一環。傳統產業升級所面臨的挑戰，也許遇上了這一波軟硬體整合、軟硬體開放，會碰撞出一些新的火花？有的傳統產業不大不小，但規模未到調研機構願意為之出市場研究報告，一切摸黑前進。在 PAFERS Tech 這兒有一群認真但不願認輸的跨領域挑戰者，正在挑戰從台灣迎向全球健身器材產業之神鬼迷航。（你認真了！但不一定會輸:）聊 www.pafers.com 的創業歷程。結合科技、商業模型、行動應用、軟硬體整合、法務的神奇航道。
+      </div>
+
+      <div class="speaker">
+      <a id="jamesyeh"></a>
+      <img src="speaker_img/JamesYeh.png" alt="jamesyeh">
+      <h2>jamesyeh</h2>
+<p>James原是舒適圈的大學助理教授，主攻情意計算，資工出身卻常在設計、心理及行銷系打混，做過無人載具、禪修、颱風預測、情緒分析、語音處理、消費者行為分析、訊號軟硬整合...等多元的案子。近兩年已經歷四家獲利的新創公司，去年成立了一間「想要顛覆舊思維」的公司，主要專注於多媒體處理、行為分析、軟硬整合，並結合手持裝置應用的創新服務。
+<p>題目：在行動裝置的即時影像辨識開發經驗分享 — 以 FindDog.net 尋狗網為例
+<p>摘要：分享一個創新服務-FindDog.net APP的開發過程。這是一項可以使用行動裝置隨時拍照、即時比對、社群分享、軟硬整合晶片掃描的尋狗服務。將介紹其開發緣由、在行動裝置前端的低階影像處理、AWS後端平台的辨識整合架構、資料處理及型別比對技術等。
+      </div>
+
+      <div class="speaker">
+      <a id="othree"></a>
+      <img src="speaker_img/othree.jpg" alt="othree">
+      <h2>othree</h2>
+<p>othree，十年前為了製作個人網頁而自學起 HTML、CSS 和 JavaScript，接著便一頭栽進網路標準的世界，並持續關注網路前端技術的發展，不時在部落格及各活動分享新知，近期關注 HTML5、CSS3、Web API、語意網等議題，被認為專長於 JavaScript，其實最喜歡寫的是漂亮的 HTML Markup，現職為 HTC 前端工程師（F2E）兼博士生。
+<p>題目：Mobile Web Application 甘苦談
+<p>摘要：在 Web Standard 成為網路主流後，開發人員沒想到的是，後面還有更艱苦的 Mobile Web 在等著他們，雖然各家手機的瀏覽器都照著標準走，不過接著而來的是各種靈異現象、不同的標準實作以及更不友善的除錯環境。本議程將分享講者在開發 Mobile Web Application 時，所遇到的各種疑難雜症。
+      </div>
+
+      <div class="speaker">
+      <a id="Bill"></a>
+      <img src="speaker_img/Bill.jpg" alt="Bill">
+      <h2>陳文裕</h2>
+<p>題目：多雲及混合雲管理平台的開發實踐
+<p>摘要：探討數位無限軟體研發多雲管理平台的研發過程與開發程序的演化歴程。在研發產品新版的過程中，如何從傳統式的軟體開發架構，發展到現代化的開發架構，執行產品開發的管理時，如何從傳統的軟體開發管理，演化到敏捷式的開發管理
+      </div>
+
+      <div class="speaker">
+      <a id="tony"></a>
+      <img src="speaker_img/tony.jpg" alt="tony">
+      <h2>王景弘<br>TonyQ</h2>
+<p>題目：The web backend of Android mobile
+<p>摘要：開發 android app 經驗中時，面臨的一些 web server 作為 android 資料來源跟身份驗證的一些細節，著重在 Android 與 remote web server 之間的資料交換策略，講題屬入門經驗分享。預計是 web API 開發過程分享(60%)、client auth (30% )、push notification (10%) 等比重進行分享。
+      </div>
+
+      <div class="speaker">
+      <a id="Anistar"></a>
+      <img src="speaker_img/anistar.jpg" alt="Anistar">
+      <h2>Anistar</h2>
+<p>現任：台灣區 Yahoo!專長： Objective C、iOS SDK、Android SDK、Flex 4、RIA、ActrionScript 3、HTML5、CSS3、JQuery、JQuery Mobile、C++、PHP、MySQL...等整合運用。著作：《Run!PC雜誌》專欄作家、《CADesigner雜誌》專欄作家、《Flash CS3 Professional ActionScript 3.0 打造互動設計力與美》、《新一代互動體驗Flex+AIR程式開發》。
+<p>題目：App 急速視覺 UX 回饋應用  - 以 AR 應用為例
+<p>摘要：在APP中最重要的一環就是UX，而且這常常是非常視覺化的，要如何以快速的方法回應使用者的操作，一直都是一個不可忽略的重要主題，此議題在解說在建立APP UX時該如何透過一些該注意的編程技巧，讓使用者的體驗可以順暢的被延續，而不會因為劣質的程式結構而造成中斷，並以AR應用為案例主軸，分析如何設計AR擴充實境應用。
+      </div>
+
+      <div class="speaker">
+      <a id="awaw"></a>
+      <img src="speaker_img/awaw.png" alt="awaw">
+      <h2>awaw</h2>
+<p>I work at Cardinalblue mainly on server side stuff, and occasionally on some iOS and Android features or bug fixes. In my past time, I like to create web apps in Rails and try out new features of iOS and Android such as Bluetooth and the UICollectionView. My github account is <a href="https://github.com/fumin">awaw</a>
+<p>題目：AllJoyn
+<p>摘要：This talk will give an introduction to the AllJoyn framework within the context of building a p2p photo discovery/sharing app on both iOS and Android. The aim is to help everyone get the project configured correctly and key concepts understood in the shortest amount time, so that hopefully previously deemed difficult ideas related to mobile p2p communication can be rendered possible and implemented easily.
+      </div>
+
+      <div class="speaker">
+      <a id="evan"></a>
+      <img src="speaker_img/even.jpg" alt="evan">
+      <h2>Evan Wu</h2>
+<p>Evan Wu the Grey, Code for Kaohsiung 與 CocoaHeads Kaohsiung 共同發起人, 在 Mobilogics 擔任 Code Monkey 與 Treasure Hunter, 喜歡簡單設計與架構, 討厭 Muggle 與肥豬肉
+<p>題目：挖掘低耗電藍芽的寶藏
+<p>摘要：藍芽聯盟 SIG 極力推廣新一代低耗電藍芽技術 Bluetooth 4.0, BLE的超低耗電表現, 以及高速度的傳輪, 尤其是 Bluetooth Smart 裝置只需使用鈕扣型電池, 可應用於各式超級輕量化的資料擷取器與感應器. 本議程將分享在 iOS 如何快速開發 Bluetooth 4.0, 以及開發中會遭遇的問題與如何界定產品開發方向, 並且帶來有趣的相關應用. 讓我們一起 Working with Bluetooth Low Energy, 挖掘出連結世界的無限可能
+      </div>
+
+      <div class="speaker">
+      <a id="nokimi"></a>
+      <img src="speaker_img/nokimi.jpg" alt="nokimi">
+      <h2>諾基米</h2>
+<p>曾在知名企業工作，為了堅持理想而離開。目前正在創業中，身份是 App 製作人。喜歡從生活中觀察發現需求，並運用優雅而有效率的方式滿足需求。已上架的 App 產品 ” Instacram ” 曾獲得泰國分類榜冠軍，其他國家亦有優異成績。
+<p>題目：App 製作心得分享
+<p>摘要：不會寫程式如何製作 App？如何組成 App 製作團隊？開發者與設計師如何溝通？如何用最低成本創造最大效益？諾基米透過本身製作 Apps 的經驗，分享這些實際問題的心得。
+      </div>
+
+      <div class="speaker">
+      <a id="stanely"></a>
+      <img src="speaker_img/standly.jpg" alt="stanely">
+      <h2>stanely</h2>
+<p>題目：有沒有那條線很重要嗎? (Wireless Display)
+<p>摘要：關於Wireless Display的現況. 除了proprietary的技術外,目前最火紅的莫過於Wi-Fi Alliance主導的Miracast和Intel推廣的WiDi. Wireless Display Source端主要涵括有NB, SmartPhone和Tablet,尤其是Android 4.2之後更是原生支援Miracast技術,許多廠商得已很快速的端出產品來賣. 這些技術瞄準的是現有的使用情境,目前必須要先用HDMI線將NB/手機/平板跟家裡的大TV連接,才能投影Source端的內容. 有了這個產品後end user只需要有支援的NB/手機/平板即可以隨時將畫面分享出去.除了screen mirror外,有趣的back channel也是值得探討的.
+      </div>
+
+      <!--div class="speaker">
       <img src="speaker_img/question_mark.jpg" alt="Who is Next?">
 <p><br>還有其他講者將會陸續登場，敬請期待。
-      </div>
+      </div-->
 
       </div>
     </div>
