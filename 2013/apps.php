@@ -14,8 +14,8 @@
       <div class="article">
         <div id="sponsorList">
           <div class="offset1 span9 second well-large">
-            <h3>官方活動 Mobile Apps：</h3>
-            <div id="about">
+            <h3>官方活動 Apps：</h3>
+            <div id="about" class="span8">
               <div class="section">
                 <div class="popover bottom">
                   <p class="popover-title" >hlb (售票亭亭長)</p>
