@@ -19,7 +19,7 @@
   },
   {
     "loc":"2",
-    "speaker_bio":"一半的腦袋是理性邏輯的工程師，另一半是感性的文字寫作者；一半的靈魂是藝術工作者，另一半是商人。在找到工作之前，是個獨立遊戲開發者，曾參與製作的遊戲 App 包括《邦尼的早午餐》系列和《勾玉忍者》，並著有《半路叛逃》一書。",
+    "speaker_bio":"獨立遊戲開發者，一半的腦袋是理性邏輯的工程師，另一半是感性的文字寫作者；一半的靈魂是藝術工作者，另一半是商人。在找到工作之前，是個獨立遊戲開發者，曾參與製作的遊戲 App 包括《邦尼的早午餐》系列和《勾玉忍者》，並著有《半路叛逃》一書。",
     "class":"營運; 數位內容, 遊戲 ",
     "content":"這個世界往往是成功者說了算，但如果你剛好有那麼一點反骨，請來聽聽「不成功者」如何在遊戲 App 獨立開發這條路上，於理想與現實之間擺盪，奮力掙扎的真實故事。",
     "name":"遊戲 App 開發營運實務：那些成功者沒說的事",
@@ -37,7 +37,7 @@
   },
   {
     "loc":"1",
-    "speaker_bio":"目前與朋友創業打怪中，最愛 Android (App) 開發，常出沒於 Taipei GTUG 聽取各路好手分享技術，也樂於跟大家分享程序員有興趣的小技巧或小工具 http://about.me/shakalaca",
+    "speaker_bio":"身兼尿布管理員，搖籃推進器等數職，目前與朋友創業打怪中，最愛 Android (App) 開發，常出沒於 Taipei GTUG 聽取各路好手分享技術，也樂於跟大家分享程序員有興趣的小技巧或小工具 http://about.me/shakalaca",
     "class":"技術; 開發工具, 軟體品質 ",
     "content":"傳授 gradle，genymotion...等工具的使用心法，歡迎喜愛桌椅組裝的朋友切磋交流。",
     "name":"深入淺出桌椅組裝器材 (Head First Android Dev Tools)",
@@ -46,7 +46,7 @@
   },
   {
     "loc":"2",
-    "speaker_bio":"曾是 DJ、音樂人，出過一張唱片，後來擔任出版社外文主編，曾寫過一本小說與 17 本德語法語教學書籍。目前獨立開發 iPhone 與 Android 程式與遊戲，上架 19 隻 Apps，從企劃、美術、寫程式全部一手包辦。",
+    "speaker_bio":"資深創作人，曾是 DJ、音樂人，出過一張唱片，後來擔任出版社外文主編，曾寫過一本小說與 17 本德語法語教學書籍。目前獨立開發 iPhone 與 Android 程式與遊戲，上架 19 隻 Apps，從企劃、美術、寫程式全部一手包辦。",
     "class":"營運; 開發工具, 數位內容, 遊戲",
     "content":"CORONA SDK 開發跨平台手機遊戲 , CORONA SDK簡介 製作遊戲心得分享",
     "name":"我已經不能說自己是程式界的菜鳥了",
@@ -73,16 +73,16 @@
   },
   {
     "loc":"1",
-    "speaker_bio":"許靖昕 半導體業混跡的軟體架構師 業餘獨立開發者 於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬 小品作品為賓果,神樂透...等 曾於2011年由中國三星舉辦的星空大賽獲獎 CSDN博客專家(http://blog.csdn.net/cloudhsu) Devdiv論壇iOS版主 CodeProject論壇,Gold級Author",
+    "speaker_bio":"半導體業混跡的軟體架構師 業餘獨立開發者 於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬 小品作品為賓果,神樂透...等 曾於2011年由中國三星舉辦的星空大賽獲獎 CSDN博客專家(http://blog.csdn.net/cloudhsu) Devdiv論壇iOS版主 CodeProject論壇,Gold級Author",
     "class":"技術; 開發工具, 遊戲 ",
     "content":"如何使用CloudBox開發跨平台的手機遊戲 CloudBox為基於C/C++的open source project 目前支援Windows/iOS/Android,為cross-platform engine 支援xcode, eclipse, visual studio 2008 目前已用CloudBox開發的產品有Super Baby Pig(超級寶貝豬),已於App Store/Play Store上架",
     "name":"利用 CloudBox 開發 cross-platform mobile game",
     "id":"150",
-    "speaker":"cloudhsu"
+    "speaker":"cloudhsu (許靖昕)"
   },
   {
     "loc":"2",
-    "speaker_bio":"於 2010 年 11 月獲得 Google Play Top Developer 徽章。長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望透過科技與開放的力量，建構更美好的未來。",
+    "speaker_bio":"中華民國 App 跨界交流協會理事長，於 2010 年 11 月獲得 Google Play Top Developer 徽章。長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望透過科技與開放的力量，建構更美好的未來。",
     "class":"營運; 新創服務",
     "content":"如何透過微小的 App ，獲得巨大的力量，進而改變世界。",
     "name":"App 與改變世界的力量",
@@ -91,7 +91,7 @@
   },
   {
     "loc":"3",
-    "speaker_bio":"",
+    "speaker_bio":"hypo 工程師，Mac BBS 軟體 Nally 作者，曾任 Cocoaheads Taipei Organizer。主力開發語言為 Objective-C 以及 Scala。興趣是 Mac/iOS 開發以及 functional programming。",
     "class":"技術; 開發工具; 使用者體驗 ",
     "content":"- 現代文字描繪系統的特性 - iOS 上的排版與文字描繪 - 小心陷阱 無論是現行哪種作業系統，「文字的呈現」都佔了使用者界面很大的一環。每天看網頁、回 email 甚至寫程式，都面對大量的文字。此議程旨在介紹文字描繪的基礎原理，以及 iOS 上的實作，到最後分享親身體驗到的陷阱。希望能夠帶領聽眾入門文字描繪，做出更細膩的使用者介面。",
     "name":"iOS 上的文字描繪基礎",
@@ -109,7 +109,7 @@
   },
   {
     "loc":"2",
-    "speaker_bio":"",
+    "speaker_bio":"博晶醫電共同創辦人，講者自 2007 年以來投入需高度軟硬體整合的遠距照護計劃，對於電子 + 生物的應用有高度興趣與熱忱。博晶醫電 ( bOMDIC Inc. ) 發願讓 bOMDIC 結合電子感測、無線通訊技術，和手機 App 等元素的整合，成為「高品質運動的代名詞」。",
     "class":"營運; 新創服務, 運動, 跨界整合 ",
     "content":"設計是為了解決問題。但軟硬整合的設計實戰中，常因為硬體的前期投資，讓設計團隊為了回收投入，執著於已開發成果，有了「慣性思考」— 最後竟演變成「設計是為了製造問題」。講者以其參與的運動器材「HeartWave 心浪體能配置機」的開發經驗，分享如何避開軟硬整合設計的慣性陷阱。",
     "name":"軟硬整合設計的慣性陷阱",
@@ -118,7 +118,7 @@
   },
   {
     "loc":"3",
-    "speaker_bio":"",
+    "speaker_bio":"themobiapps (英商移動應用) 研發副總，十歲時開始撰寫 x86 組合語言程式，二十歲寫 C 維生，三十歲愛上 Ruby，曾主導開發多種嵌入式設備產品，並於 2008 年投身行動應用開發迄今。",
     "class":"技術; 開發工具",
     "content":"Ruby 是替代 Objective-C 的最佳程式語言，RubyMotion 的誕生更是讓全球 Ruby 愛好者磨拳擦掌想要跳入行動應用的領域。無論您是不是熟悉 Ruby，接觸 RubyMotion 後都一定會醉倒在它那極簡、優雅、迅捷的開發體驗。議程中除了介紹 RubyMotion 的架構，還會分享開發時所經歷的酸甜苦辣，此外，只要再進行小小的 Hack，即可將 RubyMotion 帶到全新的應用上。",
     "name":"RubyMotion: Use It & Hack It",
@@ -154,7 +154,7 @@
   },
   {
     "loc":"三廳聯播",
-    "speaker_bio":"",
+    "speaker_bio":"臺大批踢踢創辦人，蕃薯藤網托邦創辦人，台灣自由軟體協會會長，美國國家衛生研究院程式組長，美國微軟研究院網際網路服務研究所資深研究開發員，現任中文微軟 Bing 行動軟體開發組 Senior Development Lead。",
     "class":"Windows Phone",
     "content":"    善用各種第三方平台和工具減少開發時間，將心力專注於創會是其中的訣竅！",
     "name":"Mobile Development, Bing Services and Big Data",
