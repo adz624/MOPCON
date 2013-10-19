@@ -77,9 +77,9 @@ foreach ($session_raw_data as $session) {
 
     // 資料整理完成
     $output['sessions'][] = $session;
-    echo $session;
-    echo "<br>=====================================<br>";
-    echo json_encode($output);
+    var_dump($session);
+    echo "\n\r\n\r =====================================\n\r\n\r";
+    var_dump(json_encode($output));
 }
 
 
