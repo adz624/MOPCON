@@ -14,7 +14,10 @@
       <div class="article">
         <div id="irc">
           <div class="offset1 span9 second well-large">
-            <h3>Windows Phone 8</h3>
+            <h1>加入聊天</h1>
+            <div style="text-align:center; vertical-align:middle;">
+              <iframe src="http://webchat.freenode.net?channels=ubuntu-tw&uio=d4" width="900" height="600" style="border: 0;"></iframe>
+            </div>
           </div>
         </div>
       </div>
