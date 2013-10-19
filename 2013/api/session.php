@@ -17,7 +17,7 @@ echo "\n\r\n\r=============================================================\n\r\
 $session_raw_data = json_decode($json_str, true);
 var_dump($session_raw_data);
 echo "\n\r\n\r=============================================================\n\r\n\r";
-echo json_last_error();
+var_dump(json_last_error());
 
 $catalog_def = array();
 $catalog_def['雲端服務'] = "1";
@@ -48,6 +48,9 @@ $time_def['27'] = array('start'=>strtotime("2013-10-27 16:20:00"), 'end'=>strtot
 
 // 把 session 資料塞入$data 中
 foreach ($session_raw_data as $session) {
+
+    echo "in to the loop";
+
     // class -> catalog
     $class = $session['class'];
     $class = explode(';', $class);
