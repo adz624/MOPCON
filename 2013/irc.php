@@ -19,6 +19,9 @@
               <iframe src="http://webchat.freenode.net?channels=mopcon&uio=d4" width="900" height="600" style="border: 0;"></iframe>
             </div>
           </div>
+          <div class="irclogs">
+            <h3>活動實況文字轉播記錄</h3>
+          </div>
         </div>
       </div>
     </div>
