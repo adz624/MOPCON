@@ -1,3 +1,5 @@
+/* @override http://test.mopcon.net/2013/css/all.css */
+
 html,body {
 	font-size: 16px;
 	line-height: 24px;
@@ -572,7 +574,7 @@ a {
 }
 
 /* IRC */
-@media (min-width: 1200px) {
+@media (min-width: 767px) {
 #irc {
 	margin-left: 70px;
 }
@@ -620,7 +622,7 @@ div.irclogs {
 }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
 #irc .ircframe {
 	display: none;
 }
