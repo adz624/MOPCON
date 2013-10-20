@@ -10,8 +10,6 @@
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
     <?php include_once("navbar.php");?>
     <div class="container" id="all">
-      <div class="space"></div>
-      <div class="article">
         <div id="irc" class="span10 second well-large">
           <div class="ircframe well well-sm">
             <h3>加入IRC聊天頻道</h3>
