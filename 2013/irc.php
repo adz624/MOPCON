@@ -13,7 +13,7 @@
       <div class="space"></div>
       <div class="article">
         <div id="irc">
-          <div class="offset1 span9 second well-large">
+          <div class="offset1 span10 second well-large">
             <div class="ircframe">
               <h3>加入IRC聊天頻道</h3>
               <div style="text-align:center; vertical-align:middle;">
