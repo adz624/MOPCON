@@ -14,9 +14,11 @@
       <div class="article">
         <div id="irc">
           <div class="offset1 span9 second well-large">
-            <h3>加入IRC聊天頻道</h3>
-            <div style="text-align:center; vertical-align:middle;">
-              <iframe src="http://webchat.freenode.net?channels=ubuntu-tw&uio=d4" width="900" height="600" style="border: 0;"></iframe>
+            <div class="ircframe">
+              <h3>加入IRC聊天頻道</h3>
+              <div style="text-align:center; vertical-align:middle;">
+                <iframe src="http://webchat.freenode.net?channels=mopcon&uio=d4" width="900" height="600" style="border: 0;"></iframe>
+              </div>
             </div>
           </div>
         </div>
