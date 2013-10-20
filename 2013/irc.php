@@ -13,13 +13,13 @@
       <div class="space"></div>
       <div class="article">
         <div id="irc" class="span10 second well-large">
-          <div class="ircframe span10">
+          <div class="ircframe well well-sm">
             <h3>加入IRC聊天頻道</h3>
             <div style="text-align:center; vertical-align:middle;">
               <iframe src="http://webchat.freenode.net?channels=mopcon&uio=d4" width="570" height="600" style="border: 0;"></iframe>
             </div>
           </div>
-          <div class="irclogs">
+          <div class="irclogs well well-sm">
             <h3>活動實況文字轉播記錄</h3>
           </div>
         </div>
