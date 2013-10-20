@@ -12,8 +12,10 @@
     <div class="container" id="all">
       <div class="space"></div>
       <div class="article">
-        <div id="appsList">
-          <div class="offset1 span9 second well-large">
+        <div class="offset1 span9 second well-large">
+          <h3>MOPCON Offical App:</h3>
+        </div>
+        <div class="row">
           <div class="appList">
             <h3>iOS</h3>
           </div>
@@ -22,7 +24,6 @@
           </div>
           <div class="appList">
             <h3>Windows Phone 8</h3>
-          </div>
           </div>
         </div>
       </div>
