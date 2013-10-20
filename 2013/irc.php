@@ -12,11 +12,11 @@
     <div class="container" id="all">
       <div class="space"></div>
       <div class="article">
-        <div id="irc" class="span10 second well-large">
+        <div id="irc" class="span9 second well-large">
           <div class="ircframe">
             <h3>加入IRC聊天頻道</h3>
             <div style="text-align:center; vertical-align:middle;">
-              <iframe src="http://webchat.freenode.net?channels=mopcon&uio=d4" width="900" height="600" style="border: 0;"></iframe>
+              <iframe src="http://webchat.freenode.net?channels=mopcon&uio=d4" width="700" height="600" style="border: 0;"></iframe>
             </div>
           </div>
           <div class="irclogs">
