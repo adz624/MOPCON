@@ -13,7 +13,9 @@
       <div class="space"></div>
       <div class="article">
         <div class="offset1 span12 second well-large">
-          <h3>MOPCON Offical Mobile App:</h3>
+          <div class="row span11">
+            <h3>MOPCON Offical Mobile App:</h3>
+          </div>
           <div class="row span11">
             <div class="span3 appframe">
               <p><a href="https://itunes.apple.com/tw/app/mopcon/id721411970?l=zh" rel="external" target="_blank">iOS 版下載</a></p>
