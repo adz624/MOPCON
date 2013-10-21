@@ -14,7 +14,7 @@
       <div class="article">
         <div id="irc" class="span10 second well-large">
           <div class="row">
-            <div class="span9">
+            <div class="span9 second well-large">
               <h3>加入IRC聊天頻道</h3>
               <p>MOPCON 在 Freenote 註冊了一個 #mopcon 文字頻道，歡迎大家一起來哈拉與線上轉播。</p>
               <p><a class="btn btn-success btn-large" target="_blank" rel="http://webchat.freenode.net?channels=mopcon&uio=d4">加入頻道討論</a></p>
