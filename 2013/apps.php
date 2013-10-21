@@ -16,7 +16,8 @@
           <h3>MOPCON Offical App:</h3>
           <div class="row span11">
             <div class="span3 ircframe">
-              <p>iOS</p>
+              <p>&nbsp;&nbsp;</p>
+              <p><img src="img/MOPCON_iOS_QRCode.jpg" alt="iOS App QRCode"></p>
             </div>
             <div class="span3 ircframe">
               <p>Android</p>
