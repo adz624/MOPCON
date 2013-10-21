@@ -25,11 +25,11 @@
             <div class="span9">
               <h3>活動實況文字轉播記錄</h3>
               <div class="row">
-                <div class="span4 ircframe">
-                  <p align="center">2013/10/26 (not yet)</p>
+                <div class="span3 ircframe">
+                  <p align="center">2013/10/26 (準備中)</p>
                 </div>
-                <div class="span4 ircframe">
-                  <p align="center">2013/10/27 (not yet)</p>
+                <div class="span3 ircframe">
+                  <p align="center">2013/10/27 (準備中)</p>
                 </div>
               </div>
             </div>
