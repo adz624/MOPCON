@@ -26,7 +26,7 @@
               <h3>活動實況文字轉播記錄</h3>
               <div class="row">
                 <div class="span4 ircframe">
-                  <p align="center"><h4>2013/10/26 (not yet)<h4></p>
+                  <p align="center">2013/10/26 (not yet)</p>
                 </div>
                 <div class="span4 ircframe">
                   <p align="center">2013/10/27 (not yet)</p>
