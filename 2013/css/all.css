@@ -581,7 +581,6 @@ div.ircframe {
 	padding-bottom: 1.5em;
 	border-bottom: 1px dashed #a8a8a8;
 	margin-bottom: 1.5em;
-	text-align: center;
 
 	padding: 1px;
 	background-color: #fff;
@@ -596,7 +595,6 @@ div.ircframe {
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-	height: 690px;
 }
 div.irclogs {
 	padding-bottom: 1.5em;
