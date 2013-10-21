@@ -24,12 +24,9 @@
           <div class="row ircframe">
             <div class="span9">
               <h3>活動實況文字轉播記錄</h3>
-              <div class="span4">aaa</div>
-              <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
-                <div class="panel-body">
-                  Panel content
-                </div>
+              <div class="row">
+                <div class="span4 ircframe"> 2013/10/26 (not yet) </div>
+                <div class="span4 ircframe"> 2013/10/27 (not yet) </div>
               </div>
             </div>
           </div>
