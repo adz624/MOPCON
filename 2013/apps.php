@@ -14,16 +14,16 @@
       <div class="article">
         <div class="offset1 span9 second well-large">
           <h3>MOPCON Offical App:</h3>
-        </div>
-        <div class="row span9 second well-large">
-          <div class="appList">
-            <h3>iOS</h3>
-          </div>
-          <div class="appList">
-            <h3>Android</h3>
-          </div>
-          <div class="appList">
-            <h3>Windows Phone 8</h3>
+          <div class="row span9">
+            <div class="span3 ircframe">
+              <p>iOS</p>
+            </div>
+            <div class="span3 ircframe">
+              <p>Android</p>
+            </div>
+            <div class="span3 ircframe">
+              <p>Windows Phone 8</p>
+            </div>
           </div>
         </div>
       </div>
