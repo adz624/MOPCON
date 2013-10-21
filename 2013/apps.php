@@ -12,17 +12,23 @@
     <div class="container" id="all">
       <div class="space"></div>
       <div class="article">
-        <div id="appsList">
-          <div class="offset1 span9 second well-large">
-          <div class="offset1 span9 second well-large">
-            <h3>iOS</h3>
+        <div class="offset1 span12 second well-large">
+          <div class="row span11">
+            <h3>MOPCON Offical Mobile App:</h3>
           </div>
-          <div class="offset1 span9 second well-large">
-            <h3>Android</h3>
-          </div>
-          <div class="offset1 span9 second well-large">
-            <h3>Windows Phone 8</h3>
-          </div>
+          <div class="row span11">
+            <div class="span3 appframe">
+              <p><a href="https://itunes.apple.com/tw/app/mopcon/id721411970?l=zh" rel="external" target="_blank">iOS 版下載</a></p>
+              <p><img src="img/MOPCON_iOS_QRCode.jpg" alt="iOS App QRCode"></p>
+            </div>
+            <div class="span3 appframe">
+              <p><a href="https://play.google.com/store/apps/details?id=org.mopcon" rel="external" target="_blank">Android 版下載</a></p>
+              <p><img src="img/MOPCON_Android_QRCode.jpg" alt="Android App QRCode"></p>
+            </div>
+            <div class="span3 appframe">
+              <p><a href="http://www.windowsphone.com/zh-tw/store/app/mopcon-2013/b2fd04ba-1c3f-425a-87b5-11b31f87ed18" rel="external" target="_blank">Windows Phone 8</a></p>
+              <p><img src="img/MOPCON_WP8_QRCode.jpg" alt="Windows Phone 8 App QRCode"></p>
+            </div>
           </div>
         </div>
       </div>

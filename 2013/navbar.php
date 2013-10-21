@@ -20,9 +20,10 @@
             <li class="<?php echo $function['sponsor']; ?>"><a href="sponsor.php">贊助</a></li>
             <!-- <li class="<?php echo $function['cfp']; ?>"><a href="cfp.php">議程投稿</a></li> -->
             <li class="<?php echo $function['speakers']; ?>"><a href="speakers.php">講者</a></li>
-            <!-- <li class="<?php echo $function['apps']; ?>"><a href="apps.php">Apps</a></li> -->
-            <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
             <li class="<?php echo $function['map']; ?>"><a href="map.php">交通</a></li>
+            <li class="<?php echo $function['irc']; ?>"><a href="irc.php">IRC</a></li>
+            <li class="<?php echo $function['apps']; ?>"><a href="apps.php">Apps</a></li>
+            <li class="<?php echo $function['social']; ?>"><a href="social.php">社群</a></li>
             <li class="dropdown <?php echo $function['other']; ?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
