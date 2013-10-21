@@ -25,7 +25,6 @@
             <div class="span9">
               <h3>活動實況文字轉播記錄</h3>
               <div class="span4">aaa</div>
-              <div class="span1">aaa</div>
               <div class="span4">bbb</div>
             </div>
           </div>
