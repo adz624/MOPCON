@@ -12,9 +12,9 @@
     <div class="container" id="all">
       <div class="space"></div>
       <div class="article">
-        <div class="offset1 span11 second well-large">
+        <div class="offset1 span12 second well-large">
           <h3>MOPCON Offical App:</h3>
-          <div class="row span9">
+          <div class="row span11">
             <div class="span3 ircframe">
               <p>iOS</p>
             </div>
