@@ -11,16 +11,16 @@
   function displayCatalog($catalog) {
     switch ($catalog) {
       case '1':
-        echo "<span class=\"label label-primary\">雲端服務</span>";
+        echo "<h3><span class=\"label label-primary\">雲端服務</span></h3>";
         break;
       case '2':
-        echo "<span class=\"label label-success\">技術</span>";
+        echo "<h3><span class=\"label label-success\">技術</span></h3>";
         break;
       case '3':
-        echo "<span class=\"label label-info\">營運</span>";
+        echo "<h3><span class=\"label label-info\">營運</span></h3>";
         break;
       case '9':
-        echo "<span class=\"label label-warning\">其他</span>";
+        echo "<h3><span class=\"label label-warning\">其他</span></h3>";
         break;
       default:
         break;
