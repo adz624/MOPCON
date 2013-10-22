@@ -62,7 +62,7 @@
             <ul class="thumbnails">
               <li class="thumbnail"><a id="stu" rel="external" href="http://www.ecc.stu.edu.tw/"><img src="img/logo/stu_logo.png" alt="樹德科技大學 電算中心" /></a>
               <li class="thumbnail"><a id="ossf" rel="external" href="http://openfoundry.org/"><img src="img/logo/openfoundry_logo.png" alt="OSSF自由軟體鑄造場" /></a>
-              <li class="thumbnail"><a id="zd" rel="external" href=""><img src="img/logo/ZD_logo.jpg" alt="零距離股份有限公司" /></a></li>  
+              <li class="thumbnail"><a id="zd" rel="external" href="http://www.zero-d.com.tw"><img src="img/logo/ZD_logo.jpg" alt="零距離股份有限公司" /></a></li>  
             </ul>
 		      </div>
 		      <div class="offset1 span9 second well-large">
