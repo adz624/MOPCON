@@ -68,7 +68,25 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[0]->name ; ?></div>
-                      <small><?php echo $session_object->sessions[0]->catalog ; ?></small>
+                      <?php
+                        switch ($session_object->sessions[0]->catalog) {
+                          case '1':
+                            echo "<span class=\"label label-primary\">雲端服務</span>";
+                            break;
+                          case '2':
+                            echo "<span class=\"label label-success\">技術</span>";
+                            break;
+                          case '3':
+                            echo "<span class=\"label label-info\">營運</span>";
+                            break;
+                          case '9':
+                            echo "<span class=\"label label-warning\">其他</span>";
+                            break;
+
+                          default:
+                            break;
+                        }
+                      ?>
                     </div>
                   </div>
                 </div>
