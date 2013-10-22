@@ -87,7 +87,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[0]->name ; ?></div>
-                      <div class="catalog"><?php displayCatalog($session_object->sessions[0]->catalog) ?></div>
+                      <h3><?php displayCatalog($session_object->sessions[0]->catalog) ?></h3>
                     </div>
                   </div>
                 </div>
