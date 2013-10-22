@@ -7,6 +7,25 @@
 
   $session_json = file_get_contents('http://mopcon.org/2013/api/session.php');
   $session_object = json_decode($session_json);
+
+  function displayCatalog($catalog) {
+    switch ($catalog) {
+      case '1':
+        echo "<span class=\"label label-primary\">雲端服務</span>";
+        break;
+      case '2':
+        echo "<span class=\"label label-success\">技術</span>";
+        break;
+      case '3':
+        echo "<span class=\"label label-info\">營運</span>";
+        break;
+      case '9':
+        echo "<span class=\"label label-warning\">其他</span>";
+        break;
+      default:
+        break;
+    }
+  }
 ?>
 <html lang="zh-TW" class="">
   <head><?php include_once("header.php");?></head>
@@ -68,6 +87,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[0]->name ; ?></div>
+                      <div id="session-catalog"><?php displayCatalog($session_object->sessions[0]->catalog) ?></div>
                     </div>
                   </div>
                 </div>
@@ -112,6 +132,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[1]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[1]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[1]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -147,6 +168,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[2]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[2]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[2]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -182,6 +204,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[3]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[3]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[3]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -224,6 +247,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[4]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[4]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[4]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -259,6 +283,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[5]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[5]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[5]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -294,6 +319,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[6]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[6]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[6]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -333,7 +359,8 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[7]->speaker ; ?></div>
-                          <div class="head"><?php echo $session_object->sessions[7]->name ; ?></div>
+                      <div class="head"><?php echo $session_object->sessions[7]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[7]->catalog) ?></div>
                     </div>
                   </div>
                 </div>
@@ -374,6 +401,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[8]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[8]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[8]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -409,6 +437,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[9]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[9]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[9]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -444,6 +473,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[10]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[10]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[10]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -486,6 +516,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[11]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[11]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[11]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -521,6 +552,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[12]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[12]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[12]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -556,6 +588,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[13]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[13]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[13]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -600,6 +633,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[14]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[14]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[14]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -635,6 +669,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[15]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[15]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[15]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -670,6 +705,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[16]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[16]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[16]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -756,6 +792,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[17]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[17]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[17]->catalog) ?></div>
                     </div>
                   </div>
                 </div>
@@ -797,6 +834,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[18]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[18]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[18]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -832,6 +870,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[19]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[19]->name ; ?></div>
+                          <div class="catalog"><?php displayCatalog($session_object->sessions[19]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -867,6 +906,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[20]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[20]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[20]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -909,6 +949,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[21]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[21]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[21]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -944,6 +985,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[22]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[22]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[22]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -979,6 +1021,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[23]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[23]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[23]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1019,6 +1062,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[24]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[24]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[24]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1054,6 +1098,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[25]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[25]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[25]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1089,6 +1134,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[26]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[26]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[26]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1128,7 +1174,8 @@
                   <div class="span10">
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[27]->speaker ; ?></div>
-                          <div class="head"><?php echo $session_object->sessions[27]->name ; ?></div>
+                      <div class="head"><?php echo $session_object->sessions[27]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[27]->catalog) ?></div>
                     </div>
                   </div>
                 </div>
@@ -1171,6 +1218,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[28]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[28]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[28]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1206,6 +1254,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[29]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[29]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[29]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1241,6 +1290,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[30]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[30]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[30]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1283,6 +1333,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[31]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[31]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[31]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1318,6 +1369,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[32]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[32]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[32]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
@@ -1353,6 +1405,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[33]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[33]->name ; ?></div>
+                      <div class="catalog"><?php displayCatalog($session_object->sessions[33]->catalog) ?></div>
                         </div>
                       </div>
                     </div>
