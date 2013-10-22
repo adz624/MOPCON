@@ -5,7 +5,7 @@
   $og_descr = "MOPCON 的議程";
   $page_file = $_SERVER['PHP_SELF'];
 
-  $session_json = file_get_contents('http://mopcon.org/2013/api/session.php');
+  $session_json = file_get_contents('http://test.mopcon.net/2013/api/session.php');
   $session_object = json_decode($session_json);
 ?>
 <html lang="zh-TW" class="">
