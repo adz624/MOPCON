@@ -21,7 +21,7 @@
                   <li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心</li>
                   <li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON (Mobile Open Platform Conference)2013將以 "I code, I spread, I connect" 作為主要精神意涵，議程以行動開發技術議程為核心，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</li>
 		            </ul>
-		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success btn-large" rel="external">報名截止</a>&nbsp;<a class="btn btn-info btn-large" rel="external" target="_blank" href="MOPCON-2013-Manual.pdf">大會手冊</a></p>
+		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-info btn-large" rel="external" target="_blank" href="MOPCON-2013-Manual.pdf">大會手冊下載</a></p>
             </div>
           </div>
         </div>
