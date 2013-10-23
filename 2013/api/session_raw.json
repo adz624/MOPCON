@@ -29,7 +29,7 @@
   {
     "loc":"3",
     "speaker_bio":"曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。",
-    "class":"Windows Phone",
+    "class":"技術; Windows Phone",
     "content":"搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 介紹Windows Phone 開發的入門以及如何結合APP跟Mobile Web , 有效的Reuse Mobile Web 的程式碼 。支援不同平台行動裝置逐漸成為App規劃設計的重要技巧。本講次以Windows Phone平台為範例 ，介紹如何結合Mobile Web 與Native App，發揮雙方的優點與長處，同時減少開發與維護的成本。現場開發Windows Phone App 參加Nokia/微軟活動，還有機會贏得4100萬像素的Lumia 1020 手機。",
     "name":"搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計",
     "id":"122",
@@ -56,7 +56,7 @@
   {
     "loc":"3",
     "speaker_bio":"曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。",
-    "class":"Windows Phone",
+    "class":"技術; Windows Phone",
     "content":"搭配 “開發達人來挑戰 MOPCON 特別版” 活動, 本講次邀請Moli 介紹Windows Phone 開發的入門以及Kinect 整合Windows Phone應用實例。有興趣的學員可以在本講次中了解Windows Phone的開發技術，開發Windows Phone App 參加現場活動。有機會贏得4100萬像素的Lumia 1020 手機。",
     "name":"搶拿Lumia 1020 - Windows Phone開發入門與應用 : 以Kinect體感裝置與 Windows Phone整合為例",
     "id":"132",
@@ -73,7 +73,8 @@
   },
   {
     "loc":"1",
-    "speaker_bio":"半導體業混跡的軟體架構師 業餘獨立開發者 於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬 小品作品為賓果,神樂透...等 曾於2011年由中國三星舉辦的星空大賽獲獎 CSDN博客專家(http://blog.csdn.net/cloudhsu) Devdiv論壇iOS版主 CodeProject論壇,Gold級Author","class":"技術; 開發工具, 遊戲 ",
+    "speaker_bio":"半導體業混跡的軟體架構師 業餘獨立開發者 於2010年踏入App開發,主要作品有廁所大戰,超級寶貝豬 小品作品為賓果,神樂透...等 曾於2011年由中國三星舉辦的星空大賽獲獎 CSDN博客專家(http://blog.csdn.net/cloudhsu) Devdiv論壇iOS版主 CodeProject論壇,Gold級Author",
+    "class":"技術; 開發工具, 遊戲 ",
     "content":"如何使用CloudBox開發跨平台的手機遊戲 CloudBox為基於C/C++的open source project 目前支援Windows/iOS/Android,為cross-platform engine 支援xcode, eclipse, visual studio 2008 目前已用CloudBox開發的產品有Super Baby Pig(超級寶貝豬),已於App Store/Play Store上架",
     "name":"利用 CloudBox 開發 cross-platform mobile game",
     "id":"150",
@@ -153,7 +154,7 @@
   {
     "loc":"三廳聯播",
     "speaker_bio":"臺大批踢踢創辦人，蕃薯藤網托邦創辦人，台灣自由軟體協會會長，美國國家衛生研究院程式組長，美國微軟研究院網際網路服務研究所資深研究開發員，現任中文微軟 Bing 行動軟體開發組 Senior Development Lead。",
-    "class":"Windows Phone",
+    "class":"技術; Windows Phone",
     "content":"行動裝置，雲端服務與巨量資料是當前資訊科技發展的重點。我們邀請到臺大批踢踢創辦人，現任中文微軟 Bing 行動軟體開發組 Senior Development Lead 杜奕瑾先生 (Ptt) 回來台灣。從微軟的角度，介紹當前的軟體巨擘如何看待這樣的趨勢發展，並且投入各項 Bing 技術服務與應用的規劃與研發。同時杜奕瑾也希望招募更多新血投入研發團隊。",
     "name":"Mobile Development, Bing Services and Big Data",
     "id":"200",
@@ -169,7 +170,9 @@
     "speaker":"炎羅"
   },
   {
-    "loc":"2","speaker_bio":"Ernest。這小孩一路在玩，挑了個英文名字假裝練習寫小說，後來才知道跟海明威撞名。小時候玩 MS-DOS, OS/2, Windows 3.1, Slackware，玩著玩著玩到大學申請少了零點多分沒法進資工系玩，改玩半導體製程和微小機電，幸運地進入台積研究所玩製程整合從研發、試產玩到量產。熱愛開放與不務正業的精神，曾經玩網路創業，現在上班在玩傳統產業 + 軟硬體整合，試著把無線通訊塞進健身器材中。下班參與 Mozilla 台灣社群 MozTW SUMO 專案，以及支援朋友們玩各種創業。夢想與大家玩出各種可能性。愛台灣，不解釋 XD","class":"營運; 新創服務, 跨界整合, 運動 ",
+    "loc":"2",
+    "speaker_bio":"Ernest。這小孩一路在玩，挑了個英文名字假裝練習寫小說，後來才知道跟海明威撞名。小時候玩 MS-DOS, OS/2, Windows 3.1, Slackware，玩著玩著玩到大學申請少了零點多分沒法進資工系玩，改玩半導體製程和微小機電，幸運地進入台積研究所玩製程整合從研發、試產玩到量產。熱愛開放與不務正業的精神，曾經玩網路創業，現在上班在玩傳統產業 + 軟硬體整合，試著把無線通訊塞進健身器材中。下班參與 Mozilla 台灣社群 MozTW SUMO 專案，以及支援朋友們玩各種創業。夢想與大家玩出各種可能性。愛台灣，不解釋 XD",
+    "class":"營運; 新創服務, 跨界整合, 運動 ",
     "content":"台灣經濟體與外匯結構的組成除了高科技產業、電子業之外，傳統產業也是不可或缺的一環。傳統產業升級所面臨的挑戰，也許遇上了這一波軟硬體整合、軟硬體開放，會碰撞出一些新的火花？有的傳統產業不大不小，但規模未到調研機構願意為之出市場研究報告，一切摸黑前進。在 PAFERS Tech 這兒有一群認真但不願認輸的跨領域挑戰者，正在挑戰從台灣迎向全球健身器材產業之神鬼迷航。（你認真了！但不一定會輸:） 聊 www.pafers.com 的創業歷程。結合科技、商業模型、行動應用、軟硬體整合、法務的神奇航道。",
     "name":"Industry Hacking: 聊，傳統產業健身器材；玩，軟硬體整合",
     "id":"211",
