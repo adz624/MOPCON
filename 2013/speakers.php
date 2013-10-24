@@ -57,7 +57,7 @@
       <div id="speakerpool">
 
       <div class="speaker">
-      <a id="segacheng"></a> 
+      <a id="segacheng"></a>
       <img src="speaker_img/sega.jpg" alt="Sega">
       <h2>程世嘉<br>Sega Cheng</h2>
 <p>經歷： (前兩者為現職)
@@ -73,7 +73,7 @@
       </div>
 
       <div class="speaker">
-      <a id="scottcheng"></a> 
+      <a id="scottcheng"></a>
       <img src="speaker_img/scott.jpg" alt="Scott">
       <h2>程士恒<br>Scott Cheng</h2>
 <p>博晶醫電 / 共同創辦人
@@ -84,7 +84,7 @@
       </div>
 
       <div class="speaker">
-      <a id="weiwei"></a> 
+      <a id="weiwei"></a>
       <img src="speaker_img/weiwei.jpg" alt="魏巍">
       <h2>魏巍</h2>
 <!--
@@ -323,7 +323,7 @@ google提供的UI元件不夠滿足產品需求？
 <p>題目：從手機程式到網頁開發
 <p>摘要：一個好的 APP 要顧住流量、掌握營收、創造體驗，如何在團隊規模不足的情況下找到平衡點
       </div>
-      
+
       <div class="speaker">
       <a id="yanlo"></a>
       <img src="speaker_img/yanlo.jpg" alt="yanlo">
@@ -374,7 +374,7 @@ google提供的UI元件不夠滿足產品需求？
       <a id="infinitiessoft-sun"></a>
       <img src="speaker_img/infinitiessoft-sun.jpg" alt="Bill">
       <h2>孫德華</h2>
-<p>孫德華是一個軟體工作的愛好者，總是在追尋能以更優雅的方式，解決實際問題的新概念及技術。曾經擔任過多年資策會訓練中心講師，以及從事多年Java技術顧問及架構規劃的工作。在工作之餘，喜歡看看電影放鬆自己，並享受和家人在一起的時光。目前任職數位無限軟體擔任技術經理一職。 
+<p>孫德華是一個軟體工作的愛好者，總是在追尋能以更優雅的方式，解決實際問題的新概念及技術。曾經擔任過多年資策會訓練中心講師，以及從事多年Java技術顧問及架構規劃的工作。在工作之餘，喜歡看看電影放鬆自己，並享受和家人在一起的時光。目前任職數位無限軟體擔任技術經理一職。
 <p>題目：以Apache Camel敏捷地實現企業應用集成(EAI)
 <p>摘要：當面臨簡單的和複雜的集成任務時，我們怎樣在避免早期巨額投資的同時，又能高效完成任務呢？在本議程中，所介紹的Apache Camel將會提供一個敏捷的解決方案。我將會論證Camel能夠解決複雜集成方面的挑戰，它能夠讓你使用EAI的最佳實踐，並且易於起步和掌握。同時，Camel能夠讓你專注於提供業務價值，而不必處理一些框架所帶來的複雜性。
       </div>
@@ -427,6 +427,7 @@ google提供的UI元件不夠滿足產品需求？
       <a id="stanely"></a>
       <img src="speaker_img/standly.jpg" alt="stanely">
       <h2>stanely</h2>
+<p>一個不是資訊相關背景的工程師，憑著一股熱情和傻勁在這行業跟大家一齊打拼，希望台灣能在國際上發光發熱。我的例子是可以證明只要有熱情是可以排除任何困難的。要玩 Open Source 不需要任何條件，只要有電腦人人都可以來參與。目前在螃蟹公司服務，每天過著被人家盯，盯人家的日子。</p>
 <p>題目：有沒有那條線很重要嗎? (Wireless Display)
 <p>摘要：關於Wireless Display的現況. 除了proprietary的技術外,目前最火紅的莫過於Wi-Fi Alliance主導的Miracast和Intel推廣的WiDi. Wireless Display Source端主要涵括有NB, SmartPhone和Tablet,尤其是Android 4.2之後更是原生支援Miracast技術,許多廠商得已很快速的端出產品來賣. 這些技術瞄準的是現有的使用情境,目前必須要先用HDMI線將NB/手機/平板跟家裡的大TV連接,才能投影Source端的內容. 有了這個產品後end user只需要有支援的NB/手機/平板即可以隨時將畫面分享出去.除了screen mirror外,有趣的back channel也是值得探討的.
       </div>

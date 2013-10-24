@@ -295,7 +295,7 @@
   },
   {
     "loc":"3",
-    "speaker_bio":"",
+    "speaker_bio":"一個不是資訊相關背景的工程師，憑著一股熱情和傻勁在這行業跟大家一齊打拼，希望台灣能在國際上發光發熱。我的例子是可以證明只要有熱情是可以排除任何困難的，要玩 Open Source 不需要任何條件，只要有電腦人人都可以來參與。目前在螃蟹公司服務，每天過著被人家盯，盯人家的日子。",
     "class":"技術; 無線通訊, WiDi ",
     "content":"關於Wireless Display的現況. 除了proprietary的技術外,目前最火紅的莫過於Wi-Fi Alliance主導的Miracast和Intel推廣的WiDi.  Wireless Display Source端主要涵括有NB, SmartPhone和Tablet,尤其是Android 4.2之後更是原生支援Miracast技術,許多廠商得已很快速的端出產品來賣.   這些技術瞄準的是現有的使用情境,目前必須要先用HDMI線將NB/手機/平板跟家裡的大TV連接,才能投影Source端的內容. 有了這個產品後end user只需要有支援的NB/手機/平板即可以隨時將畫面分享出去.除了screen mirror外,有趣的back channel也是值得探討的.",
     "name":"有沒有那條線很重要嗎? (Wireless Display)",
