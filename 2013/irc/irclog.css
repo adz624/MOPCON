@@ -1,11 +1,11 @@
+/* @override http://mopcon.org/2013/irc/irclog.css */
+
 /* Alternative 1: text */
 
-div.irclog {
-    font-family: monospace;
-    text-indent: -7em;
-    padding-left: 7em;
+.irclog {
+	font: medium/1.5 "Courier New", Courier, mono;
 }
-div.irclog p { margin: 2px 0; }
+.irclog p { margin: 2px 0; }
 
 
 /* Alternative 2: table */
@@ -102,15 +102,21 @@ a.time:after { content: "]"; }
 
 .nick { font-weight: bold; }
 
-.part { color: #000099; }
-.join { color: #009900; }
+.part { color: #c0c0c0;
+	display: none;
+}
+.join { color: #c0c0c0; }
 .servermsg { color: #009900; }
-.nickchange { color: #009900; }
-.action { color: #cc00cc; }
-.other { color: #888888; }
+.nickchange { color: #c0c0c0; }
+.action { color: #c0c0c0; }
+.other { color: #c0c0c0;
+	display: none;
+}
 
 /* Make boring messages small */
-.part, .join, .servermsg, .nickchange, .other { font-size: smaller; }
+.part, .join, .servermsg, .nickchange, .other { 
+	font-size: smaller;
+}
 td.part + td, td.join + td, td.servermsg + td, td.nickchange + td,
 td.other + td { font-size: smaller; text-align: right; }
 
@@ -119,6 +125,7 @@ div.generatedby {
     margin-top: 1em;
     font-size: small;
     color: #888888;
+	display: none;
 }
 div.generatedby a:link {
     color: #8888cc;
