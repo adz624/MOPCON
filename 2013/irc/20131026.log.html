@@ -220,6 +220,31 @@
 <p id="t10:04" class="comment"><a href="#t10:04" class="time">10:04</a> <span class="nick" style="color: #4d4d93">&lt; othrees&gt;</span> <span class="text">還有大光圈定焦</span></p>
 <p id="t10:04" class="comment"><a href="#t10:04" class="time">10:04</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">最後一行是從 S3 bucket 取得物件</span></p>
 <p id="t10:04" class="comment"><a href="#t10:04" class="time">10:04</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">Low level APIs</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #854685">&lt; DennyHuang&gt;</span> <span class="text">如何確保SECRET KEY的安全 不知道有沒有文件…</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">High Level API: DynamoDB</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">Key primaryKey = new Key().withHashKeyElement(targetValue);</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #d9d972">&lt; abev66_&gt;</span> <span class="text">我忘記開&nbsp;&nbsp;log QQ</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #57a657">&lt; darkx&gt;</span> <span class="text">low level -&gt; you need to do more yourself</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #57a657">&lt; darkx&gt;</span> <span class="text"># write more codes!</span></p>
+<p id="t10:05" class="comment"><a href="#t10:05" class="time">10:05</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">DeleteItemRequest ...</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">但是換成高階只要 -&gt; mapper.delete(deleteUser..)</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">abev66_: 晚些在下會發出來，安啦 :P</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #6464bf">&lt; tsaiid&gt;</span> <span class="text">Talking about security.</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">s/發/放/</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text"><a href="http://aws.amazon.com/articles/SDKs" rel="nofollow">http://aws.amazon.com/articles/SDKs</a></span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #854685">&lt; DennyHuang&gt;</span> <span class="text">我也有log XD</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">Never store credentials in the App</span></p>
+<p id="t10:06" class="comment"><a href="#t10:06" class="time">10:06</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">絕對不要在 App 中保存 credentials</span></p>
+<p id="t10:07" class="comment"><a href="#t10:07" class="time">10:07</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">原因:</span></p>
+<p id="t10:07" class="comment"><a href="#t10:07" class="time">10:07</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text"> 1) credential 可被 Apps 中解出</span></p>
+<p id="t10:07" class="comment"><a href="#t10:07" class="time">10:07</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text"> 2) 沒有個別的 revocation</span></p>
+<p id="t10:07" class="comment"><a href="#t10:07" class="time">10:07</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text"> 3) No rotation</span></p>
+<p id="t10:07" class="comment"><a href="#t10:07" class="time">10:07</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">1) credentials can be extracted from an App</span></p>
+<p id="t10:08" class="comment"><a href="#t10:08" class="time">10:08</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">2) No individual revocation (all or none)</span></p>
+<p id="t10:08" class="comment"><a href="#t10:08" class="time">10:08</a> <span class="nick" style="color: #57a657">&lt; darkx&gt;</span> <span class="text">don't store your root account in the app! XD</span></p>
+<p id="t10:09" class="comment"><a href="#t10:09" class="time">10:09</a> <span class="nick" style="color: #a25555">&lt; jserv---&gt;</span> <span class="text">Token Vending Machine</span></p>
+<p id="t10:09" class="comment"><a href="#t10:09" class="time">10:09</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">1) Anonymous TVM (identity of the phone user is not stored)</span></p>
+<p id="t10:09" class="comment"><a href="#t10:09" class="time">10:09</a> <span class="nick" style="color: #42427e">&lt; chusiang&gt;</span> <span class="text">14. I need so help !</span></p>
 </div>
 
 <div class="generatedby">
