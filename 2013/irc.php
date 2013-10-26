@@ -29,7 +29,7 @@
                   <p align="center"><a href="irc/20131026.log.html" rel="external" target="_blank">2013/10/26</a></p>
                 </div>
                 <div class="span3 ircframe">
-                  <p align="center">2013/10/27 (準備中)</p>
+                  <p align="center"><a href="irc/20131027.log.html" rel="external" target="_blank">2013/10/27</a></p>
                 </div>
               </div>
             </div>
