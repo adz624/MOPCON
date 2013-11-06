@@ -13,44 +13,40 @@
     </div>
     <div class="container" id="all" style="padding: 10px;">
         <div class="row">
-          <div class="span8 well offset2">
-            <div class="span7">
-              <h3>報名資訊</h3>
-                <ul class="sessionList">
-		              <li><i class="icon-time"></i>&nbsp;&nbsp;時間：2013/10/26-27（六日兩天）</li>
-                  <li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心</li>
-                  <li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON (Mobile Open Platform Conference)2013將以 "I code, I spread, I connect" 作為主要精神意涵，議程以行動開發技術議程為核心，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</li>
-		            </ul>
-		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-info btn-large" rel="external" target="_blank" href="MOPCON-2013-Manual.pdf">大會手冊下載</a></p>
-            </div>
-          </div>
+              <div style="float:right;">
+              <p><h3>Follow us</h3></p>
+              <? include("./share.php"); ?>
+              </div>
+              <div style="clear:both;"></div>
         </div>
         <div class="row">
+          <div class="span4 data-cell">
           <legend></legend>
-          <div class="span4 data-cell">
-            <img src="pic/index/370x245/DSC_3338.jpg" class="img-rounded"/>
+            <img src="pic/index/370x245/IMG_8701.jpg" class="img-rounded"/>
           </div>
           <div class="span4 data-cell">
-            <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢。</p>
+          <legend></legend>
+            <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢，並以軟體科技從業人員出發，定調本年度精神意涵為 "I code, I spread, I connect"。</p>
           </div>
           <div class="span4 data-cell">
-            <img src="pic/index/370x245/IMG_8797.jpg" class="img-rounded"/>
+          <legend></legend>
+            <img src="pic/index/370x245/IMG_8802.jpg" class="img-rounded"/>
           </div>
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="span4 data-cell">
-            <p>MOPCON 2012 首度於高雄軟體園區舉辦，超過 160 位移動式平台的軟、硬體開發人員與廠商與會，來自全台各地之業界菁英擔任講師，兩日 17 場議程，內容綜觀行動前端開發、雲端服務架構、底層系統與開發工具、服務維運經驗等。100% 受訪與會者對 MOPCON 2012 議程給予滿意以上的評價，更高達 95% 平等為十分滿意。</p>
+            <p>今年議程以營運、開發、數位內容等三大行動應用實務議題為主軸，邀請到Ptt創辦人/Microsoft Research的杜奕瑾、iKala執行長程世嘉、遠傳電信投資子公司Hiiir副總Neil Lee等台灣業界中堅擔任講師，更有 AWS Markku Lepisto 及 Joe Ziegler 兩位外籍講者參與盛會。</p>
           </div>
           <div class="span4 data-cell">
-            <img src="pic/index/370x245/DSC_3217.jpg" class="img-rounded"/>
+            <img src="pic/index/370x245/IMG-50.jpg" class="img-rounded"/>
           </div>
           <div class="span4 data-cell">
-            <p>MOPCON 2013 將以 "I code, I spread, I connect" 作為主要精神意涵，議程將以行動開發技術議程為核心，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。</p>
+            <p>MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時 <a rel="external" href="http://www.appshooting.com.tw/news_info.php?nid=2006">App便利屋</a>、<a rel="external" href="http://www.appguru.com.tw/appguru/blog/20507/ltk-south-insisted-on-holding-size-mopcon-developers">APPGuru</a>、<a rel="external" href="http://punapp.com/news/page/13216">Punapp</a>等媒體報導給予本屆活動正面評價，亦獲得<a rel="external" href="img/udn.jpg">聯合報</a>、<a rel="external" href="img/edn">經濟日報</a>、<a rel="external" href="http://www.idn.com.tw/news/news_content.php?catid=2&catsid=4&catdid=0&artid=20131027abcd009">自立晚報</a>、<a rel="external" href="http://udn.com/NEWS/BREAKINGNEWS/BREAKINGNEWS6/8254511.shtml">聯合新聞網</a>主流媒體報導。</p>
           </div>
         </div>
         <div class="row">
           <div class="span4 offset4 data-cell">
-            <p>本屆活動日期訂於 2013 年 10 月 26 ~ 27 日於高雄國際會議中心 (ICCK) 盛大舉行，請密切關注我們的發展。</p>
+            <p>本屆活動已於 2013 年 10 月 26 ~ 27 日於高雄國際會議中心 (ICCK) 圓滿結束，感謝加工出口管理處對社群活動支持。</p>
           </div>
         </div>
     <div class="row">
@@ -110,15 +106,29 @@
                         <li class="thumbnail"><a id="kimu" rel="external" href=""><img alt="KIMU logo" src="img/logo/kimu.jpeg" /></a></li>
                         <li class="thumbnail"><a id="kalug" rel="external" href="http://kalug.linux.org.tw/"><img alt="KaLUG logo" src="img/logo/kalug.png"/></a></li>
                     </ul>
+                  <legend></legend>
             </div>
     </div>
-    <div class="row">
-      <div style="float:right;">
-      <p><h3>Follow us</h3></p>
-      <? include("./share.php"); ?>
-      </div>
-      <div style="clear:both;"></div>
-    </div>
+        <div class="row">
+          <div class="span8 well offset2">
+            <div class="span7">
+              <h3>報名資訊</h3>
+                <ul class="sessionList">
+		              <li><i class="icon-time"></i>&nbsp;&nbsp;時間：2013/10/26-27（六日兩天）</li>
+                  <li><i class="icon-road"></i>&nbsp;&nbsp;地點：高雄國際會議中心</li>
+                  <li><i class="icon-user"></i>&nbsp;&nbsp;主題：MOPCON (Mobile Open Platform Conference)2013 以 "I code, I spread, I connect" 作為主要精神意涵，議程從行動開發技術議程出發，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</li>
+		            </ul>
+		          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-info btn-large" rel="external" target="_blank" href="http://goo.gl/bEC4L7">大會手冊下載</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+              <div style="float:right;">
+              <p><h3>Follow us</h3></p>
+              <? include("./share.php"); ?>
+              </div>
+              <div style="clear:both;"></div>
+        </div>
     </div>
     <?php include_once("footer.html"); ?>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/sharrre/1.3.4/jquery.sharrre-1.3.4.min.js"></script>
