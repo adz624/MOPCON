@@ -1,0 +1,174 @@
+<html>
+<head><title>[MOPCON 2014]</title>
+<style>
+html,body{padding:0;margin:0;background-color:#000;}
+#wrapper{position:absolute;top:50%;left:50%; width:800px; height:450px;margin-left:-400px;margin-top:-225px;}
+#q{position:relative;top:0;left:0;}
+#main{position:relative;margin:auto;}
+</style>
+</head>
+<div id="wrapper">
+<canvas id='q'></canvas>
+</div>
+
+<script>
+var text_pool = [
+//  "其中還隱約現出樓台。這下回還清罷。小琴。嘴裡喊一聲。",
+//  "沒有在！風和日暖。眼圈顯得微黃？都擺在自己的面前了。",
+//  "天真可愛小女孩，小女孩，小女孩...",
+//  "賠，仰頭看著對面壁上的彤弓，歎一口氣，雪梨的千萬住民在瞬間消散成為灰燼這多悲傷呀。",
+//  "行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發/ 應用技術之專業研討會。",
+//  "Mobile Open Platform Conference，行動科技應用開發者年會，或稱 MOPCON，繼去年舉辦後，移動式平台業界發生了很多變化",
+//  "軟硬體整合一直是近期熱門話題，讓Ernest Chiang 來聊聊PAFERS Tech 創業過程中，在全球健身器材產業從軟硬整合技術到商業、法律層面的全面向探討。",
+//  "這邊感覺可以埋很多奇怪的梗進來"
+"蓬萊此去無多路 桃花盡日隨流水",
+"田園寥落干戈後 春風舉國裁宮錦",
+"此地空餘黃鶴樓 陽和不散窮途恨",
+"一體君臣祭祀同 舟人指點到今疑",
+"斷無消息石榴紅 運移漢祚終難復",
+"舍南舍北皆春水 千載琵琶作胡語",
+"紗窗日落漸黃昏 晨搖玉珮趨金殿",
+"嫦娥應悔偷靈藥 望仙樓上望君王",
+"寒食東風御柳斜 伯仲之間見伊呂",
+"可憐後主還祠廟 奉帚平明金殿開",
+"一寸想思一寸灰 贏得青樓薄倖名",
+"故人西辭黃鶴樓 即從巴峽穿巫峽",
+"嵩雲秦樹久離居 何當共剪西窗燭",
+"去時冠劍是丁年 野蔬充膳甘長藿",
+"晴川歷歷漢陽樹 借問路傍名利客",
+"但使龍城飛將在 閨中少婦不知愁",
+"未若貧而樂，賜也，子曰，是可忍也！",
+"君使臣。不以禮節之。力不足者，君而知禮。少者懷之？",
+"可以為師矣！吾亦欲無加諸人。子曰！分作溝中瘠，虛而為盈。毋，焉得剛，不汲汲於富貴。",
+"雖執鞭之士，放於利而行。舉直錯諸枉，子曰。而議者謂為非計，我欲仁，樂亦在其中矣，不以其道得之。哀公問社於宰我，孝乎惟孝，不保其往也，無以尚之。",
+"賢能為之用。在齊太史簡？忠，忠以勸，不效則治臣之罪。仁者樂山。不恥下問。不能以禮讓為國，惡不仁者。子曰，焉用佞，吾何以觀之哉，子曰！每事問，子曰。",
+"子曰。不能，務民之義。吾聞之也，雍也。事不可息，已矣乎，視其所以。子曰，曾子有疾，不悱不發。曰。子謂公冶長。",
+"至於魯。",
+"不亦重乎，而不及今圖之，不以其道得之！子曰，子夏問孝？曰。",
+];
+
+
+var color_pool = ["#1d2844","#535355", "#1c7f9f", "#25395a", "#5f5f5f"];
+
+var def_font_size = 8;
+var min_font_size = 3;
+var max_font_size = 19;
+var padding = 4;
+
+
+
+function randomText(){
+    return text_pool[Math.floor(Math.random()*text_pool.length)];
+}
+
+function randomColor(){
+    return color_pool[Math.floor(Math.random()*color_pool.length)];
+}
+
+function randomFontSize(){
+    var min = min_font_size;
+    var max = max_font_size;
+    return min + Math.floor(Math.random()*(max-min));
+}
+
+
+bgImg = new Image();
+bgImg.src = "img/2014_preview_bg.png";
+
+
+var letter_layer = document.createElement('canvas');
+var letter_ctx = letter_layer.getContext('2d');
+var bg_layer = q;
+var bg_ctx = bg_layer.getContext('2d');
+
+function initLetters(){
+    var width = letter_layer.width = q.parentNode.clientWidth;
+    var height = letter_layer.height =q.parentNode.clientHeight;
+    
+    var cc = Math.floor(width/def_font_size);
+    window.letters = Array(cc);
+    
+    for (var i = 0; i < cc; i++) {
+        letters[i] = {
+            "color": randomColor(),
+            "x": i*(def_font_size+padding)+2,
+            "y": 1,
+            "idx": 0,
+            "text": randomText(),
+            "size": def_font_size,
+        }
+    }
+
+    letter_ctx.fillStyle='rgba(0,0,0)';
+    letter_ctx.fillRect(0,0,q.width,q.height);
+
+    var gl = letter_ctx.createLinearGradient(letter_layer.width/3, 0, letter_layer.width/2, 0);
+    gl.addColorStop(0,"rgba(0,0,0,0)");
+    gl.addColorStop(1,"rgba(0,0,0,1)");
+
+    var gr = letter_ctx.createLinearGradient(letter_layer.width/2, 0, letter_layer.width/3*2, 0);
+    gr.addColorStop(0,"rgba(0,0,0,1)");
+    gr.addColorStop(1,"rgba(0,0,0,0)");
+
+    letter_ctx.drawCenterShadow = function(){
+        this.fillStyle=gl;
+        this.fillRect(letter_layer.width/3, 0, letter_layer.width/6, letter_layer.height);
+        this.fillStyle=gr;
+        this.fillRect(letter_layer.width/2, 0, letter_layer.width/6, letter_layer.height);
+    };
+}
+
+
+function initBG(){
+    var width = bg_layer.width = q.parentNode.clientWidth;
+    var height = bg_layer.height =q.parentNode.clientHeight;
+}
+
+function initAll(){
+    initLetters();
+    initBG();
+}
+
+initAll();
+//window.onresize = initAll;
+
+
+style = 'rgba(0,0,0,0.05)';
+var draw = function () {
+  letter_ctx.fillStyle=style;
+  letter_ctx.fillRect(0,0,letter_layer.width,letter_layer.height);
+  letters.map(function(letter, index){
+    
+    if (letter.text.length+3<letter.idx) {
+      letter.idx = 0;
+      letter.text = randomText();
+      letter.color = randomColor();
+    } 
+    
+    var c = (letter.text.length<=letter.idx) ? "" : letter.text[letter.idx];
+    letter_ctx.fillStyle = letter.color;
+    letter_ctx.font = "normal "+letter.size+"px sans-serif";
+    letter_ctx.fillText(c, letter.x, letter.y);
+    letter.idx++;
+    
+    if (letter.y > letter_layer.height + Math.random() * 1e4) {
+      letter.size = randomFontSize();
+      letter.y = 0;
+    } else {
+      letter.y += (letter.size+padding);
+    }
+  });
+  letter_ctx.drawCenterShadow();
+
+
+  bg_ctx.globalAlpha = 1;
+  bg_ctx.globalCompositeOperation = "copy";
+  bg_ctx.fillStyle='rgba(0,0,0)';
+  bg_ctx.drawImage(bgImg,0,0);
+  bg_ctx.globalAlpha = 0.5;
+  bg_ctx.globalCompositeOperation = "lighter";
+  bg_ctx.drawImage(letter_layer,0,0);
+};
+setInterval(draw, 1000/20);
+</script>
+</html>
