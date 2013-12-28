@@ -8,6 +8,7 @@ html,body{padding:0;margin:0;background-color:#000;}
 </style>
 </head>
 <div id="wrapper">
+<img id="placeHolder" src="img/2014_preview_bg_lossy.jpg"></img>
 <canvas id='q'></canvas>
 </div>
 
@@ -73,7 +74,7 @@ function randomFontSize(){
 
 
 bgImg = new Image();
-bgImg.src = "img/2014_preview_bg.png";
+bgImg.src = "img/2014_preview_bg.jpg";
 
 
 var letter_layer = document.createElement('canvas');
@@ -129,9 +130,6 @@ function initAll(){
     initBG();
 }
 
-initAll();
-//window.onresize = initAll;
-
 
 style = 'rgba(0,0,0,0.05)';
 var draw = function () {
@@ -169,6 +167,14 @@ var draw = function () {
   bg_ctx.globalCompositeOperation = "lighter";
   bg_ctx.drawImage(letter_layer,0,0);
 };
-setInterval(draw, 1000/20);
+
+bgImg.onload = function(){
+    var ph = document.getElementById('placeHolder');
+    var wrapper = document.getElementById('wrapper');
+    wrapper.removeChild(ph);
+    initAll();
+    setInterval(draw, 1000/20);
+}
+
 </script>
 </html>
