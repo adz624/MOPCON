@@ -2,14 +2,24 @@
 <head><title>[MOPCON 2014]</title>
 <style>
 html,body{padding:0;margin:0;background-image:url('img/2014_preview_page_bg.jpg');}
-#wrapper{position:absolute;top:45%;left:50%; width:800px; height:450px;margin-left:-400px;margin-top:-225px;overflow:none;}
-#q{position:relative;top:0;left:0;background-color:#000;z-index:10;box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.4);width:1px;height:1px;}
-#placeHolder{position:absolute;z-index:1;}
+#wrapper{
+    position:absolute;
+    top:45%;
+    left:50%;
+    width:800px;
+    height:450px;
+    margin-left:-400px;
+    margin-top:-225px;
+    overflow:none;
+    background-color:#000;
+    background-image:url('img/2014_preview_bg_lossy.jpg');
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+#q{position:relative;top:0;left:0;}
 #main{position:relative;margin:auto;}
 </style>
 </head>
 <div id="wrapper">
-<img id="placeHolder" src="img/2014_preview_bg_lossy.jpg"></img>
 <canvas id='q'></canvas>
 </div>
 
