@@ -13,9 +13,10 @@ html,body{padding:0;margin:0;background-image:url('img/2014_preview_page_bg.jpg'
     overflow:none;
     background-color:#000;
     background-image:url('img/2014_preview_bg_lossy.jpg');
+    border-radius:10px;
     box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.4);
 }
-#q{position:relative;top:0;left:0;}
+#q{position:relative;top:0;left:10;}
 #main{position:relative;margin:auto;}
 </style>
 </head>
@@ -79,8 +80,8 @@ function stripHTML(html){
 }
 
 function initLetters(){
-    var width = letter_layer.width = q.parentNode.clientWidth;
-    var height = letter_layer.height =q.parentNode.clientHeight;
+    var width = letter_layer.width = q.parentNode.clientWidth-20; // 左右各避開 10 px 給圓角。Canvas 似乎會無視圓角...
+    var height = letter_layer.height = q.parentNode.clientHeight;
     
     var cc = Math.floor(width/def_font_size);
     window.letters = Array(cc);
@@ -117,8 +118,8 @@ function initLetters(){
 }
 
 function initBG(){
-    var width = bg_layer.width = q.parentNode.clientWidth;
-    var height = bg_layer.height =q.parentNode.clientHeight;
+    var width = bg_layer.width = letter_layer.width;
+    var height = bg_layer.height = letter_layer.height;
 }
 
 function initAll(){
@@ -166,7 +167,7 @@ var draw = function () {
   bg_ctx.globalAlpha = 1;
   bg_ctx.globalCompositeOperation = "copy";
   bg_ctx.fillStyle='rgba(0,0,0)';
-  bg_ctx.drawImage(bgImg,0,0);
+  bg_ctx.drawImage(bgImg,-10,0);
   bg_ctx.globalAlpha = 0.5;
   bg_ctx.globalCompositeOperation = "lighter";
   bg_ctx.drawImage(letter_layer,0,0);
