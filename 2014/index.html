@@ -8,27 +8,89 @@
 <meta content="website" property="og:type">
 <meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:site_name">
 <style>
-html,body{padding:0;margin:0;background-image:url('img/2014_preview_page_bg.jpg');}
+html,body{padding:0;margin:0;background-image:url('img/leather_bg.jpg');}
 #wrapper{
     position:absolute;
     top:45%;
     left:50%;
     width:800px;
-    height:450px;
     margin-left:-400px;
     margin-top:-225px;
+}
+.sd{
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+#main{
+    position:relative;
+    height:450px;
     overflow:none;
     background-color:#000;
     background-image:url('img/2014_preview_bg_lossy.jpg');
     border-radius:10px;
-    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.4);
+    z-index:10;
+    top:-20px;
+    -webkit-animation-name: move-main;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay:0.47s;
+    -webkit-animation-fill-mode: both;
+    animation-name: move-main;
+    animation-duration: 1s;
+    animation-delay:0.47s;
+    animation-fill-mode: both;
 }
-#q{position:relative;top:0;left:10;}
-#main{position:relative;margin:auto;}
+#q{
+    position:relative;top:0;left:10;
+    z-index:10;
+}
+#news-section{
+    text-align:center;
+    position:relative;
+    top:0px;
+    z-index:2;
+    -webkit-animation-name: move-news;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay:0.47s;
+    -webkit-animation-fill-mode: both;
+    animation-name: move-news;
+    animation-duration: 1s;
+    animation-delay:0.47s;
+    animation-fill-mode: both;
+}
+.news{
+    overflow:hidden;
+    margin:0 20px;
+    display:inline-block;
+    border-radius:5px;
+}
+@-webkit-keyframes move-news {
+    0% { top:-120px;}
+    100% {top:0px;}
+}
+@keyframes move-news {
+    0% { top:-120px;}
+    100% {top:0px;}
+}
+@-webkit-keyframes move-main {
+    0% { top:0;}
+    100% {top:-20px;}
+}
+@keyframes move-main {
+    0% { top:0;}
+    100% {top:-20px;}
+}
 </style>
 </head>
 <div id="wrapper">
+
+<div id="main" class="sd">
 <canvas id='q'></canvas>
+</div>
+
+<div id="news-section">
+<a class="news sd" href="../2012/"><img src="img/news_2012.jpg"></a>
+<a class="news sd" href="../2013/"><img src="img/news_2013.jpg"></a>
+</div>
+
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -130,7 +192,7 @@ function initBG(){
 }
 
 function initAll(){
-    initTextPoll(); // must init text_pool before init letters
+    initTextPoll();
     initLetters();
     initBG();
     inited = true;
