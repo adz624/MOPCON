@@ -13,7 +13,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a id="main_logo" class="brand" href="/"><img src="img/logo.png"/></a>
+        <a id="main_logo" class="brand" href="./"><img src="img/logo.png"/></a>
         <div class="nav-collapse">
           <ul class="nav">
             <li class="<?php echo $function['session']; ?>"><a href="session.php">議程</a></li>
@@ -32,7 +32,7 @@
                 <!-- <li class="<?php echo $function['cfs']; ?>"><a href="cfs.php">贊助活動</a></li> -->
                 <li class="<?php echo $function['contact']; ?>"><a href="contact.php">聯絡我們</a></li>
                 <li class="divider"></li>
-                <li class="<?php echo $function['activity']; ?>"><a href="../2012/activity.php">MOPCON 2012</a></li>
+                <li class="<?php echo $function['activity']; ?>"><a href="../history.html">歷年活動</a></li>
               </ul>
             </li>
           </ul>
