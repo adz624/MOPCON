@@ -62,7 +62,22 @@ html,body{padding:0;margin:0;background-image:url('img/leather_bg.jpg');}
     margin:0 20px;
     display:inline-block;
     border-radius:5px;
+    vertical-align: top;
+    transition: margin;
+    transition-duration: 0.25s;
 }
+.news:hover{
+    margin:0;
+}
+.news img{
+    width:134px;
+    transition: all;
+    transition-duration: 0.25s;
+}
+.news img:hover{
+    width:200px;
+}
+
 @-webkit-keyframes move-news {
     0% { top:-120px;}
     100% {top:0px;}
