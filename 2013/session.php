@@ -69,7 +69,7 @@
                 <div class="span10">
                   <div class="text-wrapper">
                     <div class="name">致詞 ＋ 議程導覽</div>
-                    <div><a href="http://youtu.be/wRBvOgS4ExM">議程錄影</a></div>
+                    <div><a rel="external" href="http://youtu.be/wRBvOgS4ExM">議程錄影</a></div>
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[0]->name ; ?></div>
-                      <div><a href="http://youtu.be/-Jm15tzCcvY">議程錄影</a></div>
+                      <div><a rel="external" href="http://youtu.be/-Jm15tzCcvY">議程錄影</a></div>
                       <div id="session-catalog"><?php displayCatalog($session_object->sessions[0]->catalog) ?></div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[1]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[1]->name ; ?></div>
-                          <div><a href="http://youtu.be/vj87tliixSo">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/vj87tliixSo">議程錄影</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[1]->catalog) ?></div>
                         </div>
                       </div>
@@ -207,7 +207,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[3]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[3]->name ; ?></div>
-                          <div><a href="http://youtu.be/SpSAtzHudDM">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/SpSAtzHudDM">議程錄影</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[3]->catalog) ?></div>
                         </div>
                       </div>
@@ -251,7 +251,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[4]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[4]->name ; ?></div>
-                          <div><a href="http://youtu.be/ncOuGLya1nw">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/ncOuGLya1nw">議程錄影</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[4]->catalog) ?></div>
                         </div>
                       </div>
@@ -288,7 +288,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[5]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[5]->name ; ?></div>
-                          <div><a href="http://youtu.be/YdJA7KEmmOs">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/YdJA7KEmmOs">議程錄影</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[5]->catalog) ?></div>
                         </div>
                       </div>
@@ -325,7 +325,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[6]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[6]->name ; ?></div>
-                          <div><a href="http://youtu.be/SpSAtzHudDM">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/SpSAtzHudDM">議程錄影</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[6]->catalog) ?></div>
                         </div>
                       </div>
@@ -367,7 +367,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[7]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[7]->name ; ?></div>
-                          <div><a href="http://youtu.be/Am1AHc8mCls">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/Am1AHc8mCls">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[7]->catalog) ?></div>
                     </div>
                   </div>
@@ -409,7 +409,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[8]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[8]->name ; ?></div>
-                          <div><a href="http://youtu.be/MYL2IFBxZvM">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/MYL2IFBxZvM">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[8]->catalog) ?></div>
                         </div>
                       </div>
@@ -446,7 +446,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[9]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[9]->name ; ?></div>
-                          <div><a href="http://youtu.be/g5tAosfGyek">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/g5tAosfGyek">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[9]->catalog) ?></div>
                         </div>
                       </div>
@@ -483,7 +483,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[10]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[10]->name ; ?></div>
-                          <div><a href="http://youtu.be/-tPyb1imNF0">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/-tPyb1imNF0">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[10]->catalog) ?></div>
                         </div>
                       </div>
@@ -527,7 +527,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[11]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[11]->name ; ?></div>
-                          <div><a href="http://youtu.be/k63HQZ_27wk">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/k63HQZ_27wk">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[11]->catalog) ?></div>
                         </div>
                       </div>
@@ -564,7 +564,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[12]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[12]->name ; ?></div>
-                          <div><a href="http://youtu.be/rgOy9tziCSQ">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/rgOy9tziCSQ">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[12]->catalog) ?></div>
                         </div>
                       </div>
@@ -601,7 +601,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[13]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[13]->name ; ?></div>
-                          <div><a href="http://youtu.be/2qXKQD2-a4Q">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/2qXKQD2-a4Q">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[13]->catalog) ?></div>
                         </div>
                       </div>
@@ -647,7 +647,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[14]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[14]->name ; ?></div>
-                          <div><a href="http://youtu.be/KV0ze0gcWsA">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/KV0ze0gcWsA">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[14]->catalog) ?></div>
                         </div>
                       </div>
@@ -684,7 +684,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[15]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[15]->name ; ?></div>
-                          <div><a href="http://youtu.be/gRwALXRyDRA">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/gRwALXRyDRA">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[15]->catalog) ?></div>
                         </div>
                       </div>
@@ -721,7 +721,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[16]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[16]->name ; ?></div>
-                          <div><a href="http://youtu.be/axBBV8JAuIg">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/axBBV8JAuIg">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[16]->catalog) ?></div>
                         </div>
                       </div>
@@ -809,6 +809,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[17]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[17]->name ; ?></div>
+                      <div><a rel="external" href="http://youtu.be/4M2tFnQMj5Y">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[17]->catalog) ?></div>
                     </div>
                   </div>
@@ -851,7 +852,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[18]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[18]->name ; ?></div>
-                          <div><a href="http://youtu.be/9vjzsqKtUOo">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/9vjzsqKtUOo">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[18]->catalog) ?></div>
                         </div>
                       </div>
@@ -888,7 +889,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[19]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[19]->name ; ?></div>
-                          <div><a href="http://youtu.be/dPBydQT02vo">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/dPBydQT02vo">議程錄影</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[19]->catalog) ?></div>
                         </div>
                       </div>
@@ -925,7 +926,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[20]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[20]->name ; ?></div>
-                          <div><a href="http://youtu.be/wIs_WI50uiQ">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/wIs_WI50uiQ">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[20]->catalog) ?></div>
                         </div>
                       </div>
@@ -969,7 +970,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[21]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[21]->name ; ?></div>
-                          <div><a href="http://youtu.be/Y9QzFSrDeZc">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/Y9QzFSrDeZc">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[21]->catalog) ?></div>
                         </div>
                       </div>
@@ -1006,7 +1007,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[22]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[22]->name ; ?></div>
-                          <div><a href="http://youtu.be/fEiuXxUSbdU">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/fEiuXxUSbdU">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[22]->catalog) ?></div>
                         </div>
                       </div>
@@ -1043,7 +1044,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[23]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[23]->name ; ?></div>
-                          <div><a href="http://youtu.be/FmYsGisVZs0">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/FmYsGisVZs0">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[23]->catalog) ?></div>
                         </div>
                       </div>
@@ -1085,7 +1086,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[24]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[24]->name ; ?></div>
-                          <div><a href="http://youtu.be/EvTRM9Jla8s">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/EvTRM9Jla8s">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[24]->catalog) ?></div>
                         </div>
                       </div>
@@ -1122,7 +1123,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[25]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[25]->name ; ?></div>
-                          <div><a href="http://youtu.be/_YTXhx9IVNQ">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/_YTXhx9IVNQ">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[25]->catalog) ?></div>
                         </div>
                       </div>
@@ -1159,7 +1160,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[26]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[26]->name ; ?></div>
-                          <div><a href="http://youtu.be/FmYsGisVZs0">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/FmYsGisVZs0">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[26]->catalog) ?></div>
                         </div>
                       </div>
@@ -1201,7 +1202,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[27]->speaker ; ?></div>
                       <div class="head"><?php echo $session_object->sessions[27]->name ; ?></div>
-                      <div><a href="http://youtu.be/ycS_5KWbGhc">議程錄影</a></div>
+                      <div><a rel="external" href="http://youtu.be/ycS_5KWbGhc">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[27]->catalog) ?></div>
                     </div>
                   </div>
@@ -1245,6 +1246,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[28]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[28]->name ; ?></div>
+                          <div><a rel="external" href="http://youtu.be/YMxb8cRb2Zg">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[28]->catalog) ?></div>
                         </div>
                       </div>
@@ -1281,7 +1283,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[29]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[29]->name ; ?></div>
-                          <div><a href="http://youtu.be/iGYn7ZdUCmM">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/iGYn7ZdUCmM">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[29]->catalog) ?></div>
                         </div>
                       </div>
@@ -1318,7 +1320,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[30]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[30]->name ; ?></div>
-                          <div><a href="http://youtu.be/VJk4ZIkLrfo">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/VJk4ZIkLrfo">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[30]->catalog) ?></div>
                         </div>
                       </div>
@@ -1362,6 +1364,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[31]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[31]->name ; ?></div>
+                          <div><a rel="external" href="http://youtu.be/MaxnWCgOxXo">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[31]->catalog) ?></div>
                         </div>
                       </div>
@@ -1398,7 +1401,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[32]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[32]->name ; ?></div>
-                          <div><a href="http://youtu.be/O1quNsguO4s">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/O1quNsguO4s">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[32]->catalog) ?></div>
                         </div>
                       </div>
@@ -1435,7 +1438,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[33]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[33]->name ; ?></div>
-                          <div><a href="http://youtu.be/DfKixRYqvtg">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/DfKixRYqvtg">議程錄影</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[33]->catalog) ?></div>
                         </div>
                       </div>
