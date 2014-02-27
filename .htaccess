@@ -1,5 +1,5 @@
 
-DirectoryIndex index.php
+DirectoryIndex index.php index.html index.htm
 ErrorDocument 400 /err/404.php
 ErrorDocument 401 /err/404.php
 ErrorDocument 403 /err/404.php
