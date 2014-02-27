@@ -23,7 +23,6 @@ if (!$release_ref == $payload['ref']) {
 // pull 最新的 code 下來
 echo "deploy....";
 exec("git reset --hard");
-exec("git checkout {$release_branch}");
 exec("git pull origin {$release_branch}");
 echo "OK\n";
 
