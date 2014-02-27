@@ -14,7 +14,7 @@ if (!is_array($payload)) {
 
 
 // 只處理 release branch 的 push
-if (!$release_ref == $payload['ref']) {
+if ($release_ref != $payload['ref']) {
     echo "ref={$payload['ref']}，不 deploy\n";
     exit;
 }
