@@ -5,7 +5,7 @@ if ($memcache_ok) {
     $deploy_status = memcache_get($mc, 'deploy_status');
     echo "<pre>\n";
     var_export($deploy_status);
-    echo "\n</pre>"''
+    echo "\n</pre>";
 } else {
 	echo 'Can not get deploy status!';
 }
