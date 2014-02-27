@@ -8,20 +8,24 @@ $release_ref = "refs/heads/{$release_branch}";
 // 處理送來的資料，如果無法正常解析就不處理
 $payload = json_decode($_POST['payload'], true);
 if (!is_array($payload)) {
-    return;
+    echo "Webhook 資料解讀失敗，不 deploy\n";
+    exit;
 }
 
 
 // 只處理 release branch 的 push
 if (!$release_ref == $payload['ref']) {
-    return;
+    echo "ref={$payload['ref']}，不 deploy\n";
+    exit;
 }
 
 
 // pull 最新的 code 下來
+echo "deploy....";
 exec("git reset --hard");
 exec("git checkout {$release_branch}");
 exec("git pull origin {$release_branch}");
+echo "OK\n";
 
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
