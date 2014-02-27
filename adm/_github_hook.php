@@ -31,7 +31,7 @@ echo "OK\n";
 $memcache_ok = function_exists("memcache_connect");
 if ($memcache_ok) {
     $current_commit_id = $payload['after'];
-    $date = new Date();
+    $date = date('Y-m-d H:i:s');
     $deploy_status = [
         'commit_id'    => $current_commit_id,
         'deploy_time'  => $date
