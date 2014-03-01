@@ -266,8 +266,9 @@ span.wd.ct10,span.slash {
 
 }
 
-.agenda a.agenda-title:hover {
-	background: #fdc70b
+.agenda .agenda-title:hover {
+	background: #fdc70b;
+	cursor: pointer;
 }
 
 .agenda .rest {

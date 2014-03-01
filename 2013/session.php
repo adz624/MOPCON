@@ -75,7 +75,7 @@
               </div>
             </div>
 			<div class="agenda-group off">
-              <a class="agenda-title" href="#">
+              <div class="agenda-title">
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
@@ -86,14 +86,14 @@
                   </div>
                   <div class="span10">
                     <div class="text-wrapper">
-                      <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?></div>
-                      <div class="head"><?php echo $session_object->sessions[0]->name ; ?></div>
+                      <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?>[a]</div>
+                      <div class="head"><?php echo $session_object->sessions[0]->name ; ?>[b]</div>
                       <div><a rel="external" href="http://youtu.be/-Jm15tzCcvY">議程錄影</a></div>
                       <div id="session-catalog"><?php displayCatalog($session_object->sessions[0]->catalog) ?></div>
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
               <div class="agenda-content">
                 <div class="row-fluid">
                   <div class="span2">
@@ -121,7 +121,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -139,7 +139,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -160,7 +160,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -175,7 +175,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -196,7 +196,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -212,7 +212,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -240,7 +240,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -256,7 +256,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -277,7 +277,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -293,7 +293,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -314,7 +314,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -330,7 +330,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -356,7 +356,7 @@
               </div>
             </div>
             <div class="agenda-group off">
-              <a class="agenda-title" href="#">
+              <div class="agenda-title">
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
@@ -372,7 +372,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
               <div class="agenda-content">
                 <div class="row-fluid">
                   <div class="span2">
@@ -398,7 +398,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -414,7 +414,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -435,7 +435,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -451,7 +451,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -472,7 +472,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -488,7 +488,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -516,7 +516,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -532,7 +532,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -553,7 +553,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -569,7 +569,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -590,7 +590,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -606,7 +606,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -636,7 +636,7 @@
 			<div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -652,7 +652,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -673,7 +673,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -689,7 +689,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -710,7 +710,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -726,7 +726,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -796,7 +796,7 @@
               </div>
             </div>
 			<div class="agenda-group off">
-              <a class="agenda-title" href="#">
+              <div class="agenda-title">
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
@@ -814,7 +814,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
               <div class="agenda-content">
                 <div class="row-fluid">
                   <div class="span2">
@@ -840,7 +840,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -857,7 +857,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -878,7 +878,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -894,7 +894,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -915,7 +915,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -931,7 +931,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -959,7 +959,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -975,7 +975,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -996,7 +996,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1012,7 +1012,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1033,7 +1033,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1049,7 +1049,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1075,7 +1075,7 @@
 			<div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1091,7 +1091,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1112,7 +1112,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1128,7 +1128,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1149,7 +1149,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1165,7 +1165,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1191,7 +1191,7 @@
               </div>
             </div>
             <div class="agenda-group off">
-              <a class="agenda-title" href="#">
+              <div class="agenda-title">
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
@@ -1207,7 +1207,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
               <div class="agenda-content">
                 <div class="row-fluid">
                   <div class="span2">
@@ -1235,7 +1235,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1251,7 +1251,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1272,7 +1272,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1288,7 +1288,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1309,7 +1309,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1325,7 +1325,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1353,7 +1353,7 @@
             <div class="row-fluid two-col">
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1369,7 +1369,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1390,7 +1390,7 @@
               </div>
               <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1406,7 +1406,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1427,7 +1427,7 @@
               </div>
 			  <div class="span4">
                 <div class="agenda-group off">
-                  <a class="agenda-title" href="#">
+                  <div class="agenda-title">
                     <div class="row-fluid">
                       <div class="span2">
                         <div class="text-wrapper">
@@ -1443,7 +1443,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                   <div class="agenda-content">
                     <div class="row-fluid">
                       <div class="span2">
@@ -1471,7 +1471,7 @@
 
 
 			<div class="agenda-group off">
-              <a class="agenda-title" href="#">
+              <div class="agenda-title">
                 <div class="row-fluid">
                   <div class="span2">
                     <div class="text-wrapper">
@@ -1486,7 +1486,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
               <div class="agenda-content">
                 <div class="row-fluid">
                   <div class="span2">
