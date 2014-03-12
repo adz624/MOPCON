@@ -2,6 +2,7 @@
 <script type="text/javascript">
 $(".agenda-title").each(function(){
   var $this = $(this);
+  $this.find('a').on('click', function(e){e.stopPropagation();}); // 避免連結點擊被 toggle 吃掉
   var $parent = $this.parent();
   $this.toggle(function(e){
     $parent.addClass("on").removeClass("off");
