@@ -88,7 +88,7 @@
                     <div class="text-wrapper">
                       <div class="name"><?php echo $session_object->sessions[0]->speaker ; ?>[a]</div>
                       <div class="head"><?php echo $session_object->sessions[0]->name ; ?>[b]</div>
-                      <div><a rel="external" href="http://youtu.be/-Jm15tzCcvY">議程錄影</a></div>
+                      <div><a rel="external" href="http://youtu.be/-Jm15tzCcvY">議程錄影</a>，<a href="http://markkudecks.s3.amazonaws.com/MopCon%20Keynote%20AWS%20Markku%20smaller.pdf">投影片</a></div>
                       <div id="session-catalog"><?php displayCatalog($session_object->sessions[0]->catalog) ?></div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[1]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[1]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/vj87tliixSo">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/vj87tliixSo">議程錄影</a>，<a rel="external" href="https://speakerdeck.com/danielqbin/kkbox-zai-android-shi-zuo-chuan-liu-yin-le-de-tiao-zhan">投影片</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[1]->catalog) ?></div>
                         </div>
                       </div>
@@ -171,6 +171,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[2]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[2]->name ; ?></div>
+                          <div><a rel="external" href="http://i.imgur.com/d5ltWu1.png">圖一</a>，<a rel="external" href="http://i.imgur.com/Pw8Xjet.png">圖二</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[2]->catalog) ?></div>
                         </div>
                       </div>
@@ -251,7 +252,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[4]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[4]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/ncOuGLya1nw">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/ncOuGLya1nw">議程錄影</a>，<a rel="external" href="https://speakerdeck.com/shakalaca/head-first-android-apps-dev-tools">投影片</a></div>
                           <div class="catalog"><?php displayCatalog($session_object->sessions[4]->catalog) ?></div>
                         </div>
                       </div>
@@ -446,7 +447,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[9]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[9]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/g5tAosfGyek">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/g5tAosfGyek">議程錄影</a>，<a href="http://www.slideshare.net/KNYChen/app-27616569">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[9]->catalog) ?></div>
                         </div>
                       </div>
@@ -647,7 +648,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[14]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[14]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/KV0ze0gcWsA">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/KV0ze0gcWsA">議程錄影</a>，<a href="http://www.slideshare.net/hokilaj/appcrash">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[14]->catalog) ?></div>
                         </div>
                       </div>
@@ -926,7 +927,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[20]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[20]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/wIs_WI50uiQ">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/wIs_WI50uiQ">議程錄影</a>，<a rel="external" href="http://www.slideshare.net/jamesyeh0627/mopcon2013-find-dognet">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[20]->catalog) ?></div>
                         </div>
                       </div>
@@ -1007,7 +1008,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[22]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[22]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/fEiuXxUSbdU">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/fEiuXxUSbdU">議程錄影</a>，<a rel="external" href="https://speakerdeck.com/olliwang/wei-liao-huan-you-shi-jie-er-dan-sheng-de-shi-jie-mi-wu">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[22]->catalog) ?></div>
                         </div>
                       </div>
@@ -1086,7 +1087,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[24]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[24]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/EvTRM9Jla8s">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/EvTRM9Jla8s">議程錄影</a>，<a rel="external" href="https://speakerdeck.com/zonble/wei-shi-zhang-peng-you-da-zao-xing-dong-ying-yong">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[24]->catalog) ?></div>
                         </div>
                       </div>
@@ -1246,7 +1247,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[28]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[28]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/YMxb8cRb2Zg">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/YMxb8cRb2Zg">議程錄影</a>，<a rel="external" href="http://slid.es/tonyq/web-api-of-android-backend">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[28]->catalog) ?></div>
                         </div>
                       </div>
@@ -1283,7 +1284,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[29]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[29]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/iGYn7ZdUCmM">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/iGYn7ZdUCmM">議程錄影</a>，<a rel="external" href="http://www.slideshare.net/anistarsung/mopcon-share">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[29]->catalog) ?></div>
                         </div>
                       </div>
@@ -1320,7 +1321,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[30]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[30]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/VJk4ZIkLrfo">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/VJk4ZIkLrfo">議程錄影</a>，<a rel="external" href="https://github.com/fumin/fumin.github.io/blob/master/mopcon_2013/talk.md">講稿</a>，<a rel="external" href="https://github.com/fumin/bulu-ios">bulu-ios</a>，<a rel="external" href="https://github.com/fumin/bulu-android">bulu-android</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[30]->catalog) ?></div>
                         </div>
                       </div>
@@ -1401,7 +1402,7 @@
                         <div class="text-wrapper">
                           <div class="name"><?php echo $session_object->sessions[32]->speaker ; ?></div>
                           <div class="head"><?php echo $session_object->sessions[32]->name ; ?></div>
-                          <div><a rel="external" href="http://youtu.be/O1quNsguO4s">議程錄影</a></div>
+                          <div><a rel="external" href="http://youtu.be/O1quNsguO4s">議程錄影</a>，<a rel="external" href="http://www.slideshare.net/nokimi/app-app-27613551">投影片</a></div>
                       <div class="catalog"><?php displayCatalog($session_object->sessions[32]->catalog) ?></div>
                         </div>
                       </div>
