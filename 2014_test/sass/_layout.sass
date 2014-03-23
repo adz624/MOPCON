@@ -1,3 +1,12 @@
 .container
-	min-height: 300px
-	background: black
+	+set-container-width
+	padding: 0
+	margin: 0 auto
+	overflow: hidden
+	+susy-grid-background
+	+at-breakpoint($pad)
+		+container
+		+susy-grid-background
+	+at-breakpoint($pc)
+		+container
+		+susy-grid-background	
