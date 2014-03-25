@@ -1,0 +1,8 @@
+.talk
+	section
+		height: 300px
+		background: #000
+		margin-bottom: 30px
+		+at-breakpoint($pad)  
+			  
+			

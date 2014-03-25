@@ -1,5 +1,18 @@
 .talk
-	section
-		height: 300px
-		background: #000
+	article
+		+trailer(1)
 		margin-bottom: 30px
+		+at-breakpoint($pad) 
+	time 
+		display: block 
+		background: $darkgreen
+		color: #fff
+		+adjust-font-size-to(16px,1.5)
+		+trailer(1)
+	.area 
+		+adjust-font-size-to(13px)
+		.btn 
+			color: #fff
+		.area-time
+			color: #000
+			
