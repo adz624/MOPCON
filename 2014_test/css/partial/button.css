@@ -114,3 +114,7 @@ a.btn-selected {
 .btn-darkgreen {
   background: #5eb95e;
 }
+
+.btn-red {
+  background: red;
+}
