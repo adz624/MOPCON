@@ -285,6 +285,7 @@ a.btn-selected {
 }
 .talk .row {
   *zoom: 1;
+  overflow: hidden;
 }
 .talk .row:after {
   content: "";
@@ -300,9 +301,6 @@ a.btn-selected {
 .talk .area-all a h2 {
   color: white;
 }
-.talk .row {
-  overflow: hidden;
-}
 .talk .area-1, .talk .area-2 {
   margin-bottom: 1.5em;
 }
@@ -310,7 +308,7 @@ a.btn-selected {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .talk .area-1, .talk .area-2 {
+  .talk .area-1, .talk .area-2, .talk .area-3 {
     padding-bottom: 500em;
     margin-bottom: -500em;
   }
