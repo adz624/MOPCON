@@ -1,3 +1,23 @@
+body 
+	height: 100%
+.main 
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	overflow: auto
+.content
+	+container
+
+	+susy-grid-background
+	+at-breakpoint($pad)
+		+container
+		+susy-grid-background
+	+at-breakpoint($pc)
+		+container
+		+susy-grid-background	
+	
 .talk
 	h1
 	h2
@@ -68,4 +88,38 @@
 			color: #fff
 		.area-time
 			color: #000
-			
+.talk 
+	+transition(margin 1s)  
+	+span-columns($total-columns)
+	.open &    
+		margin-left: - space($side)
+.talker-view
+	
+	position: absolute
+	top: 0
+	overflow: auto
+	right: 0
+	bottom: 0
+	+box-sizing(border-box) // compass　CSS3 mixin，就算寬度寫死，用padding推也不會影響原本元素寬度  
+	background: #207ABC  
+	+translate(100%,0)
+	+transition(transform 1s) //左右滑動效果  
+	width: 250px
+	@extend %clearfix  
+	h2 
+		color: yellow
+		font-size: 18px 
+	p 
+		color: #fff
+	.open &    
+		+translate(-21px,0)
+		
+
+.close
+	background: blue 
+	color: #fff
+	padding: 20px
+	display: block
+	text-align: center
+	text-decoration: none 
+	font-size: 30px
