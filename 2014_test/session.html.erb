@@ -1,146 +1,118 @@
-<!doctype html>
-<html lang="zh-tw">
-<head>
-	<meta charset="UTF-8">
-	<title>Mopconf</title>
-	<link rel="stylesheet" href="css/all.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>
-	$(function() {
-		$('.area-1,.area-2,.area-3,.area-all').on('click',function(){
-			$('body').toggleClass('open');
-			var title = $(this).find('h2').text();
-			var author = $(this).find('h3').text();
-			$('.talker-view h2').text(title);
-			$('.talker-view p').text(author);
-		})
-		$('.close').on('click',function(){
-			$('body').removeClass('open');
-		})
-	});
-	 
-	</script>
-	<!--[if lt IE 9]>
-	    <script type="text/javascript" src="js/html5shiv.js"></script>
-	    <script type="text/javascript" src="js/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<nav class="meun">
-		<a href="#" class="logo">
-			
-		</a>
-	</nav>
-	<div class="main">
-		<div class="content">
-			<article class="talk">
-				<h1 class="page-title">議程表</h1>
-				<time>09:25~10:30</time>
-				<article class="area-all">
-					<div class="detail">
-						<div class="place">
-							<span class="btn btn-blue">一廳</span>
-							<span class="btn btn-red">二廳</span>
-							<span class="btn btn-pink">二廳</span>
-						</div>
-						<div class="talker">
-							<h2>Rethinking the Mobile Universe with Amazon Web Services[b]</h2>
-							<h3>Markku Lepistö (AWS)[a]</h3>
-						</div>
-					</div>
-				</article>
-				<time>09:25~10:30</time>
-				<div class="row">
-					<article class="area-1">
-						<div class="detail">
-							<div class="place">
-								<span class="btn btn-blue">一廳</span>
-								
-								
-							</div>
-							<div class="talker">
-								<h2>KKBOX 在 Android 實作串流音樂的挑戰</h2>
-								<h3>Rogery (楊哲豪) + Daniel Deng (鄧耀彬)</h3>
-							</div>
-						</div>
-					</article>
-					<article class="area-2">
-						<div class="detail">
-							<div class="place">
-								<span class="btn btn-green">二廳</span>
-							</div>
-							<div class="talker">
-								<h2>遊戲 App 開發營運實務：那些成功者沒說的事</h2>
-								<h3>半路 (鄭暐橋)</h3>
-							</div>
-						</div>
-					</article>
-					<article class="area-3">
-						<div class="detail">
-							<div class="place">
-								<span class="btn btn-pink">三廳</span>
-							</div>
-							<div class="talker">
-								<h2>搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計</h2>
-								<h3>ERICSK (上官林傑)</h3>
-							</div>
-						</div>	
-					</article>
+	<article class="content talk">
+		<div class="page-title">
+			<a class="showmenu">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</a>
+			<h1>議程表</h1>
+		</div>
+		
+		<time>09:25~10:30</time>
+		<article class="area-all">
+			<div class="detail">
+				<div class="place">
+					<span class="btn btn-blue">一廳</span>
+					<span class="btn btn-red">二廳</span>
+					<span class="btn btn-pink">二廳</span>
 				</div>
-				<time>09:25~10:30</time>
-				<div class="row">
-					<article class="area-1">
-						<div class="detail">
-							<div class="place">
-								<span class="btn btn-blue">一廳</span>
-								
-								
-							</div>
-							<div class="talker">
-								<h2>KKBOX 在 Android 實作串流音樂的挑戰</h2>
-								<h3>Rogery (楊哲豪) + Daniel Deng (鄧耀彬)</h3>
-							</div>
-						</div>
-					</article>
-					<article class="area-2">
-						<div class="detail">
-							<div class="place">
-								<span class="btn btn-green">二廳</span>
-							</div>
-							<div class="talker">
-								<h2>遊戲 App 開發營運實務：那些成功者沒說的事</h2>
-								<h3>半路 (鄭暐橋)</h3>
-							</div>
-						</div>
-					</article>
-					<article class="area-3">
-						<div class="detail">
-							<div class="place">
-								<span class="btn btn-pink">三廳</span>
-							</div>
-							<div class="talker">
-								<h2>搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計</h2>
-								<h3>ERICSK (上官林傑)</h3>
-							</div>
-						</div>	
-					</article>
+				<div class="talker">
+					<h2>Rethinking the Mobile Universe with Amazon Web Services[b]</h2>
+					<h3>Markku Lepistö (AWS)[a]</h3>
 				</div>
-				<time>12:00~13:00(午休)</time>
-				<article class="area-all none">
-					<div class="detail">
+			</div>
+		</article>
+		<time>09:25~10:30</time>
+		<div class="row">
+			<article class="area-1">
+				<div class="detail">
+					<div class="place">
+						<span class="btn btn-blue">一廳</span>
 						
-						<div class="talker">
-							<h2>公告散場</h2>
-						</div>
+						
 					</div>
-				</article>
+					<div class="talker">
+						<h2>KKBOX 在 Android 實作串流音樂的挑戰</h2>
+						<h3>Rogery (楊哲豪) + Daniel Deng (鄧耀彬)</h3>
+					</div>
+				</div>
+			</article>
+			<article class="area-2">
+				<div class="detail">
+					<div class="place">
+						<span class="btn btn-green">二廳</span>
+					</div>
+					<div class="talker">
+						<h2>遊戲 App 開發營運實務：那些成功者沒說的事</h2>
+						<h3>半路 (鄭暐橋)</h3>
+					</div>
+				</div>
+			</article>
+			<article class="area-3">
+				<div class="detail">
+					<div class="place">
+						<span class="btn btn-pink">三廳</span>
+					</div>
+					<div class="talker">
+						<h2>搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計</h2>
+						<h3>ERICSK (上官林傑)</h3>
+					</div>
+				</div>	
 			</article>
 		</div>
-	</div>
-	<div class="talker-view">
-		<a href="#" class="close">close</a>
-		<h2></h2>
-		<p></p>
-	</div>
-</body>
-</html>
+		<time>09:25~10:30</time>
+		<div class="row">
+			<article class="area-1">
+				<div class="detail">
+					<div class="place">
+						<span class="btn btn-blue">一廳</span>
+						
+						
+					</div>
+					<div class="talker">
+						<h2>KKBOX 在 Android 實作串流音樂的挑戰</h2>
+						<h3>Rogery (楊哲豪) + Daniel Deng (鄧耀彬)</h3>
+					</div>
+				</div>
+			</article>
+			<article class="area-2">
+				<div class="detail">
+					<div class="place">
+						<span class="btn btn-green">二廳</span>
+					</div>
+					<div class="talker">
+						<h2>遊戲 App 開發營運實務：那些成功者沒說的事</h2>
+						<h3>半路 (鄭暐橋)</h3>
+					</div>
+				</div>
+			</article>
+			<article class="area-3">
+				<div class="detail">
+					<div class="place">
+						<span class="btn btn-pink">三廳</span>
+					</div>
+					<div class="talker">
+						<h2>搶拿Lumia 1020 - 以Windows Phone開發入門與混和型(Hybrid) Web App規劃設計</h2>
+						<h3>ERICSK (上官林傑)</h3>
+					</div>
+				</div>	
+			</article>
+		</div>
+		<time>12:00~13:00(午休)</time>
+		<article class="area-all none">
+			<div class="detail">
+				
+				<div class="talker">
+					<h2>公告散場</h2>
+				</div>
+			</div>
+		</article>
+	</article>
+
+
+<script>
+     $(function() {
+          
+     });
+     
+     </script>

@@ -1,3 +1,4 @@
+
 body 
 	height: 100%
 .main 
@@ -7,16 +8,7 @@ body
 	right: 0
 	left: 0
 	overflow: auto
-.content
-	+container
-
-	+susy-grid-background
-	+at-breakpoint($pad)
-		+container
-		+susy-grid-background
-	+at-breakpoint($pc)
-		+container
-		+susy-grid-background	
+	
 	
 .talk
 	h1
@@ -33,20 +25,22 @@ body
 	.row
 		+pie-clearfix
 		overflow: hidden
+		+at-breakpoint($pad)
+			+trailer(1)
 	.talker
 		padding: 1em 
 	.area-all a
 		background: $darkgreen
 		h2 
 			color: #fff
-	.area-1,.area-2
+	.area-1,.area-2,.area-3,.area-all
 		+trailer(1)
-	.area-3
-		margin-bottom: 0
+	
 	.area-1,.area-2,.area-3
 		+at-breakpoint($pad)
 			padding-bottom: 500em
 			margin-bottom: -500em
+
 	.area-all,.area-1,.area-2,.area-3
 		display: block
 		+pie-clearfix
@@ -76,7 +70,7 @@ body
 		display: block 
 		+adjust-font-size-to(16px,1)
 		+trailer(1)
-		+leader(1)
+		
 		padding-left: 0.5em
 		border-left: 5px solid $darkgreen
 	.place 
@@ -85,32 +79,26 @@ body
 			color: #fff
 		.area-time
 			color: #000
-.talk 
-	+transition(margin 1s)  
-	+span-columns($total-columns)
-	.open &    
-		margin-left: - space($side)
 .talker-view
-	
 	position: absolute
 	top: 0
 	overflow: auto
-	right: 0
+	left: 0
 	bottom: 0
 	+box-sizing(border-box) // compass　CSS3 mixin，就算寬度寫死，用padding推也不會影響原本元素寬度  
 	background: #207ABC  
-	+translate(100%,0)
-	+transition(transform 1s) //左右滑動效果  
-	width: 250px
+	+translate(-100%,0)
+	width: space($side)
+	+transition(all 1s) //左右滑動效果  
 	@extend %clearfix  
 	h2 
 		color: yellow
 		font-size: 18px 
 	p 
 		color: #fff
-	.open &    
-		+translate(-21px,0)
-		
+	.open-session &    
+		+translate(0,0)
+		display: block
 
 .close
 	background: blue 

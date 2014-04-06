@@ -1,3 +1,4 @@
+/* line 2, ../../sass/partial/button.scss */
 .btn {
   /* Structure */
   display: inline-block;
@@ -16,11 +17,13 @@
   user-select: none;
 }
 
+/* line 19, ../../sass/partial/button.scss */
 .btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
+/* line 25, ../../sass/partial/button.scss */
 .btn {
   font-family: inherit;
   font-size: 100%;
@@ -44,6 +47,7 @@
   border-radius: 2px;
 }
 
+/* line 43, ../../sass/partial/button.scss */
 .btn-hover,
 .btn:hover,
 .btn:focus {
@@ -55,15 +59,18 @@
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 
+/* line 51, ../../sass/partial/button.scss */
 .btn:focus {
   outline: 0;
 }
 
+/* line 55, ../../sass/partial/button.scss */
 .btn-active,
 .btn:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
+/* line 63, ../../sass/partial/button.scss */
 .btn[disabled],
 .btn-disabled,
 .btn-disabled:hover,
@@ -80,15 +87,18 @@
   box-shadow: none;
 }
 
+/* line 75, ../../sass/partial/button.scss */
 .btn-hidden {
   display: none;
 }
 
+/* line 79, ../../sass/partial/button.scss */
 .btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
+/* line 87, ../../sass/partial/button.scss */
 .btn-primary,
 .btn-selected,
 a.btn-primary,
@@ -97,24 +107,29 @@ a.btn-selected {
   color: #fff;
 }
 
+/* line 92, ../../sass/partial/button.scss */
 .btn-blue {
   background-color: #0078e7;
   /* this is a green */
 }
 
+/* line 96, ../../sass/partial/button.scss */
 .btn-green {
   background: #1cb841;
 }
 
+/* line 100, ../../sass/partial/button.scss */
 .btn-pink {
   background: #df7514;
   /* this is an orange */
 }
 
+/* line 103, ../../sass/partial/button.scss */
 .btn-darkgreen {
   background: #5eb95e;
 }
 
+/* line 106, ../../sass/partial/button.scss */
 .btn-red {
   background: red;
 }

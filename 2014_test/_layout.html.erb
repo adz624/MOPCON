@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>Mopconf</title>
+	<link rel="stylesheet" href="css/all.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/all.js"></script>
+	<!--[if lt IE 9]>
+	    <script type="text/javascript" src="js/html5shiv.js"></script>
+	    <script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<%= render :partial => "/Partials/header" %>
+			<%= yield %>
+		</div>
+	</div>
+	<div class="talker-view">
+		<a href="#" class="close">close</a>
+		<h2></h2>
+		<p></p>
+	</div>
+	<%= render :partial => "/Partials/footer" %>
+</body>
+</html>

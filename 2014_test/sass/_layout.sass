@@ -4,14 +4,30 @@ $gutter-width     : 1em
 $grid-padding     : 1em
 $pad  : 768px 9 
 $pc : 960px 12    
-$view : 1 
+$view : 2 
 $side : $total-columns - $view
+html 
+	background: image-url('leather_bg.jpg')
+.container
+	box-shadow: 0 0 3px #323232
+	background: #fff
+	overflow: hidden
+	
 .container 
-	+container
-	+susy-grid-background
+	+set-container-width
+	margin: 0 auto
+	+susy-grid-background()
 	+at-breakpoint($pad)
-		+container
-		+susy-grid-background
+		+set-container-width
+		+susy-grid-background()
 	+at-breakpoint($pc)
-		+container
-		+susy-grid-background	
+		+set-container-width
+		+susy-grid-background()
+.content
+	+span-columns($total-columns omega)
+	+transition(all,.3s)
+	.open & 
+		margin-right: - space($side)
+	+at-breakpoint($pad)
+		.open & 
+			margin-right: - space($side)
