@@ -109,7 +109,7 @@ a.btn-selected {
 
 /* line 92, ../../sass/partial/button.scss */
 .btn-blue {
-  background-color: #0078e7;
+  background-color: #52BFFD;
   /* this is a green */
 }
 
@@ -120,16 +120,16 @@ a.btn-selected {
 
 /* line 100, ../../sass/partial/button.scss */
 .btn-pink {
-  background: #df7514;
+  background: #535E64;
   /* this is an orange */
 }
 
 /* line 103, ../../sass/partial/button.scss */
 .btn-darkgreen {
-  background: #5eb95e;
+  background: #fd5259;
 }
 
 /* line 106, ../../sass/partial/button.scss */
 .btn-red {
-  background: red;
+  background: #fd5259;
 }
