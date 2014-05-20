@@ -30,14 +30,14 @@
 	<menu class="main-menu mobile">
 	<a href="/" class="logo"></a>
 	<ul>
-		<li class="menu-link"><a href="news.html"><span>公告</span></a></li>	
-		<li class="menu-link"><a href="session.html"><span>議程</span></a></li>
-		<li class="menu-link"><a href="sponsor.html"><span>贊助</span></a></li>
-		<li class="menu-link"><a href="speakers.html"><span>講者</span></a></li>
-		<li class="menu-link"><a href="location.html"><span>交通</span></a></li>
+		<li class="menu-link"><a href="news.php"><span>公告</span></a></li>
+		<li class="menu-link"><a href="session.php"><span>議程</span></a></li>
+		<li class="menu-link"><a href="sponsor.php"><span>贊助</span></a></li>
+		<li class="menu-link"><a href="speakers.php"><span>講者</span></a></li>
+		<li class="menu-link"><a href="location.php"><span>交通</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>IRC</span></a></li>-->
 		<!-- <li class="menu-link"><a href="#"><span>Apps</span></a></li> -->
-		<li class="menu-link"><a href="community.html"><span>社群</span></a></li>
+		<li class="menu-link"><a href="community.php"><span>社群</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>其他</span></a></li> -->
 	</ul>
 </menu>
