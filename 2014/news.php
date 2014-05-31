@@ -3,7 +3,7 @@ include __DIR__.'/src/Savant3.php';
 
 $config = [
     'template_path' => array(__DIR__.'/tpl/')
-];  
+];
 $tpl = new Savant3($config);
 
 $tpl->title = "最新公告";
@@ -26,11 +26,10 @@ function getFacdbookFeedData(){
         $json = fetchFacebookFeed();
         return json_decode($json, $as_array = true);
     }
-    
-    
+
     $mc = memcache_connect('localhost', 11211);
     $json = memcache_get($mc, 'fb_feed');
-    
+
     if (!$cached_feed) {
         $json = fetchFacebookFeed();
         memcache_set($mc, 'fb_feed', $feed, 0, 60*60);
