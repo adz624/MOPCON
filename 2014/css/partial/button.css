@@ -40,14 +40,14 @@
   /* IE 6 & 7 */
   border: 1px solid #999;
   /*IE 6/7/8*/
-  border: none rgba(0, 0, 0, 0);
+  border: none transparent;
   /*IE9 + everything else*/
   background-color: #E6E6E6;
   text-decoration: none;
   border-radius: 2px;
 }
 
-/* line 43, ../../sass/partial/button.scss */
+/* line 41, ../../sass/partial/button.scss */
 .btn-hover,
 .btn:hover,
 .btn:focus {
@@ -64,13 +64,13 @@
   outline: 0;
 }
 
-/* line 55, ../../sass/partial/button.scss */
+/* line 54, ../../sass/partial/button.scss */
 .btn-active,
 .btn:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 63, ../../sass/partial/button.scss */
+/* line 59, ../../sass/partial/button.scss */
 .btn[disabled],
 .btn-disabled,
 .btn-disabled:hover,
@@ -98,7 +98,7 @@
   border: 0;
 }
 
-/* line 87, ../../sass/partial/button.scss */
+/* line 84, ../../sass/partial/button.scss */
 .btn-primary,
 .btn-selected,
 a.btn-primary,
@@ -132,4 +132,9 @@ a.btn-selected {
 /* line 106, ../../sass/partial/button.scss */
 .btn-red {
   background: #fd5259;
+}
+
+/* line 109, ../../sass/partial/button.scss */
+.btn-lg {
+  padding: 10px 16px;
 }
