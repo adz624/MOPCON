@@ -71,11 +71,6 @@ KALUG_MD
     ],
 ];
 
-$tpl->active = isset($_GET['id']) ? $_GET['id'] : null;
-if (!array_key_exists($tpl->active, $tpl->communities)) {
-    $tpl->active = 'ksdg';
-}
-
 // 輸出畫面
 $tpl->content = $tpl->getOutput('community.tpl.php');
 $tpl->display('main.tpl.php');

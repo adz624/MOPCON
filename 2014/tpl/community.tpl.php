@@ -5,7 +5,7 @@ include __DIR__.'/../src/Parsedown.php';
     <aside class="group-aside">
         <div class="group-list">
 <?php foreach($this->communities as $id => $community):?>
-                <a href="?id=<?=urlencode($id)?>">
+                <a href="#">
                     <svg class="hexagonal" x="0px" y="0px" width="120.93px" height="104px" viewBox="0 0 120.93 104" >
                         <polygon  points="30.232,104 0,52 30.232,0 90.697,0 120.93,52 90.697,104 "/>
                     </svg>
@@ -20,6 +20,7 @@ $parsedown = new Parsedown();
 ?>
         </div>
     </aside>
+<?php foreach($this->communities as $id => $community):?>
     <div class="group-content-wrap">
         <div class="group-content">
         <div class="group-img"><img src="<?=htmlspecialchars($community['img'])?>"></div>
@@ -29,8 +30,9 @@ $parsedown = new Parsedown();
 
         </div>
         <div class="group-article md-text">
-<?=$parsedown->text($community['desc_md']); ?>
+        <?=$parsedown->text($community['desc_md']); ?>
         </div>
         </div>
     </div>
+<?php endforeach;?>
 </div>
