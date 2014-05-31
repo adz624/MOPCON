@@ -30,7 +30,7 @@ function getFacdbookFeedData(){
     $mc = memcache_connect('localhost', 11211);
     $json = memcache_get($mc, 'fb_feed');
 
-    if (!$cached_feed) {
+    if (!$json) {
         $json = fetchFacebookFeed();
         memcache_set($mc, 'fb_feed', $feed, 0, 60*60);
     }
