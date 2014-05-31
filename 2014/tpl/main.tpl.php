@@ -54,6 +54,7 @@
 		<h1><?= htmlspecialchars($this->title) ?></h1>
 	</div>
 <?=$this->content ?>
+</article>
 <!-- layout end -->
 <div class="footer-line"></div>
 		</div>

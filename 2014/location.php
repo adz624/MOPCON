@@ -13,31 +13,26 @@ $tpl->content =<<<RAW_HTML
 		<address>
 			高雄國際會議中心ICCK - 高雄市鹽埕區中正四路274號
 		</address>
-		<div id="map-canvas" class="row">
-				
-    	</div>
-			<h2>交通方式</h2>
-			<div class="row">
-				<section class="transportation">
-					<h3>高鐵/火車/捷運</h3>
-					<ol>
-					    <li>左營高鐵站/高雄火車站搭捷運紅線</li>
-					    <li>至捷運美麗島站換乘橘線往西</li>
-					    <li>捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場</li>
-					</ol>
-				</section>
-				
-				<section class="transportation">
-					<h3>公車</h3>
-					<p>
-						歷史博物館0南(單邊停靠)、0北(單邊停靠)、11、25、33、56、60、76、77、82、建國幹線、91、214、219、248
-					</p>
-				</section>
-			</div>
+		<div id="map-canvas" class="row"></div>
+
+		<h2>交通方式</h2>
+		<div class="row">
+			<section class="transportation">
+				<h3>高鐵/火車/捷運</h3>
+				<ol>
+				    <li>左營高鐵站/高雄火車站搭捷運紅線</li>
+				    <li>至捷運美麗島站換乘橘線往西</li>
+				    <li>捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場</li>
+				</ol>
+			</section>
 			
+			<section class="transportation">
+				<h3>公車</h3>
+				<p>
+					歷史博物館0南(單邊停靠)、0北(單邊停靠)、11、25、33、56、60、76、77、82、建國幹線、91、214、219、248
+				</p>
+			</section>
 		</div>
-		
-	</article>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <script>
     function initialize()

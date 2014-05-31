@@ -26,7 +26,7 @@ $parsedown = new Parsedown();
         <div class="group-name"><?=htmlspecialchars($community['name'])?></div>
         <div class="group-links"></div>
         <div class="group-banner">
-            
+
         </div>
         <div class="group-article md-text">
 <?=$parsedown->text($community['desc_md']); ?>
