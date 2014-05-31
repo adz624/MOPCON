@@ -12,7 +12,7 @@ include __DIR__.'/../src/Parsedown.php';
 
                     <span><?=htmlspecialchars($community['sname'])?></span>
                 </a>
-<?endforeach;?>
+<?php endforeach;?>
 
 <?php
 $community = $this->communities[$this->active];

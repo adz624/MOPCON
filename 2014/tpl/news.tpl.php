@@ -21,4 +21,4 @@
 		</div>
 	</section>
 
-<?endforeach;?>
+<?php endforeach;?>
