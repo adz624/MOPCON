@@ -18,8 +18,7 @@
 	<meta content="http://mopcon.org/img/snapshot-2014.jpg" property="og:image">
 	<meta content="website" property="og:type">
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:site_name">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/all.js"></script>
+        <script src="js/min/all.min.js"></script>
 	<!--[if lt IE 9]>
 	    <script type="text/javascript" src="js/html5shiv.js"></script>
 	    <script type="text/javascript" src="js/respond.min.js"></script>
@@ -29,11 +28,12 @@
 <div class="perspective">
 	<menu class="main-menu mobile">
 	<a href="/" class="logo"></a>
-	<ul>
+    <ul>
+                <li class="menu-link"><a href="index.php"><span>首頁</span></a></li>
 		<li class="menu-link"><a href="news.php"><span>公告</span></a></li>
-		<li class="menu-link"><a href="session.php"><span>議程</span></a></li>
-		<li class="menu-link"><a href="sponsor.php"><span>贊助</span></a></li>
-		<li class="menu-link"><a href="speakers.php"><span>講者</span></a></li>
+		<!-- <li class="menu-link"><a href="session.php"><span>議程</span></a></li> -->
+		<!-- <li class="menu-link"><a href="sponsor.php"><span>贊助</span></a></li> -->
+		<!-- <li class="menu-link"><a href="speakers.php"><span>講者</span></a></li> -->
 		<li class="menu-link"><a href="location.php"><span>交通</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>IRC</span></a></li>-->
 		<!-- <li class="menu-link"><a href="#"><span>Apps</span></a></li> -->
@@ -62,5 +62,9 @@
 	</div>
 	</div>
 </div>
+
+<a href="#" class="scroll-top">
+<div class="icon-arrow-up42"></div>
+</a>
 </body>
 </html>
