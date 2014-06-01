@@ -214,6 +214,9 @@ html {
   .index h1 {
     display: none;
   }
+  .index img {
+    margin-bottom: 3em !important;
+  }
 }
 
 .content {
@@ -478,6 +481,10 @@ a.btn-selected {
   opacity: 1;
 }
 
+.timeline {
+  margin-bottom: 3em;
+}
+
 .anti-☢ {
   position: relative;
   padding-bottom: 1.5em;
@@ -546,6 +553,9 @@ a.btn-selected {
   left: 31.2px;
 }
 
+.talk-☴ {
+  margin-bottom: 1.5em;
+}
 .talk-☴ figure {
   text-align: center;
   margin: 0 auto;
@@ -834,14 +844,12 @@ a.btn-selected {
   font-size: 1em;
   line-height: 1.5em;
 }
-.location-➫ .transportation {
-  margin-bottom: 1.5em;
-}
 .location-➫ .transportation p {
   padding-left: 1em;
 }
 @media (min-width: 960px) {
   .location-➫ .transportation {
+    margin-bottom: 3em;
     width: 49.1525423729%;
     float: left;
     margin-right: 1.6949152542%;
@@ -948,6 +956,9 @@ a.btn-selected {
   }
 }
 
+.love-☺ {
+  margin-bottom: 1.5em;
+}
 .love-☺ .speaker-head {
   text-align: center;
   font-size: 2em;
