@@ -143,19 +143,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 1.5em;
 }
 
-@font-face {
-  font-family: custom-san-serif-zh;
-  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+6211;
-}
 html {
   font-size: 100%;
   line-height: 1.5em;
 }
 
 html {
-  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
-  font-family: custom-san-serif-zh;
+  font-family: Helvetica-Neue, Helvetica, "微軟正黑體", "Open Sans", Arial, sans-serif;
   color: #56cab6;
   height: 100%;
 }
@@ -167,10 +161,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1, h2 {
-  font-family: georgia;
 }
 
 html {
