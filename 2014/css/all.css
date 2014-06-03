@@ -143,19 +143,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 1.5em;
 }
 
-@font-face {
-  font-family: custom-san-serif-zh;
-  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+6211;
-}
 html {
   font-size: 100%;
   line-height: 1.5em;
 }
 
 html {
-  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
-  font-family: custom-san-serif-zh;
+  font-family: Helvetica-Neue, Helvetica, "微軟正黑體", "Open Sans", Arial, sans-serif;
   color: #56cab6;
   height: 100%;
 }
@@ -167,10 +161,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1, h2 {
-  font-family: georgia;
 }
 
 html {
@@ -213,6 +203,9 @@ html {
 @media (min-width: 960px) {
   .index h1 {
     display: none;
+  }
+  .index img {
+    margin-bottom: 3em !important;
   }
 }
 
@@ -478,6 +471,10 @@ a.btn-selected {
   opacity: 1;
 }
 
+.timeline {
+  margin-bottom: 3em;
+}
+
 .anti-☢ {
   position: relative;
   padding-bottom: 1.5em;
@@ -546,6 +543,9 @@ a.btn-selected {
   left: 31.2px;
 }
 
+.talk-☴ {
+  margin-bottom: 1.5em;
+}
 .talk-☴ figure {
   text-align: center;
   margin: 0 auto;
@@ -834,14 +834,12 @@ a.btn-selected {
   font-size: 1em;
   line-height: 1.5em;
 }
-.location-➫ .transportation {
-  margin-bottom: 1.5em;
-}
 .location-➫ .transportation p {
   padding-left: 1em;
 }
 @media (min-width: 960px) {
   .location-➫ .transportation {
+    margin-bottom: 3em;
     width: 49.1525423729%;
     float: left;
     margin-right: 1.6949152542%;
@@ -948,6 +946,9 @@ a.btn-selected {
   }
 }
 
+.love-☺ {
+  margin-bottom: 1.5em;
+}
 .love-☺ .speaker-head {
   text-align: center;
   font-size: 2em;
