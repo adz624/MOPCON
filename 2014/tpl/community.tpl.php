@@ -22,8 +22,8 @@ $parsedown = new Parsedown();
     </aside>
 <?php foreach($this->communities as $id => $community):?>
     <div class="group-content-wrap">
-        <div class="group-content" style="margin-bottom:1em;">
-        <div class="group-img" style="margin-bottom:-2em"><img src="<?=htmlspecialchars($community['img'])?>"></div>
+        <div class="group-content" >
+        <div class="group-img" ><img src="<?=htmlspecialchars($community['img'])?>"></div>
         <div class="group-name"><?=htmlspecialchars($community['name'])?></div>
         <div class="group-links">
 <?php foreach($community['links'] as $link):?>
