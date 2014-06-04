@@ -150,7 +150,7 @@ html {
 
 html {
   font-family: Helvetica-Neue, Helvetica, "微軟正黑體", "Open Sans", Arial, sans-serif;
-  color: #56cab6;
+  color: #cccccc;
   height: 100%;
 }
 
@@ -529,7 +529,7 @@ a.btn-selected {
   }
 }
 .anti-☢ .news-content a {
-  color: #fd5259;
+  color: #46d3b9;
 }
 .anti-☢ .news-content p {
   margin-bottom: 1.5em;
@@ -728,7 +728,7 @@ a.btn-selected {
   *zoom: 1;
   text-decoration: none;
   margin-bottom: 1.5em;
-  background: #56cab6;
+  background: #cccccc;
   color: #535e64;
 }
 .talk-☴ .notice:after {
@@ -831,7 +831,7 @@ a.btn-selected {
 .location-➫ address {
   display: block;
   margin-bottom: 1.5em;
-  color: white;
+  color: #46d3b9;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -1086,15 +1086,15 @@ a.btn-selected {
   font-size: 1em;
   line-height: 1.5em;
   margin-top: -1px;
-  border-bottom: 1px solid rgba(86, 202, 182, 0.3);
-  color: #56cab6;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+  color: #cccccc;
   -moz-transition: border 0.3s, padding 0.3s;
   -o-transition: border 0.3s, padding 0.3s;
   -webkit-transition: border 0.3s, padding 0.3s;
   transition: border 0.3s, padding 0.3s;
 }
 .kh-❤ .group-list2 a:hover, .kh-❤ .group-list2 a.selected {
-  border-left: 4px solid #56cab6;
+  border-left: 4px solid #cccccc;
   padding-left: 0.5em;
 }
 .kh-❤ .group-content-wrap {
@@ -1130,7 +1130,7 @@ a.btn-selected {
 .kh-❤ .group-links a {
   display: inline-block;
   margin-right: 0.2em;
-  color: #56cab6;
+  color: #46d3b9;
   -moz-transition: color 0.3s, -moz-transform 0.3s;
   -o-transition: color 0.3s, -o-transform 0.3s;
   -webkit-transition: color 0.3s, -webkit-transform 0.3s;
@@ -1147,7 +1147,7 @@ a.btn-selected {
   -ms-transform: rotate(-10deg);
   -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
-  color: #267a6c;
+  color: #1d7c6b;
 }
 @media (min-width: 768px) {
   .kh-❤ .group-aside {
