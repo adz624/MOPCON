@@ -39,6 +39,7 @@
 		<!-- <li class="menu-link"><a href="#"><span>IRC</span></a></li>-->
 		<!-- <li class="menu-link"><a href="#"><span>Apps</span></a></li> -->
 		<li class="menu-link"><a href="community.php"><span>社群</span></a></li>
+		<li class="menu-link"><a href="/history.html"><span>歷年</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>其他</span></a></li> -->
 	</ul>
 </menu>
