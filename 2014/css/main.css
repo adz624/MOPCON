@@ -1,0 +1,20 @@
+.sns a {
+  display:inline-block;
+  -moz-transition: color 0.3s, -moz-transform 0.3s;
+  -o-transition: color 0.3s, -o-transform 0.3s;
+  -webkit-transition: color 0.3s, -webkit-transform 0.3s;
+  transition: color 0.3s ease 0s, transform 0.3s ease 0s;
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+  transform: rotate(0deg);
+  color: #56CAB6;
+}
+
+.sns a:hover {
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  color: #1d7c6b;
+}
