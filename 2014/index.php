@@ -16,6 +16,7 @@ $tpl->content =<<<RAW_HTML
 <a href="https://twitter.com/mopcon" alt="MOPCON @ Twitter" title="MOPCON @ Twitter" ><i class="icon-twitter22"></i></a>
 </div>
 <img src="images/banner.png" style="margin:0 0 30px 0" alt="堅持在濁水溪以南舉辦的千人社群研討會，將於 2014/10/25 日到 2014/10/26 在高雄國際會議中心舉辦" >
+<div id="mobile_banner"></div>
 RAW_HTML;
 
 // 輸出畫面
