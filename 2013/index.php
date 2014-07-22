@@ -41,7 +41,7 @@
             <img src="pic/index/370x245/IMG-50.jpg" class="img-rounded"/>
           </div>
           <div class="span4 data-cell">
-            <p>MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時 <a rel="external" href="http://media.appshooting.com.tw/2013/10/mopcon-2013/">App便利屋</a>、<a rel="external" href="http://www.appguru.com.tw/appguru/blog/20507/ltk-south-insisted-on-holding-size-mopcon-developers">APPGuru</a>、<a rel="external" href="http://punapp.com/news/page/13216">Punapp</a>等媒體報導給予本屆活動正面評價，亦獲得<a rel="external" href="http://edn.udn.com/news/print.jsp?aid=674265&cid=47">聯合報</a>、<a rel="external" href="img/edn.jpg">經濟日報</a>、<a rel="external" href="http://www.idn.com.tw/news/news_content.php?catid=2&catsid=4&catdid=0&artid=20131027abcd009">自立晚報</a>、<a rel="external" href="http://udn.com/NEWS/BREAKINGNEWS/BREAKINGNEWS6/8254511.shtml">聯合新聞網</a>主流媒體報導。</p>
+            <p>MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時 <a rel="external" href="http://media.appshooting.com.tw/2013/10/mopcon-2013/">App便利屋</a>、<a rel="external" href="http://www.appguru.com.tw/appguru/blog/20507/ltk-south-insisted-on-holding-size-mopcon-developers">APPGuru</a>、<a rel="external" href="http://punapp.com/news/page/13216">Punapp</a>等媒體報導給予本屆活動正面評價，亦獲得<a rel="external" href="img/udn.jpg">聯合報</a>、<a rel="external" href="img/edn.jpg">經濟日報</a>、<a rel="external" href="http://www.idn.com.tw/news/news_content.php?catid=2&catsid=4&catdid=0&artid=20131027abcd009">自立晚報</a>、<a rel="external" href="http://edn.udn.com/news/print.jsp?aid=674265&cid=47">聯合新聞網</a>主流媒體報導。</p>
           </div>
         </div>
         <div class="row">
