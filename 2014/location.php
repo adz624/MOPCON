@@ -33,38 +33,66 @@ $tpl->content =<<<RAW_HTML
 				</p>
 			</section>
 		</div>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  <script>
-    function initialize()
-    {
-      var icck = new google.maps.LatLng(22.626197, 120.285605);
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+      <script>
+        function initialize()
+        {
+          var styles = [
+              {
+                  featureType: "all",
+                  stylers: [
+                    { saturation: 0 },
+                    {hue:"#FF6F4D"}
+                  ]
+                },{
+                  featureType: "road.arterial",
+                  elementType: "geometry",
+                  stylers: [
+                    { hue: "#00ffee" },
+                    { saturation: 50 }
+                  ]
+                },{
+                  featureType: "poi.business",
+                  elementType: "labels",
+                  stylers: [
+                    { visibility: "off" }
+                  ]
+                }
+               
+            ];
+          var icck = new google.maps.LatLng(22.626197, 120.285605);
+          var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+          var mapOptions = {
+                  zoom: 15,
+                  center: icck,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  mapTypeControlOptions: {
+                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+                      }
 
-      var mapOptions = {
-              zoom: 15,
-              center: icck,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-          };
-      var ele = document.getElementById('map-canvas');
-      var map = new google.maps.Map(ele, mapOptions);
+              };
+          var ele = document.getElementById('map-canvas');
+          var map = new google.maps.Map(ele, mapOptions);
+          map.mapTypes.set('map_style', styledMap);
+            map.setMapTypeId('map_style');
+          new google.maps.Marker({
+              'position': icck,
+              'map': map,
+              'title': "高雄國際會議中心"
+          });
+    /*
+          var infoWindow = new google.maps.InfoWindow();
+          infoWindow.setContent("高雄國際會議中心");
+          infoWindow.setPosition(icck);
+          infoWindow.open(map);
+    */
+      
 
-      new google.maps.Marker({
-          'position': icck,
-          'map': map,
-          'title': "高雄國際會議中心"
-      });
-/*
-      var infoWindow = new google.maps.InfoWindow();
-      infoWindow.setContent("高雄國際會議中心");
-      infoWindow.setPosition(icck);
-      infoWindow.open(map);
-*/
+        }
 
+        google.maps.event.addDomListener(window, 'load', initialize);
 
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-  </script>
+      </script>
 RAW_HTML;
 
 // 輸出畫面
