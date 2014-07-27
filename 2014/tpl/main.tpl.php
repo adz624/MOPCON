@@ -10,7 +10,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<title><?= htmlspecialchars($this->title) ?> | 行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference</title>
 	<meta content="<?= htmlspecialchars($this->title) ?> | 行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:title">
