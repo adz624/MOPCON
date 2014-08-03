@@ -21,7 +21,8 @@ if (count($sponsors) < 0) {
 }
 
 
-?><div class="<?= $level[0]?>">
+?>
+<div class="<?= $level[0]?>">
 <h2><?=$level[2]?></h2>
 <?php foreach($sponsors as $sponsor):?>
         <section>
@@ -36,3 +37,27 @@ if (count($sponsors) < 0) {
 
 </div>
 <?php endforeach;?>
+
+<section>
+<h3>主辦單位</h3>
+<div class="article">
+<p>經濟部加工出口區管理處
+</div>
+</section>
+
+<section>
+<h3>執行單位</h3>
+<div class="article">
+<ul>
+<li>中華民國高雄軟體園區產學策進會</li>
+<li>KaLUG</li>
+<li>KSDG</li>
+<li>Cocaheads Kaohsiung</li>
+<li>MOSUT</li>
+<li>KIMU</li>
+<li>高雄前端社群</li>
+<li>AKDG</li>
+<li>Mobile Girls</li>
+</ul>
+</div>
+</section>
