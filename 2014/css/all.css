@@ -613,6 +613,9 @@ a.btn-selected {
   background: white;
   left: 31.2px;
 }
+.anti-☢ .news-label {
+  word-break: break-all;
+}
 
 .talk-☴ {
   margin-bottom: 1.5em;
@@ -1182,11 +1185,18 @@ a.btn-selected {
 }
 .kh-❤ .group-name {
   position: absolute;
-  top: -1.5em;
+  top: -2em;
   left: 0;
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 2em;
   color: white;
+}
+@media (min-width: 768px) {
+  .kh-❤ .group-name {
+    font-size: 2em;
+    line-height: 1.5em;
+    top: -1.5em;
+  }
 }
 .kh-❤ .group-links a {
   display: inline-block;
