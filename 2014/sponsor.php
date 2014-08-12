@@ -27,6 +27,14 @@ $tpl->developer = [
     ],
 ];
 
+$tpl->coder = [
+    [
+        'name' => '凌誠科技',
+        'img'  => 'linkchain.png',
+        'url'  => 'http://www.linkchain.tw/',
+        'desc' => '凌誠科技成立於2006年4月，主要從事應用軟體相關技術的研發及服務，專注於「精緻農業」、「資訊平台」及「自動控制」等領域發展，不斷深化軟體開發與專業服務能量，持續貫徹CMMI國際軟體品質政策，為客戶提供最佳的顧問諮詢、完善的解決方案以及快速的技術支援。',
+    ],
+];
 // 輸出畫面
 $tpl->content = $tpl->getOutput('sponsor.tpl.php');
 $tpl->display('main.tpl.php');
