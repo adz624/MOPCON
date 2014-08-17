@@ -26,7 +26,7 @@ return [
         'company' => 'iKala',
         'title'   => '設計總監',
         'bio'     => '鄭鎧尹博士為 LIVEhouse.in/iKala 共同創辦人, 並擔任產品設計總監一職，負責產品設計及產品策略。LIVEhouse.in 為第一個國產直播平台；iKala為國內最大唱歌社群。其研究領域為人機互動介面設計, 並曾於日本最頂尖的 UI 研究所 JST ERATO 及微軟亞洲研究院從事研究。其在閒暇時間喜愛撰寫科技或設計相關文章, 在 MMDays 或 UIUI 粉絲團上可追蹤到他的動態。',
-        'pic'     => 'Keynes.jpg',
+        'pic'     => 'keynes.jpg',
     ],
     'mark' => [
         'name'    => '宋牧奇',
