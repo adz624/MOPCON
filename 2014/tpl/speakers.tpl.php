@@ -1,6 +1,7 @@
 <div class="speaker-wrap md-text">
-<?php foreach($this->speakers as $speaker):?>
+<?php foreach($this->speakers as $id => $speaker):?>
 
+<a id="<?=htmlspecialchars($id)?>">
 <section class="speaker-container">
 <div class="speaker-img"><img src="images/speakers/<?=urlencode($speaker['pic'])?>" alt=""></div>
 <h2 class="speaker-name"><?=htmlspecialchars($speaker['name'])?></h2>
@@ -9,6 +10,7 @@
 <p><?=htmlspecialchars($speaker['bio'])?>
 </div>
 </section>
+</a>
 
 <?php endforeach;?>
 </div>
