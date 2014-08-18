@@ -165,7 +165,7 @@ img {
 
 html {
   background: #0f222b;
-  background: url('/images/bg-2014.png?1402129853') #0f222b;
+  background: url('../images/bg-2014.png?1402129853') #0f222b;
 }
 
 .container {
@@ -237,7 +237,7 @@ html {
 
 .logo {
   display: none;
-  background: url('/images/2014-logo.png?1401505537');
+  background: url('../images/2014-logo.png?1401505537');
   width: 260px;
   height: 49px;
   float: left;
@@ -249,7 +249,7 @@ html {
 }
 @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .logo {
-    background: url('/images/2014-logo2x.png?1401505557');
+    background: url('../images/2014-logo2x.png?1401505557');
     -moz-background-size: 260px auto;
     -o-background-size: 260px auto;
     -webkit-background-size: 260px auto;
@@ -376,10 +376,6 @@ a.btn-selected {
 
 .btn-red {
   background: #fd5259;
-}
-
-.btn-orange {
-  background: #ffd74d;
 }
 
 .btn-lg {
@@ -1641,7 +1637,7 @@ a.btn-selected {
 }
 .anti-♻ .bottom-btn a {
   color: white;
-  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 1.5em;
   line-height: 2em;
 }

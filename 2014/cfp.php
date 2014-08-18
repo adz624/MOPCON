@@ -6,7 +6,7 @@ $config = [
 ];  
 $tpl = new Savant3($config);
 
-$tpl->title = "徵稿<span class='anti-none'> - MOPCON Call for Presentations</span>";
+$tpl->title = "徵稿";
 $tpl->mainClass = '';
 
 $tpl->content =<<<RAW_HTML
