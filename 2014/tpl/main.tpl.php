@@ -31,6 +31,7 @@
     <ul>
                 <li class="menu-link"><a href="index.php"><span>首頁</span></a></li>
 		<li class="menu-link"><a href="news.php"><span>公告</span></a></li>
+		<li class="menu-link"><a href="cfp.php"><span>徵稿</span></a></li>
 		<!-- <li class="menu-link"><a href="session.php"><span>議程</span></a></li> -->
 		<li class="menu-link"><a href="sponsor.php"><span>贊助</span></a></li>
 		<li class="menu-link"><a href="speakers.php"><span>講者</span></a></li>
