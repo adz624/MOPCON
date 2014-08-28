@@ -27,12 +27,21 @@ $tpl->hacker = [
 
 $tpl->other = [
     [
+        //其實是 developer
+        'name' => 'Etu',
+        'img'  => 'etu.png',
+        'url'  => 'http://www.etusolution.com/index.php/tw/',
+        'desc' => 'Etu 以亞洲為舞臺，是專為企業提供 Big Data End-to-End 解決方案的領導品牌。Etu 致力為產業客戶發展完整的軟、硬體，以及整合後的資料處理、分析，與未來擴充時所需的整體解決方案。協助客戶探勘企業內部的巨量多結構資料價值，使其能簡易地擷取潛藏在其中的商業價值。',
+    ],
+    [
+        //其實是 developer
         'name' => '摩鉅科技',
         'img'  => 'moregeek1.png',
         'url'  => 'http://www.moregeek.com/tw/',
         'desc' => '摩鉅科技股份有限公司，核心業務為遊戲技術平台研發及遊戲產品開發。我們擁有優秀的經營團隊與開發成員。創新＝觀察新的趨勢，提供新的體驗。群聚＝以人群為本，打造科技社交新生活。多元＝高度技術整合能力，充分客製化的思維能力。摩鉅科技希望能走在台灣開發商的更前端來看全世界。',
     ],
     [
+        // 其實是 coder
         'name' => '凌誠科技',
         'img'  => 'linkchain.png',
         'url'  => 'http://www.lingcheng.com.tw/',
