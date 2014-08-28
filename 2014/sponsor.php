@@ -11,6 +11,12 @@ $tpl->mainClass = ' ⃠-black-box';
 
 $tpl->hacker = [
     [
+        'name' => 'Amazon Web Service',
+        'img'  => 'aws.png',
+        'url'  => 'http://aws.amazon.com/',
+        'desc' => 'Amazon Web Services 於2006年推出，開始將主要的IT基礎設施以網路服務的形式，公開讓企業使用 – 此形式也是目前大家耳熟能詳的雲端運算。Amazon Web Services現今在雲端提供高可靠性、高擴充性，以及低成本的基礎架構平台。Amazon Web Services 提供超過40種的不同服務，包括 Amazon Elastic Compute Cloud (Amazon EC2)、Amazon Simple Storage Service (Amazon S3) 及 Amazon Relational Database Service (Amazon RDS)。',
+    ],
+    [
         'name' => 'COIMOTION',
         'img'  => 'coimotion.png',
         'url'  => 'http://www.coimotion.com/',
