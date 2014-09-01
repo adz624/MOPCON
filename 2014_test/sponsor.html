@@ -5,7 +5,7 @@
 	<title>Mopconf</title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/icomoon.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<title>行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference</title>
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:title">
 	<meta content="http://mopcon.org/2014" property="og:url">
@@ -14,18 +14,23 @@
 	<meta content="website" property="og:type">
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:site_name">
 
-	<script src="js/min/all.min.js"></script>
+	<script src="js_develop/jquery.min.js"></script>
+	<script src="js_develop/all.js"></script>
+
 	<!--[if lt IE 9]>
 	    <script type="text/javascript" src="js/html5shiv.js"></script>
 	    <script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-<div class="perspective">
-	<menu class="main-menu mobile">
-	<a href="/" class="logo"></a>
+
+	<menu class="main-menu">
+	<div class="container">
+		
+		
+	<a href="/" class="logo desktop-only"></a>
 	<ul>
-		<li class="menu-link"><a href="index.html"><span>首頁</span></a></li>	
+		<li class="menu-link"><a href="index.html" class="active"><span>首頁</span></a></li>	
 		<li class="menu-link"><a href="news.html"><span>公告</span></a></li>	
 		<li class="menu-link"><a href="session.html"><span>議程</span></a></li>
 		<li class="menu-link"><a href="sponsor.html"><span>贊助</span></a></li>
@@ -36,149 +41,268 @@
 		<li class="menu-link"><a href="community.html"><span>社群</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>其他</span></a></li> -->
 	</ul>
-</menu>
-	<div class="block"></div>
-	<div class="relative"><div class="absolute">
-	<div class="main">
-		<div class="container">
-			<!-- layout start -->
-			
-<article class="content ⃠-black-box">
-	<div class="page-title">
-		<a class="showmenu">
-			<i class="icon-list22"></i>
-		</a>
-		<h1>徵求贊助商</h1>
-	</div>
 
-	<p>強力徵求贊助廠商，請快與我們（ sponsor [at] mopcon.org ）聯繫</p>
+	<div class="mobile-menu mobile-only">
+        <a class="square-btn showmenu mobile-only">
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        </a>
+        <h1 class="mobile-only">MOPCON 2014</h1>
+    </div>
+
+
+		
+
+
+	</div>
+</menu>
+	
+	<div class="container">
+		<!-- layout start -->
+		
+<article class="content ⃠-black-box">
+	<div class="sponsor-label">
+		<h1>徵求贊助商</h1>
+
+		<p>強力徵求贊助廠商，請快與我們（ sponsor [at] mopcon.org ）聯繫</p>
 
 
 	
-	<h3>感謝以下各贊助單位</h3>
-	<div class="sponsor-platinum">
+		<h3>感謝以下各贊助單位</h3>
+	</div>
+	
+	
+
+	<div class="sponsor-platinum bg-rotate section">
 		<h2>雅典娜</h2>
 		<section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github Github Github Github</h3>
+			</header>
 			<div class="article">
-				<img src="images/sponsor/github-logo.png" alt="">
-				Groupon is a global leader in local commerce, making it easy for people around the world to search and discover great businesses at unbeatable prices. Groupon is reinventing the traditional small business world by providing merchants with a suite of products and services, including customizable deals, payments processing capabilities and point-of-sale solutions to help them attract more customers and run their operations more effectively. By leveraging the company's global relationships and scale, Groupon offers consumers incredible deals on the best stuff to eat, see, do, and buy in 48 countries.
+				<p>Groupon is a global leader in local commerce, making it easy for people around the world to search and discover great businesses at unbeatable prices. Groupon is reinventing the traditional small business world by providing merchants with a suite of products and services, including customizable deals, payments processing capabilities and point-of-sale solutions to help them attract more customers and run their operations more effectively. By leveraging the company's global relationships and scale, Groupon offers consumers incredible deals on the best stuff to eat, see, do, and buy in 48 countries.</p>
 			</div>
 		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/big_logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">京東雲</h3>
+			</header>
 			<div class="article">
-			<img src="images/sponsor/big_logo.png" alt="">
-				京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求，京東雲提供圍繞電商應用全生命週期的雲服務，構建電商雲平台，培育電商應用生態，對接更多的電商資源，大家按統一標準提供開放接口，與廣大商家、用戶、ISV和應用開發者，共同服務於賣家和買家用戶，共同培育電商應用生態。
+				<p>京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求，京東雲提供圍繞電商應用全生命週期的雲服務，構建電商雲平台，培育電商應用生態，對接更多的電商資源，大家按統一標準提供開放接口，與廣大商家、用戶、ISV和應用開發者，共同服務於賣家和買家用戶，共同培育電商應用生態。</p>
 			</div>
 		</section>
 	</div>
 
-	<div class="sponsor-gold">
+
+	
+	<div class="sponsor-gold bg-rotate section">
 		<h2>黃金聖鬥士</h2>
 		<section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">京東雲</h3>
+			</header>
 			<div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+				<p>Groupon is a global leader in local commerce.</p>
 			</div>
 		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/big_logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">京東雲</h3>
+			</header>
 			<div class="article">
-			<img src="images/sponsor/big_logo.png" alt="">
-			京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求，京東雲提供圍繞電商應用全生命週期的雲服務，構建電商雲平台，培育電商應用生態，對接更多的電商資源，大家按統一標準提供開放接口，與廣大商家、用戶、ISV和應用開發者，共同服務於賣家和買家用戶，共同培育電商應用生態。
+				<p>京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求，京東雲提供圍繞電商應用全生命週期的雲服務，構建電商雲平台，培育電商應用生態，對接更多的電商資源，大家按統一標準提供開放接口，與廣大商家、用戶、ISV和應用開發者，共同服務於賣家和買家用戶，共同培育電商應用生態。</p>
 			</div>
 		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Groupon</h3>
+			</header>
 			<div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce, making it easy for people around the world to search and discover great businesses at unbeatable prices. Groupon is reinventing the traditional small business world by providing merchants with a suite of products and services.
+				<p>Groupon is a global leader in local commerce, making it easy for people around the world to search and discover great businesses at unbeatable prices. Groupon is reinventing the traditional small business world by providing merchants with a suite of products and services.</p>
 			</div>
 		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Groupon</h3>
+			</header>
 			<div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+				<p>Groupon is a global leader in local commerce.</p>
 			</div>
 		</section>
 	</div>
 
-	<div class="sponsor-silver">
+	<div class="sponsor-silver bg-rotate section">
 		<h2>白銀聖鬥士</h2>
-		<section><div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+		<section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github Github</h3>
+			</header>
+			<div class="article">
+			<p>Groupon is a global leader in local commerce.</p>
 			</div>
-		</section><section><div class="article">
-			<img src="images/sponsor/big_logo.png" alt="">
-			京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求。
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/big_logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Groupon</h3>
+			</header>
+			<div class="article">
+			
+				<p>京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求。</p>
 			</div>
-		</section><section><div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/big_logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Groupon</h3>
+			</header>
+			<div class="article">
+			
+				<p>京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求。</p>
 			</div>
-		</section><section><div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/big_logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Groupon</h3>
+			</header>
+			<div class="article">
+			
+				<p>京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求。</p>
 			</div>
 		</section>
 	</div>
 
 	<div class="sponsor-bronze">
 		<h2>青銅聖鬥士</h2>
-		<section><div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+		<section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github</h3>
+			</header>
+			<div class="article">
+				
+				<p>Groupon is a global leader in local commerce.</p>
 			</div>
-		</section><section><div class="article">
-			<img src="images/sponsor/big_logo.png" alt="">
-			京東雲是京東電商開放生態的雲信息平台。為了更好的滿足賣家和買家的電商應用和IT服務需求。
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github</h3>
+			</header>
+			<div class="article">
+				
+				<p>Groupon is a global leader in local commerce.</p>
 			</div>
-		</section><section><div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github</h3>
+			</header>
+			<div class="article">
+				
+				<p>Groupon is a global leader in local commerce.</p>
 			</div>
-		</section><section><div class="article">
-			<img src="images/sponsor/github-logo.png" alt="">
-			Groupon is a global leader in local commerce.
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github</h3>
+			</header>
+			<div class="article">
+				
+				<p>Groupon is a global leader in local commerce.</p>
+			</div>
+		</section><section>
+			<header class="sponsor-header">
+				<div class="sponsor-img">
+					<img src="images/sponsor/github-logo.png" alt="">
+				</div>
+				<h3 class="sponsor-title">Github</h3>
+			</header>
+			<div class="article">
+				
+				<p>Groupon is a global leader in local commerce.</p>
 			</div>
 		</section>
 	</div>
 
 	<div class="sponsor-media">
 		<h2>聖鬥士</h2>
-		<section><div class="article">
+		<section>
 			<img src="images/sponsor/github-logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+			
+		</section><section>
 			<img src="images/sponsor/big_logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+
+		</section><section>
 			<img src="images/sponsor/github-logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+
+		</section><section>
 			<img src="images/sponsor/github-logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+
+		</section><section>
 			<img src="images/sponsor/github-logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+
+		</section><section>
 			<img src="images/sponsor/big_logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+
+		</section><section>
 			<img src="images/sponsor/github-logo.png" alt="">
-			</div>
-		</section><section><div class="article">
+
+		</section><section>
 			<img src="images/sponsor/github-logo.png" alt="">
-			</div>
+
 		</section>
 	</div>
 
 		
 </article>
-			<!-- layout end -->
-			<div class="footer-line"></div>
-		</div>
+		<!-- layout end -->
+		<div class="footer-line"></div>
 	</div>
-	</div>
-	</div>
-</div>
 
-<a href="#" class="scroll-top">
-	<div class="icon-arrow-up42"></div>
-</a>
+	<footer class="footer">
+	<div class="footer-content container">Copyright © 2014 Mobile Open Platform Conference. Designed by KSDG, CocoaHeads Kaohsiung, MOSUT, KIMU, KaLUG
+	</div>
+</footer>
+
+
+
+
+<div href="#" class="scroll-top">
+	<a href="#" class="square-btn scroll-top-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+</div>
 </body>
 </html>

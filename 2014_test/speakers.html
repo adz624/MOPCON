@@ -5,7 +5,7 @@
 	<title>Mopconf</title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/icomoon.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<title>行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference</title>
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:title">
 	<meta content="http://mopcon.org/2014" property="og:url">
@@ -14,18 +14,23 @@
 	<meta content="website" property="og:type">
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:site_name">
 
-	<script src="js/min/all.min.js"></script>
+	<script src="js_develop/jquery.min.js"></script>
+	<script src="js_develop/all.js"></script>
+
 	<!--[if lt IE 9]>
 	    <script type="text/javascript" src="js/html5shiv.js"></script>
 	    <script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-<div class="perspective">
-	<menu class="main-menu mobile">
-	<a href="/" class="logo"></a>
+
+	<menu class="main-menu">
+	<div class="container">
+		
+		
+	<a href="/" class="logo desktop-only"></a>
 	<ul>
-		<li class="menu-link"><a href="index.html"><span>首頁</span></a></li>	
+		<li class="menu-link"><a href="index.html" class="active"><span>首頁</span></a></li>	
 		<li class="menu-link"><a href="news.html"><span>公告</span></a></li>	
 		<li class="menu-link"><a href="session.html"><span>議程</span></a></li>
 		<li class="menu-link"><a href="sponsor.html"><span>贊助</span></a></li>
@@ -36,13 +41,26 @@
 		<li class="menu-link"><a href="community.html"><span>社群</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>其他</span></a></li> -->
 	</ul>
+
+	<div class="mobile-menu mobile-only">
+        <a class="square-btn showmenu mobile-only">
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        </a>
+        <h1 class="mobile-only">MOPCON 2014</h1>
+    </div>
+
+
+		
+
+
+	</div>
 </menu>
-	<div class="block"></div>
-	<div class="relative"><div class="absolute">
-	<div class="main">
-		<div class="container">
-			<!-- layout start -->
-			
+	
+	<div class="container">
+		<!-- layout start -->
+		
 <article class="content love-☺">
 	<div class="page-title">
 		<a class="showmenu">
@@ -210,16 +228,24 @@
 
 		
 </article>
-			<!-- layout end -->
-			<div class="footer-line"></div>
-		</div>
+		<!-- layout end -->
+		<div class="footer-line"></div>
 	</div>
-	</div>
-	</div>
-</div>
 
-<a href="#" class="scroll-top">
-	<div class="icon-arrow-up42"></div>
-</a>
+	<footer class="footer">
+	<div class="footer-content container">Copyright © 2014 Mobile Open Platform Conference. Designed by KSDG, CocoaHeads Kaohsiung, MOSUT, KIMU, KaLUG
+	</div>
+</footer>
+
+
+
+
+<div href="#" class="scroll-top">
+	<a href="#" class="square-btn scroll-top-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+</div>
 </body>
 </html>
