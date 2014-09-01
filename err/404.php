@@ -16,57 +16,84 @@
 ?>
 <html lang="zh-TW">
   <head>
-    <?php include_once("../2013/header.php");?>
+    <meta charset="utf-8">
+    <title>行動科技應用開發者年會 | MOPCON | Mobile / Open / Platform Conference</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="行動科技應用開發者年會 | MOPCON | Mobile / Open / Platform Conference" property="og:title">
+    <meta content="http://mopcon.org" property="og:url">
+    <meta content="Mobile Open Platform Conference (MOPCON) 行動科技應用開發者年會 是全台第一個針對移動式裝置的技術研討會，希望大家共同來參與。" property="og:description">
+    <meta content="http://mopcon.org/img/snapshot.jpg" property="og:image">
+    <meta content="website" property="og:type">
+    <meta content="行動科技應用開發者年會 | MOPCON | Mobile / Open / Platform Conference" property="og:site_name">
+    <meta name="description" content="行動科技應用開發者年會 | MOPCON | Mobile / Open / Platform Conference">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!-- <style type="text/css"> @font-face { font-family: "ct10"; src: url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=eot); src: local(" "),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=ttf) format("truetype"),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=woff) format("woff");} #ct10 { font-family: "ct10"; }.ct10 { font-family: "ct10"; }</style> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <style>
-    html{
-      background-color:white;
+    html, body{
+      background-color:#e8e5cf;
+      margin:0;
+      padding:0;
+      color:#555;
+      line-height: 1.7em;
     }
-    body {
-      background-color:white;
-      text-align:center;
-      color:#444;
-    }
-    .content {
-      text-align:left;
-      width:800px;
-      margin:3em auto;
-    }
-    h1 {
-      font-size:180px;
-      line-height:1em;
+
+    #top{
+      background-color: white;
+      padding:3em 1em;
       margin:0;
     }
-    .text {
-      margin:1em;
-      width:350px;
-      text-align:center;
+
+    #bottom{
+      padding:3em 1em;
+      margin:0;
+      text-align: center;
     }
-    .text, #mascut {
-      float:left;
+
+    .wrapper{
+      margin:0 auto;
+      max-width: 70%;
     }
-    .box {
-      line-height:1.5em;
-      background-color:#eee;
-      padding:3px 5px;
-      border-radius:8px;
-      box-shadow:-3px 3px 3px #bbb inset, 1px -1px 1px #ddd inset;
-      text-shadow:1px 1px #fff;
-      text-wrap: normal;
-      word-wrap:break-word;
+
+    #mascut{
+      margin:0 auto;
+      max-width: 100%;
+    }
+
+    .f{
+      color: #999;
+    }
+
+    a:link, a:visited{
+      color:#ff5500;
     }
     </style>
   </head>
   <body>
-    <div class="content">
-      <div class="text">
-        <h1>404</h1>
-        <div class="box">
-        <p>找不到您想看的網頁<br><a rel="nofollow" href="<? echo $full_url ?>"><? echo $full_url ?></a>
-        <p>要不要到<a href="/"> MOPCON 首頁</a>去看看呢？</p>
-
-        </div>
+    <div id="top">
+      <div class="wrapper">
+        <img id="mascut" src="/err/mascot2.png">
       </div>
-      <img id="mascut" src="/err/mascot.jpg">
     </div>
+    <div id="bottom">
+      <div class="wrapper">
+        <p>你想看的網頁在小女孩的第 404 個夢中，但<a href="/">首頁</a>就在眼前
+        <p class="f">Mobile / Open / Platform Conference
+      </div>
+    </div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34651129-1']);
+  _gaq.push(['_setDomainName', 'mopcon.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
   </body>
 </html>
