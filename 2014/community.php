@@ -83,6 +83,43 @@ Kaohsiung Linux User Group (KaLUG) 是由一群熱愛 open source / free softwar
 平日討論的主題有 Linux, Debian, Ubuntu, Vim, Emacs, Git, Python, shell script, Drupal, OpenStreetMap, Security ... 等。
 KALUG_MD
     ],
+    'kf2e' => [
+        'name'    => '高雄前端社群',
+        'sname'   => '前端社群',
+        'img'     => 'images/community/kf2e.png',
+        'links'   => [
+            ['icon' => 'icon-facebook42', 'url' => 'https://www.facebook.com/groups/358503154261390/'],
+            ['icon' => 'icon-earth2', 'url' => 'http://akdg.kktix.cc/'],
+        ],
+        'desc_md' => <<<KF2E_MD
+高雄前端社群於2013年3月31日創立，
+每月固定舉辦前端主題聚會，歡迎網頁設計師們一塊前來交流
+KF2E_MD
+    ],
+    'mgirl' => [
+        'name'    => 'Mobile Girls',
+        'sname'   => 'Mobile Girls',
+        'img'     => 'images/community/mobile_girls.png',
+        'links'   => [
+            ['icon' => 'icon-facebook42', 'url' => 'https://www.facebook.com/mobilegirlsfans'],
+            ['icon' => 'icon-earth2', 'url' => 'http://mobile-girls.kktix.cc/'],
+        ],
+        'desc_md' => <<<MGIRLS_MD
+Mobile Girls 是由一群熱愛 iOS 與 Android 朋友所成立的社群，宗旨是希望能夠推廣 iOS/Android 程式語言給女性初學者，讓想了解 iOS 和 Android 的女性能有一個機會學習。我們歡迎沒有電腦程式設計基礎的女性朋友來參加，如果您對於 iOS/Android 的任何新奇有趣的 App 設計、原理及應用感到興趣，您將可以在這個環境找到同好，並藉由業界專業教練的指導，在小組內共同合作打造它，實現您在 App 世界的專屬夢想！
+MGIRLS_MD
+    ],
+    'akdg' => [
+        'name'    => 'Android 高雄開發者社群',
+        'sname'   => 'AKDG',
+        'img'     => 'images/community/akdg.png',
+        'links'   => [
+            ['icon' => 'icon-facebook42', 'url' => 'https://www.facebook.com/groups/1416205511963346/'],
+            ['icon' => 'icon-earth2', 'url' => 'http://akdg.kktix.cc/'],
+        ],
+        'desc_md' => <<<AKDG_MD
+Android Kaohsiung Developer Group 從事 Android App、Embedded 及 Design 一起交流的園地，2014 首次聚會活動，目前活動活動時間為每月第三週的禮拜四 meet-up，歡迎對 Android 有興趣的朋友可以參與聚會。
+AKDG_MD
+    ],
 ];
 
 // 輸出畫面
