@@ -75,7 +75,7 @@
   <body>
     <div id="top">
       <div class="wrapper">
-        <img id="mascut" src="/err/mascot2.png">
+        <img id="mascut" src="/err/mascot2.jpg">
       </div>
     </div>
     <div id="bottom">
