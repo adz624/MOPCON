@@ -353,7 +353,7 @@ html, body {
 .mobile-only {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .mobile-only {
     display: none;
   }
@@ -362,7 +362,7 @@ html, body {
 .desktop-only {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .desktop-only {
     display: block;
   }
@@ -717,6 +717,7 @@ a.btn-selected {
   position: fixed;
   right: 1em;
   bottom: 1em;
+  z-index: 100;
 }
 
 .scroll-top-btn {
@@ -863,7 +864,7 @@ a.btn-selected {
   float: left;
   content: "\25CB";
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .main-menu ul a:hover {
     background-color: #0f222b;
   }
@@ -877,7 +878,7 @@ a.btn-selected {
     background-color: #e1c03c;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .main-menu ul {
     max-height: 500px;
     overflow: auto;
