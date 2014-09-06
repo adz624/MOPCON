@@ -1994,16 +1994,13 @@ a.btn-selected {
   margin-bottom: 1.5em;
 }
 .⃠-black-box .sponsor-platinum img {
-  width: 50%;
-  max-height: 192px;
+  max-height: 240px;
 }
 .⃠-black-box .sponsor-gold img {
-  width: 50%;
-  max-height: 144px;
+  max-height: 192px;
 }
 .⃠-black-box .sponsor-silver img {
-  width: 50%;
-  max-height: 96px;
+  max-height: 144px;
 }
 @media (min-width: 960px) {
   .⃠-black-box .sponsor-silver section {
@@ -2011,8 +2008,7 @@ a.btn-selected {
   }
 }
 .⃠-black-box .sponsor-bronze img {
-  width: 50%;
-  max-height: 72px;
+  max-height: 96px;
 }
 @media (min-width: 768px) {
   .⃠-black-box .sponsor-bronze section {
@@ -2025,7 +2021,6 @@ a.btn-selected {
   }
 }
 .⃠-black-box .sponsor-media img {
-  width: 50%;
   max-height: 48px;
 }
 @media (min-width: 960px) {
