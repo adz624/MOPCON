@@ -74,8 +74,9 @@ function parseSessionSpreadsheet($feed_str){
         'C' => 'room',
         'D' => 'title',
         'E' => 'desc',
-        'F' => 'tags',
-        'G' => 'speakerId',
+        'F' => 'tag',
+        'G' => 'tagColor',
+        'H' => 'speakerId',
     );
 
     $session_data = array();
@@ -93,15 +94,7 @@ function parseSessionSpreadsheet($feed_str){
         // 檢查是哪種類型的資料
         $field_name = $field_names[$c];
 
-        // 資料後處理
-        if ($field_name === 'tags') {
-            // tag 是逗號分隔
-            $content = explode(',', $content);
-            foreach ($content as $key => $val) {
-                $content[$key] = trim($val);
-            }
-        }
-
+        // 組合資料
         $r -= 2; // 議程資料從第二行開始，改成 zero based
         $session_data[$r][$field_name] = $content;
     }
