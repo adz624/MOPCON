@@ -15,14 +15,14 @@ $tpl->content =<<<RAW_HTML
   <div class="pc-banner">
         
         <div class="container">
-            <div class="index-logo"></div>
-            <div class="index-logo-line"></div>
             <div class="sqare"></div>
             <div class="sns">
                 <a href="https://www.facebook.com/mopcon/" alt="MOPCON Facebook 粉絲團" title="MOPCON Facebook 粉絲團"><i class="icon-facebook32"></i></a>
                 <a href="https://google.com/+MopconOrg" alt="MOPCON @ Google+" title="MOPCON @ Google+"><i class="icon-googleplus32"></i></a>
                 <a href="https://twitter.com/mopcon" alt="MOPCON @ Twitter" title="MOPCON @ Twitter"><i class="icon-twitter22"></i></a>
             </div>
+            <div class="index-logo"></div>
+            <div class="index-logo-line"></div>
             <div class="slogan">
                 <span class="l-text">堅持，在濁水溪以南</span>
                 <span class="date l-text">2014.10. <i class="date-text">25 / 26</i></span>
@@ -106,6 +106,7 @@ $tpl->content =<<<RAW_HTML
                     <p>• 地點：高雄國際會議中心</p>
                     <p>• 主題：MOPCON (Mobile Open Platform Conference)2013 以 "I code, I spread, I connect" 作為主要精神意涵，議程從行動開發技術議程出發，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</p>
                 </article>
+                <a href="http://mopcon.kktix.cc/events/mopcon2014-cfp" class="btn btn-green mtm" target="_blank">徵稿連結</a>
             </div>
         </div>   
     </section>
