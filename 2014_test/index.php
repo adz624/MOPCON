@@ -35,12 +35,6 @@ $tpl->content =<<<RAW_HTML
         </div>
 
     </div>
-    <div class="mobile-banner">
-        <div class="mobile-banner-img">
-            <img src="images/index-banner-retina" class="mobile-banner-img" alt="">
-        </div>
-        <time>2014/10/25~2014/10/26</time>
-    </div>
 
     <section class="section bg-rotate row">
 

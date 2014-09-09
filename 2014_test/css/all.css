@@ -1012,6 +1012,7 @@ a.btn-selected {
 }
 .pc-banner .index-logo {
   margin: 0 auto;
+  max-width: 100%;
   z-index: -1;
   background-image: url('../images/mopcon_mobile_logo.png?1410264343');
   background-image: none, url('../images/mopcon_mobile_logo.svg?1410264343');
@@ -1168,6 +1169,9 @@ a.btn-selected {
 .section-info {
   background-color: #0f222b;
   padding: 1em;
+}
+.section-info .btn {
+  color: white;
 }
 
 .section-info-img-wp {
