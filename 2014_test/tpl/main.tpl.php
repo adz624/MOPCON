@@ -70,7 +70,10 @@
 	<!-- layout end -->
 	</div>
 </div>
-
+<footer class="footer">
+	<div class="footer-content container">Copyright © 2014 Mobile Open Platform Conference. Designed by KSDG, CocoaHeads Kaohsiung, MOSUT, KIMU, KaLUG
+	</div>
+</footer>
 
 
 <div href="#" class="scroll-top">

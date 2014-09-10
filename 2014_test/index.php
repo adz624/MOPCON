@@ -46,7 +46,7 @@ $tpl->content =<<<RAW_HTML
             <h2>方向</h2>
             <article class="article">
                 
-                <p>今年議程以營運、開發、數位內容等三大行動應用實務議題為主軸，邀請到Ptt創辦人/Microsoft Research的杜奕瑾、iKala執行長程世嘉、遠傳電信投資子公司Hiiir副總Neil Lee等台灣業界中堅擔任講師，更有 AWS Markku Lepisto 及 Joe Ziegler 兩位外籍講者參與盛會。</p>
+                <p>今年議程除了涵蓋以往 App開發、雲端服務、數位內容、創新營運四大主軸外，WWDC、Google I/O 兩大年度盛事聚焦的海量資料、穿戴式裝置、運動健康照護、家庭自動化、TV / 高畫質內容、簡化設計和開發流程等議題也都是重要行動應用的脈絡，豪華的講師陣容是 MOPCON 重要傳統，敬請期待完整議程公布！</p>
             </article>
         </div>
 
@@ -65,7 +65,7 @@ $tpl->content =<<<RAW_HTML
         <div class="col-6">
             <h2>精神</h2>
             <article class="article">
-                <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢，並以軟體科技從業人員出發，定調本年度精神意涵為 "I code, I spread, I connect"。</p>
+                <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢，並以軟體科技從業人員出發，定調本年會精神意涵為 "I code, I spread, I connect"。</p>
                 <p>
                 MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時 App便利屋、APPGuru、Punapp等媒體報導給予本屆活動正面評價，亦獲得聯合報、經濟日報、自立晚報、聯合新聞網主流媒體報導</p>
             </article>
@@ -96,11 +96,11 @@ $tpl->content =<<<RAW_HTML
             <div class="col-6">
                 <h2>報名資訊</h2>
                 <article class="article">
-                    <p>• 時間：2013/10/26-27（六日兩天）</p>
-                    <p>• 地點：高雄國際會議中心</p>
-                    <p>• 主題：MOPCON (Mobile Open Platform Conference)2013 以 "I code, I spread, I connect" 作為主要精神意涵，議程從行動開發技術議程出發，引申到行動服務營運，更將涵蓋數位內容之行動應用發展。議程規劃以「開發、營運、數位內容」做為主軸，以真實運作的應用案例，向與會者做第一手的探討</p>
+                    <p>• 時間：2014/10/25-26（六日兩天）</p>
+                    <p>• 地點：高雄國際會議中心（ICCK）</p>
+                    <p>• 主題：App開發、雲端服務、數位內容、創新營運、海量資料、穿戴式裝置、運動健康照護、家庭自動化、TV / 高畫質內容、簡化設計和開發流程等最新行動應用趨勢 & 最夯的行動科技議題盡在 MOPCON，請密切注意<a href='https://www.facebook.com/mopcon' target="_blank">粉絲群</a>及官網的報名資訊！</p>
                 </article>
-                <a href="http://mopcon.kktix.cc/events/mopcon2014-cfp" class="btn btn-green mtm" target="_blank">徵稿連結</a>
+                <a href="http://mopcon.kktix.cc/events/mopcon2014-cfp" class="btn btn-green mtm" target="_blank">目前開放講者投稿</a>
             </div>
         </div>   
     </section>
