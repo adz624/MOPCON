@@ -67,7 +67,15 @@ $tpl->content =<<<RAW_HTML
             <article class="article">
                 <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢，並以軟體科技從業人員出發，定調本年會精神意涵為 "I code, I spread, I connect"。</p>
                 <p>
-                MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時 App便利屋、APPGuru、Punapp等媒體報導給予本屆活動正面評價，亦獲得聯合報、經濟日報、自立晚報、聯合新聞網主流媒體報導</p>
+                MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時
+                <a href="http://www.appshooting.com.tw/2013/10/mopcon-2013/" target="_blank">App便利屋</a>、
+                <a href="http://www.appguru.com.tw/appguru/blog/20507/ltk-south-insisted-on-holding-size-mopcon-developers" target="_blank">APPGuru</a>、  
+                <a href="http://punapp.com/news/page/13216" target="_blank">Punapp</a>等媒體報導給予本屆活動正面評價，亦獲得  
+                <a href="http://mopcon.org/2013/img/udn.jpg" target="_blank">聯合報</a>、 
+                <a href="http://mopcon.org/2013/img/edn.jpg" target="_blank">經濟日報</a>、 
+                <a href="http://www.idn.com.tw/news/news_content.php?catid=2&catsid=4&catdid=0&artid=20131027abcd009" target="_blank">自立晚報</a>、
+                <a href="http://edn.udn.com/news/print.jsp?aid=674265&cid=47" target="_blank">聯合新聞網</a>       
+                 主流媒體報導</p>
             </article>
         </div>
         <div class="col-6">
