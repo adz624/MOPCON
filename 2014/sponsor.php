@@ -8,8 +8,26 @@ $tpl = new Savant3($config);
 
 $tpl->title = "徵求贊助商";
 $tpl->mainClass = ' ⃠-black-box';
+// TonyStark
+//  - ASUSCloud
+//  - Microsoft
 
+// Hacker
+//  - Yahoo
+//  - KKBOX
+//  - IBM
+
+// Geek
+//  - 新蛋
+//  - GitCafe
+
+// Developer
+
+// Coder
+//   - 乃師
+//   - UserXper 悠識
 $tpl->hacker = [
+
     [
         'name' => 'Amazon Web Service',
         'img'  => 'aws.png',
@@ -32,6 +50,37 @@ $tpl->hacker = [
 ];
 
 $tpl->other = [
+    [
+        // shawn
+        //其實是 developer
+        'name' => 'Mobilogic',
+        'img'  => 'mobilogics.jpg',
+        'url'  => 'http://www.mobilogic.com/',
+        'desc' => '一群同樣受到Apple產品創新理念而組成的團隊，Mobilogics希望能盡自身棉薄之力，為台灣科技產業挖掘出新的方向。
+台灣第一家持有蘋果MFi授權的條碼產品開發公司，Mobilogics團隊秉持這份放眼未來的精神，希望實踐科技＝生活的理想。
+',
+    ],
+    [
+        // shawn
+        //其實是 developer
+        'name' => '春水堂 Hami軟體商店',
+        'img'  => 'hamiapps.png',
+        'url'  => 'http://hamiweb.emome.net/pages/content/1/5',
+        'desc' => 'Hami 軟體商店
+– 最獨特:精選獨家APP(快打旋風IV、Cytus 、Deemo)。
+– 最優惠:眾多熱門遊戲用戶獨享優惠與儲值禮包、特價/限免優惠。
+– 最好康:指定活動下載送Groupon購物金或便利商店購物金等。
+– 最方便:支援門號、FB帳號(免註冊),付款選擇多元。
+– 最貼心:APP管家功能、同時支援5台裝置。
+– 最安心:綠色安全標章認證機制,遠離病毒威脅。',
+//        'desc' => 'Hami Apps
+//– Exclusiveness:Most exclusive Apps in Hami Apps (e.g. Street Fighter IV, Cytus, Deemo).
+//– Discount:Lots of discounts, top-up gifts, and free gifts of popular games for Hami Apps users only.
+//– Promotions:Free coupon, holy gems, and points for downloading or top-up every month. 
+//– Convenience:Supports directly login through CHT mobile phone number and FB account. Multiple payment methods. 
+//– Thoughtful service:APP Housekeeper function, Supports 5 devices simultaneously.
+//– Safety:Green safety identification stamp, keeping away from virus threatens.'
+    ],
     [
         //其實是 developer
         'name' => 'Etu',
@@ -61,11 +110,36 @@ $tpl->other = [
         'desc' => '凌誠科技成立於2006年4月，主要從事應用軟體相關技術的研發及服務，專注於「精緻農業」、「資訊平台」及「自動控制」等領域發展，不斷深化軟體開發與專業服務能量，持續貫徹CMMI國際軟體品質政策，為客戶提供最佳的顧問諮詢、完善的解決方案以及快速的技術支援。',
     ],
     [
+        // shawn
+        // 其實是 coder
+        'name' => 'Mokoversity',
+        'img'  => 'mokoversity.jpg',
+        'url'  => 'https://www.mokoversity.com/',
+        'desc' => 'Mokoversity，最早是 Moko365 所開發的開放式線上課程平臺（MOOC），後與 Taipei Angels（台安傑天使投資）合作，目標是打造一個追求開放創新精神及引導創業的新型態學校。Mokoversity 來自 Mobile Communication University 的概念。University 源自 universitas（拉丁文），原意是：community of teachers and scholars。Mokoversity 認為，在這個創意經濟的網路時代，「每個人都要學程式設計」，目前推出多門程式設計課程。',
+    ],
+    [
         // 其實是 coder
         'name' => '找狗網',
         'img'  => 'finddog.png',
         'url'  => 'http://www.finddog.net/zh-tw/index.html',
         'desc' => '找狗網透過手機拍照影像辨識、文字搜尋、地理時間資訊，運用雲端模糊類神經智慧型辨識綜合搜尋系統，結合軟硬整合穿戴式裝置及網路分享機制，達成走失狗狗協尋和流浪狗地圖建立、寵物急難互助社群交流，建置出寵物健康數位化管理的創新服務。',
+    ],
+    [
+        // shawn
+        // 其實是 特別贊助
+        'name' => 'OSSF',
+        'img'  => 'ossf.jpg',
+        'url'  => 'http://www.openfoundry.org/',
+        'desc' => '順應國內外自由軟體應用日益普及的潮流，中 央研究院資訊科學研究所於民國92年接受經濟部工業局「自由軟體產業推動計畫」的補助，成立自由軟體鑄造場 (Open Source Software Foundry，以下簡稱 OSSF )，以擴大自由軟體在臺灣的應用幅度與研發能量。目前經費的來源，部分來自行政院國家科學委員會的補助，部分則來自於中央研究院資訊科技創新研究中心。
+OSSF 重點任務為培植本土自由軟體社群與人才，實際工作有：
+(一)推廣自由軟體概念
+(二)集結國內自由軟體社群
+(三)促進臺灣人才培育與產業合作
+(四)與國際趨勢交流接軌
+',
+//The Open Source Software Foundry (OSSF) project was launched by the Institute of Information Science at Academia Sinica in 2003. Initially, it was sponsored by the Industrial Development Bureau of the Ministry of Economic Affairs as a part of the “Open Source Software Initiative” to promote the use and development of open source software in Taiwan. Since 2007, the project has been funded by the National Science Council as well as the Research Center for Information Technology Innovation (CITI) at Academia Sinica.
+//To promote the development and use of open source software, OSSF provides a forum that facilitates interaction and collaboration between open source software developers, and serves as a bridge to link developers with industry and academia.
+
     ],
 ];
 // 輸出畫面
