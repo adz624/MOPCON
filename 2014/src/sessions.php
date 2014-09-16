@@ -83,7 +83,7 @@ function parseSessionSpreadsheet($feed_str){
     foreach ($spreadsheet_data['entry'] as $cell) {
         $cell_id = $cell['title'];
         $c = $cell_id[0]; // column
-        $r = $cell_id[1]; // row
+        $r = substr($cell_id, 1); // row
         $content = trim($cell['content']);
 
         // 第一列是說明，跳過
