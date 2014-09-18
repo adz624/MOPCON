@@ -34,6 +34,9 @@ foreach ($sessions as $session) {
         $session['speaker']['pic'] = is_file('images/speakers/' . $session['speakerId'])
             ? $session['speakerId']
             : $session['speaker']['pic'];
+        $session['speaker']['name'] = (is_file('images/speakers/' . $session['speakerId']) && $session['speakerId'][0] != '.')
+            ? substr($session['speakerId'], 6, -4)
+            : $session['speaker']['name'];
         // END: dirty work, 不要打我...
     } else {
         $session['speaker'] = $speakers[$session['speakerId']];
