@@ -109,7 +109,7 @@ $tpl->content =<<<RAW_HTML
                     <p>• 主題：App開發、雲端服務、數位內容、創新營運、海量資料、穿戴式裝置、運動健康照護、家庭自動化、TV / 高畫質內容、簡化設計和開發流程等最新行動應用趨勢 & 最夯的行動科技議題盡在 MOPCON，請密切注意<a href='https://www.facebook.com/mopcon' target="_blank">粉絲群</a>及官網的報名資訊！</p>
                 </article>
                 <a href="http://mopcon.kktix.cc/events/mopcon2014-cfp" class="btn btn-green mtm" target="_blank">目前開放講者投稿</a>
-            </div>
+            </div>粉絲
         </div>   
     </section>
 

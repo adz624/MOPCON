@@ -3,13 +3,17 @@ include __DIR__.'/../src/Parsedown.php';
 $parsedown = new Parsedown();
 
 ?>
-
-<div style="border:1px solid #026080; background-color:rgba(0,0,0,0.1); padding:1em; text-align:center;margin-bottom:1.5em;">
-目前議程尚在準備中，顯示資料並非最終結果。不便之處敬請多多包涵
-</div>
-
+<script>
+    $(function(){
+    $('.btn:contains("技術")').addClass('btn-pink');
+    $('.btn:contains("營運")').addClass('btn-darkgreen');
+    $('.btn:contains("活動")').addClass('btn-red');
+})
+</script>
 <?php foreach ($this->sessions as $date => $day_sessions):?>
-<h2><?=htmlspecialchars($date)?></h2>
+<div style="border:1px solid #026080; background-color:rgba(0,0,0,0.1); padding:1em; text-align:center;margin-bottom:1.5em;">
+<?=htmlspecialchars($date)?>
+</div>
 <?php foreach ($day_sessions as $time => $time_sessions):?>
 <time><?=htmlspecialchars($time)?></time>
 <div class="row">
@@ -20,7 +24,7 @@ $parsedown = new Parsedown();
     <article class="<?=$article_style?>" href="#inline_content">
         <div class="place">
 <?php if (isset($session['room'])): ?>
-            <span class="btn btn-primary"><?=htmlspecialchars($session['room'])?></span>
+            <span class="btn btn-blue"><?=htmlspecialchars($session['room'])?></span>
 <?php endif;?>
 <?php if (isset($session['tag'])): ?>
             <span class="btn" style="background-color:<?=htmlspecialchars($session['tagColor'])?>"><?=htmlspecialchars($session['tag'])?></span>
