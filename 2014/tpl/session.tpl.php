@@ -4,6 +4,10 @@ $parsedown = new Parsedown();
 
 ?>
 
+<div style="border:1px solid #026080; background-color:rgba(0,0,0,0.1); padding:1em; text-align:center;margin-bottom:1.5em;">
+目前議程尚在準備中，顯示資料並非最終結果。不便之處敬請多多包涵
+</div>
+
 <?php foreach ($this->sessions as $date => $day_sessions):?>
 <h2><?=htmlspecialchars($date)?></h2>
 <?php foreach ($day_sessions as $time => $time_sessions):?>
