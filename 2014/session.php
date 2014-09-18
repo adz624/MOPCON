@@ -32,7 +32,7 @@ foreach ($sessions as $session) {
         $session['speaker'] = $default_speaker;
         // BEGIN: dirty work, 不要打我...
         is_file('images/speakers/'.$session['speakerId'].'.jpg')
-            ? $session['speakerId'].'.jpg'
+            ? $session['speakerId']
             : $session['speaker']['pic'];
         // END: dirty work, 不要打我...
     } else {
