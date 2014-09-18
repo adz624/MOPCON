@@ -7,7 +7,6 @@ $parsedown = new Parsedown();
     $(function(){
     $('.btn:contains("技術")').addClass('btn-pink');
     $('.btn:contains("營運")').addClass('btn-darkgreen');
-    $('.btn:contains("活動")').addClass('btn-red');
 })
 </script>
 <?php foreach ($this->sessions as $date => $day_sessions):?>

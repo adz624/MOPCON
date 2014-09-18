@@ -1637,12 +1637,9 @@ a.btn-selected {
 }
 .talk-☴ figure img {
   height: 86px;
+  width: 86px;
   padding-top: 5px;
   display: block;
-  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  -moz-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  -ms-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
 }
 .talk-☴ h2 {
   font-size: 1em;
