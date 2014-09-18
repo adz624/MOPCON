@@ -18,18 +18,20 @@
 	<meta content="http://mopcon.org/img/snapshot-2014-v2.png" property="og:image">
 	<meta content="website" property="og:type">
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:site_name">
-        <script src="js/min/all.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/all.js"></script>
 	<!--[if lt IE 9]>
 	    <script type="text/javascript" src="js/html5shiv.js"></script>
 	    <script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-<div class="perspective">
-	<menu class="main-menu mobile">
-	<a href="/" class="logo"></a>
-    <ul>
-                <li class="menu-link"><a href="index.php"><span>首頁</span></a></li>
+
+<menu class="main-menu">
+	<div class="container">
+	<a href="/" class="logo desktop-only"></a>
+	<ul>
+		<li class="menu-link"><a href="index.php"><span>首頁</span></a></li>
 		<li class="menu-link"><a href="news.php"><span>公告</span></a></li>
 		<li class="menu-link"><a href="cfp.php"><span>徵稿</span></a></li>
 		<!-- <li class="menu-link"><a href="session.php"><span>議程</span></a></li> -->
@@ -42,32 +44,46 @@
 		<li class="menu-link"><a href="/history.html"><span>歷年</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>其他</span></a></li> -->
 	</ul>
+
+	<div class="mobile-menu mobile-only">
+        <a class="square-btn showmenu mobile-only">
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        </a>
+        <h1 class="mobile-only">MOPCON 2014</h1>
+    </div>
+	</div>
 </menu>
-	<div class="block"></div>
-	<div class="relative"><div class="absolute">
-	<div class="main">
-		<div class="container">
-<!-- layout start -->
-<article class="content <?= htmlspecialchars($this->mainClass)?>">
-	<div class="page-title">
-		<a class="showmenu">
-			<i class="icon-list22"></i>
-		</a>
-		<h1><?= htmlspecialchars($this->title) ?></h1>
-	</div>
-<?=$this->content ?>
-</article>
-<!-- layout end -->
-<div class="footer-line"></div>
+
+
+
+<div class="main">
+	<div class="container">
+	<!-- layout start -->
+	<article class="content <?= htmlspecialchars($this->mainClass)?>">
+		<div class="page-title">
+			<h1><?= htmlspecialchars($this->title) ?></h1>
 		</div>
-	</div>
-	</div>
+	<?=$this->content ?>
+	</article>
+	<!-- layout end -->
 	</div>
 </div>
+<footer class="footer">
+	<div class="footer-content container">Copyright © 2014 Mobile Open Platform Conference. Designed by KSDG, CocoaHeads Kaohsiung, MOSUT, KIMU, KaLUG
+	</div>
+</footer>
 
-<a href="#" class="scroll-top">
-<div class="icon-arrow-up42"></div>
-</a>
+
+<div href="#" class="scroll-top">
+	<a href="#" class="square-btn scroll-top-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+</div>
+
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
