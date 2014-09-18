@@ -52,6 +52,18 @@ function sortSession(&$session_data){
         // 再比會議室
         $room_a = $a['room'];
         $room_b = $b['room'];
+        $order = [
+            '全部' => 0,
+            '一廳' => 1,
+            '二廳' => 2,
+            '三廳' => 3
+        ];
+
+        $ord_a = $order[$room_a] or PHP_INT_MAX;
+        $ord_b = $order[$room_b] or PHP_INT_MAX;
+        if ($ord_a !== $ord_b) {
+            return ($ord_a > $ord_b) ? $a_wins : $b_wins;
+        }
         if ($room_a !== $room_b) {
             return ($room_a > $room_b) ? $a_wins : $b_wins;
         }
