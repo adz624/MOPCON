@@ -163,5 +163,12 @@ function speakers(){
             'bio'     => '網路代號 imsardine，愛寫程式的魚，目前在 KKBOX 負責自動化測試開發工作。',
             'pic'     => 'KKBOX_jeremy.jpg',
         ],        
+        'vincent' => [
+            'name'    => 'Vincent Chen',
+            'company' => 'KKBOX',
+            'title'   => '「KKPLAY」負責人',
+            'bio'     => '「KKBOX」旗下遊戲開發團隊「KKPLAY」負責人，有10年唱片產業及10年遊戲產業經驗。',
+            'pic'     => 'KKBOX_VincentChen.jpg',
+        ],        
     ];
 }
