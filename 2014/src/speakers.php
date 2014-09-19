@@ -240,5 +240,26 @@ function speakers(){
             'bio'     => '同時具備Maker精神以及對音樂的熱情於一身，Brian堅信行動裝置對未來音樂人有著不可或缺的重要性。從來沒停止過結合音樂科技與行動裝置、開放硬體與雲端服務，做各式各樣的嘗試與開發，將成果實際帶入自己的表演活動中使用，以享受自己的實作成果為樂。在2011年起就與Positive Grid團隊合作，研發出JamUp, BIAS, Final Touch等iOS平台上的專業吉他效果與音樂音訊處理軟體，不僅取得市場上的成功，在美國iTunes Store Music App 熱門付費與利潤排行上持續名列前茅，產品也受到使用者與專業音樂媒體的一致好評，在全世界累計已超過百萬使用者。',
             'pic'     => 'generic_speaker.png',
         ],        
+        'superbil' => [
+            'name'    => 'Superbil',
+            'company' => 'Eatgo',
+            'title'   => '',
+            'bio'     => '喜愛 Cocoa 框架的熱血工程師，從事 iOS 開發三年，對於新奇事物充滿好奇心、對於 cocoa 喜歡的原因，最近也開始研究起咖啡來。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'elvismetaphor' => [
+            'name'    => '林英傑',
+            'company' => 'gamania',
+            'title'   => 'Senior Software Engineer',
+            'bio'     => 'I am a senior Android application developer at Gamania to develop mobile social apps and write unit tests and user acceptance tests to verify the quality of apps. Before working at Gamania, I was a Android application engineer to develop multimedia apps and cloud apps at HTC. I love to join the community activities to study from experienced developers. I also hope to have the opportunity to share my experience with other developers.',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'tsaikd' => [
+            'name'    => '蔡程豐 (tsaikd)',
+            'company' => '賽恩倍吉',
+            'title'   => '顧問',
+            'bio'     => 'Tsai KD，宅宅工程師，熱衷學習各種新技術，從前端到後端都稍有涉獵，除了一些常見的程式語言之外，目前較關注 Go 語言；系統方面，自從 Docker 出現後，就把 VM 當成備胎了...XD 目前待的公司主要營業項目是專利相關業務，對於專利資料的處理有幾年的經驗。',
+            'pic'     => 'generic_speaker.png',
+        ]        
     ];
 }
