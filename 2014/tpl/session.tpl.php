@@ -4,13 +4,16 @@ $parsedown = new Parsedown();
 
 ?>
 <script>
-    $(function(){
+$(function(){
     $('.btn:contains("技術")').addClass('btn-pink');
     $('.btn:contains("營運")').addClass('btn-darkgreen');
 })
 </script>
+<div style="border:1px solid #026080; background-color:rgba(0,0,0,0.1); padding:1em; text-align:center;">
+目前議程尚在調整中，顯示資料並非最終結果。不便之處敬請多多包涵
+</div>
 <?php foreach ($this->sessions as $date => $day_sessions):?>
-<div style="border:1px solid #026080; background-color:rgba(0,0,0,0.1); padding:1em; text-align:center;margin-bottom:1.5em;">
+<div style="border-bottom: 3px solid orange; padding:0.3em; text-align:center;margin:2em 0 1.5em; font-size:150%;">
 <?=htmlspecialchars($date)?>
 </div>
 <?php foreach ($day_sessions as $time => $time_sessions):?>
