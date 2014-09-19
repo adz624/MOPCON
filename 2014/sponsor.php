@@ -54,7 +54,7 @@ $tpl->developer = [
         // shawn
         //其實是 developer
         'name' => 'Mobilogic',
-        'img'  => 'mobilogics.jpg',
+        'img'  => 'mobilogics.png',
         'url'  => 'http://www.mobilogic.com/',
         'desc' => '一群同樣受到Apple產品創新理念而組成的團隊，Mobilogics希望能盡自身棉薄之力，為台灣科技產業挖掘出新的方向。
 台灣第一家持有蘋果MFi授權的條碼產品開發公司，Mobilogics團隊秉持這份放眼未來的精神，希望實踐科技＝生活的理想。
