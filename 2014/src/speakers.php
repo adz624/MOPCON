@@ -177,5 +177,26 @@ function speakers(){
             'bio'     => '一個熱愛 iOS 開發、Ruby、Linux 的開發者。 喜愛分享、寫作，以分享知識為樂。 喜歡把問題簡化，用最簡單的方式解決問題。 - 參與 CodeData 作者 iOS Dev Club 講者 Cocoahead Taichung 講者 參加蘋果官方主辦 2013年 Tech Talk 麥克自由聚(Apple, Mac, iOS 相關) 講師 - 近期 iOS Apps 作品 CWMoney 為 台灣AppStore 最受歡迎的記賬軟體，付費排行當中榜上常客，更是台灣財經類App第一名。 biiChat 為 全台第一個電子商務即時通訊軟體，整合電子商務與訊息的便利性。 BTWCar 為 藍牙軟硬整合應用 App。',
             'pic'     => 'generic_speaker.png',
         ],        
+        'anistar' => [
+            'name'    => 'Anistar Sung',
+            'company' => 'Yahoo',
+            'title'   => 'Director of Apps',
+            'bio'     => '<等待講者回覆喔>',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'eddie' => [
+            'name'    => '高見龍',
+            'company' => '五倍紅寶石股份有限公司',
+            'title'   => '紅寶石鑑定商',
+            'bio'     => '高見龍，兩個小朋友的爸爸。目前靠 Ruby/Rails/iOS app 開發以及研磨紅寶石糊口渡日。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'johnny' => [
+            'name'    => '宋岡諺 (Johnny Sung)',
+            'company' => 'Hiiir(時間軸科技)',
+            'title'   => '手機工程師',
+            'bio'     => '目前是Hiiir(時間軸科技)的一名小小工程師 主要在於手機端的 iOS / Android 開發，無意間拿到一隻公司的Google glass， 才好好認識什麼叫做「穿戴式」裝置，揭開一連串有趣的應用',
+            'pic'     => 'generic_speaker.png',
+        ],        
     ];
 }
