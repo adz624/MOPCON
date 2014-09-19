@@ -142,5 +142,12 @@ function speakers(){
             'bio'     => '一個每天上班都在寫iOS/Android的工程師，骨子裡愛的是Windows Phone，因為市集上的App太少，開始了自行開發上架之路，希望能貢獻一己之力，讓Windows Phone App的選擇能越來越多。代表作是天氣App《晴時多雲偶陣雨》。',
             'pic'     => 'generic_speaker.png',
         ],        
+        'ben' => [
+            'name'    => 'Ben Lue',
+            'company' => 'COIMOTION',
+            'title'   => '總架構師',
+            'bio'     => '獨立軟體開發者。旅美期間曾在IBM Almaden Research Center, Cognos Inc., NetClue Corp.等公司工作。所創立的 NetClue Corp.為多家公司的收購目標。返台後喜歡自造軟體,目前為 COIMOTION API 服務的總架構師。',
+            'pic'     => 'coimotion_tmp.png',
+        ],        
     ];
 }
