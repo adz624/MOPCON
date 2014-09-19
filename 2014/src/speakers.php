@@ -79,6 +79,13 @@ function speakers(){
             'bio'     => '就說是神秘嘉賓了，當然很神秘',
             'pic'     => 'aws.png',
         ],
+        'yahoo' => [
+            'name'    => 'Yahoo 邀請神秘嘉賓',
+            'company' => 'Yahoo',
+            'title'   => '神秘嘉賓',
+            'bio'     => '就說是神秘嘉賓了，當然很神秘',
+            'pic'     => 'yahoo_tmp.jpg',
+        ],
         'drake' => [
             'name'    => 'Drake (官順暉)',
             'company' => 'KKBOX',
