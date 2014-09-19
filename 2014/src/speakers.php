@@ -86,6 +86,13 @@ function speakers(){
             'bio'     => '就說是神秘嘉賓了，當然很神秘',
             'pic'     => 'yahoo_tmp.jpg',
         ],
+        'ibm' => [
+            'name'    => '何志恒',
+            'company' => 'IBM',
+            'title'   => 'IBM全球行動企業方案首席架構師',
+            'bio'     => 'IBM全球行動企業方案首席架構師 <等待講者回覆喔>',
+            'pic'     => 'ibm_tmp.png',
+        ],
         'drake' => [
             'name'    => 'Drake (官順暉)',
             'company' => 'KKBOX',
