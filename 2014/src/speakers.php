@@ -156,5 +156,12 @@ function speakers(){
             'bio'     => '獨立軟體開發者。旅美期間曾在IBM Almaden Research Center, Cognos Inc., NetClue Corp.等公司工作。所創立的 NetClue Corp.為多家公司的收購目標。返台後喜歡自造軟體,目前為 COIMOTION API 服務的總架構師。',
             'pic'     => 'coimotion_tmp.png',
         ],        
+        'imsardine' => [
+            'name'    => 'imsardine',
+            'company' => 'KKBOX',
+            'title'   => '工程師',
+            'bio'     => '網路代號 imsardine，愛寫程式的魚，目前在 KKBOX 負責自動化測試開發工作。',
+            'pic'     => 'KKBOX_jeremy.jpg',
+        ],        
     ];
 }
