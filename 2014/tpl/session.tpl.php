@@ -23,6 +23,7 @@ $(function(){
     $idx++;
     $article_style = count($time_sessions)>1 ? "area-{$idx}" : "area-all";
 ?>
+    <a name="<?=htmlspecialchars($date."_".$time."_".$session['room'])?>"/>
     <article class="<?=$article_style?>" href="#inline_content">
         <div class="place">
 <?php if (isset($session['room'])): ?>
