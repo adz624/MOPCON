@@ -72,6 +72,13 @@ function speakers(){
             'bio'     => '就說是神秘嘉賓了，當然很神秘',
             'pic'     => 'msft_tmp.gif',
         ],
+        'amazon' => [
+            'name'    => 'Amazon 邀請神秘嘉賓',
+            'company' => 'Amazon',
+            'title'   => '神秘嘉賓',
+            'bio'     => '就說是神秘嘉賓了，當然很神秘',
+            'pic'     => 'aws.png',
+        ],
         'drake' => [
             'name'    => 'Drake (官順暉)',
             'company' => 'KKBOX',
@@ -91,6 +98,34 @@ function speakers(){
             'company' => 'Xamarin Inc.',
             'title'   => 'Software Engineer',
             'bio'     => 'Japanese Xamarin.Android developer, and the Mono project developer who mostly worked on class libraries.',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'peter' => [
+            'name'    => 'Peter Tseng',
+            'company' => 'Newegg Taiwan, Inc.',
+            'title'   => 'Software Engineer',
+            'bio'     => '大學、研究所、博士班全都在台灣科技大學資訊工程系，主修Machine Learning和Data Mining，但博班念了2年就當兵去了。現職為Newegg Taiwan, Inc.的小小軟體工程師，主要負責的工作內容為Adaptive Product Matching。喜愛打羽球，程度(自認為是乙組的)中上。小時候愛看卡通，尤其是GUNDAM 系列，老想著要把打球專用的ZERO system做出來，好讓自己能在打球時稱王(笑)',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'kewang' => [
+            'name'    => 'kewang',
+            'company' => '三竹資訊',
+            'title'   => '研發主任',
+            'bio'     => '研發替代役役畢之後，到了三竹資訊專職Android App的開發，2013年公司因為要成立雲端部門開發產品，就被一腳踢到雲上面。 現在則是在雲上面專職於後端開發，包括NoSQL以及AP的連接，AP以及前端的RESTful API串接。 喜歡玩各種先進的前後端技術，包括Java、Node.js、AngularJS......等。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'joe' => [
+            'name'    => 'Joe',
+            'company' => 'Tainan.py',
+            'title'   => 'Organizer',
+            'bio'     => '魯蛇喬，後端工程師，現為居住於台南的創業連續失敗家。每個月與 MOSUT 社群舉辦 Tainan.py 聚會推廣另其醉心而優雅的程式語言： Python。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'peni' => [
+            'name'    => 'Peni',
+            'company' => 'CyberLink',
+            'title'   => '工程師',
+            'bio'     => '一個每天上班都在寫iOS/Android的工程師，骨子裡愛的是Windows Phone，因為市集上的App太少，開始了自行開發上架之路，希望能貢獻一己之力，讓Windows Phone App的選擇能越來越多。代表作是天氣App《晴時多雲偶陣雨》。',
             'pic'     => 'generic_speaker.png',
         ],        
     ];
