@@ -71,6 +71,27 @@ function speakers(){
             'title'   => '神秘嘉賓',
             'bio'     => '就說是神秘嘉賓了，當然很神秘',
             'pic'     => 'msft_tmp.gif',
-        ]
+        ],
+        'drake' => [
+            'name'    => 'Drake (官順暉)',
+            'company' => 'KKBOX',
+            'title'   => 'Sr. Principal Engineer',
+            'bio'     => '於電腦動畫產業服務期間，組織了一隻台灣動畫產業的研發團隊，發表了國際論文，參與制作了得獎動畫，成了 Pixar 軟體與技術的專家。還意外自經濟部獲頒青年創新希望獎，更不小心參與了 PyCon Taiwan 籌備委員之一。今年起，投入影音串流這個新戰場，以提供台灣一個值得擁有的影音串流服務為目標邁進。',
+            'pic'     => 'KKBOX_drake_guan.jpg',
+        ],        
+        'tp' => [
+            'name'    => 'Tzu-ping Chung',
+            'company' => 'BIMEtek Co. Ltd.',
+            'title'   => 'Software Architect',
+            'bio'     => 'TP is a professional software engineer who builds his career around open source software, and enjoys committing back his little efforts to help make the community better. He writes C++ for a living, builds MacDown, an open source Markdown editor, with Objective-C, and hosts many websites built with Python.',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'atsushi' => [
+            'name'    => 'Atsushi Enomoto',
+            'company' => 'Xamarin Inc.',
+            'title'   => 'Software Engineer',
+            'bio'     => 'Japanese Xamarin.Android developer, and the Mono project developer who mostly worked on class libraries.',
+            'pic'     => 'generic_speaker.png',
+        ],        
     ];
 }
