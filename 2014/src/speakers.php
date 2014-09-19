@@ -198,5 +198,12 @@ function speakers(){
             'bio'     => '目前是Hiiir(時間軸科技)的一名小小工程師 主要在於手機端的 iOS / Android 開發，無意間拿到一隻公司的Google glass， 才好好認識什麼叫做「穿戴式」裝置，揭開一連串有趣的應用',
             'pic'     => 'generic_speaker.png',
         ],        
+        'jarsing' => [
+            'name'    => '陳佳新',
+            'company' => '奇步應用',
+            'title'   => '技術長',
+            'bio'     => '接觸程式設計的年齡跟Tesla電動車老闆馬斯克差不多，都是11、12歲。熱中於投稿電腦雜誌與翻譯電腦書籍，譯作包括歐萊禮的《Programming Android》。在軟體業打滾了7年。於2013年5月與妻子共同創辦奇步應用工作室，專注於APP開發。iOS作品曾於2013年被網路公司收購。Android作品在2014年分別榮獲Samsung Smart App Callenge挑戰賽佳作以及經濟部工業局Open Data創新應用競賽特優。',
+            'pic'     => 'generic_speaker.png',
+        ],        
     ];
 }
