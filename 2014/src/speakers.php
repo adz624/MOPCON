@@ -205,5 +205,40 @@ function speakers(){
             'bio'     => '接觸程式設計的年齡跟Tesla電動車老闆馬斯克差不多，都是11、12歲。熱中於投稿電腦雜誌與翻譯電腦書籍，譯作包括歐萊禮的《Programming Android》。在軟體業打滾了7年。於2013年5月與妻子共同創辦奇步應用工作室，專注於APP開發。iOS作品曾於2013年被網路公司收購。Android作品在2014年分別榮獲Samsung Smart App Callenge挑戰賽佳作以及經濟部工業局Open Data創新應用競賽特優。',
             'pic'     => 'generic_speaker.png',
         ],        
+        'pichu' => [
+            'name'    => 'Pichu Chen',
+            'company' => 'Taiwan Intelligent Home / 台灣智慧家庭',
+            'title'   => 'CTO',
+            'bio'     => 'TIH是個致力於推動台灣家庭自動化以及建立軟體產業鏈的團隊。 藉由主動學習各個智慧家電的通訊方式，並重新放出Open API來達成此一目標。 團隊成員來自中山大學CDPA，是個維護近四千名住宿生網路的學生組織。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'ryudoawaru' => [
+            'name'    => '鄧慕凡',
+            'company' => '五倍紅寶石股份有限公司',
+            'title'   => '火云邪神',
+            'bio'     => '鄧慕凡, 1997年開始遊戲業十年生涯, 2007年開始網站創業; 除了經營台灣最大車友社群 FSC 以及台灣免費論壇系統 FREEBBS.TW 外，也是五倍紅寶石股份有限公司的共同創辦人; 工作之餘也積極經營Ruby語言社群, 現為台灣 Ruby程式語言社群「Ruby Taiwan」, 年度國際研討會「RubyConf Taiwan」以及Railsgirls Taipei 工作坊的主辦人。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'virus' => [
+            'name'    => '小璋丸 (吳政璋)',
+            'company' => '中華數位科技 Softnext Inc.',
+            'title'   => '程序員',
+            'bio'     => '我是個小小程序員，本行從事網路安全， 除了寫程式，也愛好長笛和三鐵， 自從陷入三鐵的無窮敗家迴圈後，開始研究相關的行動應用， 目前正在努力整合各種運動與健康的裝置， 希望可以完成一個神祕的計畫。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'ant' => [
+            'name'    => 'ant',
+            'company' => 'MUZIK ONLINE',
+            'title'   => '總工程師',
+            'bio'     => '目前專注於「合法的安全程式設計」。在「自由/開放源碼」「資訊安全」及「程式設計」領域擁有數場公開及非公開的教育訓練課程和演講，同時撰寫 過數篇發明專利。閒暇時喜歡沉浸在「心理學」及「經濟學」的世界，並時常穿梭於「人性」、「法律」與「科技」的三角關係中。',
+            'pic'     => 'generic_speaker.png',
+        ],        
+        'brian' => [
+            'name'    => 'Brian Wang',
+            'company' => 'Positive Grid',
+            'title'   => 'Development Manager, Mobile Apps',
+            'bio'     => '同時具備Maker精神以及對音樂的熱情於一身，Brian堅信行動裝置對未來音樂人有著不可或缺的重要性。從來沒停止過結合音樂科技與行動裝置、開放硬體與雲端服務，做各式各樣的嘗試與開發，將成果實際帶入自己的表演活動中使用，以享受自己的實作成果為樂。在2011年起就與Positive Grid團隊合作，研發出JamUp, BIAS, Final Touch等iOS平台上的專業吉他效果與音樂音訊處理軟體，不僅取得市場上的成功，在美國iTunes Store Music App 熱門付費與利潤排行上持續名列前茅，產品也受到使用者與專業音樂媒體的一致好評，在全世界累計已超過百萬使用者。',
+            'pic'     => 'generic_speaker.png',
+        ],        
     ];
 }
