@@ -6,6 +6,7 @@ $levels = [
     ['sponsor-silver', 'developer', 'Developer'],
     ['sponsor-bronze', 'coder', 'Coder'],
     ['sponsor-gold', 'other', '其他'],
+    ['sponsor-bronze', 'special', '特別贊助'],
     ['sponsor-media', 'media', '媒體夥伴'],
 ];
 ?>
