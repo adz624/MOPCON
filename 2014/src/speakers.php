@@ -93,6 +93,13 @@ function speakers(){
             'bio'     => 'IBM全球行動企業方案首席架構師 <等待講者回覆喔>',
             'pic'     => 'ibm_tmp.png',
         ],
+        'synology' => [
+            'name'    => '曾貴熙 Hunter Tseng & 楊智焙 Chih-Pei Yang',
+            'company' => 'Synology 群暉科技',
+            'title'   => '神秘嘉賓',
+            'bio'     => '<等待講者回覆喔>',
+            'pic'     => 'synology_dark_bg.png',
+        ],
         'drake' => [
             'name'    => 'Drake (官順暉)',
             'company' => 'KKBOX',
