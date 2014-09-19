@@ -53,8 +53,8 @@ function speakers(){
         ],
         'ernest' => [
             'name'    => 'Ernest Chiang',
-            'company' => 'PAFERS',
-            'title'   => '共同創辦人',
+            'company' => 'PAFERS Tech',
+            'title'   => 'Technology Integration',
             'bio'     => '小時候玩 MS-DOS, OS/2, Windows 3.1,  Slackware，玩著玩著玩到大學申請少了零點多分沒法進資工系玩，改玩半導體製程和微小機電，幸運地進入台積研究所玩製程整合從研發、試產玩到量產。熱愛開放與不務正業的精神，曾經玩網路創業，現在上班在玩傳統產業 + 軟硬體整合，試著把無線通訊塞進健身器材中。下班參與 Mozilla 台灣社群 MozTW SUMO 專案，以及支援朋友們玩各種創業。夢想與大家玩出各種可能性。愛台灣，不解釋',
             'pic'     => 'Ernest_profile_high_500.jpg',
         ],
