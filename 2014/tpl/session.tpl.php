@@ -9,7 +9,7 @@ $(function(){
     $('.btn:contains("營運")').addClass('btn-darkgreen');
 })
 </script>
-<div style="border:1px solid #026080; background-color:rgba(0,0,0,0.1); padding:1em; text-align:center;">
+<div style="margin: 1.5em 0px 7.5em;padding: 1.5em;border-right: 1px solid rgba(105, 202, 98, 0.35);border-radius: 5px;background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.2);">
 目前議程尚在調整中，顯示資料並非最終結果。不便之處敬請多多包涵
 </div>
 <?php foreach ($this->sessions as $date => $day_sessions):?>
