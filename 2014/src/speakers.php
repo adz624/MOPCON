@@ -170,5 +170,12 @@ function speakers(){
             'bio'     => '「KKBOX」旗下遊戲開發團隊「KKPLAY」負責人，有10年唱片產業及10年遊戲產業經驗。',
             'pic'     => 'KKBOX_VincentChen.jpg',
         ],        
+        'evillon' => [
+            'name'    => '張景隆',
+            'company' => '迅行科技',
+            'title'   => 'Director of Apps',
+            'bio'     => '一個熱愛 iOS 開發、Ruby、Linux 的開發者。 喜愛分享、寫作，以分享知識為樂。 喜歡把問題簡化，用最簡單的方式解決問題。 - 參與 CodeData 作者 iOS Dev Club 講者 Cocoahead Taichung 講者 參加蘋果官方主辦 2013年 Tech Talk 麥克自由聚(Apple, Mac, iOS 相關) 講師 - 近期 iOS Apps 作品 CWMoney 為 台灣AppStore 最受歡迎的記賬軟體，付費排行當中榜上常客，更是台灣財經類App第一名。 biiChat 為 全台第一個電子商務即時通訊軟體，整合電子商務與訊息的便利性。 BTWCar 為 藍牙軟硬整合應用 App。',
+            'pic'     => 'generic_speaker.png',
+        ],        
     ];
 }
