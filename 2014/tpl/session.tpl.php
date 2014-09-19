@@ -33,7 +33,19 @@ $(function(){
 <?php endif;?>
         </div>
         <div class="talker">
-            <figure><img src="images/speakers/<?=htmlspecialchars($session['speaker']['pic'])?>"></figure>
+            <figure style="overflow:hidden;">
+            <?php 
+            // XXX hack，強行調整這幾張圖片位置
+            if ('KKBOX_drake_guan.jpg' === $session['speaker']['pic']) {
+                $pos_offset = "margin-top:-18px;";
+            } elseif ('KKBOX_VincentChen.jpg' === $session['speaker']['pic']) {
+                $pos_offset = "margin-top:-10px;";
+            } else {
+                $pos_offset = '';
+            }
+            ?>
+            <img style="width:auto; height:auto;<?=$pos_offset?>" src="images/speakers/<?=htmlspecialchars($session['speaker']['pic'])?>">
+            </figure>
             <h3><?=htmlspecialchars($session['speaker']['name'])?></h3>
             <h2><a href="#"><?=htmlspecialchars($session['title'])?></a></h2>
             <div class="detail">
