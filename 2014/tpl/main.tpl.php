@@ -18,12 +18,6 @@
 	<meta content="http://mopcon.org/img/snapshot-2014-v2.png" property="og:image">
 	<meta content="website" property="og:type">
 	<meta content="行動科技應用開發者年會 | MOPCON 2014 | Mobile / Open / Platform Conference" property="og:site_name">
-    <script src="js/jquery.min.js"></script>
-	<script src="js/all.js"></script>
-	<!--[if lt IE 9]>
-	    <script type="text/javascript" src="js/html5shiv.js"></script>
-	    <script type="text/javascript" src="js/respond.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 
@@ -85,6 +79,13 @@
 	</a>
 </div>
 
+
+<script src="js/jquery.min.js"></script>
+<script src="js/all.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
