@@ -9,7 +9,12 @@ $parsedown = new Parsedown();
 <div class="row date-link">
     <a href="#day-2">連至第二天議程 10/26 →</a>
 </div>
-<?php foreach ($this->sessions as $date => $day_sessions):?>
+<?php
+$day_num = 0;
+foreach ($this->sessions as $date => $day_sessions):
+    $day_num++;
+?>
+<a name="day-<?=$day_num?>">
 <div class="date">
 <?=htmlspecialchars($date)?>
 </div>

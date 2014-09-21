@@ -90,7 +90,6 @@
 $(function(){
     $('.btn:contains("技術")').addClass('btn-pink');
     $('.btn:contains("營運")').addClass('btn-darkgreen');
-    $('.date:eq(1)').attr('id','day-2')
 })
 </script>
 <?php
