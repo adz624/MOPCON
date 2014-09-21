@@ -86,6 +86,10 @@
     <script type="text/javascript" src="js/html5shiv.js"></script>
     <script type="text/javascript" src="js/respond.min.js"></script>
 <![endif]-->
+<?php
+if(isset($this->footer_script)){
+    echo "<script>\n" . $this->footer_script . "\n</script>\n";
+}?>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
