@@ -145,7 +145,12 @@ OSSF 重點任務為培植本土自由軟體社群與人才，實際工作有：
 ',
 //The Open Source Software Foundry (OSSF) project was launched by the Institute of Information Science at Academia Sinica in 2003. Initially, it was sponsored by the Industrial Development Bureau of the Ministry of Economic Affairs as a part of the “Open Source Software Initiative” to promote the use and development of open source software in Taiwan. Since 2007, the project has been funded by the National Science Council as well as the Research Center for Information Technology Innovation (CITI) at Academia Sinica.
 //To promote the development and use of open source software, OSSF provides a forum that facilitates interaction and collaboration between open source software developers, and serves as a bridge to link developers with industry and academia.
-
+    ],
+    [
+        'name' => 'Colour Design',
+        'img'  => 'colourdesign.png',
+        'url'  => 'http://www.colour.tw/',
+        'desc' => 'Colour Design誕生，是 MOPCON 2013美術組的一群小小設計師們一起創造出來的品牌。「Colour」是加拿大的字，表示設計上美麗繽紛的色彩。這也代表了我們湧泉般各式各樣的創意。'
     ],
 ];
 // 輸出畫面
