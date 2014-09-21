@@ -7,7 +7,7 @@ $parsedown = new Parsedown();
 $(function(){
     $('.btn:contains("技術")').addClass('btn-pink');
     $('.btn:contains("營運")').addClass('btn-darkgreen');
-    $('.date:contains("2014/10/26")').attr('id','day-2')
+    $('.date:eq(1)').attr('id','day-2');
 })
 </script>
 <div class="waring">
