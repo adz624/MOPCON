@@ -12,6 +12,32 @@ $tpl->mainClass = 'timeline';
 $feedData = getFacdbookFeedData();
 $tpl->articles = $feedData['entries'];
 
+// Facebook 會惡搞連結元素，把連結元素弄回來原本的 URL 並拔掉奇怪的 hook
+$tpl->footer_script = <<<FS
+\$(function(){
+
+function getActURL(url) {
+    var regex = new RegExp("[\\\\?&]u=([^&#]*)"),
+    results = regex.exec(url);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+$('.news-content a').each(function(){
+    \$a = $(this);
+    \$a.attr('onclick','').attr('onmouseover', ''); // 拔掉 facebook script hook
+    var url = \$a.attr('href');
+    if (!url) {
+        return;
+    }
+    if (-1 != url.indexOf('http://l.facebook.com/l.php')) {
+        var actURL = getActURL(url);
+        \$a.attr('href', actURL);
+    }
+});
+
+});
+FS;
+
 // 輸出畫面
 $tpl->content = $tpl->getOutput('news.tpl.php');
 $tpl->display('main.tpl.php');
