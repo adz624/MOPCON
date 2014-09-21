@@ -16,12 +16,15 @@ $tpl->articles = $feedData['entries'];
 $tpl->footer_script = <<<FS
 \$(function(){
 
+
+// 用來取出 l.php 中真正的 URL
 function getActURL(url) {
     var regex = new RegExp("[\\\\?&]u=([^&#]*)"),
     results = regex.exec(url);
     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+// 處理 facebook feed URL 的問題
 $('.news-content a').each(function(){
     \$a = $(this);
     \$a.attr('onclick','').attr('onmouseover', ''); // 拔掉 facebook script hook
@@ -29,8 +32,16 @@ $('.news-content a').each(function(){
     if (!url) {
         return;
     }
-    if (-1 != url.indexOf('http://l.facebook.com/l.php')) {
+
+    // l.php URL 轉換
+    if (-1 != url.indexOf('http://l.facebook.com/l.php') || -1 != url.indexOf('https://www.facebook.com/l.php')) {
         var actURL = getActURL(url);
+        \$a.attr('href', actURL);
+    }
+
+    // facebook 圖片 URL
+    if (0 == url.indexOf('/mopcon/photos/')) {
+        var actURL = "http://www.facebook.com" + url;
         \$a.attr('href', actURL);
     }
 });
