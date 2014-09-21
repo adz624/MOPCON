@@ -7,13 +7,17 @@ $parsedown = new Parsedown();
 $(function(){
     $('.btn:contains("技術")').addClass('btn-pink');
     $('.btn:contains("營運")').addClass('btn-darkgreen');
+    $('.date:contains("2014/10/26")').attr('id','day-2')
 })
 </script>
-<div style="margin: 1.5em 0px 7.5em;padding: 1.5em;border-right: 1px solid rgba(105, 202, 98, 0.35);border-radius: 5px;background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.2);">
+<div class="waring">
 目前議程尚在調整中，顯示資料並非最終結果。不便之處敬請多多包涵
 </div>
+<div class="row date-link">
+    <a href="#day-2">連至第二天議程 10/26 →</a>
+</div>
 <?php foreach ($this->sessions as $date => $day_sessions):?>
-<div style="border-bottom: 3px solid orange; padding:0.3em; text-align:center;margin:2em 0 1.5em; font-size:150%;">
+<div class="date">
 <?=htmlspecialchars($date)?>
 </div>
 <?php foreach ($day_sessions as $time => $time_sessions):?>
