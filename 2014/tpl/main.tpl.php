@@ -86,6 +86,13 @@
     <script type="text/javascript" src="js/html5shiv.js"></script>
     <script type="text/javascript" src="js/respond.min.js"></script>
 <![endif]-->
+<script>
+$(function(){
+    $('.btn:contains("技術")').addClass('btn-pink');
+    $('.btn:contains("營運")').addClass('btn-darkgreen');
+    $('.date:eq(1)').attr('id','day-2')
+})
+</script>
 <?php
 if(isset($this->footer_script)){
     echo "<script>\n" . $this->footer_script . "\n</script>\n";

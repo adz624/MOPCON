@@ -3,13 +3,6 @@ include __DIR__.'/../src/Parsedown.php';
 $parsedown = new Parsedown();
 
 ?>
-<script>
-$(function(){
-    $('.btn:contains("技術")').addClass('btn-pink');
-    $('.btn:contains("營運")').addClass('btn-darkgreen');
-    $('.date:eq(1)').attr('id','day-2');
-})
-</script>
 <div class="waring">
 目前議程尚在調整中，顯示資料並非最終結果。不便之處敬請多多包涵
 </div>
