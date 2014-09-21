@@ -98,6 +98,13 @@ function speakers(){
             'company' => 'Synology 群暉科技',
             'title'   => '神秘嘉賓',
             'bio'     => '<等待講者回覆喔>',
+            'pic'     => 'John.jpg',
+        ],
+        'john' => [
+            'name'    => '謝耀輝(John Sie)',
+            'company' => 'ACCUPASS',
+            'title'   => '營運長 Chief Operating Officer',
+            'bio'     => '謝耀輝(John Sie) 畢業 於台北工專電子及台灣科大資管， 曾任鴻海軟體工程師及PM，2009年創辦Accuvally Inc. 任CTO；於2011年推出「活動通 Accupass」榮獲國內外諸多大獎，該年榮獲《經理人雜誌》選為 100大 MVP專業經理人； 2012年轉任COO於大陸開展「活動行」服務，2013年公司獲得國際創投上億投資投資，成為亞太地區最具規模活動平台。',
             'pic'     => 'synology_dark_bg.png',
         ],
         'drake' => [
