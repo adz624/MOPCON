@@ -238,7 +238,7 @@ function speakers(){
             'company' => 'Positive Grid',
             'title'   => 'Development Manager, Mobile Apps',
             'bio'     => '同時具備Maker精神以及對音樂的熱情於一身，Brian堅信行動裝置對未來音樂人有著不可或缺的重要性。從來沒停止過結合音樂科技與行動裝置、開放硬體與雲端服務，做各式各樣的嘗試與開發，將成果實際帶入自己的表演活動中使用，以享受自己的實作成果為樂。在2011年起就與Positive Grid團隊合作，研發出JamUp, BIAS, Final Touch等iOS平台上的專業吉他效果與音樂音訊處理軟體，不僅取得市場上的成功，在美國iTunes Store Music App 熱門付費與利潤排行上持續名列前茅，產品也受到使用者與專業音樂媒體的一致好評，在全世界累計已超過百萬使用者。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'BrianWang.jpg',
         ],        
         'superbil' => [
             'name'    => 'Superbil',
