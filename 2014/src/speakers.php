@@ -65,6 +65,14 @@ function speakers(){
             'bio'     => '就說是神秘嘉賓了，當然很神秘',
             'pic'     => 'asus-cloud_tmp.png',
         ],
+        'ericsk' => [
+            'name'    => '上官林傑 (ericsk)',
+            'company' => 'Microsoft',
+            'title'   => '應用開發技術經理',
+            'bio'     => '網路代號 ericsk，曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。
+講題標語: 快速、可靠、穩定的應用程式',
+            'pic'     => 'msft_tmp.gif',
+        ],
         'microsoft' => [
             'name'    => 'Microsoft 邀請神秘嘉賓',
             'company' => 'Microsoft',
