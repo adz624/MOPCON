@@ -155,7 +155,7 @@ function speakers(){
             'company' => 'Tainan.py',
             'title'   => 'Organizer',
             'bio'     => '魯蛇喬，後端工程師，現為居住於台南的創業連續失敗家。每個月與 MOSUT 社群舉辦 Tainan.py 聚會推廣另其醉心而優雅的程式語言： Python。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'excusemejoe-mopcon.jpg',
         ],        
         'peni' => [
             'name'    => 'Peni',
