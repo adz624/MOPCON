@@ -204,7 +204,7 @@ function speakers(){
             'company' => '五倍紅寶石股份有限公司',
             'title'   => '紅寶石鑑定商',
             'bio'     => '高見龍，兩個小朋友的爸爸。目前靠 Ruby/Rails/iOS app 開發以及研磨紅寶石糊口渡日。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'eddie.jpg',
         ],        
         'johnny' => [
             'name'    => '宋岡諺 (Johnny Sung)',
