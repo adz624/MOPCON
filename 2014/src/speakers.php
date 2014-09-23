@@ -19,7 +19,7 @@ function speakers(){
         'mhung' => [
             'name'    => 'Michael Hung (洪志鵬)',
             'company' => 'Mozilla Taiwan',
-            'title'   => '行銷總監',
+            'title'   => '資深行銷總監',
             'bio'     => '洪志鵬 (Michael Hung)，別名 Michaelsoft。現職為 Mozilla 台灣分公司資深行銷總監，曾任台灣微軟全球技術支援中心副總經理、昇陽電腦(Sun Microsystems) 行銷總監等職。亦曾為專職作家，著有《最後的江湖道義》等四本書',
             'pic'     => 'Michael_Hung_500.jpg',
         ],
