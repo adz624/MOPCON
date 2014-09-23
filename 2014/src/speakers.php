@@ -73,6 +73,13 @@ function speakers(){
 講題標語: 快速、可靠、穩定的應用程式',
             'pic'     => 'msft_tmp.gif',
         ],
+        'wangtun' => [
+            'name'    => 'Wang-Tun Chou (周旺暾)',
+            'company' => 'Microsoft',
+            'title'   => '雲端平台事業部副總經理',
+            'bio'     => '目前主要工作在推動微軟伺服器及雲端平台策略與行銷。曾任台灣微軟創新中心營運負責人、蕃薯藤數位科技協理。',
+            'pic'     => 'msft_tmp.gif',
+        ],
         'microsoft' => [
             'name'    => 'Microsoft 邀請神秘嘉賓',
             'company' => 'Microsoft',
