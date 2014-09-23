@@ -274,7 +274,7 @@ function speakers(){
             'company' => '賽恩倍吉',
             'title'   => '顧問',
             'bio'     => 'Tsai KD，宅宅工程師，熱衷學習各種新技術，從前端到後端都稍有涉獵，除了一些常見的程式語言之外，目前較關注 Go 語言；系統方面，自從 Docker 出現後，就把 VM 當成備胎了...XD 目前待的公司主要營業項目是專利相關業務，對於專利資料的處理有幾年的經驗。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'tsaikd.jpg',
         ]        
     ];
 }
