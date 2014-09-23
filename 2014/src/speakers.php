@@ -189,7 +189,7 @@ function speakers(){
             'company' => 'Yahoo',
             'title'   => 'EC Mobile Team',
             'bio'     => '長期專注於 Mobile app 開發，其中所開發的 Magic Shutter 被 New York Times 評為 iOS 上前十大最佳攝影軟體，之前曾在恆逸教育訓練中心針對 Mobile、Font-End、Design 領域有多年授課與專案實戰經驗，目前服務於雅虎電子商務部，致力用技術與創意提供有趣的 Mobile 應用。',
-            'pic'     => 'anistar.png',
+            'pic'     => 'anistar.jpg',
         ],        
         'eddie' => [
             'name'    => '高見龍',
