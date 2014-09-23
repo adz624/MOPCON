@@ -80,13 +80,6 @@ function speakers(){
             'bio'     => '目前主要工作在推動微軟伺服器及雲端平台策略與行銷。曾任台灣微軟創新中心營運負責人、蕃薯藤數位科技協理。',
             'pic'     => 'msft_tmp.gif',
         ],
-        'microsoft' => [
-            'name'    => 'Microsoft 邀請神秘嘉賓',
-            'company' => 'Microsoft',
-            'title'   => '神秘嘉賓',
-            'bio'     => '就說是神秘嘉賓了，當然很神秘',
-            'pic'     => 'msft_tmp.gif',
-        ],
         'amazon' => [
             'name'    => 'Amazon 邀請神秘嘉賓',
             'company' => 'Amazon',
@@ -239,7 +232,7 @@ function speakers(){
             'company' => '五倍紅寶石股份有限公司',
             'title'   => '火云邪神',
             'bio'     => '鄧慕凡, 1997年開始遊戲業十年生涯, 2007年開始網站創業; 除了經營台灣最大車友社群 FSC 以及台灣免費論壇系統 FREEBBS.TW 外，也是五倍紅寶石股份有限公司的共同創辦人; 工作之餘也積極經營Ruby語言社群, 現為台灣 Ruby程式語言社群「Ruby Taiwan」, 年度國際研討會「RubyConf Taiwan」以及Railsgirls Taipei 工作坊的主辦人。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'MuFan.jpg',
         ],        
         'virus' => [
             'name'    => '小璋丸 (吳政璋)',
