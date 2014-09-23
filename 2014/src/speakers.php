@@ -239,7 +239,7 @@ function speakers(){
             'company' => '中華數位科技 Softnext Inc.',
             'title'   => '程序員',
             'bio'     => '我是個小小程序員，本行從事網路安全， 除了寫程式，也愛好長笛和三鐵， 自從陷入三鐵的無窮敗家迴圈後，開始研究相關的行動應用， 目前正在努力整合各種運動與健康的裝置， 希望可以完成一個神祕的計畫。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'virus.jpg',
         ],        
         'ant' => [
             'name'    => 'ant',
