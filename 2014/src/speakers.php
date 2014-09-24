@@ -246,7 +246,7 @@ function speakers(){
             'company' => 'MUZIK ONLINE',
             'title'   => '總工程師',
             'bio'     => '目前專注於「合法的安全程式設計」。在「自由/開放源碼」「資訊安全」及「程式設計」領域擁有數場公開及非公開的教育訓練課程和演講，同時撰寫 過數篇發明專利。閒暇時喜歡沉浸在「心理學」及「經濟學」的世界，並時常穿梭於「人性」、「法律」與「科技」的三角關係中。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'ant.jpg',
         ],        
         'brian' => [
             'name'    => 'Brian Wang',
@@ -260,7 +260,7 @@ function speakers(){
             'company' => 'Eatgo',
             'title'   => '',
             'bio'     => '喜愛 Cocoa 框架的熱血工程師，從事 iOS 開發三年，對於新奇事物充滿好奇心、對於 cocoa 喜歡的原因，最近也開始研究起咖啡來。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'superbil.jpg',
         ],        
         'elvismetaphor' => [
             'name'    => '林英傑',
