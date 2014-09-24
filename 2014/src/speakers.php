@@ -169,7 +169,7 @@ function speakers(){
             'company' => 'CyberLink',
             'title'   => '工程師',
             'bio'     => '一個每天上班都在寫iOS/Android的工程師，骨子裡愛的是Windows Phone，因為市集上的App太少，開始了自行開發上架之路，希望能貢獻一己之力，讓Windows Phone App的選擇能越來越多。代表作是天氣App《晴時多雲偶陣雨》。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'Peni.jpg',
         ],        
         'ben' => [
             'name'    => 'Ben Lue',
