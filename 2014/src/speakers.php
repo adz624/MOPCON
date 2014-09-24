@@ -148,7 +148,7 @@ function speakers(){
             'company' => 'Newegg Taiwan, Inc.',
             'title'   => 'Software Engineer',
             'bio'     => '大學、研究所、博士班全都在台灣科技大學資訊工程系，主修Machine Learning和Data Mining，但博班念了2年就當兵去了。現職為Newegg Taiwan, Inc.的小小軟體工程師，主要負責的工作內容為Adaptive Product Matching。喜愛打羽球，程度(自認為是乙組的)中上。小時候愛看卡通，尤其是GUNDAM 系列，老想著要把打球專用的ZERO system做出來，好讓自己能在打球時稱王(笑)',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'PeterTseng.png',
         ],        
         'kewang' => [
             'name'    => 'kewang',
@@ -225,7 +225,7 @@ function speakers(){
             'company' => '奇步應用',
             'title'   => '技術長',
             'bio'     => '接觸程式設計的年齡跟Tesla電動車老闆馬斯克差不多，都是11、12歲。熱中於投稿電腦雜誌與翻譯電腦書籍，譯作包括歐萊禮的《Programming Android》。在軟體業打滾了7年。於2013年5月與妻子共同創辦奇步應用工作室，專注於APP開發。iOS作品曾於2013年被網路公司收購。Android作品在2014年分別榮獲Samsung Smart App Callenge挑戰賽佳作以及經濟部工業局Open Data創新應用競賽特優。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'jarsing.png',
         ],        
         'pichu' => [
             'name'    => 'Pichu Chen',
