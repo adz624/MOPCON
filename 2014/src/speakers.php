@@ -218,7 +218,7 @@ function speakers(){
             'company' => 'Hiiir(時間軸科技)',
             'title'   => '手機工程師',
             'bio'     => '目前是Hiiir(時間軸科技)的一名小小工程師 主要在於手機端的 iOS / Android 開發，無意間拿到一隻公司的Google glass， 才好好認識什麼叫做「穿戴式」裝置，揭開一連串有趣的應用',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'johnny.jpg',
         ],        
         'jarsing' => [
             'name'    => '陳佳新',
