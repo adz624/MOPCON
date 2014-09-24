@@ -115,6 +115,13 @@ function speakers(){
             'bio'     => '謝耀輝(John Sie) 畢業 於台北工專電子及台灣科大資管， 曾任鴻海軟體工程師及PM，2009年創辦Accuvally Inc. 任CTO；於2011年推出「活動通 Accupass」榮獲國內外諸多大獎，該年榮獲《經理人雜誌》選為 100大 MVP專業經理人； 2012年轉任COO於大陸開展「活動行」服務，2013年公司獲得國際創投上億投資投資，成為亞太地區最具規模活動平台。',
             'pic'     => 'John.jpg',
         ],
+        'ryo' => [
+            'name'    => '東江亮（Ryo Agarie）',
+            'company' => '全球獨立遊戲開發者支援組織 - Indie Stream',
+            'title'   => '創辦人',
+            'bio'     => '現為英國獨立遊戲公司 Nyamyam 美術總監。曾任職英國 Rare 遊戲公司擔任美術設計長達 10 年，Rare 公司專為微軟 XBOX Kinect 開發 Kinect Sports。2012年以遊戲作品《Tengami》入圍全球知名獨立遊戲盛會IndieCade Festival的獎項 。《Tengami》遊戲目前已經可在Steam平台（PC & Mac版）、任天堂Wii U eshop，以及iOS App Store上購買並取得。',
+            'pic'     => 'generic_speaker.png',
+        ],
         'drake' => [
             'name'    => 'Drake (官順暉)',
             'company' => 'KKBOX',
