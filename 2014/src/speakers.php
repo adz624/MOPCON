@@ -88,10 +88,10 @@ function speakers(){
             'pic'     => 'aws.png',
         ],
         'yahoo' => [
-            'name'    => 'Yahoo 邀請神秘嘉賓',
+            'name'    => '"Joe Hsia',
             'company' => 'Yahoo',
-            'title'   => '神秘嘉賓',
-            'bio'     => '就說是神秘嘉賓了，當然很神秘',
+            'title'   => 'Sr. Design Manager, Mobile Apps',
+            'bio'     => 'Joe擁有10+年的設計工作經驗。曾在美國的AT&T Interactive, Electronic Arts, 還有 American Honda負責互動及使用者經驗設計。在2012年加入Yahoo APAC設計團隊。2013年底透過設計思考跟精實創業的產品開發流程建立了Mobile App設計團隊並且讓Yahoo超級商城APP在Apple Store跟Google Play Store被選擇Editor’s Choice APP。',
             'pic'     => 'yahoo_tmp.jpg',
         ],
         'ibm' => [
