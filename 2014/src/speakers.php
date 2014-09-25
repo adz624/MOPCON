@@ -157,7 +157,7 @@ function speakers(){
             'company' => '三竹資訊',
             'title'   => '研發主任',
             'bio'     => '研發替代役役畢之後，到了三竹資訊專職Android App的開發，2013年公司因為要成立雲端部門開發產品，就被一腳踢到雲上面。 現在則是在雲上面專職於後端開發，包括NoSQL以及AP的連接，AP以及前端的RESTful API串接。 喜歡玩各種先進的前後端技術，包括Java、Node.js、AngularJS......等。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'kewang.jpg',
         ],        
         'joe' => [
             'name'    => 'Joe',
