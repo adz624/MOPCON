@@ -108,7 +108,7 @@ function speakers(){
             'bio'     => '曾貴熙：雖然大學才開始寫程式,但深信 0 與 1 會不斷的散佈世界帶來更多便利與進步。在 Synology 從事行動裝置應用的開發,熟悉領域為 iOS、Windows Phone。期許自己開發的 App,能將手中的行動裝置價值提升到極致。
 
 楊智焙：因為喜歡站在使用者的角度思考所以畢業後一直從事前端開發。也因為相信行動裝置會以各種形式更進一步的滲透於人類的生活,決定轉往行動應用的開發。熟悉的領域為 web、iOS。',
-            'pic'     => 'synology.jpg',
+            'pic'     => 'synology_dark_bg.png',
         ],
         'john' => [
             'name'    => '謝耀輝(John Sie)',
