@@ -141,7 +141,7 @@ function speakers(){
             'company' => 'Xamarin Inc.',
             'title'   => 'Software Engineer',
             'bio'     => 'Japanese Xamarin.Android developer, and the Mono project developer who mostly worked on class libraries.',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'Atsushi.jpg',
         ],        
         'peter' => [
             'name'    => 'Peter Tseng',
