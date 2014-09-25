@@ -47,8 +47,9 @@ CHK_MD
     'mosut' => [
         'name'    => 'MOSUT',
         'sname'   => 'MOSUT',
-        'img'     => 'images/community/mosut.jpg',
+        'img'     => 'images/community/mosut.png',
         'links'   => [
+            ['icon' => 'icon-facebook42', 'url' => 'https://www.facebook.com/groups/mosut/'],
             ['icon' => 'icon-earth2', 'url' => 'https://code.google.com/p/mosut/'],
         ],
         'desc_md' => <<<MOSUT_MD
