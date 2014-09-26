@@ -241,7 +241,7 @@ function speakers(){
             'bio'     => '鄧慕凡, 1997年開始遊戲業十年生涯, 2007年開始網站創業; 除了經營台灣最大車友社群 FSC 以及台灣免費論壇系統 FREEBBS.TW 外，也是五倍紅寶石股份有限公司的共同創辦人; 工作之餘也積極經營Ruby語言社群, 現為台灣 Ruby程式語言社群「Ruby Taiwan」, 年度國際研討會「RubyConf Taiwan」以及Railsgirls Taipei 工作坊的主辦人。',
             'pic'     => 'MuFan.jpg',
         ],        
-        'virus' =
+        'virus' => [
             'name'    => '小璋丸 (吳政璋)',
             'company' => '中華數位科技 Softnext Inc.',
             'title'   => '程序員',
