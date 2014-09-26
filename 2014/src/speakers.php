@@ -59,10 +59,10 @@ function speakers(){
             'pic'     => 'Ernest_profile_high_500.jpg',
         ],
         'asuscloud' => [
-            'name'    => 'ASUS Cloud 邀請神秘嘉賓',
+            'name'    => '吳漢章(Peter Wu)',
             'company' => 'ASUS Cloud',
-            'title'   => '神秘嘉賓',
-            'bio'     => '就說是神秘嘉賓了，當然很神秘',
+            'title'   => 'CEO',
+            'bio'     => '2008 年加入了華碩電腦集團，擔任華碩雲端股份有限公司CEO 一職，肩負著華碩發展雲端產業及技術的使命，將雲端服務帶到全球的消費及商業市場，並建構健康、教育、家庭等領域生態系統，逐步帶領著華碩雲端成為雲端領域的領導品牌。',
             'pic'     => 'asus-cloud_tmp.png',
         ],
         'ericsk' => [
@@ -108,7 +108,7 @@ function speakers(){
             'bio'     => '曾貴熙：雖然大學才開始寫程式,但深信 0 與 1 會不斷的散佈世界帶來更多便利與進步。在 Synology 從事行動裝置應用的開發,熟悉領域為 iOS、Windows Phone。期許自己開發的 App,能將手中的行動裝置價值提升到極致。
 
 楊智焙：因為喜歡站在使用者的角度思考所以畢業後一直從事前端開發。也因為相信行動裝置會以各種形式更進一步的滲透於人類的生活,決定轉往行動應用的開發。熟悉的領域為 web、iOS。',
-            'pic'     => 'synology_dark_bg.png',
+            'pic'     => 'synology.jpg',
         ],
         'john' => [
             'name'    => '謝耀輝(John Sie)',
@@ -243,7 +243,7 @@ function speakers(){
             'bio'     => '鄧慕凡, 1997年開始遊戲業十年生涯, 2007年開始網站創業; 除了經營台灣最大車友社群 FSC 以及台灣免費論壇系統 FREEBBS.TW 外，也是五倍紅寶石股份有限公司的共同創辦人; 工作之餘也積極經營Ruby語言社群, 現為台灣 Ruby程式語言社群「Ruby Taiwan」, 年度國際研討會「RubyConf Taiwan」以及Railsgirls Taipei 工作坊的主辦人。',
             'pic'     => 'MuFan.jpg',
         ],        
-        'virus' => [
+        'virus' =
             'name'    => '小璋丸 (吳政璋)',
             'company' => '中華數位科技 Softnext Inc.',
             'title'   => '程序員',
