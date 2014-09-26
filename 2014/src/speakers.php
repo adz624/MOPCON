@@ -234,7 +234,7 @@ function speakers(){
             'company' => 'Taiwan Intelligent Home / 台灣智慧家庭',
             'title'   => 'CTO',
             'bio'     => 'TIH是個致力於推動台灣家庭自動化以及建立軟體產業鏈的團隊。 藉由主動學習各個智慧家電的通訊方式，並重新放出Open API來達成此一目標。 團隊成員來自中山大學CDPA，是個維護近四千名住宿生網路的學生組織。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'pichu.jpg',
         ],        
         'ryudoawaru' => [
             'name'    => '鄧慕凡',
