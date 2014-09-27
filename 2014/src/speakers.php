@@ -10,21 +10,21 @@ function speakers(){
             'pic'     => 'hsu.jpg',
         ],
         'ian' => [
-            'name'    => '廖聰哲(Ian Liao)',
+            'name'    => '廖聰哲 (Ian Liao)',
             'company' => 'Golface',
             'title'   => '創辦人',
             'bio'     => '現為 Golface (綠夾克運動有限公司) 負責人，發現高爾夫球在台灣是很昂貴的運動，很多人希望透過這個運動建立人際關係，但國內高球場經營非常傳統，缺一套球場專屬物流系統，於是喜愛打高爾夫球的 Ian 看到這個需求，和團隊成員開發出高爾夫球場的數位化解決方案 Golface，從動態球道空拍攝影、即時資訊回報、便捷賽事紀錄管理，甚至包括球友間的社交平台都提供專項服務。目前 Golface已把整套解決方案，導入 Rolex 全球排名1000 大的高爾夫球場',
             'pic'     => 'ian_500.jpg',
         ],
         'mhung' => [
-            'name'    => '洪志鵬(Michael Hung)',
+            'name'    => '洪志鵬 (Michael Hung)',
             'company' => 'Mozilla Taiwan',
             'title'   => '資深行銷總監',
             'bio'     => '洪志鵬 (Michael Hung)，別名 Michaelsoft。現職為 Mozilla 台灣分公司資深行銷總監，曾任台灣微軟全球技術支援中心副總經理、昇陽電腦(Sun Microsystems) 行銷總監等職。亦曾為專職作家，著有《最後的江湖道義》等四本書',
             'pic'     => 'Michael_Hung_500.jpg',
         ],
         'keynes' => [
-            'name'    => '鄭鎧尹(Keynes)',
+            'name'    => '鄭鎧尹 (Keynes)',
             'company' => 'iKala',
             'title'   => '設計總監',
             'bio'     => '鄭鎧尹博士為 LIVEhouse.in/iKala 共同創辦人, 並擔任產品設計總監一職，負責產品設計及產品策略。LIVEhouse.in 為第一個國產直播平台；iKala為國內最大唱歌社群。其研究領域為人機互動介面設計, 並曾於日本最頂尖的 UI 研究所 JST ERATO 及微軟亞洲研究院從事研究。其在閒暇時間喜愛撰寫科技或設計相關文章, 在 MMDays 或 UIUI 粉絲團上可追蹤到他的動態。',
@@ -45,7 +45,7 @@ function speakers(){
             'pic'     => 'tico.jpg',
         ],
         'sleepnova' => [
-            'name'    => 'sleepnova(周立瑋)',
+            'name'    => 'sleepnova (周立瑋)',
             'company' => '呼叫小黃',
             'title'   => '創辦人',
             'bio'     => '周立瑋為頑皮工坊 (Sleepnova, Inc.) 創辦人，帶領團隊提供全方位數位解決方案，包括網頁前後端和移動裝置整合，相信運用簡單的界面、實用的科技，提供便利大家的生活，就是對社會的回饋的最佳方式。代表性專案為呼叫小黃、愛料理、東森新聞 App 等等',
@@ -59,7 +59,7 @@ function speakers(){
             'pic'     => 'Ernest_profile_high_500.jpg',
         ],
         'asuscloud' => [
-            'name'    => '吳漢章(Peter Wu)',
+            'name'    => '吳漢章 (Peter Wu)',
             'company' => 'ASUS Cloud',
             'title'   => 'CEO',
             'bio'     => '2008 年加入了華碩電腦集團，擔任華碩雲端股份有限公司CEO 一職，肩負著華碩發展雲端產業及技術的使命，將雲端服務帶到全球的消費及商業市場，並建構健康、教育、家庭等領域生態系統，逐步帶領著華碩雲端成為雲端領域的領導品牌。',
@@ -109,7 +109,7 @@ function speakers(){
             'pic'     => 'synology.jpg',
         ],
         'john' => [
-            'name'    => '謝耀輝(John Sie)',
+            'name'    => '謝耀輝 (John Sie)',
             'company' => 'ACCUPASS',
             'title'   => '營運長 Chief Operating Officer',
             'bio'     => '謝耀輝(John Sie) 畢業 於台北工專電子及台灣科大資管， 曾任鴻海軟體工程師及PM，2009年創辦Accuvally Inc. 任CTO；於2011年推出「活動通 Accupass」榮獲國內外諸多大獎，該年榮獲《經理人雜誌》選為 100大 MVP專業經理人； 2012年轉任COO於大陸開展「活動行」服務，2013年公司獲得國際創投上億投資投資，成為亞太地區最具規模活動平台。',
@@ -200,7 +200,7 @@ function speakers(){
             'pic'     => 'appletone.jpg',
         ],        
         'anistar' => [
-            'name'    => 'Anistar 宋志峰',
+            'name'    => 'Anistar (宋志峰)',
             'company' => 'Yahoo',
             'title'   => 'EC Mobile Team',
             'bio'     => '長期專注於 Mobile app 開發，其中所開發的 Magic Shutter 被 New York Times 評為 iOS 上前十大最佳攝影軟體，之前曾在恆逸教育訓練中心針對 Mobile、Font-End、Design 領域有多年授課與專案實戰經驗，目前服務於雅虎電子商務部，致力用技術與創意提供有趣的 Mobile 應用。',
@@ -277,7 +277,7 @@ function speakers(){
             'pic'     => 'ElvisLin.jpg',
         ],        
         'tsaikd' => [
-            'name'    => '蔡程豐 (tsaikd)',
+            'name'    => 'tsaikd (蔡程豐)',
             'company' => '賽恩倍吉',
             'title'   => '顧問',
             'bio'     => 'Tsai KD，宅宅工程師，熱衷學習各種新技術，從前端到後端都稍有涉獵，除了一些常見的程式語言之外，目前較關注 Go 語言；系統方面，自從 Docker 出現後，就把 VM 當成備胎了...XD 目前待的公司主要營業項目是專利相關業務，對於專利資料的處理有幾年的經驗。',
