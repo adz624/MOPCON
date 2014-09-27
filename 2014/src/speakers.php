@@ -10,21 +10,21 @@ function speakers(){
             'pic'     => 'hsu.jpg',
         ],
         'ian' => [
-            'name'    => 'Ian Liao (廖聰哲)',
+            'name'    => '廖聰哲(Ian Liao)',
             'company' => 'Golface',
             'title'   => '創辦人',
             'bio'     => '現為 Golface (綠夾克運動有限公司) 負責人，發現高爾夫球在台灣是很昂貴的運動，很多人希望透過這個運動建立人際關係，但國內高球場經營非常傳統，缺一套球場專屬物流系統，於是喜愛打高爾夫球的 Ian 看到這個需求，和團隊成員開發出高爾夫球場的數位化解決方案 Golface，從動態球道空拍攝影、即時資訊回報、便捷賽事紀錄管理，甚至包括球友間的社交平台都提供專項服務。目前 Golface已把整套解決方案，導入 Rolex 全球排名1000 大的高爾夫球場',
             'pic'     => 'ian_500.jpg',
         ],
         'mhung' => [
-            'name'    => 'Michael Hung (洪志鵬)',
+            'name'    => '洪志鵬(Michael Hung)',
             'company' => 'Mozilla Taiwan',
             'title'   => '資深行銷總監',
             'bio'     => '洪志鵬 (Michael Hung)，別名 Michaelsoft。現職為 Mozilla 台灣分公司資深行銷總監，曾任台灣微軟全球技術支援中心副總經理、昇陽電腦(Sun Microsystems) 行銷總監等職。亦曾為專職作家，著有《最後的江湖道義》等四本書',
             'pic'     => 'Michael_Hung_500.jpg',
         ],
         'keynes' => [
-            'name'    => 'Keynes (鄭鎧尹)',
+            'name'    => '鄭鎧尹(Keynes)',
             'company' => 'iKala',
             'title'   => '設計總監',
             'bio'     => '鄭鎧尹博士為 LIVEhouse.in/iKala 共同創辦人, 並擔任產品設計總監一職，負責產品設計及產品策略。LIVEhouse.in 為第一個國產直播平台；iKala為國內最大唱歌社群。其研究領域為人機互動介面設計, 並曾於日本最頂尖的 UI 研究所 JST ERATO 及微軟亞洲研究院從事研究。其在閒暇時間喜愛撰寫科技或設計相關文章, 在 MMDays 或 UIUI 粉絲團上可追蹤到他的動態。',
@@ -45,7 +45,7 @@ function speakers(){
             'pic'     => 'tico.jpg',
         ],
         'sleepnova' => [
-            'name'    => 'sleepnova (周立瑋)',
+            'name'    => 'sleepnova(周立瑋)',
             'company' => '呼叫小黃',
             'title'   => '創辦人',
             'bio'     => '周立瑋為頑皮工坊 (Sleepnova, Inc.) 創辦人，帶領團隊提供全方位數位解決方案，包括網頁前後端和移動裝置整合，相信運用簡單的界面、實用的科技，提供便利大家的生活，就是對社會的回饋的最佳方式。代表性專案為呼叫小黃、愛料理、東森新聞 App 等等',
@@ -270,11 +270,11 @@ function speakers(){
             'pic'     => 'superbil.jpg',
         ],        
         'elvismetaphor' => [
-            'name'    => '林英傑',
+            'name'    => 'Elvis Lin',
             'company' => 'gamania',
             'title'   => 'Senior Software Engineer',
-            'bio'     => 'I am a senior Android application developer at Gamania to develop mobile social apps and write unit tests and user acceptance tests to verify the quality of apps. Before working at Gamania, I was a Android application engineer to develop multimedia apps and cloud apps at HTC. I love to join the community activities to study from experienced developers. I also hope to have the opportunity to share my experience with other developers.',
-            'pic'     => 'generic_speaker.png',
+            'bio'     => '目前在 Gash+ 中進行 Android 軟體開發的工作。最新的興趣是將測試加入開發的流程中，偶爾，​會發生一個不小心測試的程式碼比被測試的程式碼還長的「意外」。',
+            'pic'     => 'ElvisLin.jpg',
         ],        
         'tsaikd' => [
             'name'    => '蔡程豐 (tsaikd)',
