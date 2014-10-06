@@ -19,13 +19,11 @@ $tpl->mainClass = ' ⃠-black-box';
 
 // Geek
 //  - 新蛋
-//  - GitCafe
 
 // Developer
 
 // Coder
 //   - 乃師
-//   - UserXper 悠識
 $tpl->hacker = [
 
     [
@@ -46,6 +44,15 @@ $tpl->hacker = [
         'url'  => 'http://www.synology.com',
         'desc' => '群暉科技致力於整合最新科技並充分發揮其優勢，提供企業與家庭用戶可靠、經濟實惠的解決方案來集中資料儲存、簡化資料備份、跨平台分享和同步檔案，以及隨時隨地存取資料。群暉科技的目標是提供具前瞻性功能的產品與優質的客戶服務。',
         //'desc' => 'Synology is dedicated to taking full advantage of the latest technologies to bring businesses and home users reliable and affordable ways to centralize data storage, simplify data backup, share and sync files across different platforms, and access data on-the-go. Synology aims to deliver products with forward-thinking features and the best in class customer services.';
+    ],
+];
+
+$tpl->geek = [
+    [
+        'name' => 'GitCafe',
+        'img'  => 'gitcafe.png',
+        'url'  => 'https://gitcafe.com/',
+        'desc' => 'GitCafe 是一個基於程式碼託管服務打造的技術協作與分享平台，幫助研發團隊更好的進行專案和程式碼的管理與協作，為企業提供最佳化的工作流程與解決方案；同時助力國內外IT企業打造更好的開發者生態系統，獲得強有力的企業級技術推廣平台。',
     ],
 ];
 
@@ -121,6 +128,12 @@ $tpl->coder = [
         'img'  => 'finddog.png',
         'url'  => 'http://www.finddog.net/zh-tw/index.html',
         'desc' => '找狗網透過手機拍照影像辨識、文字搜尋、地理時間資訊，運用雲端模糊類神經智慧型辨識綜合搜尋系統，結合軟硬整合穿戴式裝置及網路分享機制，達成走失狗狗協尋和流浪狗地圖建立、寵物急難互助社群交流，建置出寵物健康數位化管理的創新服務。',
+    ],
+    [
+        'name' => '悠識數位',
+        'img'  => 'userxper.png',
+        'url'  => 'http://userxper.com/',
+        'desc' => '悠識數位顧問有限公司 (UserXper)以人本設計理念，專注在創新使用者經驗規劃，協助客戶創造優質的產品與服務。我們的願景是「帶動國內產品服務規劃設計人才的提昇」。在此願景下，發展出多元服務模式，包含教育訓練與HPX社群。',
     ],
 ];
 
