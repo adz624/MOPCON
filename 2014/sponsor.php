@@ -51,8 +51,6 @@ $tpl->hacker = [
 
 $tpl->developer = [
     [
-        // shawn
-        //其實是 developer
         'name' => 'Mobilogic',
         'img'  => 'mobilogics.png',
         'url'  => 'http://www.mobilogic.com/',
@@ -61,8 +59,6 @@ $tpl->developer = [
 ',
     ],
     [
-        // shawn
-        //其實是 developer
         'name' => '春水堂 Hami軟體商店',
         'img'  => 'hamiapps.png',
         'url'  => 'http://hamiweb.emome.net/pages/content/1/5',
@@ -82,21 +78,18 @@ $tpl->developer = [
 //– Safety:Green safety identification stamp, keeping away from virus threatens.'
     ],
     [
-        //其實是 developer
         'name' => 'Etu',
         'img'  => 'etu.png',
         'url'  => 'http://www.etusolution.com/index.php/tw/',
         'desc' => 'Etu 以亞洲為舞臺，是專為企業提供 Big Data End-to-End 解決方案的領導品牌。Etu 致力為產業客戶發展完整的軟、硬體，以及整合後的資料處理、分析，與未來擴充時所需的整體解決方案。協助客戶探勘企業內部的巨量多結構資料價值，使其能簡易地擷取潛藏在其中的商業價值。',
     ],
     [
-        //其實是 developer
         'name' => '摩鉅科技',
         'img'  => 'moregeek1.png',
         'url'  => 'http://www.moregeek.com/tw/',
         'desc' => '摩鉅科技股份有限公司，核心業務為遊戲技術平台研發及遊戲產品開發。我們擁有優秀的經營團隊與開發成員。創新＝觀察新的趨勢，提供新的體驗。群聚＝以人群為本，打造科技社交新生活。多元＝高度技術整合能力，充分客製化的思維能力。摩鉅科技希望能走在台灣開發商的更前端來看全世界。',
     ],
     [
-        //其實是 developer
         'name' => 'Mozilla',
         'img'  => 'mozilla.png',
         'url'  => 'http://mozilla.com.tw/',
@@ -106,7 +99,6 @@ $tpl->developer = [
 
 $tpl->coder = [
     [
-        // 其實是 coder
         'name' => '凌誠科技',
         'img'  => 'linkchain2.png',
         'url'  => 'http://www.lingcheng.com.tw/',
@@ -119,15 +111,12 @@ $tpl->coder = [
         'desc' => 'GitHub is the best way to build software together. Whether it\'s your company\'s app, your favorite open source library, or a weekend side project, GitHub helps everyone work together better by providing tools for easier collaboration and code sharing. Catch up on what happened while you were out or ask for help on a tricky chunk of code. Manage and contribute to projects from all your devices. The best part is you can keep using all of your favorite tools. Start collaborating on code today—open source project hosting is free!',
     ],
     [
-        // shawn
-        // 其實是 coder
         'name' => 'Mokoversity',
         'img'  => 'mokoversity.jpg',
         'url'  => 'https://www.mokoversity.com/',
         'desc' => 'Mokoversity，最早是 Moko365 所開發的開放式線上課程平臺（MOOC），後與 Taipei Angels（台安傑天使投資）合作，目標是打造一個追求開放創新精神及引導創業的新型態學校。Mokoversity 來自 Mobile Communication University 的概念。University 源自 universitas（拉丁文），原意是：community of teachers and scholars。Mokoversity 認為，在這個創意經濟的網路時代，「每個人都要學程式設計」，目前推出多門程式設計課程。',
     ],
     [
-        // 其實是 coder
         'name' => '找狗網',
         'img'  => 'finddog.png',
         'url'  => 'http://www.finddog.net/zh-tw/index.html',
@@ -137,8 +126,6 @@ $tpl->coder = [
 
 $tpl->special = [
     [
-        // shawn
-        // 其實是 特別贊助
         'name' => 'OSSF',
         'img'  => 'ossf.jpg',
         'url'  => 'http://www.openfoundry.org/',
