@@ -10,22 +10,23 @@ $tpl->title = "徵求贊助商";
 $tpl->mainClass = ' ⃠-black-box';
 // TonyStark
 //  - ASUSCloud
-//  - Microsoft
-
-// Hacker
-//  - Yahoo
-//  - KKBOX
-//  - IBM
 
 // Geek
 //  - 新蛋
 
-// Developer
-
 // Coder
 //   - 乃師
-$tpl->hacker = [
 
+$tpl->ironman = [
+    [
+        'name' => 'Microsoft',
+        'img'  => 'ms.jpg',
+        'url'  => 'http://www.microsoft.com/',
+        'desc' => '微軟公司 (那斯達克證交所上市代號︰MSFT)成立於1975年，微軟是全球科技產業的領航者，提供軟體、裝置、及資訊服務解決方案，幫助人們以及企業實現他們最大的潛能。身為政府、學校與企業最值得信賴的夥伴，微軟自1989年於台灣深耕以來，始終致力於幫助台灣提升創新力、競爭力以及促進經濟繁榮- 共同來亮點台灣！',
+    ],
+];
+
+$tpl->hacker = [
     [
         'name' => 'Amazon Web Service',
         'img'  => 'aws.png',
@@ -44,6 +45,24 @@ $tpl->hacker = [
         'url'  => 'http://www.synology.com',
         'desc' => '群暉科技致力於整合最新科技並充分發揮其優勢，提供企業與家庭用戶可靠、經濟實惠的解決方案來集中資料儲存、簡化資料備份、跨平台分享和同步檔案，以及隨時隨地存取資料。群暉科技的目標是提供具前瞻性功能的產品與優質的客戶服務。',
         //'desc' => 'Synology is dedicated to taking full advantage of the latest technologies to bring businesses and home users reliable and affordable ways to centralize data storage, simplify data backup, share and sync files across different platforms, and access data on-the-go. Synology aims to deliver products with forward-thinking features and the best in class customer services.';
+    ],
+    [
+        'name' => 'KKBOX',
+        'img'  => 'kkbox.png',
+        'url'  => 'http://www.kkbox.com/',
+        'desc' => 'KKBOX 是由一群熱愛技術及音樂的工程師於 2004 年創立的品牌，獲得超過 500 家主流及獨立唱片公司的合法授權，擁有超過 1000 萬首曲目，包括最大的亞洲音樂曲庫。KKBOX目前服務地區包括台灣、日本、香港、新加坡、馬來西亞及泰國，有超過一千萬註冊用戶及兩百萬付費會員。KKBOX 致力為音樂愛好者創造最豐富精彩的音樂體驗，並為音樂人及其音樂打造最創新有力的宣傳平台。憑藉著領先的技術與策略合作夥伴，未來KKBOX 將前進更多海外市場，將亞洲線上音樂品牌帶到世界各地。',
+    ],
+    [
+        'name' => 'Yahoo',
+        'img'  => 'yahoo.png',
+        'url'  => 'http://tw.yahoo.com/',
+        'desc' => 'Yahoo致力於讓全球網友的每日造訪都充滿驚喜和愉悅。透過各種行動裝置，我們提供深入且完整的個人數位內容使用經驗，讓全球網友隨時與其最相關的人事物連結在一起。同時，Yahoo有效連結廣告主與消費者關係，以創造絕佳廣告價值。Yahoo總部位於美國加州森尼維耳市，並於美洲、亞太、歐洲、中東與非洲區都設有辦公據點。在台灣，Yahoo 以Yahoo奇摩為品牌，提供包括商城、搜尋、新聞、知識+、電子信箱、購物中心、拍賣、股市、電影、運動等多項服務。除服務廣大網友及廣告主，Yahoo奇摩也為企業提供電子商務解決方案。',
+    ],
+    [
+        'name' => 'IBM',
+        'img'  => 'ibm.png',
+        'url'  => 'http://www.ibm.com/tw/zh/',
+        'desc' => 'IBM是一家具全球規模的科技服務公司，總部設於美國紐約州阿蒙克市，目前業務據點遍佈全球一百七十多個國家，為一全球整合型企業。IBM 經過多次轉型，今以累積百年的資訊科技經驗、獨步全球的研發能力，提供企業轉型諮詢 (Strategy and transformation consulting)、雲端運算(Cloud)、商業分析(Big data and Analytic)、行動化(Mobile)、社群企業 (Social)、資訊安全 (Security)、智慧城市 (Smarter Cities) 等解決方案，致力為客戶創造商業價值，幫助在地企業在全球市場勝出。',
     ],
 ];
 
