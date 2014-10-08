@@ -30,7 +30,7 @@ if (count($sponsors) < 0) {
 <div class="<?= $level[0]?> bg-rotate section">
 <h2><?=$level[2]?></h2>
 <?php foreach($sponsors as $sponsor):?>
-        <section>
+        <section id="<?=htmlspecialchars($sponsor['id'])?>">
           <header class="sponsor-header">
             <div class="sponsor-img">
               <a href="<?=htmlspecialchars($sponsor['url'])?>" target="_blank">

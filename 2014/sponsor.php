@@ -19,6 +19,7 @@ $tpl->mainClass = ' ⃠-black-box';
 
 $tpl->ironman = [
     [
+        'id'   => 'microsoft',
         'name' => 'Microsoft',
         'img'  => 'ms.jpg',
         'url'  => 'http://www.microsoft.com/',
@@ -28,18 +29,21 @@ $tpl->ironman = [
 
 $tpl->hacker = [
     [
+        'id'   => 'aws',
         'name' => 'Amazon Web Service',
         'img'  => 'aws.png',
         'url'  => 'http://aws.amazon.com/',
         'desc' => 'Amazon Web Services 於2006年推出，開始將主要的IT基礎設施以網路服務的形式，公開讓企業使用 – 此形式也是目前大家耳熟能詳的雲端運算。Amazon Web Services現今在雲端提供高可靠性、高擴充性，以及低成本的基礎架構平台。Amazon Web Services 提供超過40種的不同服務，包括 Amazon Elastic Compute Cloud (Amazon EC2)、Amazon Simple Storage Service (Amazon S3) 及 Amazon Relational Database Service (Amazon RDS)。',
     ],
     [
+        'id'   => 'coimotion',
         'name' => 'COIMOTION',
         'img'  => 'coimotion.png',
         'url'  => 'http://www.coimotion.com/',
         'desc' => '跨入行動應用的時代，COIMOTION 以先進的概念打造對開發者更友善、更好用的 API 服務。經由豐富的內容服務、完整的功能模組，COIMOTION 協助開發者打造以往無法想像的網路應用，讓開發者開創新的風潮！',
     ],
     [
+        'id'   => 'synology',
         'name' => '群暉科技',
         'img'  => 'synology_dark_bg.png',
         'url'  => 'http://www.synology.com',
@@ -47,18 +51,21 @@ $tpl->hacker = [
         //'desc' => 'Synology is dedicated to taking full advantage of the latest technologies to bring businesses and home users reliable and affordable ways to centralize data storage, simplify data backup, share and sync files across different platforms, and access data on-the-go. Synology aims to deliver products with forward-thinking features and the best in class customer services.';
     ],
     [
+        'id'   => 'kkbox',
         'name' => 'KKBOX',
         'img'  => 'kkbox.png',
         'url'  => 'http://www.kkbox.com/',
         'desc' => 'KKBOX 是由一群熱愛技術及音樂的工程師於 2004 年創立的品牌，獲得超過 500 家主流及獨立唱片公司的合法授權，擁有超過 1000 萬首曲目，包括最大的亞洲音樂曲庫。KKBOX目前服務地區包括台灣、日本、香港、新加坡、馬來西亞及泰國，有超過一千萬註冊用戶及兩百萬付費會員。KKBOX 致力為音樂愛好者創造最豐富精彩的音樂體驗，並為音樂人及其音樂打造最創新有力的宣傳平台。憑藉著領先的技術與策略合作夥伴，未來KKBOX 將前進更多海外市場，將亞洲線上音樂品牌帶到世界各地。',
     ],
     [
+        'id'   => 'yahoo',
         'name' => 'Yahoo',
         'img'  => 'yahoo.png',
         'url'  => 'http://tw.yahoo.com/',
         'desc' => 'Yahoo致力於讓全球網友的每日造訪都充滿驚喜和愉悅。透過各種行動裝置，我們提供深入且完整的個人數位內容使用經驗，讓全球網友隨時與其最相關的人事物連結在一起。同時，Yahoo有效連結廣告主與消費者關係，以創造絕佳廣告價值。Yahoo總部位於美國加州森尼維耳市，並於美洲、亞太、歐洲、中東與非洲區都設有辦公據點。在台灣，Yahoo 以Yahoo奇摩為品牌，提供包括商城、搜尋、新聞、知識+、電子信箱、購物中心、拍賣、股市、電影、運動等多項服務。除服務廣大網友及廣告主，Yahoo奇摩也為企業提供電子商務解決方案。',
     ],
     [
+        'id'   => 'ibm',
         'name' => 'IBM',
         'img'  => 'ibm.png',
         'url'  => 'http://www.ibm.com/tw/zh/',
@@ -68,6 +75,7 @@ $tpl->hacker = [
 
 $tpl->geek = [
     [
+        'id'   => 'gitcafe',
         'name' => 'GitCafe',
         'img'  => 'gitcafe.png',
         'url'  => 'https://gitcafe.com/',
@@ -77,6 +85,7 @@ $tpl->geek = [
 
 $tpl->developer = [
     [
+        'id'   => 'mobilogic',
         'name' => 'Mobilogic',
         'img'  => 'mobilogics.png',
         'url'  => 'http://www.mobilogic.com/',
@@ -85,6 +94,7 @@ $tpl->developer = [
 ',
     ],
     [
+        'id'   => 'hami',
         'name' => '春水堂 Hami軟體商店',
         'img'  => 'hamiapps.png',
         'url'  => 'http://hamiweb.emome.net/pages/content/1/5',
@@ -104,18 +114,21 @@ $tpl->developer = [
 //– Safety:Green safety identification stamp, keeping away from virus threatens.'
     ],
     [
+        'id'   => 'etu',
         'name' => 'Etu',
         'img'  => 'etu.png',
         'url'  => 'http://www.etusolution.com/index.php/tw/',
         'desc' => 'Etu 以亞洲為舞臺，是專為企業提供 Big Data End-to-End 解決方案的領導品牌。Etu 致力為產業客戶發展完整的軟、硬體，以及整合後的資料處理、分析，與未來擴充時所需的整體解決方案。協助客戶探勘企業內部的巨量多結構資料價值，使其能簡易地擷取潛藏在其中的商業價值。',
     ],
     [
+        'id'   => 'moregeek',
         'name' => '摩鉅科技',
         'img'  => 'moregeek1.png',
         'url'  => 'http://www.moregeek.com/tw/',
         'desc' => '摩鉅科技股份有限公司，核心業務為遊戲技術平台研發及遊戲產品開發。我們擁有優秀的經營團隊與開發成員。創新＝觀察新的趨勢，提供新的體驗。群聚＝以人群為本，打造科技社交新生活。多元＝高度技術整合能力，充分客製化的思維能力。摩鉅科技希望能走在台灣開發商的更前端來看全世界。',
     ],
     [
+        'id'   => 'moz',
         'name' => 'Mozilla',
         'img'  => 'mozilla.png',
         'url'  => 'http://mozilla.com.tw/',
@@ -125,30 +138,35 @@ $tpl->developer = [
 
 $tpl->coder = [
     [
+        'id'   => 'linksys',
         'name' => '凌誠科技',
         'img'  => 'linkchain2.png',
         'url'  => 'http://www.lingcheng.com.tw/',
         'desc' => '凌誠科技成立於2006年4月，主要從事應用軟體相關技術的研發及服務，專注於「精緻農業」、「資訊平台」及「自動控制」等領域發展，不斷深化軟體開發與專業服務能量，持續貫徹CMMI國際軟體品質政策，為客戶提供最佳的顧問諮詢、完善的解決方案以及快速的技術支援。',
     ],
     [
+        'id'   => 'github',
         'name' => 'Github',
         'img'  => 'github.png',
         'url'  => 'http://www.github.com/',
         'desc' => 'GitHub is the best way to build software together. Whether it\'s your company\'s app, your favorite open source library, or a weekend side project, GitHub helps everyone work together better by providing tools for easier collaboration and code sharing. Catch up on what happened while you were out or ask for help on a tricky chunk of code. Manage and contribute to projects from all your devices. The best part is you can keep using all of your favorite tools. Start collaborating on code today—open source project hosting is free!',
     ],
     [
+        'id'   => 'mokoversity',
         'name' => 'Mokoversity',
         'img'  => 'mokoversity.jpg',
         'url'  => 'https://www.mokoversity.com/',
         'desc' => 'Mokoversity，最早是 Moko365 所開發的開放式線上課程平臺（MOOC），後與 Taipei Angels（台安傑天使投資）合作，目標是打造一個追求開放創新精神及引導創業的新型態學校。Mokoversity 來自 Mobile Communication University 的概念。University 源自 universitas（拉丁文），原意是：community of teachers and scholars。Mokoversity 認為，在這個創意經濟的網路時代，「每個人都要學程式設計」，目前推出多門程式設計課程。',
     ],
     [
+        'id'   => 'finddog',
         'name' => '找狗網',
         'img'  => 'finddog.png',
         'url'  => 'http://www.finddog.net/zh-tw/index.html',
         'desc' => '找狗網透過手機拍照影像辨識、文字搜尋、地理時間資訊，運用雲端模糊類神經智慧型辨識綜合搜尋系統，結合軟硬整合穿戴式裝置及網路分享機制，達成走失狗狗協尋和流浪狗地圖建立、寵物急難互助社群交流，建置出寵物健康數位化管理的創新服務。',
     ],
     [
+        'id'   => 'userxper',
         'name' => '悠識數位',
         'img'  => 'userxper.png',
         'url'  => 'http://userxper.com/',
@@ -158,6 +176,7 @@ $tpl->coder = [
 
 $tpl->special = [
     [
+        'id'   => 'ossf',
         'name' => 'OSSF',
         'img'  => 'ossf.jpg',
         'url'  => 'http://www.openfoundry.org/',
@@ -172,18 +191,21 @@ OSSF 重點任務為培植本土自由軟體社群與人才，實際工作有：
 //To promote the development and use of open source software, OSSF provides a forum that facilitates interaction and collaboration between open source software developers, and serves as a bridge to link developers with industry and academia.
     ],
     [
+        'id'   => 'colourdesign',
         'name' => 'Colour Design',
         'img'  => 'colourdesign.png',
         'url'  => 'http://www.colour.tw/',
         'desc' => 'Colour Design誕生，是 MOPCON 2013美術組的一群小小設計師們一起創造出來的品牌。「Colour」是加拿大的字，表示設計上美麗繽紛的色彩。這也代表了我們湧泉般各式各樣的創意。'
     ],
     [
+        'id'   => 'stu',
         'name' => '樹德科技大學',
         'img'  => 'stu_edu.png',
         'url'  => 'http://www.stu.edu.tw/',
         'desc' => '樹德科技大學是一所充滿樂觀、進取，講究人文、創新、設計與研發的綜合性科技大學，營造自主開放的學習環境，建立互重自律的校園生活，藉以培養兼具人文與科技、組織領導與問題解決能力的專業人才，落實理論與實務之平衡發展，展現研究、創新應用能力的科技大學。'
     ],
     [
+        'id'   => 'kktix',
         'name' => 'KKTIX',
         'img'  => 'kktix.png',
         'url'  => 'https://kktix.com',
