@@ -1,6 +1,7 @@
 <?php
 $levels = [
     // ['css name', '變數名稱', '畫面顯示名稱']
+    ['sponsor-platinum', 'ironman', 'Tony Stark'],
     ['sponsor-platinum', 'hacker', 'Hacker'],
     ['sponsor-gold', 'geek', 'Geek'],
     ['sponsor-silver', 'developer', 'Developer'],
