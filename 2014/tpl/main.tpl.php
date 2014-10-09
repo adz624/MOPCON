@@ -25,13 +25,14 @@
 	<div class="container">
 	<a href="/" class="logo desktop-only"></a>
 	<ul>
-		<li class="menu-link"><a href="index.php"><span>首頁</span></a></li>
+		<!-- <li class="menu-link"><a href="index.php"><span>首頁</span></a></li> -->
 		<li class="menu-link"><a href="news.php"><span>公告</span></a></li>
 		<!-- <li class="menu-link"><a href="cfp.php"><span>徵稿</span></a></li> -->
-		<li class="menu-link"><a href="http://mopcon.kktix.cc/events/2014-registration"><span>報名</span></a></li>
+		<!-- <li class="menu-link"><a href="http://mopcon.kktix.cc/events/2014-registration"><span>報名</span></a></li> -->
 		<li class="menu-link"><a href="session.php"><span>議程</span></a></li>
 		<li class="menu-link"><a href="sponsor.php"><span>贊助</span></a></li>
 		<li class="menu-link"><a href="speakers.php"><span>講者</span></a></li>
+		<li class="menu-link"><a href="media.php"><span>媒體</span></a></li>
 		<li class="menu-link"><a href="location.php"><span>交通</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>IRC</span></a></li>-->
 		<!-- <li class="menu-link"><a href="#"><span>Apps</span></a></li> -->
