@@ -80,12 +80,21 @@ function speakers(){
             'bio'     => '目前主要工作在推動微軟伺服器及雲端平台策略與行銷。曾任台灣微軟創新中心營運負責人、蕃薯藤數位科技協理。',
             'pic'     => 'Wangtun2.jpg',
         ],
-        'amazon' => [
-            'name'    => 'Amazon 邀請神秘嘉賓',
-            'company' => 'Amazon',
-            'title'   => '神秘嘉賓',
-            'bio'     => '就說是神秘嘉賓了，當然很神秘',
-            'pic'     => 'aws.png',
+        'KenChan' => [
+            'name'    => 'Ken Chan',
+            'company' => 'Amazon Web Service',
+            'title'   => 'AWS Solution Architect, Asia Pacific',
+            'bio'     => 'Ken在IT界擁有+15年的資深經驗，曾經在Red Hat擔任大中華地區的方案架構經理並領導著頂尖科技團隊與政府合作開發各樣FSI，Telco相關的解決方案，協助銷售團隊去穩定和提升商機。
+            Ken在2011年加入AWS，推廣AWS雲端服務並提供AWS技術專業指導，幫助用戶快速上手。',
+            'pic'     => 'KenChan.jpg',
+        ],
+        'JamesTien' => [
+            'name'    => 'James Tien',
+            'company' => 'Amazon Web Service',
+            'title'   => 'Business Development Manager, AWS',
+            'bio'     => 'James Tien has been responsible for business development activities in Taiwan for the past 2.5 years since he joined AWS in May 2012. He helps enterprises of all sizes, SMBs and startups to leverage the benefits of the AWS cloud to accelerate their businesses. He enjoys seeing innovations enabled by the cloud. He enjoys seeing Taiwanese companies scale and compete globally.
+            James Tien has a degree in Electrical Engineering from University of Victoria, Canada. Now calling Singapore home, he has spent much of his time living in different places such as Australia, Canada, and the USA. He has a lot of passion for technologies and music. Spotify is one of his favorite apps to date.',
+            'pic'     => 'JamesTien.jpg',
         ],
         'yahoo' => [
             'name'    => 'Joe Hsia',
