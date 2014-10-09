@@ -67,6 +67,10 @@ $tpl->content =<<<RAW_HTML
             <article class="article">
                 <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢，並以軟體科技從業人員出發，定調本年會精神意涵為 "I code, I spread, I connect"。</p>
                 <p>
+                MOPCON 2014 於 2014/9/22 開放報名，800張票在68分鐘內被橫掃一空，再度超越自我，刷新南台灣科技研討會報名最快紀錄！2014/9/26 二階段報名也在短短36分鐘就把再度釋出的189張票掠奪殆盡，南台灣科技研討會極限再度從 MOPCON 2014 獲得新的詮釋。
+                </p>
+                <!--
+                <p>
                 MOPCON 2013開放報名後，四百五十張張門票在四個半小時被掠奪殆盡，刷新南台灣科技研討會報名最快紀錄！2013 年 10 月 26 ~ 27 日活動期間，現場參與人數高達近五百名，樹立南台灣科技研討會之新里程碑；同時
                 <a href="http://www.appshooting.com.tw/2013/10/mopcon-2013/" target="_blank">App便利屋</a>、
                 <a href="http://www.appguru.com.tw/appguru/blog/20507/ltk-south-insisted-on-holding-size-mopcon-developers" target="_blank">APPGuru</a>、  
@@ -76,6 +80,7 @@ $tpl->content =<<<RAW_HTML
                 <a href="http://www.idn.com.tw/news/news_content.php?catid=2&catsid=4&catdid=0&artid=20131027abcd009" target="_blank">自立晚報</a>、
                 <a href="http://edn.udn.com/news/print.jsp?aid=674265&cid=47" target="_blank">聯合新聞網</a>       
                  主流媒體報導</p>
+                -->
             </article>
         </div>
         <div class="col-6">
@@ -108,7 +113,7 @@ $tpl->content =<<<RAW_HTML
                     <p>• 地點：高雄國際會議中心（ICCK）</p>
                     <p>• 主題：App開發、雲端服務、數位內容、創新營運、海量資料、穿戴式裝置、運動健康照護、家庭自動化、TV / 高畫質內容、簡化設計和開發流程等最新行動應用趨勢 & 最夯的行動科技議題盡在 MOPCON，請密切注意<a href='https://www.facebook.com/mopcon' target="_blank">粉絲群</a>及官網的報名資訊！</p>
                 </article>
-                <a href="http://mopcon.kktix.cc/events/2014-registration" class="btn btn-green mtm" target="_blank">2014/09/22 20:00 開放報名</a>
+                <a href="http://mopcon.kktix.cc/events/2014-registration" class="btn btn-green mtm" target="_blank">報名額滿，看看有誰來參加？</a>
             </div>
         </div>   
     </section>

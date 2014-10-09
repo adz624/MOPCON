@@ -2261,6 +2261,13 @@ a.btn-selected {
   line-height: 1.2em;
   color: #fff;
 }
+a:hover {
+  -moz-transform: scale(1.1,1.05);
+  -ms-transform: scale(1.1,1.05);
+  -webkit-transform: scale(1.1,1.05);
+  transform: scale(1.1,1.05);
+  color: #47ba3f;
+}
 @media (min-width: 768px) {
   .kh-❤ .group-name {
     font-size: 2em;
