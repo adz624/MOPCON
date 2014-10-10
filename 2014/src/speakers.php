@@ -291,6 +291,13 @@ function speakers(){
             'title'   => '顧問',
             'bio'     => 'Tsai KD，宅宅工程師，熱衷學習各種新技術，從前端到後端都稍有涉獵，除了一些常見的程式語言之外，目前較關注 Go 語言；系統方面，自從 Docker 出現後，就把 VM 當成備胎了...XD 目前待的公司主要營業項目是專利相關業務，對於專利資料的處理有幾年的經驗。',
             'pic'     => 'tsaikd.jpg',
+        ],
+        'legist' => [
+            'name'    => 'Richard Lin 林旅強 (Legist 強)',
+            'company' => 'GitCafe',
+            'title'   => '市場總監',
+            'bio'     => '一個相信開放/ 自由/ 共享/ 創新可以讓人類變的更好的人類。以 Open Source Evangelist 為志業，參與並投入開源及技術社群活動的組織運營。從 2009 年起在中央研究院的自由軟體鑄造場研究開源授權、商業模式及社群經營，2013 年出任 JavaScript Developers Conference (JSDC) 2013 總召集人，並與 Ant Tzeng 共同創辦 BELP 社群。2014 年 2 月赴中國，加入上海東革志信息科技有限公司 GitCafe.com，擔任市場總監，並投入 Shanghai Linux User Group 的組織協調工作。對於中國及台灣的互聯網產業及技術社群運營又有更進一步的了解及心得。',
+            'pic'     => 'legist.jpg',
         ]
     ];
 }
