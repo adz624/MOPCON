@@ -282,7 +282,7 @@ function speakers(){
             'name'    => 'Elvis Lin',
             'company' => 'gamania',
             'title'   => 'Senior Software Engineer',
-            'bio'     => '目前在 Gash+ 中進行 Android 軟體開發的工作。最新的興趣是將測試加入開發的流程中，偶爾，​會發生一個不小心測試的程式碼比被測試的程式碼還長的「意外」。',
+            'bio'     => '目前在 Gash+ 中進行 Android 軟體開發的工作。最新的興趣是將測試加入開發的流程中，偶爾會發生一個不小心測試的程式碼比被測試的程式碼還長的「意外」。',
             'pic'     => 'ElvisLin.jpg',
         ],        
         'tsaikd' => [
