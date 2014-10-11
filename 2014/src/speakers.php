@@ -58,12 +58,12 @@ function speakers(){
             'bio'     => '小時候玩 MS-DOS, OS/2, Windows 3.1,  Slackware，玩著玩著玩到大學申請少了零點多分沒法進資工系玩，改玩半導體製程和微小機電，幸運地進入台積研究所玩製程整合從研發、試產玩到量產。熱愛開放與不務正業的精神，曾經玩網路創業，現在上班在玩傳統產業 + 軟硬體整合，試著把無線通訊塞進健身器材中。下班參與 Mozilla 台灣社群 MozTW SUMO 專案，以及支援朋友們玩各種創業。夢想與大家玩出各種可能性。愛台灣，不解釋',
             'pic'     => 'Ernest_profile_high_500.jpg',
         ],
-        'asuscloud' => [
+        'peterwu' => [
             'name'    => '吳漢章 (Peter Wu)',
             'company' => 'ASUS Cloud',
             'title'   => 'CEO',
             'bio'     => '2008 年加入了華碩電腦集團，擔任華碩雲端股份有限公司CEO 一職，肩負著華碩發展雲端產業及技術的使命，將雲端服務帶到全球的消費及商業市場，並建構健康、教育、家庭等領域生態系統，逐步帶領著華碩雲端成為雲端領域的領導品牌。',
-            'pic'     => 'asus-cloud_tmp.png',
+            'pic'     => 'peterwu.jpg',
         ],
         'ericsk' => [
             'name'    => '上官林傑 (ericsk)',
