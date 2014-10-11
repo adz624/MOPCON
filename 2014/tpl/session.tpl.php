@@ -14,7 +14,7 @@ $day_num = 0;
 foreach ($this->sessions as $date => $day_sessions):
     $day_num++;
 ?>
-<a name="day-<?=$day_num?>">
+<a name="day-<?=$day_num?>"></a>
 <div class="date">
 <?=htmlspecialchars($date)?>
 </div>
@@ -25,7 +25,7 @@ foreach ($this->sessions as $date => $day_sessions):
     $idx++;
     $article_style = count($time_sessions)>1 ? "area-{$idx}" : "area-all";
 ?>
-    <a name="<?=htmlspecialchars($date."_".$time."_".$session['room'])?>"/>
+    <a name="<?=htmlspecialchars($date."_".$time."_".$session['room'])?>"></a>
     <article class="<?=$article_style?>" href="#inline_content">
         <div class="place">
 <?php if (isset($session['room'])): ?>
