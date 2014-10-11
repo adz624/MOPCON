@@ -214,5 +214,23 @@ function sponsors()
         }
     }
 
+    // hack，在這邊加上的贊助商只是給議程頁面顯示用的
+    $allSponsor['mopcon_attendee'] = [
+        'id'   => 'mopcon_attendee',
+        'name' => '全體會眾',
+        'img'  => '../index-logo.svg',
+        'url'  => 'http://mopcon.org',
+        'desc' => '參與 Mopcon 的全體會眾',
+        'hidden' => true,
+    ];
+
+    $allSponsor['asus_and_microsoft'] = [
+        'id'   => 'asus_and_microsoft',
+        'name' => '微軟公司與華碩雲端',
+        'img'  => '../index-logo.svg',
+        'url'  => 'http://mopcon.org',
+        'desc' => "{$allSponsor['microsoft']['desc']}{$allSponsor['asuscloud']['desc']}",
+        'hidden' => true,
+    ];
     return $allSponsor;
 }
