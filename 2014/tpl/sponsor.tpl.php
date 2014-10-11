@@ -29,7 +29,12 @@ if (count($sponsors) < 0) {
 ?>
 <div class="<?= $level[0]?> bg-rotate section">
 <h2><?=$level[2]?></h2>
-<?php foreach($sponsors as $sponsor):?>
+<?php foreach($sponsors as $sponsor):
+  // 設定為不顯示的 sponsor 就先不要顯示
+  if (isset($sponsor['hidden']) && $sponsor['hidden']) {
+      continue;
+  }
+?>
         <section id="<?=htmlspecialchars($sponsor['id'])?>">
           <header class="sponsor-header">
             <div class="sponsor-img">
