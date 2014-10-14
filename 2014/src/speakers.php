@@ -129,7 +129,7 @@ function speakers(){
             'company' => '全球獨立遊戲開發者支援組織 - Indie Stream',
             'title'   => '創辦人',
             'bio'     => '現為英國獨立遊戲公司 Nyamyam 美術總監。曾任職英國 Rare 遊戲公司擔任美術設計長達 10 年，Rare 公司專為微軟 XBOX Kinect 開發 Kinect Sports。2012年以遊戲作品《Tengami》入圍全球知名獨立遊戲盛會IndieCade Festival的獎項 。《Tengami》遊戲目前已經可在Steam平台（PC & Mac版）、任天堂Wii U eshop，以及iOS App Store上購買並取得。',
-            'pic'     => 'generic_speaker.png',
+            'pic'     => 'ryo.jpg',
         ],
         'drake' => [
             'name'    => 'Drake (官順暉)',
