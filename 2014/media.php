@@ -11,6 +11,13 @@ $tpl->mainClass = ' ⃠-black-box';
 
 $tpl->hacker = [
     [
+        'id'   => 'iThome',
+        'name' => 'iThome',
+        'img'  => 'iThomelogo.png',
+        'url'  => 'http://weekly.ithome.com.tw/',
+        'desc' => 'iThome 讓你全盤了解IT天下事',
+    ],
+    [
         'id'   => 'punnode',
         'name' => 'PunNode',
         'img'  => 'punnode.png',

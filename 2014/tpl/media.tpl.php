@@ -26,7 +26,7 @@ if (count($sponsors) < 0) {
           <header class="sponsor-header">
             <div class="sponsor-img">
               <a href="<?=htmlspecialchars($sponsor['url'])?>" target="_blank">
-                <img src="/2014/images/sponsor/<?= htmlspecialchars($sponsor['img']) ?>" alt="<?=htmlspecialchars($sponsor['name'])?>">
+                <img src="/2014/images/media/<?= htmlspecialchars($sponsor['img']) ?>" alt="<?=htmlspecialchars($sponsor['name'])?>">
               </a>
             </div>
             <!-- <h3 class="sponsor-title"><?=htmlspecialchars($sponsor['name'])?></h3> -->
