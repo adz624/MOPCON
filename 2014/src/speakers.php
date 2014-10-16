@@ -103,12 +103,12 @@ function speakers(){
             'bio'     => 'Joe擁有10+年的設計工作經驗。曾在美國的AT&T Interactive, Electronic Arts, 還有 American Honda負責互動及使用者經驗設計。在2012年加入Yahoo APAC設計團隊。2013年底透過設計思考跟精實創業的產品開發流程建立了Mobile App設計團隊並且讓Yahoo超級商城APP在Apple Store跟Google Play Store被選擇Editor’s Choice APP。',
             'pic'     => 'yahoo_tmp.jpg',
         ],
-        'ibm' => [
+        'hzh' => [
             'name'    => '何志恒',
             'company' => 'IBM',
             'title'   => 'IBM全球行動企業方案首席架構師',
-            'bio'     => 'IBM全球行動企業方案首席架構師 <等待講者回覆喔>',
-            'pic'     => 'ibm_tmp.png',
+            'bio'     => 'IBM全球行動企業方案首席架構師',
+            'pic'     => 'hzh.jpg',
         ],
         'synology' => [
             'name'    => '曾貴熙 Hunter Tseng & 楊智焙 Chih-Pei Yang',
