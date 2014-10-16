@@ -1,11 +1,5 @@
 <?php
 
-// TonyStark
-//  - ASUSCloud
-
-// Geek
-//  - 新蛋
-
 // Coder
 //   - 乃師
 
@@ -81,6 +75,13 @@ function sponsorsByLevel(){
                 'img'  => 'gitcafe.png',
                 'url'  => 'https://gitcafe.com/',
                 'desc' => 'GitCafe 是一個基於程式碼託管服務打造的技術協作與分享平台，幫助研發團隊更好的進行專案和程式碼的管理與協作，為企業提供最佳化的工作流程與解決方案；同時助力國內外IT企業打造更好的開發者生態系統，獲得強有力的企業級技術推廣平台。',
+            ],
+            [
+                'id'   => 'newegg',
+                'name' => '新蛋',
+                'img'  => 'new_egg.jpg',
+                'url'  => 'http://www.newegg.com.tw/',
+                'desc' => '美商新蛋公司(Newegg Inc.)成立於美國加州，是以科技類及消費性電子商品為主要產品核心的全球領先電子商務平台，經營市場遍布美加、歐洲、澳紐、台灣、中國大陸及印度等地。Newegg.com提供業界最新、最快的IT產品，搭配嶄新的服務內容和令人讚嘆的賣場體驗，在全球客戶服務評級中屢次獲得業界領先的殊榮。',
             ],
         ], // end of geek
 
