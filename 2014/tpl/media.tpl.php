@@ -32,7 +32,7 @@ if (count($sponsors) < 0) {
             <!-- <h3 class="sponsor-title"><?=htmlspecialchars($sponsor['name'])?></h3> -->
           </header>
           <div class="article">
-              <?=htmlspecialchars($sponsor['desc'])?>
+              <?=($sponsor['desc'])?>
           </div>
         </section>
 <?php endforeach;?>
