@@ -42,6 +42,16 @@ $tpl->hacker = [
         'url'  => 'http://www.mofang.com.tw/',
         'desc' => '魔方網為專業手機遊戲媒體，內容涵蓋手機遊戲新聞、評測、攻略和影片等，並且橫跨PC與行動裝置，提供讀者個性化的趣味內容。'
     ],
+    [
+        'id'   => 'cool3c',
+        'name' => 'cool3c',
+        'img'  => 'cool3c.png',
+        'url'  => 'http://www.cool3c.com',
+        'desc' => '<p>癮科技(<a href="http://www.cool3c.com/">COOL3C.COM</a>)為台灣知名科技媒體網站,2005年由<a href="http://www.funmakr.com/content.php?sno=0000001">博客邦媒體 (FunMakr Media)</a>成立。根據全球數據監測公司 Alexa 測量，癮科技每月有189萬名不重複使用者(UV)。科技新聞媒體網站流量台灣第三。
+        <br><br><p>癮科技除了每天有12篇左右的國內外 最新3C產品、APP軟體消息,也與 網友分享許多科技⽣生活新知,另外更 透過許多深度分析、實測觀點的專欄，讓科技更貼近網友們的生活。
+        <br><br><p>不僅如此，癮科技現在還致力於回答生活中「為什麼」的問題，例如<a href="http://www.cool3c.com/article/68788">到底什麼是 Prism 法案，對全世界的影響是什麼？</a>還有日常中覺得有點疑惑，卻也沒去思考的數位趣味，例如<a href="http://www.cool3c.com/article/68809">Youtube影片為什麼觀看次數都會留在301次</a>好一陣子這樣的小問題，解開了就會有一種爬上山頂喝上兩口涼水的唱快感呢！
+        '
+    ],
 /*
     [
         'id'   => '',
