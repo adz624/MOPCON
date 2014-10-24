@@ -34,10 +34,10 @@
 		<li class="menu-link"><a href="speakers.php"><span>講者</span></a></li>
 		<li class="menu-link"><a href="media.php"><span>媒體</span></a></li>
 		<li class="menu-link"><a href="location.php"><span>交通</span></a></li>
-		<!-- <li class="menu-link"><a href="#"><span>IRC</span></a></li>-->
+		<li class="menu-link"><a href="https://kiwiirc.com/client/irc.freenode.net/mopcon" target="_blank"><span>聊天室</span></a></li>
 		<!-- <li class="menu-link"><a href="#"><span>Apps</span></a></li> -->
 		<li class="menu-link"><a href="community.php"><span>社群</span></a></li>
-		<li class="menu-link"><a href="/history.html"><span>歷年</span></a></li>
+		<!--<li class="menu-link"><a href="/history.html"><span>歷年</span></a></li>-->
 		<!-- <li class="menu-link"><a href="#"><span>其他</span></a></li> -->
 	</ul>
 
