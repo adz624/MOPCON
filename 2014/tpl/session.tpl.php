@@ -3,9 +3,6 @@ include __DIR__.'/../src/Parsedown.php';
 $parsedown = new Parsedown();
 
 ?>
-<div class="waring">
-目前議程尚在調整中，顯示資料並非最終結果。不便之處敬請多多包涵
-</div>
 <div class="row date-link">
     <a href="#day-2">連至第二天議程 10/26 →</a>
 </div>
