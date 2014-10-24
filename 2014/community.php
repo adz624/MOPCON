@@ -90,11 +90,11 @@ KALUG_MD
         'img'     => 'images/community/kf2e.png',
         'links'   => [
             ['icon' => 'icon-facebook42', 'url' => 'https://www.facebook.com/groups/358503154261390/'],
-            ['icon' => 'icon-earth2', 'url' => 'http://akdg.kktix.cc/'],
+            ['icon' => 'icon-earth2', 'url' => 'http://gonsakon-7655f2.kktix.cc/'],
         ],
         'desc_md' => <<<KF2E_MD
 高雄前端社群於2013年3月31日創立，
-每月固定舉辦前端主題聚會，歡迎網頁設計師們一塊前來交流
+每月固定舉辦前端主題聚會，歡迎網頁設計師一塊前來交流
 KF2E_MD
     ],
     'mgirl' => [
