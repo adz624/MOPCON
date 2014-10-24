@@ -27,7 +27,7 @@ foreach ($this->sessions as $date => $day_sessions):
 ?>
     <a name="<?=htmlspecialchars($date."_".$time."_".$session['room'])?>"></a>
 <?php if (!$session['tag']) : // 如果沒有設定講者，那就是休息時間...顯示成一條棒棒，不顯示正常的議程資料?>
-    <div style="color:#fff; background-color:#385; padding:3px; text-align:center;">
+    <div style="color:#fff; background-color:#69CA62; padding:3px; text-align:center;">
       <div><?=htmlspecialchars($session['title'])?></div>
       <div style="color:#eee"><?=$session['desc']?></div>
     </div>
