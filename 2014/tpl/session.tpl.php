@@ -3,6 +3,10 @@ include __DIR__.'/../src/Parsedown.php';
 $parsedown = new Parsedown();
 
 ?>
+<div class="waring">
+大會 IRC 頻道在 irc.freenode.net #mopcon<br>
+也可以使用<a href="https://kiwiirc.com/client/irc.freenode.net/mopcon" target="_blank">網路聊天界面</a>
+</div>
 <div class="row date-link">
     <a href="#day-2">連至第二天議程 10/26 →</a>
 </div>
