@@ -76,6 +76,7 @@ KIMU_MD
         'sname'   => 'KaLUG',
         'img'     => 'images/community/kalug.jpg',
         'links'   => [
+            ['icon' => 'icon-facebook42', 'url' => 'https://www.facebook.com/groups/kalug.tw/'],
             ['icon' => 'icon-earth2', 'url' => 'http://kalug.linux.org.tw/'],
             ['icon' => 'icon-googleplus32', 'url' => 'https://plus.google.com/communities/113465528091946960161'],
         ],
