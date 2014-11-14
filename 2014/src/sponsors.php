@@ -173,6 +173,13 @@ function sponsorsByLevel(){
                 'url'  => 'http://userxper.com/',
                 'desc' => '悠識數位顧問有限公司 (UserXper)以人本設計理念，專注在創新使用者經驗規劃，協助客戶創造優質的產品與服務。我們的願景是「帶動國內產品服務規劃設計人才的提昇」。在此願景下，發展出多元服務模式，包含教育訓練與HPX社群。',
             ],
+            [
+                'id'   => 'nice',
+                'name' => '乃師',
+                'img'  => 'nice.png',
+                'url'  => 'http://www.nicestudio.com.tw/',
+                'desc' => 'niceStudio 成立於 2011 年 12 月 8 日，以追求極致完美的成品為目標，希望提供給所有使用者適切且美好的使用體驗。我們擅長處理 Java/Python/Perl/PHP 等著名的程式語言技術，專注於使用 OpenSource Solution 來解決客戶的問題與需求。',
+            ],
         ], // end of coder
 
         'special' => [
