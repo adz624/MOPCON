@@ -1,13 +1,79 @@
-<?php
-  $page = "home";
-?>
 <html lang="zh-TW" class="">
   <head>
-    <?php include_once("header.php"); ?>
+        <meta charset="utf-8">
+    <title>行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference" property="og:title">
+    <meta content="http://mopcon.org" property="og:url">
+    <meta content="Mobile Open Platform Conference (MOPCON) 行動科技應用開發者年會 是全台第一個針對移動式裝置的技術研討會，希望大家共同來參與。" property="og:description">
+    <meta content="http://mopcon.org/img/snapshot.jpg" property="og:image">
+    <meta content="website" property="og:type">
+    <meta content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference" property="og:site_name">
+    <meta name="description" content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference">
+    <link type="text/css" href="css/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="css/all.css" media="screen" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!-- <style type="text/css"> @font-face { font-family: "ct10"; src: url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=eot); src: local(" "),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=ttf) format("truetype"),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=woff) format("woff");} #ct10 { font-family: "ct10"; }.ct10 { font-family: "ct10"; }</style> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("a[rel='external']").click(function () {
+        this.target = "_blank";
+    });
+});
+</script>
+<script src="http://use.edgefonts.net/source-code-pro.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=191415824227657";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34651129-1']);
+  _gaq.push(['_setDomainName', 'mopcon.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
     <link rel="stylesheet" type="text/css" href="css/shareme.css"/>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
-    <?php include_once("navbar_en.php"); ?>
+      <div class="navbar">
+    <div class="navbar-inner">
+            <div class="navbar-container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a id="main_logo" class="brand" href="index_en.php"><img src="img/logo.png"/></a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <!-- <li class=""><a href="session.php">議程</a></li> -->
+            <li class=""><a href="sponsor_en.php">Sponsors</a></li>
+            <li class=""><a href="cfp_en.php">Call for Papers</a></li>
+            <li class=""><a href="map_en.php">Location</a></li>
+          </ul>
+          <ul id="language" class="nav pull-right">
+            <li class="divider-vertical"></li>
+            <li><a href="./index.php">中文版</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+    <div id="functionSeprate"></div>
+  </div><!-- /navbar -->
     <div class="slogon">
       <img src="img/MOPCON_2013Web_index.jpg"/>
     </div>
@@ -95,12 +161,73 @@
     <div class="row">
       <div style="float:right;">
       <p><h3>Follow us</h3></p>
-      <? include("./share.php"); ?>
+      
+<!-- facebook -->    
+<!--<script>
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=226197467449987";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<div style="float:left;" class="fb-like" data-href="https://www.facebook.com/mopcon" data-width="650" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+-->
+<div style="float:left; width:88px;padding-right:5px;margin-right:5px;border-right:1px solid #333">
+        <div><a href="https://www.facebook.com/mopcon">Facebook</a></div>
+	<iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href=https%3A%2F%2Fwww.facebook.com%2Fmopcon&amp;width=450&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=226197467449987" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+</div>
+<!--  google+  -->
+<div style="float:left; margin-right:5px;border-right:1px solid #333">
+    <div><a href="https://plus.google.com/116768206884057057248">Google+</a></div>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+	{parsetags: 'explicit'}
+    </script>
+    <div class="g-plusone" data-size="medium" data-href="http://mopcon.org/2013/"></div>
+    <script type="text/javascript">gapi.plusone.go();</script>
+</div>
+
+<!--  twitter  -->
+<div style="float:left;">
+    <div><a href="https://twitter.com/mopcon">Twitter</a></div>
+    <a href="https://twitter.com/mopcon" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" lang="uk"></a>
+    <script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+</div>
       </div>
       <div style="clear:both;"></div>
     </div>
     </div>
-    <?php include_once("footer.html"); ?>
+    <div class="copyright">Copyright &copy; 2013 Mobile Open Platform Conference. Designed by KSDG, CocoaHeads Kaohsiung, MOSUT, KIMU, KaLUG</div>
+<script type="text/javascript">
+$(".agenda-title").each(function(){
+  var $this = $(this);
+  $this.find('a').on('click', function(e){e.stopPropagation();}); // 避免連結點擊被 toggle 吃掉
+  var $parent = $this.parent();
+  $this.toggle(function(e){
+    $parent.addClass("on").removeClass("off");
+    e.preventDefault();
+  },function(e){
+    $parent.addClass("off").removeClass("on");
+    e.preventDefault();
+  });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34651129-1']);
+_gaq.push(['_setDomainName', 'mopcon.org']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+//ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/sharrre/1.3.4/jquery.sharrre-1.3.4.min.js"></script>
     <script type="text/javascript" src="scripts/shareme.js"></script>
   </body>

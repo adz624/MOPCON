@@ -1,13 +1,51 @@
-<?php
-  ini_set('error_reporting', E_ALL^E_NOTICE^E_STRICT);
-  $page = "speakers";
-  $title = "講者介紹";
-  $og_descr = "講者匯集國內知名行動技術開發者，10/26~27兩日議程提供最先進與實務之開發技術饗宴";
-  $page_file = $_SERVER['PHP_SELF'];
-?>
 <html lang="zh-TW" class="">
   <head>
-  <?php include_once("header.php");?>
+      <meta charset="utf-8">
+    <title>MOPCON 2013 | 講者介紹</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="MOPCON 2013 | 講者介紹" property="og:title">
+    <meta content="http://mopcon.org/2013/speakers.php" property="og:url">
+    <meta content="MOPCON 2013 | 講者匯集國內知名行動技術開發者，10/26~27兩日議程提供最先進與實務之開發技術饗宴" property="og:description">
+    <meta content="http://mopcon.org/img/snapshot.jpg" property="og:image">
+    <meta content="website" property="og:type">
+    <meta content="MOPCON 2013 | 講者介紹" property="og:site_name">
+    <meta name="description" content="行動科技應用開發者年會 | MOPCON 2013 | Mobile / Open / Platform Conference">
+    <link type="text/css" href="css/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link type="text/css" href="css/all.css" media="screen" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!-- <style type="text/css"> @font-face { font-family: "ct10"; src: url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=eot); src: local(" "),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=ttf) format("truetype"),      url(http://ds3.justfont.com/file/get/100001_0_30668557695/ct10_d3e8f81b2827.jpeg?type=woff) format("woff");} #ct10 { font-family: "ct10"; }.ct10 { font-family: "ct10"; }</style> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("a[rel='external']").click(function () {
+        this.target = "_blank";
+    });
+});
+</script>
+<script src="http://use.edgefonts.net/source-code-pro.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=191415824227657";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34651129-1']);
+  _gaq.push(['_setDomainName', 'mopcon.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
   <style>
     #all {
       padding: 10px;
@@ -50,7 +88,46 @@
   </style>
   </head>
   <body data-twttr-rendered="true" data-spy="scroll" data-target=".subnav" data-offset="50">
-  <?php include_once("navbar.php");?>
+    <div class="navbar">
+    <div class="navbar-inner">
+            <div class="navbar-container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a id="main_logo" class="brand" href="./"><img src="img/logo.png"/></a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class=""><a href="session.php">議程</a></li>
+            <li class=""><a href="sponsor.php">贊助</a></li>
+            <!-- <li class=""><a href="cfp.php">議程投稿</a></li> -->
+            <li class="active"><a href="speakers.php">講者</a></li>
+            <li class=""><a href="map.php">交通</a></li>
+            <li class=""><a href="irc.php">IRC</a></li>
+            <li class=""><a href="apps.php">Apps</a></li>
+            <li class=""><a href="social.php">社群</a></li>
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                <!-- <li class=""><a href="register.php">報名</a></li> -->
+                <!-- <li class="divider"></li> -->
+                <!-- <li class=""><a href="cfs.php">贊助活動</a></li> -->
+                <li class=""><a href="contact.php">聯絡我們</a></li>
+                <li class="divider"></li>
+                <li class=""><a href="../history.html">歷年活動</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="language" class="nav pull-right">
+            <li class="divider-vertical"></li>
+            <li><a href="index_en.php">English</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+    <div id="functionSeprate"></div>
+  </div><!-- /navbar -->
   <div class="container" id="all">
     <div class="row"><div class="span12"><h1>講者介紹</h1></div></div>
     <div class="span12">
@@ -440,7 +517,34 @@ google提供的UI元件不夠滿足產品需求？
       </div>
     </div>
   </div>
-  <?php include_once("footer.html");?>
+  <div class="copyright">Copyright &copy; 2013 Mobile Open Platform Conference. Designed by KSDG, CocoaHeads Kaohsiung, MOSUT, KIMU, KaLUG</div>
+<script type="text/javascript">
+$(".agenda-title").each(function(){
+  var $this = $(this);
+  $this.find('a').on('click', function(e){e.stopPropagation();}); // 避免連結點擊被 toggle 吃掉
+  var $parent = $this.parent();
+  $this.toggle(function(e){
+    $parent.addClass("on").removeClass("off");
+    e.preventDefault();
+  },function(e){
+    $parent.addClass("off").removeClass("on");
+    e.preventDefault();
+  });
+});
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34651129-1']);
+_gaq.push(['_setDomainName', 'mopcon.org']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+//ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 
   <script src="scripts/masonry.pkgd.min.js"></script>
   <script>
