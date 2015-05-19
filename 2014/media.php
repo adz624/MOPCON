@@ -65,7 +65,7 @@
           <header class="sponsor-header">
             <div class="sponsor-img">
               <a href="http://www.ithome.com.tw/" target="_blank">
-                <img src="images/media/iThomelogo.png" alt="iThome">
+                <img src="images/media/iThomelogo_square.png" alt="iThome">
               </a>
             </div>
             <!-- <h3 class="sponsor-title">iThome</h3> -->
