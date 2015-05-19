@@ -153,13 +153,10 @@ html {
 a {
   text-decoration: none;
   color: #a0dd9b;
+  transition: all 0.5s;
 }
 
 a:hover {
-  -moz-transform: scale(1.1, 1.05);
-  -ms-transform: scale(1.1, 1.05);
-  -webkit-transform: scale(1.1, 1.05);
-  transform: scale(1.1, 1.05);
   color: #47ba3f;
 }
 
@@ -598,14 +595,6 @@ a.btn-selected {
   font-size: 1.5em;
   line-height: 2em;
   color: #E1C03C;
-}
-
-.page-title:before {
-  content: "";
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-  right: 0;
 }
 
 .page-title h1 {

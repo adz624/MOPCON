@@ -4,7 +4,8 @@ $parsedown = new Parsedown();
 
 ?>
 <div class="waring">
-目前議程尚在調整中，顯示資料並非最終結果。不便之處敬請多多包涵
+大會 IRC 頻道在 irc.freenode.net #mopcon<br>
+也可以使用<a href="https://kiwiirc.com/client/irc.freenode.net/mopcon" target="_blank">網路聊天界面</a>
 </div>
 <div class="row date-link">
     <a href="#day-2">連至第二天議程 10/26 →</a>
@@ -27,7 +28,7 @@ foreach ($this->sessions as $date => $day_sessions):
 ?>
     <a name="<?=htmlspecialchars($date."_".$time."_".$session['room'])?>"></a>
 <?php if (!$session['tag']) : // 如果沒有設定講者，那就是休息時間...顯示成一條棒棒，不顯示正常的議程資料?>
-    <div style="color:#fff; background-color:#385; padding:3px; text-align:center;">
+    <div style="color:#fff; background-color:#69CA62; padding:3px; text-align:center;">
       <div><?=htmlspecialchars($session['title'])?></div>
       <div style="color:#eee"><?=$session['desc']?></div>
     </div>

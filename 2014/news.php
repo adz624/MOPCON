@@ -10,7 +10,7 @@ $tpl->title = "最新公告";
 $tpl->mainClass = 'timeline';
 
 $feedData = getFacdbookFeedData();
-$tpl->articles = $feedData['entries'];
+$tpl->articles = $feedData['data'];
 
 // Facebook 會惡搞連結元素，把連結元素弄回來原本的 URL 並拔掉奇怪的 hook
 $tpl->footer_script = <<<FS
@@ -82,8 +82,8 @@ function fetchFacebookFeed(){
       'http'=>array(
         'method'=>"GET",
         'header'=>
-            "Host: www.facebook.com\r\n".
-            "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0\r\n".
+            "Host: graph.facebook.com\r\n".
+            "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:35.0) Gecko/20100101 Firefox/35.0\r\n".
             "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n".
             "Accept-Language: zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3\r\n"
       )
@@ -91,6 +91,6 @@ function fetchFacebookFeed(){
     $ctx = stream_context_create($opts);
 
     // fetch the feed
-    $a = file_get_contents('http://www.facebook.com/feeds/page.php?format=json&id=219967208129003', false, $ctx);
+    $a = file_get_contents('https://graph.facebook.com/mopcon/feed', false, $ctx);
     return $a;
 }
