@@ -1,6 +1,6 @@
 <?php
 
-$release_branch= 'deploy';                 // 這個變數應該寫死，不可以從外部參數帶進來，否則會有安全問題！！
+$release_branch= ('dev.mopcon.org' === $_SERVER['HTTP_HOST']) ? 'develop' : 'deploy'; // 這個變數應該寫死，不可以從外部參數帶進來，否則會有安全問題！！
 $release_ref = "refs/heads/{$release_branch}";
 
 //////////////////////////////////////////////////////////////////////////////////
