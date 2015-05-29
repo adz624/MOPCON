@@ -1,7 +1,3 @@
-RewriteEngine On
-RedirectMatch /events/mopcon2014-cfp http://mopcon.kktix.cc/events/mopcon2014-cfp
-RedirectMatch /events/2014-registration http://mopcon.kktix.cc/events/2014-registration
-
 DirectoryIndex index.php index.html index.htm
 ErrorDocument 400 /err/404.php
 ErrorDocument 401 /err/404.php
