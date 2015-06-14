@@ -16,6 +16,25 @@
     <meta content="行動科技應用開發者年會 | MOPCON 2015 | Mobile / Open / Platform Conference" property="og:site_name">
 
     <link href="stylesheets/intro.css" rel="stylesheet" type="text/css" />
+    <style>
+      .bg{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-size: cover;
+        transition:all 1.5s;
+        z-index: -10;
+        opacity: 0;
+      }
+      .preload{
+        opacity: 0;
+      }
+      .show{
+        opacity: 0.7;
+      }
+    </style>
   </head>
 
   <body class="intro">
@@ -31,5 +50,44 @@
       </div>
     </div>
   </body>
-  <script src="javascripts/jsx/intro.js" type="text/javascript"></script>
+  <!--script src="javascripts/jsx/intro.js" type="text/javascript"></script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  $(function(){
+    function tick() {
+      if (!window.bgImgs) {
+        return;
+      }
+      var url = bgImgs.shift();
+      bgImgs.push(url);
+
+      var $preloadedBg = $('.bg.preload').removeClass('preload');
+      setTimeout(function(){$preloadedBg.addClass('show');}, 100);
+
+      var $shownBg = $('.bg.show');
+      setTimeout(function(){$shownBg.removeClass('show');}, 100);
+      setTimeout(function(){$shownBg.remove()}, 1650);
+
+      var $newBg = $('<div>')
+        .addClass('bg preload')
+        .css('background-image', 'url('+url+')')
+        .appendTo($('body'));
+    }
+    tick();
+    tick();
+    setInterval(tick, 6500);
+  });
+  function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+  }
+  function jsonFlickrFeed(e) {
+    window.bgImgs = [];
+    for (var idx in e.items) {
+      bgImgs.push(e.items[idx].media.m.replace('_m.', '_z.'));
+    }
+    shuffle(bgImgs);
+  }
+  </script>
+  <script src="https://api.flickr.com/services/feeds/photos_public.gne?tags=mopcon&amp;tagmode=all&amp;format=json"></script>
 </html>
