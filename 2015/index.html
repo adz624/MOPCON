@@ -61,12 +61,12 @@
       var url = bgImgs.shift();
       bgImgs.push(url);
 
-      var $preloadedBg = $('.bg.preload').removeClass('preload');
-      setTimeout(function(){$preloadedBg.addClass('show');}, 100);
-
       var $shownBg = $('.bg.show');
-      setTimeout(function(){$shownBg.removeClass('show');}, 100);
-      setTimeout(function(){$shownBg.remove()}, 1650);
+      setTimeout(function(){$shownBg.removeClass('show');}, 200);
+      setTimeout(function(){$shownBg.remove()}, 1750);
+
+      var $preloadedBg = $('.bg.preload').removeClass('preload');
+      setTimeout(function(){$preloadedBg.addClass('show');}, 200);
 
       var $newBg = $('<div>')
         .addClass('bg preload')
