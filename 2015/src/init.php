@@ -42,8 +42,8 @@ function getI18n($msg_data)
     if (isset($msg_data[$lang])) {
         return $msg_data[$lang];
     }
-    if (isset($msg_data['zh'])) {
-        return $msg_data['zh'];
+    if (isset($msg_data['en'])) {
+        return $msg_data['en'];
     }
     return reset($msg_data); // return first group
 }
