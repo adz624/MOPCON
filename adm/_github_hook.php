@@ -30,7 +30,11 @@ echo "OK\n";
 $composer_lock_path = __DIR__ . '/../composer.json';
 if (is_file($composer_lock_path)) {
     echo "composer install....";
-    exec(sprintf("cd '%s' && composer install -o -n", __DIR__ . '/../'));
+    exec(sprintf("cd '%s' 2>&1", __DIR__ . '/../'), $out);
+    exec('composer install -o -n 2>&1', $out);
+    foreach ($out as $line) {
+        echo "  {$line}\n";
+    }
     echo "done\n";
 } else {
     echo "'{$composer_lock_path}' does not exist, do not composer update";
