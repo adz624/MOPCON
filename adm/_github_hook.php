@@ -31,7 +31,10 @@ echo "OK\n";
 $composer_lock_path = "{$doc_root}composer.json";
 if (is_file($composer_lock_path)) {
     echo "composer install....\n";
-    exec("composer install -o -n -d {$doc_root} 2>&1", $out);
+    exec(
+        "COMPOSER_HOME=\"{$doc_root}\" composer install -on -d {$doc_root} 2>&1",
+        $out
+    );
     foreach ($out as $line) {
         echo "  {$line}\n";
     }
