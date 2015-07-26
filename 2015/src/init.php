@@ -10,7 +10,7 @@ function getLang()
     }
 
     $supported_langs = [
-        'tc',
+        'zh',
         'en'
     ];
 
@@ -20,11 +20,11 @@ function getLang()
         $lang = $_COOKIE['lang'];
     } else {
         if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
-            $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2);
+            $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
         } else {
             $browser_lang = 'zh';
         }
-        $lang = ('zh' === $browser_lang) ? 'tc' : 'en';
+        $lang = in_array($browser_lang, $supported_langs) ? $browser_lang : 'en';
     }
     setcookie('lang', $lang);
 
@@ -42,8 +42,8 @@ function getI18n($msg_data)
     if (isset($msg_data[$lang])) {
         return $msg_data[$lang];
     }
-    if (isset($msg_data['tc'])) {
-        return $msg_data['tc'];
+    if (isset($msg_data['zh'])) {
+        return $msg_data['zh'];
     }
     return reset($msg_data); // return first group
 }
@@ -51,7 +51,7 @@ function getI18n($msg_data)
 function render($template_name, $params)
 {
     $main_msg = [
-        'tc' => [
+        'zh' => [
             'sitetitle' => '行動科技應用開發者年會 | MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogtitle' => '行動科技應用開發者年會 | MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogsitename' => '行動科技應用開發者年會 | MOPCON 2015 | Mobile / Open / Platform Conference',

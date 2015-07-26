@@ -2,7 +2,7 @@
 include __DIR__ . '/src/init.php';
 
 $main = [
-    'tc' => [
+    'zh' => [
         'pagetitle' => '主辦社群',
     ],
     'en' => [

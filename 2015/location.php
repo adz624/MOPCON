@@ -2,7 +2,7 @@
 include __DIR__ . '/src/init.php';
 
 $main = [
-    'tc' => [
+    'zh' => [
         'pagetitle' => '地圖',
     ],
     'en' => [
