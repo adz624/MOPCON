@@ -27,10 +27,13 @@ exec("git pull origin {$release_branch} -f");
 echo "OK\n";
 
 // 如果有 composer.lock，跑 composer install
-if (is_file(__DIR__ . '/../composer.json')) {
+$composer_lock_path = __DIR__ . '/../composer.json';
+if (is_file($composer_lock_path)) {
     echo "composer install....";
     exec(sprintf("cd '%s' && composer install -o -n", __DIR__ . '/../'));
     echo "done\n";
+} else {
+    echo "'{$composer_lock_path}' does not exist, do not composer update";
 }
 
 
