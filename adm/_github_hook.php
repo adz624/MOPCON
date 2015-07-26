@@ -3,6 +3,7 @@
 $release_branch= ('dev.mopcon.org' === $_SERVER['HTTP_HOST']) ? 'develop' : 'deploy'; // 這個變數應該寫死，不可以從外部參數帶進來，否則會有安全問題！！
 $release_ref = "refs/heads/{$release_branch}";
 
+$doc_root = __DIR__ . '/../';
 //////////////////////////////////////////////////////////////////////////////////
 
 // 處理送來的資料，如果無法正常解析就不處理
@@ -27,11 +28,10 @@ exec("git pull origin {$release_branch} -f");
 echo "OK\n";
 
 // 如果有 composer.lock，跑 composer install
-$composer_lock_path = __DIR__ . '/../composer.json';
+$composer_lock_path = '{$doc_root}composer.json';
 if (is_file($composer_lock_path)) {
-    echo "composer install....";
-    exec(sprintf("cd '%s' 2>&1", __DIR__ . '/../'), $out);
-    exec('composer install -o -n 2>&1', $out);
+    echo "composer install....\n";
+    exec("composer install -o -n -d {$doc_root} 2>&1", $out);
     foreach ($out as $line) {
         echo "  {$line}\n";
     }
