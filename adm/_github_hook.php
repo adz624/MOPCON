@@ -28,7 +28,7 @@ exec("git pull origin {$release_branch} -f");
 echo "OK\n";
 
 // 如果有 composer.lock，跑 composer install
-$composer_lock_path = '{$doc_root}composer.json';
+$composer_lock_path = "{$doc_root}composer.json";
 if (is_file($composer_lock_path)) {
     echo "composer install....\n";
     exec("composer install -o -n -d {$doc_root} 2>&1", $out);
