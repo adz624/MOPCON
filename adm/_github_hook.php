@@ -26,6 +26,13 @@ exec("git reset --hard");
 exec("git pull origin {$release_branch}");
 echo "OK\n";
 
+// 如果有 composer.lock，跑 composer install
+if (is_file(__DIR__ . '/../composer.json')) {
+    echo "composer install....";
+    exec(sprintf("cd '%s' && composer install -o -n", __DIR__ . '/../'));
+    echo "done\n";
+}
+
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
