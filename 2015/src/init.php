@@ -19,7 +19,12 @@ function getLang()
     } elseif(isset($_COOKIE['lang'])) {
         $lang = $_COOKIE['lang'];
     } else {
-        $lang = 'tc';
+        if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+            $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2);
+        } else {
+            $browser_lang = 'zh';
+        }
+        $lang = ('zh' === $browser_lang) ? 'tc' : 'en';
     }
     setcookie('lang', $lang);
 
