@@ -8,7 +8,7 @@
 <div class="bucket-panel bg-deep-blue">
 	<div class="bucket-row text-white">
 		<i class="bucket-icon ton-li-map-pin-2"></i>
-		<h3 class="bucket-title">高雄國際會議中心</h3>
+		<h3 class="bucket-title">{{ main.icck }}</h3>
 		<div>ICCK</div>
 	</div>
 	<div id="map-canvas" class="miner-mg" style="min-height: 450px"></div>
@@ -23,22 +23,22 @@
 				</div>
 				<div class="card">
 					<h3 class="card-head">
-						高鐵/火車/捷運
+						{{ main.header1 }}
 					</h3>
 					<div class="card-body">
 						<ol>
-							<li>左營高鐵站/高雄火車站搭捷運紅線</li>
-							<li>至捷運美麗島站換乘橘線往西子灣方向</li>
-							<li>捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場</li>
+							{% for desc in main.desc1 %}
+							<li>{{ desc }}</li>
+							{% endfor %}
 						</ol>
 					</div>
 				</div>
 				<div class="card">
 					<h3 class="card-head">
-						公車
+						{{ main.header2 }}
 					</h3>
 					<div class="card-body">
-						<p>歷史博物館0南(單邊停靠)、0北(單邊停靠)、11、25、33、56、60、76、77、82、建國幹線、91、214、219、248</p>
+						<p>{{ main.desc2 }}</p>
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: 'ICCK 高雄國際會議中心'
+      title: '{{ main.icck|e('js') }}'
   });
 }
 
