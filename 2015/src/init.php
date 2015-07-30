@@ -59,6 +59,7 @@ function render($template_name, $params)
             'navcommunity' => '社群',
             'navlocation' => '地圖',
             'navcfp' => '徵稿',
+            'navprevious' => '歷年',
         ],
         'en' => [
             'sitetitle' => 'MOPCON 2015 | Mobile / Open / Platform Conference',
@@ -68,6 +69,7 @@ function render($template_name, $params)
             'navcommunity' => 'Community',
             'navlocation' => 'Location',
             'navcfp' => 'Call for paper',
+            'navprevious' => 'Previous Events',
         ],
     ];
 
