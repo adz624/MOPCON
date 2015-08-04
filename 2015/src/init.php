@@ -74,7 +74,10 @@ function render($template_name, $params)
     ];
 
     $params = array_replace_recursive(
-        ['main' => getI18n($main_msg)],
+        [
+            'main' => getI18n($main_msg),
+            'lang' => getLang(),
+        ],
         $params
     );
     $loader = new \Twig_Loader_Filesystem(__DIR__ . '/../twig');
