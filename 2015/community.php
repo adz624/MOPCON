@@ -89,6 +89,20 @@ $communities = [
             'Website' => 'http://akdg.kktix.cc/',
         ],
     ],
+    [
+        'id' => 'design_plus',
+        'name' => 'Design Plus in Kaohsiung',
+//        'image' => 'akdg.png',
+        'desc' => "設計+，讓高雄設計能量聚集與交流
+        DESIGN plus in Kaohsiung
+
+        我們相信這個社會需要設計師美化工作，也惋惜南部沒有一個設計類社群能讓大家彼此交流。因此Colour Design成立這個社群，期盼能夠給予設計師友誼與資訊，讓設計師們都能在這裡彼此討論，互相成長。
+
+        我們期許「設計+」能匯集南部的設計資源，透過交流與討論來增進設計的能量，進而用設計師們的美感一點一滴活潤社會美感。",
+        'links' => [
+            'Website' => 'http://www.designplus.tw/',
+        ],
+    ],
 ];
 
 $main = getI18n($main);
