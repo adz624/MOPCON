@@ -80,10 +80,10 @@ $communities = [
         ],
     ],
     [
-        'id' => 'akdg',
-        'name' => 'Android 高雄開發者社群',
-        'image' => 'akdg.png',
-        'desc' => "Android Kaohsiung Developer Group 從事 Android App、Embedded 及 Design 一起交流的園地，2014 首次聚會活動，目前活動活動時間為每月第三週的禮拜四 meet-up，歡迎對 Android 有興趣的朋友可以參與聚會。",
+        'id' => 'gdg',
+        'name' => 'GDG Kaohsiung',
+        'image' => 'gdg.jpg',
+        'desc' => "Google Developer Group Kaohsiung (原Android高雄開發者社群) 從事 Android App、Embedded 及 Design 一起交流的園地，2014 首次聚會活動，目前活動活動時間為每月第三週的禮拜四 meet-up，歡迎對 Android 有興趣的朋友可以參與聚會。",
         'links' => [
             'Facebook' => 'https://www.facebook.com/groups/1416205511963346/',
             'Website' => 'http://akdg.kktix.cc/',
