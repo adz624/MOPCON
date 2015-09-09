@@ -43,15 +43,15 @@ $speakers = [
             'Facebook' => 'https://www.facebook.com/ben.jai',
         ],
     ],
-    [
-        'id' => 'xdite',
-        'name' => '鄭伊廷 (XDite)',
-        'title' => '',
-        'bio' => "I'm Yi-Ting Cheng a.k.a xdite, living in Taipei, Taiwan. I'm a software developer also an entrepreneur.",
-        'links' => [
-            'Facebook' => 'https://zh-tw.facebook.com/xdite',
-        ],
-    ],
+//    [
+//        'id' => 'xdite',
+//        'name' => '鄭伊廷 (XDite)',
+//        'title' => '',
+//        'bio' => "I'm Yi-Ting Cheng a.k.a xdite, living in Taipei, Taiwan. I'm a software developer also an entrepreneur.",
+//        'links' => [
+//            'Facebook' => 'https://zh-tw.facebook.com/xdite',
+//        ],
+//    ],
     [
         'id' => 'muki',
         'name' => '吳姿穎 (Muki)',
