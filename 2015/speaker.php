@@ -56,8 +56,8 @@ $speakers = [
         'id' => 'muki',
         'name' => '吳姿穎 (Muki)',
         'pic' => 'muki.jpg',
-        'title' => '拾木空間總監',
-        'bio' => "拾木空間總監，經營文具社群與文具銷售，同時也是網站設計師與講師。著作包含 2 本 WordPress 書、1 本手帳整理術，以及譯作 2 本 WordPress 書。喜愛推廣與學習 HTML, CSS, 與 jQuery，興趣是在跨界與自我挑戰中成長，從事過設計、前端、行銷與專案管理等工作。",
+        'title' => '拾木空間總兼',
+        'bio' => "拾木空間總兼，經營文具社群與文具銷售，同時也是網站設計師與講師。著作包含 2 本 WordPress 書、1 本手帳整理術，以及譯作 2 本 WordPress 書。喜愛推廣與學習 HTML, CSS, 與 jQuery，興趣是在跨界與自我挑戰中成長，從事過設計、前端、行銷與專案管理等工作。",
         'links' => [
             'Facebook' => 'https://www.facebook.com/muki.wu',
         ],
