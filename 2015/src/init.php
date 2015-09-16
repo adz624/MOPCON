@@ -79,6 +79,7 @@ function render($template_name, $params)
         [
             'main' => getI18n($main_msg),
             'lang' => getLang(),
+            'og_image' => 'snapshot-mid.png',
         ],
         $params
     );
