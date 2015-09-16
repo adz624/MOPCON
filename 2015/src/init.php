@@ -61,6 +61,7 @@ function render($template_name, $params)
             'navcfp' => '徵稿',
             'navprevious' => '歷年',
             'navspeaker' => '講者',
+            'navsession' => '議程',
         ],
         'en' => [
             'sitetitle' => 'MOPCON 2015 | Mobile / Open / Platform Conference',
@@ -72,6 +73,7 @@ function render($template_name, $params)
             'navcfp' => 'Call for paper',
             'navprevious' => 'Previous Events',
             'navspeaker' => 'Speakers',
+            'navsession' => 'Session',
         ],
     ];
 
