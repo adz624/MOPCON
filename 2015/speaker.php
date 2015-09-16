@@ -144,7 +144,20 @@ $speakers = [
     ],
 ];
 
-render('speaker.twig', [
+$params = [
     'pageid' => 'speaker',
     'speakers' => $speakers,
-]);
+];
+
+if (isset($_GET['id'])) {
+    $params['speakers'] = array_filter($speakers, function ($e) {
+        return ($_GET['id'] === $e['id']);
+    });
+    if (count($params['speakers']) === 0) {
+        header('Location: /2015/speaker.php');
+        exit;
+    }
+    $params['og_image'] = 'speaker/' . $params['speakers'][0]['pic'];
+}
+
+render('speaker.twig', $params);
