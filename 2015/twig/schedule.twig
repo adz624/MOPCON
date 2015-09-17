@@ -15,34 +15,36 @@
   <div class="col-sm-6 col-xs-12" data-schedule>
   	{% for schedule in schedules.day1 %}
       <div class="col-xs-12 schedule">
-      		{% if schedule.timeStart != prvTime; prvTime = schedule.timeStart %}
-          <div class="schedule-header"><span>{{ schedule.timeStart }}</span><span> ～ </span><span>{{ schedule.timeEnd }}</span></div>
+      		{% if schedule.timeStart != prvTime %}
+      			{% set prvTime = schedule.timeStart %}
+          	<div class="schedule-header"><span>{{ schedule.timeStart }}</span><span> ～ </span><span>{{ schedule.timeEnd }}</span></div>
           {% endif %}
 
           <div class="schedule-body">
-            <div class="schedule-img"><img src="{{ schedule.pic }}" width="100%" alt=""></div>
+          	{% if schedule.pic %}
+            	<div class="schedule-img"><img src="{{ schedule.pic }}" width="100%" alt=""></div>
+            {% endif %}
             <div class="schedule-content">
               <div class="schedule-content-header">
                 <h3>{{ schedule.title }}</h3>
                 <p>{{ schedule.summary }}</p>
 
-                {% if schedule.issue != "" || schedule.speaker !="" %}
+                {% if schedule.issue != "" or schedule.speaker !="" %}
                 <div class="slideDown"></div>
                 {% endif %}
 
               </div>
-              {% if schedule.room != "" || schedule.type !="" %}
+              {% if schedule.room != "" or schedule.type !="" %}
               <div class="schedule-content-footer text-white">
                 <div class="schdule-type text-center">
                   <div class="col-xs-6 p0 bg-deep-blue">{{ schedule.room }}</div>
-                  {% if schedule.type == '技術'
-                        typeClass='bg-pink'
-                     elsif schedule.type == '活動'
-                        typeClass = 'bg-light-green'
-                     elsif schedule.type == '營運'
-                        typeClass = 'bg-gray'
-                     end
-                  %}
+                  {% if schedule.type == '技術' %}
+	                    {% set typeClass='bg-pink' %}
+	                {% elseif schedule.type == '活動' %}
+	                    {% set typeClass = 'bg-light-green' %}
+	                {% elseif schedule.type == '營運' %}
+	                    {% set typeClass = 'bg-gray' %}
+	                {% endif %}
                   <div class="col-xs-6 p0 {{ typeClass }}">{{ schedule.type }}</div>
                 </div> 
               </div>
@@ -57,38 +59,41 @@
           </div>
       </div>
     {% endfor %}
+ 
   </div>
   <div class="col-sm-6 col-xs-12 hidden-xs" data-schedule>
-    {% for schedule in schedules.day1 %}
+    {% for schedule in schedules.day2 %}
       <div class="col-xs-12 schedule">
-      		{% if schedule.timeStart != prvTime; prvTime = schedule.timeStart %}
-          <div class="schedule-header"><span>{{ schedule.timeStart }}</span><span> ～ </span><span>{{ schedule.timeEnd }}</span></div>
+      		{% if schedule.timeStart != prvTime %}
+		      		{% set prvTime = schedule.timeStart %}
+		          <div class="schedule-header"><span>{{ schedule.timeStart }}</span><span> ~ </span><span>{{ schedule.timeEnd }}</span></div>
           {% endif %}
 
           <div class="schedule-body">
-            <div class="schedule-img"><img src="{{ schedule.pic }}" width="100%" alt=""></div>
+            {% if schedule.pic %}
+            	<div class="schedule-img"><img src="{{ schedule.pic }}" width="100%" alt=""></div>
+            {% endif %}
             <div class="schedule-content">
               <div class="schedule-content-header">
                 <h3>{{ schedule.title }}</h3>
                 <p>{{ schedule.summary }}</p>
 
-                {% if schedule.issue != "" || schedule.speaker !="" %}
+                {% if schedule.issue != "" or schedule.speaker !="" %}
                 <div class="slideDown"></div>
                 {% endif %}
 
               </div>
-              {% if schedule.room != "" || schedule.type !="" %}
+              {% if schedule.room != "" or schedule.type !="" %}
               <div class="schedule-content-footer text-white">
                 <div class="schdule-type text-center">
                   <div class="col-xs-6 p0 bg-deep-blue">{{ schedule.room }}</div>
-                  {% if schedule.type == '技術'
-                        typeClass='bg-pink'
-                     elsif schedule.type == '活動'
-                        typeClass = 'bg-light-green'
-                     elsif schedule.type == '營運'
-                        typeClass = 'bg-gray'
-                     end
-                  %}
+                  {% if schedule.type == '技術' %}
+	                    {% set typeClass='bg-pink' %}
+	                {% elseif schedule.type == '活動' %}
+	                    {% set typeClass = 'bg-light-green' %}
+	                {% elseif schedule.type == '營運' %}
+	                    {% set typeClass = 'bg-gray' %}
+	                {% endif %}
                   <div class="col-xs-6 p0 {{ typeClass }}">{{ schedule.type }}</div>
                 </div> 
               </div>
@@ -103,6 +108,7 @@
           </div>
       </div>
     {% endfor %}
+
   </div>
 </div>
 {% endblock %}

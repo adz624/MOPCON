@@ -22,7 +22,7 @@ $schedules = [
             "title" => "MOPCON",
             "summary" => "開幕式",
             "pic" => "",
-            "room" => "",
+            "room" => "二廳",
             "type" => "活動",
             "issue" => "",
             "speaker" => ""
@@ -287,8 +287,8 @@ $schedules = [
             "date" => "2015/11/01",
             "timeStart" => "09:15",
             "timeEnd" => "10:00",
-            "title" => "(敬請期待)",
-            "summary" => "(敬請期待)",
+            "title" => "敬請期待",
+            "summary" => "敬請期待",
             "pic" => "",
             "room" => "一廳",
             "type" => "",
@@ -361,7 +361,7 @@ $schedules = [
             "timeEnd" => "12:00",
             "title" => "姜柏任",
             "summary" => "跨界的優雅：多平台的 QML 應用程式架構設計",
-            "pic" => "images/schedule/rschiang.jpg",
+            "pic" => "images/schedule/rschiang.png",
             "room" => "二廳",
             "type" => "技術",
             "issue" => "“Write once, run anywhere.” 是許多程式開發者的夢想，各種應用程式架構也似雨後春筍般仆繼亮相。然而各平台間的操作方式迴異，程式設計師們又該如何在跨平台應用程式的紅海裏同中求異、維繫使用者的良好體驗呢？在這場演講中，我們將簡介基於 Qt 的 QML 應用程式如何跨平台進行編譯開發，並同時分享維護多平台應用軟體的心得與所需注意的眉角。",
@@ -568,4 +568,4 @@ $params = [
 ];
 
 
-render('schedules.twig', $params);
+render('schedule.twig', $params);
