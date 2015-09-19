@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
     $params['speakers'] = getAllSpeakers();
 }
 
-if (count($params['speakers']) === 0) {
+if (count($params['speakers']) === 0 || current($params['speakers']) === null) {
     header('Location: /2015/speaker.php');
     exit;
 }
