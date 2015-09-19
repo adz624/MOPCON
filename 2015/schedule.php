@@ -35,8 +35,8 @@ $schedules = [
             "pic" => "images/schedule/benjai.jpg",
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
-            "issue" => "翟本喬為台灣第一位跳級生，1999 年赴美取得紐約大學電腦科學博士，2003 年進入Google，成功研發高效率單電壓電源供應器。2010 年回到台灣加入台達電子創立雲端技術中心。2013 年 6 月率原團隊成立和沛科技，積極開發符合雲端運算精神的新產品及服務，並對於台灣創新創業環境多有建言。",
-            "speaker" => "翟本喬為台灣第一位跳級生，1999 年赴美取得紐約大學電腦科學博士，2003 年進入Google，成功研發高效率單電壓電源供應器。2010 年回到台灣加入台達電子創立雲端技術中心。2013 年 6 月率原團隊成立和沛科技，積極開發符合雲端運算精神的新產品及服務，並對於台灣創新創業環境多有建言。"
+            "issue" => "政府開放資料供民間使用，是一種負責任的態度，也是一個不可避免的趨勢。民間使用政府資料時最重視的因素包括了正確性、適宜授權、易用程度、即時性、可追索性、適當格式等等。妥善解決這些問題，是開放資料推廣過程中一個重要的步驟。我們推出一個開放資料平台，讓以上因素都能順利解決。",
+            "speaker" => "翟本喬為台灣第一位跳級生，1999 年赴美取得紐約大學電腦科學博士，2003 年進入 Google，成功研發高效率單電壓電源供應器。2010 年回到台灣加入台達電子創立雲端技術中心。2013 年 6 月率原團隊成立和沛科技，積極開發符合雲端運算精神的新產品及服務，並對於台灣創新創業環境多有建言。"
         ],
         [ 
             "date" => "2015/10/31",
@@ -108,7 +108,7 @@ $schedules = [
             "room" => "主廳 (R1)",
             "type" => "營運",
             "issue" => "Growth Hack 是一門在矽谷熱門的行銷技術。但這個名詞對於台灣軟體業的人來說，是一門蒙著神秘面紗的高不可攀的行銷與技術學。傳說產品使用了 Growth Hack 技巧調整體質後，產品就會猛爆性的成長。<br>Growth Hack 的本質是 行銷 + 技術 + 心理學。因為學門牽涉廣泛，入門門檻並不低。所以國內很少人在討論。<br>此次演講就是希望能把這項非常棒的技術引入台灣，並大幅降低門檻。",
-            "speaker" => "xdite 是軟體開發者、創業者以及職業講師，曾創立 Logdown 技術部落格平台。目前主力經營 GrowthSchool 線上教育機構，且經營部落格暢談軟體開發、精實創業等議題。專長 Ruby on Rails 敏捷開發，專案管理，Growth Hack。"
+            "speaker" => "xdite 是軟體開發者、創業者以及職業講師，曾創立 Logdown 技術部落格平台。目前主力經營 GrowthSchool 線上教育機構，且經營部落格暢談軟體開發、精實創業等議題。專長為 Ruby on Rails 敏捷開發、專案管理、Growth Hack。"
         ],
         [ 
             "date" => "2015/10/31",
@@ -191,7 +191,7 @@ $schedules = [
             "pic" => "images/schedule/yccsonar.jpg",
             "room" => "二廳 (R2)",
             "type" => "技術",
-            "issue" => "一個成功的產品除了『良好的使用者體驗』與『優秀的程式架構』外，另一個關鍵因素就在於『高度可信賴的服務品質』，要能讓使用者隨時都能夠享受到正確的運作結果，繁複的測試流程是免不了。在這場分享中，Anistar 將分享 Yahoo! 的行動開發團隊是如何規劃行動測試的策略，怎麼確保用最短的時間卻能不停的將最新的功能提供給使用者，還有更多有趣的 Yahoo! 開發秘辛。",
+            "issue" => "影像辨識被視為較沉重的演算法程式，行動裝置是被視為較簡陋的電腦設備，要將沉重的程式放進簡陋的電腦好像很難？所以很多人會寄望於偉大的雲端！但是有很多原因，我們絕對不能這麼做！但是要將影像辨識程式在行動裝置上實作出來也不容易，就讓我在這個演講中慢慢告訴你吧！",
             "speaker" => "大學畢業才開始寫程式的玩家，因為研究海底地形辨識開始接觸影像辨識，同時鑽研聲納科技，是目前國內唯一可以製作各式聲納軟體的怪咖！40 歲開始教程式設計，52 歲辭去大學教職投入業界，53 歲創業開設公司，主攻影像辨識技術，以在行動裝置中實現各種影像辨識技術為目標。"
         ],
         [ 
@@ -222,12 +222,12 @@ $schedules = [
             "date" => "2015/10/31",
             "timeStart" => "15:15",
             "timeEnd" => "16:00",
-            "title" => "Job Fair",
-            "summary" => "",
+            "title" => "Sponsor Talk",
+            "summary" => "贊助商有話要說",
             "pic" => "images/schedule/mopcon.png",
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "活動",
-            "issue" => "",
+            "issue" => "相較於耳熟能詳的閃電秀 (Lighting Talk)，本次大會特別設計了 Sponsor Talk 來讓贊助商齊聚一堂，我們一起來聽聽贊助商有什麼話想和使用者與開發者說。",
             "speaker" => ""
         ],
         [ 
@@ -263,8 +263,8 @@ $schedules = [
             "pic" => "images/schedule/kenji_shimono.jpg",
             "room" => "二廳 (R2)",
             "type" => "技術",
-            "issue" => "手把手玩 Linux 行動裝置。<br>凝聚志同道合伙伴一起重新架構 Andriod, Chromebook 以及 ARM 等行動裝置。<br>論終止支援 (End of life) 的行動裝置。<br>Let&apos;s play the Mobile devices as Linux.<br>To gather people want to remodel the Android, Chromebook and ARM mobile devices.<br>And I also discussed the 「End of Life the mobile device」.",
-            "speaker" => "我目前專注於以 Linux 在各種 ARM 裝置上的 Hacking。(如 Netwaker, DynabookAZ, Nexus7, RaspberryPi, chromebook 等等)<br>除了在東海道的 Linux 使用者社群十分活躍，同時我也經常在日本幾個主流的 Open Source 會議發表演講。<br>I&apos;m playing with Linux hacking of various ARM devices. (about Netwaker, DynabookAZ, Nexus7, RaspberryPi, chromebook and also)<br>I am active in the Tokaido Linux User Group, and I am active in such mainly open source conference in Japan."
+            "issue" => "<p>Let&apos;s play the Mobile devices as Linux.<br>手把手玩 Linux 行動裝置。</p><p>To gather people want to remodel the Android, Chromebook and ARM mobile devices, and I also discussed the 「End of Life the mobile device」.<br>凝聚志同道合伙伴一起重新架構 Andriod, Chromebook 以及 ARM 等行動裝置，並探討終止支援 (End of life) 的行動裝置。</p>",
+            "speaker" => "<p>I&apos;m playing with Linux hacking of various ARM devices. (about Netwaker, DynabookAZ, Nexus7, RaspberryPi, chromebook and also)<br>我目前專注於以 Linux 在各種 ARM 裝置上的 Hacking (如 Netwaker, DynabookAZ, Nexus7, RaspberryPi, chromebook 等等)。</p><p>I am active in the Tokaido Linux User Group, and I am active in such mainly open source conference in Japan.<br>除了在東海道的 Linux 使用者社群十分活躍，同時我也經常在日本幾個主流的 Open Source 會議發表演講。</p>"
         ],
         [ 
             "date" => "2015/10/31",
@@ -326,7 +326,6 @@ $schedules = [
             "type" => "活動",
             "issue" => "",
             "speaker" => "",
-            "speaker" => ""
         ],
         [ 
             "date" => "2015/11/01",
@@ -361,7 +360,7 @@ $schedules = [
             "pic" => "images/schedule/howard.jpg",
             "room" => "主廳 (R1)",
             "type" => "技術",
-            "issue" => "此演講的大綱如下:<ol><li>在 Apple Watch 開賣之前如何順利的完成 Apple Watch App 的開發以及上架到 App Store。</li><li>關於 Apple Watch 開發所需要注意的大小事。</li><li>如何吸引 Apple Marketing team 的注意, 並且成功在 Watch Store 登上 featured list and banner。</li><li>從 Apple Watch App 的開發來看穿戴式裝置 App 的未來。</li></ol>",
+            "issue" => "此演講的大綱如下:<ol><li>在 Apple Watch 開賣之前如何順利的完成 Apple Watch App 的開發以及上架到 App Store。</li><li>關於 Apple Watch 開發所需要注意的大小事。</li><li>如何吸引 Apple Marketing team 的注意，並且成功在 Watch Store 登上 featured list and banner。</li><li>從 Apple Watch App 的開發來看穿戴式裝置 App 的未來。</li></ol>",
             "speaker" => "在加入 Yahoo 前是原型開發工具 POP 的首位 iOS 工程師，熱愛 IoT 以及穿戴式裝置等新奇的領域，負責 Yahoo 新聞跟超級商城 Apple Watch 應用開發的主要工程師，其中 Yahoo 新聞為台灣及香港首波上線的 Apple Watch App 並在 Apple Store 持續獲得特色推薦，想踩在巨人肩上做出吸引更多讓人重新認識 Yahoo 的產品。"
         ],
         [ 
@@ -458,7 +457,7 @@ $schedules = [
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會直接與官方合作，提供更良善的公共服務，與正向的公私夥伴關係。<br>以 KNY台灣天氣 App 接入氣象局的強震即時警報為例，分享其中的經驗與心得。",
-            "speaker" => "<ul><li>KNY Co. 執行長</li><li>中華民國App跨界交流協會 理事長</li><li>台灣開放資料聯盟App組 召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li><li>曾獲Google Play頂尖開發人員徽章</li></ul>國小開始 Coding，全端獨立開發超過 10 年，長期關注與推動台灣 App 與Open Data 的發展。希望能透過科技與開放的力量，改善社會問題與建構更美好的未來"
+            "speaker" => "<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟App組 召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li><li>曾獲 Google Play 頂尖開發人員徽章</li></ul>國小開始 Coding，全端獨立開發超過 10 年，長期關注與推動台灣 App 與 Open Data 的發展。希望能透過科技與開放的力量，改善社會問題與建構更美好的未來"
         ],
         [ 
             "date" => "2015/11/01",
@@ -577,7 +576,7 @@ $schedules = [
             "pic" => "images/schedule/ben_lue.png",
             "room" => "主廳 (R1)",
             "type" => "技術",
-            "issue" => "<ul><li>API 正在吞噬軟體。</li><li>API 大調查—現有服務商調查分析。</li><li>大家一起 Hack。</li></ul>",
+            "issue" => "<ul><li>API 正在吞噬軟體。</li><li>API 大調查 — 現有服務商調查分析。</li><li>大家一起 Hack。</li></ul>",
             "speaker" => "獨立軟體開發者。旅美期間曾在 IBM Almaden Research Center, Cognos Inc. 等公司工作。所創立的 NetClue Corp. 為多家公司的收購目標。返台後喜歡自造軟體，現為 COIMOTION API 總架構師。"
         ],
         [ 
@@ -589,7 +588,7 @@ $schedules = [
             "pic" => "images/schedule/yllan.jpg",
             "room" => "二廳 (R2)",
             "type" => "技術",
-            "issue" => "那些年，我們一起修過的密碼學，我相信每個程式開發者心中，都有一個 RSA。然而有些太年輕犯下的錯誤，長大了才瞭解，回味起來卻是無限懷念。<br>本次演講分析一些歷史上著名的密碼系統漏洞原理，並介紹一些加密實作上常見的錯誤（包括講者本人誠心懺悔告解）。",
+            "issue" => "那些年，我們一起修過的密碼學，我相信每個程式開發者心中，都有一個 RSA。然而有些太年輕犯下的錯誤，長大了才瞭解，回味起來卻是無限懷念。<br>本次演講分析一些歷史上著名的密碼系統漏洞原理，並介紹一些加密實作上常見的錯誤 (包括講者本人誠心懺悔告解)。",
             "speaker" => "SOLDA 創辦人，專長為 iOS / Mac 開發。較多人知道的專案為 Mac 上的 BBS App。單車界弗利札。曾參加並完成所有的 Matasano Crypto Challenge。"
         ],
         [ 
@@ -602,18 +601,18 @@ $schedules = [
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "Windows 10 UWP (Universal Windows Platform) 基於 common Windows Core 概念，提出建置單一 App，便能在 Windows 10 的各種裝置上使用，從以往針對 PC、平版、手機的 App，擴展至 Xbox, IoT, HoloLens 等裝置。基於 UWP 設計的 App 將不再挶限於手機及平版。<br>本次議題將涵蓋 UWP 概念、UWP + Azure for Raspberry Pi Demo。",
-            "speaker" => "<ul><li>連任四屆 <a href='https://mvp.microsoft.com/en-us/PublicProfile/4039711?fullName=Ian%20%20Chen' target='_blank'>Microsoft ASP.NET MVP</a></li><li>TechDays Taiwan 2014/2015講師</li><li>2015 微軟實戰課程日講師</li><li>K.NET 社群共同創辧人及講者</li><li>HTML5 &amp; JavaScript 程式開發實戰書籍共同作者</li></ul>"
+            "speaker" => "<ul><li>連任四屆 <a href='https://mvp.microsoft.com/en-us/PublicProfile/4039711?fullName=Ian%20%20Chen' target='_blank'>Microsoft ASP.NET MVP</a></li><li>TechDays Taiwan 2014/2015 講師</li><li>2015 微軟實戰課程日講師</li><li>K.NET 社群共同創辧人及講者</li><li>HTML5 &amp; JavaScript 程式開發實戰書籍共同作者</li></ul>"
         ],
         [ 
             "date" => "2015/11/01",
             "timeStart" => "17:00",
             "timeEnd" => "17:30",
             "title" => "Lighting Talk",
-            "summary" => "兩分鐘限時閃電秀",
+            "summary" => "五分鐘限時閃電秀",
             "pic" => "images/schedule/mopcon.png",
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "活動",
-            "issue" => "來跟大家分享任何事情吧！給你一隻麥克風！只要你敢上台，MOPCON 的會眾就是你的聽眾！沒有投影片也沒關係，Lighting Talk 只考驗你的時間掌控力，限時兩分鐘，時間一到音控妹妹不留情的唷！",
+            "issue" => "來跟大家分享任何事情吧！給你一隻麥克風！只要你敢上台，MOPCON 的會眾就是你的聽眾！沒有投影片也沒關係，Lighting Talk 只考驗你的時間掌控力，限時五分鐘，時間一到音控妹妹不留情的唷！",
             "speaker" => "Is you!!! 當日大會開放報名，名額有限，請密切注意大會消息！"
         ],
         [ 
