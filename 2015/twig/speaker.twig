@@ -13,11 +13,11 @@
 		<div>Speaker</div>
 	</div>
 	<div class="container-md">
-		{% for speaker in speakers %}
+		{% for id, speaker in speakers %}
 		<div class="card">
-			<a name="{{ speaker.id }}"></a>
+			<a name="{{ id }}"></a>
 			<h3 class="card-head">
-				<a href="?id={{ speaker.id }}">{{ speaker.name }}</a> <small>{{ speaker.title }}</small>
+				<a href="?id={{ id }}">{{ speaker.name }}</a> <small>{{ speaker.title }}</small>
 			</h3>
 			<div class="card-body">
 				<div class="row">

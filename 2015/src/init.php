@@ -5,16 +5,13 @@ include __DIR__ . "/../../vendor/autoload.php";
 function getSpeakerById($id)
 {
     $speakers = getAllSpeakers();
-    $speakers = array_filter($speakers, function ($e) use ($id){
-        return ($id === $e['id']);
-    });
-    return (count($speakers) > 0) ? $speakers[0] : null;
+    return isset($speakers[$id]) ? $speakers[$id] : null;
 }
+
 function getAllSpeakers()
 {
     return [
-        [
-            'id' => 'anistar',
+        'anistar' => [
             'name' => '宋志峰 (Anistar)',
             'pic' => 'anistar.jpg',
             'title' => 'Yahoo Mobile Tech Lead, Yahoo Mobile Engineer Manager',
@@ -23,8 +20,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://www.facebook.com/anistarsung',
             ],
         ],
-        [
-            'id' => 'sj',
+        'sj' => [
             'name' => '周家弘 (SJ)',
             'pic' => 'sj.jpg',
             'title' => 'Foxconn 工程師',
@@ -34,8 +30,7 @@ function getAllSpeakers()
                 'Website' => 'http://blog.toright.com',
             ],
         ],
-        [
-            'id' => 'carl',
+        'carl' => [
             'name' => 'Carl Su',
             'pic' => 'carl.jpg',
             'title' => 'DevOps Engineer',
@@ -44,8 +39,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://www.facebook.com/carl.su.9',
             ],
         ],
-        [
-            'id' => 'benjai',
+        'benjai' => [
             'name' => '翟本喬 (Ben Jai)',
             'pic' => 'benjai.jpg',
             'title' => '和沛科技創辦人暨總經理',
@@ -54,8 +48,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://www.facebook.com/ben.jai',
             ],
         ],
-        [
-            'id' => 'xdite',
+        'xdite' => [
             'name' => '鄭伊廷 (XDite)',
             'title' => '',
             'bio' => "I'm Yi-Ting Cheng a.k.a xdite, living in Taipei, Taiwan. I'm a software developer also an entrepreneur.",
@@ -63,8 +56,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://zh-tw.facebook.com/xdite',
             ],
         ],
-        [
-            'id' => 'muki',
+        'muki' => [
             'name' => '吳姿穎 (Muki)',
             'pic' => 'muki.jpg',
             'title' => '拾木空間總兼',
@@ -73,8 +65,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://www.facebook.com/muki.wu',
             ],
         ],
-        [
-            'id' => 'blue',
+        'blue' => [
             'name' => '陳柏儒 (Blue)',
             'pic' => 'blue.jpg',
             'title' => '聯發科技前端工程師',
@@ -83,8 +74,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://www.facebook.com/IamBlueChen',
             ],
         ],
-        [
-            'id' => 'kny',
+        'kny' => [
             'name' => '陳坤助 (KNY)',
             'pic' => 'kny.jpg',
             'title' => '中華民國 App 跨界交流協會理事長',
@@ -92,8 +82,7 @@ function getAllSpeakers()
             'links' => [
             ],
         ],
-        [
-            'id' => 'jeremy',
+        'id' => [
             'name' => 'Jeremy Lu',
             'pic' => 'jeremy.jpg',
             'title' => 'Fullstackrocks.com 創辦人',
@@ -103,8 +92,7 @@ function getAllSpeakers()
                 'Github' => 'https://github.com/coodoo',
             ],
         ],
-        [
-            'id' => 'tk',
+        'tk' => [
             'name' => '林毅祥 (TK)',
             'pic' => 'tk.jpg',
             'title' => 'ADPartner 執行長',
@@ -113,8 +101,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://www.facebook.com/stklen',
             ],
         ],
-        [
-            'id' => 'sam',
+        'sam' => [
             'name' => '邱炫儒 (Sam)',
             'pic' => 'sam.jpg',
             'title' => 'HTC 工程師',
@@ -123,8 +110,7 @@ function getAllSpeakers()
                 'Facebook' => 'https://zh-tw.facebook.com/iamsamchiu',
             ],
         ],
-        [
-            'id' => 'akane',
+        'akane' => [
             'name' => 'Akane Lee',
             'pic' => 'akane.jpg',
             'title' => 'Madders 創辦人',
@@ -134,8 +120,7 @@ function getAllSpeakers()
                 'Blog' => 'http://blog.akanelee.me/'
             ],
         ],
-        [
-            'id' => 'yccsonar',
+        'yccsonar' => [
             'name' => '張逸中',
             'pic' => 'yccsonar.jpg',
             'title' => '逸中軟體設計有限公司執行長',
@@ -144,8 +129,7 @@ function getAllSpeakers()
                 'Blog' => 'http://blog.udn.com/yccsonar/article',
             ],
         ],
-        [
-            'id' => 'joe',
+        'joe' => [
             'name' => '曾君宇 (Joe)',
             'pic' => 'joe.jpg',
             'title' => '均一教育平台軟體工程師',
