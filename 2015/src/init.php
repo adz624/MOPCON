@@ -4,7 +4,10 @@ include __DIR__ . "/../../vendor/autoload.php";
 //////////////////////////////////////////////////////////////////////////////
 function getSpeakerById($id)
 {
-    $speakers = getAllSpeakers();
+    static $speakers = null;
+    if (null === $speakers) {
+        $speakers = getAllSpeakers();
+    }
     return isset($speakers[$id]) ? $speakers[$id] : null;
 }
 
