@@ -86,7 +86,7 @@ function getAllSpeakers()
             'links' => [
             ],
         ],
-        'id' => [
+        'jeremy' => [
             'name' => 'Jeremy Lu',
             'pic' => 'jeremy.jpg',
             'title' => 'Fullstackrocks.com 創辦人',
