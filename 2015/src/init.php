@@ -142,6 +142,364 @@ function getAllSpeakers()
         ],
     ];
 }
+
+//////////////////////////////////////////////////////////////////////////////
+
+function getSchedule()
+{
+    return [
+        '2015/10/31' => [
+            [
+                'times' => ['08:00', '09:00'],
+                'events' => [
+                    [
+                        'title' => '報到',
+                    ]
+                ],
+            ],
+            [
+                'times' => ['09:00', '09:15'],
+                'events' => [
+                    [
+                        'title' => '開幕式',
+                        'room' => 'all',
+                    ]
+                ],
+            ],
+            [
+                'times' => ['09:15', '10:00'],
+                'events' => [
+                    [
+                        'title' => '開放資料平台',
+                        'room' => 'all',
+                        'speaker' => 'benjai',
+                    ]
+                ],
+            ],
+            [
+                'times' => ['10:00', '10:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['10:15', '11:00'],
+                'events' => [
+                    [
+                        'title' => '使用者要的不是功能！',
+                        'room' => '1',
+                        'speaker' => 'akane',
+                    ],
+                    [
+                        'title' => 'Gradle 不只自動化而且更敏捷',
+                        'room' => '2',
+                        'speaker' => 'sam',
+                    ],
+                    [
+                        'title' => '晚點告訴你 :P',
+                        'room' => '3',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['11:00', '11:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['11:15', '12:00'],
+                'events' => [
+                    [
+                        'title' => 'Intro to Growth Hacking for developers',
+                        'room' => '1',
+                        'speaker' => 'xdite',
+                    ],
+                    [
+                        'title' => '如何用 reactjs + web 標準降低大眾進入硬體門檻',
+                        'room' => '2',
+                        'speaker' => 'blue',
+                    ],
+                    [
+                        'title' => '軟體、測試、程式設計家',
+                        'room' => '3',
+                        'speaker' => 'sj',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['12:00', '13:00'],
+                'events' => [
+                    [
+                        'title' => '午餐時間',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['13:00', '13:45'],
+                'events' => [
+                    [
+                        'title' => '行動測試與發布的秘訣 [Tips of Mobile Continuous Delivery]',
+                        'room' => 'all',
+                        'speaker' => 'anistar',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['13:45', '14:00'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['14:00', '14:45'],
+                'events' => [
+                    [
+                        'title' => '晚點告訴你 :P',
+                        'room' => '1',
+                    ],
+                    [
+                        'title' => '雲端影像辨識？算了吧！',
+                        'room' => '2',
+                        'speaker' => 'yccsonar',
+                    ],
+                    [
+                        'title' => '晚點告訴你 :P',
+                        'room' => '3',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['14:45', '15:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['15:15', '16:00'],
+                'events' => [
+                    [
+                        'title' => 'Job Fair',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['16:00', '16:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['16:15', '17:00'],
+                'events' => [
+                    [
+                        'title' => '晚點告訴你 :P',
+                        'room' => '1',
+                    ],
+                    [
+                        'title' => 'Hacking with the ARM Mobile devices on Linux',
+                        'room' => '2',
+                        'speaker' => '下野健二 (Kenji Shimono)', // XXX
+                    ],
+                    [
+                        'title' => '想像力讓技術極致',
+                        'room' => '3',
+                        'speaker' => 'tk',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['17:00', ''],
+                'time_note' => 'END',
+            ],
+            [
+                'times' => ['18:00', ''],
+                'events' => [
+                    [
+                        'title' => 'Devel Night',
+                    ],
+                ],
+            ],
+        ],
+        '2015/11/01' => [
+            [
+                'times' => ['08:00', '09:00'],
+                'events' => [
+                    [
+                        'title' => '報到',
+                    ]
+                ],
+            ],
+            [
+                'times' => ['09:00', '09:15'],
+                'events' => [
+                    [
+                        'title' => 'Announcement',
+                        'room' => 'all',
+                    ]
+                ],
+            ],
+            [
+                'times' => ['09:15', '10:00'],
+                'events' => [
+                    [
+                        'title' => '運用 QNAP Docker 輕鬆打造持續整合開發環境',
+                        'room' => 'all',
+                        'speaker' => 'Doro Wu',
+                    ]
+                ],
+            ],
+            [
+                'times' => ['10:00', '10:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['10:15', '11:00'],
+                'events' => [
+                    [
+                        'title' => 'Apple Watch 開發 - 與 Apple 間的愛恨情仇',
+                        'room' => '1',
+                        'speaker' => '黃元亨 (Howard Huang)',
+                    ],
+                    [
+                        'title' => '晚點告訴你 :P ',
+                        'room' => '2',
+                    ],
+                    [
+                        'title' => 'Agile x API x Documentation @ NGO',
+                        'room' => '3',
+                        'speaker' => 'joe',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['11:00', '11:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['11:15', '12:00'],
+                'events' => [
+                    [
+                        'title' => 'Deliver Beta App with ChatOps',
+                        'room' => '1',
+                        'speaker' => '吉田太一郎 (Taichiro Yoshida)', // XXX
+                    ],
+                    [
+                        'title' => '跨界的優雅：多平台的 QML 應用程式架構設計',
+                        'room' => '2',
+                        'speaker' => '姜柏任 (RSChiang)', // XXX
+                    ],
+                    [
+                        'title' => '晚點告訴你 :P ',
+                        'room' => '3',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['12:00', '13:00'],
+                'events' => [
+                    [
+                        'title' => '午餐時間',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['13:00', '13:45'],
+                'events' => [
+                    [
+                        'title' => '行動測試與發布的秘訣 [Tips of Mobile Continuous Delivery]',
+                        'room' => 'all',
+                        'speaker' => 'anistar',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['13:45', '14:00'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['14:00', '14:45'],
+                'events' => [
+                    [
+                        'title' => 'IoT 就是要結合 Mobile 啊，不然要幹嘛?',
+                        'room' => '1',
+                        'speaker' => '許益祥 (Marty)', // XXX
+                    ],
+                    [
+                        'title' => '功能完整 && 操作便利 = null?',
+                        'room' => '2',
+                        'speaker' => 'Lancelot Wu', // XXX
+                    ],
+                    [
+                        'title' => '手機自動化測試和持續整合',
+                        'room' => '3',
+                        'speaker' => 'carl',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['14:45', '15:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['15:15', '16:00'],
+                'events' => [
+                    [
+                        'title' => 'React Native 帶來的跨平台 mobile app 開發典範轉移',
+                        'room' => '1',
+                        'speaker' => 'jeremy',
+                    ],
+                    [
+                        'title' => '打造行動裝置網站的經驗談',
+                        'room' => '2',
+                        'speaker' => 'muki',
+                    ],
+                    [
+                        'title' => '晚點告訴你 :P ',
+                        'room' => '3',
+                    ],
+
+                ],
+            ],
+            [
+                'times' => ['16:00', '16:15'],
+                'time_note' => '休息時間',
+            ],
+            [
+                'times' => ['16:15', '17:00'],
+                'events' => [
+                    [
+                        'title' => 'Hack & Go 2',
+                        'room' => '1',
+                        'speaker' => 'Ben Lue', // XXX
+                    ],
+                    [
+                        'title' => '全天下男人都會犯的錯：密碼學',
+                        'room' => '2',
+                        'speaker' => '藍永倫 (yllan)', // XXX
+                    ],
+                    [
+                        'title' => 'Windows 10 UWP + Azure 創造開發APP的新思維',
+                        'room' => '3',
+                        'speaker' => 'Ian', // XXX
+                    ],
+                ],
+            ],
+            [
+                'times' => ['17:00', '17:30'],
+                'events' => [
+                    [
+                        'title' => '⚡ Lighting Talk ⚡',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['17:30', '18:00'],
+                'events' => [
+                    [
+                        'title' => '閉幕式',
+                    ],
+                ],
+            ],
+            [
+                'times' => ['18:00', ''],
+                'time_note' => 'END',
+            ],
+
+        ],
+    ];
+}
+
 //////////////////////////////////////////////////////////////////////////////
 function getLang()
 {
