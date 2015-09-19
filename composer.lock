@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4fbc77545874412b79bf4e41be79308",
+    "hash": "0f3cfda389b943fea514432dfdb15043",
     "packages": [
         {
             "name": "erusev/parsedown",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "b9e5228e92e5f5c17d7774cfb2de8e5e8362de1a"
+                "reference": "0e89e3714bda18973184d30646306bb0a482bd96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/b9e5228e92e5f5c17d7774cfb2de8e5e8362de1a",
-                "reference": "b9e5228e92e5f5c17d7774cfb2de8e5e8362de1a",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/0e89e3714bda18973184d30646306bb0a482bd96",
+                "reference": "0e89e3714bda18973184d30646306bb0a482bd96",
                 "shasum": ""
             },
             "type": "library",
@@ -43,29 +43,117 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2015-04-29 20:22:24"
+            "time": "2015-08-03 09:24:05"
         },
         {
-            "name": "twig/twig",
-            "version": "v1.18.2",
+            "name": "erusev/parsedown-extra",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602"
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "11a44e076d02ffcc4021713398a60cd73f78b6f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e8e6575abf6102af53ec283f7f14b89e304fa602",
-                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/11a44e076d02ffcc4021713398a60cd73f78b6f5",
+                "reference": "11a44e076d02ffcc4021713398a60cd73f78b6f5",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "time": "2015-01-25 14:52:34"
+        },
+        {
+            "name": "jralph/twig-markdown",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jralph/Twig-Markdown.git",
+                "reference": "ec9580d249bbd577aa2ae30f2be691d51508346d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jralph/Twig-Markdown/zipball/ec9580d249bbd577aa2ae30f2be691d51508346d",
+                "reference": "ec9580d249bbd577aa2ae30f2be691d51508346d",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown-extra": "0.*",
+                "twig/twig": "~1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jralph\\Twig\\Markdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A simple twig markdown extension.",
+            "keywords": [
+                "markdown",
+                "parsedown",
+                "twig"
+            ],
+            "time": "2015-02-18 15:57:04"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.22.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "b7fc2469fa009897871fb95b68237286fc54a5ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b7fc2469fa009897871fb95b68237286fc54a5ad",
+                "reference": "b7fc2469fa009897871fb95b68237286fc54a5ad",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.7"
             },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-master": "1.22-dev"
                 }
             },
             "autoload": {
@@ -100,13 +188,15 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-06-06 23:31:24"
+            "time": "2015-09-15 06:50:16"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "jralph/twig-markdown": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

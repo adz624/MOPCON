@@ -586,5 +586,6 @@ function render($template_name, $params)
     );
     $loader = new \Twig_Loader_Filesystem(__DIR__ . '/../twig');
     $twig = new \Twig_Environment($loader);
+    $twig->addExtension(new Jralph\Twig\Markdown\Extension(new Jralph\Twig\Markdown\Parsedown\ParsedownExtraMarkdown));
     echo $twig->render($template_name, $params);
 }
