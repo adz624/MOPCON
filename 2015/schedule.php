@@ -294,12 +294,12 @@ $schedules = [
             "date" => "2015/10/31",
             "timeStart" => "18:00",
             "timeEnd" => "",
-            "title" => "Develop Night",
+            "title" => "Devel Night",
             "summary" => "星光講師 x 開發者之夜",
             "pic" => "images/schedule/mopcon.png",
             "room" => "翰品酒店",
             "type" => "活動",
-            "issue" => "想與大神們共進晚餐嗎? 想和台上講者有更進一步的交流嗎? 開發者之夜將實現你的夢想! 為了讓大家能近距離接觸星光閃閃的講師群，我們特別在 2015/10/31 晚間舉辦 Developer Night，把大神講者群集中起來讓大家一次朝聖個夠喔！趕快<a href='http://mopcon.kktix.cc/events/2015-devel-night' target='_blank'>報名參加</a>吧！",
+            "issue" => "想與大神們共進晚餐嗎? 想和台上講者有更進一步的交流嗎? 開發者之夜將實現你的夢想! 為了讓大家能近距離接觸星光閃閃的講師群，我們特別在 2015/10/31 晚間舉辦 Devel Night，把大神講者群集中起來讓大家一次朝聖個夠喔！趕快<a href='http://mopcon.kktix.cc/events/2015-devel-night' target='_blank'>報名參加</a>吧！",
             "speaker" => ""
         ],
        [ 
