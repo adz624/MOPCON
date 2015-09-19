@@ -53,8 +53,9 @@ function getAllSpeakers()
         ],
         'xdite' => [
             'name' => '鄭伊廷 (XDite)',
+            'pic' => 'xdite.jpg',
             'title' => '',
-            'bio' => "I'm Yi-Ting Cheng a.k.a xdite, living in Taipei, Taiwan. I'm a software developer also an entrepreneur.",
+            'bio' => "xdite 是軟體開發者、創業者以及職業講師，曾創立 Logdown 技術部落格平台。目前主力經營 GrowthSchool 線上教育機構，且經營部落格暢談軟體開發、精實創業等議題。專長 Ruby on Rails 敏捷開發，專案管理，Growth Hack 。",
             'links' => [
                 'Facebook' => 'https://zh-tw.facebook.com/xdite',
             ],
