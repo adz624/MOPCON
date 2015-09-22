@@ -547,13 +547,13 @@ $schedules = [
             "date" => "2015/11/01",
             "timeStart" => "15:15",
             "timeEnd" => "16:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "王瑋強 (John Wang)",
+            "summary" => "Gandi CLI ─ 助您將基礎設備最佳自動化的開源命令列介面",
+            "pic" => "images/schedule/john.jpg",
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "Gandi CLI 是由 Python 撰寫而成的開源命令列介面，使用 Gandi API 作為溝通介面。Gandi CLI 可用於建立與管理 instances (Gandi IaaS 和 PaaS)、生成與管理 SSL 憑證、管理域名和區域檔、以及其他與域名有關的服務 (如 Gandi Mail、Gandi Site)。目前 Gandi CLI 的原始碼放置於 Github，開放給大眾下載使用。",
+            "speaker" => "致力於將 Gandi 的 no bullshit 精神推廣至全亞洲。曾擔任趨勢科技工程師，負責改善 Anti-Virus API，同時亦參與智慧家庭物聯網研發專案。熱愛 Python 與 C 語言，喜愛結交開源社群的朋友。深信每個台灣人都應該瞭解開源文化的自由精神。閒暇沒事研究機器學習，期待用科技改善人類生活。"
         ],
         [ 
             "date" => "2015/11/01",
