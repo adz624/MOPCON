@@ -650,6 +650,7 @@ function render($template_name, $params)
             'navprevious' => '歷年',
             'navspeaker' => '講者',
             'navsession' => '議程',
+            'navsponsor' => '贊助',
         ],
         'en' => [
             'sitetitle' => 'MOPCON 2015 | Mobile / Open / Platform Conference',
@@ -662,6 +663,7 @@ function render($template_name, $params)
             'navprevious' => 'Previous Events',
             'navspeaker' => 'Speakers',
             'navsession' => 'Session',
+            'navsponsor' => 'Sponsors',
         ],
     ];
 
