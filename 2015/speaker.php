@@ -5,13 +5,12 @@ $params = [
     'pageid' => 'speaker',
     'speakers' => [],
 ];
-
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $params['og_image'] = 'speaker/' . $params['speakers'][0]['pic'];
     $params['speakers'] = [
         $id => getSpeakerById($id)
     ];
+    $params['og_image'] = 'speaker/' . $params['speakers'][$id]['pic'];
 } else {
     $params['speakers'] = getAllSpeakers();
 }
