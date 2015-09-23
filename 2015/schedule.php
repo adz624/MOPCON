@@ -246,13 +246,13 @@ $schedules = [
             "date" => "2015/10/31",
             "timeStart" => "16:15",
             "timeEnd" => "17:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "龐景德",
+            "summary" => "架構新時代雲端服務和巨量資料的儲存平台",
+            "pic" => "images/schedule/jing_de.jpg",
             "room" => "主廳 (R1)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "行動裝置與雲端服務正在影響人類的生活並重新定義行之有年的 IT 架構，為了應付未來雲端時代的 IT 服務需求，我們將探討如何建構一個有彈性又可靠的儲存架構。",
+            "speaker" => "龎景德擅長伺服器及儲存系統軟硬體設計開發及研究，目前為和沛科技技術總監，負責雲端儲存平台規劃設計。"
         ],
         [ 
             "date" => "2015/10/31",
