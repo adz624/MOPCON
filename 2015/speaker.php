@@ -11,7 +11,8 @@ if (isset($_GET['id'])) {
         $id => getSpeakerById($id)
     ];
     $params['og_image'] = 'speaker/' . $params['speakers'][$id]['pic'];
-    $params['og_image'] = 'speaker.php?' . $id;
+    $params['og_url'] = 'speaker.php?' . $id;
+    $params['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['title'] . "\n" . $params['speakers'][$id]['bio'];
 } else {
     $params['speakers'] = getAllSpeakers();
 }
