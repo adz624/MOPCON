@@ -417,7 +417,7 @@ function getSchedule()
             "timeEnd" => "12:00",
             "title" => "RSChiang",
             "summary" => "跨界的優雅：多平台的 QML 應用程式架構設計",
-            "pic" => "images/schedule/rschiang.png",
+            "pic" => "images/schedule/harry_wu.jpg",
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "“Write once, run anywhere.” 是許多程式開發者的夢想，各種應用程式架構也似雨後春筍般仆繼亮相。然而各平台間的操作方式迴異，程式設計師們又該如何在跨平台應用程式的紅海裏同中求異、維繫使用者的良好體驗呢？在這場演講中，我們將簡介基於 Qt 的 QML 應用程式如何跨平台進行編譯開發，並同時分享維護多平台應用軟體的心得與所需注意的眉角。",
@@ -427,13 +427,13 @@ function getSchedule()
             "date" => "2015/11/01",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
+            "title" => "Harry Wu",
+            "summary" => "Unleash The Power of Design",
             "pic" => "images/schedule/secret.jpg",
             "room" => "三廳 (R3)",
             "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "issue" => "設計是思考方式、流程與文化。在聚集各路好手的環境中，建立不同背景成員之共同目標，讓每個人發揮不同超能力的同時，激發出團隊火花，共同創造最好的產品與服務，這場 Session 將分享 Yahoo 是如何創造這樣一個環境給團隊成員。",
+            "speaker" => "目前為 Yahoo 台灣行動團隊的 UED (使用者經驗設計)，主要負責的產品為電子商務 App。因為對設計的熱衷，一路從資訊工程的背景走到 UED 領域；因為對內容與創新服務的著迷，從硬體產業的設計走到行動網路服務的設計。加入 Yahoo 台灣之前，任職於華碩/和碩設計中心，畢業於美國北卡州立大學資工所。"
         ],
         [ 
             "date" => "2015/11/01",
