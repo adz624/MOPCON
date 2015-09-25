@@ -367,13 +367,13 @@ function getSchedule()
             "date" => "2015/11/01",
             "timeStart" => "10:15",
             "timeEnd" => "11:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
+            "title" => "孫承憲 (Allan Sun) 和 陳杰興 (Pony Chen)",
+            "summary" => "我的踩雷時代 - 那些你做遊戲前沒想到的事",
             "pic" => "images/schedule/secret.jpg",
             "room" => "二廳 (R2)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "這場演講主要是把我們在做遊戲過程中踩過的各種雷分享給大家，希望大家以後在做遊戲這條路上可以一路好走；本講題技術成分較少，但會同時包含前後端。",
+            "speaker" => "孫承憲，住天龍國但是常常被誤以為偷渡客，從野狗大學畢業不過還沒得狂犬病；在 KKPLAY 擔任不站崗的小警衛。 <br> 陳杰興，在 KKPLAY 擔任工程師，熱衷於手機 APP 開發的相關技術，主要負責手機平台上的遊戲開發。"
         ],
         [ 
             "date" => "2015/11/01",
