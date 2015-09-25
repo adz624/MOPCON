@@ -174,13 +174,13 @@ function getSchedule()
             "date" => "2015/10/31",
             "timeStart" => "14:00",
             "timeEnd" => "14:45",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "吳方荃 (Benny Wu)",
+            "summary" => "用 LINE Platform 打造有趣的行動應用服務",
+            "pic" => "images/schedule/benny.jpg",
             "room" => "主廳 (R1)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "LINE 目前全球每月活躍用戶超過 2.11 億，開發者可以透過 LINE Platform 提供的 APIs 及 SDK 開發網路服務及行動應用，為服務及應用創造更多價值。這次的議程會介紹 LINE Platform 開發的案例及讓各位瞭解如何用 LINE Platform 打造有趣的行動應用。",
+            "speaker" => "現任職於 LINE Taiwan，負責 LINE Platform 的應用開發及平台推廣。過去做過電商、O2O 服務及影音相關軟體，喜歡研究 business mode l及用優雅的 script language 解決各種問題。"
         ],
         [ 
             "date" => "2015/10/31",
