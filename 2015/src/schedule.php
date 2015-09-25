@@ -198,13 +198,13 @@ function getSchedule()
             "date" => "2015/10/31",
             "timeStart" => "14:00",
             "timeEnd" => "14:45",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "Alex Chang",
+            "summary" => "NAS 公私混合雲，打造行動數位生活",
+            "pic" => "images/schedule/alex_chang.jpg",
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "NAS 對許多人來說可能還停留在一種可遠觀的先進資訊產品。然而事實真是如此嗎？讓 QNAP 來引領您進入 NAS 的世界，透過 RAID 保護資料、打造公私混合雲。結合網路、行動影音與生活工作同步，讓 NAS 成為行動數位生活的中心。搭配 QNAP 開發套件，打造自己的專用 NAS。",
+            "speaker" => "熱愛 3C 產品，曾架設現在只有老骨頭才知道的老伯的硬體小站，從此在主機板及 NAS 界工作至今。在 QNAP 轉 porting 數個專案，也擔任專案經理負責 Qsirch 酷先生全文檢索專案。目前專職進行 NAS 二次開發。"
         ],
         [ 
             "date" => "2015/10/31",
