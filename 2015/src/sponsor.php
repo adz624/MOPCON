@@ -113,6 +113,30 @@ function getSponsors()
                         'Website' => 'https://www.nchc.org.tw/',
                     ],
                 ],
+                'swat' => [
+                    'name' => '史瓦特多媒體',
+                    'desc' => '',
+                    'pic' => 'swat.png',
+                    'links' => [
+                        'Website' => "http://www.shintek.com/",
+                    ],
+                ],
+                'stu' => [
+                    'name' => '樹德科技大學',
+                    'desc' => '',
+                    'pic' => 'stu.png',
+                    'links' => [
+                        'Website' => "http://www.stu.edu.tw/",
+                    ],
+                ],
+                'kktix' => [
+                    'name' => 'KKTIX',
+                    'desc' => '',
+                    'pic' => 'kktix.png',
+                    'links' => [
+                        'Website' => "https://kktix.com/",
+                    ],
+                ],
             ],
         ],
     ];
