@@ -227,7 +227,7 @@ function getSchedule()
             "pic" => "images/schedule/mopcon.png",
             "room" => "主廳 (R1)",
             "type" => "活動",
-            "issue" => "相較於耳熟能詳的閃電秀 (Lighting Talk)，本次大會特別設計了 Sponsor Talk 來讓贊助商齊聚一堂，我們一起來聽聽贊助商有什麼話想和使用者與開發者說。",
+            "issue" => "相較於耳熟能詳的閃電秀 (Lightning Talk)，本次大會特別設計了 Sponsor Talk 來讓贊助商齊聚一堂，我們一起來聽聽贊助商有什麼話想和使用者與開發者說。",
             "speaker" => ""
         ],
         [ 
@@ -607,12 +607,12 @@ function getSchedule()
             "date" => "2015/11/01",
             "timeStart" => "17:00",
             "timeEnd" => "17:30",
-            "title" => "Lighting Talk",
+            "title" => "Lightning Talk",
             "summary" => "五分鐘限時閃電秀",
             "pic" => "images/schedule/mopcon.png",
             "room" => "主廳 (R1)",
             "type" => "活動",
-            "issue" => "來跟大家分享任何事情吧！給你一隻麥克風！只要你敢上台，MOPCON 的會眾就是你的聽眾！沒有投影片也沒關係，Lighting Talk 只考驗你的時間掌控力，限時五分鐘，時間一到音控妹妹不留情的唷！",
+            "issue" => "來跟大家分享任何事情吧！給你一隻麥克風！只要你敢上台，MOPCON 的會眾就是你的聽眾！沒有投影片也沒關係，Lightning Talk 只考驗你的時間掌控力，限時五分鐘，時間一到音控妹妹不留情的唷！",
             "speaker" => "Is you!!! 當日大會開放報名，名額有限，請密切注意大會消息！"
         ],
         [ 
