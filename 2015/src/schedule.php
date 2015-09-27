@@ -78,13 +78,13 @@ function getSchedule()
             "date" => "2015/10/31",
             "timeStart" => "10:15",
             "timeEnd" => "11:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "羅荷傑",
+            "summary" => "如何建立行動生態圈：透過數據分析及行動廣告制定產品成長策略",
+            "pic" => "images/schedule/hojie.jpg",
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "據 Nielsen 2014 年的調查顯示，使用者每天只會打開 9 個 APP，想優化使用者體驗、提升使用黏著度與留存率，需懂得使用工具來分析數據及優化。以行動 APP 為主要產品的公司來說，如何歸納出重要的商業及產品問題、蒐集相關數據、進行分析、快速修正及市場測試絕對都是快速成長的關鍵。希望能透過此分享讓大家對行動數據分析與行動廣告能有初步了解並協助日後的實作。",
+            "speaker" => "目前為 Yahoo 亞太區策略暨營運部資深分析師，負責協助 Flurry Analytics 及 Yahoo 行動開發者套件亞太區推廣策略。同時也擔任台灣創新行動服務推廣協會 (AppUniverz) 理事。加入 Yahoo 前曾任職美商 APT 策略顧問公司大中華區企業發展部、Google 印度全球廣告策略及營運部門、ASUS 亞太北非區產品策略及管理部門。畢業於清大經濟系。"
         ],
         [ 
             "date" => "2015/10/31",
@@ -174,13 +174,13 @@ function getSchedule()
             "date" => "2015/10/31",
             "timeStart" => "14:00",
             "timeEnd" => "14:45",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "吳方荃 (Benny Wu)",
+            "summary" => "用 LINE Platform 打造有趣的行動應用服務",
+            "pic" => "images/schedule/benny.jpg",
             "room" => "主廳 (R1)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "LINE 目前全球每月活躍用戶超過 2.11 億，開發者可以透過 LINE Platform 提供的 APIs 及 SDK 開發網路服務及行動應用，為服務及應用創造更多價值。這次的議程會介紹 LINE Platform 開發的案例及讓各位瞭解如何用 LINE Platform 打造有趣的行動應用。",
+            "speaker" => "現任職於 LINE Taiwan，負責 LINE Platform 的應用開發及平台推廣。過去做過電商、O2O 服務及影音相關軟體，喜歡研究 business mode l及用優雅的 script language 解決各種問題。"
         ],
         [ 
             "date" => "2015/10/31",
@@ -198,13 +198,13 @@ function getSchedule()
             "date" => "2015/10/31",
             "timeStart" => "14:00",
             "timeEnd" => "14:45",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "title" => "Alex Chang",
+            "summary" => "NAS 公私混合雲，打造行動數位生活",
+            "pic" => "images/schedule/alex_chang.jpg",
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "NAS 對許多人來說可能還停留在一種可遠觀的先進資訊產品。然而事實真是如此嗎？讓 QNAP 來引領您進入 NAS 的世界，透過 RAID 保護資料、打造公私混合雲。結合網路、行動影音與生活工作同步，讓 NAS 成為行動數位生活的中心。搭配 QNAP 開發套件，打造自己的專用 NAS。",
+            "speaker" => "熱愛 3C 產品，曾架設現在只有老骨頭才知道的老伯的硬體小站，從此在主機板及 NAS 界工作至今。在 QNAP 轉 porting 數個專案，也擔任專案經理負責 Qsirch 酷先生全文檢索專案。目前專職進行 NAS 二次開發。"
         ],
         [ 
             "date" => "2015/10/31",
@@ -367,13 +367,13 @@ function getSchedule()
             "date" => "2015/11/01",
             "timeStart" => "10:15",
             "timeEnd" => "11:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
+            "title" => "孫承憲 (Allan Sun) 和 陳杰興 (Pony Chen)",
+            "summary" => "我的踩雷時代 - 那些你做遊戲前沒想到的事",
             "pic" => "images/schedule/secret.jpg",
             "room" => "二廳 (R2)",
-            "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "type" => "技術",
+            "issue" => "這場演講主要是把我們在做遊戲過程中踩過的各種雷分享給大家，希望大家以後在做遊戲這條路上可以一路好走；本講題技術成分較少，但會同時包含前後端。",
+            "speaker" => "孫承憲，住天龍國但是常常被誤以為偷渡客，從野狗大學畢業不過還沒得狂犬病；在 KKPLAY 擔任不站崗的小警衛。 <br> 陳杰興，在 KKPLAY 擔任工程師，熱衷於手機 APP 開發的相關技術，主要負責手機平台上的遊戲開發。"
         ],
         [ 
             "date" => "2015/11/01",
@@ -417,7 +417,7 @@ function getSchedule()
             "timeEnd" => "12:00",
             "title" => "RSChiang",
             "summary" => "跨界的優雅：多平台的 QML 應用程式架構設計",
-            "pic" => "images/schedule/rschiang.png",
+            "pic" => "images/schedule/harry_wu.jpg",
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "“Write once, run anywhere.” 是許多程式開發者的夢想，各種應用程式架構也似雨後春筍般仆繼亮相。然而各平台間的操作方式迴異，程式設計師們又該如何在跨平台應用程式的紅海裏同中求異、維繫使用者的良好體驗呢？在這場演講中，我們將簡介基於 Qt 的 QML 應用程式如何跨平台進行編譯開發，並同時分享維護多平台應用軟體的心得與所需注意的眉角。",
@@ -427,13 +427,13 @@ function getSchedule()
             "date" => "2015/11/01",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
-            "title" => "晚點告訴你 :P",
-            "summary" => "",
+            "title" => "Harry Wu",
+            "summary" => "Unleash The Power of Design",
             "pic" => "images/schedule/secret.jpg",
             "room" => "三廳 (R3)",
             "type" => "秘密",
-            "issue" => "",
-            "speaker" => ""
+            "issue" => "設計是思考方式、流程與文化。在聚集各路好手的環境中，建立不同背景成員之共同目標，讓每個人發揮不同超能力的同時，激發出團隊火花，共同創造最好的產品與服務，這場 Session 將分享 Yahoo 是如何創造這樣一個環境給團隊成員。",
+            "speaker" => "目前為 Yahoo 台灣行動團隊的 UED (使用者經驗設計)，主要負責的產品為電子商務 App。因為對設計的熱衷，一路從資訊工程的背景走到 UED 領域；因為對內容與創新服務的著迷，從硬體產業的設計走到行動網路服務的設計。加入 Yahoo 台灣之前，任職於華碩/和碩設計中心，畢業於美國北卡州立大學資工所。"
         ],
         [ 
             "date" => "2015/11/01",
