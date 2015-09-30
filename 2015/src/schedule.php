@@ -126,13 +126,13 @@ function getSchedule()
             "date" => "2015/10/31",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
-            "title" => "周家弘 (SJ)",
-            "summary" => "軟體、測試、程式設計家",
-            "pic" => "images/schedule/sj.jpg",
+            "title" => "晚點告訴你 :P",
+            "summary" => "",
+            "pic" => "images/schedule/secret.png",
             "room" => "三廳 (R3)",
-            "type" => "技術",
-            "issue" => "軟體設計是世界上最複雜的工作，我們彷彿就像在鋼索上敲擊鍵盤的小丑，搖搖欲墜。踏實地開發系統與掌握軟體開發節奏是一件重要的事。本議程將分享建構持續整合系統所遭遇的困難與經驗，藉由自動化測試探討軟體品質的重要性，進而實現產品持續交付。希望透過這個機會影響更多開發者對軟體品質的重視。",
-            "speaker" => "目前於鴻海擔任工程師，負責開發雲端服務，平常喜歡聽點音樂與寫點部落格 (Soul &amp; Shell Blog)。幾年前曾與日本富士康合作開發系統，從此奠定對軟體品質的堅持。熱愛開發新產品，近年來熱衷於 Web 技術，流連往返於程式設計與軟體架構。"
+            "type" => "秘密",
+            "issue" => "",
+            "speaker" => ""
         ],
         [ 
             "date" => "2015/10/31",
@@ -281,6 +281,54 @@ function getSchedule()
         [ 
             "date" => "2015/10/31",
             "timeStart" => "17:00",
+            "timeEnd" => "17:05",
+            "title" => "Take a Break",
+            "summary" => "下午中場休息時間",
+            "pic" => "images/schedule/mopcon.png",
+            "room" => "",
+            "type" => "",
+            "issue" => "",
+            "speaker" => ""
+        ],
+        [
+            "date" => "2015/10/31",
+            "timeStart" => "17:05",
+            "timeEnd" => "17:50",
+            "title" => "周家弘 (SJ)",
+            "summary" => "軟體、測試、程式設計家",
+            "pic" => "images/schedule/sj.jpg",
+            "room" => "主廳 (R1)",
+            "type" => "技術",
+            "issue" => "軟體設計是世界上最複雜的工作，我們彷彿就像在鋼索上敲擊鍵盤的小丑，搖搖欲墜。踏實地開發系統與掌握軟體開發節奏是一件重要的事。本議程將分享建構持續整合系統所遭遇的困難與經驗，藉由自動化測試探討軟體品質的重要性，進而實現產品持續交付。希望透過這個機會影響更多開發者對軟體品質的重視。",
+            "speaker" => "目前於鴻海擔任工程師，負責開發雲端服務，平常喜歡聽點音樂與寫點部落格 (Soul &amp; Shell Blog)。幾年前曾與日本富士康合作開發系統，從此奠定對軟體品質的堅持。熱愛開發新產品，近年來熱衷於 Web 技術，流連往返於程式設計與軟體架構。"
+        ],
+        [
+            "date" => "2015/10/31",
+            "timeStart" => "17:05",
+            "timeEnd" => "17:50",
+            "title" => "Denny Huang",
+            "summary" => "從 0 到 1：打開 Android 開發的秘密，發現開源好棒棒",
+            "pic" => "images/schedule/denny.jpg",
+            "room" => "二廳 (R2)",
+            "type" => "技術",
+            "issue" => "許多的 Andorid 初學者總是只能跟著書上或網路上的一些教學慢慢學習，但實際上在開發我們都會運用許多的 open soruce library 來達成更快速及穩定的開發，本議程將簡介在實務經驗上 Andoird 開發方式及經驗以及能夠如何回饋貢獻開源專案。",
+            "speaker" => "SITCON 學生計算機年會發起人之一暨 2013, 2014 年會總召，Fanily 後端及 Android 工程師，零零總總約五年的 Android 開發經驗，熱愛開放原始碼及和與 UI/UX 無關的事(?"
+        ],
+        [
+            "date" => "2015/10/31",
+            "timeStart" => "17:05",
+            "timeEnd" => "17:50",
+            "title" => "晚點告訴你 :P",
+            "summary" => "",
+            "pic" => "images/schedule/secret.png",
+            "room" => "三廳 (R3)",
+            "type" => "秘密",
+            "issue" => "",
+            "speaker" => ""
+        ],
+        [ 
+            "date" => "2015/10/31",
+            "timeStart" => "17:50",
             "timeEnd" => "END",
             "title" => "END",
             "summary" => "本日議程結束",
@@ -302,7 +350,7 @@ function getSchedule()
             "issue" => "想與大神們共進晚餐嗎? 想和台上講者有更進一步的交流嗎? 開發者之夜將實現你的夢想! 為了讓大家能近距離接觸星光閃閃的講師群，我們特別在 2015/10/31 晚間舉辦 Devel Night，把大神講者群集中起來讓大家一次朝聖個夠喔！趕快<a href='http://mopcon.kktix.cc/events/2015-devel-night' target='_blank'>報名參加</a>吧！",
             "speaker" => ""
         ],
-       [ 
+        [ 
             "date" => "2015/11/01",
             "timeStart" => "08:30",
             "timeEnd" => "09:00",
