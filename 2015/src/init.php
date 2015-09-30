@@ -15,6 +15,52 @@ function getSpeakerById($id)
 }
 
 //////////////////////////////////////////////////////////////////////////////
+// speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "images/schedule/mopcon.png"
+// speakerId 找到講者 ID，若 title, pic, speaker 未設定就會自動帶入
+// speakerId 異常，找不到講者 ID 會強制蓋掉 title, pic, speaker 為 晚點告訴你 :P
+//////////////////////////////////////////////////////////////////////////////
+function getAllSchedule()
+{
+    $schedule = setSchedule();
+    for($i = 0; $i < count($schedule); $i++) {
+        if($schedule[$i]["speakerId"] === '') { //無講者
+            $schedule[$i]['title'] = isset($schedule[$i]['title']) ? $schedule[$i]['title'] : "MOPCON";
+            $schedule[$i]['pic'] = isset($schedule[$i]['pic']) ? $schedule[$i]['pic'] : "images/schedule/mopcon.png";
+            $schedule[$i]["speaker"] = isset($schedule[$i]["speaker"]) ? $schedule[$i]["speaker"] : "";
+            continue;
+        }
+
+        if(is_array($schedule[$i]["speakerId"])) { //複數講者
+            $schedule[$i]["title"] = "";
+            $schedule[$i]["speaker"] = "";
+            foreach($schedule[$i]["speakerId"] as $speakerId) {
+                $speaker = getSpeakerById($speakerId);
+                if($speaker === null) continue;
+
+                if($schedule[$i]["title"] != '') {
+                    $schedule[$i]["title"] .= " 與 ";
+                }
+                $schedule[$i]["title"] .= $speaker['name'];
+                $schedule[$i]["speaker"] .= "<p>" . $speaker['name'] . "：<br>" . $speaker['bio'] . "<p>";
+            }
+            $schedule[$i]['pic'] = isset($schedule[$i]["pic"]) ? $schedule[$i]["pic"] : 'images/schedule/secret.jpg'; //異常處理
+        } else { //單一講者
+            $speaker = getSpeakerById($schedule[$i]["speakerId"]);
+            if($speaker === null) { //異常處理
+                $schedule[$i]["speakerId"] = '';
+                $schedule[$i]["title"] = '晚點告訴你 :P';
+                $schedule[$i]["speaker"] = '';
+                $schedule[$i]['pic'] = 'images/schedule/secret.jpg';
+            } else {
+                $schedule[$i]["title"] = isset($schedule[$i]["title"]) ? $schedule[$i]["title"] : $speaker['name'];
+                $schedule[$i]["speaker"] = isset($schedule[$i]["speaker"]) ? $schedule[$i]["speaker"] : $speaker['bio'];
+                $schedule[$i]['pic'] = isset($schedule[$i]["pic"]) ? $schedule[$i]["pic"] : "images/speaker/" . $speaker['pic'];
+            }
+        } 
+    }
+    return $schedule;
+}
+//////////////////////////////////////////////////////////////////////////////
 function getLang()
 {
     static $lang = null;
