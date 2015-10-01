@@ -93,10 +93,10 @@ function getSponsors()
                 ],
                 'hiiir' => [
                     'name' => 'Hiiir 時間軸科技',
-                    'desc' => '',
+                    'desc' => '時間軸於2013年6月獲得遠傳投資，雙方共同打造全新行動服務品牌friDay，結合雙方在內容服務、行動商務、社群的三大優勢，提供多元行動生活服務，陸續發表friDay購物及friDay APP助手',
                     'pic' => 'hiiir.png',
                     'links' => [
-                        'Website' => 'https://www.hiiir.com/',
+                        'Website' => 'http://shopping.friday.tw/',
                     ],
                 ],
             ],
