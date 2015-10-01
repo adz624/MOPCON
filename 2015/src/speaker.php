@@ -252,7 +252,7 @@ function getAllSpeakers()
         ],
         'ben' => [
             'name' => 'Ben Lue',
-            'pic' => 'ben_lue.png',
+            'pic' => 'ben_lue.jpg',
             'title' => '',
             'bio' => "獨立軟體開發者。旅美期間曾在 IBM Almaden Research Center, Cognos Inc. 等公司工作。所創立的 NetClue Corp. 為多家公司的收購目標。返台後喜歡自造軟體，現為 COIMOTION API 總架構師。",
             'links' => [
@@ -268,7 +268,7 @@ function getAllSpeakers()
         ],
         'ian' => [
             'name' => 'Ian',
-            'pic' => 'ian.png',
+            'pic' => 'ian.jpg',
             'title' => '',
             'bio' => "<ul><li>連任四屆 <a href='https://mvp.microsoft.com/en-us/PublicProfile/4039711?fullName=Ian%20%20Chen' target='_blank'>Microsoft ASP.NET MVP</a></li><li>TechDays Taiwan 2014/2015 講師</li><li>2015 微軟實戰課程日講師</li><li>K.NET 社群共同創辧人及講者</li><li>HTML5 &amp; JavaScript 程式開發實戰書籍共同作者</li></ul>",
             'links' => [
