@@ -281,6 +281,30 @@ function getAllSpeakers()
             'bio' => "SITCON 學生計算機年會發起人之一暨 2013, 2014 年會總召，Fanily 後端及 Android 工程師，零零總總約五年的 Android 開發經驗，熱愛開放原始碼及和與 UI/UX 無關的事(?",
             'links' => [
              ],
+        ],
+        'johnny' => [
+            'name' => '宋岡諺 (Johnny Sung)',
+            'pic' => 'johnny.jpg',
+            'title' => '',
+            'bio' => "從手機、穿戴式裝置到盲人無障礙方面皆有研究。曾開發過世新廣播電台 app, uPresenter 簡報器 (iOS + Apple Watch / Android + Android Wear) 和 Glassware 相關 App。",
+            'links' => [
+             ],
+        ],
+        'young' => [
+            'name' => '馮俊揚 (Young)',
+            'pic' => 'young.jpg',
+            'title' => '',
+            'bio' => "財團法人愛盲基金會盲用電腦點字教學 督導 / NCC 網頁無障礙發展委員會 委員 / 無障礙網頁檢測人員培訓 講師。",
+            'links' => [
+             ],
+        ],
+        'kj' => [
+            'name' => 'KJ Wu',
+            'pic' => 'kj.jpg',
+            'title' => '',
+            'bio' => "AWS 解決方案架構師，主要專精於企業應用軟體、遊戲發與 DevOps 領域。他協助客戶使用最好的高延展性、高可信度與高可用性之雲端架構設計。在 IT 界超過 15 年的工作經驗，從一位開發者、IT 顧問到雲端架構師。同時也擅長 Java 軟體開發與服務導向架構 (SOA) 設計。",
+            'links' => [
+             ],
         ]
     ];
 }

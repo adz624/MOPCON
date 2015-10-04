@@ -33,7 +33,7 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "09:15",
             "timeEnd" => "10:00",
-            "summary" => "開放資料平台",
+            "summary" => "開放資料開放平台",
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "政府開放資料供民間使用，是一種負責任的態度，也是一個不可避免的趨勢。民間使用政府資料時最重視的因素包括了正確性、適宜授權、易用程度、即時性、可追索性、適當格式等等。妥善解決這些問題，是開放資料推廣過程中一個重要的步驟。我們推出一個開放資料平台，讓以上因素都能順利解決。",
@@ -112,7 +112,7 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
-            "summary" => "如何用 reactjs + web 標準降低大眾進入硬體門檻",
+            "summary" => "如何用 reactjs + WoT 標準降低大眾進入硬體門檻",
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "相較於 Internet of Things (IoT)，近來最紅的另一個名詞 Web of Things (WoT)，就是所有東西 (Things) 都可以透過 Web 標準協議彼此存取與結合。<br>本次主題，講者會以橫跨前端和硬體的背景跟大家分享，以及講者在硬體 IC 設計廠如何利用最潮的語言 (JavaScript) 和框架 (reactjs) 搭配現行的 WoT 標準打造豐富應用的開發版，降低大眾進入硬體的門檻。",
@@ -123,13 +123,11 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
-            "title" => "晚點告訴你 :P", //覆寫
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "summary" => "如何運用 AWS 雲端服務加速開發 Mobile App",
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speakerId" => ""
+            "type" => "技術",
+            "issue" => "本議程將介紹如何運用 Amazon Web Services (AWS) 雲端服務來加速開發 Mobile App，對 Mobile App 快速開發有興趣的伙伴請千萬不要錯過！",
+            "speakerId" => "kj"
         ],
         [ 
             "id" => null,
@@ -148,7 +146,7 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "13:00",
             "timeEnd" => "13:45",
-            "summary" => "行動測試與發布的秘訣 Tips of Mobile Continuous Delivery",
+            "summary" => "行動測試與發布的秘訣 [Tips of Mobile Continuous Delivery]",
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "一個成功的產品除了『良好的使用者體驗』與『優秀的程式架構』外，另一個關鍵因素就在於『高度可信賴的服務品質』，要能讓使用者隨時都能夠享受到正確的運作結果，繁複的測試流程是免不了。在這場分享中，Anistar 將分享 Yahoo! 的行動開發團隊是如何規劃行動測試的策略，怎麼確保用最短的時間卻能不停的將最新的功能提供給使用者，還有更多有趣的 Yahoo! 開發秘辛。",
@@ -308,13 +306,15 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "17:05",
             "timeEnd" => "17:50",
-            "title" => "晚點告訴你 :P", //覆寫
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "summary" => "談談行動裝置的 Accessibility",
+            "pic" => "images/schedule/johnny_young.png", //覆寫
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speakerId" => ""
+            "type" => "技術",
+            "issue" => "「什麼？這個字『唸』不出來？這到底是什麼功能？」這可能是很多盲人朋友在使用手機時心中的 OS。本議程將藉由簡單的例子 (Android / iOS) 來探討如何使用程式來解決。並從自身實際使用及教學的經驗，透過範例來了解什麼是友善的 APP，讓您的 APP 在絢麗外，也邁向無障礙 (Accessibility)。",
+            "speakerId" => [
+                "johnny",
+                "young"
+            ]
         ],
         [ 
             "id" => null,
