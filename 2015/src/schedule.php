@@ -308,13 +308,15 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "17:05",
             "timeEnd" => "17:50",
-            "title" => "晚點告訴你 :P", //覆寫
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "summary" => "談談行動裝置的 Accessibility",
+            "pic" => "images/schedule/johnny_young.png", //覆寫
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speakerId" => ""
+            "type" => "技術",
+            "issue" => "「什麼？這個字『唸』不出來？這到底是什麼功能？」這可能是很多盲人朋友在使用手機時心中的 OS。本議程將藉由簡單的例子 (Android / iOS) 來探討如何使用程式來解決。並從自身實際使用及教學的經驗，透過範例來了解什麼是友善的 APP，讓您的 APP 在絢麗外，也邁向無障礙 (Accessibility)。",
+            "speakerId" => [
+                "johnny",
+                "young"
+            ]
         ],
         [ 
             "id" => null,

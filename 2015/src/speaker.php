@@ -281,6 +281,22 @@ function getAllSpeakers()
             'bio' => "SITCON 學生計算機年會發起人之一暨 2013, 2014 年會總召，Fanily 後端及 Android 工程師，零零總總約五年的 Android 開發經驗，熱愛開放原始碼及和與 UI/UX 無關的事(?",
             'links' => [
              ],
+        ],
+        'johnny' => [
+            'name' => '宋岡諺 (Johnny Sung)',
+            'pic' => 'johnny.jpg',
+            'title' => '',
+            'bio' => "從手機、穿戴式裝置到盲人無障礙方面皆有研究。曾開發過世新廣播電台 app, uPresenter 簡報器 (iOS + Apple Watch / Android + Android Wear) 和 Glassware 相關 App。",
+            'links' => [
+             ],
+        ],
+        'young' => [
+            'name' => '馮俊揚 (Young)',
+            'pic' => 'young.jpg',
+            'title' => '',
+            'bio' => "財團法人愛盲基金會盲用電腦點字教學 督導 / NCC 網頁無障礙發展委員會 委員 / 無障礙網頁檢測人員培訓 講師。",
+            'links' => [
+             ],
         ]
     ];
 }
