@@ -123,13 +123,11 @@ function setSchedule()
             "date" => "2015/10/31",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
-            "title" => "晚點告訴你 :P", //覆寫
-            "summary" => "",
-            "pic" => "images/schedule/secret.jpg",
+            "summary" => "如何運用 AWS 雲端服務加速開發 Mobile App",
             "room" => "三廳 (R3)",
-            "type" => "秘密",
-            "issue" => "",
-            "speakerId" => ""
+            "type" => "技術",
+            "issue" => "本議程將介紹如何運用 Amazon Web Services (AWS) 雲端服務來加速開發 Mobile App，對 Mobile App 快速開發有興趣的伙伴請千萬不要錯過！",
+            "speakerId" => "kj"
         ],
         [ 
             "id" => null,
