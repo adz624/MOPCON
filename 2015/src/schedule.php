@@ -119,7 +119,7 @@ function setSchedule()
             "speakerId" => "blue"
         ],
         [ 
-            "id" => null,
+            "id" => 40,
             "date" => "2015/10/31",
             "timeStart" => "11:15",
             "timeEnd" => "12:00",
@@ -302,7 +302,7 @@ function setSchedule()
             "speakerId" => "denny"
         ],
         [ 
-            "id" => null,
+            "id" => 39,
             "date" => "2015/10/31",
             "timeStart" => "17:05",
             "timeEnd" => "17:50",
