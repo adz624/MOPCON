@@ -1,7 +1,7 @@
 <?php
-function setSchedule()
+function getAllSchedule()
 {
-    // speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "images/schedule/mopcon.png"
+    // speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "schedule/mopcon.png"
     // speakerId 找到講者 ID，若 title, pic, speaker 未設定就會自動帶入
     // speakerId 異常，找不到講者 ID 會強制蓋掉 title, pic, speaker 為 晚點告訴你 :P
 
@@ -204,7 +204,7 @@ function setSchedule()
             "timeEnd" => "15:15",
             "title" => "點心時間",//覆寫
             //"summary" => "休息、聊天、下午茶",
-            "pic" => "images/schedule/mopcon.png",
+            "pic" => "schedule/mopcon.png",
             "room" => "",
             "type" => "",
             "issue" => "",
@@ -307,7 +307,7 @@ function setSchedule()
             "timeStart" => "17:05",
             "timeEnd" => "17:50",
             "summary" => "談談行動裝置的 Accessibility",
-            "pic" => "images/schedule/johnny_young.png", //覆寫
+            "pic" => "schedule/johnny_young.jpg", //覆寫
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "「什麼？這個字『唸』不出來？這到底是什麼功能？」這可能是很多盲人朋友在使用手機時心中的 OS。本議程將藉由簡單的例子 (Android / iOS) 來探討如何使用程式來解決。並從自身實際使用及教學的經驗，透過範例來了解什麼是友善的 APP，讓您的 APP 在絢麗外，也邁向無障礙 (Accessibility)。",
@@ -402,7 +402,7 @@ function setSchedule()
             "timeStart" => "10:15",
             "timeEnd" => "11:00",
             "summary" => "我的踩雷時代 - 那些你做遊戲前沒想到的事",
-            "pic" => "images/schedule/allan_sun_pony_chen.jpg", //覆寫
+            "pic" => "schedule/allan_sun_pony_chen.jpg", //覆寫
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "這場演講主要是把我們在做遊戲過程中踩過的各種雷分享給大家，希望大家以後在做遊戲這條路上可以一路好走；本講題技術成分較少，但會同時包含前後端。",

@@ -8,6 +8,15 @@ $templates = [
 
 $lang = getLang();
 $template = isset($templates[$lang]) ? $templates[$lang] : $templates['zh'];
-render($template, [
+
+$params = [
     'pageid' => 'index',
-]);
+    'filemtime' => filemtime('index.php'), 
+    'data' => null,
+];
+
+if (isset($_GET['api'])) {
+	getJson($params);
+}
+
+render($template, $params);
