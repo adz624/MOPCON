@@ -3,6 +3,7 @@ include __DIR__ . "/../../vendor/autoload.php";
 include __DIR__ . '/sponsor.php';
 include __DIR__ . '/speaker.php';
 include __DIR__ . '/schedule.php';
+include __DIR__ . '/community.php';
 
 //////////////////////////////////////////////////////////////////////////////
 function getSpeakerById($id)
@@ -15,50 +16,61 @@ function getSpeakerById($id)
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "images/schedule/mopcon.png"
+// speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "schedule/mopcon.png"
 // speakerId 找到講者 ID，若 title, pic, speaker 未設定就會自動帶入
 // speakerId 異常，找不到講者 ID 會強制蓋掉 title, pic, speaker 為 晚點告訴你 :P
 //////////////////////////////////////////////////////////////////////////////
-function getAllSchedule()
+function getScheduleMergeSpeaker($id = null)
 {
-    $schedule = setSchedule();
-    for($i = 0; $i < count($schedule); $i++) {
-        if($schedule[$i]["speakerId"] === '') { //無講者
-            $schedule[$i]['title'] = isset($schedule[$i]['title']) ? $schedule[$i]['title'] : "MOPCON";
-            $schedule[$i]['pic'] = isset($schedule[$i]['pic']) ? $schedule[$i]['pic'] : "images/schedule/mopcon.png";
-            $schedule[$i]["speaker"] = isset($schedule[$i]["speaker"]) ? $schedule[$i]["speaker"] : "";
+    $schedules = getAllSchedule();
+    for ($i = 0; $i < count($schedules); $i++) {
+        if ($id !== null && $id != $schedules[$i]['id']) {
             continue;
         }
-
-        if(is_array($schedule[$i]["speakerId"])) { //複數講者
-            $schedule[$i]["title"] = "";
-            $schedule[$i]["speaker"] = "";
-            foreach($schedule[$i]["speakerId"] as $speakerId) {
+        if ($schedules[$i]["speakerId"] === '') { //無講者
+            $schedules[$i]['title'] = isset($schedules[$i]['title']) ? $schedules[$i]['title'] : "MOPCON";
+            $schedules[$i]['pic'] = isset($schedules[$i]['pic']) ? $schedules[$i]['pic'] : "schedule/mopcon.png";
+            $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : "";
+        } elseif (is_array($schedules[$i]["speakerId"])) { //複數講者
+            $schedules[$i]["title"] = "";
+            $schedules[$i]["speaker"] = "";
+            foreach ($schedules[$i]["speakerId"] as $speakerId) {
                 $speaker = getSpeakerById($speakerId);
-                if($speaker === null) continue;
+                if ($speaker === null) continue;
 
-                if($schedule[$i]["title"] != '') {
-                    $schedule[$i]["title"] .= " 與 ";
+                if ($schedules[$i]["title"] != '') {
+                    $schedules[$i]["title"] .= " 與 ";
                 }
-                $schedule[$i]["title"] .= $speaker['name'];
-                $schedule[$i]["speaker"] .= "<p>" . $speaker['name'] . "：<br>" . $speaker['bio'] . "<p>";
+                $schedules[$i]["title"] .= $speaker['name'];
+                $schedules[$i]["speaker"] .= "<p>" . $speaker['name'] . "：<br>" . $speaker['bio'] . "<p>";
             }
-            $schedule[$i]['pic'] = isset($schedule[$i]["pic"]) ? $schedule[$i]["pic"] : 'images/schedule/secret.jpg'; //異常處理
+            $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : 'schedule/secret.jpg'; //異常處理
         } else { //單一講者
-            $speaker = getSpeakerById($schedule[$i]["speakerId"]);
-            if($speaker === null) { //異常處理
-                $schedule[$i]["speakerId"] = '';
-                $schedule[$i]["title"] = '晚點告訴你 :P';
-                $schedule[$i]["speaker"] = '';
-                $schedule[$i]['pic'] = 'images/schedule/secret.jpg';
+            $speaker = getSpeakerById($schedules[$i]["speakerId"]);
+            if ($speaker === null) { //異常處理
+                $schedules[$i]["speakerId"] = '';
+                $schedules[$i]["title"] = '晚點告訴你 :P';
+                $schedules[$i]["speaker"] = '';
+                $schedules[$i]['pic'] = 'schedule/secret.jpg';
             } else {
-                $schedule[$i]["title"] = isset($schedule[$i]["title"]) ? $schedule[$i]["title"] : $speaker['name'];
-                $schedule[$i]["speaker"] = isset($schedule[$i]["speaker"]) ? $schedule[$i]["speaker"] : $speaker['bio'];
-                $schedule[$i]['pic'] = isset($schedule[$i]["pic"]) ? $schedule[$i]["pic"] : "images/speaker/" . $speaker['pic'];
+                $schedules[$i]["title"] = isset($schedules[$i]["title"]) ? $schedules[$i]["title"] : $speaker['name'];
+                $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : $speaker['bio'];
+                $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : $speaker['pic'];
             }
         } 
+        if ($id !== null) {
+            return $schedules[$i];
+        }
     }
-    return $schedule;
+    return $schedules;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+function getJson($params)
+{
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode($params);
+    exit;
 }
 //////////////////////////////////////////////////////////////////////////////
 function getLang()

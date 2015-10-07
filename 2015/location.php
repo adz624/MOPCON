@@ -27,10 +27,22 @@ $main = [
         'desc2' => '0S(one way only), 0N(one way only), 11, 25, 33, 56, 60, 76, 77, 82, Jianguo Main Line, 91, 214, 219, 248',
     ],
 ];
+$map = [
+        'lat' => 22.626417,
+        'lng' => 120.285722,
+        'zoom' => 16,
+];
 
 $main = getI18n($main);
 
-render('location.twig', [
+$params = [
     'pageid' => 'location',
-    'main' => $main,
-]);
+    'filemtime' => filemtime('location.php'),
+    'map' => $map,
+    'data' => $main,
+];
+
+if (isset($_GET['api'])) {
+    getJson($params);
+}
+render('location.twig', $params);

@@ -9,7 +9,7 @@ function getSponsors()
                 'qnap' => [
                     'name' => 'QNAP 威聯通科技',
                     'desc' => "",
-                    'pic' => 'qnap.png',
+                    'pic' => 'sponsor/qnap.png',
                     'links' => [
                         'Website' => 'https://www.qnap.com',
                     ],
@@ -17,7 +17,7 @@ function getSponsors()
                 'yahoo' => [
                     'name' => 'Yahoo',
                     'desc' => '',
-                    'pic' => 'yahoo.png',
+                    'pic' => 'sponsor/yahoo.png',
                     'links' => [
                         'Website' => 'https://tw.yahoo.com/',
                     ],
@@ -31,7 +31,7 @@ function getSponsors()
                 'line' => [
                     'name' => 'Line',
                     'desc' => "",
-                    'pic' => 'line.png',
+                    'pic' => 'sponsor/line.png',
                     'links' => [
                         'Website' => 'http://line.me/',
                     ],
@@ -39,7 +39,7 @@ function getSponsors()
                 'hopebay' => [
                     'name' => '和沛科技',
                     'desc' => '',
-                    'pic' => 'baytech.png',
+                    'pic' => 'sponsor/baytech.png',
                     'links' => [
                         'Website' => 'http://www.hopebaytech.com',
                     ],
@@ -47,7 +47,7 @@ function getSponsors()
                 'kkbox' => [
                     'name' => 'KKBOX',
                     'desc' => '',
-                    'pic' => 'kkbox.png',
+                    'pic' => 'sponsor/kkbox.png',
                     'links' => [
                         'Website' => 'http://www.kkbox.com',
                     ],
@@ -55,7 +55,7 @@ function getSponsors()
                 'gandi' => [
                     'name' => 'Gandi',
                     'desc' => "",
-                    'pic' => 'gandi.png',
+                    'pic' => 'sponsor/gandi.png',
                     'links' => [
                         'Website' => 'https://www.gandi.net/',
                     ],
@@ -64,7 +64,7 @@ function getSponsors()
                 'coimotion' => [
                     'name' => 'COIMOTION 高誠網路',
                     'desc' => "跨入行動應用的時代，COIMOTION 以先進概念打造對開發者更友善、更彈性好用的 API 服務。經由豐富的內容服務、完整的功能模組，COIMOTION 協助開發者打造更強大網路應用！",
-                    'pic' => 'coimotion.png',
+                    'pic' => 'sponsor/coimotion.png',
                     'links' => [
                         'Website' => 'http://tw.coimotion.com/',
                     ],
@@ -78,7 +78,7 @@ function getSponsors()
                 'newegg' => [
                     'name' => 'Newegg 台灣新蛋',
                     'desc' => 'Newegg Inc. 2001年發跡於美國，目前是全美頗具知名度的電子商務公司，在2014年Newegg 締造營業額達26億美元的佳績，於全美3C類產品網路零售業中排名第1位，並擁有超過2千4百萬名的會員。新蛋集團在全球擁有超過3000名員工，台灣新蛋目前致力於雲端、手持裝置行動平台等研發，期待並歡迎有志意同的您加入。',
-                    'pic' => 'newegg.jpg',
+                    'pic' => 'sponsor/newegg.jpg',
                     'links' => [
                         'Website' => 'https://secure.newegg.com.tw/',
                     ],
@@ -86,7 +86,7 @@ function getSponsors()
                 'webduino' => [
                     'name' => 'Webduino',
                     'desc' => '',
-                    'pic' => 'webduino.jpg',
+                    'pic' => 'sponsor/webduino.jpg',
                     'links' => [
                         'Website' => 'https://webduino.io/',
                     ],
@@ -94,7 +94,7 @@ function getSponsors()
                 'hiiir' => [
                     'name' => 'Hiiir 時間軸科技',
                     'desc' => '時間軸於2013年6月獲得遠傳投資，雙方共同打造全新行動服務品牌friDay，結合雙方在內容服務、行動商務、社群的三大優勢，提供多元行動生活服務，陸續發表friDay購物及friDay APP助手',
-                    'pic' => 'hiiir.png',
+                    'pic' => 'sponsor/hiiir.png',
                     'links' => [
                         'Website' => 'http://shopping.friday.tw/',
                     ],
@@ -108,7 +108,7 @@ function getSponsors()
                 'nchc' => [
                     'name' => '國網中心',
                     'desc' => "",
-                    'pic' => 'nchc.png',
+                    'pic' => 'sponsor/nchc.png',
                     'links' => [
                         'Website' => 'https://www.nchc.org.tw/',
                     ],
@@ -116,7 +116,7 @@ function getSponsors()
                 'swat' => [
                     'name' => '史瓦特多媒體',
                     'desc' => '',
-                    'pic' => 'swat.png',
+                    'pic' => 'sponsor/swat.png',
                     'links' => [
                         'Website' => "http://www.shintek.com/",
                     ],
@@ -124,7 +124,7 @@ function getSponsors()
                 'stu' => [
                     'name' => '樹德科技大學',
                     'desc' => '',
-                    'pic' => 'stu.png',
+                    'pic' => 'sponsor/stu.png',
                     'links' => [
                         'Website' => "http://www.stu.edu.tw/",
                     ],
@@ -132,7 +132,7 @@ function getSponsors()
                 'kktix' => [
                     'name' => 'KKTIX',
                     'desc' => '',
-                    'pic' => 'kktix.png',
+                    'pic' => 'sponsor/kktix.png',
                     'links' => [
                         'Website' => "https://kktix.com/",
                     ],

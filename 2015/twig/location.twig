@@ -8,7 +8,7 @@
 <div class="bucket-panel bg-deep-blue">
 	<div class="bucket-row text-white">
 		<i class="bucket-icon ton-li-map-pin-2"></i>
-		<h3 class="bucket-title">{{ main.icck }}</h3>
+		<h3 class="bucket-title">{{ data.icck }}</h3>
 		<div>ICCK</div>
 	</div>
 	<div id="map-canvas" class="miner-mg" style="min-height: 450px"></div>
@@ -23,11 +23,11 @@
 				</div>
 				<div class="card">
 					<h3 class="card-head">
-						{{ main.header1 }}
+						{{ data.header1 }}
 					</h3>
 					<div class="card-body">
 						<ol>
-							{% for desc in main.desc1 %}
+							{% for desc in data.desc1 %}
 							<li>{{ desc }}</li>
 							{% endfor %}
 						</ol>
@@ -35,10 +35,10 @@
 				</div>
 				<div class="card">
 					<h3 class="card-head">
-						{{ main.header2 }}
+						{{ data.header2 }}
 					</h3>
 					<div class="card-body">
-						<p>{{ main.desc2 }}</p>
+						<p>{{ data.desc2 }}</p>
 					</div>
 				</div>
 			</div>
@@ -51,9 +51,9 @@
 </script>
 <script type="text/javascript">
 function initialize() {
-  var myLatlng = new google.maps.LatLng(22.626417,120.285722);
+  var myLatlng = new google.maps.LatLng({{ map.lat }},{{ map.lng }});
   var mapOptions = {
-    zoom: 16,
+    zoom: {{ map.zoom }},
     center: myLatlng,
     draggable: false,
     scrollwheel: false
@@ -63,7 +63,7 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: '{{ main.icck|e('js') }}'
+      title: "{{ data.icck|e('js') }}"
   });
 }
 

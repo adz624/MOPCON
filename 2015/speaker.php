@@ -3,6 +3,7 @@ include __DIR__ . '/src/init.php';
 
 $params = [
     'pageid' => 'speaker',
+    'filemtime' => filemtime('src/speaker.php'),
     'speakers' => [],
 ];
 if (isset($_GET['id'])) {
@@ -10,9 +11,9 @@ if (isset($_GET['id'])) {
     $params['speakers'] = [
         $id => getSpeakerById($id)
     ];
-    $params['og_image'] = 'speaker/' . $params['speakers'][$id]['pic'];
+    $params['og_image'] = $params['speakers'][$id]['pic'];
     $params['og_url'] = 'speaker.php?id=' . $id;
-    $params['main']['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['title'] . "\n" . $params['speakers'][$id]['bio'];
+    $params['main']['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['bio']; //. "\n" . $params['speakers'][$id]['title'] 
 
 } else {
     $params['og_url'] = 'speaker.php';
@@ -24,5 +25,7 @@ if (count($params['speakers']) === 0 || current($params['speakers']) === null) {
     header('Location: /2015/speaker.php');
     exit;
 }
-
+if (isset($_GET['api'])) {
+    getJson($params);
+}
 render('speaker.twig', $params);
