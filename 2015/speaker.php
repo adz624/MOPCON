@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
     ];
     $params['og_image'] = $params['speakers'][$id]['pic'];
     $params['og_url'] = 'speaker.php?id=' . $id;
-    $params['main']['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['title'] . "\n" . $params['speakers'][$id]['bio'];
+    $params['main']['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['bio']; //. "\n" . $params['speakers'][$id]['title'] 
 
 } else {
     $params['og_url'] = 'speaker.php';

@@ -203,7 +203,7 @@ function getAllSchedule()
             "timeStart" => "14:45",
             "timeEnd" => "15:15",
             "title" => "點心時間",//覆寫
-            //"summary" => "休息、聊天、下午茶",
+            "summary" => "休息、聊天、下午茶",
             "pic" => "schedule/mopcon.png",
             "room" => "",
             "type" => "",
