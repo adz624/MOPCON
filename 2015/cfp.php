@@ -4,10 +4,10 @@ include __DIR__ . '/src/init.php';
 $template_name = ('en' === getLang())
     ? "cfp_en.twig"
     : "cfp.twig";
-
+$pageid = 'cfp';
 $params = [
-    'pageid' => 'cfp',
-    'filemtime' => filemtime('cfp.php'), 
+    'pageid' => $pageid,
+    'filemtime' => getLastUpdateTime($pageid), 
     'data' => null,
 ];
 

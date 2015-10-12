@@ -1,9 +1,9 @@
 <?php
 include __DIR__ . '/src/init.php';
-
+$pageid = 'speaker';
 $params = [
-    'pageid' => 'speaker',
-    'filemtime' => filemtime('src/speaker.php'),
+    'pageid' => $pageid,
+    'filemtime' => getLastUpdateTime($pageid),
     'speakers' => [],
 ];
 if (isset($_GET['id'])) {

@@ -1,10 +1,10 @@
 <?php
 include __DIR__ . '/src/init.php';
 
-
+$pageid = 'sponsor';
 $params = [
-    'pageid' => 'sponsor',
-    'filemtime' => filemtime('src/sponsor.php'),
+    'pageid' => $pageid,
+    'filemtime' => getLastUpdateTime($pageid),
     'sponsors' => getSponsors(),
 ];
 

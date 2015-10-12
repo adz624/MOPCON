@@ -8,10 +8,10 @@ $templates = [
 
 $lang = getLang();
 $template = isset($templates[$lang]) ? $templates[$lang] : $templates['zh'];
-
+$pageid = 'index';
 $params = [
-    'pageid' => 'index',
-    'filemtime' => filemtime('index.php'), 
+    'pageid' => $pageid,
+    'filemtime' => getLastUpdateTime($pageid), 
     'data' => null,
 ];
 

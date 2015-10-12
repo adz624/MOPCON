@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . "/../../vendor/autoload.php";
+include __DIR__ . '/location.php';
 include __DIR__ . '/sponsor.php';
 include __DIR__ . '/speaker.php';
 include __DIR__ . '/schedule.php';
@@ -15,14 +16,21 @@ function getSpeakerById($id)
     return isset($speakers[$id]) ? $speakers[$id] : null;
 }
 
-//////////////////////////////////////////////////////////////////////////////
-// speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "schedule/mopcon.png"
-// speakerId 找到講者 ID，若 title, pic, speaker 未設定就會自動帶入
-// speakerId 異常，找不到講者 ID 會強制蓋掉 title, pic, speaker 為 晚點告訴你 :P
-//////////////////////////////////////////////////////////////////////////////
-function getScheduleMergeSpeaker($id = null)
+/**
+ * 合併議程跟講者，若不傳遞 $id 代表抓取全部
+ *
+ * speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "schedule/mopcon.png"
+ * speakerId 找到講者 ID，若 title, pic, speaker 未設定就會自動帶入
+ * speakerId 異常，找不到講者 ID 會強制蓋掉 title, pic, speaker 為 晚點告訴你 :P
+ * 
+ * @param  int      $id 議程編號，可為null
+ * @param  string   $speaker 講者id，可為null
+ * @return array
+ */
+function getScheduleMergeSpeaker($id = null, $speaker = null)
 {
     $schedules = getAllSchedule();
+    $cacheFlag = false;    
     for ($i = 0; $i < count($schedules); $i++) {
         if ($id !== null && $id != $schedules[$i]['id']) {
             continue;
@@ -35,37 +43,111 @@ function getScheduleMergeSpeaker($id = null)
             $schedules[$i]["title"] = "";
             $schedules[$i]["speaker"] = "";
             foreach ($schedules[$i]["speakerId"] as $speakerId) {
-                $speaker = getSpeakerById($speakerId);
-                if ($speaker === null) continue;
+                $speakerInfo = getSpeakerById($speakerId);
+                if ($speakerInfo === null) continue;
 
                 if ($schedules[$i]["title"] != '') {
                     $schedules[$i]["title"] .= " 與 ";
                 }
-                $schedules[$i]["title"] .= $speaker['name'];
-                $schedules[$i]["speaker"] .= "<p>" . $speaker['name'] . "：<br>" . $speaker['bio'] . "<p>";
+                $schedules[$i]["title"] .= $speakerInfo['name'];
+                $schedules[$i]["speaker"] .= "<p>" . $speakerInfo['name'] . "：<br>" . $speakerInfo['bio'] . "<p>";
+                if ($speaker !== null && $speaker == $speakerId) {
+                    $cacheFlag = true;
+                }
             }
             $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : 'schedule/secret.jpg'; //異常處理
         } else { //單一講者
-            $speaker = getSpeakerById($schedules[$i]["speakerId"]);
-            if ($speaker === null) { //異常處理
+            $speakerInfo = getSpeakerById($schedules[$i]["speakerId"]);
+            if ($speakerInfo === null) { //異常處理
                 $schedules[$i]["speakerId"] = '';
                 $schedules[$i]["title"] = '晚點告訴你 :P';
                 $schedules[$i]["speaker"] = '';
                 $schedules[$i]['pic'] = 'schedule/secret.jpg';
             } else {
-                $schedules[$i]["title"] = isset($schedules[$i]["title"]) ? $schedules[$i]["title"] : $speaker['name'];
-                $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : $speaker['bio'];
-                $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : $speaker['pic'];
+                $schedules[$i]["title"] = isset($schedules[$i]["title"]) ? $schedules[$i]["title"] : $speakerInfo['name'];
+                $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : $speakerInfo['bio'];
+                $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : $speakerInfo['pic'];
+                if ($speaker !== null && $speaker == $schedules[$i]['speakerId']) {
+                    $cacheFlag = true;
+                }
             }
         } 
-        if ($id !== null) {
-            return $schedules[$i];
+        if ($id !== null || $cacheFlag == true) {
+             return $schedules[$i];
         }
     }
     return $schedules;
 }
-
-//////////////////////////////////////////////////////////////////////////////
+/**
+ * 取得最後修改時間，部分頁面會自動計算相關頁面最大值
+ * @param  string $page 頁面代號，空值代表全部取最大值
+ * @return time
+ */
+function getLastUpdateTime($page = '')
+{
+    $list = [
+        "index"         => filemtime(__DIR__  . '/../index.php'),
+        "location"      => filemtime(__DIR__  . '/../location.php'),
+        "cfp"           => filemtime(__DIR__  . '/../cfp.php'),
+        "schedule"      => filemtime(__DIR__  . '/../schedule.php'),
+        "speaker"       => filemtime(__DIR__  . '/../speaker.php'),
+        "sponsor"       => filemtime(__DIR__  . '/../sponsor.php'),
+        "community"     => filemtime(__DIR__  . '/../community.php'),
+        "src.schedule"  => filemtime(__DIR__  . '/schedule.php'),
+        "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
+        "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
+        "src.community" => filemtime(__DIR__  . '/community.php'),
+        "src.init"      => filemtime(__DIR__  . '/init.php'),
+        "api.index"     => filemtime(__DIR__  . '/../api/index.php'),
+    ];
+    if ($page == '') {
+        return max($list);
+    } elseif (! in_array($page, $list)) {
+        return time(); //當異常就回傳當下時間
+    } elseif ($page == "schedule") {
+        return max(
+            $list['schedule'], 
+            $list['src.schedule'], 
+            $list['src.init'], 
+            $list['src.speaker']
+        );
+    } elseif (isset($list["src." . $page])) {
+        return max(
+            $list[$page], 
+            $list["src." . $page]
+        );
+    } else {
+        return $list[$page];
+    }
+    
+}
+/**
+ * 取得api對應的資料
+ * @param  string $page 頁面代號
+ * @return array  無資料會回傳 null
+ */
+function apiMappingData($page)
+{
+    switch ($page) {
+        case 'schedule':
+            return getScheduleMergeSpeaker();
+        case 'sponsor':
+            return getSponsors();
+        case 'speaker':
+            return getAllSpeakers();
+        case 'location':
+            return getLocation();
+        case 'community':
+            return getAllCommunities();
+        default:
+            return null;
+    }
+}
+/**
+ * 印出 json，自動 exit
+ * @param array $params 
+ * @return void
+ */
 function getJson($params)
 {
     header('Content-Type: application/json; charset=utf-8');
@@ -127,32 +209,37 @@ function render($template_name, $params)
             'ogtitle' => '行動科技年會 | MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogsitename' => '行動科技年會 | MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogdesc' => '濁水溪以南最強大行動科技研討會，2015強勢回歸',
-            'navcommunity' => '社群',
-            'navlocation' => '地圖',
-            'navcfp' => '徵稿',
-            'navprevious' => '歷年',
-            'navspeaker' => '講者',
-            'navsession' => '議程',
-            'navsponsor' => '贊助',
+            'nav' => [
+                'community' => '社群',
+                'location' => '地圖',
+                'cfp' => '徵稿',
+                'previous' => '歷年',
+                'speaker' => '講者',
+                'schedule' => '議程',
+                'sponsor' => '贊助',
+            ],
         ],
         'en' => [
             'sitetitle' => 'MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogtitle' => 'MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogsitename' => 'MOPCON 2015 | Mobile / Open / Platform Conference',
             'ogdesc' => 'Your favoeite conference for mobile technology in southern Taiwan is now back in 2015',
-            'navcommunity' => 'Community',
-            'navlocation' => 'Location',
-            'navcfp' => 'Call for paper',
-            'navprevious' => 'Previous Events',
-            'navspeaker' => 'Speakers',
-            'navsession' => 'Session',
-            'navsponsor' => 'Sponsors',
+            'nav' => [
+                'community' => 'Community',
+                'location' => 'Location',
+                'cfp' => 'Call for paper',
+                'previous' => 'Previous Events',
+                'speaker' => 'Speakers',
+                'schedule' => 'Session',
+                'sponsor' => 'Sponsors',
+            ],
         ],
     ];
-
+    $main = getI18n($main_msg);
+    $main['pagetitle'] = $main['nav'][$params['pageid']];
     $params = array_replace_recursive(
         [
-            'main' => getI18n($main_msg),
+            'main' => $main,
             'lang' => getLang(),
             'og_image' => 'snapshot-mid.png',
             'og_url' => '',

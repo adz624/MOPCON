@@ -8,7 +8,7 @@
 <div class="bucket-panel bg-deep-blue">
 	<div class="bucket-row text-white">
 		<i class="bucket-icon ton-li-map-pin-2"></i>
-		<h3 class="bucket-title">{{ data.icck }}</h3>
+		<h3 class="bucket-title">{{ location.icck }}</h3>
 		<div>ICCK</div>
 	</div>
 	<div id="map-canvas" class="miner-mg" style="min-height: 450px"></div>
@@ -21,26 +21,16 @@
 			<div class="col-sm-7 pull-right">
 				<div class="card res-background" style="background-image: url(images/location/icck_01.JPG); min-height: 300px;">
 				</div>
+				{% for data in location.list %}
 				<div class="card">
 					<h3 class="card-head">
-						{{ data.header1 }}
+						{{ data.header }}
 					</h3>
 					<div class="card-body">
-						<ol>
-							{% for desc in data.desc1 %}
-							<li>{{ desc }}</li>
-							{% endfor %}
-						</ol>
+						{{ data.desc | raw }}
 					</div>
 				</div>
-				<div class="card">
-					<h3 class="card-head">
-						{{ data.header2 }}
-					</h3>
-					<div class="card-body">
-						<p>{{ data.desc2 }}</p>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
@@ -63,7 +53,7 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: "{{ data.icck|e('js') }}"
+      title: "{{ location.icck|e('js') }}"
   });
 }
 
