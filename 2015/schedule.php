@@ -1,15 +1,24 @@
 <?php
 include __DIR__ . '/src/init.php';
-$filemtime = (filemtime('src/schedule.php') > filemtime('src/speaker.php')) ? filemtime('src/schedule.php') : filemtime('src/speaker.php');
+$pageid = 'schedule';
 $params = [
-    'pageid' => 'schedule',
-    'filemtime' => $filemtime, 
+    'pageid' => $pageid,
+    'filemtime' => getLastUpdateTime($pageid), 
     'schedules' => [],
 ];
+if (isset($_GET['speaker'])) {
+    $speaker = $_GET['speaker'];
+    $params['schedules'] = getScheduleMergeSpeaker(null, $speaker);
+    $params['og_image'] = $params['schedules']['pic'];
+    $params['og_url'] = 'schedule.php?speaker=' . $speaker;
+    $params['main']['ogdesc'] = $params['schedules']['title'] . " : " . $params['schedules']['summary'];
 
-if (isset($_GET['id'])) {
+} elseif (isset($_GET['id'])) {
     $id = intval($_GET['id']);
-    $params['schedules'] = getScheduleMergeSpeaker($id);
+    $params['schedules'] = getScheduleMergeSpeaker($id, null);
+    $params['og_image'] = $params['schedules']['pic'];
+    $params['og_url'] = 'schedule.php?id=' . $id;
+    $params['main']['ogdesc'] = $params['schedules']['title'] . " : " . $params['schedules']['summary'];
 
 } else {
     $params['schedules'] = getScheduleMergeSpeaker();
@@ -23,4 +32,4 @@ if (count($params['schedules']) === 0 || current($params['schedules']) === null)
 if (isset($_GET['api'])) {
 	getJson($params);
 }
-render(isset($_GET['id']) ? 'scheduleSingle.twig' : 'schedule.twig', $params);
+render((isset($_GET['id']) || isset($_GET['speaker'])) ? 'scheduleSingle.twig' : 'schedule.twig', $params);

@@ -129,8 +129,8 @@ function getAllSpeakers()
             'links' => [
             ],
         ],
-        'hojie' => [
-            'name' => '羅荷傑',
+        'roger' => [
+            'name' => '羅荷傑 (Roger)',
             'pic' => 'speaker/hojie.jpg',
             'title' => 'Yahoo 亞太區策略暨業務營運部資深分析師',
             'bio' => "目前為 Yahoo 亞太區策略暨營運部資深分析師，負責協助 Flurry Analytics 及 Yahoo 行動開發者套件亞太區推廣策略。同時也擔任台灣創新行動服務推廣協會 (AppUniverz) 理事。加入 Yahoo 前曾任職美商 APT 策略顧問公司大中華區企業發展部、Google 印度全球廣告策略及營運部門、ASUS 亞太北非區產品策略及管理部門。畢業於清大經濟系。",

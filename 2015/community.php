@@ -15,9 +15,10 @@ $main = [
 
 
 $main = getI18n($main);
+$pageid = 'community';
 $params = [
-    'pageid' => 'community',
-    'filemtime' => filemtime('src/community.php'),
+    'pageid' => $pageid,
+    'filemtime' => getLastUpdateTime($pageid),
     'main' => $main,
     'communities' => getAllCommunities(),
 

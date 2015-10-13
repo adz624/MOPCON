@@ -1,6 +1,8 @@
 .PHONY: main init install update composerInstall composerDumpAutoload composerUpdate
 
-main: install
+BRANCH := $(shell cat .git/HEAD | awk -F/ '{ print $$3 }')
+
+main: update
 
 init:
 	-curl -sS https://getcomposer.org/installer | php
@@ -10,8 +12,11 @@ install:
 	-composer install
 
 update:
-	git pull origin develop
+	-git pull origin ${BRANCH}
 	-composer install
+
+upgrade:
+	-composer self-update
 
 # composer
 #
