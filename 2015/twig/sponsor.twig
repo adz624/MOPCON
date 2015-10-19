@@ -24,7 +24,13 @@
 						</h3>
 						<div class="card-body">
 							<h4>{{ sponsor.name }}</h4>
-							{{ sponsor.desc|markdown }}
+							{% if level.style == 'column-4' %}
+								<p class="hidden-xs">
+							{% else %}
+								<p>
+							{% endif %}
+								{{ sponsor.desc }}
+							</p>
 							<hr>
 							<div class="text-right">
 								{% for link_name, url in sponsor.links %}
