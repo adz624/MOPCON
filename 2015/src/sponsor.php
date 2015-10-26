@@ -118,7 +118,7 @@ function getSponsors()
                     'desc' => '',
                     'pic' => 'sponsor/swat.png',
                     'links' => [
-                        'Website' => "http://www.shintek.com/",
+                        'Website' => "http://www.swat.biz/",
                     ],
                 ],
                 'stu' => [
