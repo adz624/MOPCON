@@ -138,7 +138,7 @@ function getSponsors()
                     ],
                 ],
                 'sfd' => [
-                    'name' => '公民記者攝影保護陣線',
+                    'name' => '公民攝影守護民主陣線',
                     'desc' => '',
                     'pic' => 'sponsor/sfd.png',
                     'links' => [
