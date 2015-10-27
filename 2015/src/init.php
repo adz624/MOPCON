@@ -234,6 +234,10 @@ function render($template_name, $params)
                 'schedule' => '議程',
                 'sponsor' => '贊助',
                 'hackpad' => '2015 hackpad',
+                'chatroom' => '聊天室',
+                'chatroom_gitter' => '網頁版（Gitter）',
+                'chatroom_irc' => 'IRC: #mopcon @ freenode',
+
             ],
         ],
         'en' => [
@@ -250,6 +254,9 @@ function render($template_name, $params)
                 'schedule' => 'Session',
                 'sponsor' => 'Sponsors',
                 'hackpad' => '2015 hackpad',
+                'chatroom' => 'Chat Room',
+                'chatroom_gitter' => 'Gitter',
+                'chatroom_irc' => 'IRC: #mopcon @ freenode',
             ],
         ],
     ];
