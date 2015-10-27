@@ -12,7 +12,7 @@ $pageid = 'index';
 $params = [
     'pageid' => $pageid,
     'filemtime' => getLastUpdateTime($pageid), 
-    'data' => null,
+    'data' => getSponsors(),
 ];
 
 if (isset($_GET['api'])) {

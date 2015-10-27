@@ -8,12 +8,14 @@ $params = [
 ];
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $params['speakers'] = [
-        $id => getSpeakerById($id)
-    ];
-    $params['og_image'] = $params['speakers'][$id]['pic'];
-    $params['og_url'] = 'speaker.php?id=' . $id;
-    $params['main']['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['bio']; //. "\n" . $params['speakers'][$id]['title'] 
+    header("Location:schedule.php?speaker=" . $id);
+    exit;
+    // $params['speakers'] = [
+    //     $id => getSpeakerById($id)
+    // ];
+    // $params['og_image'] = $params['speakers'][$id]['pic'];
+    // $params['og_url'] = 'speaker.php?id=' . $id;
+    // $params['main']['ogdesc'] = $params['speakers'][$id]['name'] . "\n" . $params['speakers'][$id]['bio']; //. "\n" . $params['speakers'][$id]['title'] 
 
 } else {
     $params['og_url'] = 'speaker.php';

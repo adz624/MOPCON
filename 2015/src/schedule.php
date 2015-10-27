@@ -15,10 +15,10 @@ function getAllSchedule()
             "room" => "",
             "type" => "",
             "issue" => "",
-            "speakerId" => ""
+            "speakerId" => "",
         ],
         [ 
-            "id" => 1,
+            "id" => null,
             "date" => "2015/10/31",
             "timeStart" => "09:00",
             "timeEnd" => "09:15",
@@ -26,6 +26,12 @@ function getAllSchedule()
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "活動",
             "issue" => "",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => ""
         ],
         [ 
@@ -37,6 +43,12 @@ function getAllSchedule()
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "政府開放資料供民間使用，是一種負責任的態度，也是一個不可避免的趨勢。民間使用政府資料時最重視的因素包括了正確性、適宜授權、易用程度、即時性、可追索性、適當格式等等。妥善解決這些問題，是開放資料推廣過程中一個重要的步驟。我們推出一個開放資料平台，讓以上因素都能順利解決。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "benjai"
         ],
         [ 
@@ -60,6 +72,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "做了功能就會有人來用的思考方式無法留下使用者，使用者真正想要的完全不是功能。透過簡單的使用者經驗研究方法，抓住使用者的渴望與情緒變化，就能推出令人愛不釋手的好產品。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "akane"
         ],
         [ 
@@ -71,6 +89,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "探討 build script as code 的觀念以及如何善用 Gradle 工具幫助 Android App 的開發。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "sam"
         ],
         [ 
@@ -82,6 +106,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "影像辨識被視為較沉重的演算法程式，行動裝置是被視為較簡陋的電腦設備，要將沉重的程式放進簡陋的電腦好像很難？所以很多人會寄望於偉大的雲端！但是有很多原因，我們絕對不能這麼做！但是要將影像辨識程式在行動裝置上實作出來也不容易，就讓我在這個演講中慢慢告訴你吧！",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-rgmaUihsCNQ",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "yccsonar"
         ],
         [ 
@@ -94,6 +124,12 @@ function getAllSchedule()
             "room" => "",
             "type" => "",
             "issue" => "",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => ""
         ],
         [ 
@@ -105,6 +141,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "營運",
             "issue" => "Growth Hack 是一門在矽谷熱門的行銷技術。但這個名詞對於台灣軟體業的人來說，是一門蒙著神秘面紗的高不可攀的行銷與技術學。傳說產品使用了 Growth Hack 技巧調整體質後，產品就會猛爆性的成長。<br>Growth Hack 的本質是 行銷 + 技術 + 心理學。因為學門牽涉廣泛，入門門檻並不低。所以國內很少人在討論。<br>此次演講就是希望能把這項非常棒的技術引入台灣，並大幅降低門檻。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "xdite"
         ],
         [ 
@@ -116,6 +158,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "相較於 Internet of Things (IoT)，近來最紅的另一個名詞 Web of Things (WoT)，就是所有東西 (Things) 都可以透過 Web 標準協議彼此存取與結合。<br>本次主題，講者會以橫跨前端和硬體的背景跟大家分享，以及講者在硬體 IC 設計廠如何利用最潮的語言 (JavaScript) 和框架 (reactjs) 搭配現行的 WoT 標準打造豐富應用的開發版，降低大眾進入硬體的門檻。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "blue"
         ],
         [ 
@@ -127,6 +175,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "本議程將介紹如何運用 Amazon Web Services (AWS) 雲端服務來加速開發 Mobile App，對 Mobile App 快速開發有興趣的伙伴請千萬不要錯過！",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-Ol35MMcCYVh",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "kj"
         ],
         [ 
@@ -150,6 +204,12 @@ function getAllSchedule()
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "一個成功的產品除了『良好的使用者體驗』與『優秀的程式架構』外，另一個關鍵因素就在於『高度可信賴的服務品質』，要能讓使用者隨時都能夠享受到正確的運作結果，繁複的測試流程是免不了。在這場分享中，Anistar 將分享 Yahoo! 的行動開發團隊是如何規劃行動測試的策略，怎麼確保用最短的時間卻能不停的將最新的功能提供給使用者，還有更多有趣的 Yahoo! 開發秘辛。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "anistar"
         ],
         [ 
@@ -173,6 +233,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "LINE 目前全球每月活躍用戶超過 2.11 億，開發者可以透過 LINE Platform 提供的 APIs 及 SDK 開發網路服務及行動應用，為服務及應用創造更多價值。這次的議程會介紹 LINE Platform 開發的案例及讓各位瞭解如何用 LINE Platform 打造有趣的行動應用。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-k9aBgVEnZHa",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "benny"
         ],
         [ 
@@ -184,6 +250,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "設計是思考方式、流程與文化。在聚集各路好手的環境中，建立不同背景成員之共同目標，讓每個人發揮不同超能力的同時，激發出團隊火花，共同創造最好的產品與服務，這場 Session 將分享 Yahoo 是如何創造這樣一個環境給團隊成員。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-hbU5R3FDv4k",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "harry-wu"
         ],
         
@@ -196,6 +268,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "NAS 對許多人來說可能還停留在一種可遠觀的先進資訊產品。然而事實真是如此嗎？讓 QNAP 來引領您進入 NAS 的世界，透過 RAID 保護資料、打造公私混合雲。結合網路、行動影音與生活工作同步，讓 NAS 成為行動數位生活的中心。搭配 QNAP 開發套件，打造自己的專用 NAS。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-z19vMPVNxa4",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "alex-chang"
         ],
         [ 
@@ -221,6 +299,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "活動",
             "issue" => "相較於耳熟能詳的閃電秀 (Lightning Talk)，本次大會特別設計了 Sponsor Talk 來讓贊助商齊聚一堂，我們一起來聽聽贊助商有什麼話想和使用者與開發者說。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-7Yu52n31wNb",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => ""
         ],
         [   
@@ -244,6 +328,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "行動裝置與雲端服務正在影響人類的生活並重新定義行之有年的 IT 架構，為了應付未來雲端時代的 IT 服務需求，我們將探討如何建構一個有彈性又可靠的儲存架構。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-4n5CNGolNnt",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "jing-de"
         ],
         [ 
@@ -255,6 +345,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "<p>Let&apos;s play the Mobile devices as Linux.<br>手把手玩 Linux 行動裝置。</p><p>To gather people want to remodel the Android, Chromebook and ARM mobile devices, and I also discussed the 「End of Life the mobile device」.<br>凝聚志同道合伙伴一起重新架構 Andriod, Chromebook 以及 ARM 等行動裝置，並探討終止支援 (End of life) 的行動裝置。</p>",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "kenji-shimono"
         ],
         [   
@@ -266,6 +362,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "營運",
             "issue" => "<ol><li>我是不是一個技術背景的人。</li><li>廣告科技演進史。</li><li>從客戶需求，讓產品為王。</li><li>解決最有價值的客戶需求。</li><li>想像力讓技術極致。</li></ol>",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "tk"
         ],
         [ 
@@ -289,6 +391,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "軟體設計是世界上最複雜的工作，我們彷彿就像在鋼索上敲擊鍵盤的小丑，搖搖欲墜。踏實地開發系統與掌握軟體開發節奏是一件重要的事。本議程將分享建構持續整合系統所遭遇的困難與經驗，藉由自動化測試探討軟體品質的重要性，進而實現產品持續交付。希望透過這個機會影響更多開發者對軟體品質的重視。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-FCEBbeg9SDq",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "sj"
         ],
         [ 
@@ -300,6 +408,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "許多的 Andorid 初學者總是只能跟著書上或網路上的一些教學慢慢學習，但實際上在開發我們都會運用許多的 open soruce library 來達成更快速及穩定的開發，本議程將簡介在實務經驗上 Andoird 開發方式及經驗以及能夠如何回饋貢獻開源專案。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-ayjsq92uZqv",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "denny"
         ],
         [ 
@@ -312,6 +426,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "「什麼？這個字『唸』不出來？這到底是什麼功能？」這可能是很多盲人朋友在使用手機時心中的 OS。本議程將藉由簡單的例子 (Android / iOS) 來探討如何使用程式來解決。並從自身實際使用及教學的經驗，透過範例來了解什麼是友善的 APP，讓您的 APP 在絢麗外，也邁向無障礙 (Accessibility)。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-yqzPcpc4WgO",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => [
                 "johnny",
                 "young"
@@ -339,6 +459,12 @@ function getAllSchedule()
             "room" => "翰品酒店",
             "type" => "活動",
             "issue" => "想與大神們共進晚餐嗎? 想和台上講者有更進一步的交流嗎? 開發者之夜將實現你的夢想! 為了讓大家能近距離接觸星光閃閃的講師群，我們特別在 2015/10/31 晚間舉辦 Devel Night，把大神講者群集中起來讓大家一次朝聖個夠喔！趕快<a href='http://mopcon.kktix.cc/events/2015-devel-night' target='_blank'> 報名參加 </a>吧！",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => ""
         ],
         [ 
@@ -353,7 +479,7 @@ function getAllSchedule()
             "speakerId" => ""
         ],
         [ 
-            "id" => 18,
+            "id" => null,
             "date" => "2015/11/01",
             "timeStart" => "09:00",
             "timeEnd" => "09:30",
@@ -361,6 +487,12 @@ function getAllSchedule()
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "活動",
             "issue" => "",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => ""
         ],
         [ 
@@ -372,6 +504,12 @@ function getAllSchedule()
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "Docker 的出現改變了 NAS 軟體生態，過去將軟體移殖到 NAS 上高不可攀的學習曲線已不在在，因應 Docker 和 LXC 的出現，QNAP 推出了 Container Station 來輔助 Container 在 NAS 的使用，如今 NAS 不在只是單純的儲存設備而已，它在運算上也能扮演著不錯的角色。在這場議題中，將分享 QNAP 如何運用 Docker 及 Container Station 在軟體專案上達成持續整合。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "doro"
         ],
         [ 
@@ -395,6 +533,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "此演講的大綱如下:<ol><li>在 Apple Watch 開賣之前如何順利的完成 Apple Watch App 的開發以及上架到 App Store。</li><li>關於 Apple Watch 開發所需要注意的大小事。</li><li>如何吸引 Apple Marketing team 的注意，並且成功在 Watch Store 登上 featured list and banner。</li><li>從 Apple Watch App 的開發來看穿戴式裝置 App 的未來。</li></ol>",
+            "allowVideo" => false,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "howard"
         ],
         [ 
@@ -407,6 +551,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "這場演講主要是把我們在做遊戲過程中踩過的各種雷分享給大家，希望大家以後在做遊戲這條路上可以一路好走；本講題技術成分較少，但會同時包含前後端。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-WQ4FFuL0KNH",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => [
                 "pony",
                 "allan"
@@ -421,6 +571,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "可汗學院 (KhanAcademy) 是世界上對小朋友最具影響力的線上學習平台，且已在去年年底達到累積達題數 30 億次的驚人數據。而目前國內的均一教育平台則是從數年前從可汗學院 fork 出來的專案開始成長茁壯。本演講將介紹在非營利組織內的小型技術團隊，是如何在一片程式碼汪洋中進行修改、導入敏捷與幫 API 寫上活文件。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "joe"
         ],
         [ 
@@ -444,6 +600,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "Typetalk 是 Nulab Inc 所推出的第一款行動 APP，我們將分享其 iOS App 開發過程、架構和如何使用ChatOps 工具將 beta 版提供給公司成員做測試。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "taichiro-yoshida"
         ],
         [ 
@@ -455,6 +617,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "“Write once, run anywhere.” 是許多程式開發者的夢想，各種應用程式架構也似雨後春筍般仆繼亮相。然而各平台間的操作方式迴異，程式設計師們又該如何在跨平台應用程式的紅海裏同中求異、維繫使用者的良好體驗呢？在這場演講中，我們將簡介基於 Qt 的 QML 應用程式如何跨平台進行編譯開發，並同時分享維護多平台應用軟體的心得與所需注意的眉角。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "rschiang"
         ],
         [
@@ -466,6 +634,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "據 Nielsen 2014 年的調查顯示，使用者每天只會打開 9 個 APP，想優化使用者體驗、提升使用黏著度與留存率，需懂得使用工具來分析數據及優化。以行動 APP 為主要產品的公司來說，如何歸納出重要的商業及產品問題、蒐集相關數據、進行分析、快速修正及市場測試絕對都是快速成長的關鍵。希望能透過此分享讓大家對行動數據分析與行動廣告能有初步了解並協助日後的實作。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-3lpiOz5j6Wf",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "roger"
         ],
         [ 
@@ -489,6 +663,12 @@ function getAllSchedule()
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "技術",
             "issue" => "政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會直接與官方合作，提供更良善的公共服務，與正向的公私夥伴關係。<br>以 KNY台灣天氣 App 接入氣象局的強震即時警報為例，分享其中的經驗與心得。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "kny"
         ],
         [ 
@@ -512,6 +692,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "當東西都連上網，Mobile 就成了最方便的管理控制器。<br>此議程將從技術角度分享些實例，說明 Mobile 是如何串接 IoT 裝置、使用 Raspberry、Arduino 做為 IoT 的優缺點及完整的通訊方式介紹。<br>想要了解 IoT 怎麼結合 Mobile？怎麼自己動手打造 IoT？千萬別錯過本次議程。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "marty"
         ],
         [ 
@@ -523,6 +709,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "對 APP 開發方而言，提供的功能越是完整就越能顯現出其產品的核心和優於他人產品的價值，但對手機使用者來說，其對 APP 的訴求幾乎都是操作方便性遠大於功能完整性，如何在兩者之間取得平衡一直都是 APP 開發者的難題。 透過比較市場上 APP 其功能完整性與操作便利性，加上使用者經驗測試結果，歸納出幾項設計原則，提供 APP 開發者作為介面與功能設計時的參考。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "lancelot-wu"
         ],
         [ 
@@ -534,6 +726,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "<ol><li>手動測試曠日廢時，原始碼變化太快。</li><li>前天測試沒有問題，現場操作就炸了！</li></ol>本主題試圖提供通用的解決方案，無論您的平台是 iOS, Android 還是 Firefox OS，都能透過自動化測試工具和 CI/CD，驗證產品可靠度，降低開發和測試成本，提升軟體品質。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-XoLSU0QpuPi",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "carl"
         ],
         [ 
@@ -557,6 +755,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "Mobile app 曠日費時、成本高昂且人才難尋，長久以來一直是業界無解的難題，Facebook 於 2015 年推出的 React Native 將從根本解決此問題，本場將為聽眾深入淺出的介紹它帶來的創新技術與手   法如何從根本上點燃了 mobile app 開發的典範轉移。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-7xw9NMsEo6W",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "jeremy"
         ],
         [ 
@@ -568,6 +772,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "響應式設計？手機網站設計？揪竟要如何做出，讓低頭族也愛瀏覽的網站呢？今天咱們不碰程式碼，只聊設計，志在與大家分享我的低頭族網站設計經驗。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-h6yc5R94VEz",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "muki"
         ],
         [ 
@@ -579,6 +789,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "Gandi CLI 是由 Python 撰寫而成的開源命令列介面，使用 Gandi API 作為溝通介面。Gandi CLI 可用於建立與管理 instances (Gandi IaaS 和 PaaS)、生成與管理 SSL 憑證、管理域名和區域檔、以及其他與域名有關的服務 (如 Gandi Mail、Gandi Site)。目前 Gandi CLI 的原始碼放置於 Github，開放給大眾下載使用。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-yyS90Zj8oZF",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "john"
         ],
         [ 
@@ -602,6 +818,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "技術",
             "issue" => "<ul><li>API 正在吞噬軟體。</li><li>API 大調查 — 現有服務商調查分析。</li><li>大家一起 Hack。</li></ul>",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-DU3BK29T37t",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "ben"
         ],
         [ 
@@ -613,6 +835,12 @@ function getAllSchedule()
             "room" => "二廳 (R2)",
             "type" => "技術",
             "issue" => "那些年，我們一起修過的密碼學，我相信每個程式開發者心中，都有一個 RSA。然而有些太年輕犯下的錯誤，長大了才瞭解，回味起來卻是無限懷念。<br>本次演講分析一些歷史上著名的密碼系統漏洞原理，並介紹一些加密實作上常見的錯誤 (包括講者本人誠心懺悔告解)。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-O2Wb7c7KtIf",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "yllan"
         ],
         [ 
@@ -624,6 +852,12 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "Windows 10 UWP (Universal Windows Platform) 基於 common Windows Core 概念，提出建置單一 App，便能在 Windows 10 的各種裝置上使用，從以往針對 PC、平版、手機的 App，擴展至 Xbox, IoT, HoloLens 等裝置。基於 UWP 設計的 App 將不再挶限於手機及平版。<br>本次議題將涵蓋 UWP 概念、UWP + Azure for Raspberry Pi Demo。",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-pBr97ZoxrQ4",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => "ian"
         ],
         [ 
@@ -636,6 +870,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "活動",
             "issue" => "來跟大家分享任何事情吧！給你一隻麥克風！只要你敢上台，MOPCON 的會眾就是你的聽眾！沒有投影片也沒關係，Lightning Talk 只考驗你的時間掌控力，限時五分鐘，時間一到音控妹妹不留情的唷！",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-fqjnl2qR63g",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speaker" => "Is you！當日大會開放報名，名額有限，請密切注意大會消息！", //覆寫
             "speakerId" => ""
         ],
@@ -648,6 +888,12 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "活動",
             "issue" => "",
+            "allowVideo" => true,
+            "links" => [
+                "hackpad" => "",
+                "Slideshow" => "",
+                "Video" => ""
+            ],
             "speakerId" => ""
         ],
         [ 

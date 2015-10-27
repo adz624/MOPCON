@@ -17,6 +17,12 @@
         <div class="schedule-content-header">
           <h3>{{ schedules.title }}</h3>
           <p>{{ schedules.summary }}</p>
+          {% if schedules.id != "" and schedules.allowVideo == false %}
+            <div class="i-dont pull-right"><img src="images/schedule/idont-03.png" height="31" width="30"></div>
+          {% endif %}
+          {% if schedules.id != "" and schedules.links.hackpad != "" %}
+            <div class="i-hackpad pull-right"><a href="{{schedules.links.hackpad}}">hackpad</a></div>
+          {% endif %}
         </div>
         {% if schedules.room != "" or schedules.type !="" %}
           <div class="schedule-content-footer text-white">
@@ -38,13 +44,25 @@
     {% if schedules.issue != '' or schedules.speaker != '' %}
       <div class="col-xs-12 schedule-footer show">
         {% if schedules.issue %}
-          <h4>議題介紹</h4>
-          <p>{{ schedules.issue | raw }}</p> 
-        {% endif %}
-        {% if schedules.speaker %}
-          <h4>講者簡介</h4>
-          <p>{{ schedules.speaker | raw }}</p> 
-        {% endif %}
+            <h4>議題介紹</h4>
+            <p>{{ schedules.issue | raw }}</p> 
+            {% for link_name, link_url in schedules.links %}
+              {% if link_name != 'hackpad' and link_url != '' %}
+              &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+              {% endif%}
+            {% endfor %}
+          {% endif %}
+          {% if schedules.speaker %}
+            <h4>講者簡介</h4>
+            <p>{{ schedules.speaker | raw }}</p> 
+            {% for link_name, link_url in schedules.speakerLinks %}
+              {% if link_name matches '/^\\d+$/' %}
+
+              {% else%}
+                &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+              {% endif%}
+            {% endfor %}
+          {% endif %}
       </div>
     {% endif %}
   </div>

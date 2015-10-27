@@ -42,6 +42,7 @@ function getScheduleMergeSpeaker($id = null, $speaker = null)
         } elseif (is_array($schedules[$i]["speakerId"])) { //複數講者
             $schedules[$i]["title"] = "";
             $schedules[$i]["speaker"] = "";
+            $schedules[$i]["speakerLinks"] = [];
             foreach ($schedules[$i]["speakerId"] as $speakerId) {
                 $speakerInfo = getSpeakerById($speakerId);
                 if ($speakerInfo === null) continue;
@@ -50,7 +51,21 @@ function getScheduleMergeSpeaker($id = null, $speaker = null)
                     $schedules[$i]["title"] .= " 與 ";
                 }
                 $schedules[$i]["title"] .= $speakerInfo['name'];
-                $schedules[$i]["speaker"] .= "<p>" . $speakerInfo['name'] . "：<br>" . $speakerInfo['bio'] . "<p>";
+
+                $schedules[$i]["speaker"] .= "<p>" . $speakerInfo['name'] . "：<br>" . $speakerInfo['bio'];
+                //由於來不及做 app，因此格式先混著寫先混著寫
+                if (count($speakerInfo['links']) > 0) {
+                    $schedules[$i]["speaker"] .= "<br>";
+                    foreach ($speakerInfo['links'] as $line_name => $link_url) {
+                        if ($link_url == '') {
+                            continue;
+                        }
+                        $schedules[$i]["speaker"] .= "&nbsp;<a href='" . $link_url . "'>" . $line_name . "</a>&nbsp;";
+                    }
+                } 
+                $schedules[$i]["speaker"] .= "</p>";
+                
+                $schedules[$i]["speakerLinks"][] = $speakerInfo['links'];
                 if ($speaker !== null && $speaker == $speakerId) {
                     $cacheFlag = true;
                 }
@@ -67,6 +82,7 @@ function getScheduleMergeSpeaker($id = null, $speaker = null)
                 $schedules[$i]["title"] = isset($schedules[$i]["title"]) ? $schedules[$i]["title"] : $speakerInfo['name'];
                 $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : $speakerInfo['bio'];
                 $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : $speakerInfo['pic'];
+                $schedules[$i]["speakerLinks"] = $speakerInfo["links"];
                 if ($speaker !== null && $speaker == $schedules[$i]['speakerId']) {
                     $cacheFlag = true;
                 }
@@ -217,6 +233,7 @@ function render($template_name, $params)
                 'speaker' => '講者',
                 'schedule' => '議程',
                 'sponsor' => '贊助',
+                'hackpad' => '2015 hackpad',
             ],
         ],
         'en' => [
@@ -232,6 +249,7 @@ function render($template_name, $params)
                 'speaker' => 'Speakers',
                 'schedule' => 'Session',
                 'sponsor' => 'Sponsors',
+                'hackpad' => '2015 hackpad',
             ],
         ],
     ];

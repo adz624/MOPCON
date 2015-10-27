@@ -15,8 +15,41 @@
 
 <div class="container container-fluid">
 	<h3 class="text-center">熱情贊助</h3>
-	<div style="text-align:center">如果您欲贊助 MOPCON，請與 sponsor@mopcon.org 聯絡。<br><br>
-	</div>
+	<!-- <div style="text-align:center">如果您欲贊助 MOPCON，請與 sponsor@mopcon.org 聯絡。<br><br>
+	</div> -->
+	
+		{% for sponsorGroup in data %}
+			{% if sponsorGroup.name == 'Tony Stark' %}
+				<div class="row">
+				{% set countI = 0 %}
+				{% for sponsor in sponsorGroup.sponsors %}
+					{% if countI == 0 and sponsorGroup.sponsors|length == 2 %}
+						<div class="col-sm-4 col-xs-6 col-sm-offset-2">
+					{% else %}
+						<div class="col-sm-4 col-xs-6">
+					{% endif %}
+					{% set countI = countI + 1 %}
+					<img src="images/index/{{sponsor.pic}}" class="img-responsive center-block" alt="{{sponsor.name}}">
+					</div>
+				{% endfor %}
+				</div>
+			{% elseif sponsorGroup.name =='Hacker' %}
+				<div class="row">
+				{% set countI = 0 %}
+				{% for sponsor in sponsorGroup.sponsors %}
+					{% if countI == 0 and sponsorGroup.sponsors|length < 6 %}
+						<div class="col-sm-2 col-xs-3 col-sm-offset-1">
+					{% else %}
+						<div class="col-sm-2 col-xs-3">
+					{% endif %}
+					{% set countI = countI + 1 %}
+					<img src="images/index/{{sponsor.pic}}" class="img-responsive center-block" alt="{{sponsor.name}}">
+					</div>
+				{% endfor %}
+				</div>
+			{% endif %}
+		{% endfor %}
+	
 </div>
 
 <div class="relative bg-p-center bucket-panel res-background bg-dot bg-gray" style="background-image: url(https://c2.staticflickr.com/6/5608/15639412951_74b6990e29_k.jpg);">
