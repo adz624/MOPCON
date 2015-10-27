@@ -137,6 +137,14 @@ function getSponsors()
                         'Website' => "https://kktix.com/",
                     ],
                 ],
+                'sfd' => [
+                    'name' => '公民記者攝影保護陣線',
+                    'desc' => '',
+                    'pic' => 'sponsor/sfd.png',
+                    'links' => [
+                        'Facebook' => "https://www.facebook.com/ShotForDemocracy",
+                    ],
+                ],
             ],
         ],
     ];
