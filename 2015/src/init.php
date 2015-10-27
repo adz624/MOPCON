@@ -217,6 +217,7 @@ function render($template_name, $params)
                 'speaker' => '講者',
                 'schedule' => '議程',
                 'sponsor' => '贊助',
+                'chatroom' => '聊天室',
             ],
         ],
         'en' => [
@@ -232,6 +233,7 @@ function render($template_name, $params)
                 'speaker' => 'Speakers',
                 'schedule' => 'Session',
                 'sponsor' => 'Sponsors',
+                'chatroom' => 'Chat Room',
             ],
         ],
     ];
