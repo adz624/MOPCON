@@ -115,10 +115,13 @@ function getLastUpdateTime($page = '')
         "src.community" => filemtime(__DIR__  . '/community.php'),
         "src.init"      => filemtime(__DIR__  . '/init.php'),
         "api.index"     => filemtime(__DIR__  . '/../api/index.php'),
+        "css.all"       => filemtime(__DIR__  . '/../stylesheets/all.css'),
+        "css.web-fonts" => filemtime(__DIR__  . '/../stylesheets/web-fonts.css'),
+        "js.all"        => filemtime(__DIR__  . '/../javascripts/all/all.js'),
     ];
     if ($page == '') {
         return max($list);
-    } elseif (! in_array($page, $list)) {
+    } elseif (! isset($list[$page])) {
         return time(); //當異常就回傳當下時間
     } elseif ($page == "schedule") {
         return max(
@@ -268,6 +271,11 @@ function render($template_name, $params)
             'lang' => getLang(),
             'og_image' => 'snapshot-mid.png',
             'og_url' => '',
+            'version' => [
+                'allCss' => getLastUpdateTime('css.all'),
+                'allJs' => getLastUpdateTime('js.all'),
+                'webFontsCss' => getLastUpdateTime('css.web-fonts'),
+            ],
         ],
         $params
     );
