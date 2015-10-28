@@ -14,7 +14,7 @@
 	<div class="col-xs-6 slash bg-deep-blue"></div>
 </div>
 <div class="row text-white text-center hidden-sm hidden-md hidden-lg mbl-dates">
-  <div class="mbl-date bg-green active">10 / 30</div>
+  <div class="mbl-date bg-green active">10 / 31</div>
   <div class="mbl-date bg-deep-blue">11 / 01</div>
 </div>
 
@@ -35,7 +35,7 @@
             <div class="schedule-content-header">
               <h3>
                 {% if schedule.id != "" %}
-                  <a href='?id={{schedule.id}}'>{{ schedule.title }} <img src="images/schedule/arrow-02.png" height="25" width="26" /></a>
+                  <a href='?id={{schedule.id}}' class="ellipsis">{{ schedule.title }} </a><img src="images/schedule/arrow-02.png" height="25" width="26" />
                 {% else %}  
                   {{ schedule.title }}
                 {% endif %}
@@ -116,7 +116,7 @@
             <div class="schedule-content-header">
               <h3>
                 {% if schedule.id != "" %}
-                  <a href='?id={{schedule.id}}'>{{ schedule.title }} <img src="images/schedule/arrow-02.png" height="25" width="26" /></a>
+                  <a href='?id={{schedule.id}}' class="ellipsis">{{ schedule.title }} </a><img src="images/schedule/arrow-02.png" height="25" width="26" />
                 {% else %}  
                   {{ schedule.title }}
                 {% endif %}
