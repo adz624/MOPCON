@@ -21,7 +21,7 @@
             <div class="i-dont pull-right"><img src="images/schedule/idont-03.png" height="31" width="30"></div>
           {% endif %}
           {% if schedules.id != "" and schedules.links.hackpad != "" %}
-            <div class="i-hackpad pull-right"><a href="{{schedules.links.hackpad}}">hackpad</a></div>
+            <div class="i-hackpad pull-right"><a href="{{schedules.links.hackpad}}" target="_blank">hackpad</a></div>
           {% endif %}
         </div>
         {% if schedules.room != "" or schedules.type !="" %}
@@ -48,7 +48,7 @@
             <p>{{ schedules.issue | raw }}</p> 
             {% for link_name, link_url in schedules.links %}
               {% if link_name != 'hackpad' and link_url != '' %}
-              &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+              &nbsp;<a href='{{link_url}}' target="_blank">{{link_name}}</a>&nbsp;
               {% endif%}
             {% endfor %}
           {% endif %}
@@ -59,7 +59,7 @@
               {% if link_name matches '/^\\d+$/' %}
 
               {% else%}
-                &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+                &nbsp;<a href='{{link_url}}' target="_blank">{{link_name}}</a>&nbsp;
               {% endif%}
             {% endfor %}
           {% endif %}

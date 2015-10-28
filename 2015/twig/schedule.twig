@@ -5,7 +5,7 @@
 	<!-- <img src="images/logo_header@2x.png" height="" width="500" alt="" class="img-responsive"> -->
 	<div class="circle-logo"></div>
 	  <h2 class="text-center common-idx">Schedule<br>of 2015</h2>
-    <h1 class="common-idx i-allhackpad"><a href="https://mopcon.hackpad.com/ep/group/EoDGLmpeTvK">All Hackpads</a></h1>
+    <h1 class="common-idx i-allhackpad"><a href="https://mopcon.hackpad.com/ep/group/EoDGLmpeTvK" target="_blank">All Hackpads</a></h1>
 
 </header>
 
@@ -49,7 +49,7 @@
                 <div class="i-dont pull-right"><img src="images/schedule/idont-03.png" height="31" width="30"></div>
               {% endif %}
               {% if schedule.links.hackpad != "" %}
-                <div class="i-hackpad pull-right"><a href="{{schedule.links.hackpad}}">hackpad</a></div>
+                <div class="i-hackpad pull-right"><a href="{{schedule.links.hackpad}}" target="_blank">hackpad</a></div>
               {% endif %}
 
 
@@ -79,7 +79,7 @@
             <p>{{ schedule.issue | raw }}</p> 
             {% for link_name, link_url in schedule.links %}
               {% if link_name != 'hackpad' and link_url != '' %}
-              &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+              &nbsp;<a href='{{link_url}}' target="_blank">{{link_name}}</a>&nbsp;
               {% endif%}
             {% endfor %}
           {% endif %}
@@ -90,7 +90,7 @@
               {% if link_name matches '/^\\d+$/' %}
 
               {% else%}
-                &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+                &nbsp;<a href='{{link_url}}' target="_blank">{{link_name}}</a>&nbsp;
               {% endif%}
             {% endfor %}
           {% endif %}
@@ -130,7 +130,7 @@
                 <div class="i-dont pull-right"><img src="images/schedule/idont-03.png" height="31" width="30"></div>
               {% endif %}
               {% if schedule.links.hackpad != "" %}
-                <div class="i-hackpad pull-right"><a href="{{schedule.links.hackpad}}">hackpad</a></div>
+                <div class="i-hackpad pull-right"><a href="{{schedule.links.hackpad}}" target="_blank">hackpad</a></div>
               {% endif %}
 
             </div>
@@ -157,7 +157,7 @@
             <p>{{ schedule.issue | raw }}</p> 
             {% for link_name, link_url in schedule.links %}
               {% if link_name != 'hackpad' and link_url != '' %}
-              &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+              &nbsp;<a href='{{link_url}}' target="_blank">{{link_name}}</a>&nbsp;
               {% endif%}
             {% endfor %}
           {% endif %}
@@ -168,7 +168,7 @@
               {% if link_name matches '/^\\d+$/' %}
 
               {% else%}
-                &nbsp;<a href='{{link_url}}'>{{link_name}}</a>&nbsp;
+                &nbsp;<a href='{{link_url}}' target="_blank">{{link_name}}</a>&nbsp;
               {% endif%}
             {% endfor %}
           {% endif %}
