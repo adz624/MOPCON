@@ -482,7 +482,7 @@ function getAllSchedule()
             "id" => null,
             "date" => "2015/11/01",
             "timeStart" => "09:00",
-            "timeEnd" => "09:30",
+            "timeEnd" => "09:15",
             "summary" => "Announcement",
             "room" => "主廳 (R1) / 全廳聯播",
             "type" => "活動",
