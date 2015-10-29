@@ -45,7 +45,7 @@ function getAllSchedule()
             "issue" => "政府開放資料供民間使用，是一種負責任的態度，也是一個不可避免的趨勢。民間使用政府資料時最重視的因素包括了正確性、適宜授權、易用程度、即時性、可追索性、適當格式等等。妥善解決這些問題，是開放資料推廣過程中一個重要的步驟。我們推出一個開放資料平台，讓以上因素都能順利解決。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-r3kZMQHbcR2",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -74,7 +74,7 @@ function getAllSchedule()
             "issue" => "做了功能就會有人來用的思考方式無法留下使用者，使用者真正想要的完全不是功能。透過簡單的使用者經驗研究方法，抓住使用者的渴望與情緒變化，就能推出令人愛不釋手的好產品。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-jO85QUQsrhR",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -91,7 +91,7 @@ function getAllSchedule()
             "issue" => "探討 build script as code 的觀念以及如何善用 Gradle 工具幫助 Android App 的開發。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-C4fSApWlvQ6",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -143,7 +143,7 @@ function getAllSchedule()
             "issue" => "Growth Hack 是一門在矽谷熱門的行銷技術。但這個名詞對於台灣軟體業的人來說，是一門蒙著神秘面紗的高不可攀的行銷與技術學。傳說產品使用了 Growth Hack 技巧調整體質後，產品就會猛爆性的成長。<br>Growth Hack 的本質是 行銷 + 技術 + 心理學。因為學門牽涉廣泛，入門門檻並不低。所以國內很少人在討論。<br>此次演講就是希望能把這項非常棒的技術引入台灣，並大幅降低門檻。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-yoqZwxC74jV",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -160,7 +160,7 @@ function getAllSchedule()
             "issue" => "相較於 Internet of Things (IoT)，近來最紅的另一個名詞 Web of Things (WoT)，就是所有東西 (Things) 都可以透過 Web 標準協議彼此存取與結合。<br>本次主題，講者會以橫跨前端和硬體的背景跟大家分享，以及講者在硬體 IC 設計廠如何利用最潮的語言 (JavaScript) 和框架 (reactjs) 搭配現行的 WoT 標準打造豐富應用的開發版，降低大眾進入硬體的門檻。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-udVUi3fzyWS",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -206,7 +206,7 @@ function getAllSchedule()
             "issue" => "一個成功的產品除了『良好的使用者體驗』與『優秀的程式架構』外，另一個關鍵因素就在於『高度可信賴的服務品質』，要能讓使用者隨時都能夠享受到正確的運作結果，繁複的測試流程是免不了。在這場分享中，Anistar 將分享 Yahoo! 的行動開發團隊是如何規劃行動測試的策略，怎麼確保用最短的時間卻能不停的將最新的功能提供給使用者，還有更多有趣的 Yahoo! 開發秘辛。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-t4TYggVvi1p",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -347,7 +347,7 @@ function getAllSchedule()
             "issue" => "<p>Let&apos;s play the Mobile devices as Linux.<br>手把手玩 Linux 行動裝置。</p><p>To gather people want to remodel the Android, Chromebook and ARM mobile devices, and I also discussed the 「End of Life the mobile device」.<br>凝聚志同道合伙伴一起重新架構 Andriod, Chromebook 以及 ARM 等行動裝置，並探討終止支援 (End of life) 的行動裝置。</p>",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-fdJJdYn757o",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -364,7 +364,7 @@ function getAllSchedule()
             "issue" => "<ol><li>我是不是一個技術背景的人。</li><li>廣告科技演進史。</li><li>從客戶需求，讓產品為王。</li><li>解決最有價值的客戶需求。</li><li>想像力讓技術極致。</li></ol>",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-62AQHeEjZnQ",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -506,7 +506,7 @@ function getAllSchedule()
             "issue" => "Docker 的出現改變了 NAS 軟體生態，過去將軟體移殖到 NAS 上高不可攀的學習曲線已不在在，因應 Docker 和 LXC 的出現，QNAP 推出了 Container Station 來輔助 Container 在 NAS 的使用，如今 NAS 不在只是單純的儲存設備而已，它在運算上也能扮演著不錯的角色。在這場議題中，將分享 QNAP 如何運用 Docker 及 Container Station 在軟體專案上達成持續整合。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-ffJsYI21dxV",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -535,7 +535,7 @@ function getAllSchedule()
             "issue" => "此演講的大綱如下:<ol><li>在 Apple Watch 開賣之前如何順利的完成 Apple Watch App 的開發以及上架到 App Store。</li><li>關於 Apple Watch 開發所需要注意的大小事。</li><li>如何吸引 Apple Marketing team 的注意，並且成功在 Watch Store 登上 featured list and banner。</li><li>從 Apple Watch App 的開發來看穿戴式裝置 App 的未來。</li></ol>",
             "allowVideo" => false,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-fQOB8b5nHKo",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -573,7 +573,7 @@ function getAllSchedule()
             "issue" => "可汗學院 (KhanAcademy) 是世界上對小朋友最具影響力的線上學習平台，且已在去年年底達到累積達題數 30 億次的驚人數據。而目前國內的均一教育平台則是從數年前從可汗學院 fork 出來的專案開始成長茁壯。本演講將介紹在非營利組織內的小型技術團隊，是如何在一片程式碼汪洋中進行修改、導入敏捷與幫 API 寫上活文件。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-R3--JM5S0nNAvkd",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -602,7 +602,7 @@ function getAllSchedule()
             "issue" => "Typetalk 是 Nulab Inc 所推出的第一款行動 APP，我們將分享其 iOS App 開發過程、架構和如何使用ChatOps 工具將 beta 版提供給公司成員做測試。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-HCXH7fGm7FK",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -619,7 +619,7 @@ function getAllSchedule()
             "issue" => "“Write once, run anywhere.” 是許多程式開發者的夢想，各種應用程式架構也似雨後春筍般仆繼亮相。然而各平台間的操作方式迴異，程式設計師們又該如何在跨平台應用程式的紅海裏同中求異、維繫使用者的良好體驗呢？在這場演講中，我們將簡介基於 Qt 的 QML 應用程式如何跨平台進行編譯開發，並同時分享維護多平台應用軟體的心得與所需注意的眉角。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-rKdOBzR65Ss",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -665,7 +665,7 @@ function getAllSchedule()
             "issue" => "政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會直接與官方合作，提供更良善的公共服務，與正向的公私夥伴關係。<br>以 KNY台灣天氣 App 接入氣象局的強震即時警報為例，分享其中的經驗與心得。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-N8BPAD44gdh",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -694,7 +694,7 @@ function getAllSchedule()
             "issue" => "當東西都連上網，Mobile 就成了最方便的管理控制器。<br>此議程將從技術角度分享些實例，說明 Mobile 是如何串接 IoT 裝置、使用 Raspberry、Arduino 做為 IoT 的優缺點及完整的通訊方式介紹。<br>想要了解 IoT 怎麼結合 Mobile？怎麼自己動手打造 IoT？千萬別錯過本次議程。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-D530y9co9aw",
                 "Slideshow" => "",
                 "Video" => ""
             ],
@@ -711,7 +711,7 @@ function getAllSchedule()
             "issue" => "對 APP 開發方而言，提供的功能越是完整就越能顯現出其產品的核心和優於他人產品的價值，但對手機使用者來說，其對 APP 的訴求幾乎都是操作方便性遠大於功能完整性，如何在兩者之間取得平衡一直都是 APP 開發者的難題。 透過比較市場上 APP 其功能完整性與操作便利性，加上使用者經驗測試結果，歸納出幾項設計原則，提供 APP 開發者作為介面與功能設計時的參考。",
             "allowVideo" => true,
             "links" => [
-                "hackpad" => "",
+                "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-kLYBO6AfF6r",
                 "Slideshow" => "",
                 "Video" => ""
             ],
