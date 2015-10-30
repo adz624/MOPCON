@@ -726,7 +726,7 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "<ol><li>手動測試曠日廢時，原始碼變化太快。</li><li>前天測試沒有問題，現場操作就炸了！</li></ol>本主題試圖提供通用的解決方案，無論您的平台是 iOS, Android 還是 Firefox OS，都能透過自動化測試工具和 CI/CD，驗證產品可靠度，降低開發和測試成本，提升軟體品質。",
-            "allowVideo" => true,
+            "allowVideo" => false,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-XoLSU0QpuPi",
                 "Slideshow" => "",
