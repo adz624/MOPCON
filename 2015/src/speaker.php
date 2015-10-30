@@ -186,7 +186,7 @@ function getAllSpeakers()
             ],
         ],
         'pony' => [
-            'name' => '陳杰興 (Pony Chen)',
+            'name' => '陳杰興 (Pony)',
             'pic' => 'speaker/pony.jpg',
             'title' => 'KKPLAY 工程師',
             'bio' => "在 KKPLAY 擔任工程師，熱衷於手機 APP 開發的相關技術，主要負責手機平台上的遊戲開發。",
@@ -194,7 +194,7 @@ function getAllSpeakers()
             ],
         ],
         'allan' => [
-            'name' => '孫承憲 (Allan Sun)',
+            'name' => '孫承憲 (Allan)',
             'pic' => 'speaker/allan.jpg',
             'title' => 'KKPLAY 工程師',
             'bio' => "住天龍國但是常常被誤以為偷渡客，從野狗大學畢業不過還沒得狂犬病；在 KKPLAY 擔任不站崗的小警衛。",
@@ -283,7 +283,7 @@ function getAllSpeakers()
              ],
         ],
         'johnny' => [
-            'name' => '宋岡諺 (Johnny Sung)',
+            'name' => '宋岡諺 (Johnny)',
             'pic' => 'speaker/johnny.jpg',
             'title' => 'KKBOX 財團法人愛盲基金會 Android Developer',
             'bio' => "從手機、穿戴式裝置到盲人無障礙方面皆有研究。曾開發過世新廣播電台 app, uPresenter 簡報器 (iOS + Apple Watch / Android + Android Wear) 和 Glassware 相關 App。",
@@ -291,7 +291,7 @@ function getAllSpeakers()
              ],
         ],
         'young' => [
-            'name' => '馮俊揚 (Young)',
+            'name' => '馮俊揚',
             'pic' => 'speaker/young.jpg',
             'title' => '愛盲基金會盲用電腦點字教學 督導',
             'bio' => "財團法人愛盲基金會盲用電腦點字教學 督導 / NCC 網頁無障礙發展委員會 委員 / 無障礙網頁檢測人員培訓 講師。",
