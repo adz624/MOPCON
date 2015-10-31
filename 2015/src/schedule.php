@@ -141,7 +141,7 @@ function getAllSchedule()
             "room" => "主廳 (R1)",
             "type" => "營運",
             "issue" => "Growth Hack 是一門在矽谷熱門的行銷技術。但這個名詞對於台灣軟體業的人來說，是一門蒙著神秘面紗的高不可攀的行銷與技術學。傳說產品使用了 Growth Hack 技巧調整體質後，產品就會猛爆性的成長。<br>Growth Hack 的本質是 行銷 + 技術 + 心理學。因為學門牽涉廣泛，入門門檻並不低。所以國內很少人在討論。<br>此次演講就是希望能把這項非常棒的技術引入台灣，並大幅降低門檻。",
-            "allowVideo" => true,
+            "allowVideo" => false,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-yoqZwxC74jV",
                 "Slideshow" => "",
@@ -175,7 +175,7 @@ function getAllSchedule()
             "room" => "三廳 (R3)",
             "type" => "技術",
             "issue" => "本議程將介紹如何運用 Amazon Web Services (AWS) 雲端服務來加速開發 Mobile App，對 Mobile App 快速開發有興趣的伙伴請千萬不要錯過！",
-            "allowVideo" => true,
+            "allowVideo" => false,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-Ol35MMcCYVh",
                 "Slideshow" => "",
