@@ -80,6 +80,7 @@ function getAllSpeakers()
             'title' => 'Fullstackrocks.com 創辦人',
             'bio' => "現於美國擔任技術顧問，協助客戶組建開發團隊、教育訓練、導入現代化開發流程與確保程式品質，主要服務對象為企業與新創公司。同時在台灣主持 FullStackRocks.com 提供專業教育訓練，持續將北美最新技術訊息帶回與本地開發者共享。目前也是 Facebook Reactjs.tw 社團共同管理員。",
             'links' => [
+                'Facebook' => 'https://www.facebook.com/twthecat',
                 'Github' => 'https://github.com/coodoo',
             ],
         ],
