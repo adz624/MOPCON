@@ -69,6 +69,15 @@ function getSponsors()
                         'Website' => 'http://tw.coimotion.com/',
                     ],
                 ],
+
+                'aws' => [
+                    'name' => 'Amazon Web Services',
+                    'desc' => "Amazon Web Services現今在雲端提供高可靠性、高擴充性，以及低成本的基礎架構平台。Amazon Web Services 提供超過40種的不同服務，包括 Amazon Elastic Compute Cloud (Amazon EC2)、Amazon Simple Storage Service (Amazon S3) 及 Amazon Relational Database Service (Amazon RDS)。 ",
+                    'pic' => 'sponsor/aws.png',
+                    'links' => [
+                        'Website' => 'https://aws.amazon.com/',
+                    ],
+                ],
             ],
         ],
         [
