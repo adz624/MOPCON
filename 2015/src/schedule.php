@@ -109,7 +109,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-rgmaUihsCNQ",
-                "Slideshow" => "",
+                "Slideshow" => "https://drive.google.com/file/d/0B2naNVimVDN5cjNvSmlTbEJ2cFk/view?usp=sharing",
                 "Video" => ""
             ],
             "speakerId" => "yccsonar"
