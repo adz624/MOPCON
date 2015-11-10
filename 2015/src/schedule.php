@@ -792,7 +792,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-yyS90Zj8oZF",
-                "Slideshow" => "https://drive.google.com/file/d/0B5xeDBinWcUXZkhNYVI3NFM2TnhLSmhMVk5DOHVoeWJiYXR3/view",
+                "Slideshow" => "https://drive.google.com/a/seedev.com/file/d/0B5xeDBinWcUXZkhNYVI3NFM2TnhLSmhMVk5DOHVoeWJiYXR3/view?usp=sharing",
                 "Video" => ""
             ],
             "speakerId" => "john"
@@ -855,7 +855,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-pBr97ZoxrQ4",
-                "Slideshow" => "https://drive.google.com/file/d/0B5xeDBinWcUXVnZEXzduU0ZlQmthVHAtNFQ1U1BVYmxpVDF3/view",
+                "Slideshow" => "https://drive.google.com/a/seedev.com/file/d/0B5xeDBinWcUXVnZEXzduU0ZlQmthVHAtNFQ1U1BVYmxpVDF3/view?usp=sharing",
                 "Video" => ""
             ],
             "speakerId" => "ian"
