@@ -207,7 +207,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-t4TYggVvi1p",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/anistarsung/mopcon-2015-tips-of-mobile-continuous-delivery",
                 "Video" => ""
             ],
             "speakerId" => "anistar"
