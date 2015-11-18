@@ -666,7 +666,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-N8BPAD44gdh",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/KNYChen/eewmopcon2015",
                 "Video" => ""
             ],
             "speakerId" => "kny"
