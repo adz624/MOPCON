@@ -574,7 +574,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-R3--JM5S0nNAvkd",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/excusemejoe/agile-x-api-x-documentation-ngo-mopcon2015",
                 "Video" => ""
             ],
             "speakerId" => "joe"
@@ -775,7 +775,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-h6yc5R94VEz",
-                "Slideshow" => "",
+                "Slideshow" => "http://slides.com/mukiwu/mopcon2015#/",
                 "Video" => ""
             ],
             "speakerId" => "muki"
