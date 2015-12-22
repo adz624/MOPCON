@@ -92,7 +92,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-C4fSApWlvQ6",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/samchiu0419/android-gradle-mopcon-54589102/",
                 "Video" => ""
             ],
             "speakerId" => "sam"
@@ -109,7 +109,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-rgmaUihsCNQ",
-                "Slideshow" => "",
+                "Slideshow" => "https://drive.google.com/file/d/0B2naNVimVDN5cjNvSmlTbEJ2cFk/view?usp=sharing",
                 "Video" => ""
             ],
             "speakerId" => "yccsonar"
@@ -161,7 +161,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-udVUi3fzyWS",
-                "Slideshow" => "",
+                "Slideshow" => "https://speakerdeck.com/iamblue/yong-reactjs-he-wot-biao-zhun-lai-jiang-di-da-zhong-jin-ru-ying-ti-men-jian",
                 "Video" => ""
             ],
             "speakerId" => "blue"
@@ -207,7 +207,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-t4TYggVvi1p",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/anistarsung/mopcon-2015-tips-of-mobile-continuous-delivery",
                 "Video" => ""
             ],
             "speakerId" => "anistar"
@@ -348,7 +348,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-fdJJdYn757o",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/kapper1224/hacking-with-arm-mobile-devices-on-linux",
                 "Video" => ""
             ],
             "speakerId" => "kenji-shimono"
@@ -394,7 +394,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-FCEBbeg9SDq",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/samejack/mopcon-2015",
                 "Video" => ""
             ],
             "speakerId" => "sj"
@@ -411,7 +411,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-ayjsq92uZqv",
-                "Slideshow" => "",
+                "Slideshow" => "http://denny.one/MOPCON2015/",
                 "Video" => ""
             ],
             "speakerId" => "denny"
@@ -429,7 +429,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-1-yqzPcpc4WgO",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/j796160836/mopcon-2015-accessibility/",
                 "Video" => ""
             ],
             "speakerId" => [
@@ -507,7 +507,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-ffJsYI21dxV",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/fcwu.tw/qnap-mopcon-2015-qnap-docker",
                 "Video" => ""
             ],
             "speakerId" => "doro"
@@ -574,7 +574,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-R3--JM5S0nNAvkd",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/excusemejoe/agile-x-api-x-documentation-ngo-mopcon2015",
                 "Video" => ""
             ],
             "speakerId" => "joe"
@@ -603,7 +603,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-HCXH7fGm7FK",
-                "Slideshow" => "",
+                "Slideshow" => "https://speakerdeck.com/nulabinc/deliver-beta-app-with-chatops",
                 "Video" => ""
             ],
             "speakerId" => "taichiro-yoshida"
@@ -620,7 +620,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-rKdOBzR65Ss",
-                "Slideshow" => "",
+                "Slideshow" => "https://speakerdeck.com/rschiang/crossing-platform-with-elegance",
                 "Video" => ""
             ],
             "speakerId" => "rschiang"
@@ -637,7 +637,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-3lpiOz5j6Wf",
-                "Slideshow" => "",
+                "Slideshow" => "https://drive.google.com/file/d/0B5xeDBinWcUXRDVEcVE1cVNENDdYVVNVX1h2SWdVQmxwczRF/view",
                 "Video" => ""
             ],
             "speakerId" => "roger"
@@ -666,7 +666,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-N8BPAD44gdh",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/KNYChen/eewmopcon2015",
                 "Video" => ""
             ],
             "speakerId" => "kny"
@@ -729,7 +729,7 @@ function getAllSchedule()
             "allowVideo" => false,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-XoLSU0QpuPi",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/bcbcarl/ss-54609616",
                 "Video" => ""
             ],
             "speakerId" => "carl"
@@ -758,7 +758,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-7xw9NMsEo6W",
-                "Slideshow" => "",
+                "Slideshow" => "https://speakerdeck.com/coodoo/react-native-dai-lai-de-kua-ping-tai-mobile-app-kai-fa-dian-fan-zhuan-yi",
                 "Video" => ""
             ],
             "speakerId" => "jeremy"
@@ -775,7 +775,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-h6yc5R94VEz",
-                "Slideshow" => "",
+                "Slideshow" => "http://slides.com/mukiwu/mopcon2015#/",
                 "Video" => ""
             ],
             "speakerId" => "muki"
@@ -792,7 +792,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-yyS90Zj8oZF",
-                "Slideshow" => "",
+                "Slideshow" => "https://drive.google.com/a/seedev.com/file/d/0B5xeDBinWcUXZkhNYVI3NFM2TnhLSmhMVk5DOHVoeWJiYXR3/view?usp=sharing",
                 "Video" => ""
             ],
             "speakerId" => "john"
@@ -838,7 +838,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-O2Wb7c7KtIf",
-                "Slideshow" => "",
+                "Slideshow" => "http://www.slideshare.net/yungluen/cryptography-54609933",
                 "Video" => ""
             ],
             "speakerId" => "yllan"
@@ -855,7 +855,7 @@ function getAllSchedule()
             "allowVideo" => true,
             "links" => [
                 "hackpad" => "https://mopcon.hackpad.com/MOPCON-2015-Day-2-pBr97ZoxrQ4",
-                "Slideshow" => "",
+                "Slideshow" => "https://drive.google.com/a/seedev.com/file/d/0B5xeDBinWcUXVnZEXzduU0ZlQmthVHAtNFQ1U1BVYmxpVDF3/view?usp=sharing",
                 "Video" => ""
             ],
             "speakerId" => "ian"
