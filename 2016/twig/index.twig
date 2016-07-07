@@ -1,0 +1,94 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+    <header class="header text-center" id="particles-js">
+	<div class="planet-logo"></div>
+	<div class="header-block">
+		<div class="header-logo">
+			<img
+				src="images/home-landing-logo@2x.png"
+				alt="mopcon2016"
+				class="img-responsive center-block common-idx mopcon-action">
+			<a class="btn cfp-link cfp-l" href="cfp.php">
+				講者募集
+			</a>
+		</div>
+	</div>
+</header>
+
+<div class="relative bg-linear-green clearfix">
+    <div class="about">
+        <h1 class="about-title text-white text-center">
+            ABOUT
+        </h1>
+        <div class="about-info">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-head comma">
+                        精神
+                    </h3>
+                    <p>行動應用近年成為媒體追逐之寵兒，從電子商務、數位內容、商業服務、消費應用無不積極行動相關領域發展。MOPCON 專注於行動軟體開發 / 應用技術之專業研討會，也是南部最大社群研討會，希望藉由軟體技術社群的力量，推動南北業界技術實務經驗交流，關注行動應用趨勢，並以軟體科技從業人員出發，定調本年會精神意涵為 "I code, I spread, I connect"。</p>
+                    <p>MOPCON 2014 於 2014/9/22 開放報名，800張票在68分鐘內被橫掃一空，再度超越自我，刷新南台灣科技研討會報名最快紀錄！2014/9/26 二階段報名也在短短36分鐘就把再度釋出的189張票掠奪殆盡，南台灣科技研討會極限再度從 MOPCON 2014 獲得新的詮釋。</p>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-head comma">
+                        議程
+                    </h3>
+                    <p>今年議程除了涵蓋以往 App開發、雲端服務、數位內容、創新營運四大主軸外，WWDC、Google I/O 兩大年度盛事聚焦的海量資料、穿戴式裝置、運動健康照護、家庭自動化、TV / 高畫質內容、簡化設計和開發流程等議題也都是重要行動應用的脈絡，豪華的講師陣容是 MOPCON 重要傳統，敬請期待完整議程公布！</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-body">
+            <div class="col-xs-12 bg-gray relative bg-slash" style="background-image: url(https://c5.staticflickr.com/6/5748/22759546156_a2f19cfda7_k.jpg);">
+                
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <div class="col-xs-6 bg-gray relative bg-slash" style="background-image: url(https://c3.staticflickr.com/1/654/22616722290_2e049185b6_k.jpg)"></div>
+                <div class="col-xs-6 bg-gray relative bg-slash" style="background-image: url(https://c3.staticflickr.com/6/5718/22386646898_2fc0660ce5_z.jpg)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map relative">
+    <div id="map-canvas" class="miner-mg" style="min-height: 500px"></div>
+    <div class="map-info col-md-4 col-sm-5">
+        <div class="card">
+            {% for data in location.list %}
+                <div class="card-body">
+                    <h3 class="card-head comma">
+                        {{ data.header }}
+                    </h3>
+                    {{ data.desc | raw }}
+
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWLJ01IXDDFp4w3JH4iMQdAlxTaLTERow">
+</script>
+<script type="text/javascript">
+function initialize() {
+  var myLatlng = new google.maps.LatLng({{ map.lat }},{{ map.lng }});
+  var mapOptions = {
+    zoom: {{ map.zoom }},
+    center: myLatlng,
+    draggable: false,
+    scrollwheel: false
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "{{ location.icck|e('js') }}"
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+{% endblock %}

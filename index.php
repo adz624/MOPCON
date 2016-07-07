@@ -1,2 +1,3 @@
 <?php
-header("Location: http://mopcon.org/2015/");
+header("Location: http://mopcon.org/2016/");
+
