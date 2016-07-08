@@ -1,17 +1,18 @@
 {% extends 'main.twig' %}
 
 {% block content %}
-<header class="header text-center" id="particles-js">
-	<div class="planet-logo"></div>
-	<div class="header-block">
-		<div class="header-logo">
-            <img src="images/home-landing-logo@2x.png"  alt="mopcon2016" class="img-responsive center-block common-idx" width="326">
-            <a class="btn cfp-link cfp-l" href="cfp.php">講者募集</a>
-		</div>
-	</div>
+<header class="header text-center relative"  id="particles-js">
+    <div class="planet-logo"></div>
+    <div class="header-block">
+        <div class="header-logo">
+            <img src="images/home-landing-logo@2x.png"  
+            alt="mopcon2016" class="img-responsive center-block common-idx" width="326">
+        </div>
+    </div>
+    <a class="btn cfp-link cfp-l" href="cfp.html">講者募集</a>
 </header>
 
-<div class="relative bg-linear-green clearfix">
+<div class="relative clearfix">
     <div class="about">
         <h1 class="about-title text-white text-center">
             ABOUT
@@ -22,10 +23,13 @@
                     <h3 class="card-head comma">
                         精神
                     </h3>
-                    <p>行動科技的進步，開拓一條連結創意和生產力的路徑，帶領我們進入一個充滿無限可能的新境界。</p>
-                    <p>自智慧型手機與穿戴式裝置普及以來，各類如社交、地理資訊、拍照、攝影、共享經濟、行動支付等「軟應用」，紀錄著使用者的生活足跡，眾多世界級科技公司透過手環、手錶、居家感應、醫療收集等「硬載體」，試圖無接縫地收集使用者每分每秒的動態。</p>
-                    <p>在這個資料為王的時代，「軟應用」與「硬載體」正在把每個人納入數據洪流之中，行動科技將是獲取使用者資料的最後一哩，也正是 MOPCON（Mobile / Open / Platform CONference） 專精探討的主軸！</p>
-                    <p>MOPCON「行動科技年會」，今年度將以 "Connent Everthing"。作為主要精神意涵。</p>
+                    <p>行動科技的進步，開拓一條連結創意和生產力的路徑，帶領我們進入一個充滿無限可能的新境界。<br/>
+                    
+                     自智慧型手機與穿戴式裝置普及以來，各類如社交、地理資訊、拍照、攝影、共享經濟、行動支付等「軟應用」，紀錄著使用者的生活足跡，眾多世界級科技公司透過手環、手錶、居家感應、醫療收集等「硬載體」，試圖無接縫地收集使用者每分每秒的動態。<br/>
+                    
+                     在這個資料為王的時代，「軟應用」與「硬載體」正在把每個人納入數據洪流之中，行動科技將是獲取使用者資料的最後一哩，也正是 MOPCON（Mobile / Open / Platform CONference） 專精探討的主軸！<br/>
+                    
+                    MOPCON「行動科技年會」，今年度將以 "Connent Everthing"。作為主要精神意涵。</p>
                     <h3 class="card-head comma">
                         議程
                     </h3>
@@ -34,17 +38,19 @@
             </div>
         </div>
         <div class="about-body">
-            <div class="col-xs-12 bg-gray relative bg-dot" style="background-image: url(https://c5.staticflickr.com/6/5748/22759546156_a2f19cfda7_k.jpg);">
-    
+            <div class="col-xs-12 bg-gray relative bg-slash" style="background-image: url(https://c5.staticflickr.com/6/5748/22759546156_a2f19cfda7_k.jpg);">
+                
             </div>
+            <div class="clearfix"></div>
+
             <div>
-                <div class="col-xs-6 bg-gray relative bg-dot" style="background-image: url(https://c3.staticflickr.com/1/654/22616722290_2e049185b6_k.jpg)"></div>
-                <div class="col-xs-6 bg-gray relative bg-dot" style="background-image: url(https://c3.staticflickr.com/6/5718/22386646898_2fc0660ce5_z.jpg)"></div>
+                <div class="col-xs-6 bg-gray relative bg-slash" style="background-image: url(https://c3.staticflickr.com/1/654/22616722290_2e049185b6_k.jpg)"></div>
+                <div class="col-xs-6 bg-gray relative bg-slash" style="background-image: url(https://c3.staticflickr.com/6/5718/22386646898_2fc0660ce5_z.jpg)"></div>
             </div>
         </div>
     </div>
 </div>
-<div class="map relative">
+<div class="map">
     <div id="map-canvas" class="miner-mg" style="min-height: 500px"></div>
     <div class="map-info col-md-4 col-sm-5">
         <div class="card">
@@ -57,7 +63,6 @@
 
                 </div>
             {% endfor %}
-            
         </div>
     </div>
 </div>
