@@ -220,6 +220,20 @@ function getI18n($msg_data)
     return reset($msg_data); // return first group
 }
 
+function getWebList($notSelf = true)
+{
+    $nowDir = trim(pathinfo($_SERVER['PHP_SELF'],PATHINFO_DIRNAME),"/");
+    $webList = [];
+    //檢查
+    for ($i = date("Y"); $i >= 2012; $i--) {
+        if ($notSelf && $i == $nowDir ) continue;
+        if ( file_exists ( __DIR__.'/../../'.$i)) {
+            $webList[] = $i;    
+        }
+    }
+    return $webList;
+}
+
 function render($template_name, $params)
 {
     $main_msg = [
@@ -265,9 +279,12 @@ function render($template_name, $params)
     ];
     $main = getI18n($main_msg);
     $main['pagetitle'] = (isset($main['nav'][$params['pageid']]))?$main['nav'][$params['pageid']]:"";
+
     $params = array_replace_recursive(
         [
             'main' => $main,
+            'website'=>$_SERVER['HTTP_HOST'],
+            'webList'=>getWebList(),
             'lang' => getLang(),
             'og_image' => 'mopcon2016.png',
             'og_url' => '',

@@ -219,7 +219,19 @@ function getI18n($msg_data)
     }
     return reset($msg_data); // return first group
 }
-
+function getWebList($notSelf = true)
+{
+    $nowDir = trim(pathinfo($_SERVER['PHP_SELF'],PATHINFO_DIRNAME),"/");
+    $webList = [];
+    //檢查
+    for ($i = date("Y"); $i >= 2012; $i--) {
+        if ($notSelf && $i == $nowDir ) continue;
+        if ( file_exists ( __DIR__.'/../../'.$i)) {
+            $webList[] = $i;    
+        }
+    }
+    return $webList;
+}
 function render($template_name, $params)
 {
     $main_msg = [
@@ -269,6 +281,7 @@ function render($template_name, $params)
         [
             'main' => $main,
             'lang' => getLang(),
+            'webList'=>getWebList(),
             'og_image' => 'snapshot-mid.png',
             'og_url' => '',
             'version' => [
