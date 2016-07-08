@@ -269,7 +269,7 @@ function render($template_name, $params)
         [
             'main' => $main,
             'lang' => getLang(),
-            'og_image' => 'snapshot-mid.png',
+            'og_image' => 'mopcon2016.png',
             'og_url' => '',
             'version' => [
                 'allCss' => getLastUpdateTime('css.all'),

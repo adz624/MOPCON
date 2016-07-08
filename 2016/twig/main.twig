@@ -71,22 +71,18 @@
 {% endblock %}
 
   <footer class="footer">
-      <div class="bucket-panel">
-          <div class="bucket-row text-center">
-              <a class="btn cfp-link" target="_blank" href="http://mopcon.kktix.cc/events/mopcon2016-cfp">
-                  KKTIX 議程徵稿
-              </a>
-              <a class="btn cfp-link" href="cfp.php">
-                  講者募集
-              </a>
-          </div>
-          <div class="bucket-row">
-            <a href="mailto:contact@mopcon.org" class="email relative">
-              <img src="images/email.png" alt="信箱">
-            </a>
-          </div>
-          <img src="images/footer-logo.png" alt="mopcon2016" class="img-responsive center-block common-idx">
-      </div>
+    <div class="bucket-panel">
+        <div class="bucket-row text-center">
+              {% block footer %}
+              {% endblock %}
+        </div>
+        <div class="bucket-row">
+          <a href="mailto:contact@mopcon.org" class="email relative">
+            <img src="images/email.png" alt="信箱">
+          </a>
+        </div>
+        <img src="images/footer-logo.png" alt="mopcon2016" class="img-responsive center-block common-idx">
+    </div>
   </footer>
   <div id="google_translate_element" style="display:none;"></div>
   <script type="text/javascript">
