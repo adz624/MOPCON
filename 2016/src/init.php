@@ -176,31 +176,34 @@ function getJson($params)
 //////////////////////////////////////////////////////////////////////////////
 function getLang()
 {
-    static $lang = null;
-    if ($lang) {
-        return $lang;
-    }
+    //暫時關閉語系判斷
+    return 'zh';
 
-    $supported_langs = [
-        'zh',
-        'en'
-    ];
+    // static $lang = null;
+    // if ($lang) {
+    //     return $lang;
+    // }
 
-    if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
-        $lang = $_GET['lang'];
-    } elseif(isset($_COOKIE['lang'])) {
-        $lang = $_COOKIE['lang'];
-    } else {
-        if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
-            $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
-        } else {
-            $browser_lang = 'zh';
-        }
-        $lang = in_array($browser_lang, $supported_langs) ? $browser_lang : 'en';
-    }
-    setcookie('lang', $lang);
+    // $supported_langs = [
+    //     'zh',
+    //     'en'
+    // ];
 
-    return $lang;
+    // if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
+    //     $lang = $_GET['lang'];
+    // } elseif(isset($_COOKIE['lang'])) {
+    //     $lang = $_COOKIE['lang'];
+    // } else {
+    //     if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+    //         $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+    //     } else {
+    //         $browser_lang = 'zh';
+    //     }
+    //     $lang = in_array($browser_lang, $supported_langs) ? $browser_lang : 'en';
+    // }
+    // setcookie('lang', $lang);
+
+    // return $lang;
 }
 
 function getI18n($msg_data)
@@ -263,7 +266,7 @@ function render($template_name, $params)
             'ogsitename' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
             'ogdesc' => 'Your favoeite conference for mobile technology in southern Taiwan is now back in 2016',
             'nav' => [
-                'cfp' => 'Call for paper',
+                'cfp' => 'Calling for Presentation',
                 // 'community' => 'Community',
                 // 'location' => 'Location', 
                 'previous' => 'Previous Events',

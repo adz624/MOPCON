@@ -1,9 +1,14 @@
 <?php
 include __DIR__ . '/src/init.php';
 
-$template_name = ('en' === getLang())
-    ? "cfp_en.twig"
-    : "cfp.twig";
+$templates = [
+    'zh' => 'cfp.twig',
+    // 'en' => 'cfp_en.twig',
+];
+
+$lang = getLang();
+$template = isset($templates[$lang]) ? $templates[$lang] : $templates['zh'];
+
 $pageid = 'cfp';
 $params = [
     'pageid' => $pageid,
@@ -14,4 +19,4 @@ $params = [
 if (isset($_GET['api'])) {
 	getJson($params);
 }
-render($template_name, $params);
+render($template, $params);

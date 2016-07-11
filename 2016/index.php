@@ -3,7 +3,7 @@ include __DIR__ . '/src/init.php';
 
 $templates = [
     'zh' => 'index.twig',
-    'en' => 'index.twig',
+    // 'en' => 'index_en.twig',
 ];
 $map = [
         'lat' => 22.626417,
