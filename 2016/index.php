@@ -18,6 +18,7 @@ $params = [
     'pageid' => $pageid,
     'filemtime' => getLastUpdateTime($pageid), 
     'map' => $map,
+    'index' => getIndex(),
     'location' => getLocation(),	
 ];
 

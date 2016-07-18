@@ -8,7 +8,9 @@
             <img src="images/home-landing-logo@2x.png"  
             alt="mopcon2016" class="img-responsive center-block common-idx" width="326">
         </div>
-         <a class="btn cfp-link cfp-l" href="cfp.php">講者募集</a>
+        {% for data in index.headerBtn %}
+            <a class="btn cfp-link" target="{{ data.target }}" href="{{ data.href }}">{{ data.text }}</a>
+        {% endfor %}       
     </div>
    
 </header>
@@ -21,20 +23,13 @@
         <div class="about-info">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-head comma">
-                        精神
-                    </h3>
-                    <p>行動科技的進步，開拓一條連結創意和生產力的路徑，帶領我們進入一個充滿無限可能的新境界。<br/>
+                    {% for data in index.list %}
+                        <h3 class="card-head comma">
+                            {{ data.header }}
+                        </h3>
+                        <p>{{ data.desc | raw }}</p>
+                    {% endfor %}
                     
-                     自智慧型手機與穿戴式裝置普及以來，各類如社交、地理資訊、拍照、攝影、共享經濟、行動支付等「軟應用」，紀錄著使用者的生活足跡，眾多世界級科技公司透過手環、手錶、居家感應、醫療收集等「硬載體」，試圖無接縫地收集使用者每分每秒的動態。<br/>
-                    
-                     在這個資料為王的時代，「軟應用」與「硬載體」正在把每個人納入數據洪流之中，行動科技將是獲取使用者資料的最後一哩，也正是 MOPCON（Mobile / Open / Platform CONference） 專精探討的主軸！<br/>
-                    
-                    MOPCON「行動科技年會」，今年度將以 "Connent Everthing"。作為主要精神意涵。</p>
-                    <h3 class="card-head comma">
-                        議程
-                    </h3>
-                    <p>本屆議程重心除行動開發技術、服務營運、數位內容三大主軸之外，將更廣泛涵蓋雲端運算、穿戴應用、VR 虛擬實境、AR 擴增實境、物聯網應用與基於 HTML5 的可攜式跨裝置應用等相關議題，以真實運作的案例，向與會者做第一手的探討與分享，促進更多優秀開發者項目的成熟與發展。</p>
                 </div>
             </div>
         </div>
@@ -94,6 +89,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 {% endblock %}
 
 {% block footer %}
-    <a class="btn cfp-link" target="_blank" href="http://mopcon.kktix.cc/events/mopcon2016-cfp">KKTIX議程徵稿</a>
-    <a class="btn cfp-link" href="cfp.php">講者募集</a>
+    {% for data in index.footerBtn %}
+        <a class="btn cfp-link" target="{{ data.target }}" href="{{ data.href }}">{{ data.text }}</a>
+    {% endfor %}
+
 {% endblock %}

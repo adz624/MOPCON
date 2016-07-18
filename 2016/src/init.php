@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . "/../../vendor/autoload.php";
+include __DIR__ . '/index.php';
 include __DIR__ . '/location.php';
 // include __DIR__ . '/sponsor.php';
 // include __DIR__ . '/speaker.php';
@@ -113,6 +114,7 @@ function getLastUpdateTime($page = '')
         // "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
         // "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
         // "src.community" => filemtime(__DIR__  . '/community.php'),
+        "src.index"     => filemtime(__DIR__  . '/index.php'),
         "src.init"      => filemtime(__DIR__  . '/init.php'),
         "api.index"     => filemtime(__DIR__  . '/../api/index.php'),
         "css.all"       => filemtime(__DIR__  . '/../stylesheets/all.css'),
@@ -156,6 +158,8 @@ function apiMappingData($page)
         //     return getAllSpeakers();
         case 'location':
             return getLocation();
+        case 'index':
+            return getIndex();
         // case 'community':
         //     return getAllCommunities();
         default:
@@ -176,34 +180,31 @@ function getJson($params)
 //////////////////////////////////////////////////////////////////////////////
 function getLang()
 {
-    //暫時關閉語系判斷
-    return 'zh';
+    static $lang = null;
+    if ($lang) {
+        return $lang;
+    }
 
-    // static $lang = null;
-    // if ($lang) {
-    //     return $lang;
-    // }
+    $supported_langs = [
+        'zh',
+        'en'
+    ];
 
-    // $supported_langs = [
-    //     'zh',
-    //     'en'
-    // ];
+    if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
+        $lang = $_GET['lang'];
+    } elseif(isset($_COOKIE['lang'])) {
+        $lang = $_COOKIE['lang'];
+    } else {
+        if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+            $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+        } else {
+            $browser_lang = 'zh';
+        }
+        $lang = in_array($browser_lang, $supported_langs) ? $browser_lang : 'en';
+    }
+    setcookie('lang', $lang);
 
-    // if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
-    //     $lang = $_GET['lang'];
-    // } elseif(isset($_COOKIE['lang'])) {
-    //     $lang = $_COOKIE['lang'];
-    // } else {
-    //     if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
-    //         $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
-    //     } else {
-    //         $browser_lang = 'zh';
-    //     }
-    //     $lang = in_array($browser_lang, $supported_langs) ? $browser_lang : 'en';
-    // }
-    // setcookie('lang', $lang);
-
-    // return $lang;
+    return $lang;
 }
 
 function getI18n($msg_data)
@@ -266,7 +267,7 @@ function render($template_name, $params)
             'ogsitename' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
             'ogdesc' => 'Your favoeite conference for mobile technology in southern Taiwan is now back in 2016',
             'nav' => [
-                'cfp' => 'Calling for Presentation',
+                'cfp' => 'Call for Presentation',
                 // 'community' => 'Community',
                 // 'location' => 'Location', 
                 'previous' => 'Previous Events',

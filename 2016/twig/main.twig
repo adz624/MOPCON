@@ -19,8 +19,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>{% if main.pagetitle %}{{main.pagetitle}} - {% endif %}{{main.sitetitle}}</title>
 
-    <!-- <link rel="alternate" hreflang="zh-Hant" href="{{app.request.getSchemeAndHttpHost ~ '/2016/' ~ pageid ~ '.php?lang=zh' }}" />
-    <link rel="alternate" hreflang="en-US" href="{{app.request.getSchemeAndHttpHost ~ '/2016/' ~ pageid ~ '.php?lang=en' }}" /> -->
+    <link rel="alternate" hreflang="zh-Hant" href="{{app.request.getSchemeAndHttpHost ~ '/2016/' ~ pageid ~ '.php?lang=zh' }}" />
+    <link rel="alternate" hreflang="en-US" href="{{app.request.getSchemeAndHttpHost ~ '/2016/' ~ pageid ~ '.php?lang=en' }}" />
 
     <link href="stylesheets/all.css?v={{version.allCss}}" rel="stylesheet" type="text/css" />
     <link href="stylesheets/web-fonts.css?v={{version.webFontsCss}}" rel="stylesheet" type="text/css" />
@@ -60,7 +60,10 @@
             </ul>
           </li>
         </ul>
-        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="?lang=en" hreflang="en-US">English</a></li>
+          <li><a href="?lang=zh" hreflang="zh-Hant">中文</a></li>
+        </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
