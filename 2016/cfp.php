@@ -3,10 +3,13 @@ include __DIR__ . '/src/init.php';
 
 $templates = [
     'zh' => 'cfp.twig',
-    'en' => 'cfp_en.twig',
+    // 'en' => 'cfp_en.twig',
 ];
 
 $lang = getLang();
+if($lang!=='zh') {
+	header("Location:./");
+}
 $template = isset($templates[$lang]) ? $templates[$lang] : $templates['zh'];
 
 $pageid = 'cfp';

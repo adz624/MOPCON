@@ -30,7 +30,7 @@ function getIndex()
     	],
 		'en' => [
 			'headerBtn' => [
-				['text'=>'Call for Presentation','href'=>'cfp.php','target'=>''],
+				['text'=>'Call for Presentation','href'=>'http://mopcon.kktix.cc/events/mopcon2016-cfp-eng','target'=>'_blank'],
 			],
 			'footerBtn' => [
 				['text'=>'Call for Presentation','href'=>'http://mopcon.kktix.cc/events/mopcon2016-cfp-eng','target'=>'_blank'],

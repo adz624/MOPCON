@@ -267,7 +267,7 @@ function render($template_name, $params)
             'ogsitename' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
             'ogdesc' => 'Your favoeite conference for mobile technology in southern Taiwan is now back in 2016',
             'nav' => [
-                'cfp' => 'Call for Presentation',
+                // 'cfp' => 'Call for Presentation',
                 // 'community' => 'Community',
                 // 'location' => 'Location', 
                 'previous' => 'Previous Events',
