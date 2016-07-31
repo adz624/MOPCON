@@ -5,8 +5,11 @@
     <div class="planet-logo"></div>
     <div class="header-block">
         <div class="header-logo">
-            <img src="images/home-landing-logo@2x.png"  
-            alt="mopcon2016" class="img-responsive center-block common-idx" width="326">
+            <img
+                src="images/article/home-landing-logo@2x.png"
+                srcset="images/article/home-landing-logo@3x.png 2x, images/article/home-landing-logo@3x.png 3x"
+                alt="mopcon2016"
+                class="img-responsive center-block common-idx">
         </div>
         {% for data in index.headerBtn %}
             <a class="btn cfp-link" target="{{ data.target }}" href="{{ data.href }}">{{ data.text }}</a>

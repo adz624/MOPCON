@@ -29,82 +29,86 @@
     
   </head>
 
-  <body class="{{pageid}} bg-linear-green">
-    <nav class="navbar navbar-default mb0">
-    <div class="">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.php">
-          <img src="images/mob-header-scroll-logo.png" alt="mopcon">
-        </a>
-      </div>
+  <body class="{{pageid}}">
+    <div class="wrapper bg-linear-green">
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="cfp.php">{{main.nav.cfp}}</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{main.nav.previous}}<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              {%for dir in webList %}
-                <li><a href="/{{dir}}/">- {{dir}}</a></li>
-              {%endfor%}
-            </ul>
-          </li>
-          <li class="border-item">
-            <a href="?lang=en" hreflang="zh-Hant">EN</a>
-            <a href="?lang=zh" hreflang="en-US">中</a>
-          </li>
-
-        </ul>
-        
-      </div>
-      <!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>  
-
-{% block content %}
-{% endblock %}
-
-  <footer class="footer">
-    <div class="bucket-panel">
-        <div class="bucket-row text-center">
-              {% block footer %}
-              {% endblock %}
-        </div>
-        <div class="bucket-row">
-          <a href="mailto:contact@mopcon.org" class="email relative">
-            <img src="images/email.png" alt="信箱">
+      <nav class="navbar navbar-default mb0">
+      <div class="">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">
+          <img src="images/nav/mob-header-scroll-logo.png" alt="mopcon">
           </a>
         </div>
-        <img src="images/footer-logo.png" alt="mopcon2016" class="img-responsive center-block common-idx">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="cfp.php">{{main.nav.cfp}}</a></li>
+            <li><a href="speaker.php">{{main.nav.speaker}}</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{main.nav.previous}}<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                {%for dir in webList %}
+                  <li><a href="/{{dir}}/">- {{dir}}</a></li>
+                {%endfor%}
+              </ul>
+            </li>
+            <li class="border-item">
+              <a href="?lang=en" hreflang="zh-Hant">EN</a>
+              <a href="?lang=zh" hreflang="en-US">中</a>
+            </li>
+
+          </ul>
+          
+        </div>
+        <!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>  
+
+  {% block content %}
+  {% endblock %}
+
+    <footer class="footer">
+      <div class="bucket-panel">
+          <div class="bucket-row text-center">
+                {% block footer %}
+                {% endblock %}
+          </div>
+          <div class="bucket-row">
+            <a href="mailto:contact@mopcon.org" class="email relative">
+              <img src="images/footer/email.png" alt="信箱">
+            </a>
+          </div>
+          <img src="images/footer/footer-logo.png" alt="mopcon2016" class="img-responsive center-block common-idx">
+      </div>
+    </footer>
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+           new google.translate.TranslateElement({pageLanguage: 'zh-TW', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-34651129-1'}, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34651129-1']);
+      _gaq.push(['_setDomainName', 'mopcon.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
     </div>
-  </footer>
-  <div id="google_translate_element" style="display:none;"></div>
-  <script type="text/javascript">
-  function googleTranslateElementInit() {
-       new google.translate.TranslateElement({pageLanguage: 'zh-TW', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-34651129-1'}, 'google_translate_element');
-  }
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34651129-1']);
-  _gaq.push(['_setDomainName', 'mopcon.org']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
   </body>
 </html>

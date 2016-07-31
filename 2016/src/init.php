@@ -3,7 +3,7 @@ include __DIR__ . "/../../vendor/autoload.php";
 include __DIR__ . '/index.php';
 include __DIR__ . '/location.php';
 // include __DIR__ . '/sponsor.php';
-// include __DIR__ . '/speaker.php';
+include __DIR__ . '/speaker.php';
 // include __DIR__ . '/schedule.php';
 // include __DIR__ . '/community.php';
 
@@ -107,11 +107,11 @@ function getLastUpdateTime($page = '')
         "cfp"           => filemtime(__DIR__  . '/../cfp.php'),
         // "location"      => filemtime(__DIR__  . '/../location.php'),
         // "schedule"      => filemtime(__DIR__  . '/../schedule.php'),
-        // "speaker"       => filemtime(__DIR__  . '/../speaker.php'),
+        "speaker"       => filemtime(__DIR__  . '/../speaker.php'),
         // "sponsor"       => filemtime(__DIR__  . '/../sponsor.php'),
         // "community"     => filemtime(__DIR__  . '/../community.php'),
         // "src.schedule"  => filemtime(__DIR__  . '/schedule.php'),
-        // "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
+        "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
         // "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
         // "src.community" => filemtime(__DIR__  . '/community.php'),
         "src.index"     => filemtime(__DIR__  . '/index.php'),
@@ -154,8 +154,8 @@ function apiMappingData($page)
         //     return getScheduleMergeSpeaker();
         // case 'sponsor':
         //     return getSponsors();
-        // case 'speaker':
-        //     return getAllSpeakers();
+        case 'speaker':
+            return getAllSpeakers();
         case 'location':
             return getLocation();
         case 'index':
@@ -251,7 +251,7 @@ function render($template_name, $params)
                 // 'community' => '社群',
                 // 'location' => '地圖',
                 'previous' => '歷年 MOPCON',
-                // 'speaker' => '講者',
+                'speaker' => '講者',
                 // 'schedule' => '議程',
                 // 'sponsor' => '贊助',
                 // 'hackpad' => '2016 hackpad',
