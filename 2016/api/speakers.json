@@ -1,29 +1,81 @@
 [
-	{ 
-    	"speakerName": "宋志峰 (Anistar)",
-    	"speakerInfo": "目前現職服務於雅虎奇摩，負責帶領超級商城與拍賣 APP 開發，專注在專案軟體架構規劃與開發，熱愛分享自己的經驗。具備 10 年以上的專案開發經驗，7 年的專業講師資歷，開發的 Magic Shutter 曾獲得 NewYork Times 推薦最佳前十大攝影軟體推薦。",
-		"image": "anistar.jpg",
-		"facebook": "https://www.facebook.com/mopcon",
-		"github": "https://github.com/MOPCON",
-		"blog": "http://mopcon.org/",
-		"website": "http://mopcon.org/"
-	},
-	{ 
-    	"speakerName": "Akane Lee",
-    	"speakerInfo": "嫁給 RD 的 UI Designer",
-		"image": "akane.jpg",
-		"facebook": "https://www.facebook.com/mopcon",
-		"github": "https://github.com/MOPCON",
-		"blog": "http://mopcon.org/",
-		"website": "http://mopcon.org/"
-	},
-	{ 
-	    "speakerName": "陳坤助 (KNY)",
-    	"speakerInfo": "<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>臺灣防災產業協會 常務理事／地震災害防制委員會 主委</li><li>臺灣開放資料聯盟 副會長／App 應用召集人</li><li>交通部／經濟部／環保署 政府資料開放諮詢小組 委員</li><li>AppDC 台灣 App 開發者社群 共同發起人</li></ul><p>長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望能透過科技與開放的力量，建構更美好的未來。</p>",
-		"image": "kny.jpg",
-		"facebook": "https://www.facebook.com/mopcon",
-		"github": "https://github.com/MOPCON",
-		"blog": "http://mopcon.org/",
-		"website": "http://mopcon.org/"
-	}
+  {
+    "name": "宋志峰（Anistar）",
+    "info": "目前現職服務於雅虎奇摩，負責帶領超級商城與拍賣 APP 開發，<br/>專注在專案軟體架構規劃與開發，熱愛分享自己的經驗。<br/>具備 10 年以上的專案開發經驗，<br/>7 年的專業講師資歷，<br/>開發的 Magic Shutter 曾獲得 NewYork Times 推薦最佳前十大攝影軟體推薦。",
+    "image": "anistar.jpg"
+  },
+  {
+    "name": "Akane Lee",
+    "info": "嫁給 RD 的 UI Designer",
+    "image": "akane_lee.jpg"
+  },
+  {
+    "name": "陳坤助（KNY）",
+    "info": "KNY Co. 執行長<br/>中華民國 App 跨界交流協會 理事長<br/>臺灣防災產業協會 常務理事／地震災害防制委員會 主委<br/>臺灣開放資料聯盟 副會長／App 應用召集人<br/>交通部／經濟部／環保署 政府資料開放諮詢小組 委員<br/>AppDC 台灣 App 開發者社群 共同發起人<br/><br/>長期關注與推動台灣 App 產業的發展，並積極倡議台灣 OpenData 的發展。希望能透過科技與開放的力量，建構更美好的未來。",
+    "image": "kny.jpg"
+  },
+  {
+    "name": "吳仁弘（Rick Wu）",
+    "info": "三竹資訊出包工程師 <br/>透過不斷的出包來攝取經驗值<br/>對於買書有莫名的熱愛<br/>專長是與別人交流書單<br/>在網路上撰寫部落格 來達到誤人子弟的效果(?)",
+    "image": "rick_wu.jpg"
+  },
+  {
+    "name": "貝克菜",
+    "info": "國外獨資一間健康食品品牌, 台灣擁有兩間合夥品牌公司跟獨資一間系統公司, 專長是幫助新創公司優化, 成長, 行銷跟自動化",
+    "image": "tony_tsai.jpg"
+  },
+  {
+    "name": "吳承翰",
+    "info": "我喜歡好的產品，也開發好的產品；我寫的不是程式，是理想。",
+    "image": "max_wu.jpg"
+  },
+  {
+    "name": "董福興（Bobby Tung）",
+    "info": "在台灣推動EPUB 3電子書格式與數位出版改革，目前為大塊文化與台灣漫讀（BookWalker Taiwan）的顧問。2013年起參與W3C活動，為中文排版需求（CLREQ）的編輯與邀請專家。希望能夠改善中文電子書與Web內容的排版表現，保留傳統並提高使用者閱讀體驗。",
+    "image": "bobby_tung.jpg"
+  },
+  {
+    "name": "古宗禎（Denny Ku）",
+    "info": "喜歡前端、Serverless，最近也迷上了自然語言處理。 I'm a false positive front-end engineer.",
+    "image": "denny_ku.jpeg"
+  },
+  {
+    "name": "魏銘信（Ivan Wei）",
+    "info": "在移動互聯網與消費性電子產業，從事用戶體驗設計多年，具有軟體與硬體產品開發的豐富經驗；也曾得過iF與Red Dot等設計大獎，目前在獵豹移動負責用戶量破億的Android App “CM Security\"介面設計。",
+    "image": "ivanwei.jpg"
+  },
+  {
+    "name": "鄭鈞隆（Chris Jeng）",
+    "info": "目前任職於PayEasy，五年經驗的Android開發者，目前熱衷研究各種跨平台技術的無限可能，業餘時間也致力於將技術回饋社會的想法，開發找廁所App，造福行動不便者找廁所無障礙 https://goo.gl/xfZa1v",
+    "image": "chris_jeng.jpg"
+  },
+  {
+    "name": "吳以尋",
+    "info": "遊戲製作人、作曲家以及軟體工程師，任職於臺灣遊戲開發商希娜科藝，目前身兼遊戲製作人與執行長的工作，代表作為《境界之詩》。<br/>畢業於國立東華大學資訊工程研究所，於四年前碩士班研究所畢業的時候，創設遊戲製作公司希娜科藝，並擔任執行長兼遊戲製作人。",
+    "image": "wu_yi_syun.jpg"
+  },
+  {
+    "name": "王銓彰",
+    "info": "王銓彰於虛擬實境與擴增實境領域研發超過10年以上，同時也是動畫及遊戲開發業界的風雲人物。他曾研發多套遊戲引擎，是動新聞快速動畫製作技術的發明者，深耕之路上更有和產官學各界合作的豐富經驗。",
+    "image": "wang_cyuan_jhang.jpeg"
+  },
+  {
+    "name": "樊立勳（John Fan）",
+    "info": "John is cofounder and CEO of PicCollage, a photo app with 100+ million downloads.  He attended Princeton University and received a Ph.D. in Electrical Engineering from Stanford University.  He previously worked for a wireless startup that was acquired by Qualcomm.  <br/><br/>John為PicCollage的共同創辦人及執行長，於台灣出生，在美國長大，畢業於普林斯頓大學，並於史丹佛大學取得電機博士。在創業前，John過去任職於無線通訊相關的新創公司，經歷了新創公司成長並被高通收購的過程。",
+    "image": "john_fan.png"
+  },
+  {
+    "name": "王景弘（TonyQ）",
+    "info": "資深網站系統工程師，致力於用資訊系統再造既有流程。",
+    "image": "tonyq.jpg"
+  },
+  {
+    "name": "蔡一郎（Yi-Lang Tsai）",
+    "info": "目前擔任Cloud Security Alliance台灣分會創辦人與第一屆理事長，服務於國家高速網路與計算中心，亦為The<br/>Honeynet Project<br/>台灣分會負責人、TWCSIRT團隊負責人，熟悉資訊安全領域相關技術，涵蓋系統安全、網路安全、管理制度、資訊探勘與數位鑑識等領域，經常受邀於國內外資訊安全會議演講，目前已有34本電腦資訊圖書著作。",
+    "image": "tsai_yi_lang.jpg",
+    "facebook": "https://www.facebook.com/mopcon",
+    "github": "https://github.com/MOPCON",
+    "blog": "http://blog.yilang.org/",
+    "website": "http://mopcon.org/"
+  }
 ]

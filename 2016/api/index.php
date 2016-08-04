@@ -4,13 +4,13 @@ $api = [];
 $api['isSucc'] = true;
 $appVersion = 1;
 $api['menu'] = [
-    "schedule",
-    "sponsor",
+    // "schedule",
+    // "sponsor",
     "speaker",
     "location",
     "community",
-    // "cfp",
-    // "index",
+    "cfp",
+    "index",
     // "link",
 ];
 //以下固定

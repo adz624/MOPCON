@@ -5,7 +5,7 @@ include __DIR__ . '/location.php';
 // include __DIR__ . '/sponsor.php';
 include __DIR__ . '/speaker.php';
 // include __DIR__ . '/schedule.php';
-// include __DIR__ . '/community.php';
+include __DIR__ . '/community.php';
 
 //////////////////////////////////////////////////////////////////////////////
 function getSpeakerById($id)
@@ -109,13 +109,15 @@ function getLastUpdateTime($page = '')
         // "schedule"      => filemtime(__DIR__  . '/../schedule.php'),
         "speaker"       => filemtime(__DIR__  . '/../speaker.php'),
         // "sponsor"       => filemtime(__DIR__  . '/../sponsor.php'),
-        // "community"     => filemtime(__DIR__  . '/../community.php'),
+        "community"     => filemtime(__DIR__  . '/../community.php'),
         // "src.schedule"  => filemtime(__DIR__  . '/schedule.php'),
         "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
         // "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
-        // "src.community" => filemtime(__DIR__  . '/community.php'),
+        "src.community" => filemtime(__DIR__  . '/community.php'),
         "src.index"     => filemtime(__DIR__  . '/index.php'),
         "src.init"      => filemtime(__DIR__  . '/init.php'),
+        "api.speaker"   => filemtime(__DIR__  . '/../api/speaker.json'),
+        "api.community" => filemtime(__DIR__  . '/../api/community.json'),
         "api.index"     => filemtime(__DIR__  . '/../api/index.php'),
         "css.all"       => filemtime(__DIR__  . '/../stylesheets/all.css'),
         "css.web-fonts" => filemtime(__DIR__  . '/../stylesheets/web-fonts.css'),
@@ -132,13 +134,21 @@ function getLastUpdateTime($page = '')
             $list['src.init'], 
             $list['src.speaker']
         );
-    } elseif (isset($list["src." . $page])) {
-        return max(
-            $list[$page], 
-            $list["src." . $page]
-        );
     } else {
-        return $list[$page];
+        $max = $list[$page];
+        if(isset($list["src." . $page])) {
+            $max = max(
+                $max, 
+                $list["src." . $page]
+            );
+        }
+        if(isset($list["api." . $page])) {
+            $max = max(
+                $max, 
+                $list["api." . $page]
+            );
+        }
+        return $max;
     }
     
 }
@@ -160,8 +170,8 @@ function apiMappingData($page)
             return getLocation();
         case 'index':
             return getIndex();
-        // case 'community':
-        //     return getAllCommunities();
+        case 'community':
+            return getAllCommunities();
         default:
             return null;
     }
@@ -248,7 +258,7 @@ function render($template_name, $params)
             'ogdesc' => '濁水溪以南最強大行動科技研討會，2016強勢回歸',
             'nav' => [
                 'cfp' => '徵稿',
-                // 'community' => '社群',
+                'community' => '主辦社群',
                 // 'location' => '地圖',
                 'previous' => '歷年 MOPCON',
                 'speaker' => '講者',

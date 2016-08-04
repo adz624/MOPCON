@@ -13,22 +13,23 @@
 		</div>
 	</div>
 </header>
+
 <div class="container-md">
 	<div class="card">
 		<div class="multi-planet">
 			<div class=" card-speaker-title">
-				<h3>講者陣容</h3>
-				<h4>Speakers</h4>
+				<h3>主辦社群</h3>
+				<h4>Organizing Communities</h4>
 				<hr class="speaker-hr">
 			</div>
-			{% for data in speakers %}
+			{% for data in community %}
 			<h3 class="card-head card-gray">
 				<a href="#">{{ data.name }}</a>
 			</h3>
 			<div class="card-body">
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="images/speaker/{{ data.image }}" alt="" class="img-responsive mbxl">
+						<img src="images/community/{{ data.image }}" alt="" class="img-responsive mbxl">
 					</div>
 					<div class="col-sm-9 speakerInfo">
 						<p>
