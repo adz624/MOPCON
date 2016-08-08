@@ -2,7 +2,8 @@
   {
     "name": "宋志峰（Anistar）",
     "info": "目前現職服務於雅虎奇摩，負責帶領超級商城與拍賣 APP 開發，<br/>專注在專案軟體架構規劃與開發，熱愛分享自己的經驗。<br/>具備 10 年以上的專案開發經驗，<br/>7 年的專業講師資歷，<br/>開發的 Magic Shutter 曾獲得 NewYork Times 推薦最佳前十大攝影軟體推薦。",
-    "image": "anistar.jpg"
+    "image": "anistar.jpg",
+    "facebook": "fb.me/anistarsung"
   },
   {
     "name": "Akane Lee",
@@ -26,40 +27,48 @@
   {
     "name": "貝克菜",
     "info": "國外獨資一間健康食品品牌，台灣擁有兩間合夥品牌公司跟獨資一間系統公司，專長是幫助新創公司優化，成長，行銷跟自動化。",
-    "image": "tony_tsai.jpg"
+    "image": "tony_tsai.jpg",
+    "website": "http://tonytsai.com/"
   },
   {
     "name": "吳承翰",
     "info": "我喜歡好的產品，也開發好的產品；我寫的不是程式，是理想。",
-    "image": "max_wu.jpg"
+    "image": "max_wu.jpg",
+    "facebook": "fb.me/TakeHackMD",
+    "github": "https://github.com/hackmdio/hackmd/",
+    "website": "https://hackmd.io/"
   },
   {
     "name": "董福興（Bobby Tung）",
     "info": "在台灣推動 EPUB 3 電子書格式與數位出版改革，目前為大塊文化與台灣漫讀（BookWalker Taiwan）的顧問。2013年起參與 W3C 活動，為中文排版需求（CLREQ）的編輯與邀請專家。希望能夠改善中文電子書與 Web 內容的排版表現，保留傳統並提高使用者閱讀體驗。",
-    "image": "bobby_tung.jpg"
+    "image": "bobby_tung.jpg",
+    "facebook": "fb.me/Bobbytung"
   },
   {
     "name": "古宗禎（Denny Ku）",
     "info": "喜歡前端、Serverless，最近也迷上了自然語言處理。 I'm a false positive front-end engineer.",
-    "image": "denny_ku.jpeg"
+    "image": "denny_ku.jpeg",
+    "github": "https://github.com/abalone0204"
   },
   {
     "name": "魏銘信（Ivan Wei）",
     "info": "在移動互聯網與消費性電子產業，從事用戶體驗設計多年，具有軟體與硬體產品開發的豐富經驗；也曾得過 iF 與 Red Dot 等設計大獎，目前在獵豹移動負責用戶量破億的 Android App「CM Security」介面設計。",
     "image": "ivanwei.jpg",
-    "facebook": "https://www.facebook.com/ivangraphic",
+    "facebook": "fb.me/ivangraphic",
     "blog": "https://medium.com/@ivangraphic"
   },
   {
     "name": "鄭鈞隆（Chris Jeng）",
-    "info": "目前任職於 PayEasy，五年經驗的 Android 開發者，目前熱衷研究各種跨平台技術的無限可能，業餘時間也致力於將技術回饋社會的想法，開發找廁所 App，造福行動不便者找廁所無障礙 https://goo.gl/xfZa1v",
+    "info": "目前任職於 PayEasy，五年經驗的 Android 開發者，目前熱衷研究各種跨平台技術的無限可能，業餘時間也致力於將技術回饋社會的想法，開發找廁所 App，造福行動不便者找廁所無障礙。",
     "image": "chris_jeng.jpg",
-    "facebook": "https://www.facebook.com/chris.cheng.31?fref=ts"
+    "facebook": "fb.me/chris.cheng.31",
+    "blog": "https://play.google.com/store/apps/details?id=tw.com.bluemoon.findbenso&hl=zh_TW"
   },
   {
     "name": "吳以尋",
-    "info": "遊戲製作人、作曲家以及軟體工程師，任職於臺灣遊戲開發商希娜科藝，目前身兼遊戲製作人與執行長的工作，代表作為《境界之詩》。<br/>畢業於國立東華大學資訊工程研究所，於四年前碩士班研究所畢業的時候，創設遊戲製作公司希娜科藝，並擔任執行長兼遊戲製作人。",
-    "image": "wu_yi_syun.jpg"
+    "info": "遊戲製作人、作曲家以及軟體工程師，任職於臺灣遊戲開發商希娜科藝，目前身兼遊戲製作人與執行長的工作，代表作為《境界之詩》。<br/><br/>畢業於國立東華大學資訊工程研究所，於四年前碩士班研究所畢業的時候，創設遊戲製作公司希娜科藝，並擔任執行長兼遊戲製作人。",
+    "image": "wu_yi_syun.jpg",
+    "facebook": "fb.me/ludwig.i.wu"
   },
   {
     "name": "王銓彰",
@@ -82,5 +91,11 @@
     "info": "目前擔任 Cloud Security Alliance 台灣分會創辦人與第一屆理事長，服務於國家高速網路與計算中心，亦為 The Honeynet Project 台灣分會負責人、TWCSIRT 團隊負責人，熟悉資訊安全領域相關技術，涵蓋系統安全、網路安全、管理制度、資訊探勘與數位鑑識等領域，經常受邀於國內外資訊安全會議演講，目前已有 34 本電腦資訊圖書著作。",
     "image": "tsai_yi_lang.jpg",
     "blog": "http://blog.yilang.org/"
+  },
+  {
+    "name": "周益鑫 James Chou",
+    "info": "是一個從大三就半路出家的創業者，因為對於世界充滿著想要改變的熱情，所以從 2014年開始，就在校園裡面開啟了 Colorgy 的品牌，希望透過自身的力量，翻轉校園。創造更多年輕人會喜歡的產品。<br/>主要負責帶領團隊規劃未來方向跟營運策略，專注在跟如何讓使用者愛上我們，熱愛聊天，喜歡到處與人分享交流。希望透過瞭解更多人的故事，填滿自己對於世界的求知慾！",
+    "image": "james_chou.jpg",
+    "facebook": "fb.me/yishin.chou.5"
   }
 ]
