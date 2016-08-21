@@ -22,9 +22,9 @@
 				<h4>Organizing Communities</h4>
 				<hr class="speaker-hr">
 			</div>
-			{% for data in community %}
+			{% for id, data in community %}
 			<h3 class="card-head card-gray">
-				<a href="#">{{ data.name }}</a>
+				<a href="?id={{ id }}">{{ data.name }}</a>
 			</h3>
 			<div class="card-body">
 				<div class="row">
