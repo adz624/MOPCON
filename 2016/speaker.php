@@ -9,10 +9,11 @@ $params = [
 ];
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
-  // header("Location:schedule.php?speaker=" . $id);
+  // header(
+  // "Location:schedule.php?speaker=" . $id);
   // exit;
   $params['speakers'] = getSpeakerById($id);
-  $params['og_image'] = $params['speakers']['image'];
+  $params['og_image'] = "speaker/".$params['speakers']['image'];
   $params['og_url'] = 'speaker.php?id=' . $id;
   $params['main']['ogdesc'] = $params['speakers']['name'] . "\n" . preg_replace('/<br( )?\/?>/i','\n',$params['speakers']['info']); //. "\n" . $params['speakers'][$id]['title']
 

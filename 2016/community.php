@@ -12,7 +12,7 @@ if (isset($_GET['id'])) {
   // header("Location:schedule.php?community=" . $id);
   // exit;
   $params['community'] = getCommunityById($id);
-  $params['og_image'] = $params['community']['image'];
+  $params['og_image'] = "community/".$params['community']['image'];
   $params['og_url'] = 'community.php?id=' . $id;
   $params['main']['ogdesc'] = $params['community']['name'] . "\n" . preg_replace('/<br( )?\/?>/i','\n',$params['community']['info']); //. "\n" . $params['community'][$id]['title']
 
