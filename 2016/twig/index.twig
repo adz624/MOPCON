@@ -1,7 +1,7 @@
 {% extends 'main.twig' %}
 
 {% block content %}
-<header class="header text-center relative"  id="particles-js">
+<header class="header text-center relative" id="particles-js">
     <div class="planet-logo"></div>
     <div class="header-block">
         <div class="header-logo">
@@ -20,9 +20,10 @@
 
 <div class="relative clearfix">
     <div class="about">
-        <h1 class="about-title text-white text-center">
+        <h3 class="topic-title text-white text-center">
+
             ABOUT
-        </h1>
+        </h3>
         <div class="about-info">
             <div class="card">
                 <div class="card-body">
@@ -63,6 +64,34 @@
                 </div>
             {% endfor %}
         </div>
+    </div>
+</div>
+
+
+<div class="relative clearfix">
+    <div class="speaker">
+        <h3 class="topic-title text-white text-center mbxl">
+            SPEAKER
+        </h3>   
+        <ul class="sepeak-slider">
+            {% for id, data in speakers %}
+                <li>
+                    <div class="speaker-info">
+                        <img src="images/speaker/{{ data.image }}" alt="" height="480" class="img-responsive">
+                        <div class="mask">
+                            <div>
+                                {{ data.info | raw }}
+                            </div> 
+                        </div>    
+                    </div>
+                    <div class="speaker-name">
+                        <a href="javascript:void(0);">
+                            {{ data.name }}
+                        </a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
 

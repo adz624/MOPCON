@@ -21,9 +21,9 @@
 				<h4>Speakers</h4>
 				<hr class="speaker-hr">
 			</div>
-			{% for data in speakers %}
+			{% for id, data in speakers %}
 			<h3 class="card-head card-gray">
-				<a href="#">{{ data.name }}</a>
+				<a href="?id={{ id }}">{{ data.name }}</a>
 			</h3>
 			<div class="card-body">
 				<div class="row">

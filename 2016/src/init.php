@@ -17,6 +17,15 @@ function getSpeakerById($id)
     return isset($speakers[$id]) ? $speakers[$id] : null;
 }
 
+function getCommunityById($id)
+{
+    static $communities = null;
+    if (null === $communities) {
+        $communities = getAllCommunities();
+    }
+    return isset($communities[$id]) ? $communities[$id] : null;
+}
+
 /**
  * 合併議程跟講者，若不傳遞 $id 代表抓取全部
  *

@@ -20,6 +20,7 @@ $params = [
     'map' => $map,
     'index' => getIndex(),
     'location' => getLocation(),	
+    'speakers' => getAllSpeakers($order = 'random'),
 ];
 
 if (isset($_GET['api'])) {
