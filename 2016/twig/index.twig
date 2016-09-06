@@ -72,26 +72,28 @@
     <div class="speaker">
         <h3 class="topic-title text-white text-center mbxl">
             SPEAKER
-        </h3>   
-        <ul class="sepeak-slider">
-            {% for id, data in speakers %}
-                <li>
-                    <div class="speaker-info">
-                        <img src="images/speaker/{{ data.image }}" alt="" height="480" class="img-responsive">
-                        <div class="mask">
-                            <div>
-                                {{ data.info | raw }}
-                            </div> 
-                        </div>    
-                    </div>
-                    <div class="speaker-name">
-                        <a href="javascript:void(0);">
-                            {{ data.name }}
-                        </a>
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
+        </h3> 
+        <div class="container-md clearfix">
+            <ul class="sepeak-slider">
+                {% for id, data in speakers %}
+                    <li>
+                        <div class="speaker-info">
+                            <img src="images/speaker/{{ data.image }}" alt="" height="480" class="img-responsive">
+                            <div class="mask">
+                                <div>
+                                    {{ data.info | raw }}
+                                </div> 
+                            </div>    
+                        </div>
+                        <div class="speaker-name">
+                            <a href="javascript:void(0);">
+                                {{ data.name }}
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 
