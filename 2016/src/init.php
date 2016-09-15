@@ -283,7 +283,7 @@ function render($template_name, $params)
                 // 'location' => '地圖',
                 'previous' => '歷年 MOPCON',
                 'speaker' => '講者',
-                // 'schedule' => '議程',
+                'schedule' => '議程',
                 'sponsor' => '贊助',
                 // 'hackpad' => '2016 hackpad',
                 // 'chatroom' => '聊天室',
