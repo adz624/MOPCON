@@ -21,6 +21,7 @@ $params = [
     'index' => getIndex(),
     'location' => getLocation(),	
     'speakers' => getAllSpeakers($order = 'random'),
+    'sponsors' => getAllSponsors(),
 ];
 
 if (isset($_GET['api'])) {

@@ -2,7 +2,7 @@
 include __DIR__ . "/../../vendor/autoload.php";
 include __DIR__ . '/index.php';
 include __DIR__ . '/location.php';
-// include __DIR__ . '/sponsor.php';
+include __DIR__ . '/sponsor.php';
 include __DIR__ . '/speaker.php';
 // include __DIR__ . '/schedule.php';
 include __DIR__ . '/community.php';
@@ -117,15 +117,16 @@ function getLastUpdateTime($page = '')
         // "location"      => filemtime(__DIR__  . '/../location.php'),
         // "schedule"      => filemtime(__DIR__  . '/../schedule.php'),
         "speaker"       => filemtime(__DIR__  . '/../speaker.php'),
-        // "sponsor"       => filemtime(__DIR__  . '/../sponsor.php'),
+        "sponsor"       => filemtime(__DIR__  . '/../sponsor.php'),
         "community"     => filemtime(__DIR__  . '/../community.php'),
         // "src.schedule"  => filemtime(__DIR__  . '/schedule.php'),
         "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
-        // "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
+        "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
         "src.community" => filemtime(__DIR__  . '/community.php'),
         "src.index"     => filemtime(__DIR__  . '/index.php'),
         "src.init"      => filemtime(__DIR__  . '/init.php'),
-        "api.speaker"   => filemtime(__DIR__  . '/../api/speaker.json'),
+        "api.speaker"   => filemtime(__DIR__  . '/../api/speakers.json'),
+        "api.sponsor"   => filemtime(__DIR__  . '/../api/sponsors.json'),
         "api.community" => filemtime(__DIR__  . '/../api/community.json'),
         "api.index"     => filemtime(__DIR__  . '/../api/index.php'),
         "css.all"       => filemtime(__DIR__  . '/../stylesheets/all.css'),
@@ -139,9 +140,20 @@ function getLastUpdateTime($page = '')
     } elseif ($page == "schedule") {
         return max(
             $list['schedule'], 
-            $list['src.schedule'], 
             $list['src.init'], 
-            $list['src.speaker']
+            $list['src.schedule'], 
+            $list['src.speaker'],
+            $list['api.schedule'], 
+            $list['api.speaker']
+        );
+    } elseif ($page == "index") {
+        return max(
+            $list['index'], 
+            $list['src.sponsor'], 
+            $list['src.speaker'],
+            $list['api.index'], 
+            $list['api.sponsor'], 
+            $list['api.speaker']
         );
     } else {
         $max = $list[$page];
@@ -171,8 +183,8 @@ function apiMappingData($page)
     switch ($page) {
         // case 'schedule':
         //     return getScheduleMergeSpeaker();
-        // case 'sponsor':
-        //     return getSponsors();
+        case 'sponsor':
+            return getAllSponsors();
         case 'speaker':
             return getAllSpeakers();
         case 'location':
@@ -272,7 +284,7 @@ function render($template_name, $params)
                 'previous' => '歷年 MOPCON',
                 'speaker' => '講者',
                 // 'schedule' => '議程',
-                // 'sponsor' => '贊助',
+                'sponsor' => '贊助',
                 // 'hackpad' => '2016 hackpad',
                 // 'chatroom' => '聊天室',
                 // 'chatroom_gitter' => '網頁版（Gitter）',
