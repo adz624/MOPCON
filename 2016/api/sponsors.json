@@ -1,0 +1,71 @@
+{
+    "TonyStark":[
+        {
+        "name": "和沛移動",
+        "image": "hopebay_tech.png"
+
+        }
+    ],
+    "BruceWayne":[
+        {
+            "name": "捕夢網",
+            "image": "pumo.png"
+        },
+        {
+            "name": "AWS",
+            "image": "aws.png"
+        },
+        {
+            "name": "KKBOX",
+            "image": "kkbox.png"
+        },
+        {
+            "name": "Yahoo",
+            "image": "yahoo.png"
+        }
+    ],
+    "Hacker":[
+        {
+            "name": "慶奇科技",
+            "image": "webduino.png"
+        },
+        {
+            "name": "Microsoft",
+            "image": "Microsoft.jpg"
+        }
+    ],
+    "Developer":[
+        {
+            "name": "點子科技",
+            "image": "unnamed.png"
+        },
+        {
+            "name": "高誠資訊",
+            "image": "coimotion.png"
+        },
+        {
+            "name": "誠義資訊",
+            "image": "Checkin.png"
+        },
+        {
+            "name": "銘圃資訊",
+            "image": "ming_pu.png"
+        },
+        {
+            "name": "乃師實業",
+            "image": "niceStudio.jpg"
+        },
+        {
+            "name": "驣星軟體",
+            "image": "attenzionestar.png"
+        },
+        {
+            "name": "塩旅社",
+            "image": "hotel_yam.png"
+        },
+        {
+            "name": "Hiiir",
+            "image": "Hiiir.png"
+        }
+    ]
+}
