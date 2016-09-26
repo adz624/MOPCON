@@ -20,7 +20,7 @@ function getIndex()
 		              
 		            	在這個資料為王的時代，「軟應用」與「硬載體」正在把每個人納入數據洪流之中，行動科技將是獲取使用者資料的最後一哩，也正是 MOPCON（Mobile / Open / Platform CONference） 專精探討的主軸！<br/>
 		                    
-		              	MOPCON「行動科技年會」，今年度將以 "Connent Everthing"。作為主要精神意涵。'
+		              	MOPCON「行動科技年會」，今年度將以 "Connect Everything"。作為主要精神意涵。'
 	        	],
 	        	[
 	        		'header' => '議程',
