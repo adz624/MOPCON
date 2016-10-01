@@ -285,6 +285,7 @@ function render($template_name, $params)
                 'speaker' => '講者',
                 'schedule' => '議程',
                 'sponsor' => '贊助',
+                'schedule_unconf' => '交流場次',
                 // 'hackpad' => '2016 hackpad',
                 // 'chatroom' => '聊天室',
                 // 'chatroom_gitter' => '網頁版（Gitter）',
