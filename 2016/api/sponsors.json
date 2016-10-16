@@ -2,70 +2,101 @@
     "TonyStark":[
         {
         "name": "和沛移動",
-        "image": "hopebay_tech.png"
-
+        "image": "hopebay_tech.png",
+        "link": "http://tera.mobi/"
         }
     ],
     "BruceWayne":[
         {
             "name": "捕夢網",
-            "image": "pumo.png"
+            "image": "pumo.png",
+            "link": "http://www.pumo.com.tw/"
         },
         {
             "name": "AWS",
-            "image": "aws.png"
+            "image": "aws.png",
+            "link": "https://aws.amazon.com/tw/"
         },
         {
             "name": "KKBOX",
-            "image": "kkbox.png"
+            "image": "kkbox.png",
+            "link": "https://www.kkbox.com/tw/tc/index.html"
         },
         {
             "name": "Yahoo",
-            "image": "yahoo.png"
+            "image": "yahoo.png",
+            "link": "https://tw.yahoo.com/"
         }
     ],
     "Hacker":[
         {
             "name": "慶奇科技",
-            "image": "webduino.png"
+            "image": "webduino.png",
+            "link": "https://webduino.io/"
         },
         {
             "name": "Microsoft",
-            "image": "Microsoft.jpg"
+            "image": "Microsoft.jpg",
+            "link": "https://www.microsoft.com/zh-tw/"
         }
     ],
     "Developer":[
         {
             "name": "點子科技",
-            "image": "unnamed.png"
+            "image": "unnamed.png",
+            "link": "https://webduino.io/"
         },
         {
             "name": "高誠資訊",
-            "image": "coimotion.png"
+            "image": "coimotion.png",
+            "link": "http://tw.coimotion.com/"
         },
         {
             "name": "誠義資訊",
-            "image": "Checkin.png"
+            "image": "Checkin.png",
+            "link": "http://checkinplus.net/"
         },
         {
             "name": "銘圃資訊",
-            "image": "ming_pu.png"
+            "image": "ming_pu.png",
+            "link": "http://www.sekonicmp.co/"
         },
         {
             "name": "乃師實業",
-            "image": "niceStudio.jpg"
+            "image": "niceStudio.jpg",
+            "link": "https://17bake.cc/"
         },
         {
             "name": "驣星軟體",
-            "image": "attenzionestar.png"
+            "image": "attenzionestar.png",
+            "link": "http://www.attenzionestar.com.tw/"
         },
         {
             "name": "塩旅社",
-            "image": "hotel_yam.png"
+            "image": "hotel_yam.png",
+            "link": "http://hotelyam.cc/"
         },
         {
             "name": "Hiiir",
-            "image": "Hiiir.png"
+            "image": "Hiiir.png",
+            "link": "http://www.hiiir.com/"
+        }
+    ],
+    "SpecialThank":[
+        {
+            "name": "KKTIX",
+            "image": "KKTIX.png",
+            "link": "https://kktix.com/"
+        },
+        {
+            "name": "攝護線",
+            "image": "SFD.png",
+            "link": "https://www.facebook.com/ShotForDemocracy"
+        },
+        {
+            "name": "樹德科技大學",
+            "image": "SHU-TE.png",
+            "link": "http://www.stu.edu.tw/"
         }
     ]
 }
