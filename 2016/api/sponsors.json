@@ -44,7 +44,7 @@
         {
             "name": "點子科技",
             "image": "unnamed.png",
-            "link": "https://webduino.io/"
+            "link": "https://itunes.apple.com/tw/app/shou-ji-yi-sheng-phone-doctor/id565111904?l=zh"
         },
         {
             "name": "高誠資訊",
@@ -80,6 +80,11 @@
             "name": "Hiiir",
             "image": "Hiiir.png",
             "link": "http://www.hiiir.com/"
+        },
+        {
+            "name": "祐生研究基金會",
+            "image": "archilife.png",
+            "link": "http://www.archilife.org/"
         }
     ],
     "SpecialThank":[
