@@ -50,13 +50,27 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="cfp.php">{{main.nav.cfp}}</a></li>
-            <li><a href="schedule.html">{{main.nav.schedule}}</a></li>
-            <li><a href="schedule_unconf.html">{{main.nav.schedule_unconf}}</a></li>
-            <li><a href="speaker.php">{{main.nav.speaker}}</a></li>
-            <li><a href="sponsor.php">{{main.nav.sponsor}}</a></li>
-            <li><a href="community.php">{{main.nav.community}}</a></li>
-            <li><a href="http://hackfoldr.org/mopcon2016/">共筆紀錄</a></li>
+            {% if main.nav.cfp %}
+              <li><a href="cfp.php">{{main.nav.cfp}}</a></li>
+            {% endif %}
+            {% if main.nav.schedule %}
+              <li><a href="schedule.php">{{main.nav.schedule}}</a></li>
+            {% endif %}
+            {% if main.nav.schedule_unconf %}
+              <li><a href="schedule_unconf.php">{{main.nav.schedule_unconf}}</a></li>
+            {% endif %}
+            {% if main.nav.speaker %}
+              <li><a href="speaker.php">{{main.nav.speaker}}</a></li>
+            {% endif %}
+            {% if main.nav.sponsor %}
+              <li><a href="sponsor.php">{{main.nav.sponsor}}</a></li>
+            {% endif %}
+            {% if main.nav.community %}
+              <li><a href="community.php">{{main.nav.community}}</a></li>
+            {% endif %}
+            {% if main.nav.hackfoldr %}
+              <li><a href="http://hackfoldr.org/mopcon2016/">{{main.nav.hackfoldr}}</a></li>
+            {% endif %}
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">

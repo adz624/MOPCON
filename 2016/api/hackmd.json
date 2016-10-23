@@ -1,0 +1,274 @@
+[
+  {
+    "name": "翟本喬（Ben Jai）",
+    "speakerid": "ben_jai",
+    "room": "主廳（R1）/ 全廳聯播",
+    "time": "09: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "古宗禎（Denny Ku）",
+    "speakerid": "denny_ku",
+    "room": "主廳（R1）",
+    "time": "10: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "羅志達（Kelvin Lo）",
+    "speakerid": "kelvin_lo",
+    "room": "二廳（R2）",
+    "time": "10: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "Nevin Chen",
+    "speakerid": "nevin_chen",
+    "room": "三廳（R3）",
+    "time": "10: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "趙永弘",
+    "speakerid": "pumo",
+    "room": "主廳（R1）",
+    "time": "11: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "謝京蓓（Cori Shieh）",
+    "speakerid": "cori_shieh",
+    "room": "二廳（R2）",
+    "time": "11: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "吳仁弘（Rick Wu）",
+    "speakerid": "rick_wu",
+    "room": "三廳（R3）",
+    "time": "11: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "蔡一郎（Yi-Lang Tsai）",
+    "speakerid": "tsai_yi_lang",
+    "room": "主廳（R1）",
+    "time": "14: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "宋志峰（Anistar）",
+    "speakerid": "anistar",
+    "room": "二廳（R2）",
+    "time": "14: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "吳承翰",
+    "speakerid": "max_wu",
+    "room": "三廳（R3）",
+    "time": "14: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "魏銘信（Ivan Wei）",
+    "speakerid": "ivanwei",
+    "room": "主廳（R1）",
+    "time": "15: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "張書源（John Chang）",
+    "speakerid": "john_chang",
+    "room": "二廳（R2）",
+    "time": "15: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "簡信昌（H.C. Chien）",
+    "speakerid": "h_c_chien",
+    "room": "三廳（R3）",
+    "time": "15: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "Akane Lee",
+    "speakerid": "akane_lee",
+    "room": "主廳（R1）",
+    "time": "16: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "張書源（John Chang）",
+    "speakerid": "john_chang",
+    "room": "三廳（R3）",
+    "time": "16: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "李卿澄（qcl）",
+    "speakerid": "qcl",
+    "room": "二廳（R2）",
+    "time": "16: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "王銓彰",
+    "speakerid": "wang_cyuan_jhang",
+    "room": "主廳（R1）/ 全廳聯播",
+    "time": "17: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "梁文耀",
+    "speakerid": "wen_yao_liang",
+    "room": "主廳（R1）/ 全廳聯播",
+    "time": "09: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "吳以尋",
+    "speakerid": "wu_yi_syun",
+    "room": "主廳（R1）",
+    "time": "10: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "林昱宏（Jeff Lin）",
+    "speakerid": "jeff_lin",
+    "room": "二廳（R2）",
+    "time": "10: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "jessechen",
+    "speakerid": "jessechen",
+    "room": "三廳（R3）",
+    "time": "10: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "Kuro Hsu",
+    "speakerid": "kuro_hsu",
+    "room": "主廳（R1）",
+    "time": "11: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "王景弘（TonyQ）",
+    "speakerid": "tonyq",
+    "room": "二廳（R2）",
+    "time": "11: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "董福興（Bobby Tung）",
+    "speakerid": "bobby_tung",
+    "room": "三廳（R3）",
+    "time": "11: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "陳坤助（KNY）",
+    "speakerid": "kny",
+    "room": "主廳（R1）",
+    "time": "13: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "貝克菜",
+    "speakerid": "tony_tsai",
+    "room": "二廳（R2）",
+    "time": "13: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "下野 健二（Kenji Shimono）",
+    "speakerid": "kenji_shimono",
+    "room": "三廳（R3）",
+    "time": "13: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "鈴木 拓生（Takuo Suzuki）",
+    "speakerid": "takuo_suzuki",
+    "room": "主廳（R1）",
+    "time": "14: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "劉于遜（Davidd Liu）",
+    "speakerid": "davidd",
+    "room": "二廳（R2）",
+    "time": "14: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "鄭鈞隆（Chris Jeng）",
+    "speakerid": "chris_jeng",
+    "room": "三廳（R3）",
+    "time": "14: 00",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "樊立勳（John Fan）",
+    "speakerid": "john_fan",
+    "room": "主廳（R1）",
+    "time": "15: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "Gaod",
+    "speakerid": "gaod",
+    "room": "二廳（R2）",
+    "time": "15: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "周益鑫（James Chou）",
+    "speakerid": "james_chou",
+    "room": "三廳（R3）",
+    "time": "15: 15",
+    "hackmd": "",
+    "slideshow": ""
+  },
+  {
+    "name": "佐藤 一憲（Kazunori Sato）",
+    "speakerid": "kazunori_sato",
+    "room": "主廳（R1）/ 全廳聯播",
+    "time": "16: 15",
+    "hackmd": "",
+    "slideshow": ""
+  }
+]

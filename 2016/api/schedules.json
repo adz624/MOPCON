@@ -1,0 +1,337 @@
+{
+  "day1_schedule": [
+    {
+      "time": "08: 30",
+      "name": "報到"
+    },
+    {
+      "time": "09: 00",
+      "name": "開幕"
+    },
+    {
+      "topic": "行動裝置科技趨勢",
+      "summary": "Gartner 等各大市場分析公司每年都會推出許多新科技趨勢的預測。其中很多其實不怎麼新，很多其實不怎麼有前途，很多其實有前途但你追不上。我們要怎麼觀察並找出自己的路呢？",
+      "speaker": "ben_jai",
+      "room": "主廳（R1）/ 全廳聯播",
+      "time": "09: 15"
+    },
+    {
+      "time": "10: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "天眼通通 Serverless",
+      "summary": "1. 求職天眼通的開發歷程<br/>2. Serverless 技術的運用與問題<br/>3. GUI 開發技術的選擇：React + Redux + (Redux Saga)",
+      "speaker": "denny_ku",
+      "room": "主廳（R1）",
+      "time": "10: 15"
+    },
+    {
+      "topic": "Unity 次世代運算與 VR 開發",
+      "summary": "VR 正在如火如荼的發展，但對於消費者而言 VR 的應用必須是直逼真實環境的 VR 才能接受，本次的內容主要說明 Unity 在即時運算技術上如何規避效能障礙達到 AAA 等級的即時運算方向與門檻，並帶來一些案例分享。",
+      "speaker": "kelvin_lo",
+      "room": "二廳（R2）",
+      "time": "10: 15"
+    },
+    {
+      "topic": "Kotlin on Android development",
+      "summary": "Kotlin solves some issues in Java 6/7 on Android. Although java 8 is now partially supported, Kotlin still provides a lot of value when developing Android applications. In this talk I'll share my personal experience wirting my production app in kotlin<br/>1. Kotlin overview <br/>2. Kotlin on Android<br/>3. Personal Experience",
+      "speaker": "nevin_chen",
+      "room": "三廳（R3）",
+      "time": "10: 15"
+    },
+    {
+      "time": "11: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "佈局雲端，提升企業「速度」、「彈性」、「標準化」",
+      "summary": "應用雲端服務，可協助企業升級。從程式開發、數據管理、IT 整合、行動應用，乃至於客戶端，雲端能夠提升商務速度，提高彈性，打造標準化平台。掌握三大方向，開創未來雲端商機。1、快速彈性：為了擴展商業價值佈局雲端，選擇平台時，應注重彈性、快速擴充性與相容性，以最低成本創新最大效益。2、便捷易用：簡易管理、快速部署，創造零時差協作環境，使資料能有效的應用，提升作業效率及員工產能。3、創造未來：將 IT 資源投注於雲端資源使用及數據分析，挖掘未來創新商業模式的可能性。",
+      "speaker": "pumo",
+      "room": "主廳（R1）",
+      "time": "11: 15"
+    },
+    {
+      "topic": "VR / AR 全球趨勢與商機剖析",
+      "summary": "2016 年被產業、媒體稱為 VR 元年，各類 VR / AR 硬體、內容及應用如春筍般蓬勃冒出。在歐美、中國等主流市場，大量的 VR / AR 科技於各產業 / 領域中產生加值與轉型的作用。本次演講將帶領大家從 VR / AR 全球市場以及各領域間應用案例之角度了解目前的應用趨勢，同時也會探討台灣 VR / AR 業者發展的現況以及面對的挑戰、未來發展利基。",
+      "speaker": "cori_shieh",
+      "room": "二廳（R2）",
+      "time": "11: 15"
+    },
+    {
+      "topic": "來玩 Android 執行緒",
+      "summary": "Android App 的開發是以 Java 語言為基礎的。 要讓 App 流暢就得依賴多執行緒的實作，而當 Java 的多執行緒概念揉合進 Android 的生命週期時，會有額外需注意的事項與限制。 初學者一開始很容易被一大堆工具以及術語嚇到，但若能先對這些工具及專有名詞有個初步的認識，便能夠在理解程式碼的情況下撰寫程序，進而寫出有良好使用者體驗的 App。",
+      "speaker": "rick_wu",
+      "room": "三廳（R3）",
+      "time": "11: 15"
+    },
+    {
+      "time": "12: 00",
+      "name": "午餐"
+    },
+    {
+      "time": "13: 00",
+      "name": "Sponsor Talk"
+    },
+    {
+      "time": "13: 45",
+      "name": "休息"
+    },
+    {
+      "topic": "在雲霧漂渺之間談物聯網安全",
+      "summary": "物聯網與行動應用已成為未來發展的主要趨勢，結合雲端服務更形成了一個龐大的資訊網路，傳統資訊架構面對新型態行動應用服務時，都面臨了不得不進行的改變，行動裝置配合 App 成了第一波物聯網世代的應用場域，隨著裝置的多樣化與即時資訊處理的需求，即將來臨的霧運算（Fog Computing）時代，加速了行動應用但也帶來新的資安問題，如何兼顧物聯網的安全成為未來重要的關注議題。",
+      "speaker": "tsai_yi_lang=",
+      "room": "主廳（R1）",
+      "time": "14: 00"
+    },
+    {
+      "topic": "Yahoo 開源開發套件 AppDevKit - 開發秘辛與功能分享",
+      "summary": "AppDevKit 是專注輔助 iOS App 的開發者套件，提供超過 100 以上功能；五大模組中包含基本核心，使用者介面，動畫，影像與列表強化，開發者可獨立使用部份功能，採用 BSD 授權，支援商業使用。<br/>過去 3 年，台灣雅虎團隊已經使用 AppDevKit 開發許多產品，也利用該套件協助加強軟體功能與穩定性，並解決了 iOS 平台版本與設備的相容性問題，讓開發者能透過 AppDevKit 輕易完成複雜的任務，保持軟體開發的一致性與維護的方便性。<br/>這場 Session 將分享開發開源套件的技巧與如何使用 AppDevKit 來快速完成 iOS App 開發。",
+      "speaker": "anistar",
+      "room": "二廳（R2）",
+      "time": "14: 00"
+    },
+    {
+      "topic": "HackMD - Markdown 協作筆記",
+      "summary": "HackMD 是一個使用 Markdown 語法的即時協作筆記服務，於 2015 年 3 月上線。這次與各位分享開發與維護這個開源服務的歷程，同時也包含營運的想法與簡單的技術討論。",
+      "speaker": "max_wu",
+      "room": "三廳（R3）",
+      "time": "14: 00"
+    },
+    {
+      "time": "14: 45",
+      "name": "下午茶"
+    },
+    {
+      "topic": "用戶體驗設計的 0 到 1，與 1 到 1 億",
+      "summary": "當產品可以免費取得，隨時也能輕易地從手機移除，必須靠著絕佳的用戶體驗留住用戶！獵豹移動因為重視用戶體驗，並且把精實創業的核心精神－\"試錯\"，徹底執行在每一次產品迭代過程，在資訊傳遞扁平的移動互聯網時代，從 0 到 1 打造了多個用戶量破億工具產品。這次講者將分享，是什麼樣的組織管理、產品開發與設計流程，讓 CM Security 可以一年快速迭代超過 150 個版本，達到兼顧產品留存與功能擴展並增長流量，最後商業化將流量變現的成果。",
+      "speaker": "ivanwei",
+      "room": "主廳（R1）",
+      "time": "15: 15",
+      "onVideoRecord": true
+    },
+    {
+      "topic": "使用 AWS Mobile Hub 在雲端打造你的行動 App",
+      "summary": "AWS Mobile Hub 讓你可以快速設定你的行動裝置 App 所需要的功能，像是驗證，執行後端的運算，推播通知，資料儲存，內容發布和使用分析等等，並且建立範本。本場次將為各位介紹與展示如何使用 AWS Mobile Hub 建立行動裝置 App，並且可以在實機上測試。",
+      "speaker": "john_chang",
+      "room": "二廳（R2）",
+      "time": "15: 15",
+      "onVideoRecord": true
+    },
+    {
+      "topic": "bunkobon – 開放原始碼在新聞媒體的行動應用",
+      "summary": "一年前，我開始在新聞媒體產業進行一系列的開放原始碼實驗，在今年七月，開始發想了 bunkobon 的專案，利用 open api 取得文章內容，讓使用者可以自由開發前端程式，並以 react native 開發測試的 app。這個計畫還在進行中，透過更詳細的解釋，也希望有更多人可以參與。",
+      "speaker": "h_c_chien",
+      "room": "三廳（R3）",
+      "time": "15: 15"
+    },
+    {
+      "time": "16: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "老闆說：「我也是使用者！」",
+      "summary": "大家都知道使用者經驗、使用者研究、以使用者為中心...等等。專案初期依使用者需求規劃，和上級報告時卻總是被導去完全不同的方向。<br/>只要「我也是使用者啊，所以!@#$%^&...」這句一出現，整個專案方向就被扭轉，失去原本的意義。之後的開發流程只能用通靈術來頭痛醫頭、腳痛醫腳。<br/>使用者經驗、使用者研究、以使用者為中心不該只是口號，做足功課就能找到真正的使用者，站穩立場。",
+      "speaker": "akane_lee",
+      "room": "主廳（R1）",
+      "time": "16: 15",
+      "onVideoRecord": true
+    },
+    {
+      "topic": "使用 AWS Device Farm 在雲端測試你的行動 App – 實作工作坊",
+      "summary": "了解了AWS Mobile Hub 之後，這一個實作工作坊將介紹如何透過AWS Device Farm，測試你的行動 App 在多種不同行動裝置實機上的執行結果！",
+      "speaker": "john_chang",
+      "room": "三廳（R3）",
+      "time": "16: 15",
+      "onVideoRecord": true
+    },
+    {
+      "topic": "行者 – iOS BDD 自動測試框架",
+      "summary": "行者（XingZhe）是一個用於 iOS 的 BDD 自動測試框架。使用行者時只需要撰寫自然語言來描述測試的行為，無須撰寫測試程式便可以自動測試——亦即當行為被描述完時，測試程式也已經完成了。透過這樣的工具可以更輕鬆地完成測試，亦可從容地面對快速迭代不斷更新的開發需求。這裡將介紹行者的架構、原理、基本使用原則及實例操作。",
+      "speaker": "qcl",
+      "room": "二廳（R2）",
+      "time": "16: 15"
+    },
+    {
+      "time": "17: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "VR 技術的挑戰與未來",
+      "summary": "講者將從最早 VR 技術的發展開始，帶領大家了解 VR 技術的演進，探討目前 VR 技術所面臨的挑戰與問題，並分析 VR 未來技術發展的機會。聽眾可以從技術的角度理解 VR 遊戲在設計上容易陷入的盲點與問題，進而面對問題並解決問題，設計出一款能發揮 VR 技術的遊戲。",
+      "speaker": "wang_cyuan_jhang",
+      "room": "主廳（R1）/ 全廳聯播",
+      "time": "17: 15"
+    },
+    {
+      "time": "18: 00",
+      "name": "結束第一天議程"
+    },
+    {
+      "time": "18: 30",
+      "name": "講者晚宴"
+    }
+  ],
+
+
+
+  "day2_schedule": [
+    {
+      "time": "08: 30",
+      "name": "報到"
+    },
+    {
+      "time": "09: 00",
+      "name": "Announcement"
+    },
+    {
+      "topic": "行動終端、物聯網與雲端在高速移動網路下的整合趨勢",
+      "summary": "隨著高速移動網路逐漸成熟與普及，行動終端、物聯網與雲端將再進一步整合。透過雲端記憶空間延伸技術，行動終端與物聯網閘道裝置將與雲端儲存無縫融合，開發者不再需要處理雲端接取細節，應用發展與大數據收集及分析將更輕鬆，使用者亦將不再受限於裝置容量，可盡情享受移動裝置、雲端、物聯網共同為生活帶來的便利與優點。",
+      "speaker": "wen_yao_liang",
+      "room": "主廳（R1）/ 全廳聯播",
+      "time": "09: 15"
+    },
+    {
+      "time": "10: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "REST-Like 的弱連網手遊特化型",
+      "summary": "REST (REpresentational State Transfer) 的存在時間不算短，現在也是許多開放 API 的設計主流。<br/>有鑒於 REST 的 API 風格也特別適合弱連網的手機遊戲，無論是在開發速度上與橫向擴張上都有適得其所的表現。<br/>將 REST 完整的規範擷取部分的特性，針對手機遊戲的弱連網特性，規劃了一種 \"REST-Like\" 的特化型來滿足遊戲進行資訊、資源取用以及加密等需求。<br/>以實際應用的產品情境作為範例，在這個議程中將展示這種 \"REST-Like\" 的通信方式，替我們解決了什麼樣的問題。",
+      "speaker": "wu_yi_syun",
+      "room": "主廳（R1）",
+      "time": "10: 15",
+      "onVideoRecord": true
+    },
+    {
+      "topic": "iOS 上 self-sizing cell 的過去、現在、與未來",
+      "summary": "不固定長度的內容由於計算高度的誤差，常常為 iOS App 畫面上呈現上造成一些問題。我們將剖析現有的多種 self-sizing 解決方法，並探討 iOS 10 後新方案的可行性。",
+      "speaker": "jeff_lin",
+      "room": "二廳（R2）",
+      "time": "10: 15"
+    },
+    {
+      "topic": "yapi.js, adaptive media player based on HTML5",
+      "summary": "現在網路技術發達，但是仍然無法應付高畫質影片的高頻寬需求，因此 adaptive streaming 應運而生。這項應用在 web 上，真正的技術面已經在 HTML5 的層級處理了，因此，這個 Session，並不會有高深的技術說明，和 mobile 的關係也不大，但反而會著重在於制定架構、組件的拆分及管理還有處理事件等等上面。希望 mobile 的開發者藉此也能夠有一些收穫。",
+      "speaker": "jessechen",
+      "room": "三廳（R3）",
+      "time": "10: 15"
+    },
+    {
+      "time": "11: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "前端框架大亂鬥 之 我為什麼選擇 Vue.js 2.0",
+      "summary": "雖然長久以來流傳著「每 18 至 24 個月，前端都會難一倍」 但事實上，技術沒有強弱之分，只有適合與否。<br/>在本次分享中，我將挑選幾個業界常見的前端框架與 Vue.js 2.0 來做比較，說明為什麼我選擇投入 Vue.js 的世界，並為各位介紹 Vue 2.0 帶來的變革與創新。",
+      "speaker": "kuro_hsu",
+      "room": "主廳（R1）",
+      "time": "11: 15"
+    },
+    {
+      "topic": "政府資訊系統的困境與協力",
+      "summary": "討論就政府資訊系統的現況，供有志努力於開放資料、政府資訊流程再造的夥伴，去思考具體的進入方法與具體的障礙難處。內容將以跟北市社會局合作的案例，郵遞公文資訊系統改善方案為藍圖。<br/>https://hackpad.com/23oVOPLj040",
+      "speaker": "tonyq",
+      "room": "二廳（R2）",
+      "time": "11: 15"
+    },
+    {
+      "topic": "幾個中文排版訣竅，有效改善閱讀體驗",
+      "summary": "中文排版從桌上排版到網頁，受到西方文字以及日文排版的影響相當深。W3C 之前發布中文排版需求，試著從傳統排版時代找出中文的排版規則，並且試著在技術上完善中文排版，但要大幅改變，還是需要所有內容相關的開發者、設計師一起努力。這場演講希望分享幾個小訣竅，從文字到排版，從規則到技術，希望能夠讓更多人投入改善中文排版的表現，以一些小小的改變，大大地提升使用者體驗。",
+      "speaker": "bobby_tung",
+      "room": "三廳（R3）",
+      "time": "11: 15"
+    },
+    {
+      "time": "12: 00",
+      "name": "午餐"
+    },
+    {
+      "topic": "網路與科技引爆新型態公共服務",
+      "summary": "新型態公共服務，將是未來趨勢！<br/>隨著政府資料對外開放、網路與科技演進，過去由政府提供的公共服務，已經引起巨大變革。<br/>在科技和開放的力量驅動下，公共服務不再專屬由「大政府」來提供，「小公民」也能透過自身力量，以民眾和市場真正需求出發，打造未來新型態公共服務。",
+      "speaker": "kny",
+      "room": "主廳（R1）",
+      "time": "13: 00"
+    },
+    {
+      "topic": "如何優化公司跟網站流程來降低成本跟效益",
+      "summary": "如何從公司、網站、行銷廣告的每個小細節，去發現可優化的細節。用以提高公司整體的營業額、順暢度跟員工效益。",
+      "speaker": "tony_tsai",
+      "room": "二廳（R2）",
+      "time": "13: 00"
+    },
+    {
+      "topic": "Hacking with Linux on Android Devices",
+      "summary": "Hacking with Linux on various ARM Android deivces. On Debian, any Linux distributions, applications, Customized ROM, and more hacking. In this session, I will talk ARM Linux with the user point of view. Let's play Android with customized.",
+      "speaker": "kenji_shimono",
+      "room": "三廳（R3）",
+      "time": "13: 00"
+    },
+    {
+      "time": "13: 45",
+      "name": "休息"
+    },
+    {
+      "topic": "UI/UX best practice for mobile developers",
+      "summary": "This session will cover how Google's design framework \"Material Design\" and design tools can help mobile developer and designer to develop mobile apps. By deep diving Material Principals, Design Support Library and other design tools.",
+      "speaker": "takuo_suzuki",
+      "room": "主廳（R1）",
+      "time": "14: 00"
+    },
+    {
+      "topic": "CHOCOLABS 用戶成長策略及品牌發展之路",
+      "summary": "CHOCOLABS 公司創立五年，發行超過 60 支膾炙人手的 App，包含 《CHOCO TV、《iMusee》、《電視連續劇》、《Ubike 讓我騎》等，完整歷經 App 流量​​增長期、轉換獲利期、品牌建立、出海國際化、穩定商業模式、再投入再成長的過程，​這兩年專注於影劇 App 《CHOCO TV》這次在 MOPCON 會完全不保留​，給想要在 App 領域打造一片天的你和妳。",
+      "speaker": "davidd",
+      "room": "二廳（R2）",
+      "time": "14: 00"
+    },
+    {
+      "topic": "Mobile 跨平台開發從測試到架構",
+      "summary": "解密 Google 如何使用 Java 開發跨平台產品，從軟體自動化測試的角度切入，說明跨平台架構的實現與如何從遺留的程式（Legacy Code）到跨平台架構與測試的遷移流程。",
+      "speaker": "chris_jeng",
+      "room": "三廳（R3）",
+      "time": "14: 00"
+    },
+    {
+      "time": "14: 45",
+      "name": "下午茶"
+    },
+    {
+      "topic": "Catching the Wave: Market, Product and Team",
+      "summary": "What's most important for a startup -- market, product or team?  What are the stages of a gold rush, and where are the startup opportunities?  How do we identify market trends, create a product and build a team?  There aren't easy answers to these questions, but I will share some experiences building PicCollage (a mobile photo app with over 100 million downloads) and other apps.",
+      "speaker": "john_fan",
+      "room": "主廳（R1）",
+      "time": "15: 15"
+    },
+    {
+      "topic": "你所不知道的 CDN 大小事",
+      "summary": "眾多的 CDN vendor 中，你要如何決定適合你的 CDN vendor？眾多的 CDN 產品線中，你要如何決定你該採用哪一個產品？當遇上 user 客訴服務不穩時，你該如何判斷問題？相信是許多採用 CDN 服務的團隊們常有的疑問。KKBOX 導入 CDN 數年，一路走來各種經驗，我們將在 MOPCON 與大家分享。",
+      "speaker": "gaod",
+      "room": "二廳（R2）",
+      "time": "15: 15",
+      "onVideoRecord": true
+    },
+    {
+      "topic": "應用科技的力量在校園創造更便利的生活！",
+      "summary": "在台灣，每十個大學生可能九個大學生一畢業就是在想著找工作，在台灣，每十個高中生就有九個高中生不知道為什麼要讀大學跟要讀什麼科系。我有一顆不安定的心，從小就很有自己想法的我，在大學時，因為不滿生活中可以被解決的不便利卻沒人解決。帶著夥伴一起熬下頭來創造不可能，我們希望透過我們自身渺小但是不服輸的力量，希望在校園裡面透過科技翻轉校園！",
+      "speaker": "james_chou",
+      "room": "三廳（R3）",
+      "time": "15: 15"
+    },
+    {
+      "time": "16: 00",
+      "name": "休息"
+    },
+    {
+      "topic": "Machine Intelligence at Google Scale",
+      "summary": "Why is Deep Learning so important? What are the challenges for introducing those technologies? Here we will show you how Google has been successfully deploying large scale neural network on services such as Android and Google Search. Also, we will introduce the new Google Cloud products such as Cloud Vision API, Speech API, TensorFlow and Cloud ML that allows developers to take advantage of the power of Google's machine intelligence.",
+      "speaker": "kazunori_sato",
+      "room": "主廳（R1）/ 全廳聯播",
+      "time": "16: 15"
+    },
+    {
+      "time": "17: 00",
+      "name": "閉幕"
+    }
+  ]
+}
