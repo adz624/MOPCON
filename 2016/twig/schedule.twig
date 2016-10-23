@@ -47,9 +47,6 @@
                 <li class="topic">{{ item.topic }}</li>
                 <li class="toggle-icon schedule-on"></li>
                 <li class="room">{{ item.room }}</li>
-                {% if item.hackmd and item.hackmd != "" %}
-                  <li class="hackmd"><a href="{{ item.hackmd }}" target="_blank">HackMD</a></li>
-                {% endif %}
                 {% if item.onVideoRecord %}
                   <li class="onVideoRecord"></li>
                 {% endif %}
@@ -67,11 +64,14 @@
                 <h4 class="schedule-detail-title">議題介紹</h4>
                 <p>{{ item.summary | raw }}</p>
                 <div class="schedule-link">
-                  {% if item.slideshow and item.slideshow != "" %}
                   <ul class="socialNetworkLink">
-                    <li><a href="{{ item.slideshow }}" target="_blank">Slideshow</a></li>
+                    {% if item.hackmd and item.hackmd != "" %}
+                      <li><a href="{{ item.hackmd }}" target="_blank">Hackmd</a></li>
+                    {% endif %}
+                    {% if item.slideshow and item.slideshow != "" %}
+                      <li><a href="{{ item.slideshow }}" target="_blank">Slideshow</a></li>
+                    {% endif %}
                   </ul>
-                  {% endif %}
                 </div>
                 <h4 class="schedule-detail-title">講者介紹</h4>
                 <p>{{ item.info | raw }}</p>
@@ -111,9 +111,6 @@
                 <li class="topic">{{ item.topic }}</li>
                 <li class="toggle-icon schedule-on"></li>
                 <li class="room">{{ item.room }}</li>
-                {% if item.hackmd and item.hackmd != "" %}
-                  <li class="hackmd">HackMD</li>
-                {% endif %}
                 {% if item.onVideoRecord %}
                   <li class="onVideoRecord"></li>
                 {% endif %}
@@ -131,11 +128,14 @@
                 <h4 class="schedule-detail-title">議題介紹</h4>
                 <p>{{ item.summary }}</p>
                 <div class="schedule-link">
-                  {% if item.slideshow and item.slideshow != "" %}
                   <ul class="socialNetworkLink">
-                    <li><a href="" target="_blank">Slideshow</a></li>
+                    {% if item.hackmd and item.hackmd != "" %}
+                      <li><a href="{{ item.hackmd }}" target="_blank">Hackmd</a></li>
+                    {% endif %}
+                    {% if item.slideshow and item.slideshow != "" %}
+                      <li><a href="{{ item.slideshow }}" target="_blank">Slideshow</a></li>
+                    {% endif %}
                   </ul>
-                  {% endif %}
                 </div>
                 <h4 class="schedule-detail-title">講者介紹</h4>
                 <p>{{ item.info }}</p>
