@@ -4,10 +4,13 @@ include __DIR__ . '/index.php';
 include __DIR__ . '/location.php';
 include __DIR__ . '/sponsor.php';
 include __DIR__ . '/speaker.php';
-// include __DIR__ . '/schedule.php';
+include __DIR__ . '/schedule.php';
+include __DIR__ . '/hackmd.php';
+include __DIR__ . '/schedule_unconf.php';
 include __DIR__ . '/community.php';
 
 //////////////////////////////////////////////////////////////////////////////
+
 function getSpeakerById($id)
 {
     static $speakers = null;
@@ -15,6 +18,15 @@ function getSpeakerById($id)
         $speakers = getAllSpeakers();
     }
     return isset($speakers[$id]) ? $speakers[$id] : null;
+}
+
+function getHackmdById($id)
+{
+    static $hackmdList = null;
+    if (null === $hackmdList) {
+        $hackmdList = getAllHackmd();
+    }
+    return isset($hackmdList[$id]) ? $hackmdList[$id] : null;
 }
 
 function getCommunityById($id)
@@ -27,81 +39,40 @@ function getCommunityById($id)
 }
 
 /**
- * 合併議程跟講者，若不傳遞 $id 代表抓取全部
+ * 合併議程跟講者
  *
- * speakerId 為空值，若 title, pic 未設定就會指定 title = "MOPCON", pic = "schedule/mopcon.png"
- * speakerId 找到講者 ID，若 title, pic, speaker 未設定就會自動帶入
- * speakerId 異常，找不到講者 ID 會強制蓋掉 title, pic, speaker 為 晚點告訴你 :P
+ * 若 speaker 異常，找不到講者 ID 
+ * 會強制蓋掉 name, info 為 晚點告訴你 :P , image 為 ../mopcon2016.png
  * 
- * @param  int      $id 議程編號，可為null
- * @param  string   $speaker 講者id，可為null
  * @return array
  */
-function getScheduleMergeSpeaker($id = null, $speaker = null)
+function getScheduleMergeSpeaker()
 {
-    $schedules = getAllSchedule();
-    $cacheFlag = false;    
-    for ($i = 0; $i < count($schedules); $i++) {
-        if ($id !== null && $id != $schedules[$i]['id']) {
-            continue;
-        }
-        if ($schedules[$i]["speakerId"] === '') { //無講者
-            $schedules[$i]['title'] = isset($schedules[$i]['title']) ? $schedules[$i]['title'] : "MOPCON";
-            $schedules[$i]['pic'] = isset($schedules[$i]['pic']) ? $schedules[$i]['pic'] : "schedule/mopcon.png";
-            $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : "";
-        } elseif (is_array($schedules[$i]["speakerId"])) { //複數講者
-            $schedules[$i]["title"] = "";
-            $schedules[$i]["speaker"] = "";
-            $schedules[$i]["speakerLinks"] = [];
-            foreach ($schedules[$i]["speakerId"] as $speakerId) {
-                $speakerInfo = getSpeakerById($speakerId);
-                if ($speakerInfo === null) continue;
-
-                if ($schedules[$i]["title"] != '') {
-                    $schedules[$i]["title"] .= " 與 ";
+    $schedules = getAllSchedule();  
+    foreach ($schedules as $days => $list)
+    {
+        for ($temp=0; $temp < count($list); $temp++)
+        {
+            if (isset($list[$temp]['speaker']) && $list[$temp]['speaker'] != '')
+            {
+                $tempSpeakerInfo = getSpeakerById($list[$temp]['speaker']);
+                $tempHackmdInfo = getHackmdById($list[$temp]['speaker']);
+                if ($tempSpeakerInfo === null)
+                {
+                    $tempSpeakerInfo = [];
+                    $tempSpeakerInfo['name'] = '晚點告訴你 :P';
+                    $tempSpeakerInfo['info'] = '晚點告訴你 :P';
+                    $tempSpeakerInfo['image'] = '../mopcon2016.png';
                 }
-                $schedules[$i]["title"] .= $speakerInfo['name'];
-
-                $schedules[$i]["speaker"] .= "<p>" . $speakerInfo['name'] . "：<br>" . $speakerInfo['bio'];
-                //由於來不及做 app，因此格式先混著寫先混著寫
-                if (count($speakerInfo['links']) > 0) {
-                    $schedules[$i]["speaker"] .= "<br>";
-                    foreach ($speakerInfo['links'] as $line_name => $link_url) {
-                        if ($link_url == '') {
-                            continue;
-                        }
-                        $schedules[$i]["speaker"] .= "&nbsp;<a href='" . $link_url . "'>" . $line_name . "</a>&nbsp;";
-                    }
-                } 
-                $schedules[$i]["speaker"] .= "</p>";
-                
-                $schedules[$i]["speakerLinks"][] = $speakerInfo['links'];
-                if ($speaker !== null && $speaker == $speakerId) {
-                    $cacheFlag = true;
+                if ($tempHackmdInfo === null)
+                {
+                    $tempHackmdInfo = [];
                 }
+                $schedules[$days][$temp] = array_merge($list[$temp], $tempSpeakerInfo,$tempHackmdInfo);
             }
-            $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : 'schedule/secret.jpg'; //異常處理
-        } else { //單一講者
-            $speakerInfo = getSpeakerById($schedules[$i]["speakerId"]);
-            if ($speakerInfo === null) { //異常處理
-                $schedules[$i]["speakerId"] = '';
-                $schedules[$i]["title"] = '晚點告訴你 :P';
-                $schedules[$i]["speaker"] = '';
-                $schedules[$i]['pic'] = 'schedule/secret.jpg';
-            } else {
-                $schedules[$i]["title"] = isset($schedules[$i]["title"]) ? $schedules[$i]["title"] : $speakerInfo['name'];
-                $schedules[$i]["speaker"] = isset($schedules[$i]["speaker"]) ? $schedules[$i]["speaker"] : $speakerInfo['bio'];
-                $schedules[$i]['pic'] = isset($schedules[$i]["pic"]) ? $schedules[$i]["pic"] : $speakerInfo['pic'];
-                $schedules[$i]["speakerLinks"] = $speakerInfo["links"];
-                if ($speaker !== null && $speaker == $schedules[$i]['speakerId']) {
-                    $cacheFlag = true;
-                }
-            }
-        } 
-        if ($id !== null || $cacheFlag == true) {
-             return $schedules[$i];
         }
     }
+    
     return $schedules;
 }
 /**
@@ -112,26 +83,32 @@ function getScheduleMergeSpeaker($id = null, $speaker = null)
 function getLastUpdateTime($page = '')
 {
     $list = [
-        "index"         => filemtime(__DIR__  . '/../index.php'),
-        "cfp"           => filemtime(__DIR__  . '/../cfp.php'),
+        "index"                 => filemtime(__DIR__  . '/../index.php'),
+        "cfp"                   => filemtime(__DIR__  . '/../cfp.php'),
         // "location"      => filemtime(__DIR__  . '/../location.php'),
-        // "schedule"      => filemtime(__DIR__  . '/../schedule.php'),
-        "speaker"       => filemtime(__DIR__  . '/../speaker.php'),
-        "sponsor"       => filemtime(__DIR__  . '/../sponsor.php'),
-        "community"     => filemtime(__DIR__  . '/../community.php'),
-        // "src.schedule"  => filemtime(__DIR__  . '/schedule.php'),
-        "src.speaker"   => filemtime(__DIR__  . '/speaker.php'),
-        "src.sponsor"   => filemtime(__DIR__  . '/sponsor.php'),
-        "src.community" => filemtime(__DIR__  . '/community.php'),
-        "src.index"     => filemtime(__DIR__  . '/index.php'),
-        "src.init"      => filemtime(__DIR__  . '/init.php'),
-        "api.speaker"   => filemtime(__DIR__  . '/../api/speakers.json'),
-        "api.sponsor"   => filemtime(__DIR__  . '/../api/sponsors.json'),
-        "api.community" => filemtime(__DIR__  . '/../api/community.json'),
-        "api.index"     => filemtime(__DIR__  . '/../api/index.php'),
-        "css.all"       => filemtime(__DIR__  . '/../stylesheets/all.css'),
-        "css.web-fonts" => filemtime(__DIR__  . '/../stylesheets/web-fonts.css'),
-        "js.all"        => filemtime(__DIR__  . '/../javascripts/all/all.js'),
+        "schedule"              => filemtime(__DIR__  . '/../schedule.php'),
+        "schedule_unconf"       => filemtime(__DIR__  . '/../schedule_unconf.php'),
+        "speaker"               => filemtime(__DIR__  . '/../speaker.php'),
+        "sponsor"               => filemtime(__DIR__  . '/../sponsor.php'),
+        "community"             => filemtime(__DIR__  . '/../community.php'),
+        "src.schedule"          => filemtime(__DIR__  . '/schedule.php'),
+        "src.hackmd"            => filemtime(__DIR__  . '/hackmd.php'),
+        "src.schedule_unconf"   => filemtime(__DIR__  . '/schedule_unconf.php'),
+        "src.speaker"           => filemtime(__DIR__  . '/speaker.php'),
+        "src.sponsor"           => filemtime(__DIR__  . '/sponsor.php'),
+        "src.community"         => filemtime(__DIR__  . '/community.php'),
+        "src.index"             => filemtime(__DIR__  . '/index.php'),
+        "src.init"              => filemtime(__DIR__  . '/init.php'),
+        "api.speaker"           => filemtime(__DIR__  . '/../api/speakers.json'),
+        "api.sponsor"           => filemtime(__DIR__  . '/../api/sponsors.json'),
+        "api.community"         => filemtime(__DIR__  . '/../api/community.json'),
+        "api.index"             => filemtime(__DIR__  . '/../api/index.php'),
+        "api.schedule"          => filemtime(__DIR__  . '/../api/schedules.json'),
+        "api.hackmd"            => filemtime(__DIR__  . '/../api/hackmd.json'),
+        "api.schedule_unconf"   => filemtime(__DIR__  . '/../api/schedules_unconf.json'),
+        "css.all"               => filemtime(__DIR__  . '/../stylesheets/all.css'),
+        "css.web-fonts"         => filemtime(__DIR__  . '/../stylesheets/web-fonts.css'),
+        "js.all"                => filemtime(__DIR__  . '/../javascripts/all/all.js'),
     ];
     if ($page == '') {
         return max($list);
@@ -143,8 +120,10 @@ function getLastUpdateTime($page = '')
             $list['src.init'], 
             $list['src.schedule'], 
             $list['src.speaker'],
-            $list['api.schedule'], 
-            $list['api.speaker']
+            $list['src.hackmd'],
+            $list['api.schedule'],
+            $list['api.speaker'],
+            $list['api.hackmd']
         );
     } elseif ($page == "index") {
         return max(
@@ -181,8 +160,10 @@ function getLastUpdateTime($page = '')
 function apiMappingData($page)
 {
     switch ($page) {
-        // case 'schedule':
-        //     return getScheduleMergeSpeaker();
+        case 'schedule':
+            return getScheduleMergeSpeaker();
+        case 'schedule_unconf':
+            return getScheduleUnconf();
         case 'sponsor':
             return getAllSponsors();
         case 'speaker':
@@ -290,6 +271,7 @@ function render($template_name, $params)
                 // 'chatroom' => '聊天室',
                 // 'chatroom_gitter' => '網頁版（Gitter）',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
+                'hackfoldr' => '共筆記錄',
 
             ],
         ],
@@ -304,12 +286,14 @@ function render($template_name, $params)
                 // 'location' => 'Location', 
                 'previous' => 'Previous Events',
                 // 'speaker' => 'Speakers',
-                // 'schedule' => 'Session',
+                'schedule' => 'Session',
+                'schedule_unconf' => 'Unconf',
                 // 'sponsor' => 'Sponsors',
                 // 'hackpad' => '2016 hackpad',
                 // 'chatroom' => 'Chat Room',
                 // 'chatroom_gitter' => 'Gitter',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
+                'hackfoldr' => 'hackfoldr',
             ],
         ],
     ];
