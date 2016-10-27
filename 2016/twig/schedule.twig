@@ -126,7 +126,7 @@
               </div>
               <div class="col-sm-9 speakerInfo">
                 <h4 class="schedule-detail-title">議題介紹</h4>
-                <p>{{ item.summary }}</p>
+                <p>{{ item.summary | raw}}</p>
                 <div class="schedule-link">
                   <ul class="socialNetworkLink">
                     {% if item.hackmd and item.hackmd != "" %}
@@ -138,7 +138,7 @@
                   </ul>
                 </div>
                 <h4 class="schedule-detail-title">講者介紹</h4>
-                <p>{{ item.info }}</p>
+                <p>{{ item.info | raw}}</p>
                 <ul class="socialNetworkLink">
                   {% if item.facebook and item.facebook != "" %}
                     <li><a href="{{ item.facebook }}" target="_blank">Facebook</a></li>
