@@ -4,7 +4,7 @@ function getIndex()
 	$main = [
 		'zh' => [
 			'headerBtn' => [
-				['text'=>'熱烈搶票中','href'=>'http://mopcon.kktix.cc/events/2016-registration?utm_source=web&utm_medium=site-pv&utm_campaign=ticket','target'=>'_blank'],
+				['text'=>'活動即將開始中','href'=>'#','target'=>''],
 			],
 			'footerBtn' => [
 				['text'=>'KKTIX 議程徵稿','href'=>'http://mopcon.kktix.cc/events/mopcon2016-cfp','target'=>'_blank'],

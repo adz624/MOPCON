@@ -272,6 +272,7 @@ function render($template_name, $params)
                 // 'chatroom_gitter' => '網頁版（Gitter）',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 'hackfoldr' => '共筆記錄',
+                'gitter' => 'gitter 聊天室',
 
             ],
         ],
@@ -294,6 +295,7 @@ function render($template_name, $params)
                 // 'chatroom_gitter' => 'Gitter',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 'hackfoldr' => 'hackfoldr',
+                'gitter' => 'gitter',
             ],
         ],
     ];
