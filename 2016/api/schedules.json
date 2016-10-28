@@ -141,15 +141,15 @@
       "topic": "使用 AWS Device Farm 在雲端測試你的行動 App – 實作工作坊",
       "summary": "了解了AWS Mobile Hub 之後，這一個實作工作坊將介紹如何透過AWS Device Farm，測試你的行動 App 在多種不同行動裝置實機上的執行結果！",
       "speaker": "john_chang",
-      "room": "三廳（R3）",
+      "room": "二廳（R2）",
       "time": "16: 15",
       "onVideoRecord": true
     },
     {
       "topic": "行者 – iOS BDD 自動測試框架",
       "summary": "行者（XingZhe）是一個用於 iOS 的 BDD 自動測試框架。使用行者時只需要撰寫自然語言來描述測試的行為，無須撰寫測試程式便可以自動測試——亦即當行為被描述完時，測試程式也已經完成了。透過這樣的工具可以更輕鬆地完成測試，亦可從容地面對快速迭代不斷更新的開發需求。這裡將介紹行者的架構、原理、基本使用原則及實例操作。",
+      "room": "三廳（R3）",
       "speaker": "qcl",
-      "room": "二廳（R2）",
       "time": "16: 15"
     },
     {
