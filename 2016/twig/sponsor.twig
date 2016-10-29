@@ -49,6 +49,18 @@
                     </div>
                 </div>
             {% endif %}
+            {% if type == 'KSG' and groupData!='' %}
+                <div class="sponsor-title">感謝高雄市經濟發展局獎勵會議展覽活動計畫贊助</div>
+                <div class="row">
+                    <div class="col-sm-offset-3 col-sm-6">
+                    {% for data in groupData %}
+                        <a href="{{ data.link }}" target="_blank">
+                            <img src="images/sponsor/SpecialThank/{{ data.image }}" alt="{{ data.name }}" title="{{ data.name }}">
+                        </a>
+                    {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
             {% if type == 'Hacker' and groupData!='' %}
                 <div class="sponsor-title">Hacker</div>
                 <div class="row">

@@ -4,7 +4,7 @@ function getIndex()
 	$main = [
 		'zh' => [
 			'headerBtn' => [
-				['text'=>'活動即將開始中','href'=>'#','target'=>''],
+				['text'=>'Youtube直播頻道','href'=>'https://www.youtube.com/c/MopconOrg/live','target'=>'blank'],
 			],
 			'footerBtn' => [
 				['text'=>'KKTIX 議程徵稿','href'=>'http://mopcon.kktix.cc/events/mopcon2016-cfp','target'=>'_blank'],

@@ -101,17 +101,11 @@
 </div>
 
 <div class="relative clearfix mbxl">
-    <div class="sponsor ">
+    <div class="sponsor container">
         <h3 class="topic-title text-white text-center mbxl">
             SPONSOR
         </h3> 
         <div class="card container-md p0 clearfix">
-            <div class="sponsor-title">感謝高雄市經濟發展局獎勵會議展覽活動計畫贊助</div>
-				<div class="row">
-					<div class="col-sm-offset-3 col-sm-6">
-						<img class="img-responsive"  src="images/sponsor/SpecialThank/KSG.jpg" alt="高雄市經濟發展局">
-					</div>
-				</div>
         {% for type, groupData in sponsors %}
             {% if type == 'TonyStark' and groupData!='' %}
                 <div class="sponsor-title">Tony Stark</div>
@@ -132,6 +126,18 @@
                     {% for data in groupData %}
                         <a href="{{ data.link }}" target="_blank">
                             <img class="col-sm-6" src="images/sponsor/BruceWayne/{{ data.image }}" alt="{{ data.name }}" title="{{ data.name }}">
+                        </a>
+                    {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if type == 'KSG' and groupData!='' %}
+                <div class="sponsor-title">感謝高雄市經濟發展局獎勵會議展覽活動計畫贊助</div>
+                <div class="row">
+                    <div class="col-sm-offset-3 col-sm-6">
+                    {% for data in groupData %}
+                        <a href="{{ data.link }}" target="_blank">
+                            <img src="images/sponsor/SpecialThank/{{ data.image }}" alt="{{ data.name }}" title="{{ data.name }}">
                         </a>
                     {% endfor %}
                     </div>
