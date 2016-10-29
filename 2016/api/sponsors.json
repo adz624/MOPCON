@@ -28,6 +28,13 @@
             "link": "https://tw.yahoo.com/"
         }
     ],
+     "KSG":[
+        {
+            "name": "高雄市經濟發展局",
+            "image": "KSG.jpg",
+            "link": "http://edbkcg.kcg.gov.tw/style/front001/bexfront.php"
+        }
+    ],
     "Hacker":[
         {
             "name": "慶奇科技",
