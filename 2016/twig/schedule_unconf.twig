@@ -35,7 +35,7 @@
 <div class="container-md">
   <div class="card">
     <div class="multi-planet">
-      <ul class="schedule-block" id="day_one_schedule">
+      <ul class="schedule-block" id="day_one_schedule" style="display: none;">
         {% for item in schedules.day1_schedule %}
         <li class="schedule-li">
           <div class="schedule-event">
@@ -53,7 +53,7 @@
       </ul>
 
 
-      <ul class="schedule-block" id="day_two_schedule" style="display: none;">
+      <ul class="schedule-block" id="day_two_schedule">
         {% for item in schedules.day2_schedule %}
         <li class="schedule-li">
           <div class="schedule-event">
