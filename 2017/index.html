@@ -24,19 +24,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
   
-      <style>
-      .hero{
-  top: 0;
+ <style>
+      html{
+/*   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
+  position: absolute; */
 
   background: -webkit-linear-gradient(#8A9CF6,#FDE4AC);
 
 background: linear-gradient(#8A9CF6,#FDE4AC);
 }
 img{
+  max-width: 100%;
   height: auto;
 }
 .wrapper{
@@ -47,6 +48,13 @@ img{
 }
 .logo{
   margin-bottom: 53px;
+}
+@media(max-width:568px){
+  .logo {
+    max-width: 90% ;
+    display: block;
+    margin: 0 auto 2em auto;
+  }
 }
 .year{
   text-align: center;
