@@ -1,13 +1,18 @@
-
-<!DOCTYPE html>  
-<html lang="en">  
+<!DOCTYPE html>
+<html lang="zh">
 <head>
   <meta charset="utf-8">
-  <title>MOPCON 2017</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta content="行動科技應用開發者年會 | MOPCON 2017 | Mobile / Open / Platform Conference" property="og:title">
+  <meta content="https://mopcon.org/2017" property="og:url">
+  <meta content="濁水溪以南最強大行動科技研討會" property="og:description">
+  <meta content="https://mopcon.org/2017/images/mopcon2017_large.png" property="og:image">
+  <meta content="200" property="og:image:width" >
+  <meta content="200" property="og:image:height" >
+  <meta content="website" property="og:type">
+  <meta content="行動科技應用開發者年會 | MOPCON 2017 | Mobile / Open / Platform Conference" property="og:site_name">
+  <title>行動科技應用開發者年會 | MOPCON 2017 | Mobile / Open / Platform Conference</title>
   <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,63 +20,53 @@
 
       <!-- styles -->
       <link href="stylesheets/all.css" rel="stylesheet">
+      <link href="stylesheets/owl.carousel.min.css" rel="stylesheet">
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="images/favicon.ico">
     </head>
     <body>
       <!-- nav -->
       <nav class="navbar">
         <div class="navbar-header">
-          <a class="navbar-brand">
-            <img src="images/nav-logo.png" width="50px" alt="">
+          <a href="/" class="navbar-brand">
+            <img src="images/nav-logo.svg" width="50px" alt="Mopcon logo">
           </a>
           <button class="navbar-toggle" data-toggle="collapse">
             <span class="fa fa-bars"></span>
           </button>
         </div>
         <div class="navbar-collapse">
-          <!--<ul class="nav navbar-nav">
-            <li><a href="#">徵稿</a></li>
-            <li><a href="#">議程</a></li>
-            <li><a href="#">交流場次</a></li>
-            <li><a href="#">講者</a></li>
-            <li><a href="#">贊助</a></li>
-            <li><a href="#">主辦社群</a></li>
-            <li><a href="#">共筆紀錄</a></li>
-            <li><a href="#">gitter聊天室</a></li>
-          </ul>-->
+          
           <ul class="navbar-right">
-            <li class="nav-history dropdown">
-              <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">歷年 MOPCOM
-                <span class="fa fa-chevron-down
-                "></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="https://mopcon.org/2016/" target="_blank">2016</a></li>
-                <li><a href="https://mopcon.org/2015/" target="_blank">2015</a></li>
-                <li><a href="https://mopcon.org/2014/" target="_blank">2014</a></li>
-                <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
-                <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
-              </ul>
-            </li>
-            <!--<li class="nav-lang">
-              <a href="#" class="btn btn-default">中</a>
-              <a href="#" class="btn btn-default">EN</a>
-            </li>-->
-          </ul>
-        </div>
-      </nav>
-      <!-- header -->
+            
+          <!--<li class="nav-lang">
+            <a href="#" class="btn btn-default is-active" onClick="set_language('zh_TW')">中</a>
+            <a href="#" class="btn btn-default " onClick="set_language('en')">EN</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
 <header class="header text-center">
 	<div class="header_mainVisual">
 		<div class="mainVisualPic"></div>
 	</div>
 	<div class="header_btnGroup">
-		<a href="https://www.facebook.com/mopcon/?fref=ts" class="btn btn-default" target="_blank">Facebook </a>
-		<a href="#" class="btn btn-default" target="_blank">Call for Sponsor</a>
-		<a href="#" class="btn btn-default" target="_blank">Call for Presentation</a>
+		<a href="https://goo.gl/nLFsPQ" target="_blank" class="btn btn-default">徵求贊助商</a>
+		<a href="https://mopcon.kktix.cc/events/mopcon2017-cfr" target="_blank" class="btn btn-default">推薦講師</a>
+		
+			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp" target="_blank" class="btn btn-default">議程投稿</a>
+		
 	</div>
 </header>
+<!-- lookback -->
+<section class="lookback">
+	<a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="lookback_content">
+		<div class="btn btn-default">2016精采回顧</div>
+		<img src="images/lookback-img.png" alt="2016回顧背景圖">
+	</a>
+</section>
 <!-- about -->
-<!--<section class="about container">
+<section class="about container">
 	<div class="title">
 		<div class="title_en">
 			ABOUT
@@ -85,20 +80,16 @@
 	</div>
 	<div class="content content-post">
 		<p>
-			十年之前，我們很難想像現在我們可以像呼吸空氣一樣，透過手上的行動裝置幾乎隨時隨地都能取得我們想要的資訊。很顯然我們與其他人、線上服務，甚至是我們家裡的電燈開關都變得更緊密的連結著了。如果想像十年之後我們會怎麼樣被連結著，或許我們還算不上真正的被連結。
+			十年前，我們很難想像行動裝置會改變我們的生活。現在透過行動網路，可以快速的與人、裝置、家用電器甚至汽車，做更快速緊密的連結，從而改變生活與工作的型態。
 		</p>
-		<br>
 		<p>
-			在十年前左右，當web2.0的概念出來的時候，曾經有一個詞彙叫做”Hyperconnectivity”，用以描述人與人更緊密的社交行為以及人與機器之間更快速的溝通帶來的變化。而今，除了快速增長的線上服務與智慧裝置之外，人工智慧與虛擬實境的出現也正在快速而劇烈的影響人與人，以及人與機器之間的互動方式。因此，我們決定今年來重新思考”Hyperconnectivity”這個詞的意涵。
-		</p>
-		<br>
-		<p>
-			作為南台灣最大的科技年會，MOPCON已經為社群、知名公司、新創公司、學生以及許多傑出的貢獻者造了緊密的連結。今年我們不僅僅會致力於為我們的參與者創造”Hyperconnectivity”，我們也誠希望能夠邀請更多具備多元背景的朋友一起來與我們描繪與討論更高度連結的未來世界。
+			在年前 Web 2.0 的概念出來時，有⼀個詞彙叫做 &#34; Hyperconnectivity &#34;，⽤以描述⼈與⼈之間更緊密的社交、以及⼈與機器更快速的溝通所帶來的變化。十年過去了，如今，Web 3.0 挾物聯網與雲端運算崛起，除了快速增長的線上服務與智慧裝置之外，Big Data、AI 與 Virtual Reality 的出現也正劇烈快速的影響人與人、人與機器間的互動方式。因此，今年我們決定重新思考 &#34;Mobile Open Platform&#34; 的內涵。
 		</p>
 	</div>
-</section>-->
+</section>
+
 <!-- schedule -->
-<!--<section class="schedule">
+<section class="schedule">
 	<div class="schedule_deco"></div>
 	<div class="schedule_content">
 		<div class="container">
@@ -108,20 +99,22 @@
 				</div>
 			</div>	
 			<div class="content content-post">
-				<p>本屆議程重心除行動開發技術、服務營運、數位內容三大主軸之外，將更廣泛涵蓋雲端運算、穿戴應用、VR 虛擬實境、AR 擴增實境、物聯網應用與基於 HTML5 的可攜式跨裝置應用等相關議題，以真實運作的案例，向與會者做第一手的探討與分享，促進更多優秀開發者項目的成熟與發展。
+				<p>連續六年舉辦的 MOPCON，已是南台灣最⼤科技研討會，也是社群、開發者、學⽣、新創公司、及許多傑出貢獻者的重要交流平台。今年我們將以 &#34; Hyperconnectivity － 互聯、互動、智慧 &#34; 為宗旨，探討更⾼度連結的未來世界
 				</p>
 				<br>
 				<br>
-				<a href="" class="btn btn-primary btn-lg align-table">
-					SEE Full Schedule
+				<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp" target="_blank" class="btn btn-primary btn-lg align-table">
+					<!--SEE Full Schedule-->
+					徵稿中
 				</a>
 			</div>
 		</div>
 	</div>
 	<div class="schedule_deco reverse"></div>
-</section>-->
+</section>
+
 <!-- position -->
-<!--<section class="position">
+<section class="position">
 	<div class="title text-center">
 		<div class="title-twiDot">
 			WHERE
@@ -130,26 +123,29 @@
 			在哪裡?
 		</h2>
 	</div>
-	<div class="position_content col-md-8 col-md-push-2 text-center">
-		<h2 class="h2">高雄國際議會中心三樓(入口)</h2>
-		<h3 class="h3">高雄市鹽埕區中正四路274號</h3>
-		<div class="post-dot"></div>
-		<h4 class="h4">公車</h4>
-		<p class="post">歷史博物館 0 南 (單邊停靠)、0 北 (單邊停靠)、11、25、33、56、60、76、77、82、建國幹線、91、214、219、248</p>
-		<div class="post-dot"></div>
-		<h4 class="h4">高鐵 / 火車 / 捷運</h4>
-		<p class="post">1.左營高鐵站 / 高雄火車站搭捷運紅線
-			<br>
-			2.至捷運美麗島站換乘橘線往西子灣方向
-			<br>
-			3.捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場
-		</p>
-	</div>
-	<div class="position_map">
-		
+	<div class="position_content">
+		<div class="position_content_box col-lg-6 col-lg-push-3 t col-md-6 col-md-push-3 col-sm-8 col-sm-push-2 text-center">
+			<h2 class="h2">高雄國際議會中心三樓(入口)</h2>
+			<h3 class="h3">高雄市鹽埕區中正四路274號</h3>
+			<div class="post-dot"></div>
+			<h4 class="h4">公車</h4>
+			<p class="post">歷史博物館 0 南 (單邊停靠)、0 北 (單邊停靠)、11、25、33、56、60、76、77、82、建國幹線、91、214、219、248</p>
+			<div class="post-dot"></div>
+			<h4 class="h4">高鐵 / 火車 / 捷運</h4>
+			<p class="post">
+				1.左營高鐵站 / 高雄火車站搭捷運紅線
+				<br>
+				2.至捷運美麗島站換乘橘線往西子灣方向
+				<br>
+				3.捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場
+			</p>
+		</div>
+		<div class="position_map" ／>
+		</div>
 	</div>
 	<div class="panel-deco-slash"></div>
-</section>-->
+</section>
+
 <!-- speaker -->
 <!--<section class="speaker container">
 	<div class="title">
@@ -160,30 +156,28 @@
 		</div>
 		<div class="title-deco-dot"></div>
 	</div>
-	<div class="speaker_content">-->
-<!-- 		<div class="row">
-			<a href="#" class="col-lg-4">
-				<div class="pic pic-speaker"></div>
+	<div class="speaker_content">
+		<div class="carouselGroup owl-carousel">
+			<a href="#" class="item">
+				<div class="pic pic-speaker" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);"></div>
 				<h4 class="h4">Akane Lee</h4>
-
 			</a>
-			<a href="#" class="col-lg-4">
-				<div class="pic pic-speaker"></div>
+			<a href="#" class="item">
+				<div class="pic pic-speaker" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);"></div>
 				<h4 class="h4">Akane Lee</h4>
-
 			</a>
-			<a href="#" class="col-lg-4">
-				<div class="pic pic-speaker"></div>
+			<a href="#" class="item">
+				<div class="pic pic-speaker" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);"></div>
 				<h4 class="h4">Akane Lee</h4>
-
 			</a>
-		</div> -->
-		<!--<a href="" class="btn btn-warning btn-lg align-table">
-			SEE All Speaker
-		</a>
+		</div> 
+
 	</div>
-
+	<a href="" class="btn btn-warning btn-lg align-table">
+		SEE All Speaker
+	</a>
 </section>-->
+
 <!-- sponsor -->
 <!--<section class="sponsor container">
 	<div class="title">
@@ -195,28 +189,135 @@
 		<div class="title-deco-dot"></div>
 	</div>
 
+	<div class="sponsor_content">
+		<div class="sponsor_content_title">
+			Yoda
+		</div>
+		<div class="sponsor_content_area">
+			<div class="row">
+				<div class="pic-item col-lg-12">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sponsor_content">
+		<div class="sponsor_content_title">
+			Sky Walker
+		</div>
+		<div class="sponsor_content_area">
+			<div class="row">
+				<div class="pic-item col-lg-4 col-md-4 col-sm-4">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+				<div class="pic-item col-lg-4 col-md-4 col-sm-4">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+				<div class="pic-item col-lg-4 col-md-4 col-sm-4">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+				<div class="pic-item col-lg-4 col-md-4 col-sm-4">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+				<div class="pic-item col-lg-4 col-md-4 col-sm-4">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+				<div class="pic-item col-lg-4 col-md-4 col-sm-4">
+					<a href="">
+						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 </section>-->
 
-      <!-- footer -->
-      <footer class="footer container text-center">
-        <a href="#">
-          <div class="footer_contactUs">
-            Contact
-            <br>
-            Us
-          </div>
-          <div class="footer_mail">
-            <img src="images/footer-mail.png" alt="">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-        <div class="footer_logo">
-          <img src="images/footer-logo.png" alt="">
+<script>
+	var map;
+	function initMap() {
+		var position = {lat: 22.626440, lng: 120.285644};
+		map = new google.maps.Map(document.querySelector('.position_map'), {
+			center: position,
+			zoom: 16,
+			scrollwheel: false
+		});
+
+		var marker = new google.maps.Marker({
+			position: position,
+			map: map
+		});
+	}
+</script>
+
+
+    <!-- footer -->
+    <footer class="footer container text-center">
+      <a href="mailto:contact@mopcon.org">
+        <div class="footer_contactUs">
+          Contact
+          <br>
+          Us
         </div>
-      </footer>
-    </body>
-    <script src="javascripts/vendor.js"></script>
-    <script src="javascripts/all.js"></script>
-    </html>  
+        <div class="footer_mail">
+          <img src="/images/footer-mail.svg" alt="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <div class="footer_logo">
+        <img src="images/footer-logo.svg" alt="">
+      </div>
+      <ul class="footer_nav">
+        <li class="nav-history dropdown">
+          <ul class="dropdown-menu">
+            <li><a href="https://mopcon.org/2016/" target="_blank">2016</a></li>
+            <li><a href="https://mopcon.org/2015/" target="_blank">2015</a></li>
+            <li><a href="https://mopcon.org/2014/" target="_blank">2014</a></li>
+            <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
+            <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
+          </ul>
+          <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">歷年 MOPCON
+            <span class="fa fa-chevron-up"></span>
+          </a>
+        </li>
+        <li class="nav-community">
+          <a href="https://www.facebook.com/mopcon/?fref=ts" class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON 粉絲團"></a>
+          <a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="fa fa-flickr fa-2x" title="flickr"></a>
+          <a href="https://goo.gl/qJRGoJ" class="fa fa-google-plus-square fa-2x" target="_blank" title="MOPCON G+"></a>
+          <a href=" https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
+        </li>
+      </ul>
+
+    </footer>
+  </body>
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/all.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd8NcCu9BqXZch7AL73UF7huLl-SKIDfU&callback=initMap"
+  async defer></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34651129-1']);
+    _gaq.push(['_setDomainName', 'mopcon.org']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </html>
