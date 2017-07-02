@@ -1,0 +1,98 @@
+.footer {
+    margin: 100px auto 40px;
+}
+
+.footer_contactUs {
+    padding: 20px;
+    margin-bottom: 70px;
+    font-size: $font-larger;
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+    display: inline-block;
+    position: relative;
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid $colorWhite;
+        background: $colorWhite;
+        color: $colorMainFirst;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 110px;
+        right: 0;
+        left: 0;
+        bottom: -110px;
+        margin: auto;
+        background-color: $colorWhite;
+    }
+}
+
+.footer_mail {
+    margin-bottom: 40px;
+    img {
+        margin-bottom: 20px;
+    }
+    span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $colorWhite;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+.footer_nav {
+    margin-top: 40px;
+}
+
+.nav-history {
+    display: inline-block;
+    .btn-select {
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0 10px;
+        border-radius: 5px;
+        color: $colorWhite;
+        border: 1px solid $colorWhite;
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid $colorSubSecond;
+            background: $colorSubSecond;
+            color: $colorMainFirst;
+        }
+    }
+    .dropdown-menu {
+        min-width: 147px;
+        right: inherit;
+        border-radius: 5px;
+        background: $colorSubSecond;
+        bottom: 35px;
+        top: inherit;
+    }
+}
+
+.nav-community {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    a {
+        font-size: 2.1em;
+        color: $colorWhite;
+        margin-right: 2px;
+        &.is-active,
+        &:hover,
+        &:focus,
+        &:active {
+            background: $colorMainFirst;
+            color: $colorMainSecond;
+        }
+    }
+}

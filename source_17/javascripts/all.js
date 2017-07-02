@@ -1,16 +1,15 @@
-'use strict';
-
-$(function () {
-    $('.navbar-toggle').on('click', function () {
+$(function() {
+    $('.navbar-toggle').on('click', function() {
         $('.navbar-collapse').slideToggle();
     });
 
-    window.set_language = function (lang) {
-        $.post("set_language", { lang: lang }, function (res) {
-            window.location = "./";
-        });
-    };
+    window.set_language = function(lang) {
+        $.post("set_language", { lang: lang }, function(res) {
+            window.location = "./"
 
+        });
+    }
+    
     positionMap();
     carousel();
 });
@@ -43,4 +42,3 @@ function carousel() {
         }
     });
 }
-//# sourceMappingURL=all.js.map

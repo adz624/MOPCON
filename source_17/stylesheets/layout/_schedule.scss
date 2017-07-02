@@ -1,0 +1,16 @@
+.schedule {
+    position: relative;
+    .schedule_content {
+        background-color: $colorMainSecond;
+    }
+}
+
+.schedule_deco {
+    background-image: url(../images/panel-deco-wave.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    padding-bottom: 267px;
+    &.reverse {
+        transform: rotate(180deg)
+    }
+}

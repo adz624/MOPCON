@@ -1,0 +1,57 @@
+.header {
+    margin: 200px auto;
+    max-width: 1440px;
+    @include pad-below () {
+        margin: 70px auto;
+    }
+    @include pad () {
+        margin: 70px auto;
+    }
+}
+
+.header_mainVisual {}
+
+.header_btnGroup {
+    margin-top: 60px;
+    .btn {
+        font-size: $font-large;
+        width: 270px;
+        @include pad-below () {
+            display: block;
+            margin: 10px auto;
+        }
+        @include mobile() {
+            display: block;
+            margin: 10px auto;
+        }
+    }
+}
+
+.mainVisualPic {
+    transition: all 0.25s ease-in-out;
+    background-image: url(../images/header-banner.svg);
+    @include pad-below () {
+        background-image: url(../images/header-banner-m.svg);
+    }
+    @include mobile() {
+        background-image: url(../images/header-banner-m.svg);
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:before {
+        width: 100%;
+        padding-top: 56.25%;
+        content: '';
+        display: block;
+        @include pad () {
+            padding-top: 75%;
+        }
+        @include pad-below () {
+            padding-top: 100%;
+        }
+        @include mobile() {
+            padding-top: 100%;
+        }
+    }
+}

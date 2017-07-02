@@ -1,0 +1,126 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+<header class="header text-center">
+	<div class="header_mainVisual">
+		<div class="mainVisualPic"></div>
+	</div>
+	<div class="header_btnGroup">
+		<a href="https://goo.gl/nLFsPQ" target="_blank" class="btn btn-default"><%= __("徵求贊助商") %></a>
+		<a href="https://mopcon.kktix.cc/events/mopcon2017-cfr" target="_blank" class="btn btn-default"><%= __("推薦講師") %></a>
+		<% if(lang === 'zh_TW') { %>
+			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp" target="_blank" class="btn btn-default">議程投稿</a>
+		<% } else { %>
+			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-eng" target="_blank" class="btn btn-default">Call for Presentation</a>
+		<% } %>
+	</div>
+</header>
+<!-- lookback -->
+<section class="lookback">
+	<a href="#" class="lookback_content">
+		<div class="btn btn-default"><%= __("2016精采回顧") %></div>
+		<img src="images/lookback-img.png" alt="">
+	</a>
+</section>
+<!-- about -->
+<section class="about container">
+	<div class="title">
+		<div class="title_en">
+			ABOUT
+			<br>
+			MOPCON 2017
+		</div>
+		<div class="title_ch">
+			<%= __("精神") %>
+		</div>
+		<div class="title-deco-dot"></div>
+	</div>
+	<div class="content content-post">
+		<p>
+			<%= __("精神標語1") %>
+		</p>
+		<p>
+			<%= __("精神標語2") %>
+		</p>
+	</div>
+</section>
+
+<!-- schedule -->
+<section class="schedule">
+	<div class="schedule_deco"></div>
+	<div class="schedule_content">
+		<div class="container">
+			<div class="title">
+				<div class="title_ch">
+					<%= __("議程") %>
+				</div>
+			</div>
+			<div class="content content-post">
+				<p><%= __("議程標語") %>
+				</p>
+				<br>
+				<br>
+				<a href="<%=lang === 'zh_TW' ? 'https://mopcon.kktix.cc/events/mopcon2017-cfp' : 'https://mopcon.kktix.cc/events/mopcon2017-cfp-eng' %>" target="_blank" class="btn btn-primary btn-lg align-table">
+					<!--SEE Full Schedule-->
+					<%= __("徵稿中") %>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="schedule_deco reverse"></div>
+</section>
+
+<!-- position -->
+<section class="position">
+	<div class="title text-center">
+		<div class="title-twiDot">
+			WHERE
+		</div>
+		<h2 class="title-twiDot-h2">
+			<%= __("在哪裡") %>
+		</h2>
+	</div>
+	<div class="position_content">
+		<div class="position_content_box col-lg-6 col-lg-push-3 t col-md-6 col-md-push-3 col-sm-8 col-sm-push-2 text-center">
+			<h2 class="h2"><%= __("活動位置") %></h2>
+			<h3 class="h3"><%= __("活動地址") %></h3>
+			<div class="post-dot"></div>
+			<h4 class="h4"><%= __("公車") %></h4>
+			<p class="post"><%= __("公車班次") %></p>
+			<div class="post-dot"></div>
+			<h4 class="h4"><%= __("其他交通路線") %></h4>
+			<p class="post">1.<%= __("路線1") %>
+				<br>
+				2.<%= __("路線2") %>
+				<br>
+				3.<%= __("路線3") %>
+			</p>
+		</div>
+		<div class="position_map" ／>
+		</div>
+	</div>
+	<div class="panel-deco-slash"></div>
+</section>
+
+
+<script type="text/javascript">
+function initialize() {
+  var myLatlng = new google.maps.LatLng({{ map.lat }},{{ map.lng }});
+  var mapOptions = {
+    zoom: {{ map.zoom }},
+    center: myLatlng,
+    draggable: false,
+    scrollwheel: false
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "{{ location.icck|e('js') }}"
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+{% endblock %}
