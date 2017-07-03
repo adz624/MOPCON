@@ -29,7 +29,7 @@
     <nav class="navbar">
       <div class="navbar-header">
         <a href="/" class="navbar-brand">
-          <img src="/images/nav-logo.svg" width="50px" alt="Mopcon logo">
+          <img src="images/nav-logo.svg" width="50px" alt="Mopcon logo">
         </a>
         <button class="navbar-toggle" data-toggle="collapse">
           <span class="fa fa-bars"></span>
@@ -64,8 +64,8 @@
         </ul>
         <ul class="navbar-right">
         <li class="nav-lang">
-          <a href="#" class="btn btn-default <%=lang === 'zh_TW' ? 'is-active' : '' %>" onClick="set_language('zh_TW')">中</a>
-          <a href="#" class="btn btn-default <%=lang === 'en' ? 'is-active' : '' %>" onClick="set_language('en')">EN</a>
+          <a href="?lang=zh" class="btn btn-default {{ lang == 'zh' ? 'is-active' : '' }}">中</a>
+          <a href="?lang=en" class="btn btn-default {{ lang == 'en' ? 'is-active' : '' }}">EN</a>
         </li>
       </ul>
     </div>
@@ -81,14 +81,14 @@
         Us
       </div>
       <div class="footer_mail">
-        <img src="/images/footer-mail.svg" alt="">
+        <img src="images/footer-mail.svg" alt="">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </a>
     <div class="footer_logo">
-      <img src="/images/footer-logo.svg" alt="">
+      <img src="images/footer-logo.svg" alt="">
     </div>
     <ul class="footer_nav">
       <li class="nav-history dropdown">
@@ -99,7 +99,7 @@
           <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
           <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
         </ul>
-        <a class="btn btn-select dropdown-toggle" data-toggle="dropdown"><%= __("歷年MOPCON") %>
+        <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">{{ main.his_mopcon }}
           <span class="fa fa-chevron-up"></span>
         </a>
       </li>
@@ -107,7 +107,7 @@
         <a href="https://www.facebook.com/mopcon/?fref=ts" class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON 粉絲團"></a>
         <a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="fa fa-flickr fa-2x" title="flickr"></a>
         <a href="https://goo.gl/qJRGoJ" class="fa fa-google-plus-square fa-2x" target="_blank" title="MOPCON G+"></a>
-        <a href=" https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
+        <a href="https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
       </li>
     </ul>
 
@@ -115,8 +115,6 @@
 </body>
 <script src="javascripts/all.js?v={{version.allJs}}" type="text/javascript"></script>
 <script src="javascripts/vendor.js?v={{version.allJs}}" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd8NcCu9BqXZch7AL73UF7huLl-SKIDfU&callback=initMap"
-async defer></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-34651129-1']);
