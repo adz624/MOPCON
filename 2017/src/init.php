@@ -1,7 +1,6 @@
 <?php
 include __DIR__ . "/../../vendor/autoload.php";
 include __DIR__ . '/index.php';
-include __DIR__ . '/location.php';
 include __DIR__ . '/sponsor.php';
 include __DIR__ . '/speaker.php';
 include __DIR__ . '/schedule.php';
@@ -276,6 +275,7 @@ function render($template_name, $params)
                 'gitter' => 'gitter 聊天室',
 
             ],
+            'his_mopcon' => '歷年 MOPCON',
         ],
         'en' => [
             'sitetitle' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
@@ -298,6 +298,7 @@ function render($template_name, $params)
                 'hackfoldr' => 'hackfoldr',
                 'gitter' => 'gitter',
             ],
+            'his_mopcon' => 'Past MOPCON',
         ],
     ];
     $main = getI18n($main_msg);
