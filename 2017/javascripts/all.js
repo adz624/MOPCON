@@ -1,25 +1,19 @@
 'use strict';
 
-// $(function () {
-//     $('.navbar-toggle').on('click', function () {
-//         $('.navbar-collapse').slideToggle();
-//     });
-//
-//     window.set_language = function (lang) {
-//         $.post("set_language", { lang: lang }, function (res) {
-//             window.location = "./";
-//         });
-//     };
-//
-//     positionMap();
-//     carousel();
-// });
-
-function set_language(lang) {
-    $.post("set_language", { lang: lang }, function (res) {
-        window.location = "./";
+$(function () {
+    $('.navbar-toggle').on('click', function () {
+        $('.navbar-collapse').slideToggle();
     });
-}
+
+    window.set_language = function (lang) {
+        $.post("set_language", { lang: lang }, function (res) {
+            window.location = "./";
+        });
+    };
+
+    positionMap();
+    carousel();
+});
 
 function positionMap() {
     var positionContentBoxHeight = $('.position_content_box').height();
