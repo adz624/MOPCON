@@ -20,7 +20,6 @@ if ($release_ref != $payload['ref']) {
     exit;
 }
 
-
 // pull 最新的 code 下來
 echo "deploy....";
 exec("git reset --hard");
@@ -43,6 +42,8 @@ if (is_file($composer_lock_path)) {
     echo "'{$composer_lock_path}' does not exist, do not composer update";
 }
 
+exec("cd {$doc_root} && npm install");
+exec("cd {$doc_root} && bower install");
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
