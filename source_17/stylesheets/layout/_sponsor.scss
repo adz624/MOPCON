@@ -1,0 +1,38 @@
+.sponsor {
+    position: relative;
+}
+
+.sponsor_content {
+    margin: 100px auto;
+    position: relative;
+}
+
+.sponsor_content_title {
+    background-color: $colorMainThird;
+    color: $colorSubThird;
+    border-radius: 60px;
+    padding: .5rem 1.5rem;
+    font-size: $font-larger;
+    font-weight: bold;
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    top: -2rem;
+    left: -30px;
+    text-align: center;
+    @include pad-below () {
+        font-size: $font-large;
+        max-width: 200px;
+        left: -15px;
+    }
+}
+
+.sponsor_content_area {
+    text-align: center;
+    background-color: $colorWhite;
+    border-radius: 34px;
+    padding: 50px;
+    @include mobile() {
+        padding: 30px;
+    }
+}

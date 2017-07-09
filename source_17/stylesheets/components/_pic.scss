@@ -1,0 +1,19 @@
+.pic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:before {
+        width: 100%;
+        padding-top: 100%;
+        content: '';
+        display: block;
+    }
+}
+.pic-speaker{
+    border-radius: 50%;
+    border: 10px solid $colorMainSecond;
+	
+}
+.pic-item{
+    margin: 10px auto;
+}

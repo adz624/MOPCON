@@ -1,0 +1,31 @@
+.lookback {
+    position: relative;
+    margin-bottom: 20px;
+    .lookback_content {
+        position: relative;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+    img {
+        width: 100%;
+    }
+    .btn-default {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3.6rem;
+        // padding: 1.5rem 12rem;
+        position: absolute;
+        font-size: $font-larger;
+        margin: auto;
+        line-height: inherit;
+        width: 40vw;
+        @include pad-below () {
+            font-size: $font-large;
+            height: 2.4rem;
+            width: 80vw;
+        }
+    }
+}

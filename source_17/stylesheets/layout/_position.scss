@@ -1,0 +1,84 @@
+.position {}
+
+.position_content {
+    position: relative;
+}
+
+.position_content_box {
+    border: 7px solid $colorMainSecond;
+    background: $colorWhite;
+    padding: 2%;
+    z-index: 2;
+    @include pad-below () {
+        width: 90%;
+        margin: auto;
+        padding: 4%;
+    }
+    .h2 {
+        color: $colorSubThird;
+        font-size: 2.2rem;
+        @include pad-below () {
+            font-size: $font-larger;
+        }
+        @include mobile() {
+            font-size: $font-large;
+        }
+    }
+    .h3 {
+        font-size: $font-larger;
+        @include mobile() {
+            font-size: $font-normal;
+        }
+    }
+    .h4 {
+        color: $colorSubThird;
+        font-size: $font-larger;
+        @include mobile() {
+            font-size: $font-normal;
+        }
+    }
+    p {
+        @include mobile() {
+            text-align: left;
+            font-size: $font-small;
+        }
+    }
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 50px 35px 0 35px;
+        border-color: #7BB6AD transparent transparent transparent;
+        bottom: -50px;
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
+
+    .position_map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.post-dot {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: $colorMainSecond;
+    display: table;
+    margin: 2rem auto;
+    @include pad-below () {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.position_map {
+    width: 100%;
+    height: 50vh;
+    position: absolute !important;
+    bottom: 0;
+}

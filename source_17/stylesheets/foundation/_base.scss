@@ -1,0 +1,39 @@
+html {
+    font-size: $font-size-base;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base !important;
+    color: $color;
+    background: $bgcolor;
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    color: $color;
+    cursor: pointer;
+}
+
+* {
+    letter-spacing: .8px;
+    ::selection {
+        background-color: $colorMainSecond;
+        color: #fff;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

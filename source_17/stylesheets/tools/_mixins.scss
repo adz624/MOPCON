@@ -1,0 +1,23 @@
+@mixin desktop-below {
+    @media (min-width: 992px) {
+        @content
+    }
+}
+
+@mixin pad {
+    @media screen and (min-width: 768px)and (max-width: 991px){
+        @content
+    }
+}
+
+@mixin pad-below {
+    @media (max-width: 767px) {
+        @content
+    }
+}
+
+@mixin mobile{
+    @media (max-width: 480px) {
+        @content
+    }
+}
