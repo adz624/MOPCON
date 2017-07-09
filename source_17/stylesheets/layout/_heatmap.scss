@@ -1,0 +1,13 @@
+$heatmap_width: 500px;
+$heatmap_height: 500px;
+
+#heatmapContainer {
+    width: $heatmap_width;
+    height: $heatmap_height;
+    margin: 0 auto;
+
+    .conference {
+        width: $heatmap_width;
+        height: $heatmap_height;
+    }
+}

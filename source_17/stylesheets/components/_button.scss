@@ -4,9 +4,11 @@
     border-radius: 0;
     // padding: 10px 12px;
 }
-.btn-lg{
+
+.btn-lg {
     font-size: $font-larger;
 }
+
 .btn-default {
     border: 1px solid $colorWhite;
     background: none;
@@ -47,4 +49,43 @@
         background: $colorMainThird;
         color: $colorMainFirst;
     }
+}
+
+.btn-switch {
+    border: 1px solid $colorMainSecond;
+    background: none;
+    color: $colorMainSecond;
+    font-size: $font-large;
+    padding: 0.5rem 4rem;
+    text-shadow: 0px 0px 10px $colorMainfourth;
+    @include pad-below() {
+        padding: 0.5rem 3rem;
+    }
+    @include mobile() {
+        padding: 0.5rem 2.5rem;
+    }
+    &:first-child {
+        border-radius: 10px 0 0 10px;
+        margin: 0;
+    }
+    &:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid $colorMainSecond;
+        background: $colorMainSecond;
+        color: #fff;
+    }
+}
+
+.btn-group-switch {
+    margin: auto;
+}
+
+.switch {
+    text-align: center;
+    margin: 20px auto;
 }

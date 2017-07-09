@@ -13,6 +13,9 @@ $(function () {
 
     positionMap();
     carousel();
+    scheduleSwitch();
+    openScheduleDetail();
+    closeDetailBox();
 });
 
 function positionMap() {
@@ -41,6 +44,26 @@ function carousel() {
                 items: 3
             }
         }
+    });
+}
+
+function scheduleSwitch() {
+    $('.btn-switch').on('click', function () {
+        var switchContent = $(this).attr('data-switch');
+        $(this).addClass('is-active').siblings().removeClass('is-active');
+        $("." + switchContent).removeClass('hide').siblings().addClass('hide');
+    });
+}
+
+function openScheduleDetail() {
+    $('td[role="content-col"]').click(function () {
+        $('.detailBox').fadeIn();
+    });
+}
+
+function closeDetailBox() {
+    $('.detailBox_content_cancel').click(function () {
+        $('.detailBox').fadeOut();
     });
 }
 //# sourceMappingURL=all.js.map
