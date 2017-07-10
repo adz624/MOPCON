@@ -7060,20 +7060,19 @@ tr:first-child {
     max-width: 120%; }
 
 .detailBox {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 999;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 200vh;
-  width: 100vw; }
+  min-height: 100%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.detailBoxWrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 4%; }
 
 .detailBox_content {
   background-color: #fff;
