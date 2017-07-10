@@ -20,12 +20,19 @@ $font-small: 0.857142rem; // 12px
 $colorMainFirst:#181E3E;
 $colorMainSecond:#7BB6AD;
 $colorMainThird:#F1E28C;
+$colorMainfourth:#376D65;
+
 $colorSubFirst:#293264;
 $colorSubSecond:#E3E1DA;
 $colorSubThird:#B5814B;
+$colorSubfourth:#C8A063;
+
 $bgcolor: $colorMainFirst;
 $color: #666464;
 $colorWhite:#fff;
+
+$gray-dark:#595E7A;
+$gray:#828282;
 // $colorGray:#9B9B9B;
 // $colorGray-light:#d8d8d8;
 // $colorGradientFirst:#461d87;
@@ -33,8 +40,8 @@ $colorWhite:#fff;
 // $color-muted
 // $color-primary
 // $color-success
-// $color-info
-// $color-notice
+$color-info:#F1B861;
+$color-notice:#5B8E54;
 // $color-alert
 // $color-warning
 // $color-danger

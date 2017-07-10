@@ -1,0 +1,204 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+<!-- header	 -->
+<section class="pageHead">
+	<img src="/images/headPage-schedule.svg" alt="">
+</section>
+
+
+<!-- switch date -->
+<section class="switch container">
+	<div class="btn-group btn-group-switch">
+		<a href="#" data-switch="Day1" class="btn btn-switch is-active">10/28</a>
+		<a href="#" data-switch="Day2" class="btn btn-switch">10/29</a>
+	</div>
+</section>
+
+<section class="schedulePage_info">
+	<p>點擊議程標題可觀看詳細介紹</p>
+	<p>R1：一廳 / R2：二廳 / R3：三廳</p>
+</section>
+
+
+<!-- schedule table -->
+<section class="schedulePage container">
+	<div class="Day1">
+		<table class="scheduleTable table">
+			<tbody>
+				<tr>
+					<th></th>
+					<th>R1</th>
+					<th>R2</th>
+					<th>R4</th>
+				</tr>
+				<tr>
+					<td role="time-col">08:30 - 09:00</td>
+					<td colspan="3" role="rundown-col">報到</td>
+				</tr>
+				<tr>
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="3" role="rundown-col">開幕</td>
+				</tr>
+				<tr>
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="3" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">翟本喬 (Ben Jai)</div>
+						<div class="scheduleTable-subject">
+							行動裝置科技趨勢
+							<span class="subjectTag">Operation</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+				</tr>
+				<tr class="table-notic">
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="3" role="rundown-col">休息</td>
+				</tr>
+				<tr>
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="1" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">Nevin Chen</div>
+						<div class="scheduleTable-subject">
+							Kotlin on Android development
+							<span class="subjectTag">Web</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+					<td colspan="1" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">古宗禎 (Denny Ku)</div>
+						<div class="scheduleTable-subject">
+							求職天眼通：從 Side project 到產品的技術演進
+							<span class="subjectTag">Mobile</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+					<td colspan="1" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">羅志達 (Kelvin Lo)</div>
+						<div class="scheduleTable-subject">
+							Unity Adam 動畫製作過程與 CG VR 發展
+							<span class="subjectTag">VR</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="Day2 hide">
+		<table class="scheduleTable table">
+			<tbody>
+				<tr>
+					<th></th>
+					<th>R1</th>
+					<th>R2</th>
+					<th>R4</th>
+				</tr>
+				<tr>
+					<td role="time-col">08:30 - 09:00</td>
+					<td colspan="3" role="rundown-col">報到</td>
+				</tr>
+				<tr>
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="3" role="rundown-col">開幕</td>
+				</tr>
+				<tr>
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="3" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">酷玩樂團 (ColdPlay)</div>
+						<div class="scheduleTable-subject">
+							行動裝置科技趨勢
+							<span class="subjectTag">Operation</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+				</tr>
+				<tr class="table-notic">
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="3" role="rundown-col">休息</td>
+				</tr>
+				<tr>
+					<td role="time-col">09:00 - 09:15</td>
+					<td colspan="1" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">法鯊</div>
+						<div class="scheduleTable-subject">
+							Kotlin on Android development
+							<span class="subjectTag">Web</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+					<td colspan="1" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">Chirs</div>
+						<div class="scheduleTable-subject">
+							求職天眼通：從 Side project 到產品的技術演進
+							<span class="subjectTag">Mobile</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+					<td colspan="1" role="content-col">
+						<span class="scheduleTable-room">ALL</span>
+						<div class="scheduleTable-speack">神力女超人</div>
+						<div class="scheduleTable-subject">
+							Unity Adam 動畫製作過程與 CG VR 發展
+							<span class="subjectTag">VR</span>
+						</div>
+						<div class="scheduleTable-link">
+							<a>slide</a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+
+<!-- schedule detailBox -->
+<section class="detailBox" style="display: none;">
+	<div class="detailBox_content">
+		<div class="detailBox_content_schedule">
+			<div class="detailBox_content_schedule_speaker">
+				<div class="pic pic-detail" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);">
+
+				</div>
+				<h4 class="inline-block">克里斯馬汀</h4>
+			</div>
+			<p>紐約大學電腦科學博士，曾任職貝爾實驗室與Google，之後創立台達電子雲端技術中心，2013年帶領資訊菁英成立和沛科技，提供企業完整的雲端解決方案，2016年成立和沛移動，開創使用者完美的雲端服務行動體驗。
+			</p>
+			<div class="scheduleTable-subject">
+				行動裝置科技趨勢
+			</div>
+			<p>ng-app="Gartner等各大市場分析公司每年都會推出許多新科技趨勢的預測。其中很多其實不怎麼新，很多其實不怎麼有前途，很多其實有前途但你追不上。我們要怎麼觀察並找出自己的路呢？"
+			</p>
+		</div>
+		<div class="detailBox-link">
+			<a class="slide-link">Slide Link</a>
+		</div>
+		<span class="fa-stack fa-lg detailBox_content_cancel ">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+		</span>
+	</div>
+</section>／
+{% endblock %}
