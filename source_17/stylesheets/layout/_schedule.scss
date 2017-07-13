@@ -111,6 +111,13 @@
             position: relative;
             padding-left: 25px;
         }
+        &.is-active,
+        &:hover,
+        &:focus,
+        &:active {
+            transition: all 0.3s ease-in-out;
+            background: #eee;
+        }
     }
     td[role="content-col"]:before {
         @include pad-below() {

@@ -6700,6 +6700,9 @@ section {
       text-align: left;
       position: relative;
       padding-left: 25px; } }
+  .scheduleTable td[role="content-col"].is-active, .scheduleTable td[role="content-col"]:hover, .scheduleTable td[role="content-col"]:focus, .scheduleTable td[role="content-col"]:active {
+    transition: all 0.3s ease-in-out;
+    background: #eee; }
 
 @media (max-width: 767px) {
   .scheduleTable td[role="content-col"]:before {
@@ -7055,7 +7058,9 @@ tr:first-child {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px auto; }
+  margin: 100px auto;
+  width: 100%;
+  overflow: hidden; }
   .pageHead img {
     max-width: 120%; }
 
@@ -7097,6 +7102,10 @@ tr:first-child {
 .detailBox_content_schedule p {
   color: #828282; }
 
+.detailBox_content_schedule p.height-limit {
+  max-height: 30vh;
+  overflow-y: auto; }
+
 .detailBox_content_schedule .pic-detail {
   border-radius: 50%;
   width: 100px;
@@ -7113,10 +7122,13 @@ tr:first-child {
 
 .detailBox_content_schedule_speaker {
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: block;
+  color: #376D65; }
   .detailBox_content_schedule_speaker h4 {
-    margin-left: 10px;
-    color: #376D65; }
+    margin-left: 10px; }
+  .detailBox_content_schedule_speaker.is-active, .detailBox_content_schedule_speaker:hover, .detailBox_content_schedule_speaker:focus, .detailBox_content_schedule_speaker:active {
+    color: #B5814B; }
 
 .detailBox-link {
   text-align: center;
@@ -7139,6 +7151,14 @@ tr:first-child {
       margin-right: 10px;
       background: url(../images/link-slide.svg) no-repeat; }
 
+.detailBox_maskBg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  top: 0;
+  z-index: -1; }
+
 .align-table {
   display: table;
   margin: auto; }
@@ -7146,6 +7166,9 @@ tr:first-child {
 .inline-block {
   display: inline-block;
   vertical-align: middle; }
+
+.bodyLock {
+  overflow: hidden; }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
