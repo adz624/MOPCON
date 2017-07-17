@@ -42,6 +42,12 @@
 .navbar-right {
     padding: 15px;
     margin-bottom: 0;
+
+    // update for mobile
+    margin-right: 0;
+    position: absolute;
+    top: 5;
+    right: 0;
 }
 
 .nav-lang {
