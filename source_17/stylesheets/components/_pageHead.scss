@@ -1,0 +1,11 @@
+.pageHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    width: 100%;
+    overflow: hidden;
+    img {
+        max-width: 120%;
+    }
+}

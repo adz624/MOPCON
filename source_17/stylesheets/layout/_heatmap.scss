@@ -1,0 +1,37 @@
+$heatmap_width: 480px;
+$heatmap_height: 480px;
+
+#heatmapContainer {
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+        width: $heatmap_width;
+        height: $heatmap_height;
+    }
+
+    .heatmap {
+        position: relative;
+        display: inline-block;
+    }
+
+    #heatmap3F {
+        position: absolute !important;
+        width: 360px;
+        height: 180px;
+        top: 117px;
+        left: 50px;
+    }
+
+    #heatmap4F {
+        position: absolute !important;
+        width: 360px;
+        height: 228px;
+        top: 117px;
+        left: 28px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+.panel-deco-slash {
+    background: url(../images/panel-deco-slash.png) repeat-x;
+    height: 60px;
+    background-size: contain;
+    @include pad-below () {
+        height: 35px;
+    }
+}

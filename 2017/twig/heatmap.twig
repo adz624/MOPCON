@@ -1,0 +1,90 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+<div id="heatmapContainer">
+    <div class="heatmap" style="width: 970px;">
+        <img src="images/3F.png" alt="" />
+        <div id="heatmap3F" />
+    </div>
+    <div class="heatmap">
+        <img src="images/4F.png" alt="" />
+        <div id="heatmap4F" />
+    </div>
+</div>
+
+<script>
+    const rawData = [{
+        x: 39,
+        y: 7
+    }, {
+        x: 50,
+        y: 40
+    }, {
+        x: 5,
+        y: 10
+    }, {
+        x: 70,
+        y: 55
+    }, {
+        x: 43,
+        y: 17
+    }, {
+        x: 80,
+        y: 40
+    }, {
+        x: 100,
+        y: 30
+    }];
+
+    const scale_3f = {
+        width: (360 / 120),
+        height: (180 / 60),
+    }
+
+    const scale_4f = {
+        width: (360 / 150),
+        height: (228 / 90),
+    }
+
+    window.onload = function () {
+        // create a heatmap instance
+        window.heatmap3F = h337.create({
+            container: document.getElementById('heatmap3F'),
+            maxOpacity: .5,
+            radius: 10,
+            blur: .75,
+        });
+
+        window.heatmap4F = h337.create({
+            container: document.getElementById('heatmap4F'),
+            maxOpacity: .5,
+            radius: 10,
+            blur: .75,
+        });
+
+        const generate = (points, scale_object, heatmap) => {
+            const datapoints = points.map(data => ({
+                x: data.x * scale_object.width, // 座標X
+                y: data.y * scale_object.height, // 座標Y
+                value: Math.random() * 10 >> 0, // 該偵測點人數
+                radius: 25, // 感應器半徑
+            }))
+
+            const data = {
+                max: 10, // 會場總人數或設定上限
+                min: 0,
+                data: datapoints,
+            };
+
+            heatmap.setData(data);
+        };
+        // initial generate
+        generate(rawData, scale_3f, heatmap3F);
+        generate(rawData, scale_4f, heatmap4F);
+
+        document.getElementById('heatmap3F').onclick = function () { generate(rawData, scale_3f, heatmap3F); };
+        document.getElementById('heatmap4F').onclick = function () { generate(rawData, scale_4f, heatmap4F); };
+    }
+
+</script>
+{% endblock %}

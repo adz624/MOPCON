@@ -1,15 +1,14 @@
-'use strict';
-
-$(function () {
-    $('.navbar-toggle').on('click', function () {
+$(function() {
+    $('.navbar-toggle').on('click', function() {
         $('.navbar-collapse').slideToggle();
     });
 
-    window.set_language = function (lang) {
-        $.post("set_language", { lang: lang }, function (res) {
-            window.location = "./";
+    window.set_language = function(lang) {
+        $.post("set_language", { lang: lang }, function(res) {
+            window.location = "./"
+
         });
-    };
+    }
 
     positionMap();
     carousel();
@@ -47,8 +46,9 @@ function carousel() {
     });
 }
 
+
 function scheduleSwitch() {
-    $('.btn-switch').on('click', function () {
+    $('.btn-switch').on('click', function() {
         var switchContent = $(this).attr('data-switch');
         $(this).addClass('is-active').siblings().removeClass('is-active');
         $("." + switchContent).removeClass('hide').siblings().addClass('hide');
@@ -56,16 +56,17 @@ function scheduleSwitch() {
 }
 
 function openScheduleDetail() {
-    $('td[role="content-col"]').click(function () {
+    $('td[role="content-col"]').click(function() {
         $('.detailBox').fadeIn();
         $('body').addClass('bodyLock');
     });
+
 }
 
 function closeDetailBox() {
-    $('.detailBox_content_cancel,.detailBox_maskBg').click(function () {
+    $('.detailBox_content_cancel,.detailBox_maskBg').click(function() {
         $('.detailBox').fadeOut();
         $('body').removeClass('bodyLock');
-    });
+    })
 }
-//# sourceMappingURL=all.js.map
+

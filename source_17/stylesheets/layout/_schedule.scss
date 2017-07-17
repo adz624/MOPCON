@@ -1,0 +1,154 @@
+.schedule {
+    position: relative;
+    .schedule_content {
+        background-color: $colorMainSecond;
+    }
+}
+
+.schedule_deco {
+    background-image: url(../images/panel-deco-wave.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    padding-bottom: 267px;
+    &.reverse {
+        transform: rotate(180deg)
+    }
+}
+
+.schedulePage_info {
+    text-align: center;
+    p {
+        color: #fff;
+    }
+}
+
+.scheduleTable-speack {
+    color: $colorMainFirst;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.scheduleTable-subject {
+    color: $gray-dark;
+    line-height: 2;
+}
+
+.subjectTag {
+    background-color: $gray-dark;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: $font-small;
+    vertical-align: top;
+}
+
+.scheduleTable-link {
+    padding: 10px 0;
+    a {
+        background-color: $color-info;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: $colorMainFirst;
+    }
+}
+
+.scheduleTable-room {
+    display: none;
+    @include pad-below() {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        background-color: $gray;
+        padding: 5px 10px;
+        color: #fff;
+    }
+}
+
+.scheduleTable {
+    tr {
+        @include pad-below() {
+            display: block;
+            width: 100%;
+        }
+    }
+    tr:first-child {
+        @include pad-below() {
+            display: none;
+        }
+    }
+    th {
+        font-size: $font-large;
+        font-weight: normal;
+    }
+    td[role="time-col"] {
+        color: $colorMainFirst;
+        background-color: $color-info;
+        width: 17%;
+        span {
+            margin: auto;
+        }
+        @include pad() {
+            text-align: left;
+        }
+        @include pad-below() {
+            display: block;
+            width: 100%;
+        }
+    }
+    td[role="rundown-col"] {
+        @include pad-below() {
+            display: block;
+            width: 100%;
+        }
+    }
+    td[role="content-col"] {
+        cursor: pointer;
+        @include pad-below() {
+            display: block;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            padding-left: 25px;
+        }
+        &.is-active,
+        &:hover,
+        &:focus,
+        &:active {
+            transition: all 0.3s ease-in-out;
+            background: #eee;
+        }
+    }
+    td[role="content-col"]:before {
+        @include pad-below() {
+            content: '';
+            display: block;
+            background-color: $color-info;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 7px;
+        }
+    }
+    td[colspan="1"] {
+        .scheduleTable-link {
+            text-align: left;
+        }
+        .scheduleTable-subject {
+            text-align: left;
+        }
+    }
+    .table-notic {
+        td[role="time-col"] {
+            @include pad-below() {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+        td {
+            background-color: $color-notice;
+            color: #fff;
+        }
+    }
+}
