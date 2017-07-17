@@ -21,11 +21,11 @@
 </header>
 <div class="container-md">
   <ul class="relative schedule-nav">
-    <li class="schedule-day active" id="day_one_title">
+    <li class="schedule-day" id="day_one_title">
       <h3>DAY 1</h3>
       <h4>10/29 (六)</h4>
     </li>
-    <li class="schedule-day" id="day_two_title">
+    <li class="schedule-day active" id="day_two_title">
       <h3>DAY 2</h3>
       <h4>10/30 (日)</h4>
     </li>
@@ -34,7 +34,7 @@
 <div class="container-md">
   <div class="card">
     <div class="multi-planet">
-      <ul class="schedule-block" id="day_one_schedule">
+      <ul class="schedule-block" id="day_one_schedule"  style="display: none;">
       {% for item in schedules.day1_schedule %}
         <li class="schedule-li">
           <div class="schedule-event">
@@ -98,7 +98,7 @@
       </ul>
 
 
-      <ul class="schedule-block" id="day_two_schedule" style="display: none;">
+      <ul class="schedule-block" id="day_two_schedule">
         {% for item in schedules.day2_schedule %}
         <li class="schedule-li">
           <div class="schedule-event">

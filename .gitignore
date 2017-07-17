@@ -2,8 +2,10 @@
 .sass-cache
 /2014_test/fire_app_log.txt
 /2014_test/config.rb
+/cache
 vendor/
 .tmp
 bower_components
 yarn.lock
 node_modules
+npm-debug.log

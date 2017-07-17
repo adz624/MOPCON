@@ -58,12 +58,14 @@ function scheduleSwitch() {
 function openScheduleDetail() {
     $('td[role="content-col"]').click(function () {
         $('.detailBox').fadeIn();
+        $('body').addClass('bodyLock');
     });
 }
 
 function closeDetailBox() {
-    $('.detailBox_content_cancel').click(function () {
+    $('.detailBox_content_cancel,.detailBox_maskBg').click(function () {
         $('.detailBox').fadeOut();
+        $('body').removeClass('bodyLock');
     });
 }
 //# sourceMappingURL=all.js.map

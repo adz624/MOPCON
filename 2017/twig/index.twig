@@ -7,19 +7,17 @@
 	</div>
 	<div class="header_btnGroup">
 		<a href="https://goo.gl/nLFsPQ" target="_blank" class="btn btn-default">{{ index.call_sponsor }}</a>
-		<a href="https://mopcon.kktix.cc/events/mopcon2017-cfr" target="_blank" class="btn btn-default">{{ index.call_recomm }}</a>
+		<a href="https://mopcon.kktix.cc/events/mopcon2017-cfr-2" target="_blank" class="btn btn-default">{{ index.call_recomm }}</a>
 		{% if lang == 'zh' %}
-			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp" target="_blank" class="btn btn-default">議程投稿</a>
-		{% else %}
-			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-eng" target="_blank" class="btn btn-default">Call for Presentation</a>
+			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-2" target="_blank" class="btn btn-default">議程投稿</a>
 		{% endif %}
 	</div>
 </header>
 <!-- lookback -->
 <section class="lookback">
-	<a href="#" class="lookback_content">
+	<a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="lookback_content">
 		<div class="btn btn-default">{{ index.review_2016 }}</div>
-		<img src="images/lookback-img.png" alt="">
+		<img src="images/lookback-img.png" alt="精彩回顧照片">
 	</a>
 </section>
 <!-- about -->
@@ -60,7 +58,7 @@
 				</p>
 				<br>
 				<br>
-				<a href="<%=lang === 'zh_TW' ? 'https://mopcon.kktix.cc/events/mopcon2017-cfp' : 'https://mopcon.kktix.cc/events/mopcon2017-cfp-eng' %>" target="_blank" class="btn btn-primary btn-lg align-table">
+				<a href="<%=lang === 'zh_TW' ? 'https://mopcon.kktix.cc/events/mopcon2017-cfp-2' : 'https://mopcon.kktix.cc/events/mopcon2017-cfp-eng' %>" target="_blank" class="btn btn-primary btn-lg align-table">
 					<!--SEE Full Schedule-->
 					{{ index.cfp }}
 				</a>
