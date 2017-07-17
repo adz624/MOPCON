@@ -58,7 +58,11 @@
 				</p>
 				<br>
 				<br>
-				<a href="<%=lang === 'zh_TW' ? 'https://mopcon.kktix.cc/events/mopcon2017-cfp-2' : 'https://mopcon.kktix.cc/events/mopcon2017-cfp-eng' %>" target="_blank" class="btn btn-primary btn-lg align-table">
+		        {% if lang == 'zh' %}
+				    <a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-2" target="_blank" class="btn btn-primary btn-lg align-table">
+                {% else %}
+				    <a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-eng" target="_blank" class="btn btn-primary btn-lg align-table">
+                {% endif %}
 					<!--SEE Full Schedule-->
 					{{ index.cfp }}
 				</a>
