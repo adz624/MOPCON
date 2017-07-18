@@ -46,6 +46,8 @@
         height: (228 / 90),
     }
 
+    const updateTime = 60 * 60 * 10; // 10分鐘
+
     window.onload = function () {
         // create a heatmap instance
         window.heatmap3F = h337.create({
@@ -62,8 +64,20 @@
             blur: .75,
         });
 
-        const generate = (points, scale_object, heatmap) => {
-            const datapoints = points.map(data => ({
+        const generate = (points, scale_object, heatmap, floor) => {
+            $.ajax({
+                url: `https://mopcon.webduino.cc/api/Locations?filter={"where":{"floor": "${floor}"},"limit":1}`,
+                error: function(xhr) {
+                    console.log('Ajax request 發生錯誤');
+                },
+                success: function(response) {
+                    response.length > 0 && setHeatMapData(response[0].coordinates, scale_object, heatmap);
+                }
+            })
+        };
+
+        const setHeatMapData = (coordinates, scale_object, heatmap) => {
+            const datapoints = coordinates.map(data => ({
                 x: data.x * scale_object.width, // 座標X
                 y: data.y * scale_object.height, // 座標Y
                 value: Math.random() * 10 >> 0, // 該偵測點人數
@@ -77,13 +91,14 @@
             };
 
             heatmap.setData(data);
-        };
-        // initial generate
-        generate(rawData, scale_3f, heatmap3F);
-        generate(rawData, scale_4f, heatmap4F);
+        }
 
-        document.getElementById('heatmap3F').onclick = function () { generate(rawData, scale_3f, heatmap3F); };
-        document.getElementById('heatmap4F').onclick = function () { generate(rawData, scale_4f, heatmap4F); };
+        // initial generate
+        generate(rawData, scale_3f, heatmap3F, '3F');
+        generate(rawData, scale_4f, heatmap4F, '4F');
+
+        setInterval(() => generate(rawData, scale_3f, heatmap3F, '3F'), updateTime);
+        setInterval(() => generate(rawData, scale_4f, heatmap4F, '4F'), updateTime);
     }
 
 </script>
