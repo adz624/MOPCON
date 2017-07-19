@@ -71,12 +71,25 @@
                     console.log('Ajax request 發生錯誤');
                 },
                 success: function(response) {
-                    response.length > 0 && setHeatMapData(response[0].coordinates, scale_object, heatmap);
+                    response.length > 0 && setHeatMapData(response[0].coordinates, scale_object, heatmap, floor);
                 }
             })
         };
 
-        const setHeatMapData = (coordinates, scale_object, heatmap) => {
+        const setHeatMapData = (coordinates, scale_object, heatmap, floor) => {
+            coordinates.forEach(data => {
+                if (data.x < 10) data.x = 10;
+                if (data.y < 10) data.y = 10;
+
+                if (floor === '3F') {
+                    if (data.x > 100) data.x = 100;
+                    if (data.y > 50) data.y = 50;
+                } else {
+                    if (data.x > 140) data.x = 140;
+                    if (data.y > 75) data.y = 75;
+                }
+            });
+
             const datapoints = coordinates.map(data => ({
                 x: data.x * scale_object.width, // 座標X
                 y: data.y * scale_object.height, // 座標Y
