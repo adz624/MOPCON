@@ -6828,7 +6828,7 @@ section {
   position: relative; }
 
 .sponsor_content {
-  margin: 100px auto;
+  margin: 0 auto 100px;
   position: relative; }
 
 .sponsor_content_title {
@@ -6849,6 +6849,10 @@ section {
       font-size: 1.2rem;
       max-width: 200px;
       left: -15px; } }
+  .sponsor_content_title.setCenter {
+    margin: auto;
+    right: 0;
+    left: 0; }
 
 .sponsor_content_area {
   text-align: center;
@@ -7049,7 +7053,9 @@ section {
   border: 10px solid #7BB6AD; }
 
 .pic-item {
-  margin: 10px auto; }
+  margin: 5px auto;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .table {
   text-align: center; }
@@ -7369,6 +7375,11 @@ tr:first-child {
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\f00d"; }
+
 .fa-chevron-up:before {
   content: "\f077"; }
 
@@ -7388,6 +7399,9 @@ tr:first-child {
 
 .fa-google-plus-square:before {
   content: "\f0d4"; }
+
+.fa-circle:before {
+  content: "\f111"; }
 
 .fa-flickr:before {
   content: "\f16e"; }

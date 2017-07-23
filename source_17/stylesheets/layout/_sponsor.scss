@@ -3,7 +3,7 @@
 }
 
 .sponsor_content {
-    margin: 100px auto;
+    margin: 0 auto 100px;
     position: relative;
 }
 
@@ -24,6 +24,11 @@
         font-size: $font-large;
         max-width: 200px;
         left: -15px;
+    }
+    &.setCenter {
+        margin: auto;
+        right: 0;
+        left: 0;
     }
 }
 
