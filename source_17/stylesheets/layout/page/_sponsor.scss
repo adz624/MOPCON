@@ -5,6 +5,7 @@
 .sponsor_content {
     margin: 0 auto 100px;
     position: relative;
+    text-align: center;
 }
 
 .sponsor_content_title {
@@ -29,15 +30,5 @@
         margin: auto;
         right: 0;
         left: 0;
-    }
-}
-
-.sponsor_content_area {
-    text-align: center;
-    background-color: $colorWhite;
-    border-radius: 34px;
-    padding: 50px;
-    @include mobile() {
-        padding: 30px;
     }
 }

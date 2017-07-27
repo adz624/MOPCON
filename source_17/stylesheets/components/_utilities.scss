@@ -2,10 +2,23 @@
     display: table;
     margin: auto;
 }
-.inline-block{
-	display: inline-block;
-	vertical-align: middle;
+
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
 }
-.bodyLock{
-	overflow: hidden;
+
+.bodyLock {
+    overflow: hidden;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }

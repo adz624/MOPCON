@@ -1,0 +1,22 @@
+.content {
+    color: $colorWhite;
+}
+
+.content-post {
+    p {
+        font-size: $font-large;
+    }
+}
+
+section {
+    line-height: 1.6;
+}
+
+.content-radius {
+    background-color: $colorWhite;
+    border-radius: 25px;
+    padding: 50px;
+    @include mobile() {
+        padding: 30px;
+    }
+}

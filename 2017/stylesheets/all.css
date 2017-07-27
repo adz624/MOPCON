@@ -6504,6 +6504,14 @@ ul {
 section {
   line-height: 1.6; }
 
+.content-radius {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 50px; }
+  @media (max-width: 480px) {
+    .content-radius {
+      padding: 30px; } }
+
 .footer {
   margin: 100px auto 40px; }
 
@@ -6824,12 +6832,16 @@ section {
     .speaker_content .owl-item {
       padding: 20px; } }
 
+.speakerDetail .h3 {
+  color: #7BB6AD; }
+
 .sponsor {
   position: relative; }
 
 .sponsor_content {
   margin: 0 auto 100px;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .sponsor_content_title {
   background-color: #F1E28C;
@@ -6853,15 +6865,6 @@ section {
     margin: auto;
     right: 0;
     left: 0; }
-
-.sponsor_content_area {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 34px;
-  padding: 50px; }
-  @media (max-width: 480px) {
-    .sponsor_content_area {
-      padding: 30px; } }
 
 #heatmapContainer {
   margin: 0 auto;
@@ -6921,6 +6924,16 @@ section {
     border: 1px solid #F1E28C;
     background: #F1E28C;
     color: #181E3E; }
+
+.btn-detail {
+  font-size: 0.85714rem;
+  padding: 5px 10px;
+  background-color: #7BB6AD;
+  border-radius: 5px;
+  color: #fff; }
+  .btn-detail.is-active, .btn-detail:hover, .btn-detail:focus, .btn-detail:active {
+    background: #181E3E;
+    color: #fff; }
 
 .btn-switch {
   border: 1px solid #7BB6AD;
@@ -7056,6 +7069,15 @@ section {
   margin: 5px auto;
   padding-left: 5px;
   padding-right: 5px; }
+
+.pic-radius {
+  border-radius: 15px; }
+  @media (max-width: 767px) {
+    .pic-radius {
+      margin-bottom: 20px; } }
+
+.pic-speakerDetail {
+  border-radius: 50%; }
 
 .table {
   text-align: center; }
@@ -7195,6 +7217,19 @@ tr:first-child {
 
 .bodyLock {
   overflow: hidden; }
+
+.vertical-align {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome

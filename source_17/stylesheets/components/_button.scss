@@ -51,6 +51,22 @@
     }
 }
 
+.btn-detail{
+    font-size: $font-small;
+    padding: 5px 10px;
+    background-color: $colorMainSecond;
+    border-radius: 5px;
+    color: #fff;
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active {
+        background: $colorMainFirst;
+        color:#fff;
+    }
+
+} 
+
 .btn-switch {
     border: 1px solid $colorMainSecond;
     background: none;
