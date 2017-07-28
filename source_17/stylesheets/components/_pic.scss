@@ -21,13 +21,19 @@
     padding-right: 5px;
 }
 
+// .pic-radius {
+//     border-radius: 15px;
+//     @include pad-below () {
+//         margin-bottom: 20px;
+//     }
+// }
 .pic-radius {
-    border-radius: 15px;
+    border-radius: 50%;
     @include pad-below () {
         margin-bottom: 20px;
     }
 }
 
-.pic-speakerDetail {
-    border-radius: 50%;
-}
+// .pic-speakerDetail {
+//     border-radius: 50%;
+// }

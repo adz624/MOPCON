@@ -7074,13 +7074,10 @@ section {
   padding-right: 5px; }
 
 .pic-radius {
-  border-radius: 15px; }
+  border-radius: 50%; }
   @media (max-width: 767px) {
     .pic-radius {
       margin-bottom: 20px; } }
-
-.pic-speakerDetail {
-  border-radius: 50%; }
 
 .icon {
   background-image: url(../images/icon-link.svg);
