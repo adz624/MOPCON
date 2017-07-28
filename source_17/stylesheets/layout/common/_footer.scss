@@ -10,6 +10,7 @@
     border: 1px solid $colorWhite;
     display: inline-block;
     position: relative;
+    transition: all 0.3s ease-in-out;
     &:hover,
     &:focus,
     &:active {

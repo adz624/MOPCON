@@ -18,14 +18,9 @@ a {
 
 * {
     letter-spacing: .8px;
-    ::selection {
+     ::selection {
         background-color: $colorMainSecond;
         color: #fff;
-    }
-    &:hover,
-    &:focus,
-    &:active {
-        transition: all 0.3s ease-in-out;
     }
 }
 

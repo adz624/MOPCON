@@ -6363,8 +6363,6 @@ a {
   * ::selection {
     background-color: #7BB6AD;
     color: #fff; }
-  *:hover, *:focus, *:active {
-    transition: all 0.3s ease-in-out; }
 
 img {
   max-width: 100%; }
@@ -6522,7 +6520,8 @@ section {
   color: #fff;
   border: 1px solid #fff;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  transition: all 0.3s ease-in-out; }
   .footer_contactUs:hover, .footer_contactUs:focus, .footer_contactUs:active {
     border: 1px solid #fff;
     background: #fff;
@@ -6658,6 +6657,9 @@ section {
     border-radius: 5px;
     padding: 5px 10px;
     color: #181E3E; }
+    .scheduleTable-link a:hover, .scheduleTable-link a:focus, .scheduleTable-link a:active {
+      transition: all 0.3s ease-in-out;
+      background: #B5814B; }
 
 .scheduleTable-room {
   display: none; }
@@ -6893,7 +6895,8 @@ section {
 .btn {
   cursor: pointer;
   margin: 0 5px 5px 0;
-  border-radius: 0; }
+  border-radius: 0;
+  transition: all 0.3s ease-in-out; }
 
 .btn-lg {
   font-size: 1.8rem; }
@@ -7079,6 +7082,38 @@ section {
 .pic-speakerDetail {
   border-radius: 50%; }
 
+.icon {
+  background-image: url(../images/icon-link.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  width: 25px;
+  height: 25px;
+  display: inline-block; }
+
+.icon-facebook {
+  cursor: pointer;
+  background-position: 0 0; }
+  .icon-facebook:hover, .icon-facebook:focus, .icon-facebook:active {
+    background-position: 0 -25px; }
+
+.icon-github {
+  cursor: pointer;
+  background-position: -25px 0; }
+  .icon-github:hover, .icon-github:focus, .icon-github:active {
+    background-position: -25px -25px; }
+
+.icon-blog {
+  cursor: pointer;
+  background-position: -50px 0; }
+  .icon-blog:hover, .icon-blog:focus, .icon-blog:active {
+    background-position: -50px -25px; }
+
+.icon-link {
+  cursor: pointer;
+  background-position: -75px 0; }
+  .icon-link:hover, .icon-link:focus, .icon-link:active {
+    background-position: -75px -25px; }
+
 .table {
   text-align: center; }
 
@@ -7186,7 +7221,8 @@ tr:first-child {
     border-radius: 8px;
     color: #C8A063;
     padding: 8px 10px;
-    font-size: 0.85714rem; }
+    font-size: 0.85714rem;
+    transition: all 0.3s ease-in-out; }
     .detailBox-link a.slide-link.is-active, .detailBox-link a.slide-link:hover, .detailBox-link a.slide-link:focus, .detailBox-link a.slide-link:active {
       background-color: #C8A063;
       color: #fff; }
@@ -7217,14 +7253,6 @@ tr:first-child {
 
 .bodyLock {
   overflow: hidden; }
-
-.vertical-align {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
 
 .vcenter {
   display: inline-block;

@@ -87,6 +87,7 @@
         color: $colorSubfourth;
         padding: 8px 10px;
         font-size: $font-small;
+        transition: all 0.3s ease-in-out;
         &.is-active,
         &:hover,
         &:focus,

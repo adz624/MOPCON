@@ -56,7 +56,7 @@ function scheduleSwitch() {
 }
 
 function openScheduleDetail() {
-    $('td[role="content-col"]').click(function() {
+    $('.scheduleTable-subject').click(function() {
         $('.detailBox').fadeIn();
         $('body').addClass('bodyLock');
     });
