@@ -2,116 +2,52 @@
 
 {% block content %}
 <div id="heatmapContainer">
-    <div class="heatmap" style="width: 970px;">
-        <img src="images/3F.png" alt="" />
-        <div id="heatmap3F" />
+    <div class="heatmap_icon_list">
+        <div class="heatmap_icon">
+            <div class="icon_circle color1"></div>
+            <span>人潮洶湧</span>
+        </div>
+        <div class="heatmap_icon">
+            <div class="icon_circle color2"></div>
+            <span>還沒塞車</span>
+        </div>
+        <div class="heatmap_icon">
+            <div class="icon_circle color3"></div>
+            <span>尚有座位</span>
+        </div>
     </div>
-    <div class="heatmap">
-        <img src="images/4F.png" alt="" />
-        <div id="heatmap4F" />
+    <div class="heatmap_tip">點擊該廳查看該廳熱度圖</div>
+    <div class="heatmap_floor">
+        <p>3F</p>
+        <div class="heatmap_room" onclick="goRoom('3F', 'R1')">
+            <div id="R1" class="color1">R1廳</div>
+            <button>></button>
+        </div>
+    </div>
+    <div class="heatmap_floor">
+        <p>4F</p>
+        <div class="heatmap_room" onclick="goRoom('4F', 'R2')">
+            <div id="R2" class="color2">R2廳</div>
+            <button>></button>
+        </div>
+        <div class="heatmap_room" onclick="goRoom('4F', 'R3')">
+            <div id="R3" class="color3">R3廳</div>
+            <button>></button>
+        </div>
     </div>
 </div>
 
 <script>
-    const rawData = [{
-        x: 39,
-        y: 7
-    }, {
-        x: 50,
-        y: 40
-    }, {
-        x: 5,
-        y: 10
-    }, {
-        x: 70,
-        y: 55
-    }, {
-        x: 43,
-        y: 17
-    }, {
-        x: 80,
-        y: 40
-    }, {
-        x: 100,
-        y: 30
-    }];
-
-    const scale_3f = {
-        width: (360 / 120),
-        height: (180 / 60),
-    }
-
-    const scale_4f = {
-        width: (360 / 150),
-        height: (228 / 90),
-    }
-
-    const updateTime = 60 * 60 * 10; // 10分鐘
+    // todo: 各廳人數顏色api
 
     window.onload = function () {
-        // create a heatmap instance
-        window.heatmap3F = h337.create({
-            container: document.getElementById('heatmap3F'),
-            maxOpacity: .5,
-            radius: 10,
-            blur: .75,
-        });
+        $('.footer_contactUs').hide();
+        $('.footer_mail').hide();
+        $('.footer_nav').hide();
+    }
 
-        window.heatmap4F = h337.create({
-            container: document.getElementById('heatmap4F'),
-            maxOpacity: .5,
-            radius: 10,
-            blur: .75,
-        });
-
-        const generate = (points, scale_object, heatmap, floor) => {
-            $.ajax({
-                url: `https://mopcon.webduino.cc/api/Locations?filter={"where":{"floor": "${floor}"},"limit":1}`,
-                error: function(xhr) {
-                    console.log('Ajax request 發生錯誤');
-                },
-                success: function(response) {
-                    response.length > 0 && setHeatMapData(response[0].coordinates, scale_object, heatmap, floor);
-                }
-            })
-        };
-
-        const setHeatMapData = (coordinates, scale_object, heatmap, floor) => {
-            coordinates.forEach(data => {
-                if (data.x < 10) data.x = 10;
-                if (data.y < 10) data.y = 10;
-
-                if (floor === '3F') {
-                    if (data.x > 100) data.x = 100;
-                    if (data.y > 50) data.y = 50;
-                } else {
-                    if (data.x > 140) data.x = 140;
-                    if (data.y > 75) data.y = 75;
-                }
-            });
-
-            const datapoints = coordinates.map(data => ({
-                x: data.x * scale_object.width, // 座標X
-                y: data.y * scale_object.height, // 座標Y
-                value: Math.random() * 10 >> 0, // 該偵測點人數
-                radius: 25, // 感應器半徑
-            }))
-
-            const data = {
-                max: 10, // 會場總人數或設定上限
-                min: 0,
-                data: datapoints,
-            };
-
-            heatmap.setData(data);
-        }
-
-        // initial generate
-        generate(rawData, scale_3f, heatmap3F, '3F');
-        generate(rawData, scale_4f, heatmap4F, '4F');
-
-        setInterval(() => generate(rawData, scale_3f, heatmap3F, '3F'), updateTime);
-        setInterval(() => generate(rawData, scale_4f, heatmap4F, '4F'), updateTime);
+    function goRoom(floor, room) {
+        window.location = `heatmapRoom.php?floor=${floor}&room=${room}`;
     }
 
 </script>

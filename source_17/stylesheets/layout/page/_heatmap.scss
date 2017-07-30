@@ -1,37 +1,89 @@
-$heatmap_width: 480px;
-$heatmap_height: 480px;
+$heatmap_icon_size: 30px;
+
+@mixin flex_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #heatmapContainer {
     margin: 0 auto;
     text-align: center;
 
-    img {
-        width: $heatmap_width;
-        height: $heatmap_height;
+    .color1 {
+        background-color: #f82828;
     }
 
-    .heatmap {
-        position: relative;
-        display: inline-block;
+    .color2 {
+        background-color: #f2c94c;
     }
 
-    #heatmap3F {
-        position: absolute !important;
-        width: 360px;
-        height: 180px;
-        top: 117px;
-        left: 50px;
+    .color3 {
+        background-color: #64885f;
     }
 
-    #heatmap4F {
-        position: absolute !important;
-        width: 360px;
-        height: 228px;
-        top: 117px;
-        left: 28px;
+    .heatmap_icon_list {
+        @include flex_block;
+        .heatmap_icon {
+            @include flex_block;
+            margin-right: 10px;
+
+            .icon_circle {
+                display: inline-block;
+                width: $heatmap_icon_size;
+                height: $heatmap_icon_size;
+                border-radius: $heatmap_icon_size;
+                margin-right: 7px;
+            }
+
+            span {
+                color: #fff;
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
     }
 
-    .footer {
-        width: 100%;
+    .heatmap_tip {
+        font-size: 20px;
+        line-height: 23px;
+        color: #7ab6ad;
+        margin: 16px 0;
+    }
+
+    .heatmap_floor {
+        margin-bottom: 17px;
+        p {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 0 13px 28px;
+            color: #fff;
+            font-size: 35px;
+            line-height: 41px;
+        }
+
+        .heatmap_room {
+            @include flex_block;
+            width: 100%;
+            height: 68px;
+            margin-bottom: 4px;
+
+            div {
+                flex: 1;
+                height: 100%;
+                @include flex_block;
+                font-size: 25px;
+                line-height: 29px;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            button {
+                background-color: #fff;
+                width: 68px;
+                height: 68px;
+                font-size: 32px;
+            }
+        }
     }
 }
