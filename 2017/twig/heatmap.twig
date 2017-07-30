@@ -19,19 +19,15 @@
     <div class="heatmap_tip">點擊該廳查看該廳熱度圖</div>
     <div class="heatmap_floor">
         <p>3F</p>
-        <div class="heatmap_room" onclick="goRoom('3F', 'R1')">
+        <div class="heatmap_room" onclick="goRoom('3F')">
             <div id="R1" class="color1">R1廳</div>
             <button>></button>
         </div>
     </div>
     <div class="heatmap_floor">
         <p>4F</p>
-        <div class="heatmap_room" onclick="goRoom('4F', 'R2')">
-            <div id="R2" class="color2">R2廳</div>
-            <button>></button>
-        </div>
-        <div class="heatmap_room" onclick="goRoom('4F', 'R3')">
-            <div id="R3" class="color3">R3廳</div>
+        <div class="heatmap_room" onclick="goRoom('4F')">
+            <div id="R2" class="color2">R2廳 & R3廳</div>
             <button>></button>
         </div>
     </div>
@@ -46,8 +42,8 @@
         $('.footer_nav').hide();
     }
 
-    function goRoom(floor, room) {
-        window.location = `heatmapRoom.php?floor=${floor}&room=${room}`;
+    function goRoom(floor) {
+        window.location = `heatmapRoom.php?floor=${floor}`;
     }
 
 </script>

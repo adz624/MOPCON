@@ -18,6 +18,7 @@ $heatmap_height: 308px;
         .floor {
             width: $heatmap_width;
             height: $heatmap_height;
+            display: none;
         }
 
         .heatmap3F {

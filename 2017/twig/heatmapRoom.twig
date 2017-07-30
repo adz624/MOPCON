@@ -69,9 +69,13 @@
         $('.footer_nav').hide();
 
         const floor = getParameterByName('floor');
-        const room = getParameterByName('room');
 
-        $('.floor').attr('src', `images/${floor}.png`);
+        $('.floor')
+        .attr('src', `images/${floor}.png`)
+        .on('load', function() {
+            $(this).show();
+        });
+
         $('#heatmap').addClass(`heatmap${floor}`);
 
         const scale_3F = {

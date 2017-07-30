@@ -6979,7 +6979,8 @@ section {
     position: relative; }
     #heatmapRoomContainer .map .floor {
       width: 307px;
-      height: 308px; }
+      height: 308px;
+      display: none; }
     #heatmapRoomContainer .map .heatmap3F {
       position: absolute !important;
       top: 75px;
