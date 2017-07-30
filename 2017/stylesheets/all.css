@@ -6509,6 +6509,11 @@ section {
   @media (max-width: 480px) {
     .content-radius {
       padding: 30px; } }
+  .content-radius .h3 {
+    color: #181E3E; }
+    @media (max-width: 767px) {
+      .content-radius .h3 {
+        text-align: center; } }
 
 .footer {
   margin: 100px auto 40px; }
@@ -6834,7 +6839,7 @@ section {
     .speaker_content .owl-item {
       padding: 20px; } }
 
-.speakerDetail .h3 {
+.speakerDetail .name {
   color: #7BB6AD; }
 
 .sponsor {
@@ -7074,42 +7079,47 @@ section {
   padding-right: 5px; }
 
 .pic-radius {
-  border-radius: 50%; }
+  border-radius: 15px; }
   @media (max-width: 767px) {
     .pic-radius {
       margin-bottom: 20px; } }
 
+.pic-cycle {
+  border-radius: 50%; }
+  @media (max-width: 767px) {
+    .pic-cycle {
+      margin-bottom: 20px; } }
+
 .icon {
-  background-image: url(../images/icon-link.svg);
-  background-repeat: no-repeat;
-  background-size: 100px;
-  width: 25px;
-  height: 25px;
-  display: inline-block; }
+  display: inline-block;
+  background: #181E3E;
+  border-radius: 50%; }
+  .icon:before {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 1rem 1rem;
+    height: 2rem;
+    width: 2rem; }
+  .icon:hover, .icon:focus, .icon:active {
+    transition: all 0.3s ease-in-out;
+    background: #7BB6AD; }
 
-.icon-facebook {
-  cursor: pointer;
-  background-position: 0 0; }
-  .icon-facebook:hover, .icon-facebook:focus, .icon-facebook:active {
-    background-position: 0 -25px; }
+.icon-fb:before {
+  content: '';
+  background-image: url(../images/icon-fb.svg); }
 
-.icon-github {
-  cursor: pointer;
-  background-position: -25px 0; }
-  .icon-github:hover, .icon-github:focus, .icon-github:active {
-    background-position: -25px -25px; }
+.icon-github:before {
+  content: '';
+  background-image: url(../images/icon-github.svg); }
 
-.icon-blog {
-  cursor: pointer;
-  background-position: -50px 0; }
-  .icon-blog:hover, .icon-blog:focus, .icon-blog:active {
-    background-position: -50px -25px; }
+.icon-blog:before {
+  content: '';
+  background-image: url(../images/icon-blog.svg); }
 
-.icon-link {
-  cursor: pointer;
-  background-position: -75px 0; }
-  .icon-link:hover, .icon-link:focus, .icon-link:active {
-    background-position: -75px -25px; }
+.icon-link:before {
+  content: '';
+  background-image: url(../images/icon-link.svg); }
 
 .table {
   text-align: center; }

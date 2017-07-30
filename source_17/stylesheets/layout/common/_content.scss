@@ -19,4 +19,10 @@ section {
     @include mobile() {
         padding: 30px;
     }
+    .h3 {
+        color: $colorMainFirst;
+        @include pad-below () {
+            text-align: center;
+        }
+    }
 }

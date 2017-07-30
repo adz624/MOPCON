@@ -3,52 +3,28 @@
 {% block content %}
 <!-- header	 -->
 <section class="pageHead">
-	<img src="images/headPage-schedule.svg" alt="議程標題圖片">
+	<img src="images/headPage-community.svg" alt="議程標題圖片">
 </section>
 
-
-<!-- switch date -->
-<section class="schedulePage container">
-	<ul>
-    {% for id, data in community %}
-    <li>
-      <img src="/images/community/{{ data['image'] }}" height="300" alt="">
-      <a href="{{ data['facebook'] }}">Facebook</a>
-      {{ data['name'] }}
-      {{ data['info'] }}
-      {{ data['facebook'] }}
-      {{ data['name'] }}
-    </li>
+<!-- community -->
+<section class="container">
+	{% for id, data in community %}
+    <div class="content-radius clearfix">
+        <div class="row">
+            <h3 class="h3 col-lg-12">{{ data['name'] }}</h3>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="pic pic-radius" style="background-image:url(/images/community/{{ data['image'] }});">
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9">
+                <p>{{ data['info'] }}</p>
+                <a href="{{ data['facebook'] }}"  target="_blank"><i class="icon icon-fb"></i></a>
+               
+            </div>
+        </div>
+    </div>
+    <br>
     {% endfor %}
-  </ul>
 </section>
 
-
-<!-- schedule detailBox -->
-<section class="detailBox" style="display: none;">
-	<div class="detailBoxWrapper">
-		<div class="detailBox_content">
-			<div class="detailBox_content_schedule">
-				<a href="#" class="detailBox_content_schedule_speaker">
-					<div class="pic pic-detail" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);">
-					</div>
-					<h4 class="inline-block">克里斯馬汀</h4>
-				</a>
-				<div class="scheduleTable-subject">
-					行動裝置科技趨勢
-				</div>
-				<p class="height-limit">ng-app="Gartner等各大市場分析公司每年都會推出許多新科技趨勢的預測。其中很多其實不怎麼新，很多其實不怎麼有前途，很多其實有前途但你追不上。我們要怎麼觀察並找出自己的路呢？"
-				</p>
-			</div>
-			<div class="detailBox-link">
-				<a class="slide-link">Slide Link</a>
-			</div>
-			<span class="fa-stack fa-lg detailBox_content_cancel ">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-times fa-stack-1x fa-inverse"></i>
-			</span>
-		</div>
-		<div class="detailBox_maskBg"></div>
-	</div>
-</section>
 {% endblock %}

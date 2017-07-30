@@ -1,48 +1,47 @@
 .icon {
-    background-image: url(../images/icon-link.svg);
-    background-repeat: no-repeat;
-    background-size: 100px;
-    width: 25px;
-    height: 25px;
     display: inline-block;
-}
-
-.icon-facebook {
-    cursor: pointer;
-    background-position: 0 0;
+    background: $colorMainFirst;
+    border-radius: 50%;
+    &:before {
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-size: 1rem 1rem;
+        height: 2rem;
+        width: 2rem;
+    }
     &:hover,
     &:focus,
     &:active {
-        background-position: 0 -25px;
+        transition: all 0.3s ease-in-out;
+        background: $colorMainSecond;
+    }
+}
+
+.icon-fb {
+    &:before {
+        content: '';
+        background-image: url(../images/icon-fb.svg);
     }
 }
 
 .icon-github {
-    cursor: pointer;
-    background-position: -25px 0;
-    &:hover,
-    &:focus,
-    &:active {
-        background-position: -25px -25px;
+    &:before {
+        content: '';
+        background-image: url(../images/icon-github.svg);
     }
 }
 
 .icon-blog {
-    cursor: pointer;
-    background-position: -50px 0;
-    &:hover,
-    &:focus,
-    &:active {
-        background-position: -50px -25px;
+    &:before {
+        content: '';
+        background-image: url(../images/icon-blog.svg);
     }
 }
 
 .icon-link {
-    cursor: pointer;
-    background-position: -75px 0;
-    &:hover,
-    &:focus,
-    &:active {
-        background-position: -75px -25px;
+    &:before {
+        content: '';
+        background-image: url(../images/icon-link.svg);
     }
 }
