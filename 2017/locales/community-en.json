@@ -1,100 +1,100 @@
 [{
-        "name": "KSDG",
-        "liaison": "Eric",
-        "email": "eric@ksdg.me",
-	    "image": "ksdg.jpg",
-	    "info": "Kaohsiung Software Developer Group, a local developer community for software and web developers in Kaohsiung to share experience and learn from each other. The first meetup is in May 2012. Currently they host monthly Meet-up adn Web Course. The topics include all kinds of software develoment skills. Anyone who is  interested in software development is welcome to participate.",
-	    "facebook": "https://www.facebook.com/groups/KSDGroup",
-	    "website": ""
-},
-    {
-        "name": "CocoaHeads Kaohsiung",
-        "liaison": "MikiMoto",
-        "email": "mikimoto@mopcon.org",
-	    "image": "cocoaheads.jpg",
-	    "info": "Kaohsiung Software Developer Group, a local developer community for software and web developers in Kaohsiung to share experience and learn from each other. The first meetup is in May 2012. Currently they host monthly Meet-up adn Web Course. The topics include all kinds of software develoment skills. Anyone who is  interested in software development is welcome to participate.",
-	    "facebook": "https://www.facebook.com/groups/cocoaheads.kaohsiung",
-	    "website": "http://cocoaheads.org:8106/tw/Kaohsiung/index.html"
-},
-    {
-        "name": "MOSUT",
-        "liaison": "MikiMoto",
-        "email": "mikimoto@mopcon.org",
-	    "image": "mosut.jpg",
-	    "info": "MOSUT(Meet Open Source Users in Tainan) is established by a group of people living in Tainan and passionate about information technology. They are interested in open source regulations/standards, open source software/open source code and all revelent issues. MOSUT hosts biweekly meetup providing schools, companies, organizations ,and individuals the opportunities to discuss technical skills with each other.",
-	    "facebook": "https://www.facebook.com/groups/mosut",
-	    "website": "https://code.google.com/archive/p/mosut/"
-},
-    {
-        "name": "KIMU",
-        "liaison": "Hawk",
-        "email": "hawkliu@mopcon.org",
-	    "image": "kimu.jpg",
-	    "info": "Kaohsiung Indies Meet Up, also called KIMU, was founded in 2012 with assistance from Disital Art Kaohsiung United Office (DAKUO). It assists Kaohsiung City Government Economic Development Bureau to hostgame dvelopers meetup, Game Jame, and maker workshops during Game On Weekend Kaohsiung. KIMU is a non-profit organization based in Kaohsiung dedicated to promote game creation, and strengthen international connection in the industry.",
-	    "facebook": "https://www.facebook.com/groups/kimugroup",
-	    "website": ""
-},
-    {
-        "name": "KaLUG",
-        "liaison": "Eric",
-        "email": "eric@ksdg.me",
-	    "image": "kalug.jpg",
-	    "info": "Kaohsiung Linux User Group (KaLUG) 是由一群熱愛 open source / free software 的高雄人所組成的團體。 平日討論的主題有 Linux, Debian, Ubuntu, Vim, Emacs, Git, Python, shell script, Drupal, OpenStreetMap, Security ... 等。",
-	    "facebook": "https://www.facebook.com/groups/kalug.tw/",
-	    "website": "http://kalug.linux.org.tw/"
-},
-    {
-        "name": "高雄前端社群",
-        "liaison": "廖洧杰",
-        "email": "gonsakon@mopcon.org",
-	    "image": "kf2e.jpg",
-	    "info": "Kaohsiung Front-End Community was established in 2013 by a group of programmers. They have hosted different kinds of  technical event, workshoup, conference, ranged from small event to big conference with more than 500 participant. Their mission is to accumulate and raise the development skill in Kaohsiung through the community. It aims to help developers in Kaohsiung have better opportunity in job searching to apply thier capacities.",
-	    "facebook": "https://www.facebook.com/groups/358503154261390",
-	    "website": "https://gonsakon-7655f2.kktix.cc/"
-},
-    {
-        "name": "Mobile Girls",
-        "liaison": "",
-        "email": "",
-	    "image": "mobile_girls.jpg",
-	    "info": "Mobile Girls is created by a group of people who is passionate about iOS and Android, aimed to introduce iOS/Android programming to femal beginners. They provide opportunites for girls to learn iOS and Android programming. They welcome girls with no computer programming background to join the community. If you are interested in iOS/Android app design, theory, and application, you can find folks with same interest in the community. Through the help of professional instructors, you can build up your dream and bring it to practice in App world.",
-	    "facebook": "https://www.facebook.com/mobilegirlsfans",
-	    "website": "https://mobile-girls.kktix.cc/"
-},
-    {
-        "name": "Design plus",
-        "liaison": "Donna",
-        "email": "wolf@mopcon.org",
-	    "image": "designPlus.jpg",
-	    "info": "DESIGN plus in Kaohsiung is a designer community providing platform for designers to discuss with each other and help each other sharpen their skill. They expect "Design+" can put togther design resource in souther Taiwan, and raise the design skills through discuss and exchange ideas with each other. Design+ believes the design aesthetic of designers can help develop the aesthetic sense of the society",
-	    "facebook": "https://www.facebook.com/groups/designplus.kh",
-	    "website": ""
-},
-    {
-        "name": "創業台槓",
-        "liaison": "Tony",
-        "email": "tony@mopcon.org",
-	    "image": "startupTalk.jpg",
-	    "info": "創業台槓 希望經由每個月的分享活動，建立一個跨領域的創業交流平台，藉由分享和對談，讓企業家、創業團隊、設計師、工程師、夢想家、學生能夠激盪出火花。每月都會邀請新創團隊、或各領域專家分享經驗，無論您是創業中、想創業、或是創業有成，都歡迎您來參加認識新夥伴、挑戰創業新構想。",
-	    "facebook": "https://www.facebook.com/STalkTW",
-	    "website": ""
-},
-    {
-        "name": "App 台槓",
-        "liaison": "Nokimi",
-        "email": "nokimi@mopcon.org",
-	    "image": "appTalks.jpg",
-	    "info": "App Talks was founded in December 2013 with the mission to provide opportunities for app startup entrepreneur to learn from one another, and helping each other out along the way. It focus on App product planning, user experience, and business model development. App Talks aims to cultivate glabal App startup teams.",
-	    "facebook": "https://www.facebook.com/groups/603200143049273",
-	    "website": ""
-},
-    {
-        "name": "ReactMaker",
-        "liaison": "Andy",
-        "email": "bbandydd@gmail.com",
-	    "image": "ReactMaker.png",
-	    "info": "ReactMaker is established by a group of people in Kaohsiung who is interested in React JS. Currently they attend regularly and participate actively in ReactJs study groups in middle and southern Taiwan. They share open-source example on their facebook page and aim to share learning experience to help beginners learn more effectively in order to increase the ability of front-end programmers in middel and souther Taiwan. Welcome all experts and beginners come to share experience and learn or teach with each other. ",
-	    "facebook": "https://www.facebook.com/ReactMaker/ ",
-	    "website": "https://reactmaker.github.io/Member_introduction/ "
-}
+		"name": "KSDG",
+		"liaison": "Eric",
+		"email": "eric@ksdg.me",
+		"image": "ksdg.jpg",
+		"info": "Kaohsiung Software Developer Group, a local developer community for software and web developers in Kaohsiung to share experience and learn from each other. The first meetup is in May 2012. Currently they host monthly Meet-up adn Web Course. The topics include all kinds of software develoment skills. Anyone who is  interested in software development is welcome to participate.",
+		"facebook": "https://www.facebook.com/groups/KSDGroup",
+		"website": ""
+	},
+	{
+		"name": "CocoaHeads Kaohsiung",
+		"liaison": "MikiMoto",
+		"email": "mikimoto@mopcon.org",
+		"image": "cocoaheads.jpg",
+		"info": "Kaohsiung Software Developer Group, a local developer community for software and web developers in Kaohsiung to share experience and learn from each other. The first meetup is in May 2012. Currently they host monthly Meet-up adn Web Course. The topics include all kinds of software develoment skills. Anyone who is  interested in software development is welcome to participate.",
+		"facebook": "https://www.facebook.com/groups/cocoaheads.kaohsiung",
+		"website": "http://cocoaheads.org:8106/tw/Kaohsiung/index.html"
+	},
+	{
+		"name": "MOSUT",
+		"liaison": "MikiMoto",
+		"email": "mikimoto@mopcon.org",
+		"image": "mosut.jpg",
+		"info": "MOSUT(Meet Open Source Users in Tainan) is established by a group of people living in Tainan and passionate about information technology. They are interested in open source regulations/standards, open source software/open source code and all revelent issues. MOSUT hosts biweekly meetup providing schools, companies, organizations ,and individuals the opportunities to discuss technical skills with each other.",
+		"facebook": "https://www.facebook.com/groups/mosut",
+		"website": "https://code.google.com/archive/p/mosut/"
+	},
+	{
+		"name": "KIMU",
+		"liaison": "Hawk",
+		"email": "hawkliu@mopcon.org",
+		"image": "kimu.jpg",
+		"info": "Kaohsiung Indies Meet Up, also called KIMU, was founded in 2012 with assistance from Disital Art Kaohsiung United Office (DAKUO). It assists Kaohsiung City Government Economic Development Bureau to hostgame dvelopers meetup, Game Jame, and maker workshops during Game On Weekend Kaohsiung. KIMU is a non-profit organization based in Kaohsiung dedicated to promote game creation, and strengthen international connection in the industry.",
+		"facebook": "https://www.facebook.com/groups/kimugroup",
+		"website": ""
+	},
+	{
+		"name": "KaLUG",
+		"liaison": "Eric",
+		"email": "eric@ksdg.me",
+		"image": "kalug.jpg",
+		"info": "Kaohsiung Linux User Group (KaLUG) 是由一群熱愛 open source / free software 的高雄人所組成的團體。 平日討論的主題有 Linux, Debian, Ubuntu, Vim, Emacs, Git, Python, shell script, Drupal, OpenStreetMap, Security ... 等。",
+		"facebook": "https://www.facebook.com/groups/kalug.tw/",
+		"website": "http://kalug.linux.org.tw/"
+	},
+	{
+		"name": "Kaohsiung Front-End Community",
+		"liaison": "廖洧杰",
+		"email": "gonsakon@mopcon.org",
+		"image": "kf2e.jpg",
+		"info": "Kaohsiung Front-End Community was established in 2013 by a group of programmers. They have hosted different kinds of  technical event, workshoup, conference, ranged from small event to big conference with more than 500 participant. Their mission is to accumulate and raise the development skill in Kaohsiung through the community. It aims to help developers in Kaohsiung have better opportunity in job searching to apply thier capacities.",
+		"facebook": "https://www.facebook.com/groups/358503154261390",
+		"website": "https://gonsakon-7655f2.kktix.cc/"
+	},
+	{
+		"name": "Mobile Girls",
+		"liaison": "",
+		"email": "",
+		"image": "mobile_girls.jpg",
+		"info": "Mobile Girls is created by a group of people who is passionate about iOS and Android, aimed to introduce iOS/Android programming to femal beginners. They provide opportunites for girls to learn iOS and Android programming. They welcome girls with no computer programming background to join the community. If you are interested in iOS/Android app design, theory, and application, you can find folks with same interest in the community. Through the help of professional instructors, you can build up your dream and bring it to practice in App world.",
+		"facebook": "https://www.facebook.com/mobilegirlsfans",
+		"website": "https://mobile-girls.kktix.cc/"
+	},
+	{
+		"name": "Design plus",
+		"liaison": "Donna",
+		"email": "wolf@mopcon.org",
+		"image": "designPlus.jpg",
+		"info": "DESIGN plus in Kaohsiung is a designer community providing platform for designers to discuss with each other and help each other sharpen their skill. They expect \"Design + \" can put togther design resource in souther Taiwan, and raise the design skills through discuss and exchange ideas with each other. Design+ believes the design aesthetic of designers can help develop the aesthetic sense of the society",
+		"facebook": "https://www.facebook.com/groups/designplus.kh",
+		"website": ""
+	},
+	{
+		"name": "Startup Talk",
+		"liaison": "Tony",
+		"email": "tony@mopcon.org",
+		"image": "startupTalk.jpg",
+		"info": "創業台槓 希望經由每個月的分享活動，建立一個跨領域的創業交流平台，藉由分享和對談，讓企業家、創業團隊、設計師、工程師、夢想家、學生能夠激盪出火花。每月都會邀請新創團隊、或各領域專家分享經驗，無論您是創業中、想創業、或是創業有成，都歡迎您來參加認識新夥伴、挑戰創業新構想。",
+		"facebook": "https://www.facebook.com/STalkTW",
+		"website": ""
+	},
+	{
+		"name": "App Talks",
+		"liaison": "Nokimi",
+		"email": "nokimi@mopcon.org",
+		"image": "appTalks.jpg",
+		"info": "App Talks was founded in December 2013 with the mission to provide opportunities for app startup entrepreneur to learn from one another, and helping each other out along the way. It focus on App product planning, user experience, and business model development. App Talks aims to cultivate glabal App startup teams.",
+		"facebook": "https://www.facebook.com/groups/603200143049273",
+		"website": ""
+	},
+	{
+		"name": "ReactMaker",
+		"liaison": "Andy",
+		"email": "bbandydd@gmail.com",
+		"image": "ReactMaker.png",
+		"info": "ReactMaker is established by a group of people in Kaohsiung who is interested in React JS. Currently they attend regularly and participate actively in ReactJs study groups in middle and southern Taiwan. They share open-source example on their facebook page and aim to share learning experience to help beginners learn more effectively in order to increase the ability of front-end programmers in middel and souther Taiwan. Welcome all experts and beginners come to share experience and learn or teach with each other. ",
+		"facebook": "https://www.facebook.com/ReactMaker/ ",
+		"website": "https://reactmaker.github.io/Member_introduction/ "
+	}
 ]
