@@ -17,9 +17,17 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">
-                <p>{{ data['info'] }}</p>
-                <a href="{{ data['facebook'] }}"  target="_blank"><i class="icon icon-fb"></i></a>
-               
+                <p>{{ data['info']|nl2br}}</p>
+				{% if data['facebook'] %}
+                <a href="{{ data['facebook'] }}"  target="_blank">
+					<i class="icon icon-fb"></i>
+				</a>
+				{% endif %}
+               	{% if data['website'] %}
+                <a href="{{ data['website'] }}" target="_blank">
+					<i class="icon icon-link"></i>
+				</a>
+				{% endif %}
             </div>
         </div>
     </div>

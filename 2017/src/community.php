@@ -1,16 +1,13 @@
 <?php
 function getAllCommunities()
 {
-    $jsonText = file_get_contents(__DIR__."/../api/community.json");
-    $jsonArr = json_decode($jsonText,true);
-    $returnArr = [];
-    foreach($jsonArr as $info) {
-        if($info['image']!='') {
-            $id = strtolower(pathinfo($info['image'],PATHINFO_FILENAME));
-        } else {
-            continue; //異常
-        }
-        $returnArr[$id] = $info;
-    }
-    return $returnArr;
+
+    $lang_zh = json_decode(file_get_contents("locales/community-zh_TW.json"), true);
+    $lang_en = json_decode(file_get_contents("locales/community-en.json"), true);
+    $main = [
+        'zh' => $lang_zh,
+        'en' => $lang_en,
+    ];
+    return getI18n($main);
+
 }
