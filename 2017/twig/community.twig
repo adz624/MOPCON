@@ -6,23 +6,6 @@
 	<img src="images/headPage-community.svg" alt="議程標題圖片">
 </section>
 
-
-<!-- speaker -->
-<section class="schedulePage container">
-	<ul>
-    {% for id, data in community %}
-    <li>
-      <img src="/images/community/{{ data['image'] }}" height="300" alt="">
-      <a href="{{ data['facebook'] }}">Facebook</a>
-      {{ data['name'] }}
-      {{ data['info'] }}
-      {{ data['facebook'] }}
-      {{ data['name'] }}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-
 <!-- community -->
 <section class="container">
 	{% for id, data in community %}
