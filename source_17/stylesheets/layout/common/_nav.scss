@@ -41,13 +41,7 @@
 
 .navbar-right {
     padding: 15px;
-    margin-bottom: 0;
-
-    // update for mobile
-    margin-right: 0;
-    position: absolute;
-    top: 5px;
-    right: 0;
+    margin-bottom: 0; 
 }
 
 .nav-lang {
@@ -92,4 +86,14 @@
             color: $colorMainFirst;
         }
     }
+}
+.navbar-header{
+    position: relative;
+}
+.navbar-toggle {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }

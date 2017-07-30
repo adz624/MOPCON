@@ -6454,11 +6454,7 @@ ul {
 
 .navbar-right {
   padding: 15px;
-  margin-bottom: 0;
-  margin-right: 0;
-  position: absolute;
-  top: 5px;
-  right: 0; }
+  margin-bottom: 0; }
 
 .nav-lang {
   display: inline-block; }
@@ -6492,6 +6488,16 @@ ul {
       border: 1px solid #E3E1DA;
       background: #E3E1DA;
       color: #181E3E; }
+
+.navbar-header {
+  position: relative; }
+
+.navbar-toggle {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0; }
 
 .content {
   color: #fff; }
