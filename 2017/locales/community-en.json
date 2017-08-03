@@ -39,7 +39,7 @@
 		"liaison": "Eric",
 		"email": "eric@ksdg.me",
 		"image": "kalug.jpg",
-		"info": "Kaohsiung Linux User Group (KaLUG) 是由一群熱愛 open source / free software 的高雄人所組成的團體。 平日討論的主題有 Linux, Debian, Ubuntu, Vim, Emacs, Git, Python, shell script, Drupal, OpenStreetMap, Security ... 等。",
+		"info": "Kaohsiung Linux User Group(KaLUG) is created by a group of people from Kaohsiung who are passionate about open source/open-source software. The topics of their meetup include Linux, Debian, Ubuntu, Vim, Emacs, Git, Python, shell script, Drupal, OpenStreetMap, Security and so on. ",
 		"facebook": "https://www.facebook.com/groups/kalug.tw/",
 		"website": "http://kalug.linux.org.tw/"
 	},
@@ -74,7 +74,8 @@
 		"name": "Startup Talk",
 		"liaison": "Tony",
 		"email": "tony@mopcon.org",
-		"image": "Startup Talk is the biggest startup community in southern Taiwan. Our purpose is to build a mutualism startup ecosystem in the south. The community offers events and meet-up which let entrepreneurs, founders, engineers,  designers, and students to establish a network as well as finding resources. The topics of our events including marketing, internet startup, catering startup, e-commerce, mobile application, and social enterprise that inspire varied ideas. Besides, we provide training courses in marketing, e-commerce, and management area to foster talent for startup companies.",
+		"image": "startupTalk.jpg",
+		"info": "Startup Talk is the biggest startup community in southern Taiwan. Our purpose is to build a mutualism startup ecosystem in the south. The community offers events and meet-up which let entrepreneurs, founders, engineers,  designers, and students to establish a network as well as finding resources. The topics of our events including marketing, internet startup, catering startup, e-commerce, mobile application, and social enterprise that inspire varied ideas. Besides, we provide training courses in marketing, e-commerce, and management area to foster talent for startup companies.",
 		"facebook": "https://www.facebook.com/STalkTW",
 		"website": ""
 	},
