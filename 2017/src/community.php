@@ -8,6 +8,6 @@ function getAllCommunities()
         'zh' => $lang_zh,
         'en' => $lang_en,
     ];
-    return getI18n($main);
 
+    return getI18n($main);
 }

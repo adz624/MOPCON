@@ -7,6 +7,7 @@ include __DIR__ . '/schedule.php';
 include __DIR__ . '/hackmd.php';
 include __DIR__ . '/schedule_unconf.php';
 include __DIR__ . '/community.php';
+include __DIR__ . '/speakerDetail.php';
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -303,12 +304,13 @@ function render($template_name, $params)
     ];
     $main = getI18n($main_msg);
     $main['pagetitle'] = (isset($main['nav'][$params['pageid']]))?$main['nav'][$params['pageid']]:"";
-
+    $webParams = str_replace(['&lang=zh', '&lang=en'], ['', ''], isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : "");
     $params = array_replace_recursive(
         [
             'main' => $main,
             'website'=>$_SERVER['HTTP_HOST'],
             'webList'=>getWebList(),
+            'webParams'=> $webParams,
             'lang' => getLang(),
             'og_image' => 'mopcon2016.png',
             'og_url' => '',

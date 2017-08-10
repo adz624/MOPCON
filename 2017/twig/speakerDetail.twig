@@ -8,30 +8,44 @@
     <div class="content-radius clearfix">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 vcenter">
-                <div class="pic pic-cycle" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);">
-                </div>
+                {% if speakerDetail['image'] %}
+                    <div class="pic pic-cycle" style="background-image:url({{ speakerDetail['image'] }});"></div>
+                {% else %}
+                    <div class="pic pic-cycle" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);"></div>
+                {% endif %}
             </div><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 vcenter">
-                <h3 class="name">鄭鈞隆 (Chris Jeng)</h3>
-                <h4>Mobile 跨平台開發從測試到架構</h4>
-                <span class="subjectTag">Mobile</span>
+                <h3 class="name">{{ speakerDetail['name'] }}</h3>
+                <h4>{{ speakerDetail['subject'] }}</h4>
+                <span class="subjectTag">{{ speakerDetail['subjectTag'] }}</span>
             </div>
         </div>
         <br>
-        <h3>講者介紹</h3>
-        <p>目前任職於PayEasy，五年經驗的Android開發者，目前熱衷研究各種跨平台技術的無限可能，業餘時間也致力於將技術回饋社會的想法，開發找廁所App，造福行動不便者找廁所無障礙。</p>
-        <a href=""><i class="icon icon-fb"></i></a>
-        <a href=""><i class="icon icon-github"></i></a>
-        <a href=""><i class="icon icon-blog"></i></a>
-        <a href=""><i class="icon icon-link"></i></a>
+        <h3>{{ index.speaker_info }}</h3>
+        <p>{{ speakerDetail['speaker_info'] }}</p>
+        {% if speakerDetail['facebook'] %}
+            <a href="{{ speakerDetail['facebook'] }}"><i class="icon icon-fb"></i></a>
+        {% endif %}
+
+        {% if speakerDetail['github'] %}
+            <a href="{{ speakerDetail['github'] }}"><i class="icon icon-github"></i></a>
+        {% endif %}
+
+        {% if speakerDetail['blog'] %}
+            <a href="{{ speakerDetail['blog'] }}"><i class="icon icon-blog"></i></a>
+        {% endif %}
+
+        {% if speakerDetail['link'] %}
+            <a href="{{ speakerDetail['link'] }}"><i class="icon icon-link"></i></a>
+        {% endif %}
         <br>
-        <h3>議題介紹</h3>
-        <p>解密Google如何使用Java開發跨平台產品，從軟體自動化測試的角度切入，說明跨平台架構的實現與如何從遺留的程式（LegacyCode）到跨平台架構與測試的遷移流程。</p>
+        <h3>{{ index.schedule_info }}</h3>
+        <p>{{ speakerDetail['schedule_info'] }}</p>
         <div class="scheduleTable-link">
             <a>slide</a>
         </div>
         <br>
         <h3>其他項目</h3>
-        <p>項目內容，項目內容，項目內容，項目內容，項目內容，項目內容項目內容，項目內容，項目內容。項目內容，項目內容。項目內容，項目內容，項目內容，項目內容，項目內容，項目內容項目內容，項目內容，項目內容。項目內容，項目內容。</p>
+        <p>{{ speakerDetail['other'] }}</p>
     </div>
 </section>
 {% endblock %}
