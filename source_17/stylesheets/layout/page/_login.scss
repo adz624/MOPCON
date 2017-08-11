@@ -10,7 +10,7 @@ $main_color: #7AB6AD;
 #loginContainer {
     .logo {
         @include flex_block;
-        margin-bottom: 26px;
+        margin: 26px 0;
     }
     .title {
         @include flex_block;

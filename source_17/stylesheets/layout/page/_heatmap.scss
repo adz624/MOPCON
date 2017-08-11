@@ -24,6 +24,7 @@ $heatmap_icon_size: 30px;
 
     .heatmap_icon_list {
         @include flex_block;
+        margin-top: 34px;
         .heatmap_icon {
             @include flex_block;
             margin-right: 10px;
@@ -84,6 +85,15 @@ $heatmap_icon_size: 30px;
                 height: 68px;
                 font-size: 32px;
             }
+        }
+    }
+
+    .logo {
+        margin: 37px;
+
+        img {
+            width: 284px;
+            height: 95px;
         }
     }
 }

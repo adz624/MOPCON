@@ -6897,7 +6897,8 @@ section {
             align-items: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-top: 34px; }
     #heatmapContainer .heatmap_icon_list .heatmap_icon {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -6973,6 +6974,11 @@ section {
         width: 68px;
         height: 68px;
         font-size: 32px; }
+  #heatmapContainer .logo {
+    margin: 37px; }
+    #heatmapContainer .logo img {
+      width: 284px;
+      height: 95px; }
 
 #heatmapRoomContainer {
   display: -webkit-flex;
@@ -6983,7 +6989,15 @@ section {
           align-items: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #heatmapRoomContainer .title {
+    margin: 33px 0 51px 0;
+    color: #fff;
+    font-size: 35px;
+    line-height: 41px; }
   #heatmapRoomContainer .map {
     width: 307px;
     height: 308px;
@@ -7004,6 +7018,11 @@ section {
       left: 18px;
       width: 246px;
       height: 150px; }
+  #heatmapRoomContainer .logo {
+    margin: 37px; }
+    #heatmapRoomContainer .logo img {
+      width: 284px;
+      height: 95px; }
 
 #loginContainer .logo {
   display: -webkit-flex;
@@ -7015,7 +7034,7 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 26px; }
+  margin: 26px 0; }
 
 #loginContainer .title {
   display: -webkit-flex;

@@ -2,9 +2,13 @@
 
 {% block content %}
 <div id="heatmapRoomContainer">
+    <div class="title"></div>
     <div class="map">
         <img class="floor" src="" alt="" />
         <div id="heatmap"></div>
+    </div>
+    <div class="logo">
+        <img src="images/app_logo.svg" alt="">
     </div>
 </div>
 <script>
@@ -64,9 +68,8 @@
 
     window.onload = function () {
         // 隱藏不必要的元件
-        $('.footer_contactUs').hide();
-        $('.footer_mail').hide();
-        $('.footer_nav').hide();
+        $('.navbar').hide();
+        $('.footer').hide();
 
         const floor = getParameterByName('floor');
 
@@ -75,6 +78,9 @@
         .on('load', function() {
             $(this).show();
         });
+
+        $('.title')
+        .text(`${floor === '3F' ? 'R1廳' : 'R2廳 & R3廳'}`)
 
         $('#heatmap').addClass(`heatmap${floor}`);
 

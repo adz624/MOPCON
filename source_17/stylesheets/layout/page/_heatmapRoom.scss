@@ -9,7 +9,14 @@ $heatmap_height: 308px;
 
 #heatmapRoomContainer {
     @include flex_block;
+    flex-direction: column;
 
+    .title {
+        margin: 33px 0 51px 0;
+        color: #fff;
+        font-size: 35px;
+        line-height: 41px;
+    }
     .map {
         width: $heatmap_width;
         height: $heatmap_height;
@@ -35,6 +42,15 @@ $heatmap_height: 308px;
             left: 18px;
             width: 246px;
             height: 150px;
+        }
+    }
+
+    .logo {
+        margin: 37px;
+
+        img {
+            width: 284px;
+            height: 95px;
         }
     }
 }

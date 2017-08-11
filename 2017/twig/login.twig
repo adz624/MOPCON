@@ -3,7 +3,7 @@
 {% block content %}
 <div id="loginContainer">
     <div class="logo">
-        <img src="images/footer-logo.svg" alt="">
+        <img src="images/app_logo.svg" alt="">
     </div>
     <div class="title">
         帳號登入
@@ -26,7 +26,7 @@
         <div class="func_btn" id="register">
             註冊綁定帳號
         </div>
-        <div class="func_btn" id="heatmap">
+        <div class="func_btn" id="heatmap" onclick="gotoHeatmap();">
             查看現場熱度圖
         </div>
         <div class="func_btn" id="information">
@@ -74,6 +74,10 @@
         const username = "使用者1";
         setCookie('userid', userid);
         setCookie('username', username);
+    }
+
+    const gotoHeatmap = () => {
+        location.href = 'heatmap.php';
     }
 
     window.onload = function () {
