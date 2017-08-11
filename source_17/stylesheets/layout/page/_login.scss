@@ -1,0 +1,76 @@
+$content_width: 229px;
+$main_color: #7AB6AD;
+
+@mixin flex_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginContainer {
+    .logo {
+        @include flex_block;
+        margin-bottom: 26px;
+    }
+    .title {
+        @include flex_block;
+        width: 100%;
+        height: 47px;
+        background-color: $main_color;
+        color: #fff;
+        font-size: 23px;
+        line-height: 27px;
+        font-family: Noto Sans Mono CJK TC;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .user_name {
+        height: 76px;
+        margin-bottom: 49px;
+    }
+    .unloginArea {
+        @include flex_block;
+        flex-direction: column;
+        color: #fff;
+        font-size: 18px;
+        line-height: 21px;
+
+        .form-group {
+            width: $content_width;
+            margin-bottom: 14px;
+            label {
+                margin-bottom: 14px;
+            }
+            .form-control {
+                background-color: #181e3e;
+            }
+        }
+        .login_btn {
+            @include flex_block;
+            width: $content_width;
+            height: 65px;
+            background-color: $main_color;
+            color: #181e3e;
+            font-size: 30px;
+            line-height: 35px;
+            font-family: Noto Sans Mono CJK TC;
+            border-radius: 4px;
+            margin: 15px 0 18px 0;
+        }
+    }
+    .functions {
+        @include flex_block;
+        flex-direction: column;
+        .func_btn {
+            @include flex_block;
+            width: $content_width;
+            height: 39px;
+            border: 1px solid #f1e28c;
+            color: #f1e28c;
+            font-family: Noto Sans Mono CJK TC;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 14px;
+        }
+    }
+}
