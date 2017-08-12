@@ -1,10 +1,7 @@
 {% extends 'main.twig' %}
 
 {% block content %}
-<div id="registerContainer">
-    <div class="logo">
-        <img src="images/app_qrcode_logo.svg" alt="">
-    </div>
+<div id="profileContainer">
     <div class="form-group">
         <label for="email">會眾ID</label>
         <input type="text" class="form-control" id="email">
@@ -21,20 +18,12 @@
         <label for="usrname">暱稱</label>
         <input type="text" class="form-control" id="usrname">
     </div>
-    <div class="form-group">
-        <label for="ticket">票種</label>
-        <select>
-            <option>會眾票</option>
-            <option>貴賓票</option>
-            <option>講者票</option>
-        </select>
-    </div>
     <div class="functions">
-        <div class="func_btn" id="cancel">
-            取消
+        <div class="func_btn" id="submit">
+            修改
         </div>
-        <div class="func_btn func_btn_highlight" id="submit">
-            送出
+        <div class="func_btn func_btn_highlight" id="cancel">
+            取消
         </div>
     </div>
 </div>

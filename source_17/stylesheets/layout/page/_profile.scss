@@ -6,27 +6,36 @@ $content_width: 300px;
     justify-content: center;
 }
 
-#forgetPWDContainer {
+#profileContainer {
     @include flex_block;
     flex-direction: column;
-    margin-top: 46px;
+    margin-top: 43px;
 
     .form-group {
         width: $content_width;
-        text-align: center;
 
         label {
             color: #fff;
-            font-size: 20px;
-            line-height: 23px;
-            margin-bottom: 19px;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 8px;
         }
 
-        input[type="text"] {
+        input {
             border: 0;
             background-color: #181e3e;
             border-bottom: 1px solid #fff;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 10%;
+        }
+
+        input[type="text"] {
             color: #7ab6ad;
+        }
+
+        input[type="password"] {
+            color: #fff;
         }
     }
     .functions {

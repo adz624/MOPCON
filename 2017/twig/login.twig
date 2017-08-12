@@ -20,16 +20,16 @@
         <div class="login_btn" onclick="handleLogin();">登入</div>
     </div>
     <div class="functions">
-        <div class="func_btn" id="forgetPW">
+        <div class="func_btn" id="forgetPWD" onclick="gotoForgetPWD();">
             忘記密碼
         </div>
-        <div class="func_btn" id="register">
+        <div class="func_btn" id="register" onclick="gotoRegister();">
             註冊綁定帳號
         </div>
         <div class="func_btn" id="heatmap" onclick="gotoHeatmap();">
             查看現場熱度圖
         </div>
-        <div class="func_btn" id="information">
+        <div class="func_btn" id="information" onclick="gotoProfile();">
             修改/查看個人資料
         </div>
     </div>
@@ -78,6 +78,18 @@
 
     const gotoHeatmap = () => {
         location.href = 'heatmap.php';
+    }
+
+    const gotoProfile = () => {
+        location.href = 'profile.php';
+    }
+
+    const gotoRegister = () => {
+        location.href = 'register.php';
+    }
+
+    const gotoForgetPWD = () => {
+        location.href = 'forgetPWD.php';
     }
 
     window.onload = function () {

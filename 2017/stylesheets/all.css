@@ -7157,11 +7157,14 @@ section {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 15px; }
-    #registerContainer .form-group input[type="text"] {
+    #registerContainer .form-group input {
       border: 0;
       background-color: #181e3e;
       border-bottom: 1px solid #fff;
-      color: #fff; }
+      color: #fff;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 10%; }
     #registerContainer .form-group select {
       width: 303px;
       height: 38px;
@@ -7281,7 +7284,7 @@ section {
       border: 0;
       background-color: #181e3e;
       border-bottom: 1px solid #fff;
-      color: #fff; }
+      color: #7ab6ad; }
   #forgetPWDContainer .functions {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7314,6 +7317,73 @@ section {
       #forgetPWDContainer .functions .func_btn:last-child {
         margin-right: 0px; }
     #forgetPWDContainer .functions .func_btn_highlight {
+      color: #f1e28c;
+      border: 1px solid #f1e28c; }
+
+#profileContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 43px; }
+  #profileContainer .form-group {
+    width: 300px; }
+    #profileContainer .form-group label {
+      color: #fff;
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 8px; }
+    #profileContainer .form-group input {
+      border: 0;
+      background-color: #181e3e;
+      border-bottom: 1px solid #fff;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 10%; }
+    #profileContainer .form-group input[type="text"] {
+      color: #7ab6ad; }
+    #profileContainer .form-group input[type="password"] {
+      color: #fff; }
+  #profileContainer .functions {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 38px 0; }
+    #profileContainer .functions .func_btn {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 148px;
+      height: 39px;
+      border: 1px solid #fff;
+      color: #bdbdbd;
+      font-family: Noto Sans Mono CJK TC;
+      font-size: 18px;
+      line-height: 21px;
+      margin-right: 7px; }
+      #profileContainer .functions .func_btn:last-child {
+        margin-right: 0px; }
+    #profileContainer .functions .func_btn_highlight {
       color: #f1e28c;
       border: 1px solid #f1e28c; }
 
