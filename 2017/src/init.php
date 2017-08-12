@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Asia/Taipei");
 include __DIR__ . "/../../vendor/autoload.php";
 include __DIR__ . '/index.php';
 include __DIR__ . '/sponsor.php';
