@@ -1,0 +1,26 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+<div id="qrcodeContainer">
+    <div class="qrcode">
+        <div class="frame1 top_frame1"></div>
+        <div class="frame2 top_frame2"></div>
+        <div class="frame1 bottom_frame1"></div>
+        <div class="frame2 bottom_frame2"></div>
+    </div>
+    <div class="hint">
+        <p>將鏡頭對準MOPCON名牌背後的</p>
+        <p>QR CODE，以利完成個人化綁定!</p>
+    </div>
+    <div class="logo">
+        <img src="images/app_qrcode_logo2.svg" alt="">
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        $('.navbar').hide();
+        $('.footer').hide();
+    }
+</script>
+{% endblock %}

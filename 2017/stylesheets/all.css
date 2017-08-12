@@ -7209,6 +7209,52 @@ section {
       color: #f1e28c;
       border: 1px solid #f1e28c; }
 
+#qrcodeContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #qrcodeContainer .qrcode {
+    width: 279px;
+    height: 279px;
+    position: relative;
+    margin: 60px 0; }
+    #qrcodeContainer .qrcode .frame1 {
+      position: absolute;
+      background-color: #7ab6ad;
+      width: 85px;
+      height: 7px; }
+    #qrcodeContainer .qrcode .frame2 {
+      position: absolute;
+      background-color: #7ab6ad;
+      width: 7px;
+      height: 86px; }
+    #qrcodeContainer .qrcode .top_frame1 {
+      right: 0;
+      top: -7px; }
+    #qrcodeContainer .qrcode .top_frame2 {
+      right: -7px;
+      top: -7px; }
+    #qrcodeContainer .qrcode .bottom_frame1 {
+      bottom: -7px; }
+    #qrcodeContainer .qrcode .bottom_frame2 {
+      left: -7px;
+      bottom: -7px; }
+  #qrcodeContainer .hint {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+    color: #7ab6ad;
+    margin-bottom: 18px; }
+
 .btn {
   cursor: pointer;
   margin: 0 5px 5px 0;

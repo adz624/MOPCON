@@ -1,0 +1,52 @@
+$content_width: 295px;
+
+@mixin flex_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qrcodeContainer {
+    @include flex_block;
+    flex-direction: column;
+    .qrcode {
+        width: 279px;
+        height: 279px;
+        position: relative;
+        margin: 60px 0;
+        .frame1 {
+            position: absolute;
+            background-color: #7ab6ad;
+            width: 85px;
+            height: 7px;
+        }
+        .frame2 {
+            position: absolute;
+            background-color: #7ab6ad;
+            width: 7px;
+            height: 86px;
+        }
+        .top_frame1 {
+            right: 0;
+            top: -7px;
+        }
+        .top_frame2 {
+            right: -7px;
+            top: -7px;
+        }
+        .bottom_frame1 {
+            bottom: -7px;
+        }
+        .bottom_frame2 {
+            left: -7px;
+            bottom: -7px;
+        }
+    }
+    .hint {
+        font-size: 20px;
+        line-height: 23px;
+        text-align: left;
+        color: #7ab6ad;
+        margin-bottom: 18px;
+    }
+}
