@@ -1,0 +1,55 @@
+$content_width: 300px;
+
+@mixin flex_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forgetPWDContainer {
+    @include flex_block;
+    flex-direction: column;
+    margin-top: 46px;
+
+    .form-group {
+        width: $content_width;
+        text-align: center;
+
+        label {
+            color: #fff;
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 19px;
+        }
+
+        input[type="text"] {
+            border: 0;
+            background-color: #181e3e;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+    }
+    .functions {
+        @include flex_block;
+        margin: 38px 0;
+        .func_btn {
+            @include flex_block;
+            width: 148px;
+            height: 39px;
+            border: 1px solid #fff;
+            color: #bdbdbd;
+            font-family: Noto Sans Mono CJK TC;
+            font-size: 18px;
+            line-height: 21px;
+            margin-right: 7px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+        .func_btn_highlight {
+            color: #f1e28c;
+            border: 1px solid #f1e28c;
+        }
+    }
+}
