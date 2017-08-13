@@ -256,10 +256,10 @@ function render($template_name, $params)
 {
     $main_msg = [
         'zh' => [
-            'sitetitle' => '行動科技應用開發者年會 | MOPCON 2016 | Mobile / Open / Platform Conference',
-            'ogtitle' => '行動科技應用開發者年會 | MOPCON 2016 | Mobile / Open / Platform Conference',
-            'ogsitename' => '行動科技應用開發者年會 | MOPCON 2016 | Mobile / Open / Platform Conference',
-            'ogdesc' => '濁水溪以南最強大行動科技研討會，2016強勢回歸',
+            'sitetitle' => '行動科技應用開發者年會 | MOPCON 2017 | Mobile / Open / Platform Conference',
+            'ogtitle' => '行動科技應用開發者年會 | MOPCON 2017 | Mobile / Open / Platform Conference',
+            'ogsitename' => '行動科技應用開發者年會 | MOPCON 2017 | Mobile / Open / Platform Conference',
+            'ogdesc' => '濁水溪以南最強大行動科技研討會，2017強勢回歸',
             'nav' => [
                 // 'cfp' => '徵稿',
                 'community' => '主辦社群',
@@ -280,9 +280,9 @@ function render($template_name, $params)
             'his_mopcon' => '歷年 MOPCON',
         ],
         'en' => [
-            'sitetitle' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
-            'ogtitle' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
-            'ogsitename' => 'MOPCON 2016 | Mobile / Open / Platform Conference',
+            'sitetitle' => 'MOPCON 2017 | Mobile / Open / Platform Conference',
+            'ogtitle' => 'MOPCON 2017 | Mobile / Open / Platform Conference',
+            'ogsitename' => 'MOPCON 2017 | Mobile / Open / Platform Conference',
             'ogdesc' => 'Your favoeite conference for mobile technology in southern Taiwan is now back in 2016',
             'nav' => [
                 // 'cfp' => 'Call for Presentation',
