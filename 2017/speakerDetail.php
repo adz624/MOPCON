@@ -11,6 +11,10 @@ $params = [
     'index'         => getIndex(),
 ];
 
+if (isset($_GET['speaker'])) {
+    $params['main']['ogdesc'] = $params['speakerDetail']['name'] . " - " . $params['speakerDetail']['subject']; 
+
+}	
 if (isset($_GET['api'])) {
     getJson($params);
 }

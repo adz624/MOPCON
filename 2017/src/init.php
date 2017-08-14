@@ -313,7 +313,7 @@ function render($template_name, $params)
             'webList'=>getWebList(),
             'webParams'=> $webParams,
             'lang' => getLang(),
-            'og_image' => 'mopcon2016.png',
+            'og_image' => 'mopcon2017_large.png',
             'og_url' => '',
             'version' => [
                 'allCss' => getLastUpdateTime('css.all'),
