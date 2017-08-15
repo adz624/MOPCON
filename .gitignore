@@ -9,3 +9,4 @@ bower_components
 yarn.lock
 node_modules
 npm-debug.log
+.idea/
