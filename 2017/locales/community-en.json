@@ -1,5 +1,6 @@
 [{
-		"name": "KSDG",
+	"id": "1",	
+	"name": "KSDG",
 		"liaison": "Eric",
 		"email": "eric@ksdg.me",
 		"image": "ksdg.jpg",
@@ -8,6 +9,7 @@
 		"website": ""
 	},
 	{
+		"id": "2",
 		"name": "CocoaHeads Kaohsiung",
 		"liaison": "MikiMoto",
 		"email": "mikimoto@mopcon.org",
@@ -17,6 +19,7 @@
 		"website": "http://cocoaheads.org:8106/tw/Kaohsiung/index.html"
 	},
 	{
+		"id": "3",
 		"name": "MOSUT",
 		"liaison": "MikiMoto",
 		"email": "mikimoto@mopcon.org",
@@ -26,6 +29,7 @@
 		"website": "https://code.google.com/archive/p/mosut/"
 	},
 	{
+		"id": "4",
 		"name": "KIMU",
 		"liaison": "Hawk",
 		"email": "hawkliu@mopcon.org",
@@ -35,6 +39,7 @@
 		"website": ""
 	},
 	{
+		"id": "5",
 		"name": "KaLUG",
 		"liaison": "Eric",
 		"email": "eric@ksdg.me",
@@ -44,6 +49,7 @@
 		"website": "http://kalug.linux.org.tw/"
 	},
 	{
+		"id": "6",
 		"name": "Kaohsiung Front-End Community",
 		"liaison": "廖洧杰",
 		"email": "gonsakon@mopcon.org",
@@ -53,6 +59,7 @@
 		"website": "https://gonsakon-7655f2.kktix.cc/"
 	},
 	{
+		"id": "7",
 		"name": "Mobile Girls",
 		"liaison": "",
 		"email": "",
@@ -62,6 +69,7 @@
 		"website": "https://mobile-girls.kktix.cc/"
 	},
 	{
+		"id": "8",
 		"name": "Design plus",
 		"liaison": "Donna",
 		"email": "wolf@mopcon.org",
@@ -71,6 +79,7 @@
 		"website": ""
 	},
 	{
+		"id": "9",
 		"name": "Startup Talk",
 		"liaison": "Tony",
 		"email": "tony@mopcon.org",
@@ -80,6 +89,7 @@
 		"website": ""
 	},
 	{
+		"id": "10",
 		"name": "App Talks",
 		"liaison": "Nokimi",
 		"email": "nokimi@mopcon.org",
@@ -89,6 +99,7 @@
 		"website": ""
 	},
 	{
+		"id": "11",
 		"name": "ReactMaker",
 		"liaison": "Andy",
 		"email": "bbandydd@gmail.com",

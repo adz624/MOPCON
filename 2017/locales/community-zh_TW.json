@@ -1,5 +1,6 @@
 [{
-        "name": "KSDG",
+	"id": "1",	
+	"name": "KSDG",
         "liaison": "Eric",
         "email": "eric@ksdg.me",
 	    "image": "ksdg.jpg",
@@ -8,7 +9,8 @@
 	    "website": ""
 },
     {
-        "name": "CocoaHeads Kaohsiung",
+		"id": "2",
+		"name": "CocoaHeads Kaohsiung",
         "liaison": "MikiMoto",
         "email": "mikimoto@mopcon.org",
 	    "image": "cocoaheads.jpg",
@@ -17,7 +19,8 @@
 	    "website": "http://cocoaheads.org:8106/tw/Kaohsiung/index.html"
 },
     {
-        "name": "MOSUT",
+		"id": "3",
+		"name": "MOSUT",
         "liaison": "MikiMoto",
         "email": "mikimoto@mopcon.org",
 	    "image": "mosut.jpg",
@@ -26,7 +29,8 @@
 	    "website": "https://code.google.com/archive/p/mosut/"
 },
     {
-        "name": "KIMU",
+		"id": "4",
+		"name": "KIMU",
         "liaison": "Hawk",
         "email": "hawkliu@mopcon.org",
 	    "image": "kimu.jpg",
@@ -35,7 +39,8 @@
 	    "website": ""
 },
     {
-        "name": "KaLUG",
+		"id": "5",
+		"name": "KaLUG",
         "liaison": "Eric",
         "email": "eric@ksdg.me",
 	    "image": "kalug.jpg",
@@ -44,7 +49,8 @@
 	    "website": "http://kalug.linux.org.tw/"
 },
     {
-        "name": "高雄前端社群",
+		"id": "6",
+		"name": "高雄前端社群",
         "liaison": "廖洧杰",
         "email": "gonsakon@mopcon.org",
 	    "image": "kf2e.jpg",
@@ -53,7 +59,8 @@
 	    "website": "https://gonsakon-7655f2.kktix.cc/"
 },
     {
-        "name": "Mobile Girls",
+		"id": "7",
+		"name": "Mobile Girls",
         "liaison": "",
         "email": "",
 	    "image": "mobile_girls.jpg",
@@ -62,7 +69,8 @@
 	    "website": "https://mobile-girls.kktix.cc/"
 },
     {
-        "name": "Design plus",
+		"id": "8",
+		"name": "Design plus",
         "liaison": "Donna",
         "email": "wolf@mopcon.org",
 	    "image": "designPlus.jpg",
@@ -71,7 +79,8 @@
 	    "website": ""
 },
     {
-        "name": "創業台槓",
+		"id": "9",
+		"name": "創業台槓",
         "liaison": "Tony",
         "email": "tony@mopcon.org",
 	    "image": "startupTalk.jpg",
@@ -80,7 +89,8 @@
 	    "website": ""
 },
     {
-        "name": "App 台槓",
+		"id": "10",
+		"name": "App 台槓",
         "liaison": "Nokimi",
         "email": "nokimi@mopcon.org",
 	    "image": "appTalks.jpg",
@@ -89,7 +99,8 @@
 	    "website": ""
 },
     {
-        "name": "ReactMaker",
+		"id": "11",
+		"name": "ReactMaker",
         "liaison": "Andy",
         "email": "bbandydd@gmail.com",
 	    "image": "ReactMaker.png",

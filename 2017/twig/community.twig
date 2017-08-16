@@ -3,36 +3,25 @@
 {% block content %}
 <!-- header	 -->
 <section class="pageHead">
-	<img src="images/headPage-community.svg" alt="議程標題圖片">
+	<img src="images/headPage-community.svg" alt="社群標題圖片">
 </section>
 
 <!-- community -->
 <section class="container">
-	{% for id, data in community %}
-    <div class="content-radius clearfix">
-        <div class="row">
-            <h3 class="h3 col-lg-12">{{ data['name'] }}</h3>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="pic pic-radius" style="background-image:url(./images/community/{{ data['image'] }});">
+    <div class="sponsor_content">
+        <div class="content-radius">
+            <div class="row">
+            {% for id, data in community %}
+                <div class="pic-item col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <a href="community.php?id={{data['id']}}">
+						<div class="pic pic-radius" style="background-image:url(./images/community/{{ data['image'] }});">
+                        </div>
+					</a>
                 </div>
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-9">
-                <p>{{ data['info']|nl2br}}</p>
-				{% if data['facebook'] %}
-                <a href="{{ data['facebook'] }}"  target="_blank">
-					<i class="icon icon-fb"></i>
-				</a>
-				{% endif %}
-               	{% if data['website'] %}
-                <a href="{{ data['website'] }}" target="_blank">
-					<i class="icon icon-link"></i>
-				</a>
-				{% endif %}
+            {% endfor %}
             </div>
         </div>
     </div>
-    <br>
-    {% endfor %}
 </section>
 
 {% endblock %}
