@@ -7,14 +7,14 @@ $params = [
     'filemtime' => getLastUpdateTime($pageid),
     'speakers' => [],
 ];
-if (isset($_GET['id'])) {
+if (isset($_GET['speaker'])) {
   $id = $_GET['id'];
   // header(
   // "Location:schedule.php?speaker=" . $id);
   // exit;
-  $params['speakers'] = getSpeakerById($id);
-  $params['og_image'] = "speaker/".$params['speakers']['image'];
-  $params['og_url'] = 'speaker.php?id=' . $id;
+//   $params['speakers'] = getSpeakerById($id);
+//   $params['og_image'] = "speaker/".$params['speakers']['image'];
+  $params['og_url'] = 'speakerDetail.php?speaker=' . $speaker;
   $params['main']['ogdesc'] = $params['speakers']['name'] . "\n" . preg_replace('/<br( )?\/?>/i','\n',$params['speakers']['info']); //. "\n" . $params['speakers'][$id]['title']
 
   $templates = [
@@ -36,7 +36,7 @@ if (isset($_GET['id'])) {
 }
 
 if (count($params['speakers']) === 0 || current($params['speakers']) === null) {
-    header('Location: /2016/speaker.php');
+    header('Location: /2017/speaker.php');
     exit;
 }
 
