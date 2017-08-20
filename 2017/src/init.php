@@ -9,6 +9,7 @@ include __DIR__ . '/hackmd.php';
 include __DIR__ . '/schedule_unconf.php';
 include __DIR__ . '/community.php';
 include __DIR__ . '/speakerDetail.php';
+include __DIR__ . '/member.php';
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -92,12 +93,14 @@ function getLastUpdateTime($page = '')
         "speaker"               => filemtime(__DIR__  . '/../speaker.php'),
         "sponsor"               => filemtime(__DIR__  . '/../sponsor.php'),
         "community"             => filemtime(__DIR__  . '/../community.php'),
+        "member"                => filemtime(__DIR__  . '/../member.php'),
         "src.schedule"          => filemtime(__DIR__  . '/schedule.php'),
         "src.hackmd"            => filemtime(__DIR__  . '/hackmd.php'),
         "src.schedule_unconf"   => filemtime(__DIR__  . '/schedule_unconf.php'),
         "src.speaker"           => filemtime(__DIR__  . '/speaker.php'),
         "src.sponsor"           => filemtime(__DIR__  . '/sponsor.php'),
         "src.community"         => filemtime(__DIR__  . '/community.php'),
+        "src.member"            => filemtime(__DIR__  . '/member.php'),
         "src.index"             => filemtime(__DIR__  . '/index.php'),
         "src.init"              => filemtime(__DIR__  . '/init.php'),
         "api.speaker"           => filemtime(__DIR__  . '/../api/speakers.json'),
@@ -176,6 +179,8 @@ function apiMappingData($page)
             return getIndex();
         case 'community':
             return getAllCommunities();
+        case 'member':
+            return getAllMembers();
         default:
             return null;
     }
@@ -265,9 +270,10 @@ function render($template_name, $params)
                 'community' => '主辦社群',
                 // 'location' => '地圖',
                 // 'previous' => '歷年 MOPCON',
-                // 'speaker' => '講者',
-                // 'schedule' => '議程',
-                // 'sponsor' => '贊助',
+                'member' => '志工組織',
+                 'speaker' => '講者',
+                 'schedule' => '議程',
+                 'sponsor' => '贊助',
                 // 'schedule_unconf' => '交流場次',
                 // 'hackpad' => '2016 hackpad',
                 // 'chatroom' => '聊天室',
@@ -289,10 +295,11 @@ function render($template_name, $params)
                 'community' => 'Community',
                 // 'location' => 'Location',
                 // 'previous' => 'Previous Events',
-                // 'speaker' => 'Speakers',
-                // 'schedule' => 'Session',
+                'member' => 'Member',
+                 'speaker' => 'Speakers',
+                 'schedule' => 'Session',
                 // 'schedule_unconf' => 'Unconf',
-                // 'sponsor' => 'Sponsors',
+                 'sponsor' => 'Sponsors',
                 // 'hackpad' => '2016 hackpad',
                 // 'chatroom' => 'Chat Room',
                 // 'chatroom_gitter' => 'Gitter',
