@@ -1,24 +1,43 @@
 {% extends 'main.twig' %} {% block content %}
 <!-- header  -->
 <section class="pageHead">
-    <img src="images/headPage-speakers.svg" alt="志工組織標題圖片">
+    <img src="images/headPage-member.svg" alt="志工組織標題圖片">
 </section>
 <!-- speaker -->
 <section class="container">
-        {% for id, data in member %}
-        
+    {% for id, data in member %}  
     <div class="content-radius clearfix">
         <div class="row">
-            
             <h3 class="h3 col-lg-12">{{data['name']}}</h3>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <p>
                     {{data.description}}
                 </p>
-                <a href="speakerDetail.php?speaker=chris" class="btn btn-detail">詳細介紹</a>
+                <button class="btn btn-detail" onclick="openDetailBox({{id+1}})">{{text['first']}}</button>
             </div>
         </div>
-        
+    </div>
+    <div>
+    
+    </div>
+    <div id="box-{{id+1}}" class="detailBox" style="display: none;">
+        <div class="detailBoxWrapper">
+            <div class="detailBox_content">
+                <span class="fa-stack fa-lg detailBox_content_cancel ">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                </span>
+                <div class="detailBox_content_schedule">
+                    <div class="scheduleTable-subject">
+                        {{data['name']}}{{text['sceond']}}
+                    </div>
+                    <p class="height-limit">
+                        {{data.list}}
+                    </p>
+                </div>
+            </div>
+            <div class="detailBox_maskBg"></div>
+        </div>
     </div>
     <br>
     {% endfor %}

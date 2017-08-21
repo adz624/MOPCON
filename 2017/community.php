@@ -4,6 +4,7 @@ include __DIR__ . '/src/init.php';
 
 $lang = getLang();
 $pageid = 'community';
+$params['og_url'] = 'community.php';
 $params = [
     'pageid' => $pageid,
     'filemtime' => getLastUpdateTime($pageid),

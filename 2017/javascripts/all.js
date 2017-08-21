@@ -14,7 +14,7 @@ $(function () {
     positionMap();
     carousel();
     scheduleSwitch();
-    openScheduleDetail();
+    // openScheduleDetail();
     closeDetailBox();
 });
 
@@ -55,11 +55,11 @@ function scheduleSwitch() {
     });
 }
 
-function openScheduleDetail() {
-    $('.scheduleTable-subject').click(function () {
-        $('.detailBox').fadeIn();
+function openDetailBox(id) {
+    // $('.scheduleTable-subject').click(function () {
+        $('#box-'+id).fadeIn();
         $('body').addClass('bodyLock');
-    });
+    // });
 }
 
 function closeDetailBox() {
