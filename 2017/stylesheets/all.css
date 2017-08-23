@@ -7387,6 +7387,55 @@ section {
       color: #f1e28c;
       border: 1px solid #f1e28c; }
 
+.member-cycle {
+  width: 100px;
+  height: 100px;
+  background-color: #7AB6AD;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto; }
+  @media (max-width: 767px) {
+    .member-cycle {
+      margin-bottom: 20px;
+      margin: auto; } }
+
+.color-gradients-01 {
+  background-color: #7AB6AD; }
+
+.color-gradients-02 {
+  background-color: #639F96; }
+
+.color-gradients-03 {
+  background-color: #639A9F; }
+
+.color-gradients-04 {
+  background-color: #558B8F; }
+
+.color-gradients-05 {
+  background-color: #557E8F; }
+
+.color-gradients-06 {
+  background-color: #446D7E; }
+
+.color-gradients-07 {
+  background-color: #44667E; }
+
+.color-gradients-08 {
+  background-color: #44667E; }
+
+.color-gradients-09 {
+  background-color: #334966; }
+
+.color-gradients-10 {
+  background-color: #333F65; }
+
+.color-gradients-11 {
+  background-color: #202B4B; }
+
+.color-gradients-12 {
+  background-color: #181E3E; }
+
 .btn {
   cursor: pointer;
   margin: 0 5px 5px 0;
@@ -7649,7 +7698,6 @@ tr:first-child {
 .detailBox {
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 999;
   min-height: 100%;
   padding: 0;

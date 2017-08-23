@@ -1,0 +1,20 @@
+.member-cycle {
+    width: 100px;
+    height: 100px;
+    background-color: #7AB6AD;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    @include pad-below () {
+        margin-bottom: 20px;
+        margin: auto;
+    }
+}
+
+@each $i,
+$color-gradients-bgcolor in $color-gradients {
+    .color-gradients-#{$i} {
+        background-color: $color-gradients-bgcolor;
+    }
+}
