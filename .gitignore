@@ -4,7 +4,6 @@
 /2014_test/config.rb
 /cache
 vendor/
-.tmp
 bower_components
 yarn.lock
 node_modules
