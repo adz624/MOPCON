@@ -8,20 +8,16 @@
     <div class="content-radius clearfix">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 vcenter">
-                {% if speakerDetail['image'] %}
-                    <div class="pic pic-cycle" style="background-image:url({{ speakerDetail['image'] }});"></div>
-                {% else %}
-                    <div class="pic pic-cycle" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);"></div>
-                {% endif %}
+                <div class="pic pic-cycle" style="background-image:url('{{ speakerDetail['picture'] }}');"></div>
             </div><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 vcenter">
                 <h3 class="name">{{ speakerDetail['name'] }}</h3>
-                <h4>{{ speakerDetail['subject'] }}</h4>
-                <span class="subjectTag">{{ speakerDetail['subjectTag'] }}</span>
+                <h4>{{ speakerDetail['schedule_topic'] }}</h4>
+                <span class="subjectTag">{{ speakerDetail['type'] }}</span>
             </div>
         </div>
         <br>
         <h3>{{ index.speaker_info }}</h3>
-        <p>{{ speakerDetail['speaker_info'] }}</p>
+        <p>{{ speakerDetail['info'] }}</p>
         {% if speakerDetail['facebook'] %}
             <a href="{{ speakerDetail['facebook'] }}"><i class="icon icon-fb"></i></a>
         {% endif %}
@@ -34,8 +30,12 @@
             <a href="{{ speakerDetail['blog'] }}"><i class="icon icon-blog"></i></a>
         {% endif %}
 
-        {% if speakerDetail['link'] %}
-            <a href="{{ speakerDetail['link'] }}"><i class="icon icon-link"></i></a>
+        {% if speakerDetail['linkedin'] %}
+            <a href="{{ speakerDetail['linkedin'] }}"><i class="icon icon-link"></i></a>
+        {% endif %}
+
+        {% if speakerDetail['website'] %}
+            <a href="{{ speakerDetail['website'] }}"><i class="icon icon-link"></i></a>
         {% endif %}
         <br>
         <h3>{{ index.schedule_info }}</h3>
@@ -45,7 +45,7 @@
         </div>
         <br>
         <h3>其他項目</h3>
-        <p>{{ speakerDetail['other'] }}</p>
+        <p>Other xxx ooo ...</p>
     </div>
 </section>
 {% endblock %}

@@ -12,10 +12,10 @@ $params = [
 ];
 
 if (isset($_GET['speaker'])) {
-    $params['main']['ogdesc'] = $params['speakerDetail']['subject'] . ' - ' . $params['speakerDetail']['schedule_info']; 
+    $params['main']['ogdesc'] = $params['speakerDetail']['schedule_topic'] . ' - ' . $params['speakerDetail']['schedule_info'];
     $params['main']['pagetitle'] = '講者 '. $params['speakerDetail']['name'];
-    $params['og_image'] = $params['speakerDetail']['image'];
-    $params['og_url'] = 'speakerDetail.php?speaker='.$speaker;
+    $params['og_image'] = $params['speakerDetail']['picture'];
+    $params['og_url'] = 'speakerDetail.php?speaker=' . $speaker;
 }	
 if (isset($_GET['api'])) {
     getJson($params);
