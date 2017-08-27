@@ -40,12 +40,14 @@
         <br>
         <h3>{{ index.schedule_info }}</h3>
         <p>{{ speakerDetail['schedule_info'] }}</p>
+        {% if speakerDetail['slide'] %}
         <div class="scheduleTable-link">
-            <a>slide</a>
+            <a href="{{ speakerDetail['slide'] }}" target="_blank">slide</a>
         </div>
-        <br>
+        {% endif %}
+        <!-- <br>
         <h3>其他項目</h3>
-        <p>Other xxx ooo ...</p>
+        <p>Other xxx ooo ...</p> -->
     </div>
 </section>
 {% endblock %}

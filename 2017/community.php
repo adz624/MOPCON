@@ -14,7 +14,8 @@ $params['og_url'] = 'community.php';
 
 if (isset($_GET['id'])) {
     $id = intval($_GET['id'])-1;
-    $params['community'] = getSingleCommunity($id);
+    $params['community'] = getSingleCommunity($id);    
+    $params['main']['pagetitle'] = '社群 ' . $params['community']['name'];
     $params['og_url'] = 'community.php?id=' . intval($_GET['id']);
     // $params['og_image'] = $params['schedules']['pic'];
     // $params['og_url'] = 'schedule.php?speaker=' . $speaker;

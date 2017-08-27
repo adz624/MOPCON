@@ -18,6 +18,7 @@ function getAllSpeakerDetail($speaker)
             'linkedin' => $item['gsx$linkedin']['$t'],
             'schedule_topic' => $item['gsx$演講主題']['$t'],
             'schedule_info' => $item['gsx$演講摘要']['$t'],
+            'slide' => $item['gsx$slide']['$t'],
         ];
 
         $lang_en[$item['gsx$講者編號']['$t']] = [
@@ -33,6 +34,7 @@ function getAllSpeakerDetail($speaker)
             'linkedin' => $item['gsx$linkedin']['$t'],
             'schedule_topic' => $item['gsx$演講主題en']['$t'],
             'schedule_info' => $item['gsx$演講摘要en']['$t'],
+            'slide' => $item['gsx$slide']['$t'],
         ];
     }
 
