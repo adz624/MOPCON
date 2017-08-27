@@ -321,7 +321,7 @@ function render($template_name, $params)
             'webParams'=> $webParams,
             'lang' => getLang(),
             'og_image' => 'mopcon2017_large.png',
-            'og_url' => '',
+            // 'og_url' => '',
             'version' => [
                 'allCss' => getLastUpdateTime('css.all'),
                 'allJs' => getLastUpdateTime('js.all'),

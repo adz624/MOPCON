@@ -8,6 +8,11 @@
     padding: 0;
     margin: 10px 15px;
     height: initial;
+    h1 {
+        margin: 0;
+        height: 0;
+        text-indent: -9999px;
+    }
 }
 
 .nav {

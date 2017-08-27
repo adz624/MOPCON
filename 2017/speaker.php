@@ -2,12 +2,13 @@
 include __DIR__ . '/src/init.php';
 
 $pageid = 'speaker';
-$params['og_url'] = 'speaker.php';
 $params = [
     'pageid' => $pageid,
     'filemtime' => getLastUpdateTime($pageid),
     'speakers' => [],
 ];
+$params['og_url'] = 'speaker.php';
+
 if (isset($_GET['speaker'])) {
   $id = $_GET['id'];
   // header(
