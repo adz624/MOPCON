@@ -59,14 +59,14 @@
         "image": "",
         "name": "攝影組",
         "description": "MOPCON的攝影組",
-        "list": ""
+        "list": "Chuck,Deimos,小默,Brian,YiYi,家維,大助,Teresa,Vagabond,丞相,Pikachu,小董,大麥,Amin"
     },
     {
         "id": "10",
         "image": "",
         "name": "錄影組",
         "description":"MOPCON的錄影組",
-        "list": "Chuck"
+        "list": "韋宗,Tony,耀賢,山葵泥"
     },
     {
         "id": "11",
