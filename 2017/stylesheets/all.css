@@ -6377,7 +6377,7 @@ ul {
   padding: 0; }
 
 .header {
-  margin: 200px auto;
+  margin: 80px auto;
   max-width: 1440px; }
   @media (max-width: 767px) {
     .header {
@@ -6649,7 +6649,7 @@ section {
   .schedulePage_info p {
     color: #fff; }
 
-.scheduleTable-speack {
+.scheduleTable-speak {
   color: #181E3E;
   font-weight: bolder;
   padding: 10px 0; }
