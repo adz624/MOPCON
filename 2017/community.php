@@ -11,6 +11,7 @@ $params = [
     'sponsors' => getAllSponsors(),
 ];
 $params['og_url'] = 'community.php';
+$params['main']['ogdesc'] = '一路支持MOPCON的好夥伴們！'; 	
 
 if (isset($_GET['id'])) {
     $id = intval($_GET['id'])-1;

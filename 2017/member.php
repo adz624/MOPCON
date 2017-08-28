@@ -10,6 +10,7 @@ $params = [
     'member' => getAllMembers()
 ];
 $params['og_url'] = 'member.php';
+$params['main']['ogdesc'] = 'MOPCON的志工成員介紹。'; 
 $text = [
     'zh' => [
         'first' => '組員名單',
