@@ -32,67 +32,30 @@
 					<th>R2</th>
 					<th>R3</th>
 				</tr>
-				<tr>
-					<td role="time-col">08:30 - 09:00</td>
-					<td colspan="3" role="rundown-col">報到</td>
-				</tr>
-				<tr>
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="3" role="rundown-col">開幕</td>
-				</tr>
-				<tr>
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="3" role="content-col" onclick="openDetailBox(1)">
-						<span class="scheduleTable-room">ALL</span>
-						<div class="scheduleTable-speack">翟本喬 (Ben Jai)</div>
-						<div class="scheduleTable-subject">
-							行動裝置科技趨勢
-							<span class="subjectTag">Operation</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-				</tr>
-				<tr class="table-notic">
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="3" role="rundown-col">休息</td>
-				</tr>
-				<tr>
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="1" role="content-col">
-						<span class="scheduleTable-room">R1</span>
-						<div class="scheduleTable-speack">Nevin Chen</div>
-						<div class="scheduleTable-subject">
-							Kotlin on Android development
-							<span class="subjectTag">Web</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-					<td colspan="1" role="content-col">
-						<span class="scheduleTable-room">R2</span>
-						<div class="scheduleTable-speack">古宗禎 (Denny Ku)</div>
-						<div class="scheduleTable-subject">
-							求職天眼通：從 Side project 到產品的技術演進
-							<span class="subjectTag">Mobile</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-					<td colspan="1" role="content-col">
-						<span class="scheduleTable-room">R3</span>
-						<div class="scheduleTable-speack">羅志達 (Kelvin Lo)</div>
-						<div class="scheduleTable-subject">
-							Unity Adam 動畫製作過程與 CG VR 發展
-							<span class="subjectTag">VR</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
+				{% for item in schedules['day1'] %}
+					<tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
+						<td role="time-col">{{ item['time'] }}</td>
+							{% for key, content in item['content'] %}
+                                {% if content['schedule'] %}
+                                    <td colspan="{{ item['colspan'] }}" role="content-col">
+                                        <span class="scheduleTable-room">{{ content['room'] }}</span>
+                                        <div class="scheduleTable-speack">{{ content['name'] }}</div>
+                                        <div class="scheduleTable-subject">
+                                            {{ content['schedule_topic'] }}
+                                            <span class="subjectTag">{{ content['type'] }}</span>
+                                        </div>
+                                        <div class="scheduleTable-link">
+                                            <a>slide</a>
+                                        </div>
+                                    </td>
+                                {% else %}
+                                    <td colspan="{{ item['colspan'] }}" role="table-notic">
+                                    {{ content['content'] }}
+                                    </td>
+                                {% endif %}
+                            {% endfor %}
+					</tr>
+				{% endfor %}
 				</tr>
 			</tbody>
 		</table>
@@ -106,68 +69,30 @@
 					<th>R2</th>
 					<th>R4</th>
 				</tr>
-				<tr>
-					<td role="time-col">08:30 - 09:00</td>
-					<td colspan="3" role="rundown-col">報到</td>
-				</tr>
-				<tr>
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="3" role="rundown-col">開幕</td>
-				</tr>
-				<tr>
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="3" role="content-col">
-						<span class="scheduleTable-room">ALL</span>
-						<div class="scheduleTable-speack">酷玩樂團 (ColdPlay)</div>
-						<div class="scheduleTable-subject">
-							行動裝置科技趨勢
-							<span class="subjectTag">Operation</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-				</tr>
-				<tr class="table-notic">
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="3" role="rundown-col">休息</td>
-				</tr>
-				<tr>
-					<td role="time-col">09:00 - 09:15</td>
-					<td colspan="1" role="content-col">
-						<span class="scheduleTable-room">R1</span>
-						<div class="scheduleTable-speack">法鯊</div>
-						<div class="scheduleTable-subject">
-							Kotlin on Android development
-							<span class="subjectTag">Web</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-					<td colspan="1" role="content-col">
-						<span class="scheduleTable-room">R2</span>
-						<div class="scheduleTable-speack">Chirs</div>
-						<div class="scheduleTable-subject">
-							求職天眼通：從 Side project 到產品的技術演進
-							<span class="subjectTag">Mobile</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-					<td colspan="1" role="content-col">
-						<span class="scheduleTable-room">R3</span>
-						<div class="scheduleTable-speack">神力女超人</div>
-						<div class="scheduleTable-subject">
-							Unity Adam 動畫製作過程與 CG VR 發展
-							<span class="subjectTag">VR</span>
-						</div>
-						<div class="scheduleTable-link">
-							<a>slide</a>
-						</div>
-					</td>
-				</tr>
+                {% for item in schedules['day2'] %}
+                    <tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
+                        <td role="time-col">{{ item['time'] }}</td>
+                        {% for key, content in item['content'] %}
+                            {% if content['schedule'] %}
+                                <td colspan="{{ item['colspan'] }}" role="content-col">
+                                    <span class="scheduleTable-room">{{ content['room'] }}</span>
+                                    <div class="scheduleTable-speack">{{ content['name'] }}</div>
+                                    <div class="scheduleTable-subject">
+                                        {{ content['schedule_topic'] }}
+                                        <span class="subjectTag">{{ content['type'] }}</span>
+                                    </div>
+                                    <div class="scheduleTable-link">
+                                        <a>slide</a>
+                                    </div>
+                                </td>
+                            {% else %}
+                                <td colspan="{{ item['colspan'] }}" role="table-notic">
+                                    {{ content['content'] }}
+                                </td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
 			</tbody>
 		</table>
 	</div>

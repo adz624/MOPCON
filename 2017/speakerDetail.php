@@ -3,7 +3,7 @@ include __DIR__ . '/src/init.php';
 
 $lang = getLang();
 $pageid = 'speakerDetail';
-$speaker = isset($_GET['speaker']) ? $_GET['speaker'] : '';
+$speaker = isset($_GET['speaker']) ? $_GET['speaker'] : '1';
 $params = [
     'pageid'        => $pageid,
     'filemtime'     => getLastUpdateTime($pageid),

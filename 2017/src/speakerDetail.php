@@ -1,5 +1,5 @@
 <?php
-function getAllSpeakerDetail($speaker)
+function getAllSpeakerDetail($speaker = 0)
 {
     $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1KrS_FkyR12dKG9apshDo-Ba0HoR6rO_EJ41hxy-0EZk/1/public/values?alt=json"), true);
     $google_data = $google_data['feed']['entry'];
@@ -39,8 +39,8 @@ function getAllSpeakerDetail($speaker)
     }
 
     $main = [
-        'zh' => $lang_zh[$speaker],
-        'en' => $lang_en[$speaker],
+        'zh' => $speaker !== 0 ? $lang_zh[$speaker] : $lang_zh,
+        'en' => $speaker !== 0 ? $lang_en[$speaker] : $lang_en,
     ];
 
     return getI18n($main);

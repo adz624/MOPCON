@@ -5,12 +5,9 @@ $pageid = 'schedule';
 $params = [
     'pageid' => $pageid,
     'filemtime' => getLastUpdateTime($pageid), 
-    'schedules' => [],
+    'schedules' => getAllSchedule(),
 ];
 $params['og_url'] = 'schedule.php';
-
-$params['schedules'] = getScheduleMergeSpeaker();
-
 
 if (isset($_GET['api'])) {
 	getJson($params);
