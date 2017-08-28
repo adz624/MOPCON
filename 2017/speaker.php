@@ -6,6 +6,7 @@ $params = [
     'pageid' => $pageid,
     'filemtime' => getLastUpdateTime($pageid),
     'speakers' => [],
+    'index' => getIndex(),
 ];
 $params['og_url'] = 'speaker.php';
 
@@ -23,19 +24,8 @@ if (count($params['speakers']) === 0 || current($params['speakers']) === null) {
     exit;
 }
 
-// print_r(getAllSpeakers());exit;
-// if (count($params['speakers']) === 0 ) {
-//     header('Location: /2016/speaker.php');
-//     exit;
-// }
-if (isset($_GET['api'])) {
-    getJson($params);
-}
 
 $lang = getLang();
-if($lang!=='zh') {
-    header("Location:./");
-}
-// $template = isset($templates[$lang]) ? $templates[$lang] : $templates['zh'];
 
+$params['text'] = isset($text[$lang]) ? $text[$lang] : $text['zh'];
 render('speaker.twig', $params);

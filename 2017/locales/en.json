@@ -19,7 +19,8 @@
   "route_2": "Take the orange line to Yanchengpu Station(O2) and take 3-minute walk from Exit 2.",
   "route_3": "If you take the red line, make sure to tranfer to the orange line at Formosa Boulevard Station.",
   "his_mopcon": "Past MOPCON",
-  "speaker_info": "講者介紹",
-  "schedule_info": "議程介紹",
-  "other_info": "其他項目"
+  "speaker_info": "Speaker introduction",
+  "schedule_info": "Schedule introduction",
+  "other_info": "Others",
+  "more_info": "More"
 }

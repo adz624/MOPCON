@@ -44,9 +44,11 @@
                                             {{ content['schedule_topic'] }}
                                             <span class="subjectTag">{{ content['type'] }}</span>
                                         </div>
+										{% if content['slide'] %}
                                         <div class="scheduleTable-link">
-                                            <a>slide</a>
+                                            <a href="{{ content['slide'] }}">slide</a>
                                         </div>
+										{% endif %}
                                     </td>
                                 {% else %}
                                     <td colspan="{{ item['colspan'] }}" role="table-notic">
