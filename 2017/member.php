@@ -13,12 +13,14 @@ $params['og_url'] = 'member.php';
 $params['main']['ogdesc'] = 'MOPCON的志工成員介紹。'; 
 $text = [
     'zh' => [
-        'first' => '組員名單',
-        'sceond' => '名單'
+        'committee' => '委員',
+        'member' => '成員',
+        'list' => '名單'
     ],
     'en' => [
-        'first' => 'Member List',
-        'sceond' => ' List'
+        'committee' => 'Committee',
+        'member' => 'Member',
+        'list' =>  'List'
     ]
   ];
 $params['text'] = isset($text[$lang]) ? $text[$lang] : $text['zh'];

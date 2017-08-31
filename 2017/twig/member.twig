@@ -14,9 +14,11 @@
             </div><div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 vcenter">
                 <h3 class="h3">{{data['name']}}</h3>
                 <p>
-                    {{data.description}}
+                    {{ data.description | raw }}
                 </p>
-                <button class="btn btn-detail" onclick="openDetailBox({{id+1}})">{{text['first']}}</button>
+                <button class="btn btn-detail" onclick="openDetailBox({{id+1}})">
+                {% if id == '0' %}{{text['committee']}}{% else  %}{{text['member']}}{% endif %}{{ text['list'] }}
+                </button>
             </div>
         </div>
         <div id="box-{{id+1}}" class="detailBox" style="display: none;">
@@ -28,7 +30,7 @@
                 </span>
                     <div class="detailBox_content_schedule">
                         <div class="scheduleTable-subject">
-                            {{data['name']}}{{text['sceond']}}
+                            {{data['name']}} {{ text['list'] }}
                         </div>
                         <p class="height-limit">
                             {{data.list}}
