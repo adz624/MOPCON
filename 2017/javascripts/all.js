@@ -14,7 +14,7 @@ $(function () {
     positionMap();
     carousel();
     scheduleSwitch();
-    // openScheduleDetail();
+    //openScheduleDetail();
     closeDetailBox();
 });
 
@@ -57,8 +57,8 @@ function scheduleSwitch() {
 
 function openDetailBox(id) {
     // $('.scheduleTable-subject').click(function () {
-        $('#box-'+id).fadeIn();
-        $('body').addClass('bodyLock');
+    $('#box-' + id).fadeIn();
+    $('body').addClass('bodyLock');
     // });
 }
 

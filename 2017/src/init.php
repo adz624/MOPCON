@@ -271,7 +271,7 @@ function render($template_name, $params)
                 // 'location' => '地圖',
                 // 'previous' => '歷年 MOPCON',
                 'member' => '志工組織',
-                //  'speaker' => '講者',
+                 'speaker' => '講者',
                 //  'schedule' => '議程',
                 //  'sponsor' => '贊助',
                 // 'schedule_unconf' => '交流場次',
@@ -281,6 +281,7 @@ function render($template_name, $params)
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 // 'hackfoldr' => '共筆記錄',
                 // 'gitter' => 'gitter 聊天室',
+                'blog' => '部落格'
 
             ],
             'his_mopcon' => '歷年 MOPCON',
@@ -296,7 +297,7 @@ function render($template_name, $params)
                 // 'location' => 'Location',
                 // 'previous' => 'Previous Events',
                 'member' => 'Member',
-                //  'speaker' => 'Speakers',
+                 'speaker' => 'Speakers',
                 //  'schedule' => 'Session',
                 // 'schedule_unconf' => 'Unconf',
                 //  'sponsor' => 'Sponsors',
@@ -306,6 +307,7 @@ function render($template_name, $params)
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 // 'hackfoldr' => 'hackfoldr',
                 // 'gitter' => 'gitter',
+                'blog' => 'Blog'
             ],
             'his_mopcon' => 'Past MOPCON',
         ],

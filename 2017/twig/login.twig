@@ -32,6 +32,9 @@
         <div class="func_btn" id="information" onclick="gotoProfile();">
             修改/查看個人資料
         </div>
+        <div class="func_btn" id="badge" onclick="gotoBadge();">
+            徽章圖鑑
+        </div>
     </div>
 </div>
 
@@ -60,9 +63,10 @@
 
     const login_success = (name) => {
         $('.unloginArea').hide();
-        $('#forgetPW').hide();
+        $('#forgetPWD').hide();
         $('#register').hide();
         $('#information').show();
+        $('#badge').show();
         $('.title').addClass('user_name');
         $('.title').text(`Hi! ${name}`);
     }
@@ -92,10 +96,15 @@
         location.href = 'forgetPWD.php';
     }
 
+    const gotoBadge = () => {
+        location.href = 'badge.php';
+    }
+
     window.onload = function () {
         $('.navbar').hide();
         $('.footer').hide();
         $('#information').hide();
+        $('#badge').hide();
 
         const userid = getCookie('userid');
         const username = getCookie('username');
