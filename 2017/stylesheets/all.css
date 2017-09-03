@@ -7501,6 +7501,38 @@ section {
     #badgeContainer .func img {
       margin-right: 7px; }
 
+#descriptionContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 39px 0 49px 0; }
+  #descriptionContainer .descript {
+    width: 313px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 23px; }
+  #descriptionContainer .activity {
+    text-align: left;
+    font-size: 20px;
+    line-height: 23px;
+    color: #7ab6ad;
+    margin-bottom: 40px; }
+  #descriptionContainer .logo {
+    background: transparent url(../images/badge.png) no-repeat center;
+    background-size: 152px;
+    width: 152px;
+    height: 152px; }
+
 .btn {
   cursor: pointer;
   margin: 0 5px 5px 0;

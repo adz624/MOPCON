@@ -1,0 +1,36 @@
+$content_width: 313px;
+
+@mixin flex_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#descriptionContainer {
+    @include flex_block;
+    flex-direction: column;
+    margin: 39px 0 49px 0;
+    
+    .descript {
+        width: $content_width;
+        margin-bottom: 40px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .activity {
+        text-align: left;
+        font-size: 20px;
+        line-height: 23px;
+        color: #7ab6ad;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        background: transparent url(../images/badge.png) no-repeat center;
+        background-size: 152px;
+        width: 152px;
+        height: 152px;
+    }
+}
