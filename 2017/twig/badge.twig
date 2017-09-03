@@ -3,7 +3,7 @@
 {% block content %}
 <div id="badgeContainer">
     <div class="illustration">
-        <div class="badge_icon"></div>
+        <div onclick="toggleModal()" class="badge_icon"></div>
         <div class="badge_icon"></div>
         <div class="badge_icon"></div>
         <div class="badge_icon"></div>
@@ -26,6 +26,38 @@
         </div>
         <div>活動說明</div>
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title sponsor" id="exampleModalLabel">
+                    KKBOX
+                </p>
+                <p class="time">
+                    2017/10/29 10:12 獲得。
+                </p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="logo">
+                    <img src="images/badge.png" alt="">
+                </div>
+                <div class="intro">
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字。
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     window.onload = function () {
@@ -35,6 +67,10 @@
 
     const gotoScan = () => {
         location.href = 'qrcode.php?type=badge';
+    }
+
+    const toggleModal = () => {
+        $('#myModal').modal('show');
     }
 </script>
 {% endblock %}

@@ -7500,6 +7500,42 @@ section {
         margin-right: 13px; }
     #badgeContainer .func img {
       margin-right: 7px; }
+  #badgeContainer .modal-content {
+    border-radius: 20px; }
+    #badgeContainer .modal-content .modal-header {
+      border-radius: 20px 20px 0 0;
+      background-color: #7ab6ad; }
+      #badgeContainer .modal-content .modal-header .sponsor {
+        color: #fff;
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 5px; }
+      #badgeContainer .modal-content .modal-header .time {
+        color: #3f6761;
+        font-size: 14px;
+        line-height: 16px; }
+      #badgeContainer .modal-content .modal-header .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 34px;
+        height: 34px;
+        background-color: #181e3e;
+        border-radius: 34px;
+        opacity: 1; }
+        #badgeContainer .modal-content .modal-header .close span {
+          color: #fff;
+          font-size: 25px; }
+    #badgeContainer .modal-content .modal-body .logo {
+      text-align: center;
+      margin-bottom: 20px; }
+      #badgeContainer .modal-content .modal-body .logo img {
+        width: 155px;
+        height: 155px; }
+    #badgeContainer .modal-content .modal-body .intro {
+      color: #4f4f4f;
+      font-size: 13px;
+      line-height: 15px; }
 
 #descriptionContainer {
   display: -webkit-flex;
