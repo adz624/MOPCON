@@ -1,0 +1,40 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+<div id="badgeContainer">
+    <div class="illustration">
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+        <div class="badge_icon"></div>
+    </div>
+    <p class="collection">
+        已收集數量：1 / 30
+    </p>
+    <div class="func">
+        <div onclick="gotoScan()">
+            <img src="images/scan.png" alt="">
+            徽章掃描
+        </div>
+        <div>活動說明</div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        $('.navbar').hide();
+        $('.footer').hide();
+    }
+
+    const gotoScan = () => {
+        location.href = 'qrcode.php?type=badge';
+    }
+</script>
+{% endblock %}
