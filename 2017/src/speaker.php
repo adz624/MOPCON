@@ -1,7 +1,7 @@
 <?php
 function getAllSpeakers()
 {
-    $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1KrS_FkyR12dKG9apshDo-Ba0HoR6rO_EJ41hxy-0EZk/1/public/values?alt=json"), true);
+    $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1uIN3ztZeBYAliu0tq2_GoQT4Ublly7EMPs2BvIjl_Es/1/public/values?alt=json"), true);
     $google_data = $google_data['feed']['entry'];
 
     foreach ($google_data as $item) {
