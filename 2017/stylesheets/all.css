@@ -7442,7 +7442,7 @@ section {
 .color-gradients-12 {
   background-color: #181E3E; }
 
-#badgeContainer {
+.badgeContainer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7456,29 +7456,30 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 39px 0 49px 0; }
-  #badgeContainer .illustration {
+  .badgeContainer .illustration {
     width: 287px;
     height: 416px; }
-    #badgeContainer .illustration .badge_icon {
-      background: #fff url(../images/badge.png) no-repeat center;
+    .badgeContainer .illustration .badge_icon {
+      position: relative;
+      background: #fff;
       background-size: 67px;
       width: 79px;
       height: 79px;
       border-radius: 8px;
       display: inline-block;
       margin: 0 18px 18px 0; }
-      #badgeContainer .illustration .badge_icon:nth-child(3n+3) {
+      .badgeContainer .illustration .badge_icon:nth-child(3n+3) {
         margin: 0 0 18px 0; }
-  #badgeContainer .collection {
+  .badgeContainer .collection {
     color: #fff;
     font-size: 13px;
     line-height: 15px;
     margin-bottom: 15px; }
-  #badgeContainer .func {
+  .badgeContainer .func {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    #badgeContainer .func div {
+    .badgeContainer .func div {
       width: 150px;
       height: 47px;
       border: 1px solid #fff;
@@ -7496,25 +7497,25 @@ section {
       font-size: 20px;
       line-height: 23px;
       margin-right: 13px; }
-      #badgeContainer .func div:last-child {
+      .badgeContainer .func div:last-child {
         margin-right: 13px; }
-    #badgeContainer .func img {
+    .badgeContainer .func img {
       margin-right: 7px; }
-  #badgeContainer .modal-content {
+  .badgeContainer .modal-content {
     border-radius: 20px; }
-    #badgeContainer .modal-content .modal-header {
+    .badgeContainer .modal-content .modal-header {
       border-radius: 20px 20px 0 0;
       background-color: #7ab6ad; }
-      #badgeContainer .modal-content .modal-header .sponsor {
+      .badgeContainer .modal-content .modal-header .sponsor {
         color: #fff;
         font-size: 30px;
         line-height: 35px;
         margin-bottom: 5px; }
-      #badgeContainer .modal-content .modal-header .time {
+      .badgeContainer .modal-content .modal-header .time {
         color: #3f6761;
         font-size: 14px;
         line-height: 16px; }
-      #badgeContainer .modal-content .modal-header .close {
+      .badgeContainer .modal-content .modal-header .close {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -7523,16 +7524,16 @@ section {
         background-color: #181e3e;
         border-radius: 34px;
         opacity: 1; }
-        #badgeContainer .modal-content .modal-header .close span {
+        .badgeContainer .modal-content .modal-header .close span {
           color: #fff;
           font-size: 25px; }
-    #badgeContainer .modal-content .modal-body .logo {
+    .badgeContainer .modal-content .modal-body .logo {
       text-align: center;
       margin-bottom: 20px; }
-      #badgeContainer .modal-content .modal-body .logo img {
+      .badgeContainer .modal-content .modal-body .logo img {
         width: 155px;
         height: 155px; }
-    #badgeContainer .modal-content .modal-body .intro {
+    .badgeContainer .modal-content .modal-body .intro {
       color: #4f4f4f;
       font-size: 13px;
       line-height: 15px; }
@@ -7925,6 +7926,10 @@ tr:first-child {
   top: 0;
   z-index: -1; }
 
+.badgePic {
+  position: absolute;
+  z-index: 1; }
+
 .badgeWrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7939,34 +7944,39 @@ tr:first-child {
   position: relative; }
   .badgeWrapper .badgePic,
   .badgeWrapper .badgeCycle {
-    position: absolute; }
+    position: absolute;
+    top: 0;
+    left: 0; }
   .badgeWrapper .badgeCycle {
-    width: 110px;
-    height: 110px;
+    width: 79px;
+    height: 79px;
     background: #fff;
     border-radius: 50%;
     opacity: .6; }
-
-.badgeFornt {
-  -webkit-perspective: 50em;
-          perspective: 50em; }
-
-.badge-scale {
-  opacity: 0;
-  -webkit-animation: scale 4.5s linear forwards 1;
-          animation: scale 4.5s linear forwards 1; }
-
-.badge-rotatey {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  opacity: 0;
-  -webkit-animation: rotatey 4.5s ease-out forwards 1;
-          animation: rotatey 4.5s ease-out forwards 1; }
-
-.badge-opacity {
-  opacity: 0;
-  -webkit-animation: opacity 4.5s ease-out forwards 1;
-          animation: opacity 4.5s ease-out forwards 1; }
+  .badgeWrapper .badgeFornt {
+    -webkit-perspective: 50em;
+            perspective: 50em; }
+  .badgeWrapper .badge-scale {
+    opacity: 0;
+    -webkit-animation: scale 4.5s linear forwards 1;
+            animation: scale 4.5s linear forwards 1; }
+  .badgeWrapper .badge-rotatey {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    opacity: 0;
+    -webkit-animation: rotatey 4.5s ease-out forwards 1;
+            animation: rotatey 4.5s ease-out forwards 1; }
+    .badgeWrapper .badge-rotatey img {
+      max-width: 158px;
+      max-height: 158px; }
+  .badgeWrapper .badge-opacity {
+    width: 67px;
+    height: 67px;
+    z-index: 2;
+    opacity: 0;
+    -webkit-animation: opacity 4.5s ease-out forwards 1;
+            animation: opacity 4.5s ease-out forwards 1; }
 
 @-webkit-keyframes scale {
   0% {
@@ -8006,81 +8016,85 @@ tr:first-child {
 
 @-webkit-keyframes rotatey {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: translate(-39.5px, -39.5px);
+            transform: translate(-39.5px, -39.5px); }
   10% {
     opacity: 0;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5); }
   15% {
     opacity: 0.3; }
   20% {
     opacity: 1;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5); }
   27% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(1);
+            transform: translate(-39.5px, -39.5px) scale(1); }
   35% {
-    -webkit-transform: rotatey(-180deg) scale(1);
-            transform: rotatey(-180deg) scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) rotatey(-180deg) scale(1);
+            transform: translate(-39.5px, -39.5px) rotatey(-180deg) scale(1); }
   50% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(1);
+            transform: translate(-39.5px, -39.5px) scale(1); }
   88% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(1);
+            transform: translate(-39.5px, -39.5px) scale(1); }
   91% {
-    -webkit-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(2);
+            transform: translate(-39.5px, -39.5px) scale(2); }
   95% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5); }
   100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5);
     opacity: 1; } }
 
 @keyframes rotatey {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: translate(-39.5px, -39.5px);
+            transform: translate(-39.5px, -39.5px); }
   10% {
     opacity: 0;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5); }
   15% {
     opacity: 0.3; }
   20% {
     opacity: 1;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5); }
   27% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(1);
+            transform: translate(-39.5px, -39.5px) scale(1); }
   35% {
-    -webkit-transform: rotatey(-180deg) scale(1);
-            transform: rotatey(-180deg) scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) rotatey(-180deg) scale(1);
+            transform: translate(-39.5px, -39.5px) rotatey(-180deg) scale(1); }
   50% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(1);
+            transform: translate(-39.5px, -39.5px) scale(1); }
   88% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(1);
+            transform: translate(-39.5px, -39.5px) scale(1); }
   91% {
-    -webkit-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(2);
+            transform: translate(-39.5px, -39.5px) scale(2); }
   95% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5); }
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5); }
   100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translate(-39.5px, -39.5px) scale(0.5);
+            transform: translate(-39.5px, -39.5px) scale(0.5);
     opacity: 1; } }
 
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
-    -webkit-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: translate(20px, 20px) scale(2);
+            transform: translate(20px, 20px) scale(2); }
   50% {
     opacity: 0; }
   53% {
@@ -8099,8 +8113,8 @@ tr:first-child {
 @keyframes opacity {
   0% {
     opacity: 0;
-    -webkit-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: translate(20px, 20px) scale(2);
+            transform: translate(20px, 20px) scale(2); }
   50% {
     opacity: 0; }
   53% {
