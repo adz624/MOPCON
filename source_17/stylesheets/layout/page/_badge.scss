@@ -6,7 +6,7 @@ $content_width: 300px;
     justify-content: center;
 }
 
-#badgeContainer {
+.badgeContainer {
     @include flex_block;
     flex-direction: column;
     margin: 39px 0 49px 0;
@@ -15,7 +15,8 @@ $content_width: 300px;
         width: 287px;
         height: 416px;
         .badge_icon {
-            background: #fff url(../images/badge.png) no-repeat center;
+            position: relative;
+            background: #fff;
             background-size: 67px;
             width: 79px;
             height: 79px;
