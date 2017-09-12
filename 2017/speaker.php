@@ -11,7 +11,7 @@ $params = [
 $params['og_url'] = 'speaker.php';
 
 	$params['speakers'] = getAllSpeakers();
-	$params['main']['ogdesc'] = '濁水溪以南最強大行動科技研討會，星光閃閃講師盡在這邊！'; 	
+	$params['main']['ogdesc'] = '濁水溪以南最強大行動科技研討會，星光閃閃講師盡在這邊！';
 
 	// $templates = [
 	//     'zh' => 'speaker.twig',
@@ -27,5 +27,4 @@ if (count($params['speakers']) === 0 || current($params['speakers']) === null) {
 
 $lang = getLang();
 
-$params['text'] = isset($text[$lang]) ? $text[$lang] : $text['zh'];
 render('speaker.twig', $params);
