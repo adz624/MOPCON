@@ -5,23 +5,23 @@ include __DIR__ . '/src/init.php';
 $lang = getLang();
 $pageid = 'member';
 $params = [
-    'pageid' => $pageid,
+    'pageid'    => $pageid,
     'filemtime' => getLastUpdateTime($pageid),
-    'member' => getAllMembers()
+    'member'    => getAllMembers(),
 ];
 $params['og_url'] = 'member.php';
-$params['main']['ogdesc'] = 'MOPCON的志工成員介紹。'; 
+$params['main']['ogdesc'] = 'MOPCON的志工成員介紹。';
 $text = [
     'zh' => [
         'committee' => '委員',
-        'member' => '成員',
-        'list' => '名單'
+        'member'    => '成員',
+        'list'      => '名單',
     ],
     'en' => [
         'committee' => 'Committee',
-        'member' => 'Member',
-        'list' =>  'List'
-    ]
-  ];
+        'member'    => 'Member',
+        'list'      => 'List',
+    ],
+];
 $params['text'] = isset($text[$lang]) ? $text[$lang] : $text['zh'];
 render('member.twig', $params);

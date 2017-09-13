@@ -1,3 +1,10 @@
+$badge_size: 79px;
+
+.badgePic {
+    position: absolute;
+    z-index: 1;
+}
+
 .badgeWrapper {
     display: flex;
     height: 100vh;
@@ -7,34 +14,45 @@
     .badgePic,
     .badgeCycle {
         position: absolute;
+        top: 0;
+        left: 0;
     }
     .badgeCycle {
-        width: 110px;
-        height: 110px;
+        width: $badge_size;
+        height: $badge_size;
         background: #fff;
         border-radius: 50%;
         opacity: .6;
     }
-}
 
-.badgeFornt {
-    perspective: 50em;
-}
+    .badgeFornt {
+        perspective: 50em;
+    }
+    
+    .badge-scale {
+        opacity: 0;
+        animation: scale 4.5s linear forwards 1;
+    }
+    
+    .badge-rotatey {
+        position: absolute;
+        transform-style: preserve-3d;
+        opacity: 0;
+        animation: rotatey 4.5s ease-out forwards 1;
 
-.badge-scale {
-    opacity: 0;
-    animation: scale 4.5s linear forwards 1;
-}
-
-.badge-rotatey {
-    transform-style: preserve-3d;
-    opacity: 0;
-    animation: rotatey 4.5s ease-out forwards 1;
-}
-
-.badge-opacity {
-    opacity: 0;
-    animation: opacity 4.5s ease-out forwards 1;
+        img {
+            max-width: $badge_size * 2;
+            max-height: $badge_size * 2;
+        }
+    }
+    
+    .badge-opacity {
+        width: 67px;
+        height: 67px;
+        z-index: 2;
+        opacity: 0;
+        animation: opacity 4.5s ease-out forwards 1;
+    }
 }
 
 @keyframes scale {
@@ -63,38 +81,39 @@
 @keyframes rotatey {
     0% {
         opacity: 0;
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1);
     }
     10% {
         opacity: 0;
-        transform: scale(0.5);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(0.5);
     }
     15% {
         opacity: 0.3;
     }
     20% {
         opacity: 1;
-        transform: scale(0.5);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(0.5);
     }
     27% {
-        transform: scale(1);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(1);
     }
     35% {
-        transform: rotatey(-180deg) scale(1);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) rotatey(-180deg) scale(1);
     }
     50% {
-        transform: scale(1);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(1);
     }
     88% {
-        transform: scale(1);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(1);
     }
     91% {
-        transform: scale(2);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(2);
     }
     95% {
-        transform: scale(0.5);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(0.5);
     }
     100% {
-        transform: scale(0.5);
+        transform: translate(($badge_size / 2) * -1, ($badge_size / 2) * -1) scale(0.5);
         opacity: 1;
     }
 }
@@ -102,7 +121,7 @@
 @keyframes opacity {
     0% {
         opacity: 0;
-        transform: scale(2);
+        transform: translate(20px, 20px) scale(2);
     }
     50% {
         opacity: 0;
