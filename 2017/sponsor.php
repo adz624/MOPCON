@@ -11,9 +11,9 @@ $params = [
 $params['og_url'] = 'sponsor.php';
 $params['sponsors'] = getAllSponsors();
 
-if (isset($_GET['api'])) {
+if (isset($_GET['id'])) {
     getJson($params);
 }
 
-$template = isset($templates[$lang]) ? $templates[$lang] : $templates['zh'];
+$template = (isset($_GET['id']) ? 'sponsorDetail.twig' : 'sponsor.twig');
 render($template, $params);
