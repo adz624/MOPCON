@@ -1,6 +1,25 @@
 {% extends 'main.twig' %}
 
 {% block content %}
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '299459507199061',
+            xfbml      : true,
+            version    : 'v2.9'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <div class="container badgeContainer">
     <button onclick="test('icon1')">TEST1</button>
     <button onclick="test('icon2')">TEST2</button>
@@ -50,30 +69,35 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <p class="modal-title sponsor" id="exampleModalLabel">
-                    KKBOX
-                </p>
-                <p class="time">
-                    2017/10/29 10:12 獲得。
-                </p>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="logo">
-                    <img src="images/badge.png" alt="">
+                <div class="modal-header">
+                    <p class="modal-title sponsor" id="exampleModalLabel">
+                        KKBOX
+                    </p>
+                    <p class="time">
+                        2017/10/29 10:12 獲得。
+                    </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="shareBtn" onclick="fbShare()" >
+                        <a class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON"></a>
+                        <span>分享</span>
+                    </p>
                 </div>
-                <div class="intro">
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                    KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字。
+                <div class="modal-body">
+                    <div class="logo">
+                        <img src="images/badge/badge002.png" alt="">
+                    </div>
+                    <div class="intro">
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
+                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字。
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,6 +120,26 @@
 
     const toggleModal = () => {
         $('#myModal').modal('show');
+    }
+
+    const fbShare = () => {
+        const url = 'https://www.kkbox.com/tw/tc/index.html';
+        const title = 'MOPCON 徽章'
+        const description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起收集換獎品」';
+        const image = `${document.location.href.replace('badge.php', '')}images/badge/badge002.png`;
+
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.shares',
+            action_properties: JSON.stringify({
+                object: {
+                    'og:url': url,
+                    'og:title': title,
+                    'og:description': description,
+                    'og:image': image,
+                }
+            })
+        }, function(response) {});
     }
 </script>
 {% endblock %}
