@@ -11,6 +11,19 @@ $content_width: 300px;
     flex-direction: column;
     margin: 39px 0 49px 0;
 
+    .shareBtn {
+        display: flex;
+        align-items: center;
+        color: #3f6761;
+        cursor: pointer;
+        .fa {
+            color: #3c579e;
+        }
+        span {
+            margin-left: 5px;
+        }
+    }
+
     .illustration {
         width: 287px;
         height: 416px;

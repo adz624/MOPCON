@@ -7456,6 +7456,19 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 39px 0 49px 0; }
+  .badgeContainer .shareBtn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #3f6761;
+    cursor: pointer; }
+    .badgeContainer .shareBtn .fa {
+      color: #3c579e; }
+    .badgeContainer .shareBtn span {
+      margin-left: 5px; }
   .badgeContainer .illustration {
     width: 287px;
     height: 416px; }
