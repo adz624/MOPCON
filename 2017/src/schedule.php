@@ -56,14 +56,18 @@ function getAllScheduleDetail($speaker = 0)
         if( $lang_zh[$item['gsx$議程編號']['$t']] != []) { 
             if ($lang_zh[$item['gsx$議程編號']['$t']]["title"] != '') {
                 $lang_zh[$item['gsx$議程編號']['$t']]["title"] .= " 與 ";
+                $lang_en[$item['gsx$議程編號']['$t']]["title"] .= " & ";
             }
             $lang_zh[$item['gsx$議程編號']['$t']]["title"] .= $item['gsx$姓名']['$t'];
             $lang_zh[$item['gsx$議程編號']['$t']]["picture"] = $item['gsx$合併講者照片']['$t'];
+
+            $lang_en[$item['gsx$議程編號']['$t']]["title"] .= $item['gsx$姓名en']['$t'];
+            $lang_en[$item['gsx$議程編號']['$t']]["picture"] = $item['gsx$合併講者照片']['$t'];
         }
         else {
             $lang_zh[$item['gsx$議程編號']['$t']] = [
-                'title'           => $item['gsx$姓名']['$t'],
-                'name'          => $item['gsx$姓名']['$t'],
+                'title'          => $item['gsx$姓名']['$t'],
+                'name'           => $item['gsx$姓名']['$t'],
                 'type'           => $item['gsx$類別']['$t'],
                 'job'            => $item['gsx$職稱']['$t'],
                 'info'           => $item['gsx$個人介紹']['$t'],
@@ -80,7 +84,7 @@ function getAllScheduleDetail($speaker = 0)
     
             $lang_en[$item['gsx$議程編號']['$t']] = [
                 'title'           => $item['gsx$姓名']['$t'],
-                'name'          => $item['gsx$姓名']['$t'],
+                'name'          => $item['gsx$姓名en']['$t'],
                 'type'           => $item['gsx$類別']['$t'],
                 'job'            => $item['gsx$職稱']['$t'],
                 'info'           => $item['gsx$個人介紹en']['$t'],

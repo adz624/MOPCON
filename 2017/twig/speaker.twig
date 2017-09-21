@@ -8,7 +8,13 @@
 {% for id, data in speakers %}
     <div class="content-radius clearfix">
         <div class="row">
-            <h3 class="h3 col-lg-12">{{data['name']}}</h3>
+            <h3 class="h3 col-lg-12">
+                {{data['name']}} 
+                {% if data['job'] %}
+                <br/ class="visible-xs">
+                <span style="font-size: 14px;color: #999;">({{data['job']}}) </span>
+                {% endif %}
+            </h3>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="pic pic-cycle" style="background-image:url(./images/speaker/{{ data['picture'] }});">
                 </div>
