@@ -39,10 +39,15 @@
                                 {% if content['schedule'] %}
                                     <td colspan="{{ item['colspan'] }}" role="content-col">
                                         <span class="scheduleTable-room">{{ content['room'] }}</span>
+<<<<<<< HEAD
                                         <div class="scheduleTable-speaker">{{ content['name'] }}</div>
+=======
+                                        <div class="scheduleTable-speaker">{{ content['title'] }}</div>
+>>>>>>> develop
                                         <div class="scheduleTable-subject">
-                                            {{ content['schedule_topic'] }}
-                                            <span class="subjectTag">{{ content['type'] }}</span>
+											<span class="subjectTag">{{ content['type'] }}</span>
+											<br/>
+											{{ content['schedule_topic'] }}
                                         </div>
 										{% if content['slide'] %}
                                         <div class="scheduleTable-link">
@@ -76,16 +81,23 @@
                         <td role="time-col">{{ item['time'] }}</td>
                         {% for key, content in item['content'] %}
                             {% if content['schedule'] %}
-                                <td colspan="{{ item['colspan'] }}" role="content-col">
+                                <td colspan="{{ item['colspan'] }}" role="content-col" onclick="openDetailBox(1)">
                                     <span class="scheduleTable-room">{{ content['room'] }}</span>
+<<<<<<< HEAD
                                     <div class="scheduleTable-speaker">{{ content['name'] }}</div>
+=======
+                                    <div class="scheduleTable-speaker">{{ content['title'] }}</div>
+>>>>>>> develop
                                     <div class="scheduleTable-subject">
-                                        {{ content['schedule_topic'] }}
-                                        <span class="subjectTag">{{ content['type'] }}</span>
+										<span class="subjectTag">{{ content['type'] }}</span>
+										<br/>
+										{{ content['schedule_topic'] }}
                                     </div>
+									{% if content['slide'] %}
                                     <div class="scheduleTable-link">
                                         <a>slide</a>
                                     </div>
+									{% endif %}
                                 </td>
                             {% else %}
                                 <td colspan="{{ item['colspan'] }}" role="rundown-col">
@@ -106,16 +118,19 @@
 	<div class="detailBoxWrapper">
 		<div class="detailBox_content">
 			<div class="detailBox_content_schedule">
-				<a href="#" class="detailBox_content_schedule_speaker">
-					<div class="pic pic-detail" style="background-image:url(http://fakeimg.pl/900x600/?text=pic);">
-					</div>
-					<h4 class="inline-block">克里斯馬汀</h4>
-				</a>
+				
 				<div class="scheduleTable-subject">
-					行動裝置科技趨勢
+					在Google Cloud Platform探索AI和機器學習的世界
 				</div>
-				<p class="height-limit">等各大市場分析公司每年都會推出許多新科技趨勢的預測。其中很多其實不怎麼新，很多其實不怎麼有前途，很多其實有前途但你追不上。我們要怎麼觀察並找出自己的路呢？"
+				
+				<p class="height-limit">
+				Google Cloud 一直以來走在尖端的機器學習技術最前線，在機器學習的領域中，電腦視覺(Computer vision)、預測模型(predictive modeling)、自然語言處理(natural language understanding)，以及語音辨識(speech recognition)等都開始被業界廣泛應用。在這個議程，你將學習到如何應用機器學習和Tensorflow來開發你專屬的應用。
 				</p>
+				<a href="#" class="detailBox_content_schedule_speaker">
+					<div class="pic pic-detail" style="background-image:url(./images/speaker/harrylin_kjwu.jpg);">
+					</div>
+					<h4 class="inline-block">吳貴融 與 林書平</h4>
+				</a>
 			</div>
 			<div class="detailBox-link">
 				<a class="slide-link">Slide Link</a>

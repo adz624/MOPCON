@@ -21,7 +21,7 @@ function getAllSpeakers()
         ];
 
         $lang_en[$item['gsx$講者編號']['$t']] = [
-            'name'           => $item['gsx$姓名']['$t'],
+            'name'           => $item['gsx$姓名en']['$t'],
             'type'           => $item['gsx$類別']['$t'],
             'job'            => $item['gsx$職稱']['$t'],
             'info'           => $item['gsx$個人介紹en']['$t'],
