@@ -39,10 +39,11 @@
                                 {% if content['schedule'] %}
                                     <td colspan="{{ item['colspan'] }}" role="content-col">
                                         <span class="scheduleTable-room">{{ content['room'] }}</span>
-                                        <div class="scheduleTable-speak">{{ content['name'] }}</div>
+                                        <div class="scheduleTable-speaker">{{ content['title'] }}</div>
                                         <div class="scheduleTable-subject">
-                                            {{ content['schedule_topic'] }}
-                                            <span class="subjectTag">{{ content['type'] }}</span>
+											<span class="subjectTag">{{ content['type'] }}</span>
+											<br/>
+											{{ content['schedule_topic'] }}
                                         </div>
 										{% if content['slide'] %}
                                         <div class="scheduleTable-link">
@@ -78,14 +79,17 @@
                             {% if content['schedule'] %}
                                 <td colspan="{{ item['colspan'] }}" role="content-col">
                                     <span class="scheduleTable-room">{{ content['room'] }}</span>
-                                    <div class="scheduleTable-speak">{{ content['name'] }}</div>
+                                    <div class="scheduleTable-speaker">{{ content['title'] }}</div>
                                     <div class="scheduleTable-subject">
-                                        {{ content['schedule_topic'] }}
-                                        <span class="subjectTag">{{ content['type'] }}</span>
+										<span class="subjectTag">{{ content['type'] }}</span>
+										<br/>
+										{{ content['schedule_topic'] }}
                                     </div>
+									{% if content['slide'] %}
                                     <div class="scheduleTable-link">
                                         <a>slide</a>
                                     </div>
+									{% endif %}
                                 </td>
                             {% else %}
                                 <td colspan="{{ item['colspan'] }}" role="rundown-col">

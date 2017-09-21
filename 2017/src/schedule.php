@@ -54,25 +54,16 @@ function getAllScheduleDetail($speaker = 0)
     foreach ($google_data as $item) {
         
         if( $lang_zh[$item['gsx$議程編號']['$t']] != []) { 
-            $lang_zh[$item['gsx$議程編號']['$t']] = [
-                'name'           => $item['gsx$姓名']['$t'],
-                'type'           => $item['gsx$類別']['$t'],
-                'job'            => $item['gsx$職稱']['$t'],
-                'info'           => $item['gsx$個人介紹']['$t'],
-                'picture'        => $item['gsx$照片']['$t'],
-                'facebook'       => $item['gsx$facebook']['$t'],
-                'github'         => $item['gsx$github']['$t'],
-                'blog'           => $item['gsx$blog']['$t'],
-                'website'        => $item['gsx$website']['$t'],
-                'linkedin'       => $item['gsx$linkedin']['$t'],
-                'schedule_topic' => $item['gsx$演講主題']['$t'],
-                'schedule_info'  => $item['gsx$演講摘要']['$t'],
-                'slide'          => $item['gsx$slide']['$t'],
-            ];
+            if ($lang_zh[$item['gsx$議程編號']['$t']]["title"] != '') {
+                $lang_zh[$item['gsx$議程編號']['$t']]["title"] .= " 與 ";
+            }
+            $lang_zh[$item['gsx$議程編號']['$t']]["title"] .= $item['gsx$姓名']['$t'];
+            $lang_zh[$item['gsx$議程編號']['$t']]["picture"] = $item['gsx$合併講者照片']['$t'];
         }
         else {
             $lang_zh[$item['gsx$議程編號']['$t']] = [
-                'name'           => $item['gsx$姓名']['$t'],
+                'title'           => $item['gsx$姓名']['$t'],
+                'name'          => $item['gsx$姓名']['$t'],
                 'type'           => $item['gsx$類別']['$t'],
                 'job'            => $item['gsx$職稱']['$t'],
                 'info'           => $item['gsx$個人介紹']['$t'],
@@ -88,7 +79,8 @@ function getAllScheduleDetail($speaker = 0)
             ];
     
             $lang_en[$item['gsx$議程編號']['$t']] = [
-                'name'           => $item['gsx$姓名']['$t'],
+                'title'           => $item['gsx$姓名']['$t'],
+                'name'          => $item['gsx$姓名']['$t'],
                 'type'           => $item['gsx$類別']['$t'],
                 'job'            => $item['gsx$職稱']['$t'],
                 'info'           => $item['gsx$個人介紹en']['$t'],
@@ -121,7 +113,8 @@ function getSpeakerDetail($speakers, $speakerDetail)
                 $result[] = [
                     'schedule'       => true,
                     'schedule_topic' => $speakerDetail[$item]['schedule_topic'],
-                    'name'           => $speakerDetail[$item]['name'],
+                    'title'           => $speakerDetail[$item]['title'],
+                    'picture'        => $speakerDetail[$item]['picture'],
                     'type'           => $speakerDetail[$item]['type'],
                     'slide'          => $speakerDetail[$item]['slide'],
                     'room'           => count($speakers) === 1 ? 'All' : 'R' . ($key + 1),
