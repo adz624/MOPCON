@@ -10,8 +10,8 @@
 <!-- switch date -->
 <section class="switch container">
 	<div class="btn-group btn-group-switch">
-		<a href="#" data-switch="Day1" class="btn btn-switch is-active">10/28</a>
-		<a href="#" data-switch="Day2" class="btn btn-switch">10/29</a>
+		<a href="#Day1" data-switch="Day1" class="btn btn-switch is-active">10/28</a>
+		<a href="#Day2" data-switch="Day2" class="btn btn-switch">10/29</a>
 	</div>
 </section>
 
@@ -47,7 +47,7 @@
                                         </div>
 										{% if content['slide'] %}
                                         <div class="scheduleTable-link">
-                                            <a href="{{ content['slide'] }}">slide</a>
+                                            <a href="{{ content['slide'] }}" target="_blank">slide</a>
                                         </div>
 										{% endif %}
                                     </td>
@@ -67,15 +67,15 @@
 												<p class="height-limit">
 												{{ content['schedule_info'] }}
 												</p>
-												<a href="#" class="detailBox_content_schedule_speaker">
+												<div class="detailBox_content_schedule_speaker">
 													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'] }});">
 													</div>
 													<h4 class="inline-block">{{ content['title'] }}</h4>
-												</a>
+</div>
 											</div>
 											{% if content['slide'] %}
 											<div class="detailBox-link">
-												<a class="slide-link">Slide Link</a>
+												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link">Slide Link</a>
 											</div>
 											{% endif %}
 											<span class="fa-stack fa-lg detailBox_content_cancel ">
@@ -100,7 +100,7 @@
 					<th></th>
 					<th>R1</th>
 					<th>R2</th>
-					<th>R4</th>
+					<th>R3</th>
 				</tr>
                 {% for item in schedules['day2'] %}
                     <tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
@@ -117,7 +117,7 @@
                                     </div>
 									{% if content['slide'] %}
                                     <div class="scheduleTable-link">
-                                        <a>slide</a>
+                                        <a href="{{ content['slide'] }}" target="_blank">slide</a>
                                     </div>
 									{% endif %}
                                 </td>
@@ -137,15 +137,15 @@
 												<p class="height-limit">
 												{{ content['schedule_info'] }}
 												</p>
-												<a href="#" class="detailBox_content_schedule_speaker">
+												<div class="detailBox_content_schedule_speaker">
 													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'] }});">
 													</div>
 													<h4 class="inline-block">{{ content['title'] }}</h4>
-												</a>
+</div>
 											</div>
 											{% if content['slide'] %}
 											<div class="detailBox-link">
-												<a class="slide-link">Slide Link</a>
+												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link" target="_blank">Slide Link</a>
 											</div>
 											{% endif %}
 											<span class="fa-stack fa-lg detailBox_content_cancel ">
