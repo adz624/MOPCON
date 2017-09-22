@@ -10,8 +10,8 @@
 <!-- switch date -->
 <section class="switch container">
 	<div class="btn-group btn-group-switch">
-		<a href="#" data-switch="Day1" class="btn btn-switch is-active">10/28</a>
-		<a href="#" data-switch="Day2" class="btn btn-switch">10/29</a>
+		<a href="#Day1" data-switch="Day1" class="btn btn-switch is-active">10/28</a>
+		<a href="#Day2" data-switch="Day2" class="btn btn-switch">10/29</a>
 	</div>
 </section>
 
@@ -37,13 +37,9 @@
 						<td role="time-col">{{ item['time'] }}</td>
 							{% for key, content in item['content'] %}
                                 {% if content['schedule'] %}
-                                    <td colspan="{{ item['colspan'] }}" role="content-col">
+                                    <td colspan="{{ item['colspan'] }}" role="content-col" onclick="openDetailBox({{ content['id'] }})">
                                         <span class="scheduleTable-room">{{ content['room'] }}</span>
-<<<<<<< HEAD
-                                        <div class="scheduleTable-speaker">{{ content['name'] }}</div>
-=======
-                                        <div class="scheduleTable-speaker">{{ content['title'] }}</div>
->>>>>>> develop
+                                        <div class="scheduleTable-speaker">{{ content['title'] }} </div>
                                         <div class="scheduleTable-subject">
 											<span class="subjectTag">{{ content['type'] }}</span>
 											<br/>
@@ -51,7 +47,7 @@
                                         </div>
 										{% if content['slide'] %}
                                         <div class="scheduleTable-link">
-                                            <a href="{{ content['slide'] }}">slide</a>
+                                            <a href="{{ content['slide'] }}" target="_blank">slide</a>
                                         </div>
 										{% endif %}
                                     </td>
@@ -60,10 +56,40 @@
                                     {{ content['content'] }}
                                     </td>
                                 {% endif %}
+								<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
+									<div class="detailBoxWrapper">
+										<div class="detailBox_content">
+											<div class="detailBox_content_schedule">
+												<div class="scheduleTable-subject">
+												{{ content['schedule_topic'] }}
+												</div>
+												
+												<p class="height-limit">
+												{{ content['schedule_info'] }}
+												</p>
+												<div class="detailBox_content_schedule_speaker">
+													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'] }});">
+													</div>
+													<h4 class="inline-block">{{ content['title'] }}</h4>
+</div>
+											</div>
+											{% if content['slide'] %}
+											<div class="detailBox-link">
+												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link">Slide Link</a>
+											</div>
+											{% endif %}
+											<span class="fa-stack fa-lg detailBox_content_cancel ">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+											</span>
+										</div>
+										<div class="detailBox_maskBg"></div>
+									</div>
+								</section>
                             {% endfor %}
 					</tr>
+					
 				{% endfor %}
-				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -74,20 +100,16 @@
 					<th></th>
 					<th>R1</th>
 					<th>R2</th>
-					<th>R4</th>
+					<th>R3</th>
 				</tr>
                 {% for item in schedules['day2'] %}
                     <tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
                         <td role="time-col">{{ item['time'] }}</td>
                         {% for key, content in item['content'] %}
                             {% if content['schedule'] %}
-                                <td colspan="{{ item['colspan'] }}" role="content-col" onclick="openDetailBox(1)">
+                                <td colspan="{{ item['colspan'] }}" role="content-col" onclick="openDetailBox({{ content['id'] }})">
                                     <span class="scheduleTable-room">{{ content['room'] }}</span>
-<<<<<<< HEAD
-                                    <div class="scheduleTable-speaker">{{ content['name'] }}</div>
-=======
                                     <div class="scheduleTable-speaker">{{ content['title'] }}</div>
->>>>>>> develop
                                     <div class="scheduleTable-subject">
 										<span class="subjectTag">{{ content['type'] }}</span>
 										<br/>
@@ -95,7 +117,7 @@
                                     </div>
 									{% if content['slide'] %}
                                     <div class="scheduleTable-link">
-                                        <a>slide</a>
+                                        <a href="{{ content['slide'] }}" target="_blank">slide</a>
                                     </div>
 									{% endif %}
                                 </td>
@@ -104,6 +126,36 @@
                                     {{ content['content'] }}
                                 </td>
                             {% endif %}
+							<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
+									<div class="detailBoxWrapper">
+										<div class="detailBox_content">
+											<div class="detailBox_content_schedule">
+												<div class="scheduleTable-subject">
+												{{ content['schedule_topic'] }}
+												</div>
+												
+												<p class="height-limit">
+												{{ content['schedule_info'] }}
+												</p>
+												<div class="detailBox_content_schedule_speaker">
+													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'] }});">
+													</div>
+													<h4 class="inline-block">{{ content['title'] }}</h4>
+</div>
+											</div>
+											{% if content['slide'] %}
+											<div class="detailBox-link">
+												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link" target="_blank">Slide Link</a>
+											</div>
+											{% endif %}
+											<span class="fa-stack fa-lg detailBox_content_cancel ">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+											</span>
+										</div>
+										<div class="detailBox_maskBg"></div>
+									</div>
+								</section>
                         {% endfor %}
                     </tr>
                 {% endfor %}
@@ -114,33 +166,5 @@
 
 
 <!-- schedule detailBox -->
-<section id="box-1" class="detailBox" style="display: none;">
-	<div class="detailBoxWrapper">
-		<div class="detailBox_content">
-			<div class="detailBox_content_schedule">
-				
-				<div class="scheduleTable-subject">
-					在Google Cloud Platform探索AI和機器學習的世界
-				</div>
-				
-				<p class="height-limit">
-				Google Cloud 一直以來走在尖端的機器學習技術最前線，在機器學習的領域中，電腦視覺(Computer vision)、預測模型(predictive modeling)、自然語言處理(natural language understanding)，以及語音辨識(speech recognition)等都開始被業界廣泛應用。在這個議程，你將學習到如何應用機器學習和Tensorflow來開發你專屬的應用。
-				</p>
-				<a href="#" class="detailBox_content_schedule_speaker">
-					<div class="pic pic-detail" style="background-image:url(./images/speaker/harrylin_kjwu.jpg);">
-					</div>
-					<h4 class="inline-block">吳貴融 與 林書平</h4>
-				</a>
-			</div>
-			<div class="detailBox-link">
-				<a class="slide-link">Slide Link</a>
-			</div>
-			<span class="fa-stack fa-lg detailBox_content_cancel ">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-times fa-stack-1x fa-inverse"></i>
-			</span>
-		</div>
-		<div class="detailBox_maskBg"></div>
-	</div>
-</section>
+
 {% endblock %}

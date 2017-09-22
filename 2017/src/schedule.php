@@ -66,6 +66,7 @@ function getAllScheduleDetail($speaker = 0)
         }
         else {
             $lang_zh[$item['gsx$議程編號']['$t']] = [
+                'id'             => $item['gsx$議程編號']['$t'],
                 'title'          => $item['gsx$姓名']['$t'],
                 'name'           => $item['gsx$姓名']['$t'],
                 'type'           => $item['gsx$類別']['$t'],
@@ -83,8 +84,9 @@ function getAllScheduleDetail($speaker = 0)
             ];
     
             $lang_en[$item['gsx$議程編號']['$t']] = [
-                'title'           => $item['gsx$姓名']['$t'],
-                'name'          => $item['gsx$姓名en']['$t'],
+                'id'             => $item['gsx$議程編號']['$t'],
+                'title'          => $item['gsx$姓名en']['$t'],
+                'name'           => $item['gsx$姓名en']['$t'],
                 'type'           => $item['gsx$類別']['$t'],
                 'job'            => $item['gsx$職稱']['$t'],
                 'info'           => $item['gsx$個人介紹en']['$t'],
@@ -116,8 +118,10 @@ function getSpeakerDetail($speakers, $speakerDetail)
             if (isset($speakerDetail[$item])) {
                 $result[] = [
                     'schedule'       => true,
+                    'id'             => $speakerDetail[$item]['id'],
                     'schedule_topic' => $speakerDetail[$item]['schedule_topic'],
-                    'title'           => $speakerDetail[$item]['title'],
+                    'schedule_info'  => $speakerDetail[$item]['schedule_info'],
+                    'title'          => $speakerDetail[$item]['title'],
                     'picture'        => $speakerDetail[$item]['picture'],
                     'type'           => $speakerDetail[$item]['type'],
                     'slide'          => $speakerDetail[$item]['slide'],
