@@ -281,7 +281,8 @@ function render($template_name, $params)
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 // 'hackfoldr' => '共筆記錄',
                 // 'gitter' => 'gitter 聊天室',
-                'blog' => '部落格'
+                'blog' => '部落格',
+                //'stalls' => '社團攤位申請'
 
             ],
             'his_mopcon' => '歷年 MOPCON',
@@ -307,7 +308,8 @@ function render($template_name, $params)
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 // 'hackfoldr' => 'hackfoldr',
                 // 'gitter' => 'gitter',
-                'blog' => 'Blog'
+                'blog' => 'Blog',
+                //'stalls' => 'Stalls'
             ],
             'his_mopcon' => 'Past MOPCON',
         ],
