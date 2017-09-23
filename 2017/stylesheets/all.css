@@ -7810,6 +7810,10 @@ section {
   content: '';
   background-image: url(../images/icon-link.svg); }
 
+.icon-linkedin:before {
+  content: '';
+  background-image: url(../images/icon-linkedin.svg); }
+
 .table {
   text-align: center; }
 
