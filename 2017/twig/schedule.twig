@@ -67,11 +67,13 @@
 												<p class="height-limit">
 												{{ content['schedule_info'] }}
 												</p>
+												{% for speaker_key, speaker in content['name'] %}
 												<div class="detailBox_content_schedule_speaker">
-													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'] }});">
+													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
 													</div>
-													<h4 class="inline-block">{{ content['title'] }}</h4>
-</div>
+													<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
+												</div>
+												{% endfor %}
 											</div>
 											{% if content['slide'] %}
 											<div class="detailBox-link">
@@ -137,11 +139,13 @@
 												<p class="height-limit">
 												{{ content['schedule_info'] }}
 												</p>
-												<div class="detailBox_content_schedule_speaker">
-													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'] }});">
+                                                {% for speaker_key, speaker in content['name'] %}
+													<div class="detailBox_content_schedule_speaker">
+														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
+														</div>
+														<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
 													</div>
-													<h4 class="inline-block">{{ content['title'] }}</h4>
-</div>
+                                                {% endfor %}
 											</div>
 											{% if content['slide'] %}
 											<div class="detailBox-link">
