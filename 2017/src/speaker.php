@@ -8,6 +8,7 @@ function getSpeakers($speaker_id = 0)
 
     foreach ($google_data as $item) {
         $lang_zh[$item['gsx$講者編號']['$t']] = [
+            'speaker_id'     => $item['gsx$講者編號']['$t'],
             'name'           => $item['gsx$姓名']['$t'],
             'type'           => $item['gsx$類別']['$t'],
             'job'            => $item['gsx$職稱']['$t'],
@@ -25,6 +26,7 @@ function getSpeakers($speaker_id = 0)
         ];
 
         $lang_en[$item['gsx$講者編號']['$t']] = [
+            'speaker_id'     => $item['gsx$講者編號']['$t'],
             'name'           => $item['gsx$姓名en']['$t'],
             'type'           => $item['gsx$類別']['$t'],
             'job'            => $item['gsx$職稱']['$t'],

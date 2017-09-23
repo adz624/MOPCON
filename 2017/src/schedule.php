@@ -65,6 +65,9 @@ function getSpeakersOrderByScheduleId()
             'title'          => isset($data[$item['schedule_id']]["title"]) ?
                 $data[$item['schedule_id']]["title"] . " & " . $item['name'] :
                 $item['name'],
+            'speaker_id'     => isset($data[$item['schedule_id']]["speaker_id"]) ?
+                [$data[$item['schedule_id']]["speaker_id"][0], $item['speaker_id']] :
+                [$item['speaker_id']],
             'name'           => isset($data[$item['schedule_id']]["name"]) ?
                 [$data[$item['schedule_id']]["name"][0], $item['name']] :
                 [$item['name']],
