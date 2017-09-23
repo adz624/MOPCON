@@ -6722,7 +6722,8 @@ section {
     width: 100%; } }
 
 .scheduleTable td[role="content-col"] {
-  cursor: pointer; }
+  cursor: pointer;
+  width: 25%; }
   @media (max-width: 767px) {
     .scheduleTable td[role="content-col"] {
       display: block;
