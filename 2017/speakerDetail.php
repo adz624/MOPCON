@@ -7,7 +7,7 @@ $speaker = isset($_GET['speaker']) ? $_GET['speaker'] : '1';
 $params = [
     'pageid'        => $pageid,
     'filemtime'     => getLastUpdateTime($pageid),
-    'speakerDetail' => getAllSpeakerDetail($speaker),
+    'speakerDetail' => getSpeakers($speaker),
     'index'         => getIndex(),
 ];
 
