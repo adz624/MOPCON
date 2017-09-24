@@ -110,6 +110,7 @@
     }
     td[role="content-col"] {
         cursor: pointer;
+        width: 25%;
         @include pad-below() {
             display: block;
             width: 100%;

@@ -1,11 +1,14 @@
 <?php
-function getAllSpeakers()
+function getSpeakers($speaker_id = 0)
 {
     $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1uIN3ztZeBYAliu0tq2_GoQT4Ublly7EMPs2BvIjl_Es/1/public/values?alt=json"), true);
     $google_data = $google_data['feed']['entry'];
+    $lang_zh = [];
+    $lang_en = [];
 
     foreach ($google_data as $item) {
         $lang_zh[$item['gsx$講者編號']['$t']] = [
+            'speaker_id'     => $item['gsx$講者編號']['$t'],
             'name'           => $item['gsx$姓名']['$t'],
             'type'           => $item['gsx$類別']['$t'],
             'job'            => $item['gsx$職稱']['$t'],
@@ -18,9 +21,12 @@ function getAllSpeakers()
             'linkedin'       => $item['gsx$linkedin']['$t'],
             'schedule_topic' => $item['gsx$演講主題']['$t'],
             'schedule_info'  => $item['gsx$演講摘要']['$t'],
+            'schedule_id'    => $item['gsx$議程編號']['$t'],
+            'slide'          => $item['gsx$slide']['$t'],
         ];
 
         $lang_en[$item['gsx$講者編號']['$t']] = [
+            'speaker_id'     => $item['gsx$講者編號']['$t'],
             'name'           => $item['gsx$姓名en']['$t'],
             'type'           => $item['gsx$類別']['$t'],
             'job'            => $item['gsx$職稱']['$t'],
@@ -33,12 +39,14 @@ function getAllSpeakers()
             'linkedin'       => $item['gsx$linkedin']['$t'],
             'schedule_topic' => $item['gsx$演講主題en']['$t'],
             'schedule_info'  => $item['gsx$演講摘要en']['$t'],
+            'schedule_id'    => $item['gsx$議程編號']['$t'],
+            'slide'          => $item['gsx$slide']['$t'],
         ];
     }
 
     $main = [
-        'zh' => $lang_zh,
-        'en' => $lang_en,
+        'zh' => $speaker_id !== 0 ? $lang_zh[$speaker_id] : $lang_zh,
+        'en' => $speaker_id !== 0 ? $lang_en[$speaker_id] : $lang_en,
     ];
 
     return getI18n($main);

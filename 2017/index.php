@@ -15,7 +15,7 @@ $params = [
     'map' => $map,
     'index' => getIndex(),
 //    'speakers' => getAllSpeakers($order = 'random'),
-    'sponsors' => getAllSponsors(),
+    'sponsors' => getSponsors(),
 ];
 if (isset($_GET['api'])) {
 	getJson($params);

@@ -5,7 +5,7 @@ $pageid = 'schedule';
 $params = [
     'pageid'    => $pageid,
     'filemtime' => getLastUpdateTime($pageid),
-    'schedules' => getAllSchedule(),
+    'schedules' => getSchedules(),
 ];
 $params['og_url'] = 'schedule.php';
 

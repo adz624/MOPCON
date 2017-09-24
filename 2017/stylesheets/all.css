@@ -6722,7 +6722,8 @@ section {
     width: 100%; } }
 
 .scheduleTable td[role="content-col"] {
-  cursor: pointer; }
+  cursor: pointer;
+  width: 25%; }
   @media (max-width: 767px) {
     .scheduleTable td[role="content-col"] {
       display: block;
@@ -7808,6 +7809,10 @@ section {
 .icon-link:before {
   content: '';
   background-image: url(../images/icon-link.svg); }
+
+.icon-linkedin:before {
+  content: '';
+  background-image: url(../images/icon-linkedin.svg); }
 
 .table {
   text-align: center; }

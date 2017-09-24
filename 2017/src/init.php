@@ -8,7 +8,6 @@ include __DIR__ . '/schedule.php';
 include __DIR__ . '/hackmd.php';
 include __DIR__ . '/schedule_unconf.php';
 include __DIR__ . '/community.php';
-include __DIR__ . '/speakerDetail.php';
 include __DIR__ . '/member.php';
 
 //////////////////////////////////////////////////////////////////////////////
@@ -17,7 +16,7 @@ function getSpeakerById($id)
 {
     static $speakers = null;
     if (null === $speakers) {
-        $speakers = getAllSpeakers();
+        $speakers = getSpeakersOrderByScheduleId();
     }
     return isset($speakers[$id]) ? $speakers[$id] : null;
 }
@@ -50,7 +49,7 @@ function getCommunityById($id)
  */
 function getScheduleMergeSpeaker()
 {
-    $schedules = getAllSchedule();
+    $schedules = getSchedules();
     foreach ($schedules as $days => $list)
     {
         for ($temp=0; $temp < count($list); $temp++)
@@ -170,9 +169,9 @@ function apiMappingData($page)
         case 'schedule_unconf':
             return getScheduleUnconf();
         case 'sponsor':
-            return getAllSponsors();
+            return getSponsors();
         case 'speaker':
-            return getAllSpeakers();
+            return getSpeakersOrderByScheduleId();
         case 'location':
             return getLocation();
         case 'index':
@@ -282,7 +281,7 @@ function render($template_name, $params)
                 // 'hackfoldr' => '共筆記錄',
                 // 'gitter' => 'gitter 聊天室',
                 'blog' => '部落格',
-                //'stalls' => '社團攤位申請'
+                'stalls' => '社群攤位申請'
 
             ],
             'his_mopcon' => '歷年 MOPCON',
@@ -309,7 +308,7 @@ function render($template_name, $params)
                 // 'hackfoldr' => 'hackfoldr',
                 // 'gitter' => 'gitter',
                 'blog' => 'Blog',
-                //'stalls' => 'Stalls'
+                'stalls' => 'Stalls'
             ],
             'his_mopcon' => 'Past MOPCON',
         ],
