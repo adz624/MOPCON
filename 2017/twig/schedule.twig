@@ -63,17 +63,18 @@
 												<div class="scheduleTable-subject">
 												{{ content['schedule_topic'] }}
 												</div>
-												
-												<p class="height-limit">
-												{{ content['schedule_info'] }}
-												</p>
-												{% for speaker_key, speaker in content['name'] %}
-												<div class="detailBox_content_schedule_speaker">
-													<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
+												<div class="height-limit">
+													<p>
+													{{ content['schedule_info'] }}
+													</p>
+													{% for speaker_key, speaker in content['name'] %}
+													<div class="detailBox_content_schedule_speaker">
+														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
+														</div>
+														<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
+															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
+														</a>
 													</div>
-													<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
-														<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
-													</a>
 												</div>
 												{% endfor %}
 											</div>
@@ -137,11 +138,11 @@
 												<div class="scheduleTable-subject">
 												{{ content['schedule_topic'] }}
 												</div>
-												
-												<p class="height-limit">
-												{{ content['schedule_info'] }}
-												</p>
-                                                {% for speaker_key, speaker in content['name'] %}
+												<div class="height-limit">
+													<p>
+													{{ content['schedule_info'] }}
+													</p>
+                          	{% for speaker_key, speaker in content['name'] %}
 													<div class="detailBox_content_schedule_speaker">
 														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
 														</div>
@@ -149,7 +150,8 @@
 															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
 														</a>
 													</div>
-                                                {% endfor %}
+												</div>
+                        {% endfor %}
 											</div>
 											{% if content['slide'] %}
 											<div class="detailBox-link">

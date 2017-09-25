@@ -7868,13 +7868,14 @@ tr:first-child {
   border: 5px solid #7BB6AD;
   border-radius: 25px;
   box-shadow: 0px 0px 10px #595E7A;
-  padding: 30px 20px;
+  padding: 30px 15px;
   margin: auto;
   max-width: 650px;
   position: relative; }
   @media (max-width: 767px) {
     .detailBox_content {
-      margin: 15px; } }
+      padding-right: 0;
+      padding-left: 0; } }
 
 .detailBox_content_cancel {
   color: #7BB6AD;
@@ -7885,9 +7886,12 @@ tr:first-child {
 
 .detailBox_content_schedule p {
   color: #828282; }
+  @media (max-width: 767px) {
+    .detailBox_content_schedule p {
+      padding: 10px; } }
 
-.detailBox_content_schedule p.height-limit {
-  max-height: 30vh;
+.detailBox_content_schedule .height-limit {
+  max-height: 40vh;
   overflow-y: auto; }
 
 .detailBox_content_schedule .pic-detail {
@@ -7898,11 +7902,15 @@ tr:first-child {
 
 .detailBox_content_schedule .scheduleTable-subject {
   background-color: #7BB6AD;
-  margin: 20px -20px;
+  margin: 20px -21px;
   text-align: center;
   padding: 15px 0;
   font-size: 1.2rem;
   color: #fff; }
+  @media (max-width: 767px) {
+    .detailBox_content_schedule .scheduleTable-subject {
+      margin: 20px 0;
+      padding: 15px; } }
 
 .detailBox_content_schedule_speaker {
   text-align: center;
