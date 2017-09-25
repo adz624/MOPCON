@@ -7891,7 +7891,7 @@ tr:first-child {
       padding: 10px; } }
 
 .detailBox_content_schedule .height-limit {
-  max-height: 40vh;
+  max-height: 30vh;
   overflow-y: auto; }
 
 .detailBox_content_schedule .pic-detail {
@@ -7902,7 +7902,7 @@ tr:first-child {
 
 .detailBox_content_schedule .scheduleTable-subject {
   background-color: #7BB6AD;
-  margin: 20px -21px;
+  margin: 20px -20px;
   text-align: center;
   padding: 15px 0;
   font-size: 1.2rem;

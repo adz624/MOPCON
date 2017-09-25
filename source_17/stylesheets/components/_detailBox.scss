@@ -47,7 +47,7 @@
         }
     }
     .height-limit {
-        max-height: 40vh;
+        max-height: 30vh;
         overflow-y: auto;
     }
     .pic-detail {
@@ -58,7 +58,7 @@
     }
     .scheduleTable-subject {
         background-color: $colorMainSecond;
-        margin: 20px -21px;
+        margin: 20px -20px;
         text-align: center;
         padding: 15px 0;
         font-size: $font-large;
