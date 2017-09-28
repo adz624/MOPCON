@@ -15,11 +15,10 @@
 		{% if lang == 'zh' %}
 			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-2" target="_blank" class="btn btn-default">議程投稿</a>
 		{% endif %} -->
-		
-		<a href="https://goo.gl/F3X1JR" target="_blank" class="btn btn-default">{{ index.attendee_ticket }}</a>
-		<a href="https://goo.gl/cnoYnm" target="_blank" class="btn btn-default">{{ index.student_ticket }}</a>
-		<a href="https://goo.gl/z76ag6" target="_blank" class="btn btn-default">{{ index.VIP_ticket }}</a>
-		<a href="https://youtu.be/MhwEaZTrmNg" target="_blank" class="btn btn-default">{{ index.film_2017 }}</a>		
+		<a href="https://goo.gl/xCR44S" target="_blank" class="btn btn-default">{{ index.attendee_ticket }}</a>
+		<a href="https://goo.gl/MhKocg" target="_blank" class="btn btn-default">{{ index.student_ticket }}</a>
+		<a href="https://goo.gl/byi5AJ" target="_blank" class="btn btn-default">{{ index.VIP_ticket }}</a>
+        <a href="https://youtu.be/MhwEaZTrmNg" target="_blank" class="btn btn-default">{{ index.film_2017 }}</a>
 	</div>
 </header>
 <!-- lookback -->
@@ -67,13 +66,9 @@
 				</p>
 				<br>
 				<br>
-		        {% if lang == 'zh' %}
-				    <a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-2" target="_blank" class="btn btn-primary btn-lg align-table">
-                {% else %}
-				    <a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-eng" target="_blank" class="btn btn-primary btn-lg align-table">
-                {% endif %}
+				    <a href="schedule.php?utm_source=website&utm_medium=link&utm_content=schedule" target="_blank" class="btn btn-primary btn-lg align-table">
 					<!--SEE Full Schedule-->
-					{{ index.cfp }}
+					{{ index.schedule_now }}
 				</a>
 			</div>
 		</div>
