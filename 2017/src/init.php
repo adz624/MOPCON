@@ -207,18 +207,12 @@ function getLang()
         'zh',
         'en'
     ];
+    $lang = 'zh';
 
     if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
         $lang = $_GET['lang'];
-    } elseif(isset($_COOKIE['lang'])) {
+    } elseif (isset($_COOKIE['lang'])) {
         $lang = $_COOKIE['lang'];
-    } else {
-        if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
-            $browser_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
-        } else {
-            $browser_lang = 'zh';
-        }
-        $lang = in_array($browser_lang, $supported_langs) ? $browser_lang : 'en';
     }
     setcookie('lang', $lang);
 
