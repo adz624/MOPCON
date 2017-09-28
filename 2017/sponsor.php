@@ -5,16 +5,17 @@ $pageid = 'sponsor';
 $params = [
     'pageid'    => $pageid,
     'filemtime' => getLastUpdateTime($pageid),
-    'sponsors'  => [],
+    'sponsors'  => getSponsorsByOrder()
 ];
 
 $params['og_url'] = 'sponsor.php';
-$params['sponsors'] = getSponsorsByOrder();
 
 
-// if (isset($_GET['id'])) {
-//     getJson($params);
-// }
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $params['sponsors'] =  getSponsors($id);
+}
 $lang = getLang();
 $template = (isset($_GET['id']) ? 'sponsorDetail.twig' : 'sponsor.twig');
 render($template, $params);

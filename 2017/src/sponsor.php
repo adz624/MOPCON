@@ -1,5 +1,5 @@
 <?php
-function getSponsors()
+function getSponsors($id = 0)
 {
     $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1MXWK7N8NAUFaoHiaOuDK2E3Llev5buhHnUAW86nDdAc/1/public/values?alt=json"), true);
     $google_data = $google_data['feed']['entry'];
@@ -30,8 +30,8 @@ function getSponsors()
         ];
     }
     $main = [
-        'zh' => $lang_zh,
-        'en' => $lang_en,
+        'zh' => $id !== 0 ? $lang_zh[$id] : $lang_zh,
+        'en' => $id !== 0 ? $lang_en[$id] : $lang_en,
     ];
 
     return getI18n($main);

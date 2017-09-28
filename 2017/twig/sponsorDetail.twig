@@ -10,18 +10,17 @@
 <section class="container">
     <div class="content-radius clearfix">
         <div class="row">
-            <h3 class="h3 col-lg-12">YAHOO</h3>
+            <h3 class="h3 col-lg-12">{{ sponsors['name'] }}</h3>
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="pic" style="background-image:url(./images/sponsor/yahoo.png);">
+                <div class="pic" style="background-image:url(./images/sponsor/{{ sponsors['logo'] }});">
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">
                 <p>
-                    「Oath 是 Verizon 威訊通訊旗下的子公司，我們透過價值主導、致力於建立讓人們喜愛的品牌。我們在全球擁有超過 10 億用戶，提供包括 Yahoo 等超過 50 個媒體內容、科技與廣告產品品牌。作爲全球數位行動領導者，Oath正在重新定義媒體的未來。<br/>
-                    在台灣，我們持續以Yahoo奇摩為子品牌，提供包括 Yahoo TV、新聞、電子信箱、搜尋、拍賣、超級商城、購物中心、股市、電影、運動、名人娛樂等多項服務。除服務廣大網友及廣告主，Yahoo奇摩也為企業提供電子商務解決方案。同時，我們長期致力於培育台灣人才，提供豐富機會與產業接軌，提升各領域人才競爭力。<br/>
-                    Oath持續招募中，更多熱門技術類職缺說明歡迎至 104 查詢或來信oathcareer.tw@oath.com詢問！」
+                    {{ sponsors['info'] }}
+                    
                 </p>
-                <a href="https://tw.yahoo.com/" target="_blank">
+                <a href="{{ sponsors['website'] }}" target="_blank">
 					<i class="icon icon-link"></i>
 				</a>
             </div>
