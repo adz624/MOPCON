@@ -9,7 +9,7 @@ $params = [
 ];
 
 $params['og_url'] = 'sponsor.php';
-$params['sponsors'] = getSponsors();
+$params['sponsors'] = getSponsorsByOrder();
 
 
 // if (isset($_GET['id'])) {
