@@ -14,17 +14,16 @@
         </div>
         <div class="content-radius">
             <div class="row">
-            
             {% for id, data in sponsors %}
-            {% if data['type'] == 'Tony Stark' %}
-            {% for sponsor_key, sponsor in data['logo'] %}
-            <div class="pic-item col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-                    <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-                </a>
-            </div>
-            {% endfor%}
-            {% endif %}
+                {% if data['type'] == 'Tony Stark' %}
+                    {% for sponsor_key, sponsor in data['logo'] %}
+                        <div class="pic-item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            </a>
+                        </div>
+                    {% endfor%}
+                {% endif %}
             {% endfor%}
             </div>
         </div>
@@ -37,15 +36,15 @@
         <div class="content-radius">
             <div class="row">
             {% for id, data in sponsors %}
-            {% if data['type'] == 'Bruce Wayne' %}
-            {% for sponsor_key, sponsor in data['logo'] %}
-            <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-                    <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-                </a>
-            </div>
-            {% endfor%}
-            {% endif %}
+                {% if data['type'] == 'Bruce Wayne' %}
+                    {% for sponsor_key, sponsor in data['logo'] %}
+                        <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            </a>
+                        </div>
+                    {% endfor%}
+                {% endif %}
             {% endfor%}
             </div>
         </div>
@@ -64,18 +63,15 @@
                     {% for sponsor_key, sponsor in data['logo'] %}
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-                    <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-                </a>
+                            <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                        </a>
                     </div>
                     {% endfor%}
-                
                 {% endif %}
             {% endfor%}
             </div>
         </div>
     </div>
-    
-    
     <div class="sponsor_content">
         <div class="sponsor_content_title setCenter">
             Developer
@@ -83,18 +79,15 @@
         <div class="content-radius">
             <div class="row">
             {% for id, data in sponsors %}
-            {% if data['type'] == 'Developer' %}
-                
-                <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                {% for sponsor_key, sponsor in data['logo'] %}
-
-                    <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-						<img {{ sponsor_key == 1 ? 'style="border-top:1px solid #828282;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-					</a>
-                    {% endfor%}
-                </div>
-                
-            {% endif %}
+                {% if data['type'] == 'Developer' %}
+                    <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        {% for sponsor_key, sponsor in data['logo'] %}
+                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            </a>
+                        {% endfor%}
+                    </div>
+                {% endif %}
             {% endfor%}
             </div>
         </div>
@@ -107,19 +100,16 @@
         <div class="content-radius">
             <div class="row">
             {% for id, data in sponsors %}
-            {% if data['type'] == '特別感謝' %}
-            
-            <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            {% for sponsor_key, sponsor in data['logo'] %}
-                <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-                    <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-                </a>
+                {% if data['type'] == '特別感謝' %}
+                    <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        {% for sponsor_key, sponsor in data['logo'] %}
+                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            </a>
+                        {% endfor%}
+                    </div>
+                {% endif %}
             {% endfor%}
-                
-            </div>
-            {% endif %}
-            {% endfor%}
-            
             </div>
         </div>
     </div>
