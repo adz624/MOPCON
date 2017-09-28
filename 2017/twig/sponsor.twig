@@ -17,8 +17,8 @@
             {% for id, data in sponsors %}
             {% if data['type'] == 'Tony Stark' %}
                 <div class="pic-item col-lg-12">
-                    <a href="">
-						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+                    <a href="{{ data['website'] }}">
+						<img src="./images/sponsor/{{ data['logo'] }}" alt="">
 					</a>
                 </div>
             {% endif %}
@@ -36,8 +36,8 @@
             {% for id, data in sponsors %}
             {% if data['type'] == 'Bruce Wayne' %}
                 <div class="pic-item col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <a href="sponsor.php?id=1">
-						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+                <a href="{{ data['website'] }}">
+						<img src="./images/sponsor/{{ data['logo'] }}" alt="">
 				</a>
                 </div>
             {% endif %}
@@ -57,8 +57,8 @@
             {% for id, data in sponsors %}
                 {% if data['type'] == 'Geek' %}
                 <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <a href="">
-						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+                    <a href="{{ data['website'] }}">
+						<img src="./images/sponsor/{{ data['logo'] }}" alt="">
 					</a>
                 </div>
                 
@@ -70,16 +70,17 @@
     
     
     <div class="sponsor_content">
-        <div class="sponsor_content_title setCenter">
+        <div class="sponso r_content_title setCenter">
             Developer
         </div>
         <div class="content-radius">
             <div class="row">
             {% for id, data in sponsors %}
             {% if data['type'] == 'Developer' %}
+            {% if data['type'] == 'Developer' %}
                 <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <a href="">
-						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+                    <a href="{{ data['website'] }}">
+						<img src="./images/sponsor/{{ data['logo'] }}" alt="">
 					</a>
                 </div>
                
@@ -98,8 +99,8 @@
             {% for id, data in sponsors %}
             {% if data['type'] == '特別感謝' %}
                 <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <a href="">
-						<img src="http://fakeimg.pl/900x600/?text=LOGO" alt="">
+                    <a href="{{ data['website'] }}">
+						<img src="./images/sponsor/{{ data['logo'] }}" alt="">
 					</a>
                 </div>
             {% endif %}
