@@ -60,13 +60,13 @@
             <div class="row">
             {% for id, data in sponsors %}
                 {% if data['type'] == 'Geek' %}
-                    {% for sponsor_key, sponsor in data['logo'] %}
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-                            <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-                        </a>
+                        {% for sponsor_key, sponsor in data['logo'] %}
+                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            </a>
+                        {% endfor%}
                     </div>
-                    {% endfor%}
                 {% endif %}
             {% endfor%}
             </div>
