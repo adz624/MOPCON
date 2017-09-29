@@ -2,17 +2,20 @@
     margin: 80px auto;
     max-width: 1440px;
     @include pad-below () {
-        margin: 70px auto;
+        margin: 25px auto;
     }
-    @include pad () {
-        margin: 70px auto;
+    @include pad-below () {
+        margin: 5px auto 30px;
     }
 }
 
 .header_mainVisual {}
 
 .header_btnGroup {
-    margin-top: 60px;
+    margin-top: 50px;
+    @include pad-below () {
+        margin-top: 10px;
+    }
     .btn {
         font-size: $font-large;
         width: 270px;
