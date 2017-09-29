@@ -14,7 +14,7 @@
 .header_btnGroup {
     margin-top: 50px;
     @include pad-below () {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .btn {
         font-size: $font-large;
@@ -51,10 +51,10 @@
             padding-top: 75%;
         }
         @include pad-below () {
-            padding-top: 100%;
+            padding-top: 75%;
         }
         @include mobile() {
-            padding-top: 100%;
+            // padding-top: 100%;
         }
     }
 }

@@ -6385,7 +6385,7 @@ ul {
   margin-top: 50px; }
   @media (max-width: 767px) {
     .header_btnGroup {
-      margin-top: 10px; } }
+      margin-top: 20px; } }
   .header_btnGroup .btn {
     font-size: 1.2rem;
     width: 270px; }
@@ -6420,10 +6420,7 @@ ul {
         padding-top: 75%; } }
     @media (max-width: 767px) {
       .mainVisualPic:before {
-        padding-top: 100%; } }
-    @media (max-width: 480px) {
-      .mainVisualPic:before {
-        padding-top: 100%; } }
+        padding-top: 75%; } }
 
 .navbar {
   color: #fff;
