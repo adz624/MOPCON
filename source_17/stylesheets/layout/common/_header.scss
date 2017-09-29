@@ -1,5 +1,5 @@
 .header {
-    margin: 80px auto;
+    margin: 30px auto;
     max-width: 1440px;
     @include pad-below () {
         margin: 25px auto;
@@ -44,7 +44,7 @@
     background-position: center;
     &:before {
         width: 100%;
-        padding-top: 56.25%;
+        padding-top: 53%;
         content: '';
         display: block;
         @include pad () {

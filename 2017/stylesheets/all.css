@@ -6372,7 +6372,7 @@ ul {
   padding: 0; }
 
 .header {
-  margin: 80px auto;
+  margin: 30px auto;
   max-width: 1440px; }
   @media (max-width: 767px) {
     .header {
@@ -6412,7 +6412,7 @@ ul {
       background-image: url(../images/header-banner-m.svg); } }
   .mainVisualPic:before {
     width: 100%;
-    padding-top: 56.25%;
+    padding-top: 53%;
     content: '';
     display: block; }
     @media screen and (min-width: 768px) and (max-width: 991px) {
