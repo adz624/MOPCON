@@ -7967,22 +7967,60 @@ tr:first-child {
   z-index: 999;
   bottom: 25vh;
   display: block; }
+  @media (max-width: 767px) {
+    .floater {
+      bottom: 0;
+      width: 100%; } }
 
 .floater_pic {
+  -webkit-transform: rotate(-36deg);
+      -ms-transform: rotate(-36deg);
+          transform: rotate(-36deg);
   background: url(./../images/floater-pic.png) no-repeat;
+  background-size: 103px 134px;
   height: 269px;
   position: absolute;
   width: 204px;
-  bottom: 10px;
-  left: -60px; }
+  bottom: -88px;
+  left: 46px;
+  z-index: -1; }
+  @media (max-width: 767px) {
+    .floater_pic {
+      display: none; } }
 
 .floater_content {
+  font-size: 15px;
+  z-index: 99;
   background-color: #e81d73;
   color: #fff;
-  padding: .25rem .25rem .25rem 4rem;
+  padding: .25rem .25rem .25rem 1rem;
   font-size: 1.4rem;
   border-radius: 2rem 0 0 2rem;
   letter-spacing: .1rem; }
+  .floater_content .fa-chevron-right {
+    -webkit-animation: move .75s infinite none running;
+            animation: move .75s infinite none running; }
+  @media (max-width: 767px) {
+    .floater_content {
+      border-radius: 0;
+      text-align: center;
+      padding: .25rem; } }
+
+@-webkit-keyframes move {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px); } }
+
+@keyframes move {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px); } }
 
 .badgePic {
   position: absolute;
