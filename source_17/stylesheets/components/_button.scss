@@ -23,7 +23,19 @@
         color: $colorMainFirst;
     }
 }
-
+.btn-getTicket{
+    border: 3px solid #f3e38c;
+    background: none;
+    color: #f3e38c;
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid #f3e38c;
+        background: #f3e38c;
+        color: $colorMainFirst;
+    }
+}
 .btn-primary {
     border: 1px solid $colorMainFirst;
     background: none;
