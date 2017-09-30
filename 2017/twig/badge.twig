@@ -109,24 +109,24 @@
         $('.footer').hide();
     }
 
-    const test = (icon) => {
-        $(`#${icon}`).addClass('badgeWrapper');
-        $(`#${icon}`).find('.badgeFornt').find('img').attr('src', 'images/badge/badge001-2.png');
+    function test(icon) {
+        $('#' + icon).addClass('badgeWrapper');
+        $('#' +{icon}).find('.badgeFornt').find('img').attr('src', 'images/badge/badge001-2.png');
     }
 
-    const gotoScan = () => {
+    function gotoScan() {
         location.href = 'qrcode.php?type=badge';
     }
 
-    const toggleModal = () => {
+    function toggleModal() {
         $('#myModal').modal('show');
     }
 
-    const fbShare = () => {
-        const url = 'https://www.kkbox.com/tw/tc/index.html';
-        const title = 'MOPCON 徽章'
-        const description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起收集換獎品」';
-        const image = `${document.location.href.replace('badge.php', '')}images/badge/badge002.png`;
+    function fbShare() {
+        var url = 'https://www.kkbox.com/tw/tc/index.html';
+        var title = 'MOPCON 徽章'
+        var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起收集換獎品」'; 
+        var image = document.location.href.replace('badge.php', '') + 'images/badge/badge002.png';
 
         FB.ui({
             method: 'share_open_graph',
