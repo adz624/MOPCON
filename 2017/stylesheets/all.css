@@ -7602,6 +7602,15 @@ section {
     background: #fff;
     color: #181E3E; }
 
+.btn-getTicket {
+  border: 3px solid #f3e38c;
+  background: none;
+  color: #f3e38c; }
+  .btn-getTicket.is-active, .btn-getTicket:hover, .btn-getTicket:focus, .btn-getTicket:active {
+    border: 1px solid #f3e38c;
+    background: #f3e38c;
+    color: #181E3E; }
+
 .btn-primary {
   border: 1px solid #181E3E;
   background: none;
@@ -7951,6 +7960,29 @@ tr:first-child {
   margin: auto;
   top: 0;
   z-index: -1; }
+
+.floater {
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  bottom: 25vh;
+  display: block; }
+
+.floater_pic {
+  background: url(./../images/floater-pic.png) no-repeat;
+  height: 269px;
+  position: absolute;
+  width: 204px;
+  bottom: 10px;
+  left: -60px; }
+
+.floater_content {
+  background-color: #e81d73;
+  color: #fff;
+  padding: .25rem .25rem .25rem 4rem;
+  font-size: 1.4rem;
+  border-radius: 2rem 0 0 2rem;
+  letter-spacing: .1rem; }
 
 .badgePic {
   position: absolute;
@@ -8355,6 +8387,9 @@ tr:first-child {
 .fa-close:before,
 .fa-times:before {
   content: "\f00d"; }
+
+.fa-chevron-right:before {
+  content: "\f054"; }
 
 .fa-chevron-up:before {
   content: "\f077"; }
