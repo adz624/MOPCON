@@ -93,6 +93,7 @@ function getLastUpdateTime($page = '')
         "sponsor"               => filemtime(__DIR__  . '/../sponsor.php'),
         "community"             => filemtime(__DIR__  . '/../community.php'),
         "member"                => filemtime(__DIR__  . '/../member.php'),
+        "ticket"                => filemtime(__DIR__  . '/../ticket.php'),
         "src.schedule"          => filemtime(__DIR__  . '/schedule.php'),
         "src.hackmd"            => filemtime(__DIR__  . '/hackmd.php'),
         "src.schedule_unconf"   => filemtime(__DIR__  . '/schedule_unconf.php'),
