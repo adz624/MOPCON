@@ -6516,7 +6516,8 @@ section {
 .content-radius {
   background-color: #fff;
   border-radius: 25px;
-  padding: 50px; }
+  padding: 50px;
+  position: relative; }
   @media (max-width: 480px) {
     .content-radius {
       padding: 30px; } }
@@ -7761,6 +7762,23 @@ section {
   .btn-ticketDetail.is-active, .btn-ticketDetail:hover, .btn-ticketDetail:focus, .btn-ticketDetail:active {
     background: #7BB6AD;
     color: #fff; }
+
+.btn-booking {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  border-bottom-right-radius: 25px;
+  padding: 3rem .5rem .5rem 4em;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(150deg, #fff 0%, transparent 0), linear-gradient(150deg, #fff 51%, transparent 52%), linear-gradient(150deg, #609890 50%, transparent 61%), linear-gradient(150deg, #7BB6AD 100%, transparent 0); }
+
+.btn-getTicket-intable {
+  background-color: #F1B861;
+  border-radius: 5px;
+  color: #5B8E54;
+  padding: 5px 10px;
+  font-size: 0.85714rem; }
 
 .title {
   margin-top: 10%;

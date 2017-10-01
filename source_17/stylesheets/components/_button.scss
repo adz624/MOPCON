@@ -147,10 +147,10 @@
     margin-right: 2rem;
     font-size: $font-larger;
     @include pad-below() {
-        margin:4rem auto 2rem;
+        margin: 4rem auto 2rem;
         font-size: $font-large;
         width: 100%;
-        padding:1rem;
+        padding: 1rem;
     }
     &.is-active,
     &:hover,
@@ -159,4 +159,29 @@
         background: $colorMainSecond;
         color: #fff;
     }
+}
+
+.btn-booking {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    border-bottom-right-radius: 25px;
+    padding:3rem .5rem .5rem 4em;
+    transition: all 0.3s ease-in-out;
+    background-image: 
+    linear-gradient(150deg,#fff 0%, transparent 0), 
+    linear-gradient(150deg, #fff 51%, transparent 52%),
+    linear-gradient(150deg, #609890 50%, transparent 61%),
+    linear-gradient(150deg, $colorMainSecond 100%, transparent 0);
+
+}
+.btn-getTicket-intable{
+
+    background-color: #F1B861;
+    border-radius: 5px;
+    color: #5B8E54;
+    padding: 5px 10px;
+    font-size: $font-small;
+
 }

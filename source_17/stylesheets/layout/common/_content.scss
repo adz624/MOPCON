@@ -16,6 +16,7 @@ section {
     background-color: $colorWhite;
     border-radius: 25px;
     padding: 50px;
+    position: relative;
     @include mobile() {
         padding: 30px;
     }
