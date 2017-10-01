@@ -16,7 +16,7 @@
 
 <script>
     // 取得queryString
-    const getParameterByName = (name, url) => {
+    function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, "\\$&");
         var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -30,7 +30,7 @@
         $('.navbar').hide();
         $('.footer').hide();
 
-        const type = getParameterByName('type');
+        var type = getParameterByName('type');
 
         let hint = '將鏡頭對準MOPCON名牌背後的QR CODE，以利完成個人化綁定!';
 

@@ -2,8 +2,7 @@
     cursor: pointer;
     margin: 0 5px 5px 0;
     border-radius: 0;
-    transition: all 0.3s ease-in-out;
-    // padding: 10px 12px;
+    transition: all 0.3s ease-in-out; // padding: 10px 12px;
 }
 
 .btn-lg {
@@ -23,7 +22,8 @@
         color: $colorMainFirst;
     }
 }
-.btn-getTicket{
+
+.btn-getTicket {
     border: 3px solid #f3e38c;
     background: none;
     color: #f3e38c;
@@ -36,6 +36,7 @@
         color: $colorMainFirst;
     }
 }
+
 .btn-primary {
     border: 1px solid $colorMainFirst;
     background: none;
@@ -64,7 +65,7 @@
     }
 }
 
-.btn-detail{
+.btn-detail {
     font-size: $font-small;
     padding: 5px 10px;
     background-color: $colorMainSecond;
@@ -75,10 +76,9 @@
     &:focus,
     &:active {
         background: $colorMainFirst;
-        color:#fff;
+        color: #fff;
     }
-
-} 
+}
 
 .btn-switch {
     border: 1px solid $colorMainSecond;
@@ -117,4 +117,71 @@
 .switch {
     text-align: center;
     margin: 20px auto;
+}
+
+.btn-rightNow {
+    font-size: 1.125rem;
+    padding: 1.125rem 1rem;
+    background: $colorMainFirst;
+    background-image: linear-gradient(150deg, $colorMainFirst 70%, transparent 0), linear-gradient(150deg, $colorSubFirst 100%, transparent 0);
+    border-radius: 5px;
+    color: #fff;
+    @include pad-below() {
+        padding: 0.5rem .8rem;
+        font-size: $font-normal;
+    }
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active {
+        background: $colorSubFirst;
+        color: #fff;
+    }
+}
+
+.btn-ticketDetail {
+    color: $colorMainSecond;
+    border: 3px solid $colorMainSecond;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin-right: 2rem;
+    font-size: $font-larger;
+    @include pad-below() {
+        margin: 4rem auto 2rem;
+        font-size: $font-large;
+        width: 100%;
+        padding: 1rem;
+    }
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active {
+        background: $colorMainSecond;
+        color: #fff;
+    }
+}
+
+.btn-booking {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    border-bottom-right-radius: 25px;
+    padding:3rem .5rem .5rem 4em;
+    transition: all 0.3s ease-in-out;
+    background-image: 
+    linear-gradient(150deg,#fff 0%, transparent 0), 
+    linear-gradient(150deg, #fff 51%, transparent 52%),
+    linear-gradient(150deg, #609890 50%, transparent 61%),
+    linear-gradient(150deg, $colorMainSecond 100%, transparent 0);
+
+}
+.btn-getTicket-intable{
+
+    background-color: #F1B861;
+    border-radius: 5px;
+    color: #5B8E54;
+    padding: 5px 10px;
+    font-size: $font-small;
+
 }

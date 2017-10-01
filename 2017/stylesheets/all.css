@@ -6516,7 +6516,8 @@ section {
 .content-radius {
   background-color: #fff;
   border-radius: 25px;
-  padding: 50px; }
+  padding: 50px;
+  position: relative; }
   @media (max-width: 480px) {
     .content-radius {
       padding: 30px; } }
@@ -7584,6 +7585,67 @@ section {
     width: 152px;
     height: 152px; }
 
+.ticket {
+  border: 1px solid #7BB6AD;
+  position: relative;
+  margin-right: 50px;
+  margin-bottom: 18px;
+  display: block;
+  padding: 1rem;
+  min-height: 170px; }
+  @media (max-width: 767px) {
+    .ticket {
+      margin-right: auto; } }
+  .ticket .h3 {
+    text-align: left; }
+  .ticket .tip {
+    color: #F2994A; }
+  .ticket .btn-rightNow {
+    position: absolute;
+    right: -50px;
+    top: 0;
+    height: 63px;
+    bottom: 0;
+    margin: auto; }
+    @media (max-width: 767px) {
+      .ticket .btn-rightNow {
+        right: 1rem;
+        margin: inherit;
+        height: inherit;
+        top: auto; } }
+
+.ticket_price {
+  color: #fff;
+  background: #7BB6AD;
+  font-size: 30px;
+  width: 20%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px; }
+  @media (max-width: 767px) {
+    .ticket_price {
+      width: 100%;
+      height: inherit; } }
+
+.ticket_content {
+  margin-left: 22%; }
+  @media (max-width: 767px) {
+    .ticket_content {
+      margin-left: inherit;
+      margin-bottom: 60px;
+      margin-top: 60px; } }
+
 .btn {
   cursor: pointer;
   margin: 0 5px 5px 0;
@@ -7668,6 +7730,55 @@ section {
 .switch {
   text-align: center;
   margin: 20px auto; }
+
+.btn-rightNow {
+  font-size: 1.125rem;
+  padding: 1.125rem 1rem;
+  background: #181E3E;
+  background-image: linear-gradient(150deg, #181E3E 70%, transparent 0), linear-gradient(150deg, #293264 100%, transparent 0);
+  border-radius: 5px;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .btn-rightNow {
+      padding: 0.5rem .8rem;
+      font-size: 1rem; } }
+  .btn-rightNow.is-active, .btn-rightNow:hover, .btn-rightNow:focus, .btn-rightNow:active {
+    background: #293264;
+    color: #fff; }
+
+.btn-ticketDetail {
+  color: #7BB6AD;
+  border: 3px solid #7BB6AD;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-right: 2rem;
+  font-size: 1.8rem; }
+  @media (max-width: 767px) {
+    .btn-ticketDetail {
+      margin: 4rem auto 2rem;
+      font-size: 1.2rem;
+      width: 100%;
+      padding: 1rem; } }
+  .btn-ticketDetail.is-active, .btn-ticketDetail:hover, .btn-ticketDetail:focus, .btn-ticketDetail:active {
+    background: #7BB6AD;
+    color: #fff; }
+
+.btn-booking {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  border-bottom-right-radius: 25px;
+  padding: 3rem .5rem .5rem 4em;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(150deg, #fff 0%, transparent 0), linear-gradient(150deg, #fff 51%, transparent 52%), linear-gradient(150deg, #609890 50%, transparent 61%), linear-gradient(150deg, #7BB6AD 100%, transparent 0); }
+
+.btn-getTicket-intable {
+  background-color: #F1B861;
+  border-radius: 5px;
+  color: #5B8E54;
+  padding: 5px 10px;
+  font-size: 0.85714rem; }
 
 .title {
   margin-top: 10%;

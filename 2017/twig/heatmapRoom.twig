@@ -13,9 +13,9 @@
 </div>
 <script>
 
-    const generate = (scale_object, heatmap, floor) => {
+    function generate(scale_object, heatmap, floor) {
         $.ajax({
-            url: `https://mopcon.webduino.cc/api/Locations?filter={"where":{"floor": "${floor}"},"limit":1}`,
+            url: 'https://mopcon.webduino.cc/api/Locations?filter={"where":{"floor": "' + floor + '"},"limit":1',
             error: function(xhr) {
                 console.log('Ajax request 發生錯誤');
             },
@@ -25,8 +25,8 @@
         })
     };
 
-    const setHeatMapData = (coordinates, scale_object, heatmap, floor) => {
-        coordinates.forEach(data => {
+    function setHeatMapData(coordinates, scale_object, heatmap, floor) {
+        coordinates.forEach(function(data) {
             if (data.x < 10) data.x = 10;
             if (data.y < 10) data.y = 10;
 
@@ -39,14 +39,16 @@
             }
         });
 
-        const datapoints = coordinates.map(data => ({
-            x: parseInt(data.x * scale_object.width, 10), // 座標X
-            y: parseInt(data.y * scale_object.height, 10), // 座標Y
-            value: Math.random() * 10 >> 0, // 該偵測點人數
-            radius: 20, // 感應器半徑
-        }))
+        var datapoints = coordinates.map(function(data) {
+            return {
+                x: parseInt(data.x * scale_object.width, 10), // 座標X
+                y: parseInt(data.y * scale_object.height, 10), // 座標Y
+                value: Math.random() * 10 >> 0, // 該偵測點人數
+                radius: 20, // 感應器半徑
+            };
+        });
 
-        const data = {
+        var data = {
             max: 10, // 會場總人數或設定上限
             min: 0,
             data: datapoints,
@@ -56,7 +58,7 @@
     }
 
     // 取得queryString
-    const getParameterByName = (name, url) => {
+    function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, "\\$&");
         var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -71,30 +73,30 @@
         $('.navbar').hide();
         $('.footer').hide();
 
-        const floor = getParameterByName('floor');
+        var floor = getParameterByName('floor');
 
         $('.floor')
-        .attr('src', `images/${floor}.png`)
+        .attr('src', 'images/' + floor + '.png')
         .on('load', function() {
             $(this).show();
         });
 
         $('.title')
-        .text(`${floor === '3F' ? 'R1廳' : 'R2廳 & R3廳'}`)
+        .text(floor === '3F' ? 'R1廳' : 'R2廳 & R3廳'})
 
-        $('#heatmap').addClass(`heatmap${floor}`);
+        $('#heatmap').addClass('heatmap' + floor);
 
-        const scale_3F = {
+        var scale_3F = {
             width: (205 / 120),
             height: (113 / 60),
         }
 
-        const scale_4F = {
+        var scale_4F = {
             width: (246 / 150),
             height: (150 / 90),
         }
 
-        const scale = floor === '3F' ? scale_3F : scale_4F;
+        var scale = floor === '3F' ? scale_3F : scale_4F;
 
         // create a heatmap instance
         window.heatmap = h337.create({
@@ -108,8 +110,8 @@
         generate(scale, heatmap, floor);
 
         // upate map
-        const updateTime = 60 * 60 * 10; // 10分鐘
-        setInterval(() => generate(scale, heatmap, floor), updateTime);
+        var updateTime = 60 * 60 * 10; // 10分鐘
+        setInterval(function() { generate(scale, heatmap, floor) }, updateTime);
     }
 
 </script>

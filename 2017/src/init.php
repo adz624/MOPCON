@@ -93,6 +93,7 @@ function getLastUpdateTime($page = '')
         "sponsor"               => filemtime(__DIR__  . '/../sponsor.php'),
         "community"             => filemtime(__DIR__  . '/../community.php'),
         "member"                => filemtime(__DIR__  . '/../member.php'),
+        "ticket"                => filemtime(__DIR__  . '/../ticket.php'),
         "src.schedule"          => filemtime(__DIR__  . '/schedule.php'),
         "src.hackmd"            => filemtime(__DIR__  . '/hackmd.php'),
         "src.schedule_unconf"   => filemtime(__DIR__  . '/schedule_unconf.php'),
@@ -274,6 +275,7 @@ function render($template_name, $params)
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 // 'hackfoldr' => '共筆記錄',
                 // 'gitter' => 'gitter 聊天室',
+                'ticket' => '購票資訊',
                 'blog' => '部落格',
                 'stalls' => '社群攤位申請'
 
@@ -301,6 +303,7 @@ function render($template_name, $params)
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
                 // 'hackfoldr' => 'hackfoldr',
                 // 'gitter' => 'gitter',
+                'ticket' => 'Ticket',
                 'blog' => 'Blog',
                 'stalls' => 'Stalls'
             ],
