@@ -1,0 +1,30 @@
+{
+    "general": {
+        "name": "General",
+        "desc": "Lunch box and afternoon desserts are included for both days",
+        "sale_time": "Avaliable for sale 09/18~10/20"
+    },
+    "student": {
+        "name": "Student Package with KKBOX",
+        "desc": "Lunch box, afternoon desserts are included for both days, KKBOX 90/180 days student package.",
+        "sale_time": "Avaliable for sale 09/11~10/20"
+    },
+    "vipa": {
+        "name": "Premium",
+        "desc": "Lunch box, afternoon desserts are included for both days, KKBOX 90/180 days student package, MOPCON exclusive suveniors, Priority ticketchecking lane.",
+        "sale_time": "Avaliable for sale 09/04~10/20"
+    },
+    "vipb": {
+        "name": "Premium Plus",
+        "desc": "Lunch box, afternoon desserts are included for both days, KKBOX 90/180 days student package, MOPCON exclusive suveniors, Metal pin, Priority ticketchecking lane, 2017 Devil Night (for one person only).",
+        "sale_time": "Avaliable for sale 09/04~10/20"
+    },
+    "devel": {
+        "name": "Devel Night",
+        "desc": "2017 Devil Night (for one person only)",
+        "sale_time": "Avaliable for sale 10/01~10/27"
+    },
+    "buy_now": "Buy now",
+    "note": "Attentions",
+    "up": "Up"
+}
