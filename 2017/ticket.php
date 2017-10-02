@@ -9,8 +9,8 @@ $main = [
 ];
 
 $lang = getLang();
-$pageid = '';
 $params = [
-    'lang' => getI18n($main)
+    'pageid' => 'ticket',
+    'tickets'   => getI18n($main),
 ];
 render('ticket.twig', $params);
