@@ -55,10 +55,14 @@ function getSponsorsByOrder()
             'logo'        => isset($data[$item['order']]["logo"]) ?
                 [$data[$item['order']]["logo"][0], $item['logo']] :
                 [$item['logo']],
+            'info'        => isset($data[$item['order']]["info"]) ?
+                [$data[$item['order']]["info"][0], $item['info']] :
+                [$item['info']],
            
             'website'        => isset($data[$item['order']]["website"]) ?
-            [$data[$item['order']]["website"][0], $item['website']] :
-            [$item['website']]
+                [$data[$item['order']]["website"][0], $item['website']] :
+                [$item['website']],
+
           
         ];
     }

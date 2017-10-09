@@ -18,7 +18,11 @@
                 {% if data['type'] == 'Tony Stark' %}
                     {% for sponsor_key, sponsor in data['logo'] %}
                         <div class="pic-item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        {% if data['info'][sponsor_key] %}
+                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% else %}
                             <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                            {% endif %}
                                 <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         </div>
@@ -39,7 +43,11 @@
                 {% if data['type'] == 'Bruce Wayne' %}
                     {% for sponsor_key, sponsor in data['logo'] %}
                         <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        {% if data['info'][sponsor_key] %}
+                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% else %}
                             <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                            {% endif %}
                                 <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         </div>
@@ -62,7 +70,11 @@
                 {% if data['type'] == 'Geek' %}
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         {% for sponsor_key, sponsor in data['logo'] %}
+                        {% if data['info'][sponsor_key] %}
+                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% else %}
                             <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                            {% endif %}
                                 <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         {% endfor%}
@@ -82,7 +94,11 @@
                 {% if data['type'] == 'Developer' %}
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         {% for sponsor_key, sponsor in data['logo'] %}
+                        {% if data['info'][sponsor_key] %}
+                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% else %}
                             <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                            {% endif %}
                                 <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         {% endfor%}
@@ -103,7 +119,11 @@
                 {% if data['type'] == '特別感謝' %}
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         {% for sponsor_key, sponsor in data['logo'] %}
+                            {% if data['info'][sponsor_key] %}
+                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% else %}
                             <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                            {% endif %}
                                 <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         {% endfor%}
