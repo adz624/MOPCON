@@ -7644,9 +7644,7 @@ section {
   margin-right: 10%; }
   @media (max-width: 767px) {
     .ticket_content {
-      margin: 60px 0 ;
-      } 
-    }
+      margin: 60px 0; } }
 
 .btn {
   cursor: pointer;
@@ -7963,9 +7961,12 @@ tr:first-child {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px auto;
+  margin: 85px auto;
   width: 100%;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .pageHead {
+      margin: 40px auto; } }
   .pageHead img {
     max-width: 120%; }
 
