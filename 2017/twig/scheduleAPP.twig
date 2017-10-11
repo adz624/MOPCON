@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta name="author" content="MOPCON">
+	<meta name="keywords" content="南部, 濁水溪以南, 研討會, 行動, 科技, 社群, 開發者, android, ios, iphone
+app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
+  <link rel="canonical" href="http://{{website}}/2017/{{og_url}}" />
+
+  <meta content="{{main.ogsitename}}" property="og:site_name">
+  <meta content="http://{{website}}/2017/{{og_url}}" property="og:url">
+  <meta content="{% if main.pagetitle %}{{main.pagetitle}} - {% endif %}{{main.sitetitle}}" property="og:title">
+  <meta name="description" content="{{main.ogdesc}}" property="og:description">
+  <meta content="http://{{website}}/2017/images/{{og_image}}" property="og:image">
+  <!-- <meta content="https://2017.mopcon.org/images/mopcon2017_large.png" property="og:image"> -->
+  <meta content="200" property="og:image:width" >
+  <meta content="200" property="og:image:height" >
+  <meta content="website" property="og:type">
+  <title>{% if main.pagetitle %}{{main.pagetitle}} - {% endif %}{{main.sitetitle}}</title>
+  <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- styles -->
+    <link href="stylesheets/all.css?v={{version.allCss}}" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/2017/images/favicon.ico">
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '149507615542184');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=149507615542184&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+  </head>
+  <body>
+<!-- header	 -->
+<section class="pageHead">
+	<img src="images/headPage-schedule.svg" alt="議程標題圖片">
+</section>
+
+
+<!-- switch date -->
+<section class="switch container">
+	<div class="btn-group btn-group-switch">
+		<a href="#Day1" data-switch="Day1" class="btn btn-switch is-active">10/28</a>
+		<a href="#Day2" data-switch="Day2" class="btn btn-switch">10/29</a>
+	</div>
+</section>
+
+<section class="schedulePage_info">
+	<p>點擊議程標題可觀看詳細介紹</p>
+	<p>R1：一廳 / R2：二廳 / R3：三廳</p>
+</section>
+
+
+<!-- schedule table -->
+<section class="schedulePage container">
+	<div class="Day1">
+		<table class="scheduleTable table">
+			<tbody>
+				<tr>
+					<th></th>
+					<th>R1</th>
+					<th>R2</th>
+					<th>R3</th>
+				</tr>
+				{% for item in schedules['day1'] %}
+					<tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
+						<td role="time-col">{{ item['time'] }}</td>
+							{% for key, content in item['content'] %}
+                                {% if content['schedule'] %}
+                                    <td colspan="{{ item['colspan'] }}" role="content-col" onclick="openDetailBox({{ content['id'] }})">
+                                        <span class="scheduleTable-room">{{ content['room'] }}</span>
+                                        <div class="scheduleTable-speaker">{{ content['title'] }} </div>
+                                        <div class="scheduleTable-subject">
+											<span class="subjectTag">{{ content['type'] }}</span>
+											<br/>
+											{{ content['schedule_topic'] }}
+                                        </div>
+										{% if content['slide'] %}
+                                        <div class="scheduleTable-link">
+                                            <a href="{{ content['slide'] }}" target="_blank">slide</a>
+                                        </div>
+										{% endif %}
+                                    </td>
+                                {% else %}
+                                    <td colspan="{{ item['colspan'] }}" role="rundown-col">
+                                    {{ content['content'] }}
+										{% if content['content'] == '休息 Break' %}
+                                    	 <a href="https://goo.gl/xCR44S" target="_blank" class="btn btn-getTicket-intable">立即購票</a>
+										 {% endif %}
+                                    </td>
+									
+                                {% endif %}
+								<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
+									<div class="detailBoxWrapper">
+										<div class="detailBox_content">
+											<div class="detailBox_content_schedule">
+												<div class="scheduleTable-subject">
+												{{ content['schedule_topic'] }}
+												</div>
+												<div class="height-limit">
+													<p>
+													{{ content['schedule_info'] }}
+													</p>
+													{% for speaker_key, speaker in content['name'] %}
+													<div class="detailBox_content_schedule_speaker">
+														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
+														</div>
+														<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
+															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
+														</a>
+													</div>
+												</div>
+												{% endfor %}
+											</div>
+											{% if content['slide'] %}
+											<div class="detailBox-link">
+												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link">Slide Link</a>
+											</div>
+											{% endif %}
+											<span class="fa-stack fa-lg detailBox_content_cancel ">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+											</span>
+										</div>
+										<div class="detailBox_maskBg"></div>
+									</div>
+								</section>
+                            {% endfor %}
+					</tr>
+					
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	<div class="Day2 hide">
+		<table class="scheduleTable table">
+			<tbody>
+				<tr>
+					<th></th>
+					<th>R1</th>
+					<th>R2</th>
+					<th>R3</th>
+				</tr>
+                {% for item in schedules['day2'] %}
+                    <tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
+                        <td role="time-col">{{ item['time'] }}</td>
+                        {% for key, content in item['content'] %}
+                            {% if content['schedule'] %}
+                                <td colspan="{{ item['colspan'] }}" role="content-col" onclick="openDetailBox({{ content['id'] }})">
+                                    <span class="scheduleTable-room">{{ content['room'] }}</span>
+                                    <div class="scheduleTable-speaker">{{ content['title'] }}</div>
+                                    <div class="scheduleTable-subject">
+										<span class="subjectTag">{{ content['type'] }}</span>
+										<br/>
+										{{ content['schedule_topic'] }}
+                                    </div>
+									{% if content['slide'] %}
+                                    <div class="scheduleTable-link">
+                                        <a href="{{ content['slide'] }}" target="_blank">slide</a>
+                                    </div>
+									{% endif %}
+                                </td>
+                            {% else %}
+                                <td colspan="{{ item['colspan'] }}" role="rundown-col">
+                                    {{ content['content'] }}
+                                </td>
+                            {% endif %}
+							<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
+									<div class="detailBoxWrapper">
+										<div class="detailBox_content">
+											<div class="detailBox_content_schedule">
+												<div class="scheduleTable-subject">
+												{{ content['schedule_topic'] }}
+												</div>
+												<div class="height-limit">
+													<p>
+													{{ content['schedule_info'] }}
+													</p>
+                          	{% for speaker_key, speaker in content['name'] %}
+													<div class="detailBox_content_schedule_speaker">
+														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
+														</div>
+														<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
+															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
+														</a>
+													</div>
+                        			{% endfor %}
+									</div>
+									
+											</div>
+											{% if content['slide'] %}
+											<div class="detailBox-link">
+												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link" target="_blank">Slide Link</a>
+											</div>
+											{% endif %}
+											<span class="fa-stack fa-lg detailBox_content_cancel ">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+											</span>
+										</div>
+										<div class="detailBox_maskBg"></div>
+									</div>
+								</section>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+			</tbody>
+		</table>
+	</div>
+</section>
+
+
+<!-- schedule detailBox -->
+
+<footer class="footer container text-center">
+    <a href="mailto:contact@mopcon.org">
+      <div class="footer_contactUs">
+        Contact
+        <br>
+        Us
+      </div>
+      <div class="footer_mail">
+        <img src="images/footer-mail.svg" alt="">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </a>
+    <div class="footer_logo">
+      <img src="images/footer-logo.svg" alt="">
+    </div>
+    <ul class="footer_nav">
+      <li class="nav-history dropdown">
+        <ul class="dropdown-menu">
+          <li><a href="https://mopcon.org/2016/" target="_blank">2016</a></li>
+          <li><a href="https://mopcon.org/2015/" target="_blank">2015</a></li>
+          <li><a href="https://mopcon.org/2014/" target="_blank">2014</a></li>
+          <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
+          <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
+        </ul>
+        <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">{{ main.his_mopcon }}
+          <span class="fa fa-chevron-up"></span>
+        </a>
+      </li>
+      <li class="nav-community">
+        <a href="https://www.facebook.com/mopcon/?fref=ts" class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON 粉絲團"></a>
+        <a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="fa fa-flickr fa-2x" title="flickr"></a>
+        <a href="https://goo.gl/qJRGoJ" class="fa fa-google-plus-square fa-2x" target="_blank" title="MOPCON G+"></a>
+        <a href="https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
+      </li>
+    </ul>
+
+  </footer>
+
+  <a href="ticket.php" class="floater">
+    <div class="floater_pic"></div>
+    <div class="floater_content">買票GO
+    <i class="fa fa-chevron-right"></i>
+    </div>
+  </a>
+</body>
+<script src="javascripts/vendor.js?v={{version.allJs}}" type="text/javascript"></script>
+<script src="javascripts/all.js?v={{version.allJs}}" type="text/javascript"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34651129-1']);
+  _gaq.push(['_setDomainName', 'mopcon.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</html>

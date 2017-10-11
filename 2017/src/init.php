@@ -88,6 +88,7 @@ function getLastUpdateTime($page = '')
         "cfp"                   => filemtime(__DIR__  . '/../cfp.php'),
         // "location"      => filemtime(__DIR__  . '/../location.php'),
         "schedule"              => filemtime(__DIR__  . '/../schedule.php'),
+        "scheduleAPP"           => filemtime(__DIR__  . '/../scheduleAPP.php'),
         "schedule_unconf"       => filemtime(__DIR__  . '/../schedule_unconf.php'),
         "speaker"               => filemtime(__DIR__  . '/../speaker.php'),
         "sponsor"               => filemtime(__DIR__  . '/../sponsor.php'),
