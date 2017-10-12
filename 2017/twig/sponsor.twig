@@ -17,7 +17,7 @@
             {% for id, data in sponsors %}
                 {% if data['type'] == 'Tony Stark' %}
                     {% for sponsor_key, sponsor in data['logo'] %}
-                        <div class="pic-item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="pic-item col-lg-12 col-md-12 col-sm-12 col-xs-12 tonyStark">
                         {% if data['info'][sponsor_key] %}
                             <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
                             {% else %}
