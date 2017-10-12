@@ -6887,6 +6887,11 @@ section {
     right: 0;
     left: 0; }
 
+.tonyStark img {
+  overflow: hidden;
+  margin-top: -300px;
+  margin-bottom: -300px; }
+
 #heatmapContainer {
   margin: 0 auto;
   text-align: center; }
