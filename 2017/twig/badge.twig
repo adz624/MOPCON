@@ -63,7 +63,7 @@
             <img src="images/scan.png" alt="">
             徽章掃描
         </div>
-        <div>活動說明</div>
+        <div onclick="gotoDescription()">活動說明</div>
     </div>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -116,6 +116,10 @@
 
     function gotoScan() {
         location.href = 'qrcode.php?type=badge';
+    }
+
+    function gotoDescription() {
+        location.href = 'description.php';
     }
 
     function toggleModal() {
