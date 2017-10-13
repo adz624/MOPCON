@@ -21,8 +21,11 @@
 </script>
 
 <div class="container badgeContainer">
-    <button onclick="test('icon1')">TEST1</button>
-    <button onclick="test('icon2')">TEST2</button>
+    <div style="margin-bottom: 10px;">
+        <button onclick="triggerBadge('4')">TEST4</button>
+        <button onclick="triggerBadge('5')">TEST5</button>
+        <button onclick="triggerBadge('6')">TEST6</button>
+    </div>
     <div class="illustration">
         <div id="icon1" class="badge_icon" onclick="toggleModal()">
             <div class="badgePic badge-scale">
@@ -44,10 +47,46 @@
             <div class="badgeCycle badge-opacity">
             </div>
         </div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
+        <div id="icon3" class="badge_icon" onclick="toggleModal()">
+            <div class="badgePic badge-scale">
+                <img src="images/badge/badge001.png" alt="">
+            </div>
+            <div class="badgePic badgeFornt badge-rotatey">
+                <img src="images/badge/badge002.png" alt="">
+            </div>
+            <div class="badgeCycle badge-opacity">
+            </div>
+        </div>
+        <div id="icon4" class="badge_icon" onclick="toggleModal()">
+            <div class="badgePic badge-scale">
+                <img src="images/badge/badge001.png" alt="">
+            </div>
+            <div class="badgePic badgeFornt badge-rotatey">
+                <img src="images/badge/badge002.png" alt="">
+            </div>
+            <div class="badgeCycle badge-opacity">
+            </div>
+        </div>
+        <div id="icon5" class="badge_icon" onclick="toggleModal()">
+            <div class="badgePic badge-scale">
+                <img src="images/badge/badge001.png" alt="">
+            </div>
+            <div class="badgePic badgeFornt badge-rotatey">
+                <img src="images/badge/badge002.png" alt="">
+            </div>
+            <div class="badgeCycle badge-opacity">
+            </div>
+        </div>
+        <div id="icon6" class="badge_icon" onclick="toggleModal()">
+            <div class="badgePic badge-scale">
+                <img src="images/badge/badge001.png" alt="">
+            </div>
+            <div class="badgePic badgeFornt badge-rotatey">
+                <img src="images/badge/badge002.png" alt="">
+            </div>
+            <div class="badgeCycle badge-opacity">
+            </div>
+        </div>
         <div class="badge_icon"></div>
         <div class="badge_icon"></div>
         <div class="badge_icon"></div>
@@ -109,9 +148,20 @@
         $('.footer').hide();
     }
 
-    function test(icon) {
-        $('#' + icon).addClass('badgeWrapper');
-        $('#' +{icon}).find('.badgeFornt').find('img').attr('src', 'images/badge/badge001-2.png');
+    function triggerBadge(index) {
+        var mod = index % 3;
+        var className;
+
+        if (mod === 1) { // left
+            className = 'badgeWrapper-left';
+        } else if (mod === 2) { // center
+            className = 'badgeWrapper';
+        } else { // right
+            className = 'badgeWrapper-right';
+        }
+
+        $('#icon' + index).addClass(className);
+        $('#icon' + index).find('.badgeFornt').find('img').attr('src', 'images/badge/badge001-2.png');
     }
 
     function gotoScan() {
