@@ -7544,7 +7544,8 @@ section {
         height: 34px;
         background-color: #181e3e;
         border-radius: 34px;
-        opacity: 1; }
+        opacity: 1;
+        color: #fff; }
         .badgeContainer .modal-content .modal-header .close span {
           color: #fff;
           font-size: 25px; }
