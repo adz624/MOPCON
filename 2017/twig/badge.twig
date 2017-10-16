@@ -24,7 +24,7 @@
     <div style="margin-bottom: 10px;">
         <button onclick="triggerBadge('4')">TEST4</button>
         <button onclick="triggerBadge('5')">TEST5</button>
-        <button onclick="triggerBadge('6')">TEST6</button>
+        <button onclick="scrollToBadge('20')">open 20</button>
     </div>
     <div class="illustration"></div>
     <div class="func">
@@ -36,20 +36,16 @@
                 <img src="images/scan.png" alt="">
                 徽章掃描
             </div>
-            <div onclick="gotoDescription()">活動說明</div>
+            <div onclick="openDescription()">活動說明</div>
         </div>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="sponsorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <p class="modal-title sponsor" id="exampleModalLabel">
-                        KKBOX
-                    </p>
-                    <p class="time">
-                        2017/10/29 10:12 獲得。
-                    </p>
+                    <p class="modal-title" id="exampleModalLabel"></p>
+                    <p class="time"></p>
                     <button type="button" class="close fa fa-times fa-lg" data-dismiss="modal" aria-label="Close">
                         <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
@@ -60,17 +56,33 @@
                 </div>
                 <div class="modal-body">
                     <div class="logo">
-                        <img src="images/badge/badge002.png" alt="">
+                        <img src="" alt="">
                     </div>
-                    <div class="intro">
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字。
+                    <div class="intro"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="descModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">活動說明</p>
+                        <button type="button" class="close fa fa-times fa-lg" data-dismiss="modal" aria-label="Close">
+                            <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="descript">
+                            活動目的為收集兩天來於議場內藏在各處的MOPCON徽章，藉此更了解不同的攤位以及MOPCON本身，如果收集到一定數量，還能跟工作人員換取神秘禮物唷～
+                        </div>
+                        <div class="activity">
+                            <p>活動方式：</p>
+                            <p>1. 尋找MOPCON徽章</p>
+                            <p>2. 開啟徽章掃描功能</p>
+                            <p>3. 獲得徽章並記錄於圖鑑中</p>
+                        </div>
+                        <div class="logo"></div>
                     </div>
                 </div>
             </div>
@@ -165,26 +177,34 @@
         $('#icon' + id).find('.badgeFornt').find('img').attr('src', 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png');
     }
 
+    function scrollToBadge(id) {
+        $('html,body').animate({
+            scrollTop: $("#icon" + id).offset().top - (screen.height / 2 - 40)
+        }, 'slow', function() {
+            triggerBadge(id);
+        });
+    }
+
     function gotoScan() {
         location.href = 'qrcode.php?type=badge';
     }
 
-    function gotoDescription() {
-        location.href = 'description.php';
+    function openDescription() {
+        $('#descModal').modal('show');
     }
 
     function toggleModal(id, category, cateno) {
-        if (!(badgeData[id] && badgeData[id].date)) return;
+        // if (!(badgeData[id] && badgeData[id].date)) return;
     
         $('.illustration .badge_icon').removeClass('badgeWrapper-left badgeWrapper badgeWrapper-right');
     
-        $('#myModal .modal-title').text(badgeData[id].title);
-        $('#myModal .intro').html(badgeData[id].description.replace(new RegExp('\n', 'g'), '<br />'));
-        $('#myModal .shareBtn').attr('onclick', 'fbShare(' + id + ')');
-        $('#myModal .time').text(badgeData[id].date ? (badgeData[id].date + ' 獲得') : '');
-        $('#myModal .logo img').attr('src', 'images/badge/badge' + pad(category, 3) + '-' + cateno + '.png');
+        $('#sponsorModal .modal-title').text(badgeData[id].title);
+        $('#sponsorModal .intro').html(badgeData[id].description.replace(new RegExp('\n', 'g'), '<br />'));
+        $('#sponsorModal .shareBtn').attr('onclick', 'fbShare(' + id + ')');
+        $('#sponsorModal .time').text(badgeData[id].date ? (badgeData[id].date + ' 獲得') : '');
+        $('#sponsorModal .logo img').attr('src', 'images/badge/badge' + pad(category, 3) + '-' + cateno + '.png');
     
-        $('#myModal').modal('show');
+        $('#sponsorModal').modal('show');
       }
 
     function fbShare(id) {

@@ -7548,7 +7548,7 @@ section {
     .badgeContainer .modal-content .modal-header {
       border-radius: 20px 20px 0 0;
       background-color: #7ab6ad; }
-      .badgeContainer .modal-content .modal-header .sponsor {
+      .badgeContainer .modal-content .modal-header .modal-title {
         color: #fff;
         font-size: 30px;
         line-height: 35px;
