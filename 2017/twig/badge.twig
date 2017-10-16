@@ -24,7 +24,7 @@
     <div style="margin-bottom: 10px;">
         <button onclick="triggerBadge('4')">TEST4</button>
         <button onclick="triggerBadge('5')">TEST5</button>
-        <button onclick="scrollToBadge('20')">open 20</button>
+        <button onclick="location.href = location.pathname + '?new_badge=20'">open 20</button>
     </div>
     <div class="illustration"></div>
     <div class="func">
@@ -146,6 +146,10 @@
         //         open(data.id, data.category, data.cateno);
         //     }
         // });
+
+        if (newBadge) {
+            scrollToBadge(newBadge);
+        }
 
         $('.badge-collected').text(Object.keys(collected).length);
     }
