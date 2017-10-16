@@ -328,6 +328,7 @@ function render($template_name, $params)
                 'allJs' => getLastUpdateTime('js.all'),
                 'webFontsCss' => getLastUpdateTime('css.web-fonts'),
             ],
+            'from_app' => $from_app = isset($_GET['from_app']) ? (bool) $_GET['from_app'] : false
         ],
         $params
     );
