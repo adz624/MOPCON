@@ -53,47 +53,13 @@
                                 {% else %}
                                     <td colspan="{{ item['colspan'] }}" role="rundown-col">
                                     {{ content['content'] }}
-										{% if content['content'] == '休息 Break' %}
-                                    	 <a href="https://goo.gl/xCR44S" target="_blank" class="btn btn-getTicket-intable">立即購票</a>
+										{% if content['content'] == '開放投稿中' %}
+                                    	 <a href="https://goo.gl/2ZtDVY" target="_blank" class="btn btn-getTicket-intable">報名</a>
 										 {% endif %}
                                     </td>
 									
                                 {% endif %}
-								<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
-									<div class="detailBoxWrapper">
-										<div class="detailBox_content">
-											<div class="detailBox_content_schedule">
-												<div class="scheduleTable-subject">
-												{{ content['schedule_topic'] }}
-												</div>
-												<div class="height-limit">
-													<p>
-													{{ content['schedule_info'] }}
-													</p>
-													{% for speaker_key, speaker in content['name'] %}
-													<div class="detailBox_content_schedule_speaker">
-														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
-														</div>
-														<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
-															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
-														</a>
-													</div>
-												</div>
-												{% endfor %}
-											</div>
-											{% if content['slide'] %}
-											<div class="detailBox-link">
-												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link">Slide Link</a>
-											</div>
-											{% endif %}
-											<span class="fa-stack fa-lg detailBox_content_cancel ">
-												<i class="fa fa-circle fa-stack-2x"></i>
-												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
-											</span>
-										</div>
-										<div class="detailBox_maskBg"></div>
-									</div>
-								</section>
+								
                             {% endfor %}
 					</tr>
 					
@@ -130,45 +96,13 @@
                                 </td>
                             {% else %}
                                 <td colspan="{{ item['colspan'] }}" role="rundown-col">
-                                    {{ content['content'] }}
+									{{ content['content'] }}
+									{% if content['content'] == '開放投稿中' %}
+                                    	<a href="https://goo.gl/2ZtDVY" target="_blank" class="btn btn-getTicket-intable">報名</a>
+									{% endif %}
                                 </td>
                             {% endif %}
-							<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
-									<div class="detailBoxWrapper">
-										<div class="detailBox_content">
-											<div class="detailBox_content_schedule">
-												<div class="scheduleTable-subject">
-												{{ content['schedule_topic'] }}
-												</div>
-												<div class="height-limit">
-													<p>
-													{{ content['schedule_info'] }}
-													</p>
-                          	{% for speaker_key, speaker in content['name'] %}
-													<div class="detailBox_content_schedule_speaker">
-														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
-														</div>
-														<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
-															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
-														</a>
-													</div>
-                        			{% endfor %}
-									</div>
-									
-											</div>
-											{% if content['slide'] %}
-											<div class="detailBox-link">
-												<a href="{{ content['slide'] }}" target="_blank"  class="slide-link" target="_blank">Slide Link</a>
-											</div>
-											{% endif %}
-											<span class="fa-stack fa-lg detailBox_content_cancel ">
-												<i class="fa fa-circle fa-stack-2x"></i>
-												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
-											</span>
-										</div>
-										<div class="detailBox_maskBg"></div>
-									</div>
-								</section>
+							
                         {% endfor %}
                     </tr>
                 {% endfor %}
