@@ -15,7 +15,7 @@
 
     function generate(scale_object, heatmap, floor) {
         $.ajax({
-            url: 'https://mopcon.webduino.cc/api/Locations?filter={"where":{"floor": "' + floor + '"},"limit":1',
+            url: 'https://mopcon.webduino.cc/api/Locations?filter={"where":{"floor": "' + floor + '"},"limit":1}',
             error: function(xhr) {
                 console.log('Ajax request 發生錯誤');
             },
@@ -82,7 +82,7 @@
         });
 
         $('.title')
-        .text(floor === '3F' ? 'R1廳' : 'R2廳 & R3廳'})
+        .text(floor === '3F' ? 'R1廳' : 'R2廳 & R3廳')
 
         $('#heatmap').addClass('heatmap' + floor);
 
