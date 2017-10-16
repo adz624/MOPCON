@@ -7,9 +7,11 @@ $main = [
     'zh' => $lang_zh,
     'en' => $lang_en,
 ];
-
-$lang = getLang();
 $params = [
     'pageid' => 'app'
 ];
+$params['og_url'] = 'app.php';
+$params['main']['ogdesc'] = 'MOPCON APP下載頁。';
+$lang = getLang();
+
 render('app.twig', $params);
