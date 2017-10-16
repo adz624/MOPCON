@@ -107,53 +107,55 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
     {% endif %}
   {% block content %}
   {% endblock %}
-  <!-- footer -->
-  <footer class="footer container text-center">
-    <a href="mailto:contact@mopcon.org">
-      <div class="footer_contactUs">
-        Contact
-        <br>
-        Us
+  {% if from_app == false %}
+    <!-- footer -->
+    <footer class="footer container text-center">
+      <a href="mailto:contact@mopcon.org">
+        <div class="footer_contactUs">
+          Contact
+          <br>
+          Us
+        </div>
+        <div class="footer_mail">
+          <img src="images/footer-mail.svg" alt="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <div class="footer_logo">
+        <img src="images/footer-logo.svg" alt="">
       </div>
-      <div class="footer_mail">
-        <img src="images/footer-mail.svg" alt="">
-        <span></span>
-        <span></span>
-        <span></span>
+      <ul class="footer_nav">
+        <li class="nav-history dropdown">
+          <ul class="dropdown-menu">
+            <li><a href="https://mopcon.org/2016/" target="_blank">2016</a></li>
+            <li><a href="https://mopcon.org/2015/" target="_blank">2015</a></li>
+            <li><a href="https://mopcon.org/2014/" target="_blank">2014</a></li>
+            <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
+            <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
+          </ul>
+          <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">{{ main.his_mopcon }}
+            <span class="fa fa-chevron-up"></span>
+          </a>
+        </li>
+        <li class="nav-community">
+          <a href="https://www.facebook.com/mopcon/?fref=ts" class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON 粉絲團"></a>
+          <a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="fa fa-flickr fa-2x" title="flickr"></a>
+          <a href="https://goo.gl/qJRGoJ" class="fa fa-google-plus-square fa-2x" target="_blank" title="MOPCON G+"></a>
+          <a href="https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
+        </li>
+      </ul>
+
+    </footer>
+
+    <a href="ticket.php" class="floater">
+      <div class="floater_pic"></div>
+      <div class="floater_content">買票GO
+      <i class="fa fa-chevron-right"></i>
       </div>
     </a>
-    <div class="footer_logo">
-      <img src="images/footer-logo.svg" alt="">
-    </div>
-    <ul class="footer_nav">
-      <li class="nav-history dropdown">
-        <ul class="dropdown-menu">
-          <li><a href="https://mopcon.org/2016/" target="_blank">2016</a></li>
-          <li><a href="https://mopcon.org/2015/" target="_blank">2015</a></li>
-          <li><a href="https://mopcon.org/2014/" target="_blank">2014</a></li>
-          <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
-          <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
-        </ul>
-        <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">{{ main.his_mopcon }}
-          <span class="fa fa-chevron-up"></span>
-        </a>
-      </li>
-      <li class="nav-community">
-        <a href="https://www.facebook.com/mopcon/?fref=ts" class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON 粉絲團"></a>
-        <a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="fa fa-flickr fa-2x" title="flickr"></a>
-        <a href="https://goo.gl/qJRGoJ" class="fa fa-google-plus-square fa-2x" target="_blank" title="MOPCON G+"></a>
-        <a href="https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
-      </li>
-    </ul>
-
-  </footer>
-
-  <a href="ticket.php" class="floater">
-    <div class="floater_pic"></div>
-    <div class="floater_content">買票GO
-    <i class="fa fa-chevron-right"></i>
-    </div>
-  </a>
+  {% endif %}
 </body>
 <script src="javascripts/vendor.js?v={{version.allJs}}" type="text/javascript"></script>
 <script src="javascripts/all.js?v={{version.allJs}}" type="text/javascript"></script>
