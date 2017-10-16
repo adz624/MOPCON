@@ -26,83 +26,18 @@
         <button onclick="triggerBadge('5')">TEST5</button>
         <button onclick="triggerBadge('6')">TEST6</button>
     </div>
-    <div class="illustration">
-        <div id="icon1" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon2" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon3" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon4" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon5" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon6" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-    </div>
-    <p class="collection">
-        已收集數量：1 / 30
-    </p>
+    <div class="illustration"></div>
     <div class="func">
-        <div onclick="gotoScan()">
-            <img src="images/scan.png" alt="">
-            徽章掃描
+        <p class="collection">
+            已收集數量：<span class="badge-collected"></span> / <span class="badge-all"></span>
+        </p>
+        <div class="btns">
+            <div onclick="gotoScan()">
+                <img src="images/scan.png" alt="">
+                徽章掃描
+            </div>
+            <div onclick="gotoDescription()">活動說明</div>
         </div>
-        <div onclick="gotoDescription()">活動說明</div>
     </div>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -143,13 +78,74 @@
     </div>
 </div>
 <script>
+    var records = JSON.parse(window.localStorage.getItem('records') || '[]'),
+        newBadge = getParameterByName('new_badge'),
+        loggedIn = false,
+        badgeData;
+
     window.onload = function () {
         $('.navbar').hide();
         $('.footer').hide();
+        $('.floater_content').hide();
+
+        getSpreadsheetData('1kPErWc-YaMy-C3PPjJ4XtJZRQrX0pf1DZN_5wV08tOc', function (err, rows) {
+            // if (err) return swal('無法取得徽章資料！').then(function () {
+            //     location.href = 'index.html';
+            // });
+            var fill = rows.length % 3 === 0 ? 0 : 3 - rows.length % 3;
+            Array.from({length: fill}).forEach(x => {
+                rows.push({id: ''});
+            });
+
+            badgeData = {};
+
+            $('.illustration').append(rows.map(function (data) {
+                badgeData[data.id] = data;
+                return generateBadge(data.id, data.category, data.cateno);
+            }));
+
+            $('.badge-all').text(rows.length);
+
+            init();
+        });
     }
 
-    function triggerBadge(index) {
-        var mod = index % 3;
+    function generateBadge(id, cate, cateno) {
+        if (id === '') {
+            return $('<div class="badge_icon fillBox"></div>');
+        }
+
+        return $('<div id="icon' + id + '" class="badge_icon"><div class="badgePic badge-scale"><img src="images/badge/badge' + pad(cate, 3) + '.png" alt=""></div><div class="badgePic badgeFornt badge-rotatey"><img src="" alt=""></div><div class="badgeCycle badge-opacity"></div></div>');
+    }
+
+    function init() {
+        var collected = {};
+
+        // records.forEach(function (record) {
+        //     if (badgeData[record.badgeId]) {
+        //         badgeData[record.badgeId].date = new Date(record.timestamp).toLocaleString();
+        //     }
+        //     collected[record.badgeId] = true;
+
+        //     var data = badgeData[record.badgeId];
+        //     if (newBadge === record.badgeId + '') {
+        //         uncover(data.id, data.category, data.cateno);
+        //     } else {
+        //         open(data.id, data.category, data.cateno);
+        //     }
+        // });
+
+        $('.badge-collected').text(Object.keys(collected).length);
+    }
+
+    function pad(n, width, z) {
+        z = z || '0';
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
+
+    function triggerBadge(id) {
+        var mod = id % 3;
         var className;
 
         if (mod === 1) { // left
@@ -160,8 +156,13 @@
             className = 'badgeWrapper-right';
         }
 
-        $('#icon' + index).addClass(className);
-        $('#icon' + index).find('.badgeFornt').find('img').attr('src', 'images/badge/badge001-2.png');
+        var badge = badgeData[id];
+
+        $('#icon' + id).addClass(className);
+        $('#icon' + id).on('click', function() {
+            toggleModal(badge.id, badge.category, badge.cateno);
+        });
+        $('#icon' + id).find('.badgeFornt').find('img').attr('src', 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png');
     }
 
     function gotoScan() {
@@ -172,15 +173,27 @@
         location.href = 'description.php';
     }
 
-    function toggleModal() {
+    function toggleModal(id, category, cateno) {
+        if (!(badgeData[id] && badgeData[id].date)) return;
+    
+        $('.illustration .badge_icon').removeClass('badgeWrapper-left badgeWrapper badgeWrapper-right');
+    
+        $('#myModal .modal-title').text(badgeData[id].title);
+        $('#myModal .intro').html(badgeData[id].description.replace(new RegExp('\n', 'g'), '<br />'));
+        $('#myModal .shareBtn').attr('onclick', 'fbShare(' + id + ')');
+        $('#myModal .time').text(badgeData[id].date ? (badgeData[id].date + ' 獲得') : '');
+        $('#myModal .logo img').attr('src', 'images/badge/badge' + pad(category, 3) + '-' + cateno + '.png');
+    
         $('#myModal').modal('show');
-    }
+      }
 
-    function fbShare() {
+    function fbShare(id) {
+        var badge = badgeData[id];
+
         var url = 'https://www.kkbox.com/tw/tc/index.html';
         var title = 'MOPCON 徽章'
-        var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起收集換獎品」'; 
-        var image = document.location.href.replace('badge.php', '') + 'images/badge/badge002.png';
+        var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起搜集換獎品」'; 
+        var image = document.location.href.replace('badge.php', '') + 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
 
         FB.ui({
             method: 'share_open_graph',
@@ -194,6 +207,16 @@
                 }
             })
         }, function(response) {});
+    }
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 </script>
 {% endblock %}
