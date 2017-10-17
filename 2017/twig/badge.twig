@@ -113,7 +113,7 @@
 
             $('.illustration').append(rows.map(function (data) {
                 badgeData[data.id] = data;
-                return generateBadge(data.id, data.category, data.cateno);
+                return generateBadge(parseInt(data.id, 10), data.category, data.cateno);
             }));
 
             $('.badge-all').text(rows.length);
@@ -123,20 +123,32 @@
     }
 
     function generateBadge(id, cate, cateno) {
-        var $badgeIcon = $('<div class="badge_icon"></div>');
-
-        if (id === '') {
-            return $badgeIcon.addClass('fillBox');
-        }
+        var $badgeIcon = $('<div class="badge_icon" />').attr('id', 'icon' + id);
 
         var $scaleImage = $('<img />').attr('src', 'images/badge/badge' + pad(cate, 3) + '.png');
-        var $badgeScale = $('<div class="badgePic badge-scale"></div>').append($scaleImage);
+        var $badgeScale = $('<div class="badgePic badge-scale" />').append($scaleImage);
 
         var $rotateImage = $('<img />');
         var $badgeRotate = $('<div class="badgePic badgeFornt badge-rotatey" />').append($rotateImage);
+
         var $badgeOpacity = $('<div class="badgeCycle badge-opacity" />');
 
-        $badgeIcon.attr('id', 'icon' + id)
+        if (id === '') { // empty
+            return $badgeIcon.addClass('fillBox');
+        } else if (records.find(item => item.badgeId === id) && newBadge !== String(id)) { // already collected
+
+            var badge = badgeData[id];
+            var src = 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
+
+            $badgeIcon.on('click', function() {
+                toggleModal(badge.id, badge.category, badge.cateno);
+            });
+            $badgeRotate.find('img').attr('src', src);
+
+            return $badgeIcon.append($badgeRotate);
+        }
+
+        $badgeIcon
             .append($badgeScale)
             .append($badgeRotate)
             .append($badgeOpacity);
@@ -145,27 +157,11 @@
     }
 
     function init() {
-        var collected = {};
-
-        // records.forEach(function (record) {
-        //     if (badgeData[record.badgeId]) {
-        //         badgeData[record.badgeId].date = new Date(record.timestamp).toLocaleString();
-        //     }
-        //     collected[record.badgeId] = true;
-
-        //     var data = badgeData[record.badgeId];
-        //     if (newBadge === record.badgeId + '') {
-        //         uncover(data.id, data.category, data.cateno);
-        //     } else {
-        //         open(data.id, data.category, data.cateno);
-        //     }
-        // });
-
         if (newBadge) {
             scrollToBadge(newBadge);
         }
 
-        $('.badge-collected').text(Object.keys(collected).length);
+        $('.badge-collected').text(records.length);
     }
 
     function pad(n, width, z) {
@@ -233,7 +229,7 @@
     function fbShare(id) {
         var badge = badgeData[id];
 
-        var url = 'https://www.kkbox.com/tw/tc/index.html';
+        var url = 'https://mopcon.org/2017/';
         var title = 'MOPCON 徽章'
         var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起搜集換獎品」'; 
         var image = document.location.href.replace('badge.php', '') + 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
