@@ -106,7 +106,7 @@
             // });
             var fill = rows.length % 3 === 0 ? 0 : 3 - rows.length % 3;
             Array.from({length: fill}).forEach(x => {
-                rows.push({id: ''});
+                rows.push({id: -1});
             });
 
             badgeData = {};
@@ -133,7 +133,7 @@
 
         var $badgeOpacity = $('<div class="badgeCycle badge-opacity" />');
 
-        if (id === '') { // empty
+        if (id === -1) { // empty
             return $badgeIcon.addClass('fillBox');
         } else if (records.find(item => item.badgeId === id) && newBadge !== String(id)) { // already collected
 
