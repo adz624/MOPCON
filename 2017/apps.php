@@ -8,9 +8,9 @@ $main = [
     'en' => $lang_en,
 ];
 $params = [
-    'pageid' => 'app'
+    'pageid' => 'apps'
 ];
-$params['og_url'] = 'app.php';
+$params['og_url'] = 'apps.php';
 $params['main']['ogdesc'] = 'MOPCON APP下載頁。';
 $lang = getLang();
 
