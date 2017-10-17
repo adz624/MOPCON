@@ -123,11 +123,25 @@
     }
 
     function generateBadge(id, cate, cateno) {
+        var $badgeIcon = $('<div class="badge_icon"></div>');
+
         if (id === '') {
-            return $('<div class="badge_icon fillBox"></div>');
+            return $badgeIcon.addClass('fillBox');
         }
 
-        return $('<div id="icon' + id + '" class="badge_icon"><div class="badgePic badge-scale"><img src="images/badge/badge' + pad(cate, 3) + '.png" alt=""></div><div class="badgePic badgeFornt badge-rotatey"><img src="" alt=""></div><div class="badgeCycle badge-opacity"></div></div>');
+        var $scaleImage = $('<img />').attr('src', 'images/badge/badge' + pad(cate, 3) + '.png');
+        var $badgeScale = $('<div class="badgePic badge-scale"></div>').append($scaleImage);
+
+        var $rotateImage = $('<img />');
+        var $badgeRotate = $('<div class="badgePic badgeFornt badge-rotatey" />').append($rotateImage);
+        var $badgeOpacity = $('<div class="badgeCycle badge-opacity" />');
+
+        $badgeIcon.attr('id', 'icon' + id)
+            .append($badgeScale)
+            .append($badgeRotate)
+            .append($badgeOpacity);
+
+        return $badgeIcon;
     }
 
     function init() {
@@ -173,20 +187,25 @@
         }
 
         var badge = badgeData[id];
+        var src = 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
 
         $('#icon' + id).addClass(className);
         $('#icon' + id).on('click', function() {
             toggleModal(badge.id, badge.category, badge.cateno);
         });
-        $('#icon' + id).find('.badgeFornt').find('img').attr('src', 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png');
+        $('#icon' + id).find('.badgeFornt').find('img').attr('src', src);
     }
 
     function scrollToBadge(id) {
-        $('html,body').animate({
-            scrollTop: $("#icon" + id).offset().top - (screen.height / 2 - 40)
-        }, 'slow', function() {
-            triggerBadge(id);
-        });
+        var $badge = $('#icon' + id);
+
+        if ($badge.length > 0) {
+            $('html,body').animate({
+                scrollTop: $badge.offset().top - (screen.height / 2 - 40)
+            }, 'slow', function() {
+                triggerBadge(id);
+            });
+        }
     }
 
     function gotoScan() {
