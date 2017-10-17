@@ -194,6 +194,15 @@
             toggleModal(badge.id, badge.category, badge.cateno);
         });
         $('#icon' + id).find('.badgeFornt').find('img').attr('src', src);
+
+        // fix z-index overlay issue
+        $('#icon' + id).find('.badgePic').css('z-index', 2);
+        $('#icon' + id).find('.badgeCycle').css('z-index', 2);
+
+        setTimeout(function() {
+            $('#icon' + id).find('.badgePic').css('z-index', 1);
+            $('#icon' + id).find('.badgeCycle').css('z-index', 1);
+        }, 4500);
     }
 
     function scrollToBadge(id) {
