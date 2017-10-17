@@ -9,7 +9,6 @@ $badge_size: 79px;
     .badgePic,
     .badgeCycle {
         position: absolute;
-        z-index: 10;
         top: 0;
     }
     .badgeCycle {
@@ -55,14 +54,17 @@ $badge_size: 79px;
 }
 
 .badgeWrapper {
+    z-index: 1;
     @include badge_animate(0px, 'rotatey');
 }
 
 .badgeWrapper-left {
+    z-index: 2;
     @include badge_animate(100px, 'rotatey-left');
 }
 
 .badgeWrapper-right {
+    z-index: 2;
     @include badge_animate(-100px, 'rotatey-right');
 }
 

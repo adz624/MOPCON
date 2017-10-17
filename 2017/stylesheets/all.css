@@ -8169,6 +8169,7 @@ tr:first-child {
   position: absolute; }
 
 .badgeWrapper {
+  z-index: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -8183,7 +8184,6 @@ tr:first-child {
   .badgeWrapper .badgePic,
   .badgeWrapper .badgeCycle {
     position: absolute;
-    z-index: 10;
     top: 0; }
   .badgeWrapper .badgeCycle {
     width: 79px;
@@ -8217,6 +8217,7 @@ tr:first-child {
             animation: opacity 4.5s ease-out forwards 1; }
 
 .badgeWrapper-left {
+  z-index: 2;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -8231,7 +8232,6 @@ tr:first-child {
   .badgeWrapper-left .badgePic,
   .badgeWrapper-left .badgeCycle {
     position: absolute;
-    z-index: 10;
     top: 0; }
   .badgeWrapper-left .badgeCycle {
     width: 79px;
@@ -8265,6 +8265,7 @@ tr:first-child {
             animation: opacity 4.5s ease-out forwards 1; }
 
 .badgeWrapper-right {
+  z-index: 2;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -8279,7 +8280,6 @@ tr:first-child {
   .badgeWrapper-right .badgePic,
   .badgeWrapper-right .badgeCycle {
     position: absolute;
-    z-index: 10;
     top: 0; }
   .badgeWrapper-right .badgeCycle {
     width: 79px;
