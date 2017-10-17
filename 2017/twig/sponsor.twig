@@ -7,7 +7,6 @@
 <section class="sponsor container">
 
     <!-- 等級一 -->
-    
     <div class="sponsor_content">
         <div class="sponsor_content_title setCenter">
             Tony Stark
@@ -18,12 +17,16 @@
                 {% if data['type'] == 'Tony Stark' %}
                     {% for sponsor_key, sponsor in data['logo'] %}
                         <div class="pic-item col-lg-12 col-md-12 col-sm-12 col-xs-12 tonyStark">
-                        {% if data['info'][sponsor_key] %}
-                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% if data['info'][sponsor_key] %}
+                                {% if from_app == true %}
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}&from_app=1">
+                                {% else %}
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                                {% endif %}
                             {% else %}
-                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <a href="{{ data['website'][sponsor_key] }}" target="_blank">
                             {% endif %}
-                                <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         </div>
                     {% endfor%}
@@ -43,12 +46,16 @@
                 {% if data['type'] == 'Bruce Wayne' %}
                     {% for sponsor_key, sponsor in data['logo'] %}
                         <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        {% if data['info'][sponsor_key] %}
-                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% if data['info'][sponsor_key] %}
+                                {% if from_app == true %}
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}&from_app=1">
+                                {% else %}
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                                {% endif %}
                             {% else %}
-                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <a href="{{ data['website'][sponsor_key] }}" target="_blank">
                             {% endif %}
-                                <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         </div>
                     {% endfor%}
@@ -58,8 +65,6 @@
         </div>
     </div>
     <!-- 等級三 -->
-    
-    
     <div class="sponsor_content">
         <div class="sponsor_content_title setCenter">
             Geek
@@ -71,11 +76,15 @@
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         {% for sponsor_key, sponsor in data['logo'] %}
                         {% if data['info'][sponsor_key] %}
-                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% if from_app == true %}
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}&from_app=1">
                             {% else %}
-                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
                             {% endif %}
-                                <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                        {% else %}
+                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                        {% endif %}
+                            <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         {% endfor%}
                     </div>
@@ -95,12 +104,16 @@
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         {% for sponsor_key, sponsor in data['logo'] %}
                         {% if data['info'][sponsor_key] %}
-                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                            {% if from_app == true %}
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}&from_app=1">
                             {% else %}
-                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
-                            {% endif %}
-                                <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
-                            </a>
+                                <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                        {% endif %}
+                            {% else %}
+                        <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                        {% endif %}
+                        <img {{ sponsor_key == 1 ? 'style="border-top: 5px dotted #efefef ;"' : '' }} src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                        </a>
                         {% endfor%}
                     </div>
                 {% endif %}
@@ -108,7 +121,6 @@
             </div>
         </div>
     </div>
-    
     <div class="sponsor_content">
         <div class="sponsor_content_title setCenter">
             特別感謝
@@ -120,11 +132,15 @@
                     <div class="pic-item col-lg-4 col-md-4 col-sm-4 col-xs-6">
                         {% for sponsor_key, sponsor in data['logo'] %}
                             {% if data['info'][sponsor_key] %}
-                            <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                                {% if from_app == true %}
+                                    <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}&from_app=1">
+                                {% else %}
+                                    <a href="sponsor.php?id={{ data['sponsor_id'][sponsor_key] }}">
+                                {% endif %}
                             {% else %}
-                            <a href="{{ data['website'][sponsor_key] }}" target="_blank">
+                                <a href="{{ data['website'][sponsor_key] }}" target="_blank">
                             {% endif %}
-                                <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
+                            <img src="./images/sponsor/{{ data['logo'][sponsor_key] }}" alt="">
                             </a>
                         {% endfor%}
                     </div>
