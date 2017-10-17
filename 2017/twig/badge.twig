@@ -162,6 +162,10 @@
         }
 
         $('.badge-collected').text(records.length);
+
+        if (records.length === 0) {
+            openDescription();
+        }
     }
 
     function pad(n, width, z) {
