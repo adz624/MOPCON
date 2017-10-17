@@ -14,4 +14,4 @@ $params['og_url'] = 'app.php';
 $params['main']['ogdesc'] = 'MOPCON APP下載頁。';
 $lang = getLang();
 
-render('app.twig', $params);
+render('apps.twig', $params);
