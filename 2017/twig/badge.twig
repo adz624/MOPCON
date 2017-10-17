@@ -232,7 +232,7 @@
         var url = 'https://mopcon.org/2017/';
         var title = 'MOPCON 徽章'
         var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起搜集換獎品」'; 
-        var image = document.location.href.replace('badge.php', '') + 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
+        var image = location.protocol + '//' + location.host + '/2017/images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
 
         FB.ui({
             method: 'share_open_graph',
