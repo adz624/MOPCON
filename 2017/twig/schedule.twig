@@ -58,7 +58,6 @@
                                     	 <a href="https://goo.gl/xCR44S" target="_blank" class="btn btn-getTicket-intable">立即購票</a>
 										 {% endif %}
                                     </td>
-									
                                 {% endif %}
 								<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
 									<div class="detailBoxWrapper">
@@ -74,8 +73,12 @@
 													{% for speaker_key, speaker in content['name'] %}
 													<div class="detailBox_content_schedule_speaker">
 														<div class="pic pic-detail" style="background-image:url(./images/speaker/{{ content['picture'][speaker_key] }});">
-														</div>
-														<a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
+                                                        </div>
+                                                        {% if from_app == true %}
+                                                            <a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}&from_app=1">
+                                                        {% else %}
+                                                            <a href="speakerDetail.php?speaker={{ content['speaker_id'][speaker_key] }}">
+                                                        {% endif %}
 															<h4 class="inline-block">{{ content['name'][speaker_key] }}</h4>
 														</a>
 													</div>
