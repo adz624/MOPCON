@@ -24,9 +24,14 @@ $content_width: 300px;
         }
     }
 
+    .fillBox.fillBox.fillBox {
+        background: #181E3E;
+    }
+
     .illustration {
-        width: 287px;
-        height: 416px;
+        max-width: 315px;
+        text-align: center;
+        margin: 0 0 50px 0;
         .badge_icon {
             position: relative;
             background: #fff;
@@ -42,34 +47,45 @@ $content_width: 300px;
         }
     }
 
-    .collection {
-        color: #fff;
-        font-size: 13px;
-        line-height: 15px;
-        margin-bottom: 15px;
-    }
-
     .func {
         display: flex;
-        div {
-            width: 150px;
-            height: 47px;
-            border: 1px solid #fff;
-            border-radius: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        position: fixed;
+        bottom: 0;
+        background: #181E3E;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        .collection {
             color: #fff;
-            font-size: 20px;
-            line-height: 23px;
-            margin-right: 13px;
-            &:last-child {
+            font-size: 13px;
+            line-height: 15px;
+            margin-bottom: 10px;
+        }
+
+        .btns {
+            display: flex;
+            div {
+                width: 150px;
+                height: 47px;
+                border: 1px solid #fff;
+                border-radius: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 20px;
+                line-height: 23px;
                 margin-right: 13px;
+                &:last-child {
+                    margin-right: 13px;
+                }
             }
-        }
-        img {
-            margin-right: 7px;
-        }
+            img {
+                margin-right: 7px;
+            }
+        } 
     }
 
     .modal-content {
@@ -77,7 +93,7 @@ $content_width: 300px;
         .modal-header {
             border-radius: 20px 20px 0 0;
             background-color: #7ab6ad;
-            .sponsor {
+            .modal-title {
                 color: #fff;
                 font-size: 30px;
                 line-height: 35px;

@@ -7477,9 +7477,12 @@ section {
       color: #3c579e; }
     .badgeContainer .shareBtn span {
       margin-left: 5px; }
+  .badgeContainer .fillBox.fillBox.fillBox {
+    background: #181E3E; }
   .badgeContainer .illustration {
-    width: 287px;
-    height: 416px; }
+    max-width: 315px;
+    text-align: center;
+    margin: 0 0 50px 0; }
     .badgeContainer .illustration .badge_icon {
       position: relative;
       background: #fff;
@@ -7491,43 +7494,61 @@ section {
       margin: 0 18px 18px 0; }
       .badgeContainer .illustration .badge_icon:nth-child(3n+3) {
         margin: 0 0 18px 0; }
-  .badgeContainer .collection {
-    color: #fff;
-    font-size: 13px;
-    line-height: 15px;
-    margin-bottom: 15px; }
   .badgeContainer .func {
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
-    .badgeContainer .func div {
-      width: 150px;
-      height: 47px;
-      border: 1px solid #fff;
-      border-radius: 35px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background: #181E3E;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px; }
+    .badgeContainer .func .collection {
+      color: #fff;
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 10px; }
+    .badgeContainer .func .btns {
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      color: #fff;
-      font-size: 20px;
-      line-height: 23px;
-      margin-right: 13px; }
-      .badgeContainer .func div:last-child {
+      display: flex; }
+      .badgeContainer .func .btns div {
+        width: 150px;
+        height: 47px;
+        border: 1px solid #fff;
+        border-radius: 35px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 23px;
         margin-right: 13px; }
-    .badgeContainer .func img {
-      margin-right: 7px; }
+        .badgeContainer .func .btns div:last-child {
+          margin-right: 13px; }
+      .badgeContainer .func .btns img {
+        margin-right: 7px; }
   .badgeContainer .modal-content {
     border-radius: 20px; }
     .badgeContainer .modal-content .modal-header {
       border-radius: 20px 20px 0 0;
       background-color: #7ab6ad; }
-      .badgeContainer .modal-content .modal-header .sponsor {
+      .badgeContainer .modal-content .modal-header .modal-title {
         color: #fff;
         font-size: 30px;
         line-height: 35px;

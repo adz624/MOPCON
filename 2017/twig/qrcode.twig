@@ -2,6 +2,9 @@
 
 {% block content %}
 <div id="qrcodeContainer">
+    <a href="javascript:destoryCameraAndGoTo('badge.html')" class="btn btn-default" style="margin-top:10px;">
+      <i class="fa fa-chevron-circle-left"></i> 回上一頁
+    </a>
     <div class="qrcode">
         <div class="frame1 top_frame1"></div>
         <div class="frame2 top_frame2"></div>
@@ -9,9 +12,6 @@
         <div class="frame2 bottom_frame2"></div>
     </div>
     <div class="hint"></div>
-    <div class="logo">
-        <img src="images/app_qrcode_logo2.svg" alt="">
-    </div>
 </div>
 
 <script>
@@ -39,6 +39,44 @@
         }
 
         $('.hint').text(hint);
+    }
+
+    document.addEventListener('deviceready', function () {
+        QRScanner.show(function (status) {
+
+            QRScanner.scan(function (err, text) {
+                if (err) {
+                    swal('啟動相機失敗！' + err.toString()).then(function () {
+                        // destoryCameraAndGoTo('index.html');
+                    });
+                    return;
+                }
+
+                QRScanner.hide(function (status) {
+                    $.post({
+                        url: API_URL + '/scan/' + text,
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader("Authorization", "Basic " + btoa(Token.getId()));
+                        }
+                    }, function (data) {
+                        data.timestamp = Date.now();
+                        window.records.push(data);
+                        window.localStorage.setItem('records', JSON.stringify(window.records));
+                        destoryCameraAndGoTo('/2017/badge.php?new_badge=' + data.badgeId);
+                    }).fail(function (reason) {
+                        swal('QRCode 掃描失敗！' + JSON.stringify(reason)).then(function () {
+                            destoryCameraAndGoTo('/2017/qrcode.php');
+                        })
+                    });
+                });
+            });
+        });
+    });
+
+    function destoryCameraAndGoTo(page) {
+        QRScanner.destroy(function (status) {
+        location.href = page;
+        });
     }
 </script>
 {% endblock %}
