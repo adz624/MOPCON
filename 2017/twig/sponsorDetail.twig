@@ -26,9 +26,16 @@
             </div>
         </div>
         <br>
-        <a href="sponsor.php" class="btn btn-primary align-table">
-            回贊助商列表
-        </a>
+        {% if from_app == true %}
+            <a href="sponsor.php?from_app=1" class="btn btn-primary align-table">
+                回贊助商列表
+            </a>
+        {% else %}
+            <a href="sponsor.php" class="btn btn-primary align-table">
+                回贊助商列表
+            </a>
+        {% endif %}
+      
     </div>
    
 </section>
