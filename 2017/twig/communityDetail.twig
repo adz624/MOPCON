@@ -29,8 +29,16 @@
 				{% endif %}
             </div>
         </div>
+        {% if from_app == true %}
+            <a href="community.php?from_app=1" class="btn btn-primary align-table">
+                {{ index.back_list }}
+            </a>   
+        {% else %}
+            <a href="community.php" class="btn btn-primary align-table">
+                {{ index.back_list }}
+            </a>
+        {% endif %}
     </div>
-    <br>
 </section>
 
 {% endblock %}
