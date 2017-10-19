@@ -29,24 +29,47 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
   <style>
   html,
   body {
-    width: 100%;
-    height: 100%;
+    margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
   }
 
-  .main-frame {
-    width: 100%;
-    margin: 0;
+  body {
+    position: relative;
+  }
+
+  .frame_holder {
     position: absolute;
     top: 66px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: none;
+  }
+
+  .scroll_frame {
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .main_frame {
+    width: 100%;
+    height: 100%;
+    margin: 0;
     padding: 0;
-    border: 0;
+    border: none;
+    vertical-align: top;
   }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-fixed-top" style="margin:0;padding:0;border:0">
+  <nav class="navbar navbar-fixed-top" style="margin:0;padding:0;border:none">
     <div class="navbar-header">
       <a href="javascript:goHome()" class="navbar-brand">
         <h1>行動科技年會 MOPCON 2017</h1>
@@ -61,7 +84,11 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
       </ul>
     </div>
   </nav>
-  <iframe id="main" name="main" class="main-frame"></iframe>
+  <div class="frame_holder">
+    <div class="scroll_frame">
+      <iframe id="main" name="main" class="main_frame"></iframe>
+    </div>
+  </div>
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/all.js"></script>
   <script src="javascripts/core.js"></script>
@@ -80,12 +107,11 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
     config = {};
 
   $(window).on('load', function () {
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       $('.navbar-collapse').click('li', function () {
         $('.navbar-collapse').slideToggle();
       });
     }
-    $(iframe).height($(window).height() - 66);
   });
 
   spin.spin(document.body);
@@ -102,8 +128,11 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
   })
 
   iframe.onload = function () {
+    var evt = /iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'onpagehide' : 'onbeforeunload';
+
     spin.stop();
-    iframe.contentWindow.onbeforeunload = function () {
+    iframe.contentWindow[evt] = function () {
+      alert('unload');
       spin.spin(document.body);
     };
   };
@@ -128,7 +157,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
   }
 
   function goHome() {
-    iframe.src = config.homeUrl
+    iframe.src = config.homeUrl;
   }
   </script>
 </body>
