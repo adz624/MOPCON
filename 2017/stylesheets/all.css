@@ -8183,8 +8183,8 @@ tr:first-child {
   .badgeWrapper .badgePic,
   .badgeWrapper .badgeCycle {
     position: absolute;
-    z-index: 10;
-    top: 0; }
+    top: 0;
+    z-index: 1; }
   .badgeWrapper .badgeCycle {
     width: 79px;
     height: 79px;
@@ -8231,8 +8231,8 @@ tr:first-child {
   .badgeWrapper-left .badgePic,
   .badgeWrapper-left .badgeCycle {
     position: absolute;
-    z-index: 10;
-    top: 0; }
+    top: 0;
+    z-index: 1; }
   .badgeWrapper-left .badgeCycle {
     width: 79px;
     height: 79px;
@@ -8279,8 +8279,8 @@ tr:first-child {
   .badgeWrapper-right .badgePic,
   .badgeWrapper-right .badgeCycle {
     position: absolute;
-    z-index: 10;
-    top: 0; }
+    top: 0;
+    z-index: 1; }
   .badgeWrapper-right .badgeCycle {
     width: 79px;
     height: 79px;

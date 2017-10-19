@@ -11,20 +11,20 @@
         FB.AppEvents.logPageView();
     };
 
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    // (function(d, s, id) {
+    //     var js, fjs = d.getElementsByTagName(s)[0];
+    //     if (d.getElementById(id)) return;
+    //     js = d.createElement(s); js.id = id;
+    //     js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    //     fjs.parentNode.insertBefore(js, fjs);
+    // }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <div class="container badgeContainer">
     <div style="margin-bottom: 10px;">
         <button onclick="triggerBadge('4')">TEST4</button>
         <button onclick="triggerBadge('5')">TEST5</button>
-        <button onclick="location.href = location.pathname + '?new_badge=20'">open 20</button>
+        <button onclick="location.href = location.pathname + '?from_app=1&new_badge=20'">open 20</button>
     </div>
     <div class="illustration"></div>
     <div class="func">
@@ -106,14 +106,14 @@
             // });
             var fill = rows.length % 3 === 0 ? 0 : 3 - rows.length % 3;
             Array.from({length: fill}).forEach(x => {
-                rows.push({id: ''});
+                rows.push({id: -1});
             });
 
             badgeData = {};
 
             $('.illustration').append(rows.map(function (data) {
                 badgeData[data.id] = data;
-                return generateBadge(data.id, data.category, data.cateno);
+                return generateBadge(parseInt(data.id, 10), data.category, data.cateno);
             }));
 
             $('.badge-all').text(rows.length);
@@ -123,35 +123,49 @@
     }
 
     function generateBadge(id, cate, cateno) {
-        if (id === '') {
-            return $('<div class="badge_icon fillBox"></div>');
+        var $badgeIcon = $('<div class="badge_icon" />').attr('id', 'icon' + id);
+
+        var $scaleImage = $('<img />').attr('src', 'images/badge/badge' + pad(cate, 3) + '.png');
+        var $badgeScale = $('<div class="badgePic badge-scale" />').append($scaleImage);
+
+        var $rotateImage = $('<img />');
+        var $badgeRotate = $('<div class="badgePic badgeFornt badge-rotatey" />').append($rotateImage);
+
+        var $badgeOpacity = $('<div class="badgeCycle badge-opacity" />');
+
+        if (id === -1) { // empty
+            return $badgeIcon.addClass('fillBox');
+        } else if (records.find(item => item.badgeId === id) && newBadge !== String(id)) { // already collected
+
+            var badge = badgeData[id];
+            var src = 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
+
+            $badgeIcon.on('click', function() {
+                toggleModal(badge.id, badge.category, badge.cateno);
+            });
+            $badgeRotate.find('img').attr('src', src);
+
+            return $badgeIcon.append($badgeRotate);
         }
 
-        return $('<div id="icon' + id + '" class="badge_icon"><div class="badgePic badge-scale"><img src="images/badge/badge' + pad(cate, 3) + '.png" alt=""></div><div class="badgePic badgeFornt badge-rotatey"><img src="" alt=""></div><div class="badgeCycle badge-opacity"></div></div>');
+        $badgeIcon
+            .append($badgeScale)
+            .append($badgeRotate)
+            .append($badgeOpacity);
+
+        return $badgeIcon;
     }
 
     function init() {
-        var collected = {};
-
-        // records.forEach(function (record) {
-        //     if (badgeData[record.badgeId]) {
-        //         badgeData[record.badgeId].date = new Date(record.timestamp).toLocaleString();
-        //     }
-        //     collected[record.badgeId] = true;
-
-        //     var data = badgeData[record.badgeId];
-        //     if (newBadge === record.badgeId + '') {
-        //         uncover(data.id, data.category, data.cateno);
-        //     } else {
-        //         open(data.id, data.category, data.cateno);
-        //     }
-        // });
-
         if (newBadge) {
             scrollToBadge(newBadge);
         }
 
-        $('.badge-collected').text(Object.keys(collected).length);
+        $('.badge-collected').text(records.length);
+
+        if (records.length === 0) {
+            openDescription();
+        }
     }
 
     function pad(n, width, z) {
@@ -173,24 +187,38 @@
         }
 
         var badge = badgeData[id];
+        var src = 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
 
         $('#icon' + id).addClass(className);
         $('#icon' + id).on('click', function() {
             toggleModal(badge.id, badge.category, badge.cateno);
         });
-        $('#icon' + id).find('.badgeFornt').find('img').attr('src', 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png');
+        $('#icon' + id).find('.badgeFornt').find('img').attr('src', src);
+
+        // fix z-index overlay issue
+        $('#icon' + id).find('.badgePic').css('z-index', 2);
+        $('#icon' + id).find('.badgeCycle').css('z-index', 2);
+
+        setTimeout(function() {
+            $('#icon' + id).find('.badgePic').css('z-index', 1);
+            $('#icon' + id).find('.badgeCycle').css('z-index', 1);
+        }, 4500);
     }
 
     function scrollToBadge(id) {
-        $('html,body').animate({
-            scrollTop: $("#icon" + id).offset().top - (screen.height / 2 - 40)
-        }, 'slow', function() {
-            triggerBadge(id);
-        });
+        var $badge = $('#icon' + id);
+
+        if ($badge.length > 0) {
+            $('html,body').animate({
+                scrollTop: $badge.offset().top - (screen.height / 2 - 40)
+            }, 'slow', function() {
+                triggerBadge(id);
+            });
+        }
     }
 
     function gotoScan() {
-        location.href = 'qrcode.php?type=badge';
+        location.href = 'qrcode.php?from_app=1&type=badge';
     }
 
     function openDescription() {
@@ -214,10 +242,10 @@
     function fbShare(id) {
         var badge = badgeData[id];
 
-        var url = 'https://www.kkbox.com/tw/tc/index.html';
+        var url = 'https://mopcon.org/2017/';
         var title = 'MOPCON 徽章'
         var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起搜集換獎品」'; 
-        var image = document.location.href.replace('badge.php', '') + 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
+        var image = location.protocol + '//' + location.host + '/2017/images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
 
         FB.ui({
             method: 'share_open_graph',

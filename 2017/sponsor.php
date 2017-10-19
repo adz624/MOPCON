@@ -5,7 +5,8 @@ $pageid = 'sponsor';
 $params = [
     'pageid'    => $pageid,
     'filemtime' => getLastUpdateTime($pageid),
-    'sponsors'  => getSponsorsByOrder()
+    'sponsors'  => getSponsorsByOrder(),
+    'index'     => getIndex()
 ];
 
 $params['og_url'] = 'sponsor.php';

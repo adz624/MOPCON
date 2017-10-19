@@ -62,10 +62,10 @@
                         data.timestamp = Date.now();
                         window.records.push(data);
                         window.localStorage.setItem('records', JSON.stringify(window.records));
-                        destoryCameraAndGoTo('/2017/badge.php?new_badge=' + data.badgeId);
+                        destoryCameraAndGoTo('/2017/badge.php?from_app=1&new_badge=' + data.badgeId);
                     }).fail(function (reason) {
                         swal('QRCode 掃描失敗！' + JSON.stringify(reason)).then(function () {
-                            destoryCameraAndGoTo('/2017/qrcode.php');
+                            destoryCameraAndGoTo('/2017/qrcode.php?from_app=1');
                         })
                     });
                 });
@@ -75,7 +75,7 @@
 
     function destoryCameraAndGoTo(page) {
         QRScanner.destroy(function (status) {
-        location.href = page;
+            location.href = page;
         });
     }
 </script>

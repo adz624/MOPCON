@@ -60,9 +60,16 @@
         <h3>其他項目</h3>
         <p>Other xxx ooo ...</p> -->
         <br>
-        <a href="speaker.php" class="btn btn-primary align-table">
-            {{ index.back_list }}
-        </a>
+        {% if from_app == true %}
+            <a href="speaker.php?from_app=1" class="btn btn-primary align-table">
+                {{ index.back_list }}
+            </a>   
+        {% else %}
+            <a href="speaker.php" class="btn btn-primary align-table">
+                {{ index.back_list }}
+            </a>
+        {% endif %}
+        
     </div>
 </section>
 {% endblock %}

@@ -9,6 +9,7 @@ $params = [
     'filemtime' => getLastUpdateTime($pageid),
     'community' => getAllCommunities(),
     'sponsors'  => getSponsors(),
+    'index'     => getIndex()
 ];
 $params['og_url'] = 'community.php';
 $params['main']['ogdesc'] = '一路支持MOPCON的好夥伴們！';
