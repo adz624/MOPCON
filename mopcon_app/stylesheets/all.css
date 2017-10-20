@@ -1050,20 +1050,11 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-    padding: 80px 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff; }
-@media (min-width: 768px) {
-  body {
-    padding: 150px 0;   
-  }
-}
-
-
-
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
 
 input,
 button,
@@ -6525,7 +6516,8 @@ section {
 .content-radius {
   background-color: #fff;
   border-radius: 25px;
-  padding: 50px; }
+  padding: 50px;
+  position: relative; }
   @media (max-width: 480px) {
     .content-radius {
       padding: 30px; } }
@@ -6872,6 +6864,7 @@ section {
   text-align: center; }
 
 .sponsor_content_title {
+  z-index: 1;
   background-color: #F1E28C;
   color: #B5814B;
   border-radius: 60px;
@@ -6893,6 +6886,11 @@ section {
     margin: auto;
     right: 0;
     left: 0; }
+
+.tonyStark img {
+  overflow: hidden;
+  margin-top: -300px;
+  margin-bottom: -300px; }
 
 #heatmapContainer {
   margin: 0 auto;
@@ -6986,8 +6984,6 @@ section {
         cursor: pointer; }
       #heatmapContainer .heatmap_floor .heatmap_room button {
         background-color: #fff;
-        border: none;
-        text-align: center;
         width: 68px;
         height: 68px;
         font-size: 32px; }
@@ -7246,7 +7242,7 @@ section {
     width: 279px;
     height: 279px;
     position: relative;
-    margin: 30px 0; }
+    margin: 60px 0; }
     #qrcodeContainer .qrcode .frame1 {
       position: absolute;
       background-color: #7ab6ad;
@@ -7481,10 +7477,12 @@ section {
       color: #3c579e; }
     .badgeContainer .shareBtn span {
       margin-left: 5px; }
+  .badgeContainer .fillBox.fillBox.fillBox {
+    background: #181E3E; }
   .badgeContainer .illustration {
     max-width: 315px;
-    /* height: 415px; */
-     }
+    text-align: center;
+    margin: 0 0 50px 0; }
     .badgeContainer .illustration .badge_icon {
       position: relative;
       background: #fff;
@@ -7496,48 +7494,61 @@ section {
       margin: 0 18px 18px 0; }
       .badgeContainer .illustration .badge_icon:nth-child(3n+3) {
         margin: 0 0 18px 0; }
-  .badgeContainer .collection {
-    color: #fff;
-    font-size: 13px;
-    line-height: 15px;
-    margin-top: 10px;
-     }
   .badgeContainer .func {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   z-index: 9;
-   background: #181E3E;
-   padding: 5px; 
-   
-  }
-    .badgeContainer .func button {
-      width: 145px;
-      height: 45px;
-      border: 1px solid #fff;
-      border-radius: 35px;
-      
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background: #181E3E;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px; }
+    .badgeContainer .func .collection {
       color: #fff;
-      font-size: 20px;
-      line-height: 23px;
-      margin-right: 5px; }
-      .badgeContainer .func div:last-child {
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 10px; }
+    .badgeContainer .func .btns {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .badgeContainer .func .btns div {
+        width: 150px;
+        height: 47px;
+        border: 1px solid #fff;
+        border-radius: 35px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 23px;
         margin-right: 13px; }
-    .badgeContainer .func img {
-      margin-right: 7px; }
+        .badgeContainer .func .btns div:last-child {
+          margin-right: 13px; }
+      .badgeContainer .func .btns img {
+        margin-right: 7px; }
   .badgeContainer .modal-content {
     border-radius: 20px; }
     .badgeContainer .modal-content .modal-header {
       border-radius: 20px 20px 0 0;
       background-color: #7ab6ad; }
-      .badgeContainer .modal-content .modal-header .sponsor {
+      .badgeContainer .modal-content .modal-header .modal-title {
         color: #fff;
         font-size: 30px;
         line-height: 35px;
@@ -7554,7 +7565,8 @@ section {
         height: 34px;
         background-color: #181e3e;
         border-radius: 34px;
-        opacity: 1; }
+        opacity: 1;
+        color: #fff; }
         .badgeContainer .modal-content .modal-header .close span {
           color: #fff;
           font-size: 25px; }
@@ -7655,12 +7667,11 @@ section {
       height: inherit; } }
 
 .ticket_content {
-  margin-left: 22%; }
+  margin-left: 22%;
+  margin-right: 10%; }
   @media (max-width: 767px) {
     .ticket_content {
-      margin-left: inherit;
-      margin-bottom: 60px;
-      margin-top: 60px; } }
+      margin: 60px 0; } }
 
 .btn {
   cursor: pointer;
@@ -7778,6 +7789,23 @@ section {
   .btn-ticketDetail.is-active, .btn-ticketDetail:hover, .btn-ticketDetail:focus, .btn-ticketDetail:active {
     background: #7BB6AD;
     color: #fff; }
+
+.btn-booking {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  border-bottom-right-radius: 25px;
+  padding: 3rem .5rem .5rem 4em;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(150deg, #fff 0%, transparent 0), linear-gradient(150deg, #fff 51%, transparent 52%), linear-gradient(150deg, #609890 50%, transparent 61%), linear-gradient(150deg, #7BB6AD 100%, transparent 0); }
+
+.btn-getTicket-intable {
+  background-color: #F1B861;
+  border-radius: 5px;
+  color: #5B8E54;
+  padding: 5px 10px;
+  font-size: 0.85714rem; }
 
 .title {
   margin-top: 10%;
@@ -7960,9 +7988,12 @@ tr:first-child {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px auto;
+  margin: 85px auto;
   width: 100%;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .pageHead {
+      margin: 40px auto; } }
   .pageHead img {
     max-width: 120%; }
 
@@ -8152,8 +8183,8 @@ tr:first-child {
   .badgeWrapper .badgePic,
   .badgeWrapper .badgeCycle {
     position: absolute;
-    z-index: 10;
-    top: 0; }
+    top: 0;
+    z-index: 1; }
   .badgeWrapper .badgeCycle {
     width: 79px;
     height: 79px;
@@ -8200,8 +8231,8 @@ tr:first-child {
   .badgeWrapper-left .badgePic,
   .badgeWrapper-left .badgeCycle {
     position: absolute;
-    z-index: 10;
-    top: 0; }
+    top: 0;
+    z-index: 1; }
   .badgeWrapper-left .badgeCycle {
     width: 79px;
     height: 79px;
@@ -8248,8 +8279,8 @@ tr:first-child {
   .badgeWrapper-right .badgePic,
   .badgeWrapper-right .badgeCycle {
     position: absolute;
-    z-index: 10;
-    top: 0; }
+    top: 0;
+    z-index: 1; }
   .badgeWrapper-right .badgeCycle {
     width: 79px;
     height: 79px;
@@ -8614,11 +8645,11 @@ tr:first-child {
   float: none; }
 
 /*!
-  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
-  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
-  */
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
 /* FONT PATH
-  * -------------------------- */
+ * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
@@ -8791,7 +8822,7 @@ tr:first-child {
   color: #fff; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
+   readers do not read off random characters that represent icons */
 .fa-remove:before,
 .fa-close:before,
 .fa-times:before {
@@ -8823,21 +8854,21 @@ tr:first-child {
 .fa-circle:before {
   content: "\f111"; }
 
+.fa-chevron-circle-left:before {
+  content: "\f137"; }
+
+.fa-chevron-circle-right:before {
+  content: "\f138"; }
+
+.fa-chevron-circle-up:before {
+  content: "\f139"; }
+
+.fa-chevron-circle-down:before {
+  content: "\f13a"; }
+
 .fa-flickr:before {
   content: "\f16e"; }
-.fa-chevron-circle-left:before {
-  content: "\f137";
-}
-.fa-chevron-circle-right:before {
-  content: "\f138";
-}
-.fa-chevron-circle-up:before {
-  content: "\f139";
-}
-.fa-chevron-circle-down:before {
-  content: "\f13a";
-}
-  
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -8858,4 +8889,3 @@ tr:first-child {
   clip: auto; }
 
 /*# sourceMappingURL=all.css.map */
-            
