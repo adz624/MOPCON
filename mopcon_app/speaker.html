@@ -124,34 +124,29 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
             })
         }, this);
     
-
-
- console.log($lang_zh)
     speakerData = $lang_zh;
+    
     for(var speaker in speakerData){
-        console.log(speaker);
-        html += '<div class="content-radius clearfix"><div class="row"><h3 class="h3 col-lg-12">'+speakerData[speaker]['name'];
+        html += '<div class="content-radius clearfix"><div class="row"><h3 class="h3 col-lg-12">' + speakerData[speaker]['name'];
         if(speaker['job']!= ''){
-            html +=  `<br/ class="visible-xs">
-                        <span style="font-size: 14px;color: #999;">`+speakerData[speaker]['job']+` </span>
-                        </h3>
-                       `;
+            html += '<br/ class="visible-xs">'+
+                    '<span style="font-size: 14px;color: #999;">'+speakerData[speaker]['job']+'</span>';
             }
-             html +=       `
-              
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="pic pic-cycle" style="background-image:url(./images/speaker/`+speakerData[speaker]['picture']+`);">
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-9">
-                    <p>
-                        `+ speakerData[speaker]['info'] +`
-                    </p>
-                    <a href="speakerDetail.html?speaker=`+ speakerData[speaker]['speaker_id'] +`" class="btn btn-detail">Information</a>
-                </div>
-            </div>
-        </div><br/>`;
+             html += '</h3>'+
+                '<div class="col-lg-3 col-md-3 col-sm-3">'+
+                    '<div class="pic pic-cycle" style="background-image:url(./images/speaker/'+speakerData[speaker]['picture']+');">'+
+                   '</div>'+
+                '</div>'+
+                '<div class="col-lg-9 col-md-9 col-sm-9">'+
+                    '<p>'
+                        + speakerData[speaker]['info'] +
+                    '</p>'+
+                    '<a href="speakerDetail.html?speaker='+ speakerData[speaker]['speaker_id'] +'" class="btn btn-detail">詳細介紹</a>'+
+                '</div>'+
+            '</div>'+
+       '</div><br/>';
     }
+
     $('.container').append(html);});
     }
    
