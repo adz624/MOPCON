@@ -57,7 +57,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
         </ul>
       </div>
     </nav>
-    <script>
+<script>
     window.fbAsyncInit = function() {
         FB.init({
             appId      : '326056827805047',
@@ -327,8 +327,59 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 </script>
+  <!-- footer -->
+  <footer class="footer container text-center">
+    <a href="mailto:contact@mopcon.org">
+      <div class="footer_contactUs">
+        Contact
+        <br>
+        Us
+      </div>
+      <div class="footer_mail">
+        <img src="images/footer-mail.svg" alt="">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </a>
+    <div class="footer_logo">
+      <img src="images/footer-logo.svg" alt="">
+    </div>
+    <ul class="footer_nav">
+      <li class="nav-history dropdown">
+        <ul class="dropdown-menu">
+          <li><a href="https://mopcon.org/2016/" target="_blank">2016</a></li>
+          <li><a href="https://mopcon.org/2015/" target="_blank">2015</a></li>
+          <li><a href="https://mopcon.org/2014/" target="_blank">2014</a></li>
+          <li><a href="https://mopcon.org/2013/" target="_blank">2013</a></li>
+          <li><a href="https://mopcon.org/2012/" target="_blank">2012</a></li>
+        </ul>
+        <a class="btn btn-select dropdown-toggle" data-toggle="dropdown">歷年 MOPCON
+          <span class="fa fa-chevron-up"></span>
+        </a>
+      </li>
+      <li class="nav-community">
+        <a href="https://www.facebook.com/mopcon/?fref=ts" class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON 粉絲團"></a>
+        <a href="https://www.flickr.com/photos/mopcon/albums/" target="_blank" class="fa fa-flickr fa-2x" title="flickr"></a>
+        <a href="https://goo.gl/qJRGoJ" class="fa fa-google-plus-square fa-2x" target="_blank" title="MOPCON G+"></a>
+        <a href="https://twitter.com/mopcon" class="fa fa-twitter-square fa-2x" target="_blank" title="MOPCON twitter"></a>
+      </li>
+    </ul>
+
+  </footer>
 
 </body>
-<script src="javascripts/vendor.js?v=1504445211" type="text/javascript"></script>
-<script src="javascripts/all.js?v=1504445211" type="text/javascript"></script>
+<script src="javascripts/vendor.js?v=1504445235" type="text/javascript"></script>
+<script src="javascripts/all.js?v=1504445235" type="text/javascript"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34651129-1']);
+_gaq.push(['_setDomainName', 'mopcon.org']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </html>
