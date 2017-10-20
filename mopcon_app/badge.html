@@ -57,122 +57,53 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
         </ul>
       </div>
     </nav>
-  <script>
+    <script>
     window.fbAsyncInit = function() {
         FB.init({
-                        appId      : '326056827805047',
+            appId      : '326056827805047',
             xfbml      : true,
             version    : 'v2.9'
         });
         FB.AppEvents.logPageView();
     };
 
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    // (function(d, s, id) {
+    //     var js, fjs = d.getElementsByTagName(s)[0];
+    //     if (d.getElementById(id)) return;
+    //     js = d.createElement(s); js.id = id;
+    //     js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    //     fjs.parentNode.insertBefore(js, fjs);
+    // }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <div class="container badgeContainer">
     <div style="margin-bottom: 10px;">
         <button onclick="triggerBadge('4')">TEST4</button>
         <button onclick="triggerBadge('5')">TEST5</button>
-        <button onclick="triggerBadge('6')">TEST6</button>
+        <button onclick="location.href = location.pathname + '?from_app=1&new_badge=20'">open 20</button>
     </div>
-    <div class="illustration">
-        <div id="icon1" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon2" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon3" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon4" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon5" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div id="icon6" class="badge_icon" onclick="toggleModal()">
-            <div class="badgePic badge-scale">
-                <img src="images/badge/badge001.png" alt="">
-            </div>
-            <div class="badgePic badgeFornt badge-rotatey">
-                <img src="images/badge/badge002.png" alt="">
-            </div>
-            <div class="badgeCycle badge-opacity">
-            </div>
-        </div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-        <div class="badge_icon"></div>
-    </div>
+    <div class="illustration"></div>
     <div class="func">
         <p class="collection">
-            已收集數量：1 / 41 <a href="confirm.html"> (未驗證)</a>
+            已收集數量：<span class="badge-collected"></span> / <span class="badge-all"></span>
         </p>
-        <butrton type="button" class="btn btn-default" onclick="gotoScan()">
-            <img src="images/scan.png" alt="">
-            徽章掃描
-        </butrton>
-        <butrton type="button" class="btn btn-default" nclick="gotoDescription()" >活動說明</butrton>
+        <div class="btns">
+            <div onclick="gotoScan()">
+                <img src="images/scan.png" alt="">
+                徽章掃描
+            </div>
+            <div onclick="openDescription()">活動說明</div>
+        </div>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="sponsorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <p class="modal-title sponsor" id="exampleModalLabel">
-                        KKBOX
-                    </p>
-                    <p class="time">
-                        2017/10/29 10:12 獲得。
-                    </p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <p class="modal-title" id="exampleModalLabel"></p>
+                    <p class="time"></p>
+                    <button type="button" class="close fa fa-times fa-lg" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
                     <p class="shareBtn" onclick="fbShare()" >
                         <a class="fa fa-facebook-square fa-2x" target="_blank" title="MOPCON"></a>
@@ -181,17 +112,33 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
                 </div>
                 <div class="modal-body">
                     <div class="logo">
-                        <img src="images/badge/badge002.png" alt="">
+                        <img src="" alt="">
                     </div>
-                    <div class="intro">
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字，
-                        KKBOX介紹文字，KKBOX介紹文字，KKBOX介紹文字。
+                    <div class="intro"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="descModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">活動說明</p>
+                        <button type="button" class="close fa fa-times fa-lg" data-dismiss="modal" aria-label="Close">
+                            <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="descript">
+                            活動目的為收集兩天來於議場內藏在各處的MOPCON徽章，藉此更了解不同的攤位以及MOPCON本身，如果收集到一定數量，還能跟工作人員換取神秘禮物唷～
+                        </div>
+                        <div class="activity">
+                            <p>活動方式：</p>
+                            <p>1. 尋找MOPCON徽章</p>
+                            <p>2. 開啟徽章掃描功能</p>
+                            <p>3. 獲得徽章並記錄於圖鑑中</p>
+                        </div>
+                        <div class="logo"></div>
                     </div>
                 </div>
             </div>
@@ -199,9 +146,92 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
     </div>
 </div>
 <script>
+    var records = JSON.parse(window.localStorage.getItem('records') || '[]'),
+        newBadge = getParameterByName('new_badge'),
+        loggedIn = false,
+        badgeData;
 
-    function triggerBadge(index) {
-        var mod = index % 3;
+    window.onload = function () {
+        $('.navbar').hide();
+        $('.footer').hide();
+        $('.floater_content').hide();
+
+        getSpreadsheetData('1kPErWc-YaMy-C3PPjJ4XtJZRQrX0pf1DZN_5wV08tOc', function (err, rows) {
+            // if (err) return swal('無法取得徽章資料！').then(function () {
+            //     location.href = 'index.html';
+            // });
+            var fill = rows.length % 3 === 0 ? 0 : 3 - rows.length % 3;
+            Array.from({length: fill}).forEach(x => {
+                rows.push({id: -1});
+            });
+
+            badgeData = {};
+
+            $('.illustration').append(rows.map(function (data) {
+                badgeData[data.id] = data;
+                return generateBadge(parseInt(data.id, 10), data.category, data.cateno);
+            }));
+
+            $('.badge-all').text(rows.length);
+
+            init();
+        });
+    }
+
+    function generateBadge(id, cate, cateno) {
+        var $badgeIcon = $('<div class="badge_icon" />').attr('id', 'icon' + id);
+
+        var $scaleImage = $('<img />').attr('src', 'images/badge/badge' + pad(cate, 3) + '.png');
+        var $badgeScale = $('<div class="badgePic badge-scale" />').append($scaleImage);
+
+        var $rotateImage = $('<img />');
+        var $badgeRotate = $('<div class="badgePic badgeFornt badge-rotatey" />').append($rotateImage);
+
+        var $badgeOpacity = $('<div class="badgeCycle badge-opacity" />');
+
+        if (id === -1) { // empty
+            return $badgeIcon.addClass('fillBox');
+        } else if (records.find(item => item.badgeId === id) && newBadge !== String(id)) { // already collected
+
+            var badge = badgeData[id];
+            var src = 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
+
+            $badgeIcon.on('click', function() {
+                toggleModal(badge.id, badge.category, badge.cateno);
+            });
+            $badgeRotate.find('img').attr('src', src);
+
+            return $badgeIcon.append($badgeRotate);
+        }
+
+        $badgeIcon
+            .append($badgeScale)
+            .append($badgeRotate)
+            .append($badgeOpacity);
+
+        return $badgeIcon;
+    }
+
+    function init() {
+        if (newBadge) {
+            scrollToBadge(newBadge);
+        }
+
+        $('.badge-collected').text(records.length);
+
+        if (records.length === 0) {
+            openDescription();
+        }
+    }
+
+    function pad(n, width, z) {
+        z = z || '0';
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
+
+    function triggerBadge(id) {
+        var mod = id % 3;
         var className;
 
         if (mod === 1) { // left
@@ -212,27 +242,66 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
             className = 'badgeWrapper-right';
         }
 
-        $('#icon' + index).addClass(className);
-        $('#icon' + index).find('.badgeFornt').find('img').attr('src', 'images/badge/badge001-2.png');
+        var badge = badgeData[id];
+        var src = 'images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
+
+        $('#icon' + id).addClass(className);
+        $('#icon' + id).on('click', function() {
+            toggleModal(badge.id, badge.category, badge.cateno);
+        });
+        $('#icon' + id).find('.badgeFornt').find('img').attr('src', src);
+
+        // fix z-index overlay issue
+        $('#icon' + id).find('.badgePic').css('z-index', 2);
+        $('#icon' + id).find('.badgeCycle').css('z-index', 2);
+
+        setTimeout(function() {
+            $('#icon' + id).find('.badgePic').css('z-index', 1);
+            $('#icon' + id).find('.badgeCycle').css('z-index', 1);
+        }, 4500);
+    }
+
+    function scrollToBadge(id) {
+        var $badge = $('#icon' + id);
+
+        if ($badge.length > 0) {
+            $('html,body').animate({
+                scrollTop: $badge.offset().top - (screen.height / 2 - 40)
+            }, 'slow', function() {
+                triggerBadge(id);
+            });
+        }
     }
 
     function gotoScan() {
-        location.href = 'qrcode.php?type=badge';
+        location.href = 'qrcode.php?from_app=1&type=badge';
     }
 
-    function gotoDescription() {
-        location.href = 'description.php';
+    function openDescription() {
+        $('#descModal').modal('show');
     }
 
-    function toggleModal() {
-        $('#myModal').modal('show');
-    }
+    function toggleModal(id, category, cateno) {
+        // if (!(badgeData[id] && badgeData[id].date)) return;
+    
+        $('.illustration .badge_icon').removeClass('badgeWrapper-left badgeWrapper badgeWrapper-right');
+    
+        $('#sponsorModal .modal-title').text(badgeData[id].title);
+        $('#sponsorModal .intro').html(badgeData[id].description.replace(new RegExp('\n', 'g'), '<br />'));
+        $('#sponsorModal .shareBtn').attr('onclick', 'fbShare(' + id + ')');
+        $('#sponsorModal .time').text(badgeData[id].date ? (badgeData[id].date + ' 獲得') : '');
+        $('#sponsorModal .logo img').attr('src', 'images/badge/badge' + pad(category, 3) + '-' + cateno + '.png');
+    
+        $('#sponsorModal').modal('show');
+      }
 
-    function fbShare() {
-        var url = 'https://www.kkbox.com/tw/tc/index.html';
+    function fbShare(id) {
+        var badge = badgeData[id];
+
+        var url = 'https://mopcon.org/2017/';
         var title = 'MOPCON 徽章'
-        var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起收集換獎品」';
-        var image = document.location.href.replace('badge.php', '') + 'images/badge/badge002.png';
+        var description = '「我在ＭＯＰＣＯＮ獲得了一個KKBOX徽章，快來一起搜集換獎品」'; 
+        var image = location.protocol + '//' + location.host + '/2017/images/badge/badge' + pad(badge.category, 3) + '-' + badge.cateno + '.png';
 
         FB.ui({
             method: 'share_open_graph',
@@ -247,8 +316,17 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
             })
         }, function(response) {});
     }
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
 </script>
-  <!-- footer -->
 
 </body>
 <script src="javascripts/vendor.js?v=1504445211" type="text/javascript"></script>

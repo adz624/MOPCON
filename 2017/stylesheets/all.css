@@ -8853,7 +8853,14 @@ tr:first-child {
 
 .fa-circle:before {
   content: "\f111"; }
-
+.fa-chevron-circle-left:before {
+  content: "\f137"; }
+.fa-chevron-circle-right:before {
+  content: "\f138"; }
+.fa-chevron-circle-up:before {
+  content: "\f139"; }
+.fa-chevron-circle-down:before {
+  content: "\f13a"; }
 .fa-flickr:before {
   content: "\f16e"; }
 
