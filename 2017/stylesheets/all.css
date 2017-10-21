@@ -7511,7 +7511,8 @@ section {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    z-index: 10; }
     .badgeContainer .func .collection {
       color: #fff;
       font-size: 13px;
