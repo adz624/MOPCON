@@ -102,20 +102,22 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
                 }
             }
             
-            var $tr = $('<tr>')
-                .append($time)
-                .append($content);
+            if (time) {
+                var $tr = $('<tr>')
+                    .append($time)
+                    .append($content);
 
-            if (paintBG.indexOf(content['$t']) !== -1) { // 特定時段
-                $tr.addClass('table-notic');
+                if (paintBG.indexOf(content['$t']) !== -1) { // 特定時段
+                    $tr.addClass('table-notic');
+                }
+
+                if (speaker) { // 有講者的話
+                    $speaker.text(speaker['$t']);
+                    $tr.append($speaker);
+                }
+
+                $('#scheduleInfo').append($tr);
             }
-
-            if (speaker) { // 有講者的話
-                $speaker.text(speaker['$t']);
-                $tr.append($speaker);
-            }
-
-            $('#scheduleInfo').append($tr);
         });
     }
 
