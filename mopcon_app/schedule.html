@@ -130,9 +130,11 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 			else if (day === 'day2') {
 				column = ['gsx$_ckd7g', 'gsx$_clrrx', 'gsx$_cyevm'];
 			}
+
         scheduleData.forEach(function(schedule) {
             var time = schedule['gsx$' + day]['$t'];
             var content_1 = schedule[column[0]];
+
 			if ( schedule[column[2]]) {
 				var content_2 =  schedule[column[1]];
 				var content_3 =  schedule[column[2]];
@@ -140,10 +142,16 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
             
 
             var $time = $('<td role="time-col"/>').text(time);
-            var $content_1 = $('<td />').attr({'colspan' : (content_3 ? '1' : '3'),'role' : (content_3 ? 'content-col' : 'rundown-col'),'onclick' : 'openScheduleBox("'+ content_1['$t'] +'")'});
+            var $content_1 = $('<td />').attr({'colspan' : (content_3 ? '1' : '3'),'role' : (content_3 ? 'content-col' : 'rundown-col')});
             
+			if (content_1) {
+				$content_1.click = function() {
+					openScheduleBox(content_1['$t']);
+				}
 
-			$content_1.html(assignSchedule(content_1['$t']));
+				$content_1.html(assignSchedule(content_1['$t']));
+			}
+
             if (content_3) {
 				var $content_2 = $('<td role="content-col"/>').attr({'colspan' : (content_3 ? '1' : '3'),'onclick' : 'openScheduleBox("'+ content_2['$t'] +'")'});
 				var $content_3 = $('<td role="content-col"/>').attr({'colspan' : (content_3 ? '1' : '3'),'onclick' : 'openScheduleBox("'+ content_3['$t'] +'")'});
@@ -151,20 +159,24 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
                 	$content_3.html(assignSchedule(content_3['$t']));
 
             }
-            
-            var $tr = $('<tr>')
-                .append($time)
-                .append($content_1)
-				if(  schedule[column[2]]){
-					$tr.append($content_2)
-					.append($content_3);
+
+			if (time) { // 有time才要顯示
+				var $tr = $('<tr>')
+					.append($time)
+					.append($content_1);
+
+				if( schedule[column[2]]){
+					$tr
+						.append($content_2)
+						.append($content_3);
 				}
 
-            if (paintBG.indexOf(content_1['$t']) !== -1) { // 特定時段
-                $tr.addClass('table-notic');
-            }
+				if (content_1 && paintBG.indexOf(content_1['$t']) !== -1) { // 特定時段
+					$tr.addClass('table-notic');
+				}
 
-            $('#scheduleInfo').append($tr);
+				$('#scheduleInfo').append($tr);
+			}
         });
     }
 	// 議程註冊
