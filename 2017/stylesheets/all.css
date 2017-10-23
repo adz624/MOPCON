@@ -7895,7 +7895,7 @@ section {
       height: 35px; } }
 
 .pic {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
   .pic:before {
