@@ -49,8 +49,8 @@ function getSponsorsByOrder()
                 $data[$item['order']]["name"] . " & " . $item['name'] :
                 $item['name'],
             'sponsor_id'     => isset($data[$item['order']]['sponsor_id']) ?
-                [$data[$item['order']]["sponsor_id"][0], $item['is']] :
-                [$item['is']],
+                [$data[$item['order']]["sponsor_id"][0], $item['id']] :
+                [$item['id']],
            
             'logo'        => isset($data[$item['order']]["logo"]) ?
                 [$data[$item['order']]["logo"][0], $item['logo']] :
