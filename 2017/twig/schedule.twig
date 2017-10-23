@@ -54,6 +54,9 @@
                                 {% else %}
                                     <td colspan="{{ item['colspan'] }}" role="rundown-col">
 										{{ content['content'] }}
+                                        {% if content['content'] == '休息 Break' %}
+                                            <a href="https://goo.gl/xCR44S" target="_blank" class="btn btn-getTicket-intable">立即購票</a>
+                                        {% endif %}
                                     </td>
                                 {% endif %}
 								<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
