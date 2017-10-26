@@ -303,7 +303,7 @@ function render($template_name, $params)
                 // 'chatroom' => 'Chat Room',
                 // 'chatroom_gitter' => 'Gitter',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
-                'hackfoldr' => 'Hackfoldr',
+                'hackfoldr' => 'HackMD',
                 'gitter' => 'Gitter',
                 'ticket' => 'Ticket',
                 'apps'   => 'Apps',
