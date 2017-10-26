@@ -274,9 +274,10 @@ function render($template_name, $params)
                 // 'chatroom' => '聊天室',
                 // 'chatroom_gitter' => '網頁版（Gitter）',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
-                // 'hackfoldr' => '共筆記錄',
-                'gitter' => 'gitter 聊天室',
+                'hackfoldr' => '共筆記錄',
+                'gitter' => 'Gitter 聊天室',
                 'ticket' => '購票資訊',
+                'apps'   => 'Apps',
                 'blog' => '部落格',
                 'stalls' => '社團攤位申請'
 
@@ -302,9 +303,10 @@ function render($template_name, $params)
                 // 'chatroom' => 'Chat Room',
                 // 'chatroom_gitter' => 'Gitter',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
-                // 'hackfoldr' => 'hackfoldr',
-                'gitter' => 'gitter',
+                'hackfoldr' => 'Hackfoldr',
+                'gitter' => 'Gitter',
                 'ticket' => 'Ticket',
+                'apps'   => 'Apps',
                 'blog' => 'Blog',
                 'stalls' => 'Stalls'
             ],
