@@ -2,6 +2,7 @@
 
 {% block content %}
 <!-- header	 -->
+
 <section class="pageHead">
 	<img src="images/headPage-app.svg" alt="交流場次標題圖片">
 </section>
@@ -79,5 +80,9 @@
 
 </section>
 
-
+<script>
+    window.onload = function () {
+        $('.floater_content').hide();
+    }
+</script>
 {% endblock %}

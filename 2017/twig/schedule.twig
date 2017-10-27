@@ -42,7 +42,7 @@
                                         <div class="scheduleTable-speaker">{{ content['title'] }} </div>
                                         <div class="scheduleTable-subject">
 											<span class="subjectTag">{{ content['type'] }}</span>
-										{% if content['video_record'] %}
+										{% if content['video_record'] == '禁止錄影' %}
 											<span><img width="32" height="32" src="./images/icons/icon-no-filming.svg" alt=""></span>
 										{% endif %}
 											<br/>
@@ -125,7 +125,7 @@
                                     <div class="scheduleTable-speaker">{{ content['title'] }}</div>
                                     <div class="scheduleTable-subject">
 										<span class="subjectTag">{{ content['type'] }}</span>
-									{% if content['video_record'] %}
+									{% if content['video_record'] == '禁止錄影' %}
 										<span><img width="32" height="32" src="./images/icons/icon-no-filming.svg" alt=""></span>
 									{% endif %}
 										<br/>
@@ -140,9 +140,6 @@
                             {% else %}
                                 <td colspan="{{ item['colspan'] }}" role="rundown-col">
 									{{ content['content'] }}
-									{% if content['content'] == '休息 Break' %}
-                                    	 <a href="https://goo.gl/xCR44S" target="_blank" class="btn btn-getTicket-intable">立即購票</a>
-									{% endif %}
                                 </td>
                             {% endif %}
 							<section id="box-{{ content['id'] }}" class="detailBox" style="display: none;">
