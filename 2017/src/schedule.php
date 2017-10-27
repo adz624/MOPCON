@@ -100,28 +100,50 @@ function getSpeakersOrderByScheduleId()
  */
 function assignSchedule($schedules_assign_data, $speakers)
 {
+    $lang_zh = [];
+    $lang_en = [];
+
+
+    
+
     foreach ($schedules_assign_data as $key => $item) {
         if (is_numeric($item)) {
             if (isset($speakers[$item])) {
-                $result[] = array_merge($speakers[$item], [
+                $lang_zh[] = array_merge($speakers[$item], [
                     'schedule' => true,
-                    'room'     => count($schedules_assign_data) === 1 ? 'All' : 'R' . ($key + 1),
+                    'room'     => count($schedules_assign_data) === 1 ? '全廳聯播' : 'R' . ($key + 1),
+                ]);
+                $lang_en[] = array_merge($speakers[$item], [
+                    'schedule' => true,
+                    'room'     => count($schedules_assign_data) === 1 ? 'Broadcast' : 'R' . ($key + 1),
                 ]);
             } else {
                 // 未公布議程
-                $result[] = [
+                $lang_zh[] = [
                     'schedule' => false,
                     'content'  => '晚點告訴你 :P',
+                ];
+                $lang_en[] = [
+                    'schedule' => false,
+                    'content'  => 'Tell you later :P',
                 ];
             }
         } else {
             // 無議程時段
-            $result[] = [
+            $lang_zh[] = [
+                'schedule' => false,
+                'content'  => $item,
+            ];
+            $lang_en[] = [
                 'schedule' => false,
                 'content'  => $item,
             ];
         }
     }
-
-    return $result;
+    $main = [
+        'zh' => $lang_zh,
+        'en' => $lang_en,
+    ];
+    return getI18n($main);
+    
 }

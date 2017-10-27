@@ -16,7 +16,7 @@
 </section>
 
 <section class="schedulePage_info">
-	<p>交流場次的位置位於 3F左側</p>
+	<p>{{ text.description }}</p>
 </section>
 <!-- schedule table -->
 <section class="schedulePage container">
@@ -24,9 +24,9 @@
 		<table class="scheduleTable table">
 			<tbody>
 				<tr>
-					<th>時段</th>
-					<th>主題</th>
-					<th>講者</th>
+					<th>{{ text.time }}</th>
+					<th>{{ text.toic }}</th>
+					<th>{{ text.speaker }}</th>
 				</tr>
 				{% for item in schedules['day1'] %}
 					<tr {{ item['paintBG'] ? 'class="table-notic"' : '' }}>
