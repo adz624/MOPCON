@@ -2,6 +2,7 @@
 
 {% block content %}
 <!-- header	 -->
+
 <section class="pageHead">
 	<img src="images/headPage-app.svg" alt="交流場次標題圖片">
 </section>
@@ -22,9 +23,14 @@
                     iOS
                 </h3>
                 <a href="https://itunes.apple.com/tw/app/mopcon/id721411970?mt=8" target="_blank">
-                    <img src="./images/ios.png" alt="MOPCON IOS APP">
+                    <img src="./images/ios.png" alt="MOPCON iOS APP">
                 </a>
             </div>
+        </div>
+        <div class="row">
+            <h4 class="text-center">
+                {{ lang.field_game }} <a class="btn btn-detail" href="https://goo.gl/nKf2AR" target="_blank">{{ lang.ppt_link }}</a>
+            </h4>
         </div>
     </div>
     <br>
@@ -74,5 +80,9 @@
 
 </section>
 
-
+<script>
+    window.onload = function () {
+        $('.floater_content').hide();
+    }
+</script>
 {% endblock %}

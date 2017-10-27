@@ -22,6 +22,7 @@ function getSpeakers($speaker_id = 0)
             'schedule_topic' => $item['gsx$演講主題']['$t'],
             'schedule_info'  => $item['gsx$演講摘要']['$t'],
             'schedule_id'    => $item['gsx$議程編號']['$t'],
+            'video_record'   => $item['gsx$禁止錄影']['$t'],
             'slide'          => $item['gsx$slide']['$t'],
         ];
 
@@ -40,6 +41,7 @@ function getSpeakers($speaker_id = 0)
             'schedule_topic' => $item['gsx$演講主題en']['$t'],
             'schedule_info'  => $item['gsx$演講摘要en']['$t'],
             'schedule_id'    => $item['gsx$議程編號']['$t'],
+            'video_record'   => $item['gsx$禁止錄影']['$t'],
             'slide'          => $item['gsx$slide']['$t'],
         ];
     }
