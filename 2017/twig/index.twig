@@ -16,8 +16,11 @@
 			<a href="https://mopcon.kktix.cc/events/mopcon2017-cfp-2" target="_blank" class="btn btn-default">議程投稿</a>
 		{% endif %} -->
 		{% for id, data in stream %}
+			{% if data.onair == true %}
 			<a href="{{ data.link }}" target="_blank" class="btn btn-getTicket">{{ data.room }} ({{ data.title }})</a>
-		 
+			{% else %}
+			<button class="btn btn-getTicket" disabled>{{ data.room }} ({{ data.title }})</button>
+		 	{% endif %}
 		{% endfor %}
         <a href="https://youtu.be/MhwEaZTrmNg" target="_blank" class="btn btn-getTicket">{{ index.film_2017 }}</a>
 	</div>
