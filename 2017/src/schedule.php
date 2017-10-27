@@ -84,6 +84,7 @@ function getSpeakersOrderByScheduleId()
             'linkedin'       => $item['linkedin'],
             'schedule_topic' => $item['schedule_topic'],
             'schedule_info'  => $item['schedule_info'],
+            'video_record'  => $item['video_record'],
             'slide'          => $item['slide'],
         ];
     }

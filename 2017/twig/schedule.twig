@@ -42,6 +42,9 @@
                                         <div class="scheduleTable-speaker">{{ content['title'] }} </div>
                                         <div class="scheduleTable-subject">
 											<span class="subjectTag">{{ content['type'] }}</span>
+										{% if content['video_record'] %}
+											<span><img width="32" height="32" src="./images/icons/icon-no-filming.svg" alt=""></span>
+										{% endif %}
 											<br/>
 											{{ content['schedule_topic'] }}
                                         </div>
@@ -122,6 +125,9 @@
                                     <div class="scheduleTable-speaker">{{ content['title'] }}</div>
                                     <div class="scheduleTable-subject">
 										<span class="subjectTag">{{ content['type'] }}</span>
+									{% if content['video_record'] %}
+										<span><img width="32" height="32" src="./images/icons/icon-no-filming.svg" alt=""></span>
+									{% endif %}
 										<br/>
 										{{ content['schedule_topic'] }}
                                     </div>
