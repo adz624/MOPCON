@@ -14,6 +14,7 @@ $params = [
     'filemtime' => getLastUpdateTime($pageid),
     'map' => $map,
     'index' => getIndex(),
+    'stream' => getStream(),
 //    'speakers' => getAllSpeakers($order = 'random'),
     'sponsors' => getSponsors(),
 ];
