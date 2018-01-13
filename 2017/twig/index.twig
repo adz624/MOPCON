@@ -17,9 +17,9 @@
 		{% endif %} -->
 		{% for id, data in stream %}
 			{% if data.onair == true %}
-			<a href="{{ data.link }}" target="_blank" class="btn btn-getTicket">{{ data.room }} ({{ data.title }})</a>
+			    <a href="{{ data.link }}" target="_blank" class="btn btn-getTicket">{{ data.room }} ({{ data.title }})</a>
 			{% else %}
-			<button class="btn btn-getTicket" disabled>{{ data.room }} ({{ data.title }})</button>
+            <a class="btn btn-getTicket" href="{{ data.link }}" target="_blank">{{ data.title }}</a>
 		 	{% endif %}
 		{% endfor %}
         <a href="https://youtu.be/MhwEaZTrmNg" target="_blank" class="btn btn-getTicket">{{ index.film_2017 }}</a>
