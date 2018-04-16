@@ -1083,15 +1083,19 @@ figure {
 img {
   vertical-align: middle; }
 
+
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
+  
   max-width: 100%;
   height: auto; }
-
+#header .img-responsive {
+  margin: 0 auto;
+}
 .img-rounded {
   border-radius: 6px; }
 
@@ -6347,7 +6351,7 @@ body {
   font-family: "Microsoft JhengHei", Arial, Geneva, sans-serif;
   font-size: 16px !important;
   color: #666464;
-  background: #181E3E;
+  background: #010135;
   height: 100%; }
 
 a {
