@@ -49,10 +49,24 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
   <body>
     <div id="header">
         <img class="img-responsive" src="images/header-banner-2018.png" alt="mopcon-2018">
-        
-
+    </div>
+    <div id="rwd">
+      <img class="img-responsive" src="images/mopcon2018_rwd.png" alt="mopcon-2018">
     </div>
 </body>
+<style>
+  #rwd{
+      display: none;
+    }
+  @media screen and (max-width: 520px) {
+    #header{
+      display: none;
+    }
+    #rwd{
+      display: block;
+    }
+}
+</style>
 <script src="javascripts/vendor.js?v=1504445235" type="text/javascript"></script>
 <script src="javascripts/all.js?v=1504445235" type="text/javascript"></script>
 <script type="text/javascript">
