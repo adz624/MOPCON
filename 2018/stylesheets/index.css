@@ -94,6 +94,9 @@
 }
 
 @media (max-width: 640px) {
+  .wrapper{
+    padding: 4rem 0 0 0;
+  }
   .comming-soon{
     flex-direction: column;
     align-items: center;
@@ -101,30 +104,36 @@
   }
   .info{
     height: 100%;
+    width: 80vw;
+  }
+  .logo{
+    display: none;
+  }
+  .mobile-logo{
+    display: block;
   }
   .title{
-    position: absolute;
-    top:0;
+    margin-bottom: 0;
   }
   .main-title{
-    padding-left: 1rem;
-    font-size: 2rem;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
   }
   .sub-title{
     font-size: 0.5rem;
     padding-left: 1rem;
-    padding-top:3px; 
+    padding-top:0.5rem; 
   }
   .logo{
     margin-top: 8rem;
   }
   .content{
+    height: 50%;
     display: flex;
     justify-content: center;
+    background-size: 80%;
   }
   .content li{
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     list-style: inside;
   }
   .content li:first-child{
