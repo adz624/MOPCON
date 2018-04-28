@@ -1,7 +1,11 @@
+.wrapper{
+  height: 100vh;
+  padding: 3rem 2rem;
+}
 .comming-soon{
+  height: 100%;
   display: flex;
   font-family: 'PingFangTC', 'Microsoft JhengHei','sans-serif';
-  padding: 3rem;
   background-image: url('../images/bg-down-right.png');
   background-size:30%;
   background-position: right bottom;
@@ -15,6 +19,10 @@
 }
 .info{
   width: 50vw;
+}
+.title{
+  margin-top: 0;
+  margin-bottom: 15%;
 }
 .main-title{
   color:#00d0ca;
@@ -36,7 +44,7 @@
 }
 
 .content{
-  height: 100%;
+  height: 50%;
   background-image: url('../images/info-bg.png');
   background-size:50%;
   background-repeat: no-repeat;
