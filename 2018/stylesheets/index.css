@@ -10,6 +10,9 @@
 .logo{
   width: 50vw;
 }
+.mobile-logo{
+  display: none;
+}
 .info{
   width: 50vw;
 }
