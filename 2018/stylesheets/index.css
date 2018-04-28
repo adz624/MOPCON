@@ -1,0 +1,121 @@
+.comming-soon{
+  display: flex;
+  font-family: 'PingFangTC', 'Microsoft JhengHei','sans-serif';
+  padding: 3rem;
+  background-image: url('../images/bg-down-right.png');
+  background-size:30%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.logo{
+  width: 50vw;
+}
+.info{
+  width: 50vw;
+}
+.main-title{
+  color:#00d0ca;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom:-25px;
+}
+.sub-title{
+  height: 4rem;
+  background-image: url('../images/bg-comingsoon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding-left:2rem; 
+  padding-top: 1rem;
+}
+
+.content{
+  height: 100%;
+  background-image: url('../images/info-bg.png');
+  background-size:50%;
+  background-repeat: no-repeat;
+
+}
+.content li{
+  color:#00d0ca;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+.content li:first-child{
+  text-align: left;
+  font-family: 'Rajdhani';
+  padding-left: 2rem;
+}
+.content li:last-child{
+    text-align: center;
+}
+.content li:before{
+  content: '●';
+  margin-right: 15px;
+  font-size: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-title{
+    font-size: 2.5rem;
+    margin-bottom: -17px;
+  }
+  .sub-title{
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .content li{
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 640px) {
+  .comming-soon{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .info{
+    height: 100%;
+  }
+  .title{
+    position: absolute;
+    top:0;
+  }
+  .main-title{
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin-bottom: -10px;
+  }
+  .sub-title{
+    font-size: 0.5rem;
+    padding-left: 1rem;
+    padding-top:3px; 
+  }
+  .logo{
+    margin-top: 8rem;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+  }
+  .content li{
+    font-size: 0.5rem;
+    list-style: inside;
+  }
+  .content li:first-child{
+    padding-left: 0;
+  }
+  .content li:last-child{
+    text-align: left;
+  }
+  .content li:before{
+  content: ' ';
+  margin-right: 0px;
+}
+}
