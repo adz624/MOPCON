@@ -9,7 +9,7 @@
   background-size:50%,10%,15%,15%;
   background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
   background-position: 
-  right -125px bottom -30px,
+  right -200px bottom -30px,
   left bottom,
   left top,
   right top
@@ -46,7 +46,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding-left:2rem; 
   padding-top: 1rem;
 }
@@ -59,24 +59,23 @@
 
 }
 .content li{
+  
   color:#00d0ca;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
   margin: 1rem;
+  padding-left: 2rem;
 }
 
 .content li:first-child{
   text-align: left;
   font-family: 'Rajdhani';
-  padding-left: 2rem;
 }
-.content li:last-child{
-    text-align: center;
-}
+
 .content li:before{
   content: '●';
   margin-right: 15px;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -95,7 +94,7 @@
 
 @media (max-width: 640px) {
   .wrapper{
-    padding: 4rem 0 0 0;
+    padding: 0;
   }
   .comming-soon{
     flex-direction: column;
@@ -136,13 +135,9 @@
   .content li{
     font-size: 1.5rem;
     list-style: inside;
-  }
-  .content li:first-child{
     padding-left: 0;
   }
-  .content li:last-child{
-    text-align: left;
-  }
+  
   .content li:before{
   content: ' ';
   margin-right: 0px;
