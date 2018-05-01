@@ -58,8 +58,12 @@
   background-repeat: no-repeat;
 
 }
+
+.content ul{
+  width: 100%;
+}
+
 .content li{
-  
   color:#00d0ca;
   font-size: 2rem;
   font-weight: 300;
@@ -133,7 +137,7 @@
     background-size: 80%;
   }
   .content li{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     list-style: inside;
     padding-left: 0;
   }
