@@ -1,3 +1,11 @@
-/.DS_Store
-/css/.DS_Store
-/img/.DS_Store
+.DS_Store
+.sass-cache
+/2014_test/fire_app_log.txt
+/2014_test/config.rb
+/cache
+vendor/
+bower_components
+yarn.lock
+node_modules
+npm-debug.log
+.idea/
