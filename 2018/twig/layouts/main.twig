@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{ main.pagetitle }}
+  </title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+  <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  {# <script type="text/javascript" src="{{ baseUrl('/assets/js/bootstrap.js') }}"></script> #}
+
+</head>
+
+<body>
+  <!-- nav -->
+  {% block content %} {% endblock %}
+  <!-- footer -->
+</body>
+
+</html>
