@@ -18,9 +18,30 @@
 </head>
 
 <body>
-  <!-- nav -->
+<div class="wrapper">
+  <!-- header -->
+  <header class="header">
+	<div class="container text-right">
+		<a href="?lang=zh">中文</a>
+		/
+		<a href="?lang=en">English</a>
+	</div>
+</header>
   {% block content %} {% endblock %}
   <!-- footer -->
+  <footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p class="text-center">Copyright © 2018 Mobile Open Platform Conference.
+					<a href="code-of-conduct.html">行為準則 Code of Conduct</a>
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
 </body>
 
 </html>
