@@ -11539,6 +11539,17 @@ body {
   font-size: 1rem;
 }
 
+@media (max-width: 1140px) {
+  .coming-soon .main-title {
+    font-size: 3rem;
+    margin-bottom: -20px;
+  }
+  .coming-soon .sub-title {
+    padding-top: 0.75rem;
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .coming-soon .info {
     background-image: url(../images/info-bg.png);
