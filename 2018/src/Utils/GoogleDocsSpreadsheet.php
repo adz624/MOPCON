@@ -21,12 +21,12 @@ class GoogleDocsSpreadsheet
         $this->getBody();
     }
 
-    public function toArray(): array
+    public function toArray()
     {
         return $this->data;
     }
 
-    public function toJSON(): string
+    public function toJSON()
     {
         return json_encode($this->data);
     }
