@@ -15,25 +15,21 @@
         </div>
       </div>
       <div class="mobile-logo d-md-none">
-        <img class="mx-auto d-block" src="assets/images/mobile-logo.png" alt="">
+        <img class="mx-auto d-block" src="assets/images/mobile-logo@2x.png" alt="">
       </div>
       <div class="content mb-sm-5">
         <ul class="custom-list">
-          
-            
               <li>
                 3-4 November 2018
               </li>
               
               <li>
                 國際會議中心(ICCK) 3F&amp;4F
-              </li>
-              
-                
+              </li>          
         </ul>
       </div>
       <div class="footer mb-4">
-        <div class="btn-toolbar">
+        <div class="btn-toolbar pl-md-3">
             <a id="cfp" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://goo.gl/vqTB79">
               徵求講者
             </a>
@@ -57,10 +53,11 @@
         return;
     }
     else if(window.location.search == '?lang=en') {
-      $('.coming-soon .sub-title').text('The biggest mobile technology in southern Taiwan')
+      $('.coming-soon .sub-title').text('The largest mobile-tech conf in Taiwan');
+       $('.custom-list li:nth-child(2)').text('International Convention Center Kaohsiung 3F&4F');
       $('#cfp').text('Call for Presentation');
       $('#cfr').text('Call for Recommendation');
-      $('#cfs').text('Call for Sponsor').attr('href','https://drive.google.com/file/d/1t_2RjrlpMJHNkp7nvqoRWIQ6BsAjXGEa/view');
+      $('#cfs').text('Call for Sponsorship').attr('href','https://drive.google.com/file/d/1t_2RjrlpMJHNkp7nvqoRWIQ6BsAjXGEa/view');
       $('#COC').text('Code of Conduct');
     }	
   })
