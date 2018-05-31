@@ -3,10 +3,8 @@ namespace MopCon2018\Utils;
 
 class Base
 {
-    public function __construct()
-    {
-        # code...
-    }
+    protected static $default_lang = 'zh';
+    protected static $supported_langs = ['zh', 'en'];
 
     public static function test()
     {
@@ -127,26 +125,13 @@ class Base
 
     public static function getLang()
     {
-        static $lang = null;
-        if ($lang) {
+        $lang = &$_GET['lang'];
+
+        if (in_array($lang, self::$supported_langs)) {
+            setcookie('lang', $lang);
             return $lang;
         }
 
-        $supported_langs = [
-            'zh',
-            'en',
-        ];
-        $lang = 'zh';
-
-        if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
-            $lang = $_GET['lang'];
-        } elseif (isset($_COOKIE['lang'])) {
-            $lang = $_COOKIE['lang'];
-        }
-        setcookie('lang', $lang);
-
-        return $lang;
+        return isset($_COOKIE['lang']) ? $_COOKIE['lang'] : self::$default_lang;
     }
-
-    // public static
 }
