@@ -1,0 +1,68 @@
+{% extends 'layouts/main.twig' %} {% block content %}
+<!-- 臨時官網 -->
+<div class="container-fluid ">
+  <div class="row coming-soon mt-sm-5 mr-sm-4 mb-4 ml-sm-4 ">
+    <div class="logo col-md-6 d-none d-md-block ">
+      <img src="assets/images/logo@2x.png" alt="">
+    </div>
+    <div class="info col-md-6">
+      <div class="title">
+        <div class="main-title">
+          Coming Soon...
+        </div>
+        <div class="sub-title">
+          濁水溪以南最大的行動科技研討會
+        </div>
+      </div>
+      <div class="mobile-logo d-md-none">
+        <img class="mx-auto d-block" src="assets/images/mobile-logo.png" alt="">
+      </div>
+      <div class="content mb-sm-5">
+        <ul class="custom-list">
+          
+            
+              <li>
+                3-4 November 2018
+              </li>
+              
+              <li>
+                國際會議中心(ICCK) 3F&amp;4F
+              </li>
+              
+                
+        </ul>
+      </div>
+      <div class="footer mb-4">
+        <div class="btn-toolbar">
+            <a id="cfp" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://goo.gl/vqTB79">
+              徵求講者
+            </a>
+  
+            <a id="cfr" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://goo.gl/GBgWfi">
+              推薦講者
+            </a>
+  
+            <a id="cfs" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://drive.google.com/file/d/1VPucvh8MyBBIqHPrMNHcjQGOBrV3Q48r/view">
+              贊助我們
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end 臨時官網-->
+<script>
+  $(function(){
+    if(window.location.search == '?lang=zh') {
+        return;
+    }
+    else if(window.location.search == '?lang=en') {
+      $('.coming-soon .sub-title').text('The biggest mobile technology in southern Taiwan')
+      $('#cfp').text('Call for Presentation');
+      $('#cfr').text('Call for Recommendation');
+      $('#cfs').text('Call for Sponsor').attr('href','https://drive.google.com/file/d/1t_2RjrlpMJHNkp7nvqoRWIQ6BsAjXGEa/view');
+      $('#COC').text('Code of Conduct');
+    }	
+  })
+</script>
+{% endblock %}
