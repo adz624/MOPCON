@@ -9,7 +9,8 @@
     },
     "autoload": {
         "psr-4": {
-            "MopCon2018\\": "2018/src"
+            "MopCon2018\\": "2018/src",
+            "MopConApi2018\\": "2018/api/src"
         }
     }
 }

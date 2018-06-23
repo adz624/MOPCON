@@ -13,7 +13,7 @@ class GoogleDocsSpreadsheet
 
     public function __construct($key, $columns = [], $gridId = 'od6')
     {
-        $this->gridId = $gridId;
+        $this->gridId = empty($gridId) ? 'od6' : $gridId;
         $this->key = $key;
         $this->uri = "https://spreadsheets.google.com/feeds/list/$this->key/$this->gridId/public/values?alt=json";
         $this->raw = file_get_contents($this->uri);
