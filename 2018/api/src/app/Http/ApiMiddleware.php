@@ -76,9 +76,21 @@ class ApiMiddleware extends Middleware
             'sponsor' => [
                 'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
                 'sheetGridId' => 'o6bk8rc',
-                'columns' => [],
+                'columns' => [
+                    '贊助商編號' => '贊助商編號',
+                    'ID' => 'ID',
+                    '贊助商等級' => '贊助商等級',
+                    '名稱' => '名稱',
+                    '名稱EN' => '名稱EN',
+                    '介紹' => '介紹',
+                    '介紹EN' => '介紹EN',
+                    '網址' => '網址',
+                    '照片' => '照片',
+                    '窗口' => '窗口',
+                    'remarks' => 'remarks',
+                ],
                 'description' => '贊助商',
-                'status' => 0,
+                'status' => 1,
             ],
         ];
     }
@@ -88,6 +100,9 @@ class ApiMiddleware extends Middleware
         $this->init();
         $routes = preg_replace('/^.*\/api\/(.*)/', '$1', $request->getUri()->getPath());
         $routesParsed = explode('/', $routes);
+
+        $request = $request->withAttribute('routesParsed', $routesParsed);
+
         // 訪問 TOC
         if ($routesParsed[0] == $this->tocName) {
             $toc = [];
@@ -116,7 +131,6 @@ class ApiMiddleware extends Middleware
                 }
                 $request = $request
                     ->withAttribute('sourceInfo', $this->sourceInfo)
-                    ->withAttribute('routesParsed', $routesParsed)
                     ->withAttribute('sourceFrom', $source)
                     ->withAttribute('resource', $definition);
                 return $next($request, $response);

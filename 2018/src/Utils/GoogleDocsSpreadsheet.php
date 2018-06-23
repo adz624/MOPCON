@@ -10,6 +10,7 @@ class GoogleDocsSpreadsheet
     private $rawObj;
     private $data;
     private $rows;
+    private $buffer;
 
     public function __construct($key, $columns = [], $gridId = 'od6')
     {
