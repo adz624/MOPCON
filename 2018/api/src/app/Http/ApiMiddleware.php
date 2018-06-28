@@ -26,7 +26,7 @@ class ApiMiddleware extends Middleware
                 'sheetGridId' => 'oaz88cr',
                 'columns' => [],
                 'description' => '議程',
-                'status' => 0,
+                'status' => 1,
             ],
             'speaker' => [
                 'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',

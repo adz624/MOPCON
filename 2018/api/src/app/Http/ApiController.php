@@ -66,10 +66,30 @@ class ApiController extends Controller
             $this->resource['sheetGridId']
         );
 
-        # custom processing codes...
+        foreach ($apiData->toRows() as $key => $item) {
+            // 跳過議會廳欄位
+            if ($key === 0) {
+                continue;
+            }
+            $day1[] = [
+                'period' => $item->{'gsx$day1'}->{'$t'},
+                'R1' => $item->{'gsx$_cokwr'}->{'$t'},
+                'R2' => @$item->{'gsx$_cpzh4'}->{'$t'} ?: $item->{'gsx$_cokwr'}->{'$t'},
+                'R3' => @$item->{'gsx$_cre1l'}->{'$t'} ?: $item->{'gsx$_cokwr'}->{'$t'},
+            ];
+
+            $day2[] = [
+                'period' => $item->{'gsx$day2'}->{'$t'},
+                'R1' => $item->{'gsx$_ckd7g'}->{'$t'},
+                'R2' => @$item->{'gsx$_clrrx'}->{'$t'} ?: $item->{'gsx$_ckd7g'}->{'$t'},
+                'R3' => @$item->{'gsx$_cyevm'}->{'$t'} ?: $item->{'gsx$_ckd7g'}->{'$t'},
+            ];
+        }
+
+        $apiDataCustomJson = json_encode(compact('day1', 'day2'), $this->jsonOptions);
 
         return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write($apiData->toJson($this->jsonOptions));
+            ->getBody()->write($apiDataCustomJson);
     }
 
     private function accessScheduleUnconf($request, $response, $args)

@@ -44,4 +44,9 @@ class GoogleDocsSpreadsheet
             $this->data[] = $tmp;
         }
     }
+
+    public function toRows()
+    {
+        return $this->rows;
+    }
 }
