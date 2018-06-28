@@ -8,6 +8,7 @@ class ApiController extends Controller
     private $sourceFrom;
     private $resource;
     private $jsonOptions;
+    private $fullUrlToAssets;
 
     public function __invoke($request, $response, $args)
     {
@@ -15,6 +16,7 @@ class ApiController extends Controller
         $this->resource = $request->getAttribute('resource');
         $this->resourceName = $request->getAttribute('routesParsed')[0];
         $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_FORCE_OBJECT | JSON_PRETTY_PRINT;
+        $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/assets';
 
         $this->{$this->transform2Method($this->resourceName)}($request, $response, $args);
     }
@@ -128,10 +130,20 @@ class ApiController extends Controller
             $this->resource['sheetGridId']
         );
 
-        # custom processing codes...
+        $apiDataArray = $apiData->toArray();
+
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['picture'])) {
+                $value['picture'] = $this->fullUrlToAssets . '/images/speaker/' . $value['picture'];
+            }
+
+            if (!empty($value['picture_merged'])) {
+                $value['picture_merged'] = $this->fullUrlToAssets . '/images/speaker/' . $value['picture_merged'];
+            }
+        }
 
         return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write($apiData->toJson($this->jsonOptions));
+            ->getBody()->write(json_encode($apiDataArray, $this->jsonOptions));
     }
 
     private function accessSponsor($request, $response, $args)
@@ -142,9 +154,15 @@ class ApiController extends Controller
             $this->resource['sheetGridId']
         );
 
-        # custom processing codes...
+        $apiDataArray = $apiData->toArray();
+
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['logo'])) {
+                $value['logo'] = $this->fullUrlToAssets . '/images/sponsor/' . $value['logo'];
+            }
+        }
 
         return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write($apiData->toJson($this->jsonOptions));
+            ->getBody()->write(json_encode($apiDataArray, $this->jsonOptions));
     }
 }
