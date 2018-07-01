@@ -8382,7 +8382,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media screen and (min-width: 769px) {
   .particles {
-    height: 95vh;
     min-height: 560px;
   }
 }
