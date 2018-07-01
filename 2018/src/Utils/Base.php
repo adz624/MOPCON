@@ -97,6 +97,8 @@ class Base
         );
         $loader = new \Twig_Loader_Filesystem(__DIR__ . '/../../twig');
         $twig = new \Twig_Environment($loader);
+
+        $twig->addGlobal('l10n', self::getL10n());
         $twig->addExtension(new \Jralph\Twig\Markdown\Extension(new \Jralph\Twig\Markdown\Parsedown\ParsedownExtraMarkdown));
         $baseUrl = new \Twig_SimpleFunction('baseUrl', function ($path) {
             return '/2018/' . $path;
@@ -133,5 +135,18 @@ class Base
         }
 
         return isset($_COOKIE['lang']) ? $_COOKIE['lang'] : self::$default_lang;
+    }
+
+    public static function getL10n()
+    {
+        $fileList = glob(__DIR__ . '/../../locales/' . self::getLang() . '/*.json');
+        $L10n = [];
+
+        foreach ($fileList as $filePath) {
+            $fileBasename = pathinfo($filePath, PATHINFO_FILENAME);
+            $L10n[$fileBasename] = json_decode(file_get_contents($filePath));
+        }
+
+        return $L10n;
     }
 }

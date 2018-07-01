@@ -1,12 +1,16 @@
 {
+    "name": "MOPCON Official Site",
+    "description": "",
     "require": {
         "twig/twig": "^1.18",
         "erusev/parsedown": "^1.5",
-        "jralph/twig-markdown": "dev-master"
+        "jralph/twig-markdown": "dev-master",
+        "slim/slim": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "MopCon2018\\": "2018/src"
+            "MopCon2018\\": "2018/src",
+            "MopConApi2018\\": "2018/api/src"
         }
     }
 }
