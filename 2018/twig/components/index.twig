@@ -1,11 +1,10 @@
 {% extends 'layouts/main.twig' %} {% block content %}
-<!-- 臨時官網 -->
+<!-- APEC -->
 <div class="panel top mb-5">
 <header class="header">
     <div class="container-fluid">
         <div class="row particles">
-
-            <!-- <div id="carouselBanner" class="carousel banner slide pb-lg-5" data-ride="carousel" >
+            {# <!-- <div id="carouselBanner" class="carousel banner slide pb-lg-5" data-ride="carousel" >
                 <ol class="carousel-indicators my-lg-0">
                     <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselBanner" data-slide-to="1"></li>
@@ -24,7 +23,7 @@
                         <img class="img-fluid logo" src="assets/images/logo@2x.png" alt="Third slide">
                     </div>
                 </div>
-            </div> -->
+            </div> --> #}
             <div class="col-12">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -34,14 +33,14 @@
                     </div>
                 </div>
                 <div class="sub-title text-center">
-                        {{ l10n.common.date }} {{ l10n.common.location }}
+                        {{ l10n.common.date }}<br class="d-md-none" /> {{ l10n.common.location }}
                 </div>
             </div>
 
             <div id="particlesLeft" class="left"></div>
             <div id="particlesRight" class="right"></div>
         </div>
-        <!-- <div class="row">
+        {# <!-- <div class="row">
             <div class="col-4 time">
                 <div class="col-4 time-circle">
                     <span>Day</span>
@@ -74,251 +73,9 @@
                     <a href="#arrow-go" class="arrow-go"><i class="fas fa-angle-down"></i></a>
 
             </div>
-        </div> -->
+        </div> -->#}
     </div>
 </header>
-<script>
-    particlesJS('particlesLeft',
-            {
-                "particles": {
-                    "number": {
-                        "value": 80,
-                        "density": {
-                            "enable": true,
-                            "value_area": 450
-                        }
-                    },
-                    "color": {
-                        "value": "#ffffff"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": false,
-                        "anim": {
-                            "enable": false,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 5,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 6,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "bounce",
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "repulse"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true,
-                "config_demo": {
-                    "hide_card": false,
-                    "background_color": "#b61924",
-                    "background_image": "",
-                    "background_position": "50% 50%",
-                    "background_repeat": "no-repeat",
-                    "background_size": "cover"
-                }
-            }
-
-        );
-</script>
-<script>
-    particlesJS('particlesRight',
-        {
-            "particles": {
-                "number": {
-                    "value": 80,
-                    "density": {
-                        "enable": true,
-                        "value_area": 450
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 5,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "bounce",
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true,
-            "config_demo": {
-                "hide_card": false,
-                "background_color": "#b61924",
-                "background_image": "",
-                "background_position": "50% 50%",
-                "background_repeat": "no-repeat",
-                "background_size": "cover"
-            }
-        }
-
-    );
-</script>
 </div>
 <div class="panel bottom">
 
@@ -329,9 +86,9 @@
         </div>
     </div>
     <div class="row">
-    <div class="offset-md-1 col-md-10 col-12">
+    <div class="offset-md-2 col-md-8 col-12">
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5rQeO9xmcnU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9tBvxaCPw2U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
 </div>
