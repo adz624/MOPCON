@@ -1,65 +1,338 @@
 {% extends 'layouts/main.twig' %} {% block content %}
 <!-- 臨時官網 -->
-<div class="container-fluid ">
-  <div class="row coming-soon mt-sm-5 mr-sm-4 mb-4 ml-sm-4 ">
-    <div class="logo col-md-6 d-none d-md-block ">
-      <img src="assets/images/logo@2x.png" alt="">
+<div class="panel top mb-5">
+<header class="header">
+    <div class="container-fluid">
+        <div class="row particles">
+            
+            <!-- <div id="carouselBanner" class="carousel banner slide pb-lg-5" data-ride="carousel" >
+                <ol class="carousel-indicators my-lg-0">
+                    <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBanner" data-slide-to="1"></li>
+                    <li data-target="#carouselBanner" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid logo" src="assets/images/logo@2x.png" alt="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid logo" src="assets/images/logo@2x.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid logo" src="assets/images/logo@2x.png" alt="Third slide">
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-12">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid logo" src="assets/images/logo@2x.png" alt="First slide">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="sub-title text-center">
+                        3-4 November 2018 高雄國際會議廳
+                </div>
+            </div>
+            
+            <div id="particlesLeft" class="left"></div>
+            <div id="particlesRight" class="right"></div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-4 time">
+                <div class="col-4 time-circle">
+                    <span>Day</span>
+                    <div class="circle">
+                        33
+                    </div>
+                </div>
+                <div class="col-4 time-circle">
+                    <span>Hour</span>
+                    <div class="circle">
+                        12
+                    </div>
+                </div>
+                <div class="col-4 time-circle">
+                    <span>Minutes</span>
+                    <div class="circle">
+                        45
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="btn col-md-4 col-lg-2 m-auto">
+                <button class="ticket-btn">馬上去搶票</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-sm-3 arrow mb-lg-5">
+                
+                    <a href="#arrow-go" class="arrow-go"><i class="fas fa-angle-down"></i></a>
+                
+            </div>
+        </div> -->
     </div>
-    <div class="info col-md-6">
-      <div class="title">
-        <div class="main-title">
-          Coming Soon...
-        </div>
-        <div class="sub-title">
-          濁水溪以南最大的行動科技研討會
-        </div>
-      </div>
-      <div class="mobile-logo d-md-none">
-        <img class="mx-auto d-block" src="assets/images/mobile-logo@2x.png" alt="">
-      </div>
-      <div class="content mb-sm-5">
-        <ul class="custom-list">
-              <li>
-                3-4 November 2018
-              </li>
-              
-              <li>
-                國際會議中心(ICCK) 3F&amp;4F
-              </li>          
-        </ul>
-      </div>
-      <div class="footer mb-4">
-        <div class="btn-toolbar pl-md-3">
-            <a id="cfp" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://goo.gl/vqTB79">
-              徵求講者
-            </a>
-  
-            <a id="cfr" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://goo.gl/GBgWfi">
-              推薦講者
-            </a>
-  
-            <a id="cfs" class="btn btn-primary btn-lg mr-4 mb-4" target="_blank" href="https://drive.google.com/file/d/1VPucvh8MyBBIqHPrMNHcjQGOBrV3Q48r/view">
-              贊助我們
-            </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end 臨時官網-->
+</header>
 <script>
-  $(function(){
-    if(window.location.search == '?lang=zh') {
-        return;
-    }
-    else if(window.location.search == '?lang=en') {
-      $('.coming-soon .sub-title').text('The largest mobile-tech conf in Taiwan');
-       $('.custom-list li:nth-child(2)').text('International Convention Center Kaohsiung 3F&4F');
-      $('#cfp').text('Call for Presentation');
-      $('#cfr').text('Call for Recommendation');
-      $('#cfs').text('Call for Sponsorship').attr('href','https://drive.google.com/file/d/1t_2RjrlpMJHNkp7nvqoRWIQ6BsAjXGEa/view');
-      $('#COC').text('Code of Conduct');
-    }	
-  })
+    particlesJS('particlesLeft',
+            {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 450
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "bounce",
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true,
+                "config_demo": {
+                    "hide_card": false,
+                    "background_color": "#b61924",
+                    "background_image": "",
+                    "background_position": "50% 50%",
+                    "background_repeat": "no-repeat",
+                    "background_size": "cover"
+                }
+            }
+
+        );
 </script>
+<script>
+    particlesJS('particlesRight',
+        {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 450
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "bounce",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true,
+            "config_demo": {
+                "hide_card": false,
+                "background_color": "#b61924",
+                "background_image": "",
+                "background_position": "50% 50%",
+                "background_repeat": "no-repeat",
+                "background_size": "cover"
+            }
+        }
+
+    );
+</script>
+</div>
+<div class="panel bottom">
+
+	
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary btn-lg">贊助我們</button>
+        </div>
+    </div>
+    <div class="row">
+    <div class="offset-md-1 col-md-10 col-12">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5rQeO9xmcnU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 {% endblock %}
