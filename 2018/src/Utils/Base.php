@@ -5,7 +5,6 @@ class Base
 {
     protected static $default_lang = 'zh';
     protected static $supported_langs = ['zh', 'en'];
-    protected static $localePath = __DIR__ . '/../../locales';
 
     public static function test()
     {
@@ -140,7 +139,7 @@ class Base
 
     public static function getL10n()
     {
-        $fileList = glob(self::$localePath . '/' . self::getLang() . '/*.json');
+        $fileList = glob(__DIR__ . '/../../locales/' . self::getLang() . '/*.json');
         $L10n = [];
 
         foreach ($fileList as $filePath) {
