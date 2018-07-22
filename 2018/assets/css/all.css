@@ -9041,7 +9041,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .score {
   width: 100vw;
-  height: 100vh;
 }
 
 .score-logo {
@@ -9064,7 +9063,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../images/score/new-picture.png");
+  background-image: url("");
 }
 
 .show-ability-img {
@@ -9077,12 +9076,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .show-comment-img {
-  width: 395px;
-  height: 83px;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("../images/score/lv1-word.png");
+  color: #fff;
+  font-size: 24px;
 }
 
 .score-banner-left {

@@ -84,8 +84,8 @@ class Base
                 // 'webList' => getWebList(),
                 'webParams' => $webParams,
                 'lang' => self::getLang(),
-                'og_image' => 'mopcon2018_large.png',
-                // 'og_url' => '',
+                'og_image' => (isset($main['nav'][$params['og_image']])) ? $main['nav'][$params['og_image']] : 'mopcon2018_large.jpg',
+                'og_url' => (isset($main['nav'][$params['og_url']])) ? $main['nav'][$params['og_url']] : '',
                 'version' => [
                     // 'allCss' => getLastUpdateTime('css.all'),
                     // 'allJs' => getLastUpdateTime('js.all'),

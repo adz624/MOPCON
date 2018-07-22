@@ -26,14 +26,35 @@
       <div class="modal-content">
         <div class="modal-body  d-flex justify-content-center">
           ...
-          <input type="text" class="get-score" placeholder="輸入分數看你是誰">
+          <input type="number" class="get-score" placeholder="輸入分數看你是誰">
         </div>
         <div class="modal-footer border-0 d-flex justify-content-center">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" id="sendScore" class="btn btn-secondary">Submit</button>
         </div>
       </div>
     </div>
   </div>
 </div> 
-
+<script>
+$(function(){
+  $('#sendScore').on('click', function(){
+    var value = $('.get-score').val();
+    if(value != null && typeof Number(value) === 'number') {
+      if(value > 0 && value < 5000) {
+        window.location.replace("/2018/score.php?result=0");
+      }
+      else if(value >= 5000 && value < 7000) {
+        window.location.replace("/2018/score.php?result=1");
+      }
+      else if(value >= 7000 && value < 9000) {
+        window.location.replace("/2018/score.php?result=2");
+      }
+      else if(value >= 9000 ) {
+        window.location.replace("/2018/score.php?result=3");
+      }
+    }
+    
+  })
+})
+</script>
 {% endblock %}
