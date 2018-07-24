@@ -8954,6 +8954,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .stand .bg-left {
+  display: none;
   background-image: url("../images/stand/line.png");
   width: 343px;
   height: 339px;
@@ -8964,7 +8965,14 @@ a.text-dark:hover, a.text-dark:focus {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  .stand .bg-left {
+    left: -100px;
+  }
+}
+
 .stand .bg-right {
+  display: none;
   background-image: url("../images/stand/line-2.png");
   width: 343px;
   height: 339px;
@@ -8975,6 +8983,12 @@ a.text-dark:hover, a.text-dark:focus {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  .stand .bg-right {
+    right: -100px;
+  }
+}
+
 .stand .info {
   margin-top: 10rem;
 }
@@ -8982,6 +8996,15 @@ a.text-dark:hover, a.text-dark:focus {
 .stand #getModal .modal-content {
   background-color: #000033;
   border: 1px solid #00d0ca;
+}
+
+.stand #getModal .modal-content .modal-submit {
+  background-image: url("../images/stand/submit@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
 }
 
 .stand .get-score {
@@ -9035,16 +9058,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 768px) {
   .stand .stand-banner {
-    width: 100vw;
+    background-size: contain;
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .stand .stand-banner {
+    height: 180px;
   }
 }
 
 .score {
   width: 100vw;
-}
-
-.score-logo {
-  position: absolute;
 }
 
 .show-text {
@@ -9063,7 +9089,6 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("");
 }
 
 .show-ability-img {
@@ -9090,8 +9115,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .score-banner-right {
-  width: 162px;
-  height: 560px;
+  width: 190px;
+  height: 578px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
