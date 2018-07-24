@@ -31,10 +31,12 @@ $result = isset($_GET['result']) ? $_GET['result'] : '1';
 
 $params = [
     'pageid' => 'score',
-    'test' => getResult($result)
+    'score' => getResult($result)
     
     
 ];
-$params['og_image'] = "facebook/" . $params['test']['og_image'];
+$params['og_image'] = "facebook/" . $params['score']['og_image'];
+$params['og_title'] = $params['score']['og_title'];
+$params['og_description'] = $params['score']['og_description'];
 $params['og_url'] = 'score.php?result=' . $result;
 \MopCon2018\Utils\Base::render('components/score.twig', $params);

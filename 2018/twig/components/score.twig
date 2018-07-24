@@ -4,11 +4,11 @@
         <div class="score-banner-left"></div>
         <div class="d-block">
             <div class="show-text mb-md-5 d-flex justify-content-center">你是</div>
-            <div class="show-lv-text mb-md-5 d-flex justify-content-center">{{ test.title }}</div>
-            <div class="show-lv-img mb-md-5" style="background-image: url('/2018/assets/images/score/{{ test.picture }}.png')"></div>
-            <div class="show-ability-img mb-md-5" style="background-image: url('/2018/assets/images/score/lv{{ test.level }}-value.png')"></div>
+            <div class="show-lv-text mb-md-5 d-flex justify-content-center">{{ score.title }}</div>
+            <div class="show-lv-img mb-md-5" style="background-image: url('/2018/assets/images/score/{{ score.picture }}.png')"></div>
+            <div class="show-ability-img mb-md-5" style="background-image: url('/2018/assets/images/score/lv{{ score.level }}-value.png')"></div>
             <div class="show-comment-img mb-lg-5">
-                {{ test.description | raw }}
+                {{ score.description | raw }}
             </div>
             <div class="d-flex justify-content-center">
                 <div class="share-social mb-5"></div>
