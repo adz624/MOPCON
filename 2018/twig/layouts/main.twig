@@ -43,6 +43,24 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
       src="https://www.facebook.com/tr?id=149507615542184&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '326056827805047',
+            xfbml      : true,
+            version    : 'v3.0'
+          });
+          FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}">
 

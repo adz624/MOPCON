@@ -17,5 +17,17 @@
         <div class="score-banner-right"></div>
     </div>
 </div>
-
+<script>
+    $(function(){
+        $('.share-social').on('click', function(){
+            FB.ui({
+                method: 'share',
+                hashtag: '#MOPCON #知識王PK賽',
+                display: 'popup',
+                mobile_iframe: true,
+                href: 'https://mopcon.org/2018/{{ og_url }}',
+            }, function(response){});
+        })
+    })
+</script>
 {% endblock %}
