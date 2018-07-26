@@ -9009,8 +9009,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .stand .get-score {
   border: 0;
-  border-bottom: 1px solid #00d0ca;
+  border-bottom: 2px solid #00d0ca;
   background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  width: 160px;
 }
 
 .stand-description {
