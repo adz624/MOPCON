@@ -43,24 +43,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
       src="https://www.facebook.com/tr?id=149507615542184&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '326056827805047',
-            xfbml      : true,
-            version    : 'v3.0'
-          });
-          FB.AppEvents.logPageView();
-        };
-
-        (function(d, s, id){
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) {return;}
-          js = d.createElement(s); js.id = id;
-          js.src = "https://connect.facebook.net/en_US/sdk.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-  </script>
+  
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}">
 
@@ -72,6 +55,17 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 </head>
 
 <body>
+<!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+      <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<a class="navbar-brand" href="/">
 		<img src="/2018/assets/images/white-logo.png" alt="" srcset="">
@@ -130,9 +124,9 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 			<li class="nav-item">
         <a class="nav-link" href="http://mopcon.blogspot.tw/" target="_blank">部落格</a>
       </li>
-      {#<li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="event.php">知識王PK賽</a>
-      </li>#}
+      </li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 				 aria-expanded="false">

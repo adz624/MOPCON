@@ -9031,9 +9031,21 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 15px;
 }
 
+@media (max-width: 640px) {
+  .stand-description ul li {
+    font-size: 20px;
+  }
+}
+
 .stand-description ul li:before {
   font-size: 20px;
   margin-right: 10px;
+}
+
+@media (max-width: 640px) {
+  .stand-description ul li:before {
+    font-size: 16px;
+  }
 }
 
 .stand-description ul li:first-child:before {
@@ -9070,7 +9082,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .score {
-  width: 100vw;
+  padding: 15px;
+  background-image: url("../images/score/ball-left.png"), url("../images/score/ball-right.png");
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+}
+
+@media (max-width: 640px) {
+  .score {
+    background-size: 80px auto;
+  }
 }
 
 .show-text {
@@ -9078,9 +9099,21 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 3rem;
 }
 
+@media (max-width: 640px) {
+  .show-text {
+    font-size: 2rem;
+  }
+}
+
 .show-lv-text {
   color: #00d0cb;
   font-size: 3rem;
+}
+
+@media (max-width: 640px) {
+  .show-lv-text {
+    font-size: 2rem;
+  }
 }
 
 .show-lv-img {
@@ -9091,18 +9124,35 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 640px) {
+  .show-lv-img {
+    height: 150px;
+  }
+}
+
 .show-ability-img {
   width: auto;
   height: 254px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../images/score/lv1-value.png");
+}
+
+@media (max-width: 640px) {
+  .show-ability-img {
+    height: 180px;
+  }
 }
 
 .show-comment-img {
   color: #fff;
   font-size: 24px;
+}
+
+@media (max-width: 640px) {
+  .show-comment-img {
+    font-size: 18px;
+  }
 }
 
 .score-banner-left {
