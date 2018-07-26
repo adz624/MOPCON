@@ -27,10 +27,11 @@
       <div class="modal-content">
         <div class="modal-body  d-flex flex-column align-items-center">
           <img src="./assets/images/stand/word.png" alt="" class="modal-info d-block my-5">
-          <input type="text" class="get-score" placeholder="輸入 Points 看你是誰">
+          <input type="tel" class="get-score" placeholder="輸入Points">
+          <span class="err-msg text-danger" style="display: none;">請輸入正確的分數格式!</span>
         </div>
         <div class="modal-footer border-0 d-flex justify-content-center my-3">
-          <button type="button" id="sendScore" class="btn btn-secondary">Submit</button>
+          <button type="button" id="sendScore" class="btn btn-lg btn-primary">Submit</button>
         </div>
       </div>
     </div>
@@ -40,7 +41,7 @@
 $(function(){
   $('#sendScore').on('click', function(){
     var value = $('.get-score').val();
-    if(value != null && typeof Number(value) === 'number') {
+    if(value != null && $.isNumeric(value)) {
       if(value > 0 && value < 5000) {
         window.location.replace("/2018/score.php?result=0");
       }
@@ -53,6 +54,13 @@ $(function(){
       else if(value >= 9000 ) {
         window.location.replace("/2018/score.php?result=3");
       }
+      else {
+        $('.err-msg').show();
+      }
+    }
+    else {
+      console.log('error')
+      $('.err-msg').show();
     }
     
   })
