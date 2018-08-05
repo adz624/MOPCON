@@ -43,8 +43,7 @@ class ApiController extends Controller
      */
     private function accessPublic($request, $response, $args)
     {
-        return $response->withHeader('Content-Type: application/json')
-            ->getBody()->write(json_encode($this->resource, $this->jsonOptions));
+        return $response->withJson($this->resource, 200, $this->jsonOptions);
     }
 
     private function accessCodeOfConduct($request, $response, $args)
