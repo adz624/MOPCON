@@ -90,6 +90,20 @@ class MopConResource
                 'description' => '贊助商',
                 'status' => 1,
             ],
+            'community' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'o95452q',
+                'columns' => [
+                    'title' => '社群名稱',
+                    'liasion' => '主要聯絡人',
+                    'email' => '聯絡 Email',
+                    'name' => '中文介紹',
+                    'name_en' => '英文介紹',
+                    'info' => '相關資料',
+                ],
+                'description' => '主辦社群',
+                'status' => 1,
+            ]
         ]
     ];
     private static $activityDate = ['day1' => '2018-11-03', 'day2' => '2018-11-04'];
