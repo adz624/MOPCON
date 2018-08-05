@@ -10,7 +10,6 @@ class ApiController extends Controller
     private $resource;
     private $jsonOptions;
     private $fullUrlToAssets;
-    private $activityDate = ['day1' => '2018-10-29', 'day2' => '2018-10-30'];
 
     public function __invoke($request, $response, $args)
     {
@@ -65,10 +64,10 @@ class ApiController extends Controller
     private function accessSchedule($request, $response, $args)
     {
         $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
-        $apiDataCustom = compact('day1', 'day2');
+        $scheduleUnconf = MopConResource::getScheduleUnconf();
 
         $agenda = [];
-        foreach ($this->activityDate as $date) {
+        foreach (array_column($schedule, 'date') as $date) {
             $items = [];
 
             $scheduleByDate = array_values(
@@ -96,7 +95,8 @@ class ApiController extends Controller
         return $response = $response->withJSON(
             [
                 'payload' => [
-                    'agenda' => $agenda
+                    'agenda' => $agenda,
+                    'talk' => $scheduleUnconf
                 ]
             ],
             200,
@@ -106,27 +106,7 @@ class ApiController extends Controller
 
     private function accessScheduleUnconf($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
-
-        $scheduleUnconfData = [];
-
-        foreach ($apiData->toArray() as $rowIndex => $rowData) {
-            foreach ($rowData as $columnName => $columnVal) {
-                preg_match('/^(.*)_([0-9]+)/', $columnName, $result);
-                if (!$result) {
-                    $scheduleUnconfData['day1'][$rowIndex][$columnName] = $columnVal;
-                } else {
-                    $theDay = 'day' . $result[2];
-                    $columnNameNew = $result[1];
-
-                    $scheduleUnconfData[$theDay][$rowIndex][$columnNameNew] = $columnVal;
-                }
-            }
-        }
+        $scheduleUnconfData = MopConResource::getScheduleUnconf();
 
         return $response = $response->withJson(['payload' => $scheduleUnconfData], 200, $this->jsonOptions);
     }

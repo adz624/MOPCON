@@ -92,7 +92,52 @@ class MopConResource
             ],
         ]
     ];
-    private static $activityDate = ['day1' => '2018-10-29', 'day2' => '2018-10-30'];
+    private static $activityDate = ['day1' => '2018-11-03', 'day2' => '2018-11-04'];
+
+    public static function getScheduleUnconf()
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            self::$sourceInfo['googleSheet']['schedule-unconf']['sheetKey'],
+            self::$sourceInfo['googleSheet']['schedule-unconf']['columns'],
+            self::$sourceInfo['googleSheet']['schedule-unconf']['sheetGridId']
+        );
+
+        $scheduleUnconfData = [];
+
+        foreach ($apiData->toArray() as $rowIndex => $rowData) {
+            foreach ($rowData as $columnName => $columnVal) {
+                preg_match('/^(.*)_([0-9]+)/', $columnName, $result);
+                if (!$result) {
+                    $date = self::$activityDate['day1'];
+                    if ($columnName == 'period') {
+                        $columnName = 'duration';
+                    }
+                    $scheduleUnconfData[$date][$rowIndex][$columnName] = $columnVal;
+                } else {
+                    $theDay = 'day' . $result[2];
+                    $date = self::$activityDate[$theDay];
+                    $columnNameNew = $result[1];
+                    if ($columnNameNew == 'period') {
+                        $columnNameNew = 'duration';
+                    }
+                    $scheduleUnconfData[$date][$rowIndex][$columnNameNew] = $columnVal;
+                }
+
+                if (empty($scheduleUnconfData[$date][$rowIndex]['speaker'])) {
+                    $scheduleUnconfData[$date][$rowIndex]['type'] = 'others';
+                } else {
+                    $scheduleUnconfData[$date][$rowIndex]['type'] = 'topic';
+                }
+            }
+        }
+
+        $scheduleUnconf = [];
+        foreach ($scheduleUnconfData as $date => $items) {
+            $scheduleUnconf[] = compact('date', 'items');
+        }
+
+        return $scheduleUnconf;
+    }
 
     public static function getSchedule($fullUrlToAssets = null)
     {
