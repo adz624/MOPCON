@@ -66,7 +66,7 @@ class ApiController extends Controller
         $scheduleUnconf = MopConResource::getScheduleUnconf();
 
         $agenda = [];
-        foreach (array_column($schedule, 'date') as $date) {
+        foreach (array_unique(array_column($schedule, 'date')) as $date) {
             $items = [];
 
             $scheduleByDate = array_values(
