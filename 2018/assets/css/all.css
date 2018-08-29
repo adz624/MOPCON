@@ -9493,12 +9493,6 @@ body {
   border-radius: 10px;
 }
 
-@media (min-width: 769px) {
-  .ticket-item {
-    height: 140px;
-  }
-}
-
 .ticket-item.type1 .ticket-type {
   background-color: #00d0ca;
   font-size: 28px;
@@ -9526,12 +9520,6 @@ body {
   font-size: 23px;
 }
 
-@media (min-width: 769px) {
-  .ticket-item.type3 .ticket-type {
-    line-height: 185px;
-  }
-}
-
 .ticket-item.type3 .ticket-ribbon {
   color: #420112;
   background: linear-gradient(to right, #f31b2a, #f00d13, #9f0000);
@@ -9552,7 +9540,6 @@ body {
 @media (min-width: 769px) {
   .ticket-type {
     width: 140px;
-    line-height: 140px;
     border-top-left-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
@@ -9560,8 +9547,22 @@ body {
 }
 
 .ticket-type .name {
+  color: #fff;
   width: 100%;
   padding: 5px;
+}
+
+@media (min-width: 769px) {
+  .ticket-type .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+  }
 }
 
 .robbon-wrap {
