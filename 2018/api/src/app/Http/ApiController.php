@@ -17,7 +17,7 @@ class ApiController extends Controller
         $this->resource = $request->getAttribute('resource');
         $this->resourceName = $request->getAttribute('routesParsed')[0];
         $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT;
-        $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/assets';
+        $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/2018/assets';
 
         return $this->{$this->transform2Method($this->resourceName)}($request, $response, $args);
     }
