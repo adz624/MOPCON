@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$apiData = json_decode(file_get_contents('https://dev.mopcon.org/2018/api/speaker'), true);
+$apiData = json_decode(file_get_contents('https://mopcon.org/2018/api/speaker'), true);
 $apiData = $apiData['payload'];
 
 // var_dump($apiData->toArray()[0]);
