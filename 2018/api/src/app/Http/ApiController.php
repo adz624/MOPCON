@@ -2,6 +2,7 @@
 namespace MopConApi2018\App\Http;
 
 use MopCon2018\Utils\GoogleDocsSpreadsheet;
+use MopConApi2018\App\Models\MopConResource;
 
 class ApiController extends Controller
 {
@@ -15,10 +16,10 @@ class ApiController extends Controller
         $this->sourceFrom = $request->getAttribute('sourceFrom');
         $this->resource = $request->getAttribute('resource');
         $this->resourceName = $request->getAttribute('routesParsed')[0];
-        $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_FORCE_OBJECT | JSON_PRETTY_PRINT;
-        $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/assets';
+        $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT;
+        $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/2018/assets';
 
-        $this->{$this->transform2Method($this->resourceName)}($request, $response, $args);
+        return $this->{$this->transform2Method($this->resourceName)}($request, $response, $args);
     }
 
     private function transform2Method($str)
@@ -42,8 +43,7 @@ class ApiController extends Controller
      */
     private function accessPublic($request, $response, $args)
     {
-        return $response->withHeader('Content-Type: application/json')
-            ->getBody()->write(json_encode($this->resource, $this->jsonOptions));
+        return $response->withJson($this->resource, 200, $this->jsonOptions);
     }
 
     private function accessCodeOfConduct($request, $response, $args)
@@ -62,88 +62,60 @@ class ApiController extends Controller
 
     private function accessSchedule($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
+        $scheduleUnconf = MopConResource::getScheduleUnconf();
 
-        foreach ($apiData->toRows() as $key => $item) {
-            // 跳過議會廳欄位
-            if ($key === 0) {
-                continue;
+        $agenda = [];
+        foreach (array_unique(array_column($schedule, 'date')) as $date) {
+            $items = [];
+
+            $scheduleByDate = array_values(
+                array_filter($schedule, function ($row) use ($date) {
+                    return $row['date'] == $date;
+                })
+            );
+
+            $durations = array_unique(array_column($scheduleByDate, 'duration'));
+
+            foreach ($durations as $duration) {
+                $items[] = [
+                    'duration' => $duration,
+                    'agendas' => array_values(
+                        array_filter($scheduleByDate, function ($row) use ($duration) {
+                            return $row['duration'] == $duration;
+                        })
+                    )
+                ];
             }
-            $day1[] = [
-                'period' => $item->{'gsx$day1'}->{'$t'},
-                'R1' => $item->{'gsx$_cokwr'}->{'$t'},
-                'R2' => @$item->{'gsx$_cpzh4'}->{'$t'} ?: $item->{'gsx$_cokwr'}->{'$t'},
-                'R3' => @$item->{'gsx$_cre1l'}->{'$t'} ?: $item->{'gsx$_cokwr'}->{'$t'},
-            ];
 
-            $day2[] = [
-                'period' => $item->{'gsx$day2'}->{'$t'},
-                'R1' => $item->{'gsx$_ckd7g'}->{'$t'},
-                'R2' => @$item->{'gsx$_clrrx'}->{'$t'} ?: $item->{'gsx$_ckd7g'}->{'$t'},
-                'R3' => @$item->{'gsx$_cyevm'}->{'$t'} ?: $item->{'gsx$_ckd7g'}->{'$t'},
-            ];
+            $agenda[] = compact('date', 'items');
         }
 
-        $apiDataCustomJson = json_encode(compact('day1', 'day2'), $this->jsonOptions);
-
-        return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write($apiDataCustomJson);
+        return $response = $response->withJSON(
+            [
+                'payload' => [
+                    'agenda' => $agenda,
+                    'talk' => $scheduleUnconf
+                ]
+            ],
+            200,
+            $this->jsonOptions
+        );
     }
 
     private function accessScheduleUnconf($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $scheduleUnconfData = MopConResource::getScheduleUnconf();
 
-        $scheduleUnconfData = [];
-
-        foreach ($apiData->toArray() as $rowIndex => $rowData) {
-            foreach ($rowData as $columnName => $columnVal) {
-                preg_match('/^(.*)_([0-9]+)/', $columnName, $result);
-                if (!$result) {
-                    $scheduleUnconfData['day1'][$rowIndex][$columnName] = $columnVal;
-                } else {
-                    $theDay = 'day' . $result[2];
-                    $columnNameNew = $result[1];
-
-                    $scheduleUnconfData[$theDay][$rowIndex][$columnNameNew] = $columnVal;
-                }
-            }
-        }
-
-        return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write(json_encode($scheduleUnconfData, $this->jsonOptions));
+        return $response = $response->withJson(['payload' => $scheduleUnconfData], 200, $this->jsonOptions);
     }
 
     private function accessSpeaker($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
 
-        $apiDataArray = $apiData->toArray();
-
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['picture'])) {
-                $value['picture'] = $this->fullUrlToAssets . '/images/speaker/' . $value['picture'];
-            }
-
-            if (!empty($value['picture_merged'])) {
-                $value['picture_merged'] = $this->fullUrlToAssets . '/images/speaker/' . $value['picture_merged'];
-            }
-        }
-
-        return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write(json_encode($apiDataArray, $this->jsonOptions));
+        return $response;
     }
 
     private function accessSponsor($request, $response, $args)
@@ -162,7 +134,35 @@ class ApiController extends Controller
             }
         }
 
-        return $response = $response->withHeader('Content-Type: application/json')
-            ->getBody()->write(json_encode($apiDataArray, $this->jsonOptions));
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
+    }
+
+    private function accessCommunity($request, $response, $args)
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
+    }
+
+    private function accessVolunteer($request, $response, $args)
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
     }
 }

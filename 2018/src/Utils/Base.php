@@ -22,6 +22,7 @@ class Base
                 'nav' => [
                     // 'cfp' => '徵稿',
                     'community' => '主辦社群',
+                    'ticket' => '售票',
                     // 'location' => '地圖',
                     // 'previous' => '歷年 MOPCON',
                     'member' => '志工組織',
@@ -52,6 +53,7 @@ class Base
                 'nav' => [
                     // 'cfp' => 'Call for Presentation',
                     'community' => 'Community',
+                    'ticket' => 'Ticket',
                     // 'location' => 'Location',
                     // 'previous' => 'Previous Events',
                     'member' => 'Member',

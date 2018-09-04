@@ -36,6 +36,7 @@ class ApiMiddleware extends Middleware
                     'name' => '姓名',
                     'name_en' => '姓名en',
                     'type' => '類別',
+                    'company' => '公司',
                     'job' => '職稱',
                     'info' => '個人介紹',
                     'info_en' => '個人介紹en',
@@ -92,6 +93,36 @@ class ApiMiddleware extends Middleware
                 'description' => '贊助商',
                 'status' => 1,
             ],
+            'community' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'o95452q',
+                'columns' => [
+                    'title' => '社群名稱',
+                    'id' => 'id',
+                    'liasion' => '主要聯絡人',
+                    'email' => '聯絡email',
+                    'info' => '中文介紹',
+                    'info_en' => '英文介紹',
+                    'facebook' => 'facebook',
+                    'other_links' => '其他連結',
+                ],
+                'description' => '主辦社群',
+                'status' => 1,
+            ],
+            'volunteer' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'o2invo3',
+                'columns' => [
+                    'id' => 'id',
+                    'groupname' => '組別中文名稱',
+                    'groupname_en' => '組別英文名稱',
+                    'info' => '中文介紹字內',
+                    'info_en' => '英文介紹',
+                    'memberlist' => '組員名單不限中英文',
+                ],
+                'description' => '主辦社群',
+                'status' => 1,
+            ]
         ];
     }
 
