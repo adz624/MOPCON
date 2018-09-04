@@ -11,4 +11,4 @@ $params = [
     'pageid' => 'ticket',
     
 ];
-\MopCon2018\Utils\Base::render('components/ticket.twig', $params);
+//\MopCon2018\Utils\Base::render('components/ticket.twig', $params);
