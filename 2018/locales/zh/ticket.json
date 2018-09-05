@@ -1,7 +1,7 @@
 {
     "general": {
         "name": "一般票",
-        "info": "包含兩日餐盒、午茶點心",
+        "info": "<strong style='text-decoration: underline'>不包含</strong>兩日餐盒、午茶點心",
         "sale_time": "期間限定販售 09/18~10/22"
     },
     "student": {

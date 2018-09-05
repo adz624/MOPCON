@@ -3,14 +3,14 @@
 
 <div class="container">
     <div class="col-12">
-        {# <div class="ticket-item type1 row mb-4">
+        <div class="ticket-item type1 row mb-4">
             <div class="ticket-type  d-flex flex-md-column align-items-md-start">
                 <div class="name">{{ l10n.ticket.general.name }}</div>
             </div>
             <div class="ticket-content flex-auto">
                 <h4>NT$ 600 {{ l10n.ticket.dollar }}</h4>
                 <p>
-                    {{ l10n.ticket.general.info }}<br>
+                    {{ l10n.ticket.general.info | raw }}<br>
                     <span class="text-danger">{{ l10n.ticket.sale_period }} 09/17~10/31</span>
                 </p>
                 <div class="ticket-tool">
@@ -21,7 +21,7 @@
 
                 </div>
             </div>
-        </div> #}
+        </div>
         <div class="ticket-item type1 row mb-4">
             <div class="ticket-type  d-flex flex-md-column align-items-md-start">
                 <div class="name">{{ l10n.ticket.student.name }}</div>
