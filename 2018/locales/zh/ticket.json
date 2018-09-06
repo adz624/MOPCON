@@ -1,12 +1,12 @@
 {
     "general": {
         "name": "一般票",
-        "info": "包含兩日餐盒、午茶點心",
+        "info": "<strong style='text-decoration: underline'>不包含</strong>兩日餐盒、含午茶點心",
         "sale_time": "期間限定販售 09/18~10/22"
     },
     "student": {
         "name": "學生票",
-        "info": "<strong style='text-decoration: underline'>不包含</strong>兩日餐盒、午茶點心",
+        "info": "<strong style='text-decoration: underline'>不包含</strong>兩日餐盒、含午茶點心",
         "sale_time": "期間限定販售 09/11~10/20"
     },
     "vipa": {
@@ -15,7 +15,7 @@
         "sale_time": "期間限定販售 09/04~10/22"
     },
     "vipb": {
-        "name": "尊絕不凡票",
+        "name": "尊爵不凡票",
         "info": "包含兩日餐盒、午茶點心、MOPCON 2018 獨家紀念品、快速通關、獨家設計方型抱枕、講者晚宴乙客",
         "sale_time": "期間限定販售 09/04~10/22"
     },

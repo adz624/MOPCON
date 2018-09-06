@@ -3,25 +3,28 @@
 
 <div class="container">
     <div class="col-12">
-        {# <div class="ticket-item type1 row mb-4">
+        <div class="ticket-item type1 row mb-4">
             <div class="ticket-type  d-flex flex-md-column align-items-md-start">
                 <div class="name">{{ l10n.ticket.general.name }}</div>
             </div>
             <div class="ticket-content flex-auto">
                 <h4>NT$ 600 {{ l10n.ticket.dollar }}</h4>
                 <p>
-                    {{ l10n.ticket.general.info }}<br>
+                    {{ l10n.ticket.general.info | raw }}<br>
                     <span class="text-danger">{{ l10n.ticket.sale_period }} 09/17~10/31</span>
                 </p>
                 <div class="ticket-tool">
                     <!--<p class="text-danger mb-0 text-right d-md-block">{{ l10n.ticket.buy_now }}：200名</p>-->
-                    <a href="javascript:void(0);" target=" _blank" class="btn btn-ticket" title="But ticket">
+                    {#<a href="javascript:void(0);" target=" _blank" class="btn btn-ticket" title="Buy ticket">
+                        {{ l10n.ticket.buy_now }}
+                    </a>#}
+                    <a class="btn btn-ticket" title="Buy ticket">
                         {{ l10n.ticket.sale_not_started }}
                     </a>
 
                 </div>
             </div>
-        </div> #}
+        </div>
         <div class="ticket-item type1 row mb-4">
             <div class="ticket-type  d-flex flex-md-column align-items-md-start">
                 <div class="name">{{ l10n.ticket.student.name }}</div>
@@ -34,7 +37,7 @@
                 </p>
                 <div class="ticket-tool">
                     <p class="text-danger mb-0 text-right d-md-block">{{ l10n.ticket.quota }}：200{{ l10n.ticket.people }}</p>
-                    <a href="javascript:void(0);" target="_blank" class="btn btn-ticket" title="But ticket">
+                    <a href="https://kktix.com/events/2018-registration-student/registrations/new" target="_blank" class="btn btn-ticket" title="Buy ticket">
                         {{ l10n.ticket.sale_not_started }}
                     </a>
 
@@ -56,8 +59,8 @@
                 </p>
                 <div class="ticket-tool">
                     <p class="text-danger mb-0 text-right d-md-block">{{ l10n.ticket.quota }}：30{{ l10n.ticket.people }}</p>
-                    <a href="javascript:void(0);" target="_blank" class="btn btn-ticket" title="But ticket">
-                        {{ l10n.ticket.sale_not_started }}
+                    <a href="https://kktix.com/events/2018-vip/registrations/new" target="_blank" class="btn btn-ticket" title="Buy ticket">
+                        {{ l10n.ticket.buy_now }}
                     </a>
 
                 </div>
@@ -78,8 +81,8 @@
                 </p>
                 <div class="ticket-tool">
                     <p class="text-danger mb-0 text-right d-md-block">{{ l10n.ticket.quota }}：20{{ l10n.ticket.people }}</p>
-                    <a href="javascript:void(0);" target="_blank" class="btn btn-ticket" title="But ticket">
-                        {{ l10n.ticket.sale_not_started }}
+                    <a href="https://kktix.com/events/2018-vip/registrations/new" target="_blank" class="btn btn-ticket" title="Buy ticket">
+                        {{ l10n.ticket.buy_now }}
                     </a>
 
                 </div>
@@ -98,7 +101,7 @@
                 </p>
                 <div class="ticket-tool">
                     <!--<p class="text-danger mb-0 text-right d-md-block">{{ l10n.ticket.buy_now }}：200名</p>-->
-                    <a href="javascript:void(0);" target="_blank" class="btn btn-ticket" title="But ticket">
+                    <a href="javascript:void(0);" target="_blank" class="btn btn-ticket" title="Buy ticket">
                         {{ l10n.ticket.buy_now }}
                     </a>
 
