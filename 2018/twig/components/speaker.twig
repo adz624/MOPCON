@@ -45,7 +45,13 @@
       </div>
     {% endfor %}
     </div>
-
-    </div>
+  </div>
 </div>
+{% if id != '' %}
+<script>
+$(function(){
+  $('#modal-'+{{id}}).modal('show');
+})
+</script>
+{% endif %}
 {% endblock %}
