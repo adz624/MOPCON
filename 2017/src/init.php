@@ -266,10 +266,10 @@ function render($template_name, $params)
                 // 'previous' => '歷年 MOPCON',
                 'member' => '志工組織',
                 'speaker' => '講者',
-                'schedule' => '議程',
                 'sponsor' => '贊助',
+                'schedule' => '議程',
                 'schedule_unconf' => '交流場次',
-                // 'hackpad' => '2017 hackpad',
+                // 'hackmd' => '2017 HackMD',
                 // 'chatroom' => '聊天室',
                 // 'chatroom_gitter' => '網頁版（Gitter）',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
@@ -278,7 +278,7 @@ function render($template_name, $params)
                 'ticket' => '購票資訊',
                 'apps'   => 'Apps',
                 'blog' => '部落格',
-                'stalls' => '社團攤位申請'
+                'stalls' => '社群攤位申請'
 
             ],
             'his_mopcon' => '歷年 MOPCON',
@@ -298,7 +298,7 @@ function render($template_name, $params)
                 'schedule' => 'Schedule',
                 'schedule_unconf' => 'Unconf',
                 'sponsor' => 'Sponsors',
-                // 'hackpad' => '2016 hackpad',
+                // 'hackmd' => '2017 HackMD',
                 // 'chatroom' => 'Chat Room',
                 // 'chatroom_gitter' => 'Gitter',
                 // 'chatroom_irc' => 'IRC: #mopcon @ freenode',
