@@ -9,4 +9,4 @@ $lang = \MopCon2018\Utils\Base::getLang();
 $params = [
     'pageid' => 'warm-up',
 ];
-Base::render('components/warm_up.twig', $params);
+// Base::render('components/warm_up.twig', $params);
