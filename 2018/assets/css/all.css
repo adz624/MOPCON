@@ -9054,7 +9054,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .modal-dialog.sponsor-modal .sponsor-modal-info {
-  width: 80%;
+  width: 100%;
 }
 
 .modal-dialog.sponsor-modal img {
@@ -9679,14 +9679,6 @@ body {
   font-size: 0.8rem;
 }
 
-.navbar.warm-up .navbar-brand {
-  margin-left: 3rem;
-}
-
-.navbar.warm-up li:first-child {
-  margin-left: 3rem;
-}
-
 .navbar.warm-up .nav-lang {
   font-size: 0.8rem;
 }
@@ -9722,7 +9714,6 @@ body {
 
 .warm-up .page-title {
   margin: 0 auto 2rem auto;
-  width: 50%;
   text-align: center;
 }
 
@@ -9733,6 +9724,14 @@ body {
   padding: 2rem;
 }
 
+.warm-up .warm-up-people i {
+  font-size: 50px;
+}
+
+.warm-up .warm-up-people h5 {
+  margin: 1.5rem 0;
+}
+
 .warm-up .warm-up-info {
   margin-top: 7rem;
 }
@@ -9741,28 +9740,36 @@ body {
   margin: 8rem 0;
 }
 
-.warm-up .warm-up-schedule table {
-  margin-bottom: 10rem;
+.warm-up .warm-up-schedule .table {
+  padding-bottom: 10rem;
 }
 
-.warm-up .warm-up-schedule table, .warm-up .warm-up-schedule th, .warm-up .warm-up-schedule td {
-  border: 2px solid #000033;
-  padding: 1rem;
+.warm-up .warm-up-schedule .table div {
+  border: 1px solid #000033;
+}
+
+.warm-up .warm-up-schedule .break,
+.warm-up .warm-up-schedule .conf {
   text-align: center;
 }
 
-.warm-up .warm-up-schedule .break td {
+.warm-up .warm-up-schedule .break > div,
+.warm-up .warm-up-schedule .conf > div {
+  padding: 1rem;
+}
+
+.warm-up .warm-up-schedule .break {
   background-color: #FFFFFF;
   color: #000033;
 }
 
-.warm-up .warm-up-schedule th {
+.warm-up .warm-up-schedule .table-title {
   background-color: #00d0ca;
   font-weight: 500;
   font-size: 1.5rem;
 }
 
-.warm-up .warm-up-schedule td {
+.warm-up .warm-up-schedule .conf {
   background-color: #cdcdd7;
   color: #000033;
 }
@@ -9793,15 +9800,113 @@ body {
   margin-bottom: 2rem;
 }
 
-.warm-up .warm-up-guide {
+.warm-up-guide {
   margin-top: 8rem;
   margin-bottom: 6rem;
-  width: 400px;
 }
 
-.warm-up .warm-up-guide .item {
+.warm-up-guide .item {
   background-color: #FFFFFF;
   width: 200px;
   height: 200px;
   border-radius: 5px;
+}
+
+.ele-bg {
+  position: relative;
+}
+
+.ele-bg > img {
+  width: 150px;
+  position: absolute;
+}
+
+.ele-bg .ele-2 {
+  left: 0;
+  top: 30vh;
+}
+
+.ele-bg .ele-1, .ele-bg .ele-4 {
+  right: 0;
+}
+
+.ele-bg .ele-4 {
+  top: 20vh;
+  width: 200px;
+}
+
+.ele-bg .ele-1 {
+  top: 70vh;
+}
+
+.warm-up-toggle {
+  cursor: pointer;
+}
+
+.warm-up-toggle:hover {
+  color: #00d0ca !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .warm-up .banner {
+    background-position: 0 -250px;
+    padding-top: 150px;
+    margin-bottom: 1rem;
+  }
+  .warm-up .banner .logo,
+  .warm-up .banner .title {
+    width: 200px;
+    height: auto;
+  }
+  .warm-up .banner h4, .warm-up .banner h2 {
+    font-size: 1rem;
+  }
+  .warm-up .arrow-go {
+    width: 30px;
+  }
+  .warm-up .ticket-info {
+    padding-top: .5rem;
+  }
+  .warm-up .page-title {
+    width: auto;
+  }
+  .warm-up .warm-up-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 85%;
+  }
+  .warm-up-people {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 85%;
+  }
+  .warm-up-people .page-title {
+    font-size: 1rem;
+  }
+  .warm-up-people .people {
+    margin-bottom: 1rem;
+  }
+  .warm-up-schedule .table {
+    display: flex;
+    flex-direction: column;
+  }
+  .warm-up-schedule .table .table-title {
+    display: none;
+  }
+  .warm-up-schedule .table div > div {
+    border: 0;
+  }
+  .warm-up-ticket .ticket-item {
+    text-align: center;
+    width: 70%;
+    margin: 3rem;
+  }
+  .warm-up-ticket .main-conf-ticket h5 {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .ele {
+    display: none;
+  }
 }

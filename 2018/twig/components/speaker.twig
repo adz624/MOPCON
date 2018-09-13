@@ -28,11 +28,14 @@
                     <span>{{ speaker.job }}</span>
                   </div>
                 </div>
-                <div class="speaker-eng-detail mx-5 mt-3 mb-5">
+                <div class="speaker-zh-detail mx-sm-5">
+                    {{ speaker.info }}
+                </div>
+                <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
                    {{ speaker.schedule_topic }}
                 </div>
-                <div class="speaker-zh-detail mx-5">
-                    {{ speaker.info }}
+                <div class="speaker-zh-detail mx-sm-5">
+                    {{ speaker.schedule_info }}
                 </div>
                 {#<div class="speaker-modal-btn mt-5 mb-3">
                   <button>共筆</button>
@@ -45,7 +48,13 @@
       </div>
     {% endfor %}
     </div>
-
-    </div>
+  </div>
 </div>
+{% if id != '' %}
+<script>
+$(function(){
+  $('#modal-'+{{id}}).modal('show');
+})
+</script>
+{% endif %}
 {% endblock %}

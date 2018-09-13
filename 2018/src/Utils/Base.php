@@ -88,7 +88,7 @@ class Base
                 'lang' => self::getLang(),
                 'og_title' => (isset($main['nav'][$params['og_title']])) ? $main['nav'][$params['og_title']] : '行動科技年會 2018 | Mobile / Open / Platform Conference',
                 'og_description' => (isset($main['nav'][$params['og_description']])) ? $main['nav'][$params['og_description']] : '濁水溪以南最強大行動科技研討會，2018議程募集中!',
-                'og_image' => (isset($main['nav'][$params['og_image']])) ? $main['nav'][$params['og_image']] : 'mopcon2018_large.jpg',
+                'og_image' => (isset($main['nav'][$params['og_image']])) ? $main['nav'][$params['og_image']] : 'https://mopcon.org/2018/assets/images/mopcon2018_large.jpg',
                 'og_url' => (isset($main['nav'][$params['og_url']])) ? $main['nav'][$params['og_url']] : '',
                 'version' => [
                     // 'allCss' => getLastUpdateTime('css.all'),
