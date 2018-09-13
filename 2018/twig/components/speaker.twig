@@ -5,7 +5,7 @@
 
       <div class="d-flex flex-wrap justify-content-around">
     {% for speaker in speakers %}
-
+    {%if speaker.speaker_id != "" %}
         <div class="speaker-info d-flex align-items-center flex-column">
           <img class="my-3" src="{{ speaker.picture }}" alt="" srcset="">
           <h5>{{ speaker.name }}</h5>
@@ -46,6 +46,7 @@
           </div>
         </div>
       </div>
+      {% endif %}
     {% endfor %}
     </div>
   </div>
