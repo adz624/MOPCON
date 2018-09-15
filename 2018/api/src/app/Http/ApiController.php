@@ -76,6 +76,7 @@ class ApiController extends Controller
             );
 
             $durations = array_unique(array_column($scheduleByDate, 'duration'));
+            sort($durations);
 
             foreach ($durations as $duration) {
                 $items[] = [
