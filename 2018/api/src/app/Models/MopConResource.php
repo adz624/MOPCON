@@ -267,6 +267,7 @@ class MopConResource
                 $schedule[$id]['schedule_topic'] = $schedule[$id]['schedule_id'];
                 $schedule[$id]['schedule_topic_en'] = $schedule[$id]['schedule_id'];
                 $schedule[$id]['schedule_id'] = null;
+                $schedule[$id]['location'] = '';
                 continue;
             }
             $speakerOfschedule = array_filter($speakers, function ($speaker) use ($id) {
