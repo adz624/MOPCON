@@ -172,4 +172,38 @@ class ApiController extends Controller
         $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
         return $response;
     }
+
+    private function accessCarousel($request, $response, $args)
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['banner'])) {
+                $value['banner'] = $this->fullUrlToAssets . '/images/carousel/' . $value['banner'];
+            }
+        }
+
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
+    }
+
+    private function accessNews($request, $response, $args)
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
+    }
 }

@@ -123,7 +123,32 @@ class MopConResource
                 ],
                 'description' => '主辦社群',
                 'status' => 1,
-            ]
+            ],
+            'carousel' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'oc61n7p',
+                'columns' => [
+                    'id' => 'id',
+                    'title' => 'title',
+                    'banner' => 'banner',
+                    'link' => 'link'
+                ],
+                'description' => '廣告',
+                'status' => 1,
+            ],
+            'news' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'o9dug9m',
+                'columns' => [
+                    'id' => 'id',
+                    'time' => 'time',
+                    'title' => 'title',
+                    'description' => 'description',
+                    'link' => 'link'
+                ],
+                'description' => '最新消息',
+                'status' => 1,
+            ],
         ]
     ];
     private static $activityDate = ['day1' => '2018-11-03', 'day2' => '2018-11-04'];
