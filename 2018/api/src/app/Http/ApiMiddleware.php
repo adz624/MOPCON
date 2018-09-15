@@ -99,6 +99,7 @@ class ApiMiddleware extends Middleware
                 'columns' => [
                     'title' => '社群名稱',
                     'id' => 'id',
+                    'logo' => 'logo',
                     'liasion' => '主要聯絡人',
                     'email' => '聯絡email',
                     'info' => '中文介紹',
@@ -122,7 +123,13 @@ class ApiMiddleware extends Middleware
                 ],
                 'description' => '主辦社群',
                 'status' => 1,
-            ]
+            ],
+            'carousel' => [
+
+            ],
+            'news' => [
+
+            ],
         ];
     }
 

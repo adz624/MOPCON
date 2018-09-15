@@ -149,6 +149,12 @@ class ApiController extends Controller
 
         $apiDataArray = $apiData->toArray();
 
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['logo'])) {
+                $value['logo'] = $this->fullUrlToAssets . '/images/community/' . $value['logo'];
+            }
+        }
+
         $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
         return $response;
     }

@@ -99,6 +99,7 @@ class MopConResource
                 'columns' => [
                     'title' => '社群名稱',
                     'id' => 'ID',
+                    'logo' => 'logo',
                     'liasion' => '主要聯絡人',
                     'email' => '聯絡email',
                     'info' => '中文介紹',
