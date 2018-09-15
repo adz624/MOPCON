@@ -192,7 +192,7 @@ class MopConResource
 
             // R1 day1
             if (isset($item->{'gsx$_cokwr'}->{'$t'})) {
-                $id = is_int($item->{'gsx$_cokwr'}->{'$t'})
+                $id = intval($item->{'gsx$_cokwr'}->{'$t'}) > 0
                     ? $item->{'gsx$_cokwr'}->{'$t'}
                     : $item->{'gsx$_cokwr'}->{'$t'} . '@@@' . $item->{'gsx$day1'}->{'$t'};
                 $schedule[$id] = [
@@ -225,14 +225,14 @@ class MopConResource
 
             // R1 day2
             if (isset($item->{'gsx$_ckd7g'}->{'$t'})) {
-                $id = is_int($item->{'gsx$_ckd7g'}->{'$t'})
+                $id = intval($item->{'gsx$_ckd7g'}->{'$t'}) > 0
                     ? $item->{'gsx$_ckd7g'}->{'$t'}
                     : $item->{'gsx$_ckd7g'}->{'$t'} . '@@@' . $item->{'gsx$day2'}->{'$t'};
 
                 $schedule[$id] = [
                     'date' => self::$activityDate['day2'],
                     'schedule_id' => $item->{'gsx$_ckd7g'}->{'$t'},
-                    'duration' => $item->{'gsx$day1'}->{'$t'},
+                    'duration' => $item->{'gsx$day2'}->{'$t'},
                     'location' => 'R1: 一廳',
                 ];
             }
@@ -242,7 +242,7 @@ class MopConResource
                 $schedule[$item->{'gsx$_clrrx'}->{'$t'}] = [
                     'date' => self::$activityDate['day2'],
                     'schedule_id' => $item->{'gsx$_clrrx'}->{'$t'},
-                    'duration' => $item->{'gsx$day1'}->{'$t'},
+                    'duration' => $item->{'gsx$day2'}->{'$t'},
                     'location' => 'R2: 二廳',
                 ];
             }
@@ -252,7 +252,7 @@ class MopConResource
                 $schedule[$item->{'gsx$_cyevm'}->{'$t'}] = [
                     'date' => self::$activityDate['day2'],
                     'schedule_id' => $item->{'gsx$_cyevm'}->{'$t'},
-                    'duration' => $item->{'gsx$day1'}->{'$t'},
+                    'duration' => $item->{'gsx$day2'}->{'$t'},
                     'location' => 'R3: 三廳',
                 ];
             }
@@ -263,7 +263,7 @@ class MopConResource
         // ];
 
         foreach ($schedule as $id => $value) {
-            if (!is_int($id)) {
+            if (strpos($id, '@@@') !== false) {
                 $schedule[$id]['schedule_topic'] = $schedule[$id]['schedule_id'];
                 $schedule[$id]['schedule_topic_en'] = $schedule[$id]['schedule_id'];
                 $schedule[$id]['schedule_id'] = null;
