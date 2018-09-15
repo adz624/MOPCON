@@ -220,7 +220,7 @@ class MopConResource
             if (isset($item->{'gsx$_cokwr'}->{'$t'})) {
                 $id = intval($item->{'gsx$_cokwr'}->{'$t'}) > 0
                     ? $item->{'gsx$_cokwr'}->{'$t'}
-                    : $item->{'gsx$_cokwr'}->{'$t'} . '@@@' . $item->{'gsx$day1'}->{'$t'};
+                    : 'day1:' . $item->{'gsx$_cokwr'}->{'$t'} . '@@@' . $item->{'gsx$day1'}->{'$t'};
                 $schedule[$id] = [
                     'date' => self::$activityDate['day1'],
                     'schedule_id' => $item->{'gsx$_cokwr'}->{'$t'},
@@ -253,7 +253,7 @@ class MopConResource
             if (isset($item->{'gsx$_ckd7g'}->{'$t'})) {
                 $id = intval($item->{'gsx$_ckd7g'}->{'$t'}) > 0
                     ? $item->{'gsx$_ckd7g'}->{'$t'}
-                    : $item->{'gsx$_ckd7g'}->{'$t'} . '@@@' . $item->{'gsx$day2'}->{'$t'};
+                    : 'day2:' . $item->{'gsx$_ckd7g'}->{'$t'} . '@@@' . $item->{'gsx$day2'}->{'$t'};
 
                 $schedule[$id] = [
                     'date' => self::$activityDate['day2'],
