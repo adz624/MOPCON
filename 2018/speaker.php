@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$apiData = json_decode(file_get_contents('https://mopcon.org/2018/api/speaker'), true);
+$apiData = json_decode(file_get_contents('https://dev.mopcon.org/2018/api/speaker'), true);
 $apiData = $apiData['payload'];
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
@@ -10,6 +10,7 @@ $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
     'pageid' => 'speaker',
+    'og_url' => 'speaker.php',
     'speakers' => $apiData,
     'id' => $id
     
