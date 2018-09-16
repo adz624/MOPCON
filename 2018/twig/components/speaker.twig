@@ -23,7 +23,7 @@
             <div class="modal-body">
               <div class="d-flex flex-column align-items-center">
                 <div class="d-flex justify-content-around speaker-modal-info">
-                  <img class="my-3" src="{{ speaker.picture }}" alt="{{ speaker.name }}">
+                  <img class="my-3 rounded-circle" src="{{ speaker.picture }}" alt="{{ speaker.name }}">
                   <div class="d-flex flex-column mt-5">
                     <h5>{{ speaker.name }}</h5>
                     <span>{{ speaker.job }}</span>
@@ -47,6 +47,7 @@
           </div>
         </div>
       </div>
+      
     {% endif %}
     {% endfor %}
     </div>
