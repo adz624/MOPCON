@@ -8,5 +8,6 @@ $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
     'pageid' => 'ticket',
+    'og_url' => 'ticket.php',
 ];
 Base::render('components/ticket.twig', $params);

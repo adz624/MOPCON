@@ -16,6 +16,7 @@ $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
     'pageid' => 'code_of_conduct',
+    'og_url' => 'code-of-conduct.php',
     'body' => [
         'code_of_conduct' => $lang == 'zh'
         ? $apiData->toArray()[0]['content']

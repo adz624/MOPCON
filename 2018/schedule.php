@@ -9,7 +9,7 @@ $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
     'pageid' => 'schedule',
-    'og_title' => '主要議程',
+    'og_url' => 'schedule.php',
     'schedules_day1' => $apiData['agenda'][0]['items'],
     'schedules_day2' => $apiData['agenda'][1]['items'],
 ];
