@@ -5,7 +5,7 @@
         <button type="button" class="tabs day01 active">11/03</button>
         <button type="button" class="tabs day02">11/04</button>
     </span>
-    <h5>點擊議程標題可觀看詳細介紹</h5>
+    <h5>{{ lang == 'zh'? '點擊議程標題可觀看詳細介紹': 'Click schedule topic to see detail'}}</h5>
    
     <div class="container day01">
         <div class="list mx-auto">
@@ -36,15 +36,15 @@
                         <div>
                         {% endif %}
                             {% if content.category != '' %}
-                                <div class="tag">
+                                <div class="tag pr-sm-0 pr-4">
                                     {% set cates = content.category|split(',') %}
                                     {% for cate in cates %}
                                         <span>{{cate}}</span>
                                     {% endfor %}
                                 </div>
                             {% endif %}
-                            <div class="speaker">{{content.name}}</div>
-                            <p class="detail" >{{content.schedule_topic}}</p>
+                            <div class="speaker">{{lang == 'zh'? content.name:content.name_en}}</div>
+                            <p class="detail" >{{ lang == 'zh'? content.schedule_topic :content.schedule_topic_en }}</p>
                         </div>
                         <div class="modal fade" id="modal-{{ content.schedule_id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel"
     aria-hidden="true">
@@ -58,16 +58,16 @@
                     <div class="d-flex justify-content-around speaker-modal-info">
                         <img class="my-3" src="{{ content.picture }}" alt="{{ content.name }}">
                         <div class="d-flex flex-column mt-5">
-                            <h4>{{ content.name }}</h4>
+                            <h4>{{ lang == 'zh'? content.name:content.name_en }}</h4>
                             <span>{{ content.job }}</span>
                         </div>
                     </div>
 
                     <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
-                        {{ content.schedule_topic }}
+                        {{ lang == 'zh'? content.schedule_topic:content.schedule_topic_en }}
                     </div>
                     <div class="speaker-zh-detail mx-sm-5">
-                        {{ content.schedule_info }}
+                        {{ lang == 'zh'? content.schedule_info:content.schedule_info_en }}
                     </div>
                     {#<div class="speaker-modal-btn mt-5 mb-3">
                         <button>共筆</button>
@@ -120,7 +120,7 @@
                         <div>
                         {% endif %}
                             {% if content.category != '' %}
-                                <div class="tag">
+                                <div class="tag pr-sm-0 pr-4">
                                     {% set cates = content.category|split(',') %}
                                     {% for cate in cates %}
                                         <span>{{cate}}</span>

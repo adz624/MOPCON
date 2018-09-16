@@ -8,6 +8,7 @@ $apiData = $apiData['payload'];
 $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
+    'lang' => $lang,
     'pageid' => 'schedule',
     'og_url' => 'schedule.php',
     'schedules_day1' => $apiData['agenda'][0]['items'],
