@@ -31,9 +31,9 @@ class MopConResource
                 'sheetGridId' => 'ozg0bjp',
                 'columns' => [
                     'speaker_id' => '講者編號',
+                    'schedule_id' => '議程編號',
                     'name' => '姓名',
                     'name_en' => '姓名en',
-                    'type' => '類別',
                     'company' => '公司',
                     'job' => '職稱',
                     'info' => '個人介紹',
@@ -45,12 +45,14 @@ class MopConResource
                     'blog' => 'blog',
                     'website' => 'website',
                     'linkedin' => 'linkedin',
-                    'schedule_topic' => '演講主題',
-                    'schedule_topic_en' => '演講主題en',
-                    'schedule_info' => '演講摘要',
-                    'schedule_info_en' => '演講摘要en',
+                    'type' => 'type',
+                    'schedule_topic' => '議程主題',
+                    'schedule_topic_en' => '議程主題en',
+                    'category' => '議程類別',
+                    'degree_of_difficulty' => '議程難易度',
+                    'schedule_info' => '議程摘要',
+                    'schedule_info_en' => '議程摘要en',
                     'characters' => '字數全形240',
-                    'schedule_id' => '議程編號',
                     'slide' => 'slide',
                     'picture_merged' => '合併講者照片',
                     'video_record' => '禁止錄影',
@@ -97,6 +99,7 @@ class MopConResource
                 'columns' => [
                     'title' => '社群名稱',
                     'id' => 'ID',
+                    'logo' => 'logo',
                     'liasion' => '主要聯絡人',
                     'email' => '聯絡email',
                     'info' => '中文介紹',
@@ -120,7 +123,32 @@ class MopConResource
                 ],
                 'description' => '主辦社群',
                 'status' => 1,
-            ]
+            ],
+            'carousel' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'oc61n7p',
+                'columns' => [
+                    'id' => 'id',
+                    'title' => 'title',
+                    'banner' => 'banner',
+                    'link' => 'link'
+                ],
+                'description' => '廣告',
+                'status' => 1,
+            ],
+            'news' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'o9dug9m',
+                'columns' => [
+                    'id' => 'id',
+                    'time' => 'time',
+                    'title' => 'title',
+                    'description' => 'description',
+                    'link' => 'link'
+                ],
+                'description' => '最新消息',
+                'status' => 1,
+            ],
         ]
     ];
     private static $activityDate = ['day1' => '2018-11-03', 'day2' => '2018-11-04'];
@@ -190,7 +218,10 @@ class MopConResource
 
             // R1 day1
             if (isset($item->{'gsx$_cokwr'}->{'$t'})) {
-                $schedule[$item->{'gsx$_cokwr'}->{'$t'}] = [
+                $id = intval($item->{'gsx$_cokwr'}->{'$t'}) > 0
+                    ? $item->{'gsx$_cokwr'}->{'$t'}
+                    : 'day1:' . $item->{'gsx$_cokwr'}->{'$t'} . '@@@' . $item->{'gsx$day1'}->{'$t'};
+                $schedule[$id] = [
                     'date' => self::$activityDate['day1'],
                     'schedule_id' => $item->{'gsx$_cokwr'}->{'$t'},
                     'duration' => $item->{'gsx$day1'}->{'$t'},
@@ -220,10 +251,14 @@ class MopConResource
 
             // R1 day2
             if (isset($item->{'gsx$_ckd7g'}->{'$t'})) {
-                $schedule[$item->{'gsx$_ckd7g'}->{'$t'}] = [
+                $id = intval($item->{'gsx$_ckd7g'}->{'$t'}) > 0
+                    ? $item->{'gsx$_ckd7g'}->{'$t'}
+                    : 'day2:' . $item->{'gsx$_ckd7g'}->{'$t'} . '@@@' . $item->{'gsx$day2'}->{'$t'};
+
+                $schedule[$id] = [
                     'date' => self::$activityDate['day2'],
                     'schedule_id' => $item->{'gsx$_ckd7g'}->{'$t'},
-                    'duration' => $item->{'gsx$day1'}->{'$t'},
+                    'duration' => $item->{'gsx$day2'}->{'$t'},
                     'location' => 'R1: 一廳',
                 ];
             }
@@ -233,7 +268,7 @@ class MopConResource
                 $schedule[$item->{'gsx$_clrrx'}->{'$t'}] = [
                     'date' => self::$activityDate['day2'],
                     'schedule_id' => $item->{'gsx$_clrrx'}->{'$t'},
-                    'duration' => $item->{'gsx$day1'}->{'$t'},
+                    'duration' => $item->{'gsx$day2'}->{'$t'},
                     'location' => 'R2: 二廳',
                 ];
             }
@@ -243,7 +278,7 @@ class MopConResource
                 $schedule[$item->{'gsx$_cyevm'}->{'$t'}] = [
                     'date' => self::$activityDate['day2'],
                     'schedule_id' => $item->{'gsx$_cyevm'}->{'$t'},
-                    'duration' => $item->{'gsx$day1'}->{'$t'},
+                    'duration' => $item->{'gsx$day2'}->{'$t'},
                     'location' => 'R3: 三廳',
                 ];
             }
@@ -254,8 +289,11 @@ class MopConResource
         // ];
 
         foreach ($schedule as $id => $value) {
-            if (!is_int($id)) {
-                unset($schedule[$id]);
+            if (strpos($id, '@@@') !== false) {
+                $schedule[$id]['schedule_topic'] = $schedule[$id]['schedule_id'];
+                $schedule[$id]['schedule_topic_en'] = $schedule[$id]['schedule_id'];
+                $schedule[$id]['schedule_id'] = null;
+                $schedule[$id]['location'] = '';
                 continue;
             }
             $speakerOfschedule = array_filter($speakers, function ($speaker) use ($id) {

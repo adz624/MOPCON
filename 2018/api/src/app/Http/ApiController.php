@@ -76,6 +76,7 @@ class ApiController extends Controller
             );
 
             $durations = array_unique(array_column($scheduleByDate, 'duration'));
+            sort($durations);
 
             foreach ($durations as $duration) {
                 $items[] = [
@@ -148,11 +149,51 @@ class ApiController extends Controller
 
         $apiDataArray = $apiData->toArray();
 
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['logo'])) {
+                $value['logo'] = $this->fullUrlToAssets . '/images/community/' . $value['logo'];
+            }
+        }
+
         $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
         return $response;
     }
 
     private function accessVolunteer($request, $response, $args)
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
+    }
+
+    private function accessCarousel($request, $response, $args)
+    {
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['banner'])) {
+                $value['banner'] = $this->fullUrlToAssets . '/images/carousel/' . $value['banner'];
+            }
+        }
+
+        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        return $response;
+    }
+
+    private function accessNews($request, $response, $args)
     {
         $apiData = new GoogleDocsSpreadsheet(
             $this->resource['sheetKey'],

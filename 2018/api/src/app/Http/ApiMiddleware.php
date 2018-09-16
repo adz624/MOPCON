@@ -99,6 +99,7 @@ class ApiMiddleware extends Middleware
                 'columns' => [
                     'title' => '社群名稱',
                     'id' => 'id',
+                    'logo' => 'logo',
                     'liasion' => '主要聯絡人',
                     'email' => '聯絡email',
                     'info' => '中文介紹',
@@ -122,7 +123,32 @@ class ApiMiddleware extends Middleware
                 ],
                 'description' => '主辦社群',
                 'status' => 1,
-            ]
+            ],
+            'carousel' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'oc61n7p',
+                'columns' => [
+                    'id' => 'id',
+                    'title' => 'title',
+                    'banner' => 'banner',
+                    'link' => 'link'
+                ],
+                'description' => '廣告',
+                'status' => 1,
+            ],
+            'news' => [
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
+                'sheetGridId' => 'o9dug9m',
+                'columns' => [
+                    'id' => 'id',
+                    'time' => 'time',
+                    'title' => 'title',
+                    'description' => 'description',
+                    'link' => 'link'
+                ],
+                'description' => '最新消息',
+                'status' => 1,
+            ],
         ];
     }
 

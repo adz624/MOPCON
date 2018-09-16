@@ -12,7 +12,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 
   <meta content="行動科技年會 2018 | Mobile / Open / Platform Conference" property="og:site_name">
   <meta content="https://{{website}}/2018/{{ og_url }}" property="og:url">
-  <meta content="{{ og_title }}" property="og:title">
+  <meta content="{{ og_title }} - 行動科技年會 2018 | Mobile / Open / Platform Conference" property="og:title">
   <meta name="description" content="{{ og_description }}" property="og:description">
   <meta content="{{ og_image }}" property="og:image">
   <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/2018/assets/images/favicon.ico">
@@ -76,15 +76,16 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-    {# <!-- <li class="nav-item dropdown">
+    <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 				 aria-expanded="false">
-					議程
+         {{ l10n.common.schedule }}
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="./../schedule.html">主要議程</a>
+					<a class="dropdown-item" href="schedule.php">主要議程</a>
 					<a class="dropdown-item" href="#">交流場次</a>
 			</li>
+      {#<!-- 
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 				 aria-expanded="false">

@@ -3,7 +3,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $params = [
     'pageid' => 'index',
-    'pagetitle' => '首頁'
+    'pagetitle' => '首頁',
     // 'i18n' => file_get_contents(__DIR__ . )
 ];
 
