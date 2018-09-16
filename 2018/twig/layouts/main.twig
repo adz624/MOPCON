@@ -38,14 +38,14 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
       fbq('init', '149507615542184');
       fbq('track', 'PageView');
     </script>
-    
+
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=149507615542184&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-  
+
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}?v={{ date().format('YmdHi') }}">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="{{ baseUrl('assets/js/plugin/jquery.scrollify.js') }}"></script>
@@ -142,7 +142,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 				 aria-expanded="false">
 					{{ l10n.common.pastMOPCON }}
 				</a>
-       
+
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
         <a class="dropdown-item" target="_blank" href="https://mopcon.org/2012">2012</a>
         <a class="dropdown-item" target="_blank" href="https://mopcon.org/2013">2013</a>
@@ -199,7 +199,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
             <div>
             <a href="https://twitter.com/mopcon" target="_blank">
               <img src="/2018/assets/images/social/twitter-logo-silhouette.svg" alt="twitter">
-            </a>  
+            </a>
             </div>
 
         </div>
@@ -207,7 +207,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
     <div class="col-12">
       <p class="text-center">Copyright © 2018 Mobile Open Platform Conference.
 				<a id="COC" href="code-of-conduct.php">{{ l10n.codeOfConduct.title }}</a>
-      </p>                 
+      </p>
     </div>
 </div>
     </div>
