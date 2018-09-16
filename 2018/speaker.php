@@ -10,6 +10,7 @@ $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
     'pageid' => 'speaker',
+    'og_title' => '講者介紹',
     'speakers' => $apiData,
     'id' => $id
     
