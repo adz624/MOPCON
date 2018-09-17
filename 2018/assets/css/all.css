@@ -8975,7 +8975,7 @@ a.text-dark:hover, a.text-dark:focus {
 .modal-dialog.speaker-modal img {
   width: 135px;
   height: 135px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: block;
   border: solid 5px #dcdcdc;
 }
@@ -8999,29 +8999,19 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sponsor-container {
-  height: 206px;
   border: solid 5px #00d0ca;
   border-radius: 10px;
   background-color: #FFFFFF;
-  margin: 2rem;
-}
-
-.sponsor-container .tony-img {
-  width: 560px;
-  height: 100px;
-  cursor: pointer;
-}
-
-.sponsor-container .others-img {
-  width: 140px;
-  height: 140px;
-  cursor: pointer;
+  margin-bottom: 100px;
+  padding: 20px;
 }
 
 .level-info {
   position: absolute;
-  top: -25px;
-  width: 300px;
+  top: -45px;
+  left: 0;
+  right: 0;
+  margin: auto;
   height: 45px;
   border: solid 0 #00d0ca;
   border-radius: 10px;
@@ -9031,6 +9021,12 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 33px;
   font-weight: 500;
   text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .level-info {
+    width: 300px;
+  }
 }
 
 .modal-dialog.sponsor-modal {
@@ -9055,12 +9051,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .modal-dialog.sponsor-modal .sponsor-modal-info {
   width: 100%;
-}
-
-.modal-dialog.sponsor-modal img {
-  width: 180px;
-  height: 180px;
-  display: block;
 }
 
 .modal-dialog.sponsor-modal h5 {

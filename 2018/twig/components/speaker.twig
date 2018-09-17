@@ -1,11 +1,11 @@
 {% extends 'layouts/main.twig' %} {% block content %}
-<div class="d-flex flex-column align-items-center">
-    <h2 class="page-title mt-5 mb-5">SPEAKER</h2>
+    <h2 class="page-title text-center mt-5 mb-5">SPEAKER</h2>
     <div class="container">
 
       <div class="d-flex flex-wrap justify-content-around">
     {% for speaker in speakers %}
     {%if speaker.speaker_id != "" %}
+
         <div class="speaker-info d-flex align-items-center flex-column">
           <img class="my-3" src="{{ speaker.picture }}" alt="" srcset="">
           <h5>{{ speaker.name }}</h5>
@@ -22,7 +22,7 @@
             <div class="modal-body">
               <div class="d-flex flex-column align-items-center">
                 <div class="d-flex justify-content-around speaker-modal-info">
-                  <img class="my-3" src="{{ speaker.picture }}" alt="{{ speaker.name }}">
+                  <img class="my-3 rounded-circle" src="{{ speaker.picture }}" alt="{{ speaker.name }}">
                   <div class="d-flex flex-column mt-5">
                     <h5>{{ speaker.name }}</h5>
                     <span>{{ speaker.job }}</span>
@@ -46,11 +46,11 @@
           </div>
         </div>
       </div>
-      {% endif %}
+      
+    {% endif %}
     {% endfor %}
     </div>
   </div>
-</div>
 {% if id != '' %}
 <script>
 $(function(){
