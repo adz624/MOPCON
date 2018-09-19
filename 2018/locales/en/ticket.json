@@ -24,6 +24,11 @@
         "info": "2018 Devil Night. (11/03 evening)",
         "sale_time": "Avaliable for sale 10/01~10/27"
     },
+    "edsupport": {
+        "name": "Educational Support",
+        "info": "Special thanks to the educational support from principal of Hex School, Wei-Jie, who sponsors students to participate in MOPCON and encourages them to be inspired in community events",
+        "sale_time": ""
+    },
     "sale_not_started": "Sale Not Started",
     "buy_now": "Buy now",
     "sold_out": "Sold out",

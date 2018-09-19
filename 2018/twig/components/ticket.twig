@@ -40,6 +40,24 @@
                 </div>
             </div>
         </div>
+        <div class="ticket-item type1 row mb-4">
+            <div class="ticket-type  d-flex flex-md-column align-items-md-start">
+                <div class="name">{{ l10n.ticket.edsupport.name }}</div>
+            </div>
+            <div class="ticket-content flex-auto">
+                <h4>{{ l10n.ticket.free }}</h4>
+                <p>
+                    {{ l10n.ticket.edsupport.info | raw }}<br>
+                    <span class="text-danger">{{ l10n.ticket.sale_period }} 09/</span>
+                </p>
+                <div class="ticket-tool">
+                    <p class="text-danger mb-0 text-right d-md-block">{{ l10n.ticket.quota }}：50{{ l10n.ticket.people }}</p>
+                    <a href="javascript:void(0);" target="_blank" class="btn btn-ticket" title="Buy ticket">
+                        {{ l10n.ticket.sale_not_started }}
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="ticket-item type2 row mb-4">
             <div class="d-flex ticket-type flex-md-column align-items-md-start">
                 <div class="robbon-wrap">
