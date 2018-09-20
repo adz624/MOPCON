@@ -3,7 +3,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use MopCon2018\Utils\Base;
 
-$apiData = json_decode(file_get_contents('https://dev.mopcon.org/2018/api/schedule'), true);
+$apiData = json_decode(file_get_contents('https://mopcon.org/2018/api/schedule'), true);
 $apiData = $apiData['payload'];
 $lang = \MopCon2018\Utils\Base::getLang();
 
