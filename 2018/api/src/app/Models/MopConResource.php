@@ -121,7 +121,7 @@ class MopConResource
                     'info_en' => '英文介紹',
                     'memberlist' => '組員名單不限中英文',
                 ],
-                'description' => '主辦社群',
+                'description' => '志工組織',
                 'status' => 1,
             ],
             'carousel' => [

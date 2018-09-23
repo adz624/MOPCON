@@ -131,7 +131,7 @@ class ApiMiddleware extends Middleware
                     'id' => 'id',
                     'title' => 'title',
                     'banner' => 'banner',
-                    'link' => 'link'
+                    'link' => 'link',
                 ],
                 'description' => '廣告',
                 'status' => 1,
@@ -144,9 +144,49 @@ class ApiMiddleware extends Middleware
                     'time' => 'time',
                     'title' => 'title',
                     'description' => 'description',
-                    'link' => 'link'
+                    'link' => 'link',
                 ],
                 'description' => '最新消息',
+                'status' => 1,
+            ],
+        ];
+
+        $this->sourceInfo['fieldGame'] = [
+            'new-user' => [
+                'description' => '大地遊戲：建立錢包',
+                'requirement' => ['public_key', 'UUID'],
+                'status' => 1,
+            ],
+            'get-balance' => [
+                'description' => '大地遊戲：餘額查詢',
+                'requirement' => ['public_key', 'UUID'],
+                'status' => 1,
+            ],
+            'buy-gachapon' => [
+                'description' => '大地遊戲：轉蛋',
+                'requirement' => ['public_key', 'UUID', 'amount'],
+                'status' => 1,
+            ],
+
+            // 答題與攤位的部份
+            'get-quiz' => [
+                'description' => '大地遊戲：題庫',
+                'requirement' => null,
+                'status' => 1,
+            ],
+            'solve-quiz' => [
+                'description' => '大地遊戲：答題',
+                'requirement' => ['public_key', 'id', 'answer'],
+                'status' => 1,
+            ],
+            'get-hawker-qrcode' => [
+                'description' => '大地遊戲：攤位 QRCode',
+                'requirement' => ['id'],
+                'status' => 1,
+            ],
+            'get-hawker-mission' => [
+                'description' => '大地遊戲：攤位挑戰',
+                'requirement' => ['id', 'public_key', 'token'],
                 'status' => 1,
             ],
         ];

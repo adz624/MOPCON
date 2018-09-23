@@ -10,6 +10,10 @@ class ApiController extends Controller
     private $resource;
     private $jsonOptions;
     private $fullUrlToAssets;
+    public $errMsg = [
+        4001 => '此請求方法錯誤',
+        4002 => '此請求缺乏必要的參數',
+    ];
 
     public function __invoke($request, $response, $args)
     {
@@ -19,16 +23,35 @@ class ApiController extends Controller
         $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT;
         $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/2018/assets';
 
-        return $this->{$this->transform2Method($this->resourceName)}($request, $response, $args);
+        $prefixWithAction = true;
+        if (in_array($this->sourceFrom, ['fieldGame'])) {
+            $prefixWithAction = false;
+        }
+        $apiMethodName = $this->transform2Method($this->resourceName, $prefixWithAction);
+
+        return $this->{$apiMethodName}($request, $response, $args);
     }
 
-    private function transform2Method($str)
+    public function getErrorInfo($errCode)
+    {
+        return array_filter($this->errMsg, function ($key) use ($errCode) {
+            return $key == $errCode;
+        }, ARRAY_FILTER_USE_KEY);
+    }
+
+    private function transform2Method($str, $prefixWithAction = true, $action = 'access')
     {
         $array = explode('-', $str);
+
+        if (!$prefixWithAction) {
+            // 如果 api resource 自帶行為修飾
+            $action = array_shift($array);
+        }
+
         array_walk($array, function (&$value) {
             $value = ucfirst($value);
         });
-        array_unshift($array, 'access');
+        array_unshift($array, $action);
 
         return implode('', $array);
     }
@@ -205,5 +228,228 @@ class ApiController extends Controller
 
         $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
         return $response;
+    }
+
+    /**
+     * 以下為大地遊戲的 api 資源，sourceFrom 表類型
+     * 這一類的資源命名為 行為-名詞(1 to N with dash)
+     */
+
+    //// A. blockchain
+    // 建立錢包 (POST)
+    private function newUser($request, $response, $args)
+    {
+        $params = $request->getParsedBody();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isPost()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = [
+            'is_success' => true
+        ];
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    // 餘額查詢 (POST)
+    private function getBalance($request, $response, $args)
+    {
+        $params = $request->getParsedBody();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isPost()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = [
+            'balance' => 100
+        ];
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    // 消費行為：轉蛋 (POST)
+    private function buyGachapon($request, $response, $args)
+    {
+        $params = $request->getParsedBody();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isPost()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = [
+            'is_success' => true
+        ];
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    //// B. 答題/攤位任務
+    // 取得題目 (GET)
+    // format: https://jsoneditoronline.org/?id=b2bbffff664242fdaa4ff5e4470a700d
+    private function getQuiz($request, $response, $args)
+    {
+        $params = $request->getQueryParams();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isGet()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = json_decode('[
+            {
+              "date": "2018-01-01",
+              "items": [
+                {
+                  "id": "001",
+                  "type": "quiz",
+                  "title": "什麼是區塊鏈",
+                  "description": null,
+                  "banner_url": null,
+                  "quiz": "What is blockchain?",
+                  "options": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                  ],
+                  "answer": "1",
+                  "status": "-1",
+                  "unlock_time": "10013133"
+                },
+                {
+                  "id": "002",
+                  "type": "task",
+                  "title": "什麼是大數據",
+                  "description": null,
+                  "options": null,
+                  "banner_url": null,
+                  "status": "0",
+                  "answer": null,
+                  "unlock_time": "10013133"
+                },
+                {
+                  "id": "003",
+                  "type": "task",
+                  "title": "找到黃色小鴨",
+                  "description": "必須和別人結伴完成",
+                  "options": null,
+                  "banner_url": null,
+                  "status": "1",
+                  "answer": null,
+                  "unlock_time": "10013133"
+                }
+              ]
+            },
+            {}
+          ]');
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    // 答題 (POST)
+    private function solveQuiz($request, $response, $args)
+    {
+        $params = $request->getParsedBody();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isPost()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = [
+            'is_success' => true,
+            'reward' => 30
+        ];
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    // 取得攤位 Qrcode (POST)
+    private function getHawkerQrcode($request, $response, $args)
+    {
+        $params = $request->getParsedBody();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isPost()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = [
+            'id' => 1,
+            'token' => 'mopcon:123-456-789_' . md5(time())
+        ];
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    // 攤位挑戰 (POST)
+    private function getHawkerMission($request, $response, $args)
+    {
+        $params = $request->getParsedBody();
+        $requirementParams = $this->resource['requirement'];
+
+        // 判斷請求方法
+        if (!$request->isPost()) {
+            $errMsg = $this->getErrorInfo(4001);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 檢查請求中是否帶有必要參數
+        if ($requirementParams != array_intersect($requirementParams, array_keys($params))) {
+            $errMsg = $this->getErrorInfo(4002);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $result = [
+            'is_success' => true,
+            'reward' => 30
+        ];
+        return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 }
