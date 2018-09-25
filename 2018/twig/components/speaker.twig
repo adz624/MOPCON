@@ -7,10 +7,10 @@
     {%if speaker.speaker_id != "" %}
 
         <div class="speaker-info d-flex align-items-center flex-column">
-          <img class="my-3" src="{{ speaker.picture }}" alt="" srcset="">
-          <h5>{{ speaker.name }}</h5>
+          <img class="my-3" src="{{ speaker.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="" srcset="">
+          <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
           <span class="text-center">{{ speaker.job }}</span>
-          <button class="speaker-btn mt-4 mb-3" data-toggle="modal" data-target="#modal-{{ speaker.speaker_id }}">詳細介紹</button>
+          <button class="speaker-btn mt-4 mb-3" data-toggle="modal" data-target="#modal-{{ speaker.speaker_id }}">{{ lang == 'zh'? "詳細介紹" : "More" }}</button>
         </div>
 
       <div class="modal fade"  id="modal-{{ speaker.speaker_id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel" aria-hidden="true">
@@ -22,20 +22,20 @@
             <div class="modal-body">
               <div class="d-flex flex-column align-items-center">
                 <div class="d-flex justify-content-around speaker-modal-info">
-                  <img class="my-3 rounded-circle" src="{{ speaker.picture }}" alt="{{ speaker.name }}">
+                  <img class="my-3 rounded-circle" src="{{ speaker.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ speaker.name }}">
                   <div class="d-flex flex-column mt-5">
-                    <h5>{{ speaker.name }}</h5>
+                    <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
                     <span>{{ speaker.job }}</span>
                   </div>
                 </div>
                 <div class="speaker-zh-detail mx-sm-5">
-                    {{ speaker.info }}
+                    {{ lang == 'zh'? speaker.info:speaker.info_en }}
                 </div>
                 <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
-                   {{ speaker.schedule_topic }}
+                   {{ lang == 'zh'? speaker.schedule_topic:speaker.schedule_topic_en }}
                 </div>
                 <div class="speaker-zh-detail mx-sm-5">
-                    {{ speaker.schedule_info }}
+                    {{ lang == 'zh'? speaker.schedule_info: speaker.schedule_info_en }}
                 </div>
                 {#<div class="speaker-modal-btn mt-5 mb-3">
                   <button>共筆</button>
