@@ -25,8 +25,8 @@
         "sale_time": "期間限定販售 10/01~10/27"
     },
     "edsupport": {
-        "name": "教育贊助",
-        "info": "特別感謝六角學院/校長洧杰贊助支持年輕學子參與MOPCON，鼓勵資訊教育紮根並學習新知與分享的社群精神。",
+        "name": "教育贊助 - 學生限定",
+        "info": "特別感謝六角學院 / 校長洧杰贊助支持年輕學子參與 MOPCON ，鼓勵資訊教育紮根並學習新知與分享的社群精神。<br>此票種僅限<strong style='text-decoration: underline'>學生購買</strong>，購買限制同「學生票」，<strong style='text-decoration: underline'>不包含</strong>兩日餐盒、含午茶點心",
         "sale_time": ""
     },
     "sale_not_started": "尚未開賣",
