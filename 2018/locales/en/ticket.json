@@ -6,9 +6,8 @@
     },
     "student": {
         "name": "Student",
-        "name_second": "Student - Second",
         "info": "<strong style='text-decoration: underline'>Not include</strong> Lunch box and provide afternoon desserts.",
-        "sale_time": "Avaliable for sale 09/11~09/13"
+        "sale_time": "Avaliable for sale 09/11~10/20"
     },
     "vipa": {
         "name": "Premium",

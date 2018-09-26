@@ -6,9 +6,8 @@
     },
     "student": {
         "name": "學生票",
-        "name_second": "學生票 - 第二階段",
         "info": "<strong style='text-decoration: underline'>不包含</strong>兩日餐盒、含午茶點心",
-        "sale_time": "期間限定販售 09/11~09/13"
+        "sale_time": "期間限定販售 09/11~10/20"
     },
     "vipa": {
         "name": "豪華獨享票",
