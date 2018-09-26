@@ -1,7 +1,11 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$spreadSheetKey = '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0';
+use MopCon2018\Utils\Base;
+
+$config = Base::getConfig();
+
+$spreadSheetKey = $config['2018']['sheetKey'];
 $columnMapping = [
     'title' => 'title',
     'content' => 'content',

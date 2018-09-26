@@ -11,6 +11,16 @@ class Base
         return 'Hello, World!';
     }
 
+    public static function getConfig($file_path = __DIR__ . '/../../../config.php')
+    {
+        return require $file_path;
+    }
+
+    public static function getBaseUri()
+    {
+        return isset(static::getConfig()['base_uri']) ? static::getConfig()['base_uri'] : 'https://mopcon.org';
+    }
+
     public static function render($template_name, $params)
     {
         $main_msg = [
