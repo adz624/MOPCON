@@ -6,7 +6,7 @@
     },
     "student": {
         "name": "Student",
-        "info": "<strong style='text-decoration: underline'>Not include</strong> Lunch box and provide afternoon desserts.",
+        "info": "Offer afternoon dessert. <strong style='text-decoration: underline'>Not include</strong> Lunch box.",
         "sale_time": "Avaliable for sale 09/11~10/20"
     },
     "vipa": {
@@ -25,8 +25,8 @@
         "sale_time": "Avaliable for sale 10/01~10/27"
     },
     "edsupport": {
-        "name": "Educational Support",
-        "info": "Special thanks to the educational support from principal of Hex School, Wei-Jie, who sponsors students to participate in MOPCON and encourages them to be inspired in community events",
+        "name": "Educational Support - Just for student",
+        "info": "Special thanks to the educational support from principal of Hex School, Wei-Jie, who sponsors students to participate in MOPCON and encourages them to be inspired in community events.<br>This is a <strong style='text-decoration: underline'>student only</strong> ticket. Offer afternoon dessert. <strong style='text-decoration: underline'>Not include</strong> Lunch box.",
         "sale_time": ""
     },
     "sale_not_started": "Sale Not Started",
