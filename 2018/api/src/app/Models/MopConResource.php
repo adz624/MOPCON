@@ -2,163 +2,18 @@
 namespace MopConApi2018\App\Models;
 
 use MopCon2018\Utils\GoogleDocsSpreadsheet;
+use MopCon2018\Utils\Base;
 
 class MopConResource
 {
-    private static $sourceInfo = [
-        'googleSheet' => [
-            'code-of-conduct' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => '',
-                'columns' => [
-                    'title' => 'title',
-                    'content' => 'content',
-                    'en_title' => 'en-title',
-                    'en_content' => 'en-content',
-                ],
-                'description' => '行動準則',
-                'status' => 1,
-            ],
-            'schedule' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'oaz88cr',
-                'columns' => [],
-                'description' => '議程',
-                'status' => 1,
-            ],
-            'speaker' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'ozg0bjp',
-                'columns' => [
-                    'speaker_id' => '講者編號',
-                    'schedule_id' => '議程編號',
-                    'name' => '姓名',
-                    'name_en' => '姓名en',
-                    'company' => '公司',
-                    'job' => '職稱',
-                    'info' => '個人介紹',
-                    'info_en' => '個人介紹en',
-                    'picture' => '照片',
-                    'filename' => '檔名',
-                    'facebook' => 'facebook',
-                    'github' => 'github',
-                    'blog' => 'blog',
-                    'website' => 'website',
-                    'linkedin' => 'linkedin',
-                    'type' => 'type',
-                    'schedule_topic' => '議程主題',
-                    'schedule_topic_en' => '議程主題en',
-                    'category' => '議程類別',
-                    'degree_of_difficulty' => '議程難易度',
-                    'schedule_info' => '議程摘要',
-                    'schedule_info_en' => '議程摘要en',
-                    'characters' => '字數全形240',
-                    'slide' => 'slide',
-                    'picture_merged' => '合併講者照片',
-                    'video_record' => '禁止錄影',
-                ],
-                'description' => '講者資料',
-                'status' => 1,
-            ],
-            'schedule-unconf' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'oxo5gdm',
-                'columns' => [
-                    'period' => '時段',
-                    'topic' => '主題',
-                    'speaker' => '講者',
-                    'period_2' => '時段_2',
-                    'topic_2' => '主題_2',
-                    'speaker_2' => '講者_2',
-                ],
-                'description' => '交流場次',
-                'status' => 1,
-            ],
-            'sponsor' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o6bk8rc',
-                'columns' => [
-                    'order' => '贊助商編號',
-                    'id' => 'id',
-                    'type' => '贊助商等級',
-                    'name' => '名稱',
-                    'name_en' => '名稱en',
-                    'info' => '介紹',
-                    'info_en' => '介紹en',
-                    'website' => '網址',
-                    'logo' => '照片',
-                    'liaison' => '窗口',
-                    'remarks' => 'remarks',
-                ],
-                'description' => '贊助商',
-                'status' => 1,
-            ],
-            'community' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o95452q',
-                'columns' => [
-                    'title' => '社群名稱',
-                    'id' => 'ID',
-                    'logo' => 'logo',
-                    'liasion' => '主要聯絡人',
-                    'email' => '聯絡email',
-                    'info' => '中文介紹',
-                    'info_en' => '英文介紹',
-                    'facebook' => 'facebook',
-                    'other_links' => '其他連結',
-                ],
-                'description' => '主辦社群',
-                'status' => 1,
-            ],
-            'volunteer' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o2invo3',
-                'columns' => [
-                    'id' => 'id',
-                    'groupname' => '組別中文名稱',
-                    'groupname_en' => '組別英文名稱',
-                    'info' => '中文介紹字內',
-                    'info_en' => '英文介紹',
-                    'memberlist' => '組員名單不限中英文',
-                ],
-                'description' => '志工組織',
-                'status' => 1,
-            ],
-            'carousel' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'oc61n7p',
-                'columns' => [
-                    'id' => 'id',
-                    'title' => 'title',
-                    'banner' => 'banner',
-                    'link' => 'link'
-                ],
-                'description' => '廣告',
-                'status' => 1,
-            ],
-            'news' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o9dug9m',
-                'columns' => [
-                    'id' => 'id',
-                    'time' => 'time',
-                    'title' => 'title',
-                    'description' => 'description',
-                    'link' => 'link'
-                ],
-                'description' => '最新消息',
-                'status' => 1,
-            ],
-        ]
-    ];
     private static $activityDate = ['day1' => '2018-11-03', 'day2' => '2018-11-04'];
 
     public static function getScheduleUnconf()
     {
         $apiData = new GoogleDocsSpreadsheet(
-            self::$sourceInfo['googleSheet']['schedule-unconf']['sheetKey'],
-            self::$sourceInfo['googleSheet']['schedule-unconf']['columns'],
-            self::$sourceInfo['googleSheet']['schedule-unconf']['sheetGridId']
+            static::getSourceInfo()['googleSheet']['schedule-unconf']['sheetKey'],
+            static::getSourceInfo()['googleSheet']['schedule-unconf']['columns'],
+            static::getSourceInfo()['googleSheet']['schedule-unconf']['sheetGridId']
         );
 
         $scheduleUnconfData = [];
@@ -203,9 +58,9 @@ class MopConResource
         $speakers = self::getSpeaker($fullUrlToAssets);
 
         $apiData = new GoogleDocsSpreadsheet(
-            self::$sourceInfo['googleSheet']['schedule']['sheetKey'],
-            self::$sourceInfo['googleSheet']['schedule']['columns'],
-            self::$sourceInfo['googleSheet']['schedule']['sheetGridId']
+            static::getSourceInfo()['googleSheet']['schedule']['sheetKey'],
+            static::getSourceInfo()['googleSheet']['schedule']['columns'],
+            static::getSourceInfo()['googleSheet']['schedule']['sheetGridId']
         );
 
         $schedule = [];
@@ -311,9 +166,9 @@ class MopConResource
     public static function getSpeaker($fullUrlToAssets = null)
     {
         $apiData = new GoogleDocsSpreadsheet(
-            self::$sourceInfo['googleSheet']['speaker']['sheetKey'],
-            self::$sourceInfo['googleSheet']['speaker']['columns'],
-            self::$sourceInfo['googleSheet']['speaker']['sheetGridId']
+            static::getSourceInfo()['googleSheet']['speaker']['sheetKey'],
+            static::getSourceInfo()['googleSheet']['speaker']['columns'],
+            static::getSourceInfo()['googleSheet']['speaker']['sheetGridId']
         );
 
         $apiDataArray = $apiData->toArray();
@@ -329,5 +184,155 @@ class MopConResource
         }
 
         return $apiDataArray;
+    }
+
+    private static function getSourceInfo()
+    {
+        return [
+            'googleSheet' => [
+                'code-of-conduct' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => '',
+                    'columns' => [
+                        'title' => 'title',
+                        'content' => 'content',
+                        'en_title' => 'en-title',
+                        'en_content' => 'en-content',
+                    ],
+                    'description' => '行動準則',
+                    'status' => 1,
+                ],
+                'schedule' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['schedule'],
+                    'columns' => [],
+                    'description' => '議程',
+                    'status' => 1,
+                ],
+                'speaker' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['speaker'],
+                    'columns' => [
+                        'speaker_id' => '講者編號',
+                        'schedule_id' => '議程編號',
+                        'name' => '姓名',
+                        'name_en' => '姓名en',
+                        'company' => '公司',
+                        'job' => '職稱',
+                        'info' => '個人介紹',
+                        'info_en' => '個人介紹en',
+                        'picture' => '照片',
+                        'filename' => '檔名',
+                        'facebook' => 'facebook',
+                        'github' => 'github',
+                        'blog' => 'blog',
+                        'website' => 'website',
+                        'linkedin' => 'linkedin',
+                        'type' => 'type',
+                        'schedule_topic' => '議程主題',
+                        'schedule_topic_en' => '議程主題en',
+                        'category' => '議程類別',
+                        'degree_of_difficulty' => '議程難易度',
+                        'schedule_info' => '議程摘要',
+                        'schedule_info_en' => '議程摘要en',
+                        'characters' => '字數全形240',
+                        'slide' => 'slide',
+                        'picture_merged' => '合併講者照片',
+                        'video_record' => '禁止錄影',
+                    ],
+                    'description' => '講者資料',
+                    'status' => 1,
+                ],
+                'schedule-unconf' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['schedule-unconf'],
+                    'columns' => [
+                        'period' => '時段',
+                        'topic' => '主題',
+                        'speaker' => '講者',
+                        'period_2' => '時段_2',
+                        'topic_2' => '主題_2',
+                        'speaker_2' => '講者_2',
+                    ],
+                    'description' => '交流場次',
+                    'status' => 1,
+                ],
+                'sponsor' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['sponsor'],
+                    'columns' => [
+                        'order' => '贊助商編號',
+                        'id' => 'id',
+                        'type' => '贊助商等級',
+                        'name' => '名稱',
+                        'name_en' => '名稱en',
+                        'info' => '介紹',
+                        'info_en' => '介紹en',
+                        'website' => '網址',
+                        'logo' => '照片',
+                        'liaison' => '窗口',
+                        'remarks' => 'remarks',
+                    ],
+                    'description' => '贊助商',
+                    'status' => 1,
+                ],
+                'community' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['community'],
+                    'columns' => [
+                        'title' => '社群名稱',
+                        'id' => 'ID',
+                        'logo' => 'logo',
+                        'liasion' => '主要聯絡人',
+                        'email' => '聯絡email',
+                        'info' => '中文介紹',
+                        'info_en' => '英文介紹',
+                        'facebook' => 'facebook',
+                        'other_links' => '其他連結',
+                    ],
+                    'description' => '主辦社群',
+                    'status' => 1,
+                ],
+                'volunteer' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['volunteer'],
+                    'columns' => [
+                        'id' => 'id',
+                        'groupname' => '組別中文名稱',
+                        'groupname_en' => '組別英文名稱',
+                        'info' => '中文介紹字內',
+                        'info_en' => '英文介紹',
+                        'memberlist' => '組員名單不限中英文',
+                    ],
+                    'description' => '志工組織',
+                    'status' => 1,
+                ],
+                'carousel' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['carousel'],
+                    'columns' => [
+                        'id' => 'id',
+                        'title' => 'title',
+                        'banner' => 'banner',
+                        'link' => 'link'
+                    ],
+                    'description' => '廣告',
+                    'status' => 1,
+                ],
+                'news' => [
+                    'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                    'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['news'],
+                    'columns' => [
+                        'id' => 'id',
+                        'time' => 'time',
+                        'title' => 'title',
+                        'description' => 'description',
+                        'link' => 'link'
+                    ],
+                    'description' => '最新消息',
+                    'status' => 1,
+                ],
+            ]
+        ];
     }
 }

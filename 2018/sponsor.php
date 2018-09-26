@@ -1,7 +1,10 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$apiData = json_decode(file_get_contents('https://mopcon.org/2018/api/sponsor'), true);
+use MopCon2018\Utils\Base;
+
+$url = Base::getBaseUri() . '/2018/api/sponsor';
+$apiData = json_decode(file_get_contents($url), true);
 $apiData = $apiData['payload'];
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
@@ -13,7 +16,6 @@ $params = [
     'og_url' => 'sponsor.php',
     'sponsors' => $apiData,
     'id' => $id
-    
 ];
 
 \MopCon2018\Utils\Base::render('components/sponsor.twig', $params);

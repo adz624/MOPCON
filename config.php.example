@@ -1,0 +1,18 @@
+<?php
+
+return [
+    'base_uri' => 'https://mopcon.org',
+    '2018' => [
+        'sheetKey' => '',
+        'sheetGridId' => [
+            'schedule' => '',
+            'speaker' => '',
+            'schedule-unconf' => '',
+            'sponsor' => '',
+            'community' => '',
+            'volunteer' => '',
+            'carousel' => '',
+            'news' => ''
+        ]
+    ]
+];

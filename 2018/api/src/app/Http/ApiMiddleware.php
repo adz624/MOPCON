@@ -1,11 +1,13 @@
 <?php
 namespace MopConApi2018\App\Http;
 
+use MopCon2018\Utils\Base;
+
 class ApiMiddleware extends Middleware
 {
     private $tocName = 'public';
     private $sourceInfo = [];
-    
+
     private function init()
     {
         $this->sourceInfo['googleSheet'] = [
@@ -22,15 +24,15 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'schedule' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'oaz88cr',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['schedule'],
                 'columns' => [],
                 'description' => '議程',
                 'status' => 1,
             ],
             'speaker' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'ozg0bjp',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['speaker'],
                 'columns' => [
                     'speaker_id' => '講者編號',
                     'name' => '姓名',
@@ -61,8 +63,8 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'schedule-unconf' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'oxo5gdm',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['schedule-unconf'],
                 'columns' => [
                     'period' => '時段',
                     'topic' => '主題',
@@ -75,8 +77,8 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'sponsor' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o6bk8rc',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['sponsor'],
                 'columns' => [
                     'order' => '贊助商編號',
                     'id' => 'id',
@@ -94,8 +96,8 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'community' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o95452q',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['community'],
                 'columns' => [
                     'title' => '社群名稱',
                     'id' => 'id',
@@ -111,8 +113,8 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'volunteer' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o2invo3',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['volunteer'],
                 'columns' => [
                     'id' => 'id',
                     'groupname' => '組別中文名稱',
@@ -125,8 +127,8 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'carousel' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'oc61n7p',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['carousel'],
                 'columns' => [
                     'id' => 'id',
                     'title' => 'title',
@@ -137,8 +139,8 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
             'news' => [
-                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
-                'sheetGridId' => 'o9dug9m',
+                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['news'],
                 'columns' => [
                     'id' => 'id',
                     'time' => 'time',
