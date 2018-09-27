@@ -9,6 +9,7 @@
         <div class="speaker-info d-flex align-items-center flex-column">
           <img class="my-3" src="{{ speaker.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="" srcset="">
           <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
+          <span class="text-center">{{ speaker.company }}</span>
           <span class="text-center">{{ speaker.job }}</span>
           <button class="speaker-btn mt-4 mb-3" data-toggle="modal" data-target="#modal-{{ speaker.speaker_id }}">{{ lang == 'zh'? "詳細介紹" : "More" }}</button>
         </div>
@@ -25,6 +26,7 @@
                   <img class="my-3 rounded-circle" src="{{ speaker.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ speaker.name }}">
                   <div class="d-flex flex-column mt-5">
                     <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
+                    <span>{{ speaker.company }}</span>
                     <span>{{ speaker.job }}</span>
                   </div>
                 </div>
