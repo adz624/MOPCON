@@ -267,6 +267,50 @@
         {% endfor %}
         </div>
     </div>
+    <div class="sponsor-container container mt-5">
+        <div class="position-relative">
+            <div class="level-info">
+            協辦單位
+            </div>
+        </div>
+        <div class="row">
+        {% for sponsor in sponsors %}
+        {% if sponsor['type'] == '協辦單位' %}
+            <div class="col-md-3 col-sm-6" data-toggle="modal" data-target="#modal-{{sponsor.id}}">
+                <img class="img-fluid" src="{{sponsor.logo}}" alt="{{sponsor.name}}" srcset="">
+            </div>
+            <div class="modal fade"  id="modal-{{ sponsor.id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel" aria-hidden="true">
+        <div class="modal-dialog speaker-modal" role="document">
+          <div class="modal-content">
+            <button type="button" class="speaker-close close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+              <div class="d-flex flex-column align-items-center">
+                <div class="d-flex justify-content-around speaker-modal-info">
+                  <img class="my-3 border-0" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                  <div class="d-flex flex-column mt-5">
+                    <h5>{{ sponsor.name }}</h5>
+                    
+                  </div>
+                </div>
+                <div class="speaker-zh-detail pt-3 mx-sm-5 border-top border-primary">
+                    {{sponsor.info }}
+                </div>            
+               {% if sponsor['website'] != '' %}
+                <a href="{{sponsor.website}}" target="_blank" class="speaker-modal-btn mt-5 mb-3">
+                  <button>官方網站</button>                  
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>
     </div>
 {% if id != '' %}
 <script>
