@@ -12,7 +12,7 @@ class ApiMiddleware extends Middleware
     {
         $this->sourceInfo['googleSheet'] = [
             'code-of-conduct' => [
-                'sheetKey' => Base::getConfig()['2018']['sheetKey'],
+                'sheetKey' => '1v2Cdv40jhN7ekWANdSm9Fsv6rsGjN_VGh2qThjlfvp0',
                 'sheetGridId' => '',
                 'columns' => [
                     'title' => 'title',
