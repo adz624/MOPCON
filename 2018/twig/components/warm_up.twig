@@ -70,53 +70,34 @@
                         活動
                     </div>
                 </div>
+                {% for item in l10n.warmup.schedule %}
+                {% if item.topic %}
+                <div class="row conf">
+                    <div class="col-sm-4 text-center">
+                        {{ item.time }}
+                    </div>
+                    <div class="col-sm-8 text-center">
+                        <!-- <span class="tag">Blockchain</span> -->
+                        <h6>{{ item.name }}</h6>
+                        <span>{{ item.topic }}</span>
+                    </div>
+                </div>
+                {% else %}
                 <div class="row break">
                     <div class="col-sm-4 text-center">
-                        08:30 - 09:30
+                        {{ item.time }}
                     </div>
                     <div class="col-sm-8 text-center">
-                        報到
+                        {{ item.name }}
                     </div>
-                </div>
-                <div class="row conf">
-                    <div class="col-sm-4 text-center">
-                        09:30 - 10:00
-                    </div>
-                    <div class="col-sm-8 text-center">
-                        <span class="tag">Blockchain</span>
-                        <h6>黃敬群(jserv)</h6>
-                        <span>透過區塊鏈打造行動化數位證書</span>
-                    </div>
-                </div>
-                <div class="row conf">
-                    <div class="col-sm-4 text-center">
-                        10:00 - 11:00
-                    </div>
-                    <div class="col-sm-8 text-center">
-                        <span class="tag">Blockchain</span>
-                        <h6>黃敬群(jserv)</h6>
-                        <span>透過區塊鏈打造行動化數位證書</span>
-                    </div>
-                </div>
-                <div class="row conf">
-                    <div class="col-sm-4 text-center">
-                        11:00 - 12:00
-                    </div>
-                    <div class="col-sm-8 text-center">
-                        <span class="tag">Blockchain</span>
-                        <h6>黃敬群(jserv)</h6>
-                        <span>透過區塊鏈打造行動化數位證書</span>
-                    </div>
-                </div>
-                <div class="row break">
-                    <div class="col-sm-4 text-center">12:00</div>
-                    <div class="col-sm-8 text-center">休息 Break</div>
-                </div>
+                </div> 
+                {% endif%}
+                {% endfor %}
             </div>
         </div>
     </div>
 </div>
-<div class="panel">
+<div class="panel mb-5">
     <div class="warm-up row d-flex align-items-center flex-column">
         <div class="warm-up-ticket" data-div-name="#four">
             <h4 class="page-title">售票資訊</h4>
@@ -125,12 +106,12 @@
                     <div class="name">一般票</div>
                 </div>
                 <div class="ticket-content flex-auto">
-                    <h4>NT$ 600 元</h4>
+                    <h4>NT$ 250 元</h4>
                     <p>
-                        一般會眾票乙張，含午餐。
+                        暖身場一般票。
                     </p>
                     <div class="ticket-tool">
-                        <p class="text-danger mb-0 text-right">限量：200名</p>
+                        
                         <a href="#" target="_blank" class="btn btn-ticket" title="But ticket">
                             立即購票
                         </a>
@@ -146,27 +127,22 @@
     </div>
 </div>
 <div class="panel">
-    <div class="warm-up row d-flex align-items-center flex-column">
-        <div class="warm-up-guide d-flex align-items-center flex-column">
-            <div class="warm-up row d-flex align-items-center flex-column">
-                <h4 class="page-title">指導單位</h4>
-                <div class="item">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/images/warm-up/asia_silicon.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="warm-up-guide d-flex align-items-center flex-column">
-                <div class="warm-up row d-flex align-items-center flex-column">
-                    <h4 class="page-title">協辦單位</h4>
-                    <div class="item">
-                        <a href="#">
-                            <img class="img-responsive" src="assets/images/warm-up/asia_silicon.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="warm-up ">
+        
+                <h4 class="page-title">共同主辦單位</h4>
+       
     </div>
+    <div class="d-flex justify-content-center">
+            
+            <div class="col-offset-4 col-md-3">
+                <img class="" src="assets/images/mopcon2018_large.jpg">
+            </div>
+            
+            <div class="col-md-3">
+                <img class="" src="assets/images/sponsor/ASVDA.jpg">
+            </div>
+            
+            
+        </div>
 </div>
 {% endblock %}

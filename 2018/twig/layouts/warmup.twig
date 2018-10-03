@@ -47,7 +47,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}?v={{ date().format('YmdHi') }}">
+  <link rel="stylesheet" type="text/css" href="{{ baseUrl('assets/css/all.css') }}">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="{{ baseUrl('assets/js/plugin/jquery.scrollify.js') }}"></script>
@@ -97,7 +97,7 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
                 </li>
                 <li id="spthank-link" class="nav-item dropdown">
                     <a class="nav-link warm-up-toggle">
-                        特別感謝
+                        主辦單位
                     </a>
                 </li>
                 <li class="nav-item dropdown">
@@ -113,16 +113,16 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
         </div>
     </nav>
     <div class="w-100 ele-bg">
-        <div class="warm-up row d-flex align-items-center flex-column">
-            <div class="banner col-sm-6 d-flex flex-column align-items-center">
+        <div class="warm-up banner-box row d-flex align-items-center flex-column">
+            <div class="banner d-flex flex-column align-items-center">
                 <img src="./assets/images/warm-up/logo-visual.png" class="logo">
                 <img src="./assets/images/warm-up/mopcon.png" class="title">
                 <h4>Dakuo高雄市數位內容創意中心</h4>
                 <h2>11/2</h2>
             </div>
-            <a href="" class="arrow-go">
+            <div id="warm-arrow-go" class="arrow-go">
                 <img src="./assets/images/warm-up/arrows.png" srcset="">
-            </a>
+            </div>
             <span class="ticket-info">購票資訊</span>
         </div>
         <img src="./assets/images/warm-up/ele-1.png" class="ele ele-1">
@@ -183,30 +183,62 @@ app, 人工智慧, 機器學習, 物聯網, iot, cloud, 雲端, 大數據">
 </div>
     </div>
 </footer>
-
+<div id="back-to-top" title="Back to top" class="">
+    <i class="top-arrow-icon"></i>
+</div>
 </body>
 <script>
 
+    $(function () {
     $.scrollify({
         section: ".panel",
-        // sectionName: '#warm',
+        // sectionName: false,
+        setHeights: false,
         scrollSpeed: 1100,
         overflowScroll: true,
     });
+
+    $(window).scroll(function () {
+        const scrollVal = $(this).scrollTop();
+        if (scrollVal > 300){
+            $("#back-to-top").addClass('show-top-arrow');
+        } else {
+            $("#back-to-top").removeClass('show-top-arrow');
+        }
+    });
+
+    $.scrollify.disable();
+
     $("#warm-up-link").click(function(){
-            $.scrollify.move("#2");
-        });
+        warmupScrollify("#2");
+    });
 
-        $("#timetable-link").click(function(){
-            $.scrollify.move("#3");
-        });
+    $("#timetable-link").click(function(){
+        warmupScrollify("#3");
+    });
 
-        $("#ticket-link").click(function(){
-            $.scrollify.move("#4");
-        });
-        $("#spthank-link").click(function(){
-            $.scrollify.move("#5");
-        });
+    $("#ticket-link").click(function(){
+        warmupScrollify("#4");
+    });
+
+    $("#spthank-link").click(function(){
+        warmupScrollify("#5");
+    });
+
+    $("#warm-arrow-go").click(function(){
+        warmupScrollify("#3");
+    });
+
+    $("#back-to-top").click(function(){
+        warmupScrollify("#1");
+    });
+
+    function warmupScrollify(target) {
+        $.scrollify.enable();
+        $.scrollify.move(target);
+        $.scrollify.disable();
+    }
+});
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
