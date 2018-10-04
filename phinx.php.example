@@ -1,0 +1,39 @@
+<?php
+return [
+    'paths' => [
+        'seeds' => '%%PHINX_CONFIG_DIR%%/db/seeds',
+        'migrations' => '%%PHINX_CONFIG_DIR%%/db/migrations',
+    ],
+    'version_order' => 'creation',
+    'environments' => [
+        'default_migration_table' => 'phinxlog',
+        'default_database' => 'testing',
+        'production' => [
+            'host' => 'localhost',
+            'name' => 'mopcon-deploy',
+            'pass' => '',
+            'adapter' => 'mysql',
+            'charset' => 'utf8',
+            'port' => 3306,
+            'user' => '',
+        ],
+        'development' => [
+            'host' => 'localhost',
+            'name' => 'mopcon-dev',
+            'pass' => '',
+            'adapter' => 'mysql',
+            'charset' => 'utf8',
+            'port' => 3306,
+            'user' => 'mopcon-dev',
+        ],
+        'testing' => [
+            'host' => 'mariadb',
+            'name' => 'mopcon-test',
+            'pass' => '',
+            'adapter' => 'mysql',
+            'charset' => 'utf8',
+            'port' => 3306,
+            'user' => 'mopcon-test',
+        ],
+    ],
+];
