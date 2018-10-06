@@ -9,7 +9,7 @@ if ($_SERVER['HTTP_HOST'] == 'dev.mopcon.org') {
 } elseif ($_SERVER['HTTP_HOST'] == 'mopcon.org') {
     $version = 'production';
 }
-$dbEnvFromPhinx = $phinx['environments'][$version];
+$dbEnvFromPhinx = $phinx['environments']['mopcon2018'];
 
 $config = [
     'settings' => [

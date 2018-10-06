@@ -15,5 +15,11 @@
             "MopCon2018\\": "2018/src",
             "MopConApi2018\\": "2018/api/src"
         }
+    },
+    "scripts": {
+        "migrate2018": [
+            "vendor/bin/phinx migrate -vvv -e mopcon2018 --ansi",
+            "vendor/bin/phinx status -vvv -e mopcon2018 --ansi"
+        ]
     }
 }
