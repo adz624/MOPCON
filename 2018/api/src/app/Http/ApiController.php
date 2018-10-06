@@ -254,6 +254,13 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
+        // $table = $this->db->table('user');
+        // var_dump($table);
+        $user = new \MopConApi2018\App\Models\User;
+        $user->uuid = uniqid('test_');
+        $user->device_type = 'undefined';
+        $user->save();
+
         $result = [
             'is_success' => true
         ];

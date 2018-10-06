@@ -12,7 +12,7 @@ class Controller
 
     public function __get($property)
     {
-        if (property_exists($this->container, $property)) {
+        if ($this->container->$property) {
             return $this->container->{$property};
         }
     }

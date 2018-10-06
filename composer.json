@@ -7,7 +7,8 @@
         "jralph/twig-markdown": "dev-master",
         "slim/slim": "^3.0",
         "robmorgan/phinx": "^0.10.6",
-        "illuminate/database": "5.4"
+        "illuminate/database": "5.4",
+        "doctrine/inflector": "1.1.0"
     },
     "autoload": {
         "psr-4": {

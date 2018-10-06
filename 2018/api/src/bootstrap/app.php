@@ -12,11 +12,12 @@ if ($_SERVER['HTTP_HOST'] == 'dev.mopcon.org') {
 $dbEnvFromPhinx = $phinx['environments'][$version];
 
 $config = [
-    'setting' => [
+    'settings' => [
         'displayErrorDetails' => true,
         'db' => [
             'driver' => $dbEnvFromPhinx['adapter'],
             'host' => $dbEnvFromPhinx['host'],
+            'port' => $dbEnvFromPhinx['port'],
             'database' => $dbEnvFromPhinx['name'],
             'username' => $dbEnvFromPhinx['user'],
             'password' => $dbEnvFromPhinx['pass'],
@@ -34,13 +35,12 @@ $container['ApiController'] = function ($container) {
     return new MopConApi2018\App\Http\ApiController($container);
 };
 
-$container['db'] = function ($container) {
-    $capsule = new \Illuminate\Database\Capsule\Manager;
-    $capsule->addConnection($container['settings']['db']);
+$capsule = new \Illuminate\Database\Capsule\Manager;
+$capsule->addConnection($container['settings']['db']);
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
 
-    $capsule->setAsGlobal();
-    $capsule->bootEloquent();
-
+$container['db'] = function ($container) use ($capsule) {
     return $capsule;
 };
 
