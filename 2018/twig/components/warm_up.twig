@@ -109,21 +109,21 @@
                 </button>
                 <div class="modal-body">
                     <div class="d-flex flex-column align-items-center">
-                        <div class="d-flex justify-content-around speaker-modal-info">
-                        <img class="my-3 rounded-circle" src="{{ item.image|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ speaker.name }}">
+                        <div class="d-flex speaker-modal-info px-sm-4">
+                        <img class="my-3 rounded-circle mr-3" src="{{ item.image|default('/2018/assets/images/speaker/blank_speaker.jpg') }}" alt="{{ speaker.name }}">
                             <div class="d-flex flex-column mt-5">
                                 <h4>{{ item.name }}</h4>
                                 <span>{{ item.company }}</span>
                                 <span>{{ item.job }}</span>
                             </div>
                         </div>
-                            <div class="speaker-zh-detail mx-sm-5">
+                            <div class="speaker-zh-detail px-sm-4">
                             {{ item.info }}
                         </div>
-                        <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
+                        <div class="speaker-eng-detail px-sm-4 mt-3 pt-3 mb-4 border-top border-primary">
                         {{ item.topic }}
                         </div>
-                        <div class="speaker-zh-detail mx-sm-5">
+                        <div class="speaker-zh-detail px-sm-4">
                             {{ item.summary }}
                         </div>
                         {#<div class="speaker-modal-btn mt-5 mb-3">

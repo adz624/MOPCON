@@ -8,7 +8,6 @@
     <h5>{{ lang == 'zh'? '點擊議程標題可觀看詳細介紹': 'Click schedule topic to see detail'}}</h5>
    
     <div class="container day01">
-        <div class="list mx-auto">
             <div class="row title">
                 <div class="col-lg-3">11/03</div>
                 <div class="col-lg-3">R1(3F一廳)</div>
@@ -55,7 +54,7 @@
             </button>
             <div class="modal-body">
                 <div class="d-flex flex-column align-items-center">
-                    <div class="d-flex justify-content-around speaker-modal-info">
+                    <div class="d-flex speaker-modal-info px-sm-4">
                         <img class="my-3 rounded-circle" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
                         <div class="d-flex flex-column mt-5">
                             <h4>{{ lang == 'zh'? content.name:content.name_en }}</h4>
@@ -63,10 +62,10 @@
                         </div>
                     </div>
 
-                    <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
+                    <div class="speaker-eng-detail px-sm-4 mt-3 pt-3 mb-4 border-top border-primary">
                         {{ lang == 'zh'? content.schedule_topic:content.schedule_topic_en }}
                     </div>
-                    <div class="speaker-zh-detail mx-sm-5">
+                    <div class="speaker-zh-detail px-sm-4">
                         {{ lang == 'zh'? content.schedule_info:content.schedule_info_en }}
                     </div>
                     {#<div class="speaker-modal-btn mt-5 mb-3">
@@ -89,10 +88,8 @@
 
         {% endfor %}
            
-        </div>
     </div>
     <div class="container day02">
-        <div class="list mx-auto">
             <div class="row title">
                 <div class="col-lg-3">11/04</div>
                 <div class="col-lg-3">R1(3F一廳)</div>
@@ -130,38 +127,38 @@
                             <div class="speaker">{{content.name}}</div>
                             <p class="detail" >{{content.schedule_topic}}</p>
                         </div>
-                        <div class="modal fade" id="modal-{{ content.schedule_id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog speaker-modal" role="document">
-        <div class="modal-content">
-            <button type="button" class="speaker-close close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="modal-body">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="d-flex justify-content-around speaker-modal-info">
-                        <img class="my-3 rounded-circle" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
-                        <div class="d-flex flex-column mt-5">
-                            <h4>{{ content.name }}</h4>
-                            <span>{{ content.job }}</span>
-                        </div>
-                    </div>
+                        <div class="modal fade" id="modal-{{ content.schedule_id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel" aria-hidden="true">
+                            <div class="modal-dialog speaker-modal" role="document">
+                                <div class="modal-content">
+                                    <button type="button" class="speaker-close close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="modal-body">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="d-flex speaker-modal-info px-sm-4">
+                                                <img class="my-3 rounded-circle" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
+                                                <div class="d-flex flex-column mt-5">
+                                                    <h5>{{ content.name }}</h5>
+                                                    <span>{{ content.company }}</span>
+                                                    <span>{{ content.job }}</span>
+                                                </div>
+                                            </div>
 
-                    <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
-                        {{ content.schedule_topic }}
-                    </div>
-                    <div class="speaker-zh-detail mx-sm-5">
-                        {{ content.schedule_info }}
-                    </div>
-                    {#<div class="speaker-modal-btn mt-5 mb-3">
-                        <button>共筆</button>
-                        <button>Slide</button>
-                    </div>#}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                                            <div class="speaker-eng-detail px-sm-4 mt-3 pt-3 mb-4 border-top border-primary">
+                                                {{ content.schedule_topic }}
+                                            </div>
+                                            <div class="speaker-zh-detail px-sm-4">
+                                                {{ content.schedule_info }}
+                                            </div>
+                                            {#<div class="speaker-modal-btn mt-5 mb-3">
+                                                <button>共筆</button>
+                                                <button>Slide</button>
+                                            </div>#}
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
                     </div>
                     
                 {% else %}
@@ -172,7 +169,6 @@
             </div>
 
         {% endfor %}
-    </div>
 </div>
 <script>
 $(function () {
