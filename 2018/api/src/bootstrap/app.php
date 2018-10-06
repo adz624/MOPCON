@@ -1,11 +1,47 @@
 <?php
 require __DIR__ . '/../../../../vendor/autoload.php';
+$phinx = require __DIR__ . '/../../../../phinx.php';
 
-$app = new Slim\App;
+// 從 hostname 判斷目前運行環境
+$version = 'testing';
+if ($_SERVER['HTTP_HOST'] == 'dev.mopcon.org') {
+    $version = 'development';
+} elseif ($_SERVER['HTTP_HOST'] == 'mopcon.org') {
+    $version = 'production';
+}
+$dbEnvFromPhinx = $phinx['environments'][$version];
+
+$config = [
+    'setting' => [
+        'displayErrorDetails' => true,
+        'db' => [
+            'driver' => $dbEnvFromPhinx['adapter'],
+            'host' => $dbEnvFromPhinx['host'],
+            'database' => $dbEnvFromPhinx['name'],
+            'username' => $dbEnvFromPhinx['user'],
+            'password' => $dbEnvFromPhinx['pass'],
+            'charset'   => $dbEnvFromPhinx['charset'],
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ]
+    ]
+];
+
+$app = new Slim\App($config);
 $container = $app->getContainer();
 
 $container['ApiController'] = function ($container) {
     return new MopConApi2018\App\Http\ApiController($container);
+};
+
+$container['db'] = function ($container) {
+    $capsule = new \Illuminate\Database\Capsule\Manager;
+    $capsule->addConnection($container['settings']['db']);
+
+    $capsule->setAsGlobal();
+    $capsule->bootEloquent();
+
+    return $capsule;
 };
 
 $app->get('/2018/api/__info__', function () {
