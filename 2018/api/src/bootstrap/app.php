@@ -24,7 +24,8 @@ $config = [
             'charset'   => $dbEnvFromPhinx['charset'],
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-        ]
+        ],
+        'version' => $version
     ]
 ];
 
@@ -42,6 +43,10 @@ $capsule->bootEloquent();
 
 $container['db'] = function ($container) use ($capsule) {
     return $capsule;
+};
+
+$container['isProduction'] = function () use ($config) {
+    return $config['settings']['version'] == 'production';
 };
 
 $app->get('/2018/api/__info__', function () {

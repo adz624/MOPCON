@@ -254,15 +254,25 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        // $table = $this->db->table('user');
-        // var_dump($table);
-        $user = new \MopConApi2018\App\Models\User;
-        $user->uuid = uniqid('test_');
-        $user->device_type = 'undefined';
-        $user->save();
+        $is_success = false;
+        // 測試環境 testing/development
+        if (!$this->container->isProduction) {
+            $user = new \MopConApi2018\App\Models\User;
+            $user->uuid = uniqid('test_');
+            $user->device_type = 'undefined';
+
+            /**
+             * 串接 biilabs api 去建立錢包
+             *
+             * 如果曾經上傳過 uuid, 只檢查是否有 biilabs 錢包
+             * 沒有才做建立 and store address
+             */
+            $user->save();
+            $is_success = true;
+        }
 
         $result = [
-            'is_success' => true
+            'is_success' => $is_success
         ];
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
