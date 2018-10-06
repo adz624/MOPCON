@@ -258,8 +258,10 @@ class ApiController extends Controller
         // 測試環境 testing/development
         if (!$this->container->isProduction) {
             $user = new \MopConApi2018\App\Models\User;
-            $user->uuid = uniqid('test_');
+            $user->uuid = (!empty($params['UUID'])) ? $params['UUID'] : uniqid('test_');
+            $user->public_key = $params['public_key'];
             $user->device_type = 'undefined';
+            $user->fcm_push_token = (isset($params['fcm_push_token'])) ? $params['fcm_push_token'] : '';
 
             /**
              * 串接 biilabs api 去建立錢包
