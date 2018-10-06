@@ -1,4 +1,4 @@
-{% extends 'layouts/warmup.twig' %} {% block content %}
+{% extends 'layouts/warmupLayout.twig' %} {% block content %}
 
 <div class="panel">
     <div class="warm-up row d-flex align-items-center flex-column">
@@ -76,12 +76,13 @@
                     <div class="col-sm-4 text-center">
                         {{ item.time }}
                     </div>
-                    <div class="col-sm-8 text-center">
+                    <div class="col-sm-8 text-center" data-toggle="modal" data-target="#modal-{{ loop.index }}">
                         <!-- <span class="tag">Blockchain</span> -->
                         <h6>{{ item.name }}</h6>
                         <span>{{ item.topic }}</span>
                     </div>
                 </div>
+                
                 {% else %}
                 <div class="row break">
                     <div class="col-sm-4 text-center">
@@ -97,6 +98,45 @@
         </div>
     </div>
 </div>
+{% for item in l10n.warmup.schedule %}
+    {% if item.topic %}
+    <div class="modal fade" id="modal-{{ loop.index }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel"
+                        aria-hidden="true">
+        <div class="modal-dialog speaker-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="speaker-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="d-flex justify-content-around speaker-modal-info">
+                        <img class="my-3 rounded-circle" src="{{ item.image|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ speaker.name }}">
+                            <div class="d-flex flex-column mt-5">
+                                <h4>{{ item.name }}</h4>
+                                <span>{{ item.company }}</span>
+                                <span>{{ item.job }}</span>
+                            </div>
+                        </div>
+                            <div class="speaker-zh-detail mx-sm-5">
+                            {{ item.info }}
+                        </div>
+                        <div class="speaker-eng-detail mx-sm-5 mt-3 pt-3 mb-4 border-top border-primary">
+                        {{ item.topic }}
+                        </div>
+                        <div class="speaker-zh-detail mx-sm-5">
+                            {{ item.summary }}
+                        </div>
+                        {#<div class="speaker-modal-btn mt-5 mb-3">
+                            <button>共筆</button>
+                            <button>Slide</button>
+                        </div>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif%}
+{% endfor %}
 <div class="panel" style="margin-bottom:8rem;">
     <div class="warm-up row d-flex align-items-center flex-column">
         <div class="warm-up-ticket" data-div-name="#four">
@@ -129,7 +169,7 @@
 <div class="panel">
     <div class="warm-up ">
         
-                <h4 class="page-title">共同主辦單位</h4>
+        <h4 class="page-title">共同主辦單位</h4>
        
     </div>
     <div class="d-flex justify-content-center">
