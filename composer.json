@@ -4,7 +4,7 @@
     "require": {
         "twig/twig": "^1.18",
         "erusev/parsedown": "^1.5",
-        "jralph/twig-markdown": "dev-master",
+        "jralph/twig-markdown": "1.0.1",
         "slim/slim": "^3.0",
         "robmorgan/phinx": "^0.10.6",
         "illuminate/database": "5.4",
