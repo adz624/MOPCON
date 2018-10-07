@@ -7,8 +7,8 @@ return [
     'version_order' => 'creation',
     'environments' => [
         'default_migration_table' => 'phinxlog',
-        'default_database' => 'default',
-        'default' => [
+        'default_database' => 'mopcon2018',
+        'mopcon2018' => [
             'host' => 'localhost',
             'name' => 'your db name',
             'pass' => 'your password',
