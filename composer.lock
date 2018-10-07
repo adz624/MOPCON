@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e055c27e95a0a140ed42c90a0b911ce5",
+    "content-hash": "746c80081417eb8201c8a9ab64bf4426",
     "packages": [
         {
             "name": "cakephp/cache",
@@ -1766,6 +1766,47 @@
                 "templating"
             ],
             "time": "2018-07-13T07:12:17+00:00"
+        },
+        {
+            "name": "wruczek/php-file-cache",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Wruczek/PHP-File-Cache.git",
+                "reference": "96fd502522beb7438f0874c7d39e096f5c96764f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Wruczek/PHP-File-Cache/zipball/96fd502522beb7438f0874c7d39e096f5c96764f",
+                "reference": "96fd502522beb7438f0874c7d39e096f5c96764f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php": ">=5.6.0",
+                "phpunit/phpunit": "5.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wruczek\\PhpFileCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wruczek",
+                    "email": "wruczekk@gmail.com",
+                    "homepage": "https://wruczek.tech"
+                }
+            ],
+            "description": "Light, simple and standalone PHP in-file caching class",
+            "time": "2018-01-20T17:06:00+00:00"
         }
     ],
     "packages-dev": [],

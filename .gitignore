@@ -11,3 +11,4 @@ npm-debug.log
 .idea/
 config.php
 phinx.php
+*.cache.php

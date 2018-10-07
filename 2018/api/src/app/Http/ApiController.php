@@ -8,6 +8,7 @@ class ApiController extends Controller
 {
     private $sourceFrom;
     private $resource;
+    private $resourceName;
     private $jsonOptions;
     private $fullUrlToAssets;
     public $errMsg = [
@@ -71,11 +72,14 @@ class ApiController extends Controller
 
     private function accessCodeOfConduct($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiData = new GoogleDocsSpreadsheet(
+                $this->resource['sheetKey'],
+                $this->resource['columns'],
+                $this->resource['sheetGridId']
+            );
+            return $apiData;
+        }, 600);
 
         # custom processing codes...
 
@@ -85,149 +89,170 @@ class ApiController extends Controller
 
     private function accessSchedule($request, $response, $args)
     {
-        $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
-        $scheduleUnconf = MopConResource::getScheduleUnconf();
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
+            $scheduleUnconf = MopConResource::getScheduleUnconf();
 
-        $agenda = [];
-        foreach (array_unique(array_column($schedule, 'date')) as $date) {
-            $items = [];
+            $agenda = [];
+            foreach (array_unique(array_column($schedule, 'date')) as $date) {
+                $items = [];
 
-            $scheduleByDate = array_values(
-                array_filter($schedule, function ($row) use ($date) {
-                    return $row['date'] == $date;
-                })
-            );
+                $scheduleByDate = array_values(
+                    array_filter($schedule, function ($row) use ($date) {
+                        return $row['date'] == $date;
+                    })
+                );
 
-            $durations = array_unique(array_column($scheduleByDate, 'duration'));
-            sort($durations);
+                $durations = array_unique(array_column($scheduleByDate, 'duration'));
+                sort($durations);
 
-            foreach ($durations as $duration) {
-                $items[] = [
-                    'duration' => $duration,
-                    'agendas' => array_values(
-                        array_filter($scheduleByDate, function ($row) use ($duration) {
-                            return $row['duration'] == $duration;
-                        })
-                    )
-                ];
+                foreach ($durations as $duration) {
+                    $items[] = [
+                        'duration' => $duration,
+                        'agendas' => array_values(
+                            array_filter($scheduleByDate, function ($row) use ($duration) {
+                                return $row['duration'] == $duration;
+                            })
+                        )
+                    ];
+                }
+
+                $agenda[] = compact('date', 'items');
             }
 
-            $agenda[] = compact('date', 'items');
-        }
-
-        return $response = $response->withJSON(
-            [
+            $data = [
                 'payload' => [
                     'agenda' => $agenda,
                     'talk' => $scheduleUnconf
                 ]
-            ],
-            200,
-            $this->jsonOptions
-        );
+            ];
+            return $data;
+        }, 600);
+
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessScheduleUnconf($request, $response, $args)
     {
-        $scheduleUnconfData = MopConResource::getScheduleUnconf();
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $scheduleUnconfData = MopConResource::getScheduleUnconf();
+            return ['payload' => $scheduleUnconfData];
+        }, 600);
 
-        return $response = $response->withJson(['payload' => $scheduleUnconfData], 200, $this->jsonOptions);
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     private function accessSpeaker($request, $response, $args)
     {
-        $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
-        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
+            return ['payload' => $apiDataArray];
+        }, 600);
 
-        return $response;
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     private function accessSponsor($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiData = new GoogleDocsSpreadsheet(
+                $this->resource['sheetKey'],
+                $this->resource['columns'],
+                $this->resource['sheetGridId']
+            );
 
-        $apiDataArray = $apiData->toArray();
+            $apiDataArray = $apiData->toArray();
 
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['logo'])) {
-                $value['logo'] = $this->fullUrlToAssets . '/images/sponsor/' . $value['logo'];
+            foreach ($apiDataArray as $key => &$value) {
+                if (!empty($value['logo'])) {
+                    $value['logo'] = $this->fullUrlToAssets . '/images/sponsor/' . $value['logo'];
+                }
             }
-        }
 
-        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
-        return $response;
+            return ['payload' => $apiDataArray];
+        }, 600);
+
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     private function accessCommunity($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiData = new GoogleDocsSpreadsheet(
+                $this->resource['sheetKey'],
+                $this->resource['columns'],
+                $this->resource['sheetGridId']
+            );
 
-        $apiDataArray = $apiData->toArray();
+            $apiDataArray = $apiData->toArray();
 
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['logo'])) {
-                $value['logo'] = $this->fullUrlToAssets . '/images/community/' . $value['logo'];
+            foreach ($apiDataArray as $key => &$value) {
+                if (!empty($value['logo'])) {
+                    $value['logo'] = $this->fullUrlToAssets . '/images/community/' . $value['logo'];
+                }
             }
-        }
 
-        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
-        return $response;
+            return ['payload' => $apiDataArray];
+        }, 600);
+
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     private function accessVolunteer($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiData = new GoogleDocsSpreadsheet(
+                $this->resource['sheetKey'],
+                $this->resource['columns'],
+                $this->resource['sheetGridId']
+            );
 
-        $apiDataArray = $apiData->toArray();
+            $apiDataArray = $apiData->toArray();
 
-        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
-        return $response;
+            return ['payload' => $apiDataArray];
+        }, 600);
+
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     private function accessCarousel($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiData = new GoogleDocsSpreadsheet(
+                $this->resource['sheetKey'],
+                $this->resource['columns'],
+                $this->resource['sheetGridId']
+            );
 
-        $apiDataArray = $apiData->toArray();
+            $apiDataArray = $apiData->toArray();
 
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['banner'])) {
-                $value['banner'] = $this->fullUrlToAssets . '/images/carousel/' . $value['banner'];
+            foreach ($apiDataArray as $key => &$value) {
+                if (!empty($value['banner'])) {
+                    $value['banner'] = $this->fullUrlToAssets . '/images/carousel/' . $value['banner'];
+                }
             }
-        }
 
-        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
-        return $response;
+            return ['payload' => $apiDataArray];
+        }, 600);
+
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     private function accessNews($request, $response, $args)
     {
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
+        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
+            $apiData = new GoogleDocsSpreadsheet(
+                $this->resource['sheetKey'],
+                $this->resource['columns'],
+                $this->resource['sheetGridId']
+            );
 
-        $apiDataArray = $apiData->toArray();
+            $apiDataArray = $apiData->toArray();
 
-        $response = $response->withJson(['payload' => $apiDataArray], 200, $this->jsonOptions);
-        return $response;
+            return ['payload' => $apiDataArray];
+        }, 600);
+
+        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
 
     /**

@@ -53,22 +53,16 @@ $container['isProduction'] = function () use ($config) {
 };
 
 $container['cache'] = function () use ($config) {
-    return function ($cache_key, $seconds = 600) use ($config) {
-        $cache_path = isset($config['settings']['cache']['path']) ? $config['settings']['cache']['path'] : '';
-
-        if (empty($cache_path)) {
-            return;
-        }
-
-        if (!is_dir($cache_path)) {
-            mkdir($cache_path, 0755, true);
-        }
-    };
+    return $cache = new \Wruczek\PhpFileCache\PhpFileCache(
+        $config['settings']['cache']['path']
+    );
 };
+
 
 $app->get('/2018/api/__info__', function () {
     try {
         $ch = curl_init();
+        // 484 該更新了？ 4...
         curl_setopt($ch, CURLOPT_URL, "https://hackmd.io/s/ByvLG0oWX");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_TCP_KEEPALIVE, 1);
