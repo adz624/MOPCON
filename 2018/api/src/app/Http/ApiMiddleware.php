@@ -173,7 +173,7 @@ class ApiMiddleware extends Middleware
             // 答題與攤位的部份
             'get-quiz' => [
                 'description' => '大地遊戲：題庫',
-                'requirement' => null,
+                'requirement' => [],
                 'status' => 1,
             ],
             'solve-quiz' => [
