@@ -25,7 +25,10 @@ $config = [
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
         ],
-        'version' => $version
+        'version' => $version,
+        'cache' => [
+            'path' => __DIR__ . '/../storage/cache'
+        ]
     ]
 ];
 
@@ -47,6 +50,20 @@ $container['db'] = function ($container) use ($capsule) {
 
 $container['isProduction'] = function () use ($config) {
     return $config['settings']['version'] == 'production';
+};
+
+$container['cache'] = function () use ($config) {
+    return function ($cache_key, $seconds = 600) use ($config) {
+        $cache_path = isset($config['settings']['cache']['path']) ? $config['settings']['cache']['path'] : '';
+
+        if (empty($cache_path)) {
+            return;
+        }
+
+        if (!is_dir($cache_path)) {
+            mkdir($cache_path, 0755, true);
+        }
+    };
 };
 
 $app->get('/2018/api/__info__', function () {
