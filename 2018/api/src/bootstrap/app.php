@@ -21,15 +21,15 @@ $config = [
             'database' => $dbEnvFromPhinx['name'],
             'username' => $dbEnvFromPhinx['user'],
             'password' => $dbEnvFromPhinx['pass'],
-            'charset'   => $dbEnvFromPhinx['charset'],
+            'charset' => $dbEnvFromPhinx['charset'],
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
+            'prefix' => '',
         ],
         'version' => $version,
         'cache' => [
-            'path' => __DIR__ . '/../storage/cache'
-        ]
-    ]
+            'path' => __DIR__ . '/../storage/cache',
+        ],
+    ],
 ];
 
 $app = new Slim\App($config);
@@ -58,7 +58,6 @@ $container['cache'] = function () use ($config) {
     );
 };
 
-
 $app->get('/2018/api/__info__', function () {
     try {
         $ch = curl_init();
@@ -76,6 +75,29 @@ $app->get('/2018/api/__info__', function () {
     } catch (Exception $e) {
         echo '>_____________________<';
     }
+});
+
+$app->get('/2018/api/devQrcode/{id}', function ($request, $response, $params) {
+
+    $booths = [];
+    for ($i = 1; $i < 11; $i++) {
+        $booths[$i] = [
+            'token' => "mopconbooth_$i",
+            'reward' => $i * 5,
+        ];
+    }
+
+    $booth = $booths[$params['id']];
+
+    $result = [
+        // token 是讓 server 辨認攤位，取得對應的任務獎勵並發送
+        'id' => $params['id'],
+        'token' => $booth['token'],
+    ];
+
+    $result['qr'] = 'http://chart.apis.google.com/chart?cht=qr&chl=' . urlencode(json_encode($result)) . '&chs=150x150';
+
+    echo "<img src='$result[qr]'>";
 });
 
 // 用 group 可以從 global 分離出來
