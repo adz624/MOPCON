@@ -9,13 +9,13 @@
     <div class="container day01">
             <div class="row title">
                 <div class="col-lg-3">11/03</div>
-                <div class="col-lg-9">3F</div>
+                <div class="col-lg-9">Unconference(3F)</div>
                
             </div>
             {% for item in schedules_day1 %}
             
                 {% if item.type == 'topic' %}
-                    <div class="row speechTalk item px-0 px-lg-3">
+                    <div class="row sponsorTalk item px-0 px-lg-3">
                 {% else %}
                     <div class="row break item px-0 px-lg-3">
                 {% endif %}
@@ -40,11 +40,11 @@
     <div class="container day02">
             <div class="row title">
                 <div class="col-lg-3">11/04</div>
-                <div class="col-lg-3">3F</div>
+                <div class="col-lg-9">Unconference(3F)</div>
             </div>
             {% for item in schedules_day2 %}
             {% if item.type == 'topic' %}
-                    <div class="row speechTalk item px-0 px-lg-3">
+                    <div class="row sponsorTalk item px-0 px-lg-3">
                 {% else %}
                     <div class="row break item px-0 px-lg-3">
                 {% endif %}
