@@ -465,10 +465,24 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
+        $booths = [];
+        for ($i = 1; $i < 11; $i++) {
+            $booths[$i] = [
+                'token' => "mopconbooth_$i",
+                'reward' => $i * 5,
+            ];
+        }
+
+        $booth = $booths[$params['id']];
+
         $result = [
-            'id' => 1,
-            'token' => 'mopcon:123-456-789_' . md5(time())
+            // token 是讓 server 辨認攤位，取得對應的任務獎勵並發送
+            'id' => $params['id'],
+            'token' => $booth['token']
         ];
+
+        $result['qr'] = 'http://chart.apis.google.com/chart?cht=qr&chl=' . urlencode(json_encode($result)) . '&chs=150x150';
+
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -490,9 +504,23 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
+        $booths = [];
+        for ($i = 1; $i < 11; $i++) {
+            $booths[$i] = [
+                'token' => "mopconbooth_$i",
+                'reward' => $i * 5
+            ];
+        }
+
+        $booth = array_filter($booths, function ($item) use ($params) {
+            return $item['token'] == $params['token'];
+        });
+
+        $booth = array_values($booth)[0];
+
         $result = [
             'is_success' => true,
-            'reward' => 30
+            'reward' => $booth['reward']
         ];
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
