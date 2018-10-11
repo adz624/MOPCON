@@ -21,12 +21,14 @@
                 {% endif %}
                 <div class="col-lg-3 speechTime">{{item['duration']}}</div>
 
-         
                     <div class="col-lg-9 speechContent">
                         <div >
-                       
+                        {% if item.topic != "" %}
                             <div class="speaker">{{ item['speaker'] }}</div>
                             <p class="detail" >{{ item.topic }}</p>
+                        {% else %}
+                            <a target="_blank" href="https://goo.gl/forms/cvIip2k0vsxP1kuE2">開放報名中 Register now!</a>
+                        {% endif %}
                         </div>
                    
                     </div>
