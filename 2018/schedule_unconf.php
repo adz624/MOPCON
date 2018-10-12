@@ -10,9 +10,9 @@ $lang = \MopCon2018\Utils\Base::getLang();
 
 $params = [
     'lang' => $lang,
-    'pageid' => 'unconf',
-    'og_url' => 'unconf.php',
+    'pageid' => 'schedule_unconf',
+    'og_url' => 'schedule_unconf.php',
     'schedules_day1' => $apiData[0]['items'],
     'schedules_day2' => $apiData[1]['items'],
 ];
-Base::render('components/unconf.twig', $params);
+Base::render('components/schedule_unconf.twig', $params);
