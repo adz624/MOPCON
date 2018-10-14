@@ -5,5 +5,28 @@ use \Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
+    public $incrementing = false;
     protected $primaryKey = 'uuid';
+    protected $casts = [
+        'mission_progress' => 'array',
+        'quiz_progress' => 'array'
+    ];
+
+    public function isMissionComplete($mission_id)
+    {
+        $result = array_filter(
+            $this->mission_progress ?: [],
+            function ($value, $key) use ($mission_id) {
+                return $key == $mission_id && $value['state'] == true;
+            },
+            ARRAY_FILTER_USE_BOTH
+        );
+
+        return !empty($result);
+    }
+
+    public function passbook()
+    {
+        return $this->hasMany('MopConApi2018\App\Models\UserPassbook', 'uuid');
+    }
 }

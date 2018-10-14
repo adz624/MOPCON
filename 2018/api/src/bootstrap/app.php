@@ -78,15 +78,15 @@ $app->get('/2018/api/__info__', function () {
 });
 
 $app->get('/2018/api/devQrcode/{id}', function ($request, $response, $params) {
-    // if (!isset($_SERVER['PHP_AUTH_USER'])) {
-    //     header('WWW-Authenticate: Basic realm="My Realm"');
-    //     header('HTTP/1.0 401 Unauthorized');
-    //     echo 'Text to send if user hits Cancel button';
-    //     exit;
-    // } else {
-    //     echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
-    //     echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
-    // }
+    if (!isset($_SERVER['PHP_AUTH_USER'])) {
+        header('WWW-Authenticate: Basic realm="My Realm"');
+        header('HTTP/1.0 401 Unauthorized');
+        echo 'Text to send if user hits Cancel button';
+        exit;
+    } else {
+        echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
+        echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
+    }
 
     $booths = [];
     for ($i = 1; $i < 11; $i++) {
