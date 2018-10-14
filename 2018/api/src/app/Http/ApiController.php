@@ -279,11 +279,15 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $is_success = false;
-        // 測試環境 testing/development
-        if (!$this->container->isProduction) {
-            $user = new \MopConApi2018\App\Models\User;
-            $user->uuid = (!empty($params['UUID'])) ? $params['UUID'] : uniqid('test_');
+        try {
+            $msg = 'update user';
+            $user = \MopConApi2018\App\Models\User::find($params['UUID']);
+            if (!$user) {
+                $msg = 'create user';
+                $user = new \MopConApi2018\App\Models\User;
+                // 測試環境 testing/development 且沒給 UUID
+                $user->uuid = (empty($params['UUID']) && !$this->container->isProduction) ? uniqid('test_') : $params['UUID'];
+            }
             $user->public_key = $params['public_key'];
             $user->device_type = 'undefined';
             $user->fcm_push_token = (isset($params['fcm_push_token'])) ? $params['fcm_push_token'] : '';
@@ -296,10 +300,14 @@ class ApiController extends Controller
              */
             $user->save();
             $is_success = true;
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+            $is_success = false;
         }
 
         $result = [
-            'is_success' => $is_success
+            'is_success' => $is_success,
+            'msg' => $msg
         ];
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
