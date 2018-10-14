@@ -27,6 +27,7 @@ class MissionsGenerator extends AbstractSeed
         $faker = Faker\Factory::create();
 
         $misison = [
+            'passwd' => rand(10000000, 99999999),
             'mission' => $faker->realText(30),
             'mission_info' => $faker->realText(100),
             'reward' => $faker->randomFloat(),

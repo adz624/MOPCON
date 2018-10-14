@@ -79,6 +79,22 @@ $app->get('/2018/api/__info__', function () {
 
 $app->get('/2018/api/devQrcode/{id}', function ($request, $response, $params) {
 
+    if ($_SERVER['PHP_AUTH_USER'] != $params['id']) {
+        unset($_SERVER['PHP_AUTH_USER']);
+    }
+
+    if (!isset($_SERVER['PHP_AUTH_USER'])) {
+        header('WWW-Authenticate: Basic realm="My Realm"');
+        header('HTTP/1.0 401 Unauthorized');
+        echo 'Text to send if user hits Cancel button';
+        exit;
+    } else {
+        header("Pragma: no-cache");
+        header("Expires: Sat, 01 Jan 2000 00:00:00 GMT");
+        echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
+        echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
+    }
+
     $booths = [];
     for ($i = 1; $i < 11; $i++) {
         $booths[$i] = [
@@ -98,6 +114,11 @@ $app->get('/2018/api/devQrcode/{id}', function ($request, $response, $params) {
     $result['qr'] = 'http://chart.apis.google.com/chart?cht=qr&chl=' . urlencode(json_encode($result)) . '&chs=150x150';
 
     echo "<img src='$result[qr]'>";
+    echo "<script>(function() {
+        setTimeout(function() {
+            location.reload()
+        }, 30000);
+    })();</script>";
 });
 
 // 用 group 可以從 global 分離出來
