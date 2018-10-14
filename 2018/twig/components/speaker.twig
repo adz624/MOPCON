@@ -11,6 +11,7 @@
           <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
           <span class="text-center">{{ speaker.company }}</span>
           <span class="text-center">{{ speaker.job }}</span>
+          
           <button class="speaker-btn mt-4 mb-3" data-toggle="modal" data-target="#modal-{{ speaker.speaker_id }}">{{ lang == 'zh'? "詳細介紹" : "More" }}</button>
         </div>
 
@@ -23,6 +24,7 @@
             <div class="modal-body">
               <div class="d-flex flex-column align-items-center">
                 <div class="d-flex speaker-modal-info px-sm-4">
+                
                   <img class="my-3 rounded-circle mr-3" src="{{ speaker.picture|default('/2018/assets/images/speaker/blank_speaker.jpg') }}" alt="{{ speaker.name }}">
                   <div class="d-flex flex-column mt-5">
                     <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
@@ -39,6 +41,12 @@
                 <div class="speaker-zh-detail px-sm-4">
                     {{ lang == 'zh'? speaker.schedule_info: speaker.schedule_info_en }}
                 </div>
+                <div class="input-group my-3">
+                  <input type="text" class="form-control" id="text{{ speaker.speaker_id }}" value="mopcon.org/2018/speaker.php?id={{ speaker.speaker_id }}">
+                  <div class="input-group-append">
+                    <button type="button"  class="copylink btn btn-primary" data-clipboard-target="#text{{ speaker.speaker_id }}">複製講者連結</button>
+                  </div>
+                </div>
                 {#<div class="speaker-modal-btn mt-5 mb-3">
                   <button>共筆</button>
                   <button>Slide</button>
@@ -53,11 +61,21 @@
     {% endfor %}
     </div>
   </div>
-{% if id != '' %}
 <script>
-$(function(){
+
+
+  
+ {% if id != '' %}
+
   $('#modal-'+{{id}}).modal('show');
-})
+  {% endif %}
+$(function(){
+  $(".modal").on("shown.bs.modal", function() {
+      var clipboard = new ClipboardJS('.copylink');
+      console.log(clipboard);
+  })
+});
+
 </script>
-{% endif %}
+
 {% endblock %}
