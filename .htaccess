@@ -7,5 +7,8 @@ ErrorDocument 404 /err/404.php
 ErrorDocument 500 /err/404.php
 Options -Indexes
 
+Redirect 301 /2018/feedback.php /feedback.php
+Redirect 301 /2018/warn-up-feedback.php /warn-up-feedback.php
+
 # Use PHP5 Single php.ini as default
 #AddHandler application/x-httpd-php5s .php
