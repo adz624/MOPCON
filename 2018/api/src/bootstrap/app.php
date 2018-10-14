@@ -78,12 +78,19 @@ $app->get('/2018/api/__info__', function () {
 });
 
 $app->get('/2018/api/devQrcode/{id}', function ($request, $response, $params) {
+
+    if ($_SERVER['PHP_AUTH_USER'] != $params['id']) {
+        unset($_SERVER['PHP_AUTH_USER']);
+    }
+
     if (!isset($_SERVER['PHP_AUTH_USER'])) {
         header('WWW-Authenticate: Basic realm="My Realm"');
         header('HTTP/1.0 401 Unauthorized');
         echo 'Text to send if user hits Cancel button';
         exit;
     } else {
+        header("Pragma: no-cache");
+        header("Expires: Sat, 01 Jan 2000 00:00:00 GMT");
         echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
         echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
     }

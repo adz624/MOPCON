@@ -495,7 +495,7 @@ class ApiController extends Controller
             'token' => $token,
         ];
 
-        $result['qr'] = 'http://chart.apis.google.com/chart?cht=qr&chl=' . urlencode(json_encode($result)) . '&chs=150x150';
+        $result['qrcode'] = 'http://chart.apis.google.com/chart?cht=qr&chl=' . urlencode(json_encode($result)) . '&chs=150x150';
 
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
