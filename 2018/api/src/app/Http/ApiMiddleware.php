@@ -156,17 +156,17 @@ class ApiMiddleware extends Middleware
         $this->sourceInfo['fieldGame'] = [
             'new-user' => [
                 'description' => '大地遊戲：建立錢包',
-                'requirement' => ['public_key', 'UUID'],
+                'requirement' => ['UUID'],
                 'status' => 1,
             ],
             'get-balance' => [
                 'description' => '大地遊戲：餘額查詢',
-                'requirement' => ['public_key', 'UUID'],
+                'requirement' => ['UUID'],
                 'status' => 1,
             ],
             'buy-gachapon' => [
                 'description' => '大地遊戲：轉蛋',
-                'requirement' => ['public_key', 'UUID', 'amount'],
+                'requirement' => ['UUID', 'quantity'],
                 'status' => 1,
             ],
 
@@ -178,7 +178,7 @@ class ApiMiddleware extends Middleware
             ],
             'solve-quiz' => [
                 'description' => '大地遊戲：答題',
-                'requirement' => ['public_key', 'id', 'answer'],
+                'requirement' => ['id', 'answer'],
                 'status' => 1,
             ],
             'get-hawker-qrcode' => [
@@ -188,7 +188,7 @@ class ApiMiddleware extends Middleware
             ],
             'get-hawker-mission' => [
                 'description' => '大地遊戲：攤位挑戰',
-                'requirement' => ['id', 'public_key', 'token'],
+                'requirement' => ['id', 'token'],
                 'status' => 1,
             ],
         ];
