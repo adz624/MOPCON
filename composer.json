@@ -19,7 +19,8 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "composer migrate2018"
+            "composer migrate2018",
+            "composer dumpautoload -o"
         ],
         "migrate2018": [
             "vendor/bin/phinx migrate -vvv -e mopcon2018 --ansi",
