@@ -3,6 +3,7 @@ namespace MopConApi2018\App\Http;
 
 use MopCon2018\Utils\GoogleDocsSpreadsheet;
 use MopConApi2018\App\Models\FieldgameBoothMission;
+use MopConApi2018\App\Models\FieldgameQuiz;
 use MopConApi2018\App\Models\MopConResource;
 use MopConApi2018\App\Models\User;
 use MopConApi2018\App\Models\UserPassbook;
@@ -426,53 +427,20 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = json_decode('[
-            {
-              "date": "2018-01-01",
-              "items": [
-                {
-                  "id": "001",
-                  "type": "quiz",
-                  "title": "什麼是區塊鏈",
-                  "description": null,
-                  "banner_url": null,
-                  "quiz": "What is blockchain?",
-                  "options": [
-                    "a",
-                    "b",
-                    "c",
-                    "d"
-                  ],
-                  "answer": "1",
-                  "status": "-1",
-                  "unlock_time": "10013133"
-                },
-                {
-                  "id": "002",
-                  "type": "task",
-                  "title": "什麼是大數據",
-                  "description": null,
-                  "options": null,
-                  "banner_url": null,
-                  "status": "0",
-                  "answer": null,
-                  "unlock_time": "10013133"
-                },
-                {
-                  "id": "003",
-                  "type": "task",
-                  "title": "找到黃色小鴨",
-                  "description": "必須和別人結伴完成",
-                  "options": null,
-                  "banner_url": null,
-                  "status": "1",
-                  "answer": null,
-                  "unlock_time": "10013133"
-                }
-              ]
-            },
-            {}
-          ]');
+        $result = [
+            [ 'date' => '2018-11-03', 'items' => [] ],
+            [ 'date' => '2018-11-04', 'items' => [] ],
+        ];
+        $quizzes = FieldgameQuiz::all();
+        $quizzes->each(function ($quiz) use (&$result) {
+            $result[0]['items'][] = $quiz->toApiFormat();
+        });
+
+        $missions = FieldgameBoothMission::all();
+        $missions->each(function ($mission) use (&$result) {
+            $result[0]['items'][] = $mission->toApiFormat();
+        });
+
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
