@@ -19,6 +19,7 @@ class ApiController extends Controller
         4002 => '此請求缺乏必要的參數',
         4003 => '此請求已經過期',
         4004 => '此請求的資源不存在',
+        4005 => '此請求夾帶的參數內容不正確'
     ];
 
     public function __invoke($request, $response, $args)
@@ -335,9 +336,15 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'balance' => 100,
-        ];
+        try {
+            $msg = 'get balance success';
+            $user = User::findOrFail($params['UUID']);
+            $balance = $user->biilabs_balance;
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('balance', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -359,9 +366,43 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'is_success' => true,
-        ];
+        // 不允許數量小於 0; 必須是整數
+        if ($params['quantity'] <= 0 || !is_int($params['quantity'] + 0)) {
+            $errMsg = $this->getErrorInfo(4005);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        ///// 轉蛋價格暫時 hardcode, 30 代幣
+        $gochaPrice = 30;
+
+        try {
+            $msg = 'buy gachapon caculating...';
+            $user = User::findOrFail($params['UUID']);
+            $orderAmount = $params['quantity'] * $gochaPrice;
+            $is_success = $user->biilabs_balance >= $orderAmount;
+            $msg = 'buy gachapon fail; your balance is not enough';
+            if ($is_success) {
+                // 如果代幣夠多
+                $user->biilabs_balance -= $orderAmount;
+                $user->save();
+                /// 交易紀錄
+                $passbook_record = new UserPassbook([
+                    'uuid' => $user->uuid,
+                    'summary' => sprintf('購買 %s 個扭蛋，消耗代幣共 %s', $params['quantity'], $orderAmount),
+                    'withdrawal' => $orderAmount,
+                ]);
+
+                $user->passbook()->save($passbook_record);
+                $msg = 'buy gachapon success';
+            }
+            $balance = $user->biilabs_balance;
+            $exchMax = floor($balance / $gochaPrice);
+        } catch (\Exception $e) {
+            $is_success = false;
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('is_success', 'balance', 'exchMax', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -531,7 +572,8 @@ class ApiController extends Controller
         // transaction table 就先跳過不理
         try {
             $user = User::findOrFail($params['public_key']);
-            $mission = FieldgameBoothMission::findOrFail($params['id']);
+            $mission_id = filter_var($params['id'], FILTER_SANITIZE_NUMBER_INT);
+            $mission = FieldgameBoothMission::findOrFail($mission_id) ;
             if (!$user->isMissionComplete($params['id'])) {
                 $mission_progress = [
                     $mission->mission_id => [
