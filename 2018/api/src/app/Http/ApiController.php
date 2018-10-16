@@ -431,15 +431,26 @@ class ApiController extends Controller
             [ 'date' => '2018-11-03', 'items' => [] ],
             [ 'date' => '2018-11-04', 'items' => [] ],
         ];
-        $quizzes = FieldgameQuiz::all();
-        $quizzes->each(function ($quiz) use (&$result) {
-            $result[0]['items'][] = $quiz->toApiFormat();
-        });
+        $UUID = filter_var($params['UUID']);
+        $msg = '';
 
-        $missions = FieldgameBoothMission::all();
-        $missions->each(function ($mission) use (&$result) {
-            $result[0]['items'][] = $mission->toApiFormat();
-        });
+        try {
+            if ($UUID) {
+                $user = User::findOrFail($UUID);
+            }
+            $quizzes = FieldgameQuiz::all();
+            $quizzes->each(function ($quiz) use (&$result, $user) {
+                $result[0]['items'][] = $quiz->toApiFormat($user->quiz_progress);
+            });
+
+            $missions = FieldgameBoothMission::all();
+            $missions->each(function ($mission) use (&$result, $user) {
+                $result[0]['items'][] = $mission->toApiFormat($user->mission_progress);
+            });
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+        }
+        $result['msg'] = $msg;
 
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
@@ -480,6 +491,7 @@ class ApiController extends Controller
 
             if (!$user->isQuizComplete($quiz->quiz_id)) {
                 $is_success = $quiz->isCorrectAnswer($params['answer']);
+                $msg = '登愣，答題失敗';
                 if ($is_success) {
                     $reward = $quiz->reward;
                     $passbook_record = new UserPassbook([
@@ -489,6 +501,7 @@ class ApiController extends Controller
                     ]);
 
                     $user->passbook()->save($passbook_record);
+                    $msg = '賓崩賓崩！答題成功';
                 }
 
                 $quiz_progress = [
@@ -501,7 +514,6 @@ class ApiController extends Controller
                 $user->quiz_progress = $quiz_progress;
                 $user->biilabs_balance += $quiz->reward;
                 $user->save();
-                $msg = '賓崩賓崩！答題成功';
             } else {
                 throw new \Exception('你已經完成答題，而且領過獎勵了');
             }
