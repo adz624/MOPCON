@@ -12,4 +12,44 @@ class FieldgameBoothMission extends Model
     {
         return $passwd == $this->passwd;
     }
+
+    public function isActive($now = null)
+    {
+        $nowstamp = $now ?: strtotime('now');
+        return strtotime($this->started_at) <= $nowstamp && $nowstamp <= strtotime($this->expired_at);
+    }
+
+    public function toApiFormat($user_mission_progress = null)
+    {
+        $status = 0;
+        if ($this->isActive() && $user_mission_progress) {
+            $status = 1;
+            if (isset($user_mission_progress[$this->mission_id])) {
+                $status = -1;
+                if (isset($user_mission_progress[$this->mission_id]['state']) && $user_mission_progress[$this->mission_id]['state']) {
+                    $status = 2;
+                }
+            }
+        }
+
+        $data = [
+            'id' => $this->mission_id . 'm',
+            'type' => 'task',
+            'title' => $this->mission,
+            'description' => $this->mission_info,
+            'banner_url' => null,
+            'options' => null,
+            'status' => $status,
+            'answer' => null,
+            'unlock_time' => strtotime($this->started_at),
+            // optional
+            'booth' => $this->booth_name,
+            'boothinfo' => $this->booth_info,
+        ];
+
+        if ($status == 0) {
+        }
+
+        return $data;
+    }
 }

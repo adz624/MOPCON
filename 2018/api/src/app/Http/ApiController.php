@@ -3,6 +3,7 @@ namespace MopConApi2018\App\Http;
 
 use MopCon2018\Utils\GoogleDocsSpreadsheet;
 use MopConApi2018\App\Models\FieldgameBoothMission;
+use MopConApi2018\App\Models\FieldgameQuiz;
 use MopConApi2018\App\Models\MopConResource;
 use MopConApi2018\App\Models\User;
 use MopConApi2018\App\Models\UserPassbook;
@@ -426,53 +427,20 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = json_decode('[
-            {
-              "date": "2018-01-01",
-              "items": [
-                {
-                  "id": "001",
-                  "type": "quiz",
-                  "title": "什麼是區塊鏈",
-                  "description": null,
-                  "banner_url": null,
-                  "quiz": "What is blockchain?",
-                  "options": [
-                    "a",
-                    "b",
-                    "c",
-                    "d"
-                  ],
-                  "answer": "1",
-                  "status": "-1",
-                  "unlock_time": "10013133"
-                },
-                {
-                  "id": "002",
-                  "type": "task",
-                  "title": "什麼是大數據",
-                  "description": null,
-                  "options": null,
-                  "banner_url": null,
-                  "status": "0",
-                  "answer": null,
-                  "unlock_time": "10013133"
-                },
-                {
-                  "id": "003",
-                  "type": "task",
-                  "title": "找到黃色小鴨",
-                  "description": "必須和別人結伴完成",
-                  "options": null,
-                  "banner_url": null,
-                  "status": "1",
-                  "answer": null,
-                  "unlock_time": "10013133"
-                }
-              ]
-            },
-            {}
-          ]');
+        $result = [
+            [ 'date' => '2018-11-03', 'items' => [] ],
+            [ 'date' => '2018-11-04', 'items' => [] ],
+        ];
+        $quizzes = FieldgameQuiz::all();
+        $quizzes->each(function ($quiz) use (&$result) {
+            $result[0]['items'][] = $quiz->toApiFormat();
+        });
+
+        $missions = FieldgameBoothMission::all();
+        $missions->each(function ($mission) use (&$result) {
+            $result[0]['items'][] = $mission->toApiFormat();
+        });
+
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -494,10 +462,55 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'is_success' => true,
-            'reward' => 30,
-        ];
+         // 答題邏輯
+        // 檢查 user 是否領過
+        // 沒有才發錢，加入 balance, passbook, 更新任務進度
+        // transaction table 就先跳過不理
+        try {
+            $user = User::findOrFail($params['UUID']);
+            $quiz_id = filter_var($params['id'], FILTER_SANITIZE_NUMBER_INT);
+            $quiz = FieldgameQuiz::findOrFail($quiz_id);
+            $reward = 0;
+            $is_success = false;
+            $answer = $params['answer'];
+            if (!$quiz->isActive()) {
+                $answer = $user->getQuizWriting($quiz_id);
+                throw new \Exception('未開放答題，或已經超過答題時間');
+            }
+
+            if (!$user->isQuizComplete($quiz->quiz_id)) {
+                $is_success = $quiz->isCorrectAnswer($params['answer']);
+                if ($is_success) {
+                    $reward = $quiz->reward;
+                    $passbook_record = new UserPassbook([
+                        'uuid' => $user->uuid,
+                        'summary' => sprintf('第 %s 題解答獎勵，賺取代幣 %s', $quiz->quiz_id, $quiz->reward),
+                        'deposit' => $quiz->reward,
+                    ]);
+
+                    $user->passbook()->save($passbook_record);
+                }
+
+                $quiz_progress = [
+                    $quiz->quiz_id => [
+                        'state' => $is_success,
+                        'reward' => $reward,
+                        'answer' => $params['answer']
+                    ],
+                ] + ($user->quiz_progress ?: []);
+                $user->quiz_progress = $quiz_progress;
+                $user->biilabs_balance += $quiz->reward;
+                $user->save();
+                $msg = '賓崩賓崩！答題成功';
+            } else {
+                throw new \Exception('你已經完成答題，而且領過獎勵了');
+            }
+        } catch (\Exception $e) {
+            $is_success = false;
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('is_success', 'reward', 'answer', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -571,7 +584,7 @@ class ApiController extends Controller
         // 沒有才發錢，加入 balance, passbook, 更新任務進度
         // transaction table 就先跳過不理
         try {
-            $user = User::findOrFail($params['public_key']);
+            $user = User::findOrFail($params['UUID']);
             $mission_id = filter_var($params['id'], FILTER_SANITIZE_NUMBER_INT);
             $mission = FieldgameBoothMission::findOrFail($mission_id) ;
             if (!$user->isMissionComplete($params['id'])) {
@@ -580,7 +593,7 @@ class ApiController extends Controller
                         'state' => true,
                         'reward' => $mission->reward,
                     ],
-                ] + $user->mission_progress;
+                ] + ($user->mission_progress ?: []);
                 $user->mission_progress = $mission_progress;
                 $user->biilabs_balance += $mission->reward;
                 $user->save();
@@ -588,7 +601,7 @@ class ApiController extends Controller
                 $passbook_record = new UserPassbook([
                     'uuid' => $user->uuid,
                     'summary' => sprintf('獲取任務 id (%s) 的獎勵 (%s)', $mission->mission_id, $mission->reward),
-                    'depoist' => $mission->reward,
+                    'deposit' => $mission->reward,
                 ]);
 
                 $user->passbook()->save($passbook_record);
