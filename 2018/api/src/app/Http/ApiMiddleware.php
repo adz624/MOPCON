@@ -178,7 +178,7 @@ class ApiMiddleware extends Middleware
             ],
             'solve-quiz' => [
                 'description' => '大地遊戲：答題',
-                'requirement' => ['id', 'answer'],
+                'requirement' => ['UUID', 'id', 'answer'],
                 'status' => 1,
             ],
             'get-hawker-qrcode' => [
@@ -188,7 +188,7 @@ class ApiMiddleware extends Middleware
             ],
             'get-hawker-mission' => [
                 'description' => '大地遊戲：攤位挑戰',
-                'requirement' => ['id', 'token'],
+                'requirement' => ['UUID', 'id', 'token'],
                 'status' => 1,
             ],
         ];
