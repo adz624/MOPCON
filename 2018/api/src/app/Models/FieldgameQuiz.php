@@ -50,6 +50,7 @@ class FieldgameQuiz extends Model
         ];
 
         if ($status == 0) {
+            unset($data['title']);
             unset($data['quiz']);
             unset($data['options']);
             unset($data['answer']);
