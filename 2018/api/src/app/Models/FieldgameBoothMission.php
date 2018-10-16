@@ -22,7 +22,7 @@ class FieldgameBoothMission extends Model
     public function toApiFormat($user_mission_progress = null)
     {
         $status = 0;
-        if ($this->isActive() && $user_mission_progress) {
+        if ($this->isActive()) {
             $status = 1;
             if (isset($user_mission_progress[$this->mission_id])) {
                 $status = -1;

@@ -25,7 +25,7 @@ class FieldgameQuiz extends Model
     public function toApiFormat($user_quiz_progress = null)
     {
         $status = 0;
-        if ($this->isActive() && $user_quiz_progress) {
+        if ($this->isActive()) {
             $status = 1;
             if (isset($user_quiz_progress[$this->quiz_id])) {
                 $status = -1;
