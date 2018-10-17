@@ -55,8 +55,8 @@
             <div class="modal-body">
                 <div class="d-flex flex-column align-items-center">
                     <div class="d-flex speaker-modal-info px-sm-4">
-                        <img class="my-3 rounded-circle" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
-                        <div class="d-flex flex-column mt-5">
+                        <img class="my-3 rounded-circle mr-3" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
+                        <div class="d-flex flex-column mt-5 text-left">
                             <h4>{{ lang == 'zh'? content.name:content.name_en }}</h4>
                             <span>{{ content.company }}</span>
                             <span>{{ content.job }}</span>
@@ -138,11 +138,11 @@
             <div class="modal-body">
                 <div class="d-flex flex-column align-items-center">
                     <div class="d-flex speaker-modal-info px-sm-4">
-                        <img class="my-3 rounded-circle" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
-                        <div class="d-flex flex-column mt-5">
+                        <img class="my-3 rounded-circle mr-3" src="{{ content.picture|default('/2018/assets/images/speaker/mopcon-girl.jpg') }}" alt="{{ content.name }}">
+                        <div class="d-flex flex-column mt-5 text-left">
                             <h4>{{ lang == 'zh'? content.name:content.name_en }}</h4>
-                            <span class="text-center">{{ content.company }}</span>
-                            <span class="text-center">{{ content.job }}</span>
+                            <span>{{ content.company }}</span>
+                            <span>{{ content.job }}</span>
                         </div>
                     </div>
 
