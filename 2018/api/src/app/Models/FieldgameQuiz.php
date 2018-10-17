@@ -46,7 +46,8 @@ class FieldgameQuiz extends Model
             'answer' => $this->answer,
             /////////////////////////////////////////////////// 這個麻煩，稍後處理; 活動挑戰時間 優先於 挑戰進展
             'status' => $status,
-            'unlock_time' => strtotime($this->started_at)
+            'unlock_time' => strtotime($this->started_at),
+            'userinfo' => $user_quiz_progress[$this->quiz_id] ?: new \stdClass
         ];
 
         if ($status == 0) {
