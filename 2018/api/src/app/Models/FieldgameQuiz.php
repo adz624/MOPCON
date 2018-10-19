@@ -11,9 +11,19 @@ class FieldgameQuiz extends Model
         'choices' => 'array',
     ];
 
-    public function isCorrectAnswer($answer)
+    /**
+     * @param int|string $answer   可能會是答案，或是選項的順序
+     * @param bool       $useIndex
+     * @return bool
+     */
+    public function isCorrectAnswer($answer, $useIndex = true)
     {
-        return $answer == $this->answer;
+        if ($useIndex) {
+            $is_correct = isset($this->choices[$answer - 1]) && ($this->choices[$answer - 1] == $this->answer);
+        } else {
+            $is_correct = $answer == $this->answer;
+        }
+        return $is_correct;
     }
 
     public function isActive($now = null)
@@ -35,6 +45,10 @@ class FieldgameQuiz extends Model
             }
         }
 
+        $choices = array_combine(range(1, count($this->choices)), $this->choices);
+        $answer = array_filter($choices, function ($option) {
+            return $option == $this->answer;
+        });
         $data = [
             'id' => $this->quiz_id . 'q',
             'type' => 'quiz',
@@ -42,8 +56,8 @@ class FieldgameQuiz extends Model
             'description' => null,
             'banner_url' => null,
             'quiz' => $this->quiz,
-            'options' => $this->choices,
-            'answer' => $this->answer,
+            'options' => $choices,
+            'answer' => $answer,
             /////////////////////////////////////////////////// 這個麻煩，稍後處理; 活動挑戰時間 優先於 挑戰進展
             'status' => $status,
             'unlock_time' => strtotime($this->started_at),
