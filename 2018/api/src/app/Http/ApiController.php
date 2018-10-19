@@ -427,6 +427,7 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
+        // 這邊統一都存到 2018-11-03 的陣列中，最後討論不分日期
         $result = [
             [ 'date' => '2018-11-03', 'items' => [] ],
             [ 'date' => '2018-11-04', 'items' => [] ],

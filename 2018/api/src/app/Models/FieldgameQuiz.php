@@ -11,6 +11,11 @@ class FieldgameQuiz extends Model
         'choices' => 'array',
     ];
 
+    /**
+     * @param int|string $answer   可能會是答案，或是選項的順序
+     * @param bool       $useIndex
+     * @return bool
+     */
     public function isCorrectAnswer($answer, $useIndex = true)
     {
         if ($useIndex) {
