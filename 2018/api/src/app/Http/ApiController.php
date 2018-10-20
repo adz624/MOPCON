@@ -15,6 +15,7 @@ class ApiController extends Controller
     private $resourceName;
     private $jsonOptions;
     private $fullUrlToAssets;
+    public $globalCacheSeconds = 600;
     public $errMsg = [
         4001 => '此請求方法錯誤',
         4002 => '此請求缺乏必要的參數',
@@ -86,7 +87,7 @@ class ApiController extends Controller
                 $this->resource['sheetGridId']
             );
             return $apiData;
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         # custom processing codes...
 
@@ -134,7 +135,7 @@ class ApiController extends Controller
                 ],
             ];
             return $data;
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
@@ -144,7 +145,7 @@ class ApiController extends Controller
         $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
             $scheduleUnconfData = MopConResource::getScheduleUnconf();
             return ['payload' => $scheduleUnconfData];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -153,8 +154,11 @@ class ApiController extends Controller
     {
         $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
             $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
+            $apiDataArray = array_filter($apiDataArray, function ($row) {
+                return !empty($row['speaker_id']);
+            });
             return ['payload' => $apiDataArray];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -177,7 +181,7 @@ class ApiController extends Controller
             }
 
             return ['payload' => $apiDataArray];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -200,7 +204,7 @@ class ApiController extends Controller
             }
 
             return ['payload' => $apiDataArray];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -217,7 +221,7 @@ class ApiController extends Controller
             $apiDataArray = $apiData->toArray();
 
             return ['payload' => $apiDataArray];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -240,7 +244,7 @@ class ApiController extends Controller
             }
 
             return ['payload' => $apiDataArray];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -257,7 +261,7 @@ class ApiController extends Controller
             $apiDataArray = $apiData->toArray();
 
             return ['payload' => $apiDataArray];
-        }, 600);
+        }, $this->globalCacheSeconds);
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
