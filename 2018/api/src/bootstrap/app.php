@@ -39,14 +39,15 @@ $container['ApiController'] = function ($container) {
     return new MopConApi2018\App\Http\ApiController($container);
 };
 
-$capsule = new \Illuminate\Database\Capsule\Manager;
-$capsule->addConnection($container['settings']['db']);
-$capsule->setAsGlobal();
-$capsule->bootEloquent();
+// 關閉 Eloqunet initializer
+// $capsule = new \Illuminate\Database\Capsule\Manager;
+// $capsule->addConnection($container['settings']['db']);
+// $capsule->setAsGlobal();
+// $capsule->bootEloquent();
 
-$container['db'] = function ($container) use ($capsule) {
-    return $capsule;
-};
+// $container['db'] = function ($container) use ($capsule) {
+//     return $capsule;
+// };
 
 $container['isProduction'] = function () use ($config) {
     return $config['settings']['version'] == 'production';
