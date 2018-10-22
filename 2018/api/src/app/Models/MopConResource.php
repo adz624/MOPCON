@@ -154,7 +154,8 @@ class MopConResource
             $speakerOfschedule = array_filter($speakers, function ($speaker) use ($id) {
                 return $speaker['schedule_id'] == $id;
             });
-            foreach (array_pop($speakerOfschedule) as $prop => $value) {
+            $tmp = array_pop($speakerOfschedule) ?: [];
+            foreach ($tmp as $prop => $value) {
                 $schedule[$id][$prop] = $value;
             }
         }
