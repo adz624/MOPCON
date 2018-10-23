@@ -192,6 +192,11 @@ class ApiMiddleware extends Middleware
                 'status' => 1,
             ],
         ];
+
+        // 關閉大地遊戲的 api
+        array_walk($this->sourceInfo['fieldGame'], function (&$apiDef) {
+            $apiDef['status'] = 0;
+        });
     }
 
     public function __invoke($request, $response, $next)
