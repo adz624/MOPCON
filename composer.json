@@ -19,7 +19,6 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "composer migrate2018",
             "composer dumpautoload -o"
         ],
         "migrate2018": [
