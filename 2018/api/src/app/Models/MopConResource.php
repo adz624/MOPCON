@@ -175,9 +175,6 @@ class MopConResource
         $apiDataArray = $apiData->toArray();
 
         foreach ($apiDataArray as $key => &$value) {
-            if(empty($value['speaker_id'])) {
-                unset($apiDataArray[$key]);
-            }
             if (!empty($value['picture']) && $fullUrlToAssets) {
                 $value['picture'] = $fullUrlToAssets . '/images/speaker/' . $value['picture'];
             }
