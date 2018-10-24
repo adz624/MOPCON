@@ -156,29 +156,29 @@ class ApiMiddleware extends Middleware
         $this->sourceInfo['fieldGame'] = [
             'new-user' => [
                 'description' => '大地遊戲：建立錢包',
-                'requirement' => ['public_key', 'UUID'],
+                'requirement' => ['UUID'],
                 'status' => 1,
             ],
             'get-balance' => [
                 'description' => '大地遊戲：餘額查詢',
-                'requirement' => ['public_key', 'UUID'],
+                'requirement' => ['UUID'],
                 'status' => 1,
             ],
             'buy-gachapon' => [
                 'description' => '大地遊戲：轉蛋',
-                'requirement' => ['public_key', 'UUID', 'amount'],
+                'requirement' => ['UUID', 'quantity'],
                 'status' => 1,
             ],
 
             // 答題與攤位的部份
             'get-quiz' => [
                 'description' => '大地遊戲：題庫',
-                'requirement' => null,
+                'requirement' => [],
                 'status' => 1,
             ],
             'solve-quiz' => [
                 'description' => '大地遊戲：答題',
-                'requirement' => ['public_key', 'id', 'answer'],
+                'requirement' => ['UUID', 'id', 'answer'],
                 'status' => 1,
             ],
             'get-hawker-qrcode' => [
@@ -188,10 +188,15 @@ class ApiMiddleware extends Middleware
             ],
             'get-hawker-mission' => [
                 'description' => '大地遊戲：攤位挑戰',
-                'requirement' => ['id', 'public_key', 'token'],
+                'requirement' => ['UUID', 'id', 'token'],
                 'status' => 1,
             ],
         ];
+
+        // 關閉大地遊戲的 api
+        array_walk($this->sourceInfo['fieldGame'], function (&$apiDef) {
+            $apiDef['status'] = 0;
+        });
     }
 
     public function __invoke($request, $response, $next)

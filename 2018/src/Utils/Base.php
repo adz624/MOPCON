@@ -89,7 +89,7 @@ class Base
         $main = self::getI18n($main_msg);
         $main['pagetitle'] = (isset($main['nav'][$params['pageid']])) ? $main['nav'][$params['pageid']] : $main['sitetitle'];
         $webParams = str_replace(['&lang=zh', '&lang=en'], ['', ''], isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : "");
-        $params = array_replace_recursive(
+        @$params = array_replace_recursive(
             [
                 'main' => $main,
                 'website' => $_SERVER['HTTP_HOST'],

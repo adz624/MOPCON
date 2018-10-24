@@ -18,9 +18,15 @@
         }
     },
     "scripts": {
+        "post-install-cmd": [
+            "composer dumpautoload -o"
+        ],
         "migrate2018": [
             "vendor/bin/phinx migrate -vvv -e mopcon2018 --ansi",
             "vendor/bin/phinx status -vvv -e mopcon2018 --ansi"
         ]
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.8"
     }
 }

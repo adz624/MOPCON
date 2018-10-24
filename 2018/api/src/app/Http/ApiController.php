@@ -2,7 +2,11 @@
 namespace MopConApi2018\App\Http;
 
 use MopCon2018\Utils\GoogleDocsSpreadsheet;
+use MopConApi2018\App\Models\FieldgameBoothMission;
+use MopConApi2018\App\Models\FieldgameQuiz;
 use MopConApi2018\App\Models\MopConResource;
+use MopConApi2018\App\Models\User;
+use MopConApi2018\App\Models\UserPassbook;
 
 class ApiController extends Controller
 {
@@ -15,6 +19,9 @@ class ApiController extends Controller
     public $errMsg = [
         4001 => '此請求方法錯誤',
         4002 => '此請求缺乏必要的參數',
+        4003 => '此請求已經過期',
+        4004 => '此請求的資源不存在',
+        4005 => '此請求夾帶的參數內容不正確'
     ];
 
     public function __invoke($request, $response, $args)
@@ -114,7 +121,7 @@ class ApiController extends Controller
                             array_filter($scheduleByDate, function ($row) use ($duration) {
                                 return $row['duration'] == $duration;
                             })
-                        )
+                        ),
                     ];
                 }
 
@@ -124,8 +131,8 @@ class ApiController extends Controller
             $data = [
                 'payload' => [
                     'agenda' => $agenda,
-                    'talk' => $scheduleUnconf
-                ]
+                    'talk' => $scheduleUnconf,
+                ],
             ];
             return $data;
         }, $this->globalCacheSeconds);
@@ -283,11 +290,15 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $is_success = false;
-        // 測試環境 testing/development
-        if (!$this->container->isProduction) {
-            $user = new \MopConApi2018\App\Models\User;
-            $user->uuid = (!empty($params['UUID'])) ? $params['UUID'] : uniqid('test_');
+        try {
+            $msg = 'update user';
+            $user = User::find($params['UUID']);
+            if (!$user) {
+                $msg = 'create user';
+                $user = new User;
+                // 測試環境 testing/development 且沒給 UUID
+                $user->uuid = (empty($params['UUID']) && !$this->container->isProduction) ? uniqid('test_') : $params['UUID'];
+            }
             $user->public_key = $params['public_key'];
             $user->device_type = 'undefined';
             $user->fcm_push_token = (isset($params['fcm_push_token'])) ? $params['fcm_push_token'] : '';
@@ -300,10 +311,14 @@ class ApiController extends Controller
              */
             $user->save();
             $is_success = true;
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+            $is_success = false;
         }
 
         $result = [
-            'is_success' => $is_success
+            'is_success' => $is_success,
+            'msg' => $msg,
         ];
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
@@ -326,9 +341,15 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'balance' => 100
-        ];
+        try {
+            $msg = 'get balance success';
+            $user = User::findOrFail($params['UUID']);
+            $balance = $user->biilabs_balance;
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('balance', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -350,9 +371,43 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'is_success' => true
-        ];
+        // 不允許數量小於 0; 必須是整數
+        if ($params['quantity'] <= 0 || !is_int($params['quantity'] + 0)) {
+            $errMsg = $this->getErrorInfo(4005);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        ///// 轉蛋價格暫時 hardcode, 30 代幣
+        $gochaPrice = 30;
+
+        try {
+            $msg = 'buy gachapon caculating...';
+            $user = User::findOrFail($params['UUID']);
+            $orderAmount = $params['quantity'] * $gochaPrice;
+            $is_success = $user->biilabs_balance >= $orderAmount;
+            $msg = 'buy gachapon fail; your balance is not enough';
+            if ($is_success) {
+                // 如果代幣夠多
+                $user->biilabs_balance -= $orderAmount;
+                $user->save();
+                /// 交易紀錄
+                $passbook_record = new UserPassbook([
+                    'uuid' => $user->uuid,
+                    'summary' => sprintf('購買 %s 個扭蛋，消耗代幣共 %s', $params['quantity'], $orderAmount),
+                    'withdrawal' => $orderAmount,
+                ]);
+
+                $user->passbook()->save($passbook_record);
+                $msg = 'buy gachapon success';
+            }
+            $balance = $user->biilabs_balance;
+            $exchMax = floor($balance / $gochaPrice);
+        } catch (\Exception $e) {
+            $is_success = false;
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('is_success', 'balance', 'exchMax', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -376,53 +431,32 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = json_decode('[
-            {
-              "date": "2018-01-01",
-              "items": [
-                {
-                  "id": "001",
-                  "type": "quiz",
-                  "title": "什麼是區塊鏈",
-                  "description": null,
-                  "banner_url": null,
-                  "quiz": "What is blockchain?",
-                  "options": [
-                    "a",
-                    "b",
-                    "c",
-                    "d"
-                  ],
-                  "answer": "1",
-                  "status": "-1",
-                  "unlock_time": "10013133"
-                },
-                {
-                  "id": "002",
-                  "type": "task",
-                  "title": "什麼是大數據",
-                  "description": null,
-                  "options": null,
-                  "banner_url": null,
-                  "status": "0",
-                  "answer": null,
-                  "unlock_time": "10013133"
-                },
-                {
-                  "id": "003",
-                  "type": "task",
-                  "title": "找到黃色小鴨",
-                  "description": "必須和別人結伴完成",
-                  "options": null,
-                  "banner_url": null,
-                  "status": "1",
-                  "answer": null,
-                  "unlock_time": "10013133"
-                }
-              ]
-            },
-            {}
-          ]');
+        // 這邊統一都存到 2018-11-03 的陣列中，最後討論不分日期
+        $result = [
+            [ 'date' => '2018-11-03', 'items' => [] ],
+            [ 'date' => '2018-11-04', 'items' => [] ],
+        ];
+        $UUID = filter_var($params['UUID']);
+        $msg = '';
+
+        try {
+            if ($UUID) {
+                $user = User::findOrFail($UUID);
+            }
+            $quizzes = FieldgameQuiz::all();
+            $quizzes->each(function ($quiz) use (&$result, $user) {
+                $result[0]['items'][] = $quiz->toApiFormat($user->quiz_progress);
+            });
+
+            $missions = FieldgameBoothMission::all();
+            $missions->each(function ($mission) use (&$result, $user) {
+                $result[0]['items'][] = $mission->toApiFormat($user->mission_progress);
+            });
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+        }
+        $result['msg'] = $msg;
+
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -444,10 +478,56 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'is_success' => true,
-            'reward' => 30
-        ];
+         // 答題邏輯
+        // 檢查 user 是否領過
+        // 沒有才發錢，加入 balance, passbook, 更新任務進度
+        // transaction table 就先跳過不理
+        try {
+            $user = User::findOrFail($params['UUID']);
+            $quiz_id = filter_var($params['id'], FILTER_SANITIZE_NUMBER_INT);
+            $quiz = FieldgameQuiz::findOrFail($quiz_id);
+            $reward = 0;
+            $is_success = false;
+            $answer = $params['answer'];
+            if (!$quiz->isActive()) {
+                $answer = $user->getQuizWriting($quiz_id);
+                throw new \Exception('未開放答題，或已經超過答題時間');
+            }
+
+            if (!$user->isQuizComplete($quiz->quiz_id)) {
+                $is_success = $quiz->isCorrectAnswer($params['answer']);
+                $msg = '登愣，答題失敗';
+                if ($is_success) {
+                    $reward = $quiz->reward;
+                    $passbook_record = new UserPassbook([
+                        'uuid' => $user->uuid,
+                        'summary' => sprintf('第 %s 題解答獎勵，賺取代幣 %s', $quiz->quiz_id, $quiz->reward),
+                        'deposit' => $quiz->reward,
+                    ]);
+
+                    $user->passbook()->save($passbook_record);
+                    $msg = '賓崩賓崩！答題成功';
+                }
+
+                $quiz_progress = [
+                    $quiz->quiz_id => [
+                        'state' => $is_success,
+                        'reward' => $reward,
+                        'answer' => $params['answer']
+                    ],
+                ] + ($user->quiz_progress ?: []);
+                $user->quiz_progress = $quiz_progress;
+                $user->biilabs_balance += $quiz->reward;
+                $user->save();
+            } else {
+                throw new \Exception('你已經完成答題，而且領過獎勵了');
+            }
+        } catch (\Exception $e) {
+            $is_success = false;
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('is_success', 'reward', 'answer', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
@@ -469,14 +549,29 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
+        $fieldgameBoothMission = FieldgameBoothMission::find($params['id']);
+        if (!$fieldgameBoothMission) {
+            $errMsg = $this->getErrorInfo(4004);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        $token = base64_encode(http_build_query([
+            'id' => $fieldgameBoothMission->mission_id,
+            'rQtime' => time(),
+        ]));
+
         $result = [
-            'id' => 1,
-            'token' => 'mopcon:123-456-789_' . md5(time())
+            'id' => $params['id'],
+            // token 是讓 server 辨認攤位，取得對應的任務獎勵並發送
+            'token' => $token,
         ];
+
+        $result['qrcode'] = 'http://chart.apis.google.com/chart?cht=qr&chl=' . urlencode(json_encode($result)) . '&chs=150x150';
+
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 
-    // 攤位挑戰 (POST)
+    // 攤位挑戰獲取獎勵 (POST)
     private function getHawkerMission($request, $response, $args)
     {
         $params = $request->getParsedBody();
@@ -494,10 +589,48 @@ class ApiController extends Controller
             return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
         }
 
-        $result = [
-            'is_success' => true,
-            'reward' => 30
-        ];
+        parse_str(base64_decode($params['token']), $token_parsed);
+        // 檢查 token 中的時間
+        if (time() > $token_parsed['rQtime'] + 30 && false) {
+            $errMsg = $this->getErrorInfo(4003);
+            return $response = $response->withJson($errMsg, 200, $this->jsonOptions);
+        }
+
+        // 發錢邏輯
+        // 檢查 user 是否領過
+        // 沒有才發錢，加入 balance, passbook, 更新任務進度
+        // transaction table 就先跳過不理
+        try {
+            $user = User::findOrFail($params['UUID']);
+            $mission_id = filter_var($params['id'], FILTER_SANITIZE_NUMBER_INT);
+            $mission = FieldgameBoothMission::findOrFail($mission_id) ;
+            if (!$user->isMissionComplete($params['id'])) {
+                $mission_progress = [
+                    $mission->mission_id => [
+                        'state' => true,
+                        'reward' => $mission->reward,
+                    ],
+                ] + ($user->mission_progress ?: []);
+                $user->mission_progress = $mission_progress;
+                $user->biilabs_balance += $mission->reward;
+                $user->save();
+
+                $passbook_record = new UserPassbook([
+                    'uuid' => $user->uuid,
+                    'summary' => sprintf('獲取任務 id (%s) 的獎勵 (%s)', $mission->mission_id, $mission->reward),
+                    'deposit' => $mission->reward,
+                ]);
+
+                $user->passbook()->save($passbook_record);
+            }
+            $is_success = true;
+            $reward = $mission->reward;
+        } catch (\Exception $e) {
+            $is_success = false;
+            $msg = $e->getMessage();
+        }
+
+        $result = compact('is_success', 'reward', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
     }
 }
