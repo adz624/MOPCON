@@ -292,17 +292,22 @@ class ApiController extends Controller
 
     private function accessNews($request, $response, $args)
     {
-        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
-            $apiData = new GoogleDocsSpreadsheet(
-                $this->resource['sheetKey'],
-                $this->resource['columns'],
-                $this->resource['sheetGridId']
-            );
+        $redis_key = $this->getRedisKey('news');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
+        }
 
-            $apiDataArray = $apiData->toArray();
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
 
-            return ['payload' => $apiDataArray];
-        }, $this->globalCacheSeconds);
+        $apiDataArray = $apiData->toArray();
+
+        $apiData = ['payload' => $apiDataArray];
+        $this->redis->setex($redis_key, 600, json_encode($apiData));
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
