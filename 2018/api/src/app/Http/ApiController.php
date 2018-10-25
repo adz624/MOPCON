@@ -187,23 +187,27 @@ class ApiController extends Controller
 
     private function accessSponsor($request, $response, $args)
     {
-        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
-            $apiData = new GoogleDocsSpreadsheet(
-                $this->resource['sheetKey'],
-                $this->resource['columns'],
-                $this->resource['sheetGridId']
-            );
+        $redis_key = $this->getRedisKey('sponsor');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
+        }
+        $apiData = new GoogleDocsSpreadsheet(
+            $this->resource['sheetKey'],
+            $this->resource['columns'],
+            $this->resource['sheetGridId']
+        );
 
-            $apiDataArray = $apiData->toArray();
+        $apiDataArray = $apiData->toArray();
 
-            foreach ($apiDataArray as $key => &$value) {
-                if (!empty($value['logo'])) {
-                    $value['logo'] = $this->fullUrlToAssets . '/images/sponsor/' . $value['logo'];
-                }
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['logo'])) {
+                $value['logo'] = $this->fullUrlToAssets . '/images/sponsor/' . $value['logo'];
             }
+        }
 
-            return ['payload' => $apiDataArray];
-        }, $this->globalCacheSeconds);
+        $apiData = ['payload' => $apiDataArray];
+        $this->redis->setex($redis_key, 600, json_encode($apiData));
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
