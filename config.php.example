@@ -2,6 +2,12 @@
 
 return [
     'base_uri' => 'https://mopcon.org',
+    'redis' => [
+        'scheme' => 'tcp',
+        'host' => 'x.x.x.x',
+        'port' => 6379,
+        'key_prefix' => 'xxx'
+    ],
     '2018' => [
         'sheetKey' => '',
         'sheetGridId' => [
