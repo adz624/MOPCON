@@ -36,7 +36,7 @@ class ApiController extends Controller
         $this->resource = $request->getAttribute('resource');
         $this->resourceName = $request->getAttribute('routesParsed')[0];
         $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT;
-        $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/2018/assets';
+        $this->fullUrlToAssets = Base::getBaseUri() . '/2018/assets';
         $this->redis = (new RedisFactory())->create();
         $this->config = Base::getConfig();
 
