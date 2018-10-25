@@ -150,10 +150,15 @@ class ApiController extends Controller
 
     private function accessScheduleUnconf($request, $response, $args)
     {
-        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
-            $scheduleUnconfData = MopConResource::getScheduleUnconf();
-            return ['payload' => $scheduleUnconfData];
-        }, $this->globalCacheSeconds);
+        $redis_key = $this->getRedisKey('unconf');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
+        }
+
+        $scheduleUnconfData = MopConResource::getScheduleUnconf();
+        $apiData = ['payload' => $scheduleUnconfData];
+        $this->redis->setex($redis_key, 600, json_encode($apiData));
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
