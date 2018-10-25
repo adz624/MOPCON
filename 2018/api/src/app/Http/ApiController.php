@@ -7,6 +7,9 @@ use MopConApi2018\App\Models\FieldgameQuiz;
 use MopConApi2018\App\Models\MopConResource;
 use MopConApi2018\App\Models\User;
 use MopConApi2018\App\Models\UserPassbook;
+use MopCon\RedisFactory;
+use MopCon2018\Utils\Base;
+use Predis\Client;
 
 class ApiController extends Controller
 {
@@ -23,6 +26,9 @@ class ApiController extends Controller
         4004 => '此請求的資源不存在',
         4005 => '此請求夾帶的參數內容不正確'
     ];
+    /** @var $redis Client */
+    private $redis;
+    private $config;
 
     public function __invoke($request, $response, $args)
     {
@@ -31,6 +37,8 @@ class ApiController extends Controller
         $this->resourceName = $request->getAttribute('routesParsed')[0];
         $this->jsonOptions = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT;
         $this->fullUrlToAssets = $request->getUri()->getScheme() . '://' . $request->getUri()->getHost() . '/2018/assets';
+        $this->redis = (new RedisFactory())->create();
+        $this->config = Base::getConfig();
 
         $prefixWithAction = true;
         if (in_array($this->sourceFrom, ['fieldGame'])) {
@@ -152,13 +160,18 @@ class ApiController extends Controller
 
     private function accessSpeaker($request, $response, $args)
     {
-        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
-            $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
-            $apiDataArray = array_filter($apiDataArray, function ($row) {
-                return !empty($row['speaker_id']);
-            });
-            return ['payload' => $apiDataArray];
-        }, $this->globalCacheSeconds);
+        $redis_key = $this->getRedisKey('speaker');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
+        }
+
+        $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
+        $apiDataArray = array_filter($apiDataArray, function ($row) {
+            return !empty($row['speaker_id']);
+        });
+        $apiData = ['payload' => $apiDataArray];
+        $this->redis->setex($redis_key, 600, json_encode($apiData));
 
         return $response = $response->withJson($apiData, 200, $this->jsonOptions);
     }
@@ -632,5 +645,17 @@ class ApiController extends Controller
 
         $result = compact('is_success', 'reward', 'msg');
         return $response = $response->withJson($result, 200, $this->jsonOptions);
+    }
+
+    /**
+     * 取得 redis key
+     * @param $type
+     * @return string
+     */
+    private function getRedisKey($type)
+    {
+        $prefix_key = $this->config['redis']['key_prefix'];
+
+        return $prefix_key . "_" . $type;
     }
 }
