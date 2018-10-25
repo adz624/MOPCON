@@ -105,45 +105,49 @@ class ApiController extends Controller
 
     private function accessSchedule($request, $response, $args)
     {
-        $apiData = $this->cache->refreshIfExpired($this->resourceName, function () {
-            $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
-            $scheduleUnconf = MopConResource::getScheduleUnconf();
+        $redis_key = $this->getRedisKey('schedule');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
+        }
 
-            $agenda = [];
-            foreach (array_unique(array_column($schedule, 'date')) as $date) {
-                $items = [];
+        $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
+        $scheduleUnconf = MopConResource::getScheduleUnconf();
 
-                $scheduleByDate = array_values(
-                    array_filter($schedule, function ($row) use ($date) {
-                        return $row['date'] == $date;
-                    })
-                );
+        $agenda = [];
+        foreach (array_unique(array_column($schedule, 'date')) as $date) {
+            $items = [];
 
-                $durations = array_unique(array_column($scheduleByDate, 'duration'));
-                sort($durations);
+            $scheduleByDate = array_values(
+                array_filter($schedule, function ($row) use ($date) {
+                    return $row['date'] == $date;
+                })
+            );
 
-                foreach ($durations as $duration) {
-                    $items[] = [
-                        'duration' => $duration,
-                        'agendas' => array_values(
-                            array_filter($scheduleByDate, function ($row) use ($duration) {
-                                return $row['duration'] == $duration;
-                            })
-                        ),
-                    ];
-                }
+            $durations = array_unique(array_column($scheduleByDate, 'duration'));
+            sort($durations);
 
-                $agenda[] = compact('date', 'items');
+            foreach ($durations as $duration) {
+                $items[] = [
+                    'duration' => $duration,
+                    'agendas' => array_values(
+                        array_filter($scheduleByDate, function ($row) use ($duration) {
+                            return $row['duration'] == $duration;
+                        })
+                    ),
+                ];
             }
 
-            $data = [
-                'payload' => [
-                    'agenda' => $agenda,
-                    'talk' => $scheduleUnconf,
-                ],
-            ];
-            return $data;
-        }, $this->globalCacheSeconds);
+            $agenda[] = compact('date', 'items');
+        }
+
+        $apiData = [
+            'payload' => [
+                'agenda' => $agenda,
+                'talk' => $scheduleUnconf,
+            ],
+        ];
+        $this->redis->setex($redis_key, 600, json_encode($apiData));
 
         return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
