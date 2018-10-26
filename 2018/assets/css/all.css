@@ -8753,11 +8753,6 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 3px;
 }
 
-.apps .ios, .apps .android {
-  width: 400px;
-  height: 400px;
-}
-
 .apps .privacy p {
   color: #000033;
 }
