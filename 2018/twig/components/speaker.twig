@@ -7,7 +7,7 @@
     {%if speaker.speaker_id != "" %}
 
         <div class="speaker-info d-flex align-items-center flex-column">
-          <img class="my-3 mr-3" src="{{ speaker.picture|default('/2018/assets/images/speaker/blank_speaker.jpg') }}" alt="" srcset="">
+          <img class="rounded-circle my-3 mr-3" src="{{ speaker.picture|default('/2018/assets/images/speaker/blank_speaker.jpg') }}" alt="" srcset="">
           <h5>{{ lang == 'zh'? speaker.name:speaker.name_en }}</h5>
           <span class="text-center">{{ speaker.company }}</span>
           <span class="text-center">{{ speaker.job }}</span>
