@@ -187,7 +187,7 @@ class MopConResource
         return $apiDataArray;
     }
 
-    private static function getSourceInfo()
+    public static function getSourceInfo()
     {
         return [
             'googleSheet' => [
