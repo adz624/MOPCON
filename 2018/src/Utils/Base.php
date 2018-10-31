@@ -190,4 +190,11 @@ class Base
 
         return $response;
     }
+
+    public static function getRedisKey($type)
+    {
+        $prefix_key = self::getConfig()['redis']['key_prefix'];
+
+        return $prefix_key . "_" . $type;
+    }
 }
