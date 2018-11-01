@@ -132,4 +132,108 @@ class Api
 
         return $apiData_json;
     }
+
+    public function getCommunity()
+    {
+        $redis_key = Base::getRedisKey('community');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $redis_data;
+        }
+
+        $apiData = new GoogleDocsSpreadsheet(
+            MopConResource::getSourceInfo()['googleSheet']['community']['sheetKey'],
+            MopConResource::getSourceInfo()['googleSheet']['community']['columns'],
+            MopConResource::getSourceInfo()['googleSheet']['community']['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['logo'])) {
+                $value['logo'] = $this->fullUrlToAssets . '/images/community/' . $value['logo'];
+            }
+        }
+
+        $apiData = ['payload' => $apiDataArray];
+        $apiData_json = json_encode($apiData);
+        $this->redis->setex($redis_key, 600, $apiData_json);
+
+        return $apiData_json;
+    }
+
+    public function getVolunteer()
+    {
+        $redis_key = Base::getRedisKey('volunteer');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $redis_data;
+        }
+
+        $apiData = new GoogleDocsSpreadsheet(
+            MopConResource::getSourceInfo()['googleSheet']['volunteer']['sheetKey'],
+            MopConResource::getSourceInfo()['googleSheet']['volunteer']['columns'],
+            MopConResource::getSourceInfo()['googleSheet']['volunteer']['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        $apiData = ['payload' => $apiDataArray];
+        $apiData_json = json_encode($apiData);
+        $this->redis->setex($redis_key, 600, $apiData_json);
+
+        return $apiData_json;
+    }
+
+    public function getCarousel()
+    {
+        $redis_key = Base::getRedisKey('carousel');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $redis_data;
+        }
+
+        $apiData = new GoogleDocsSpreadsheet(
+            MopConResource::getSourceInfo()['googleSheet']['carousel']['sheetKey'],
+            MopConResource::getSourceInfo()['googleSheet']['carousel']['columns'],
+            MopConResource::getSourceInfo()['googleSheet']['carousel']['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        foreach ($apiDataArray as $key => &$value) {
+            if (!empty($value['banner'])) {
+                $value['banner'] = $this->fullUrlToAssets . '/images/carousel/' . $value['banner'];
+            }
+        }
+
+        $apiData = ['payload' => $apiDataArray];
+        $apiData_json = json_encode($apiData);
+        $this->redis->setex($redis_key, 600, $apiData_json);
+
+        return $apiData_json;
+    }
+
+    public function getNews()
+    {
+        $redis_key = Base::getRedisKey('news');
+        $redis_data = $this->redis->get($redis_key);
+        if ($redis_data) {
+            return $redis_data;
+        }
+
+        $apiData = new GoogleDocsSpreadsheet(
+            MopConResource::getSourceInfo()['googleSheet']['news']['sheetKey'],
+            MopConResource::getSourceInfo()['googleSheet']['news']['columns'],
+            MopConResource::getSourceInfo()['googleSheet']['news']['sheetGridId']
+        );
+
+        $apiDataArray = $apiData->toArray();
+
+        $apiData = ['payload' => $apiDataArray];
+        $apiData_json = json_encode($apiData);
+        $this->redis->setex($redis_key, 600, $apiData_json);
+
+        return $apiData_json;
+    }
 }
