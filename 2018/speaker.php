@@ -4,7 +4,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use MopCon2018\Utils\Base;
 
 $url = Base::getBaseUri() . '/2018/api/speaker';
-$apiData = json_decode(file_get_contents($url), true);
+$apiHelper = new MopCon2018\Utils\Api;
+$apiData = json_decode($apiHelper->getSpeaker(), true);
 $apiData = $apiData['payload'];
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 

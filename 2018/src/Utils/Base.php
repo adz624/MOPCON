@@ -163,4 +163,38 @@ class Base
 
         return $L10n;
     }
+
+    public static function getUriContents($uri)
+    {
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $uri,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 3,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                "cache-control: no-cache",
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            throw new \Exception("cURL Error #:" . $err);
+        }
+
+        return $response;
+    }
+
+    public static function getRedisKey($type)
+    {
+        $prefix_key = self::getConfig()['redis']['key_prefix'];
+
+        return $prefix_key . "_" . $type;
+    }
 }

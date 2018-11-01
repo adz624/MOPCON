@@ -17,7 +17,7 @@ class GoogleDocsSpreadsheet
         $this->gridId = empty($gridId) ? 'od6' : $gridId;
         $this->key = $key;
         $this->uri = "https://spreadsheets.google.com/feeds/list/$this->key/$this->gridId/public/values?alt=json";
-        $this->raw = file_get_contents($this->uri);
+        $this->raw = $this->getSheetData();
         $this->rawObj = json_decode($this->raw);
         $this->rows = $this->rawObj->feed->entry;
         $this->columns = $columns;
@@ -48,5 +48,32 @@ class GoogleDocsSpreadsheet
     public function toRows()
     {
         return $this->rows;
+    }
+
+    public function getSheetData()
+    {
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $this->uri,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 3,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                "cache-control: no-cache",
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            throw new \Exception("cURL Error #:" . $err);
+        }
+
+        return $response;
     }
 }
