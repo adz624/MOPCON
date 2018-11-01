@@ -2,6 +2,7 @@
 namespace MopConApi2018\App\Http;
 
 use MopCon2018\Utils\GoogleDocsSpreadsheet;
+use MopCon2018\Utils\Api;
 use MopConApi2018\App\Models\FieldgameBoothMission;
 use MopConApi2018\App\Models\FieldgameQuiz;
 use MopConApi2018\App\Models\MopConResource;
@@ -29,6 +30,7 @@ class ApiController extends Controller
     /** @var $redis Client */
     private $redis;
     private $config;
+    private $apiHelper;
 
     public function __invoke($request, $response, $args)
     {
@@ -39,6 +41,7 @@ class ApiController extends Controller
         $this->fullUrlToAssets = Base::getBaseUri() . '/2018/assets';
         $this->redis = (new RedisFactory())->create();
         $this->config = Base::getConfig();
+        $this->apiHelper = new Api;
 
         $prefixWithAction = true;
         if (in_array($this->sourceFrom, ['fieldGame'])) {
@@ -105,211 +108,58 @@ class ApiController extends Controller
 
     private function accessSchedule($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('schedule');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $schedule = MopConResource::getSchedule($this->fullUrlToAssets);
-        $scheduleUnconf = MopConResource::getScheduleUnconf();
-
-        $agenda = [];
-        foreach (array_unique(array_column($schedule, 'date')) as $date) {
-            $items = [];
-
-            $scheduleByDate = array_values(
-                array_filter($schedule, function ($row) use ($date) {
-                    return $row['date'] == $date;
-                })
-            );
-
-            $durations = array_unique(array_column($scheduleByDate, 'duration'));
-            sort($durations);
-
-            foreach ($durations as $duration) {
-                $items[] = [
-                    'duration' => $duration,
-                    'agendas' => array_values(
-                        array_filter($scheduleByDate, function ($row) use ($duration) {
-                            return $row['duration'] == $duration;
-                        })
-                    ),
-                ];
-            }
-
-            $agenda[] = compact('date', 'items');
-        }
-
-        $apiData = [
-            'payload' => [
-                'agenda' => $agenda,
-                'talk' => $scheduleUnconf,
-            ],
-        ];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
+        $apiJson = $this->apiHelper->getSchedule();
+        $apiData = json_decode($apiJson);
         return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessScheduleUnconf($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('unconf');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $scheduleUnconfData = MopConResource::getScheduleUnconf();
-        $apiData = ['payload' => $scheduleUnconfData];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getScheduleUnconf();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessSpeaker($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('speaker');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $apiDataArray = MopConResource::getSpeaker($this->fullUrlToAssets);
-        $apiDataArray = array_filter($apiDataArray, function ($row) {
-            return !empty($row['speaker_id']);
-        });
-        $apiData = ['payload' => $apiDataArray];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getSpeaker();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessSponsor($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('sponsor');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
-
-        $apiDataArray = $apiData->toArray();
-
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['logo'])) {
-                $value['logo'] = $this->fullUrlToAssets . '/images/sponsor/' . $value['logo'];
-            }
-        }
-
-        $apiData = ['payload' => $apiDataArray];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getSponsor();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessCommunity($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('community');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
-
-        $apiDataArray = $apiData->toArray();
-
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['logo'])) {
-                $value['logo'] = $this->fullUrlToAssets . '/images/community/' . $value['logo'];
-            }
-        }
-
-        $apiData = ['payload' => $apiDataArray];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getCommunity();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessVolunteer($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('volunteer');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
-
-        $apiDataArray = $apiData->toArray();
-
-        $apiData = ['payload' => $apiDataArray];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getVolunteer();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessCarousel($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('carousel');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
-
-        $apiDataArray = $apiData->toArray();
-
-        foreach ($apiDataArray as $key => &$value) {
-            if (!empty($value['banner'])) {
-                $value['banner'] = $this->fullUrlToAssets . '/images/carousel/' . $value['banner'];
-            }
-        }
-
-        $apiData = ['payload' => $apiDataArray];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getCarousel();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     private function accessNews($request, $response, $args)
     {
-        $redis_key = $this->getRedisKey('news');
-        $redis_data = $this->redis->get($redis_key);
-        if ($redis_data) {
-            return $response = $response->withJson(json_decode($redis_data, true), 200, $this->jsonOptions);
-        }
-
-        $apiData = new GoogleDocsSpreadsheet(
-            $this->resource['sheetKey'],
-            $this->resource['columns'],
-            $this->resource['sheetGridId']
-        );
-
-        $apiDataArray = $apiData->toArray();
-
-        $apiData = ['payload' => $apiDataArray];
-        $this->redis->setex($redis_key, 600, json_encode($apiData));
-
-        return $response = $response->withJson($apiData, 200, $this->jsonOptions);
+        $apiJson = $this->apiHelper->getNews();
+        $apiData = json_decode($apiJson);
+        return $response = $response->withJSON($apiData, 200, $this->jsonOptions);
     }
 
     /**
