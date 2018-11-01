@@ -1,13 +1,13 @@
 <?php
 namespace MopCon2018\Utils;
 
-use MopCon2018\Utils\GoogleDocsSpreadsheet;
 use MopConApi2018\App\Models\MopConResource;
 use MopCon\RedisFactory;
 
 class Api
 {
     protected $config;
+    protected $fullUrlToAssets;
     protected $redis;
 
     public function __construct()
@@ -19,7 +19,7 @@ class Api
 
     public function getSchedule()
     {
-        $redis_key = $this->getRedisKey('schedule');
+        $redis_key = Base::getRedisKey('schedule');
         $redis_data = $this->redis->get($redis_key);
         if ($redis_data) {
             return $redis_data;
@@ -70,7 +70,7 @@ class Api
 
     public function getSpeaker()
     {
-        $redis_key = $this->getRedisKey('speaker');
+        $redis_key = Base::getRedisKey('speaker');
         $redis_data = $this->redis->get($redis_key);
         if ($redis_data) {
             return $redis_data;
@@ -90,7 +90,7 @@ class Api
 
     public function getSponsor()
     {
-        $redis_key = $this->getRedisKey('sponsor');
+        $redis_key = Base::getRedisKey('sponsor');
         $redis_data = $this->redis->get($redis_key);
         if ($redis_data) {
             return $redis_data;
@@ -118,7 +118,7 @@ class Api
 
     public function getScheduleUnconf()
     {
-        $redis_key = $this->getRedisKey('unconf');
+        $redis_key = Base::getRedisKey('unconf');
         $redis_data = $this->redis->get($redis_key);
         if ($redis_data) {
             return $redis_data;
@@ -131,10 +131,5 @@ class Api
         $this->redis->setex($redis_key, 600, $apiData_json);
 
         return $apiData_json;
-    }
-
-    private function getRedisKey($name)
-    {
-        return Base::getRedisKey($name);
     }
 }
