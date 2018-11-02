@@ -282,7 +282,7 @@ class MopConResource
                     'sheetGridId' => Base::getConfig()['2018']['sheetGridId']['community'],
                     'columns' => [
                         'title' => '社群名稱',
-                        'id' => 'ID',
+                        'id' => 'id',
                         'logo' => 'logo',
                         'liasion' => '主要聯絡人',
                         'email' => '聯絡email',
