@@ -228,7 +228,7 @@ class Api
             MopConResource::getSourceInfo()['googleSheet']['news']['sheetGridId']
         );
 
-        $apiDataArray = $apiData->toArray();
+        $apiDataArray = array_reverse($apiData->toArray());
 
         $apiData = ['payload' => $apiDataArray];
         $apiData_json = json_encode($apiData);
