@@ -44,6 +44,11 @@
                             {% endif %}
                             <div class="speaker">{{lang == 'zh'? content.name:content.name_en}}</div>
                             <p class="detail" >{{ lang == 'zh'? content.schedule_topic :content.schedule_topic_en }}</p>
+                            <div class="serviceTag">
+                            {% if content.video_record == 'Yes' %}
+                                <img width="30" height="30" src="/2018/assets/images/icon-no-filming.svg" alt="禁止錄影">
+                            {% endif %}
+                            </div>
                         </div>
                         <div class="modal fade" id="modal-{{ content.schedule_id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel"
     aria-hidden="true">
@@ -69,6 +74,7 @@
                     <div class="speaker-zh-detail px-sm-4">
                         {{ lang == 'zh'? content.schedule_info:content.schedule_info_en }}
                     </div>
+                    
                     {#<div class="speaker-modal-btn mt-5 mb-3">
                         <button>共筆</button>
                         <button>Slide</button>
@@ -127,6 +133,11 @@
                             {% endif %}
                             <div class="speaker">{{lang == 'zh'? content.name:content.name_en}}</div>
                             <p class="detail" >{{ lang == 'zh'? content.schedule_topic :content.schedule_topic_en }}</p>
+                            <div class="serviceTag">
+                            {% if content.video_record == 'Yes' %}
+                                <img width="30" height="30" src="/2018/assets/images/icon-no-filming.svg" alt="禁止錄影">
+                            {% endif %}
+                            </div>
                         </div>
                         <div class="modal fade" id="modal-{{ content.schedule_id }}" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel"
     aria-hidden="true">
@@ -152,6 +163,7 @@
                     <div class="speaker-zh-detail px-sm-4">
                         {{ lang == 'zh'? content.schedule_info:content.schedule_info_en }}
                     </div>
+                   
                     {#<div class="speaker-modal-btn mt-5 mb-3">
                         <button>共筆</button>
                         <button>Slide</button>
