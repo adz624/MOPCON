@@ -69,6 +69,9 @@
                     <div class="speaker-zh-detail px-sm-4">
                         {{ lang == 'zh'? content.schedule_info:content.schedule_info_en }}
                     </div>
+                    {% if content.video_record == 'yes' %}
+                    <img src="assets/images/icon-no-filming.svg" alt="禁止錄影">
+                    {% endif %}
                     {#<div class="speaker-modal-btn mt-5 mb-3">
                         <button>共筆</button>
                         <button>Slide</button>
@@ -152,6 +155,9 @@
                     <div class="speaker-zh-detail px-sm-4">
                         {{ lang == 'zh'? content.schedule_info:content.schedule_info_en }}
                     </div>
+                    {% if content.video_record == 'yes' %}
+                        <img src="assets/images/icon-no-filming.svg" alt="禁止錄影">
+                    {% endif %}
                     {#<div class="speaker-modal-btn mt-5 mb-3">
                         <button>共筆</button>
                         <button>Slide</button>
