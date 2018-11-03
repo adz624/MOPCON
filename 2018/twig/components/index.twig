@@ -15,11 +15,11 @@
      
     </div>
 
-    <div class="row mt-4">
+    <!-- <div class="row mt-4">
             <div class="col-md-4 offset-md-4 d-flex justify-content-center">
                 <div style="width:400px;height:150px;" class="example" data-date="2018-11-03 09:00"></div>
             </div>
-    </div>
+    </div> -->
        
     <!-- <div class="row">
         <div class="btn col-md-4 col-lg-2 m-auto">
@@ -55,7 +55,7 @@
     //   particlesJS('particlesRight2', config);
     // }
     $('.banner-carousel').owlCarousel({
-		loop: true,
+		loop: false,
 		nav: false,
 		autoplay: true,
 		margin: 10,
@@ -80,20 +80,6 @@
     })
    
 
-        $(".example").TimeCircles({
-            start: true,
-            animation_interval: "ticks",
-            direction: "Counter-clockwise",
-            number_size: 0.32,
-            // bg_width: 0.5,
-            // fg_width: 0.05,
-            circle_bg_color: "#FFFFFF",
-            time: {
-                Days: { color: "#010135" },
-                Hours: { color: "#010135" },
-                Minutes: { color: "#010135" },
-                Seconds: { show: false }
-            }
-        });
+       
 </script>
 {% endblock %}
