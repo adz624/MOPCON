@@ -10,7 +10,7 @@ function getAlbum()
 }
 $params = [
     'pageid' => 'album',
-    'pagetitle' => '相簿',
+    'pagetitle' => '歷年相簿',
     'album' => getAlbum()
     // 'i18n' => file_get_contents(__DIR__ . )
 ];
