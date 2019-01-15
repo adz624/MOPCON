@@ -51,6 +51,7 @@ class Base
                     'blog' => '部落格',
                     'stalls' => '社團攤位申請',
                     'code_of_conduct' => 'MOPCON 行動準則',
+                    'album' => '歷年相簿'
 
                 ],
                 'his_mopcon' => '歷年 MOPCON',
@@ -82,6 +83,7 @@ class Base
                     'blog' => 'Blog',
                     'stalls' => 'Stalls',
                     'code_of_conduct' => 'MOPCON Code of Conduct',
+                    'album' => 'Album'
                 ],
                 'his_mopcon' => 'Past MOPCON',
             ],

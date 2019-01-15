@@ -1,0 +1,147 @@
+{% extends 'layouts/main.twig' %} {% block content %}
+<!-- APEC -->
+<style>
+    .owl-carousel .owl-wrapper {
+        display: flex !important;
+    }
+    .single-carousel.owl-carousel .owl-item {
+        height: 150px !important;
+    }
+    .owl-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: initial;
+    }
+</style>
+<header class="header">
+    <div class="container">
+        <div class="owl-carousel banner-carousel">
+            <div class="item thumbnail">
+                <a href="#mp2018">
+                    <img class="img-responsive" src="/img/album/groupphoto_2018.jpg" alt="2018合照" />
+                    <div class="caption">
+                        <h2 class="text-white">MOPCON 2018</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="item thumbnail">
+                <a href="#mp2017">
+                    <img class="img-responsive" src="/img/album/groupphoto_2017.jpg" alt="2017合照" />
+                    <div class="caption">
+                        <h2 class="text-white">MOPCON 2017</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="item thumbnail">
+                <a href="#mp2016">
+                    <img class="img-responsive" src="/img/album/groupphoto_2016.jpg" alt="2016合照" />
+                    <div class="caption">
+                        <h2 class="text-white">MOPCON 2016</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="item thumbnail">
+                <a href="#mp2015">
+                    <img class="img-responsive" src="/img/album/groupphoto_2015.jpg" alt="2015合照" />
+                    <div class="caption">
+                        <h2 class="text-white">MOPCON 2015</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="panel bottom">
+    <div class="container">
+    {% for item in album %}
+        <h3 id="mp{{item.year}}" class="page-title text-center">{{item.year}}</h3>
+        <div class="row mb-3">
+            {% for cate in item.category %}
+            <div class="col-md-3 mb-3">
+                <a class="d-block" target="_blank" href="{{cate.link}}">
+                    <span class="owl-carousel single-carousel mb-2">
+                        {% for photo in cate.photos %}
+                        <img class="img-responsive" src="/img/album/{{photo.src}}" alt="{{photo.fileName}}" />
+                        {% endfor %}
+                    </span>
+                    <p class="h5 text-white text-center">{{cate.title}}</p>
+                </a>
+            </div>
+            {% endfor %}
+            {# <div class="col-md-3 mb-sm-3">
+                <a target="_blank" href="https://photos.app.goo.gl/vqeu2tJ1Qs9z8Mmv6">
+                    <img class="img-responsive" src="/img/album/day0_2018.jpg" alt="2018場佈" />
+                </a>
+            </div>
+            <div class="col-md-3 mb-sm-3">
+                <a target="_blank" href="https://photos.app.goo.gl/JfKxJrfBhNXwRGLF7">
+                    <img class="img-responsive" src="/img/album/day1_2018.jpg" alt="2018活動第一天" />
+                </a>
+            </div>
+            <div class="col-md-3 mb-sm-3">
+                <a target="_blank" href="https://photos.app.goo.gl/nmuVudpaQBY3j4uk7">
+                    <img class="img-responsive" src="/img/album/day2_2018.jpg" alt="2018活動第二天" />
+                </a>
+            </div> #}
+        </div>
+    {% endfor %}
+    </div>
+    
+</div>
+<script>
+
+    $('.banner-carousel').owlCarousel({
+		loop: true,
+		nav: false,
+		autoplay: true,
+		margin: 10,
+		responsiveClass: true,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			576: {
+				items: 1,
+			},
+			768: {
+				items: 1,
+				dots: true,
+			},
+			1200: {
+				items: 1,
+				dots: true,
+			}
+		}
+    })
+   $('.single-carousel').owlCarousel({
+		loop: true,
+		nav: false,
+        stagePadding: 30,
+        autoplay: true,
+        {# autoHeight: true, #}
+        dots: false,
+		margin: 10,
+        animateOut: 'fadeOut',
+		responsiveClass: true,
+        utoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			576: {
+				items: 1,
+			},
+			768: {
+				items: 1,
+				
+			},
+			1200: {
+				items: 1,
+			}
+		}
+   })
+
+</script>
+{% endblock %}
