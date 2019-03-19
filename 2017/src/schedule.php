@@ -1,7 +1,7 @@
 <?php
 function getSchedules()
 {
-    $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1uIN3ztZeBYAliu0tq2_GoQT4Ublly7EMPs2BvIjl_Es/4/public/values?alt=json"), true);
+    $google_data = json_decode(file_get_contents(__DIR__ . '/../api/schedules.json'), true);
     $google_data = $google_data['feed']['entry'];
     $speakers = getSpeakersOrderByScheduleId();
     $data = [];
@@ -104,7 +104,7 @@ function assignSchedule($schedules_assign_data, $speakers)
     $lang_en = [];
 
 
-    
+
 
     foreach ($schedules_assign_data as $key => $item) {
         if (is_numeric($item)) {
@@ -145,5 +145,5 @@ function assignSchedule($schedules_assign_data, $speakers)
         'en' => $lang_en,
     ];
     return getI18n($main);
-    
+
 }

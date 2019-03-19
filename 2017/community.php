@@ -6,9 +6,7 @@ $lang = getLang();
 $pageid = 'community';
 $params = [
     'pageid'    => $pageid,
-    'filemtime' => getLastUpdateTime($pageid),
     'community' => getAllCommunities(),
-    'sponsors'  => getSponsors(),
     'index'     => getIndex()
 ];
 $params['og_url'] = 'community.php';

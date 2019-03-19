@@ -1,20 +1,13 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-function getAlbum()
-{
-    $jsonText = file_get_contents(__DIR__ . "/locales/album/photodata.json");
-    $jsonArr = json_decode($jsonText, true);
-    $returnArr = $jsonArr;
 
-    return $returnArr;
-}
+use MopCon\BaseComponent;
+
+$jsonText = file_get_contents(__DIR__ . "/locales/album/photodata.json");
 $params = [
     'pageid' => 'album',
     'pagetitle' => '歷年相簿',
-    'album' => getAlbum()
-    // 'i18n' => file_get_contents(__DIR__ . )
+    'album' => json_decode($jsonText, true)
 ];
 
-// file_get_contents();
-// MopCon2018\Utils\Base::getL10n();
-\MopCon2018\Utils\Base::render('components/album.twig', $params);
+(new BaseComponent())->render('album.twig', $params);
