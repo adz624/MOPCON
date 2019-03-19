@@ -5,9 +5,8 @@ include __DIR__ . '/src/init.php';
 $lang = getLang();
 $pageid = 'member';
 $params = [
-    'pageid'    => $pageid,
-    'filemtime' => getLastUpdateTime($pageid),
-    'member'    => getAllMembers(),
+    'pageid' => $pageid,
+    'member' => getAllMembers(),
 ];
 $params['og_url'] = 'member.php';
 $params['main']['ogdesc'] = 'MOPCON的志工成員介紹。';

@@ -5,7 +5,6 @@ $pageid = 'schedule_unconf';
 $lang = getLang();
 $params = [
     'pageid'    => $pageid,
-    'filemtime' => getLastUpdateTime($pageid),
     'schedules' => [],
 ];
 $text = [

@@ -1,7 +1,7 @@
 <?php
 function getSpeakers($speaker_id = 0)
 {
-    $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1uIN3ztZeBYAliu0tq2_GoQT4Ublly7EMPs2BvIjl_Es/1/public/values?alt=json"), true);
+    $google_data = json_decode(file_get_contents(__DIR__ . '/../api/speakers.json'), true);
     $google_data = $google_data['feed']['entry'];
     $lang_zh = [];
     $lang_en = [];

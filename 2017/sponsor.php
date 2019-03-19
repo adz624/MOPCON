@@ -4,7 +4,6 @@ include __DIR__ . '/src/init.php';
 $pageid = 'sponsor';
 $params = [
     'pageid'    => $pageid,
-    'filemtime' => getLastUpdateTime($pageid),
     'sponsors'  => getSponsorsByOrder(),
     'index'     => getIndex()
 ];
