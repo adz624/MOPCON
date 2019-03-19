@@ -1,7 +1,7 @@
 <?php
 function getScheduleUnconf()
 {
-    $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1IQAuiVp0264tqHp5iuyyNFj_h2nv-dYYzhqfiKPVzbQ/1/public/values?alt=json"), true);
+    $google_data = json_decode(file_get_contents(__DIR__ . '/../api/schedules_unconf.json'), true);
     $google_data = $google_data['feed']['entry'];
     $speakers = getSpeakersOrderByScheduleId();
     $data = [];
