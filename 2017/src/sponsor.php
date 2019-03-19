@@ -1,14 +1,14 @@
 <?php
 function getSponsors($id = 0)
 {
-    $google_data = json_decode(file_get_contents("https://spreadsheets.google.com/feeds/list/1MXWK7N8NAUFaoHiaOuDK2E3Llev5buhHnUAW86nDdAc/1/public/values?alt=json"), true);
+    $google_data = json_decode(file_get_contents(__DIR__ . '/../api/sponsors.json'), true);
     $google_data = $google_data['feed']['entry'];
     $lang_zh = [];
     $lang_en = [];
     $sponsorLevel = ['Tony Stark', 'Bruce Wayne', 'Developer', 'Geek', '特別感謝'];
     foreach ($google_data as $item) {
-        
-        
+
+
         $lang_zh[$item['gsx$id']['$t']] = [
             'order'          => $item['gsx$贊助商編號']['$t'],
             'id'             => $item['gsx$id']['$t'],
@@ -51,19 +51,19 @@ function getSponsorsByOrder()
             'sponsor_id'     => isset($data[$item['order']]['sponsor_id']) ?
                 [$data[$item['order']]["sponsor_id"][0], $item['id']] :
                 [$item['id']],
-           
+
             'logo'        => isset($data[$item['order']]["logo"]) ?
                 [$data[$item['order']]["logo"][0], $item['logo']] :
                 [$item['logo']],
             'info'        => isset($data[$item['order']]["info"]) ?
                 [$data[$item['order']]["info"][0], $item['info']] :
                 [$item['info']],
-           
+
             'website'        => isset($data[$item['order']]["website"]) ?
                 [$data[$item['order']]["website"][0], $item['website']] :
                 [$item['website']],
 
-          
+
         ];
     }
 
