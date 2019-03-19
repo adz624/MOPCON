@@ -5,18 +5,17 @@ $lang = getLang();
 $pageid = 'schedule';
 $params = [
     'pageid'    => $pageid,
-    'filemtime' => getLastUpdateTime($pageid),
     'schedules' => getSchedules(),
 ];
 $params['og_url'] = 'schedule.php';
 $text = [
     'zh' => [
         'description' => '點擊議程標題可觀看詳細介紹',
-       
+
     ],
     'en' => [
         'description' => 'Click schedule title to see more detail.',
-      
+
     ],
 ];
 if (isset($_GET['api'])) {
