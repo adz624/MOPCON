@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')(),
-  // mainBowerFiles = require('main-bower-files'),
   browserSync = require('browser-sync'),
   autoprefixer = require('autoprefixer');
 var minimist = require('minimist'); // 用來讀取指令轉成變數
@@ -13,7 +12,6 @@ var envOptions = {
   default: { env: 'development' }
 };
 var options = minimist(process.argv.slice(2), envOptions);
-console.log(options);
 
 gulp.task('clean', function() {
   return gulp.src(['./2017', './.tmp'], { read: false }) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
@@ -58,14 +56,8 @@ gulp.task('babel', function() {
     }));;
 });
 
-// gulp.task('bower', function() {
-//     return gulp.src(mainBowerFiles())
-//         .pipe(gulp.dest('./.tmp/vendors'));
-//     cb(err);
-// });
-
 gulp.task('vendorJs', function () {
-  return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/jquery/dist/jquery.js', 'node_modules/owl.carousel/dist/assets/owl.carousel.js'])
+  return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/owl.carousel/dist/owl.carousel.min.js'])
     .pipe($.concat('vendor.js'))
     .pipe($.if(options.env === 'production', $.uglify()))
     .pipe(gulp.dest('./2017/javascripts'))
