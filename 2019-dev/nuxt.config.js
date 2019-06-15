@@ -53,16 +53,19 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    // output: {
-    //   filename: '[name].js',
-    //   path: path.resolve(__dirname, '../hello'),
-    // },
-    extend(config, ctx) {},
+    extend(config, ctx) {
+      if (!ctx.isDev) {
+        // config.output.publicPath = './_nuxt/'
+        // config.output.publicPath = path.resolve(__dirname, '/2019/_nuxt/')
+      }
+    },
+  },
+  router: {
+    // base: '/2019/',
+    base: path.resolve(__dirname, '/2019/'),
   },
   generate: {
-    dir: '../2019',
-    output: {
-      filename: 'hello.php',
-    },
+    dir: path.resolve(__dirname, '../2019/'),
+    // dir: '../2019',
   },
 }
