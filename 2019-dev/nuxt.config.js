@@ -122,6 +122,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
+    'nuxt-svg-loader',
     // 全域 sass 變數設定
     '@nuxtjs/style-resources',
   ],

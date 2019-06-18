@@ -20,6 +20,7 @@
     "node-sass": "^4.12.0",
     "nodemon": "^1.11.0",
     "nuxt-sass-resources-loader": "^2.0.5",
+    "nuxt-svg-loader": "^1.0.1",
     "sass-loader": "^7.1.0"
   }
 }

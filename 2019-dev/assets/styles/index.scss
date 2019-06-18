@@ -54,18 +54,17 @@ body * {
 }
 
 a {
-  color: $colorSecondary;
+  color: $colorPrimary;
 }
 
 .hidden {
   display: none !important;
 }
 
-// icon
-[class*='icon-'] {
-  display: inline-block;
-}
-
+// svg icon 預設撐滿, 大小將由外層樣式決定
 [class*='svg-'] {
-  @include flexCenter;
+  /deep/ svg {
+    width: 100%;
+    height: 100%;
+  }
 }
