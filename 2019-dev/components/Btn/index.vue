@@ -1,16 +1,14 @@
 <template>
-    <div class="index">
-        <Hero />
+    <div class="btn">
+        <div class="btn__text">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
 <script>
-import Hero from "~/components/Hero";
-
 export default {
-    components: {
-        Hero
-    }
+    name: "btn"
 };
 </script>
 
