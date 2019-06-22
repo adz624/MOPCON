@@ -5,6 +5,8 @@
   padding-top: 20vh;
   padding-left: 10%;
   @include rwd(pad) {
+    min-height: initial;
+    min-height: auto;
     padding: 0;
     text-align: center;
   }

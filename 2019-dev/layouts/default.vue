@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss">
 .layout {
+    overflow-x: hidden;
     background-color: $colorBg;
 }
 </style>

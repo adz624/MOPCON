@@ -68,3 +68,22 @@ a {
     height: 100%;
   }
 }
+
+
+// color
+.color-primary {
+  color: $colorPrimary;
+}
+
+
+// symbol
+.symbol-x {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  &:before {
+    content: 'X';
+  }
+}
