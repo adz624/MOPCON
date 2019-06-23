@@ -116,8 +116,9 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/vue-gallery', ssr: false },
-    { src: "~/plugins/number-flip.js", ssr: false },
-    { src: "~/plugins/scroll-magic.js", ssr: false }
+    { src: '~/plugins/number-flip.js', ssr: false },
+    { src: '~/plugins/scroll-magic.js', ssr: false },
+    { src: '~/plugins/vue-clipboard.js', ssr: false },
   ],
 
   /*
