@@ -76,7 +76,7 @@ module.exports = {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/2019/favicon.ico' },
       // 引入 google font 字體
       {
         rel: 'stylesheet',
@@ -109,7 +109,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~assets/styles/normalize.css', '~assets/styles/global.scss'],
+  css: ['~assets/styles/normalize.css', '~assets/styles/global.scss', 'swiper/dist/css/swiper.css'],
 
   /*
    ** Plugins to load before mounting the App
@@ -119,6 +119,7 @@ module.exports = {
     { src: '~/plugins/number-flip.js', ssr: false },
     { src: '~/plugins/scroll-magic.js', ssr: false },
     { src: '~/plugins/vue-clipboard.js', ssr: false },
+    { src: '~/plugins/vue-awesom-swiper', ssr: false },
   ],
 
   /*

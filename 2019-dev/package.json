@@ -16,6 +16,7 @@
     "number-flip": "^1.0.28",
     "nuxt": "^2.0.0",
     "scrollmagic": "^2.0.7",
+    "vue-awesome-swiper": "^3.1.3",
     "vue-clipboard2": "^0.3.0",
     "vue-gallery": "^2.0.0"
   },
