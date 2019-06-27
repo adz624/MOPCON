@@ -1,25 +1,28 @@
 <template>
     <div class="index">
-        <Hero />
+        <Navbar />
+
+        <Hero id="sectionHero" />
 
         <!-- section image wall -->
-        <SectionImageWall />
+        <SectionImageWall id="sectionImageWall" />
 
         <!-- section about -->
-        <SectionAbout />
+        <SectionAbout id="sectionAbout" />
 
         <!-- section place -->
-        <SectionPlace />
+        <SectionPlace id="sectionPlace" />
 
         <!-- section 贊助區塊 -->
-        <SectionSponsor />
+        <SectionSponsor id="sectionSponsor" />
 
         <!-- section 歷年 MOPCON -->
-        <SectionPastYears />
+        <SectionPastYears id="sectionPastYears" />
     </div>
 </template>
 
 <script>
+import Navbar from "~/components/Navbar";
 import Hero from "~/components/Hero";
 import SectionImageWall from "~/components/SectionImageWall";
 import SectionAbout from "~/components/SectionAbout";
@@ -30,6 +33,7 @@ import SectionPastYears from "~/components/SectionPastYears";
 export default {
     name: "pageIndex",
     components: {
+        Navbar,
         Hero,
         SectionImageWall,
         SectionAbout,
