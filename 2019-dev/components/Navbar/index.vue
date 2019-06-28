@@ -17,7 +17,7 @@
 <script>
 export default {
     name: "navbar",
-    data() {
+    data () {
         return {
             currentActive: 0,
             nextStatus: "",
@@ -45,6 +45,10 @@ export default {
                 },
                 {
                     id: 5,
+                    name: "sectionFbNews"
+                },
+                {
+                    id: 6,
                     name: "sectionPastYears"
                 }
             ],
@@ -52,11 +56,11 @@ export default {
         };
     },
     methods: {
-        handleUpdateActive(id) {
+        handleUpdateActive (id) {
             this.updatNextStatus(id);
             this.currentActive = id;
         },
-        updatNextStatus(newId) {
+        updatNextStatus (newId) {
             if (newId === this.currentActive) return;
             if (this.currentActive > newId) {
                 this.nextStatus = "prev";
@@ -64,7 +68,7 @@ export default {
                 this.nextStatus = "next";
             }
         },
-        gotoSection(item) {
+        gotoSection (item) {
             if (item.id === this.currentActive) return;
             this.handleUpdateActive(item.id);
             const _this = this;
@@ -74,12 +78,12 @@ export default {
                     y: `#${item.name}`,
                     autoKill: false
                 },
-                onComplete() {
+                onComplete () {
                     _this.stopScrollMagic = false;
                 }
             });
         },
-        scrollMagicInit() {
+        scrollMagicInit () {
             // scrollMagic 設定
             this.scrollController = new _ScrollMagic.Controller({
                 globalSceneOptions: {
@@ -89,7 +93,7 @@ export default {
             });
             this.scrollMagicTrigger();
         },
-        scrollMagicTrigger() {
+        scrollMagicTrigger () {
             const sectionHero = new _ScrollMagic.Scene({
                 triggerElement: ".hero__btn"
             })
@@ -139,7 +143,7 @@ export default {
                 .addTo(this.scrollController);
         }
     },
-    mounted() {
+    mounted () {
         this.scrollMagicInit();
     }
 };

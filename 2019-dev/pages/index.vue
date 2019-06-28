@@ -16,6 +16,9 @@
         <!-- section 贊助區塊 -->
         <SectionSponsor id="sectionSponsor" />
 
+        <!-- section fb 動態牆 -->
+        <SectionFbNews id="sectionFbNews" />
+
         <!-- section 歷年 MOPCON -->
         <SectionPastYears id="sectionPastYears" />
     </div>
@@ -28,6 +31,7 @@ import SectionImageWall from "~/components/SectionImageWall";
 import SectionAbout from "~/components/SectionAbout";
 import SectionPlace from "~/components/SectionPlace";
 import SectionSponsor from "~/components/SectionSponsor";
+import SectionFbNews from "~/components/SectionFbNews";
 import SectionPastYears from "~/components/SectionPastYears";
 
 export default {
@@ -39,6 +43,7 @@ export default {
         SectionAbout,
         SectionPlace,
         SectionSponsor,
+        SectionFbNews,
         SectionPastYears
     }
 };

@@ -1,0 +1,49 @@
+.section-fb-news {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 850px;
+  margin: 255px auto 133px auto;
+  overflow: hidden;
+  @include rwd(pad) {
+    margin: 137px auto 99px auto;
+    height: 80vh;
+  }
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 700px;
+  }
+
+  iframe::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $colorGray;
+  }
+
+  iframe::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: $colorPrimary;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    padding-right: 10px;
+    color: $colorWhite;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+
+    &__icon {
+      margin-top: 3px;
+      margin-left: 8px;
+    }
+  }
+}
