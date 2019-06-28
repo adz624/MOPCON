@@ -14,6 +14,8 @@
                 <span class="hour">小時</span>
                 <span>{{countDownMin}}</span>
                 <span class="min">分鐘</span>
+                <!-- <span>{{countdown.sec}}</span>
+                <span>秒</span> -->
             </div>
             <Btn class="hero__btn">
                 <a href="https://www.facebook.com/mopcon/" target="_blank">追蹤粉絲專頁</a>
@@ -26,6 +28,8 @@
             <span class="hour">小時</span>
             <span>{{countDownMin}}</span>
             <span class="min">分鐘</span>
+            <!-- <span>{{countdown.sec}}</span>
+            <span>秒</span> -->
         </div>
     </div>
 </template>
@@ -38,25 +42,56 @@ export default {
     components: {
         Btn
     },
-    data() {
+    data () {
         return {
             countdown: {
-                day: 56,
-                hour: 9,
-                min: 0
-            }
+                day: '',
+                hour: '',
+                min: '',
+                sec: ''
+            },
+            timer: null,
+            targetTime: '2019/10/19',
+            runTimeInterval: 60 // 秒單位, 每60秒更新一次
         };
     },
     computed: {
-        countDownDay() {
-            return `0${this.countdown.day}`.substr(-2);
+        countDownDay () {
+            if (this.countdown.day.toString().length >= 3) {
+                return `0${this.countdown.day}`.substr(-3);
+            } else {
+                return `0${this.countdown.day}`.substr(-2);
+            }
         },
-        countDownHour() {
+        countDownHour () {
             return `0${this.countdown.hour}`.substr(-2);
         },
-        countDownMin() {
+        countDownMin () {
             return `0${this.countdown.min}`.substr(-2);
         }
+    },
+    methods: {
+        calculationCountDown (targetTime) {
+            const endTime = new Date(targetTime).getTime()
+            const diff = (endTime - new Date().getTime()) / 1000
+            this.countdown.day = parseInt(diff / 24 / 60 / 60)
+            this.countdown.hour = parseInt(diff / 60 / 60 % 24)
+            this.countdown.min = parseInt(diff / 60 % 60)
+            // this.countdown.sec = parseInt(diff % 60)
+        },
+        runCountDown () {
+            this.timer = setInterval(() => {
+                this.calculationCountDown(this.targetTime)
+            }, this.runTimeInterval * 1000)
+
+        },
+    },
+    mounted () {
+        this.calculationCountDown(this.targetTime)
+        this.runCountDown()
+    },
+    beforeDestroy () {
+        clearInterval(this.timer)
     }
 };
 </script>
