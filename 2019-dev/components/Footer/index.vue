@@ -8,16 +8,16 @@
         <div class="footer__social">
             <div class="subtitle">在這裡找到 #MOPCON</div>
             <div class="icons">
-                <a href="#" class="svg-fb">
+                <a href="https://www.facebook.com/mopcon/" target="_blank" class="svg-fb">
                     <IconFB />
                 </a>
-                <a href="#" class="svg-twitter">
+                <a href="https://twitter.com/mopcon" target="_blank" class="svg-twitter">
                     <IconTwitter />
                 </a>
-                <a href="#" class="svg-ig">
+                <a href="https://www.instagram.com/mopcon2019/" target="_blank" class="svg-ig">
                     <IconIg />
                 </a>
-                <a href="#" class="svg-aircraft">
+                <a href="https://t.me/mopcon" target="_blank" class="svg-aircraft">
                     <IconAircraft />
                 </a>
             </div>

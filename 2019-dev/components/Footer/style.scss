@@ -44,9 +44,21 @@
       @include rwd(pad) {
         margin-top: 20px;
       }
+
+      a:hover {
+        >>> path {
+          fill: $colorWhite;
+        }
+      }
+
       [class*='svg-'] {
         display: inline-block;
         margin-left: 30px;
+        &:hover {
+          svg {
+            fill: $colorWhite;
+          }
+        }
       }
       .svg-fb,
       .svg-ig {
