@@ -1,7 +1,7 @@
 <template>
     <section class="section section-fb-news">
         <h2 class="title">{ 最新動態 ; }</h2>
-        <iframe src='https://www.juicer.io/api/feeds/224892210881494/iframe' frameborder='0' width='1000' height='1000' style='display:block;margin:0 auto;'></iframe>
+        <iframe src='https://www.juicer.io/api/feeds/mopcon/iframe' frameborder='0' width='1000' height='1000' style='display:block;margin:0 auto;'></iframe>
         <a class="section-fb-news__link" href="https://www.facebook.com/mopcon/" target="_blank">
             <span>VIEW MORE ON FACEBOOK</span>
             <IconLink class="section-fb-news__link__icon" />
