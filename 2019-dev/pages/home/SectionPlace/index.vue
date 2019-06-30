@@ -35,7 +35,7 @@
                 <li class="section-place__traffic__item"
                     v-for="item in placeTraffic" :key="item.id">
                     <h4 class="title-line">{{item.title}}</h4>
-                    <p>{{item.desc}}</p>
+                    <p v-html="item.desc"></p>
                 </li>
             </ul>
 
@@ -48,10 +48,9 @@
                     class="item" :class="{active: item.id === placeTrafficActive}"
                     @click="placeTrafficActive = item.id">{{item.title}}</li>
             </ul>
-            <p v-for="item in placeTraffic" :key="item.id"
+            <p v-html="item.desc" v-for="item in placeTraffic" :key="item.id"
                 class="section-place__traffic--mobile__content"
                 :class="{active: item.id === placeTrafficActive}">
-                {{item.desc}}
             </p>
         </div>
 
@@ -72,13 +71,9 @@ export default {
                 },
                 {
                     id: 1,
-                    title: "火車",
-                    desc: "至捷運美麗島站換乘橘線往西子灣方向"
-                },
-                {
-                    id: 2,
-                    title: "高鐵",
-                    desc: "左營高鐵站 / 高雄火車站搭捷運紅線"
+                    title: "火車 / 高鐵",
+                    desc:
+                        "1. 左營高鐵站 / 高雄火車站搭捷運紅線<br>2. 至捷運美麗島站換乘橘線往西子灣方向"
                 },
                 {
                     id: 3,

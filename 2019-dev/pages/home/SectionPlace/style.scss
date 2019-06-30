@@ -161,14 +161,6 @@
       margin-top: 9px;
     }
 
-    &__item:nth-child(1) {
-      order: -2;
-    }
-
-    &__item:nth-child(3) {
-      order: -1;
-    }
-
     &__item {
       width: 50%;
       @include rwd(pad) {
