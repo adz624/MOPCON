@@ -5,16 +5,16 @@
         <div v-swiper:mySwiper="swiperOption" class="slider-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="year in years" :key="year.id">
-                    <nuxt-link :to="`#${year.year}`" class="swiper-slide__inner">
+                    <a :href="`${year.link}`" target="_blank" class="swiper-slide__inner">
                         <div class="swiper-slide__image" :style="`background-image: url(${require(`./images/${year.image}`)})`"></div>
-                    </nuxt-link>
+                    </a>
                     <p class="swiper-slide__year">{{year.year}}</p>
                 </div>
             </div>
         </div>
 
         <Btn class="sectionPastYears__btn">
-            <a class="sectionPastYears__btn__link" href="https://www.youtube.com/channel/UCMyMchq3WLtN0DD9QE5gZww" target="_blank">
+            <a class="sectionPastYears__btn__link" href="https://www.youtube.com/playlist?list=PL0ny0trU2gnBgBXeh3HCou7k3UAWB3huW" target="_blank">
                 <span class="icon-play"></span><span>2018 影片回顧</span>
             </a>
         </Btn>
@@ -35,42 +35,32 @@ export default {
                 {
                     id: 0,
                     year: "2018",
-                    image: "2018.jpg"
+                    image: "2018.jpg",
+                    link: "https://mopcon.org/album.php#mp2018"
                 },
                 {
                     id: 1,
                     year: "2017",
-                    image: "2017.jpg"
+                    image: "2017.jpg",
+                    link: "https://mopcon.org/album.php#mp2017"
                 },
                 {
                     id: 2,
                     year: "2016",
-                    image: "2016.jpg"
+                    image: "2016.jpg",
+                    link: "https://mopcon.org/album.php#mp2016"
                 },
                 {
                     id: 3,
                     year: "2015",
-                    image: "2015.jpg"
+                    image: "2015.jpg",
+                    link: "https://mopcon.org/album.php#mp2015"
                 },
                 {
                     id: 4,
                     year: "2014",
-                    image: "2018.jpg"
-                },
-                {
-                    id: 5,
-                    year: "2013",
-                    image: "2017.jpg"
-                },
-                {
-                    id: 6,
-                    year: "2012",
-                    image: "2016.jpg"
-                },
-                {
-                    id: 7,
-                    year: "2011",
-                    image: "2015.jpg"
+                    image: "2014.jpg",
+                    link: "https://mopcon.org/album.php#mp2014"
                 }
             ],
             swiperOption: {
