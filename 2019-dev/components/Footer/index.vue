@@ -2,7 +2,9 @@
     <div class="footer">
         <div class="footer__contact">
             <div class="subtitle">聯絡我們</div>
-            <a href="mailto:contact@mopcon.org" target="_blank" class="subtitle email">contact@mopcon.org</a>
+            <p class="subtitle email" v-clipboard:copy="email"
+                v-clipboard:success="onCopy"
+                v-clipboard:error="onError">{{email}}</p>
         </div>
 
         <div class="footer__social">
@@ -38,6 +40,19 @@ export default {
         IconIg,
         IconAircraft,
         IconTwitter
+    },
+    data() {
+        return {
+            email: "contact@mopcon.org"
+        };
+    },
+    methods: {
+        onCopy() {
+            alert(`信箱 ${this.email} 複製成功`);
+        },
+        onError: function(e) {
+            alert(`信箱 ${this.email} 複製失敗`);
+        }
     }
 };
 </script>

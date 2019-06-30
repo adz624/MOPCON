@@ -23,6 +23,7 @@
       margin-left: 15px;
     }
     .subtitle.email {
+      color: $colorPrimary;
       line-height: 1.25;
     }
   }
@@ -51,7 +52,7 @@
         }
       }
 
-      [class*='svg-'] {
+      [class*="svg-"] {
         display: inline-block;
         margin-left: 30px;
         &:hover {
