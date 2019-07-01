@@ -45,6 +45,10 @@ if (is_file($composer_lock_path)) {
 exec("cd {$doc_root} && npm install");
 exec("cd {$doc_root} && bower install");
 
+// Build 2019 web site
+exec("cd {$doc_root}2019-dev && yarn install");
+exec("yarn run generate");
+
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
 if ($memcache_ok) {
