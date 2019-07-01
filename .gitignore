@@ -2,6 +2,7 @@
 .sass-cache
 /2014_test/fire_app_log.txt
 /2014_test/config.rb
+/2019
 /cache
 vendor/
 bower_components
@@ -12,3 +13,4 @@ npm-debug.log
 config.php
 phinx.php
 *.cache.php
+.vscode
