@@ -146,11 +146,19 @@ export default {
                 })
                 .addTo(this.scrollController);
 
+            const sectionFbNews = new _ScrollMagic.Scene({
+                triggerElement: "#sectionFbNews"
+            })
+                .on("start", () => {
+                    if (!this.stopScrollMagic) this.handleUpdateActive(5);
+                })
+                .addTo(this.scrollController);
+
             const sectionPastYears = new _ScrollMagic.Scene({
                 triggerElement: "#sectionPastYears"
             })
                 .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(5);
+                    if (!this.stopScrollMagic) this.handleUpdateActive(6);
                 })
                 .addTo(this.scrollController);
         }
