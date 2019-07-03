@@ -1,7 +1,5 @@
 <template>
     <div class="index">
-        <Navbar />
-
         <SectionHero id="sectionHero" />
 
         <!-- section image wall -->
@@ -21,6 +19,8 @@
 
         <!-- section 歷年 MOPCON -->
         <SectionPastYears id="sectionPastYears" />
+
+        <Navbar :isReady="isReady" />
     </div>
 </template>
 
@@ -36,6 +36,11 @@ import SectionPastYears from "./SectionPastYears";
 
 export default {
     name: "pageIndex",
+    computed: {
+        isReady() {
+            return this.$store.getters.homePageReady;
+        }
+    },
     components: {
         Navbar,
         SectionHero,
@@ -45,6 +50,9 @@ export default {
         SectionSponsor,
         SectionFbNews,
         SectionPastYears
+    },
+    mounted() {
+        this.$store.commit("updateHomePageReady", true);
     }
 };
 </script>
