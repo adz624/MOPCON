@@ -80,6 +80,7 @@
       }
       .swiper-button-prev,
       .swiper-button-next {
+        transform: translateY(-15px);
         outline: none;
       }
     }
@@ -101,7 +102,7 @@
       width: 36px;
       height: 36px;
       margin-right: 14px;
-      background-image: url('./images/icon-play.png');
+      background-image: url("./images/icon-play.png");
       background-size: contain;
       @include rwd(pad) {
         width: 23px;

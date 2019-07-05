@@ -3,6 +3,10 @@
         <h2 class="title"><span>{ 歷年 </span><span class="color-primary">MOPCON</span><span> ; }</span></h2>
 
         <div class="slider">
+            <div class="slider-navigation">
+                <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+            </div>
             <div v-swiper:mySwiper="swiperOption" class="slider-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" v-for="year in years" :key="year.id">
@@ -12,10 +16,6 @@
                         <p class="swiper-slide__year">{{year.year}}</p>
                     </div>
                 </div>
-            </div>
-            <div class="slider-navigation" v-swiper:mySwiper="swiperOption">
-                <div class="swiper-button-prev" slot="button-prev"></div>
-                <div class="swiper-button-next" slot="button-next"></div>
             </div>
         </div>
 
