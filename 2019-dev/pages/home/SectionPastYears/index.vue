@@ -2,13 +2,19 @@
     <div class="section sectionPastYears">
         <h2 class="title"><span>{ 歷年 </span><span class="color-primary">MOPCON</span><span> ; }</span></h2>
 
-        <div v-swiper:mySwiper="swiperOption" class="slider-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="year in years" :key="year.id">
-                    <a :href="`${year.link}`" target="_blank" class="swiper-slide__inner">
-                        <div class="swiper-slide__image" :style="`background-image: url(${require(`./images/${year.image}`)})`"></div>
-                    </a>
-                    <p class="swiper-slide__year">{{year.year}}</p>
+        <div class="slider">
+            <div class="slider-navigation">
+                <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+            </div>
+            <div v-swiper:mySwiper="swiperOption" class="slider-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" v-for="year in years" :key="year.id">
+                        <a :href="`${year.link}`" target="_blank" class="swiper-slide__inner">
+                            <div class="swiper-slide__image" :style="`background-image: url(${require(`./images/${year.image}`)})`"></div>
+                        </a>
+                        <p class="swiper-slide__year">{{year.year}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,7 +71,11 @@ export default {
             ],
             swiperOption: {
                 slidesPerView: "auto",
-                spaceBetween: 20
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                }
             }
         };
     }

@@ -22,9 +22,9 @@
             <div class="line"></div>
         </div>
         <ul class="section-sponsor__logos">
-            <li class="section-sponsor__logo appier"></li>
+            <!-- <li class="section-sponsor__logo appier"></li>
             <li class="section-sponsor__logo google"></li>
-            <li class="section-sponsor__logo oath"></li>
+            <li class="section-sponsor__logo oath"></li> -->
         </ul>
     </section>
 </template>
@@ -41,7 +41,7 @@ export default {
         return {
             email: "sponsor@mopcon.org",
             pdfLink:
-                "https://drive.google.com/file/d/1XjD9MystfsCyH7QtchneXvsy550WHI4r/view?usp=sharing"
+                "https://drive.google.com/open?id=1fbjbdAOrs9hGy3r-DkMnyNl5eWgYJsKd"
         };
     },
     methods: {

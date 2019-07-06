@@ -17,7 +17,13 @@
 <script>
 export default {
     name: "navbar",
-    data () {
+    props: {
+        isReady: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data() {
         return {
             currentActive: 0,
             nextStatus: "",
@@ -55,12 +61,18 @@ export default {
             scrollController: null
         };
     },
+    watch: {
+        isReady(val) {
+            console.log("監聽isReady", val);
+            if (val) this.scrollMagicInit();
+        }
+    },
     methods: {
-        handleUpdateActive (id) {
+        handleUpdateActive(id) {
             this.updatNextStatus(id);
             this.currentActive = id;
         },
-        updatNextStatus (newId) {
+        updatNextStatus(newId) {
             if (newId === this.currentActive) return;
             if (this.currentActive > newId) {
                 this.nextStatus = "prev";
@@ -68,7 +80,7 @@ export default {
                 this.nextStatus = "next";
             }
         },
-        gotoSection (item) {
+        gotoSection(item) {
             if (item.id === this.currentActive) return;
             this.handleUpdateActive(item.id);
             const _this = this;
@@ -78,12 +90,12 @@ export default {
                     y: `#${item.name}`,
                     autoKill: false
                 },
-                onComplete () {
+                onComplete() {
                     _this.stopScrollMagic = false;
                 }
             });
         },
-        scrollMagicInit () {
+        scrollMagicInit() {
             // scrollMagic 設定
             this.scrollController = new _ScrollMagic.Controller({
                 globalSceneOptions: {
@@ -93,7 +105,7 @@ export default {
             });
             this.scrollMagicTrigger();
         },
-        scrollMagicTrigger () {
+        scrollMagicTrigger() {
             const sectionHero = new _ScrollMagic.Scene({
                 triggerElement: ".hero__btn"
             })
@@ -134,17 +146,22 @@ export default {
                 })
                 .addTo(this.scrollController);
 
-            const sectionPastYears = new _ScrollMagic.Scene({
-                triggerElement: "#sectionPastYears"
+            const sectionFbNews = new _ScrollMagic.Scene({
+                triggerElement: "#sectionFbNews"
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(5);
                 })
                 .addTo(this.scrollController);
+
+            const sectionPastYears = new _ScrollMagic.Scene({
+                triggerElement: "#sectionPastYears"
+            })
+                .on("start", () => {
+                    if (!this.stopScrollMagic) this.handleUpdateActive(6);
+                })
+                .addTo(this.scrollController);
         }
-    },
-    mounted () {
-        this.scrollMagicInit();
     }
 };
 </script>
