@@ -154,7 +154,7 @@ export default {
                 triggerElement: "#sectionPastYears"
             })
                 .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(6);
+                    if (!this.stopScrollMagic) this.handleUpdateActive(5);
                 })
                 .addTo(this.scrollController);
         }
