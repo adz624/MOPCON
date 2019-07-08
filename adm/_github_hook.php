@@ -42,8 +42,11 @@ if (is_file($composer_lock_path)) {
     echo "'{$composer_lock_path}' does not exist, do not composer update";
 }
 
-exec("cd {$doc_root} && npm install");
-exec("cd {$doc_root} && bower install");
+exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
+
+// Build 2019 web site
+exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn install");
+exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn run generate");
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
