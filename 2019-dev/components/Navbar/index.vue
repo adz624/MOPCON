@@ -51,10 +51,6 @@ export default {
                 },
                 {
                     id: 5,
-                    name: "sectionFbNews"
-                },
-                {
-                    id: 6,
                     name: "sectionPastYears"
                 }
             ],
@@ -146,13 +142,13 @@ export default {
                 })
                 .addTo(this.scrollController);
 
-            const sectionFbNews = new _ScrollMagic.Scene({
+            /*const sectionFbNews = new _ScrollMagic.Scene({
                 triggerElement: "#sectionFbNews"
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(5);
                 })
-                .addTo(this.scrollController);
+                .addTo(this.scrollController);*/
 
             const sectionPastYears = new _ScrollMagic.Scene({
                 triggerElement: "#sectionPastYears"
