@@ -42,6 +42,9 @@ if (is_file($composer_lock_path)) {
     echo "'{$composer_lock_path}' does not exist, do not composer update";
 }
 
+// Build api folder
+exec("cd {$doc_root}api && composer install --no-dev");
+
 exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
 
 // Build 2019 web site
