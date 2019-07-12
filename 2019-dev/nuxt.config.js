@@ -22,7 +22,8 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: '行動科技年會 2019 | Mobile / Open / Platform Conference',
+        content:
+          'MOPCON 2019 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。',
       },
       // fb seo
       {
@@ -33,7 +34,8 @@ module.exports = {
       {
         hid: 'og-description',
         property: 'og:description',
-        content: '行動科技年會 2019 | Mobile / Open / Platform Conference',
+        content:
+          'MOPCON 2019 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。',
       },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
@@ -62,7 +64,8 @@ module.exports = {
       {
         hid: 'twitter-description',
         name: 'twitter:description',
-        content: '行動科技年會 2019 | Mobile / Open / Platform Conference',
+        content:
+          'MOPCON 2019 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。',
       },
       {
         hid: 'twitter-app:name:iphone',
@@ -115,6 +118,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/gsap', ssr: false },
     { src: '~/plugins/vue-gallery', ssr: false },
     { src: '~/plugins/number-flip.js', ssr: false },
