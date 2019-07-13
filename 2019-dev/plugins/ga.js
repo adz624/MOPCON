@@ -23,7 +23,8 @@ export default ({ app: { router }, store }) => {
     /*
     ** 告訴GA增加一個PV
     */
-    ga('set', 'page', to.fullPath)
+    const urlPrefix = '/2019'
+    ga('set', 'page', `${urlPrefix}${to.fullPath}`)
     ga('send', 'pageview')
   })
 }
