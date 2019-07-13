@@ -141,6 +141,10 @@ module.exports = {
   styleResources: {
     scss: ['./assets/styles/variables.scss'],
   },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+  },
+
   /*
    ** Axios module configuration
    */

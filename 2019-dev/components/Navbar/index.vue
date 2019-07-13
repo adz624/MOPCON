@@ -51,6 +51,10 @@ export default {
                 },
                 {
                     id: 5,
+                    name: "sectionFbNews"
+                },
+                {
+                    id: 6,
                     name: "sectionPastYears"
                 }
             ],
@@ -59,7 +63,6 @@ export default {
     },
     watch: {
         isReady(val) {
-            console.log("監聽isReady", val);
             if (val) this.scrollMagicInit();
         }
     },
@@ -142,19 +145,19 @@ export default {
                 })
                 .addTo(this.scrollController);
 
-            /*const sectionFbNews = new _ScrollMagic.Scene({
+            const sectionFbNews = new _ScrollMagic.Scene({
                 triggerElement: "#sectionFbNews"
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(5);
                 })
-                .addTo(this.scrollController);*/
+                .addTo(this.scrollController);
 
             const sectionPastYears = new _ScrollMagic.Scene({
                 triggerElement: "#sectionPastYears"
             })
                 .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(5);
+                    if (!this.stopScrollMagic) this.handleUpdateActive(6);
                 })
                 .addTo(this.scrollController);
         }
