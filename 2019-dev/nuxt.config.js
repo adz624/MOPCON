@@ -1,4 +1,5 @@
 const path = require('path');
+require('dotenv').config();
 
 module.exports = {
   mode: 'universal',
@@ -133,6 +134,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
     'nuxt-svg-loader',
     // 全域 sass 變數設定
     '@nuxtjs/style-resources',
