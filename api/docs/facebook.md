@@ -42,7 +42,10 @@ Returns json data about a facebook information.
             'full_picture' : {imageUrl},
             'message' : {貼文內容},
             'id': {貼文ID}, // 可透過 facebook.com/{id} 找到該貼文
-            'created_time' 2018-12-18T07:22:06+0000 // 貼文時間點
+            "shares" : {int}, // 多少人分享
+            "url" : "https://www.facebook.com/{id}", //該貼文
+            "likes" : {int}, // 多少人按讚
+            'created_time' : '2018-12-18T07:22:06+0000' // 貼文時間點
         },
         {
             'full_picture' : {imageUrl},

@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 class FacebookController extends Controller
 {
     use ApiTrait;
-    private $url = 'https://graph.facebook.com/mopcon/';
+    private $facebookUrl = 'https://www.facebook.com/';
+    private $apiUrl = 'https://graph.facebook.com/';
+    private $mopconApiUrl = 'https://graph.facebook.com/mopcon/';
     /**
      * get newest post from mopcon facebook fanspage.
      *
@@ -16,20 +18,40 @@ class FacebookController extends Controller
     public function getPosts(Request $request)
     {
         $limit = $request->get('limit', 20);
+        // handle error;
         if ($limit > 100) {
             return $this->returnError('can not access over than 100 posts');
         }
-        $baseUrl = $this->url;
         $token = env('FACEBOOK_TOKEN');
-        $fields = ['full_picture', 'message', 'id', 'created_time'];
+        $fields = ['full_picture', 'message', 'id', 'shares', 'created_time', 'likes.summary(true)'];
+        $baseUrl = $this->mopconApiUrl;
         $baseUrl .= 'feed?fields=';
         $baseUrl .= implode(',', $fields);
         $baseUrl .= '&limit='.$limit;
         $baseUrl .= '&access_token='.$token;
-
+        $feedsRes = $this->requestFacebookApi($baseUrl);
+        $feedsData = json_decode($feedsRes->getContent(), true);
+        // handle error;
+        if (!$feedsData['success']) {
+            return $feedsRes;
+        }
+        // handle error;
+        if (!isset($feedsData['data']['data'])) {
+            return $this->returnNotFoundError();
+        }
+        $postsData = $feedsData['data']['data'];
+        foreach ($postsData as $key => $value) {
+            $postsData[$key]['shares'] = $postsData[$key]['shares']['count'] ?? 0;
+            $postsData[$key]['likes'] = $postsData[$key]['likes']['summary']['total_count'];
+            $postsData[$key]['url'] = $this->facebookUrl.$postsData[$key]['id'];
+        }
+        return $this->returnSuccess('Success get posts', $postsData);
+    }
+    private function requestFacebookApi($url)
+    {
         // request facebook api
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $baseUrl);
+        curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $data = curl_exec($ch);
 
@@ -41,9 +63,6 @@ class FacebookController extends Controller
             return $this->returnError('Token invalid');
         }
         curl_close($ch);
-        if (!isset($dataJson['data'])) {
-            return $this->returnNotFoundError();
-        }
-        return $this->returnSuccess('Success get posts', $dataJson['data']);
+        return $this->returnSuccess('', $dataJson);
     }
 }
