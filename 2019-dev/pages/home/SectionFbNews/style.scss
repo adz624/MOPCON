@@ -1,7 +1,7 @@
 .section-fb-news {
   display: flex;
   flex-flow: column nowrap;
-  margin: 255px auto 133px auto;
+  margin: 0 auto 133px auto;
   overflow: hidden;
   @include rwd(pad) {
     margin: 137px auto 99px auto;
