@@ -11,6 +11,8 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['prefix' => 'api'], function ($router) {
+    $router->group(['prefix' => 'facebook'], function ($router) {
+        $router->get('posts', 'FacebookController@getPosts');
+    });
 });

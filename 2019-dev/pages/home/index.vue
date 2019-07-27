@@ -15,7 +15,7 @@
         <SectionSponsor id="sectionSponsor" />
 
         <!-- section fb 動態牆 -->
-        <!-- <SectionFbNews id="sectionFbNews" /> -->
+        <SectionFbNews id="sectionFbNews" />
 
         <!-- section 歷年 MOPCON -->
         <SectionPastYears id="sectionPastYears" />
