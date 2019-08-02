@@ -1,5 +1,6 @@
 <template>
     <div class="event">
+        <Popup :isAction="popupAction" @onPopupClose="onPopupClose" @onSendScore="onSendScore" />
         <SectionHero />
         <div class="event__desc section">
             <h2 class="title">{ 活動辦法 ; }</h2>
@@ -18,6 +19,7 @@
 </template>
 
 <script>
+import Popup from "./Popup";
 import SectionHero from "./SectionHero";
 
 export default {
@@ -29,9 +31,11 @@ export default {
     },
     components: {
         SectionHero,
+        Popup,
     },
     data() {
         return {
+            popupAction: true,
             steps: [
                 {
                     step: "Step 0",
@@ -60,6 +64,14 @@ export default {
                 },
             ],
         };
+    },
+    methods: {
+        onPopupClose() {
+            this.popupAction = false;
+        },
+        onSendScore(score) {
+            console.log("分數", score);
+        },
     },
 };
 </script>
