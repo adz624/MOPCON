@@ -14,7 +14,7 @@ Returns json data about a facebook information.
 * **URL**
   * **粉專貼文資訊**
 
-    `/api/posts`
+    `/api/facebook/posts`
 
 * **Method:**
 
@@ -35,23 +35,25 @@ Returns json data about a facebook information.
   * **Code:** 200 <br />
     **Content:** 
     ```
-    'success' : true,
-    'message' : 'Get {number} of posts', 
-    'data' : [
-        {
-            'full_picture' : {imageUrl},
-            'message' : {貼文內容},
-            'id': {貼文ID}, // 可透過 facebook.com/{id} 找到該貼文
-            "shares" : {int}, // 多少人分享
-            "url" : "https://www.facebook.com/{id}", //該貼文
-            "likes" : {int}, // 多少人按讚
-            'created_time' : '2018-12-18T07:22:06+0000' // 貼文時間點
-        },
-        {
-            'full_picture' : {imageUrl},
-            ...
-        }
-    ]
+    {
+      'success' : true,
+      'message' : 'Get {number} of posts', 
+      'data' : [
+          {
+              'full_picture' : {imageUrl},
+              'message' : {貼文內容},
+              'id': {貼文ID}, // 可透過 facebook.com/{id} 找到該貼文
+              "shares" : {int}, // 多少人分享
+              "url" : "https://www.facebook.com/{id}", //該貼文
+              "likes" : {int}, // 多少人按讚
+              'created_time' : '2018-12-18T07:22:06+0000' // 貼文時間點
+          },
+          {
+              'full_picture' : {imageUrl},
+              ...
+          }
+      ]
+    }
     ```
  
 * **Error Response:**
@@ -89,7 +91,7 @@ Returns json data about a facebook information.
 
   ```javascript
     $.ajax({
-      url: "/api/posts", // 預設回傳20篇粉專貼文
+      url: "/api/facebook/posts", // 預設回傳20篇粉專貼文
       dataType: "json",
       type : "GET",
       success : function(r) {
@@ -99,7 +101,7 @@ Returns json data about a facebook information.
   ```
   ```javascript
     $.ajax({
-      url: "/api/posts?limit=50", // 回傳50篇粉專貼文 上限為100
+      url: "/api/facebook/posts?limit=50", // 回傳50篇粉專貼文 上限為100
       dataType: "json",
       type : "GET",
       success : function(r) {
