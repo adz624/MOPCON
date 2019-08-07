@@ -1,7 +1,7 @@
 <template>
     <div class="event">
         <Popup :isAction="popupAction" @onPopupClose="onPopupClose" @onSendScore="onSendScore" />
-        <SectionHero />
+        <SectionHero @onPopupOpen="onPopupOpen" />
         <div class="event__desc section">
             <h2 class="title">{ 活動辦法 ; }</h2>
             <p class="subtitle">嘿嘿❗MOPCON 遊戲潛入 <span class="color-primary">COSCUP</span> 囉～<br>
@@ -19,14 +19,14 @@
 </template>
 
 <script>
-import Popup from "./Popup";
-import SectionHero from "./SectionHero";
+import Popup from './Popup';
+import SectionHero from './SectionHero';
 
 export default {
-    name: "pageEvent",
+    name: 'pageEvent',
     head() {
         return {
-            title: "小智慧大PK MOPCON 2019",
+            title: '小智慧大PK MOPCON 2019',
         };
     },
     components: {
@@ -35,32 +35,32 @@ export default {
     },
     data() {
         return {
-            popupAction: true,
+            popupAction: false,
             steps: [
                 {
-                    step: "Step 0",
-                    text: "工作人員不定期開房間",
+                    step: 'Step 0',
+                    text: '工作人員不定期開房間',
                 },
                 {
-                    step: "Step 1",
-                    text: "點擊 Play Game，輸入 Game Code 加入遊戲。",
+                    step: 'Step 1',
+                    text: '點擊 Play Game，輸入 Game Code 加入遊戲。',
                 },
                 {
-                    step: "Step 2",
-                    text: "等待參賽者加入，開始《小智慧大 PK 》",
+                    step: 'Step 2',
+                    text: '等待參賽者加入，開始《小智慧大 PK 》',
                 },
                 {
-                    step: "Step 3",
-                    text: "依序答題 10 題，除了答對，答題越快分數越高",
+                    step: 'Step 3',
+                    text: '依序答題 10 題，除了答對，答題越快分數越高',
                 },
                 {
-                    step: "Step 4",
+                    step: 'Step 4',
                     text:
                         "遊戲結束後回到此頁，輸入分數<span class='color-third'>讓算命仙告訴你是哪一類人</span>",
                 },
                 {
-                    step: "Step 5",
-                    text: "分享遊戲成果到個人 FB 並設為公開可享好康限定哦",
+                    step: 'Step 5',
+                    text: '分享遊戲成果到個人 FB 並設為公開可享好康限定哦',
                 },
             ],
         };
@@ -70,7 +70,36 @@ export default {
             this.popupAction = false;
         },
         onSendScore(score) {
-            console.log("分數", score);
+            const rootUrl =
+                location.protocol + '//' + location.host + process.env.yearUrl;
+            let targetUrl = '';
+            console.log('rootUrl', rootUrl);
+
+            // 肝鐵人
+            if (score < 5000) {
+                targetUrl = '/iron-man';
+            }
+
+            // 黑寡婦
+            if (score >= 5000 && score < 7000) {
+                targetUrl = '/black-widow';
+            }
+
+            // 綠句人耗克
+            if (score >= 7000 && score < 9000) {
+                targetUrl = '/hulk';
+            }
+
+            // 歹丸隊長
+            if (score >= 9000) {
+                targetUrl = '/captain-america';
+            }
+
+            if (!targetUrl) return;
+            window.location.href = `${rootUrl}/event${targetUrl}`;
+        },
+        onPopupOpen() {
+            this.popupAction = true;
         },
     },
 };

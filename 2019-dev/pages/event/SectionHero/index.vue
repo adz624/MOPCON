@@ -6,7 +6,7 @@
             <Btn class="hero__btn">
                 <a href="https://quizizz.com/join/" target="_blank">PLAY GAME</a>
             </Btn>
-            <Btn class="hero__btn">輸入分數</Btn>
+            <Btn @click.native="handlePopupOpen" class="hero__btn">輸入分數</Btn>
         </div>
     </div>
 </template>
@@ -18,6 +18,11 @@ export default {
     name: "hero",
     components: {
         Btn,
+    },
+    methods: {
+        handlePopupOpen() {
+            this.$emit("onPopupOpen");
+        },
     },
 };
 </script>
