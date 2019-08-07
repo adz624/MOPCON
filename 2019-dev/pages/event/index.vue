@@ -76,22 +76,22 @@ export default {
             console.log('rootUrl', rootUrl);
 
             // 肝鐵人
-            if (score < 5000) {
+            if (score <= 2500) {
                 targetUrl = '/iron-man';
             }
 
             // 黑寡婦
-            if (score >= 5000 && score < 7000) {
+            if (score > 2500 && score <= 5500) {
                 targetUrl = '/black-widow';
             }
 
             // 綠句人耗克
-            if (score >= 7000 && score < 9000) {
+            if (score > 5500 && score <= 7500) {
                 targetUrl = '/hulk';
             }
 
             // 歹丸隊長
-            if (score >= 9000) {
+            if (score > 7500) {
                 targetUrl = '/captain-america';
             }
 
