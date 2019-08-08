@@ -1,6 +1,8 @@
 const path = require('path');
 require('dotenv').config();
 
+const eventResult = ['captain-america', 'iron-man', 'hulk', 'black-widow'];
+
 module.exports = {
   mode: 'universal',
 
@@ -17,7 +19,8 @@ module.exports = {
       { charset: 'utf-8' },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0',
       },
       { 'http-equiv': 'X-UA-Compatible', content: 'ie=edge' },
       {
@@ -84,7 +87,8 @@ module.exports = {
       // 引入 google font 字體
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap&subset=chinese-traditional',
+        href:
+          'https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap&subset=chinese-traditional',
       },
       // 多語系 seo
       {
@@ -113,7 +117,11 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~assets/styles/normalize.css', '~assets/styles/global.scss', 'swiper/dist/css/swiper.css'],
+  css: [
+    '~assets/styles/normalize.css',
+    '~assets/styles/global.scss',
+    'swiper/dist/css/swiper.css',
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -126,6 +134,7 @@ module.exports = {
     { src: '~/plugins/scroll-magic.js', ssr: false },
     { src: '~/plugins/vue-clipboard.js', ssr: false },
     { src: '~/plugins/vue-awesom-swiper', ssr: false },
+    { src: '~/plugins/vue-social-sharing', ssr: false },
   ],
 
   /*
@@ -145,6 +154,7 @@ module.exports = {
   },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    yearUrl: '/2019',
   },
 
   /*
@@ -170,8 +180,16 @@ module.exports = {
     // base: '/2019/',
     base: path.resolve(__dirname, '/2019/'),
   },
+
   generate: {
     dir: path.resolve(__dirname, '../2019/'),
     // dir: '../2019',
+    // 預渲染 event 結果頁面
+    routes: [
+      '/event/captain-america',
+      '/event/iron-man',
+      '/event/hulk',
+      '/event/black-widow',
+    ],
   },
 };
