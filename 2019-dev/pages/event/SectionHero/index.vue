@@ -4,7 +4,7 @@
             <div class="hero__logo"></div>
             <div class="event-logo"></div>
             <Btn class="hero__btn">
-                <a href="https://quizizz.com/join/" target="_blank">PLAY GAME</a>
+                <a href="https://quizizz.com/join/game-code/" target="_blank">PLAY GAME</a>
             </Btn>
             <Btn @click.native="handlePopupOpen" class="hero__btn">輸入分數</Btn>
         </div>
@@ -12,16 +12,16 @@
 </template>
 
 <script>
-import Btn from "~/components/Btn";
+import Btn from '~/components/Btn';
 
 export default {
-    name: "hero",
+    name: 'hero',
     components: {
         Btn,
     },
     methods: {
         handlePopupOpen() {
-            this.$emit("onPopupOpen");
+            this.$emit('onPopupOpen');
         },
     },
 };
