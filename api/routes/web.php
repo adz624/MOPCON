@@ -15,4 +15,9 @@ $router->group(['prefix' => 'api'], function ($router) {
     $router->group(['prefix' => 'facebook'], function ($router) {
         $router->get('posts', 'FacebookController@getPosts');
     });
+    $router->group(['prefix' => 'community'], function ($router) {
+        $router->get('/', 'CommunityController@index');
+        $router->get('/organizer/{id}', 'CommunityController@getOrganizer');
+        $router->get('/participant/{id}', 'CommunityController@getParticipant');
+    });
 });
