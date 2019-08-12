@@ -12,6 +12,9 @@
 */
 
 $router->group(['prefix' => 'api'], function ($router) {
+    $router->group(['prefix' => '2019'], function ($router) {
+        $router->get('initial', 'InitialController@index');
+    });
     $router->group(['prefix' => 'facebook'], function ($router) {
         $router->get('posts', 'FacebookController@getPosts');
     });
