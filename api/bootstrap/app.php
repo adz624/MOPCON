@@ -1,5 +1,7 @@
 <?php
 
+use App\Providers\RollbarServiceProvider;
+
 require_once __DIR__.'/../vendor/autoload.php';
 
 (new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
@@ -64,6 +66,9 @@ $app->singleton(
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
+
+$app->register(RollbarServiceProvider::class);
+$app->configure('logging');
 
 /*
 |--------------------------------------------------------------------------
