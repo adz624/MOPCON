@@ -23,8 +23,11 @@ $router->group(['prefix' => 'api'], function ($router) {
             $router->get('/', 'VolunteerController@index');
             $router->get('/{id}', 'VolunteerController@show');
         });
-    });
-    $router->group(['prefix' => 'facebook'], function ($router) {
-        $router->get('posts', 'FacebookController@getPosts');
+        $router->group(['prefix' => 'facebook'], function ($router) {
+            $router->get('posts', 'FacebookController@getPosts');
+        });
+        $router->group(['prefix' => 'sponsor'], function ($router) {
+            $router->get('', 'SponsorController@index');
+        });
     });
 });
