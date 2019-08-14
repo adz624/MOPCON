@@ -20,8 +20,8 @@ export default {
     props: {
         isReady: {
             type: Boolean,
-            default: false
-        }
+            default: false,
+        },
     },
     data() {
         return {
@@ -31,40 +31,40 @@ export default {
             sections: [
                 {
                     id: 0,
-                    name: "sectionHero"
+                    name: "sectionHero",
                 },
                 {
                     id: 1,
-                    name: "sectionImageWall"
+                    name: "sectionImageWall",
                 },
                 {
                     id: 2,
-                    name: "sectionAbout"
+                    name: "sectionAbout",
                 },
                 {
                     id: 3,
-                    name: "sectionPlace"
+                    name: "sectionPlace",
                 },
                 {
                     id: 4,
-                    name: "sectionSponsor"
+                    name: "sectionSponsor",
                 },
                 {
                     id: 5,
-                    name: "sectionFbNews"
+                    name: "sectionFbNews",
                 },
                 {
                     id: 6,
-                    name: "sectionPastYears"
-                }
+                    name: "sectionPastYears",
+                },
             ],
-            scrollController: null
+            scrollController: null,
         };
     },
     watch: {
         isReady(val) {
             if (val) this.scrollMagicInit();
-        }
+        },
     },
     methods: {
         handleUpdateActive(id) {
@@ -87,11 +87,11 @@ export default {
             TweenLite.to(window, 1, {
                 scrollTo: {
                     y: `#${item.name}`,
-                    autoKill: false
+                    autoKill: false,
                 },
                 onComplete() {
                     _this.stopScrollMagic = false;
-                }
+                },
             });
         },
         scrollMagicInit() {
@@ -99,14 +99,14 @@ export default {
             this.scrollController = new _ScrollMagic.Controller({
                 globalSceneOptions: {
                     duration: 0,
-                    offset: 0
-                }
+                    offset: 0,
+                },
             });
             this.scrollMagicTrigger();
         },
         scrollMagicTrigger() {
             const sectionHero = new _ScrollMagic.Scene({
-                triggerElement: ".hero__btn"
+                triggerElement: ".hero__btn",
             })
                 .on("start", event => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(0);
@@ -114,7 +114,7 @@ export default {
                 .addTo(this.scrollController);
 
             const sectionImageWall = new _ScrollMagic.Scene({
-                triggerElement: "#sectionImageWall"
+                triggerElement: "#sectionImageWall",
             })
                 .on("start", event => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(1);
@@ -122,7 +122,7 @@ export default {
                 .addTo(this.scrollController);
 
             const sectionAbout = new _ScrollMagic.Scene({
-                triggerElement: "#sectionAbout"
+                triggerElement: "#sectionAbout",
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(2);
@@ -130,7 +130,7 @@ export default {
                 .addTo(this.scrollController);
 
             const sectionPlace = new _ScrollMagic.Scene({
-                triggerElement: "#sectionPlace"
+                triggerElement: "#sectionPlace",
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(3);
@@ -138,7 +138,7 @@ export default {
                 .addTo(this.scrollController);
 
             const sectionSponsor = new _ScrollMagic.Scene({
-                triggerElement: "#sectionSponsor"
+                triggerElement: "#sectionSponsor",
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(4);
@@ -146,7 +146,7 @@ export default {
                 .addTo(this.scrollController);
 
             const sectionFbNews = new _ScrollMagic.Scene({
-                triggerElement: "#sectionFbNews"
+                triggerElement: "#sectionFbNews",
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(5);
@@ -154,14 +154,14 @@ export default {
                 .addTo(this.scrollController);
 
             const sectionPastYears = new _ScrollMagic.Scene({
-                triggerElement: "#sectionPastYears"
+                triggerElement: "#sectionPastYears",
             })
                 .on("start", () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(6);
                 })
                 .addTo(this.scrollController);
-        }
-    }
+        },
+    },
 };
 </script>
 

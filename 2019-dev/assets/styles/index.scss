@@ -62,7 +62,7 @@ a {
 }
 
 // svg icon 預設撐滿, 大小將由外層樣式決定
-[class*='svg-'] {
+[class*="svg-"] {
   /deep/ svg {
     width: 100%;
     height: 100%;
@@ -78,6 +78,10 @@ a {
   color: $colorSecondary;
 }
 
+.color-third {
+  color: $colorThird;
+}
+
 // symbol
 .symbol-x {
   display: inline-block;
@@ -86,7 +90,7 @@ a {
   font-size: 16px;
   text-align: center;
   &:before {
-    content: 'X';
+    content: "X";
   }
 }
 
@@ -94,7 +98,7 @@ a {
 .title-line {
   &:before,
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
