@@ -1,0 +1,40 @@
+@mixin badge($font-size, $radius) {
+  display: inline-block;
+  padding: 3px 7.5px;
+  font-size: $font-size;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: $radius;
+}
+
+.basic-badge-primary {
+  background-color: $colorPrimary;
+  color: #fff;
+  @include badge(12px, .25rem)
+}
+
+.basic-badge-secondary {
+  background-color: $colorSecondary;
+  color: #fff;
+  @include badge(12px, .25rem)
+}
+
+.basic-badge-third {
+  background-color: $colorThird;
+  color: #fff;
+  @include badge(12px, .25rem);
+}
+
+.tag-badge-outline-secondary {
+  border: 1px solid $colorSecondary;
+  color: $colorSecondary;
+  @include badge(16px, 0px);
+}
+
+.tag-badge-outline-third {
+  border:1px solid $colorThird;
+  color: $colorThird;
+  @include badge(16px, 0px);
+}

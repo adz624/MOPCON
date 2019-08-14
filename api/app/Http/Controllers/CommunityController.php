@@ -8,21 +8,12 @@ class CommunityController extends Controller
 {
     use ApiTrait;
 
-    private $dataset;
-
-    public function __construct()
-    {
-        if (env('APP_ENV') === 'production') {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../resource/assets/json/communties.json'), true);
-        } else {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../resource/assets/json/communties-dev.json'), true);
-        }
-    }
+    protected $function = 'community';
 
     public function index()
     {
         $result = [];
-        array_walk($this->dataset, function ($subset, $key) use (&$result) {
+        array_walk($this->jsonAry, function ($subset, $key) use (&$result) {
             $result[$key] = array_map(function ($value) {
                 $value['photo'] = url($value['photo']);
                 unset($value['introducion']);
@@ -43,7 +34,7 @@ class CommunityController extends Controller
         if (!is_numeric($id)) {
             return $this->returnError('Bad request');
         }
-        $communities = $this->dataset['community'];
+        $communities = $this->jsonAry['community'];
         $result = $this->searchTargetById($communities, $id);
         if (is_null($result)) {
             return $this->returnNotFoundError();
@@ -61,7 +52,7 @@ class CommunityController extends Controller
         if (!is_numeric($id)) {
             return $this->returnError('Bad request');
         }
-        $participants = $this->dataset['participant'];
+        $participants = $this->jsonAry['participant'];
         $result = $this->searchTargetById($participants, $id);
         if (is_null($result)) {
             return $this->returnNotFoundError();

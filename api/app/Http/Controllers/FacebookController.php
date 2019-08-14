@@ -13,7 +13,7 @@ class FacebookController extends Controller
     /**
      * get newest post from mopcon facebook fanspage.
      *
-     * @return json
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getPosts(Request $request)
     {

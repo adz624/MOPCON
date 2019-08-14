@@ -12,16 +12,16 @@ class VolunteerController extends TestCase
         parent::setUp();
 
         if (env('APP_ENV') === 'production') {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/volunteers.json'), true);
+            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/volunteer.json'), true);
         } else {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/volunteers-dev.json'), true);
+            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/volunteer-dev.json'), true);
         }
 
     }
 
     public function testGetVolunteerList()
     {
-        $response = $this->get('/api/volunteer/');
+        $response = $this->get('/api/2019/volunteer/');
         $compared = [];
         $compared['volunteer'] = array_map(function ($value) {
             $value['photo'] = url($value['photo']);
@@ -42,7 +42,7 @@ class VolunteerController extends TestCase
     {
         $volunteers = $this->dataset;
         $id = rand(1, count($volunteers));
-        $response = $this->get('/api/volunteer/' . $id);
+        $response = $this->get('/api/2019/volunteer/' . $id);
         $compared = $this->searchTargetById($volunteers, $id);
 
         $this->assertEquals(200, $this->response->status());
@@ -58,7 +58,7 @@ class VolunteerController extends TestCase
     {
         $volunteers = $this->dataset;
         $id = count($volunteers) + 1;
-        $response = $this->get('/api/volunteer/' . $id);
+        $response = $this->get('/api/2019/volunteer/' . $id);
 
         $this->assertEquals(404, $this->response->status());
 
@@ -73,7 +73,7 @@ class VolunteerController extends TestCase
     {
         $volunteers = $this->dataset;
         $id = "info_team";
-        $response = $this->get('/api/volunteer/' . $id);
+        $response = $this->get('/api/2019/volunteer/' . $id);
 
         $this->assertEquals(400, $this->response->status());
 
