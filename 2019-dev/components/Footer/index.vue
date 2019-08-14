@@ -16,7 +16,7 @@
                 <a href="https://twitter.com/mopcon" target="_blank" class="svg-twitter">
                     <IconTwitter />
                 </a>
-                <a href="https://www.instagram.com/mopcon2019/" target="_blank" class="svg-ig">
+                <a href="https://www.instagram.com/mopcon.tw/" target="_blank" class="svg-ig">
                     <IconIg />
                 </a>
                 <a href="https://t.me/mopcon" target="_blank" class="svg-aircraft">
