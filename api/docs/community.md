@@ -2,8 +2,8 @@
 
 ## 社群清單
 - **URL**
-  
-    /api/community
+
+    /api/2019/community
 
 - **Method**
 
@@ -43,8 +43,8 @@
 
 ## 主辦社群organizer
 - **URL**
-  
-  /api/community/organizer/:id
+
+  /api/2019/community/organizer/:id
 
 - **Method**
 
@@ -102,8 +102,8 @@
 
 ## 參與社群participant
 - **URL**
-  
-  /api/community/participant/:id
+
+  /api/2019/community/participant/:id
 
 - **Method**
 
