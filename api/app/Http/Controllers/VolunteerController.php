@@ -8,16 +8,7 @@ class VolunteerController extends Controller
 {
     use ApiTrait;
 
-    private $dataset;
-
-    public function __construct()
-    {
-        if (env('APP_ENV') === 'production') {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../resource/assets/json/volunteers.json'), true);
-        } else {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../resource/assets/json/volunteers-dev.json'), true);
-        }
-    }
+    protected $function = 'volunteer';
 
     public function index()
     {
@@ -26,7 +17,7 @@ class VolunteerController extends Controller
             $value['photo'] = url($value['photo']);
             unset($value['introducion'], $value['members']);
             return $value;
-        }, $this->dataset);
+        }, $this->jsonAry);
 
         return $this->returnSuccess('success', $result);
     }
@@ -42,8 +33,7 @@ class VolunteerController extends Controller
         if (!is_numeric($id)) {
             return $this->returnError('Bad request');
         }
-        $volunteers = $this->dataset;
-        $result = $this->searchTargetById($volunteers, $id);
+        $result = $this->searchTargetById($this->jsonAry, $id);
         if (is_null($result)) {
             return $this->returnNotFoundError();
         }
