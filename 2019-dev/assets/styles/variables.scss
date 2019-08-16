@@ -5,21 +5,21 @@ $colorThird: #ff4492;
 $colorBlack: #101010;
 $colorBg: #101721;
 $colorBg2: #121e30;
-$colorPopupBg: #182434;
+$colorBg3: #182434;
 $colorWhite: #fff;
 $colorGray: #848a8e;
 $colorGrayLight: #f0f1f2;
 $colorFont: $colorGrayLight;
 
-$fontStyle: "Noto Sans TC", "微軟正黑體", "sans-serif", "Noto Sans", "Helvetica",
-  "roboto", arial, sans-serif;
+$fontStyle: 'Noto Sans TC', '微軟正黑體', 'sans-serif', 'Noto Sans', 'Helvetica',
+  'roboto', arial, sans-serif;
 
 // == $mixin ==
 // extend
 // clearfix 清除浮動
 @mixin clearfix {
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -41,7 +41,7 @@ $fontStyle: "Noto Sans TC", "微軟正黑體", "sans-serif", "Noto Sans", "Helve
 
 @mixin hCenter {
   &:after {
-    content: "";
+    content: '';
     width: 0;
     height: 100%;
     display: inline-block;
@@ -61,11 +61,11 @@ $fontStyle: "Noto Sans TC", "微軟正黑體", "sans-serif", "Noto Sans", "Helve
 }
 
 // 背景圖
-@mixin bgCenter($w: "none", $h: "none") {
-  @if $w != "none" {
+@mixin bgCenter($w: 'none', $h: 'none') {
+  @if $w != 'none' {
     width: $w;
   }
-  @if $h != "none" {
+  @if $h != 'none' {
     height: $h;
   }
   background-repeat: no-repeat;

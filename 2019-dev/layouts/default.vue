@@ -1,17 +1,20 @@
 <template>
     <div class="layout">
+        <Header />
         <nuxt />
         <Footer />
     </div>
 </template>
 
 <script>
-import Footer from "~/components/Footer";
+import Footer from '~/components/Footer';
+import Header from '~/components/Header';
 
 export default {
-    name: "layout",
+    name: 'layout',
     components: {
         Footer,
+        Header,
     },
 };
 </script>
@@ -20,6 +23,10 @@ export default {
 .layout {
     overflow-x: hidden;
     background-color: $colorBg;
+    padding-top: 67px;
+    @include rwd(pad) {
+        padding-top: 47px;
+    }
 }
 
 .section {
@@ -85,7 +92,7 @@ export default {
     }
     &:before,
     &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
