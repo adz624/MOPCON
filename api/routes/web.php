@@ -29,5 +29,11 @@ $router->group(['prefix' => 'api'], function ($router) {
         $router->group(['prefix' => 'sponsor'], function ($router) {
             $router->get('', 'SponsorController@index');
         });
+        // Speaker
+        $router->group(['prefix' => 'speaker'], function ($router) {
+            $router->get('', 'SpeakerController@index');
+            $router->get('tags', 'SpeakerController@getTags');
+            $router->get('{id}', 'SpeakerController@show');
+        });
     });
 });

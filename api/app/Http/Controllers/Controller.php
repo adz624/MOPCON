@@ -9,13 +9,24 @@ class Controller extends BaseController
 {
     protected $function = null;
     protected $jsonAry;
+    private $path = __DIR__ . '/../../../resource/assets/json/';
 
     public function __construct()
     {
         $env = getenv('APP_ENV') ? getenv('APP_ENV') : 'production';
 
+        if (getenv('RESOURCE_PATH')) {
+            // 主要設計給測試使用
+            $path = getenv('RESOURCE_PATH');
+            if (!file_exists($path)) {
+                throw new NotFoundHttpException('Resource Path not found');
+            }
+
+            $this->path = $path;
+        }
+
         if ($this->function) {
-            $filePath = __DIR__ . '/../../../resource/assets/json/' . $this->function;
+            $filePath = $this->path . $this->function;
             if ($env === 'develop') {
                 $filePath .= '-dev';
             }
