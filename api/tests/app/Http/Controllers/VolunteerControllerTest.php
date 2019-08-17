@@ -10,13 +10,13 @@ class VolunteerController extends TestCase
     public function setUp() :void
     {
         parent::setUp();
+        putenv('APP_ENV=develop');
 
         if (env('APP_ENV') === 'production') {
             $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/volunteer.json'), true);
         } else {
             $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/volunteer-dev.json'), true);
         }
-
     }
 
     public function testGetVolunteerList()
@@ -25,7 +25,7 @@ class VolunteerController extends TestCase
         $compared = [];
         $compared['volunteer'] = array_map(function ($value) {
             $value['photo'] = url($value['photo']);
-            unset($value['introducion'], $value['members']);
+            unset($value['introducion'], $value['introducion_en'], $value['members'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
             return $value;
         }, $this->dataset);
 
@@ -96,6 +96,9 @@ class VolunteerController extends TestCase
 
         if (isset($result['photo']) && $result['photo'] !== '') {
             $result['photo'] = url($result['photo']);
+        }
+        if (isset($result['introducion_en']) && $result['introducion_en'] === '') {
+            $result['introducion_en'] = $result['introducion'];
         }
         unset($result['id']);
 
