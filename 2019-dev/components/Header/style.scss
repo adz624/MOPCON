@@ -7,7 +7,13 @@
   background-color: $colorBg;
   z-index: 1000;
   @include rwd(md) {
+    height: 67px;
+    transition: all 0.6s;
     background-color: transparent;
+    overflow: hidden;
+    @include rwd(pad) {
+      height: 47px;
+    }
   }
   &__content {
     display: flex;
@@ -285,6 +291,8 @@
 }
 
 .header.active {
+  height: 100vh;
+  z-index: 1000;
   .header__toggle {
     &:before,
     &:after {
