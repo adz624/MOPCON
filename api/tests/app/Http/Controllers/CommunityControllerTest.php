@@ -10,13 +10,13 @@ class CommunityControllerTest extends TestCase
     public function setUp() :void
     {
         parent::setUp();
+        putenv('APP_ENV=develop');
 
         if (env('APP_ENV') === 'production') {
             $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/community.json'), true);
         } else {
             $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/community-dev.json'), true);
         }
-
     }
 
     public function testGetCommunityList()
@@ -26,7 +26,7 @@ class CommunityControllerTest extends TestCase
         array_walk($this->dataset, function ($subset, $key) use (&$compared) {
             $compared[$key] = array_map(function ($value) {
                 $value['photo'] = url($value['photo']);
-                unset($value['introducion']);
+                unset($value['introducion'], $value['introducion_en'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
                 return $value;
             }, $subset);
         });
@@ -144,6 +144,10 @@ class CommunityControllerTest extends TestCase
 
         if (isset($result['photo']) && $result['photo'] !== '') {
             $result['photo'] = url($result['photo']);
+        }
+
+        if (isset($result['introducion_en']) && $result['introducion_en'] === '') {
+            $result['introducion_en'] = $result['introducion'];
         }
         unset($result['id']);
 
