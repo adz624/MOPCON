@@ -76,7 +76,7 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "tony_stark",
@@ -144,7 +144,7 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "bruce_wayne",
@@ -212,7 +212,7 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "hacker",
@@ -280,7 +280,7 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "geek",
@@ -348,7 +348,7 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "developer",
@@ -416,7 +416,7 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "special_cooperation",
@@ -484,10 +484,78 @@ Returns json data about sponsor information.
                     "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                     "about_us": "我是台灣神盾局...",
                     "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                    "facebook_url": null,
+                    "facebook_url": "",
                     "official_website": "https://S.H.I.E.L.D.shield.com",
                     "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                     "sponsor_type": "special_thanks",
+                    "speaker_information": [
+                        {
+                            "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
+                            "speaker_name": "大衛",
+                            "speaker_name_en": "David",
+                            "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
+                            "speaker_date": "10/05",
+                            "speaker_time": "15:00",
+                            "speaker_room": "room"
+                        },
+                        {
+                            "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
+                            "speaker_name": "小衛",
+                            "speaker_name_en": "Little David",
+                            "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
+                            "speaker_date": "10/05",
+                            "speaker_time": "16:00",
+                            "speaker_room": "room"
+                        }
+                    ]
+                }
+            ],
+            "education": [
+                {
+                    "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+                    "sponsor": "史塔克",
+                    "sponsor_id": "g7",
+                    "sponsor_en": "Stark-industry7",
+                    "understand_more": "https://www.Stark-industry.com",
+                    "about_us": "我們是台灣史塔克,史塔克很棒棒",
+                    "about_us_en": "We are Stark-industry Taiwan. We are great",
+                    "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
+                    "official_website": "https://www.Stark-industry.com",
+                    "career_information": "https://careers.Stark-industry.com/jobs/",
+                    "sponsor_type": "education",
+                    "speaker_information": [
+                        {
+                            "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
+                            "speaker_name": "小明",
+                            "speaker_name_en": "little min",
+                            "speaker_title": "Stark-industry Taiwan CEO",
+                            "speaker_date": "10/05",
+                            "speaker_time": "15:00",
+                            "speaker_room": "room"
+                        },
+                        {
+                            "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
+                            "speaker_name": "小華",
+                            "speaker_name_en": "little wa",
+                            "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
+                            "speaker_date": "10/05",
+                            "speaker_time": "16:00",
+                            "speaker_room": "room"
+                        }
+                    ]
+                },
+                {
+                    "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png",
+                    "sponsor": "神盾局",
+                    "sponsor_id": "a7",
+                    "sponsor_en": "S.H.I.E.L.D7",
+                    "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
+                    "about_us": "我是台灣神盾局...",
+                    "about_us_en": "I am S.H.I.E.L.D Taiwan...",
+                    "facebook_url": "",
+                    "official_website": "https://S.H.I.E.L.D.shield.com",
+                    "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
+                    "sponsor_type": "education",
                     "speaker_information": [
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
