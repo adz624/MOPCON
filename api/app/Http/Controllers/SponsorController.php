@@ -31,7 +31,8 @@ class SponsorController extends Controller
             'geek' => [],
             'developer' => [],
             'special_cooperation' => [],
-            'special_thanks' => []
+            'special_thanks' => [],
+            'education' => []
         ];
         foreach ($sponsorJson as $index => $sponsor) {
             array_push($data[$sponsor['sponsor_type']], $sponsor);
