@@ -20,7 +20,8 @@ class SponsorController extends TestCase
             'geek' => [],
             'developer' => [],
             'special_cooperation' => [],
-            'special_thanks' => []
+            'special_thanks' => [],
+            'education' => []
         ];
         foreach ($this->dataset as $index => $sponsor) {
             array_push($data[$sponsor['sponsor_type']], $sponsor);

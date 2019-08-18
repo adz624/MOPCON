@@ -15,7 +15,7 @@
   - Content:
   ```JSON
   {
-    "Success": true,
+    "success": true,
     "message": "Success.",
     "data": {
       "volunteer": [
@@ -60,7 +60,7 @@
   - Content:
   ```JSON
   {
-    "Success": true,
+    "success": true,
     "message": "Success.",
     "data": {
       "name": "場務組",
@@ -69,7 +69,8 @@
         "李曉明",
         "王曉華",
       ],
-      "introducion": "場地之守護神，照料與會者的一切，為工人把屎把尿。場地的一切柴米油鹽醬醋茶都是我們負責。"
+      "introducion": "場地之守護神，照料與會者的一切，為工人把屎把尿。場地的一切柴米油鹽醬醋茶都是我們負責。",
+      "introducion_en": ""
     }
   }
   ```
@@ -82,7 +83,7 @@
   - Content:
   ```JSON
   {
-    "Success": false,
+    "success": false,
     "message": "Bad request",
     "data": []
   }
@@ -93,7 +94,7 @@
   - Content:
   ```JSON
   {
-    "Success": false,
+    "success": false,
     "message": "Not found",
     "data": []
   }
