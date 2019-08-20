@@ -29,7 +29,7 @@ Returns json data about sponsor information.
     **Content:** 
 
     `/api/2019/sponsor`
-    ```
+    ```json
     {
         "success": true,
         "message": "success",
@@ -582,7 +582,7 @@ Returns json data about sponsor information.
     }
     ```
     `/api/2019/sponsor?sponsor_id=g0,a1`
-    ```
+    ```json
     {
         "success": true,
         "message": "success",
