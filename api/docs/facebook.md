@@ -34,22 +34,22 @@ Returns json data about a facebook information.
 
   * **Code:** 200 <br />
     **Content:** 
-    ```
+    ```json
     {
-      'success' : true,
-      'message' : 'Get {number} of posts', 
-      'data' : [
+      "success" : true,
+      "message" : "Get {number} of posts", 
+      "data" : [
           {
-              'full_picture' : {imageUrl},
-              'message' : {貼文內容},
-              'id': {貼文ID}, // 可透過 facebook.com/{id} 找到該貼文
+              "full_picture" : {imageUrl},
+              "message" : {貼文內容},
+              "id": {貼文ID}, // 可透過 facebook.com/{id} 找到該貼文
               "shares" : {int}, // 多少人分享
               "url" : "https://www.facebook.com/{id}", //該貼文
               "likes" : {int}, // 多少人按讚
-              'created_time' : '2018-12-18T07:22:06+0000' // 貼文時間點
+              "created_time" : "2018-12-18T07:22:06+0000" // 貼文時間點
           },
           {
-              'full_picture' : {imageUrl},
+              "full_picture" : {imageUrl},
               ...
           }
       ]
@@ -60,11 +60,11 @@ Returns json data about a facebook information.
 
   * **Code:** 404 NOT FOUND <br />
     **Content:** 
-    ```
+    ```json
     {
-        'success' : false,
-        'message' : 'Not found'
-        'data'    : []
+        "success" : false,
+        "message" : "Not found"
+        "data"    : []
     }
     ```
 
@@ -72,18 +72,18 @@ Returns json data about a facebook information.
 
   * **Code:** 400 BAD REQUEST <br />
     **Content:** 
-    ```
+    ```json
     {
-        'success' : false,
-        'message' : 'can not access over than 100 posts' // 不能一次要求超過100篇貼文
-        'data'    : []
+        "success" : false,
+        "message" : "can not access over than 100 posts" // 不能一次要求超過100篇貼文
+        "data"    : []
     }
     ```
-    ```
+    ```json
     {
-        'success' : false,
-        'message' : 'Token invalid' // facebook token 不合法
-        'data'    : []
+        "success" : false,
+        "message" : "Token invalid" // facebook token 不合法
+        "data"    : []
     }
     ```
 

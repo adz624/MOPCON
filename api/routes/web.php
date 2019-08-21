@@ -35,5 +35,8 @@ $router->group(['prefix' => 'api'], function ($router) {
             $router->get('tags', 'SpeakerController@getTags');
             $router->get('{id}', 'SpeakerController@show');
         });
+        $router->group(['prefix' => 'unconf'], function ($router) {
+            $router->get('/', 'UnconfController@index');
+        });
     });
 });
