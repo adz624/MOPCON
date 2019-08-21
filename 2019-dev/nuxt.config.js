@@ -154,6 +154,7 @@ module.exports = {
   },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    proxyUrl: process.env.PROXY_URL || '',
     yearUrl: '/2019',
   },
 
