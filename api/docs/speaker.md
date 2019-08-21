@@ -38,6 +38,7 @@
           "company": "大國集團公司",
           "company_e": "Da Kao",
           "job_title": "incidunt",
+          "job_title_e": "incidunt",
           "bio": "Ullam alias magni fugiat at. Error earum aut aperiam cupiditate. Atque suscipit voluptas aut sed ullam architecto.",
           "bio_e": "Aliquam voluptatem iste tenetur nesciunt. Maiores consequatur labore minus voluptatum odio inventore magni. Vero suscipit debitis commodi fugit non.",
           "photo_for_speaker_web": "https://picsum.photos/200",
@@ -59,6 +60,7 @@
           "floor": "4F",
           "sponsor_id": "1",
           "recordable": true,
+          "level": "Basic",
           "tags": [
             "ai",
             "cloud"
@@ -121,6 +123,7 @@
         "company": "大國集團公司",
         "company_e": "Da Kao",
         "job_title": "incidunt",
+        "job_title_e": "incidunt",
         "bio": "Ullam alias magni fugiat at. Error earum aut aperiam cupiditate. Atque suscipit voluptas aut sed ullam architecto.",
         "bio_e": "Aliquam voluptatem iste tenetur nesciunt. Maiores consequatur labore minus voluptatum odio inventore magni. Vero suscipit debitis commodi fugit non.",
         "photo_for_speaker_web": "https://picsum.photos/200",
@@ -142,6 +145,7 @@
         "floor": "4F",
         "sponsor_id": "1",
         "recordable": true,
+        "level": "Basic",
         "tags": [
           "ai",
           "cloud"
