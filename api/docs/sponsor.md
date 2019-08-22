@@ -54,8 +54,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -63,8 +69,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -87,8 +99,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -96,8 +114,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -122,8 +146,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -131,8 +161,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -155,8 +191,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -164,8 +206,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -190,8 +238,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -199,8 +253,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -223,8 +283,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -232,8 +298,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -258,8 +330,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -267,8 +345,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -291,8 +375,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -300,8 +390,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -326,8 +422,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -335,8 +437,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -359,8 +467,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -368,8 +482,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -394,8 +514,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -403,8 +529,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -427,8 +559,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -436,8 +574,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -462,8 +606,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -471,8 +621,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -495,8 +651,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -504,8 +666,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -530,8 +698,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little min",
                             "speaker_title": "Stark-industry Taiwan CEO",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -539,8 +713,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "little wa",
                             "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 },
@@ -563,8 +743,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "David",
                             "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                             "speaker_date": "10/05",
-                            "speaker_time": "15:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "10:15 - 11:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         },
                         {
                             "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -572,8 +758,14 @@ Returns json data about sponsor information.
                             "speaker_name_en": "Little David",
                             "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                             "speaker_date": "10/05",
-                            "speaker_time": "16:00",
-                            "speaker_room": "room"
+                            "speaker_duration": "11:15 - 12:00",
+                            "speaker_room": "R1, 一廳",
+                            "speaker_topic": "如何寫出好的java程式",
+                            "speaker_keywords": [
+                                "Block_chain",
+                                "AI",
+                                "Java"
+                            ]
                         }
                     ]
                 }
@@ -606,8 +798,14 @@ Returns json data about sponsor information.
                         "speaker_name_en": "little min",
                         "speaker_title": "Stark-industry Taiwan CEO",
                         "speaker_date": "10/05",
-                        "speaker_time": "15:00",
-                        "speaker_room": "room"
+                        "speaker_duration": "10:15 - 11:00",
+                        "speaker_room": "R1, 一廳",
+                        "speaker_topic": "如何寫出好的java程式",
+                        "speaker_keywords": [
+                            "Block_chain",
+                            "AI",
+                            "Java"
+                        ]
                     },
                     {
                         "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -615,8 +813,14 @@ Returns json data about sponsor information.
                         "speaker_name_en": "little wa",
                         "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
                         "speaker_date": "10/05",
-                        "speaker_time": "16:00",
-                        "speaker_room": "room"
+                        "speaker_duration": "11:15 - 12:00",
+                        "speaker_room": "R1, 一廳",
+                        "speaker_topic": "如何寫出好的java程式",
+                        "speaker_keywords": [
+                            "Block_chain",
+                            "AI",
+                            "Java"
+                        ]
                     }
                 ]
             },
@@ -628,7 +832,7 @@ Returns json data about sponsor information.
                 "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
                 "about_us": "我是台灣神盾局...",
                 "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-                "facebook_url": null,
+                "facebook_url": "",
                 "official_website": "https://S.H.I.E.L.D.shield.com",
                 "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
                 "sponsor_type": "bruce_wayne",
@@ -639,8 +843,14 @@ Returns json data about sponsor information.
                         "speaker_name_en": "David",
                         "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
                         "speaker_date": "10/05",
-                        "speaker_time": "15:00",
-                        "speaker_room": "room"
+                        "speaker_duration": "10:15 - 11:00",
+                        "speaker_room": "R1, 一廳",
+                        "speaker_topic": "如何寫出好的java程式",
+                        "speaker_keywords": [
+                            "Block_chain",
+                            "AI",
+                            "Java"
+                        ]
                     },
                     {
                         "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
@@ -648,8 +858,14 @@ Returns json data about sponsor information.
                         "speaker_name_en": "Little David",
                         "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
                         "speaker_date": "10/05",
-                        "speaker_time": "16:00",
-                        "speaker_room": "room"
+                        "speaker_duration": "11:15 - 12:00",
+                        "speaker_room": "R1, 一廳",
+                        "speaker_topic": "如何寫出好的java程式",
+                        "speaker_keywords": [
+                            "Block_chain",
+                            "AI",
+                            "Java"
+                        ]
                     }
                 ]
             }
