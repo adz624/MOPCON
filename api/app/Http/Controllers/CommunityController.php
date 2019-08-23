@@ -16,7 +16,7 @@ class CommunityController extends Controller
         array_walk($this->jsonAry, function ($subset, $key) use (&$result) {
             $result[$key] = array_map(function ($value) {
                 $value['photo'] = url($value['photo']);
-                unset($value['introducion'], $value['introducion_en'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
+                unset($value['introduction'], $value['introduction_en'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
                 return $value;
             }, $subset);
         });
@@ -78,8 +78,8 @@ class CommunityController extends Controller
         if (isset($result['photo']) && $result['photo'] !== '') {
             $result['photo'] = url($result['photo']);
         }
-        if (isset($result['introducion_en']) && $result['introducion_en'] === '') {
-            $result['introducion_en'] = $result['introducion'];
+        if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
+            $result['introduction_en'] = $result['introduction'];
         }
         unset($result['id']);
         return $result;
