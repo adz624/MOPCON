@@ -1,0 +1,54 @@
+[
+    {
+        "date": "1571414400",
+        "period": [
+            {
+                "started_at": "1571445000",
+                "ended_at": "1571446800",
+                "event": "報到",
+                "room": {}
+            },
+            {
+                "started_at": "1571446800",
+                "ended_at": "1571447700",
+                "event": "開幕",
+                "room": {}
+            },
+            {
+                "started_at": "1571447700",
+                "ended_at": "1571450400",
+                "event": "",
+                "room": {
+                    "All": 1
+                }
+            },
+            {
+                "started_at": "1571446800",
+                "ended_at": "1571447700",
+                "event": "休息",
+                "room": {}
+            },
+            {
+                "started_at": "1571447700",
+                "ended_at": "1571450400",
+                "room": {
+                    "R1": 1,
+                    "R2": 1,
+                    "R3": 1
+                }
+            },
+            {
+                "started_at": "",
+                "ended_at": "",
+                "event": "END",
+                "room": {}
+            },
+            {
+                "started_at": "",
+                "ended_at": "",
+                "event": "講者晚宴",
+                "room": {}
+            }
+        ]
+    }
+]

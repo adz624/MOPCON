@@ -28,6 +28,7 @@
         "floor": "4F",
         "sponsor_id": "1",
         "recordable": true,
+        "level": "Basic",
         "tags": [
             "ai",
             "cloud"
