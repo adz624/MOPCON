@@ -154,7 +154,6 @@ module.exports = {
   },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    proxyUrl: process.env.PROXY_URL || '',
     yearUrl: '/2019',
   },
 
@@ -162,7 +161,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: `${process.env.PROXY_URL}${process.env.BASE_URL}`,
   },
 
   /*
