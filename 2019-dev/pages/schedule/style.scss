@@ -1,3 +1,42 @@
 .schedule {
+  &__tagDesc {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 990px;
+    margin: 0 auto;
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 8px 30px;
+      color: $colorWhite;
+      font-size: 14px;
+      @include rwd(xs) {
+        align-items: flex-start;
+      }
 
+      &__tag {
+        flex: 0 0 auto;
+        width: 83px;
+        span {
+          display: inline-block;
+          height: 24px;
+          padding: 0 8px;
+          border: solid 1px $colorWhite;
+        }
+      }
+
+      &__text {
+        flex: 0 0 auto;
+        width: calc(100% - 83px);
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__timeList {
+    margin-top: 23px;
+    @include rwd(pad) {
+      padding: 0 25px;
+    }
+  }
 }

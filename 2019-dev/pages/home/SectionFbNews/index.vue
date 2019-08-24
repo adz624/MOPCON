@@ -61,7 +61,7 @@ export default {
     },
     mounted() {
         this.$axios
-            .$get(`${process.env.proxyUrl}${process.env.baseUrl}/api/facebook/posts`)
+            .$get("/api/facebook/posts")
             .then(({ success, data, message }) => {
                 if (success) {
                     this.posts = [...data];

@@ -1,0 +1,55 @@
+.timeList {
+  display: flex;
+  border-top: solid 1px $colorTimeLine;
+  border-bottom: solid 1px $colorTimeLine;
+  @include rwd(pad) {
+    flex-flow: column nowrap;
+  }
+
+  &__time {
+    @include flexCenter;
+    width: 160px;
+
+    background-color: $colorBg3;
+    @include rwd(pad) {
+      width: 100%;
+    }
+    span {
+      padding: 18px 0;
+      color: $colorPrimary;
+      font-size: 16px;
+      @include rwd(pad) {
+        padding: 6px 0;
+      }
+    }
+  }
+
+  &__time.empty {
+    @include rwd(pad) {
+      display: none;
+    }
+  }
+
+  &__content {
+    @include flexCenter;
+    width: calc(100% - 160px);
+    @include rwd(pad) {
+      width: 100%;
+      padding: 12px 0;
+    }
+
+    &__title {
+      color: $colorPrimary;
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    &__card {
+      width: 100%;
+      margin-left: 8px;
+      @include rwd(pad) {
+        margin-left: 0px;
+      }
+    }
+  }
+}
