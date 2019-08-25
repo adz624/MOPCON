@@ -2,27 +2,38 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\SpeakerService;
+
 class SpeakerController extends Controller
 {
     use ApiTrait;
 
     protected $function = 'speaker';
     private $hidden_fields = [
+        'photo_for_speaker_web',
+        'photo_for_speaker_mobile',
         'photo_for_session_web',
         'photo_for_session_mobile',
         'photo_for_sponsor_web',
         'photo_for_sponsor_mobile',
+        'tags',
     ];
 
     public function __construct()
     {
         parent::__construct();
         foreach ($this->jsonAry as &$row) {
+            $tags = (new SpeakerService())->parseTags($row['tags']);
+            $row['img'] = [
+                'web' => $row['photo_for_speaker_web'],
+                'mobile' => $row['photo_for_speaker_mobile'],
+            ];
             foreach ($row as $key => $value) {
                 if (in_array($key, $this->hidden_fields)) {
                     unset($row[$key]);
                 }
             }
+            $row['tags'] = $tags;
         }
     }
 
@@ -61,7 +72,7 @@ class SpeakerController extends Controller
         try {
             $tags = [];
             foreach ($this->jsonAry as $speaker) {
-                $tags = array_merge($tags, $speaker['tags']);
+                $tags = array_merge($tags, array_column($speaker['tags'], 'name'));
             }
 
             return $this->returnSuccess('Success.', array_values(array_unique($tags)));

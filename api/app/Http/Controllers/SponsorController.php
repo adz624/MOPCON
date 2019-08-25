@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\SpeakerService;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
@@ -69,6 +70,7 @@ class SponsorController extends Controller
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {
                 $start = Carbon::createFromTimestamp($speaker['started_at'], 'Asia/Taipei');
                 $end = Carbon::createFromTimestamp($speaker['ended_at'], 'Asia/Taipei');
+                $tags = (new SpeakerService())->parseTags($speaker['tags']);
 
                 $sponsor['speaker_information'][] = [
                     'speaker_img' => $speaker['photo_for_sponsor_web'],
@@ -91,7 +93,7 @@ class SponsorController extends Controller
                     'speaker_room' => $speaker['room'],
                     'room' => $speaker['room'],
                     'speaker_keywords' => $speaker['tags'],
-                    'tags' => $speaker['tags'],
+                    'tags' => $tags,
                 ];
             }
         }

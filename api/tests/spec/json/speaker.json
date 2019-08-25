@@ -30,10 +30,7 @@
           "job_title_e",
           "bio",
           "bio_e",
-          "photo_for_speaker_web",
-          "photo_for_speaker_mobile",
-          "photo_for_session_web",
-          "photo_for_session_mobile",
+          "img",
           "link_fb",
           "link_github",
           "link_twitter",
@@ -89,21 +86,22 @@
             "type": "string",
             "description": "講師英文介紹，如果沒有填寫則為空字串"
           },
-          "photo_for_speaker_web": {
-            "type": "string",
-            "description": "講師圖片，此圖片給 web 使用"
-          },
-          "photo_for_speaker_mobile": {
-            "type": "string",
-            "description": "講師圖片，此圖片給 mobile 使用"
-          },
-          "photo_for_session_web": {
-            "type": "string",
-            "description": "講師圖片，此圖片給網頁版議程頁面使用"
-          },
-          "photo_for_session_mobile": {
-            "type": "string",
-            "description": "講師圖片，此圖片給手機版議程頁面使用"
+          "img": {
+            "type": "object",
+            "required": [
+              "web",
+              "mobile"
+            ],
+            "items": {
+              "web": {
+                "type": "string",
+                "description": "講師圖片，給 web 使用"
+              },
+              "mobile": {
+                "type": "string",
+                "description": "講師圖片，給 mobile 使用"
+              }
+            }
           },
           "link_fb": {
             "type": "string",
@@ -177,10 +175,22 @@
           },
           "tags": {
             "type": "array",
-            "description": "此議程的類別，如果沒有分類則會空陣列",
             "items": {
-              "type": "string",
-              "description": "類別"
+              "type": "object",
+              "required": [
+                "color",
+                "name"
+              ],
+              "items": {
+                "color": {
+                  "type": "string",
+                  "description": "Tag 使用的色碼"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Tag 顯示的名稱"
+                }
+              }
             }
           }
         }
