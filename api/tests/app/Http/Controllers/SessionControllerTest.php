@@ -17,6 +17,8 @@ class SessionController extends TestCase
         'company_e',
         'job_title',
         'job_title_e',
+        'summary',
+        'summary_e',
         'photo_for_session_web',
         'photo_for_session_mobile',
         'topic',
@@ -93,6 +95,37 @@ class SessionController extends TestCase
             'success' => true,
             'message' => 'success',
             'data' => $compared,
+        ]);
+    }
+
+    public function testGetSessionListWithTags()
+    {
+        $id = rand(1, count($this->sessions));
+        $tags = implode(',', ['ai', 'cloud']);
+        $response = $this->get('/api/2019/session/list?tags=' . $tags);
+        $compared = array_values($this->sessions);
+
+        $this->assertEquals(200, $this->response->status());
+
+        $response->seeJsonEquals([
+            'success' => true,
+            'message' => 'success',
+            'data' => $compared,
+        ]);
+    }
+
+    public function testGetSessionListWithNoExistTags()
+    {
+        $id = rand(1, count($this->sessions));
+        $tags = implode(['qwdfwe','acvbb']);
+        $response = $this->get('/api/2019/session/list?tags=' . $tags);
+
+        $this->assertEquals(200, $this->response->status());
+
+        $response->seeJsonEquals([
+            'success' => true,
+            'message' => 'success',
+            'data' => [],
         ]);
     }
 

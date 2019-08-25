@@ -1,6 +1,9 @@
 # 主要議程 API
 
 ## 主要議程表
+
+議程時間表
+
 - **URL**
 
     /api/2019/session
@@ -192,13 +195,23 @@
   }
   ```
 ## 主要議程清單
+
+提供過濾議程標籤後的議程清單
+
 - **URL**
 
-    /api/2019/session/list
+    /api/2019/session/list?tags=:tags
 
 - **Method**
 
     `GET`
+
+- **URL Params**
+
+    **Optional:**
+
+    - tags=[string] 
+      - e.g., `/api/2019/session/list?tags=ai,cloud`
 
 - **Success Response**
 
@@ -275,9 +288,12 @@
   ```
   
 ## 主要議程資訊
+
+提供單一議程資訊
+
 - **URL**
 
-    /api/2019/conf/session/:session_id
+    /api/2019/session/:session_id
 
 - **Method**
 
