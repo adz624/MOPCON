@@ -127,7 +127,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/ga', ssr: false },
+    // { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/gsap', ssr: false },
     { src: '~/plugins/vue-gallery', ssr: false },
     { src: '~/plugins/number-flip.js', ssr: false },

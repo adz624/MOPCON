@@ -1,7 +1,7 @@
 .timeList {
   display: flex;
-  border-top: solid 1px $colorTimeLine;
-  border-bottom: solid 1px $colorTimeLine;
+  border-top: solid 1px $colorPrimaryDark;
+  border-bottom: solid 1px $colorPrimaryDark;
   @include rwd(pad) {
     flex-flow: column nowrap;
   }
@@ -39,14 +39,22 @@
     }
 
     &__title {
+      padding: 12px 0;
       color: $colorPrimary;
       font-size: 24px;
       font-weight: normal;
+      @include rwd(pad) {
+        padding: 0;
+      }
     }
 
     &__card {
+      display: flex;
       width: 100%;
       margin-left: 8px;
+      @include rwd(md) {
+        flex-flow: column nowrap;
+      }
       @include rwd(pad) {
         margin-left: 0px;
       }

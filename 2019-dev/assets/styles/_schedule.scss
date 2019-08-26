@@ -38,6 +38,10 @@
           display: block;
         }
       }
+
+      .color-primary {
+        margin-right: 7px;
+      }
     }
 
     &__text {
@@ -49,6 +53,7 @@
     width: calc(100% + 70px);
     margin-bottom: 60px;
     margin-left: -40px;
+    text-align: center;
     @include rwd(pad) {
       width: calc(100% - 10px);
       margin-left: 0;
@@ -105,6 +110,37 @@
 
       [class*='filter-btn-'] + [class*='filter-btn-'] {
         margin-left: 24px;
+      }
+
+      // close icon
+      [class*='filter-btn-'].active {
+        padding-left: 28px;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 55%;
+          left: 8px;
+          width: 13px;
+          height: 1px;
+          transform: translateY(-50%) rotate(45deg);
+          background-color: $colorWhite;
+        }
+        &:after {
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+
+    &__clear {
+      display: inline-block;
+      border-bottom: solid 1px $colorGray;
+      color: $colorGray;
+      font-size: 14px;
+      line-height: 1.43;
+      cursor: pointer;
+      @include rwd(lg) {
+        margin-top: 10px;
       }
     }
   }
