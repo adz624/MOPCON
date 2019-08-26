@@ -21,6 +21,7 @@ class SpeakerControllerTest extends TestCase
         /** assert **/
         $this->assertEquals(true, $result['success']);
         $this->assertEquals($assertCount, count($result['data']));
+        $this->assertJsonStringValidatedAgainstJsonSchemaFile('speaker.json', $response->getContent());
     }
 
     public function testResourceFileNotFound()
