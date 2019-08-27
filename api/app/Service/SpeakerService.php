@@ -28,12 +28,12 @@ class SpeakerService
         'tags',
     ];
 
-    public function parse(array $row)
+    public function parse(array $row, string $type = 'speaker')
     {
         $tags = $this->parseTags($row['tags']);
         $row['img'] = [
-            'web' => $row['photo_for_speaker_web'],
-            'mobile' => $row['photo_for_speaker_mobile'],
+            'web' => $row['photo_for_' . $type . '_web'],
+            'mobile' => $row['photo_for_' . $type . '_mobile'],
         ];
         foreach ($row as $key => $value) {
             if (in_array($key, $this->hidden_fields)) {
