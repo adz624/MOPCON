@@ -135,6 +135,7 @@ module.exports = {
     { src: '~/plugins/vue-clipboard.js', ssr: false },
     { src: '~/plugins/vue-awesom-swiper', ssr: false },
     { src: '~/plugins/vue-social-sharing', ssr: false },
+    { src: '~/plugins/vue-moment.js' },
   ],
 
   /*
@@ -161,7 +162,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: `${process.env.PROXY_URL}${process.env.BASE_URL}`,
   },
 
   /*

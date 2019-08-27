@@ -76,3 +76,18 @@ $theme-colors: ("primary": $colorPrimary, "secondary": $colorSecondary, "third":
   border-bottom-left-radius: 0;
 }
 
+// Cart tag Button
+@mixin tagButton($color) {
+  padding: 0px 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  border: solid 1px $color;
+  color: $color;
+}
+
+// 產出三款 tag class => .tag-btn-primary  .tag-btn-secondary  .tag-btn-third
+@each $name, $color in $theme-colors {
+  .tag-btn-#{$name} {
+    @include tagButton($color);
+  }
+}

@@ -29,7 +29,7 @@
   transform: translateY(20%);
   transition: all 0.6s;
   border: solid 1px $colorPrimary;
-  background-color: $colorPopupBg;
+  background-color: $colorBg3;
   opacity: 0;
   @include rwd(pad) {
     max-width: 325px;
@@ -47,7 +47,7 @@
     &:before,
     &:after {
       @include abCenter;
-      content: "";
+      content: '';
       width: 100%;
       height: 1px;
       background-color: $colorPrimary;
