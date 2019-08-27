@@ -4,13 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Service\SpeakerService;
 use Illuminate\Http\Request;
-use Carbon\Carbon;
 
 class SponsorController extends Controller
 {
     use ApiTrait;
 
-    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'special_cooperation', 'special_thanks', 'co-organizer', 'ksg_support'];
+    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support'];
+    private $displayName = [
+        ['name' => 'Tony Stark'],
+        ['name' => 'Bruce Wayne'],
+        ['name' => 'Hacker'],
+        ['name' => 'Geek'],
+        ['name' => 'Developer'],
+        ['name' => '教育贊助', 'name_e' => 'Education Sponsor'],
+        ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
+        ['name' => '協辦單位', 'name_e' => 'Co Organizer'],
+        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助']
+    ];
     private $speakerAry = [];
     protected $function = 'sponsor';
 
@@ -31,22 +41,20 @@ class SponsorController extends Controller
 
     private function getAllSponsors($sponsorJson)
     {
-        $data = [
-            'tony_stark' => [],
-            'bruce_wayne' => [],
-            'hacker' => [],
-            'geek' => [],
-            'developer' => [],
-            'special_cooperation' => [],
-            'special_thanks' => [],
-            'education' => [],
-            'co-organizer' => [],
-            'ksg_support' => [],
-        ];
-        foreach ($sponsorJson as $index => $sponsor) {
-            array_push($data[$sponsor['sponsor_type']], $this->extractor($sponsor));
+        $data = [];
+        foreach ($sponsorJson as $sponsor) {
+            $index = array_search($sponsor['sponsor_type'], $this->sponsorTypes);
+            if (!array_key_exists($index, $data)) {
+                $data[$index] = [
+                    'name' => $this->displayName[$index]['name'],
+                    'name_e' => $this->displayName[$index]['name_e'] ?? $this->displayName[$index]['name'],
+                    'data' => [],
+                ];
+            }
+            array_push($data[$index]['data'], $this->extractor($sponsor));
         }
-        return $this->returnSuccess('success', $data);
+
+        return $this->returnSuccess('success', array_values($data));
     }
 
     private function getSpecificSponsors($sponsorJson, $sponsorIdArr)
@@ -68,31 +76,19 @@ class SponsorController extends Controller
         $sponsor['speaker_information'] = [];
         foreach ($this->speakerAry as $speaker) {
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {
-                $start = Carbon::createFromTimestamp($speaker['started_at'], 'Asia/Taipei');
-                $end = Carbon::createFromTimestamp($speaker['ended_at'], 'Asia/Taipei');
                 $tags = (new SpeakerService())->parseTags($speaker['tags']);
-
                 $sponsor['speaker_information'][] = [
-                    'speaker_img' => $speaker['photo_for_sponsor_web'],
                     'img' => [
                         'mobile' => $speaker['photo_for_sponsor_mobile'],
                         'web' => $speaker['photo_for_sponsor_web'], // extra
                     ],
-                    'speaker_name' => $speaker['name'],
                     'name' => $speaker['name'],
-                    'speaker_name_en' => $speaker['name_e'],
-                    'name_en' => $speaker['name_e'],
-                    'speaker_title' => $speaker['job_title'],
+                    'name_e' => $speaker['name_e'],
                     'title' => $speaker['job_title'],
-                    'speaker_title_en' => $speaker['job_title_e'], // extra
-                    'title_en' => $speaker['job_title_e'], // extra
-                    'speaker_date' => $start->format('m/d'),
-                    'speaker_duration' => $start->hour . ':' . $start->minute . ' - ' . $end->hour . ':' . $end->minute,
+                    'title_e' => $speaker['job_title_e'], // extra
                     'started_at' => $speaker['started_at'],
                     'endeded_at' => $speaker['ended_at'],
-                    'speaker_room' => $speaker['room'],
                     'room' => $speaker['room'],
-                    'speaker_keywords' => $speaker['tags'],
                     'tags' => $tags,
                 ];
             }
