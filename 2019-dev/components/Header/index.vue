@@ -100,8 +100,6 @@ export default {
             if (window.innerWidth < 1024 && nav.subNav.length > 0) {
                 const targetNav = this.navList.find(item => item === nav);
                 targetNav.subIsOpen = !targetNav.subIsOpen;
-                if (targetNav.subIsOpen) {
-                }
             }
         },
     },

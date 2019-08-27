@@ -69,11 +69,7 @@ export default {
     methods: {
         formatTagName(val) {
             const tag = this.tags.find(tag => tag.id === val);
-            if (tag) {
-                return tag.name;
-            } else {
-                return val;
-            }
+            return tag ? tag.name : val;
         },
     },
 };
