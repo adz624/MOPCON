@@ -17,6 +17,8 @@ class SessionController extends Controller
         'company_e',
         'job_title',
         'job_title_e',
+        'summary',
+        'summary_e',
         'photo_for_session_web',
         'photo_for_session_mobile',
         'topic',
@@ -95,9 +97,20 @@ class SessionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getSessionList()
+    public function getSessionList(Request $request)
     {
-        return $this->returnSuccess('success', array_values($this->sessions));
+        $tags = $request->input('tags', '');
+        if ($tags === '') {
+            return $this->returnSuccess('success', array_values($this->sessions));
+        }
+        $tags = explode(',', $tags);
+        $output = array_filter($this->sessions, function ($session) use ($tags) {
+            $filters = array_merge($session['tags_tech'], $session['tags_design'], $session['tags_other']);
+            $intersect = array_intersect($tags, $filters);
+            return $tags === $intersect;
+        });
+
+        return $this->returnSuccess('success', array_values($output));
     }
 
     /**
