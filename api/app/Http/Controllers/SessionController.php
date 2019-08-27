@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Service\SpeakerService;
+use Illuminate\Http\Request;
 
 class SessionController extends Controller
 {
@@ -104,6 +105,7 @@ class SessionController extends Controller
     /**
      * 取得議程清單
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
     public function getSessionList(Request $request)
@@ -114,7 +116,10 @@ class SessionController extends Controller
         }
         $tags = explode(',', $tags);
         $output = array_filter($this->sessions, function ($session) use ($tags) {
-            $filters = array_merge($session['tags_tech'], $session['tags_design'], $session['tags_other']);
+            $filters = [];
+            foreach ($session['tags'] as $row) {
+                $filters[] = $row['name'];
+            }
             $intersect = array_intersect($tags, $filters);
             return $tags === $intersect;
         });
