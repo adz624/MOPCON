@@ -18,6 +18,32 @@ class SpeakerService
         'other' => '#ff4492',
         'tech' => '#01aaf0',
     ];
+    private $hidden_fields = [
+        'photo_for_speaker_web',
+        'photo_for_speaker_mobile',
+        'photo_for_session_web',
+        'photo_for_session_mobile',
+        'photo_for_sponsor_web',
+        'photo_for_sponsor_mobile',
+        'tags',
+    ];
+
+    public function parse(array $row)
+    {
+        $tags = $this->parseTags($row['tags']);
+        $row['img'] = [
+            'web' => $row['photo_for_speaker_web'],
+            'mobile' => $row['photo_for_speaker_mobile'],
+        ];
+        foreach ($row as $key => $value) {
+            if (in_array($key, $this->hidden_fields)) {
+                unset($row[$key]);
+            }
+        }
+        $row['tags'] = $tags;
+
+        return $row;
+    }
 
     public function parseTags(array $tags): array
     {
