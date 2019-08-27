@@ -12,7 +12,12 @@
                     <div v-if="nav.subNav.length > 0"
                         class="header__nav__item__icon"
                         :class="{active: nav.subIsOpen}"></div>
-                    <nuxt-link :to="nav.url" class="header__nav__item__name"><span>{{nav.name}}</span></nuxt-link>
+                    <nuxt-link
+                        :to="nav.url"
+                        class="header__nav__item__name"
+                        :class="{disable: nav.subNav.length > 0}">
+                        <span>{{nav.name}}</span>
+                    </nuxt-link>
 
                     <!-- 次選單 -->
                     <div class="header__nav__subItem" v-if="nav.subNav.length > 0">
@@ -87,6 +92,12 @@ export default {
         // 判斷 nav 選單內是否有其一展開, 有就回傳 true
         navSubItemActive() {
             return this.navList.some(item => item.subIsOpen);
+        },
+    },
+    watch: {
+        // 監聽路由，有變化就將 active 狀態關閉，收合 navbar
+        $route(to, from) {
+            this.isActive = false;
         },
     },
     methods: {

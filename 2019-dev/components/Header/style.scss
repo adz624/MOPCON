@@ -194,6 +194,10 @@
           }
         }
       }
+
+      &__name.disable {
+        pointer-events: none;
+      }
     }
 
     &__item.active {
