@@ -1,770 +1,327 @@
 [
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g0", 
-        "sponsor_en": "Stark-industry0",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "tony_stark",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a0",
-        "sponsor_en": "S.H.I.E.L.D0",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "tony_stark",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-{
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g1", 
-        "sponsor_en": "Stark-industry1",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "bruce_wayne",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a1",
-        "sponsor_en": "S.H.I.E.L.D1",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "bruce_wayne",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g2", 
-        "sponsor_en": "Stark-industry2",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "hacker",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a2",
-        "sponsor_en": "S.H.I.E.L.D2",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "", 
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "hacker",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g3", 
-        "sponsor_en": "Stark-industry3",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "geek",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a3",
-        "sponsor_en": "S.H.I.E.L.D3",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "geek",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g4", 
-        "sponsor_en": "Stark-industry4",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "developer",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a4",
-        "sponsor_en": "S.H.I.E.L.D4",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "developer",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g5", 
-        "sponsor_en": "Stark-industry5",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "special_cooperation",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a5",
-        "sponsor_en": "S.H.I.E.L.D5",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "special_cooperation",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g6", 
-        "sponsor_en": "Stark-industry6",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "special_thanks",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a6",
-        "sponsor_en": "S.H.I.E.L.D6",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "special_thanks",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png", 
-        "sponsor": "史塔克",
-        "sponsor_id": "g7", 
-        "sponsor_en": "Stark-industry7",
-        "understand_more": "https://www.Stark-industry.com",
-        "about_us": "我們是台灣史塔克,史塔克很棒棒",
-        "about_us_en": "We are Stark-industry Taiwan. We are great",
-        "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-        "official_website": "https://www.Stark-industry.com",
-        "career_information": "https://careers.Stark-industry.com/jobs/",
-        "sponsor_type": "education",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小明",
-                "speaker_name_en": "little min",
-                "speaker_title": "Stark-industry Taiwan CEO",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小華",
-                "speaker_name_en": "little wa",
-                "speaker_title": "Stark-industry Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    },
-    {
-        "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png", 
-        "sponsor": "神盾局",
-        "sponsor_id": "a7",
-        "sponsor_en": "S.H.I.E.L.D7",
-        "understand_more": "https://S.H.I.E.L.D.shield.com/tw/",
-        "about_us": "我是台灣神盾局...",
-        "about_us_en": "I am S.H.I.E.L.D Taiwan...",
-        "facebook_url": "",
-        "official_website": "https://S.H.I.E.L.D.shield.com",
-        "career_information": "https://S.H.I.E.L.D.shield.com/tw/careers/",
-        "sponsor_type": "education",
-        "speaker_information": 
-        [
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "大衛",
-                "speaker_name_en": "David",
-                "speaker_title": "S.H.I.E.L.D Taiwan CEO ^_^/",
-                "speaker_date": "10/05",
-                "speaker_duration": "10:15 - 11:00", 
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            },
-            {
-                "speaker_img": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                "speaker_name": "小衛",
-                "speaker_name_en": "Little David",
-                "speaker_title": "S.H.I.E.L.D Taiwan toilet brusher =_=//",
-                "speaker_date": "10/05",
-                "speaker_duration": "11:15 - 12:00",
-                "speaker_room": "R1, 一廳",
-                "speaker_topic": "如何寫出好的java程式",
-                "speaker_keywords": [
-                    "Block_chain",
-                    "AI",
-                    "Java"
-                ]
-
-            }
-        ]
-    }
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/KKBOX.jpg",
+    "sponsor": "KKBOX",
+    "sponsor_en": "KKBOX",
+    "sponsor_id": "1",
+    "understand_more": "https://www.kkbox.com/tw/tc/index.html",
+    "about_us": "亞洲頂尖數位音樂服務品牌 擁有四千萬首豐富音樂曲庫，還提供細緻且個人化的音樂內容，KKBOX 就是懂你的音樂喜好。 線上一起聽及獨家直播演唱會讓愛追星的你跟偶像隨時隨地零距離！立即啟動專屬你的音樂體驗，享受無窮的聽音樂樂趣！",
+    "about_us_en": "亞洲頂尖數位音樂服務品牌 擁有四千萬首豐富音樂曲庫，還提供細緻且個人化的音樂內容，KKBOX 就是懂你的音樂喜好。 線上一起聽及獨家直播演唱會讓愛追星的你跟偶像隨時隨地零距離！立即啟動專屬你的音樂體驗，享受無窮的聽音樂樂趣！",
+    "facebook_url": "",
+    "official_website": "https://www.kkbox.com/tw/tc/index.html",
+    "career_information": "",
+    "sponsor_type": "bruce_wayne"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Pumo.jpg",
+    "sponsor": "捕夢網數位科技",
+    "sponsor_en": "Pumo",
+    "sponsor_id": "2",
+    "understand_more": "https://www.pumo.com.tw/www/",
+    "about_us": "身為國內資深優質主機商，從網路主機代管起家的捕夢網數位科技，近年來為因應企業客戶的需求，逐步轉型踏入資訊安全防護服務的領域。有別於其他網路服務業者，捕夢網不僅強調並提供網路架構的安全服務，更以客戶的立場出發，注重網站暨網站程式的資訊安全服務。代理國內外頂級廠牌的SSL憑證，且獨家代理來自資安強國以色列的弱點掃描、WAF應用程式防火牆及DAF資料庫防火牆等資安服務，打造加密、偵測、過濾、阻絕 全方位的網站安全環境。累積多年服務經驗，捕夢網能夠依據不同應用主機型態，如電子商務、形象網站、企業郵件等等，提供客製化的檢測與防護服務，所以能夠找到隱藏的弱點與漏洞，有助於提升客戶應用主機的安全。",
+    "about_us_en": "身為國內資深優質主機商，從網路主機代管起家的捕夢網數位科技，近年來為因應企業客戶的需求，逐步轉型踏入資訊安全防護服務的領域。有別於其他網路服務業者，捕夢網不僅強調並提供網路架構的安全服務，更以客戶的立場出發，注重網站暨網站程式的資訊安全服務。代理國內外頂級廠牌的SSL憑證，且獨家代理來自資安強國以色列的弱點掃描、WAF應用程式防火牆及DAF資料庫防火牆等資安服務，打造加密、偵測、過濾、阻絕 全方位的網站安全環境。累積多年服務經驗，捕夢網能夠依據不同應用主機型態，如電子商務、形象網站、企業郵件等等，提供客製化的檢測與防護服務，所以能夠找到隱藏的弱點與漏洞，有助於提升客戶應用主機的安全。",
+    "facebook_url": "",
+    "official_website": "https://www.pumo.com.tw/www/",
+    "career_information": "",
+    "sponsor_type": "bruce_wayne"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/AWS.jpg",
+    "sponsor": "AWS",
+    "sponsor_en": "AWS",
+    "sponsor_id": "3",
+    "understand_more": "https://aws.amazon.com/tw/",
+    "about_us": "Amazon Web Services\n\nAmazon Web Services成立於 2006 年，透過位於美國、澳洲、巴西、中國、德國、愛爾蘭、日本與新加坡的資料中心，提供強大而功能完整的雲端基礎設施平台，其廣泛的服務包含運算、儲存、資料庫、分析、應用與部署服務。全球 190 個國家快速成長的新創公司、大型企業、政府機構等超過 100 萬個客戶目前仰賴 AWS 的服務快速創新、降低 IT 成本以及擴張全球應用。\n\n如需了解更多 AWS 相關資訊，請至網站 http://aws.amazon.com/tw。",
+    "about_us_en": "Amazon Web Services\n \n\nIn 2006, Amazon Web Services LLC (“AWS”), an Amazon.com company, officially began offering developer customers access to in-the-cloud infrastructure services based on Amazon's own back-end technology platform. Today, AWS is a comprehensive cloud services platform, offering compute power, storage, content delivery, and other functionality that enables businesses to cost-effectively deploy applications and services with greater flexibility, scalability, and reliability.\n\n \nLearn more about Cloud Computing: http://aws.amazon.com/what-is-cloud-computing/ ",
+    "facebook_url": "",
+    "official_website": "https://aws.amazon.com/tw/",
+    "career_information": "",
+    "sponsor_type": "bruce_wayne"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Oath.jpg",
+    "sponsor": "Oath",
+    "sponsor_en": "Oath",
+    "sponsor_id": "4",
+    "understand_more": "https://tw.yahoo.com/",
+    "about_us": "Oath是Verizon威訊通訊旗下的子公司， 我們透過價值主導、致力於建立讓人們喜愛的品牌，並為全球超過10億用戶提供多樣的媒體內容、科技與廣告產品品牌。作爲全球數位行動領導者，Oath正在重新定義媒體科技的未來。\r\n在台灣，我們持續提供Yahoo奇摩旗下包括Yahoo TV、新聞、電子信箱、搜尋、拍賣、超級商城、購物中心、股市、電影、運動、名人娛樂等多項服務。除服務廣大網友及廣告主，也為企業提供電子商務解決方案。更多訊息歡迎瀏覽Oath台灣企業部落格。",
+    "about_us_en": "Oath, a subsidiary of Verizon, is a values-led company committed to building brands people love. Oath reaches one billion people around the world with a dynamic house of media and technology brands. A global leader in digital and mobile, Oath is shaping the future of media and technology. For more on Oath, visit www.oath.com.",
+    "facebook_url": "",
+    "official_website": "https://tw.yahoo.com/",
+    "career_information": "",
+    "sponsor_type": "bruce_wayne"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/ASVDA.jpg",
+    "sponsor": "亞洲·矽谷",
+    "sponsor_en": "asvda",
+    "sponsor_id": "5",
+    "understand_more": "https://www.asvda.org/chi/index.aspx",
+    "about_us": "緣起--\n為落實總統於105年5月20日就職演說所提「政府將打造一個以創新、就業、分配為核心價值，追求 永續發展的新經濟模式」之政策方向。政府將以亞洲矽谷、生技醫藥等五大創新產業做為創新經濟的 基礎，共同引導出台灣新經濟發展模式，期打造台灣成為亞洲創新人才的舞台以及創新創業的典範， 進而實現「數位國家、智慧島嶼」的願景。\n\n願景--\n為連結全球先進科技研發能量，搶進下一世代產業，國家發展委員會研提「亞洲・矽谷推動方案」， 經105年9月8日行政院第3514次院會通過，將建立一個以研發為本的創新創業生態系，由「推動物聯 網產業創新研發」及「健全創新創業生態系」2大ä¸»軸，輔以連結國際、連結未來及連結在地的3大連 結，透過4大策略來推動，希望以物聯網促進產業轉型升級，並以創新創業驅動經濟成長\n",
+    "about_us_en": "The vision of ASVDA is to promote the transformation and upgrading of Taiwan’s industrial structure through innovation and entrepreneurship and promote the development of the Internet of Things.",
+    "facebook_url": "",
+    "official_website": "https://www.asvda.org/chi/index.aspx",
+    "career_information": "",
+    "sponsor_type": "bruce_wayne"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Oracle.jpg",
+    "sponsor": "Oracle",
+    "sponsor_en": "Oracle",
+    "sponsor_id": "6",
+    "understand_more": "http://www.mysql.com/",
+    "about_us": "MySQL是世界上最受歡迎的開源資料庫。 憑藉其久經考驗的性能、可靠性和易用性、MySQL已成為互聯網應用系統的首選資料庫，它在諸如Facebook，Twitter，YouTube，Yahoo等高端網站所使用。 此外，它是是一個非常受歡迎的嵌入式資料庫，有超過3,000多家ISV和OEM選用它。 Oracle還給需要開源、符合ACID標準的交易、即時內存性能和99.999％可用性的組織提供了MySQL Cluster資料庫。\nOracle持續推動MySQL創新，不斷改進MySQL解決方案並提供新功能，支持下一代的網路、雲、移動和嵌入式應用系統. (http://www.mysql.com/)\n",
+    "about_us_en": "MySQL is the world's most popular OS database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, used by high profile web properties including Facebook, Twitter, YouTube, Yahoo! and more. Additionally, it is an extremely popular choice as embedded database, distributed by over 3,000 ISVs & OEMs. To organizations in need of an open source, ACID-compliant transactional database delivering real-time in-memory performance and 99.999 percent availability, Oracle offers MySQL Cluster.\nOracle drives MySQL innovation, constantly improving MySQL solutions and delivering new capabilities to power next generation web, cloud, mobile and embedded applications. (http://www.mysql.com/) ",
+    "facebook_url": "",
+    "official_website": "http://www.mysql.com/",
+    "career_information": "",
+    "sponsor_type": "geek"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/LeadBest.jpg",
+    "sponsor": "LeadBest",
+    "sponsor_en": "奧義智慧科技是一間新創的資安科技公司，專注於研發新一代人工智慧引擎。 透過機械學習、深度學習、對抗式網路等複合模型演算法，協助不同客戶與夥伴快速導入具人工智慧的新世代自動化分析平台。我們的願景是以人工智慧將台灣的資安創新推向世界舞台。\n",
+    "sponsor_id": "7",
+    "understand_more": "https://www.leadbest.io/",
+    "about_us": "LeadBest 是由美國與台灣團隊共同組成的新創公司，致力於解決全球數位資產一級市場投資生命週期（投前，投中，投後）所遇到的痛點，目前提供一鍵投資和一鍵分幣的關鍵功能，以及 STO（Security Token Offering）和 TAO（Tokenized Asset Offering）全新銷售管道，並在11月上線完整 Token 資產管理金融服務平台。LeadBest 亦獲幣安天使輪投資機構 JRR Crypto 戰略投資，也是馬來西亞區塊鏈協會成員，目前在亞洲，美洲，歐洲都設有據點，旨在建立跨國投資信任，健全一級市場投資生態，打造全球投資共識網路。",
+    "about_us_en": "LeadBest team members are based in California and Taiwan. We focus on the primary token issuance market to solve pre and post investment needs. Our platform currently provides key functions such as, smart contract enabled token escrow and one click investment and distribution for STOs (Security Token Offerings) and TAOs (Tokenized Asset Offerings). The token assets management service, designed for institutional investors will launch in November 2018. LeadBest successfully closed on our seed round in August 2018 with significant investment from JRR Crypto, the angel investor in the global crypto exchange, Binance. LeadBest services span Asia, America, and the European markets and the company is a founding member of the Malaysia Blockchain Association (MBA). Our vision is to build a more transparent, secure, and trustless cross-border investment network and token investing ecosystem.",
+    "facebook_url": "",
+    "official_website": "https://www.leadbest.io/",
+    "career_information": "",
+    "sponsor_type": "geek"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/CYCarrier.jpg?v=2018",
+    "sponsor": "奧義智慧",
+    "sponsor_en": "CyCarrier",
+    "sponsor_id": "8",
+    "understand_more": "www.cycarrier.com\n",
+    "about_us": "奧義智慧科技是一間新創的資安科技公司，專注於研發新一代人工智慧引擎。 透過機械學習、深度學習、對抗式網路等複合模型演算法，協助不同客戶與夥伴快速導入具人工智慧的新世代自動化分析平台。我們的願景是以人工智慧將台灣的資安創新推向世界舞台。\n",
+    "about_us_en": "CyCarrier Technology is a startup focusing on cyberinsurance, artificial intelligence, and advanced areas like car hacking & exploit research. Through deep learning, situation awareness, and customized cyberinsurance, customers are equipped with an additional layer of unmanned, AI-based automation, and insurance-backed defense line. \n",
+    "facebook_url": "",
+    "official_website": "www.cycarrier.com\n",
+    "career_information": "",
+    "sponsor_type": "geek"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/UserXper.jpg",
+    "sponsor": "悠識數位",
+    "sponsor_en": "UserXper",
+    "sponsor_id": "9",
+    "understand_more": "https://userxper.com/",
+    "about_us": "悠識數位顧問成立超過11年，公司以人本設計理念，專注在創新使用者經驗規劃，協助客戶創造優質的產品與服務。\n悠識企業願景「協助創新設計人才培育，帶動產業服務體驗全面提升」。在此願景下，也發展出多元服務模式，包含UX相關教育訓練與 HPX 社群。\n悠識多年來規劃超過三百場以上企業內訓與公開課程、百場以上HPX社群聚會，2013年起更邀請國際UX相關講者來台，舉辦十場以上大型國際研討會。\n代表客戶：\nTOTO、博客來、玉山銀行、兆豐銀行、國泰世華、中華電信、Yahoo奇摩、天下雜誌、104....等企業。",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "https://userxper.com/",
+    "career_information": "",
+    "sponsor_type": "developer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Dcard.jpg",
+    "sponsor": "Dcard",
+    "sponsor_en": "Dcard",
+    "sponsor_id": "10",
+    "understand_more": " https://www.dcard.tw/f",
+    "about_us": "Dcard 團隊致力於打造一個讓分享更自由、讓資訊流動更美好，更讓每個人都能在這裡找到共鳴的平台，我們提供的社群服務，目前擁有每個月超越八百萬的不重複訪客與雙位數的月成長曲線，在學生族群有極高的滲透率以及黏著時間。\n未來我們希望持續為這個社會創造價值及可能性，因此希望可以有更多夥伴加入，跟我們一起加快前進的速度，一起做出更多有趣具改變性的事情。不要猶豫了，加入我們吧！",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": " https://www.dcard.tw/f",
+    "career_information": "",
+    "sponsor_type": "developer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Archilife.jpg",
+    "sponsor": "祐生基金會",
+    "sponsor_en": "Archilife",
+    "sponsor_id": "11",
+    "understand_more": "https://archilife.org/",
+    "about_us": "祐生研究基金會由推動建築與環境永續發展之研究開始，推動長期的知識累積與人才培養。除了過去建築、環境、生態、健康與資訊社會與文化等面向之碩士論文獎助主題外，本會目前定期舉辦的聯誼會及讀書會，強化祐生成員的知識密度。其後，於 2011 年起，本會持續針對國內開源活動進行贊助，也針對國內獨立遊戲開發者，推動知識與資訊分享聚會，並贊助台灣開發者前往特定國際遊戲競賽，期能幫助國內相關社群之發展。",
+    "about_us_en": "Since 1987, the Archilife Research Foundation started long-term researches in architecture, sustainability, and go on to other areas of knowledge integration. Efforts including previously giving scholarships in aforementioned areas, and currently holding reading group meetings and communion events for knowledge keepers to better our understandings of the world. From 2011, we also have been sponsoring various Open Source related events, holding meetups and game jams for local game developers' community, and giving out scholarships to support indie game teams and encourage them to go to international game festivals.",
+    "facebook_url": "",
+    "official_website": "https://archilife.org/",
+    "career_information": "",
+    "sponsor_type": "developer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Hotel_Yam.jpg",
+    "sponsor": "塩旅社",
+    "sponsor_en": "Hotel Yam",
+    "sponsor_id": "12",
+    "understand_more": "http://hotelyam.homi.cc",
+    "about_us": "HOTEL YAM塩旅位於鹽埕七賢三路與公園二路口，往前走就是高雄港及駁二藝術特區，HOTEL YAM的座落位置，在數百年前是曬鹽場。日本時代，因為運輸與打狗築港（現高雄港）需求，將鹽場填海造陸，變成新市街，也將縱貫線鐵道延伸到打狗港邊。因此，Hotel Yam塩旅社的企業識別設計概念：「塩」字的「土」是高雄平原。「口」是高雄出入口-高雄港。「皿」是乘載，乘載南台灣在地文化的能量。\r\n塩全體團隊在簡瑞鴻執行長領軍下，期許我們成為南台灣文化媒合大客廳，讓塩旅社成南臺灣的地方文化接線生，串接起各種可能與跨域整合，因為在這個快速的時代，不同領域的對話與串接已是不可或缺的關鍵。\r\n塩旅每雙週都有塩集市，透過塩集市，讓更多台南、高雄、屏東的好物、好食、好藝分享給大家，並起帶起南台灣的微品牌力量炫風，讓更多的國內外旅人認識台灣最貼近土地的小人物生命好物故事。",
+    "about_us_en": "HOTEL YAM is located in YanChengPu Dist., next to the most famous tourist area in Kaohsiung, such as Pier 2 Art Center, Sizihwan Bay, Chai Shan (Monkey Mountain) and Love River, and it takes travelers only 5-mins-walk from metro YanChengPu station to the hotel. As part of our commitment to eco friendliness, we provide only shampoo, shower gel and no bottled water in the room. When traveler arrive at HOTEL YAM, please enjoy the ocean breeze at 1st floor, find the local art works displayed in 2nd floor and relax yourself while you are with HOTEL YAM. We look forward to welcoming you at our hotel and have the opportunity to see you again.",
+    "facebook_url": "",
+    "official_website": "http://hotelyam.homi.cc",
+    "career_information": "",
+    "sponsor_type": "developer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Webduino.jpg",
+    "sponsor": "Webduino",
+    "sponsor_en": "Webduino",
+    "sponsor_id": "13",
+    "understand_more": "https://webduino.io/",
+    "about_us": "Webduino 是由一群熱血又富含創意的軟體人所成立，帶著最初的信念，致力於降低使用者的進入門檻，希望帶給使用者更簡易、方便與跨平台的觀念和開發模式，Webduino 正為您準備更全面的雲端服務，讓您進行遠端監控之餘，亦可不間斷地收集環境數據並儲存到資料庫，透過拖拉簡單的程式積木，就能在短時間內實作各式各樣的物聯網應用，讓使用者對未來生活的想像力，從 Webduino 開始實現。",
+    "about_us_en": "Webduino was founded by a group of Programmers who are full of passionate and creative, we devote ourselves in belief that to reducing the difficulty of developing for users. Want to bring to users a easier, more convenient and cross-platform concepts and development way.\n\nWe are bringing a more comprehensive cloud service for you, collecting environmental data and store up in database while you monitoring remotely. You can develop variety of  IoT applications in a short period of time by dragging blockly. Let’s  start with Webduino.",
+    "facebook_url": "",
+    "official_website": "https://webduino.io/",
+    "career_information": "",
+    "sponsor_type": "developer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Principal_of_Hex_School.jpg",
+    "sponsor": "六角學院 / 校長洧杰",
+    "sponsor_en": "Principal of Hex School",
+    "sponsor_id": "14",
+    "understand_more": "https://www.hexschool.com/tags/interview/?utm_source=MOPCON&utm_medium=sponsor&utm_campaign=conf",
+    "about_us": "覺得學程式就業很困難嗎？想找人教卻苦無管道？我擅長教新手學會網頁設計，目前已有15,000位學員線上學習，並陸續求職成功。希望有機會讓你/妳加入六角，我們都在線上等著你 :D",
+    "about_us_en": "覺得學程式就業很困難嗎？想找人教卻苦無管道？我擅長教新手學會網頁設計，目前已有15,000位學員線上學習，並陸續求職成功。希望有機會讓你/妳加入六角，我們都在線上等著你 :D",
+    "facebook_url": "",
+    "official_website": "https://www.hexschool.com/tags/interview/?utm_source=MOPCON&utm_medium=sponsor&utm_campaign=conf",
+    "career_information": "",
+    "sponsor_type": "education"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/BiiLabs.jpg",
+    "sponsor": "BiiLabs",
+    "sponsor_en": "BiiLabs",
+    "sponsor_id": "15",
+    "understand_more": "https://biilabs.io",
+    "about_us": "BiiLabs 致力於使用分散式帳本技術解決萬物聯網帶來的挑戰，涵蓋智慧城市，能源管理與多帳戶管理系統等領域，其核心技術協助各產業之數位轉型，進而解決在客戶應用中的信任，安全，成長，效率等關鍵問題。BiiLabs期許成為萬物聯網世代的關鍵技術方案提供者。\n",
+    "about_us_en": "BiiLabs is dedicated in developing the distributed ledger technology to overcome the challenges in the Internet of Everything era, including smart cities, energy management, and multi-account management systems. Our core technologies assist the digital transformation of various industries, and to solve critical issues such as trust, security, growth, and efficiency for our clients. BiiLabs aims to be a leading technology provider in the Internet of Everything world.",
+    "facebook_url": "",
+    "official_website": "https://biilabs.io",
+    "career_information": "",
+    "sponsor_type": "special_thanks"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/HackMD.jpg",
+    "sponsor": "HackMd",
+    "sponsor_en": "HackMd",
+    "sponsor_id": "16",
+    "understand_more": "https://hackmd.io/",
+    "about_us": "HackMD 提供您建立即時的跨平台 Markdown 筆記。\r\n能用於組織您的想法、與夥伴討論並即時預覽結果，\r\n不但如此，同時也能支援簡報、圖表、數學表達式。\r\n從上線以來，共超過 74 萬份筆記被寫在 HackMD 上，\r\n我們幫助使用者製作文件、便條、工作事項、write-ups、作業、教學甚至提供開放討論的平台。\r\n現在就加入吧！您也能用聰明的方式寫作！\r\n一用就愛上 <3",
+    "about_us_en": "HackMD lets you create realtime collaborative markdown notes on all platforms. It could be used to organize your thoughts, discuss with your teammates, and preview the result in realtime.\r\nYou write in markdown and we make slides, charts, and math expressions for you!\r\n\r\nSince launch, more than 740,000 notes have been taken in HackMD.\r\nUsers write documents, jot down memos, take meeting minutes, and even debate public issues on HackMD.\r\n\r\nJoin us now! You could write smarter!\r\nCome and love it <3",
+    "facebook_url": "",
+    "official_website": "https://hackmd.io/",
+    "career_information": "",
+    "sponsor_type": "special_thanks"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/KKTIX.png",
+    "sponsor": "KKTIX",
+    "sponsor_en": "KKTIX",
+    "sponsor_id": "17",
+    "understand_more": "https://kktix.com/",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "https://kktix.com/",
+    "career_information": "",
+    "sponsor_type": "special_thanks"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/PChome.jpg",
+    "sponsor": "PChome",
+    "sponsor_en": "PChome",
+    "sponsor_id": "18",
+    "understand_more": "",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "",
+    "career_information": "",
+    "sponsor_type": "developer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/NSYSU.png",
+    "sponsor": "中山資工",
+    "sponsor_en": "NSYSU",
+    "sponsor_id": "19",
+    "understand_more": "",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "",
+    "career_information": "",
+    "sponsor_type": "co-organizer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/TAIC.jpg",
+    "sponsor": "台灣產學策進會",
+    "sponsor_en": "TAIC",
+    "sponsor_id": "20",
+    "understand_more": "",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "",
+    "career_information": "",
+    "sponsor_type": "co-organizer"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/Microsoft.jpg",
+    "sponsor": "微軟",
+    "sponsor_en": "Microsoft",
+    "sponsor_id": "21",
+    "understand_more": "",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "",
+    "career_information": "",
+    "sponsor_type": "hacker"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/TAKAO_BEER.jpg",
+    "sponsor": "打狗啤酒",
+    "sponsor_en": "Takao Beer",
+    "sponsor_id": "22",
+    "understand_more": "",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "",
+    "career_information": "",
+    "sponsor_type": "special_thanks"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/i-Ride.jpg",
+    "sponsor": "i-Ride體驗中心",
+    "sponsor_en": "i-Ride",
+    "sponsor_id": "23",
+    "understand_more": "http://www.irideexperiencecenter.com/tw",
+    "about_us": "由國內唯一體感科技大廠智崴集團在高雄研發總部打造的「i-Ride體驗中心」，位於高雄軟體園區內。\ni-Ride體驗中心的主角「i-Ride飛行劇院」是智崴集團所研發的旗艦產品，結合視覺與體感模擬科技，讓臺灣民眾也能體驗高雄出品、台灣製造的高科技體感模擬設備，享受新媒體娛樂所帶來的樂趣。民眾可搭乘體感設施觀賞「飛越高雄」影片，以天使般的飛行視角重新認識高雄得天獨厚的山、海、河、港。鳥瞰高雄的地理景觀、自然風貌及人土風情，體驗翱翔空中、穿梭雲、霧、風之間的樂趣。\n",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "http://www.irideexperiencecenter.com/tw",
+    "career_information": "",
+    "sponsor_type": "special_thanks"
+  },
+  {
+    "logo_path": "https://mopcon.org/2018/assets/images/sponsor/cool3c.jpg",
+    "sponsor": "癮科技",
+    "sponsor_en": "cool3c",
+    "sponsor_id": "24",
+    "understand_more": "https://www.cool3c.com/",
+    "about_us": "癮科技 ( Cool3c ) 成立以來最重視特色、在地化內容與使用者體驗。根據全球權威網路流量調查公司 comScore 2017年5月數據，癮科技在台灣有 325.9 萬名不重複訪客、超過1,300萬頁瀏覽量，為台灣最大科技新聞網站、百大網站第 38 名。\n長期耕耘台灣3C科技領域的癮科技，自 2005 年成立以來已撰寫數萬篇自產內容，讀者多為3C重度使用者，男性、25-44 歲的比例均將近 6 成，家庭年收入超過120萬更將近5成，以中高收入族群居多。站上內容以 3C新品資訊、產品開箱評測 為主，也有深度分析的 品牌故事、癮觀點，近年更發展許多軟性內容，漫科技、一圖看懂、懶科技等系列均為站上相當受歡迎的熱門欄目。帶給讀者有趣並實用的內容，是癮科技團隊每天最大的成就感！\n",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "https://www.cool3c.com/",
+    "career_information": "",
+    "sponsor_type": "special_thanks"
+  },
+  {
+    "logo_path": "https://mopcon.org/2016/images/sponsor/SpecialThank/KSG.jpg",
+    "sponsor": "高雄市經濟發展局",
+    "sponsor_en": "高雄市經濟發展局",
+    "sponsor_id": "25",
+    "understand_more": "https://edbkcg.kcg.gov.tw/",
+    "about_us": "",
+    "about_us_en": "",
+    "facebook_url": "",
+    "official_website": "https://edbkcg.kcg.gov.tw/",
+    "career_information": "",
+    "sponsor_type": "ksg_support"
+  }
 ]
