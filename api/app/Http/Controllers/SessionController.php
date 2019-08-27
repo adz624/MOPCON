@@ -67,7 +67,7 @@ class SessionController extends Controller
                 if (empty($period['room'])) {
                     continue;
                 }
-                foreach ($period['room'] as $room => &$speaker_id) {
+                foreach ($period['room'] as &$speaker_id) {
                     $speaker_id = $this->sessions[$speaker_id];
                 }
             }
@@ -121,11 +121,10 @@ class SessionController extends Controller
      */
     private function transSpeakerToSession(array $speakers)
     {
-        $index = 1;
         $sessions = [];
         foreach ($speakers as $speaker) {
             $session = [];
-            $session['session_id'] = $index;
+            $session['session_id'] = $speaker['speaker_id'];
             $session['room'] = $speaker['room'];
             $session['location'] = $this->locations[$speaker['room']];
             foreach ($this->session_keys as $key) {
@@ -146,9 +145,9 @@ class SessionController extends Controller
                 }
                 $session['tags_tech'][] = $tag;
             }
-    
+
             $session['is_sponsor_session'] = (bool)$speaker['sponsor_id'];
-            $sessions[$index++] = $session;
+            $sessions[$speaker['speaker_id']] = $session;
         }
         return $sessions;
     }
