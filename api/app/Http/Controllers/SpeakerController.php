@@ -7,6 +7,24 @@ class SpeakerController extends Controller
     use ApiTrait;
 
     protected $function = 'speaker';
+    private $hidden_fields = [
+        'photo_for_session_web',
+        'photo_for_session_mobile',
+        'photo_for_sponsor_web',
+        'photo_for_sponsor_mobile',
+    ];
+
+    public function __construct()
+    {
+        parent::__construct();
+        foreach ($this->jsonAry as &$row) {
+            foreach ($row as $key => $value) {
+                if (in_array($key, $this->hidden_fields)) {
+                    unset($row[$key]);
+                }
+            }
+        }
+    }
 
     /**
      * @return \Illuminate\Http\JsonResponse
@@ -46,7 +64,7 @@ class SpeakerController extends Controller
                 $tags = array_merge($tags, $speaker['tags']);
             }
 
-            return $this->returnSuccess('Success.', array_unique($tags));
+            return $this->returnSuccess('Success.', array_values(array_unique($tags)));
         } catch (\Exception $e) {
             $this->returnError($e->getMessage());
         }
