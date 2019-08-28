@@ -61,7 +61,7 @@ export default {
     },
     mounted() {
         this.$axios
-            .$get(`${process.env.baseUrl}/api/facebook/posts`)
+            .$get(`${process.env.baseUrl}/api/2019/facebook/posts`)
             .then(({ success, data, message }) => {
                 if (success) {
                     this.posts = [...data];
