@@ -1,31 +1,17 @@
 <template>
     <div class="card" :class="type">
-        <div class="card__head">{{cardData.room}}({{cardData.location}})</div>
+        <div class="card__head">{{cardData.room}}({{cardData.floor}})</div>
         <div class="card__content">
 
             <!-- 課程類型標籤 -->
             <div class="card__content__tags">
-                <template v-if="cardData.tags_tech.length > 0">
-                    <div class="card__content__tag filter-btn-primary active"
-                        v-for="tech in cardData.tags_tech"
-                        :key="tech">
-                        {{formatTagName(tech)}}
-                    </div>
-                </template>
-                <template v-if="cardData.tags_design.length > 0">
-                    <div class="card__content__tag filter-btn-secondary active"
-                        v-for="design in cardData.tags_design"
-                        :key="design">
-                        {{formatTagName(design)}}
-                    </div>
-                </template>
-                <template v-if="cardData.tags_other.length > 0">
-                    <div class="card__content__tag filter-btn-third   active"
-                        v-for="other in cardData.tags_other"
-                        :key="other">
-                        {{formatTagName(other)}}
-                    </div>
-                </template>
+                <div class="card__content__tag filter-btn-primary active"
+                    :style="`backgroundColor: ${tag.color}`"
+                    v-for="tag in cardData.tags"
+                    :key="tag.name"
+                    @click="handleTagClick(tag.name)">
+                    {{tag.name}}
+                </div>
             </div>
 
             <h3 class="card__content__name">{{cardData.topic}}</h3>
@@ -40,7 +26,7 @@
             <!-- 講者介紹 -->
             <div class="card__content__speaker">
                 <img class="card__content__speaker__avatar"
-                    :src="cardData.photo_for_session_web"
+                    :src="cardData.img.mobile"
                     :alt="cardData.name">
                 <div class="card__content__speaker__name">{{cardData.name}}</div>
             </div>
@@ -61,15 +47,10 @@ export default {
             type: Object,
             required: true,
         },
-        tags: {
-            type: Array,
-            required: true,
-        },
     },
     methods: {
-        formatTagName(val) {
-            const tag = this.tags.find(tag => tag.id === val);
-            return tag ? tag.name : val;
+        handleTagClick(id) {
+            this.$emit('onTagClick', id);
         },
     },
 };

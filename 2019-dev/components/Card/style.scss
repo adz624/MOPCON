@@ -54,9 +54,13 @@
 
     &__tag {
       margin: 5px;
-      padding: 0 8px;
+      padding: 2px 8px;
+      border: none;
       font-size: 12px;
       line-height: 1.5;
+      &:hover {
+        border: none;
+      }
     }
 
     &__name {
@@ -67,7 +71,7 @@
       color: $colorWhite;
       font-size: 20px;
       font-weight: normal;
-      line-height: 1.45;
+      line-height: 1.5;
       overflow: hidden;
     }
 

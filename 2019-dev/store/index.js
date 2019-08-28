@@ -51,10 +51,8 @@ export const mutations = {
 export const actions = {
   async getSessionData({ commit }) {
     try {
-      const { data } = await this.$axios.get('/api/2019/session');
-      console.log('res', data);
-
-      if (data.data && data.data.length > 0) {
+      const { status, data } = await this.$axios.get('/api/2019/session');
+      if (status === 200 && data && data.data && data.data.length > 0) {
         commit('setSessionData', data.data);
       }
     } catch (err) {
