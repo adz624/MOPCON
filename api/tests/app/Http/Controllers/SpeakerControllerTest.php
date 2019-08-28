@@ -63,7 +63,7 @@ class SpeakerControllerTest extends TestCase
 
         /** assert **/
         $this->assertEquals(true, $result['success']);
-        $this->assertEquals(['ai', 'cloud'], $result['data']);
+        $this->assertEquals(['Blockchain', 'IoT', 'Startup', 'Mobile App', 'AI', 'Web', 'UI/UX', 'AR/VR', 'DevOps', 'Security', 'Assembly', 'Virtual Machine', 'BigData'], $result['data']);
     }
 
     public function envProvider()
@@ -75,7 +75,7 @@ class SpeakerControllerTest extends TestCase
             ],
             [
                 'develop',
-                1
+                29
             ],
         ];
     }

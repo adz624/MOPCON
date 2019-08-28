@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\SpeakerService;
 use Illuminate\Http\Request;
 
 class SessionController extends Controller
@@ -17,10 +18,7 @@ class SessionController extends Controller
         'company_e',
         'job_title',
         'job_title_e',
-        'summary',
-        'summary_e',
-        'photo_for_session_web',
-        'photo_for_session_mobile',
+        'img',
         'topic',
         'topic_e',
         'started_at',
@@ -29,12 +27,11 @@ class SessionController extends Controller
         'is_keynote',
         'recordable',
         'level',
-    ];
-    protected $tags_design = [
-        'UI/UX',
-    ];
-    protected $tags_other = [
-        'Startup',
+        'room',
+        'floor',
+        'sponsor_id',
+        'summary',
+        'summary_e',
     ];
     protected $locations = [
         'R1' => '3F一廳',
@@ -42,16 +39,29 @@ class SessionController extends Controller
         'R3' => '4F三廳',
     ];
     private $sessions;
+    private $sponsors;
 
     public function __construct()
     {
         parent::__construct();
         if (env('APP_ENV') === 'production') {
-            $speakers = json_decode(file_get_contents($this->path . 'speaker.json'), true);
+            $speaker_resource_path = $this->path . 'speaker.json';
+            $sponsor_resource_path = $this->path . 'sponsor.json';
         } else {
-            $speakers = json_decode(file_get_contents($this->path . 'speaker-dev.json'), true);
+            $speaker_resource_path = $this->path . 'speaker-dev.json';
+            $sponsor_resource_path = $this->path . 'sponsor-dev.json';
         }
 
+        $speakers = json_decode(file_get_contents($speaker_resource_path), true);
+        $sponsors = json_decode(file_get_contents($sponsor_resource_path), true);
+        $this->sponsors = [];
+        foreach ($sponsors as $sponsor) {
+            $this->sponsors[(int) $sponsor['sponsor_id']] = [
+                'name' => $sponsor['name'],
+                'name_e' => $sponsor['name_e'],
+                'logo_path' => $sponsor['logo_path'],
+            ];
+        }
         $this->sessions = $this->transSpeakerToSession($speakers);
     }
 
@@ -67,7 +77,7 @@ class SessionController extends Controller
                 if (empty($period['room'])) {
                     continue;
                 }
-                foreach ($period['room'] as $room => &$speaker_id) {
+                foreach ($period['room'] as &$speaker_id) {
                     $speaker_id = $this->sessions[$speaker_id];
                 }
             }
@@ -95,6 +105,7 @@ class SessionController extends Controller
     /**
      * 取得議程清單
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
     public function getSessionList(Request $request)
@@ -105,7 +116,10 @@ class SessionController extends Controller
         }
         $tags = explode(',', $tags);
         $output = array_filter($this->sessions, function ($session) use ($tags) {
-            $filters = array_merge($session['tags_tech'], $session['tags_design'], $session['tags_other']);
+            $filters = [];
+            foreach ($session['tags'] as $row) {
+                $filters[] = $row['name'];
+            }
             $intersect = array_intersect($tags, $filters);
             return $tags === $intersect;
         });
@@ -116,40 +130,23 @@ class SessionController extends Controller
     /**
      * 由講者資訊取得議程資訊
      *
-     * @param array $speaker
+     * @param array $speakers
      * @return array
      */
     private function transSpeakerToSession(array $speakers)
     {
-        $index = 1;
         $sessions = [];
+        $service = new SpeakerService();
         foreach ($speakers as $speaker) {
-            $session = [];
-            $session['session_id'] = $index;
-            $session['room'] = $speaker['room'];
-            $session['location'] = $this->locations[$speaker['room']];
-            foreach ($this->session_keys as $key) {
-                if ($key === 'tags') {
-                    $session['tags_design'] = $session['tags_other'] = $session['tags_tech'] = [];
-                    continue;
-                }
-                $session[$key] = $speaker[$key];
-            }
-            foreach ($speaker['tags'] as $tag) {
-                if (in_array($tag, $this->tags_design)) {
-                    $session['tags_design'][] = $tag;
-                    continue;
-                }
-                if (in_array($tag, $this->tags_other)) {
-                    $session['tags_other'][] = $tag;
-                    continue;
-                }
-                $session['tags_tech'][] = $tag;
-            }
-    
-            $session['is_sponsor_session'] = (bool)$speaker['sponsor_id'];
-            $sessions[$index++] = $session;
+            $output = $service->parse($speaker, 'session');
+            $session = array_filter($output, function ($key) {
+                return in_array($key, $this->session_keys);
+            }, ARRAY_FILTER_USE_KEY);
+            $session['session_id'] = $speaker['speaker_id'];
+            $session['sponsor_info'] = $this->sponsors[$speaker['sponsor_id']] ?? [];
+            $sessions[$speaker['speaker_id']] = $session;
         }
+
         return $sessions;
     }
 }

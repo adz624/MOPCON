@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\SpeakerService;
+
 class SpeakerController extends Controller
 {
     use ApiTrait;
 
     protected $function = 'speaker';
+
+    public function __construct()
+    {
+        parent::__construct();
+        $service = new SpeakerService();
+        foreach ($this->jsonAry as &$row) {
+            $row = $service->parse($row);
+        }
+    }
 
     /**
      * @return \Illuminate\Http\JsonResponse
@@ -43,10 +54,10 @@ class SpeakerController extends Controller
         try {
             $tags = [];
             foreach ($this->jsonAry as $speaker) {
-                $tags = array_merge($tags, $speaker['tags']);
+                $tags = array_merge($tags, array_column($speaker['tags'], 'name'));
             }
 
-            return $this->returnSuccess('Success.', array_unique($tags));
+            return $this->returnSuccess('Success.', array_values(array_unique($tags)));
         } catch (\Exception $e) {
             $this->returnError($e->getMessage());
         }

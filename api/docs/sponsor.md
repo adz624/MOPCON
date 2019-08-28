@@ -5,44 +5,77 @@ Returns json data about sponsor information.
 
 ### 欄位說明
 
-贊助商 API 的 resopnse 主要分為兩層，第一層為贊助級別分類，第二層為各個級別之贊助商細資料
+贊助商 API 的 resopnse 主要分為兩層，第一層為贊助級別分類，會依照級別將贊助商 group 起來，第二層為各個級別之贊助商細資料
 
 #### 贊助商類別分類
 
-注意！級別有呈現順序，可以依照 object 的順序進行呈現
+##### 注意事項
 
-- tony_stark(array): Tony Stark 級別之贊助商（沒有此級別之贊助商會用 empty array 顯示）
-- bruce_wayne(array): Bluce Wayne 級別之贊助商（沒有此級別之贊助商會用 empty array 顯示）
-- hacker(array): Hacker 級別之贊助商（沒有此級別之贊助商會用 empty array 顯示）
-- geek(array): Geek 級別之贊助商（沒有此級別之贊助商會用 empty array 顯示）
-- developer(array): Developer 級別之贊助商（沒有此級別之贊助商會用 empty array 顯示）
-- education(array): 教育贊助之贊助商（沒有此級別之贊助商會用 empty array 顯示）
-- special_thanks(array): 特別感謝之合作對象（沒有此級別會用 empty array 顯示）
-- co-organizer(array): 協辦單位（沒有此級別會用 empty array 顯示）
-- ksg_support(array): 高雄市經發局專用呈現級別（沒有此級別會用 empty array 顯示）
+1. 級別有呈現順序，直接跑回圈依序呈現 api 所提供的資訊即可， API 已經有排序過了
+2. 如果此級別沒有任何贊助商則不會有這個 key ，主要目的為讓 Client 可以無需進行任何判斷直接進行呈現
+
+- name(string): 贊助商級別中文名稱
+- name_e(string): 贊助商級別英文名稱
+- data(array): 贊助商相關資訊，可以參考下方
 
 ```json
 {
   "success": true,
   "message": "success",
-  "data": {
-    "tony_stark": [],
-    "bruce_wayne": [],
-    "hacker": [],
-    "geek": [],
-    "developer": [],
-    "special_thanks": [],
-    "education": [],
-    "co-organizer": [],
-    "ksg_support": [],
-  }
+  "data": [
+    {
+      "name": "Tony Stark",
+      "name_e": "Tony Stark",
+      "data": []
+    },
+    {
+      "name": "Bruce Wayne",
+      "name_e": "Bruce Wayne",
+      "data": []
+    },
+    {
+      "name": "Hacker",
+      "name_e": "Hacker",
+      "data": []
+    },
+    {
+      "name": "Geek",
+      "name_e": "Geek",
+      "data": []
+    },
+    {
+      "name": "Developer",
+      "name_e": "Developer",
+      "data": []
+    },
+    {
+      "name": "教育贊助",
+      "name_e": "Education Sponsor",
+      "data": []
+    },
+    {
+      "name": "特別感謝",
+      "name_e": "Special Thanks",
+      "data": []
+    },
+    {
+      "name": "協辦單位",
+      "name_e": "Co Organizer",
+      "data": []
+    },
+    {
+      "name": "高雄市經濟發展局獎勵會議展覽活動計畫贊助",
+      "name_e": "高雄市經濟發展局獎勵會議展覽活動計畫贊助",
+      "data": []
+    }
+  ]
 }
 ```
 #### 贊助商欄位
 
 - logo(string): 贊助商 LOGO
-- sponsor(string): 贊助商中文名稱
-- sponsor_e(string): 贊助商英文名稱
+- name(string): 贊助商中文名稱
+- name_e(string): 贊助商英文名稱
 - sponsor_id(int): 贊助商 id
 - about_us(string): 贊助商簡介
 - about_us_e(string): 贊助商英文簡介
@@ -93,54 +126,57 @@ Returns json data about sponsor information.
     `/api/2019/sponsor`
     ```json
     {
-        "success": true,
-        "message": "success",
-        "data": {
-            "tony_stark": [
+      "success": true,
+      "message": "success",
+      "data": {
+        "1": {
+          "name": "Bruce Wayne",
+          "name_e": "Bruce Wayne",
+          "data": [
+            {
+              "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+              "sponsor": "史塔克",
+              "sponsor_e": "Stark-industry0",
+              "sponsor_id": 1,
+              "about_us": "我們是台灣史塔克,史塔克很棒棒",
+              "about_us_e": "We are Stark-industry Taiwan. We are great",
+              "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
+              "official_website": "https://www.Stark-industry.com",
+              "career_information": "https://careers.Stark-industry.com/jobs/",
+              "sponsor_type": "tony_stark",
+              "speaker_information": [
                 {
-                    "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
-                    "sponsor": "史塔克",
-                    "sponsor_e": "Stark-industry0",
-                    "sponsor_id": 1,
-                    "about_us": "我們是台灣史塔克,史塔克很棒棒",
-                    "about_us_e": "We are Stark-industry Taiwan. We are great",
-                    "facebook_url": "https://www.facebook.com/Stark-industryTaiwan/?brand_redir=104958162837",
-                    "official_website": "https://www.Stark-industry.com",
-                    "career_information": "https://careers.Stark-industry.com/jobs/",
-                    "sponsor_type": "tony_stark",
-                    "speaker_information": [
-                        {
-                            "img": {
-                                "web": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                                "mobile": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
-                            },
-                            "name": "小明",
-                            "name_e": "little min",
-                            "title": "Stark-industry Taiwan CEO",
-                            "title_e": "Stark-industry Taiwan CEO",
-                            "started_at": 1571537400,
-                            "ended_at": 1571539800,
-                            "room": "R1",
-                            "tags": {
-                              "#98ce02": [],
-                              "#ff4492": [],
-                              "#01aaf0": [
-                                "IoT"
-                              ]
-                            }
-                        }
-                    ]
+                  "img": {
+                    "web": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
+                    "mobile": "https://png.pngtree.com/svg/20170518/274aed119e.svg"
+                  },
+                  "name": "小明",
+                  "name_e": "little min",
+                  "title": "Stark-industry Taiwan CEO",
+                  "title_e": "Stark-industry Taiwan CEO",
+                  "started_at": 1571537400,
+                  "ended_at": 1571539800,
+                  "room": "R1",
+                  "tags": [
+                    {
+                      "color": "#01aaf0",
+                      "name": "Blockchain"
+                    },
+                    {
+                      "color": "#01aaf0",
+                      "name": "IoT"
+                    },
+                    {
+                      "color": "#ff4492",
+                      "name": "Startup"
+                    }
+                  ]
                 }
-            ],
-            "bruce_wayne": [],
-            "hacker": [],
-            "geek": [],
-            "developer": [],
-            "special_thanks": [],
-            "education": [],
-            "co-organizer": [],
-            "ksg_support": [],
+              ]
+            }
+          ]
         }
+      }
     }
     ```
     `/api/2019/sponsor?sponsor_id=1`
