@@ -61,7 +61,7 @@ export default {
     },
     mounted() {
         this.$axios
-            .$get("/api/facebook/posts")
+            .$get("/api/2019/facebook/posts")
             .then(({ success, data, message }) => {
                 if (success) {
                     this.posts = [...data];
