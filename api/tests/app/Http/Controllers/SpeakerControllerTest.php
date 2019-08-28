@@ -60,10 +60,25 @@ class SpeakerControllerTest extends TestCase
         /** act */
         $response = $this->call('GET', '/api/2019/speaker/tags');
         $result = json_decode($response->getContent(), true);
+        $expected = [
+            ['color' => '#01aaf0', 'name' => 'Blockchain'],
+            ['color' => '#01aaf0', 'name' => 'IoT'],
+            ['color' => '#ff4492', 'name' => 'Startup'],
+            ['color' => '#01aaf0', 'name' => 'Mobile App'],
+            ['color' => '#01aaf0', 'name' => 'AI'],
+            ['color' => '#01aaf0', 'name' => 'Web'],
+            ['color' => '#98ce02', 'name' => 'UI/UX'],
+            ['color' => '#01aaf0', 'name' => 'AR/VR'],
+            ['color' => '#01aaf0', 'name' => 'DevOps'],
+            ['color' => '#01aaf0', 'name' => 'Security'],
+            ['color' => '#01aaf0', 'name' => 'Assembly'],
+            ['color' => '#01aaf0', 'name' => 'Virtual Machine'],
+            ['color' => '#01aaf0', 'name' => 'BigData']
+        ];
 
         /** assert **/
         $this->assertEquals(true, $result['success']);
-        $this->assertEquals(['Blockchain', 'IoT', 'Startup', 'Mobile App', 'AI', 'Web', 'UI/UX', 'AR/VR', 'DevOps', 'Security', 'Assembly', 'Virtual Machine', 'BigData'], $result['data']);
+        $this->assertEquals($expected, $result['data']);
     }
 
     public function envProvider()

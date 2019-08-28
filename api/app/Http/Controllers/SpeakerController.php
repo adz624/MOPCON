@@ -10,12 +10,14 @@ class SpeakerController extends Controller
 
     protected $function = 'speaker';
 
+    private $service;
+
     public function __construct()
     {
         parent::__construct();
-        $service = new SpeakerService();
+        $this->service = new SpeakerService();
         foreach ($this->jsonAry as &$row) {
-            $row = $service->parse($row);
+            $row = $this->service->parse($row);
         }
     }
 
@@ -57,7 +59,7 @@ class SpeakerController extends Controller
                 $tags = array_merge($tags, array_column($speaker['tags'], 'name'));
             }
 
-            return $this->returnSuccess('Success.', array_values(array_unique($tags)));
+            return $this->returnSuccess('Success.', $this->service->parseTags(array_values(array_unique($tags))));
         } catch (\Exception $e) {
             $this->returnError($e->getMessage());
         }
