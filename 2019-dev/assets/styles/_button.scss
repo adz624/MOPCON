@@ -21,12 +21,6 @@ $theme-colors: ("primary": $colorPrimary, "secondary": $colorSecondary, "third":
   &.active {
     color: #fff;
     background: $color;
-    &::before {
-      content: "X";
-      width: 14px;
-      height: 14px;
-      margin-right: 5px;
-    }
     &:hover {
       border: 1px solid darken($color, 5%);
       background: darken($color, 5%);
