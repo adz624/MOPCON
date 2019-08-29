@@ -95,11 +95,20 @@
           "sponsor_id": "1",
           "recordable": true,
           "level": "Basic",
-          "tags": {
-            "#98ce02": [],
-            "#ff4492": ["Startup"],
-            "#01aaf0": ["Blockchain", "IoT"],
-          }
+          "tags": [
+            {
+            "color": "#01aaf0",
+            "name": "IoT"
+            },
+            {
+              "color": "#01aaf0",
+              "name": "Blockchain"
+            },
+            {
+              "color": "#ff4492",
+              "name": "Startup"
+            },
+          ]
         }
       ]
     }
@@ -213,11 +222,20 @@
         "sponsor_id": "1",
         "recordable": true,
         "level": "Basic",
-        "tags": {
-          "#98ce02": [],
-          "#ff4492": ["Startup"],
-          "#01aaf0": ["Blockchain", "IoT"],
-        }
+        "tags": [
+          {
+            "color": "#01aaf0",
+            "name": "IoT"
+          },
+          {
+            "color": "#01aaf0",
+            "name": "Blockchain"
+          },
+          {
+            "color": "#ff4492",
+            "name": "Startup"
+          },
+        ]
       }
     }
     ```
@@ -283,8 +301,18 @@
       "success": true,
       "message": "Success.",
       "data": [
-        "ai",
-        "cloud"
+        {
+          "color": "#01aaf0",
+          "name": "IoT"
+        },
+        {
+          "color": "#ff4492",
+          "name": "Startup"
+        },
+        {
+          "color": "#01aaf0",
+          "name": "Mobile App"
+        }
       ]
     }
     ```
