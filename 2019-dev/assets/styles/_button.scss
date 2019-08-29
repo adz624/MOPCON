@@ -9,6 +9,9 @@ $theme-colors: ("primary": $colorPrimary, "secondary": $colorSecondary, "third":
   border: 1px solid $color;
   background-color: transparent;
   border-radius: 4px;
+  margin-left: 12px;
+  margin-right: 12px;
+  white-space: nowrap;
   cursor: pointer;
   outline: none;
   &:hover {
