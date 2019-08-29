@@ -2,5 +2,14 @@
   "meta": {
     "title": "Mobile / Open / Platform Conference",
     "description": "MOPCON 2019...."
+  },
+  "navbar": {
+    "home": "MOPCON 2019",
+    "community": "Community",
+    "schedule": "Schedule",
+    "scheduleMain": "Main",
+    "scheduleUnconf": "Unconf",
+    "speaker": "Speaker",
+    "sponsor": "Sponsor"
   }
 }

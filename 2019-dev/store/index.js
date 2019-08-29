@@ -1,4 +1,19 @@
 export const state = () => ({
+  locale: 'zh',
+  locales: ['zh', 'en'],
+  originUrl: '',
+  seoLangTag: [
+    {
+      id: 'zh',
+      val: 'zh-Hant',
+      fb: 'zh_tw',
+    },
+    {
+      id: 'en',
+      val: 'en',
+      fb: 'en_us',
+    },
+  ],
   homePageReady: false,
   eventResults: [
     {
@@ -46,6 +61,14 @@ export const mutations = {
       state.sessionData = payload;
     }
   },
+  setOriginUrl(state, payload) {
+    state.originUrl = payload;
+  },
+  setLocale(state, payload) {
+    if (state.locales.indexOf(payload) !== -1) {
+      state.locale = payload;
+    }
+  },
 };
 
 export const actions = {
@@ -65,4 +88,8 @@ export const getters = {
   homePageReady: state => state.homePageReady,
   eventResults: state => state.eventResults,
   sessionData: state => state.sessionData,
+  seoLangTag: state => state.seoLangTag,
+  originUrl: state => state.originUrl,
+  locales: state => state.locales,
+  locale: state => state.locale,
 };

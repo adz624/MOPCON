@@ -128,6 +128,7 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/pixel', ssr: false },
+    { src: '~/plugins/i18n' },
     { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/gsap', ssr: false },
     { src: '~/plugins/vue-gallery', ssr: false },
@@ -181,17 +182,27 @@ module.exports = {
   router: {
     // base: '/2019/',
     base: path.resolve(__dirname, '/2019/'),
+    // i18n 路由
+    middleware: 'i18n',
   },
 
   generate: {
     dir: path.resolve(__dirname, '../2019/'),
     // dir: '../2019',
-    // 預渲染 event 結果頁面
+    // 預渲染頁面
     routes: [
       '/event/captain-america',
       '/event/iron-man',
       '/event/hulk',
       '/event/black-widow',
+      '/en/event/captain-america',
+      '/en/event/iron-man',
+      '/en/event/hulk',
+      '/en/event/black-widow',
+      '/en',
+      '/en/event',
+      '/en/schedule',
+      '/en/schedule_unconf',
     ],
   },
 };
