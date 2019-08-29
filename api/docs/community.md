@@ -1,6 +1,22 @@
 # 主辦社群與參與社群 API
 
 ## 社群清單
+
+列出所有主辦社群與參與社群
+
+### 欄位說明
+
+- community(string): 代表為主辦社群清單
+    - id(int): 組別 ID
+    - name(string): 組別名稱
+    - photo(string): icon 圖片，沒有圖片則為空字串
+- participant(string): 代表為參與社群清單
+    - id(int): 組別 ID
+    - name(string): 組別名稱
+    - photo(string): icon 圖片，沒有圖片則為空字串
+
+### Request
+
 - **URL**
 
     /api/2019/community
@@ -20,28 +36,44 @@
     "data": {
       "community" : [
         {
-          "id":"1",
+          "id": 1,
           "name": "GDG Cloud Kaohsiung",
           "photo": "/images/community/qwdqwdqwdq.jpg"
         },
         {
-          "id":"2",
+          "id": 2,
           "name": "Kaohsiung Python User Group",
           "photo": "/images/community/eryeryery.jpg"
         }
       ],
       "participant": [
         {
-          "id":"1",
+          "id": 1,
           "name": "As A Product Designer",
           "photo": "/images/community/qwdqwdqwdq.jpg"
         }
       ]
-    ]
+    }
   }
   ```
 
-## 主辦社群organizer
+## 主辦社群
+
+取得單一主辦社群詳細資訊
+
+### 欄位說明
+
+- name(string): 社群名稱
+- photo(string): icon圖片，沒有圖片則為空字串
+- introduction(string): 中文簡介，沒有則為空字串
+- introduction_e(string): 英文簡介，沒有則為空字串
+- facebook(string): facebook 連結，沒有則為空字串
+- twitter(string): twitter 連結，沒有則為空字串
+- instagram(string): instagram 連結，沒有則為空字串
+- telegram(string): telegram 連結，沒有則為空字串
+
+### Request
+
 - **URL**
 
   /api/2019/community/organizer/:id
@@ -55,6 +87,7 @@
     **Required:**
 
     - id=[integer]
+        - 主辦社群 ID
 
 - **Success Response**
 
@@ -101,7 +134,23 @@
   }
   ```
 
-## 參與社群participant
+## 參與社群
+
+取得單一參與社群詳細資訊
+
+### 欄位說明
+
+- name(string): 社群名稱
+- photo(string): icon圖片，沒有則為空字串
+- introduction(string): 中文簡介
+- introduction_e(string): 英文簡介
+- facebook(string): facebook 連結，沒有則為空字串
+- twitter(string): twitter 連結，沒有則為空字串
+- instagram(string): instagram 連結，沒有則為空字串
+- telegram(string): telegram 連結，沒有則為空字串
+
+### Request
+
 - **URL**
 
   /api/2019/community/participant/:id
@@ -115,6 +164,7 @@
     **Required:**
 
     - id=[integer]
+        - 參與社群 ID
 
 - **Success Response**
 
