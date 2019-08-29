@@ -11,7 +11,7 @@ Returns json data about sponsor information.
 
 ##### 注意事項
 
-1. 級別有呈現順序，直接跑回圈依序呈現 api 所提供的資訊即可， API 已經有排序過了
+1. 級別有呈現順序，直接跑迴圈依序呈現 api 所提供的資訊即可， API 已經有排序過了
 2. 如果此級別沒有任何贊助商則不會有這個 key ，主要目的為讓 Client 可以無需進行任何判斷直接進行呈現
 
 - name(string): 贊助商級別中文名稱
