@@ -1,0 +1,26 @@
+.speaker {
+  &__banner {
+    background-image: url('./images/speaker-banner.png');
+    @include bgCenter(100%, 642px);
+    @include rwd(pad) {
+      @include bgCenter(100%, 277px);
+    }
+  }
+
+  .title {
+    font-size: 32px;
+    text-align: center;
+    @include rwd(pad) {
+      text-align: left;
+    }
+  }
+
+  .intro {
+    max-width: 536px;
+    margin: 48px auto;
+  }
+
+  .sectionApp {
+    margin-top: 0px;
+  }
+}
