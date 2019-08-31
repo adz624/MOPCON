@@ -98,7 +98,7 @@ class SessionController extends TestCase
 
     public function testGetSession()
     {
-        $response = $this->get('/api/2019/session/1');
+        $response = $this->get('/api/2019/session/2019001');
         $this->assertEquals(200, $this->response->status());
     }
 

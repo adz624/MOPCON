@@ -124,7 +124,7 @@
                 ],
                 "recordable": true,
                 "level": "Basic",
-                "session_id": 1,
+                "session_id": 2019001,
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
@@ -182,7 +182,7 @@
                 ],
                 "recordable": true,
                 "level": "Basic",
-                "session_id": 2,
+                "session_id": 2019002,
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
@@ -226,7 +226,7 @@
                 ],
                 "recordable": true,
                 "level": "Basic",
-                "session_id": 3,
+                "session_id": 2019003,
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
@@ -270,7 +270,7 @@
                 ],
                 "recordable": true,
                 "level": "Basic",
-                "session_id": 4,
+                "session_id": 2019004,
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
@@ -388,7 +388,7 @@
         ],
         "recordable": true,
         "level": "Basic",
-        "session_id": 1,
+        "session_id": 2019001,
         "sponsor_info": {
           "name": "大國集團公司",
           "name_e": "Da Kao",
@@ -500,7 +500,7 @@
       ],
       "recordable": true,
       "level": "Basic",
-      "session_id": 1,
+      "session_id": 2019001,
       "sponsor_info": {
         "name": "大國集團公司",
         "name_e": "Da Kao",

@@ -22,7 +22,10 @@
         "ended_at": 1571450100,
         "event": "",
         "room": [
-          18
+          {
+            "session_id": 2019001,
+            "speaker_id": 18
+          }
         ]
       },
       {
@@ -38,9 +41,18 @@
         "ended_at": 1571453400,
         "event": "",
         "room": [
-          10,
-          23,
-          6
+          {
+            "session_id": 2019002,
+            "speaker_id": 10
+          },
+          {
+            "session_id": 2019003,
+            "speaker_id": 23
+          },
+          {
+            "session_id": 2019004,
+            "speaker_id": 6
+          }
         ]
       },
       {
@@ -56,9 +68,18 @@
         "ended_at": 1571456700,
         "event": "",
         "room": [
-          14,
-          13,
-          8
+          {
+            "session_id": 2019005,
+            "speaker_id": 14
+          },
+          {
+            "session_id": 2019006,
+            "speaker_id": 13
+          },
+          {
+            "session_id": 2019007,
+            "speaker_id": 8
+          }
         ]
       },
       {
@@ -88,9 +109,18 @@
         "ended_at": 1571466900,
         "event": "",
         "room": [
-          25,
-          17,
-          3
+          {
+            "session_id": 2019008,
+            "speaker_id": 25
+          },
+          {
+            "session_id": 2019009,
+            "speaker_id": 17
+          },
+          {
+            "session_id": 2019010,
+            "speaker_id": 3
+          }
         ]
       },
       {
@@ -106,9 +136,18 @@
         "ended_at": 1571470200,
         "event": "",
         "room": [
-          24,
-          2,
-          19
+          {
+            "session_id": 2019011,
+            "speaker_id": 24
+          },
+          {
+            "session_id": 2019012,
+            "speaker_id": 2
+          },
+          {
+            "session_id": 2019013,
+            "speaker_id": 19
+          }
         ]
       },
       {
@@ -124,8 +163,14 @@
         "ended_at": 1571474400,
         "event": "",
         "room": [
-          15,
-          12
+          {
+            "session_id": 2019014,
+            "speaker_id": 15
+          },
+          {
+            "session_id": 2019015,
+            "speaker_id": 12
+          }
         ]
       },
       {
@@ -181,7 +226,10 @@
         "ended_at": 1571450100,
         "event": "",
         "room": [
-          21
+          {
+            "session_id": 2019016,
+            "speaker_id": 21
+          }
         ]
       },
       {
@@ -197,9 +245,18 @@
         "ended_at": 1571453400,
         "event": "",
         "room": [
-          20,
-          26,
-          4
+          {
+            "session_id": 2019017,
+            "speaker_id": 20
+          },
+          {
+            "session_id": 2019018,
+            "speaker_id": 26
+          },
+          {
+            "session_id": 2019019,
+            "speaker_id": 4
+          }
         ]
       },
       {
@@ -215,9 +272,18 @@
         "ended_at": 1571456700,
         "event": "",
         "room": [
-          16,
-          27,
-          9
+          {
+            "session_id": 2019020,
+            "speaker_id": 16
+          },
+          {
+            "session_id": 2019021,
+            "speaker_id": 27
+          },
+          {
+            "session_id": 2019022,
+            "speaker_id": 9
+          }
         ]
       },
       {
@@ -233,9 +299,18 @@
         "ended_at": 1571463600,
         "event": "",
         "room": [
-          30,
-          11,
-          1
+          {
+            "session_id": 2019023,
+            "speaker_id": 30
+          },
+          {
+            "session_id": 2019024,
+            "speaker_id": 11
+          },
+          {
+            "session_id": 2019025,
+            "speaker_id": 1
+          }
         ]
       },
       {
@@ -251,8 +326,14 @@
         "ended_at": 1571466900,
         "event": "",
         "room": [
-          28,
-          7
+          {
+            "session_id": 2019026,
+            "speaker_id": 28
+          },
+          {
+            "session_id": 2019027,
+            "speaker_id": 7
+          }
         ]
       },
       {
@@ -268,8 +349,14 @@
         "ended_at": 1571470200,
         "event": "",
         "room": [
-          29,
-          5
+          {
+            "session_id": 2019028,
+            "speaker_id": 29
+          },
+          {
+            "session_id": 2019029,
+            "speaker_id": 5
+          }
         ]
       },
       {
