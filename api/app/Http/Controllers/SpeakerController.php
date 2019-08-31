@@ -15,7 +15,9 @@ class SpeakerController extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->service = new SpeakerService();
+        $sessionFileName = env('APP_ENV') === 'production' ? '/session.json' : '/session-dev.json';
+        $sessionAry = json_decode(file_get_contents($this->path . $sessionFileName), true);
+        $this->service = new SpeakerService($sessionAry);
         foreach ($this->jsonAry as &$row) {
             $row = $this->service->parse($row);
         }

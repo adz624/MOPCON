@@ -87,10 +87,12 @@ Returns json data about sponsor information.
   - img(object):
     - mobile(string): Mobile 使用的圖片連結
     - web(string): Web 使用的圖片連結
+  - speaker_id(int): Speaker ID
+  - session_id(int): Session ID
   - name(string): 講者名稱
   - name_e(string): 講者英文名稱
-  - title(string): 演講題目
-  - title_e(string): 演講英文題目
+  - topic_name(string): 演講題目
+  - topic_name_e(string): 演講英文題目
   - started_at(timestamp): 演講開始時間，單位為秒
   - ended_at(timestamp): 演講結束時間，單位為秒
   - room(string): 會議廳
@@ -150,10 +152,12 @@ Returns json data about sponsor information.
                     "web": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
                     "mobile": "https://png.pngtree.com/svg/20170518/274aed119e.svg"
                   },
+                  "speaker_id": 1,
+                  "session_id": 2019001,
                   "name": "小明",
                   "name_e": "little min",
-                  "title": "Stark-industry Taiwan CEO",
-                  "title_e": "Stark-industry Taiwan CEO",
+                  "topic_name": "Stark-industry Taiwan CEO",
+                  "topic_name_e": "Stark-industry Taiwan CEO",
                   "started_at": 1571537400,
                   "ended_at": 1571539800,
                   "room": "R1",
@@ -202,10 +206,12 @@ Returns json data about sponsor information.
                             "web": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
                             "mobile": "https://png.pngtree.com/svg/20170518/274aed119e.svg",
                         },
+                        "speaker_id": 1,
+                        "session_id": 2019001,
                         "name": "小明",
                         "name_e": "little min",
-                        "title": "Stark-industry Taiwan CEO",
-                        "title_e": "Stark-industry Taiwan CEO",
+                        "topic_name": "Stark-industry Taiwan CEO",
+                        "topic_name_e": "Stark-industry Taiwan CEO",
                         "started_at": 1571537400,
                         "ended_at": 1571539800,
                         "room": "R1",

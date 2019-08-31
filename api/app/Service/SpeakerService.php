@@ -27,9 +27,30 @@ class SpeakerService
         'photo_for_sponsor_mobile',
         'tags',
     ];
+    private $sessionSpeakerMapping = [];
+
+    public function __construct(array $sessionAry)
+    {
+        foreach ($sessionAry as $schedule) {
+            foreach ($schedule['period'] as &$period) {
+                if (empty($period['room'])) {
+                    continue;
+                }
+                foreach ($period['room'] as $room) {
+                    $this->sessionSpeakerMapping[$room['speaker_id']] = $room['session_id'];
+                }
+            }
+        }
+    }
+
+    public function getSessionSpeakerMapping(): array
+    {
+        return $this->sessionSpeakerMapping;
+    }
 
     public function parse(array $row, string $type = 'speaker')
     {
+        $row['session_id'] = $this->sessionSpeakerMapping[$row['speaker_id']];
         $tags = $this->parseTags($row['tags']);
         $row['img'] = [
             'web' => $row['photo_for_' . $type . '_web'],

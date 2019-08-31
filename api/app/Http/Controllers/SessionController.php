@@ -40,6 +40,8 @@ class SessionController extends Controller
     ];
     private $sessions;
     private $sponsors;
+    private $sessionSpeakerMapping = [];
+    private $speakerService;
 
     public function __construct()
     {
@@ -62,6 +64,8 @@ class SessionController extends Controller
                 'logo_path' => $sponsor['logo_path'],
             ];
         }
+        $this->speakerService = new SpeakerService($this->jsonAry);
+        $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
         $this->sessions = $this->transSpeakerToSession($speakers);
     }
 
@@ -77,8 +81,8 @@ class SessionController extends Controller
                 if (empty($period['room'])) {
                     continue;
                 }
-                foreach ($period['room'] as &$speaker_id) {
-                    $speaker_id = $this->sessions[$speaker_id];
+                foreach ($period['room'] as &$room) {
+                    $room = $this->sessions[$room['session_id']];
                 }
             }
         }
@@ -136,15 +140,14 @@ class SessionController extends Controller
     private function transSpeakerToSession(array $speakers)
     {
         $sessions = [];
-        $service = new SpeakerService();
         foreach ($speakers as $speaker) {
-            $output = $service->parse($speaker, 'session');
+            $output = $this->speakerService->parse($speaker, 'session');
             $session = array_filter($output, function ($key) {
                 return in_array($key, $this->session_keys);
             }, ARRAY_FILTER_USE_KEY);
-            $session['session_id'] = $speaker['speaker_id'];
             $session['sponsor_info'] = $this->sponsors[$speaker['sponsor_id']] ?? [];
-            $sessions[$speaker['speaker_id']] = $session;
+            $session['session_id'] = $this->sessionSpeakerMapping[$speaker['speaker_id']];
+            $sessions[$this->sessionSpeakerMapping[$speaker['speaker_id']]] = $session;
         }
 
         return $sessions;

@@ -21,6 +21,7 @@
 - link_github(string): Github（如果沒有給會給空字串）
 - link_twitter(string): Twitter（如果沒有給會給空字串）
 - link_other(string): 個人部落格或其他網站（如果沒有給會給空字串）
+- session(int): 議程編號
 - topic(string): 議程中文名稱
 - topic_e(string): 議程英文名稱
 - summary(string): 議程簡介中文
@@ -83,6 +84,7 @@
           "link_github": "https://www.schoen.com/id-sunt-ut-quod-modi-voluptas-commodi-maxime",
           "link_twitter": "http://oconnell.info/ut-et-iste-necessitatibus-reprehenderit",
           "link_other": "http://www.sporer.com/quis-eveniet-incidunt-quibusdam-illo-commodi-et-eaque",
+          "session_id": 2019001,
           "topic": "Maxime nesciunt.",
           "topic_e": "Est aliquid sed eum quae in.",
           "summary": "Repudiandae voluptatem placeat qui modi quia dignissimos. Tempora in ex saepe officiis sunt laborum. Quia eum qui totam dolor numquam.",
@@ -147,6 +149,7 @@
 - link_github(string): Github（如果沒有給會給空字串）
 - link_twitter(string): Twitter（如果沒有給會給空字串）
 - link_other(string): 個人部落格或其他網站（如果沒有給會給空字串）
+- session_id(int): 議程編號
 - topic(string): 議程中文名稱
 - topic_e(string): 議程英文名稱
 - summary(string): 議程簡介中文
@@ -210,6 +213,7 @@
         "link_github": "https://www.schoen.com/id-sunt-ut-quod-modi-voluptas-commodi-maxime",
         "link_twitter": "http://oconnell.info/ut-et-iste-necessitatibus-reprehenderit",
         "link_other": "http://www.sporer.com/quis-eveniet-incidunt-quibusdam-illo-commodi-et-eaque",
+        "session_id": 2019001,
         "topic": "Maxime nesciunt.",
         "topic_e": "Est aliquid sed eum quae in.",
         "summary": "Repudiandae voluptatem placeat qui modi quia dignissimos. Tempora in ex saepe officiis sunt laborum. Quia eum qui totam dolor numquam.",
