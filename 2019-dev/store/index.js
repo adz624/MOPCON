@@ -1,4 +1,5 @@
 export const state = () => ({
+  pageIsLoading: true,
   locale: 'zh',
   locales: ['zh', 'en'],
   localeApiPrefix: [
@@ -11,7 +12,6 @@ export const state = () => ({
       prefix: '_e',
     },
   ],
-  originUrl: '',
   seoLangTag: [
     {
       id: 'zh',
@@ -71,13 +71,13 @@ export const mutations = {
       state.sessionData = payload;
     }
   },
-  setOriginUrl(state, payload) {
-    state.originUrl = payload;
-  },
   setLocale(state, payload) {
     if (state.locales.indexOf(payload) !== -1) {
       state.locale = payload;
     }
+  },
+  setPageIsLoading(state, payload) {
+    state.pageIsLoading = payload;
   },
 };
 
@@ -92,6 +92,9 @@ export const actions = {
       console.log('err', err);
     }
   },
+  togglePageLoading({ commit }, payload) {
+    commit('setPageIsLoading', payload);
+  },
 };
 
 export const getters = {
@@ -99,8 +102,8 @@ export const getters = {
   eventResults: state => state.eventResults,
   sessionData: state => state.sessionData,
   seoLangTag: state => state.seoLangTag,
-  originUrl: state => state.originUrl,
   localeApiPrefix: state => state.localeApiPrefix,
+  pageIsLoading: state => state.pageIsLoading,
   locales: state => state.locales,
   locale: state => state.locale,
 };

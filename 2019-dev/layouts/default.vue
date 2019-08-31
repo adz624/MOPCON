@@ -1,5 +1,6 @@
 <template>
     <div class="layout">
+        <div class="full-loading" ref="fullLoading"></div>
         <Header />
         <nuxt />
         <Footer />
@@ -9,12 +10,33 @@
 <script>
 import Footer from '~/components/Footer';
 import Header from '~/components/Header';
+import { getCookie } from '~/utils';
 
 export default {
     name: 'layout',
     components: {
         Footer,
         Header,
+    },
+    methods: {
+        // client side 初始語系, 先從 cookie 抓取之前已選定語系, 若無將預設為 zh
+        localInit() {
+            const lang = getCookie('locale') ? getCookie('locale') : 'zh';
+            this.$store.commit('setLocale', lang);
+            this.$i18n.locale = lang;
+        },
+        handlePageLoading() {
+            this.$refs.fullLoading.classList.remove('hide');
+            this.$refs.fullLoading.classList.add('animation');
+            setTimeout(() => {
+                this.$refs.fullLoading.classList.add('hide');
+                this.$refs.fullLoading.classList.remove('animation');
+            }, 700);
+        },
+    },
+    mounted() {
+        this.localInit();
+        this.handlePageLoading();
     },
 };
 </script>
@@ -119,5 +141,25 @@ export default {
         background-color: $colorBg;
         z-index: -1;
     }
+}
+
+.full-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: $colorWhite;
+    transition: all 0s;
+    z-index: 3000;
+}
+
+.full-loading.animation {
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.full-loading.hide {
+    z-index: -1;
 }
 </style>

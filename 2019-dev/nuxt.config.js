@@ -182,8 +182,8 @@ module.exports = {
   router: {
     // base: '/2019/',
     base: path.resolve(__dirname, '/2019/'),
-    // i18n 路由
-    middleware: 'i18n',
+    // // i18n 路由
+    // middleware: 'i18n',
   },
 
   generate: {
@@ -195,14 +195,6 @@ module.exports = {
       '/event/iron-man',
       '/event/hulk',
       '/event/black-widow',
-      '/en/event/captain-america',
-      '/en/event/iron-man',
-      '/en/event/hulk',
-      '/en/event/black-widow',
-      '/en',
-      '/en/event',
-      '/en/schedule',
-      '/en/schedule_unconf',
     ],
   },
 };
