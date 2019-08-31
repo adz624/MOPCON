@@ -23,6 +23,7 @@ class SponsorController extends Controller
     ];
     private $speakerAry = [];
     protected $function = 'sponsor';
+    private $speakerService;
 
     /**
      * Get all or specific Sponsors information.
@@ -35,6 +36,9 @@ class SponsorController extends Controller
         $sponsorIdArr = $sponsorIds == '' ? [] : explode(",", $sponsorIds);
         $speakerFilePath = env('APP_ENV') === 'production' ? 'speaker.json' : 'speaker-dev.json';
         $this->speakerAry = json_decode(file_get_contents($this->path . $speakerFilePath), true);
+        $sessionFileName = env('APP_ENV') === 'production' ? '/session.json' : '/session-dev.json';
+        $sessionAry = json_decode(file_get_contents($this->path . $sessionFileName), true);
+        $this->speakerService = new SpeakerService($sessionAry);
 
         return count($sponsorIdArr) ? $this->getSpecificSponsors($this->jsonAry, $sponsorIdArr) : $this->getAllSponsors($this->jsonAry);
     }
@@ -76,7 +80,7 @@ class SponsorController extends Controller
         $sponsor['speaker_information'] = [];
         foreach ($this->speakerAry as $speaker) {
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {
-                $tags = (new SpeakerService())->parseTags($speaker['tags']);
+                $tags = $this->speakerService->parseTags($speaker['tags']);
                 $sponsor['speaker_information'][] = [
                     'img' => [
                         'mobile' => $speaker['photo_for_sponsor_mobile'],
