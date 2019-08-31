@@ -108,6 +108,7 @@ export default {
             this.isActive = !this.isActive;
         },
         toggleLang(lang) {
+            console.log('toggleLang');
             this.$i18n.locale = lang;
             document.cookie = 'locale=' + lang;
             this.changeUrl();

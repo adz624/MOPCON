@@ -133,12 +133,16 @@
       transition: all 0.6s 0.3s;
 
       &__icon {
+        display: none;
         position: absolute;
         top: 50%;
         left: 30px;
         width: 11px;
         height: 11px;
         transform: translateY(-50%);
+        @include rwd(md) {
+          display: block;
+        }
         &:before,
         &:after {
           @include abCenter;

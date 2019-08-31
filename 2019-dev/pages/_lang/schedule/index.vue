@@ -2,8 +2,8 @@
     <div class="schedule">
         <div class="schedule__banner"></div>
         <section class="schedule__desc">
-            <h1 class="title schedule__desc__title"><span class="icon-brackets">每一場都讓你</span>收穫滿滿的<span class="color-primary">議程規劃</span>; }</h1>
-            <p class="schedule__desc__text">MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 7 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！</p>
+            <h1 class="title schedule__desc__title"><span class="icon-brackets">{{$t('pages.schedule.title[1]')}}</span>{{$t('pages.schedule.title[2]')}}<span class="color-primary">{{$t('pages.schedule.title[3]')}}</span>; }</h1>
+            <p class="schedule__desc__text">{{$t('pages.schedule.desc')}}</p>
         </section>
 
         <!-- 搜尋按鈕區 -->
@@ -15,7 +15,7 @@
                         :class="{active: checkDateExist(dateBtn.id)}"
                         @click="handleDateClick(dateBtn.id)"
                         v-for="dateBtn in filterDateBtns"
-                        :key="dateBtn.id">{{dateBtn.name}}</button>
+                        :key="dateBtn.id">{{dateBtn[`name${langPrefix}`]}}</button>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@
                     :class="[`filter-btn-${keywordBtn.style}`, {active: checkKeywordExist(keywordBtn.id)}]"
                     @click="handleKeywordClick(keywordBtn.id)"
                     v-for="keywordBtn in filterKeywordBtns"
-                    :key="keywordBtn.id">{{keywordBtn.name}}</div>
+                    :key="keywordBtn.id">{{$t(`pages.schedule.tags.${keywordBtn.id.split(' ').join('')}`)}}</div>
             </div>
 
             <div v-if="filterKeyword.length > 0" class="schedule__tool__clear" @click="filterKeyword = []">清除篩選</div>
@@ -35,15 +35,15 @@
             v-if="sessionDisplayType === 'timelist' || (sessionDisplayType !== 'timelist' && selectSessionDateAndKeyword.length > 0)">
             <div class="schedule__tagDesc__item">
                 <div class="schedule__tagDesc__item__tag"><span>Basic</span></div>
-                <span class="schedule__tagDesc__item__text">外行人可以藉此入門</span>
+                <span class="schedule__tagDesc__item__text">{{$t('pages.schedule.levelDesc.basic')}}</span>
             </div>
             <div class="schedule__tagDesc__item">
                 <div class="schedule__tagDesc__item__tag"><span>Normal</span></div>
-                <span class="schedule__tagDesc__item__text">歡迎略懂，有基礎的會眾</span>
+                <span class="schedule__tagDesc__item__text">{{$t('pages.schedule.levelDesc.normal')}}</span>
             </div>
             <div class="schedule__tagDesc__item">
                 <div class="schedule__tagDesc__item__tag"><span>Expert</span></div>
-                <span class="schedule__tagDesc__item__text">建議在該領域中有研究經驗的人入場</span>
+                <span class="schedule__tagDesc__item__text">{{$t('pages.schedule.levelDesc.expert')}}</span>
             </div>
         </section>
 
@@ -57,13 +57,16 @@
                 <template slot="content-card" v-else>
                     <!-- 有議程內容，且是滿板一個內容 -->
                     <template v-if="session.isBroadCast">
-                        <Card :cardData="session.room[0]" @onTagClick="handleKeywordClick" />
+                        <Card :cardData="session.room[0]"
+                            :langPrefix="langPrefix"
+                            @onTagClick="handleKeywordClick" />
                     </template>
                     <!-- 有議程內容，是多個議程內容 -->
                     <template v-else>
                         <Card v-for="room in session.room"
                             :cardData="room"
                             type="small"
+                            :langPrefix="langPrefix"
                             :key="room.session_id"
                             @onTagClick="handleKeywordClick" />
                     </template>
@@ -77,6 +80,7 @@
                 class="schedule__filter__card"
                 :cardData="sessionCard"
                 type="small"
+                :langPrefix="langPrefix"
                 :key="sessionCard.session_id"
                 @onTagClick="handleKeywordClick" />
         </section>
@@ -111,6 +115,7 @@ import { mapGetters } from 'vuex';
 
 export default {
     name: 'schedule',
+    scrollToTop: false,
     components: {
         SectionApp,
         TimeList,
@@ -124,10 +129,12 @@ export default {
                 {
                     id: 1571414400,
                     name: '10/19 (六)',
+                    name_e: '10/19 (Sat)',
                 },
                 {
                     id: 1571500800,
                     name: '10/20 (日)',
+                    name_e: '10/20 (Sun)',
                 },
             ],
             filterKeywordBtns: [
@@ -185,7 +192,17 @@ export default {
         };
     },
     computed: {
-        ...mapGetters(['sessionData']),
+        ...mapGetters(['sessionData', 'localeApiPrefix']),
+        // 依據當前所選語系, 選擇對應的語系資料 (name, name_e)
+        // zh => '',  en => '_e'
+        langPrefix() {
+            const apiPrefix = this.localeApiPrefix.find(
+                item => item.lang === this.$i18n.locale
+            );
+
+            if (apiPrefix) return apiPrefix.prefix;
+            return '';
+        },
         // 議程內容顯示樣式 timelist(時間列表) / cardlist(卡片列表)
         sessionDisplayType() {
             if (this.filterKeyword.length === 0) return 'timelist';

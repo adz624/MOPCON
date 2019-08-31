@@ -1,6 +1,16 @@
 export const state = () => ({
   locale: 'zh',
   locales: ['zh', 'en'],
+  localeApiPrefix: [
+    {
+      lang: 'zh',
+      prefix: '',
+    },
+    {
+      lang: 'en',
+      prefix: '_e',
+    },
+  ],
   originUrl: '',
   seoLangTag: [
     {
@@ -90,6 +100,7 @@ export const getters = {
   sessionData: state => state.sessionData,
   seoLangTag: state => state.seoLangTag,
   originUrl: state => state.originUrl,
+  localeApiPrefix: state => state.localeApiPrefix,
   locales: state => state.locales,
   locale: state => state.locale,
 };

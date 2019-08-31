@@ -11,5 +11,38 @@
     "scheduleUnconf": "交流場次",
     "speaker": "講者陣容",
     "sponsor": "贊助夥伴"
+  },
+  "sectionApp": {
+    "title": "怕錯過感興趣的講者議程嗎？",
+    "subtitle": "下載 MOPCON App，建立你的行事曆吧！"
+  },
+  "pages": {
+    "schedule": {
+      "title": {
+        "1": "每一場都讓你",
+        "2": "收穫滿滿的",
+        "3": "議程規劃"
+      },
+      "desc": "MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 7 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！",
+      "sponsor": "夥伴議程",
+      "noVedio": "禁止攝影",
+      "tags": {
+        "ai": "人工智慧",
+        "investment": "量化投資",
+        "mobileapp": "Mobile",
+        "web": "Web",
+        "cloud": "Cloud",
+        "blockchain": "Blockchain",
+        "devpps": "DevOps",
+        "iot": "IoT",
+        "ui/ux": "UI/UX",
+        "startup": "Startup"
+      },
+      "levelDesc": {
+        "basic": "外行人可以藉此入門",
+        "normal": "歡迎略懂，有基礎的會眾",
+        "expert": "建議在該領域中有研究經驗的人入場"
+      }
+    }
   }
 }

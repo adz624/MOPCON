@@ -14,12 +14,12 @@
                 </div>
             </div>
 
-            <h3 class="card__content__name">{{cardData.topic}}</h3>
+            <h3 class="card__content__name">{{cardData[`topic${langPrefix}`]}}</h3>
 
             <!-- 提示標籤 -->
             <div class="card__content__promptTags">
-                <div class="tag-btn-secondary" v-if="cardData.is_sponsor_session">夥伴議程</div>
-                <div class="tag-btn-third" v-if="!cardData.recordable">禁止攝影</div>
+                <div class="tag-btn-secondary" v-if="cardData.is_sponsor_session">{{$t('pages.schedule.sponsor')}}</div>
+                <div class="tag-btn-third" v-if="!cardData.recordable">{{$t('pages.schedule.noVedio')}}</div>
                 <div class="tag-btn-primary" v-if="cardData.level">{{cardData.level}}</div>
             </div>
 
@@ -27,8 +27,8 @@
             <div class="card__content__speaker">
                 <img class="card__content__speaker__avatar"
                     :src="cardData.img.mobile"
-                    :alt="cardData.name">
-                <div class="card__content__speaker__name">{{cardData.name}}</div>
+                    :alt="cardData[`name${langPrefix}`]">
+                <div class="card__content__speaker__name">{{cardData[`name${langPrefix}`]}}</div>
             </div>
         </div>
         <div class="card__btn"></div>
@@ -46,6 +46,10 @@ export default {
         cardData: {
             type: Object,
             required: true,
+        },
+        langPrefix: {
+            type: String,
+            default: '',
         },
     },
     methods: {
