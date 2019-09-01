@@ -40,7 +40,6 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import { setCookie, removeCookie } from '~/utils';
 
 export default {
     name: 'Header',
@@ -108,8 +107,7 @@ export default {
         },
         toggleLang(lang) {
             this.$i18n.locale = lang;
-            removeCookie('locale');
-            setCookie('locale', lang);
+            localStorage.setItem('locale', lang);
         },
         toggleSubItem(nav) {
             if (window.innerWidth < 1024 && nav.subNav.length > 0) {

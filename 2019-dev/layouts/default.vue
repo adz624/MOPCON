@@ -10,7 +10,6 @@
 <script>
 import Footer from '~/components/Footer';
 import Header from '~/components/Header';
-import { getCookie } from '~/utils';
 
 export default {
     name: 'layout',
@@ -19,9 +18,11 @@ export default {
         Header,
     },
     methods: {
-        // client side 初始語系, 先從 cookie 抓取之前已選定語系, 若無將預設為 zh
+        // client side 初始語系, 先從 localStorage 抓取之前已選定語系, 若無將預設為 zh
         localInit() {
-            const lang = getCookie('locale') ? getCookie('locale') : 'zh';
+            const lang = localStorage.getItem('locale')
+                ? localStorage.getItem('locale')
+                : 'zh';
             this.$store.commit('setLocale', lang);
             this.$i18n.locale = lang;
         },
@@ -149,7 +150,7 @@ export default {
     left: 0;
     width: 100vw;
     height: 100%;
-    background-color: $colorWhite;
+    background-color: darken($colorWhite, 20);
     transition: all 0s;
     z-index: 3000;
 }
