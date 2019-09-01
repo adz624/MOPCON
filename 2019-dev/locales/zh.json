@@ -42,7 +42,10 @@
         "basic": "外行人可以藉此入門",
         "normal": "歡迎略懂，有基礎的會眾",
         "expert": "建議在該領域中有研究經驗的人入場"
-      }
+      },
+      "sharingSchedule": "分享議程",
+      "scheduleCopySuccess": "議程連結複製成功",
+      "scheduleCopyFail": "議程連結複製失敗"
     }
   }
 }

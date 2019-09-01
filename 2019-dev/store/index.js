@@ -60,6 +60,8 @@ export const state = () => ({
     },
   ],
   sessionData: [],
+  sessionDetail: null,
+  sessionDetailLoading: false,
 });
 
 export const mutations = {
@@ -70,6 +72,15 @@ export const mutations = {
     if (Array.isArray(payload)) {
       state.sessionData = payload;
     }
+  },
+  setSessionDetail(state, payload) {
+    state.sessionDetail = payload;
+  },
+  clearSessionDetail(state) {
+    state.sessionDetail = null;
+  },
+  toggleSessionDetailLoading(state, payload) {
+    state.sessionDetailLoading = payload;
   },
   setLocale(state, payload) {
     if (state.locales.indexOf(payload) !== -1) {
@@ -92,8 +103,20 @@ export const actions = {
       console.log('err', err);
     }
   },
-  togglePageLoading({ commit }, payload) {
-    commit('setPageIsLoading', payload);
+  getSessionDetail({ commit }, id) {
+    commit('clearSessionDetail');
+    commit('toggleSessionDetailLoading', true);
+    return new Promise(async (resolve, reject) => {
+      const { status, data } = await this.$axios.get(`/api/2019/session/${id}`);
+      if (status === 200 && data && data.data) {
+        commit('setSessionDetail', data.data);
+        commit('toggleSessionDetailLoading', false);
+        resolve(data.data);
+      } else {
+        commit('toggleSessionDetailLoading', false);
+        reject(status);
+      }
+    });
   },
 };
 
@@ -101,6 +124,8 @@ export const getters = {
   homePageReady: state => state.homePageReady,
   eventResults: state => state.eventResults,
   sessionData: state => state.sessionData,
+  sessionDetail: state => state.sessionDetail,
+  sessionDetailLoading: state => state.sessionDetailLoading,
   seoLangTag: state => state.seoLangTag,
   localeApiPrefix: state => state.localeApiPrefix,
   pageIsLoading: state => state.pageIsLoading,

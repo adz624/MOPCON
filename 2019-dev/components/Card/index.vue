@@ -31,7 +31,7 @@
                 <div class="card__content__speaker__name">{{cardData[`name${langPrefix}`]}}</div>
             </div>
         </div>
-        <div class="card__btn"></div>
+        <div class="card__btn" @click="handleShowDetail(cardData.session_id)"></div>
     </div>
 </template>
 
@@ -55,6 +55,9 @@ export default {
     methods: {
         handleTagClick(id) {
             this.$emit('onTagClick', id);
+        },
+        handleShowDetail(id) {
+            this.$emit('onShowDetail', id);
         },
     },
 };

@@ -59,7 +59,8 @@
                     <template v-if="session.isBroadCast">
                         <Card :cardData="session.room[0]"
                             :langPrefix="langPrefix"
-                            @onTagClick="handleKeywordClick" />
+                            @onTagClick="handleKeywordClick"
+                            @onShowDetail="handleShowDetail" />
                     </template>
                     <!-- 有議程內容，是多個議程內容 -->
                     <template v-else>
@@ -68,7 +69,8 @@
                             type="small"
                             :langPrefix="langPrefix"
                             :key="room.session_id"
-                            @onTagClick="handleKeywordClick" />
+                            @onTagClick="handleKeywordClick"
+                            @onShowDetail="handleShowDetail" />
                     </template>
                 </template>
             </TimeList>
@@ -82,7 +84,8 @@
                 type="small"
                 :langPrefix="langPrefix"
                 :key="sessionCard.session_id"
-                @onTagClick="handleKeywordClick" />
+                @onTagClick="handleKeywordClick"
+                @onShowDetail="handleShowDetail" />
         </section>
 
         <section class="schedule__empty" v-if="isEmpty">
@@ -104,6 +107,14 @@
         </section>
 
         <SectionApp />
+
+        <!-- 詳細資訊彈窗區塊 -->
+        <Modal :modal-open="modalOpen" @modal-close="closeModal">
+            <CardDetail v-if="sessionDetail"
+                :cardData="sessionDetail"
+                :langPrefix="langPrefix"
+                :detailUrl="sessionDetailUrl" />
+        </Modal>
     </div>
 </template>
 
@@ -111,6 +122,8 @@
 import SectionApp from '~/components/SectionApp';
 import TimeList from './TimeList';
 import Card from '~/components/Card';
+import CardDetail from '~/components/CardDetail';
+import Modal from '~/components/Modal';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -120,9 +133,13 @@ export default {
         SectionApp,
         TimeList,
         Card,
+        CardDetail,
+        Modal,
     },
     data() {
         return {
+            modalOpen: false,
+            sessionDetailUrl: '',
             filterKeyword: [],
             filterDate: 1571414400,
             filterDateBtns: [
@@ -192,7 +209,12 @@ export default {
         };
     },
     computed: {
-        ...mapGetters(['sessionData', 'localeApiPrefix']),
+        ...mapGetters([
+            'sessionData',
+            'sessionDetail',
+            'sessionDetailLoading',
+            'localeApiPrefix',
+        ]),
         // 依據當前所選語系, 選擇對應的語系資料 (name, name_e)
         // zh => '',  en => '_e'
         langPrefix() {
@@ -320,6 +342,41 @@ export default {
 
             return items;
         },
+        handleShowDetail(id) {
+            if (this.sessionDetailLoading) return;
+            this.$store
+                .dispatch('getSessionDetail', id)
+                .then(res => {
+                    // 更新網址
+                    this.updateDetailUrl(id);
+                    this.openModal();
+                })
+                .catch(err => {
+                    console.log('失敗', err);
+                });
+        },
+        // 更新分享議程網址, 等 router push 執行完成後才更新
+        updateDetailUrl(id) {
+            this.$router.push(
+                { url: '/schedule', query: { id: id } },
+                () => (this.sessionDetailUrl = `${location.href}`)
+            );
+        },
+        closeModal(show) {
+            this.modalOpen = show;
+            this.$router.push('/schedule');
+        },
+        openModal() {
+            this.modalOpen = true;
+        },
+        // 若此頁面有 query id 就直接顯示議程詳細資料
+        sessionDetailInit() {
+            if (!this.$route.query.id) return;
+            this.handleShowDetail(this.$route.query.id);
+        },
+    },
+    mounted() {
+        this.sessionDetailInit();
     },
 };
 </script>
