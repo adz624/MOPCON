@@ -358,13 +358,13 @@ export default {
         // 更新分享議程網址, 等 router push 執行完成後才更新
         updateDetailUrl(id) {
             this.$router.push(
-                { url: '/schedule', query: { id: id } },
+                `/schedule/?id=${id}`,
                 () => (this.sessionDetailUrl = `${location.href}`)
             );
         },
         closeModal(show) {
             this.modalOpen = show;
-            this.$router.push('/schedule');
+            if (!show) this.$router.push('/schedule/');
         },
         openModal() {
             this.modalOpen = true;
