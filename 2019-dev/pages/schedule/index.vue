@@ -292,6 +292,10 @@ export default {
     created() {
         this.$store.dispatch('getSessionData');
     },
+    beforeRouteEnter: (to, from, next) => {
+        if (!process.env.routeSchedule) return next('/');
+        next();
+    },
     methods: {
         checkDateExist(dateId) {
             if (this.filterDate === dateId) return true;

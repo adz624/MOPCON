@@ -7,6 +7,7 @@
                 <div class="header__nav__item"
                     :class="{active: nav.subIsOpen}"
                     v-for="(nav, index) in navList"
+                    v-if="nav.open"
                     :key="index"
                     @click="toggleSubItem(nav)">
                     <div v-if="nav.subNav.length > 0"
@@ -24,6 +25,7 @@
                             :href="`.${subItem.url}`"
                             class="header__nav__subItem__name"
                             v-for="(subItem, subIndex) in nav.subNav"
+                            v-if="subItem.open"
                             :key="subIndex">
                             {{$t(`navbar.${subItem.name}`)}}
                         </a>
@@ -52,12 +54,14 @@ export default {
                     url: '/',
                     subNav: [],
                     subIsOpen: false,
+                    open: true,
                 },
                 {
                     name: 'community',
                     url: '/community',
                     subNav: [],
                     subIsOpen: false,
+                    open: process.env.routeCommunity,
                 },
                 {
                     name: 'schedule',
@@ -66,25 +70,31 @@ export default {
                         {
                             name: 'scheduleMain',
                             url: '/schedule',
+                            open: process.env.routeSchedule,
                         },
                         {
                             name: 'scheduleUnconf',
                             url: '/schedule_unconf',
+                            open: process.env.routeScheduleUnconf,
                         },
                     ],
                     subIsOpen: false,
+                    open:
+                        process.env.routeSchedule || process.env.routeSchedule,
                 },
                 {
                     name: 'speaker',
                     url: '/speaker',
                     subNav: [],
                     subIsOpen: false,
+                    open: process.env.routeSpeaker,
                 },
                 {
                     name: 'sponsor',
                     url: '/sponsor',
                     subNav: [],
                     subIsOpen: false,
+                    open: process.env.routeSponsor,
                 },
             ],
         };
