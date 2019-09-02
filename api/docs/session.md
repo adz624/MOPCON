@@ -39,7 +39,7 @@
       - color(string): 標籤色碼
       - name(string): 標籤名稱
     - session_id(int): 議程編號，會與 speaker_id 一樣
-    - sponsor_info(object):
+    - sponsor_info(object): 如果沒有贊助廠商就不會有這個 key 存在
       - name(string): 贊助商中文名稱
       - name_e(string): 贊助商英文名稱
       - logo_path(string): 贊助商圖片

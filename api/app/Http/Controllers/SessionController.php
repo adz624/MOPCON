@@ -145,7 +145,9 @@ class SessionController extends Controller
             $session = array_filter($output, function ($key) {
                 return in_array($key, $this->session_keys);
             }, ARRAY_FILTER_USE_KEY);
-            $session['sponsor_info'] = $this->sponsors[$speaker['sponsor_id']] ?? [];
+            if (isset($this->sponsors[$speaker['sponsor_id']])) {
+                $session['sponsor_info'] = $this->sponsors[$speaker['sponsor_id']];
+            }
             $session['session_id'] = $this->sessionSpeakerMapping[$speaker['speaker_id']];
             $sessions[$this->sessionSpeakerMapping[$speaker['speaker_id']]] = $session;
         }
