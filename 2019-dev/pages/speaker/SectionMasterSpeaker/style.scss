@@ -1,0 +1,198 @@
+.section-master-speaker {
+  @include rwd(pad) {
+    margin-bottom: 48px;
+  }
+  .title {
+    margin-top: 113px;
+    font-size: 32px;
+    text-align: center;
+    @include rwd(pad) {
+      margin-top: 78px;
+      margin-bottom: 6px;
+    }
+  }
+
+  #tag_area {
+    background-color: $colorBg;
+    padding: 18px 0;
+  }
+  .tag {
+    margin-top: 18px;
+    margin-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    @include rwd(pad) {
+      flex-wrap: nowrap;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      overflow-x: auto;
+    }
+    label {
+      margin-bottom: 6px;
+    }
+  }
+
+  .clear__tag {
+    color: $colorGray;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    @include rwd(pad) {
+      margin-top: 18px;
+    }
+  }
+
+  ::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  &__name {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  &__img {
+    border-radius: 140px;
+  }
+  &__title {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  &__content {
+    color: $colorGray;
+    margin-bottom: 12px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include rwd(pad) {
+     justify-content: center;
+     flex-direction: column;
+    }
+  }
+
+  .section__speaker {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__card {
+      text-align: center;
+      flex: 0 0 33.333333%;
+      margin-top: 26px;
+      padding: 40px;
+      border: 1px solid transparent;
+      @include rwd(pad) {
+        flex: 0 0 100%;
+        margin-top: 18px;
+      }
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $colorPrimary;
+      }
+      &:active {
+        border: 1px solid $colorPrimary;
+        background: rgba($colorPrimary, .15);
+      }
+    }
+    &__noSpeaker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__noSpeaker-img {
+      background-image: url(./images/noSpeaker.png);
+      margin-top: 140px;
+      margin-bottom: 66px;
+      @include bgCenter(480px, 104px);
+      @include rwd(pad) {
+        max-width: 100%;
+        margin-top: 120px;
+        margin-bottom: 36px;
+        background-size: contain;
+      }
+    }
+  }
+
+  .modal-body {
+    width: 100%;
+    max-width: 448px;
+    margin:0 auto;
+    @include rwd(pad) {
+      max-width: 279px;
+    }
+    .intro {
+      margin-left: 24px;
+      @include rwd(pad) {
+        margin: 24px auto 0px auto;
+        text-align: center;
+      }
+    }
+    .socail_media {
+      display: flex;
+      justify-content: center;
+      margin: 12px 0;
+      a {
+        margin: 0 17px;
+      }
+    }
+    .socail_media.has_icon {
+      margin: 32px 0;
+    }
+    .summary {
+      margin-bottom: 32px;
+      @include rwd(pad) {
+        margin: 0px auto 24px auto;
+      }
+    }
+    .topic {
+      margin-bottom: 32px;
+      text-align: center;
+      &__title {
+        margin-top: 21px;
+        font-size: 24px;
+        @include rwd(pad) {
+          margin-top: 12px;
+        }
+      }
+      &__time {
+        color: $colorGray;
+      }
+    }
+    .sponsor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin: 12px 0;
+      }
+    }
+    .share {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+  .break {
+    display: none;
+    @include rwd(pad) {
+      display: block;
+    }
+  }
+  #tag_area.sticky-top {
+    @include rwd(pad) {
+      position: fixed;
+      top: 47px;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      padding:18px 25px;
+    }
+  }
+}
