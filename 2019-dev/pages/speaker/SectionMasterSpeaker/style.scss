@@ -132,10 +132,13 @@
     .socail_media {
       display: flex;
       justify-content: center;
-      margin: 32px 0;
+      margin: 12px 0;
       a {
         margin: 0 17px;
       }
+    }
+    .socail_media.has_icon {
+      margin: 32px 0;
     }
     .summary {
       margin-bottom: 32px;

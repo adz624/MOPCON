@@ -43,15 +43,19 @@
             </div>
           </div>
         </div>
-        <div class="socail_media">
-          <a :href="tempSpeakerData.link_fb" target="_blank"><img src="./images/icon/icon-fb.png" alt="" width="34.5px"
-              height="34.5px"></a>
-          <a :href="tempSpeakerData.link_twitter" target="_blank"><img src="./images/icon/icon-twitter.png" alt=""
-              width="34.5px" height="34.5px"></a>
-          <a :href="tempSpeakerData.link_github" target="_blank"><img src="./images/icon/icon-github.png" alt=""
-              width="34.5px" height="34.5px"></a>
-          <a :href="tempSpeakerData.link_other" target="_blank"><img src="./images/icon/icon-web.png" alt=""
-              width="34.5px" height="34.5px"></a>
+        <div class="socail_media" :class="{'has_icon': tempSpeakerData.link_fb || tempSpeakerData.link_twitter || tempSpeakerData.link_github || tempSpeakerData.link_other}">
+          <a v-if="tempSpeakerData.link_fb" :href="tempSpeakerData.link_fb" target="_blank">
+            <img src="./images/icon/icon-fb.png" alt="" width="34.5px" height="34.5px">
+          </a>
+          <a  v-if="tempSpeakerData.link_twitter" :href="tempSpeakerData.link_twitter" target="_blank">
+            <img src="./images/icon/icon-twitter.png" alt="" width="34.5px" height="34.5px">
+          </a>
+          <a  v-if="tempSpeakerData.link_github" :href="tempSpeakerData.link_github" target="_blank">
+            <img src="./images/icon/icon-github.png" alt="" width="34.5px" height="34.5px">
+          </a>
+          <a  v-if="tempSpeakerData.link_other" :href="tempSpeakerData.link_other" target="_blank">
+            <img src="./images/icon/icon-web.png" alt="" width="34.5px" height="34.5px">
+          </a>
         </div>
         <p class="summary">{{ tempSpeakerData.summary }}</p>
         <div class="topic">
@@ -104,7 +108,7 @@
           {
             hid: 'og-url',
             property: 'og:url',
-            content: `https://mopcon.org/2019/speaker/${speaker.speaker_id}`,
+            content: `${process.env.BASE_URL}/2019/speaker?id=${speaker.speaker_id}`,
           },
           {
             hid: 'og-image',
@@ -137,7 +141,6 @@
     },
     data() {
       return {
-        baseUrl: process.env.baseUrl,
         spearkerList: [],
         modalOpen: false,
         tempSpeakerData: {},
@@ -238,7 +241,7 @@
       const vm = this;
       vm.getTags();
       vm.getSpeakerData();
-      vm.nowUrl = location.href;
+      vm.nowUrl = `${process.env.BASE_URL}/2019/speaker`;
       if (vm.$route.query.id) {
         vm.$axios.$get(`/api/2019/speaker/${vm.$route.query.id}`)
           .then(({ success, data, message }) => {
