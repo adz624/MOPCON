@@ -1,7 +1,7 @@
 <template>
     <div class="cardDetail">
         <div class="cardDetail__time">
-            <span>{{formatFloorRoom}}</span>
+            <span>{{cardData.floor}} {{cardData.room}}</span>
             <span>{{(cardData.started_at * 1000) | moment("HH mm")}} - {{(cardData.ended_at * 1000) | moment("HH mm")}}</span>
         </div>
 
@@ -61,24 +61,6 @@ export default {
         cardData: {
             type: Object,
             default: true,
-        },
-    },
-    computed: {
-        formatFloorRoom() {
-            const { floor, room } = this.cardData;
-            if (!floor || !room) return;
-
-            if (this.$i18n.locale === 'zh') {
-                const roomTemp = room
-                    .replace('R', '')
-                    .replace('1', '一廳')
-                    .replace('2', '二廳')
-                    .replace('3', '三廳')
-                    .replace('4', '四廳');
-                return `${floor}${roomTemp}`;
-            } else {
-                return `${floor} ${room}`;
-            }
         },
     },
     methods: {

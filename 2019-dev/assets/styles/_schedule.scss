@@ -84,14 +84,20 @@
     }
 
     &__keyword {
-      margin-top: 35px;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+      width: 100%;
+      max-width: 1080px;
+      margin: 35px auto 0 auto;
       padding: 0 25px 15px 25px;
       padding-bottom: 15px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      @include rwd(lg) {
-        justify-content: flex-start;
+      @include rwd(pad) {
+        flex-flow: row nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
+
       &::-webkit-scrollbar {
         width: 5px;
         height: 5px;
@@ -106,10 +112,11 @@
 
       [class*='filter-btn-'] {
         flex: 0 0 auto;
+        margin: 3px 12px;
       }
 
       [class*='filter-btn-'] + [class*='filter-btn-'] {
-        margin-left: 24px;
+        // margin-left: 24px;
       }
 
       // close icon

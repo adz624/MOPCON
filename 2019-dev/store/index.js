@@ -62,6 +62,7 @@ export const state = () => ({
   sessionData: [],
   sessionDetail: null,
   sessionDetailLoading: false,
+  tags: [],
 });
 
 export const mutations = {
@@ -89,6 +90,9 @@ export const mutations = {
   },
   setPageIsLoading(state, payload) {
     state.pageIsLoading = payload;
+  },
+  setTags(state, payload) {
+    state.tags = payload;
   },
 };
 
@@ -118,6 +122,16 @@ export const actions = {
       }
     });
   },
+  async getTags({ commit }) {
+    try {
+      const { status, data } = await this.$axios.get('/api/2019/speaker/tags');
+      if (status === 200 && data && data.data) {
+        commit('setTags', data.data);
+      }
+    } catch (err) {
+      console.log('err', err);
+    }
+  },
 };
 
 export const getters = {
@@ -131,4 +145,5 @@ export const getters = {
   pageIsLoading: state => state.pageIsLoading,
   locales: state => state.locales,
   locale: state => state.locale,
+  tags: state => state.tags,
 };

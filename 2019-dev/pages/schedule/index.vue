@@ -8,23 +8,24 @@
 
         <!-- 搜尋按鈕區 -->
         <section class="schedule__tool">
-
             <div class="schedule__tool__date">
                 <div class="btn-group">
                     <button class="btn-primary"
                         :class="{active: checkDateExist(dateBtn.id)}"
                         @click="handleDateClick(dateBtn.id)"
                         v-for="dateBtn in filterDateBtns"
-                        :key="dateBtn.id">{{dateBtn[`name${langPrefix}`]}}</button>
+                        :key="dateBtn.id">
+                        {{dateBtn.name}}
+                    </button>
                 </div>
             </div>
 
             <div class="schedule__tool__keyword">
                 <div
-                    :class="[`filter-btn-${keywordBtn.style}`, {active: checkKeywordExist(keywordBtn.id)}]"
-                    @click="handleKeywordClick(keywordBtn.id)"
-                    v-for="keywordBtn in filterKeywordBtns"
-                    :key="keywordBtn.id">{{$t(`pages.schedule.tags.${keywordBtn.id.split(' ').join('')}`)}}</div>
+                    :class="[filterBtnClass(tag.color), {active: checkKeywordExist(tag.name)}]"
+                    @click="handleKeywordClick(tag.name)"
+                    v-for="(tag, index) in tags"
+                    :key="index">{{tag.name}}</div>
             </div>
 
             <div v-if="filterKeyword.length > 0" class="schedule__tool__clear" @click="filterKeyword = []">清除篩選</div>
@@ -52,7 +53,7 @@
             <TimeList :contentType="session.event ? 'title': 'card'"
                 :hasTime="session.started_at ? true : false"
                 v-for="(session, index) in selectSessionDate.period" :key="`sessionId-${index}`">
-                <template slot="time" v-if="session.started_at">{{(session.started_at * 1000) | moment("HH mm")}} - {{(session.ended_at * 1000) | moment("HH mm")}}</template>
+                <template slot="time" v-if="session.started_at">{{(session.started_at * 1000) | moment("HH:mm")}} - {{(session.ended_at * 1000) | moment("HH:mm")}}</template>
                 <template slot="content-title" v-if="session.room.length === 0">{{session.event}}</template>
                 <template slot="content-card" v-else>
                     <!-- 有議程內容，且是滿板一個內容 -->
@@ -128,6 +129,11 @@ import { mapGetters } from 'vuex';
 
 export default {
     name: 'schedule',
+    head() {
+        return {
+            title: '主議程 | MOPCON 2019',
+        };
+    },
     scrollToTop: false,
     components: {
         SectionApp,
@@ -142,70 +148,6 @@ export default {
             sessionDetailUrl: '',
             filterKeyword: [],
             filterDate: 1571414400,
-            filterDateBtns: [
-                {
-                    id: 1571414400,
-                    name: '10/19 (六)',
-                    name_e: '10/19 (Sat)',
-                },
-                {
-                    id: 1571500800,
-                    name: '10/20 (日)',
-                    name_e: '10/20 (Sun)',
-                },
-            ],
-            filterKeywordBtns: [
-                {
-                    id: 'ai',
-                    name: '人工智慧',
-                    style: 'primary',
-                },
-                {
-                    id: 'investment',
-                    name: '量化投資',
-                    style: 'primary',
-                },
-                {
-                    id: 'mobile app',
-                    name: 'Mobile',
-                    style: 'primary',
-                },
-                {
-                    id: 'web',
-                    name: 'Web',
-                    style: 'primary',
-                },
-                {
-                    id: 'cloud',
-                    name: 'Cloud',
-                    style: 'primary',
-                },
-                {
-                    id: 'blockchain',
-                    name: 'Blockchain',
-                    style: 'primary',
-                },
-                {
-                    id: 'devpps',
-                    name: 'DevOps',
-                    style: 'primary',
-                },
-                {
-                    id: 'iot',
-                    name: 'IoT',
-                    style: 'primary',
-                },
-                {
-                    id: 'ui/ux',
-                    name: 'UI/UX',
-                    style: 'secondary',
-                },
-                {
-                    id: 'startup',
-                    name: 'Startup',
-                    style: 'third',
-                },
-            ],
         };
     },
     computed: {
@@ -214,6 +156,7 @@ export default {
             'sessionDetail',
             'sessionDetailLoading',
             'localeApiPrefix',
+            'tags',
         ]),
         // 依據當前所選語系, 選擇對應的語系資料 (name, name_e)
         // zh => '',  en => '_e'
@@ -229,6 +172,35 @@ export default {
         sessionDisplayType() {
             if (this.filterKeyword.length === 0) return 'timelist';
             return 'cardlist';
+        },
+        // 依據議程 sessionData 資料整理出按鈕格式陣列
+        filterDateBtns() {
+            if (this.sessionData.length === 0) return;
+            let btns = [];
+            this.sessionData.forEach(item => {
+                const weeks = [
+                    { zh: '日', en: 'Sun' },
+                    { zh: '一', en: 'Mon' },
+                    { zh: '二', en: 'Tue' },
+                    { zh: '三', en: 'Wed' },
+                    { zh: '四', en: 'Thu' },
+                    { zh: '五', en: 'Fri' },
+                    { zh: '六', en: 'Sat' },
+                ];
+
+                const timestamp = item.date * 1000;
+                const month = new Date(timestamp).getMonth() + 1;
+                const day = new Date(timestamp).getDate();
+                const week = new Date(timestamp).getDay();
+
+                const btn = {
+                    id: item.date,
+                    name: `${month}/${day} (${weeks[week][this.$i18n.locale]})`,
+                };
+
+                btns.push(btn);
+            });
+            return btns;
         },
         // 議程 timelist 顯示資料格式
         selectSessionDate() {
@@ -291,27 +263,36 @@ export default {
     },
     created() {
         this.$store.dispatch('getSessionData');
+        this.$store.dispatch('getTags');
     },
     beforeRouteEnter: (to, from, next) => {
         if (!process.env.routeSchedule) return next('/');
         next();
     },
     methods: {
+        formatDateLang(day) {
+            new Date(day).getDay();
+            console.log('day', new Date(day).getDay());
+        },
+        filterBtnClass(color) {
+            if (color === '#01aaf0') return 'filter-btn-primary';
+            if (color === '#98ce02') return 'filter-btn-secondary';
+            if (color === '#ff4492') return 'filter-btn-third';
+        },
         checkDateExist(dateId) {
             if (this.filterDate === dateId) return true;
             return false;
         },
-        checkKeywordExist(keywordId) {
+        checkKeywordExist(keyword) {
             const keywordIndex = this.filterKeyword.findIndex(
-                id => id === keywordId
+                id => id === keyword
             );
 
             return keywordIndex !== -1;
         },
-        handleKeywordClick(keywordId) {
+        handleKeywordClick(keyword) {
             if (!this.selectSessionDate) return;
 
-            const keyword = keywordId.toLowerCase();
             const isExist = this.checkKeywordExist(keyword);
 
             if (isExist) {
