@@ -22,7 +22,7 @@
         <!-- 提示標籤 -->
         <div class="cardDetail__promptTags">
             <div class="tag-btn-secondary" v-if="cardData.sponsor_id">{{$t('pages.schedule.sponsor')}}</div>
-            <div class="tag-btn-third" v-if="!cardData.recordable">{{$t('pages.schedule.noVedio')}}</div>
+            <div class="tag-btn-third" v-if="!cardData.recordable">{{$t('pages.schedule.noRecording')}}</div>
             <div class="tag-btn-primary" v-if="cardData.level">{{cardData.level}}</div>
         </div>
 
