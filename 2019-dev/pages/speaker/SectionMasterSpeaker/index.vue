@@ -71,6 +71,7 @@
         </div>
         <div class="share">
           <button class="basic-btn" @click.prevent="copyLink(nowUrl + '?id='+tempSpeakerData.speaker_id)">分享講者</button>
+          <small class="share_message">講者連結已複製</small>
         </div>
       </div>
     </Modal>
