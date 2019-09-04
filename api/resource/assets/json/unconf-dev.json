@@ -1,44 +1,40 @@
 [
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/19",
-        "title": "聊聊你不知道的兩岸創業1",
-        "speaker": "田禹哲"
-    },
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/20",
-        "title": "聊聊你不知道的兩岸創業2",
-        "speaker": "田禹哲"
-    },
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/19",
-        "title": "聊聊你不知道的兩岸創業3",
-        "speaker": "田禹哲"
-    },
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/20",
-        "title": "聊聊你不知道的兩岸創業4",
-        "speaker": "田禹哲"
-    },
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/20",
-        "title": "聊聊你不知道的兩岸創業5",
-        "speaker": "田禹哲"
-    },
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/19",
-        "title": "聊聊你不知道的兩岸創業6",
-        "speaker": "田禹哲"
-    },
-    {
-        "duration": "10:15 - 11:00",
-        "date": "10/20",
-        "title": "聊聊你不知道的兩岸創業7",
-        "speaker": "田禹哲"
-    }
+  {
+    "date": 1571414400,
+    "period": [
+      {
+        "started_at": 1571447700,
+        "ended_at": 1571450400,
+        "room": {
+          "name": "家佳",
+          "name_e": "Hilbert Boyle",
+          "speaker_id": 1,
+          "topic": "Maxime nesciunt.",
+          "topic_e": "Est aliquid sed eum quae in.",
+          "started_at": 1571446800,
+          "ended_at": 1571450400,
+          "session_id": 2019101
+        }
+      }
+    ]
+  },
+  {
+    "date": 1571500800,
+    "period": [
+      {
+        "started_at": 1571534100,
+        "ended_at": 1571536800,
+        "room": {
+          "name": "家佳",
+          "name_e": "Hilbert Boyle",
+          "speaker_id": 2,
+          "topic": "Maxime nesciunt.",
+          "topic_e": "Est aliquid sed eum quae in.",
+          "started_at": 1571533200,
+          "ended_at": 1571536800,
+          "session_id": 2019102
+        }
+      }
+    ]
+  }
 ]
