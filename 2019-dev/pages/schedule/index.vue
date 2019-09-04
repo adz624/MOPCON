@@ -314,18 +314,13 @@ export default {
         },
         // 篩選出當前所選取的議程類型資訊
         filterSessionKeyword(sessions) {
-            let items = [];
-
-            items = sessions.filter(item => {
-                // 判斷是否有符合 tags
-                return item.tags.some(tag => {
-                    return this.filterKeyword.some(tag2 => {
-                        return tag.name.toLowerCase() === tag2.toLowerCase();
-                    });
+            if (this.filterKeyword.length === 0) return sessions;
+            // 當前所有選擇的 tags 皆符合才回傳
+            return sessions.filter(session => {
+                return this.filterKeyword.every(tag => {
+                    return session.tags.some(item => item.name === tag);
                 });
             });
-
-            return items;
         },
         handleShowDetail(id) {
             if (this.sessionDetailLoading) return;
