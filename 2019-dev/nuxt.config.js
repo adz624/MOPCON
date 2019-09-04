@@ -127,6 +127,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    { src: '~/plugins/pixel', ssr: false },
     { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/gsap', ssr: false },
     { src: '~/plugins/vue-gallery', ssr: false },
