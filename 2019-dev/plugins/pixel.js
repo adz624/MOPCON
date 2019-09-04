@@ -9,10 +9,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '149507615542184');
 fbq('track', 'PageView');
 
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=149507615542184&ev=PageView&noscript=1"
-/></noscript>
-
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -23,7 +19,3 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1737216009848076');
 fbq('track', 'PageView');
-
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1737216009848076&ev=PageView&noscript=1"
-/></noscript>
