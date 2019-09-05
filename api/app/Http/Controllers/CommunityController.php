@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class CommunityController extends Controller
 {
@@ -16,7 +17,7 @@ class CommunityController extends Controller
         array_walk($this->jsonAry, function ($subset, $key) use (&$result) {
             $result[$key] = array_map(function ($value) {
                 $value['photo'] = url($value['photo']);
-                unset($value['introduction'], $value['introduction_en'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
+                unset($value['introduction'], $value['introduction_e'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
                 return $value;
             }, $subset);
         });
@@ -60,6 +61,15 @@ class CommunityController extends Controller
         return $this->returnSuccess('success', $result);
     }
 
+    public function imagesView($name)
+    {
+        $dir = $this->imgPath . 'community/' . $name . '.*';
+        $path = glob($dir);
+        $path = end($path);
+        $type = mime_content_type($path);
+        return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
+    }
+
     /**
      * 由 id 取出特定社群
      *
@@ -78,8 +88,8 @@ class CommunityController extends Controller
         if (isset($result['photo']) && $result['photo'] !== '') {
             $result['photo'] = url($result['photo']);
         }
-        if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
-            $result['introduction_en'] = $result['introduction'];
+        if (isset($result['introduction_e']) && $result['introduction_e'] === '') {
+            $result['introduction_e'] = $result['introduction'];
         }
         unset($result['id']);
         return $result;

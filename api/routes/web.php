@@ -18,6 +18,7 @@ $router->group(['prefix' => 'api'], function ($router) {
             $router->get('/', 'CommunityController@index');
             $router->get('/organizer/{id}', 'CommunityController@getOrganizer');
             $router->get('/participant/{id}', 'CommunityController@getParticipant');
+            $router->get('/images/{name}', 'CommunityController@imagesView');
         });
         $router->group(['prefix' => 'volunteer'], function ($router) {
             $router->get('/', 'VolunteerController@index');

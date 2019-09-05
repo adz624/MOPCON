@@ -26,7 +26,7 @@ class CommunityControllerTest extends TestCase
         array_walk($this->dataset, function ($subset, $key) use (&$compared) {
             $compared[$key] = array_map(function ($value) {
                 $value['photo'] = url($value['photo']);
-                unset($value['introduction'], $value['introduction_en'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
+                unset($value['introduction'], $value['introduction_e'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
                 return $value;
             }, $subset);
         });
@@ -146,8 +146,8 @@ class CommunityControllerTest extends TestCase
             $result['photo'] = url($result['photo']);
         }
 
-        if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
-            $result['introduction_en'] = $result['introduction'];
+        if (isset($result['introduction_e']) && $result['introduction_e'] === '') {
+            $result['introduction_e'] = $result['introduction'];
         }
         unset($result['id']);
 
