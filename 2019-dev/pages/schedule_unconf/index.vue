@@ -14,6 +14,10 @@ export default {
     components: {
         SectionApp,
     },
+    beforeRouteEnter: (to, from, next) => {
+        if (!process.env.routeScheduleUnconf) return next('/');
+        next();
+    },
 };
 </script>
 

@@ -1,4 +1,29 @@
 export const state = () => ({
+  pageIsLoading: true,
+  locale: 'zh',
+  locales: ['zh', 'en'],
+  localeApiPrefix: [
+    {
+      lang: 'zh',
+      prefix: '',
+    },
+    {
+      lang: 'en',
+      prefix: '_e',
+    },
+  ],
+  seoLangTag: [
+    {
+      id: 'zh',
+      val: 'zh-Hant',
+      fb: 'zh_tw',
+    },
+    {
+      id: 'en',
+      val: 'en',
+      fb: 'en_us',
+    },
+  ],
   homePageReady: false,
   eventResults: [
     {
@@ -35,6 +60,9 @@ export const state = () => ({
     },
   ],
   sessionData: [],
+  sessionDetail: null,
+  sessionDetailLoading: false,
+  tags: [],
 });
 
 export const mutations = {
@@ -46,16 +74,59 @@ export const mutations = {
       state.sessionData = payload;
     }
   },
+  setSessionDetail(state, payload) {
+    state.sessionDetail = payload;
+  },
+  clearSessionDetail(state) {
+    state.sessionDetail = null;
+  },
+  toggleSessionDetailLoading(state, payload) {
+    state.sessionDetailLoading = payload;
+  },
+  setLocale(state, payload) {
+    if (state.locales.indexOf(payload) !== -1) {
+      state.locale = payload;
+    }
+  },
+  setPageIsLoading(state, payload) {
+    state.pageIsLoading = payload;
+  },
+  setTags(state, payload) {
+    state.tags = payload;
+  },
 };
 
 export const actions = {
   async getSessionData({ commit }) {
     try {
-      const { data } = await this.$axios.get('/api/2019/session');
-      console.log('res', data);
-
-      if (data.data && data.data.length > 0) {
+      const { status, data } = await this.$axios.get('/api/2019/session');
+      if (status === 200 && data && data.data && data.data.length > 0) {
         commit('setSessionData', data.data);
+      }
+    } catch (err) {
+      console.log('err', err);
+    }
+  },
+  getSessionDetail({ commit }, id) {
+    commit('clearSessionDetail');
+    commit('toggleSessionDetailLoading', true);
+    return new Promise(async (resolve, reject) => {
+      const { status, data } = await this.$axios.get(`/api/2019/session/${id}`);
+      if (status === 200 && data && data.data) {
+        commit('setSessionDetail', data.data);
+        commit('toggleSessionDetailLoading', false);
+        resolve(data.data);
+      } else {
+        commit('toggleSessionDetailLoading', false);
+        reject(status);
+      }
+    });
+  },
+  async getTags({ commit }) {
+    try {
+      const { status, data } = await this.$axios.get('/api/2019/speaker/tags');
+      if (status === 200 && data && data.data) {
+        commit('setTags', data.data);
       }
     } catch (err) {
       console.log('err', err);
@@ -67,4 +138,12 @@ export const getters = {
   homePageReady: state => state.homePageReady,
   eventResults: state => state.eventResults,
   sessionData: state => state.sessionData,
+  sessionDetail: state => state.sessionDetail,
+  sessionDetailLoading: state => state.sessionDetailLoading,
+  seoLangTag: state => state.seoLangTag,
+  localeApiPrefix: state => state.localeApiPrefix,
+  pageIsLoading: state => state.pageIsLoading,
+  locales: state => state.locales,
+  locale: state => state.locale,
+  tags: state => state.tags,
 };

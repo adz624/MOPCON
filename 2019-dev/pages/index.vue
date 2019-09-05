@@ -1,4 +1,4 @@
 <script>
-import Index from "~/pages/home";
+import Index from './home';
 export default Index;
 </script>

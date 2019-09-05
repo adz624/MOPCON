@@ -24,7 +24,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 950px;
     height: 100%;
+    margin: 0 auto;
     padding: 0 25px;
     overflow: hidden;
 
@@ -34,7 +36,9 @@
   }
 
   &__info {
+    width: calc(100% - 432px);
     @include rwd(md) {
+      width: 100%;
       text-align: center;
     }
     &__title {
@@ -71,6 +75,12 @@
     }
   }
 
+  &__info.english {
+    @include rwd(md) {
+      text-align: left;
+    }
+  }
+
   &__phone {
     @include bgCenter(340px, 669px);
     margin: 0 0 -330px 92px;
@@ -79,8 +89,8 @@
     @include rwd(md) {
       height: 402px;
       margin: 47px 0 100px 0;
-      background-position: top center;
       margin-bottom: 55px;
+      background-position: top center;
     }
 
     @include rwd(pad) {

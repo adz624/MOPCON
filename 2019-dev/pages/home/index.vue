@@ -53,6 +53,9 @@ export default {
     },
     mounted() {
         this.$store.commit("updateHomePageReady", true);
+    },
+    beforeDestroy() {
+        this.$store.commit("updateHomePageReady", false);
     }
 };
 </script>

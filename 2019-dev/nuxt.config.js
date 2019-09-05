@@ -128,6 +128,8 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/pixel', ssr: false },
+    { src: '~/plugins/i18n' },
+    { src: '~/plugins/route' },
     { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/gsap', ssr: false },
     { src: '~/plugins/vue-gallery', ssr: false },
@@ -156,6 +158,11 @@ module.exports = {
   },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    routeSpeaker: process.env.SPEAKER === 'false' ? false : true,
+    routeSchedule: process.env.SCHEDULE === 'false' ? false : true,
+    routeScheduleUnconf: process.env.SCHEDULE_UNCONF === 'false' ? false : true,
+    routeSponsor: process.env.SPONSOR === 'false' ? false : true,
+    routeCommunity: process.env.COMMUNITY === 'false' ? false : true,
     yearUrl: '/2019',
   },
 
@@ -186,7 +193,7 @@ module.exports = {
   generate: {
     dir: path.resolve(__dirname, '../2019/'),
     // dir: '../2019',
-    // 預渲染 event 結果頁面
+    // 預渲染頁面
     routes: [
       '/event/captain-america',
       '/event/iron-man',

@@ -16,6 +16,16 @@ cp .env.example .env
 BASE_URL=https://mopcon.org
 ```
 
+控制頁面顯示，false 不顯示，(預設 true)
+
+```dotenv
+SPEAKER=true
+SCHEDULE=false
+SCHEDULE_UNCONF=false
+SPONSOR=false
+COMMUNITY=false
+```
+
 ## Build Setup
 
 ```bash
