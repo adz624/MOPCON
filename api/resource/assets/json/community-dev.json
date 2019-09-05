@@ -22,7 +22,7 @@
             "twitter": "",
             "instagram": "",
             "telegram": "",
-            "event": ""
+            "event": "https://www.meetup.com/Kaohsiung-Python-Meetup/"
         },
         {
             "id": "3",
@@ -58,7 +58,7 @@
             "twitter": "",
             "instagram": "",
             "telegram": "",
-            "event": ""
+            "event": "https://agilekaohsiung.kktix.cc"
         }
     ],
     "participant": [
