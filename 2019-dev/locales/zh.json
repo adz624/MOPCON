@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "行動科技年會 2019 | Mobile / Open / Platform Conference",
-    "description": "MOPCON 2019 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。"
-  },
   "navbar": {
     "home": "MOPCON 2019",
     "community": "主辦社群",
@@ -26,18 +22,6 @@
       "desc": "MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 7 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！",
       "sponsor": "夥伴議程",
       "noRecording": "禁止攝影",
-      "tags": {
-        "ai": "人工智慧",
-        "investment": "量化投資",
-        "mobileapp": "Mobile",
-        "web": "Web",
-        "cloud": "Cloud",
-        "blockchain": "Blockchain",
-        "devpps": "DevOps",
-        "iot": "IoT",
-        "ui/ux": "UI/UX",
-        "startup": "Startup"
-      },
       "levelDesc": {
         "basic": "外行人可以藉此入門",
         "normal": "歡迎略懂，有基礎的會眾",

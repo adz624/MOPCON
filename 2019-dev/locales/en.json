@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "Mobile / Open / Platform Conference",
-    "description": "MOPCON 2019...."
-  },
   "navbar": {
     "home": "MOPCON 2019",
     "community": "Community",
@@ -26,18 +22,6 @@
       "desc": "MOPCON It is now the largest technical community seminar in South Taiwan. It was established to link industry and information engineering technology to cultivate more information technology talents and promote the innovation and development of Kaohsiung industry. Without the support of partners, this vision will not come true. ! Thank you for joining us in the past 7 years. Together with us, we will gather talents and knowledge from South Taiwan to grow and learn together!",
       "sponsor": "Sponsor",
       "noRecording": "No Recording",
-      "tags": {
-        "ai": "AI",
-        "investment": "Investment",
-        "mobileapp": "Mobile",
-        "web": "Web",
-        "cloud": "Cloud",
-        "blockchain": "Blockchain",
-        "devpps": "DevOps",
-        "iot": "IoT",
-        "ui/ux": "UI/UX",
-        "startup": "Startup"
-      },
       "levelDesc": {
         "basic": "E_外行人可以藉此入門",
         "normal": "E_歡迎略懂，有基礎的會眾",
