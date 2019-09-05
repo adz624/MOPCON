@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class VolunteerController extends Controller
 {
@@ -38,6 +39,15 @@ class VolunteerController extends Controller
             return $this->returnNotFoundError();
         }
         return $this->returnSuccess('success', $result);
+    }
+
+    public function imagesView($name)
+    {
+        $dir = $this->imgPath . 'volunteers/' . $name . '.*';
+        $path = glob($dir);
+        $path = end($path);
+        $type = mime_content_type($path);
+        return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
     }
     /**
      * 由 id 取出特定社群
