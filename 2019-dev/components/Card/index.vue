@@ -1,5 +1,5 @@
 <template>
-    <div class="card" :class="type">
+    <div class="card" :class="type" @click="handleShowDetail(cardData.session_id)">
         <div class="card__head">{{cardData.room}}({{cardData.floor}})</div>
         <div class="card__content">
 
@@ -8,8 +8,7 @@
                 <div class="card__content__tag filter-btn-primary active"
                     :style="`backgroundColor: ${tag.color}`"
                     v-for="tag in cardData.tags"
-                    :key="tag.name"
-                    @click="handleTagClick(tag.name)">
+                    :key="tag.name">
                     {{tag.name}}
                 </div>
             </div>
