@@ -222,19 +222,9 @@
         if (vm.selectedTags.length == 0) {
           return vm.spearkerList;
         } else {
-          let filterSpeakerList = [];
-          vm.spearkerList.forEach(function(speaker) {
-            let speakerTagArr = [];
-            speaker.tags.map(tag => speakerTagArr.push(tag.name))
-            function speakerContainsFilter(filter) {
-              return speakerTagArr.indexOf(filter) != -1;
-            }
-            if(vm.selectedTags.every(speakerContainsFilter)) {
-              filterSpeakerList.push(speaker);
-            }
+          return vm.spearkerList.filter((speaker) => { 
+            return speaker.tags.some(tag => vm.selectedTags.includes(tag.name))
           });
-          
-          return filterSpeakerList;
         }
       },
     },
