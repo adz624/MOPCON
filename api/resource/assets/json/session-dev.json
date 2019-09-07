@@ -24,7 +24,7 @@
         "room": [
           {
             "session_id": 2019001,
-            "speaker_id": 18
+            "speaker_id": [18, 6]
           }
         ]
       },
@@ -48,10 +48,6 @@
           {
             "session_id": 2019003,
             "speaker_id": 23
-          },
-          {
-            "session_id": 2019004,
-            "speaker_id": 6
           }
         ]
       },

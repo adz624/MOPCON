@@ -148,10 +148,48 @@ class SessionController extends Controller
             if (isset($this->sponsors[$speaker['sponsor_id']])) {
                 $session['sponsor_info'] = $this->sponsors[$speaker['sponsor_id']];
             }
-            $session['session_id'] = $this->sessionSpeakerMapping[$speaker['speaker_id']];
-            $sessions[$this->sessionSpeakerMapping[$speaker['speaker_id']]] = $session;
+            $session_id = $this->sessionSpeakerMapping[$speaker['speaker_id']];
+            $session['session_id'] = $session_id;
+            $this->convertToMultipleSpeaker($sessions, $session, $session_id);
         }
 
         return $sessions;
+    }
+
+    /**
+     * @param array $sessions
+     * @param array $session
+     * @param int   $session_id
+     */
+    private function convertToMultipleSpeaker(array &$sessions, array &$session, int $session_id): void
+    {
+        $columns = [
+            'name',
+            'name_e',
+            'speaker_id',
+            'company',
+            'company_e',
+            'job_title',
+            'job_title_e',
+            'img',
+        ];
+
+        $convert = function (&$session, $columns) {
+            $result = [];
+            foreach ($columns as $column) {
+                $result[$column] = $session[$column];
+                unset($session[$column]);
+            }
+
+            return $result;
+        };
+
+        if (!isset($sessions[$session_id])) {
+            $session['speakers'] = [];
+            $session['speakers'][] = $convert($session, $columns);
+            $sessions[$session_id] = $session;
+        } else {
+            $sessions[$session_id]['speakers'][] = $convert($session, $columns);
+        }
     }
 }

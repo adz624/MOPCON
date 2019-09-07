@@ -37,6 +37,12 @@ class SpeakerService
                     continue;
                 }
                 foreach ($period['room'] as $room) {
+                    if (is_array($room['speaker_id'])) {
+                        foreach ($room['speaker_id'] as $id) {
+                            $this->sessionSpeakerMapping[$id] = $room['session_id'];
+                        }
+                        continue;
+                    }
                     $this->sessionSpeakerMapping[$room['speaker_id']] = $room['session_id'];
                 }
             }
