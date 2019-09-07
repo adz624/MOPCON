@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Service\SessionService;
 
 class UnconfController extends Controller
 {
@@ -129,6 +130,9 @@ class UnconfController extends Controller
                 unset($result['room']);
                 $result['room'] = [];
                 if ($result['event'] === '') {
+                    $speaker = SessionService::transportMultipleSpeaker($room);
+                    $room['speakers'] = [];
+                    $room['speakers'][] = $speaker;
                     $result['room'][] = $room;
                 }
                 $periodSubset = $result;

@@ -37,13 +37,17 @@
   - isBroadCast(bool): 是否為聯播議程
   - event(string): 議程區塊名稱，通常用來顯示無議程表示（EX: 休息、報到等），如果在議程時間則為空字串
   - room(array): 議程詳細資訊，如果沒有議程會以 empty array 表示
-    - name(string): 講師中文名稱
-    - name_e(string): 講師英文名稱
-    - speaker_id(int): 講者 ID (恆為 0)
-    - company(string): 公司中文名稱 (恆為 empty string)
-    - company_e(string): 公司英文名稱 (恆為 empty string)
-    - job_title(string): 職位中文名稱 (恆為 empty string)
-    - job_title_e(string): 職位英文名稱 (恆為 empty string)
+    - speakers(array): 講師鎮列，在交流議程僅會有一位
+        - name(string): 講師中文名稱
+        - name_e(string): 講師英文名稱
+        - speaker_id(int): 講者 ID (恆為 0)
+        - company(string): 公司中文名稱 (恆為 empty string)
+        - company_e(string): 公司英文名稱 (恆為 empty string)
+        - job_title(string): 職位中文名稱 (恆為 empty string)
+        - job_title_e(string): 職位英文名稱 (恆為 empty string)
+        - img(object): 講者圖片
+          - web(string): 網頁版使用 (恆為 empty string)
+          - mobile(string): 手機版使用 (恆為 empty string)
     - topic(string): 議程名稱
     - topic_e(string): 議程英文名稱
     - summary(string): 議程簡介中文 (恆為 empty string)
@@ -56,9 +60,6 @@
     - sponsor_id(int): 贊助商編號，如果不是贊助商講者則為 0
     - recordable(bool): 是否提供錄影 (恆為 false)
     - level(string): 議程難易度
-    - img(object): 講者圖片
-      - web(string): 網頁版使用 (恆為 empty string)
-      - mobile(string): 手機版使用 (恆為 empty string)
     - tags(array): 議程標籤
       - color(string): 標籤色碼
       - name(string): 標籤名稱
@@ -94,13 +95,21 @@
             "event": "",
             "room": [
               {
-                "name": "家佳",
-                "name_e": "Hilbert Boyle",
-                "speaker_id": 0,
-                "company": "",
-                "company_e": "",
-                "job_title": "",
-                "job_title_e": "",
+                "speakers": [
+                  {
+                    "name": "家佳",
+                    "name_e": "Hilbert Boyle",
+                    "speaker_id": 0,
+                    "company": "",
+                    "company_e": "",
+                    "job_title": "",
+                    "job_title_e": "",
+                    "img": {
+                      "web": "",
+                      "mobile": "",
+                    }
+                  }
+                ],
                 "topic": "Maxime nesciunt.",
                 "topic_e": "Est aliquid sed eum quae in.",
                 "summary": "",
@@ -110,10 +119,6 @@
                 "ended_at": 1571450400,
                 "room": "UnConf",
                 "floor": "3F",
-                "img": {
-                  "web": "",
-                  "mobile": "",
-                },
                 "tags": [],
                 "recordable": false,
                 "level": "Basic",
@@ -136,13 +141,17 @@
 
 ### 欄位說明
 
-- name(string): 講師中文名稱
-- name_e(string): 講師英文名稱
-- speaker_id(int): 講者 ID (恆為 0)
-- company(string): 公司中文名稱 (恆為 empty string)
-- company_e(string): 公司英文名稱 (恆為 empty string)
-- job_title(string): 職位中文名稱 (恆為 empty string)
-- job_title_e(string): 職位英文名稱 (恆為 empty string)
+- speakers(array): 講師陣列，在交流場次僅有一位講者
+    - name(string): 講師中文名稱
+    - name_e(string): 講師英文名稱
+    - speaker_id(int): 講者 ID (恆為 0)
+    - company(string): 公司中文名稱 (恆為 empty string)
+    - company_e(string): 公司英文名稱 (恆為 empty string)
+    - job_title(string): 職位中文名稱 (恆為 empty string)
+    - job_title_e(string): 職位英文名稱 (恆為 empty string)
+    - img(object): 講者圖片
+      - web(string): 網頁版使用 (恆為 empty string)
+      - mobile(string): 手機版使用 (恆為 empty string)
 - topic(string): 議程名稱
 - topic_e(string): 議程英文名稱
 - summary(string): 議程簡介中文 (恆為 empty string)
@@ -155,9 +164,6 @@
 - sponsor_id(int): 贊助商編號，如果不是贊助商講者則為 0
 - recordable(bool): 是否提供錄影 (恆為 false)
 - level(string): 議程難易度
-- img(object): 講者圖片
-  - web(string): 網頁版使用 (恆為 empty string)
-  - mobile(string): 手機版使用 (恆為 empty string)
 - tags(array): 議程標籤
   - color(string): 標籤色碼
   - name(string): 標籤名稱
@@ -184,13 +190,21 @@
     "message": "Success.",
     "data": [
       {
-        "name": "家佳",
-        "name_e": "Hilbert Boyle",
-        "speaker_id": 0,
-        "company": "",
-        "company_e": "",
-        "job_title": "",
-        "job_title_e": "",
+        "speakers": [
+          {
+            "name": "家佳",
+            "name_e": "Hilbert Boyle",
+            "speaker_id": 0,
+            "company": "",
+            "company_e": "",
+            "job_title": "",
+            "job_title_e": "",
+            "img": {
+              "web": "",
+              "mobile": "",
+            }
+          }
+        ],
         "topic": "Maxime nesciunt.",
         "topic_e": "Est aliquid sed eum quae in.",
         "summary": "",
@@ -200,10 +214,6 @@
         "ended_at": 1571450400,
         "room": "UnConf",
         "floor": "3F",
-        "img": {
-          "web": "",
-          "mobile": "",
-        },
         "tags": [],
         "recordable": false,
         "level": "Basic",
@@ -222,15 +232,19 @@
 
 ### 欄位說明
 
-- name(string): 講師中文名稱
-- name_e(string): 講師英文名稱
-- speaker_id(int): 講者 ID (恆為 0)
-- company(string): 公司中文名稱 (恆為 empty string)
-- company_e(string): 公司英文名稱 (恆為 empty string)
-- job_title(string): 職位中文名稱 (恆為 empty string)
-- job_title_e(string): 職位英文名稱 (恆為 empty string)
-- topic(string): 議程名稱
-- topic_e(string): 議程英文名稱
+- speakers(array): 講師資料
+    - name(string): 講師中文名稱
+    - name_e(string): 講師英文名稱
+    - speaker_id(int): 講者 ID (恆為 0)
+    - company(string): 公司中文名稱 (恆為 empty string)
+    - company_e(string): 公司英文名稱 (恆為 empty string)
+    - job_title(string): 職位中文名稱 (恆為 empty string)
+    - job_title_e(string): 職位英文名稱 (恆為 empty string)
+    - topic(string): 議程名稱
+    - topic_e(string): 議程英文名稱
+    - img(object): 講者圖片
+      - web(string): 網頁版使用 (恆為 empty string)
+      - mobile(string): 手機版使用 (恆為 empty string)
 - summary(string): 議程簡介中文 (恆為 empty string)
 - summary_e(string): 議程簡介英文 (恆為 empty string)
 - is_keynote(bool): 是否為 keynote 議程 (恆為 false)
@@ -241,9 +255,6 @@
 - sponsor_id(int): 贊助商編號，如果不是贊助商講者則為 0
 - recordable(bool): 是否提供錄影 (恆為 false)
 - level(string): 議程難易度
-- img(object): 講者圖片
-  - web(string): 網頁版使用 (恆為 empty string)
-  - mobile(string): 手機版使用 (恆為 empty string)
 - tags(array): 議程標籤
   - color(string): 標籤色碼
   - name(string): 標籤名稱
@@ -275,13 +286,21 @@
     "success": true,
     "message": "Success.",
     "data": {
-      "name": "家佳",
-      "name_e": "Hilbert Boyle",
-      "speaker_id": 0,
-      "company": "",
-      "company_e": "",
-      "job_title": "",
-      "job_title_e": "",
+      "speakers": [
+        {
+          "name": "家佳",
+          "name_e": "Hilbert Boyle",
+          "speaker_id": 0,
+          "company": "",
+          "company_e": "",
+          "job_title": "",
+          "job_title_e": "",
+          "img": {
+            "web": "",
+            "mobile": "",
+          }
+        }
+      ],
       "topic": "Maxime nesciunt.",
       "topic_e": "Est aliquid sed eum quae in.",
       "summary": "",
@@ -291,10 +310,6 @@
       "ended_at": 1571450400,
       "room": "UnConf",
       "floor": "3F",
-      "img": {
-        "web": "",
-        "mobile": "",
-      },
       "tags": [],
       "recordable": false,
       "level": "Basic",
