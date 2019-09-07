@@ -16,7 +16,7 @@
     {
         "success": true,
         "message": "success",
-        "data": [ 
+        "data": [
             {
                 "date": 1571414400,
                 "period": []
@@ -39,22 +39,22 @@
   - room(array): 議程詳細資訊，如果沒有議程會以 empty array 表示
     - name(string): 講師中文名稱
     - name_e(string): 講師英文名稱
-    - speaker_id(int): 講者 ID
-    - company(string): 公司中文名稱
-    - company_e(string): 公司英文名稱
-    - job_title(string): 職位中文名稱
-    - job_title_e(string): 職位英文名稱
+    - speaker_id(int): 講者 ID (恆為 0)
+    - company(string): 公司中文名稱 (恆為 empty string)
+    - company_e(string): 公司英文名稱 (恆為 empty string)
+    - job_title(string): 職位中文名稱 (恆為 empty string)
+    - job_title_e(string): 職位英文名稱 (恆為 empty string)
     - topic(string): 議程名稱
     - topic_e(string): 議程英文名稱
-    - summary(string): 議程簡介中文
-    - summary_e(string): 議程簡介英文
+    - summary(string): 議程簡介中文 (恆為 empty string)
+    - summary_e(string): 議程簡介英文 (恆為 empty string)
     - is_keynote(bool): 是否為 keynote 議程 (恆為 false)
     - started_at(timestamp): 議程開始時間，單位為秒
     - ended_at(timestamp): 議程結束時間，單位為秒
     - room(string): 議程廳
     - floor(string): 樓層
     - sponsor_id(int): 贊助商編號，如果不是贊助商講者則為 0
-    - recordable(bool): 是否提供錄影
+    - recordable(bool): 是否提供錄影 (恆為 false)
     - level(string): 議程難易度
     - img(object): 講者圖片
       - web(string): 網頁版使用 (恆為 empty string)
@@ -63,10 +63,6 @@
       - color(string): 標籤色碼
       - name(string): 標籤名稱
     - session_id(int): 議程編號
-    - sponsor_info(object):
-      - name(string): 贊助商中文名稱
-      - name_e(string): 贊助商英文名稱
-      - logo_path(string): 贊助商圖片
 
 ### Request
 
@@ -100,15 +96,15 @@
               {
                 "name": "家佳",
                 "name_e": "Hilbert Boyle",
-                "speaker_id": 1,
-                "company": "大國集團公司",
-                "company_e": "Da Kao",
-                "job_title": "incidunt",
-                "job_title_e": "incidunt",
+                "speaker_id": 0,
+                "company": "",
+                "company_e": "",
+                "job_title": "",
+                "job_title_e": "",
                 "topic": "Maxime nesciunt.",
                 "topic_e": "Est aliquid sed eum quae in.",
-                "summary": "summary",
-                "summary_e": "summary",
+                "summary": "",
+                "summary_e": "",
                 "is_keynote": false,
                 "started_at": 1571446800,
                 "ended_at": 1571450400,
@@ -118,28 +114,11 @@
                   "web": "",
                   "mobile": "",
                 },
-                "tags": [
-                  {
-                    "color": "#01aaf0",
-                    "name": "Blockchain"
-                  },
-                  {
-                    "color": "#01aaf0",
-                    "name": "IoT"
-                  },
-                  {
-                    "color": "#ff4492",
-                    "name": "Startup"
-                  }
-                ],
-                "recordable": true,
+                "tags": [],
+                "recordable": false,
                 "level": "Basic",
                 "session_id": 2019101,
-                "sponsor_info": {
-                  "name": "大國集團公司",
-                  "name_e": "Da Kao",
-                  "logo_path": "https://picsum.photos/200"
-                }
+                "sponsor_id": 0
               }
             ]
           }
@@ -149,9 +128,9 @@
   }
   ```
 
-## 主要議程清單
+## Unconf 議程清單
 
-提供過濾議程標籤後的議程清單
+列出所有交流議程清單
 
 - **URL**
 
@@ -159,22 +138,22 @@
 
 - name(string): 講師中文名稱
 - name_e(string): 講師英文名稱
-- speaker_id(int): 講者 ID
-- company(string): 公司中文名稱
-- company_e(string): 公司英文名稱
-- job_title(string): 職位中文名稱
-- job_title_e(string): 職位英文名稱
+- speaker_id(int): 講者 ID (恆為 0)
+- company(string): 公司中文名稱 (恆為 empty string)
+- company_e(string): 公司英文名稱 (恆為 empty string)
+- job_title(string): 職位中文名稱 (恆為 empty string)
+- job_title_e(string): 職位英文名稱 (恆為 empty string)
 - topic(string): 議程名稱
 - topic_e(string): 議程英文名稱
-- summary(string): 議程簡介中文
-- summary_e(string): 議程簡介英文
+- summary(string): 議程簡介中文 (恆為 empty string)
+- summary_e(string): 議程簡介英文 (恆為 empty string)
 - is_keynote(bool): 是否為 keynote 議程 (恆為 false)
 - started_at(timestamp): 議程開始時間，單位為秒
 - ended_at(timestamp): 議程結束時間，單位為秒
 - room(string): 議程廳
 - floor(string): 樓層
 - sponsor_id(int): 贊助商編號，如果不是贊助商講者則為 0
-- recordable(bool): 是否提供錄影
+- recordable(bool): 是否提供錄影 (恆為 false)
 - level(string): 議程難易度
 - img(object): 講者圖片
   - web(string): 網頁版使用 (恆為 empty string)
@@ -183,27 +162,16 @@
   - color(string): 標籤色碼
   - name(string): 標籤名稱
 - session_id(int): 議程編號
-- sponsor_info(object):
-  - name(string): 贊助商中文名稱
-  - name_e(string): 贊助商英文名稱
-  - logo_path(string): 贊助商圖片
 
 ### Request
 
 - **URL**
 
-  `/api/2019/unconf/list?tags=:tags`
+  `/api/2019/unconf/list`
 
 - **Method**
 
   `GET`
-
-- **URL Params**
-
-    **Optional:**
-
-    - tags=[string]
-      - e.g., `/api/2019/unconf/list?tags=ai,cloud`
 
 - **Success Response**
 
@@ -218,15 +186,15 @@
       {
         "name": "家佳",
         "name_e": "Hilbert Boyle",
-        "speaker_id": 1,
-        "company": "大國集團公司",
-        "company_e": "Da Kao",
-        "job_title": "incidunt",
-        "job_title_e": "incidunt",
+        "speaker_id": 0,
+        "company": "",
+        "company_e": "",
+        "job_title": "",
+        "job_title_e": "",
         "topic": "Maxime nesciunt.",
         "topic_e": "Est aliquid sed eum quae in.",
-        "summary": "summary",
-        "summary_e": "summary",
+        "summary": "",
+        "summary_e": "",
         "is_keynote": false,
         "started_at": 1571446800,
         "ended_at": 1571450400,
@@ -236,28 +204,11 @@
           "web": "",
           "mobile": "",
         },
-        "tags": [
-          {
-            "color": "#01aaf0",
-            "name": "Blockchain"
-          },
-          {
-            "color": "#01aaf0",
-            "name": "IoT"
-          },
-          {
-            "color": "#ff4492",
-            "name": "Startup"
-          }
-        ],
-        "recordable": true,
+        "tags": [],
+        "recordable": false,
         "level": "Basic",
         "session_id": 2019101,
-        "sponsor_info": {
-          "name": "大國集團公司",
-          "name_e": "Da Kao",
-          "logo_path": "https://picsum.photos/200"
-        }
+        "sponsor_id": 0
       }
     ]
   }
@@ -273,22 +224,22 @@
 
 - name(string): 講師中文名稱
 - name_e(string): 講師英文名稱
-- speaker_id(int): 講者 ID
-- company(string): 公司中文名稱
-- company_e(string): 公司英文名稱
-- job_title(string): 職位中文名稱
-- job_title_e(string): 職位英文名稱
+- speaker_id(int): 講者 ID (恆為 0)
+- company(string): 公司中文名稱 (恆為 empty string)
+- company_e(string): 公司英文名稱 (恆為 empty string)
+- job_title(string): 職位中文名稱 (恆為 empty string)
+- job_title_e(string): 職位英文名稱 (恆為 empty string)
 - topic(string): 議程名稱
 - topic_e(string): 議程英文名稱
-- summary(string): 議程簡介中文
-- summary_e(string): 議程簡介英文
+- summary(string): 議程簡介中文 (恆為 empty string)
+- summary_e(string): 議程簡介英文 (恆為 empty string)
 - is_keynote(bool): 是否為 keynote 議程 (恆為 false)
 - started_at(timestamp): 議程開始時間，單位為秒
 - ended_at(timestamp): 議程結束時間，單位為秒
 - room(string): 議程廳
 - floor(string): 樓層
 - sponsor_id(int): 贊助商編號，如果不是贊助商講者則為 0
-- recordable(bool): 是否提供錄影
+- recordable(bool): 是否提供錄影 (恆為 false)
 - level(string): 議程難易度
 - img(object): 講者圖片
   - web(string): 網頁版使用 (恆為 empty string)
@@ -296,11 +247,7 @@
 - tags(array): 議程標籤
   - color(string): 標籤色碼
   - name(string): 標籤名稱
-- session_id(int): 議程編號 
-- sponsor_info(object):
-  - name(string): 贊助商中文名稱
-  - name_e(string): 贊助商英文名稱
-  - logo_path(string): 贊助商圖片
+- session_id(int): 議程編號
 
 ### Request
 
@@ -330,15 +277,15 @@
     "data": {
       "name": "家佳",
       "name_e": "Hilbert Boyle",
-      "speaker_id": 1,
-      "company": "大國集團公司",
-      "company_e": "Da Kao",
-      "job_title": "incidunt",
-      "job_title_e": "incidunt",
+      "speaker_id": 0,
+      "company": "",
+      "company_e": "",
+      "job_title": "",
+      "job_title_e": "",
       "topic": "Maxime nesciunt.",
       "topic_e": "Est aliquid sed eum quae in.",
-      "summary": "summary",
-      "summary_e": "summary",
+      "summary": "",
+      "summary_e": "",
       "is_keynote": false,
       "started_at": 1571446800,
       "ended_at": 1571450400,
@@ -348,28 +295,11 @@
         "web": "",
         "mobile": "",
       },
-      "tags": [
-        {
-          "color": "#01aaf0",
-          "name": "Blockchain"
-        },
-        {
-          "color": "#01aaf0",
-          "name": "IoT"
-        },
-        {
-          "color": "#ff4492",
-          "name": "Startup"
-        }
-      ],
-      "recordable": true,
+      "tags": [],
+      "recordable": false,
       "level": "Basic",
       "session_id": 2019101,
-      "sponsor_info": {
-        "name": "大國集團公司",
-        "name_e": "Da Kao",
-        "logo_path": "https://picsum.photos/200"
-      }
+      "sponsor_id": 0
     }
   }
   ```
