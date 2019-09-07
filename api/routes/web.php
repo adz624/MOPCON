@@ -51,5 +51,9 @@ $router->group(['prefix' => 'api'], function ($router) {
             $router->get('/list', 'SessionController@getSessionList');
             $router->get('/{id}', 'SessionController@show');
         });
+        $router->group(['prefix' => 'home'], function ($router) {
+            $router->get('/', 'AppHomeController@index');
+            $router->get('/images/{name}', 'AppHomeController@show');
+        });
     });
 });
