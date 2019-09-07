@@ -114,3 +114,9 @@ a {
     height: 2px;
   }
 }
+
+.icon-brackets {
+  &:before {
+    content: '{ ';
+  }
+}

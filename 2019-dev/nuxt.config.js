@@ -163,6 +163,7 @@ module.exports = {
     routeScheduleUnconf: process.env.SCHEDULE_UNCONF === 'false' ? false : true,
     routeSponsor: process.env.SPONSOR === 'false' ? false : true,
     routeCommunity: process.env.COMMUNITY === 'false' ? false : true,
+    routeTicket: process.env.TICKET === 'false' ? false : true,
     yearUrl: '/2019',
   },
 
