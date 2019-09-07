@@ -4,6 +4,7 @@
   width: 100%;
   min-height: 303px;
   transition: all 0.3s;
+  cursor: pointer;
   &:hover {
     background-color: $colorBg3;
     .card__btn {
@@ -180,7 +181,6 @@
       margin-top: 0;
     }
   }
-
 }
 
 // 多講者
@@ -194,11 +194,11 @@
     max-width: calc(100% - 50px);
     padding-right: 0px;
   }
-
 }
 
 .card.big.more {
-  &:before, &:after {
+  &:before,
+  &:after {
     display: none;
   }
 
@@ -209,9 +209,7 @@
       padding: 13px 26px 12px 19px;
     }
   }
-
 }
-
 
 .card.active {
   background-color: $colorBg3;

@@ -8,7 +8,8 @@
                 <div class="card__content__tag filter-btn-primary active"
                     :style="`backgroundColor: ${tag.color}`"
                     v-for="tag in cardData.tags"
-                    :key="tag.name">
+                    :key="tag.name"
+                    @click.stop="handleTagClick(tag.name)">
                     {{tag.name}}
                 </div>
             </div>
@@ -24,14 +25,14 @@
 
             <!-- 講者介紹 -->
             <div class="card__content__speaker" v-if="cardData.speakers.length > 0">
-              <div class="card__content__speaker__item"
-              v-for="speaker in cardData.speakers"
-              :key="speaker.speaker_id">
-                <img class="card__content__speaker__avatar"
-                    :src="speaker.img.mobile"
-                    :alt="speaker[`name${langPrefix}`]">
-                <div class="card__content__speaker__name">{{speaker[`name${langPrefix}`]}}</div>
-              </div>
+                <div class="card__content__speaker__item"
+                    v-for="speaker in cardData.speakers"
+                    :key="speaker.speaker_id">
+                    <img class="card__content__speaker__avatar"
+                        :src="speaker.img.mobile"
+                        :alt="speaker[`name${langPrefix}`]">
+                    <div class="card__content__speaker__name">{{speaker[`name${langPrefix}`]}}</div>
+                </div>
             </div>
         </div>
         <div class="card__btn" @click="handleShowDetail(cardData.session_id)"></div>

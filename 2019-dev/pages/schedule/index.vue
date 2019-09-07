@@ -114,7 +114,9 @@
             <CardDetail v-if="sessionDetail"
                 :cardData="sessionDetail"
                 :langPrefix="langPrefix"
-                :detailUrl="sessionDetailUrl" />
+                :detailUrl="sessionDetailUrl"
+                @onModalClose="closeModal"
+                @onTagClick="handleKeywordClick" />
         </Modal>
     </div>
 </template>
@@ -270,10 +272,6 @@ export default {
         next();
     },
     methods: {
-        formatDateLang(day) {
-            new Date(day).getDay();
-            console.log('day', new Date(day).getDay());
-        },
         filterBtnClass(color) {
             if (color === '#01aaf0') return 'filter-btn-primary';
             if (color === '#98ce02') return 'filter-btn-secondary';
