@@ -2,7 +2,7 @@
     <div class="cardDetail">
         <div class="cardDetail__time">
             <span>{{cardData.floor}} {{cardData.room}}</span>
-            <span>{{(cardData.started_at * 1000) | moment("HH mm")}} - {{(cardData.ended_at * 1000) | moment("HH mm")}}</span>
+            <span>{{(cardData.started_at * 1000) | moment("HH:mm")}} - {{(cardData.ended_at * 1000) | moment("HH:mm")}}</span>
         </div>
 
         <!-- 課程類型標籤 -->
@@ -28,16 +28,16 @@
 
         <!-- 講者介紹 -->
         <div class="cardDetail__speaker" v-if="cardData.speakers.length > 0">
-          <div class="cardDetail__speaker__item" v-for="speaker in cardData.speakers" :key="speaker.speaker_id">
-            <img class="cardDetail__speaker__avatar"
-                :src="speaker.img.mobile"
-                :alt="speaker[`name${langPrefix}`]">
-            <div class="cardDetail__speaker__info">
-                <div class="cardDetail__speaker__info__name">{{speaker[`name${langPrefix}`]}}</div>
-                <div class="cardDetail__speaker__info__company">{{speaker[`company${langPrefix}`]}}</div>
-                <div class="cardDetail__speaker__info__job">{{speaker[`job_title${langPrefix}`]}}</div>
+            <div class="cardDetail__speaker__item" v-for="speaker in cardData.speakers" :key="speaker.speaker_id">
+                <img class="cardDetail__speaker__avatar"
+                    :src="speaker.img.mobile"
+                    :alt="speaker[`name${langPrefix}`]">
+                <div class="cardDetail__speaker__info">
+                    <div class="cardDetail__speaker__info__name">{{speaker[`name${langPrefix}`]}}</div>
+                    <div class="cardDetail__speaker__info__company">{{speaker[`company${langPrefix}`]}}</div>
+                    <div class="cardDetail__speaker__info__job">{{speaker[`job_title${langPrefix}`]}}</div>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="cardDetail__btn"
@@ -72,6 +72,13 @@ export default {
         },
         onError: function(e) {
             alert(this.$t('pages.schedule.scheduleCopyFail'));
+        },
+        handleTagClick(id) {
+            this.modalClose();
+            this.$emit('onTagClick', id);
+        },
+        modalClose() {
+            this.$emit('onModalClose', false);
         },
     },
 };
