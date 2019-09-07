@@ -13,6 +13,7 @@ class UnconfController extends Controller
         'isBroadCast' => '',
         'event' => '',
         'room' => [
+            'speaker_id' => 0,
             'company' => '',
             'company_e' => '',
             'job_title' => '',
@@ -29,11 +30,6 @@ class UnconfController extends Controller
             'tags' => [],
             'recordable' => true,
             'level' => 'Basic',
-            'sponsor_info' => [
-                'name' => '',
-                'name_e' => '',
-                'logo_path' => ''
-            ]
         ]
     ];
 
@@ -119,12 +115,10 @@ class UnconfController extends Controller
         array_walk($rawArr, function ($subset) use (&$result) {
             // loop over every period
             array_walk($subset['period'], function ($unconf) use (&$result){
-                 // loop over every room
-                array_walk($unconf['room'], function ($room) use (&$result){
-                    $result[$room['session_id']] = $room;
-                });
+                $result[$unconf['room']['session_id']] = $unconf['room'];
             });
         });
+
         return $result;
     }
 

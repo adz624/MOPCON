@@ -8,7 +8,6 @@
         "room": {
           "name": "家佳",
           "name_e": "Hilbert Boyle",
-          "speaker_id": 1,
           "topic": "Maxime nesciunt.",
           "topic_e": "Est aliquid sed eum quae in.",
           "started_at": 1571446800,
@@ -27,7 +26,6 @@
         "room": {
           "name": "家佳",
           "name_e": "Hilbert Boyle",
-          "speaker_id": 2,
           "topic": "Maxime nesciunt.",
           "topic_e": "Est aliquid sed eum quae in.",
           "started_at": 1571533200,
