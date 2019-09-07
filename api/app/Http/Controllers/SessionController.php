@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Service\SpeakerService;
+use App\Service\SessionService;
 use Illuminate\Http\Request;
 
 class SessionController extends Controller
@@ -148,10 +149,27 @@ class SessionController extends Controller
             if (isset($this->sponsors[$speaker['sponsor_id']])) {
                 $session['sponsor_info'] = $this->sponsors[$speaker['sponsor_id']];
             }
-            $session['session_id'] = $this->sessionSpeakerMapping[$speaker['speaker_id']];
-            $sessions[$this->sessionSpeakerMapping[$speaker['speaker_id']]] = $session;
+            $session_id = $this->sessionSpeakerMapping[$speaker['speaker_id']];
+            $session['session_id'] = $session_id;
+            $this->convertToMultipleSpeaker($sessions, $session, $session_id);
         }
 
         return $sessions;
+    }
+
+    /**
+     * @param array $sessions
+     * @param array $session
+     * @param int   $session_id
+     */
+    private function convertToMultipleSpeaker(array &$sessions, array &$session, int $session_id): void
+    {
+        if (!isset($sessions[$session_id])) {
+            $session['speakers'] = [];
+            $session['speakers'][] = SessionService::transportMultipleSpeaker($session);
+            $sessions[$session_id] = $session;
+        } else {
+            $sessions[$session_id]['speakers'][] = SessionService::transportMultipleSpeaker($session);
+        }
     }
 }
