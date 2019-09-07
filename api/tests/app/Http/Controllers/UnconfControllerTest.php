@@ -16,7 +16,7 @@ class UnconfControllerTest extends TestCase
 
     public function testSpecificUnconf()
     {
-        $id = "2019101";
+        $id = '2019101';
         $response = $this->call('GET', '/api/2019/unconf/' . $id);
         $result = json_decode($response->getContent(), true);
         $this->assertEquals(true, $result['success']);
@@ -32,7 +32,7 @@ class UnconfControllerTest extends TestCase
 
     public function testWrongSpecificUnconf()
     {
-        $id = "2019000";
+        $id = '2019000';
         $response = $this->call('GET', '/api/2019/unconf/' . $id);
         $result = json_decode($response->getContent(), true);
         $this->assertEquals(false, $result['success']);

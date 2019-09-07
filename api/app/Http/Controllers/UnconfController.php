@@ -11,33 +11,34 @@ class UnconfController extends Controller
     protected $function = 'unconf';
     private $missingStructure = [
         'period' => [
-            "isBroadCast" => "",
-            "event" => "",
-            "room" => [
-                "company" => "",
-                "company_e" => "",
-                "job_title" => "",
-                "job_title_e" => "",
-                "summary" => "",
-                "summary_e" => "",
-                "is_keynote" => false,
-                "room" => "UnConf",
-                "floor" => "3F",
-                "img" => [
-                    "web" => "",
-                    "mobile" => ""
+            'isBroadCast' => '',
+            'event' => '',
+            'room' => [
+                'company' => '',
+                'company_e' => '',
+                'job_title' => '',
+                'job_title_e' => '',
+                'summary' => '',
+                'summary_e' => '',
+                'is_keynote' => false,
+                'room' => 'UnConf',
+                'floor' => '3F',
+                'img' => [
+                    'web' => '',
+                    'mobile' => ''
                 ],
-                "tags" => [],
-                "recordable" => true,
-                "level" => "Basic",
-                "sponsor_info" => [
-                    "name" => "",
-                    "name_e" => "",
-                    "logo_path" => ""
+                'tags' => [],
+                'recordable' => true,
+                'level' => 'Basic',
+                'sponsor_info' => [
+                    'name' => '',
+                    'name_e' => '',
+                    'logo_path' => ''
                 ]
             ]
         ]
     ];
+
     /**
      * fill correct format into json
      */
@@ -46,6 +47,7 @@ class UnconfController extends Controller
         parent::__construct();
         $this->mapMissingStructure();
     }
+
     /**
      * return all unconf data.
      *
@@ -55,6 +57,7 @@ class UnconfController extends Controller
     {
         return $this->returnSuccess('success', $this->jsonAry);
     }
+
     /**
      * return specific tags of unconf data.
      *
@@ -86,6 +89,7 @@ class UnconfController extends Controller
         }
         return $this->returnSuccess('success', $result);
     }
+
     /**
      * return specific id of unconf data.
      *
@@ -102,9 +106,10 @@ class UnconfController extends Controller
         }
         return $this->returnNotFoundError();
     }
+
     /**
      * map all id and unconf conference.
-     * 
+     *
      * we can store result into redis so we don't have to do that over and over again.
      *
      * @return array
@@ -124,6 +129,7 @@ class UnconfController extends Controller
         });
         return $result;
     }
+
     private function mapMissingStructure()
     {
         // loop over everyday
