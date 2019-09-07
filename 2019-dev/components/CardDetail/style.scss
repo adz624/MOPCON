@@ -64,7 +64,20 @@
 
   &__speaker {
     display: flex;
+    flex-flow: column nowrap;
     margin-top: 45px;
+
+    &__item {
+      display: flex;
+      width: 100%;
+    }
+
+    &__item + &__item {
+      margin-top: 54px;
+      @include rwd(sm) {
+        margin-top: 31px;
+      }
+    }
 
     &__avatar {
       width: 80px;

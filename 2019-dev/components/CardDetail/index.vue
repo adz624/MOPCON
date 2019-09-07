@@ -27,16 +27,19 @@
         </div>
 
         <!-- 講者介紹 -->
-        <div class="cardDetail__speaker">
+        <div class="cardDetail__speaker" v-if="cardData.speakers.length > 0">
+          <div class="cardDetail__speaker__item" v-for="speaker in cardData.speakers" :key="speaker.speaker_id">
             <img class="cardDetail__speaker__avatar"
-                :src="cardData.img.mobile"
-                :alt="cardData[`name${langPrefix}`]">
+                :src="speaker.img.mobile"
+                :alt="speaker[`name${langPrefix}`]">
             <div class="cardDetail__speaker__info">
-                <div class="cardDetail__speaker__info__name">{{cardData[`name${langPrefix}`]}}</div>
-                <div class="cardDetail__speaker__info__company">{{cardData[`company${langPrefix}`]}}</div>
-                <div class="cardDetail__speaker__info__job">{{cardData[`job_title${langPrefix}`]}}</div>
+                <div class="cardDetail__speaker__info__name">{{speaker[`name${langPrefix}`]}}</div>
+                <div class="cardDetail__speaker__info__company">{{speaker[`company${langPrefix}`]}}</div>
+                <div class="cardDetail__speaker__info__job">{{speaker[`job_title${langPrefix}`]}}</div>
             </div>
+          </div>
         </div>
+
         <div class="cardDetail__btn"
             v-clipboard:copy="detailUrl"
             v-clipboard:success="onCopy"

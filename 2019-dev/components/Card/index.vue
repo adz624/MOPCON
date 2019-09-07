@@ -1,5 +1,5 @@
 <template>
-    <div class="card" :class="type" @click="handleShowDetail(cardData.session_id)">
+    <div class="card" :class="[type, {more: cardData.speakers.length > 1}]" @click="handleShowDetail(cardData.session_id)">
         <div class="card__head">{{cardData.room}}({{cardData.floor}})</div>
         <div class="card__content">
 
@@ -23,11 +23,15 @@
             </div>
 
             <!-- 講者介紹 -->
-            <div class="card__content__speaker">
+            <div class="card__content__speaker" v-if="cardData.speakers.length > 0">
+              <div class="card__content__speaker__item"
+              v-for="speaker in cardData.speakers"
+              :key="speaker.speaker_id">
                 <img class="card__content__speaker__avatar"
-                    :src="cardData.img.mobile"
-                    :alt="cardData[`name${langPrefix}`]">
-                <div class="card__content__speaker__name">{{cardData[`name${langPrefix}`]}}</div>
+                    :src="speaker.img.mobile"
+                    :alt="speaker[`name${langPrefix}`]">
+                <div class="card__content__speaker__name">{{speaker[`name${langPrefix}`]}}</div>
+              </div>
             </div>
         </div>
         <div class="card__btn" @click="handleShowDetail(cardData.session_id)"></div>
