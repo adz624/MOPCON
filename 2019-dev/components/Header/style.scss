@@ -260,7 +260,7 @@
     display: flex;
     margin-left: 116px;
     @include rwd(lg) {
-      margin-left: 60px;
+      margin-left: 10px;
     }
 
     @include rwd(md) {

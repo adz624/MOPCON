@@ -11,6 +11,8 @@ $colorWhite: #fff;
 $colorGray: #848a8e;
 $colorGrayLight: #f0f1f2;
 $colorFont: $colorGrayLight;
+$colorCardPrimary: #01aaf0;
+$colorCardSecondary: #98ce02;
 
 $fontStyle: 'Noto Sans TC', '微軟正黑體', 'sans-serif', 'Noto Sans', 'Helvetica',
   'roboto', arial, sans-serif;
@@ -98,6 +100,11 @@ $fontStyle: 'Noto Sans TC', '微軟正黑體', 'sans-serif', 'Noto Sans', 'Helve
   }
   @if $point == lg {
     @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $point == llgs {
+    @media (max-width: 1440px) {
       @content;
     }
   }

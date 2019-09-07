@@ -96,6 +96,13 @@ export default {
                     subIsOpen: false,
                     open: process.env.routeSponsor,
                 },
+                {
+                    name: 'ticket',
+                    url: '/ticket',
+                    subNav: [],
+                    subIsOpen: false,
+                    open: process.env.routeTicket,
+                },
             ],
         };
     },
