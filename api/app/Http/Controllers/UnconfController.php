@@ -10,8 +10,7 @@ class UnconfController extends Controller
 
     protected $function = 'unconf';
     private $missingStructure = [
-        'isBroadCast' => '',
-        'event' => '',
+        'isBroadCast' => false,
         'room' => [
             'speaker_id' => 0,
             'company' => '',
@@ -30,6 +29,7 @@ class UnconfController extends Controller
             'tags' => [],
             'recordable' => true,
             'level' => 'Basic',
+            'sponsor_id' => 0
         ]
     ];
 
@@ -59,26 +59,18 @@ class UnconfController extends Controller
      */
     public function getUnconfList(Request $request)
     {
-        $tagsStr = $request->get('tags', '');
-        $tagsArr = $tagsStr == '' ? [] : explode(',', $tagsStr);
         $result = [];
         // loop over everyday
-        array_walk($this->jsonAry, function ($subset) use (&$result, &$tagsArr) {
+        array_walk($this->jsonAry, function ($subset) use (&$result) {
             // loop over every period
-            array_walk($subset['period'], function ($unconf) use (&$result, &$tagsArr){
+            array_walk($subset['period'], function ($unconf) use (&$result){
                 // merge specific data in result
-                $result = array_merge($result, array_filter($unconf['room'], function ($room) use (&$tagsArr){
-                    foreach ($room['tags'] as $key => $tags) {
-                        // if this confernce contain the tags we want
-                        if(in_array($tags['name'], $tagsArr)){
-                            return true;
-                        }
-                    }
-                    return false;
-                }));
+                if (!empty($unconf['room'])) {
+                    $result[] = $unconf['room'][0];
+                }
             });
         });
-        if ($result == []) {
+        if (empty($result)) {
             return $this->returnNotFoundError();
         }
         return $this->returnSuccess('success', $result);
@@ -115,7 +107,9 @@ class UnconfController extends Controller
         array_walk($rawArr, function ($subset) use (&$result) {
             // loop over every period
             array_walk($subset['period'], function ($unconf) use (&$result){
-                $result[$unconf['room']['session_id']] = $unconf['room'];
+                if (!empty($unconf['room'])) {
+                    $result[$unconf['room'][0]['session_id']] = $unconf['room'];
+                }
             });
         });
 
@@ -127,9 +121,18 @@ class UnconfController extends Controller
         // loop over everyday
         foreach ($this->jsonAry as $key => &$subset){
             // loop over every period
-            foreach ($subset['period'] as $periodKey => &$periodSubset){
-                $periodSubset = array_merge_recursive($this->missingStructure, $periodSubset);
-            }
+            array_walk($subset['period'], function (&$periodSubset) {
+                $result = array_merge_recursive($this->missingStructure, $periodSubset);
+                $result['room']['started_at'] = $result['started_at'];
+                $result['room']['ended_at'] = $result['ended_at'];
+                $room = $result['room'];
+                unset($result['room']);
+                $result['room'] = [];
+                if ($result['event'] === '') {
+                    $result['room'][] = $room;
+                }
+                $periodSubset = $result;
+            });
         }
     }
 }
