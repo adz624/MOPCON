@@ -10,31 +10,29 @@ class UnconfController extends Controller
 
     protected $function = 'unconf';
     private $missingStructure = [
-        'period' => [
-            'isBroadCast' => '',
-            'event' => '',
-            'room' => [
-                'company' => '',
-                'company_e' => '',
-                'job_title' => '',
-                'job_title_e' => '',
-                'summary' => '',
-                'summary_e' => '',
-                'is_keynote' => false,
-                'room' => 'UnConf',
-                'floor' => '3F',
-                'img' => [
-                    'web' => '',
-                    'mobile' => ''
-                ],
-                'tags' => [],
-                'recordable' => true,
-                'level' => 'Basic',
-                'sponsor_info' => [
-                    'name' => '',
-                    'name_e' => '',
-                    'logo_path' => ''
-                ]
+        'isBroadCast' => '',
+        'event' => '',
+        'room' => [
+            'company' => '',
+            'company_e' => '',
+            'job_title' => '',
+            'job_title_e' => '',
+            'summary' => '',
+            'summary_e' => '',
+            'is_keynote' => false,
+            'room' => 'UnConf',
+            'floor' => '3F',
+            'img' => [
+                'web' => '',
+                'mobile' => ''
+            ],
+            'tags' => [],
+            'recordable' => true,
+            'level' => 'Basic',
+            'sponsor_info' => [
+                'name' => '',
+                'name_e' => '',
+                'logo_path' => ''
             ]
         ]
     ];
@@ -136,7 +134,7 @@ class UnconfController extends Controller
         foreach ($this->jsonAry as $key => &$subset){
             // loop over every period
             foreach ($subset['period'] as $periodKey => &$periodSubset){
-                $periodSubset = array_merge_recursive($this->missingStructure['period'], $periodSubset);
+                $periodSubset = array_merge_recursive($this->missingStructure, $periodSubset);
             }
         }
     }
