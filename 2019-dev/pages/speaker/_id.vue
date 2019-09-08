@@ -10,7 +10,7 @@
         <div id="tag_area">
           <div class="tag">
             <label v-for="(tag, index) in tagsList" :class="{'active': selectedTags.includes(tag.name), 'filter-btn-primary': tag.color == '#01aaf0',
-                        'filter-btn-third': tag.color == '#ff4492', 'filter-btn-secondary': tag.color == '#98ce02'}"
+                          'filter-btn-third': tag.color == '#ff4492', 'filter-btn-secondary': tag.color == '#98ce02'}"
               :key="tag.name">
               <input class="hidden" type="checkbox" :value="tag.name" v-model="selectedTags">
               <span>{{ selectedTags.includes(tag.name)? 'x '+ tag.name : tag.name }}</span>
@@ -20,8 +20,7 @@
             v-if="selectedTags.length !== 0"><small>清除篩選</small></a>
         </div>
         <div class="section__speaker__list" v-if="speakerHasTagsList.length != 0">
-          <div class="section__speaker__card" v-for="speaker in speakerHasTagsList" :key="speaker.speaker_id"
-            @click="openModal(speaker)">
+          <div class="section__speaker__card" v-for="speaker in speakerHasTagsList">
             <img class="section-master-speaker__img" :src="speaker.img.web" alt="" width="140px" height="140px">
             <h3 class="section-master-speaker__name">{{ speaker.name }}</h3>
             <div class="section-master-speaker__content">
@@ -94,6 +93,7 @@
 </template>
 
 <script>
+  import axios from 'axios';
   import Modal from "~/components/Modal";
   import SectionApp from '~/components/SectionApp';
 
@@ -102,11 +102,71 @@
       Modal,
       SectionApp,
     },
+    validate({ params }) {
+      return !isNaN(+params.id)
+    },
+    async asyncData({ params }) {
+      const { data } = await axios.get(`${process.env.BASE_URL}/api/2019/speaker/${params.id}`)
+      return { tempSpeakerData: data.data }
+    },
+    head() {
+      return {
+        title: `${this.tempSpeakerData.name} | 講者 MOPCON 2019`,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: this.tempSpeakerData.summary,
+          },
+          // fb
+          {
+            hid: 'og-title',
+            property: 'og:title',
+            content: `${this.tempSpeakerData.name} | 講者 MOPCON 2019`,
+          },
+          {
+            hid: 'og-description',
+            property: 'og:description',
+            content: this.tempSpeakerData.summary,
+          },
+          {
+            hid: 'og-url',
+            property: 'og:url',
+            content: `https://mopcon.org/2019/speaker/${this.tempSpeakerData.speaker_id}`,
+          },
+          {
+            hid: 'og-image',
+            property: 'og:image',
+            content: `https://mopcon.org/2019/images/${this.tempSpeakerData.img.web}`,
+          },
+          // twitter seo
+          {
+            hid: 'twitter-site',
+            name: 'twitter:site',
+            content: `${this.tempSpeakerData.name} | 講者 MOPCON 2019`,
+          },
+          {
+            hid: 'twitter-description',
+            name: 'twitter:description',
+            content: this.tempSpeakerData.summary,
+          },
+          {
+            hid: 'twitter-app:name:iphone',
+            name: 'twitter:app:name:iphone',
+            content: `${this.tempSpeakerData.name} | 講者 MOPCON 2019`,
+          },
+          {
+            hid: 'twitter-app:name:ipad',
+            name: 'twitter:app:name:ipad',
+            content: `${this.tempSpeakerData.name} | 講者 MOPCON 2019`,
+          },
+        ],
+      };
+    },
     data() {
       return {
         spearkerList: [],
         modalOpen: false,
-        tempSpeakerData: {},
         tagsList: [],
         selectedTags: [],
         nowUrl: '',
@@ -138,13 +198,15 @@
             }
           })
       },
-      openModal(data) {
+      openModal() {
         const vm = this;
-        vm.tempSpeakerData = data;
         vm.modalOpen = true;
       },
       closeModal(show) {
         this.modalOpen = show;
+        if (!show) {
+          location.href = '/2019/speaker'
+        }
       },
       copyLink(link) {
         const temp = document.createElement('input');
@@ -194,6 +256,7 @@
       const vm = this;
       vm.getTags();
       vm.getSpeakerData();
+      vm.openModal();
       vm.nowUrl = `${process.env.BASE_URL}/2019/speaker`;
       const tagArea = document.getElementById("tag_area");
       const sticky = tagArea.offsetParent.offsetTop +
