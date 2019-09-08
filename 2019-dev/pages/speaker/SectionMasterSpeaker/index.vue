@@ -62,8 +62,9 @@
           <p v-if="tempSpeakerData.tags != ''">課程主題 <span class="basic-badge-primary"
               v-for="tag in tempSpeakerData.tags">{{ tag.name }}</span></p>
           <h3 class="topic__title color-third">{{ tempSpeakerData.topic }}</h3>
-          <p class="topic__time">時間： {{ fullTime }}　<br class="break">
-            地點：{{ tempSpeakerData.room }}({{ tempSpeakerData.floor }})</p>
+          <p class="topic__time" v-if="tempSpeakerData.started_at && tempSpeakerData.ended_at">時間： {{ fullTime }}　<br class="break">
+            <span v-if="tempSpeakerData.room && tempSpeakerData.floor">地點：{{ tempSpeakerData.room }}({{ tempSpeakerData.floor }})</span>
+          </p>
         </div>
         <div class="sponsor" v-if="tempSpeakerData.sponsor_id !== 0 && Object.keys(tempSpeakerData).length !== 0" >
           <p class="color-primary">贊助廠商</p>
@@ -86,56 +87,66 @@
       Modal,
     },
     head() {
-      let speaker = this.tempSpeakerData
+      let speaker = this.tempSpeakerData;
+      let title = `講者 | MOPCON 2019`;
+      let description = `MOPCON 2019 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。`;
+      let url = `${process.env.BASE_URL}/2019/speaker`;
+      let image = `https://mopcon.org/2019/banner.png`;
+      if (this.$route.query.id && speaker && speaker.img) {
+        title = `${speaker.name} | 講者 MOPCON 2019`;
+        description = `${speaker.summary}`
+        url = `${process.env.BASE_URL}/2019/speaker?id=${speaker.speaker_id}`
+        image = `${speaker.img.web}`
+      }
       return {
         title: `講者 | MOPCON 2019`,
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: `${speaker.summary}`,
+            content: description,
           },
           // fb
           {
             hid: 'og-title',
             property: 'og:title',
-            content: `${speaker.name} | 講者 MOPCON 2019`,
+            content: title,
           },
           {
             hid: 'og-description',
             property: 'og:description',
-            content: `${speaker.summary}`,
+            content: description,
           },
           {
             hid: 'og-url',
             property: 'og:url',
-            content: `${process.env.BASE_URL}/2019/speaker?id=${speaker.speaker_id}`,
+            content: url,
           },
           {
             hid: 'og-image',
             property: 'og:image',
-            content: `${speaker.photo_for_session_web}`,
+            content: image,
           },
           // twitter seo
           {
             hid: 'twitter-site',
             name: 'twitter:site',
-            content: `${speaker.name} | 講者 MOPCON 2019`,
+            content: title,
           },
           {
             hid: 'twitter-description',
             name: 'twitter:description',
-            content: `${speaker.summary}`
+            content: description,
           },
           {
             hid: 'twitter-app:name:iphone',
             name: 'twitter:app:name:iphone',
-            content: `${speaker.name} | 講者 MOPCON 2019`,
+            content: title,
           },
           {
             hid: 'twitter-app:name:ipad',
             name: 'twitter:app:name:ipad',
-            content: `${speaker.name} | 講者 MOPCON 2019`,
+            content: title,
           },
         ],
       };
