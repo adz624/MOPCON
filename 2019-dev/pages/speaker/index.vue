@@ -10,7 +10,7 @@
         <div id="tag_area">
           <div class="tag">
             <label v-for="(tag, index) in tagsList" :class="{'active': selectedTags.includes(tag.name), 'filter-btn-primary': tag.color == '#01aaf0',
-                          'filter-btn-third': tag.color == '#ff4492', 'filter-btn-secondary': tag.color == '#98ce02'}"
+                        'filter-btn-third': tag.color == '#ff4492', 'filter-btn-secondary': tag.color == '#98ce02'}"
               :key="tag.name">
               <input class="hidden" type="checkbox" :value="tag.name" v-model="selectedTags">
               <span>{{ selectedTags.includes(tag.name)? 'x '+ tag.name : tag.name }}</span>
@@ -20,7 +20,8 @@
             v-if="selectedTags.length !== 0"><small>清除篩選</small></a>
         </div>
         <div class="section__speaker__list" v-if="speakerHasTagsList.length != 0">
-          <NuxtLink class="section__speaker__card" v-for="speaker in speakerHasTagsList" :to="'/speaker/' + speaker.speaker_id" :key="speaker.speaker_id">
+          <div class="section__speaker__card" v-for="speaker in speakerHasTagsList" :key="speaker.speaker_id"
+            @click="openModal(speaker)">
             <img class="section-master-speaker__img" :src="speaker.img.web" alt="" width="140px" height="140px">
             <h3 class="section-master-speaker__name">{{ speaker.name }}</h3>
             <div class="section-master-speaker__content">
@@ -29,12 +30,63 @@
             </div>
             <span class="basic-badge-primary" v-for="tag in speaker.tags"
               :style="{'background-color': tag.color}">{{ tag.name }}</span>
-        </NuxtLink>
+          </div>
         </div>
         <div class="section__speaker__noSpeaker" v-else>
           <div class="section__speaker__noSpeaker-img"></div>
           <h3 class="color-primary">Oops！沒有符合篩選的講者哦！</h3>
         </div>
+        <Modal :modal-open="modalOpen" @modal-close="closeModal">
+          <div class="modal-body">
+            <div class="section-master-speaker__info">
+              <img v-if="tempSpeakerData.img" :src="tempSpeakerData.img.web" class="section-master-speaker__img" alt=""
+                width="140px" height="140px">
+              <div class="intro">
+                <span class="speaker-badge-third" v-if="tempSpeakerData.is_keynote">Keynote</span>
+                <h3 class="section-master-speaker__name">{{ tempSpeakerData.name }}</h3>
+                <div class="section-master-speaker__content">
+                  <p>{{ tempSpeakerData.company }}</p>
+                  <p>{{ tempSpeakerData.job_title }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="socail_media"
+              :class="{'has_icon': tempSpeakerData.link_fb || tempSpeakerData.link_twitter || tempSpeakerData.link_github || tempSpeakerData.link_other}">
+              <a v-if="tempSpeakerData.link_fb" :href="tempSpeakerData.link_fb" target="_blank">
+                <img src="./images/icon/icon-fb.png" alt="" width="34.5px" height="34.5px">
+              </a>
+              <a v-if="tempSpeakerData.link_twitter" :href="tempSpeakerData.link_twitter" target="_blank">
+                <img src="./images/icon/icon-twitter.png" alt="" width="34.5px" height="34.5px">
+              </a>
+              <a v-if="tempSpeakerData.link_github" :href="tempSpeakerData.link_github" target="_blank">
+                <img src="./images/icon/icon-github.png" alt="" width="34.5px" height="34.5px">
+              </a>
+              <a v-if="tempSpeakerData.link_other" :href="tempSpeakerData.link_other" target="_blank">
+                <img src="./images/icon/icon-web.png" alt="" width="34.5px" height="34.5px">
+              </a>
+            </div>
+            <p class="summary">{{ tempSpeakerData.summary }}</p>
+            <div class="topic">
+              <p v-if="tempSpeakerData.tags != ''">課程主題 <span class="basic-badge-primary"
+                  v-for="tag in tempSpeakerData.tags">{{ tag.name }}</span></p>
+              <h3 class="topic__title color-third">{{ tempSpeakerData.topic }}</h3>
+              <p class="topic__time" v-if="tempSpeakerData.started_at && tempSpeakerData.ended_at">時間：
+                {{ fullTime }}　<br class="break">
+                <span
+                  v-if="tempSpeakerData.room && tempSpeakerData.floor">地點：{{ tempSpeakerData.room }}({{ tempSpeakerData.floor }})</span>
+              </p>
+            </div>
+            <div class="sponsor" v-if="tempSpeakerData.sponsor_id !== 0 && Object.keys(tempSpeakerData).length !== 0">
+              <p class="color-primary">贊助廠商</p>
+              <img :src="getSponsorData(tempSpeakerData.sponsor_id)" alt="" srcset="" width="60px" height="60px">
+            </div>
+            <div class="share">
+              <button class="basic-btn"
+                @click.prevent="copyLink(nowUrl + '/' + tempSpeakerData.speaker_id)">分享講者</button>
+              <small class="share_message">講者連結已複製</small>
+            </div>
+          </div>
+        </Modal>
       </div>
     </div>
     <SectionApp />
@@ -42,15 +94,18 @@
 </template>
 
 <script>
+  import Modal from "~/components/Modal";
   import SectionApp from '~/components/SectionApp';
 
   export default {
     components: {
+      Modal,
       SectionApp,
     },
     data() {
       return {
         spearkerList: [],
+        modalOpen: false,
         tempSpeakerData: {},
         tagsList: [],
         selectedTags: [],
@@ -83,8 +138,47 @@
             }
           })
       },
+      openModal(data) {
+        const vm = this;
+        vm.tempSpeakerData = data;
+        vm.modalOpen = true;
+      },
+      closeModal(show) {
+        this.modalOpen = show;
+      },
+      copyLink(link) {
+        const temp = document.createElement('input');
+        document.querySelector('body').append(temp);
+        temp.value = link;
+        temp.select()
+        document.execCommand("copy");
+        temp.remove();
+      },
+      getSponsorData(id) {
+        const vm = this;
+        vm.$axios.$get(`/api/2019/sponsor?sponsor_id=${id}`)
+          .then(({ success, data, message }) => {
+            if (success) {
+              vm.imgUrl = data[0].logo_path;
+            }
+          })
+        return vm.imgUrl
+      },
     },
     computed: {
+      fullTime: function () {
+        const vm = this;
+        const startDate = new Date();
+        startDate.setTime(vm.tempSpeakerData.started_at * 1000);
+        const endDate = new Date();
+        endDate.setTime(vm.tempSpeakerData.ended_at * 1000);
+        const startHour = (startDate.getHours() < 10 ? '0' + startDate.getHours() : startDate.getHours())
+        const startMin = (startDate.getMinutes() < 10 ? '0' + startDate.getMinutes() : startDate.getMinutes())
+        const endHour = (endDate.getHours() < 10 ? '0' + endDate.getHours() : endDate.getHours())
+        const endMin = (endDate.getMinutes() < 10 ? '0' + endDate.getMinutes() : endDate.getMinutes())
+        const fullDate = `${startDate.getMonth() + 1}/${startDate.getDate()} ${startHour}:${startMin} ~ ${endHour}: ${endMin}`
+        return fullDate
+      },
       speakerHasTagsList: function () {
         const vm = this;
         if (vm.selectedTags.length == 0) {
@@ -100,6 +194,7 @@
       const vm = this;
       vm.getTags();
       vm.getSpeakerData();
+      vm.nowUrl = `${process.env.BASE_URL}/2019/speaker`;
       const tagArea = document.getElementById("tag_area");
       const sticky = tagArea.offsetParent.offsetTop +
         tagArea.offsetParent.offsetParent.offsetTop +
