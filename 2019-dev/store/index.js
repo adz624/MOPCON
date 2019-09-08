@@ -62,6 +62,7 @@ export const state = () => ({
   sessionData: [],
   sessionDetail: null,
   sessionDetailLoading: false,
+  sessionUnconfData: [],
   tags: [],
 });
 
@@ -72,6 +73,11 @@ export const mutations = {
   setSessionData(state, payload) {
     if (Array.isArray(payload)) {
       state.sessionData = payload;
+    }
+  },
+  setSessionUnconfData(state, payload) {
+    if (Array.isArray(payload)) {
+      state.sessionUnconfData = payload;
     }
   },
   setSessionDetail(state, payload) {
@@ -122,6 +128,16 @@ export const actions = {
       }
     });
   },
+  async getSessionUnconfData({ commit }) {
+    try {
+      const { status, data } = await this.$axios.get('/api/2019/unconf');
+      if (status === 200 && data && data.data && data.data.length > 0) {
+        commit('setSessionUnconfData', data.data);
+      }
+    } catch (err) {
+      console.log('err', err);
+    }
+  },
   async getTags({ commit }) {
     try {
       const { status, data } = await this.$axios.get('/api/2019/speaker/tags');
@@ -138,6 +154,7 @@ export const getters = {
   homePageReady: state => state.homePageReady,
   eventResults: state => state.eventResults,
   sessionData: state => state.sessionData,
+  sessionUnconfData: state => state.sessionUnconfData,
   sessionDetail: state => state.sessionDetail,
   sessionDetailLoading: state => state.sessionDetailLoading,
   seoLangTag: state => state.seoLangTag,
