@@ -800,7 +800,8 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
-      "Agile"
+      "Agile",
+      "Panel"
     ]
   },
   {
@@ -836,7 +837,8 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
-      "AI"
+      "AI",
+      "Panel"
     ]
   },
   {
@@ -872,7 +874,8 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
-      "Agile"
+      "Agile",
+      "Panel"
     ]
   },
   {
@@ -907,7 +910,9 @@
     "sponsor_id": 0,
     "recordable": true,
     "level": null,
-    "tags": []
+    "tags": [
+      "Panel"
+    ]
   },
   {
     "name": "Howard",
@@ -941,7 +946,9 @@
     "sponsor_id": 0,
     "recordable": true,
     "level": null,
-    "tags": []
+    "tags": [
+      "Panel"
+    ]
   },
   {
     "name": "游舒帆",
@@ -975,6 +982,8 @@
     "sponsor_id": 0,
     "recordable": true,
     "level": "Basic",
-    "tags": []
+    "tags": [
+      "Panel"
+    ]
   }
 ]

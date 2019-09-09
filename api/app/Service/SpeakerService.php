@@ -10,6 +10,7 @@ class SpeakerService
         ],
         'other' => [
             'Startup',
+            'Panel',
         ],
         'tech' => [],
     ];
