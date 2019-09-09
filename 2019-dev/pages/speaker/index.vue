@@ -81,8 +81,8 @@
               <img :src="getSponsorData(tempSpeakerData.sponsor_id)" alt="" srcset="" width="60px" height="60px">
             </div>
             <div class="share">
-              <button class="basic-btn"
-                @click.prevent="copyLink(nowUrl + '/' + tempSpeakerData.speaker_id)">分享講者</button>
+              <button class="basic-btn" v-clipboard:copy="nowUrl"
+                @click.prevent="copyLink(tempSpeakerData.speaker_id)">分享講者</button>
               <small class="share_message">講者連結已複製</small>
             </div>
           </div>
@@ -147,12 +147,8 @@
         this.modalOpen = show;
       },
       copyLink(link) {
-        const temp = document.createElement('input');
-        document.querySelector('body').append(temp);
-        temp.value = link;
-        temp.select()
-        document.execCommand("copy");
-        temp.remove();
+        const vm = this;
+        vm.nowUrl = `${process.env.BASE_URL}/2019/speaker/${link}`;
       },
       getSponsorData(id) {
         const vm = this;
@@ -194,7 +190,6 @@
       const vm = this;
       vm.getTags();
       vm.getSpeakerData();
-      vm.nowUrl = `${process.env.BASE_URL}/2019/speaker`;
       const tagArea = document.getElementById("tag_area");
       const sticky = tagArea.offsetParent.offsetTop +
         tagArea.offsetParent.offsetParent.offsetTop +
