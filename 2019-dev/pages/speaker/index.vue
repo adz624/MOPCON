@@ -65,7 +65,7 @@
                 <img src="./images/icon/icon-web.png" alt="" width="34.5px" height="34.5px">
               </a>
             </div>
-            <p class="summary">{{ tempSpeakerData.summary }}</p>
+            <p class="summary">{{ tempSpeakerData.bio }}</p>
             <div class="topic">
               <p v-if="tempSpeakerData.tags != ''">議程主題 <span class="basic-badge-primary"
                   v-for="tag in tempSpeakerData.tags">{{ tag.name }}</span></p>
