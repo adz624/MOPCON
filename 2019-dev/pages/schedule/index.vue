@@ -12,8 +12,8 @@
                 <div class="btn-group">
                     <button class="btn-primary"
                         :class="{active: checkDateExist(dateBtn.id)}"
-                        @click="handleDateClick(dateBtn.id)"
-                        v-for="dateBtn in filterDateBtns"
+                        @click="handleDateClick(sessionData, dateBtn.id)"
+                        v-for="dateBtn in filterDateBtns(sessionData)"
                         :key="dateBtn.id">
                         {{dateBtn.name}}
                     </button>
@@ -100,8 +100,8 @@
                 <div class="btn-group">
                     <button class="btn-primary"
                         :class="{active: checkDateExist(dateBtn.id)}"
-                        @click="handleDateClick(dateBtn.id)"
-                        v-for="dateBtn in filterDateBtns"
+                        @click="handleDateClick(sessionData, dateBtn.id)"
+                        v-for="dateBtn in filterDateBtns(sessionData)"
                         :key="dateBtn.id">{{dateBtn.name}}</button>
                 </div>
             </div>
@@ -123,11 +123,13 @@
 
 <script>
 import SectionApp from '~/components/SectionApp';
-import TimeList from './TimeList';
+import TimeList from '~/components/TimeList';
 import Card from '~/components/Card';
 import CardDetail from '~/components/CardDetail';
 import Modal from '~/components/Modal';
 import { mapGetters } from 'vuex';
+import i18nMixin from '~/mixins/i18nMixin';
+import scheduleMixin from '~/mixins/scheduleMixin';
 
 export default {
     name: 'schedule',
@@ -136,6 +138,7 @@ export default {
             title: '主議程 | MOPCON 2019',
         };
     },
+    mixins: [i18nMixin, scheduleMixin],
     scrollToTop: false,
     components: {
         SectionApp,
@@ -149,7 +152,6 @@ export default {
             modalOpen: false,
             sessionDetailUrl: '',
             filterKeyword: [],
-            filterDate: 1571414400,
         };
     },
     computed: {
@@ -160,49 +162,10 @@ export default {
             'localeApiPrefix',
             'tags',
         ]),
-        // 依據當前所選語系, 選擇對應的語系資料 (name, name_e)
-        // zh => '',  en => '_e'
-        langPrefix() {
-            const apiPrefix = this.localeApiPrefix.find(
-                item => item.lang === this.$i18n.locale
-            );
-
-            if (apiPrefix) return apiPrefix.prefix;
-            return '';
-        },
         // 議程內容顯示樣式 timelist(時間列表) / cardlist(卡片列表)
         sessionDisplayType() {
             if (this.filterKeyword.length === 0) return 'timelist';
             return 'cardlist';
-        },
-        // 依據議程 sessionData 資料整理出按鈕格式陣列
-        filterDateBtns() {
-            if (this.sessionData.length === 0) return;
-            let btns = [];
-            this.sessionData.forEach(item => {
-                const weeks = [
-                    { zh: '日', en: 'Sun' },
-                    { zh: '一', en: 'Mon' },
-                    { zh: '二', en: 'Tue' },
-                    { zh: '三', en: 'Wed' },
-                    { zh: '四', en: 'Thu' },
-                    { zh: '五', en: 'Fri' },
-                    { zh: '六', en: 'Sat' },
-                ];
-
-                const timestamp = item.date * 1000;
-                const month = new Date(timestamp).getMonth() + 1;
-                const day = new Date(timestamp).getDate();
-                const week = new Date(timestamp).getDay();
-
-                const btn = {
-                    id: item.date,
-                    name: `${month}/${day} (${weeks[week][this.$i18n.locale]})`,
-                };
-
-                btns.push(btn);
-            });
-            return btns;
         },
         // 議程 timelist 顯示資料格式
         selectSessionDate() {
@@ -277,10 +240,6 @@ export default {
             if (color === '#98ce02') return 'filter-btn-secondary';
             if (color === '#ff4492') return 'filter-btn-third';
         },
-        checkDateExist(dateId) {
-            if (this.filterDate === dateId) return true;
-            return false;
-        },
         checkKeywordExist(keyword) {
             const keywordIndex = this.filterKeyword.findIndex(
                 id => id === keyword
@@ -304,8 +263,8 @@ export default {
                 this.filterKeyword.push(keyword);
             }
         },
-        handleDateClick(dateId) {
-            const isExist = this.sessionData.some(item => item.date === dateId);
+        handleDateClick(sessionData, dateId) {
+            const isExist = sessionData.some(item => item.date === dateId);
             if (!isExist) return;
 
             this.filterDate = dateId;
