@@ -67,7 +67,7 @@
             </div>
             <p class="summary">{{ tempSpeakerData.summary }}</p>
             <div class="topic">
-              <p v-if="tempSpeakerData.tags != ''">課程主題 <span class="basic-badge-primary"
+              <p v-if="tempSpeakerData.tags != ''">議程主題 <span class="basic-badge-primary"
                   v-for="tag in tempSpeakerData.tags">{{ tag.name }}</span></p>
               <h3 class="topic__title color-third">{{ tempSpeakerData.topic }}</h3>
               <p class="topic__time" v-if="tempSpeakerData.started_at && tempSpeakerData.ended_at">時間：
