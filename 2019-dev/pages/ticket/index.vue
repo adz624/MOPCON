@@ -70,7 +70,7 @@ export default {
                 {
                     title: '會眾票',
                     id: 1,
-                    status: 2,
+                    status: 0,
                     count: 500,
                     price: 800,
                     beEngaged: false,
@@ -81,7 +81,7 @@ export default {
                 {
                     title: 'Beengaged 醞釀之夜',
                     id: 2,
-                    status: 1,
+                    status: 0,
                     count: 70,
                     price: 0,
                     beEngaged: true,
@@ -94,7 +94,7 @@ export default {
                 {
                     title: 'VIP票',
                     id: 3,
-                    status: 1,
+                    status: 0,
                     count: 20,
                     price: 2600,
                     beEngaged: false,
@@ -111,7 +111,7 @@ export default {
                 {
                     title: 'VVIP票',
                     id: 4,
-                    status: 1,
+                    status: 0,
                     count: 10,
                     price: 3200,
                     beEngaged: false,
@@ -130,7 +130,7 @@ export default {
                 {
                     title: '學生票',
                     id: 5,
-                    status: 1,
+                    status: 0,
                     count: 130,
                     price: 100,
                     beEngaged: false,
@@ -141,7 +141,7 @@ export default {
                 {
                     title: '菁英學生票',
                     id: 6,
-                    status: 1,
+                    status: 0,
                     count: 20,
                     price: 300,
                     beEngaged: false,
