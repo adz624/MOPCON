@@ -131,7 +131,7 @@ export default {
                     title: '學生票',
                     id: 5,
                     status: 0,
-                    count: 130,
+                    count: 140,
                     price: 100,
                     beEngaged: false,
                     type: 'third',
