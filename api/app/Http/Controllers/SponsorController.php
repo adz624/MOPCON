@@ -94,9 +94,12 @@ class SponsorController extends Controller
                     'topic_name_e' => $speaker['topic_e'],
                     'name' => $speaker['name'],
                     'name_e' => $speaker['name_e'],
+                    'job_title' => $speaker['job_title'],
+                    'job_title_e' => $speaker['job_title_e'],
                     'started_at' => $speaker['started_at'],
                     'endeded_at' => $speaker['ended_at'],
                     'room' => $speaker['room'],
+                    'floor' => $speaker['floor'],
                     'tags' => $tags,
                 ];
             }
