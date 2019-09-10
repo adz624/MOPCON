@@ -26,13 +26,13 @@
               <img src="./images/Icon_facebook.png" alt="facebookIcon" width="24px" height="24px">
             </a>
             <a v-if="tempCommunityData.twitter" :href="tempCommunityData.twitter" target="_blank">
-              <img src="./images/Icon_twitter.png" alt="twitterIcon" width="24px" height="24px">
+              <img src="./images/Icon_Twitter.png" alt="twitterIcon" width="24px" height="24px">
             </a>
             <a v-if="tempCommunityData.instagram" :href="tempCommunityData.instagram" target="_blank">
-              <img src="./images/Icon_instagram.png" alt="instagramIcon" width="24px" height="24px">
+              <img src="./images/Icon_Instagram.png" alt="instagramIcon" width="24px" height="24px">
             </a>
             <a v-if="tempCommunityData.telegram" :href="tempCommunityData.telegram" target="_blank">
-              <img src="./images/Icon_telegram.png" alt="telegramIcon" width="24px" height="24px">
+              <img src="./images/Icon_Telegram.png" alt="telegramIcon" width="24px" height="24px">
             </a>
             <a v-if="tempCommunityData.event" :href="tempCommunityData.event" target="_blank">
               <img src="./images/event.png" alt="eventIcon" width="24px" height="24px">
