@@ -30,7 +30,7 @@
 </template>
 
 <script>
-  import * as animationData from "./images/lottie/animate.json";
+  import * as animationData from "@/assets/lottie/animate.json";
 
   export default {
     name: "sectionIntro",

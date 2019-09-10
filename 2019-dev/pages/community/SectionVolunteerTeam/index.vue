@@ -20,7 +20,7 @@
       <div class="section-volunteer-team__sponsor">
         <img src="./images/sponsor.png" alt="" width="115px" height="92px">
         <p class="message-title color-primary">「我有興趣贊助你們。」</p>
-        <a href="/2019/sponsor" class="btn-primary">了解詳情</a>
+        <a target="_blank" href="https://drive.google.com/open?id=1fbjbdAOrs9hGy3r-DkMnyNl5eWgYJsKd" class="btn-primary">了解詳情</a>
         <p>謝謝你願意成為全台最大行動科技領域社群研討會的參與者及貢獻者之一！</p>
       </div>
     </div>
