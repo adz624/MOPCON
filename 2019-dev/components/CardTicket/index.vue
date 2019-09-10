@@ -10,6 +10,7 @@
                 :key="index">
                 {{list}}
             </div>
+            <div v-if="desc" v-html="desc" class="cardTicket__content__desc"></div>
         </div>
         <div class="cardTicket__btn" v-if="!beEngaged">{{btnText}}</div>
     </a>
@@ -54,6 +55,10 @@ export default {
                     'Beengaged 醞釀之夜',
                 ];
             },
+        },
+        desc: {
+            type: String,
+            default: '',
         },
         price: {
             type: Number,
