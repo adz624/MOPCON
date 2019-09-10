@@ -1,7 +1,6 @@
 const path = require('path');
+const axios = require('axios')
 require('dotenv').config();
-
-const eventResult = ['captain-america', 'iron-man', 'hulk', 'black-widow'];
 
 module.exports = {
   mode: 'universal',
@@ -127,6 +126,9 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    { src: '~/plugins/pixel', ssr: false },
+    { src: '~/plugins/i18n' },
+    { src: '~/plugins/route' },
     { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/gsap', ssr: false },
     { src: '~/plugins/vue-gallery', ssr: false },
@@ -135,6 +137,7 @@ module.exports = {
     { src: '~/plugins/vue-clipboard.js', ssr: false },
     { src: '~/plugins/vue-awesom-swiper', ssr: false },
     { src: '~/plugins/vue-social-sharing', ssr: false },
+    { src: '~/plugins/vue-moment.js' },
   ],
 
   /*
@@ -154,6 +157,12 @@ module.exports = {
   },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    routeSpeaker: process.env.SPEAKER === 'false' ? false : true,
+    routeSchedule: process.env.SCHEDULE === 'false' ? false : true,
+    routeScheduleUnconf: process.env.SCHEDULE_UNCONF === 'false' ? false : true,
+    routeSponsor: process.env.SPONSOR === 'false' ? false : true,
+    routeCommunity: process.env.COMMUNITY === 'false' ? false : true,
+    routeTicket: process.env.TICKET === 'false' ? false : true,
     yearUrl: '/2019',
   },
 
@@ -161,7 +170,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: `${process.env.PROXY_URL}${process.env.BASE_URL}`,
   },
 
   /*
@@ -184,12 +193,26 @@ module.exports = {
   generate: {
     dir: path.resolve(__dirname, '../2019/'),
     // dir: '../2019',
-    // 預渲染 event 結果頁面
-    routes: [
-      '/event/captain-america',
-      '/event/iron-man',
-      '/event/hulk',
-      '/event/black-widow',
-    ],
+    // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
+    routes: function () {
+      return axios.get(`${process.env.BASE_URL}/api/2019/speaker`)
+      .then((res) => {
+        // 攤位遊戲頁面
+        let pages = [
+          '/event/captain-america',
+          '/event/iron-man',
+          '/event/hulk',
+          '/event/black-widow',
+        ]
+
+        // 講者頁面
+        res.data.data.forEach(speaker => {
+          pages.push (`/speaker/${speaker.speaker_id}`)
+        })
+        return pages
+      })
+    }
+
+
   },
 };

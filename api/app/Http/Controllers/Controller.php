@@ -9,7 +9,8 @@ class Controller extends BaseController
 {
     protected $function = null;
     protected $jsonAry;
-    private $path = __DIR__ . '/../../../resource/assets/json/';
+    protected $path = __DIR__ . '/../../../resource/assets/json/';
+    protected $imgPath = __DIR__ . '/../../../resource/assets/images/';
 
     public function __construct()
     {

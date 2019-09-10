@@ -1,17 +1,43 @@
 <template>
     <div class="layout">
+        <div class="full-loading" ref="fullLoading"></div>
+        <Header />
         <nuxt />
         <Footer />
     </div>
 </template>
 
 <script>
-import Footer from "~/components/Footer";
+import Footer from '~/components/Footer';
+import Header from '~/components/Header';
 
 export default {
-    name: "layout",
+    name: 'layout',
     components: {
         Footer,
+        Header,
+    },
+    methods: {
+        // client side 初始語系, 先從 localStorage 抓取之前已選定語系, 若無將預設為 zh
+        localInit() {
+            const lang = localStorage.getItem('locale')
+                ? localStorage.getItem('locale')
+                : 'zh';
+            this.$store.commit('setLocale', lang);
+            this.$i18n.locale = lang;
+        },
+        handlePageLoading() {
+            this.$refs.fullLoading.classList.remove('hide');
+            this.$refs.fullLoading.classList.add('animation');
+            setTimeout(() => {
+                this.$refs.fullLoading.classList.add('hide');
+                this.$refs.fullLoading.classList.remove('animation');
+            }, 700);
+        },
+    },
+    mounted() {
+        this.localInit();
+        this.handlePageLoading();
     },
 };
 </script>
@@ -20,6 +46,10 @@ export default {
 .layout {
     overflow-x: hidden;
     background-color: $colorBg;
+    padding-top: 67px;
+    @include rwd(pad) {
+        padding-top: 47px;
+    }
 }
 
 .section {
@@ -85,7 +115,7 @@ export default {
     }
     &:before,
     &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -112,5 +142,25 @@ export default {
         background-color: $colorBg;
         z-index: -1;
     }
+}
+
+.full-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: darken($colorWhite, 20);
+    transition: all 0s;
+    z-index: 3000;
+}
+
+.full-loading.animation {
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.full-loading.hide {
+    z-index: -1;
 }
 </style>

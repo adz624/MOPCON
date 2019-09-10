@@ -25,7 +25,7 @@ class VolunteerController extends TestCase
         $compared = [];
         $compared['volunteer'] = array_map(function ($value) {
             $value['photo'] = url($value['photo']);
-            unset($value['introducion'], $value['introducion_en'], $value['members'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
+            unset($value['introduction'], $value['introduction_en'], $value['members'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
             return $value;
         }, $this->dataset);
 
@@ -97,8 +97,8 @@ class VolunteerController extends TestCase
         if (isset($result['photo']) && $result['photo'] !== '') {
             $result['photo'] = url($result['photo']);
         }
-        if (isset($result['introducion_en']) && $result['introducion_en'] === '') {
-            $result['introducion_en'] = $result['introducion'];
+        if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
+            $result['introduction_en'] = $result['introduction'];
         }
         unset($result['id']);
 

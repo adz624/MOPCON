@@ -44,6 +44,7 @@ class FacebookController extends Controller
             $postsData[$key]['shares'] = $postsData[$key]['shares']['count'] ?? 0;
             $postsData[$key]['likes'] = $postsData[$key]['likes']['summary']['total_count'];
             $postsData[$key]['url'] = $this->facebookUrl.$postsData[$key]['id'];
+            $postsData[$key]['created_time'] = strtotime($postsData[$key]['created_time']);
         }
         return $this->returnSuccess('Success get posts', $postsData);
     }

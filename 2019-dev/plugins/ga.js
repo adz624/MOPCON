@@ -17,14 +17,17 @@ if (process.client && process.env.NODE_ENV === 'production') {
 
 export default ({ app: { router }, store }) => {
   /*
+  ** 只在生產模式的客戶端中使用
   ** 每次路由變更時進行PV統計
   */
-  router.afterEach((to, from) => {
-    /*
-    ** 告訴GA增加一個PV
-    */
-    const urlPrefix = '/2019'
-    ga('set', 'page', `${urlPrefix}${to.fullPath}`)
-    ga('send', 'pageview')
-  })
+  if (process.client && process.env.NODE_ENV === 'production') {
+    router.afterEach((to, from) => {
+      /*
+      ** 告訴GA增加一個PV
+      */
+      const urlPrefix = '/2019'
+      ga('set', 'page', `${urlPrefix}${to.fullPath}`)
+      ga('send', 'pageview')
+    })
+  }
 }
