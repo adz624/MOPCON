@@ -79,8 +79,20 @@ export default {
                     link: 'https://www.google.com/',
                 },
                 {
-                    title: 'Beengaged 醞釀之夜',
+                    title: '企業團購票',
                     id: 2,
+                    status: 0,
+                    count: 0,
+                    price: 0,
+                    beEngaged: false,
+                    type: 'secondary',
+                    lists: ['兩日議程', '下午茶點心'],
+                    desc: '適用於15人團體<br>15人以上請來信洽談',
+                    link: 'https://www.google.com/',
+                },
+                {
+                    title: 'Beengaged 醞釀之夜',
+                    id: 3,
                     status: 0,
                     count: 70,
                     price: 0,
@@ -93,7 +105,7 @@ export default {
                 },
                 {
                     title: 'VIP票',
-                    id: 3,
+                    id: 4,
                     status: 0,
                     count: 20,
                     price: 2600,
@@ -110,7 +122,7 @@ export default {
                 },
                 {
                     title: 'VVIP票',
-                    id: 4,
+                    id: 5,
                     status: 0,
                     count: 10,
                     price: 3200,
@@ -129,7 +141,7 @@ export default {
 
                 {
                     title: '學生票',
-                    id: 5,
+                    id: 6,
                     status: 0,
                     count: 140,
                     price: 100,
@@ -140,7 +152,7 @@ export default {
                 },
                 {
                     title: '菁英學生票',
-                    id: 6,
+                    id: 7,
                     status: 0,
                     count: 20,
                     price: 300,

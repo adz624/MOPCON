@@ -84,8 +84,7 @@
     }
 
     &__block--left {
-      justify-content: flex-end;
-      @include rwd(llgs) {
+      @include rwd(pad) {
         justify-content: center;
       }
     }
