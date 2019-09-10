@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Service\SpeakerService;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class SponsorController extends Controller
 {
@@ -79,14 +80,15 @@ class SponsorController extends Controller
 
     private function extractor($sponsor)
     {
+        $sponsor['logo_path'] = $this->generagePhotoUrl($sponsor['logo_path']);
         $sponsor['speaker_information'] = [];
         foreach ($this->speakerAry as $speaker) {
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {
                 $tags = $this->speakerService->parseTags($speaker['tags']);
                 $sponsor['speaker_information'][] = [
                     'img' => [
-                        'mobile' => $speaker['photo_for_sponsor_mobile'],
-                        'web' => $speaker['photo_for_sponsor_web'], // extra
+                        'mobile' => $this->generagePhotoUrl($speaker['photo_for_sponsor_mobile']),
+                        'web' => $this->generagePhotoUrl($speaker['photo_for_sponsor_web']), // extra
                     ],
                     'speaker_id' => $speaker['speaker_id'],
                     'session_id' => $this->sessionSpeakerMapping[$speaker['speaker_id']],
@@ -106,5 +108,19 @@ class SponsorController extends Controller
         }
 
         return $sponsor;
+    }
+
+    public function imagesView($name)
+    {
+        $dir = $this->imgPath . 'sponsor/'. $name . '.*';
+        $path = glob($dir);
+        $path = end($path);
+        $type = mime_content_type($path);
+        return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
+    }
+
+    public function generagePhotoUrl($path)
+    {
+        return filter_var($path, FILTER_VALIDATE_URL) ? $path : url($path);
     }
 }

@@ -30,6 +30,7 @@ $router->group(['prefix' => 'api'], function ($router) {
         });
         $router->group(['prefix' => 'sponsor'], function ($router) {
             $router->get('', 'SponsorController@index');
+            $router->get('images/{name}', 'SponsorController@imagesView');
         });
         // Speaker
         $router->group(['prefix' => 'speaker'], function ($router) {
