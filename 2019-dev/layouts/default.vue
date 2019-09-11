@@ -20,11 +20,8 @@ export default {
     methods: {
         // client side 初始語系, 先從 localStorage 抓取之前已選定語系, 若無將預設為 zh
         localInit() {
-            const lang = localStorage.getItem('locale')
-                ? localStorage.getItem('locale')
-                : 'zh';
-            this.$store.commit('setLocale', lang);
-            this.$i18n.locale = lang;
+            this.$store.commit('setLocale', 'zh');
+            this.$i18n.locale = 'zh';
         },
         handlePageLoading() {
             this.$refs.fullLoading.classList.remove('hide');
