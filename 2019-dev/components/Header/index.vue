@@ -32,10 +32,6 @@
                     </div>
                 </div>
             </nav>
-            <ul class="header__lang">
-                <li class="header__lang__item" :class="{active: $i18n.locale === 'zh'}" @click="toggleLang('zh')">中文</li>
-                <li class="header__lang__item" :class="{active: $i18n.locale === 'en'}" @click="toggleLang('en')">EN</li>
-            </ul>
         </div>
     </div>
 </template>
