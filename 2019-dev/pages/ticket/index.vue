@@ -142,7 +142,7 @@ export default {
                 {
                     title: '學生票',
                     id: 6,
-                    status: 1,
+                    status: 2,
                     count: 130,
                     price: 100,
                     beEngaged: false,
@@ -153,7 +153,7 @@ export default {
                 {
                     title: '菁英學生票',
                     id: 7,
-                    status: 1,
+                    status: 2,
                     count: 20,
                     price: 300,
                     beEngaged: false,
