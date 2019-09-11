@@ -76,6 +76,7 @@
                   v-if="tempSpeakerData.room && tempSpeakerData.floor">地點：{{ tempSpeakerData.room }}({{ tempSpeakerData.floor }})</span>
               </p>
             </div>
+            <p class="desc">{{ tempSpeakerData.summary }}</p>
             <div class="sponsor" v-if="tempSpeakerData.sponsor_id !== 0 && Object.keys(tempSpeakerData).length !== 0">
               <p class="color-primary">贊助廠商</p>
               <img :src="getSponsorData(tempSpeakerData.sponsor_id)" alt="" srcset="" width="60px" height="60px">
