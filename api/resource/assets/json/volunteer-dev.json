@@ -6,7 +6,18 @@
         "photo": "api/2019/volunteer/images/committee",
         "introduction": "",
         "introduction_e": "",
-        "members": []
+        "members": [
+            "廖洧杰",
+            "Victor Gau",
+            "江品陞",
+            "Terence Huang",
+            "Hash",
+            "Hermes",
+            "Ant",
+            "良葛格",
+            "Scarlett",
+            "Ta-Lun Yen"
+        ]
     },
     {
         "id": "2",
@@ -190,7 +201,16 @@
         "introduction": "把每一個珍貴的瞬間轉變成永遠！在 MOPCON 會議上拿著一台又一台大砲隨時備戰，看到我們記得微笑，這樣就會有美美的照片出現了哦！",
         "introduction_e": "",
         "members": [
-            "王康霖"
+            "王康霖",
+            "小董",
+            "林彥緯",
+            "何明洋",
+            "吳旻昇",
+            "莊宜珊",
+            "莊友豪",
+            "王聖閎",
+            "小草",
+            "楊惠文"
         ]
     },
     {
@@ -202,7 +222,12 @@
         "introduction_e": "",
         "members": [
             "山葵泥",
-            "柳川"
+            "柳川",
+            "Outsider987",
+            "Zhao",
+            "王笑笑",
+            "鯉魚",
+            "Sam"
         ]
     }
 ]
