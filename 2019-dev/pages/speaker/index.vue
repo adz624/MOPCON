@@ -65,7 +65,7 @@
                 <img src="./images/icon/icon-web.png" alt="" width="34.5px" height="34.5px">
               </a>
             </div>
-            <p class="summary">{{ tempSpeakerData.bio }}</p>
+            <p class="summary" v-html="formatTextWrap(tempSpeakerData.bio)"></p>
             <div class="topic">
               <p v-if="tempSpeakerData.tags != ''">議程主題 <span class="basic-badge-primary" v-for="tag in tempSpeakerData.tags"
                 :style="{'background-color': tag.color}" >{{ tag.name }}</span></p>
@@ -76,12 +76,15 @@
                   v-if="tempSpeakerData.room && tempSpeakerData.floor">地點：{{ tempSpeakerData.room }}({{ tempSpeakerData.floor }})</span>
               </p>
             </div>
+            <p class="desc" v-html="formatTextWrap(tempSpeakerData.summary)"></p>
             <div class="sponsor" v-if="tempSpeakerData.sponsor_id !== 0 && Object.keys(tempSpeakerData).length !== 0">
               <p class="color-primary">贊助廠商</p>
               <img :src="getSponsorData(tempSpeakerData.sponsor_id)" alt="" srcset="" width="60px" height="60px">
             </div>
             <div class="share">
-              <button class="basic-btn" v-clipboard:copy="nowUrl"
+              <button class="basic-btn" :class="{active: copyUrlSuccess}"
+                v-clipboard:copy="nowUrl"
+                v-clipboard:success="onCopy"
                 @click.prevent="copyLink(tempSpeakerData.speaker_id)">分享講者</button>
               <small class="share_message">講者連結已複製</small>
             </div>
@@ -111,6 +114,7 @@
         selectedTags: [],
         nowUrl: '',
         imgUrl: '',
+        copyUrlSuccess: false
       };
     },
     methods: {
@@ -145,10 +149,17 @@
       },
       closeModal(show) {
         this.modalOpen = show;
+        this.copyUrlSuccess = false;
       },
       copyLink(link) {
         const vm = this;
         vm.nowUrl = `${process.env.BASE_URL}/2019/speaker/${link}`;
+      },
+      onCopy() {
+        this.copyUrlSuccess = true;
+        setTimeout(() => {
+          this.copyUrlSuccess = false;
+        }, 2000);
       },
       getSponsorData(id) {
         const vm = this;
@@ -160,6 +171,11 @@
           })
         return vm.imgUrl
       },
+      // 將 \n 轉成 <br>
+      formatTextWrap(text) {
+        if (!text) return text;
+        return text.replace("\n", "<br>");
+      }
     },
     computed: {
       fullTime: function () {

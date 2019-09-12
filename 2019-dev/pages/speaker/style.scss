@@ -186,16 +186,22 @@
         color: $colorGray;
       }
     }
+    .desc {
+      font-size: 14px;
+      color: $colorGray;
+      line-height: 1.43;
+    }
     .sponsor {
       display: flex;
       flex-direction: column;
+      margin-top: 32px;
       align-items: center;
       img {
         margin: 12px 0;
       }
     }
     .share {
-      margin-top: 26px;
+      margin-top: 30px;
       text-align: center;
       margin-bottom: 30px;
     }
@@ -208,7 +214,7 @@
       transition-duration: 0.1s;
       transition-delay: 1.5s;
     }
-    .share .basic-btn:active ~ .share_message {
+    .share .basic-btn.active ~ .share_message {
       opacity: 10;
       transition-duration: 0.1s;
       transition-delay: 0s;
