@@ -201,23 +201,90 @@
       }
     }
     .share {
+      display: flex;
+      flex-flow: row wrap;
+      height: 36px;
       margin-top: 30px;
-      text-align: center;
       margin-bottom: 30px;
-    }
-    .share_message {
-      display: block;
-      opacity: 0;
-      margin-top: 11px;
-      color: $colorGray;
-      transition-property: opacity;
-      transition-duration: 0.1s;
-      transition-delay: 1.5s;
-    }
-    .share .basic-btn.active ~ .share_message {
-      opacity: 10;
-      transition-duration: 0.1s;
-      transition-delay: 0s;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      &__copy, &__fb, &__twitter {
+        height: 100%;
+        cursor: pointer;
+        &:before {
+          content: '';
+          @include bgCenter;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &__copy {
+        padding: 0 13px 0 28px;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.8px;
+        color: $colorPrimary;
+        width: 144px;
+        border: solid 1px $colorPrimary;
+        &:before {
+          width: 18px;
+          height: 18px;
+          left: 7px;
+          transform: translateY(-52%);
+          background-image: url('./images/icon/icon-share-copy.png');
+        }
+      }
+
+      &__fb, &__twitter {
+        width: 36px;
+        height: 36px;
+        @include flexCenter;
+        border: solid 1px $colorPrimary;
+        margin-left: -1px;
+
+        ::v-deep .share__fb__btn{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__fb {
+        &:before {
+          width: 9px;
+          height: 18px;
+          background-image: url('./images/icon/icon-share-fb.png');
+        }
+      }
+
+      &__twitter {
+        &:before {
+          width: 20px;
+          height: 16px;
+          background-image: url('./images/icon/icon-share-twitter.png');
+        }
+      }
+
+      .share_message {
+        width: 100%;
+        display: block;
+        opacity: 0;
+        margin-top: 11px;
+        color: $colorGray;
+        transition-property: opacity;
+        transition-duration: 0.1s;
+        transition-delay: 1.5s;
+      }
+
+      &__copy.active ~ .share_message {
+        opacity: 1;
+        transition-duration: 0.1s;
+        transition-delay: 0s;
+      }
+
     }
   }
 
