@@ -12,7 +12,7 @@
             </div>
             <div v-if="desc" v-html="desc" class="cardTicket__content__desc"></div>
         </div>
-        <div class="cardTicket__btn" v-if="!beEngaged" @click="handleTicketClick(title)">{{btnText}}</div>
+        <div class="cardTicket__btn" v-if="!beEngaged" @click="handleTicketClick(title, price)">{{btnText}}</div>
     </a>
 </template>
 
@@ -90,8 +90,8 @@ export default {
         },
     },
     methods: {
-        handleTicketClick(ticket) {
-            this.$emit('onTicketClick', ticket);
+        handleTicketClick(ticket, price) {
+            this.$emit('onTicketClick', ticket, price);
         },
     },
 };
