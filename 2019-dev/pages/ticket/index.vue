@@ -14,10 +14,10 @@
                 <span>{ </span><span class="color-secondary">{{$t('pages.ticket.ticketType[1]')}}</span><span>{{$t('pages.ticket.ticketType[2]')}} ; }</span>
             </h2>
             <div class="ticket__kind__block ticket__kind__block--left">
-                <CardTicket v-for="ticket in ticketSecondary" :key="ticket.id" v-bind="ticket" />
+                <CardTicket v-for="ticket in ticketSecondary" :key="ticket.id" v-bind="ticket" @onTicketClick="handleTicketClick" />
             </div>
             <div class="ticket__kind__block ticket__kind__block--right">
-                <CardTicket v-for="ticket in ticketPrimary" :key="ticket.id" v-bind="ticket" />
+                <CardTicket v-for="ticket in ticketPrimary" :key="ticket.id" v-bind="ticket" @onTicketClick="handleTicketClick" />
             </div>
         </section>
 
@@ -27,7 +27,7 @@
             </h2>
             <p class="text">{{$t('pages.ticket.text')}}</p>
             <div class="ticket__kind__block">
-                <CardTicket v-for="ticket in ticketThird" :key="ticket.id" v-bind="ticket" />
+                <CardTicket v-for="ticket in ticketThird" :key="ticket.id" v-bind="ticket" @onTicketClick="handleTicketClick" />
             </div>
             <ul class="ticket__studentKind__remarks">
                 <li class="ticket__studentKind__remark">*{{$t('pages.ticket.student.remarks[1]')}}</li>
@@ -178,6 +178,13 @@ export default {
         // Third 樣式票卡, 學生票、菁英學生票
         ticketThird() {
             return this.ticketData.filter(ticket => ticket.type === 'third');
+        },
+    },
+    methods: {
+        handleTicketClick(ticketName) {
+            fbq('trackCustom', 'Purchase', {
+                ticketName: ticketName,
+            });
         },
     },
     beforeRouteEnter: (to, from, next) => {

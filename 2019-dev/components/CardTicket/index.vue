@@ -12,7 +12,7 @@
             </div>
             <div v-if="desc" v-html="desc" class="cardTicket__content__desc"></div>
         </div>
-        <div class="cardTicket__btn" v-if="!beEngaged">{{btnText}}</div>
+        <div class="cardTicket__btn" v-if="!beEngaged" @click="handleTicketClick(title)">{{btnText}}</div>
     </a>
 </template>
 
@@ -87,6 +87,11 @@ export default {
             if (this.status === 0) return 'disabled';
             if (this.status === 2) return 'soldout';
             return '';
+        },
+    },
+    methods: {
+        handleTicketClick(ticket) {
+            this.$emit('onTicketClick', ticket);
         },
     },
 };
