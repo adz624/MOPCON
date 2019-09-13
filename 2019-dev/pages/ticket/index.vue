@@ -55,7 +55,7 @@ export default {
                 {
                     title: '老鳥票',
                     id: 0,
-                    status: 0, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售
+                    status: 1, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售
                     count: 0, // 限量張數
                     price: 700, // 票價
                     beEngaged: false,
@@ -70,7 +70,7 @@ export default {
                 {
                     title: '會眾票',
                     id: 1,
-                    status: 0,
+                    status: 1,
                     count: 700,
                     price: 800,
                     beEngaged: false,
@@ -81,7 +81,7 @@ export default {
                 {
                     title: '企業團購票',
                     id: 2,
-                    status: 0,
+                    status: 1,
                     count: 0,
                     price: 0,
                     beEngaged: false,
@@ -93,7 +93,7 @@ export default {
                 {
                     title: 'Beengaged 醞釀之夜',
                     id: 3,
-                    status: 0,
+                    status: 1,
                     count: 30,
                     price: 800,
                     beEngaged: true,
@@ -106,7 +106,7 @@ export default {
                 {
                     title: 'VIP票',
                     id: 4,
-                    status: 0,
+                    status: 1,
                     count: 20,
                     price: 2600,
                     beEngaged: false,
@@ -123,7 +123,7 @@ export default {
                 {
                     title: 'VVIP票',
                     id: 5,
-                    status: 0,
+                    status: 1,
                     count: 10,
                     price: 3200,
                     beEngaged: false,
