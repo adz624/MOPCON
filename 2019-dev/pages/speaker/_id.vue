@@ -81,8 +81,37 @@
               <img :src="getSponsorData(tempSpeakerData.sponsor_id)" alt="" srcset="" width="60px" height="60px">
             </div>
             <div class="share">
-              <button class="basic-btn" v-clipboard:copy="nowUrl"
-                @click.prevent="copyLink(tempSpeakerData.speaker_id)">分享講者</button>
+              <div class="share__copy"
+                :class="{active: copyUrlSuccess}"
+                v-clipboard:copy="nowUrl"
+                v-clipboard:success="onCopy"
+                @click.prevent="copyLink(tempSpeakerData.speaker_id)">
+                複製講者連結
+              </div>
+              <div class="share__fb">
+                <no-ssr>
+                  <social-sharing class="share__fb__btn" :url="shareUrl"
+                    :title="`${tempSpeakerData.name} | 講者 MOPCON 2019`"
+                    :description="tempSpeakerData.summary"
+                    :quote="`${tempSpeakerData.name} | 講者 MOPCON 2019`"
+                    hashtags="MOPCON"
+                    inline-template>
+                    <network network="facebook"></network>
+                  </social-sharing>
+                </no-ssr>
+              </div>
+              <div class="share__twitter">
+                <no-ssr>
+                  <social-sharing class="share__fb__btn" :url="shareUrl"
+                    :title="`${tempSpeakerData.name} | 講者 MOPCON 2019`"
+                    :description="tempSpeakerData.summary"
+                    :quote="`${tempSpeakerData.name} | 講者 MOPCON 2019`"
+                    hashtags="MOPCON"
+                    inline-template>
+                    <network network="twitter"></network>
+                  </social-sharing>
+                </no-ssr>
+              </div>
               <small class="share_message">講者連結已複製</small>
             </div>
           </div>
@@ -172,6 +201,7 @@
         selectedTags: [],
         nowUrl: '',
         imgUrl: '',
+        copyUrlSuccess: false
       };
     },
     methods: {
@@ -205,6 +235,7 @@
       },
       closeModal(show) {
         this.modalOpen = show;
+        this.copyUrlSuccess = false;
         if (!show) {
           location.href = '/2019/speaker'
         }
@@ -212,6 +243,12 @@
       copyLink(link) {
         const vm = this;
         vm.nowUrl = `${process.env.BASE_URL}/2019/speaker/${link}`;
+      },
+      onCopy() {
+        this.copyUrlSuccess = true;
+        setTimeout(() => {
+          this.copyUrlSuccess = false;
+        }, 2000);
       },
       getSponsorData(id) {
         const vm = this;
@@ -230,6 +267,9 @@
       }
     },
     computed: {
+      shareUrl() {
+        return `${process.env.baseUrl}/2019/speaker/${this.tempSpeakerData.speaker_id}`;
+      },
       fullTime: function () {
         const vm = this;
         const startDate = new Date();
