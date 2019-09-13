@@ -8,7 +8,6 @@
       <p class="intro">MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為<span
           class="color-secondary">連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展</span>，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 7
         年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！</p>
-      <a href="https://drive.google.com/open?id=1fbjbdAOrs9hGy3r-DkMnyNl5eWgYJsKd" target="_blank" class="btn-primary">成為我們的夥伴</a>
       <div class="slider sponsor_carrousel">
         <div class="slider-navigation">
           <div class="swiper-button-prev" slot="button-prev"></div>
@@ -16,7 +15,7 @@
         </div>
         <div v-swiper:mySwiper="swiperOption" class="slider-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="n in 10" :style="`background-image: url(${require(`./images/sponsor_carrousel/sponsor_carrousel_${n}.png`)})`"></div>
+            <div class="swiper-slide" v-for="n in 9" :style="`background-image: url(${require(`./images/sponsor_carrousel/sponsor_carrousel_${n}.png`)})`"></div>
           </div>
         </div>
       </div>

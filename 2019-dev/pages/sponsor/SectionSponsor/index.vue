@@ -10,8 +10,8 @@
             <div class="light">
                 <div class="light__head"></div>
             </div>
-            <h2 class="title">{ 贊助商<span class="color-primary">招募中</span>; }</h2>
-            <h3 class="subtitle">成為全台最大行動科技領域社群研討會的參與者及貢獻者之一</h3>
+            <h2 class="title">{ 贊助商<span class="color-primary">招募</span>; }</h2>
+            <h3 class="subtitle">今年的徵求贊助計畫已順利結束，但是我們明年仍然會繼續舉辦，如果您有意願持續支持我們，請寄到我們的贊助信箱。</h3>
             <Btn>
                 <a :href="pdfLink" target="_blank">贊助企劃書</a>
             </Btn>

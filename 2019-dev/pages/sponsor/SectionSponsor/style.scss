@@ -147,6 +147,8 @@
 
     .subtitle {
       margin: 20px 0 60px 0;
+      text-align: left;
+      font-size: 20px;
       @include rwd(pad) {
         margin-bottom: 35px;
         font-size: 16px;
