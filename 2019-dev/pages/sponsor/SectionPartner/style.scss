@@ -67,6 +67,7 @@
     padding: 20px 45px 38px 45px;
     @include rwd(sm) {
       max-width: 325px;
+      padding: 20px 21px 38px 21px;
     }
   }
   
@@ -78,12 +79,21 @@
         flex-direction: column;
         justify-content: center;
       }
-      &__name {
-        font-size: 24px;
+      &__content {
         margin-left: 40px;
+        margin-top: auto;
+        text-align: left;
         @include rwd(pad) {
           margin-left: 0px;
           margin-top: 13px;
+          text-align: center;
+        }
+      }
+      &__name {
+        font-size: 24px;
+        margin-bottom: 30px;
+        @include rwd(pad) {
+          margin-bottom: 14px;
         }
       }
     }
@@ -223,4 +233,8 @@
 
 .color-white {
   color: $colorWhite;
+}
+
+.section-partner .modal-body .company__name.no-info {
+  margin-bottom: 50px;
 }

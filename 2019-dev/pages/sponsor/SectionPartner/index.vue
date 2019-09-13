@@ -19,12 +19,19 @@
       <div class="modal-body">
         <div class="company">
           <img :src="tempSponsorData.logo_path" alt="" height="138px">
-          <h4 class="company__name">{{ tempSponsorData.name }}</h4>
+          <div class="company__content">
+            <h4 class="company__name" :class="{'no-info': !(tempSponsorData.official_website || tempSponsorData.career_information)}">{{ tempSponsorData.name }}</h4>
+            <div v-if="(tempSponsorData.speaker_information && tempSponsorData.speaker_information.length == 0) && tempSponsorData.about_us == ''">
+              <a class="basic-btn" v-if="tempSponsorData.official_website" target="_blank" :href="tempSponsorData.official_website">官方網站</a>
+              <a class="basic-btn"  target="_blank" v-if="tempSponsorData.career_information"
+                :href="tempSponsorData.career_information">徵才訊息</a>
+            </div>
+          </div>
         </div>
-        <div class="nav-mobile show-md">
-          <a href="#" :class="{'color-white active': mobileNavActive == 'aboutus'}"
+        <div class="nav-mobile show-md" v-if="(tempSponsorData.speaker_information && tempSponsorData.speaker_information.length > 0) || (tempSponsorData.about_us !== '')">
+          <a href="#" v-if="tempSponsorData.about_us !== ''" :class="{'color-white active': mobileNavActive == 'aboutus'}"
             @click.prevent="mobileNavActive = 'aboutus'">關於我們</a>
-          <a href="#" :class="{'color-white active': mobileNavActive == 'speakerInfo'}"
+          <a href="#" v-if="tempSponsorData.speaker_information && tempSponsorData.speaker_information.length > 0" :class="{'color-white active': mobileNavActive == 'speakerInfo'}"
             @click.prevent="mobileNavActive = 'speakerInfo'">相關講者資訊</a>
         </div>
         <p class="abous_us" :class="{'hidden-md': mobileNavActive !== 'aboutus'}">{{ tempSponsorData.about_us }}</p>
@@ -52,7 +59,7 @@
             </div>
           </a>
         </div>
-        <div class="btn">
+        <div class="btn" v-if="(tempSponsorData.speaker_information && tempSponsorData.speaker_information.length > 0) || (tempSponsorData.about_us !== '')">
           <a class="basic-btn" v-if="tempSponsorData.official_website" target="_blank" :href="tempSponsorData.official_website">官方網站</a>
           <a class="basic-btn" v-if="tempSponsorData.career_information" target="_blank"
             :href="tempSponsorData.career_information">徵才訊息</a>
@@ -86,15 +93,6 @@
           .then(({ success, data, message }) => {
             if (success) {
               vm.sponsorList = data;
-              if (vm.$route.query.id) {
-                vm.sponsorList.forEach(sponsorType => {
-                  sponsorType.data.forEach(sponsor => {
-                    if (sponsor.sponsor_id === vm.$route.query.id) {
-                      vm.openModal(sponsor)
-                    }
-                  })
-                })
-              }
             } else {
               console.log("error", message);
             }
@@ -110,6 +108,7 @@
       },
       closeModal(show) {
         this.modalOpen = show;
+        this.mobileNavActive = 'aboutus';
         if (!show) this.$router.push('/sponsor/');
       },
       fullTime(start) {
@@ -124,6 +123,21 @@
     },
     created() {
       this.getSponsorData();
+      const vm = this;
+      if (vm.$route.query.id) {
+        vm.$axios
+          .$get(`/api/2019/sponsor?sponsor_id=${vm.$route.query.id}`)
+          .then(({ success, data, message }) => {
+            if (success) {
+              vm.openModal(data[0])
+            } else {
+              console.log("error", message);
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
     }
   };
 </script>
