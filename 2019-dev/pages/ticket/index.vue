@@ -14,10 +14,10 @@
                 <span>{ </span><span class="color-secondary">{{$t('pages.ticket.ticketType[1]')}}</span><span>{{$t('pages.ticket.ticketType[2]')}} ; }</span>
             </h2>
             <div class="ticket__kind__block ticket__kind__block--left">
-                <CardTicket v-for="ticket in ticketSecondary" :key="ticket.id" v-bind="ticket" />
+                <CardTicket v-for="ticket in ticketSecondary" :key="ticket.id" v-bind="ticket" @onTicketClick="handleTicketClick" />
             </div>
             <div class="ticket__kind__block ticket__kind__block--right">
-                <CardTicket v-for="ticket in ticketPrimary" :key="ticket.id" v-bind="ticket" />
+                <CardTicket v-for="ticket in ticketPrimary" :key="ticket.id" v-bind="ticket" @onTicketClick="handleTicketClick" />
             </div>
         </section>
 
@@ -27,7 +27,7 @@
             </h2>
             <p class="text">{{$t('pages.ticket.text')}}</p>
             <div class="ticket__kind__block">
-                <CardTicket v-for="ticket in ticketThird" :key="ticket.id" v-bind="ticket" />
+                <CardTicket v-for="ticket in ticketThird" :key="ticket.id" v-bind="ticket" @onTicketClick="handleTicketClick" />
             </div>
             <ul class="ticket__studentKind__remarks">
                 <li class="ticket__studentKind__remark">*{{$t('pages.ticket.student.remarks[1]')}}</li>
@@ -65,18 +65,18 @@ export default {
                         '兩日議程',
                         '下午茶點心',
                     ],
-                    link: 'https://www.google.com/',
+                    link: 'https://kktix.com/events/2019register/registrations/new',
                 },
                 {
                     title: '會眾票',
                     id: 1,
                     status: 0,
-                    count: 500,
+                    count: 700,
                     price: 800,
                     beEngaged: false,
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
-                    link: 'https://www.google.com/',
+                    link: 'https://kktix.com/events/2019register/registrations/new',
                 },
                 {
                     title: '企業團購票',
@@ -88,20 +88,20 @@ export default {
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
                     desc: '適用於15人團體<br>15人以上請來信洽談',
-                    link: 'https://www.google.com/',
+                    link: 'https://kktix.com/events/2019register/registrations/new',
                 },
                 {
                     title: 'Beengaged 醞釀之夜',
                     id: 3,
                     status: 0,
-                    count: 70,
-                    price: 0,
+                    count: 30,
+                    price: 800,
                     beEngaged: true,
                     type: 'secondary',
                     lists: [
                         '會眾票＆老鳥票可在 KKTIX 加購 10/19 晚餐聚會通行證',
                     ],
-                    link: '',
+                    link: 'https://kktix.com/events/2019registerbeengaged/registrations/new',
                 },
                 {
                     title: 'VIP票',
@@ -118,7 +118,7 @@ export default {
                         '快速通關',
                         'Beengaged 醞釀之夜',
                     ],
-                    link: 'https://www.google.com/',
+                    link: 'https://kktix.com/events/2019registervip/registrations/new',
                 },
                 {
                     title: 'VVIP票',
@@ -136,7 +136,7 @@ export default {
                         'Beengaged 醞釀之夜',
                         'MOPCON 2019 獨家紀念品',
                     ],
-                    link: 'https://www.google.com/',
+                    link: 'https://kktix.com/events/2019registervip/registrations/new',
                 },
 
                 {
@@ -178,6 +178,15 @@ export default {
         // Third 樣式票卡, 學生票、菁英學生票
         ticketThird() {
             return this.ticketData.filter(ticket => ticket.type === 'third');
+        },
+    },
+    methods: {
+        handleTicketClick(ticketName, ticketPrice) {
+            fbq('trackCustom', 'Purchase', {
+                ticketName: ticketName,
+                value: ticketPrice,
+                currency: 'TWD'
+            });
         },
     },
     beforeRouteEnter: (to, from, next) => {
