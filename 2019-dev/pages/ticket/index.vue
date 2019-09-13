@@ -65,7 +65,7 @@ export default {
                         '兩日議程',
                         '下午茶點心',
                     ],
-                    link: 'https://kktix.com/events/2019register/registrations/new',
+                    link: 'https://kktix.com/events/2019registernormal/registrations/new',
                 },
                 {
                     title: '會眾票',
@@ -76,7 +76,7 @@ export default {
                     beEngaged: false,
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
-                    link: 'https://kktix.com/events/2019register/registrations/new',
+                    link: 'https://kktix.com/events/2019registernormal/registrations/new',
                 },
                 {
                     title: '企業團購票',
@@ -104,7 +104,7 @@ export default {
                     link: 'https://kktix.com/events/2019registerbeengaged/registrations/new',
                 },
                 {
-                    title: 'VIP票',
+                    title: '豪華獨享票',
                     id: 4,
                     status: 1,
                     count: 20,
@@ -113,15 +113,15 @@ export default {
                     type: 'primary',
                     lists: [
                         '兩日議程',
-                        '下午茶點心',
-                        '紀念T',
+                        '精緻午餐、下午茶點心',
+                        '紀念 T',
                         '快速通關',
                         'Beengaged 醞釀之夜',
                     ],
                     link: 'https://kktix.com/events/2019registervip/registrations/new',
                 },
                 {
-                    title: 'VVIP票',
+                    title: '尊絕不凡票',
                     id: 5,
                     status: 1,
                     count: 10,
@@ -130,8 +130,8 @@ export default {
                     type: 'primary',
                     lists: [
                         '兩日議程',
-                        '下午茶點心',
-                        '紀念T',
+                        '精緻午餐、下午茶點心',
+                        '紀念 T',
                         '快速通關',
                         'Beengaged 醞釀之夜',
                         'MOPCON 2019 獨家紀念品',
