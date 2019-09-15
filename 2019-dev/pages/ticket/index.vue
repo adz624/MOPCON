@@ -120,7 +120,7 @@ export default {
                     link: 'https://lihi1.com/d9LlC',
                 },
                 {
-                    title: '尊絕不凡票',
+                    title: '尊爵不凡票',
                     id: 5,
                     status: 1,
                     count: 10,
