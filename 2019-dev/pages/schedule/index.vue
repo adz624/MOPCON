@@ -107,8 +107,6 @@
             </div>
         </section>
 
-        <SectionApp />
-
         <!-- 詳細資訊彈窗區塊 -->
         <Modal :modal-open="modalOpen" @modal-close="closeModal">
             <CardDetail v-if="sessionDetail"
