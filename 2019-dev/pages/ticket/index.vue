@@ -34,8 +34,6 @@
                 <li class="ticket__studentKind__remark">*{{$t('pages.ticket.student.remarks[2]')}}</li>
             </ul>
         </section>
-
-        <SectionApp />
     </div>
 </template>
 
