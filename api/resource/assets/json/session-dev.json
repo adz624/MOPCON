@@ -184,14 +184,14 @@
         "room": []
       },
       {
-        "started_at": 1571478300,
+        "started_at": 0,
         "isBroadCast": false,
         "ended_at": 0,
         "event": "End",
         "room": []
       },
       {
-        "started_at": 1571481000,
+        "started_at": 0,
         "isBroadCast": false,
         "ended_at": 0,
         "event": "講者晚宴 Devel Night",
@@ -377,7 +377,7 @@
         "room": []
       },
       {
-        "started_at": 1571477400,
+        "started_at": 0,
         "isBroadCast": false,
         "ended_at": 0,
         "event": "End",

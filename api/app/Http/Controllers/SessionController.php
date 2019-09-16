@@ -79,6 +79,14 @@ class SessionController extends Controller
     {
         foreach ($this->jsonAry as &$schedule) {
             foreach ($schedule['period'] as &$period) {
+                // 如果沒有設定議程時間直接將 key 移除
+                if ($period['started_at'] === 0) {
+                    unset($period['started_at']);
+                }
+                if ($period['ended_at'] === 0) {
+                    unset($period['ended_at']);
+                }
+
                 if (empty($period['room'])) {
                     continue;
                 }
