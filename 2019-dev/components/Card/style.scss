@@ -100,13 +100,16 @@
       max-width: 256px;
       margin-top: 34px;
       padding-right: 65px;
+      @include rwd(pad) {
+        max-width: calc(100% - 50px);
+      }
 
       &__item {
         display: flex;
-        width: 100%;
       }
 
       &__avatar {
+        flex: 0;
         width: 48px;
         height: 48px;
         margin-right: 18px;
@@ -191,14 +194,32 @@
 
 // 多講者
 .card.more {
-  @include rwd(sm) {
-    .card__content__speaker__name {
-      display: none;
-    }
+  .card__content__speaker__name {
+    display: none;
   }
   .card__content__speaker {
-    max-width: calc(100% - 50px);
+    align-self: center;
     padding-right: 0px;
+    @include rwd(pad) {
+      align-self: flex-start;
+    }
+  }
+}
+
+.card.exceed {
+  .card__content__tags,
+  .card__content__name {
+    order: 1;
+  }
+
+  .card__content__promptTags {
+    order: 3;
+  }
+
+  .card__content__speaker {
+    margin-top: 0;
+    margin-bottom: 36px;
+    order: 2;
   }
 }
 
@@ -208,12 +229,33 @@
     display: none;
   }
 
+  .card__content__speaker__item + .card__content__speaker__item {
+    margin-left: 18px;
+  }
+
+  .card__content__speaker {
+    max-width: 100%;
+  }
+
+  .card__content__speaker__name {
+    display: block;
+    @include rwd(sm) {
+      display: none;
+    }
+  }
+
   .card__content {
     align-items: flex-start;
     padding: 39px 72px 36px 72px;
     @include rwd(pad) {
       padding: 13px 26px 12px 19px;
     }
+  }
+}
+
+.card.big.more.exceed {
+  .card__content__speaker__name {
+    display: none;
   }
 }
 
