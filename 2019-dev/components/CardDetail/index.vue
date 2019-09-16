@@ -28,7 +28,10 @@
 
         <!-- 講者介紹 -->
         <div class="cardDetail__speaker" v-if="cardData.speakers.length > 0">
-            <div class="cardDetail__speaker__item" v-for="speaker in cardData.speakers" :key="speaker.speaker_id">
+            <a :href="speakerUrl(speaker.speaker_id)"
+                class="cardDetail__speaker__item"
+                v-for="speaker in cardData.speakers"
+                :key="speaker.speaker_id">
                 <img class="cardDetail__speaker__avatar"
                     :src="speaker.img.mobile"
                     :alt="speaker[`name${langPrefix}`]">
@@ -37,7 +40,7 @@
                     <div class="cardDetail__speaker__info__company">{{speaker[`company${langPrefix}`]}}</div>
                     <div class="cardDetail__speaker__info__job">{{speaker[`job_title${langPrefix}`]}}</div>
                 </div>
-            </div>
+            </a>
         </div>
 
         <div class="cardDetail__btn"
@@ -79,6 +82,9 @@ export default {
         },
         modalClose() {
             this.$emit('onModalClose', false);
+        },
+        speakerUrl(id) {
+            return `${process.env.baseUrl}/2019/speaker/${id}`;
         },
     },
 };
