@@ -83,6 +83,7 @@
                 class="schedule__filter__card"
                 :cardData="sessionCard"
                 type="small"
+                :showTime="true"
                 :langPrefix="langPrefix"
                 :key="sessionCard.session_id"
                 @onTagClick="handleKeywordClick"
