@@ -1,6 +1,11 @@
 <template>
-    <div class="card" :class="[type, {more: cardData.speakers.length > 1}]" @click="handleShowDetail(cardData.session_id)">
-        <div class="card__head">{{cardData.room}}({{cardData.floor}})</div>
+    <div class="card"
+        :class="[type, {more: cardData.speakers.length > 1}, {exceed: cardData.speakers.length > 3}]"
+        @click="handleShowDetail(cardData.session_id)">
+        <div class="card__head">
+            <span class="card__head__room">{{cardData.room}}({{cardData.floor}})</span>
+            <span class="card__head__time" v-if="showTime">{{(cardData.started_at * 1000) | moment("HH:mm")}} - {{(cardData.ended_at * 1000) | moment("HH:mm")}}</span>
+        </div>
         <div class="card__content">
 
             <!-- 課程類型標籤 -->
@@ -54,6 +59,10 @@ export default {
         langPrefix: {
             type: String,
             default: '',
+        },
+        showTime: {
+            type: Boolean,
+            default: false,
         },
     },
     methods: {

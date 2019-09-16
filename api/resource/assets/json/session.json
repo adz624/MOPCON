@@ -335,6 +335,10 @@
         "event": "",
         "room": [
           {
+            "session_id": 2019032,
+            "speaker_id": [35, 36, 37]
+          },
+          {
             "session_id": 2019033,
             "speaker_id": 6
           },
