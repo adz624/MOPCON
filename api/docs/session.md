@@ -8,8 +8,8 @@
 
 - date(timestamp): 議程日時間，單位為秒
 - period(array): 本日議程所有議程
-  - started_at(timestamp): 本議程區間開始時間，單位為秒
-  - ended_at(timestamp): 本議程區間結束時間，單位為秒
+  - started_at(timestamp): 本議程區間開始時間，單位為秒，若此議程不標示時間則不會有此 key
+  - ended_at(timestamp): 本議程區間結束時間，單位為秒，若此議程不標示時間則不會有此 key
   - isBroadCast(bool): 是否為聯播議程
   - event(string): 議程區塊名稱，通常用來顯示無議程表示（EX: 休息、報到等），如果在議程時間則為空字串
   - room(array): 議程詳細資訊，如果沒有議程會以 empty array 表示
