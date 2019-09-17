@@ -5,7 +5,7 @@
       <h2 class="title"><span>{ 我們在打造</span><span class="color-primary">高速資訊交流圈</span><span>; }</span></h2>
       <div class="section-intro__content">
         <div class="section-intro__info">
-          <p>MOPCON 為締造人、知識與產業的連結，指在實現三項目標：</p>
+          <p>MOPCON 為締造人、知識與產業的連結，旨在實現三項目標：</p>
           <ul>
             <li><span class="color-secondary">一、帶動南台灣高經濟產業循環</span></li>
             <li><span class="color-secondary">二、培養高知識產值人才</span></li>
