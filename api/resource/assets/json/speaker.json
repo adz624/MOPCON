@@ -323,7 +323,7 @@
     "room": "R2",
     "floor": "4F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Basic",
     "tags": [
       "AI",
@@ -469,7 +469,7 @@
     "room": "R3",
     "floor": "4F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Normal",
     "tags": [
         "UI/UX"
@@ -505,7 +505,7 @@
     "room": "R2",
     "floor": "4F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Normal",
     "tags": [
       "IoT",
@@ -686,7 +686,7 @@
     "room": "R1",
     "floor": "3F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Basic",
     "tags": [
       "AI",
