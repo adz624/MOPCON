@@ -195,10 +195,6 @@
     @include rwd(pad) {
       margin-top: 0;
     }
-
-    &__name {
-      max-width: 100%;
-    }
   }
 }
 
@@ -259,6 +255,10 @@
     padding: 39px 72px 36px 72px;
     @include rwd(pad) {
       padding: 13px 26px 12px 19px;
+    }
+
+    &__name {
+      max-width: 100%;
     }
   }
 }
