@@ -118,7 +118,6 @@
         </Modal>
       </div>
     </div>
-    <SectionApp />
   </div>
 </template>
 

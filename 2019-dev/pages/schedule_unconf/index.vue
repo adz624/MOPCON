@@ -59,8 +59,6 @@
                 </div>
             </div>
         </section>
-
-        <SectionApp />
     </div>
 </template>
 
