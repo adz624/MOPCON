@@ -16,8 +16,8 @@
             </div>
         </div>
 
-        <h2 class="cardDetail__title">{{cardData[`topic${langPrefix}`]}}</h2>
-        <p class="cardDetail__desc">{{cardData[`summary${langPrefix}`]}}</p>
+        <h2 class="cardDetail__title">{{formatTextWrap(cardData[`topic${langPrefix}`])}}</h2>
+        <p class="cardDetail__desc" v-html="formatTextWrap(cardData[`summary${langPrefix}`])"></p>
 
         <!-- 提示標籤 -->
         <div class="cardDetail__promptTags">
@@ -85,6 +85,11 @@ export default {
         },
         speakerUrl(id) {
             return `${process.env.baseUrl}/2019/speaker/${id}`;
+        },
+        // 將 \n 轉成 <br>
+        formatTextWrap(text) {
+            if (!text) return text;
+            return text.replace(/\n/g, "<br>");
         },
     },
 };
