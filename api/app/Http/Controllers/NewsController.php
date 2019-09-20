@@ -31,8 +31,8 @@ class NewsController extends Controller
         return $this->returnNotFoundError();
     }
     /**
-     * request google sheet 
-     * @param String 
+     * request google sheet
+     * @param String
      * @return String
      */
     private function getSheetData(String $url)
@@ -63,12 +63,15 @@ class NewsController extends Controller
     }
     /**
      * convert array into news data and id map
-     * @param Array 
-     * @return Array 
+     * @param Array
+     * @return Array
      */
     private function mapSheetData(Array $rawArr): array
     {
         $result = [];
+        if (!isset($rawArr['feed']['entry'])) {
+            return $result;
+        }
         array_walk($rawArr['feed']['entry'], function ($subset) use (&$result) {
             $id = $subset['gsx$id']['$t'];
             $subset['gsx$date']['$t'] = strtotime($subset['gsx$date']['$t'] . '+08:00');
