@@ -4,13 +4,6 @@ use App\Providers\RollbarServiceProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-$kernel = \AspectMock\Kernel::getInstance();
-$kernel->init([
-    'debug' => true,
-    'cacheDir' => '/tmp/l4-sample',
-    'includePaths' => [__DIR__.'/../app']
-]);
-
 (new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
     dirname(__DIR__)
 ))->bootstrap();
