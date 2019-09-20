@@ -11,6 +11,7 @@
         "rollbar/rollbar": "~1.5"
     },
     "require-dev": {
+        "codeception/aspect-mock": "^3.0",
         "fzaninotto/faker": "^1.4",
         "justinrainbow/json-schema": "^5.2.1",
         "mockery/mockery": "^1.0",
