@@ -75,7 +75,7 @@
                   v-if="tempSpeakerData.room && tempSpeakerData.floor">地點：{{ tempSpeakerData.room }}({{ tempSpeakerData.floor }})</span>
               </p>
             </div>
-            <p class="desc" v-html="tempSpeakerData.summary"></p>
+            <p class="desc" v-html="formatTextWrap(tempSpeakerData.summary)"></p>
             <div class="sponsor" v-if="tempSpeakerData.sponsor_id !== 0 && Object.keys(tempSpeakerData).length !== 0">
               <p class="color-primary">贊助廠商</p>
               <img :src="getSponsorData(tempSpeakerData.sponsor_id)" alt="" srcset="" width="60px" height="60px">
@@ -262,7 +262,7 @@
       // 將 \n 轉成 <br>
       formatTextWrap(text) {
         if (!text) return text;
-        return text.replace("\n", "<br>");
+        return text.replace(/\n/g, "<br>");
       }
     },
     computed: {
