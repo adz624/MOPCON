@@ -200,7 +200,7 @@
       // 將 \n 轉成 <br>
       formatTextWrap(text) {
         if (!text) return text;
-        return text.replace("\n", "<br>");
+        return text.replace(/\n/g, "<br>");
       }
     },
     computed: {
