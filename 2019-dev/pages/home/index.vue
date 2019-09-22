@@ -5,6 +5,9 @@
         <!-- section image wall -->
         <SectionImageWall id="sectionImageWall" />
 
+        <!-- section speaker -->
+        <SectionSpeaker id="sectionSpeaker" />
+
         <!-- section about -->
         <SectionAbout id="sectionAbout" />
 
@@ -25,38 +28,40 @@
 </template>
 
 <script>
-import Navbar from "~/components/Navbar";
-import SectionHero from "./SectionHero";
-import SectionImageWall from "./SectionImageWall";
-import SectionAbout from "./SectionAbout";
-import SectionPlace from "./SectionPlace";
-import SectionSponsor from "./SectionSponsor";
-import SectionFbNews from "./SectionFbNews";
-import SectionPastYears from "./SectionPastYears";
+import Navbar from '~/components/Navbar';
+import SectionHero from './SectionHero';
+import SectionImageWall from './SectionImageWall';
+import SectionSpeaker from './SectionSpeaker';
+import SectionAbout from './SectionAbout';
+import SectionPlace from './SectionPlace';
+import SectionSponsor from './SectionSponsor';
+import SectionFbNews from './SectionFbNews';
+import SectionPastYears from './SectionPastYears';
 
 export default {
-    name: "pageIndex",
+    name: 'pageIndex',
     computed: {
         isReady() {
             return this.$store.getters.homePageReady;
-        }
+        },
     },
     components: {
         Navbar,
         SectionHero,
         SectionImageWall,
+        SectionSpeaker,
         SectionAbout,
         SectionPlace,
         SectionSponsor,
         SectionFbNews,
-        SectionPastYears
+        SectionPastYears,
     },
     mounted() {
-        this.$store.commit("updateHomePageReady", true);
+        this.$store.commit('updateHomePageReady', true);
     },
     beforeDestroy() {
-        this.$store.commit("updateHomePageReady", false);
-    }
+        this.$store.commit('updateHomePageReady', false);
+    },
 };
 </script>
 
