@@ -60,7 +60,7 @@ class SponsorController extends Controller
             }
             array_push($data[$index]['data'], $this->extractor($sponsor));
         }
-
+        ksort($data);
         return $this->returnSuccess('success', array_values($data));
     }
 
@@ -75,6 +75,7 @@ class SponsorController extends Controller
         if (count($data) == 0) {
             return $this->returnNotFoundError();
         }
+        ksort($data);
         return $this->returnSuccess('success', $data);
     }
 
