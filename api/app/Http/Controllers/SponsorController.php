@@ -10,7 +10,7 @@ class SponsorController extends Controller
 {
     use ApiTrait;
 
-    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support'];
+    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support', 'edu_support'];
     private $displayName = [
         ['name' => 'Tony Stark'],
         ['name' => 'Bruce Wayne'],
@@ -20,7 +20,8 @@ class SponsorController extends Controller
         ['name' => '教育贊助', 'name_e' => 'Education Sponsor'],
         ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
         ['name' => '協辦單位', 'name_e' => 'Co Organizer'],
-        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助']
+        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
+        ['name' => '教育部智慧創新跨域人才培育計畫推動中心']
     ];
     private $speakerAry = [];
     protected $function = 'sponsor';
@@ -60,7 +61,7 @@ class SponsorController extends Controller
             }
             array_push($data[$index]['data'], $this->extractor($sponsor));
         }
-
+        ksort($data);
         return $this->returnSuccess('success', array_values($data));
     }
 
@@ -75,6 +76,7 @@ class SponsorController extends Controller
         if (count($data) == 0) {
             return $this->returnNotFoundError();
         }
+        ksort($data);
         return $this->returnSuccess('success', $data);
     }
 
@@ -114,6 +116,10 @@ class SponsorController extends Controller
     {
         $dir = $this->imgPath . 'sponsor/'. $name . '.*';
         $path = glob($dir);
+        if (empty($path)) {
+            $dir = $this->imgPath . 'volunteers/sponsor.*';
+            $path = glob($dir);
+        }
         $path = end($path);
         $type = mime_content_type($path);
         return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
