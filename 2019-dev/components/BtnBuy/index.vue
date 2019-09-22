@@ -1,5 +1,5 @@
 <template>
-    <a class="btnBuy" :href="link">
+    <a class="btnBuy" v-if="!isHide" :href="link" target="_blank">
         <div class="btnBuy__text">
             我要<br>購票
         </div>
@@ -12,7 +12,13 @@ export default {
     props: {
         link: {
             type: String,
-            default: 'ticket',
+            default:
+                'https://kktix.com/events?utf8=%E2%9C%93&search=mopcon&start_at=2019%2F09%2F22',
+        },
+    },
+    computed: {
+        isHide() {
+            return this.$route.name === 'ticket' ? true : false;
         },
     },
 };

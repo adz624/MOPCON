@@ -10,10 +10,10 @@
   background-color: $colorPrimary;
   z-index: 2000;
   @include rwd(pad) {
+    top: calc(65vh - 60px);
     right: 25px;
     width: 69px;
     height: 73px;
-    top: calc(65vh - 60px);
   }
 
   &:hover {
