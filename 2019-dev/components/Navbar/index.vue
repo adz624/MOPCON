@@ -47,7 +47,7 @@ export default {
                 },
                 {
                     id: 4,
-                    name: "sectionSponsor",
+                    name: "sectionSponsorCore",
                 },
                 {
                     id: 5,
@@ -88,6 +88,7 @@ export default {
                 scrollTo: {
                     y: `#${item.name}`,
                     autoKill: false,
+                    offsetY: 80,
                 },
                 onComplete() {
                     _this.stopScrollMagic = false;
@@ -137,10 +138,10 @@ export default {
                 })
                 .addTo(this.scrollController);
 
-            const sectionSponsor = new _ScrollMagic.Scene({
-                triggerElement: "#sectionSponsor",
+            const sectionSponsorCore = new _ScrollMagic.Scene({
+                triggerElement: '#sectionSponsorCore',
             })
-                .on("start", () => {
+                .on('start', () => {
                     if (!this.stopScrollMagic) this.handleUpdateActive(4);
                 })
                 .addTo(this.scrollController);

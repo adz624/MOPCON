@@ -14,8 +14,8 @@
         <!-- section place -->
         <SectionPlace id="sectionPlace" />
 
-        <!-- section 贊助區塊 -->
-        <SectionSponsor id="sectionSponsor" />
+        <!-- section 核心贊助商夥伴 -->
+        <SectionSponsorCore id="sectionSponsorCore" />
 
         <!-- section fb 動態牆 -->
         <SectionFbNews id="sectionFbNews" />
@@ -34,7 +34,7 @@ import SectionImageWall from './SectionImageWall';
 import SectionSpeaker from './SectionSpeaker';
 import SectionAbout from './SectionAbout';
 import SectionPlace from './SectionPlace';
-import SectionSponsor from './SectionSponsor';
+import SectionSponsorCore from './SectionSponsorCore';
 import SectionFbNews from './SectionFbNews';
 import SectionPastYears from './SectionPastYears';
 
@@ -52,7 +52,7 @@ export default {
         SectionSpeaker,
         SectionAbout,
         SectionPlace,
-        SectionSponsor,
+        SectionSponsorCore,
         SectionFbNews,
         SectionPastYears,
     },
