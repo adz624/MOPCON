@@ -34,7 +34,7 @@
           <a href="#" v-if="tempSponsorData.speaker_information && tempSponsorData.speaker_information.length > 0" :class="{'color-white active': mobileNavActive == 'speakerInfo'}"
             @click.prevent="mobileNavActive = 'speakerInfo'">相關講者資訊</a>
         </div>
-        <p class="abous_us" :class="{'hidden-md': mobileNavActive !== 'aboutus'}">{{ tempSponsorData.about_us }}</p>
+        <p class="abous_us" :class="{'hidden-md': mobileNavActive !== 'aboutus'}" v-html="formatTextWrap(tempSponsorData.about_us)"></p>
         <div class="partner-speaker" :class="{'hidden-md': mobileNavActive !== 'speakerInfo'}"
           v-if="tempSponsorData.speaker_information && tempSponsorData.speaker_information.length > 0">
           <div class="column">
@@ -119,6 +119,11 @@
         const startMin = (startDate.getMinutes() < 10 ? '0' + startDate.getMinutes() : startDate.getMinutes())
         const fullDate = `${startDate.getMonth() + 1}/${startDate.getDate()} ${startHour}:${startMin}`
         return fullDate
+      },
+      // 將 \n 轉成 <br>
+      formatTextWrap(text) {
+        if (!text) return text;
+        return text.replace(/\n/g, "<br>");
       },
     },
     created() {

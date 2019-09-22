@@ -60,7 +60,7 @@ class SponsorController extends Controller
             }
             array_push($data[$index]['data'], $this->extractor($sponsor));
         }
-
+        ksort($data);
         return $this->returnSuccess('success', array_values($data));
     }
 
@@ -75,6 +75,7 @@ class SponsorController extends Controller
         if (count($data) == 0) {
             return $this->returnNotFoundError();
         }
+        ksort($data);
         return $this->returnSuccess('success', $data);
     }
 
@@ -114,6 +115,10 @@ class SponsorController extends Controller
     {
         $dir = $this->imgPath . 'sponsor/'. $name . '.*';
         $path = glob($dir);
+        if (empty($path)) {
+            $dir = $this->imgPath . 'volunteers/sponsor.*';
+            $path = glob($dir);
+        }
         $path = end($path);
         $type = mime_content_type($path);
         return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
