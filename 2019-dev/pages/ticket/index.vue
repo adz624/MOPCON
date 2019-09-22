@@ -77,15 +77,15 @@ export default {
                     link: 'https://lihi1.com/r0L6T',
                 },
                 {
-                    title: '企業團購票',
+                    title: '相揪團購票',
                     id: 2,
                     status: 0,
-                    count: 0,
+                    count: 300,
                     price: 700,
                     beEngaged: false,
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
-                    desc: '適用 5~15 人企業團購<br>15人以上請來信洽談',
+                    desc: '適用 5 人企業團購<br>15人以上請來信洽談',
                     link: 'https://kktix.com/events/2019register/registrations/new',
                 },
                 {
