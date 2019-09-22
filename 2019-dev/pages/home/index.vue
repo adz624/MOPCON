@@ -23,6 +23,9 @@
         <!-- section 歷年 MOPCON -->
         <SectionPastYears id="sectionPastYears" />
 
+        <!-- section 購票入場 -->
+        <SectionBuy />
+
         <Navbar :isReady="isReady" />
     </div>
 </template>
@@ -37,6 +40,7 @@ import SectionPlace from './SectionPlace';
 import SectionSponsorCore from './SectionSponsorCore';
 import SectionFbNews from './SectionFbNews';
 import SectionPastYears from './SectionPastYears';
+import SectionBuy from './SectionBuy';
 
 export default {
     name: 'pageIndex',
@@ -55,6 +59,7 @@ export default {
         SectionSponsorCore,
         SectionFbNews,
         SectionPastYears,
+        SectionBuy,
     },
     mounted() {
         this.$store.commit('updateHomePageReady', true);
