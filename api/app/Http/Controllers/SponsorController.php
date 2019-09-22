@@ -10,7 +10,7 @@ class SponsorController extends Controller
 {
     use ApiTrait;
 
-    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support'];
+    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support', 'edu_support'];
     private $displayName = [
         ['name' => 'Tony Stark'],
         ['name' => 'Bruce Wayne'],
@@ -20,7 +20,8 @@ class SponsorController extends Controller
         ['name' => '教育贊助', 'name_e' => 'Education Sponsor'],
         ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
         ['name' => '協辦單位', 'name_e' => 'Co Organizer'],
-        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助']
+        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
+        ['name' => '教育部智慧創新跨域人才培育計畫推動中心']
     ];
     private $speakerAry = [];
     protected $function = 'sponsor';
