@@ -29,11 +29,11 @@ export default {
                 },
                 {
                     img: 'verizon-media.png',
-                    year: '3',
+                    year: '6',
                 },
                 {
                     img: 'aws.png',
-                    year: '2',
+                    year: '7',
                 },
                 {
                     img: 'pumo.png',
