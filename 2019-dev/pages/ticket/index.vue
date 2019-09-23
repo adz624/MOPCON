@@ -86,7 +86,7 @@ export default {
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
                     desc: '適用 5 人企業團購<br>15人以上請來信洽談',
-                    link: 'https://kktix.com/events/2019register/registrations/new',
+                    link: 'https://lihi1.com/r0L6T',
                 },
                 {
                     title: 'Beengaged 醞釀之夜',
