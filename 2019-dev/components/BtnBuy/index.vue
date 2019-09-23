@@ -1,5 +1,9 @@
 <template>
-    <a class="btnBuy" v-if="!isHide" :href="buyTicketUrl" target="_blank">
+    <a class="btnBuy"
+        v-if="!isHide"
+        :href="buyTicketUrl"
+        target="_blank"
+        @click="$store.dispatch('handleTicketClick')">
         <div class="btnBuy__text">
             我要<br>購票
         </div>

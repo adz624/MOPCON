@@ -155,6 +155,13 @@ export const actions = {
       console.log('err', err);
     }
   },
+  handleTicketClick() {
+    fbq('trackCustom', 'Purchase', {
+      ticketName: '會眾票',
+      value: 800,
+      currency: 'TWD',
+    });
+  },
 };
 
 export const getters = {
