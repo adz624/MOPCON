@@ -7,7 +7,7 @@
         <span class="decoration-line"></span>
         <div class="partner__list">
           <div class="logo" v-for="partner in sponsor.data">
-            <img :src="partner.logo_path" alt="">
+            <img class="logo_img" :src="partner.logo_path" alt="">
             <div class="hover" @click="openModal(partner)">
               <img src="./images/more.png" alt="">
             </div>
