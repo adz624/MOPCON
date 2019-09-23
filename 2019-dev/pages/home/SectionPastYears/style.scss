@@ -89,6 +89,7 @@
   &__btn {
     align-self: center;
     margin-top: 60px;
+    margin-left: -25px;
     @include rwd(pad) {
       margin-top: 46px;
       padding: 0 18px;
@@ -102,7 +103,7 @@
       width: 36px;
       height: 36px;
       margin-right: 14px;
-      background-image: url("./images/icon-play.png");
+      background-image: url('./images/icon-play.png');
       background-size: contain;
       @include rwd(pad) {
         width: 23px;

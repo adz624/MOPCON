@@ -1,0 +1,93 @@
+.section-sponsorCore {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 150px auto;
+  @include rwd(pad) {
+    margin: 106px auto;
+    padding-right: 0;
+  }
+
+  .title {
+    margin-bottom: 122px;
+    @include rwd(pad) {
+      margin-bottom: 56px;
+    }
+  }
+
+  .sponsors {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    @include rwd(pad) {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    .sponsors__item + .sponsors__item {
+      margin-left: 20px;
+    }
+
+    &__item {
+      @include bgCenter;
+      flex: 1;
+      width: calc(25% - 15px);
+      height: 0;
+      padding-top: calc(100% * 0.25 - 15px);
+
+      @include rwd(pad) {
+        flex: 0 0 auto;
+        width: 206px;
+        height: 208px;
+        padding-top: 0;
+      }
+
+      &__tag {
+        position: absolute;
+        bottom: 12px;
+        left: -3px;
+        height: 33px;
+        padding-left: 34px;
+        background-color: $colorPrimary;
+        line-height: 33px;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+        }
+
+        &:after {
+          @include bgCenter(17px, 12px);
+          top: 50%;
+          left: 9px;
+          transform: translateY(-50%);
+          background-image: url('./images/icon-gold.png');
+          background-size: contain;
+        }
+
+        &:before {
+          right: -25px;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-right: 25px solid transparent;
+          border-bottom: 33px solid $colorPrimary;
+        }
+
+        span {
+          color: $colorWhite;
+          font-size: 14px;
+          letter-spacing: 0.7px;
+        }
+      }
+    }
+  }
+
+  &__more {
+    align-self: flex-end;
+    margin-top: 19px;
+    padding-bottom: 3px;
+    border-bottom: solid 1px $colorWhite;
+    color: $colorWhite;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+}

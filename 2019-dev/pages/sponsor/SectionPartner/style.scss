@@ -29,6 +29,7 @@
         margin-bottom: 20px;
         position: relative;
         cursor: pointer;
+        font-size: 0px;
         @include rwd(pad) {
           flex: 0 0 47%;
         }
@@ -43,6 +44,9 @@
           right: 0;
           background: rgba(0,0,0,0.85);
           width: 100%;
+          img.logo_img {
+            width: 100%;
+          }
           img {
             display: block;
           }

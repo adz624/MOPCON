@@ -65,7 +65,6 @@ export default {
             .then(({ success, data, message }) => {
                 if (success) {
                     this.posts = [...data];
-                    console.log(this.posts);
                 } else {
                     console.log("error", message);
                 }

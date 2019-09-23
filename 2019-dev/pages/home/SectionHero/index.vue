@@ -18,7 +18,7 @@
                 <span>秒</span> -->
             </div>
             <Btn class="hero__btn">
-                <a href="https://www.facebook.com/mopcon/" target="_blank">追蹤粉絲專頁</a>
+                <a :href="buyTicketUrl" target="_blank" @click="$store.dispatch('handleTicketClick')">我要購票</a>
             </Btn>
         </div>
         <div class="hero__countdown hero__countdown--pc">
@@ -68,7 +68,10 @@ export default {
         },
         countDownMin () {
             return `0${this.countdown.min}`.substr(-2);
-        }
+        },
+        buyTicketUrl () {
+            return this.$store.getters.buyTicketUrl;
+        },
     },
     methods: {
         calculationCountDown (targetTime) {

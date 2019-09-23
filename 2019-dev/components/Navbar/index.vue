@@ -39,26 +39,31 @@ export default {
                 },
                 {
                     id: 2,
-                    name: "sectionAbout",
+                    name: "sectionSpeaker",
                 },
                 {
                     id: 3,
-                    name: "sectionPlace",
+                    name: "sectionAbout",
                 },
                 {
                     id: 4,
-                    name: "sectionSponsor",
+                    name: "sectionPlace",
                 },
                 {
                     id: 5,
-                    name: "sectionFbNews",
+                    name: "sectionSponsorCore",
                 },
                 {
                     id: 6,
+                    name: "sectionFbNews",
+                },
+                {
+                    id: 7,
                     name: "sectionPastYears",
                 },
             ],
             scrollController: null,
+            scrollMagicObj: {}
         };
     },
     watch: {
@@ -88,6 +93,7 @@ export default {
                 scrollTo: {
                     y: `#${item.name}`,
                     autoKill: false,
+                    offsetY: 80,
                 },
                 onComplete() {
                     _this.stopScrollMagic = false;
@@ -105,61 +111,17 @@ export default {
             this.scrollMagicTrigger();
         },
         scrollMagicTrigger() {
-            const sectionHero = new _ScrollMagic.Scene({
-                triggerElement: ".hero__btn",
-            })
-                .on("start", event => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(0);
-                })
-                .addTo(this.scrollController);
+            this.sections.forEach(item => {
+              const triggerTarget = item.id === 0 ? '.hero__btn' : `#${item.name}`
 
-            const sectionImageWall = new _ScrollMagic.Scene({
-                triggerElement: "#sectionImageWall",
-            })
-                .on("start", event => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(1);
-                })
-                .addTo(this.scrollController);
-
-            const sectionAbout = new _ScrollMagic.Scene({
-                triggerElement: "#sectionAbout",
-            })
-                .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(2);
-                })
-                .addTo(this.scrollController);
-
-            const sectionPlace = new _ScrollMagic.Scene({
-                triggerElement: "#sectionPlace",
-            })
-                .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(3);
-                })
-                .addTo(this.scrollController);
-
-            const sectionSponsor = new _ScrollMagic.Scene({
-                triggerElement: "#sectionSponsor",
-            })
-                .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(4);
-                })
-                .addTo(this.scrollController);
-
-            const sectionFbNews = new _ScrollMagic.Scene({
-                triggerElement: "#sectionFbNews",
-            })
-                .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(5);
-                })
-                .addTo(this.scrollController);
-
-            const sectionPastYears = new _ScrollMagic.Scene({
-                triggerElement: "#sectionPastYears",
-            })
-                .on("start", () => {
-                    if (!this.stopScrollMagic) this.handleUpdateActive(6);
-                })
-                .addTo(this.scrollController);
+              this.scrollMagicObj[item.name] = new _ScrollMagic.Scene({
+                  triggerElement: triggerTarget,
+              })
+              .on("start", event => {
+                  if (!this.stopScrollMagic) this.handleUpdateActive(item.id);
+              })
+              .addTo(this.scrollController);
+            });
         },
     },
 };
