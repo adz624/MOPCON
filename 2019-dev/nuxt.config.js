@@ -164,6 +164,7 @@ module.exports = {
     routeSponsor: process.env.SPONSOR === 'false' ? false : true,
     routeCommunity: process.env.COMMUNITY === 'false' ? false : true,
     routeTicket: process.env.TICKET === 'false' ? false : true,
+    buyTicketUrl: process.env.BUY_TICKET_URL || 'https://kktix.com/events/2019registernormal/registrations/new',
     yearUrl: '/2019',
   },
 
