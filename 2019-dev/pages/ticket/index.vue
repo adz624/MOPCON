@@ -79,7 +79,7 @@ export default {
                 {
                     title: '相揪團購票',
                     id: 2,
-                    status: 0,
+                    status: 1,
                     count: 300,
                     price: 700,
                     beEngaged: false,
