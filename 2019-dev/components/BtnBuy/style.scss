@@ -1,8 +1,8 @@
 .btnBuy {
   @include flexCenter;
   position: fixed;
-  top: calc(50vh - 60px);
   right: 69px;
+  bottom: 123px;
   width: 114px;
   height: 120px;
   transition: all 0.3s;
