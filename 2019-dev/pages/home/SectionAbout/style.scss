@@ -1,5 +1,8 @@
 .section-about {
-  margin-top: 280px;
+  margin-top: 160px;
+  @include rwd(pad) {
+    margin-top: 73px;
+  }
 
   .title {
     @include rwd(pad) {
@@ -22,12 +25,12 @@
   &__img {
     @include bgCenter(360px, 349px);
     flex: 0 0 auto;
-    background-image: url("./images/section-about-img.png");
+    background-image: url('./images/section-about-img.png');
     @include rwd(pad) {
       width: 289px;
       height: 266px;
       margin-bottom: 40px;
-      background-image: url("./images/section-about-img-s.png");
+      background-image: url('./images/section-about-img-s.png');
     }
   }
 

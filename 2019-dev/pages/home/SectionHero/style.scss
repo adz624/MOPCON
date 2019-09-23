@@ -129,15 +129,17 @@
   }
 
   &__btn {
+    min-width: 162px;
     @include rwd(pad) {
       margin-top: 26px;
+      min-width: 127px;
     }
   }
 
   &__countdown {
     position: absolute;
     right: 0;
-    bottom: 40px;
+    bottom: 95px;
     padding-right: 10%;
     padding-bottom: 10px;
     white-space: nowrap;

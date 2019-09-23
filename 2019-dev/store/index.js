@@ -64,6 +64,7 @@ export const state = () => ({
   sessionDetailLoading: false,
   sessionUnconfData: [],
   tags: [],
+  buyTicketUrl: '',
 });
 
 export const mutations = {
@@ -100,9 +101,15 @@ export const mutations = {
   setTags(state, payload) {
     state.tags = payload;
   },
+  setBuyTicketUrl(state, payload) {
+    state.buyTicketUrl = payload;
+  },
 };
 
 export const actions = {
+  nuxtServerInit({ commit }) {
+    commit('setBuyTicketUrl', process.env.buyTicketUrl);
+  },
   async getSessionData({ commit }) {
     try {
       const { status, data } = await this.$axios.get('/api/2019/session');
@@ -148,6 +155,13 @@ export const actions = {
       console.log('err', err);
     }
   },
+  handleTicketClick() {
+    fbq('trackCustom', 'Purchase', {
+      ticketName: '會眾票',
+      value: 800,
+      currency: 'TWD',
+    });
+  },
 };
 
 export const getters = {
@@ -160,6 +174,7 @@ export const getters = {
   seoLangTag: state => state.seoLangTag,
   localeApiPrefix: state => state.localeApiPrefix,
   pageIsLoading: state => state.pageIsLoading,
+  buyTicketUrl: state => state.buyTicketUrl,
   locales: state => state.locales,
   locale: state => state.locale,
   tags: state => state.tags,

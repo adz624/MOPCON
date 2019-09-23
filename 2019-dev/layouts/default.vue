@@ -3,6 +3,7 @@
         <div class="full-loading" ref="fullLoading"></div>
         <Header />
         <nuxt />
+        <BtnBuy />
         <Footer />
     </div>
 </template>
@@ -10,12 +11,14 @@
 <script>
 import Footer from '~/components/Footer';
 import Header from '~/components/Header';
+import BtnBuy from '~/components/BtnBuy';
 
 export default {
     name: 'layout',
     components: {
         Footer,
         Header,
+        BtnBuy,
     },
     methods: {
         // client side 初始語系, 先從 localStorage 抓取之前已選定語系, 若無將預設為 zh
