@@ -1022,7 +1022,7 @@
     "room": "R1",
     "floor": "3F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Basic",
     "tags": [
       "Startup"
