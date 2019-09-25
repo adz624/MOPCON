@@ -10,30 +10,26 @@ class AppHomeController extends Controller
     use ApiTrait;
 
     protected $function = 'banner';
-    private $newsAry;
+    private $output;
 
     public function __construct()
     {
         global $app;
-
         parent::__construct();
-        $request = Request::create('/api/2019/news', 'GET');
-        $response = json_decode($app->dispatch($request)->getContent(), true);
-        $this->newsAry = $response['data'] ?? [];
-    }
 
-    public function index()
-    {
-        $result = [];
-
-        $result['banner'] = array_map(function ($value) {
+        $this->output['banner'] = array_map(function ($value) {
             $value['img'] = url($value['img']);
             return $value;
         }, $this->jsonAry);
 
-        $result['news'] = $this->newsAry;
+        $request = Request::create('/api/2019/news', 'GET');
+        $response = json_decode($app->dispatch($request)->getContent(), true);
+        $this->output['news'] = $response['data'] ?? [];
+    }
 
-        return $this->returnSuccess('success', $result);
+    public function index()
+    {
+        return $this->returnSuccess('success', $this->output);
     }
 
     public function show($name)
