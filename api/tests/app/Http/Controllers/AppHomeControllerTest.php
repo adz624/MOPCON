@@ -47,4 +47,9 @@ class AppHomeController extends TestCase
             'data' => $compared
         ]);
     }
+
+    public function tearDown() : void
+    {
+        test::clean();
+    }
 }
