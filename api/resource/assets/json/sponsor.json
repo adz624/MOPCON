@@ -103,7 +103,7 @@
     "about_us": "",
     "about_us_e": "",
     "facebook_url": "",
-    "official_website": "",
+    "official_website": "https://www.facebook.com/ssxelerator",
     "sponsor_type": "hacker",
     "career_information": ""
   },
@@ -163,7 +163,7 @@
     "about_us": "本聯盟為非營利為目的之產學研聯盟組織，係配合國科會產學小聯盟計畫成立\n，以「國立高雄科技大學電子工程系」及「成功大學數位生活科技中心」為運\n 作及交流平台，集合數十位教授與相關領域專家近年的研究成果為核心技術，\n 協同法人研究單位的研發能量與國內外產業專家的專業經驗，提供產學研技術\n 交流、研發輔導、測試驗證、人才培育及媒合服務，積極推動智慧感知與雲端\n 服務產業發展，協助提昇產業競爭能力。",
     "about_us_e": "",
     "facebook_url": "",
-    "official_website": "",
+    "official_website": "http://credit.csie.ncku.edu.tw:33080/sscs/",
     "sponsor_type": "sscs_support",
     "career_information": ""
   },
@@ -175,7 +175,7 @@
     "about_us": "",
     "about_us_e": "",
     "facebook_url": "",
-    "official_website": "",
+    "official_website": "https://www.itsa.org.tw/itsa/",
     "sponsor_type": "ita_support",
     "career_information": ""
   },
@@ -187,7 +187,7 @@
     "about_us": "",
     "about_us_e": "",
     "facebook_url": "",
-    "official_website": "",
+    "official_website": "https://www.hexschool.com/",
     "sponsor_type": "education",
     "career_information": ""
   },
@@ -237,6 +237,18 @@
     "facebook_url": "https://www.facebook.com/104jobbank/",
     "official_website": "https://www.104.com.tw",
     "sponsor_type": "hacker",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2019/sponsor/images/sponsor_25",
+    "name": "國泰金融",
+    "name_e": "Cathay Financial Holdings",
+    "sponsor_id": 25,
+    "about_us": "國泰金控致力於推動集團數位轉型，設立「數位數據暨科技發展中心(DDT)」，以數據驅動為理念(data-driven as culture)，協助國泰金控打造數位數據生態圈。\n\n國泰積極投入資源建構大數據基礎建設並且導入新技術，同時整合集團資源，提供創新體驗及服務，以數據驅動金融科技創新，提供有感、有效的客戶數位體驗，致力成為亞洲數位生態圈及科技金融領頭羊。",
+    "about_us_e": "To keep up the momentum of global Fintech development, Cathay Financial Holdings Corporation (CFH) established the Digital, Data & Technology (DDT) practice, contributing to Fintech developments and digital transformation, to build a digital and data ecosystem via “data-driven culture” with its subsidiaries\n\nPowered by digital, data, and technology, DDT is actively developing a big data infrastructure, adopting new technologies as well as initiating data-driven financial services that maximizing synergistic effects through various collaboration across Cathay’s subsidiaries, for example, MyRewards App, Chatbot “Alpha,” KOKO digital banking, Cathay Robo and AI claims system…etc.\n\nDDT is highly committed to investing people. We are dedicated in creating an open environment suitable for cross-border talents from diverse backgrounds such as technology, start-up, e-commerce, retail, telecommunication and finance, to satisfy our people’s desire to growth. In DDT, we share ‘One Team’ value with open minded discussion, problem solving oriented, team work, proactive learning and continuous collaboration. With respect to data science and data engineering, we also established a “Data Science Lab” to ensure our technical capabilities with research and innovation ratoinale which is rare and unique to industry.\n\nBy collaborating with Cathay’s subsidiaries and consolidating the group resources, DDT provides innovative digital products and services driven by data with brilliant customer experiences, aiming to become the top in Asia Pacific Fintech ecology.",
+    "facebook_url": "",
+    "official_website": "https://www.cathayholdings.com/holdings/",
+    "sponsor_type": "bruce_wayne",
     "career_information": ""
   }
 ]
