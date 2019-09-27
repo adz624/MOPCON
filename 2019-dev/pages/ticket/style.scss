@@ -96,7 +96,8 @@
     }
   }
 
-  &__studentKind {
+  &__studentKind,
+  &__product {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -149,6 +150,20 @@
         flex-flow: column nowrap;
         padding: 0 32px;
       }
+    }
+  }
+
+  &__product {
+    .title {
+      @include rwd(pad) {
+        letter-spacing: -3.2px;
+        font-weight: normal;
+      }
+    }
+    .text {
+      max-width: 850px;
+      font-size: 16px;
+      letter-spacing: 0;
     }
   }
 
