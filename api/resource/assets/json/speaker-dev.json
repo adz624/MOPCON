@@ -752,7 +752,7 @@
     "topic_e": "",
     "summary": "希望可以跟大家分享在醫院中跟醫師合作擦出火花的過程，在醫院中如何去把 AI 應用醫療上，當中的困難。在參加創業比賽，包括科技部 FITI 創新創業激勵計畫 (前 40 強)，寶渥公司 PitchCamp (前 20 強)，經濟部 2019 第十四屆戰國策全國創新創業競賽 (創新創意組第二名)，台灣雲谷雲豹育成計畫 (前 30 名)，所遇到的困難和挑戰，都希望可以跟大家分享。帶著大家跟一個工程師的角度，去了解 AI，醫療，創業，的現在過去未來。",
     "summary_e": "",
-    "is_keynote": true,
+    "is_keynote": false,
     "started_at": 1571472000,
     "ended_at": 1571474400,
     "room": "R1",
@@ -831,7 +831,7 @@
     "ended_at": 1571466900,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0,
+    "sponsor_id": 4,
     "recordable": true,
     "level": "Normal",
     "tags": [
@@ -868,7 +868,7 @@
     "ended_at": 1571453700,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0,
+    "sponsor_id": 4,
     "recordable": true,
     "level": "Basic",
     "tags": [
@@ -905,7 +905,7 @@
     "ended_at": 1571474400,
     "room": "R2",
     "floor": "4F",
-    "sponsor_id": 0,
+    "sponsor_id": 6,
     "recordable": true,
     "level": "Normal",
     "tags": [
@@ -942,7 +942,7 @@
     "ended_at": 1571453700,
     "room": "R2",
     "floor": "4F",
-    "sponsor_id": 0,
+    "sponsor_id": 3,
     "recordable": true,
     "level": "Normal",
     "tags": [
@@ -980,7 +980,7 @@
     "ended_at": 1571540100,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0,
+    "sponsor_id": 20,
     "recordable": true,
     "level": "Basic",
     "tags": [
@@ -1022,7 +1022,7 @@
     "room": "R1",
     "floor": "3F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Basic",
     "tags": [
       "Startup"

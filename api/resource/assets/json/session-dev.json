@@ -356,7 +356,12 @@
         "room": [
           {
             "session_id": 2019032,
-            "speaker_id": [35, 36, 37, 41]
+            "speaker_id": [
+              35,
+              36,
+              37,
+              41
+            ]
           },
           {
             "session_id": 2019033,
@@ -383,7 +388,11 @@
         "room": [
           {
             "session_id": 2019036,
-            "speaker_id": [38, 39, 40]
+            "speaker_id": [
+              38,
+              39,
+              40
+            ]
           }
         ]
       },
