@@ -10,7 +10,6 @@
   transition: all 0.3s;
   border-radius: 8px;
   color: $colorBlack;
-  overflow: hidden;
   cursor: pointer;
 
   @include rwd(pad) {
@@ -91,6 +90,25 @@
     font-weight: bold;
     text-align: center;
   }
+
+  &__btn.secondary {
+    @include bgCenter;
+    background-color: transparent;
+    background-image: url('./images/btn-dashed.png');
+    background-size: contain;
+    color: $colorWhite;
+    font-weight: 500;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    color: $colorPrimary;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 .cardTicket.primary {
@@ -116,7 +134,8 @@
 }
 
 .cardTicket.primary,
-.cardTicket.secondary {
+.cardTicket.secondary,
+.cardTicket.product {
   background-image: url('./images/bg-circle.png');
   background-size: 255px 255px;
   background-position: 125px 200px;
@@ -184,11 +203,47 @@
     }
   }
 }
+.cardTicket.product:nth-child(1),
+.cardTicket.product:nth-child(2) {
+  margin-bottom: 75px;
+}
+.cardTicket.product {
+  border: solid 1px $colorPrimary;
+  background-color: #005375;
+
+  .cardTicket__head {
+    justify-content: center;
+  }
+  .cardTicket__head__title {
+    color: $colorWhite;
+    font-weight: 500;
+  }
+
+  .cardTicket__head__count {
+    display: none;
+  }
+
+  .cardTicket__content {
+    display: none;
+  }
+
+  .cardTicket__img {
+    @include bgCenter(157px, 191px);
+    margin: 23px auto 22px auto;
+  }
+}
 
 // 禁用狀態
 .cardTicket.disabled {
   .cardTicket__btn {
     background-color: $colorWhite;
+  }
+}
+
+.cardTicket.product.disabled {
+  .cardTicket__btn {
+    background-color: transparent;
+    pointer-events: none;
   }
 }
 

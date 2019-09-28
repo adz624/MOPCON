@@ -34,6 +34,19 @@
                 <li class="ticket__studentKind__remark">*{{$t('pages.ticket.student.remarks[2]')}}</li>
             </ul>
         </section>
+
+        <!-- 周邊商品 -->
+        <section class="ticket__product">
+            <h2 class="title">
+                <span>{ 想要更多周邊商品嗎？</span><span class="color-primary">紀念品預購開跑囉！</span><span>; }</span>
+            </h2>
+            <p class="text">我們用最真誠的心，親自設計這份禮物送給最珍貴的 VVIP，這此也提供最佛心的價格，讓每個會眾都能購買作收藏！</p>
+            <div class="ticket__kind__block">
+                <CardTicket v-for="product in productData" :key="product.id" v-bind="product" />
+            </div>
+        </section>
+
+        <SectionApp />
     </div>
 </template>
 
@@ -85,7 +98,8 @@ export default {
                     beEngaged: false,
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
-                    desc: '適用 5 人企業團購<br>超過 15 人（ 16 人以上）請來信詳談',
+                    desc:
+                        '適用 5 人企業團購<br>超過 15 人（ 16 人以上）請來信詳談',
                     link: 'https://lihi1.com/r0L6T',
                 },
                 {
@@ -159,6 +173,50 @@ export default {
                     link: 'https://mopcon.kktix.cc/events/2019registerstudent',
                 },
             ],
+            productData: [
+                {
+                    title: '肝鐵人紀念 T-shirt',
+                    id: 0,
+                    status: 3, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售, 3 => 開放預購, 4 => 現場販售
+                    price: 0,
+                    beEngaged: false,
+                    image: 't-shirt.jpg',
+                    type: 'product', // 四種風格 primary / secondary / third / product
+                    link: 'https://lihi1.com/VEVR8',
+                    text: '預購時間 9/25 21:00 - 10/6 23:50',
+                },
+                {
+                    title: '帆布手提後背包',
+                    id: 1,
+                    status: 3,
+                    price: 0,
+                    beEngaged: false,
+                    image: 'back-backpack.jpg',
+                    type: 'product',
+                    link: 'https://lihi1.com/VEVR8',
+                    text: '預購時間 9/25 21:00 - 10/6 23:50',
+                },
+                {
+                    title: '潛水布飲料杯提袋',
+                    id: 2,
+                    status: 4,
+                    price: 0,
+                    beEngaged: false,
+                    image: 'cup-bag.jpg',
+                    type: 'product',
+                    link: '#',
+                },
+                {
+                    title: 'MOPCON 刺繡貼紙',
+                    id: 3,
+                    status: 4,
+                    price: 0,
+                    beEngaged: false,
+                    image: 'sticker.jpg',
+                    type: 'product',
+                    link: '#',
+                },
+            ],
         };
     },
     computed: {
@@ -182,7 +240,7 @@ export default {
             fbq('trackCustom', 'Purchase', {
                 ticketName: ticketName,
                 value: ticketPrice,
-                currency: 'TWD'
+                currency: 'TWD',
             });
         },
     },
