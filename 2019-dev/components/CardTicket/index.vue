@@ -12,7 +12,14 @@
             </div>
             <div v-if="desc" v-html="desc" class="cardTicket__content__desc"></div>
         </div>
-        <div class="cardTicket__btn" v-if="!beEngaged" @click="handleTicketClick(title, price)">{{btnText}}</div>
+        <div v-if="type === 'product'" class="cardTicket__img"
+            :style="`background-image: url(${require(`./images/${image}`)})`"></div>
+        <div class="cardTicket__btn"
+            @click="handleTicketClick(title, price)"
+            :class="{secondary: status === 4}"
+            v-if="!beEngaged">{{btnText}}</div>
+
+        <div class="cardTicket__text" v-if="type === 'product' && status === 3">{{text}}</div>
     </a>
 </template>
 
@@ -44,6 +51,10 @@ export default {
             type: Number,
             default: 20,
         },
+        image: {
+            type: String,
+            default: '',
+        },
         lists: {
             type: Array,
             default: () => {
@@ -68,6 +79,10 @@ export default {
             type: String,
             defualt: '',
         },
+        text: {
+            type: String,
+            default: '',
+        },
     },
     computed: {
         btnText() {
@@ -75,16 +90,20 @@ export default {
             // 0 => 敬請期待
             // 1 => 顯示價格
             // 2 => 已完售
+            // 3 => 開放預購
+            // 4 => 現場販售
             if (this.status === 0) return '敬請期待';
             if (this.status === 1) return `NT$${this.price}`;
             if (this.status === 2) return '已完售';
+            if (this.status === 3) return '開放預購';
+            if (this.status === 4) return '現場販售';
         },
         statusClass() {
             // status 狀態對應 class 名稱
             // 0 => disabled
             // 1 => 預設樣式，不用加
             // 2 => soldout
-            if (this.status === 0) return 'disabled';
+            if (this.status === 0 || this.status == 4) return 'disabled';
             if (this.status === 2) return 'soldout';
             return '';
         },

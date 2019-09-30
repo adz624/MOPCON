@@ -294,6 +294,44 @@
     ]
   },
   {
+    "name": "陳慶耀",
+    "name_e": "Pichu Chen",
+    "speaker_id": 9,
+    "company": "台灣智慧家庭股份有限公司",
+    "company_e": "Taiwan Intelligent Home Corp.",
+    "job_title": "CEO",
+    "job_title_e": "CEO",
+    "bio": "Pichu Chen，中山資工畢業，中山大學宿舍網路推廣協會 CDPA 前會長。專長在物聯網與智慧家電的設計以及資安等部分，最近往自然語言處理發展，試著結合家電控制以及自然語言處理技術。",
+    "bio_e": "Pichu Chen, Graduated from National Sun Yat-Sen University, CDPA (NSYSU Campus Dorm-net Network Promotion Association ) former president. Expertise in the design of IoT appliances.",
+    "photo_for_speaker_web": "api/2019/speaker/images/web/speaker_9",
+    "photo_for_speaker_mobile": "api/2019/speaker/images/mobile/speaker_9",
+    "photo_for_session_web": "api/2019/speaker/images/web/speaker_9",
+    "photo_for_session_mobile": "api/2019/speaker/images/mobile/speaker_9",
+    "photo_for_sponsor_web": "api/2019/speaker/images/web/speaker_9",
+    "photo_for_sponsor_mobile": "api/2019/speaker/images/mobile/speaker_9",
+    "link_fb": "https://www.facebook.com/Pichu.Chen",
+    "link_github": "https://github.com/PichuChen",
+    "link_twitter": "",
+    "link_other": "",
+    "topic": "如何從無到有變出 COSCUP 的 Google 助理動作並上架",
+    "topic_e": "",
+    "summary": "Chatbot 相關技術發展已有一段時間，隨著智慧音箱的誕生，Chatbot 相關技術進入下一個階段，本議程會以已經上架的 COSCUP Google 助理動作作為範例，分享此動作的設計和製作的過程以及心得。 \n這篇議程會用到的工具有 Sketch, Dialogflow 以及 Golang，適合對於 Voice UI 有興趣的會眾參加。\n另外如果對於如何和智慧家電做結合、控制的會眾也歡迎在議程結束後一起討論。",
+    "summary_e": "",
+    "is_keynote": false,
+    "recordable": true,
+    "level": "Normal",
+    "tags": [
+      "AI",
+      "IoT",
+      "UI/UX"
+    ],
+    "started_at": 1571451300,
+    "ended_at": 1571453700,
+    "room": "R3",
+    "floor": "4F",
+    "sponsor_id": 0
+  },
+  {
     "name": "林容瑋",
     "name_e": "Ansgar Lin",
     "speaker_id": 10,
@@ -653,7 +691,8 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
-      "Web"
+      "Web",
+      "QA"
     ]
   },
   {
@@ -689,7 +728,8 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
-      "Web"
+      "Web",
+      "QA"
     ]
   },
   {
@@ -752,7 +792,7 @@
     "topic_e": "",
     "summary": "希望可以跟大家分享在醫院中跟醫師合作擦出火花的過程，在醫院中如何去把 AI 應用醫療上，當中的困難。在參加創業比賽，包括科技部 FITI 創新創業激勵計畫 (前 40 強)，寶渥公司 PitchCamp (前 20 強)，經濟部 2019 第十四屆戰國策全國創新創業競賽 (創新創意組第二名)，台灣雲谷雲豹育成計畫 (前 30 名)，所遇到的困難和挑戰，都希望可以跟大家分享。帶著大家跟一個工程師的角度，去了解 AI，醫療，創業，的現在過去未來。",
     "summary_e": "",
-    "is_keynote": true,
+    "is_keynote": false,
     "started_at": 1571472000,
     "ended_at": 1571474400,
     "room": "R1",
@@ -799,7 +839,8 @@
     "level": "Normal",
     "tags": [
       "AI",
-      "FinTech"
+      "FinTech",
+      "Quant"
     ]
   },
   {
@@ -831,7 +872,7 @@
     "ended_at": 1571466900,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0,
+    "sponsor_id": 4,
     "recordable": true,
     "level": "Normal",
     "tags": [
@@ -868,12 +909,13 @@
     "ended_at": 1571453700,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0,
+    "sponsor_id": 4,
     "recordable": true,
     "level": "Basic",
     "tags": [
       "AI",
-      "Mobile App"
+      "Mobile App",
+      "QA"
     ]
   },
   {
@@ -905,7 +947,7 @@
     "ended_at": 1571474400,
     "room": "R2",
     "floor": "4F",
-    "sponsor_id": 0,
+    "sponsor_id": 6,
     "recordable": true,
     "level": "Normal",
     "tags": [
@@ -942,7 +984,7 @@
     "ended_at": 1571453700,
     "room": "R2",
     "floor": "4F",
-    "sponsor_id": 0,
+    "sponsor_id": 3,
     "recordable": true,
     "level": "Normal",
     "tags": [
@@ -960,7 +1002,7 @@
     "job_title": "创始人 & 首席执行官",
     "job_title_e": "Founder & CEO",
     "bio": "高春辉，中国个人站长第一人和连续技术创业者，中国最早期的程序员之一，也是最早在安全和逆向研究的程序员之一。2015 年，高春辉创办 IPIP.NET， 专注 IP 地理位置以及 IP 画像数据的研究、整理与发行，主力产品为全球地理位置数据库。",
-    "bio_e": "Chun-Huei Kao, the first personal website owner in China and serial technical entrepreneur. OIn 2015, he founded IPIP.NET  focuses on IP intelligence with Flagship product IP Geolocation database.",
+    "bio_e": "Chun-Huei Kao, the first personal website owner in China and serial technical entrepreneur. In 2015, he founded IPIP.NET  focuses on IP intelligence with Flagship product IP Geolocation database.",
     "photo_for_speaker_web": "api/2019/speaker/images/web/speaker_30",
     "photo_for_speaker_mobile": "api/2019/speaker/images/mobile/speaker_30",
     "photo_for_session_web": "api/2019/speaker/images/web/speaker_30",
@@ -980,15 +1022,12 @@
     "ended_at": 1571540100,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0,
+    "sponsor_id": 20,
     "recordable": true,
     "level": "Basic",
     "tags": [
-      "AI",
-      "Cloud",
       "DevOps",
       "Data Science",
-      "Cross-platform",
       "Security"
     ]
   },
@@ -1022,7 +1061,7 @@
     "room": "R1",
     "floor": "3F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Basic",
     "tags": [
       "Startup"
