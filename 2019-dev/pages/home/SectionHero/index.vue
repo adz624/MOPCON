@@ -17,9 +17,11 @@
                 <!-- <span>{{countdown.sec}}</span>
                 <span>秒</span> -->
             </div>
-            <Btn class="hero__btn">
-                <a :href="buyTicketUrl" target="_blank" @click="$store.dispatch('handleTicketClick')">我要購票</a>
-            </Btn>
+            <a :href="buyTicketUrl" target="_blank" @click="$store.dispatch('handleTicketClick')">
+                <Btn class="hero__btn">
+                    我要購票
+                </Btn>
+            </a>
         </div>
         <div class="hero__countdown hero__countdown--pc">
             <span>{{countDownDay}}</span>
