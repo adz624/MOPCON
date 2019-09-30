@@ -42,7 +42,11 @@
                 </div>
             </a>
         </div>
-
+        <!-- 夥伴議程 -->
+        <a :href="`/2019/sponsor/?id=${cardData.sponsor_id}`" class="cardDetail__sponsor" v-if="cardData.sponsor_id !== 0">
+            <p class="cardDetail__sponsor__title color-primary">贊助夥伴</p>
+            <img class="cardDetail__sponsor__logo" :src="cardData.sponsor_info.logo_path" alt="">
+        </a>
         <div class="cardDetail__btn"
             v-clipboard:copy="detailUrl"
             v-clipboard:success="onCopy"
