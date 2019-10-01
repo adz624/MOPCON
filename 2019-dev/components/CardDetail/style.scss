@@ -106,6 +106,25 @@
     }
   }
 
+  &__sponsor {
+    margin: 52px auto 15px auto;
+    text-align: center;
+    @include rwd(pad) {
+      margin: 45px auto 8px auto;
+    }
+    &__title {
+      font-size: 16px;
+      @include rwd(pad) {
+        font-size: 14px;
+      }
+    }
+    &__logo {
+      margin-top: 12px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
   &__btn {
     align-self: center;
     margin-top: 37px;

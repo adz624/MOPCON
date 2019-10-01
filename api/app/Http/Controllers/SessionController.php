@@ -62,7 +62,7 @@ class SessionController extends Controller
             $this->sponsors[(int) $sponsor['sponsor_id']] = [
                 'name' => $sponsor['name'],
                 'name_e' => $sponsor['name_e'],
-                'logo_path' => $sponsor['logo_path'],
+                'logo_path' => url($sponsor['logo_path']),
             ];
         }
         $this->speakerService = new SpeakerService($this->jsonAry);
