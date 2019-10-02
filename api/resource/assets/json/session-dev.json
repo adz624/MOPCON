@@ -69,6 +69,10 @@
         "event": "",
         "room": [
           {
+            "session_id": 2019005,
+            "speaker_id": 28
+          },
+          {
             "session_id": 2019006,
             "speaker_id": 11
           },
@@ -135,6 +139,13 @@
           {
             "session_id": 2019011,
             "speaker_id": 12
+          },
+          {
+            "session_id": 2019012,
+            "speaker_id": [
+              26,
+              42
+            ]
           },
           {
             "session_id": 2019013,
