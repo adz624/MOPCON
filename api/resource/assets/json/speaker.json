@@ -919,6 +919,44 @@
     ]
   },
   {
+    "name": "謝世衡",
+    "name_e": "Jayson Hsieh",
+    "speaker_id": 26,
+    "company": "台灣亞馬遜網路服務有限公司",
+    "company_e": "Amazon Web Services",
+    "job_title": "解決方案架構師",
+    "job_title_e": "Solutions Architect",
+    "bio": "AWS 解決方案架構師\n\n提供客戶雲端架構規劃與建議，協助用戶實施雲端的最佳實踐。曾與朋友嘗試過網路新創，深知創業維艱的道理。",
+    "bio_e": "",
+    "photo_for_speaker_web": "api/2019/speaker/images/web/speaker_26",
+    "photo_for_speaker_mobile": "api/2019/speaker/images/mobile/speaker_26",
+    "photo_for_session_web": "api/2019/speaker/images/web/speaker_26",
+    "photo_for_session_mobile": "api/2019/speaker/images/mobile/speaker_26",
+    "photo_for_sponsor_web": "api/2019/speaker/images/web/speaker_26",
+    "photo_for_sponsor_mobile": "api/2019/speaker/images/mobile/speaker_26",
+    "link_fb": "",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "",
+    "topic": "用一場演講的時間，建構一個有些 AI 的無伺服器 APP",
+    "topic_e": "",
+    "summary": "用一場演講的時間，建構一個有些 AI 的無伺服器 APP",
+    "summary_e": "",
+    "is_keynote": false,
+    "started_at": 1571467800,
+    "ended_at": 1571470200,
+    "room": "R2",
+    "floor": "4F",
+    "sponsor_id": 12,
+    "recordable": false,
+    "level": "Normal",
+    "tags": [
+      "AI",
+      "Cloud",
+      "Mobile App"
+    ]
+  },
+  {
     "name": "Art Huang",
     "name_e": "Art Huang",
     "speaker_id": 27,
@@ -953,6 +991,42 @@
     "tags": [
       "Mobile App",
       "Cross-platform"
+    ]
+  },
+  {
+    "name": "黃信傑",
+    "name_e": "",
+    "speaker_id": 28,
+    "company": "捕夢網數位科技有限公司",
+    "company_e": "",
+    "job_title": "業務總監",
+    "job_title_e": "",
+    "bio": "現職捕夢網業務總監",
+    "bio_e": "",
+    "photo_for_speaker_web": "api/2019/speaker/images/web/speaker_28",
+    "photo_for_speaker_mobile": "api/2019/speaker/images/mobile/speaker_28",
+    "photo_for_session_web": "api/2019/speaker/images/web/speaker_28",
+    "photo_for_session_mobile": "api/2019/speaker/images/mobile/speaker_28",
+    "photo_for_sponsor_web": "api/2019/speaker/images/web/speaker_28",
+    "photo_for_sponsor_mobile": "api/2019/speaker/images/mobile/speaker_28",
+    "link_fb": "",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "",
+    "topic": "迎接 AI 未來新趨勢! 打造 Chatbot 的新面貌",
+    "topic_e": "",
+    "summary": "隨著人工智慧的發展，越來越多的機器人出現在我們的日常生活中，用於電話行銷的自動撥打電話機器人、自動回覆客戶問題的文字機器人。機器人正活躍在各行各業中，代替人類去做那些既枯燥又浪費時間的重複性的工作。\n\n94Bot 打造新時代文字客服\n連接 LINE/FB/APP，創造行動客服，隨時為客戶服務。建立專業知識庫，自動透過 AI 問答減少等候時間。運用大數據輔助客服溝通，提升客服品質及效率。\n\n電銷小 P 突破企業電銷困境\n取代真人撥打電話銷售，人力專注於業務追蹤，提昇企業服務品質。能夠做",
+    "summary_e": "",
+    "is_keynote": false,
+    "started_at": 1571454600,
+    "ended_at": 1571457000,
+    "room": "R1",
+    "floor": "3F",
+    "sponsor_id": 2,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      "AI"
     ]
   },
   {
@@ -1393,6 +1467,44 @@
     "tags": [
       "Panel",
       "Agile"
+    ]
+  },
+  {
+    "name": "陳立",
+    "name_e": "Neo Chen",
+    "speaker_id": 42,
+    "company": "台灣亞馬遜網路服務有限公司",
+    "company_e": "Amazon Web Services",
+    "job_title": "解決方案架構師",
+    "job_title_e": "Solutions Architect",
+    "bio": "AWS 解決方案架構師\n\n在電信網路架構、網際網路加速及安全、雲端運算以及傳統資料中心搬遷上雲皆有豐富的實戰經驗。",
+    "bio_e": "",
+    "photo_for_speaker_web": "api/2019/speaker/images/web/speaker_42",
+    "photo_for_speaker_mobile": "api/2019/speaker/images/mobile/speaker_42",
+    "photo_for_session_web": "api/2019/speaker/images/web/speaker_42",
+    "photo_for_session_mobile": "api/2019/speaker/images/mobile/speaker_42",
+    "photo_for_sponsor_web": "api/2019/speaker/images/web/speaker_42",
+    "photo_for_sponsor_mobile": "api/2019/speaker/images/mobile/speaker_42",
+    "link_fb": "",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "",
+    "topic": "用一場演講的時間，建構一個有些 AI 的無伺服器 APP",
+    "topic_e": "",
+    "summary": "用一場演講的時間，建構一個有些 AI 的無伺服器 APP",
+    "summary_e": "",
+    "is_keynote": false,
+    "started_at": 1571467800,
+    "ended_at": 1571470200,
+    "room": "R2",
+    "floor": "4F",
+    "sponsor_id": 12,
+    "recordable": false,
+    "level": "Normal",
+    "tags": [
+      "AI",
+      "Cloud",
+      "Mobile App"
     ]
   }
 ]
