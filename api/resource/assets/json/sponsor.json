@@ -250,5 +250,41 @@
     "official_website": "https://www.cathayholdings.com/holdings/",
     "sponsor_type": "bruce_wayne",
     "career_information": ""
+  },
+  {
+    "logo_path": "api/2019/sponsor/images/sponsor_27",
+    "name": "細酌牛飲餐酒館",
+    "name_e": "",
+    "sponsor_id": 27,
+    "about_us": "成立於 2014 年，目前已獨家代理\n1.比利時前三大酒廠之一 - HAACHT 全系列酒款。\n2.世紀釀酒品牌 - 比利時康尼森全系列酒款。\n其他仍有多款世界各國精釀啤酒洽談中，即將引入台灣。\n除了啤酒代理商的身分之外，細酌牛飲團隊中更匯集了企劃、網路行銷、業務等專員，期望以有別於目前台灣酒商的型態，提供給客戶、店家更卓越、更特別的服務項目。",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2019/sponsor/images/sponsor_28",
+    "name": "嗨筆記股份有限公司",
+    "name_e": "",
+    "sponsor_id": 28,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://hackmd.io/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2019/sponsor/images/sponsor_29",
+    "name": "塩旅社",
+    "name_e": "",
+    "sponsor_id": 29,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://hotelyam.homi.cc/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
   }
 ]
