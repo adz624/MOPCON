@@ -129,6 +129,20 @@ export default {
             }
         },
     },
+    mounted() {
+        if (location.search !== '') {
+            const loctionSearch = location.search.replace('?','').replace('/','')
+            const paramaters = loctionSearch.split('&');
+            const re = new RegExp('utm_');
+            this.utm = '?';
+            paramaters.forEach(ele => {
+                if(re.test(ele)) {
+                    this.utm += ele + '&';
+                }
+            });
+            this.$store.dispatch('setUtmData', this.utm);
+        }
+    },
 };
 </script>
 
