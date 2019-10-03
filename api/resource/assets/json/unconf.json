@@ -31,7 +31,7 @@
         "ended_at": 1571455800,
         "event": "",
         "room": {
-          "name": "蔡仁勝",
+          "name": "蔡仁勝 - SSCS",
           "name_e": "",
           "topic": "建構你的數位孿生",
           "topic_e": "",
@@ -61,8 +61,8 @@
         "ended_at": 1571463000,
         "event": "",
         "room": {
-          "name": "賴炫亦",
-          "name_e": "Seven Lai",
+          "name": "賴炫亦 - 捕夢網 PUMO",
+          "name_e": "Seven Lai - 捕夢網 PUMO",
           "topic": "<script>alert('About XSS');</script>",
           "topic_e": "",
           "session_id": 2019105
@@ -73,7 +73,7 @@
         "ended_at": 1571464800,
         "event": "",
         "room": {
-          "name": "Anistar & Sunny",
+          "name": "Anistar & Sunny - Verizon Media",
           "name_e": "",
           "topic": "關於面試這黨事",
           "topic_e": "",
@@ -85,7 +85,7 @@
         "ended_at": 1571466600,
         "event": "",
         "room": {
-          "name": "Neo Chen ＆ Jayson Hsieh",
+          "name": "Neo Chen ＆ Jayson Hsieh - AWS",
           "name_e": "",
           "topic": "Infrastructure as Code: 在談笑間快速建置一個 flask app",
           "topic_e": "",
@@ -204,8 +204,8 @@
         "ended_at": 1571544000,
         "event": "",
         "room": {
-          "name": "趙永弘",
-          "name_e": "Thomas Chao",
+          "name": "趙永弘 - 捕夢網 PUMO",
+          "name_e": "Thomas Chao - 捕夢網 PUMO",
           "topic": "善守者 敵不知其所攻",
           "topic_e": "",
           "session_id": 2019116
