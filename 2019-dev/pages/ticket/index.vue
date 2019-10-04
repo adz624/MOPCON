@@ -76,7 +76,7 @@ export default {
                         '兩日議程',
                         '下午茶點心',
                     ],
-                    link: 'https://kktix.com/events/2019registernormal/registrations/new',
+                    link: 'https://lihi1.com/r0L6T',
                 },
                 {
                     title: '會眾票',
@@ -87,7 +87,7 @@ export default {
                     beEngaged: false,
                     type: 'secondary',
                     lists: ['兩日議程', '下午茶點心'],
-                    link: 'https://kktix.com/events/2019registernormal/registrations/new',
+                    link: 'https://lihi1.com/r0L6T',
                 },
                 {
                     title: '相揪團購票',
@@ -100,12 +100,12 @@ export default {
                     lists: ['兩日議程', '下午茶點心'],
                     desc:
                         '適用 5 人企業團購<br>超過 15 人（ 16 人以上）請來信詳談',
-                    link: ' https://kktix.com/events/2019registernormal/registrations/new',
+                    link: 'https://lihi1.com/r0L6T',
                 },
                 {
                     title: 'Beengaged 醞釀之夜',
                     id: 3,
-                    status: 2,
+                    status: 1,
                     count: 30,
                     price: 800,
                     beEngaged: false,
@@ -129,7 +129,7 @@ export default {
                         '快速通關',
                         'Beengaged 醞釀之夜',
                     ],
-                    link: 'https://kktix.com/events/2019registervip/registrations/new',
+                    link: 'https://lihi1.com/d9LlC',
                 },
                 {
                     title: '尊爵不凡票',
@@ -147,7 +147,7 @@ export default {
                         'Beengaged 醞釀之夜',
                         'MOPCON 2019 獨家紀念品',
                     ],
-                    link: 'https://kktix.com/events/2019registervip/registrations/new',
+                    link: 'https://lihi1.com/d9LlC',
                 },
 
                 {
