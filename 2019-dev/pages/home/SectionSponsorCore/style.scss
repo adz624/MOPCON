@@ -16,22 +16,31 @@
 
   .sponsors {
     display: flex;
+    flex-wrap: wrap;
     -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar { 
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+      background-color: $colorGray;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: $colorPrimary;
+    }
     @include rwd(pad) {
+      flex-wrap: nowrap;
       overflow-x: auto;
       overflow-y: hidden;
     }
 
-    .sponsors__item + .sponsors__item {
-      margin-left: 20px;
-    }
-
     &__item {
       @include bgCenter;
-      flex: 1;
-      width: calc(25% - 15px);
+      margin-right: 12px;
+      margin-top: 12px;
+      width: calc(33% - 15px);
       height: 0;
-      padding-top: calc(100% * 0.25 - 15px);
+      padding-top: calc(100% * 0.33 - 15px);
 
       @include rwd(pad) {
         flex: 0 0 auto;
@@ -78,6 +87,15 @@
           letter-spacing: 0.7px;
         }
       }
+
+      &__more {
+        margin-right: 12px;
+        margin-top: 12px;
+        width: calc(33% - 15px);
+        height: 0;
+        padding-top: calc(50% * 0.33 - 15px);
+        padding-left: calc(33.333% * 0.33 - 15px);
+      }
     }
   }
 
@@ -85,9 +103,34 @@
     align-self: flex-end;
     margin-top: 19px;
     padding-bottom: 3px;
-    border-bottom: solid 1px $colorWhite;
     color: $colorWhite;
     font-size: 16px;
     letter-spacing: 0.8px;
+    @include rwd(pad) {
+      display: none
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc(200% - 15px);
+      height: 100%;
+      border-bottom: solid 1px $colorWhite;
+    }
+
+    &__mobile {
+      display: none;
+      @include rwd(pad) {
+        display: inline-block;
+        line-height: 1.88em;
+        color: $colorWhite;
+        border-bottom: solid 1px $colorWhite;
+      }
+    }
+  }
+
+  &__mobile {
+    text-align: right;
+    padding-right: 1.5em;
   }
 }
