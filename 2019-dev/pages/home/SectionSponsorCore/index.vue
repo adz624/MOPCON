@@ -7,13 +7,17 @@
                 :key="index"
                 :style="`background-image: url(${require(`./images/${item.img}`)})`">
                 <div class="sponsors__item__tag">
-                    <span>連續贊助</span>
-                    <span> {{item.year}} </span>
-                    <span>年</span>
+                    <span v-if="item.year > 1">連續贊助 {{item.year}} 年</span>
+                    <span v-else>新贊助好夥伴</span>
                 </div>
             </li>
+            <li class="sponsors__item__more">
+                <a href="sponsor" class="section-sponsorCore__more">更多贊助商夥伴</a>
+            </li>
         </ul>
-        <a href="sponsor" class="section-sponsorCore__more">更多贊助商夥伴</a>
+        <div class="section-sponsorCore__mobile">
+            <a href="sponsor" class="section-sponsorCore__more__mobile">更多贊助商夥伴</a>
+        </div>
     </div>
 </template>
 
@@ -39,6 +43,10 @@ export default {
                     img: 'pumo.png',
                     year: '4',
                 },
+                {
+                    img: 'cathay.png',
+                    year: '1',
+                }
             ],
         };
     },
