@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         buyTicketUrl() {
-            return this.$store.getters.buyTicketUrl;
+            return this.$store.getters.buyTicketUrl + this.$store.getters.utm;
         },
     },
 };
