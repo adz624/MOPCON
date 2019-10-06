@@ -72,7 +72,7 @@ export default {
             return `0${this.countdown.min}`.substr(-2);
         },
         buyTicketUrl () {
-            return this.$store.getters.buyTicketUrl;
+            return this.$store.getters.buyTicketUrl + this.$store.getters.utm;;
         },
     },
     methods: {
