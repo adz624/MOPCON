@@ -253,13 +253,13 @@
   },
   {
     "logo_path": "api/2019/sponsor/images/sponsor_26",
-    "name": "zuso",
-    "name_e": "",
+    "name": "如梭世代有限公司",
+    "name_e": "ZUSO Generation",
     "sponsor_id": 26,
-    "about_us": "",
-    "about_us_e": "",
-    "facebook_url": "",
-    "official_website": "",
+    "about_us": "隨著一間間的學校、中小企業、上市櫃公司、政府甚至軍方單位遭受一連串的駭客攻擊，造成的破壞程度與經濟損失規模不可小覷。\n 多年來，攻擊的手法日新月異，任何你想得到的、想不到的事情都可能發生，再再說明這些已經不是單單的「防火牆」或「防毒軟體」能夠解決的，所以我們提供了不同的角度來檢視您的資訊安全。\n「最好的防禦就是攻擊」— ZUSO Generation 是一個從中台灣出發的資安團隊，我們根據您的預算偏好和您的選擇提供多種解決的方案。將與您永遠在同一陣線，為您翻開「幸福永遠」的新篇章！",
+    "about_us_e": "As a series of hacking violence rampages through every house, school, business and government, damage to all circumstances leads to thousands of billions economic losses and collapses.\nFor ages, antivirus software is key to preventing the above mentioned; however, it is apparently insufficient after all. Instead of passively relying on a ready-made or all-purpose antivirus software, possessing a custom-built one broadens your horizons of information security and technology.\nWe provide a diversity of the most optimal portfolio of solutions to your budget preference and for your selection.\nDefend as the majority of companies may, in the aspects of hackers we consider it to the contrary; say, \"THE BEST DEFENSE IS OFFENSE.\"\nWe are your trustworthiest ally going by name... ZUSO Generation that is always on the same page with you and turns over a new leaf of \"\"happily-ever-after\"\" for you!",
+    "facebook_url": "https://www.facebook.com/ZUSOGeneration/",
+    "official_website": "https://zuso.ai/",
     "sponsor_type": "special_thanks",
     "career_information": ""
   },
@@ -296,6 +296,18 @@
     "about_us_e": "",
     "facebook_url": "",
     "official_website": "https://hotelyam.homi.cc/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2019/sponsor/images/sponsor_30",
+    "name": "1111 人力銀行",
+    "name_e": "1111 Job Bank",
+    "sponsor_id": 30,
+    "about_us": "為年輕人找前途\n為企業創商機\n為臺灣添活力\n1111 人力銀行關心年輕人的未來，鼓勵賺錢企業提供更多、更好的福利，吸引更多優秀的年輕人，近年來積極推動「幸福企業」，希望逐漸化解臺灣低薪夢魘，縮短貧富懸殊差距，為年輕人創造美好未來。 1111 不只是人力銀行，而是追求創新卓越的人才銀行。",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://www.1111.com.tw/",
     "sponsor_type": "special_thanks",
     "career_information": ""
   }

@@ -39,9 +39,9 @@ export default {
             galleryVideo: [
                 {
                     title: 'MOPCON 2019 宣傳片',
-                    href: 'https://www.youtube.com/watch?v=OgS8GJSWHgc',
+                    href: 'https://www.youtube.com/watch?v=p_h4Lx0FdQ8',
                     type: 'text/html',
-                    youtube: 'OgS8GJSWHgc',
+                    youtube: 'p_h4Lx0FdQ8',
                     poster:
                         'https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/64367484_2119386408187064_4329139962772455424_o.jpg?_nc_cat=111&_nc_ht=scontent.ftpe8-4.fna&oh=75605108075ccdb151e7971b3efea113&oe=5DBC6173',
                 },
