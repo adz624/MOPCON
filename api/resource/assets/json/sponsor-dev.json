@@ -216,6 +216,18 @@
     "career_information": ""
   },
   {
+    "logo_path": "api/2019/sponsor/images/sponsor_21",
+    "name": "天瓏資訊圖書",
+    "name_e": "",
+    "sponsor_id": 21,
+    "about_us": "天瓏資訊圖書座落於台北市重慶南路書店街，世界唯一專業電腦資訊技術圖書專賣店、台灣資訊人必訪聖地\n\n 提供電腦資訊書籍販售、團購優惠、公司機關報價服務，包括繁體中文、簡體中文、外文原文書籍代訂服務，目前正在拓展工程師宅周邊商品、新書發表會、講座活動、技術交流分享、技術社群聚會，有興趣讀者、講者、社群朋友，歡迎與我們聯繫喲",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://www.tenlong.com.tw/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
     "logo_path": "api/2019/sponsor/images/sponsor_22",
     "name": "新加坡鈦坦科技",
     "name_e": "Titansoft",
