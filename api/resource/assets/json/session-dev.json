@@ -92,12 +92,12 @@
       {
         "started_at": 1571461200,
         "isBroadCast": false,
-        "ended_at": 1571463600,
+        "ended_at": 1571463900,
         "event": "Sponsor Talk",
         "room": []
       },
       {
-        "started_at": 1571463600,
+        "started_at": 1571463900,
         "isBroadCast": false,
         "ended_at": 1571464500,
         "event": "休息 Break",
