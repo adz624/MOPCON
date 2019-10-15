@@ -762,7 +762,7 @@
     "room": "R3",
     "floor": "4F",
     "sponsor_id": 0,
-    "recordable": true,
+    "recordable": false,
     "level": "Basic",
     "tags": [
       "Web"
