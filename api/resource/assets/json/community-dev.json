@@ -157,6 +157,32 @@
             "instagram": "",
             "telegram": "",
             "event": ""
+        },
+        {
+            "id": "8",
+            "name": "好想工作室",
+            "name_e": "",
+            "photo": "api/2019/community/images/goodideas",
+            "introduction": "共同工作空間\n資訊社群聚落\n軟體人才培育基地\n天瓏資訊圖書實體分店\n台南 Google 開發者社群",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/GoodideasStudio/",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": "https://goodideas-studio.com/"
+        },
+        {
+            "id": "9",
+            "name": "創業台槓",
+            "name_e": "",
+            "photo": "api/2019/community/images/startup",
+            "introduction": "「創造價值，讓南台灣更好」是創業台槓的成立契機，現為南部最大創業交流社群暨教育培訓機構 & 創新育成中心。\n以創業交流出發，舉辦不同領域的創業聚會，透過分享與對談，建立互利共享的創業平台。更連結不同領域專家，將最新最火紅議題帶來台南、高雄，希望消彌南北資訊落差的劣勢。\n透過活動及專業課程，強化南部人才競爭力，主題涵蓋創業創新、行銷企劃、電商、管理經營、財務與法律等跨領域項目。\n並於2018年成為經濟部中小企業創新育成中心，提供企業顧問、創業輔導、企業轉型、開創新商機。",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/STalkTW",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": ""
         }
     ]
 }
