@@ -60,6 +60,7 @@ export default {
                 }
             },
             boardData: [],
+            testTime: 0,
         };
     },
     updated () {
@@ -73,7 +74,7 @@ export default {
     methods: {
         getBoardData() {
             const vm = this;
-            vm.$axios.$get(`api/2019/board/${vm.boardId}`)
+            vm.$axios.$get(`api/2019/board/${vm.boardId}?now=${vm.testTime}`)
             .then(({ success, data, message }) => {
                 if (success) {
                     vm.boardData = data.content;
@@ -115,6 +116,12 @@ export default {
         }, 
         60000);
     },
+    created() {
+        const vm = this;
+        if (vm.$route.query.now) {
+            vm.testTime = vm.$route.query.now;
+        }
+    }
 };
 </script>
 
