@@ -83,6 +83,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/2019/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' },
       // 引入 google font 字體
       {
         rel: 'stylesheet',
@@ -205,6 +206,9 @@ module.exports = {
           '/event/iron-man',
           '/event/hulk',
           '/event/black-widow',
+          '/edashboard/R1',
+          '/edashboard/R2',
+          '/edashboard/R3',
         ]
 
         // 講者頁面
