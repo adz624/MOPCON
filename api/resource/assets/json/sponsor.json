@@ -322,5 +322,17 @@
     "official_website": "https://www.1111.com.tw/",
     "sponsor_type": "special_thanks",
     "career_information": ""
+  },
+  {
+    "logo_path": "api/2019/sponsor/images/sponsor_31",
+    "name": "高雄市經濟發展局獎勵會議展覽活動計畫贊助",
+    "name_e": "",
+    "sponsor_id": 31,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://edbkcg.kcg.gov.tw",
+    "sponsor_type": "edbkcg",
+    "career_information": ""
   }
 ]
