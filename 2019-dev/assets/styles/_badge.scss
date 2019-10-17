@@ -29,6 +29,12 @@
   @include badge(12px, .25rem, 1, .25rem);
 }
 
+.tag-badge-outline-primary {
+  border: 1px solid $colorPrimary;
+  color: $colorPrimary;
+  @include badge(16px, 0px, 1, .25rem);
+}
+
 .tag-badge-outline-secondary {
   border: 1px solid $colorSecondary;
   color: $colorSecondary;
