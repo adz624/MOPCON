@@ -57,5 +57,9 @@ $router->group(['prefix' => 'api'], function ($router) {
             $router->get('/', 'AppHomeController@index');
             $router->get('/images/{name}', 'AppHomeController@show');
         });
+        $router->group(['prefix' => 'board'], function ($router) {
+            $router->get('/{room}', 'BoardController@index');
+            $router->get('images/{type}/{name}', 'BoardController@imagesView');
+        });
     });
 });
