@@ -124,12 +124,11 @@
                 const vm = this;
                 startDate = new Date(startDate * 1000);
                 endDate = new Date(endDate * 1000);
-                const startHour = (startDate.getHours() < 10 ? '0' + startDate.getHours() : startDate.getHours())
-                const startMin = (startDate.getMinutes() < 10 ? '0' + startDate.getMinutes() : startDate.getMinutes())
-                const endHour = (endDate.getHours() < 10 ? '0' + endDate.getHours() : endDate.getHours())
-                const endMin = (endDate.getMinutes() < 10 ? '0' + endDate.getMinutes() : endDate.getMinutes())
-                const fullDate = `${startHour}:${startMin} ~ ${endHour}:${endMin}`
-                return fullDate
+                const startHour = (startDate.getHours() < 10 ? '0' + startDate.getHours() : startDate.getHours());
+                const startMin = (startDate.getMinutes() < 10 ? '0' + startDate.getMinutes() : startDate.getMinutes());
+                const endHour = (endDate.getHours() < 10 ? '0' + endDate.getHours() : endDate.getHours());
+                const endMin = (endDate.getMinutes() < 10 ? '0' + endDate.getMinutes() : endDate.getMinutes());
+                return `${startHour}:${startMin} ~ ${endHour}:${endMin}`;
             },
         },
     };
