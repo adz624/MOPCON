@@ -13,9 +13,9 @@
                     <div v-if="nav.subNav.length > 0"
                         class="header__nav__item__icon"
                         :class="{active: nav.subIsOpen}"></div>
-                    <a :href="`.${nav.url}`"
+                    <a :href="`${nav.url}`"
                         class="header__nav__item__name"
-                        :class="{disable: nav.subNav.length > 0}">
+                        :class="{disable: nav.subNav.length > 0}" :target="setTarget(nav.targetEnabled)">
                         <span>{{$t(`navbar.${nav.name}`)}}</span>
                     </a>
 
@@ -47,21 +47,23 @@ export default {
             navList: [
                 {
                     name: 'home',
-                    url: '/',
+                    url: './',
                     subNav: [],
                     subIsOpen: false,
                     open: true,
+                    targetEnabled: false,
                 },
                 {
                     name: 'community',
-                    url: '/community',
+                    url: './community',
                     subNav: [],
                     subIsOpen: false,
                     open: process.env.routeCommunity,
+                    targetEnabled: false,
                 },
                 {
                     name: 'schedule',
-                    url: '/schedule',
+                    url: './schedule',
                     subNav: [
                         {
                             name: 'scheduleMain',
@@ -77,27 +79,39 @@ export default {
                     subIsOpen: false,
                     open:
                         process.env.routeSchedule || process.env.routeSchedule,
+                    targetEnabled: false,
                 },
                 {
                     name: 'speaker',
-                    url: '/speaker',
+                    url: './speaker',
                     subNav: [],
                     subIsOpen: false,
                     open: process.env.routeSpeaker,
+                    targetEnabled: false,
                 },
                 {
                     name: 'sponsor',
-                    url: '/sponsor',
+                    url: './sponsor',
                     subNav: [],
                     subIsOpen: false,
                     open: process.env.routeSponsor,
+                    targetEnabled: false,
                 },
                 {
                     name: 'ticket',
-                    url: '/ticket',
+                    url: './ticket',
                     subNav: [],
                     subIsOpen: false,
                     open: process.env.routeTicket,
+                    targetEnabled: false,
+                },
+                {
+                    name: 'coWriting',
+                    url: 'https://hackmd.io/@mopcon/2019',
+                    subNav: [],
+                    subIsOpen: false,
+                    open: 'https://hackmd.io/@mopcon/2019',
+                    targetEnabled: true,
                 },
             ],
         };
@@ -127,6 +141,9 @@ export default {
                 const targetNav = this.navList.find(item => item === nav);
                 targetNav.subIsOpen = !targetNav.subIsOpen;
             }
+        },
+        setTarget(target) {
+           return (target ? "_blank" : "_self");
         },
     },
     mounted() {
