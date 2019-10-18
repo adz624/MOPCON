@@ -117,6 +117,8 @@
                 @onModalClose="closeModal"
                 @onTagClick="handleKeywordClick" />
         </Modal>
+
+        <SectionApp />
     </div>
 </template>
 
