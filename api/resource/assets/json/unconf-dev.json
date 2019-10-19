@@ -164,18 +164,6 @@
     "date": 1571500800,
     "period": [
       {
-        "started_at": 1571536800,
-        "ended_at": 1571538600,
-        "event": "",
-        "room": {
-          "name": "",
-          "name_e": "",
-          "topic": "敬請期待",
-          "topic_e": "",
-          "session_id": 2019113
-        }
-      },
-      {
         "started_at": 1571538600,
         "ended_at": 1571540400,
         "event": "",
