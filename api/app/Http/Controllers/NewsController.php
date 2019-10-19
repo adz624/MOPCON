@@ -82,6 +82,7 @@ class NewsController extends Controller
             }
             $result[$id] = $temp;
         });
+        krsort($result);
         return $result;
     }
 }
