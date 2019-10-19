@@ -128,7 +128,7 @@ class BoardController extends Controller
         $request = Request::create('/api/2019/news', 'GET');
         $response = json_decode($app->dispatch($request)->getContent(), true);
         $news = [];
-        if (is_null($response) && is_array($response['data'])) {
+        if (!is_null($response) && is_array($response['data'])) {
             foreach ($response['data'] as $value) {
                 $news[] = [
                     'title' => $value['title'],
