@@ -7,31 +7,11 @@
                 <p>10/19（六）～ 10/20（日)<br>
                     高雄國際會議中心 ICCK</p>
             </div>
-            <div class="hero__countdown hero__countdown--mobile">
-                <span>{{countDownDay}}</span>
-                <span class="day">天</span>
-                <span>{{countDownHour}}</span>
-                <span class="hour">小時</span>
-                <span>{{countDownMin}}</span>
-                <span class="min">分鐘</span>
-                <!-- <span>{{countdown.sec}}</span>
-                <span>秒</span> -->
-            </div>
             <a :href="buyTicketUrl" target="_blank" @click="$store.dispatch('handleTicketClick')">
                 <Btn class="hero__btn">
                     我要購票
                 </Btn>
             </a>
-        </div>
-        <div class="hero__countdown hero__countdown--pc">
-            <span>{{countDownDay}}</span>
-            <span class="day">天</span>
-            <span>{{countDownHour}}</span>
-            <span class="hour">小時</span>
-            <span>{{countDownMin}}</span>
-            <span class="min">分鐘</span>
-            <!-- <span>{{countdown.sec}}</span>
-            <span>秒</span> -->
         </div>
     </div>
 </template>
