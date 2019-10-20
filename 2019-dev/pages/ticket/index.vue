@@ -66,7 +66,7 @@ export default {
                 {
                     title: '老鳥票',
                     id: 0,
-                    status: 1, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售
+                    status: 2, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售
                     count: 0, // 限量張數
                     price: 700, // 票價
                     beEngaged: false,
@@ -81,7 +81,7 @@ export default {
                 {
                     title: '會眾票',
                     id: 1,
-                    status: 1,
+                    status: 2,
                     count: 700,
                     price: 800,
                     beEngaged: false,
@@ -92,7 +92,7 @@ export default {
                 {
                     title: '相揪團購票',
                     id: 2,
-                    status: 1,
+                    status: 2,
                     count: 300,
                     price: 700,
                     beEngaged: false,
@@ -117,7 +117,7 @@ export default {
                 {
                     title: '豪華獨享票',
                     id: 4,
-                    status: 1,
+                    status: 2,
                     count: 20,
                     price: 2600,
                     beEngaged: false,
@@ -134,7 +134,7 @@ export default {
                 {
                     title: '尊爵不凡票',
                     id: 5,
-                    status: 1,
+                    status: 2,
                     count: 10,
                     price: 3200,
                     beEngaged: false,
@@ -177,24 +177,22 @@ export default {
                 {
                     title: '肝鐵人紀念 T-shirt',
                     id: 0,
-                    status: 3, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售, 3 => 開放預購, 4 => 現場販售
+                    status: 4, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售, 3 => 開放預購, 4 => 現場販售
                     price: 0,
                     beEngaged: false,
                     image: 't-shirt.jpg',
                     type: 'product', // 四種風格 primary / secondary / third / product
                     link: 'https://lihi1.com/VEVR8',
-                    text: '預購時間 9/25 21:00 - 10/6 23:50',
                 },
                 {
                     title: '帆布手提後背包',
                     id: 1,
-                    status: 3,
+                    status: 4,
                     price: 0,
                     beEngaged: false,
                     image: 'back-backpack.jpg',
                     type: 'product',
                     link: 'https://lihi1.com/VEVR8',
-                    text: '預購時間 9/25 21:00 - 10/6 23:50',
                 },
                 {
                     title: '潛水布飲料杯提袋',

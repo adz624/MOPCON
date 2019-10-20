@@ -3,7 +3,7 @@
         <div class="full-loading" ref="fullLoading"></div>
         <Header />
         <nuxt />
-        <BtnBuy />
+        <!-- <BtnBuy /> -->
         <Footer />
     </div>
 </template>
