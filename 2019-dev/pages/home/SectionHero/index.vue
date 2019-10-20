@@ -7,11 +7,6 @@
                 <p>10/19（六）～ 10/20（日)<br>
                     高雄國際會議中心 ICCK</p>
             </div>
-            <a :href="buyTicketUrl" target="_blank" @click="$store.dispatch('handleTicketClick')">
-                <Btn class="hero__btn">
-                    我要購票
-                </Btn>
-            </a>
         </div>
     </div>
 </template>
