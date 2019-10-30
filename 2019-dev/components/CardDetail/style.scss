@@ -124,14 +124,26 @@
       height: 60px;
     }
   }
-
-  &__btn {
-    align-self: center;
+  &__btn__group {
+    display: flex;
+    width: 100%;
     margin-top: 37px;
+    justify-content: center;
+    align-items: center;
+    @include rwd(pad) {
+      flex-direction: column;
+    }
+  }
+  &__btn {
+    margin-left: 8px;
+    margin-right: 8px;
     padding: 6px 29px;
     border: solid 1px $colorPrimary;
     color: $colorPrimary;
     text-align: center;
     cursor: pointer;
+    @include rwd(pad) {
+      margin-top: 16px;
+    }
   }
 }
