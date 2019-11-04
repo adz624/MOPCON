@@ -22,6 +22,7 @@ class SessionController extends Controller
         'img',
         'topic',
         'topic_e',
+        'link_slide',
         'started_at',
         'ended_at',
         'tags',

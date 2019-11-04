@@ -23,6 +23,7 @@ class SessionController extends TestCase
         'photo_for_session_mobile',
         'topic',
         'topic_e',
+        'link_slide',
         'started_at',
         'ended_at',
         'tags',

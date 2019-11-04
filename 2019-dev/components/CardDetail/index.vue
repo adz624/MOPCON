@@ -47,11 +47,16 @@
             <p class="cardDetail__sponsor__title color-primary">贊助夥伴</p>
             <img class="cardDetail__sponsor__logo" :src="cardData.sponsor_info.logo_path" alt="">
         </a>
-        <div class="cardDetail__btn"
-            v-clipboard:copy="detailUrl"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError">
-            {{$t('pages.schedule.sharingSchedule')}}
+        <div class="cardDetail__btn__group">
+            <div class="cardDetail__btn"
+                v-clipboard:copy="detailUrl"
+                v-clipboard:success="onCopy"
+                v-clipboard:error="onError">
+                {{$t('pages.schedule.sharingSchedule')}}
+            </div>
+            <a v-if="cardData.link_slide" :href="cardData.link_slide" class="cardDetail__btn" target="_blank">
+                簡報下載
+            </a>
         </div>
     </div>
 </template>
