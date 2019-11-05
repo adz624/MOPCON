@@ -40,30 +40,36 @@ export default {
             years: [
                 {
                     id: 0,
+                    year: "2019",
+                    image: "2019.jpg",
+                    link: "https://mopcon.org/album.php#mp2019"
+                },
+                {
+                    id: 1,
                     year: "2018",
                     image: "2018.jpg",
                     link: "https://mopcon.org/album.php#mp2018"
                 },
                 {
-                    id: 1,
+                    id: 2,
                     year: "2017",
                     image: "2017.jpg",
                     link: "https://mopcon.org/album.php#mp2017"
                 },
                 {
-                    id: 2,
+                    id: 3,
                     year: "2016",
                     image: "2016.jpg",
                     link: "https://mopcon.org/album.php#mp2016"
                 },
                 {
-                    id: 3,
+                    id: 4,
                     year: "2015",
                     image: "2015.jpg",
                     link: "https://mopcon.org/album.php#mp2015"
                 },
                 {
-                    id: 4,
+                    id: 5,
                     year: "2014",
                     image: "2014.jpg",
                     link: "https://mopcon.org/album.php#mp2014"

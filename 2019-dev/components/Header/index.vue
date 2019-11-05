@@ -113,6 +113,14 @@ export default {
                     open: 'https://hackmd.io/@mopcon/2019',
                     targetEnabled: true,
                 },
+                {
+                    name: 'album',
+                    url: 'https://mopcon.org/album.php',
+                    subNav: [],
+                    subIsOpen: false,
+                    open: 'https://mopcon.org/album.php',
+                    targetEnabled: true,
+                },
             ],
         };
     },
