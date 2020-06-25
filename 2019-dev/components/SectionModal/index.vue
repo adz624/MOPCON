@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import Modal from '~/components/Modal';
 export default {
   name: 'sectionModal',
   data() {
@@ -38,9 +37,6 @@ export default {
       baseUrl: process.env.BASE_URL,
     };
   },
-  components: {
-    Modal,
-  },
   methods: {
     close() {
       this.modalChange(false);
@@ -48,7 +44,6 @@ export default {
     modalChange(status = false) {
       const body = document.querySelector('body');
       const modal = document.getElementById('SectionModal');
-      console.log(modal)
       if (status) {
         body.classList.add('modal-open');
         modal.style.display = 'block';
