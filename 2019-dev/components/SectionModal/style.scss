@@ -1,0 +1,92 @@
+.modal-2020 {
+  .banner {
+    @include bgCenter(100%, 200px);
+    background-image: url(./images/introBanner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+    @include rwd(pad) {
+      @include bgCenter(100%, 200px);
+    }
+  }
+  .title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .br-md-block {
+    display: none;
+    @include rwd(pad) {
+      display: block;
+    }
+  }
+  .content {
+    text-align: center;
+    margin-top: 16px;
+  }
+  .track-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .c-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    a:first-child{
+      margin-right: 1.5rem;
+    }
+    a:last-child{
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+@mixin btn($color, $colorBg) {
+  position: relative;
+  padding: 12px 46px;
+  font-size: 19px;
+  border: 1px solid $color;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 32px;
+  z-index: 2;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  &::before {
+    top: 0px;
+    left: 0px;
+    background-color: $colorBg;
+    z-index: -1;
+  }
+  &::after {
+    top: 10px;
+    left: 10px;
+    background-color: $color;
+    opacity: 0.19;
+    z-index: -2;
+  }
+  &:hover {
+    transition: all 0.15s;
+    transform: translate(3px, 3px);
+    &::after {
+      top: 0px;
+      left: 0px;
+    }
+  }
+  @include rwd(pad) {
+    padding: 12px 17px;
+  }
+}  
+
+.btn-primary {
+  @include btn ($colorPrimary, $colorBg)
+}
+
+.btn-third {
+  @include btn ($colorThird, $colorBg);
+}
