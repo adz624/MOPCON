@@ -1,0 +1,29 @@
+$logo_png_map: (
+  cfp: idea talk partner recruitment people-link gear work ai web mobile iot net cloud uiux dev genius version submit dateline notify
+);
+$logo_svg_map: (
+  layout: mopcon fb twitter ig telegram
+);
+
+// cfp
+$results_cfp: map-get($logo_png_map, cfp);
+$cfp_length: length($results_cfp);
+// layout
+$results_layout: map-get($logo_svg_map, layout);
+$layout_length: length($results_layout);
+
+.logo {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @for $index from 1 through $cfp_length {
+    &-#{nth($results_cfp, $index)} {
+      background-image: url('~@/assets/cfp/#{nth($results_cfp, $index)}.png');
+    }
+  }
+  @for $index from 1 through $layout_length {
+    &-#{nth($results_layout, $index)} {
+      background-image: url('~@/assets/base/logo-#{nth($results_layout, $index)}.svg');
+    }
+  }
+}
