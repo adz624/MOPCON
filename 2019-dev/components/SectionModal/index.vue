@@ -1,10 +1,10 @@
 <template>
-  <div class="modal fade">
+  <div class="modal fade modal-2020">
     <div class="modal-content">
       <div class="clearfix">
         <span class="close" @click="close()">&times;</span>
       </div>
-      <div class="modal-body modal-2020">
+      <div class="modal-body">
         <div class="banner"></div>
         <h4 class="title">
           { MOPCON 2020
