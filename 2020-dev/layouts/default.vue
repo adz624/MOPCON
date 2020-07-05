@@ -1,6 +1,6 @@
 <template>
   <div :class="{'h-screen overflow-hidden' : navOpen}">
-    <nav>
+    <nav class="top-0 sticky z-20">
       <div class="contain">
         <div class="logo-box">
           <nuxt-link to="/" class="logo logo-mopcon" />
@@ -15,11 +15,11 @@
               稿件徵求
             </nuxt-link>
           </li>
-          <!-- <li>
-            <nuxt-link to="/">
+          <li>
+            <nuxt-link to="/cfs">
               贊助徵求
             </nuxt-link>
-          </li> -->
+          </li>
           <li class="history-mopcon" @click="isMobile && (subNavOpen = !subNavOpen)">
             <a href="/" @click.prevent>
               歷年MOPCON
@@ -90,6 +90,9 @@ export default {
         this.subNavOpen = false
         this.navOpen = false
       }
+    },
+    $route (to, from) {
+      this.navOpen = false
     }
   },
   mounted () {
@@ -110,7 +113,7 @@ export default {
 <style lang="scss" scoped>
 nav {
   height: 43px;
-  @apply bg-black-main text-white relative;
+  @apply bg-black-main text-white;
   .contain {
     max-width: 1440px;
     @apply flex items-center mx-auto h-full;
@@ -235,7 +238,10 @@ nav {
 footer {
   @apply bg-black-main text-white flex flex-col justify-center items-center text-xl pt-5 pb-8;
   div {
-    @apply flex ml-4;
+    @apply flex;
+    @screen md {
+      @apply ml-4;
+    }
   }
   .contact {
     @apply flex-col items-center;
