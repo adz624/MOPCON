@@ -119,7 +119,7 @@
           {講者權益}
         </h3>
         <div class="merit-box">
-          <p><b>Keynote</b> 主題和 <b>Speach</b> 專題演講講者將獲得：</p>
+          <p><b>Keynote</b> 主題和 <b>Speech</b> 專題演講講者將獲得：</p>
           <ul class="merit-content">
             <li>講師費 6000 元（含國內交通補貼）</li>
             <li>大會門票（可參與所有議程、周邊活動、晚宴）</li>
