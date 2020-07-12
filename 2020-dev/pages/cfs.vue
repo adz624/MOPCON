@@ -92,13 +92,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   場內告示牌商標置入
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('signboard')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('signboard')" />
               </div>
-              <div v-if="activeItem == 'signboard'" class="option-card-body">
+              <div v-if="activeItem == 'signboard'" class="option-card-body" @click.prevent="toggleInfo('signboard')">
                 <div class="option-img-Signboard option-img" />
                 <p>場內告示牌商標置入</p>
               </div>
@@ -118,13 +118,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   電子看版 (企業形象圖)
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('digiboard')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('digiboard')" />
               </div>
-              <div v-if="activeItem == 'digiboard'" class="option-card-body">
+              <div v-if="activeItem == 'digiboard'" class="option-card-body" @click.prevent="toggleInfo('digiboard')">
                 <div class="option-img-Digiboard option-img" />
                 <p>電子看版</p>
               </div>
@@ -144,13 +144,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   場間投影片廣告 (企業形象圖文)
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('powerpoint')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('powerpoint')" />
               </div>
-              <div v-if="activeItem == 'powerpoint'" class="option-card-body">
+              <div v-if="activeItem == 'powerpoint'" class="option-card-body" @click.prevent="toggleInfo('powerpoint')">
                 <div class="option-img-PPT option-img" />
                 <p>場間投影片廣告 (企業形象圖文)</p>
               </div>
@@ -170,13 +170,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   主動線旗幟廣告
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('banner')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('banner')" />
               </div>
-              <div v-if="activeItem == 'banner'" class="option-card-body">
+              <div v-if="activeItem == 'banner'" class="option-card-body" @click.prevent="toggleInfo('banner')">
                 <div class="option-img-Banner option-img" />
                 <p>主動線旗幟廣告</p>
               </div>
@@ -196,13 +196,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   700 人演講廳旗幟 3F
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('lectureBanner700')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('lectureBanner700')" />
               </div>
-              <div v-if="activeItem == 'lectureBanner700'" class="option-card-body">
+              <div v-if="activeItem == 'lectureBanner700'" class="option-card-body" @click.prevent="toggleInfo('lectureBanner700')">
                 <div class="option-img-LectureBanner option-img" />
                 <p>700 人演講廳旗幟 3F</p>
               </div>
@@ -222,13 +222,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   350 人演講廳旗幟 4F A/B廳
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('lectureBanner350')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('lectureBanner350')" />
               </div>
-              <div v-if="activeItem == 'lectureBanner350'" class="option-card-body">
+              <div v-if="activeItem == 'lectureBanner350'" class="option-card-body" @click.prevent="toggleInfo('lectureBanner350')">
                 <div class="option-img-LectureBanner option-img" />
                 <p>350 人演講廳旗幟 4F A/B 廳</p>
               </div>
@@ -248,13 +248,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   ICCK大門兩側全版廣告空間
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('icck')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('icck')" />
               </div>
-              <div v-if="activeItem == 'icck'" class="option-card-body">
+              <div v-if="activeItem == 'icck'" class="option-card-body" @click.prevent="toggleInfo('icck')">
                 <div class="option-img-Icck option-img" />
                 <p>包含場內告示版與議程資訊張貼處</p>
               </div>
@@ -274,13 +274,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   報到處全版廣告空間
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('checkin')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('checkin')" />
               </div>
-              <div v-if="activeItem == 'checkin'" class="option-card-body">
+              <div v-if="activeItem == 'checkin'" class="option-card-body" @click.prevent="toggleInfo('checkin')">
                 <div class="option-img-Checkin option-img" />
                 <p>報到處全版廣告空間</p>
               </div>
@@ -300,13 +300,13 @@
           </tr>
           <tr class="option-list">
             <td class="relative">
-              <div class="flex">
+              <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
                   迎賓袋放入公司產品/文宣/問卷
                 </h4>
-                <div class="icon icon-info md:inline-block hidden" @click.prevent="toggleInfo('welcomeBag')" />
+                <a href="#" class="icon icon-info" @click.prevent="toggleInfo('welcomeBag')" />
               </div>
-              <div v-if="activeItem == 'welcomeBag'" class="option-card-body">
+              <div v-if="activeItem == 'welcomeBag'" class="option-card-body" @click.prevent="toggleInfo('welcomeBag')">
                 <div class="option-img-WelcomeBag option-img" />
                 <p>迎賓袋放入公司產品/文宣/問卷</p>
               </div>
@@ -646,7 +646,6 @@ export default {
     }
     &-info {
       background-image: url('~@/assets/cfs/cfs-info.svg');
-      @apply m-auto;
     }
     &-plus {
       background-image: url('~@/assets/cfs/cfs-plus.svg');
@@ -712,18 +711,22 @@ export default {
   }
   &-card-body {
     background: white;
-    min-width: 180px;
-    top: 50%;
-    left: 180%;
+    min-width: 250px;
+    top: 80%;
+    left: 50%;
     z-index: 9;
     overflow: hidden;
     @apply absolute rounded-lg;
+    @screen md {
+      top: 50%;
+      left: 155%;
+    }
     p {
       @apply p-2 text-xs;
     }
   }
   &-img {
-    height: 180px;
+    height: 250px;
     background-size: cover;
     &-Icck {
     background-image: url('~@/assets/cfs/cfs-7.jpg');
