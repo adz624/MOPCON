@@ -70,7 +70,7 @@
               最經濟實惠的現場與數位曝光，可搭配加購滿足特定需求。
             </td>
             <td>
-              享有在人潮多處的靜態曝光，和實體交流unconference。
+              享有在人潮多處的靜態曝光，和實體交流 UnConference。
             </td>
             <td>
               享有主動線攤位，與今年新增的媒體專訪、專欄文章、線上面試服務等等項目。
@@ -250,7 +250,7 @@
             <td class="relative">
               <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
-                  ICCK大門兩側全版廣告空間
+                  ICCK 大門兩側全版廣告空間
                 </h4>
                 <a href="#" class="icon icon-info" @click.prevent="toggleInfo('icck')" />
               </div>
@@ -263,10 +263,10 @@
               <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -302,13 +302,13 @@
             <td class="relative">
               <div class="flex justify-between">
                 <h4 class="option-list-desc mr-2">
-                  迎賓袋放入公司產品/文宣/問卷
+                  迎賓袋放入公司產品 / 文宣 / 問卷
                 </h4>
                 <a href="#" class="icon icon-info" @click.prevent="toggleInfo('welcomeBag')" />
               </div>
               <div v-if="activeItem == 'welcomeBag'" class="option-card-body" @click.prevent="toggleInfo('welcomeBag')">
                 <div class="option-img-WelcomeBag option-img" />
-                <p>迎賓袋放入公司產品/文宣/問卷</p>
+                <p>迎賓袋放入公司產品 / 文宣 / 問卷</p>
               </div>
             </td>
             <td>
@@ -518,7 +518,7 @@
             可於現場擺攤，與參與者深入互動
           </h4>
           <h5 class="extra-card-desc">
-            與 1,200 名以上會眾以及現場工作人員、贊助商交流
+            與千名以上會眾以及現場工作人員、贊助商交流
           </h5>
         </div>
         <h3 class="extra-card-footer">
@@ -528,10 +528,10 @@
       <div class="extra-card">
         <div class="extra-card-body">
           <h3 class="extra-card-title">
-            VIP入場套票
+            VIP 入場套票
           </h3>
           <h4 class="extra-card-content">
-            (每套入場套票含入場門票+晚宴入場券一張)<br>
+            (每套入場套票含入場門票 + 晚宴入場券一張)<br>
             入場快速通關、講者交流晚宴與獨家紀念商品
           </h4>
           <h5 class="extra-card-desc">
@@ -577,7 +577,7 @@
             Meet.jobs 線上面試服務
           </h3>
           <h4 class="extra-card-content">
-            Meet.jobs透過其系統媒合企業與會眾，並於會後提供線上面試的系統服務，只收取確定錄取者的年薪8%作為服務費。
+            Meet.jobs 透過其系統媒合企業與會眾，並於會後提供線上面試的系統服務，只收取確定錄取者的年薪 8% 作為服務費。
           </h4>
           <h5 class="extra-card-desc">
             簡化投履歷流程，加強徵才轉化率。尤其適合需要遠端招募的公司。

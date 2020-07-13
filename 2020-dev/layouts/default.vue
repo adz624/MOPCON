@@ -22,7 +22,7 @@
           </li>
           <li class="history-mopcon" @click="isMobile && (subNavOpen = !subNavOpen)">
             <a href="/" @click.prevent>
-              歷年MOPCON
+              歷年 MOPCON
               <span class="icon-arrow" />
             </a>
             <ul class="history-link" :class="{'history-link_active': subNavOpen}" @click.stop>
