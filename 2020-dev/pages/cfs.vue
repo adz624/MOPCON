@@ -104,7 +104,7 @@
               </div>
             </td>
             <td>
-              <div class="icon icon-close" />
+              <div class="icon icon-check" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -243,7 +243,7 @@
               各廳各 1
             </td>
             <td class="option-list-content">
-              各廳各 1
+              各廳各 2
             </td>
           </tr>
           <tr class="option-list">
@@ -289,10 +289,10 @@
               <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -315,7 +315,7 @@
               <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -337,8 +337,25 @@
             <td class="option-list-desc">
               粉絲頁貼文
             </td>
+            <td class="option-list-content">
+              1 則
+            </td>
+            <td class="option-list-content">
+              1 則
+            </td>
+            <td class="option-list-content">
+              1 則
+            </td>
+            <td class="option-list-content">
+              1 則
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              官網企業商標與連結
+            </td>
             <td>
-              <div class="icon icon-close" />
+              <div class="icon icon-check" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -352,7 +369,7 @@
           </tr>
           <tr class="option-list">
             <td class="option-list-desc">
-              官網企業商標與連結
+              官網站內介紹專頁
             </td>
             <td>
               <div class="icon icon-close" />
@@ -374,14 +391,14 @@
             <td>
               <div class="icon icon-close" />
             </td>
-            <td>
-              <div class="icon icon-check" />
+            <td class="option-list-content">
+              1 則
             </td>
-            <td>
-              <div class="icon icon-check" />
+            <td class="option-list-content">
+              1 則
             </td>
-            <td>
-              <div class="icon icon-check" />
+            <td class="option-list-content">
+              1 則
             </td>
           </tr>
           <tr class="option-list">
@@ -392,10 +409,10 @@
               <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -403,13 +420,13 @@
           </tr>
           <tr class="option-list">
             <td class="option-list-desc">
-              Medium 專欄文章
+              部落格報導
             </td>
             <td>
               <div class="icon icon-close" />
             </td>
             <td>
-              <div class="icon icon-check" />
+              <div class="icon icon-close" />
             </td>
             <td>
               <div class="icon icon-check" />
@@ -426,7 +443,165 @@
               <div class="icon icon-close" />
             </td>
             <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
               <div class="icon icon-check" />
+            </td>
+            <td>
+              <div class="icon icon-check" />
+            </td>
+          </tr>
+          <tr class="option-list-title">
+            <td>
+              <h3 class="whitespace-no-wrap">
+                實體互動
+              </h3>
+            </td>
+            <td />
+            <td />
+            <td />
+            <td />
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              Keynote Session (45分鐘、含直播)
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td class="option-list-content">
+              1 場
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              Sponsor Session (45分鐘、含直播)
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td class="option-list-content">
+              1 場
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              UnConference (30分鐘、不含直播)
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td class="option-list-content">
+              1 場
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              主動線攤位
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td class="option-list-content">
+              1 個
+            </td>
+            <td class="option-list-content">
+              1 個
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              VIP 入場套票（含入場門票 + 晚宴入場券一張）
+            </td>
+            <td class="option-list-content">
+              1 份
+            </td>
+            <td class="option-list-content">
+              2 份
+            </td>
+            <td class="option-list-content">
+              3 份
+            </td>
+            <td class="option-list-content">
+              6 份
+            </td>
+          </tr>
+          <tr class="option-list-title">
+            <td>
+              <h3 class="whitespace-no-wrap">
+                數位互動
+              </h3>
+            </td>
+            <td />
+            <td />
+            <td />
+            <td />
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              大地遊戲置入配合
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-check" />
+            </td>
+            <td>
+              <div class="icon icon-check" />
+            </td>
+            <td>
+              <div class="icon icon-check" />
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              線上直播 AMA (Ask Me Anything)
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-check" />
+            </td>
+            <td>
+              <div class="icon icon-check" />
+            </td>
+          </tr>
+          <tr class="option-list">
+            <td class="option-list-desc">
+              Meet.jobs 線上面試服務
+            </td>
+            <td>
+              <div class="icon icon-close" />
+            </td>
+            <td>
+              <div class="icon icon-close" />
             </td>
             <td>
               <div class="icon icon-check" />

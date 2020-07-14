@@ -60,7 +60,7 @@
       <div>
         <a href="https://www.facebook.com/mopcon/" target="_blank" class="logo logo-fb" />
         <a href="https://twitter.com/mopcon" target="_blank" class="logo logo-twitter" />
-        <a href="https://www.instagram.com/accounts/login/?next=/mopcon.tw/" target="_blank" class="logo logo-ig" />
+        <a href="https://www.instagram.com/mopcon.tw/" target="_blank" class="logo logo-ig" />
         <a href="https://t.me/mopcon" target="_blank" class="logo logo-telegram" />
       </div>
     </footer>
