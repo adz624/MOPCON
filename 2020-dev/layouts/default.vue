@@ -15,11 +15,6 @@
               稿件徵求
             </nuxt-link>
           </li>
-          <li>
-            <nuxt-link to="/cfs">
-              贊助徵求
-            </nuxt-link>
-          </li>
           <li class="history-mopcon" @click="isMobile && (subNavOpen = !subNavOpen)">
             <a href="/" @click.prevent>
               歷年 MOPCON

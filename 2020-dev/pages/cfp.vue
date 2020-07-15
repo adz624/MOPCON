@@ -7,7 +7,7 @@
             {MOPCON 的核心價值}
           </h2>
           <p>
-            MOPCON (Mobile Open Platform Conference) 行動科技年會，是<span>南台灣最大型的千人科技研討會</span>，曾獲 iThome 列為 2015 年<span>台灣三大開源年會之一</span>。MOPCON 聚集了千名會眾、百位志工、50名以上講師、20家以上企業、10組以上社群團體。
+            MOPCON (Mobile Open Platform Conference) 行動科技年會，是<span>南台灣最大型的千人科技研討會</span>，曾獲 iThome 列為 2015 年<span>台灣三大開源年會之一</span>。MOPCON 聚集了千名會眾、百位志工、50 名以上講師、20 家以上企業、10 組以上社群團體。
             <br><br>
             延續去年 <span>Here we ${con}</span> 的精神，今年我們依舊在這裡，無論您是有志一同還是想說想做，${con} With Us！來跟我們一起，交流分享、教學相長、<span>享受開放文化，締造人、知識、產業快速流動，連結產業與資訊工程技術，加深人們聯繫持續茁壯，提升產業與個人的價值，推動南部產業創新發展</span>。2020 時局詭譎多變，更將提升參與過程安全， 建構正向網絡循環，以行動諦造生機。
           </p>
