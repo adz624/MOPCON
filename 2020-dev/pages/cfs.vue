@@ -67,16 +67,16 @@
           <tr class="option-desc">
             <td />
             <td>
-              最經濟實惠的現場與數位曝光，可搭配加購滿足特定需求。
+              最經濟實惠的現場與數位曝光，可搭配加購滿足特定需求
             </td>
             <td>
-              享有在人潮多處的靜態曝光，和實體交流 UnConference。
+              享有在人潮多處的靜態曝光，和實體交流 UnConference
             </td>
             <td>
-              享有主動線攤位，與今年新增的媒體專訪、專欄文章、線上面試服務等等項目。
+              享有主動線攤位，與今年新增的媒體專訪、專欄文章、線上面試服務等等項目
             </td>
             <td>
-              享有所有項目，和最顯眼的演講時段與曝光位置。
+              享有所有項目，和最顯眼的演講時段與曝光位置
             </td>
           </tr>
           <tr class="option-list-title">
@@ -510,8 +510,8 @@
             <td>
               <div class="icon icon-close" />
             </td>
-            <td>
-              <div class="icon icon-close" />
+            <td class="option-list-content">
+              1 場
             </td>
           </tr>
           <tr class="option-list">
@@ -620,15 +620,15 @@
             </th>
             <th>
               Hacker <br>
-              <span>適合需要宣傳產品與徵才的公司。</span>
+              <span>適合需要宣傳產品與徵才的公司</span>
             </th>
             <th>
               Bruce Wayne <br>
-              <span>適合需要大舉徵才與產品推廣的大公司。</span>
+              <span>適合需要大舉徵才與產品推廣的大公司</span>
             </th>
             <th>
               Tony Stark <br>
-              <span>適合重視品牌行銷的產業領導者。</span>
+              <span>適合重視品牌行銷的產業領導者</span>
             </th>
           </tr>
         </tfoot>
@@ -642,7 +642,7 @@
     <!-- 卡片區塊 -->
     <div class="extra-section">
       <h3 class="extra-section-title">
-        實體曝光
+        實體交流
       </h3>
       <a
         href="#"
@@ -724,7 +724,7 @@
       </h3>
       <a
         href="#"
-        :class="{'icon-minus': cardAciveItem == 'digit', 'icon-plus mb-12': cardAciveItem != 'digit'}"
+        :class="{'icon-minus': cardAciveItem == 'digit', 'icon-plus': cardAciveItem != 'digit'}"
         class="icon block md:hidden"
         @click.prevent="toggleCard('digit')"
       />
@@ -759,7 +759,155 @@
           </h5>
         </div>
         <h3 class="extra-card-footer">
-          可加購 1 場，限量 5 場
+          可加購 1 場，數量不限
+        </h3>
+      </div>
+    </div>
+    <div class="extra-section">
+      <h3 class="extra-section-title">
+        實體曝光
+      </h3>
+      <a
+        href="#"
+        :class="{'icon-minus': cardAciveItem == 'entityExposure', 'icon-plus': cardAciveItem != 'entityExposure'}"
+        class="icon block md:hidden"
+        @click.prevent="toggleCard('entityExposure')"
+      />
+    </div>
+    <div :class="{'active': cardAciveItem == 'entityExposure'}" class="extra-group">
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            主動線旗幟廣告
+          </h3>
+          <h4 class="extra-card-content">
+            主動線擺放旗幟廣告
+          </h4>
+          <h5 class="extra-card-desc">
+            觸及千名以上會眾以及現場工作人員、贊助商
+          </h5>
+        </div>
+        <h3 class="extra-card-footer">
+          數量不限
+        </h3>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            迎賓袋放入公司產品 / 文宣 / 問卷
+          </h3>
+          <h4 class="extra-card-content">
+            於會議舉辦的迎賓袋中放入公司文宣和問卷
+          </h4>
+          <h5 class="extra-card-desc">
+            觸及千名以上會眾以及現場工作人員、贊助商
+          </h5>
+        </div>
+        <h3 class="extra-card-footer">
+          可加購 1 份，限量 10 份
+        </h3>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            識別證商標曝光
+          </h3>
+          <h4 class="extra-card-content">
+            只限一間贊助商獨有的獨家曝光方式
+          </h4>
+          <h5 class="extra-card-desc">
+            觸及千名以上會眾以及現場工作人員、贊助商
+          </h5>
+        </div>
+        <h3 class="extra-card-footer">
+          可加購 1 份，限量 1 份
+        </h3>
+      </div>
+    </div>
+    <div class="extra-section">
+      <h3 class="extra-section-title">
+        數位曝光
+      </h3>
+      <a
+        href="#"
+        :class="{'icon-minus': cardAciveItem == 'digiExposure', 'icon-plus': cardAciveItem != 'digiExposure'}"
+        class="icon block md:hidden"
+        @click.prevent="toggleCard('digiExposure')"
+      />
+    </div>
+    <div :class="{'active': cardAciveItem == 'digiExposure'}" class="extra-group">
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            粉絲頁貼文置頂一週曝光
+          </h3>
+          <h4 class="extra-card-content">
+            於會議舉辦前在 MOPCON 的粉絲專頁張貼一則貼文，可預告現場活動內容或是介紹廠商產品
+          </h4>
+          <h5 class="extra-card-desc">
+            曝光超過千名受眾
+          </h5>
+        </div>
+        <h3 class="extra-card-footer">
+          數量不限
+        </h3>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            電子報曝光（企業形象圖文）
+          </h3>
+          <h4 class="extra-card-content">
+            每期期刊都會以信件方式寄送給往年購票會眾以及 MOPCON 的支持者們
+          </h4>
+          <h5 class="extra-card-desc">
+            曝光超過千名受眾
+          </h5>
+        </div>
+        <h3 class="extra-card-footer">
+          數量不限
+        </h3>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            部落格報導
+          </h3>
+          <h4 class="extra-card-content">
+            以文章報導形式，撰寫贊助商需要曝光的主題
+          </h4>
+          <h5 class="extra-card-desc">
+            曝光超過千名受眾，且會議結束後仍將持續帶來流量
+          </h5>
+        </div>
+        <h3 class="extra-card-footer">
+          數量不限
+        </h3>
+      </div>
+    </div>
+    <div class="extra-section">
+      <h3 class="extra-section-title">
+        教育贊助
+      </h3>
+      <a
+        href="#"
+        :class="{'icon-minus': cardAciveItem == 'edu', 'icon-plus mb-12': cardAciveItem != 'edu'}"
+        class="icon block md:hidden"
+        @click.prevent="toggleCard('edu')"
+      />
+    </div>
+    <div :class="{'active': cardAciveItem == 'edu'}" class="extra-group">
+      <div class="extra-card">
+        <div class="extra-card-body">
+          <h3 class="extra-card-title">
+            教育票券認購贊助 50 張
+          </h3>
+          <h4 class="extra-card-content">
+            鼓勵資訊教育紮根，贊助學生參與 MOPCON，購買單位為 50 張
+          </h4>
+        </div>
+        <h3 class="extra-card-footer">
+          可購買 4 份，限量 200 份
         </h3>
       </div>
     </div>
