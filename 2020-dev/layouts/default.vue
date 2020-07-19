@@ -106,6 +106,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// logo
+@import '~@/assets/styles/logo_mix';
+$logo_map: (
+  svg: mopcon fb twitter ig telegram
+);
+@include logo_map_mix(base);
+
 nav {
   height: 43px;
   @apply bg-black-main text-white;
