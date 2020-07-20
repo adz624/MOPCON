@@ -43,23 +43,15 @@
             <th class="option-sticky option-top" />
             <th class="option-sticky option-top">
               Developer
-              <br>
-              <span class="text-base">適合新創與小公司</span>
             </th>
             <th class="option-sticky option-top">
               Hacker
-              <br>
-              <span class="text-base">適合需要宣傳產品與徵才的公司。</span>
             </th>
             <th class="option-sticky option-top">
               Bruce Wayne
-              <br>
-              <span class="text-base">適合需要大舉徵才與產品推廣的大公司。</span>
             </th>
             <th class="option-sticky option-top">
               Tony Stark
-              <br>
-              <span class="text-base">適合重視品牌行銷的產業領導者。</span>
             </th>
           </tr>
         </thead>
@@ -611,27 +603,7 @@
             </td>
           </tr>
         </tbody>
-        <tfoot>
-          <tr class="option-footer">
-            <th />
-            <th>
-              Developer <br>
-              <span>適合新創與小公司</span>
-            </th>
-            <th>
-              Hacker <br>
-              <span>適合需要宣傳產品與徵才的公司</span>
-            </th>
-            <th>
-              Bruce Wayne <br>
-              <span>適合需要大舉徵才與產品推廣的大公司</span>
-            </th>
-            <th>
-              Tony Stark <br>
-              <span>適合重視品牌行銷的產業領導者</span>
-            </th>
-          </tr>
-        </tfoot>
+        <tfoot />
       </table>
     </div>
     <!-- "心有餘力有足" -->
