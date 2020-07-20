@@ -1,4 +1,4 @@
 <script>
-import Index from './cfp'
+import Index from './home'
 export default Index
 </script>

@@ -1,4 +1,6 @@
 const path = require('path')
+require('dotenv').config()
+
 module.exports = {
   mode: 'universal',
   /*
@@ -85,6 +87,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue-awesom-swiper', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -106,13 +109,15 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: `${process.env.PROXY_URL}${process.env.BASE_URL}`
   },
   /*
   ** Build configuration
@@ -139,5 +144,8 @@ module.exports = {
   },
   generate: {
     dir: path.resolve(__dirname, '../2020/')
+  },
+  env: {
+    BASE_URL: process.env.BASE_URL
   }
 }
