@@ -13,7 +13,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' },
       { 'http-equiv': 'X-UA-Compatible', content: 'ie=edge' },
-      { hid: 'description', name: 'description', content: 'MOPCON 2020 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。' },
+      { hid: 'description', name: 'description', content: 'MOPCON 2020 堅持濁水溪以南，南台灣最大行動科技年會，10/24 -10/25 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。' },
       // fb seo
       {
         hid: 'og-title',
@@ -37,6 +37,11 @@ module.exports = {
         property: 'og:url',
         content: 'https://mopcon.org/2020/'
       },
+      {
+        hid: 'og-image',
+        property: 'og:image',
+        content: '/2020/og-image.png'
+      },
       { hid: 'og-locale', property: 'og:locale', content: 'zh_tw' },
       // twitter seo
       { hid: 'twitter-card', name: 'twitter:card', content: 'app' },
@@ -49,7 +54,7 @@ module.exports = {
         hid: 'twitter-description',
         name: 'twitter:description',
         content:
-          'MOPCON 2020 堅持濁水溪以南，南台灣最大行動科技年會，10/19-10/20 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。'
+          'MOPCON 2020 堅持濁水溪以南，南台灣最大行動科技年會，10/24 -10/25 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。'
       },
       {
         hid: 'twitter-app:name:iphone',
