@@ -70,7 +70,8 @@ module.exports = {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/2020/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/2020/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
   /*
@@ -87,7 +88,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-awesom-swiper', ssr: false }
+    { src: '~/plugins/vue-awesom-swiper', ssr: false },
+    { src: '~/plugins/route' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -112,6 +114,16 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxtjs/proxy'
   ],
+  env: {
+    BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
+    routeSpeaker: process.env.SPEAKER !== 'false',
+    routeSchedule: process.env.SCHEDULE !== 'false',
+    routeScheduleUnconf: process.env.SCHEDULE_UNCONF !== 'false',
+    routeSponsor: process.env.SPONSOR !== 'false',
+    routeCommunity: process.env.COMMUNITY !== 'false',
+    routeTicket: process.env.TICKET !== 'false',
+    buyTicketUrl: ''
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -144,8 +156,5 @@ module.exports = {
   },
   generate: {
     dir: path.resolve(__dirname, '../2020/')
-  },
-  env: {
-    BASE_URL: process.env.BASE_URL
   }
 }
