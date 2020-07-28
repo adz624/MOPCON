@@ -15,7 +15,7 @@ class AppHomeController extends TestCase
         putenv('APP_ENV=develop');
 
         $dummyGoogleSheet = '{"feed": {"entry": [{ "gsx$id": { "$t": "1" }, "gsx$date": { "$t": "2018/10/20 9:00" }, "gsx$title": { "$t": "Telegram 聊天頻道上線嚕" }, "gsx$description": { "$t": "歡迎大家一起加入聊天！！" }, "gsx$link": { "$t": "tg://resolve?domain=mopcon" } }]}}';
-        test::double('App\Http\Controllers\NewsController', ['getSheetData' => $dummyGoogleSheet]);
+        test::double('App\Http\Controllers\Year2019\NewsController', ['getSheetData' => $dummyGoogleSheet]);
 
         $path = __DIR__ . '/../../../../resource/assets/json/';
         if (env('APP_ENV') === 'production') {
