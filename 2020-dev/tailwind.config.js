@@ -219,7 +219,15 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      padding: {
+        default: '1rem',
+        sm: '1rem',
+        md: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+      }
+    },
     cursor: {
       auto: 'auto',
       default: 'default',

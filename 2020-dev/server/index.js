@@ -2,6 +2,7 @@ const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
+require('dotenv').config()
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
