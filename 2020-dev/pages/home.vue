@@ -99,7 +99,7 @@
         <div class="location">
           <h3>高雄國際會議中心</h3>
           <p>高雄市鹽埕區中正四路274號</p>
-          <a href="#">Google 地圖<span class="logo logo-launch" /></a>
+          <a href="https://goo.gl/maps/pY4WDRfLgRZk17Ks6" target="_blank">Google 地圖<span class="logo logo-launch" /></a>
         </div>
       </div>
       <h2 class="traffic-way-title">
