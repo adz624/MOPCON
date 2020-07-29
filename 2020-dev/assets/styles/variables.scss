@@ -1,1 +1,21 @@
 $primary: #35495e;
+
+.btn-base {
+  border-radius: 8px;
+  box-shadow: 10px 10px 0 rgba(255, 217, 140, 0.5);
+  transition: all 0.15s;
+  outline: none;
+  width: 80%;
+  @apply px-0 py-3 bg-yellow-light font-medium text-black-900 text-xl;
+  &:hover {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+  }
+  @screen md {
+    font-size: 1.75rem;
+    @apply px-32;
+  }
+  @screen sm {
+    @apply px-24 text-2xl w-auto;
+  }
+}

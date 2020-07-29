@@ -200,6 +200,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// logo
+@import '~@/assets/styles/logo_mix';
+$logo_map: (
+  png: idea talk partner recruitment people-link gear
+  work ai web mobile iot net cloud uiux dev
+  genius version submit dateline notify
+);
+@include logo_map_mix(cfp);
+
 .title {
   letter-spacing: 1px;
   @apply text-xl mb-4 text-teal-main font-semibold;

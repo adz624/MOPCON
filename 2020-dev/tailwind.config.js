@@ -42,7 +42,8 @@ module.exports = {
         700: '#4a5568',
         800: '#2d3748',
         900: '#1a202c',
-        light: '#848a8e'
+        light: '#848a8e',
+        main: '#333a42',
       },
       red: {
         100: '#fff5f5',
@@ -77,6 +78,7 @@ module.exports = {
         800: '#975a16',
         900: '#744210',
         main: '#ffcc02',
+        light: '#ffd98c'
       },
       green: {
         100: '#f0fff4',
@@ -110,7 +112,8 @@ module.exports = {
         600: '#3182ce',
         700: '#2b6cb0',
         800: '#2c5282',
-        900: '#2a4365'
+        900: '#2a4365',
+        main: '#021432'
       },
       indigo: {
         100: '#ebf4ff',
@@ -217,7 +220,15 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      padding: {
+        default: '1rem',
+        sm: '1rem',
+        md: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+      }
+    },
     cursor: {
       auto: 'auto',
       default: 'default',

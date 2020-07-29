@@ -1,0 +1,21 @@
+// 1. 定義 map
+//   $logo_map: (
+//     svg: xxx xx xxxx,
+//     png: xxx,
+//     jpg: xx xxx,
+//   );
+// 2. 引入 mixin，括號帶資料夾名稱
+//   $include logo_map_mix(home)
+
+@mixin logo_map_mix($folder_name) {
+  $map_keys: map-keys($logo_map);
+  @each $key in $map_keys {
+    $list: map-get($logo_map, $key);
+    $list_length: length($list);
+    @for $index from 1 through $list_length {
+      .logo-#{nth($list, $index)} {
+        background-image: url('~@/assets/#{$folder_name}/#{nth($list, $index)}.#{$key}');
+      }
+    }
+  }
+}
