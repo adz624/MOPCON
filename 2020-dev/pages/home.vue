@@ -140,20 +140,20 @@
       <div class="logo logo-hr" />
     </div>
 
-    <!-- <section-past-years /> -->
+    <section-past-years />
   </div>
 </template>
 
 <script>
 import { fbNews } from '@/api/url'
 import SectionFbNews from '@/components/SectionFbNews'
-// import SectionPastYears from '@/components/SectionPastYears'
+import SectionPastYears from '@/components/SectionPastYears'
 
 export default {
   name: 'Home',
   components: {
-    SectionFbNews
-    // SectionPastYears
+    SectionFbNews,
+    SectionPastYears
   },
   async asyncData ({ $axios }) {
     try {
