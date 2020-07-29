@@ -221,7 +221,6 @@ $logo_map: (
 }
 
 #home {
-  font-family: 'NotoSansCJKtc';
   background-size: 115px 100px;
   @apply text-white;
 }

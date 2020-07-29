@@ -1,5 +1,5 @@
 <template>
-  <div class="top-0 sticky z-20">
+  <div :class="{'fixed w-screen': navOpen, 'sticky': !navOpen}" class="top-0 z-50">
     <nav :class="{'navActive': navOpen}">
       <div class="container mx-auto flex items-center h-full">
         <div class="logo-box">
@@ -152,6 +152,15 @@ export default {
   computed: {
     navOpenList () {
       return this.navList.filter(nav => nav.open !== false)
+    }
+  },
+  watch: {
+    navOpen (val) {
+      if (val) {
+        document.querySelector('body').classList.add('custom-overflow-hidden')
+      } else {
+        document.querySelector('body').classList.remove('custom-overflow-hidden')
+      }
     }
   },
   methods: {
