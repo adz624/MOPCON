@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'h-screen overflow-hidden' : navOpen}">
+  <div>
     <Navbar :nav-open="navOpen" :inner-width="innerWidth" :sub-nav-open="subNavOpen" :is-mobile="isMobile" @update="closeNav" />
     <div class="main">
       <nuxt />
