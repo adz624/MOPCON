@@ -33,7 +33,7 @@
         <div
           class="navbar-mobile-btn"
           :class="{'navbar-mobile-btn_active' : navOpen}"
-          @click="isMobile && (navOpen = !navOpen)"
+          @click="closeNav"
         />
       </div>
     </nav>
@@ -41,8 +41,14 @@
 </template>
 <script>
 export default {
-  pprops: {
-    navOpen: Boolean
+  props: {
+    navOpen: Boolean,
+    isMobile: Boolean,
+    subNavOpen: Boolean,
+    innerWidth: {
+      type: Number,
+      default: 1024
+    }
   },
   data () {
     const [startYear, currentYear] = [2012, new Date().getFullYear()]
@@ -112,7 +118,7 @@ export default {
           url: 'https://hackmd.io/@mopcon/2020',
           subNav: [],
           subIsOpen: false,
-          open: 'https://hackmd.io/@mopcon/2020',
+          open: process.env.routeNote,
           targetEnabled: true
         },
         {
@@ -140,49 +146,15 @@ export default {
       ],
       historyLink: Array.from(Array(currentYear - startYear).keys())
         .map(item => `https://mopcon.org/${startYear + item}/`),
-      subNavOpen: false,
-      innerWidth: null,
-      navOpen: false,
       nowSubOpen: ''
     }
   },
   computed: {
     navOpenList () {
       return this.navList.filter(nav => nav.open !== false)
-    },
-    isMobile () {
-      return this.innerWidth < 1024
     }
-  },
-  watch: {
-    isMobile (val) {
-      if (!val) {
-        this.subNavOpen = false
-        this.navOpen = false
-      }
-    },
-    $route (to, from) {
-      this.navOpen = false
-    },
-    navOpen (val) {
-      if (val) {
-        document.querySelector('body').classList.add('overflow-hidden')
-      } else {
-        document.querySelector('body').classList.remove('overflow-hidden')
-      }
-    }
-  },
-  mounted () {
-    this.innerWidth = window.innerWidth
-    window.addEventListener('resize', this.resize)
-  },
-  destroyed () {
-    window.removeEventListener('resize', this.resize)
   },
   methods: {
-    resize () {
-      this.innerWidth = window.innerWidth
-    },
     toggleSubNav (name, hasSub) {
       if (hasSub) {
         this.nowSubOpen !== name ? (this.nowSubOpen = name) : (this.nowSubOpen = '')
@@ -192,6 +164,11 @@ export default {
     },
     setTarget (targetEnabled) {
       return targetEnabled ? '_blank' : '_self'
+    },
+    closeNav () {
+      if (this.isMobile) {
+        this.$emit('update', !this.navOpen)
+      }
     }
   }
 }

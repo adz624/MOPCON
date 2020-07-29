@@ -1,6 +1,6 @@
 <template>
   <div :class="{'h-screen overflow-hidden' : navOpen}">
-    <Navbar />
+    <Navbar :nav-open="navOpen" :inner-width="innerWidth" :sub-nav-open="subNavOpen" :is-mobile="isMobile" @update="closeNav" />
     <div class="main">
       <nuxt />
     </div>
@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     isMobile () {
-      return this.innerWidth < 768
+      return this.innerWidth < 1024
     }
   },
   watch: {
@@ -37,6 +37,21 @@ export default {
     },
     $route (to, from) {
       this.navOpen = false
+    }
+  },
+  mounted () {
+    this.innerWidth = window.innerWidth
+    window.addEventListener('resize', this.resize)
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.resize)
+  },
+  methods: {
+    resize () {
+      this.innerWidth = window.innerWidth
+    },
+    closeNav (val) {
+      this.navOpen = val
     }
   }
 }

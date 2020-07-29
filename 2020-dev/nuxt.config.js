@@ -122,6 +122,7 @@ module.exports = {
     routeSponsor: process.env.SPONSOR !== 'false',
     routeCommunity: process.env.COMMUNITY !== 'false',
     routeTicket: process.env.TICKET !== 'false',
+    routeNote: process.env.NOTE !== 'false',
     buyTicketUrl: ''
   },
   /*
