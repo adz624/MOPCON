@@ -1,6 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Year2019;
+
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiTrait;
 
 class NewsController extends Controller
 {

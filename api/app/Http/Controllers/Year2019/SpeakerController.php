@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Year2019;
 
 use App\Service\SpeakerService;
 use Illuminate\Http\Response;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiTrait;
 
 class SpeakerController extends Controller
 {
