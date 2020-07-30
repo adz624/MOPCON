@@ -57,7 +57,7 @@ class FacebookController extends Controller
     private function dataProcesser(Request $request, Int $limit)
     {
         $token = env('FACEBOOK_TOKEN');
-        $fields = ['full_picture', 'message', 'id', 'shares', 'created_time', 'likes.summary(true)'];
+        $fields = ['full_picture', 'message', 'id', 'shares', 'created_time', 'likes.summary(true)', 'permalink_url'];
         $baseUrl = $this->mopconApiUrl;
         $baseUrl .= 'feed?fields=';
         $baseUrl .= implode(',', $fields);
@@ -73,8 +73,9 @@ class FacebookController extends Controller
             foreach ($postsData as $key => $value) {
                 $postsData[$key]['shares'] = $postsData[$key]['shares']['count'] ?? 0;
                 $postsData[$key]['likes'] = $postsData[$key]['likes']['summary']['total_count'];
-                $postsData[$key]['url'] = $this->facebookUrl.$postsData[$key]['id'];
+                $postsData[$key]['url'] = $postsData[$key]['permalink_url'];
                 $postsData[$key]['created_time'] = strtotime($postsData[$key]['created_time']);
+                unset($postsData[$key]['permalink_url']);
             }
             return $this->returnSuccess('Success get posts', $postsData);
         } catch (Exception $e) {

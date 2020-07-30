@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Year2019;
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiTrait;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
