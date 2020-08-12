@@ -22,6 +22,7 @@ class Controller extends BaseController
             $this->year = date('Y');
         }
         $this->path = $this->path . $this->year . '/';
+        $this->imgPath = $this->imgPath . $this->year . '/';
 
         if (getenv('RESOURCE_PATH')) {
             // 主要設計給測試使用
