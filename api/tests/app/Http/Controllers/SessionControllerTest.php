@@ -48,7 +48,7 @@ class SessionController extends TestCase
         parent::setUp();
         putenv('APP_ENV=develop');
 
-        $path = __DIR__ . '/../../../../resource/assets/json';
+        $path = __DIR__ . '/../../../../resource/assets/json/2019';
         if (env('APP_ENV') === 'production') {
             $this->dataset = json_decode(file_get_contents($path . '/session.json'), true);
             $this->speakers = json_decode(file_get_contents($path . '/speaker.json'), true);
@@ -151,7 +151,7 @@ class SessionController extends TestCase
                 }
                 $session['tags_tech'][] = $tag;
             }
-    
+
             $session['is_sponsor_session'] = (bool)$speaker['sponsor_id'];
             $sessions[$index++] = $session;
         }

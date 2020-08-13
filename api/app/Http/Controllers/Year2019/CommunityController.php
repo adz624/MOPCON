@@ -11,6 +11,7 @@ class CommunityController extends Controller
 {
     use ApiTrait;
 
+    protected $year = 2019;
     protected $function = 'community';
 
     public function index()

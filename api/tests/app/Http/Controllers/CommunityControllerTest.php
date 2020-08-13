@@ -13,9 +13,9 @@ class CommunityControllerTest extends TestCase
         putenv('APP_ENV=develop');
 
         if (env('APP_ENV') === 'production') {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/community.json'), true);
+            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/2019/community.json'), true);
         } else {
-            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/community-dev.json'), true);
+            $this->dataset = json_decode(file_get_contents(__DIR__ . '/../../../../resource/assets/json/2019/community-dev.json'), true);
         }
     }
 

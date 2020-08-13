@@ -11,6 +11,7 @@ class AppHomeController extends Controller
 {
     use ApiTrait;
 
+    protected $year = 2019;
     protected $function = 'banner';
     private $output;
 

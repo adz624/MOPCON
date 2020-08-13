@@ -11,6 +11,7 @@ class VolunteerController extends Controller
 {
     use ApiTrait;
 
+    protected $year = 2019;
     protected $function = 'volunteer';
 
     public function index()

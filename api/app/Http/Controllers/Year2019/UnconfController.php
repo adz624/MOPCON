@@ -11,6 +11,7 @@ class UnconfController extends Controller
 {
     use ApiTrait;
 
+    protected $year = 2019;
     protected $function = 'unconf';
     private $missingStructure = [
         'isBroadCast' => false,

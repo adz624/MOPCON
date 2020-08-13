@@ -28,6 +28,7 @@ class SponsorController extends Controller
         ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
     ];
     private $speakerAry = [];
+    protected $year = 2019;
     protected $function = 'sponsor';
     private $speakerService;
     private $sessionSpeakerMapping = [];

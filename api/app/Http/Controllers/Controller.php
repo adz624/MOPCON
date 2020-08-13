@@ -7,6 +7,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Controller extends BaseController
 {
+    protected $year;
     protected $function = null;
     protected $jsonAry;
     protected $path = __DIR__ . '/../../../resource/assets/json/';
@@ -15,6 +16,13 @@ class Controller extends BaseController
     public function __construct()
     {
         $env = getenv('APP_ENV') ? getenv('APP_ENV') : 'production';
+
+        if (!$this->year) {
+            // 預設帶系統年度
+            $this->year = date('Y');
+        }
+        $this->path = $this->path . $this->year . '/';
+        $this->imgPath = $this->imgPath . $this->year . '/';
 
         if (getenv('RESOURCE_PATH')) {
             // 主要設計給測試使用
