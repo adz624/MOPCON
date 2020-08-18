@@ -4,12 +4,10 @@ namespace App\Http\Controllers\Year2019;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\ApiTrait;
+use App\Http\Controllers\VolunteerController as BaseVolunteerController;
 
-class VolunteerController extends Controller
+class VolunteerController extends BaseVolunteerController
 {
-    use ApiTrait;
 
     protected $year = 2019;
     protected $function = 'volunteer';
@@ -26,32 +24,6 @@ class VolunteerController extends Controller
         return $this->returnSuccess('success', $result);
     }
 
-    /**
-     * 志工團隊
-     *
-     * @param integer $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        if (!is_numeric($id)) {
-            return $this->returnError('Bad request');
-        }
-        $result = $this->searchTargetById($this->jsonAry, $id);
-        if (is_null($result)) {
-            return $this->returnNotFoundError();
-        }
-        return $this->returnSuccess('success', $result);
-    }
-
-    public function imagesView($name)
-    {
-        $dir = $this->imgPath . 'volunteers/' . $name . '.*';
-        $path = glob($dir);
-        $path = end($path);
-        $type = mime_content_type($path);
-        return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
-    }
     /**
      * 由 id 取出特定社群
      *

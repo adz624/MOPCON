@@ -68,5 +68,12 @@ $router->group(['prefix' => 'api'], function ($router) {
         $router->group(['prefix' => 'facebook'], function ($router) {
             $router->get('posts', 'FacebookController@getPosts');
         });
+        $router->group(['namespace' => 'Year2020'], function () use ($router) {
+            $router->group(['prefix' => 'volunteer'], function ($router) {
+                $router->get('/', 'VolunteerController@index');
+                $router->get('/{id}', 'VolunteerController@show');
+                $router->get('/images/{name}', 'VolunteerController@imagesView');
+            });
+        });
     });
 });
