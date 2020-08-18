@@ -6,22 +6,41 @@ use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ApiTrait;
 
-Class VolunteerController extends Controller {  // @todo VolunteerController 这里是要生成的类名字
+Class CommunityController extends Controller {
 
 	use ApiTrait;
 
     /**
-     * 志工團隊
+     * 主辦社群
      *
      * @param integer $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function getOrganizer($id)
     {
         if (!is_numeric($id)) {
             return $this->returnError('Bad request');
         }
-        $result = $this->searchTargetById($this->jsonAry, $id);
+        $communities = $this->jsonAry['community'];
+        $result = $this->searchTargetById($communities, $id);
+        if (is_null($result)) {
+            return $this->returnNotFoundError();
+        }
+        return $this->returnSuccess('success', $result);
+    }
+    /**
+     * 參與社群
+     *
+     * @param integer $id
+     * @return \Illuminate\Http\Response
+     */
+    public function getParticipant($id)
+    {
+        if (!is_numeric($id)) {
+            return $this->returnError('Bad request');
+        }
+        $participants = $this->jsonAry['participant'];
+        $result = $this->searchTargetById($participants, $id);
         if (is_null($result)) {
             return $this->returnNotFoundError();
         }
@@ -30,11 +49,11 @@ Class VolunteerController extends Controller {  // @todo VolunteerController 这
 
     public function imagesView($name)
     {
-        $dir = $this->imgPath . 'volunteers/' . $name . '.*';
+        $dir = $this->imgPath . 'community/' . $name . '.*';
         $path = glob($dir);
         $path = end($path);
         if (empty($path)) {
-        	return $this->returnNotFoundError();
+            return $this->returnNotFoundError();
         }
         $type = mime_content_type($path);
         return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
@@ -58,8 +77,8 @@ Class VolunteerController extends Controller {  // @todo VolunteerController 这
         if (isset($result['photo']) && $result['photo'] !== '') {
             $result['photo'] = url($result['photo']);
         }
-        if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
-            $result['introduction_en'] = $result['introduction'];
+        if (isset($result['introduction_e']) && $result['introduction_e'] === '') {
+            $result['introduction_e'] = $result['introduction'];
         }
         unset($result['id']);
         return $result;

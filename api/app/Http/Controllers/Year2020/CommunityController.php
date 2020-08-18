@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Year2019;
+namespace App\Http\Controllers\Year2020;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -9,7 +9,7 @@ use App\Http\Controllers\CommunityController as BaseCommunityController;
 class CommunityController extends BaseCommunityController
 {
 
-    protected $year = 2019;
+    protected $year = 2020;
     protected $function = 'community';
 
     public function index()
@@ -25,5 +25,4 @@ class CommunityController extends BaseCommunityController
 
         return $this->returnSuccess('success', $result);
     }
-
 }
