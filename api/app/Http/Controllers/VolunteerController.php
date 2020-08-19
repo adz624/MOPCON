@@ -1,12 +1,12 @@
 <?php
-namespace  App\Http\Controllers; // @todo: 这里是要生成类的命名空间
+namespace  App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ApiTrait;
 
-Class VolunteerController extends Controller {  // @todo VolunteerController 这里是要生成的类名字
+Class VolunteerController extends Controller {
 
 	use ApiTrait;
 

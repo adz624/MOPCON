@@ -1,5 +1,5 @@
 <?php
-namespace  App\Http\Controllers; // @todo: 这里是要生成类的命名空间
+namespace  App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

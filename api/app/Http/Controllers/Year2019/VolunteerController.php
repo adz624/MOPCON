@@ -23,5 +23,4 @@ class VolunteerController extends BaseVolunteerController
 
         return $this->returnSuccess('success', $result);
     }
-
 }

@@ -25,5 +25,4 @@ class CommunityController extends BaseCommunityController
 
         return $this->returnSuccess('success', $result);
     }
-
 }
