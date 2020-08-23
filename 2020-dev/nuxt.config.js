@@ -72,8 +72,10 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/2020/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins&display=swap' }
     ]
+
   },
   /*
   ** Customize the progress-bar color
@@ -142,8 +144,8 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    // Run ESLint on save
+    extend(config, ctx) {
+      // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
