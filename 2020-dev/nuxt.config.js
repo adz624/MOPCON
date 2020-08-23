@@ -82,14 +82,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~assets/styles/all.scss'
+    '~assets/styles/all.scss',
+    '~assets/styles/_base.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-awesom-swiper', ssr: false },
-    { src: '~/plugins/route' }
+    { src: '~/plugins/vue-awesom-swiper', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -98,7 +98,9 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment',
+    'vue-social-sharing/nuxt'
   ],
   styleResources: {
     scss: ['./assets/styles/variables.scss']
@@ -111,19 +113,19 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
-    '@nuxtjs/proxy'
+    '@nuxtjs/dotenv'
   ],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
-    routeSpeaker: process.env.SPEAKER !== 'false',
-    routeSchedule: process.env.SCHEDULE !== 'false',
-    routeScheduleUnconf: process.env.SCHEDULE_UNCONF !== 'false',
-    routeSponsor: process.env.SPONSOR !== 'false',
-    routeCommunity: process.env.COMMUNITY !== 'false',
-    routeTicket: process.env.TICKET !== 'false',
-    routeNote: process.env.NOTE !== 'false',
-    buyTicketUrl: ''
+    buyTicketUrl: '',
+    // route 變數前面加 route_
+    route_speaker: process.env.SPEAKER !== 'false',
+    route_schedule: process.env.SCHEDULE !== 'false',
+    route_schedule_unconf: process.env.SCHEDULE_UNCONF !== 'false',
+    route_sponsor: process.env.SPONSOR !== 'false',
+    route_community: process.env.COMMUNITY !== 'false',
+    route_ticket: process.env.TICKET !== 'false',
+    route_note: process.env.NOTE !== 'false'
   },
   /*
   ** Axios module configuration
@@ -152,10 +154,13 @@ module.exports = {
     }
   },
   router: {
-    // base: '/2020/',
-    base: path.resolve(__dirname, '/2020/')
+    base: path.resolve(__dirname, '/2020/'),
+    middleware: 'route'
   },
   generate: {
     dir: path.resolve(__dirname, '../2020/')
+  },
+  moment: {
+    locales: ['zh-tw']
   }
 }

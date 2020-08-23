@@ -2,7 +2,7 @@
   <footer>
     <div class="contact">
       <h4>聯絡我們</h4>
-      <a class="text-yellow-main">contact@mopcon.org</a>
+      <a class="text-yellow-500">contact@mopcon.org</a>
     </div>
     <div>在這裡找到 #MOPCON</div>
     <div>
@@ -14,13 +14,13 @@
   </footer>
 </template>
 <style lang="scss" scoped>
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/_mix';
 $logo_map: (
   svg: mopcon fb twitter ig telegram
 );
 @include logo_map_mix(base);
 footer {
-  @apply bg-blue-main text-white flex flex-col justify-center items-center text-xl pt-5 pb-8;
+  @apply bg-blue-900 text-white flex flex-col justify-center items-center text-xl pt-5 pb-8;
   div {
     @apply flex;
     @screen md {
@@ -36,7 +36,7 @@ footer {
       @apply w-6 h-6 mx-3;
     }
     &:hover:not(.logo) {
-      @apply border-b border-teal-main;
+      @apply border-b border-teal-400;
     }
   }
 }

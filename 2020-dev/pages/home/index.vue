@@ -78,7 +78,7 @@
         我有興趣贊助你們
         <div class="logo logo-circles logo-circles-r" />
       </h2>
-      <button class="btn-base" @click="mailTo">
+      <button class="btn-primary" @click="mailTo">
         聯絡我們
       </button>
       <p>謝謝你願意成為全台最大行動科技領域<br>社群研討會的參與者及貢獻者之一！</p>
@@ -146,8 +146,8 @@
 
 <script>
 import { fbNews } from '@/api/url'
-import SectionFbNews from '@/components/SectionFbNews'
-import SectionPastYears from '@/components/SectionPastYears'
+import SectionFbNews from './components/SectionFbNews'
+import SectionPastYears from './components/SectionPastYears'
 
 export default {
   name: 'Home',
@@ -197,31 +197,15 @@ export default {
 
 <style lang="scss" scoped>
 // logo
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/_mix';
+
 $logo_map: (
-  svg: mopcon arrow border launch hr circles,
-  png: bg,
+  svg: mopcon arrow border launch,
   jpg: section-place-img-1 section-place-img-2 section-place-img-3 catch-1 catch-2 catch-3
 );
 @include logo_map_mix(home);
 
-@mixin text-border {
-  &::before {
-    content: '';
-    width: 45px;
-    background: url('~@/assets/home/border-s-t.svg') center center / contain no-repeat;
-    @apply absolute h-8;
-  }
-  &::after {
-    content: '';
-    width: 20px;
-    background: url('~@/assets/home/border-s-b.svg') center center / contain no-repeat;
-    @apply absolute h-8;
-  }
-}
-
 #home {
-  background-size: 115px 100px;
   @apply text-white;
 }
 ::v-deep > section {
@@ -243,7 +227,7 @@ $logo_map: (
 }
 .text-style-main {
   p {
-    @apply inline-block text-yellow-main;
+    @apply inline-block text-yellow-500;
   }
   span {
     transform: scale(1.3, 1);
@@ -260,17 +244,6 @@ $logo_map: (
     span {
       transform: scale(1.3, 1) translateY(-1px);
     }
-  }
-}
-.logo-hr {
-  height: 15px;
-  background-repeat: repeat no-repeat;
-  background-position-x: left;
-  background-size: auto 15px;
-  margin: 0 auto;
-  @screen md {
-    height: 10px;
-    background-size: auto 10px;
   }
 }
 .container {
@@ -390,8 +363,8 @@ $logo_map: (
       line-height: 120px;
       text-shadow: 6px 3px 0 rgb(67, 79, 99);
       transform: scaleY(1.1);
-      @apply text-yellow-main inline-block;
-      @include text-border;
+      @apply text-yellow-500 inline-block;
+      @include border-primary;
       &::before {
         left: -8px;
         top: 7px;
@@ -482,31 +455,10 @@ $logo_map: (
 .sponser {
   @apply text-center pt-16 pb-12;
   h2 {
-    @apply text-yellow-main mb-12 relative inline-block text-2xl;
-    @include text-border;
-    &::before {
-      left: -30px;
-      top: -8px;
-    }
-    &::after {
-      right: -26px;
-      bottom: -10px;
-    }
-    .logo-circles {
-      width: 60px;
-      height: 10px;
-      @apply absolute;
-      &-l {
-        left: -60px;
-        top: -25px;
-      }
-      &-r {
-        right: -75px;
-        bottom: -14px;
-      }
-    }
+    @apply text-yellow-500 mb-12 relative inline-block text-2xl;
+    @include border-primary;
   }
-  .btn-base {
+  .btn-primary {
     width: 80%;
     @apply block mx-auto;
   }
@@ -529,7 +481,7 @@ $logo_map: (
     p {
       @apply text-xl;
     }
-    .btn-base {
+    .btn-primary {
       width: auto;
       @apply px-40;
     }
@@ -557,10 +509,10 @@ $logo_map: (
   .location {
     @apply pt-6 text-center w-full text-xl;
     h3 {
-      @apply text-yellow-main mb-2;
+      @apply text-yellow-500 mb-2;
     }
     a {
-      @apply text-yellow-light inline-block mt-4 text-lg;
+      @apply text-yellow-300 inline-block mt-4 text-lg;
       &:hover {
         opacity: 0.8;
       }
@@ -573,7 +525,7 @@ $logo_map: (
     }
   }
   .traffic-way-title {
-    @apply text-yellow-main mt-8 text-xl;
+    @apply text-yellow-500 mt-8 text-xl;
   }
   .traffic-way {
     grid-template-rows: auto auto auto auto;
@@ -588,7 +540,7 @@ $logo_map: (
       @apply hidden;
     }
     .traffic-nav {
-      @apply flex justify-between border-b border-yellow-main mb-5;
+      @apply flex justify-between border-b border-yellow-500 mb-5;
       h3 {
         transition: all 0.3s;
         @apply mb-0 pb-1 pr-1 relative;
@@ -600,7 +552,7 @@ $logo_map: (
           @apply absolute left-0 w-full;
         }
         &.active::before {
-          @apply bg-yellow-main;
+          @apply bg-yellow-500;
         }
       }
     }
