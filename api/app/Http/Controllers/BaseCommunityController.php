@@ -1,20 +1,37 @@
 <?php
-namespace  App\Http\Controllers;
+namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ApiTrait;
 
-Class CommunityController extends Controller {
+class BaseCommunityController extends Controller
+{
+    use ApiTrait;
+    protected $function = 'community';
+    /**
+     * 社群主頁
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function index()
+    {
+        $result = [];
+        array_walk($this->jsonAry, function ($subset, $key) use (&$result) {
+            $result[$key] = array_map(function ($value) {
+                $value['photo'] = url($value['photo']);
+                unset($value['introduction'], $value['introduction_e'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
+                return $value;
+            }, $subset);
+        });
 
-	use ApiTrait;
-
+        return $this->returnSuccess('success', $result);
+    }
     /**
      * 主辦社群
      *
      * @param integer $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getOrganizer($id)
     {
@@ -32,7 +49,7 @@ Class CommunityController extends Controller {
      * 參與社群
      *
      * @param integer $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getParticipant($id)
     {
@@ -46,7 +63,12 @@ Class CommunityController extends Controller {
         }
         return $this->returnSuccess('success', $result);
     }
-
+    /**
+     * 查詢images
+     *
+     * @param string $name
+     * @return object
+     */
     public function imagesView($name)
     {
         $dir = $this->imgPath . 'community/' . $name . '.*';

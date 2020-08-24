@@ -1,20 +1,35 @@
 <?php
-namespace  App\Http\Controllers;
+namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ApiTrait;
 
-Class VolunteerController extends Controller {
+class BaseVolunteerController extends Controller
+{
+    use ApiTrait;
+    protected $function = 'volunteer';
+    /**
+     * 志願者主頁
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function index()
+    {
+        $result = [];
+        $result['volunteer'] = array_map(function ($value) {
+            $value['photo'] = url($value['photo']);
+            unset($value['introduction'], $value['introduction_en'], $value['members'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
+            return $value;
+        }, $this->jsonAry);
 
-	use ApiTrait;
-
+        return $this->returnSuccess('success', $result);
+    }
     /**
      * 志工團隊
      *
      * @param integer $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show($id)
     {
@@ -27,14 +42,19 @@ Class VolunteerController extends Controller {
         }
         return $this->returnSuccess('success', $result);
     }
-
+    /**
+     * 查詢images
+     *
+     * @param string $name
+     * @return object
+     */
     public function imagesView($name)
     {
         $dir = $this->imgPath . 'volunteers/' . $name . '.*';
         $path = glob($dir);
         $path = end($path);
         if (empty($path)) {
-        	return $this->returnNotFoundError();
+            return $this->returnNotFoundError();
         }
         $type = mime_content_type($path);
         return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
