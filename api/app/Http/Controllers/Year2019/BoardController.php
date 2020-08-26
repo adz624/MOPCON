@@ -13,6 +13,7 @@ class BoardController extends Controller
 {
     use ApiTrait;
 
+    protected $year = 2019;
     protected $function = 'session';
     private $session_keys = [
         'speaker_id',
@@ -55,7 +56,7 @@ class BoardController extends Controller
 
     private const BEFORE_START = 3*60;
     private const START_AFTER = 10*60;
-    
+
     private const BEFORE_START_TXT = '議程即將開始';
     private const START_AFTER_TXT = '議程進行中';
     private const PREVIEW_TXT = '議程預告';
@@ -104,7 +105,7 @@ class BoardController extends Controller
                 'sponsor_ad_img' => url($ad['board_path']),
             ];
         }
-        
+
         $this->speakerService = new SpeakerService($this->jsonAry);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
         $this->sessions = $this->transSpeakerToSession($speakers);

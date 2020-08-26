@@ -1,0 +1,58 @@
+{
+    "community": [],
+    "participant": [
+        {
+            "id": "1",
+            "name": "GDG Cloud Kaohsiung",
+            "name_e": "GDG Cloud Kaohsiung",
+            "photo": "api/2020/community/images/gdg-cloud-kh",
+            "introduction": "GDG Kaohsiung (Google Developer Group Kaohsiung) GDG Kaohsiung 是以研究 Google 以及 Android App 領域的技術、設計、新創或相關產業為主的開發者群。每個月至少會有一場實體聚會在高雄舉行。 GDG Kaoshiung 前身是 Android 高雄開發者社群，自從2014年三月開始舉辦，每月會有一到兩場的實體會，舉行時間原則上依講者和場地許可時間安排，實際活動時間請持續關注社團，我們會隨時公佈最新的活動訊息歡迎對相關領域有興趣的朋友可以參與聚會，一起交流討論。",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/groups/GCPUG.KH",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": "https://gdg.community.dev/gdg-cloud-kaohsiung/"
+        },
+
+        {
+            "id": "2",
+            "name": "Kaohsiung Python User Group",
+            "name_e": "Kaohsiung Python User Group",
+            "photo": "api/2020/community/images/pythonkh",
+            "introduction": "高雄地區Python使用者的交流園地。\n社團使命(Mission)：\n*營造一個公開促進技術交流的環境，促使團員提升自己的技術能力，進而提升台灣整體的競爭力。\n*鼓勵團員運用Python技術，實現自己的想法。\n*鼓勵異業交流，以提升各產業的競爭力。\n社團價值(Values)：\n*擁有國際觀：以國際市場為目標，而不是侷限眼光，在區域市場廝殺。\n*強烈企圖心：樂於分享技術，努力思考自己的興趣，觀察周圍的問題，思考可能的解決方案。\n*成熟及尊重：開得起玩笑，但尊重別人。\n歡迎對Python有興趣的朋友來參加聚會。",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/groups/kaohsiungpy",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": "https://www.meetup.com/Kaohsiung-Python-Meetup/"
+        },
+        {
+            "id": "3",
+            "name": "IxDA Taiwan",
+            "name_e": "IxDA Taiwan",
+            "photo": "api/2020/community/images/IxDA-Taiwan",
+            "introduction": "社團法人台灣互動設計協會 - 我們是充滿熱情活力的開拓者，永遠在前方為設計開闢更寬廣的道路!\nIxDA 每年都會舉辦國際性研討活動，廣泛邀請世界各地從事產品與服務的設計者們與會(包括產品經理，創意總監，互動設計師，人機互動工程師，使用性工程師，使用者經驗與研究員，及學術先進等) 。除了聆聽國際學者、專家最新的互動設計理論或實務發展外，也提供所有與會者直接交流的機會。IxDA Taiwan 於2010年成立，透過實體聚會、線上交流以及大型研討會的方式，專注於將互動設計推廣到台灣的各個角落，截至今日已經舉辦過15次公開活動，超過1000人實際參與，迄今亦有387位來自產官學界的菁英加入IxDA Taiwan的行列，形成一個互動設計的大家庭。去年4月舉行的互動設計大會，更讓台灣能與其他12個協辦國接軌，為台灣的互動設計劃下新的一頁。今年10月舉辦的 Interaction 13 也讓台灣互動設計及與會的專業人士跟國際大師產生更多交流！",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/ixda.tw/",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": "http://www.ixda.org.tw/"
+        },
+        {
+            "id": "4",
+            "name": "好想工作室",
+            "name_e": "Goodideas Studio",
+            "photo": "api/2020/community/images/goodideals-studio",
+            "introduction": "共同工作空間 資訊社群聚落 軟體人才培育基地 天瓏資訊圖書實體分店 台南 Google 開發者社群",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/GoodideasStudio/",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": "https://goodideas-studio.com/"
+        }
+    ]
+}

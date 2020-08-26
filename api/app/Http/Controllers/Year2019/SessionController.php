@@ -12,6 +12,7 @@ class SessionController extends Controller
 {
     use ApiTrait;
 
+    protected $year = 2019;
     protected $function = 'session';
     protected $session_keys = [
         'speaker_id',
