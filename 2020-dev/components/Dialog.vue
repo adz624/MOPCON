@@ -2,10 +2,11 @@
   <transition name="dialog-fade">
     <div
       v-show="visible"
+      ref="dialogWrap"
       class="dialog-wrap"
       @click.self="hide"
     >
-      <div ref="dialog" class="dialog">
+      <div class="dialog">
         <div class="dialog-header">
           <h2 slot="title" />
           <span
@@ -44,9 +45,9 @@ export default {
       handler (val) {
         if (process.client) {
           document.documentElement.style.overflow = val ? 'hidden' : 'auto'
-          if (val && this.$refs.dialog) {
+          if (val && this.$refs.dialogWrap) {
             this.$nextTick(() => {
-              this.$refs.dialog.scrollTop = 0
+              this.$refs.dialogWrap.scrollTop = 0
             })
           }
         }

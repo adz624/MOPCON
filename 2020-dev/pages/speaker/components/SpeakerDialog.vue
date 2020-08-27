@@ -63,10 +63,10 @@
         </p>
       </section>
 
-      <section class="sponser">
+      <!-- <section class="sponser">
         <h2>贊助廠商</h2>
         <img class="logo logo-kkbox">
-      </section>
+      </section> -->
     </div>
     <div slot="footer">
       <button class="btn-share" @click.stop="btnListShow = !btnListShow">
@@ -141,7 +141,7 @@ export default {
   },
   computed: {
     shareUrl () {
-      return `${process.env.BASE_URL}/2020/speaker?speaker_id=${this.speakerInfo.speaker_id}`
+      return `${process.env.BASE_URL}/2020/speaker/${this.speakerInfo.speaker_id}`
     }
   },
   methods: {
@@ -201,7 +201,8 @@ p {
     height: 115px;
     border-radius: 16px;
     transform: rotate(45deg);
-    @apply bg-purple-300 mb-20;
+    flex-shrink: 0;
+    @apply border border-white mb-20;
   }
   img {
     object-fit: cover;

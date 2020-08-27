@@ -86,7 +86,7 @@
 </template>
 
 <script>
-import { speaker } from '@/api/url'
+import { speaker, tags } from '@/api/url'
 import SpeakerDialog from './components/SpeakerDialog'
 
 export default {
@@ -97,9 +97,14 @@ export default {
   async asyncData ({ $axios, route }) {
     try {
       const { data } = await $axios.get(speaker)
-      const config = { speakers: data.data }
-      if (route.query.speaker_id) {
-        config.activeSpeaker = +route.query.speaker_id
+      const res = await $axios.get(tags)
+
+      const config = {
+        speakers: data.data,
+        tags: res.data.data.map(tag => tag.name)
+      }
+      if (route.params.speaker_id) {
+        config.activeSpeaker = +route.params.speaker_id
         config.dialogShow = true
       }
       return config
@@ -111,7 +116,8 @@ export default {
       dialogShow: false,
       speakers: [],
       folded: true,
-      activeSpeaker: 0
+      activeSpeaker: 0,
+      tags: []
     }
   },
   computed: {
@@ -121,13 +127,6 @@ export default {
         formatArr = formatArr.filter(speaker => speaker.tags.some(tag => this.activeTags.includes(tag.name)))
       }
       return formatArr
-    },
-    tags () {
-      if (this.speakers.length) {
-        const tagMap = this.speakers.map(speaker => speaker.tags.map(tag => tag.name)).flat()
-        return [...new Set(tagMap)]
-      }
-      return []
     },
     speakerInfo () {
       return this.speakers.find(speaker => speaker.speaker_id === this.activeSpeaker)
@@ -140,6 +139,62 @@ export default {
     handleSpeakerClick (id) {
       this.activeSpeaker = id
       this.dialogShow = true
+    }
+  },
+  head () {
+    if (this.$route.params.speaker_id) {
+      return {
+        title: `${this.speakerInfo.name} | 講者 MOPCON 2020`,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: this.speakerInfo.summary
+          },
+          // fb
+          {
+            hid: 'og-title',
+            property: 'og:title',
+            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
+          },
+          {
+            hid: 'og-description',
+            property: 'og:description',
+            content: this.speakerInfo.summary
+          },
+          {
+            hid: 'og-url',
+            property: 'og:url',
+            content: `${process.env.BASE_URL}/2020/speaker/${this.speakerInfo.speaker_id}`
+          },
+          {
+            hid: 'og-image',
+            property: 'og:image',
+            content: `${this.speakerInfo.img.web}`
+          },
+          // twitter seo
+          {
+            hid: 'twitter-site',
+            name: 'twitter:site',
+            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
+          },
+          {
+            hid: 'twitter-description',
+            name: 'twitter:description',
+            content: this.speakerInfo.summary
+          },
+          {
+            hid: 'twitter-app:name:iphone',
+            name: 'twitter:app:name:iphone',
+            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
+          },
+          {
+            hid: 'twitter-app:name:ipad',
+            name: 'twitter:app:name:ipad',
+            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
+          }
+        ]
+      }
     }
   }
 }
@@ -285,32 +340,26 @@ $logo_map: (
   }
   .speaker-list {
     width: 90%;
-    @apply flex justify-between px-4 flex-col;
+    @apply flex justify-start px-4 flex-col;
     li {
       @apply flex flex-col items-center pt-10 cursor-pointer;
       &:hover {
-        opacity: .8;
-        box-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-        @apply rounded-md;
+        .speaker-img-wrap {
+          &::before {
+            content: '';
+            border-radius: 40px;
+            opacity: .7;
+            @apply absolute top-0 left-0 w-full h-full z-10 bg-yellow-500;
+          }
+          &::after {
+            content: '- Read more -';
+            transform: rotate(-45deg);
+            @apply absolute inset-0 text-blue-950 w-full h-full flex items-center justify-center
+            font-medium z-10;
+          }
+        }
       }
     }
-    // TODO
-    // .show-more {
-    //   .speaker-img-wrap {
-    //     &::before {
-    //       content: '';
-    //       border-radius: 40px;
-    //       opacity: .7;
-    //       @apply absolute top-0 left-0 w-full h-full z-10 bg-yellow-500;
-    //     }
-    //     &::after {
-    //       content: '- Read more -';
-    //       transform: rotate(-45deg);
-    //       @apply absolute inset-0 text-blue-950 w-full h-full flex items-center justify-center
-    //       font-medium z-10;
-    //     }
-    //   }
-    // }
     .speaker-img-wrap {
       width: 140px;
       height: 140px;
