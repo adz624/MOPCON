@@ -67,7 +67,7 @@ export default {
           url: './community',
           subNav: [],
           subIsOpen: false,
-          open: process.env.routeCommunity,
+          open: process.env.route_community,
           targetEnabled: false
         },
         {
@@ -77,16 +77,16 @@ export default {
             {
               name: '主要議程',
               url: './schedule',
-              open: process.env.routeSchedule
+              open: process.env.route_schedule
             },
             {
               name: '交流議程',
               url: './schedule_unconf',
-              open: process.env.routeScheduleUnconf
+              open: process.env.route_schedule_unconf
             }
           ],
           subIsOpen: true,
-          open: process.env.routeSchedule || process.env.routeSchedule,
+          open: process.env.route_schedule || process.env.route_schedule,
           targetEnabled: false
         },
         {
@@ -94,7 +94,7 @@ export default {
           url: './speaker',
           subNav: [],
           subIsOpen: false,
-          open: process.env.routeSpeaker,
+          open: process.env.route_speaker,
           targetEnabled: false
         },
         {
@@ -102,7 +102,7 @@ export default {
           url: './sponsor',
           subNav: [],
           subIsOpen: false,
-          open: process.env.routeSponsor,
+          open: process.env.route_sponsor,
           targetEnabled: false
         },
         {
@@ -110,7 +110,7 @@ export default {
           url: './ticket',
           subNav: [],
           subIsOpen: false,
-          open: process.env.routeTicket,
+          open: process.env.route_ticket,
           targetEnabled: false
         },
         {
@@ -118,7 +118,7 @@ export default {
           url: 'https://hackmd.io/@mopcon/2020',
           subNav: [],
           subIsOpen: false,
-          open: process.env.routeNote,
+          open: process.env.route_note,
           targetEnabled: true
         },
         {
@@ -185,17 +185,17 @@ export default {
 
 <style lang="scss" scoped>
 // logo
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/_mix';
 $logo_map: (
   svg: mopcon fb twitter ig telegram
 );
 @include logo_map_mix(base);
 nav {
   height: 43px;
-  @apply bg-blue-main text-white relative border-yellow-main border-b;
+  @apply bg-blue-900 text-white relative border-yellow-500 border-b;
   &.navActive {
     @media (max-width: 487px) {
-      @apply bg-gray-main;
+      @apply bg-gray-700;
       .navbar-mobile {
         top: 42px;
       }
@@ -215,7 +215,7 @@ nav {
     transition: all .6s ease-out;
     z-index: -1;
     top: 43px;
-    @apply bg-gray-main fixed right-0 bottom-0 text-center w-full h-full pt-8 overflow-y-auto pb-12;
+    @apply bg-gray-700 fixed right-0 bottom-0 text-center w-full h-full pt-8 overflow-y-auto pb-12;
     > li {
       @apply py-2 h-auto;
     }
@@ -224,7 +224,7 @@ nav {
       // transform: scaleY(0);
       transform-origin: top;
       top: -100%;
-      @apply bg-gray-main text-white border-0 leading-8;
+      @apply bg-gray-700 text-white border-0 leading-8;
       li {
         @apply p-0;
       }
@@ -237,7 +237,7 @@ nav {
     &::before {
       // content: '';
       transition: all .6s ease-out;
-      @apply absolute top-0 left-0 w-full bg-gray-main h-full;
+      @apply absolute top-0 left-0 w-full bg-gray-700 h-full;
     }
     &_active {
       // transition start
@@ -285,9 +285,9 @@ nav {
   }
   .history-link {
     top: calc(100% + 1px);
-    @apply w-full z-10 flex-col items-start text-white py-2 leading-7 bg-gray-main;
+    @apply w-full z-10 flex-col items-start text-white py-2 leading-7 bg-gray-700;
     @screen lg {
-      @apply hidden absolute bg-gray-main;
+      @apply hidden absolute bg-gray-700;
     }
     li {
       @apply w-full cursor-pointer;
@@ -309,7 +309,7 @@ nav {
   }
   .line-leave-active {
     animation: line .7s linear .3s;
-    @apply bg-teal-main;
+    @apply bg-teal-400;
   }
 }
 
@@ -340,7 +340,7 @@ nav {
         @apply px-4 flex items-center h-full;
       }
       > li > a:hover {
-        @apply text-yellow-main border-teal-main;
+        @apply text-yellow-500 border-teal-400;
         .icon-arrow {
           border-top: 5px solid #4dd0e1;
         }
@@ -356,7 +356,7 @@ nav {
       @apply block;
     }
     .history-link li a:hover {
-      @apply text-yellow-main;
+      @apply text-yellow-500;
     }
     .line {
       @apply hidden;
@@ -394,7 +394,7 @@ nav {
   }
 }
 .history-link li a {
-  @apply block text-center text-yellow-light;
+  @apply block text-center text-yellow-300;
   @screen lg {
     @apply text-white py-2;
   }

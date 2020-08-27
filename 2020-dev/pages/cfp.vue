@@ -201,7 +201,7 @@ export default {
 
 <style lang="scss" scoped>
 // logo
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/_mix';
 $logo_map: (
   png: idea talk partner recruitment people-link gear
   work ai web mobile iot net cloud uiux dev
@@ -211,7 +211,7 @@ $logo_map: (
 
 .title {
   letter-spacing: 1px;
-  @apply text-xl mb-4 text-teal-main font-semibold;
+  @apply text-xl mb-4 text-teal-400 font-semibold;
 }
 .contain {
   max-width: 1440px;
@@ -227,7 +227,7 @@ $logo_map: (
   }
 }
 .about {
-  @apply bg-black-main text-white relative;
+  @apply bg-gray-900 text-white relative;
   .contain {
     @apply pt-12 pb-16 flex items-center;
   }
@@ -236,7 +236,7 @@ $logo_map: (
     letter-spacing: 1px;
   }
   span {
-    @apply text-teal-main;
+    @apply text-teal-400;
   }
   .title {
     margin-bottom: 9rem;
@@ -282,7 +282,7 @@ $logo_map: (
   p {
     letter-spacing: 1px;
     height: calc(100% - 140px);
-    @apply mt-5 text-black-main overflow-y-auto;
+    @apply mt-5 text-gray-900 overflow-y-auto;
   }
   .title span {
     @apply inline-block;
@@ -310,7 +310,7 @@ $logo_map: (
   }
 }
 .topic {
-  @apply bg-black-main text-teal-main;
+  @apply bg-gray-900 text-teal-400;
   .title {
     @apply text-white;
   }
@@ -389,15 +389,15 @@ $logo_map: (
     width: 100%;
     background: #e4e4e4;
     border-radius: 10px;
-    @apply border-4 border-teal-main flex flex-col justify-center pl-8 pr-3 pt-3 pb-4;
+    @apply border-4 border-teal-400 flex flex-col justify-center pl-8 pr-3 pt-3 pb-4;
   }
   li {
     letter-spacing: 0.5px;
-    @apply list-disc list-outside text-black-main;
+    @apply list-disc list-outside text-gray-900;
   }
   p {
     letter-spacing: 1px;
-    @apply mb-4 text-black-main -ml-4;
+    @apply mb-4 text-gray-900 -ml-4;
   }
   @screen md {
     @apply flex-row pt-16 pb-24;
@@ -424,7 +424,7 @@ $logo_map: (
 }
 .date {
   letter-spacing: 1.5px;
-  @apply bg-black-main text-white text-center;
+  @apply bg-gray-900 text-white text-center;
   .title {
     @apply text-white text-left;
   }
@@ -443,7 +443,7 @@ $logo_map: (
   }
   &-line {
     transform: translateX(20%);
-    @apply border-l border-teal-main items-start pl-6;
+    @apply border-l border-teal-400 items-start pl-6;
     li {
       &:first-child {
         transform: translateY(-5px);
@@ -455,7 +455,7 @@ $logo_map: (
         content: '';
         position: absolute;
         left: -2rem;
-        @apply w-4 h-4 rounded-full bg-teal-main inset-y-0 my-auto;
+        @apply w-4 h-4 rounded-full bg-teal-400 inset-y-0 my-auto;
       }
     }
   }
@@ -479,7 +479,7 @@ $logo_map: (
     letter-spacing: 1.5px;
     border: solid 1px #979797;
     margin-top: 9rem;
-    @apply bg-teal-main text-black-main text-lg font-medium py-2 rounded-lg;
+    @apply bg-teal-400 text-gray-900 text-lg font-medium py-2 rounded-lg;
     &:hover{
       box-shadow: 0 0 10px 0 #287c87;
     }
@@ -506,7 +506,7 @@ $logo_map: (
     }
     &-line {
       transform: unset;
-      @apply border-b border-l-0 border-teal-main mt-12 pb-10 pl-0;
+      @apply border-b border-l-0 border-teal-400 mt-12 pb-10 pl-0;
       li {
         @apply h-auto border-none;
       }

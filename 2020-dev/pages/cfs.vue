@@ -4,7 +4,7 @@
       <!-- "MPCON贊助募集"標題 -->
       <h1 class="cfs-title">
         {MOPCON
-        <span class="text-yellow-main">
+        <span class="text-yellow-500">
           <span class="inline-block md:hidden">需要你</span>
           <span class="hidden md:inline-block">贊助募集</span>
         </span>;}
@@ -609,7 +609,7 @@
     <!-- "心有餘力有足" -->
     <h2 class="extra-title">
       {心有餘
-      <span class="text-yellow-main">力有足？</span>;}
+      <span class="text-yellow-500">力有足？</span>;}
     </h2>
     <!-- 卡片區塊 -->
     <div class="extra-section">
@@ -916,7 +916,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrap {
-  @apply bg-black-main px-6;
+  @apply bg-gray-900 px-6;
 }
 .cfs {
   &-title {
@@ -951,23 +951,23 @@ export default {
   }
 }
 .hr {
-  @apply bg-yellow-main rounded-sm h-1;
+  @apply bg-yellow-500 rounded-sm h-1;
 }
 .mobile-table-header {
-  @apply flex overflow-x-scroll sticky bg-black-main mt-10 mb-2 z-10;
+  @apply flex overflow-x-scroll sticky bg-gray-900 mt-10 mb-2 z-10;
   @screen md {
     @apply hidden;
   }
   &-item {
-    @apply whitespace-no-wrap text-2xl px-5 text-gray-light py-3;
+    @apply whitespace-no-wrap text-2xl px-5 text-gray-500 py-3;
   }
   &-item.active {
-    @apply text-yellow-main border-b-2 border-yellow-main;
+    @apply text-yellow-500 border-b-2 border-yellow-500;
   }
 }
 .option {
   &-top {
-    @apply text-xl text-yellow-main pt-12 pb-6 px-4 z-10 bg-black-main sticky
+    @apply text-xl text-yellow-500 pt-12 pb-6 px-4 z-10 bg-gray-900 sticky
   }
   &-sticky {
     top: 43px;
@@ -982,7 +982,7 @@ export default {
     }
   }
   &-list-title td {
-    @apply border-0 border-yellow-main text-yellow-main text-2xl py-5;
+    @apply border-0 border-yellow-500 text-yellow-500 text-2xl py-5;
     @screen md {
       @apply border-t border-b;
     }
@@ -1057,7 +1057,7 @@ export default {
     }
   }
   &-footer th {
-    @apply w-1/5 pb-3 px-4 align-top text-yellow-main text-center text-xl;
+    @apply w-1/5 pb-3 px-4 align-top text-yellow-500 text-center text-xl;
     span {
       @apply text-base;
     }
@@ -1078,7 +1078,7 @@ export default {
       @apply px-32;
     }
     &-title {
-      @apply text-yellow-main text-xl mb-6;
+      @apply text-yellow-500 text-xl mb-6;
     }
   }
   &-group {
@@ -1101,12 +1101,12 @@ export default {
     @screen lg {
       min-height:350px;
     }
-    @apply border flex flex-col justify-between border-solid border-yellow-main rounded-lg p-5;
+    @apply border flex flex-col justify-between border-solid border-yellow-500 rounded-lg p-5;
     &-title {
-      @apply text-2xl text-yellow-main mb-2 font-bold;
+      @apply text-2xl text-yellow-500 mb-2 font-bold;
     }
     &-content {
-      @apply text-base text-yellow-main mb-6;
+      @apply text-base text-yellow-500 mb-6;
     }
     &-desc{
       @apply text-base text-white;
@@ -1116,10 +1116,10 @@ export default {
       @apply text-base text-white font-bold;
     }
     &:hover {
-      @apply bg-yellow-main;
+      @apply bg-yellow-500;
       .extra-card-title, .extra-card-content,
       .extra-card-desc, .extra-card-footer {
-        @apply text-black-main;
+        @apply text-gray-900;
       }
     }
   }

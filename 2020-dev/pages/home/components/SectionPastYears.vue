@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <button class="btn-base" @click="location('https://www.youtube.com/watch?v=PbWiavdubKA')">
+    <button class="btn-primary" @click="location('https://www.youtube.com/watch?v=PbWiavdubKA')">
       <span class="logo logo-play" />
       2019 影片回顧
     </button>
@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 // logo
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/_mix';
 $logo_map: (
   jpg: 2014 2015 2016 2017 2018 2019,
   svg: play
@@ -130,14 +130,14 @@ $logo_map: (
     .swiper-button-prev,
     .swiper-button-next {
       transform: scale(0.6, 0.9);
-      @apply text-yellow-main hidden;
+      @apply text-yellow-500 hidden;
       @screen sm {
         @apply inline-block;
       }
     }
   }
 
-  & .btn-base {
+  & .btn-primary {
     width: 80%;
     @apply mt-6 mx-auto flex items-center justify-center;
     span {
