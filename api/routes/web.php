@@ -68,5 +68,24 @@ $router->group(['prefix' => 'api'], function ($router) {
         $router->group(['prefix' => 'facebook'], function ($router) {
             $router->get('posts', 'FacebookController@getPosts');
         });
+        $router->group(['namespace' => 'Year2020'], function () use ($router) {
+            $router->group(['prefix' => 'speaker'], function ($router) {
+                $router->get('', 'SpeakerController@index');
+                $router->get('tags', 'SpeakerController@getTags');
+                $router->get('{id}', 'SpeakerController@show');
+                $router->get('images/{platform}/{name}', 'SpeakerController@imagesView');
+            });
+            $router->group(['prefix' => 'volunteer'], function ($router) {
+                $router->get('/', 'VolunteerController@index');
+                $router->get('/{id}', 'VolunteerController@show');
+                $router->get('/images/{name}', 'VolunteerController@imagesView');
+            });
+            $router->group(['prefix' => 'community'], function ($router) {
+                $router->get('/', 'CommunityController@index');
+                $router->get('/organizer/{id}', 'CommunityController@getOrganizer');
+                $router->get('/participant/{id}', 'CommunityController@getParticipant');
+                $router->get('/images/{name}', 'CommunityController@imagesView');
+            });
+        });
     });
 });
