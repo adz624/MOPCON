@@ -86,6 +86,11 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('/participant/{id}', 'CommunityController@getParticipant');
                 $router->get('/images/{name}', 'CommunityController@imagesView');
             });
+            $router->group(['prefix' => 'session'], function ($router) {
+                $router->get('/', 'SessionController@index');
+                $router->get('/list', 'SessionController@getSessionList');
+                $router->get('/{id}', 'SessionController@show');
+            });
         });
     });
 });
