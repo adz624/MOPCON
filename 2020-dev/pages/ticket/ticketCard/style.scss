@@ -1,0 +1,76 @@
+
+.card-ticket {
+  &:hover:not(.disabled) {
+    transform: translateY(-1rem);
+    transition: all 0.3s;
+  }
+  &.card-img-circle::after {
+    content: "";
+    @apply absolute bg-cover;
+    background-image: url('./images/bg-circle.png');
+    @apply w-4/5;
+    height: 80%;
+    bottom: -30%;
+    right: -30%;
+    @screen md {
+      @apply w-full;
+      height: 50%;
+      bottom: -5%;
+      right: -50%;
+    }
+  }
+  &.card-img-wave::after {
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-image: url('./images/bg-wave.png');
+    @apply absolute bg-contain bg-no-repeat bg-right-bottom bottom-0 right-0 z-0;
+  }
+  .btn-white {
+    @apply border-white text-white bg-transparent;
+  }
+  .btn-dark {
+    @apply bg-gray-900 border-gray-900;
+  }
+  &:hover, &:active, &:focus {
+    .btn-white {
+      @apply bg-white text-purple-700;
+    }
+    .btn-dark {
+      @apply bg-gray-800;
+    }
+  }
+  &.disabled {
+    @apply pointer-events-none;
+    .btn-white {
+      @apply bg-white text-purple-700 cursor-default;
+      opacity: .65;
+    }
+    .btn-dark {
+      @apply bg-gray-600 cursor-default text-white border-gray-600;
+      opacity: .65;
+    }
+  }
+  .btn {
+    @apply px-12 py-3 inline-block text-center align-middle border rounded z-10 relative;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  
+  .checkmark{
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      border: solid;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}
