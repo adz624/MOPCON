@@ -91,6 +91,10 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('/list', 'SessionController@getSessionList');
                 $router->get('/{id}', 'SessionController@show');
             });
+            $router->group(['prefix' => 'sponsor'], function ($router) {
+                $router->get('', 'SponsorController@index');
+                $router->get('images/{name}', 'SponsorController@imagesView');
+            });
         });
     });
 });
