@@ -20,7 +20,7 @@ $logo_map: (
 );
 @include logo_map_mix(base);
 footer {
-  @apply bg-blue-900 text-white flex flex-col justify-center items-center text-xl pt-5 pb-8;
+  @apply bg-blue-900 text-white flex flex-col justify-center items-center text-xl pt-5 pb-8 border-yellow-400 border-t-2;
   div {
     @apply flex;
     @screen md {
