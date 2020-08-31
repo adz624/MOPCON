@@ -76,7 +76,7 @@ export default {
     SpeakerDialog,
     AppSection
   },
-  async asyncData ({ $axios, route }) {
+  async asyncData ({ $axios, params }) {
     try {
       const { data } = await $axios.get(speaker)
       const res = await $axios.get(tags)
@@ -85,8 +85,10 @@ export default {
         speakers: data.data,
         tags: res.data.data.map(tag => tag.name)
       }
-      if (route.params.speaker_id) {
-        config.activeSpeaker = +route.params.speaker_id
+      if (params.speaker_id) {
+        const { data } = await $axios.get(`${speaker}/${params.speaker_id}`)
+        config.speakerInfo = data.data
+        config.activeSpeaker = +params.speaker_id
         config.dialogShow = true
       }
       return config
@@ -124,59 +126,57 @@ export default {
     }
   },
   head () {
-    if (this.$route.params.speaker_id) {
-      return {
-        title: `${this.speakerInfo.name} | 講者 MOPCON 2020`,
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: this.speakerInfo.summary
-          },
-          // fb
-          {
-            hid: 'og-title',
-            property: 'og:title',
-            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
-          },
-          {
-            hid: 'og-description',
-            property: 'og:description',
-            content: this.speakerInfo.summary
-          },
-          {
-            hid: 'og-url',
-            property: 'og:url',
-            content: `${process.env.BASE_URL}/2020/speaker/${this.speakerInfo.speaker_id}`
-          },
-          {
-            hid: 'og-image',
-            property: 'og:image',
-            content: `${this.speakerInfo.img.web}`
-          },
-          // twitter seo
-          {
-            hid: 'twitter-site',
-            name: 'twitter:site',
-            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
-          },
-          {
-            hid: 'twitter-description',
-            name: 'twitter:description',
-            content: this.speakerInfo.summary
-          },
-          {
-            hid: 'twitter-app:name:iphone',
-            name: 'twitter:app:name:iphone',
-            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
-          },
-          {
-            hid: 'twitter-app:name:ipad',
-            name: 'twitter:app:name:ipad',
-            content: `${this.speakerInfo.name} | 講者 MOPCON 2020`
-          }
-        ]
-      }
+    return {
+      title: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.dialogShow ? this.speakerInfo.summary : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.dialogShow ? this.speakerInfo.summary : ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.dialogShow ? `${process.env.BASE_URL}/2020/speaker/${this.speakerInfo.speaker_id}` : `${process.env.BASE_URL}/2020/speaker`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.dialogShow ? `${this.speakerInfo.img.web}` : `${process.env.BASE_URL}/2020/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.dialogShow ? this.speakerInfo.summary : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+        }
+      ]
     }
   }
 }
