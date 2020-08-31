@@ -27,33 +27,33 @@
     <!-- 票種介紹 -->
     <section class="mb-32">
       <div class="container mx-auto">
-        <h4 class="text-purple-400 text-2xl text-center">
+        <h4 class="text-purple-400 text-2xl">
           一般票種
         </h4>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-4 mt-6">
           <ticketCard v-for="ticket in ticketData.normalTicket" :key="'normalTicket' + ticket.id" :ticket-data="ticket" />
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-4 mt-20 mb-24">
           <div class="">
-            <h4 class="text-yellow-500 text-2xl text-center">
+            <h4 class="text-yellow-500 text-2xl">
               VIP 票
             </h4>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 mt-6">
               <ticketCard v-for="ticket in ticketData.vipTicket" :key="'specialTicket' + ticket.id" :ticket-data="ticket" />
             </div>
           </div>
           <div class="lg:mt-0 mt-6">
-            <h4 class="text-purple-400 text-2xl text-center">
+            <h4 class="text-purple-400 text-2xl">
               學生票
             </h4>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 my-6">
               <ticketCard v-for="ticket in ticketData.studentTicket" :key="'specialTicket' + ticket.id" :ticket-data="ticket" />
             </div>
             <div class="mt-6">
-              <p class="text-center text-purple-400">
+              <p class="text-left text-white">
                 <small>*議程當日驗明有效學生證，如未能出示需補足差額</small>
               </p>
-              <p class="text-center text-purple-400">
+              <p class="text-left text-white">
                 <small>*購買不符合自身資格者，將不得入場亦不得退費</small>
               </p>
             </div>
@@ -88,7 +88,7 @@ export default {
               bg: 'bg-purple-700',
               text: 'text-white',
               btn: 'btn-white',
-              cardBg: 'card-img-circle'
+              cardBg: 'normal-card-bg-circle'
             },
             description: '',
             lists: ['兩日議程', '下午茶點心'],
@@ -104,7 +104,7 @@ export default {
               bg: 'bg-purple-700',
               text: 'text-white',
               btn: 'btn-white',
-              cardBg: 'card-img-circle'
+              cardBg: 'normal-card-bg-circle'
             },
             description: '需以老鳥、社群、志工優惠碼購票',
             lists: [
@@ -124,7 +124,7 @@ export default {
               bg: 'bg-purple-700',
               text: 'text-white',
               btn: 'btn-white',
-              cardBg: 'card-img-circle'
+              cardBg: 'normal-card-bg-circle'
             },
             description: '最低起購五張',
             lists: ['兩日議程', '下午茶點心'], // 項目說明
@@ -140,7 +140,7 @@ export default {
               bg: 'bg-purple-700',
               text: 'text-white',
               btn: 'btn-white',
-              cardBg: 'card-img-circle'
+              cardBg: 'normal-card-bg-circle'
             },
             description: '',
             lists: ['兩日議程', '下午茶點心'], // 項目說明
@@ -158,7 +158,7 @@ export default {
               bg: 'bg-yellow-500',
               text: '',
               btn: 'btn-dark text-yellow-500',
-              cardBg: 'card-img-circle'
+              cardBg: 'vip-card-bg-circle'
             },
             description: '',
             lists: ['兩日議程', '下午茶點心', '精緻午餐', '快速通關', '紀念 T'], // 項目說明
@@ -174,7 +174,7 @@ export default {
               bg: 'bg-yellow-500',
               text: '',
               btn: 'btn-dark text-yellow-500',
-              cardBg: 'card-img-circle'
+              cardBg: 'vip-card-bg-circle'
             },
             description: '',
             lists: ['兩日議程', '下午茶點心', '精緻午餐', '快速通關', '紀念 T', '獨家紀念品'], // 項目說明
@@ -191,7 +191,7 @@ export default {
             class: {
               bg: 'bg-purple-400',
               text: '',
-              btn: 'btn-dark text-purple-400',
+              btn: 'btn-white text-purple-700',
               cardBg: 'card-img-wave'
             },
             description: '',
