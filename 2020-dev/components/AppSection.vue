@@ -1,26 +1,24 @@
 
 <template>
-  <div>
-    <section class="promotion container mx-auto">
-      <div class="promotion-l">
-        <h2>\\ 怕錯過感興趣的講者議程嗎？</h2>
-        <p>下載 MOPCON App，建立你的行事曆吧！</p>
-        <a
-          href="https://play.google.com/store/apps/details?id=org.mopcon.session.app"
-          target="_blank"
-          class="logo logo-google-play"
-        />
-        <a
-          href="https://apps.apple.com/tw/app/mopcon/id721411970"
-          target="_blank"
-          class="logo logo-app-store"
-        />
-      </div>
-      <div class="promotion-r">
-        <div class="logo logo-mobile" />
-      </div>
-    </section>
-  </div>
+  <section class="promotion container mx-auto">
+    <div class="promotion-l">
+      <h2>\\ 怕錯過感興趣的講者議程嗎？</h2>
+      <p>下載 MOPCON App，建立你的行事曆吧！</p>
+      <a
+        href="https://play.google.com/store/apps/details?id=org.mopcon.session.app"
+        target="_blank"
+        class="logo logo-google-play"
+      />
+      <a
+        href="https://apps.apple.com/tw/app/mopcon/id721411970"
+        target="_blank"
+        class="logo logo-app-store"
+      />
+    </div>
+    <div class="promotion-r">
+      <div class="logo logo-mobile" />
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -58,7 +56,10 @@ $logo_map: (
     width: 80%;
     @apply flex-row items-start;
     &-l {
-      @apply pt-20 mr-24 text-left;
+      @screen lg {
+        @apply pt-20 mr-24
+      }
+      @apply pt-10 mr-16 text-left;
       .logo {
         @apply mr-8 ml-0;
       }
