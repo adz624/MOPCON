@@ -1,4 +1,5 @@
 const path = require('path')
+const axios = require('axios')
 require('dotenv').config()
 
 module.exports = {
@@ -158,7 +159,21 @@ module.exports = {
     middleware: 'route'
   },
   generate: {
-    dir: path.resolve(__dirname, '../2020/')
+    dir: path.resolve(__dirname, '../2020/'),
+    // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
+    routes () {
+      return axios.get(`${process.env.BASE_URL}/api/2020/speaker`)
+        .then((res) => {
+          const pages = [
+            '/speaker'
+          ]
+          // 講者頁面
+          res.data.data.forEach((speaker) => {
+            pages.push(`/speaker/${speaker.speaker_id}`)
+          })
+          return pages
+        })
+    }
   },
   moment: {
     locales: ['zh-tw']
