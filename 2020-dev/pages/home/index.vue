@@ -26,7 +26,23 @@
         <p>放大科技創新力</p>
       </div>
       <div class="img-grid">
-        <div class="logo logo-catch-1" />
+        <a href="#" class="video-bg" @click.prevent="openVideoModal(true)">
+          <div class="logo logo-catch-1 w-full h-full" />
+          <p class="video-text text-xl">50 秒了解南台灣最狂研討會 </p>
+        </a>
+        <div class="fixed inset-0 z-50" :class="modalShow? 'block' : 'hidden'">
+          <a href="#" class="fixed close-modal-icon" @click.prevent="openVideoModal(false)">x</a>
+          <iframe
+            ref="home-video-iframe"
+            class="mx-auto"
+            width="100%"
+            height="100%"
+            src=""
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
         <div class="logo logo-catch-2" />
         <div class="logo logo-catch-3" />
       </div>
@@ -41,7 +57,7 @@
       <div class="about-wrap">
         <div>
           <p>持續舉辦</p>
-          <span>9</span>
+          <span>8</span>
           <p>年</p>
         </div>
         <div>
@@ -184,10 +200,19 @@ export default {
         }
       ],
       active: 0,
-      posts: []
+      posts: [],
+      modalShow: false
     }
   },
   methods: {
+    openVideoModal (show) {
+      this.modalShow = show
+      if (!show) {
+        this.$refs['home-video-iframe'].src = ''
+      } else {
+        this.$refs['home-video-iframe'].src = 'https://www.youtube.com/embed/OBcHwivBTjQ?loop=1&playlist=OBcHwivBTjQ'
+      }
+    },
     mailTo () {
       window.open('mailto:sponsor@mopcon.org')
     }
@@ -201,7 +226,8 @@ export default {
 
 $logo_map: (
   svg: mopcon arrow border launch,
-  jpg: section-place-img-1 section-place-img-2 section-place-img-3 catch-1 catch-2 catch-3
+  jpg: section-place-img-1 section-place-img-2 section-place-img-3 catch-1 catch-2 catch-3,
+  png: icon-play
 );
 @include logo_map_mix(home);
 
@@ -250,6 +276,13 @@ $logo_map: (
   margin: 0 auto;
 }
 
+.close-modal-icon {
+  z-index: 200;
+  width: 48px;
+  font-size: 30px;
+  text-align: center;
+  @apply fixed right-0 bg-yellow-500 text-blue-950 py-1;
+}
 // section
 .top {
   @apply flex flex-col items-center justify-center pt-8 pb-4;
@@ -312,6 +345,31 @@ $logo_map: (
     grid-template-columns: auto;
     grid-template-rows: 240px;
     @apply grid mt-6;
+    .video-text {
+      top: 75%;
+      @apply absolute w-full text-center
+    }
+    .video-bg {
+      @apply relative;
+      &:hover {
+        &::before {
+          @apply bg-opacity-50
+        }
+      }
+      &::before {
+        content: "";
+        @apply absolute bg-gray-900 bg-opacity-75 w-full h-full;
+      }
+      &::after {
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 33.333%;
+        @extend .logo-icon-play;
+        @apply absolute w-1/3 bg-contain bg-no-repeat bg-center;
+      }
+    }
     .logo {
       @apply hidden bg-cover;
       &:last-child {
