@@ -276,7 +276,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/mix';
 
 $logo_map: (
   png:bg,
@@ -291,7 +291,7 @@ $logo_map: (
   outline: none;
   box-shadow: 10px 10px 0 rgba($color, 0.32);
   width: 50%;
-  @apply px-0 py-3 text-xl text-black-900;
+  @apply px-0 py-3 text-xl text-black;
   &:hover {
     transform: translate(3px, 3px);
     box-shadow: none;
@@ -337,6 +337,7 @@ $logo_map: (
       @apply  font-semibold text-center;
       @screen lg{
         font-size: 5rem;
+        @apply text-left;
       }
     }
     & h1{
@@ -356,7 +357,7 @@ $logo_map: (
         }
       }
       & span{
-        @apply ml-2 text-yellow-main;
+        @apply ml-2 text-yellow-500;
       }
       &:after {
         content: '';
@@ -364,7 +365,7 @@ $logo_map: (
         height: 6px;
         bottom:-20px;
         left: calc(50% - 40px);
-        @apply bg-yellow-main absolute;
+        @apply bg-yellow-500 absolute;
         @screen lg{
           left:20px;
         }
@@ -386,7 +387,10 @@ $logo_map: (
   &-pic{
     @apply w-full order-1 flex items-center justify-center;
     @screen lg{
-      @apply w-1/2 order-2 items-end;
+      @apply w-1/2 order-2 items-end justify-end;
+    }
+    @screen xl{
+      @apply justify-center;
     }
     &-container{
       @include bg-cover;
@@ -412,7 +416,7 @@ $logo_map: (
   &-social{
     @apply flex justify-center;
     &-button{
-      @apply text-base text-yellow-main px-8 py-3 rounded-lg inline-flex items-center border-solid border-2 border-yellow-main;
+      @apply text-base text-yellow-500 px-8 py-3 rounded-lg inline-flex items-center border-solid border-2 border-yellow-500;
       &:hover {
       box-shadow: 0 0 10px 0 #ffcc00;
       }
@@ -455,7 +459,7 @@ $logo_map: (
   &-title{
     font-size:1.5rem;
     letter-spacing: 0.15px;
-    @apply text-yellow-main ml-2;
+    @apply text-yellow-500 ml-2;
     @screen sm{
       font-size:2rem;
       letter-spacing:0.2px
@@ -493,7 +497,7 @@ $logo_map: (
         letter-spacing:0.18px;
         @apply mb-8;
         &.yellow{
-          @apply text-yellow-main;
+          @apply text-yellow-500;
         }
         &.purple{
           color:#b594ff;
@@ -527,7 +531,7 @@ $logo_map: (
     }
     &-card{
       background:#001333;
-      @apply rounded-lg border-2 border-yellow-main p-5;
+      @apply rounded-lg border-2 border-yellow-500 p-5;
       &-title{
         font-size:1.5rem;
         letter-spacing:0.43px;
@@ -646,10 +650,10 @@ $logo_map: (
       height: 6px;
       left: calc(50% - 40px);
       bottom:-12px;
-      @apply bg-yellow-main absolute;
+      @apply bg-yellow-500 absolute;
     }
     & span{
-      @apply ml-2 text-yellow-main
+      @apply ml-2 text-yellow-500;
     }
     & br{
       @apply block;
@@ -753,7 +757,7 @@ $logo_map: (
         letter-spacing:2px;
         @apply text-white mb-2;
         & span{
-          @apply text-yellow-main font-bold tracking-widest mr-2;
+          @apply text-yellow-500 font-bold tracking-widest mr-2;
         }
       }
       &-content{
