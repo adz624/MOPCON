@@ -78,9 +78,9 @@
             「我有興趣贊助～」
           </h5>
           <div class="logo logo-donate mx-auto" />
-          <button class="btn-third" @click="linkTo('https://drive.google.com/file/d/1FUuIrfc_zLPdHvVkwQ2-aUYofyvuPHso/view?usp=sharing')">
+          <a class="btn-third" href="mailto:sponsor@mopcon.org">
             有興趣贊助我們
-          </button>
+          </a>
           <p>
             謝謝你願意成為全台最大行動科技領域社群研討會的參與者及貢獻者之一！
           </p>
@@ -572,7 +572,7 @@ $logo_map: (
   }
   &-third{
     @include btn(#651fff);
-    @apply text-white;
+    @apply text-white block;
   }
 }
 .community{
