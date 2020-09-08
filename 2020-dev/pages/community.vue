@@ -222,7 +222,7 @@ export default {
         .$get('/api/2020/community')
         .then(({ success, data, message }) => {
           if (success) {
-            vm.communityList = data.community
+            vm.communityList = data.participant
           } else {
             console.log('error', message)
           }
@@ -252,7 +252,7 @@ export default {
         const vm = this
         vm.communityData = []
         vm.$axios
-          .$get(`/api/2020/community/organizer/${id}`)
+          .$get(`/api/2020/community/participant/${id}`)
           .then(({ success, data, message }) => {
             if (success) {
               vm.communityData = data
@@ -290,8 +290,8 @@ $logo_map: (
   transition: all 0.15s;
   outline: none;
   box-shadow: 10px 10px 0 rgba($color, 0.32);
-  width: 50%;
-  @apply px-0 py-3 text-xl text-black;
+  width:100%;
+  @apply px-0 py-3 text-xl text-black text-center;
   &:hover {
     transform: translate(3px, 3px);
     box-shadow: none;
@@ -620,7 +620,7 @@ $logo_map: (
   }
 }
 .standard{
-  @apply mx-auto;
+  @apply mx-auto pb-8;
   &-en{
     font-family: Poppins;
     font-size: 2.5rem;

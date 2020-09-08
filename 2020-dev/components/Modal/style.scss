@@ -1,7 +1,5 @@
 /* The Modal (background) */
-.modal-open {
-  overflow: hidden;
-}
+
 
 .modal-open .modal {
   overflow-x: hidden;
@@ -17,6 +15,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-color:rgba(0,0,0,.6) ;
 }
 
 .modal.fade {
@@ -30,7 +29,6 @@
 .modal.fade .modal-content {
   border-radius: 8px;
   margin: 50px auto;
-  padding: 22px;
   width: 90%;
   max-width: 609px;
   transform: translate(0, -50px);
