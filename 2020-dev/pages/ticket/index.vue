@@ -44,18 +44,10 @@
           </div>
           <div class="lg:mt-0 mt-6">
             <h4 class="text-purple-400 text-2xl">
-              學生票
+              開源貢獻票
             </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 my-6">
               <ticketCard v-for="ticket in ticketData.studentTicket" :key="'specialTicket' + ticket.id" :ticket-data="ticket" />
-            </div>
-            <div class="mt-6">
-              <p class="text-left text-white">
-                <small>*議程當日驗明有效學生證，如未能出示需補足差額</small>
-              </p>
-              <p class="text-left text-white">
-                <small>*購買不符合自身資格者，將不得入場亦不得退費</small>
-              </p>
             </div>
           </div>
         </div>
@@ -98,7 +90,7 @@ export default {
             title: '社群優惠票',
             id: 2,
             status: 0,
-            count: 200, // 限量張數
+            count: 300, // 限量張數
             price: 700, // 票價
             class: {
               bg: 'bg-purple-700',
@@ -118,7 +110,7 @@ export default {
             title: '團購優惠票',
             id: 3,
             status: 0,
-            count: 200, // 限量張數
+            count: 100, // 限量張數
             price: 700, // 票價
             class: {
               bg: 'bg-purple-700',
@@ -183,18 +175,18 @@ export default {
         ],
         studentTicket: [
           {
-            title: '學生票',
+            title: '開源貢獻票',
             id: 7,
             status: 0,
             count: 100, // 限量張數
-            price: 100, // 票價
+            price: 400, // 票價
             class: {
               bg: 'bg-purple-400',
               text: '',
               btn: 'btn-white text-purple-700',
               cardBg: 'card-img-wave'
             },
-            description: '',
+            description: '需以優惠碼購票',
             lists: ['兩日議程', '下午茶點心'], // 項目說明
             link: ''
           }
