@@ -91,6 +91,11 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('/list', 'SessionController@getSessionList');
                 $router->get('/{id}', 'SessionController@show');
             });
+            $router->group(['prefix' => 'unconf'], function ($router) {
+                $router->get('/', 'UnconfController@index');
+                $router->get('/list', 'UnconfController@getUnconfList');
+                $router->get('/{id}', 'UnconfController@show');
+            });
         });
     });
 });
