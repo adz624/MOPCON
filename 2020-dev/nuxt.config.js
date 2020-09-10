@@ -1,4 +1,5 @@
 const path = require('path')
+const axios = require('axios')
 require('dotenv').config()
 
 module.exports = {
@@ -71,8 +72,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/2020/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' }
     ]
+
   },
   /*
   ** Customize the progress-bar color
@@ -82,14 +86,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~assets/styles/all.scss'
+    '~assets/styles/all.scss',
+    '~assets/styles/_base.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-awesom-swiper', ssr: false },
-    { src: '~/plugins/route' }
+    { src: '~/plugins/vue-awesom-swiper', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -98,7 +102,9 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment',
+    'vue-social-sharing/nuxt'
   ],
   styleResources: {
     scss: ['./assets/styles/variables.scss']
@@ -111,19 +117,19 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
-    '@nuxtjs/proxy'
+    '@nuxtjs/dotenv'
   ],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
-    routeSpeaker: process.env.SPEAKER !== 'false',
-    routeSchedule: process.env.SCHEDULE !== 'false',
-    routeScheduleUnconf: process.env.SCHEDULE_UNCONF !== 'false',
-    routeSponsor: process.env.SPONSOR !== 'false',
-    routeCommunity: process.env.COMMUNITY !== 'false',
-    routeTicket: process.env.TICKET !== 'false',
-    routeNote: process.env.NOTE !== 'false',
-    buyTicketUrl: ''
+    buyTicketUrl: '',
+    // route 變數前面加 route_
+    route_speaker: process.env.SPEAKER !== 'false',
+    route_schedule: process.env.SCHEDULE !== 'false',
+    route_schedule_unconf: process.env.SCHEDULE_UNCONF !== 'false',
+    route_sponsor: process.env.SPONSOR !== 'false',
+    route_community: process.env.COMMUNITY !== 'false',
+    route_ticket: process.env.TICKET !== 'false',
+    route_note: process.env.NOTE !== 'false'
   },
   /*
   ** Axios module configuration
@@ -139,8 +145,8 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    // Run ESLint on save
+    extend(config, ctx) {
+      // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -152,10 +158,27 @@ module.exports = {
     }
   },
   router: {
-    // base: '/2020/',
-    base: path.resolve(__dirname, '/2020/')
+    base: path.resolve(__dirname, '/2020/'),
+    middleware: 'route'
   },
   generate: {
-    dir: path.resolve(__dirname, '../2020/')
+    dir: path.resolve(__dirname, '../2020/'),
+    // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
+    routes () {
+      return axios.get(`${process.env.BASE_URL}/api/2020/speaker`)
+        .then((res) => {
+          const pages = [
+            '/speaker'
+          ]
+          // 講者頁面
+          res.data.data.forEach((speaker) => {
+            pages.push(`/speaker/${speaker.speaker_id}`)
+          })
+          return pages
+        })
+    }
+  },
+  moment: {
+    locales: ['zh-tw']
   }
 }

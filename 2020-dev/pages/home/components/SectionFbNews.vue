@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 // logo
-@import '~@/assets/styles/logo_mix';
+@import '~@/assets/styles/_mix';
 $logo_map: (
   png: facebook like share message mopcon-icon
 );
@@ -84,7 +84,7 @@ $logo_map: (
 
   .posts::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    @apply bg-yellow-main;
+    @apply bg-yellow-500;
   }
 
   .posts {
@@ -113,7 +113,7 @@ $logo_map: (
       width: calc(50% - 20px);
       margin: 20px 10px;
     }
-    @apply border border-yellow-main;
+    @apply border border-yellow-500;
     &:hover {
       background: rgba(#fff, 0.05);
     }
