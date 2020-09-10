@@ -61,11 +61,9 @@
     @apply pointer-events-none;
     .btn-white {
       @apply bg-white text-purple-700 cursor-default;
-      opacity: .85;
     }
     .btn-dark {
       @apply bg-blue-900 cursor-default text-white border-blue-900;
-      opacity: .85;
     }
   }
   .checkmark{
