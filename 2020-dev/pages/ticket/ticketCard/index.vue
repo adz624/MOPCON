@@ -1,5 +1,11 @@
 <template>
-  <a :href="ticketData.link" :class="[ticketData.class.bg, ticketData.class.text, ticketData.class.cardBg, {'disabled': ticketData.status !== 1}]" class="card-ticket rounded-md px-6 py-4 flex flex-col relative overflow-hidden lg:mb-0 mb-4" style="min-height: 360px" target="_blank">
+  <a
+    href="#"
+    :class="[ticketData.class.bg, ticketData.class.text, ticketData.class.cardBg, {'disabled': ticketData.status !== 1}]"
+    class="card-ticket rounded-md px-6 py-4 flex flex-col relative overflow-hidden lg:mb-0 mb-4"
+    style="min-height: 360px"
+    @click.prevent="openLink(ticketData.link, ticketData.title, ticketData.price)"
+  >
     <div>
       <div class="flex justify-between items-center flex-wrap">
         <h4 class="text-xl font-bold">
@@ -23,7 +29,7 @@
 </template>
 
 <script>
-
+/* global ga, fbq */
 export default {
   props: {
     ticketData: {
@@ -42,6 +48,16 @@ export default {
       } else if (status === 2) {
         return '已完售'
       }
+    },
+    openLink (link, type, price = 0) {
+      ga('send', 'event', 'Ticket', 'Purchase', type)
+      fbq('track', 'Purchase', {
+        content_name: type,
+        content_type: 'product',
+        currency: 'TWD',
+        num_items: price
+      })
+      window.open(link)
     }
   }
 }
