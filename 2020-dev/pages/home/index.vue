@@ -204,6 +204,30 @@ export default {
       modalShow: false
     }
   },
+  jsonld () {
+    return {
+      '@context': 'http://schema.org',
+      '@type': 'Event',
+      name: '行動科技年會 2020 | Mobile / Open / Platform Conference',
+      description: 'MOPCON 2020 堅持濁水溪以南，南台灣最大行動科技年會，10/24 -10/25 高雄國際會議中心與您見面。持續匯集知識與人才，打造高速資訊交流圈，提升個人與團隊價值，讓知識影響正向循環。',
+      image: [
+        '/2020/og-image.png'
+      ],
+      url: 'https://mopcon.org/2020/',
+      startDate: '2020-09-24T08:30:00+08:00',
+      endDate: '2020-09-25T18:00:00+08:00',
+      location: {
+        '@type': 'Place',
+        name: '高雄國際會議中心',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '高雄市鹽埕區中正四路274號',
+          addressLocality: '高雄',
+          addressCountry: '臺灣'
+        }
+      }
+    }
+  },
   methods: {
     openVideoModal (show) {
       this.modalShow = show
