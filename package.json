@@ -20,6 +20,7 @@
     "jquery": "^3.4.1",
     "js-yaml": "^3.8.2",
     "morgan": "~1.7.0",
+    "nuxt-jsonld": "^1.4.10",
     "owl.carousel": "^2.3.4",
     "request": "^2.81.0",
     "serve-favicon": "~2.3.2"
