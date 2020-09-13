@@ -14,7 +14,9 @@
 <script>
 export default {
   name: 'Modal',
-  props: ['modalOpen'],
+  props: {
+    modalOpen: Boolean
+  },
   data () {
     return {
       show: this.modalOpen

@@ -83,8 +83,8 @@ export default {
               cardBg: 'normal-card-bg-circle'
             },
             description: '',
-            lists: ['兩日議程', '下午茶點心'],
-            link: ''
+            lists: ['兩日議程'],
+            link: 'https://mopcon.kktix.cc/events/2020-general'
           },
           {
             title: '社群優惠票',
@@ -99,12 +99,8 @@ export default {
               cardBg: 'normal-card-bg-circle'
             },
             description: '需以老鳥、社群、志工優惠碼購票',
-            lists: [
-              // 項目說明
-              '兩日議程',
-              '下午茶點心'
-            ],
-            link: ''
+            lists: ['兩日議程'], // 項目說明
+            link: 'https://mopcon.kktix.cc/events/2020-general'
           },
           {
             title: '團購優惠票',
@@ -119,8 +115,8 @@ export default {
               cardBg: 'normal-card-bg-circle'
             },
             description: '最低起購五張',
-            lists: ['兩日議程', '下午茶點心'], // 項目說明
-            link: ''
+            lists: ['兩日議程'], // 項目說明
+            link: 'https://mopcon.kktix.cc/events/2020-group'
           },
           {
             title: '現場票',
@@ -135,7 +131,7 @@ export default {
               cardBg: 'normal-card-bg-circle'
             },
             description: '',
-            lists: ['兩日議程', '下午茶點心'], // 項目說明
+            lists: ['兩日議程'], // 項目說明
             link: ''
           }
         ],
@@ -153,8 +149,8 @@ export default {
               cardBg: 'vip-card-bg-circle'
             },
             description: '',
-            lists: ['兩日議程', '下午茶點心', '精緻午餐', '快速通關', '紀念 T'], // 項目說明
-            link: ''
+            lists: ['兩日議程', '精緻午餐', '快速通關', '紀念 T', '晚宴'], // 項目說明
+            link: 'https://mopcon.kktix.cc/events/2020-vip'
           },
           {
             title: '尊絕不凡',
@@ -169,8 +165,8 @@ export default {
               cardBg: 'vip-card-bg-circle'
             },
             description: '',
-            lists: ['兩日議程', '下午茶點心', '精緻午餐', '快速通關', '紀念 T', '獨家紀念品'], // 項目說明
-            link: ''
+            lists: ['兩日議程', '精緻午餐', '快速通關', '紀念 T', '獨家紀念品', '晚宴'], // 項目說明
+            link: 'https://mopcon.kktix.cc/events/2020-vip'
           }
         ],
         studentTicket: [
@@ -187,8 +183,8 @@ export default {
               cardBg: 'card-img-wave'
             },
             description: '需以優惠碼購票',
-            lists: ['兩日議程', '下午茶點心'], // 項目說明
-            link: ''
+            lists: ['兩日議程'], // 項目說明
+            link: 'https://mopcon.kktix.cc/events/2020-general'
           }
         ]
       }

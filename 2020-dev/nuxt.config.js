@@ -76,7 +76,6 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' }
     ]
-
   },
   /*
   ** Customize the progress-bar color
@@ -93,7 +92,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-awesom-swiper', mode: 'client' }
+    { src: '~/plugins/vue-awesom-swiper', mode: 'client' },
+    { src: '~/plugins/pixel', mode: 'client' },
+    { src: '~/plugins/ga', mode: 'client' },
+    { src: '~/plugins/jsonld' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -145,7 +147,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
