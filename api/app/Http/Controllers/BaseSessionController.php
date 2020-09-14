@@ -53,13 +53,16 @@ class BaseSessionController extends Controller
         if (env('APP_ENV') === 'production') {
             $speaker_resource_path = $this->path . 'speaker.json';
             $sponsor_resource_path = $this->path . 'sponsor.json';
+            $tag_group_resource_path = $this->path . 'tag-group.json';
         } else {
             $speaker_resource_path = $this->path . 'speaker-dev.json';
             $sponsor_resource_path = $this->path . 'sponsor-dev.json';
+            $tag_group_resource_path = $this->path . 'tag-group-dev.json';
         }
 
         $speakers = json_decode(file_get_contents($speaker_resource_path), true);
         $sponsors = json_decode(file_get_contents($sponsor_resource_path), true);
+        $tagGroupSetting = json_decode(file_get_contents($tag_group_resource_path), true);
         $this->sponsors = [];
         foreach ($sponsors as $sponsor) {
             $this->sponsors[(int) $sponsor['sponsor_id']] = [
@@ -68,7 +71,7 @@ class BaseSessionController extends Controller
                 'logo_path' => url($sponsor['logo_path']),
             ];
         }
-        $this->speakerService = new SpeakerService($this->jsonAry);
+        $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
         $this->sessions = $this->transSpeakerToSession($speakers);
     }
