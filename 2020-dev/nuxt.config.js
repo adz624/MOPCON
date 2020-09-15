@@ -124,6 +124,7 @@ module.exports = {
   ],
   sitemap: {
     path: '/sitemap.xml',
+    hostname: `${process.env.BASE_URL}`,
     exclude: [
       '/speaker/*/*',
       '/ticket/*',
