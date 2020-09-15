@@ -92,13 +92,16 @@ class BoardController extends Controller
         if (env('APP_ENV') === 'production') {
             $speaker_resource_path = $this->path . 'speaker.json';
             $board_resource_path = $this->path . 'board.json';
+            $tag_group_resource_path = $this->path . 'tag-group.json';
         } else {
             $speaker_resource_path = $this->path . 'speaker-dev.json';
             $board_resource_path = $this->path . 'board-dev.json';
+            $tag_group_resource_path = $this->path . 'tag-group-dev.json';
         }
 
         $speakers = json_decode(file_get_contents($speaker_resource_path), true);
         $board_ads = json_decode(file_get_contents($board_resource_path), true);
+        $tagGroupSetting = json_decode(file_get_contents($tag_group_resource_path), true);
         $this->sponsor_ads = [];
         foreach ($board_ads as $ad) {
             $this->sponsor_ads[] = [
@@ -106,7 +109,7 @@ class BoardController extends Controller
             ];
         }
 
-        $this->speakerService = new SpeakerService($this->jsonAry);
+        $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
         $this->sessions = $this->transSpeakerToSession($speakers);
         $this->board = $this->arrangeSessions($this->jsonAry);

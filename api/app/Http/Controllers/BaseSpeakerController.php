@@ -13,14 +13,22 @@ class BaseSpeakerController extends Controller
 
     protected $function = 'speaker';
 
-    private $service;
+    protected $service;
 
     public function __construct()
     {
         parent::__construct();
-        $sessionFileName = env('APP_ENV') === 'production' ? '/session.json' : '/session-dev.json';
-        $sessionAry = json_decode(file_get_contents($this->path . $sessionFileName), true);
-        $this->service = new SpeakerService($sessionAry);
+        if (env('APP_ENV') === 'production') {
+            $session_resource_path = $this->path . 'session.json';
+            $tag_group_resource_path = $this->path . 'tag-group.json';
+        } else {
+            $session_resource_path = $this->path . 'session-dev.json';
+            $tag_group_resource_path = $this->path . 'tag-group-dev.json';
+        }
+
+        $sessionAry = json_decode(file_get_contents($session_resource_path), true);
+        $tagGroupSetting = json_decode(file_get_contents($tag_group_resource_path), true);
+        $this->service = new SpeakerService($sessionAry, $tagGroupSetting);
         foreach ($this->jsonAry as &$row) {
             $row = $this->service->parse($row);
         }
