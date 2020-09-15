@@ -50,13 +50,17 @@ export default {
       }
     },
     openLink (link, type, price = 0) {
-      ga('send', 'event', 'Ticket', 'Purchase', type)
-      fbq('track', 'Purchase', {
-        content_name: type,
-        content_type: 'product',
-        currency: 'TWD',
-        num_items: price
-      })
+      if (window.ga) {
+        ga('send', 'event', 'Ticket', 'Purchase', type)
+      }
+      if (window.fbq) {
+        fbq('track', 'Purchase', {
+          content_name: type,
+          content_type: 'product',
+          currency: 'TWD',
+          num_items: price
+        })
+      }
       window.open(link)
     }
   }

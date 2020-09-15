@@ -119,8 +119,21 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    exclude: [
+      '/speaker/*/*',
+      '/ticket/*',
+      '/home/*/*'
+    ],
+    routes: async () => {
+      const { data } = await axios.get(`${process.env.BASE_URL}/api/2020/speaker`)
+      return data.data.map(speaker => `/speaker/${speaker.speaker_id}`)
+    }
+  },
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
     buyTicketUrl: '',
