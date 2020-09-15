@@ -22,7 +22,7 @@
         {{ ticketData.description }}
       </p>
     </div>
-    <button class="btn mt-auto mx-auto font-bold" :class="ticketData.class.btn" disabled>
+    <button class="btn mt-auto mx-auto font-bold" :class="ticketData.class.btn">
       {{ ticketStatusText(ticketData.status, ticketData.price) }}
     </button>
   </a>
