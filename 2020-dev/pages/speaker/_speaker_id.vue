@@ -346,10 +346,10 @@ $logo_map: (
       height: 140px;
       transform: rotate(45deg);
       border-radius: 40px;
-      @apply border-2 border-white mb-5 relative;
+      @apply border-2 border-white mb-5 relative overflow-hidden;
       img {
         object-fit: cover;
-        transform: rotate(-45deg);
+        transform: rotate(-45deg) scale(1.2);
       }
     }
     h3 {

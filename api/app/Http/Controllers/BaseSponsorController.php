@@ -38,11 +38,19 @@ class BaseSponsorController extends Controller
     {
         $sponsorIds = $request->get('sponsor_id', '');
         $sponsorIdArr = $sponsorIds == '' ? [] : explode(",", $sponsorIds);
-        $speakerFilePath = env('APP_ENV') === 'production' ? 'speaker.json' : 'speaker-dev.json';
-        $this->speakerAry = json_decode(file_get_contents($this->path . $speakerFilePath), true);
-        $sessionFileName = env('APP_ENV') === 'production' ? '/session.json' : '/session-dev.json';
-        $sessionAry = json_decode(file_get_contents($this->path . $sessionFileName), true);
-        $this->speakerService = new SpeakerService($sessionAry);
+        if (env('APP_ENV') === 'production') {
+            $speaker_resource_path = $this->path . 'speaker.json';
+            $session_resource_path = $this->path . 'session.json';
+            $tag_group_resource_path = $this->path . 'tag-group.json';
+        } else {
+            $speaker_resource_path = $this->path . 'speaker-dev.json';
+            $session_resource_path = $this->path . 'session-dev.json';
+            $tag_group_resource_path = $this->path . 'tag-group-dev.json';
+        }
+        $sessionAry = json_decode(file_get_contents($session_resource_path), true);
+        $tagGroupSetting = json_decode(file_get_contents($tag_group_resource_path), true);
+        $this->speakerAry = json_decode(file_get_contents($speaker_resource_path), true);
+        $this->speakerService = new SpeakerService($sessionAry, $tagGroupSetting);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
 
         return count($sponsorIdArr) ? $this->getSpecificSponsors($this->jsonAry, $sponsorIdArr) : $this->getAllSponsors($this->jsonAry);

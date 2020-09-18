@@ -4,21 +4,8 @@ namespace App\Service;
 
 class SpeakerService
 {
-    private $tagGroup = [
-        'design' => [
-            'UI/UX',
-        ],
-        'other' => [
-            'Startup',
-            'Panel',
-        ],
-        'tech' => [],
-    ];
-    private $tagGroupColor = [
-        'design' => '#98ce02',
-        'other' => '#ff4492',
-        'tech' => '#01aaf0',
-    ];
+    private $tagGroup;
+    private $tagDefaultColor;
     private $hidden_fields = [
         'photo_for_speaker_web',
         'photo_for_speaker_mobile',
@@ -30,24 +17,10 @@ class SpeakerService
     ];
     private $sessionSpeakerMapping = [];
 
-    public function __construct(array $sessionAry)
+    public function __construct(array $sessionAry, $tagGroupSetting)
     {
-        foreach ($sessionAry as $schedule) {
-            foreach ($schedule['period'] as &$period) {
-                if (empty($period['room'])) {
-                    continue;
-                }
-                foreach ($period['room'] as $room) {
-                    if (is_array($room['speaker_id'])) {
-                        foreach ($room['speaker_id'] as $id) {
-                            $this->sessionSpeakerMapping[$id] = $room['session_id'];
-                        }
-                        continue;
-                    }
-                    $this->sessionSpeakerMapping[$room['speaker_id']] = $room['session_id'];
-                }
-            }
-        }
+        $this->initSessionSpeakerMapping($sessionAry);
+        $this->initTagGroup($tagGroupSetting);
     }
 
     public function getSessionSpeakerMapping(): array
@@ -87,10 +60,10 @@ class SpeakerService
         $result = [];
         foreach ($tags as $tag) {
             $found = false;
-            foreach ($this->tagGroup as $type => $groupTags) {
-                if (in_array($tag, $groupTags)) {
+            foreach ($this->tagGroup as $group) {
+                if (in_array($tag, $group["members"])) {
                     $result[] = [
-                        'color' => $this->tagGroupColor[$type],
+                        'color' => $group["color"],
                         'name' => $tag,
                     ];
                     $found = true;
@@ -99,12 +72,44 @@ class SpeakerService
             }
             if (!$found) {
                 $result[] = [
-                    'color' => $this->tagGroupColor['tech'],
+                    'color' => $this->tagDefaultColor,
                     'name' => $tag,
                 ];
             }
         }
 
         return $result;
+    }
+
+    /**
+     * 初始化講者與議程對應
+     * @param array $sessionAry
+     */
+    private function initSessionSpeakerMapping(array $sessionAry) {
+        foreach ($sessionAry as $schedule) {
+            foreach ($schedule['period'] as &$period) {
+                if (empty($period['room'])) {
+                    continue;
+                }
+                foreach ($period['room'] as $room) {
+                    if (is_array($room['speaker_id'])) {
+                        foreach ($room['speaker_id'] as $id) {
+                            $this->sessionSpeakerMapping[$id] = $room['session_id'];
+                        }
+                        continue;
+                    }
+                    $this->sessionSpeakerMapping[$room['speaker_id']] = $room['session_id'];
+                }
+            }
+        }
+    }
+
+    /**
+     * 初始化標籤群組
+     * @param object $tagGroupSetting
+     */
+    private function initTagGroup($tagGroupSetting) {
+        $this->tagGroup = $tagGroupSetting["group"];
+        $this->tagDefaultColor = $tagGroupSetting["defaultColor"];
     }
 }
