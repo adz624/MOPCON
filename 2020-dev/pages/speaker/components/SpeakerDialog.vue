@@ -202,11 +202,11 @@ p {
     border-radius: 16px;
     transform: rotate(45deg);
     flex-shrink: 0;
-    @apply border border-white mb-20;
+    @apply border border-white mb-20 overflow-hidden;
   }
   img {
     object-fit: cover;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scale(1.3);
   }
   h3 {
     @apply text-xl mb-3;
