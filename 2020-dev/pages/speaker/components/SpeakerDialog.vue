@@ -50,17 +50,18 @@
         </h2>
         <h3>{{ speakerInfo.topic }}</h3>
         <div class="topic-info">
-          <p>
+          <p v-if="speakerInfo.started_at !== ''">
             <span class="logo logo-calendar" />
             {{ $moment(speakerInfo.started_at).format('MM/DD HH:mm') }}
             ~
             {{ $moment(speakerInfo.end_at).format('HH:mm') }}
           </p>
-          <p><span class="logo logo-location" />{{ speakerInfo.room }}({{ speakerInfo.floor }})</p>
+          <p v-if="speakerInfo.floor !== ''">
+            <span class="logo logo-location" />
+            {{ speakerInfo.room }}({{ speakerInfo.floor }})
+          </p>
         </div>
-        <p>
-          {{ speakerInfo.summary }}
-        </p>
+        <p v-html="parseSummary(speakerInfo.summary)" />
       </section>
 
       <!-- <section class="sponser">
@@ -152,6 +153,9 @@ export default {
           this.copySuccess = false
         }, 1000)
       }).catch(() => {})
+    },
+    parseSummary (summary) {
+      return summary.replace(/\n/gi, '<br>')
     }
   }
 }
