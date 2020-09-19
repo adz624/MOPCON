@@ -34,7 +34,7 @@
 
       <section class="about">
         <h2>介紹</h2>
-        <p>{{ speakerInfo.bio }}</p>
+        <p v-html="parseSummary(speakerInfo.bio)" />
       </section>
 
       <section class="topic">
