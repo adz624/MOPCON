@@ -142,7 +142,7 @@ export default {
   },
   computed: {
     shareUrl () {
-      return `${process.env.BASE_URL}/2020/speaker/${this.speakerInfo.speaker_id}`
+      return `${window.location.origin}/2020/speaker/${this.speakerInfo.speaker_id}`
     }
   },
   methods: {

@@ -86,8 +86,6 @@ export default {
         tags: res.data.data.map(tag => tag.name)
       }
       if (params.speaker_id) {
-        const { data } = await $axios.get(`${speaker}/${params.speaker_id}`)
-        config.speakerInfo = data.data
         config.activeSpeaker = +params.speaker_id
         config.dialogShow = true
       }
