@@ -296,30 +296,67 @@
 
 - **Success Response:**
 
-  - Code: 200
+  - 2019
 
-    Content:
+    - Code: 200
 
-    ```json
-    {
-      "success": true,
-      "message": "Success.",
-      "data": [
-        {
-          "color": "#01aaf0",
-          "name": "IoT"
-        },
-        {
-          "color": "#ff4492",
-          "name": "Startup"
-        },
-        {
-          "color": "#01aaf0",
-          "name": "Mobile App"
-        }
-      ]
-    }
-    ```
+      Content:
+
+      ```json
+      {
+        "success": true,
+        "message": "Success.",
+        "data": [
+          {
+            "color": "#01aaf0",
+            "name": "IoT"
+          },
+          {
+            "color": "#ff4492",
+            "name": "Startup"
+          },
+          {
+            "color": "#01aaf0",
+            "name": "Mobile App"
+          }
+        ]
+      }
+      ```
+  - 2020 (含)以後
+
+    - Code: 200
+
+      Content:
+
+      ```json
+      {
+        "success": true,
+        "message": "Success.",
+        "data": [
+          {
+            "color": {
+              "web": "#651fff",
+              "mobile": "#ffcc00"
+            },
+            "name": "UI/UX"
+          },
+          {
+            "color": {
+              "web": "#651fff",
+              "mobile": "#ffcc00"
+            },
+            "name": "Web"
+          },
+          {
+            "color": {
+              "web": "#651fff",
+              "mobile": "#ffcc00"
+            },
+            "name": "Data Analyzing"
+          },
+        ]
+      }
+      ```
 
 - **Error Response:**
 
