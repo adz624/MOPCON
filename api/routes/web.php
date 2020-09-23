@@ -100,6 +100,10 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('/list', 'UnconfController@getUnconfList');
                 $router->get('/{id}', 'UnconfController@show');
             });
+            $router->group(['prefix' => 'news'], function ($router) {
+                $router->get('', 'NewsController@index');
+                $router->get('{id}', 'NewsController@show');
+            });
         });
     });
 });
