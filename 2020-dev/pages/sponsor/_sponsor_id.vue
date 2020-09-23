@@ -188,8 +188,9 @@ export default {
   },
   computed: {
     sponsorInfo () {
-      const category = this.sponsors.filter(sponsor => sponsor.data.some(item => item.sponsor_id === this.activeSponsor))
-      return category[0].data.filter(sponsor => sponsor.sponsor_id === this.activeSponsor)[0]
+      return this.sponsors.map(sponsor => sponsor.data)
+        .reduce((acc, sponsor) => acc.concat(...sponsor), [])
+        .find(sponsor => sponsor.sponsor_id === this.activeSponsor)
     }
   },
   methods: {
@@ -198,7 +199,6 @@ export default {
       this.activeSponsor = val.id
     },
     closeModal () {
-      this.$emit('update:visible', false)
       this.dialogShow = false
       setTimeout(function () {
         this.activeSponsor = -1
