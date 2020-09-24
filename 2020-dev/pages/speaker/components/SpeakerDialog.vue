@@ -53,9 +53,9 @@
         <div class="topic-info">
           <p v-if="speakerInfo.started_at !== ''">
             <span class="logo logo-calendar" />
-            {{ $moment(speakerInfo.started_at).format('MM/DD HH:mm') }}
+            {{ $moment(speakerInfo.started_at * 1000).format('MM/DD HH:mm') }}
             ~
-            {{ $moment(speakerInfo.end_at).format('HH:mm') }}
+            {{ $moment(speakerInfo.ended_at * 1000).format('HH:mm') }}
           </p>
           <p v-if="speakerInfo.floor !== ''">
             <span class="logo logo-location" />
