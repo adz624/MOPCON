@@ -100,7 +100,7 @@ module.exports = {
         200: '#bee3f8',
         300: '#90cdf4',
         400: '#63b3ed',
-        500: '#4299e1', 
+        500: '#051f4c', // community, sponsor block bg
         600: '#3182ce',
         700: '#2b6cb0',
         800: '#1f2f4b', //

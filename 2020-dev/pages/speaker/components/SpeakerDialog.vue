@@ -34,6 +34,7 @@
 
       <section class="about">
         <h2>介紹</h2>
+        <!-- eslint-disable-next-line vue/no-v-html -->
         <p v-html="parseSummary(speakerInfo.bio)" />
       </section>
 
@@ -61,6 +62,7 @@
             {{ speakerInfo.room }}({{ speakerInfo.floor }})
           </p>
         </div>
+        <!-- eslint-disable-next-line vue/no-v-html -->
         <p v-html="parseSummary(speakerInfo.summary)" />
       </section>
 
