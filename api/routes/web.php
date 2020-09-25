@@ -69,6 +69,7 @@ $router->group(['prefix' => 'api'], function ($router) {
             $router->get('posts', 'FacebookController@getPosts');
         });
         $router->group(['namespace' => 'Year2020'], function () use ($router) {
+            $router->get('initial', 'InitialController@index');
             $router->group(['prefix' => 'speaker'], function ($router) {
                 $router->get('', 'SpeakerController@index');
                 $router->get('tags', 'SpeakerController@getTags');
