@@ -1,0 +1,154 @@
+@mixin bg-cover{
+    background-position: center center;
+    background-size: cover;
+}
+
+// 每一場都讓你收獲滿滿的議程規劃
+.slogan {
+    @apply text-white flex flex-wrap mb-12;
+    @screen lg{
+      @apply p-8;
+    }
+    &-title {
+      @apply order-2 w-full;
+      @screen xl{
+        padding-left:calc(50% - 500px);
+        @apply order-1 w-1/2;
+      }
+      &-en{
+        font-family: 'Poppins', sans-serif;
+        font-size:3rem;
+        right:0px;
+        letter-spacing: 0.125rem;
+        opacity: 0.24;
+        -webkit-text-stroke: 1px #ffffff;
+        color: rgba(255, 255, 255, 0);
+        @apply  font-semibold text-center relative;
+        @screen lg{
+            font-size: 5rem;
+            @apply text-center;
+        }
+        @screen xl{
+          right:15px;
+          @apply text-left;
+        }
+      }
+      & h1{
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
+        bottom:40px;
+        @apply font-medium relative text-white text-center;
+        @screen lg{
+          font-size:2rem;
+          bottom:55px;
+        }
+        @screen xl{
+          @apply text-left;
+        }
+        & br{
+          @apply block;
+          @screen xl{
+            @apply hidden;
+          }
+        }
+        & span{
+          @apply ml-2 text-yellow-500;
+        }
+        &:after {
+          content: '';
+          width: 80px;
+          height: 6px;
+          bottom:-20px;
+          left: calc(50% - 40px);
+          @apply bg-yellow-500 absolute;
+          @screen xl{
+            left:20px;
+          }
+        }
+      }
+    }
+    &-content {
+      line-height: 1.6875rem;
+      letter-spacing: 0.2px;
+      @apply mx-auto;
+      @screen xl{
+          width:498px;
+          margin-left: 0px;
+      }
+    }
+    &-pic{
+      @apply w-full order-1 flex items-center justify-center;
+      @screen xl{
+        @apply w-1/2 order-2 items-end justify-end;
+      }
+      &-container{
+        @include bg-cover;
+        background-image: url('./images/schedule.svg');
+        width:289px;
+        height:166px;
+        @apply my-8;
+        @screen xl{
+          width:450px;
+          height:259px;
+          @apply my-0;
+        }
+      }
+    }
+}
+// 日期搜尋區
+.btn-group{
+    @apply inline-flex;
+    & > button{
+        letter-spacing:0.4px;
+        color:rgba(241,188,24,0.6);
+        @apply font-bold py-4 px-10 border border-2 border-yellow-500;
+        @screen sm{
+          @apply px-12;
+        }
+        &:hover{
+            color: #001333;
+            @apply bg-yellow-500;
+        } 
+    }
+}
+.btn-group > button:first-child {
+    @apply rounded-l-lg border-r-0;
+}
+.btn-group > button:last-child {
+    @apply rounded-r-lg;
+}
+//標籤搜尋區
+::v-deep .btn-tag {
+  border-radius: 18px;
+  padding: 4px 12px;
+  opacity: .6;
+  @apply outline-none text-sm text-white;
+  &.active {
+    opacity: 1;
+    .logo {
+      width: 16px;
+      height: 12px;
+      @apply inline-block;
+    }
+  }
+}
+::v-deep .btn-tag-outline {
+  padding: 2px 12px;
+  @apply border-2 border-purple-700 mr-4 text-sm;
+  &:last-child {
+    @apply mr-0;
+  }
+}
+.tags-wrap {
+  width: 80%;
+  @apply flex flex-wrap justify-center;
+  li {
+    @apply mr-4 mb-4;
+    &:last-child {
+      @apply mr-0;
+    }
+  }
+  .btn-tag {
+    @apply bg-purple-700;
+  }
+}
