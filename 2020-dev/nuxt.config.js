@@ -145,6 +145,7 @@ module.exports = {
     route_sponsor: process.env.SPONSOR !== 'false',
     route_community: process.env.COMMUNITY !== 'false',
     route_ticket: process.env.TICKET !== 'false',
+    route_notice: process.env.NOTICE !== 'false',
     route_note: process.env.NOTE !== 'false'
   },
   /*

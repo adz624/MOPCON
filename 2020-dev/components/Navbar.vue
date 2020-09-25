@@ -114,6 +114,14 @@ export default {
           targetEnabled: false
         },
         {
+          name: '防疫守則',
+          url: './notice',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_notice,
+          targetEnabled: false
+        },
+        {
           name: '共筆文件',
           url: 'https://hackmd.io/@mopcon/2020',
           subNav: [],
