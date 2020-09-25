@@ -211,7 +211,7 @@
     "topic_e": "Dive into JavaScript",
     "summary": "JavaScript 已經是世上最多人使用的程式語言之一，但同時也是最多人誤解的程式語言。許多學習者會以其它程式語言的角度來看待 JavaScript 然後說這個程式語言很糟糕，甚至造成寫出奇妙的 JavaScript 程式碼。\n\n 在這個議程中，我將跟大家介紹一些看起來很簡單但其實內藏玄機的 JavaScript 觀念或設計。\n\n 大綱：\n- 函數執行的時候發生什麼事？\n- 你以為的物件導向不是你以為的物件導向\n- JavaScript 那些好笑的語法，以及它們背後的原理",
     "summary_e": "",
-    "is_keynote": "是",
+    "is_keynote": false,
     "recordable": true,
     "level": "Basic",
     "tags": [
