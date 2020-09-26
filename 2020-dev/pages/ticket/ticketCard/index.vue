@@ -1,5 +1,6 @@
 <template>
   <a
+    v-if="ticketData.class"
     href="#"
     :class="[ticketData.class.bg, ticketData.class.text, ticketData.class.cardBg, {'disabled': ticketData.status !== 1}]"
     class="card-ticket rounded-md px-6 py-4 flex flex-col relative overflow-hidden lg:mb-0 mb-4"

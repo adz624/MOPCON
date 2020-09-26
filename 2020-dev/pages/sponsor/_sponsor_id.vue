@@ -2,7 +2,7 @@
   <div class="sponsor logo-bg pt-16">
     <div class="logo logo-sponsor_banner sponsor-content-height sponsor-content-width" />
     <section class="sponsor-header container">
-      <div class="logo logo-speaker-title" />
+      <div class="logo logo-sponsor-title" />
       <div class="relative h-full">
         <h2 class="sponsor-title text-center">
           <div class="logo logo-circles logo-circles-l" />
@@ -169,7 +169,7 @@ export default {
     return {
       sponsors: [],
       activeSponsor: -1,
-      dialogShow: true,
+      dialogShow: false,
       swiperOption: {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -206,6 +206,60 @@ export default {
     },
     handleSwiperClick (direction) {
       this.swiper[direction === 'next' ? 'slideNext' : 'slidePrev']()
+    }
+  },
+  head () {
+    return {
+      title: this.dialogShow ? `${this.sponsorInfo.name} | 贊助夥伴 MOPCON 2020` : '贊助夥伴 | MOPCON 2020',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.dialogShow ? this.sponsorInfo.about_us : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.dialogShow ? `${this.sponsorInfo.name} | 贊助夥伴 MOPCON 2020` : '贊助夥伴 | MOPCON 2020'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.dialogShow ? this.sponsorInfo.sponsor_id : ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.dialogShow ? `${process.env.BASE_URL}/2020/sponsor/${this.sponsorInfo.sponsor_id}` : `${process.env.BASE_URL}/2020/sponsor`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.dialogShow ? `${this.sponsorInfo.logo_path}` : `${process.env.BASE_URL}/2020/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: this.dialogShow ? `${this.sponsorInfo.name} | 贊助夥伴 MOPCON 2020` : '贊助夥伴 | MOPCON 2020'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.dialogShow ? this.sponsorInfo.about_us : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: this.dialogShow ? `${this.sponsorInfo.name} | 贊助夥伴 MOPCON 2020` : '贊助夥伴 | MOPCON 2020'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: this.dialogShow ? `${this.sponsorInfo.name} | 贊助夥伴 MOPCON 2020` : '贊助夥伴 | MOPCON 2020'
+        }
+      ]
     }
   }
 }

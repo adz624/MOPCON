@@ -1,5 +1,5 @@
 <template>
-  <div class="sponsor-dialog">
+  <div v-if="nowSponsor" class="sponsor-dialog">
     <div class="sponsor-dialog-info">
       <img :src="nowSponsor.logo_path" alt="" width="114">
       <h4>
