@@ -23,8 +23,12 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020001,
-                        "speaker_id": 4
+                        "session_id": 2020002,
+                        "speaker_id": 27
+                    },
+                    {
+                        "session_id": 2020003,
+                        "speaker_id": 28
                     }
                 ]
             },
@@ -42,16 +46,12 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020002,
-                        "speaker_id": 18
+                        "session_id": 2020005,
+                        "speaker_id": 3
                     },
                     {
-                        "session_id": 2020003,
-                        "speaker_id": 19
-                    },
-                    {
-                        "session_id": 2020004,
-                        "speaker_id": 20
+                        "session_id": 2020006,
+                        "speaker_id": 43
                     }
                 ]
             },
@@ -69,16 +69,16 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020005,
-                        "speaker_id": 21
-                    },
-                    {
-                        "session_id": 2020006,
-                        "speaker_id": 22
-                    },
-                    {
                         "session_id": 2020007,
-                        "speaker_id": 23
+                        "speaker_id": 26
+                    },
+                    {
+                        "session_id": 2020008,
+                        "speaker_id": 42
+                    },
+                    {
+                        "session_id": 2020009,
+                        "speaker_id": 37
                     }
                 ]
             },
@@ -110,16 +110,12 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020008,
-                        "speaker_id": 26
-                    },
-                    {
-                        "session_id": 2020009,
-                        "speaker_id": 27
-                    },
-                    {
                         "session_id": 2020010,
-                        "speaker_id": 28
+                        "speaker_id": 41
+                    },
+                    {
+                        "session_id": 2020011,
+                        "speaker_id": 19
                     }
                 ]
             },
@@ -137,12 +133,8 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020011,
-                        "speaker_id": 29
-                    },
-                    {
-                        "session_id": 2020013,
-                        "speaker_id": 31
+                        "session_id": 2020014,
+                        "speaker_id": 36
                     }
                 ]
             },
@@ -160,18 +152,15 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020014,
-                        "speaker_id": 32
-                    },
-                    {
-                        "session_id": 2020015,
-                        "speaker_id": 33
-                    },
-                    {
                         "session_id": 2020016,
-                        "speaker_id": 34
+                        "speaker_id": 49
+                    },
+                    {
+                        "session_id": 2020017,
+                        "speaker_id": 35
                     }
-                ]            },
+                ]
+            },
             {
                 "started_at": 1603528800,
                 "isBroadCast": false,
@@ -186,16 +175,12 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020017,
-                        "speaker_id": 35
-                    },
-                    {
-                        "session_id": 2020018,
-                        "speaker_id": 36
-                    },
-                    {
                         "session_id": 2020019,
-                        "speaker_id": 37
+                        "speaker_id": 2
+                    },
+                    {
+                        "session_id": 2020020,
+                        "speaker_id": 53
                     }
                 ]
             },
@@ -203,7 +188,7 @@
                 "started_at": 0,
                 "isBroadCast": false,
                 "ended_at": 0,
-                "event": "",
+                "event": "END",
                 "room": []
             },
             {
@@ -239,8 +224,16 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020035,
-                        "speaker_id": 38
+                        "session_id": 2020022,
+                        "speaker_id": 21
+                    },
+                    {
+                        "session_id": 2020023,
+                        "speaker_id": 4
+                    },
+                    {
+                        "session_id": 2020024,
+                        "speaker_id": 34
                     }
                 ]
             },
@@ -258,16 +251,12 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020020,
+                        "session_id": 2020025,
                         "speaker_id": 39
                     },
                     {
-                        "session_id": 2020021,
-                        "speaker_id": 40
-                    },
-                    {
-                        "session_id": 2020022,
-                        "speaker_id": 41
+                        "session_id": 2020027,
+                        "speaker_id": 30
                     }
                 ]
             },
@@ -285,16 +274,16 @@
                 "event": "",
                 "room": [
                     {
-                        "session_id": 2020023,
-                        "speaker_id": 43
+                        "session_id": 2020028,
+                        "speaker_id": 29
                     },
                     {
-                        "session_id": 2020024,
-                        "speaker_id": 44
+                        "session_id": 2020029,
+                        "speaker_id": 18
                     },
                     {
-                        "session_id": 2020025,
-                        "speaker_id": 46
+                        "session_id": 2020030,
+                        "speaker_id": 25
                     }
                 ]
             },
@@ -310,7 +299,20 @@
                 "isBroadCast": false,
                 "ended_at": 1603604400,
                 "event": "",
-                "room": []
+                "room": [
+                    {
+                        "session_id": 2020031,
+                        "speaker_id": 23
+                    },
+                    {
+                        "session_id": 2020032,
+                        "speaker_id": 22
+                    },
+                    {
+                        "session_id": 2020033,
+                        "speaker_id": 38
+                    }
+                ]
             },
             {
                 "started_at": 1603604400,
@@ -324,7 +326,20 @@
                 "isBroadCast": false,
                 "ended_at": 1603607700,
                 "event": "",
-                "room": []
+                "room": [
+                    {
+                        "session_id": 2020034,
+                        "speaker_id": 40
+                    },
+                    {
+                        "session_id": 2020035,
+                        "speaker_id": 33
+                    },
+                    {
+                        "session_id": 2020036,
+                        "speaker_id": 20
+                    }
+                ]
             },
             {
                 "started_at": 1603607700,
@@ -338,7 +353,20 @@
                 "isBroadCast": false,
                 "ended_at": 1603611000,
                 "event": "",
-                "room": []
+                "room": [
+                    {
+                        "session_id": 2020037,
+                        "speaker_id": 1
+                    },
+                    {
+                        "session_id": 2020038,
+                        "speaker_id": 31
+                    },
+                    {
+                        "session_id": 2020039,
+                        "speaker_id": 32
+                    }
+                ]
             },
             {
                 "started_at": 1603611000,
@@ -352,7 +380,16 @@
                 "isBroadCast": false,
                 "ended_at": 1603616400,
                 "event": "",
-                "room": []
+                "room": [
+                    {
+                        "session_id": 2020040,
+                        "speaker_id": [
+                            44,
+                            45,
+                            46
+                        ]
+                    }
+                ]
             },
             {
                 "started_at": 1603616400,
@@ -379,7 +416,7 @@
                 "started_at": 0,
                 "isBroadCast": false,
                 "ended_at": 0,
-                "event": "",
+                "event": "END",
                 "room": []
             }
         ]
