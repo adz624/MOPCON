@@ -105,6 +105,10 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('', 'NewsController@index');
                 $router->get('{id}', 'NewsController@show');
             });
+            $router->group(['prefix' => 'home'], function ($router) {
+                $router->get('/', 'AppHomeController@index');
+                $router->get('/images/{name}', 'AppHomeController@show');
+            });
         });
     });
 });
