@@ -189,6 +189,11 @@ export default {
         ]
       }
     }
+  },
+  head () {
+    return {
+      title: '票種介紹 | MOPCON 2020'
+    }
   }
 }
 </script>

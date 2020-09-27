@@ -34,6 +34,7 @@
 
       <section class="about">
         <h2>介紹</h2>
+        <!-- eslint-disable-next-line vue/no-v-html -->
         <p v-html="parseSummary(speakerInfo.bio)" />
       </section>
 
@@ -52,15 +53,16 @@
         <div class="topic-info">
           <p v-if="speakerInfo.started_at !== ''">
             <span class="logo logo-calendar" />
-            {{ $moment(speakerInfo.started_at).format('MM/DD HH:mm') }}
+            {{ $moment(speakerInfo.started_at * 1000).format('MM/DD HH:mm') }}
             ~
-            {{ $moment(speakerInfo.end_at).format('HH:mm') }}
+            {{ $moment(speakerInfo.ended_at * 1000).format('HH:mm') }}
           </p>
           <p v-if="speakerInfo.floor !== ''">
             <span class="logo logo-location" />
             {{ speakerInfo.room }}({{ speakerInfo.floor }})
           </p>
         </div>
+        <!-- eslint-disable-next-line vue/no-v-html -->
         <p v-html="parseSummary(speakerInfo.summary)" />
       </section>
 

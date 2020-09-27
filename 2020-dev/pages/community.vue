@@ -270,6 +270,11 @@ export default {
       this.modalOpen = show
       if (!show) { this.modatype = '' }
     }
+  },
+  head () {
+    return {
+      title: '主辦社群 | MOPCON 2020'
+    }
   }
 }
 

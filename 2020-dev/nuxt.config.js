@@ -145,6 +145,7 @@ module.exports = {
     route_sponsor: process.env.SPONSOR !== 'false',
     route_community: process.env.COMMUNITY !== 'false',
     route_ticket: process.env.TICKET !== 'false',
+    route_notice: process.env.NOTICE !== 'false',
     route_note: process.env.NOTE !== 'false'
   },
   /*
@@ -181,17 +182,24 @@ module.exports = {
     dir: path.resolve(__dirname, '../2020/'),
     // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
     routes () {
-      return axios.get(`${process.env.BASE_URL}/api/2020/speaker`)
-        .then((res) => {
-          const pages = [
-            '/speaker'
-          ]
-          // 講者頁面
-          res.data.data.forEach((speaker) => {
-            pages.push(`/speaker/${speaker.speaker_id}`)
-          })
-          return pages
+      const pages = []
+      const speakers = axios.get(`${process.env.BASE_URL}/api/2020/speaker`).then((res) => {
+        pages.push('/speaker')
+        res.data.data.forEach((speaker) => {
+          pages.push(`/speaker/${speaker.speaker_id}`)
         })
+      })
+      const sponsors = axios.get(`${process.env.BASE_URL}/api/2020/sponsor`).then((res) => {
+        pages.push('/sponsor')
+        res.data.data.forEach((item) => {
+          item.data.forEach((sponsor) => {
+            pages.push(`/sponsor/${sponsor.sponsor_id}`)
+          })
+        })
+      })
+      return Promise.all([speakers, sponsors]).then((values) => {
+        return pages
+      })
     }
   },
   moment: {

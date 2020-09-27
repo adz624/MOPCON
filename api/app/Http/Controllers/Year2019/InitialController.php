@@ -2,22 +2,9 @@
 
 namespace App\Http\Controllers\Year2019;
 
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\ApiTrait;
+use App\Http\Controllers\BaseInitialController;
 
-class InitialController extends Controller
+class InitialController extends BaseInitialController
 {
-    use ApiTrait;
-
     protected $year = 2019;
-    protected $function = 'initial';
-
-    /**
-     * 取得 APP initial API data
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function index()
-    {
-        return $this->returnSuccess('Success.', $this->jsonAry);
-    }
 }

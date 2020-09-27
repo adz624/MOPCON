@@ -27,8 +27,7 @@
       </div>
       <div class="img-grid">
         <a href="#" class="video-bg" @click.prevent="openVideoModal(true)">
-          <div class="logo logo-catch-1 w-full h-full" />
-          <p class="video-text text-xl">50 秒了解南台灣最狂研討會 </p>
+          <div class="logo logo-video-preview w-full h-full" />
         </a>
         <div class="fixed inset-0 z-50" :class="modalShow? 'block' : 'hidden'">
           <a href="#" class="fixed close-modal-icon" @click.prevent="openVideoModal(false)">x</a>
@@ -251,7 +250,7 @@ export default {
 $logo_map: (
   svg: mopcon arrow border launch,
   jpg: section-place-img-1 section-place-img-2 section-place-img-3 catch-1 catch-2 catch-3,
-  png: icon-play
+  png: icon-play video-preview
 );
 @include logo_map_mix(home);
 
@@ -377,21 +376,12 @@ $logo_map: (
       @apply relative;
       &:hover {
         &::before {
-          @apply bg-opacity-50
+          @apply bg-opacity-0
         }
       }
       &::before {
         content: "";
-        @apply absolute bg-gray-900 bg-opacity-75 w-full h-full;
-      }
-      &::after {
-        content: "";
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 33.333%;
-        @extend .logo-icon-play;
-        @apply absolute w-1/3 bg-contain bg-no-repeat bg-center;
+        @apply absolute bg-gray-900 bg-opacity-25 w-full h-full;
       }
     }
     .logo {
