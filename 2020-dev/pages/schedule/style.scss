@@ -3,16 +3,19 @@
     background-size: cover;
 }
 
+*{
+  // outline: 1px dotted red;
+}
+
 // 每一場都讓你收獲滿滿的議程規劃
 .slogan {
-    @apply text-white flex flex-wrap mb-12;
+    @apply text-white flex flex-wrap mb-12 mx-auto;
     @screen lg{
       @apply p-8;
     }
     &-title {
       @apply order-2 w-full;
       @screen xl{
-        padding-left:calc(50% - 500px);
         @apply order-1 w-1/2;
       }
       &-en{
@@ -79,7 +82,7 @@
     &-pic{
       @apply w-full order-1 flex items-center justify-center;
       @screen xl{
-        @apply w-1/2 order-2 items-end justify-end;
+        @apply w-1/2 order-2 items-end justify-center;
       }
       &-container{
         @include bg-cover;

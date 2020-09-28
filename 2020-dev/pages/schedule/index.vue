@@ -23,7 +23,7 @@
     </section>
 
     <!--日期搜尋區-->
-    <section class="container flex justify-center mb-12">
+    <section class="container flex justify-center mb-12 mx-auto">
       <div class="btn-group">
         <button>
           10/24(六)
@@ -34,7 +34,7 @@
       </div>
     </section>
     <!--標籤搜尋區-->
-    <section class="container  flex justify-center mb-12">
+    <section class="container  flex justify-center mb-12 mx-auto">
       <ul class="tags-wrap">
         <li
           v-for="(tag, index) in tags"
@@ -67,37 +67,31 @@ export default {
   },
   created () {
     this.getSessionData()
+    this.getTagsData()
   },
   methods: {
     getSessionData () {
       const vm = this
       vm.$axios
-        .$get('/api/2019/session')
+        .$get('/api/2020/session')
         .then(({ success, data, message }) => {
           if (success) {
             vm.sessionData = data
-
-            // 撈出 tags
-            const set = new Set()
-            data.forEach(
-              function (dataItem) {
-                dataItem.period.forEach(
-                  function (periodItem) {
-                    periodItem.room.forEach(
-                      function (roomItem) {
-                        roomItem.tags.forEach(
-                          function (tagsItem) {
-                            console.log(tagsItem.name)
-                            set.add(tagsItem.name)
-                          }
-                        )
-                      }
-                    )
-                  }
-                )
-              }
-            )
-            vm.tags = [...set]
+          } else {
+            console.log('error', message)
+          }
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    },
+    getTagsData () {
+      const vm = this
+      vm.$axios
+        .$get('/api/2020/speaker/tags')
+        .then(({ success, data, message }) => {
+          if (success) {
+            data.forEach(dataItem => vm.tags.push(dataItem.name))
           } else {
             console.log('error', message)
           }
