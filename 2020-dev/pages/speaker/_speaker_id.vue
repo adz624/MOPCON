@@ -61,14 +61,14 @@
       </ul>
     </section>
     <app-section />
-    <speaker-dialog :visible.sync="dialogShow" :speaker-info="speakerInfo" />
+    <speaker-dialog :visible.sync="dialogShow" :speaker="CurrentSpeaker" />
   </div>
 </template>
 
 <script>
 import { speaker, tags } from '@/api/url'
 import AppSection from '@/components/AppSection'
-import SpeakerDialog from './components/SpeakerDialog'
+import SpeakerDialog from '@/components/CommonDialog/SpeakerDialog'
 
 export default {
   name: 'Speaker',
@@ -110,7 +110,7 @@ export default {
       }
       return formatArr
     },
-    speakerInfo () {
+    CurrentSpeaker () {
       return this.speakers.find(speaker => speaker.speaker_id === this.activeSpeaker)
     }
   },
@@ -125,54 +125,54 @@ export default {
   },
   head () {
     return {
-      title: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020',
+      title: this.dialogShow ? `${this.CurrentSpeaker.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.dialogShow ? this.speakerInfo.summary : ''
+          content: this.dialogShow ? this.CurrentSpeaker.summary : ''
         },
         // fb
         {
           hid: 'og-title',
           property: 'og:title',
-          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+          content: this.dialogShow ? `${this.CurrentSpeaker.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
         },
         {
           hid: 'og-description',
           property: 'og:description',
-          content: this.dialogShow ? this.speakerInfo.summary : ''
+          content: this.dialogShow ? this.CurrentSpeaker.summary : ''
         },
         {
           hid: 'og-url',
           property: 'og:url',
-          content: this.dialogShow ? `${process.env.BASE_URL}/2020/speaker/${this.speakerInfo.speaker_id}` : `${process.env.BASE_URL}/2020/speaker`
+          content: this.dialogShow ? `${process.env.BASE_URL}/2020/speaker/${this.CurrentSpeaker.speaker_id}` : `${process.env.BASE_URL}/2020/speaker`
         },
         {
           hid: 'og-image',
           property: 'og:image',
-          content: this.dialogShow ? `${this.speakerInfo.img.web}` : `${process.env.BASE_URL}/2020/og-image.png`
+          content: this.dialogShow ? `${this.CurrentSpeaker.img.web}` : `${process.env.BASE_URL}/2020/og-image.png`
         },
         // twitter seo
         {
           hid: 'twitter-site',
           name: 'twitter:site',
-          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+          content: this.dialogShow ? `${this.CurrentSpeaker.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
         },
         {
           hid: 'twitter-description',
           name: 'twitter:description',
-          content: this.dialogShow ? this.speakerInfo.summary : ''
+          content: this.dialogShow ? this.CurrentSpeaker.summary : ''
         },
         {
           hid: 'twitter-app:name:iphone',
           name: 'twitter:app:name:iphone',
-          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+          content: this.dialogShow ? `${this.CurrentSpeaker.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
         },
         {
           hid: 'twitter-app:name:ipad',
           name: 'twitter:app:name:ipad',
-          content: this.dialogShow ? `${this.speakerInfo.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
+          content: this.dialogShow ? `${this.CurrentSpeaker.name} | 講者 MOPCON 2020` : '講者陣容 | MOPCON 2020'
         }
       ]
     }
@@ -209,28 +209,6 @@ $logo_map: (
     > h2 {
       @apply text-3xl;
     }
-  }
-}
-
-::v-deep .btn-tag {
-  border-radius: 18px;
-  padding: 4px 12px;
-  opacity: .6;
-  @apply outline-none text-sm;
-  &.active {
-    opacity: 1;
-    .logo {
-      width: 16px;
-      height: 12px;
-      @apply inline-block;
-    }
-  }
-}
-::v-deep .btn-tag-outline {
-  padding: 2px 12px;
-  @apply border-2 border-purple-700 mr-4 text-sm;
-  &:last-child {
-    @apply mr-0;
   }
 }
 
@@ -361,6 +339,7 @@ $logo_map: (
     }
     p {
       color: rgba(242, 242, 247, 0.72);
+      flex: 21px 1 21px;
       @apply text-sm;
     }
     .speaker-btn-wrap {
