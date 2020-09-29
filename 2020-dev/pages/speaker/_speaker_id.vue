@@ -21,21 +21,8 @@
 
     <section class="content container">
       <h2>開箱 <span>高手陣容</span></h2>
-      <ul class="tags-wrap">
-        <li
-          v-for="(tag, index) in tags"
-          :key="`tag-${index}`"
-          @click="toggleTag(tag)"
-        >
-          <button
-            class="btn-tag"
-            :class="{'active' : activeTags.includes(tag)}"
-          >
-            <span class="logo logo-check" />
-            {{ tag }}
-          </button>
-        </li>
-      </ul>
+
+      <tags :tags="tags" :active-tags="activeTags" :toggle-tag="toggleTag" />
 
       <ul v-if="speakers.length" class="speaker-list">
         <li
@@ -61,7 +48,7 @@
       </ul>
     </section>
     <app-section />
-    <speaker-dialog :visible.sync="dialogShow" :speaker="CurrentSpeaker" />
+    <speaker-dialog :visible.sync="dialogShow" :speaker="CurrentSpeaker" :toggle-tag="toggleTag" />
   </div>
 </template>
 
@@ -69,12 +56,14 @@
 import { speaker, tags } from '@/api/url'
 import AppSection from '@/components/AppSection'
 import SpeakerDialog from '@/components/CommonDialog/SpeakerDialog'
+import Tags from '@/components/Tags'
 
 export default {
   name: 'Speaker',
   components: {
     SpeakerDialog,
-    AppSection
+    AppSection,
+    Tags
   },
   async asyncData ({ $axios, params }) {
     try {
@@ -115,8 +104,14 @@ export default {
     }
   },
   methods: {
-    toggleTag (name) {
-      !this.activeTags.includes(name) ? this.activeTags.push(name) : this.activeTags.splice(this.activeTags.indexOf(name), 1)
+    toggleTag (tag) {
+      if (Array.isArray(tag)) {
+        this.activeTags = tag
+      } else {
+        !this.activeTags.includes(tag)
+          ? this.activeTags.push(tag)
+          : this.activeTags.splice(this.activeTags.indexOf(tag), 1)
+      }
     },
     handleSpeakerClick (id) {
       this.activeSpeaker = id
@@ -184,7 +179,7 @@ export default {
 // logo
 @import '~@/assets/styles/_mix';
 $logo_map: (
-  svg: speaker-title check,
+  svg: speaker-title,
 );
 @include logo_map_mix(speaker);
 
@@ -282,19 +277,6 @@ $logo_map: (
       @apply text-yellow-500;
     }
   }
-  .tags-wrap {
-    width: 80%;
-    @apply flex flex-wrap mt-8 justify-center;
-    li {
-      @apply mr-4 mb-4;
-      &:last-child {
-        @apply mr-0;
-      }
-    }
-    .btn-tag {
-      @apply bg-purple-700;
-    }
-  }
   .speaker-list {
     width: 90%;
     @apply flex justify-start px-4 flex-col;
@@ -339,7 +321,7 @@ $logo_map: (
     }
     p {
       color: rgba(242, 242, 247, 0.72);
-      flex: 21px 1 21px;
+      min-height: 21px;
       @apply text-sm;
     }
     .speaker-btn-wrap {

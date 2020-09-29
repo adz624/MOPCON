@@ -6,12 +6,17 @@
     @click.native="btnListShow && (btnListShow = false)"
   >
     <div slot="body" class="dialog-body">
-      <speaker-topic :speaker="speaker" notitle class="-mt-4 md:mt-0" />
+      <speaker-topic
+        :speaker="speaker"
+        notitle
+        class="-mt-4 md:mt-0"
+        @handle-tag-click="toggleTag($event); $emit('update:visible', false);"
+      />
 
-      <speaker-info :speaker="speaker.speakers[0]" class="mt-8 mb-6" />
+      <speaker-info :speakers="speaker.speakers" class="mt-8 mb-4" />
     </div>
     <div slot="footer">
-      <share-btn :speaker="speaker" :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
+      <share-btn :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
     </div>
   </Dialog>
 </template>
@@ -23,7 +28,7 @@ import SpeakerTopic from './SpeakerTopic'
 import ShareBtn from './ShareBtn'
 
 export default {
-  name: 'SpeakerDialog',
+  name: 'ScheduleDialog',
   components: {
     Dialog,
     SpeakerInfo,
@@ -38,6 +43,10 @@ export default {
     speaker: {
       type: [Object, undefined],
       default: () => {}
+    },
+    toggleTag: {
+      type: Function,
+      default: () => {}
     }
   },
   data () {
@@ -48,7 +57,7 @@ export default {
   },
   computed: {
     shareUrl () {
-      return `${window.location.origin}/2020/schedule/${this.speaker.speakers[0].speaker_id}`
+      return process.client ? `${window.location.origin}/2020${this.$route.path}/${this.speaker.session_id}` : ''
     }
   },
   methods: {
@@ -62,8 +71,11 @@ export default {
 <style lang="scss" scoped>
 ::v-deep .dialog {
   width: 90%;
-  @screen md {
-    width: 50%;
+  @screen lg {
+    width: 70%;
+  }
+  @screen xl {
+    width: 60%;
   }
 }
 </style>

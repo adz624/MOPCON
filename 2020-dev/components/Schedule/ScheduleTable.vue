@@ -9,7 +9,7 @@
       </h2>
       <ul v-else class="room-wrap" :class="`lg:grid-cols-${column}`">
         <li v-for="(room, roomIdx) in item.room" :key="`room-${roomIdx}`" @click="$emit('handle-click', room)">
-          <schedule-card :room-info="room" />
+          <schedule-card :room-info="room" :no-hover="noHover" />
         </li>
       </ul>
     </li>
@@ -32,6 +32,10 @@ export default {
     column: {
       type: Number,
       default: 3
+    },
+    noHover: {
+      type: Boolean,
+      default: false
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <button class="btn-share" @click.stop="$emit('update:btnListShow', !btnListShow)">
+    <button class="btn-share" @click.stop="speaker ? $emit('update:btnListShow', !btnListShow) : copylink()">
       <span class="logo logo-share" />
       分享議程
     </button>

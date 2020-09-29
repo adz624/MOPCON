@@ -1,15 +1,29 @@
 <template>
-  <div class="card-wrap" :class="floorColor(roomInfo.floor)">
-    <div class="card-header">
-      <div class="img">
-        <img :src="roomInfo.speakers[0].img.mobile" alt="speaker_img">
-      </div>
-      <h3>{{ roomInfo.speakers.map(item => item.name).join(', ') }}</h3>
-      <span class="logo logo-location" />
-      <p>{{ roomInfo.room }}({{ roomInfo.floor }})</p>
-    </div>
+  <div class="card-wrap" :class="[floorColor(roomInfo.floor), {'no-hover': noHover}]">
+    <ul class="card-header">
+      <li
+        v-for="(item, idx) in roomInfo.speakers"
+        :key="`speaker-img-${idx}`"
+        class="flex"
+      >
+        <div v-if="item.img.web" class="img">
+          <img :src="item.img.mobile" alt="speaker_img">
+        </div>
+        <h3>{{ item.name }}</h3>
+      </li>
+    </ul>
 
     <h2>{{ roomInfo.topic }}</h2>
+
+    <div class="text-sm location-wrap" :class="{'notime': !roomInfo.timeRange}">
+      <p>
+        <span class="logo logo-location" />
+        {{ roomInfo.room }}({{ roomInfo.floor }})
+      </p>
+      <p v-if="roomInfo.timeRange" class="time-range">
+        {{ roomInfo.timeRange }}
+      </p>
+    </div>
 
     <ul class="tag-wrap">
       <li v-for="(tag, idx) in roomInfo.tags" :key="`tag-${idx}`">
@@ -34,6 +48,10 @@ export default {
     roomInfo: {
       type: Object,
       default: () => {}
+    },
+    noHover: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -66,10 +84,9 @@ $logo_map: (
 .card-wrap {
   background: rgba(255,255,255,0.12);
   border-radius: 8px;
-  // min-width: 275px;
   width: 100%;
   height: 100%;
-  @apply text-gray-400 pr-3 pl-5 pb-4 pt-5 relative cursor-pointer flex flex-col;
+  @apply text-gray-400 pr-3 pl-5 pb-4 pt-5 relative flex flex-col;
   &::before {
     content: '';
     border-radius: 8px;
@@ -84,11 +101,14 @@ $logo_map: (
   &.blue::before {
     @apply border-blue-300;
   }
-  &:hover::after {
-    content: '- Read more -';
-    background: rgba(255, 204, 0, 0.7);
-    border-radius: 8px;
-    @apply absolute inset-0 text-black flex items-center justify-center font-medium;
+  &:not(.no-hover) {
+    @apply cursor-pointer;
+    &:hover::after {
+      content: '- Read more -';
+      background: rgba(255, 204, 0, 0.7);
+      border-radius: 8px;
+      @apply absolute inset-0 text-black flex items-center justify-center font-medium;
+    }
   }
   @screen xl {
     min-width: 275px;
@@ -98,10 +118,11 @@ $logo_map: (
   }
 }
 h2 {
-  @apply text-gray-100 text-lg my-3 h-12;
+  flex: auto;
+  @apply text-gray-100 text-lg pt-1 pb-1;
 }
 .card-header {
-  @apply flex items-center;
+  @apply flex flex-col;
   .img {
     transform: rotate(45deg);
     @apply w-6 h-6 bg-indigo-300 rounded-md mr-4;
@@ -109,17 +130,30 @@ h2 {
   img {
     transform: rotate(-45deg);
   }
-  .logo {
-    width: 20px;
-    height: 18px;
-    @apply inline-block ml-auto;
+  li {
+    @apply mb-4;
   }
-  p {
-    @apply text-sm;
+}
+.logo {
+  width: 20px;
+  height: 18px;
+  transform: translateY(3px);
+  @apply inline-block;
+}
+.location-wrap {
+  top: 19px;
+  right: 16px;
+  @apply flex items-center pt-3;
+  .time-range {
+    margin-top: 1px;
+    @apply ml-3;
+  }
+  &.notime {
+    @apply absolute pt-0;
   }
 }
 .tag-wrap, .hashtag-wrap {
-  @apply flex flex-wrap pt-2 text-sm;
+  @apply flex flex-wrap pt-2 text-sm mt-auto;
   li {
     @apply mr-2 mt-2;
   }

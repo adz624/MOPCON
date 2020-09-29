@@ -6,7 +6,7 @@
     @click.native="btnListShow && (btnListShow = false)"
   >
     <div slot="body" class="dialog-body">
-      <speaker-info :speaker="speaker" notitle />
+      <speaker-info :speakers="speaker" notitle />
 
       <section class="about">
         <h2>介紹</h2>
@@ -14,7 +14,11 @@
         <p v-html="parseSummary(speaker.bio)" />
       </section>
 
-      <speaker-topic :speaker="speaker" class="mt-8" />
+      <speaker-topic
+        :speaker="speaker"
+        class="mt-8"
+        @handle-tag-click="toggleTag($event); $emit('update:visible', false);"
+      />
 
       <!-- <section class="sponser">
         <h2>贊助廠商</h2>
@@ -32,7 +36,6 @@ import Dialog from '@/components/Dialog'
 import SpeakerInfo from './SpeakerInfo'
 import SpeakerTopic from './SpeakerTopic'
 import ShareBtn from './ShareBtn'
-// import SpeakerContact from './SpeakerContact'
 
 export default {
   name: 'SpeakerDialog',
@@ -41,7 +44,6 @@ export default {
     SpeakerInfo,
     SpeakerTopic,
     ShareBtn
-    // SpeakerContact
   },
   props: {
     visible: {
@@ -50,6 +52,10 @@ export default {
     },
     speaker: {
       type: [Object, undefined],
+      default: () => {}
+    },
+    toggleTag: {
+      type: Function,
       default: () => {}
     }
   },
@@ -60,7 +66,7 @@ export default {
   },
   computed: {
     shareUrl () {
-      return `${window.location.origin}/2020/speaker/${this.speaker.speaker_id}`
+      return process.client ? `${window.location.origin}/2020/schedule/${this.speaker.session_id}` : ''
     }
   },
   methods: {
@@ -91,7 +97,10 @@ p {
 
 ::v-deep .dialog {
   width: 90%;
-  @screen md {
+  @screen lg {
+    width: 60%;
+  }
+  @screen xl {
     width: 50%;
   }
 }

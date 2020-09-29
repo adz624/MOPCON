@@ -3,22 +3,26 @@
     <h2 v-if="!notitle" class="mb-6">
       相關講者資訊
     </h2>
-    <div
-      class="flex items-center pt-3 flex-col md:flex-row text-center md:text-left"
-      :class="{'pb-4': !speakerContactVisible}"
-    >
-      <div class="flex flex-col items-start">
-        <div class="img-wrap">
-          <img :src="speaker.img.web">
+    <ul class="flex flex-col">
+      <li
+        v-for="speaker in Array.isArray(speakers) ? speakers : [speakers]"
+        :key="speaker.speaker_id"
+        class="flex items-center pt-3 flex-col md:flex-row text-center md:text-left mb-2"
+        :class="{'pb-4': !speakerContactVisible(speaker)}"
+      >
+        <div class="flex flex-col items-start">
+          <div v-if="speaker.img.web" class="img-wrap">
+            <img :src="speaker.img.web" alt="speaker img">
+          </div>
+          <speaker-contact v-if="speakerContactVisible(speaker)" :links="speaker" />
         </div>
-        <speaker-contact v-if="speakerContactVisible" :links="speaker" />
-      </div>
-      <div class="text-wrap">
-        <h3>{{ speaker.name }}</h3>
-        <p>{{ speaker.company }}</p>
-        <p>{{ speaker.job_title }}</p>
-      </div>
-    </div>
+        <div class="text-wrap">
+          <h3>{{ speaker.name }}</h3>
+          <p>{{ speaker.company }}</p>
+          <p>{{ speaker.job_title }}</p>
+        </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -31,8 +35,8 @@ export default {
     SpeakerContact
   },
   props: {
-    speaker: {
-      type: [Object, undefined],
+    speakers: {
+      type: [Object, Array, undefined],
       default: () => {}
     },
     notitle: {
@@ -40,9 +44,9 @@ export default {
       default: false
     }
   },
-  computed: {
-    speakerContactVisible () {
-      return Object.entries(this.speaker).some(([key, value]) => key.startsWith('link_') && value)
+  methods: {
+    speakerContactVisible (speaker) {
+      return Object.entries(speaker).some(([key, value]) => key.startsWith('link_') && value)
     }
   }
 }

@@ -5,7 +5,11 @@
         議程主題
       </h2>
       <ul class="tags-wrap">
-        <li v-for="(tag, index) in speaker.tags" :key="`tag-${index}`">
+        <li
+          v-for="(tag, index) in speaker.tags"
+          :key="`tag-${index}`"
+          @click="$emit('handle-tag-click', [tag.name])"
+        >
           <button class="btn-tag btn-tag-outline">
             {{ tag.name }}
           </button>
