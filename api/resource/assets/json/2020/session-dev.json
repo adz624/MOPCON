@@ -78,7 +78,7 @@
                     },
                     {
                         "session_id": 2020009,
-                        "speaker_id": 37
+                        "speaker_id": 32
                     }
                 ]
             },
@@ -115,7 +115,7 @@
                     },
                     {
                         "session_id": 2020011,
-                        "speaker_id": 19
+                        "speaker_id": 20
                     }
                 ]
             },
@@ -337,7 +337,7 @@
                     },
                     {
                         "session_id": 2020036,
-                        "speaker_id": 20
+                        "speaker_id": 37
                     }
                 ]
             },
@@ -360,11 +360,11 @@
                     },
                     {
                         "session_id": 2020038,
-                        "speaker_id": 31
+                        "speaker_id": 19
                     },
                     {
                         "session_id": 2020039,
-                        "speaker_id": 32
+                        "speaker_id": 31
                     }
                 ]
             },
