@@ -37,7 +37,7 @@
       <li v-if="roomInfo.sponsor_id !== 0">
         <a href=""># 夥伴議程</a>
       </li>
-      <li v-if="roomInfo.recordable">
+      <li v-if="!roomInfo.recordable">
         <a href="#"># 禁止錄影</a>
       </li>
       <li v-if="roomInfo.isBroadCast">
