@@ -7,9 +7,18 @@
       <h2 v-if="item.event" class="schedule-evt">
         {{ item.event }}
       </h2>
-      <ul v-else class="room-wrap" :class="`lg:grid-cols-${column}`">
-        <li v-for="(room, roomIdx) in item.room" :key="`room-${roomIdx}`" @click="$emit('handle-click', room)">
-          <schedule-card :room-info="room" :no-hover="noHover" />
+      <ul
+        v-else
+        class="room-wrap"
+        :class="`lg:grid-cols-${column}`"
+      >
+        <li
+          v-for="(room, roomIdx) in item.room"
+          :key="`room-${roomIdx}`"
+          :class="`lg:col-start-${room.room[1]}`"
+          @click="$emit('handle-click', room)"
+        >
+          <schedule-card :room-info="room" :no-hover="noHover" :no-hash-tag="noHashTag" />
         </li>
       </ul>
     </li>
@@ -34,6 +43,10 @@ export default {
       default: 3
     },
     noHover: {
+      type: Boolean,
+      default: false
+    },
+    noHashTag: {
       type: Boolean,
       default: false
     }

@@ -7,16 +7,11 @@
     <date-selector :dates="schedules.map(item => item.date)" :active-date.sync="activeDate" />
 
     <section class="xl:max-w-screen-xl lg:max-w-screen-lg px-4 lg:px-0 xl:w-10/12 mx-auto mb-24 relative mt-24">
-      <ul class="floor-list">
-        <li><div class="bg-orange-300" />R1(3F)</li>
-        <li><div class="bg-blue-300" />R2(4F)</li>
-        <li><div class="bg-green-300" />R3(5F)</li>
-      </ul>
-
       <schedule-table
         :model="formatted"
         :column="1"
         :no-hover="true"
+        :no-hash-tag="true"
       />
     </section>
     <app-section />
@@ -71,22 +66,8 @@ export default {
   },
   head () {
     return {
-      title: '交流議程 | MOPCON 2019'
+      title: '交流議程 | MOPCON 2020'
     }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.floor-list {
-  top: -40px;
-  right: 0;
-  @apply text-white flex justify-end absolute;
-  li {
-    @apply flex items-center mr-3;
-  }
-  div {
-    @apply w-4 h-4 rounded mr-2;
-  }
-}
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="card-wrap" :class="[floorColor(roomInfo.floor), {'no-hover': noHover}]">
+  <div class="card-wrap" :class="[floorColor(roomInfo.room), {'no-hover': noHover}]">
     <ul class="card-header">
       <li
         v-for="(item, idx) in roomInfo.speakers"
@@ -33,9 +33,15 @@
       </li>
     </ul>
 
-    <ul class="hashtag-wrap">
-      <li v-for="(hasstag, idx) in 3" :key="`hashtag-${idx}`">
+    <ul v-if="!noHashTag" class="hashtag-wrap">
+      <li v-if="roomInfo.sponsor_id !== 0">
         <a href=""># 夥伴議程</a>
+      </li>
+      <li v-if="roomInfo.recordable">
+        <a href="#"># 禁止錄影</a>
+      </li>
+      <li v-if="roomInfo.isBroadCast">
+        <a href="#"># Panel</a>
       </li>
     </ul>
   </div>
@@ -52,6 +58,10 @@ export default {
     noHover: {
       type: Boolean,
       default: false
+    },
+    noHashTag: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -61,9 +71,9 @@ export default {
   methods: {
     floorColor (floor) {
       switch (floor) {
-        case '4F':
+        case 'R2':
           return 'blue'
-        case '5F':
+        case 'R3':
           return 'green'
         default:
           return 'orange'

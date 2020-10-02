@@ -15,7 +15,7 @@
       <ul class="floor-list">
         <li><div class="bg-orange-300" />R1(3F)</li>
         <li><div class="bg-blue-300" />R2(4F)</li>
-        <li><div class="bg-green-300" />R3(5F)</li>
+        <li><div class="bg-green-300" />R3(4F)</li>
       </ul>
 
       <schedule-table
@@ -135,7 +135,7 @@ export default {
   },
   head () {
     return {
-      title: '主議程 | MOPCON 2019'
+      title: '主議程 | MOPCON 2020'
     }
   }
 }
