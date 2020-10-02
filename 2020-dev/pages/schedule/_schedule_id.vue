@@ -99,6 +99,7 @@ export default {
       return this.schedules
         .find(item => item.date === this.activeDate).period
         .map(item => ({
+          isBroadCast: item.isBroadCast,
           timeRange: item.started_at
             ? this.$moment.unix(item.started_at).format('HH:mm') + ' - ' + this.$moment.unix(item.ended_at).format('HH:mm')
             : '',
@@ -111,7 +112,8 @@ export default {
         .reduce((acc, item) => {
           const hasTimeRoom = item.room.map(room => ({
             ...room,
-            timeRange: item.timeRange
+            timeRange: item.timeRange,
+            isBroadCast: item.isBroadCast
           }))
           return acc.concat(hasTimeRoom)
         }, [])
