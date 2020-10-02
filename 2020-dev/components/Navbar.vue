@@ -24,7 +24,7 @@
             </a>
             <a v-else :href="item.url" class="whitespace-no-wrap block">{{ item.name }}</a>
             <ul v-if="item.subIsOpen" class="history-link" :class="{'history-link_active': subNavOpen}" @click.stop>
-              <li v-for="(subNav, index) in item.subNav" :key="`subNav_${index}`">
+              <li v-for="(subNav, index) in checkOpen(item.subNav)" :key="`subNav_${index}`">
                 <a :href="subNav.url" :target="setTarget(item.targetEnabled)"><span>{{ subNav.name }}</span></a>
               </li>
             </ul>
@@ -135,6 +135,7 @@ export default {
           subNav: Array.from(Array(currentYear - startYear).keys())
             .map(function (item) {
               return {
+                open: true,
                 url: `https://mopcon.org/${startYear + item}/`,
                 name: startYear + item
               }
@@ -186,6 +187,9 @@ export default {
       if (this.isMobile) {
         this.$emit('update', !this.navOpen)
       }
+    },
+    checkOpen (data) {
+      return data.filter(item => item.open)
     }
   }
 }
