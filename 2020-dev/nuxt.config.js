@@ -163,7 +163,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -182,8 +182,9 @@ module.exports = {
   generate: {
     dir: path.resolve(__dirname, '../2020/'),
     // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
-    routes() {
+    routes () {
       const pages = []
+      pages.push('/schedule')
       const speakers = axios.get(`${process.env.BASE_URL}/api/2020/speaker`).then((res) => {
         pages.push('/speaker')
         res.data.data.forEach((speaker) => {
@@ -198,7 +199,7 @@ module.exports = {
           })
         })
       })
-      return Promise.all([speakers, sponsors]).then((values) => {
+      return Promise.all([speakers, sponsors]).then(() => {
         return pages
       })
     }
