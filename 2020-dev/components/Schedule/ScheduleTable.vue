@@ -15,7 +15,7 @@
         <li
           v-for="(room, roomIdx) in item.room"
           :key="`room-${roomIdx}`"
-          :class="`lg:col-start-${room.room[1]}`"
+          :class="{'lg:col-start-2': room.room == 'R2','lg:col-start-3': room.room == 'R3'}"
           @click="$emit('handle-click', room)"
         >
           <schedule-card :room-info="room" :no-hover="noHover" :no-hash-tag="noHashTag" />
