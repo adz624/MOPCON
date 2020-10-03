@@ -28,7 +28,9 @@
     - topic_e(string): 議程英文名稱
     - summary(string): 議程簡介中文
     - summary_e(string): 議程簡介英文
+    - community_partner(string): 合作社群
     - is_keynote(bool): 是否為 keynote 議程
+    - is_online(bool): 是否為遠距議程
     - started_at(timestamp): 議程開始時間，單位為秒
     - ended_at(timestamp): 議程結束時間，單位為秒
     - room(string): 議程廳
@@ -108,7 +110,9 @@
                 "topic_e": "Est aliquid sed eum quae in.",
                 "summary": "summary",
                 "summary_e": "summary",
+                "community_partner": "",
                 "is_keynote": true,
+                "is_online": false,
                 "started_at": 1571446800,
                 "ended_at": 1571450400,
                 "room": "R2",
@@ -170,7 +174,9 @@
                 "topic_e": "Est aliquid sed eum quae in.",
                 "summary": "summary",
                 "summary_e": "summary",
+                "community_partner": "MO",
                 "is_keynote": false,
+                "is_online": false,
                 "started_at": 1571446800,
                 "ended_at": 1571450400,
                 "room": "R1",
@@ -218,7 +224,9 @@
                 "topic_e": "Est aliquid sed eum quae in.",
                 "summary": "summary",
                 "summary_e": "summary",
+                "community_partner": "",
                 "is_keynote": false,
+                "is_online": false,
                 "started_at": 1571446800,
                 "ended_at": 1571450400,
                 "room": "R2",
@@ -266,7 +274,9 @@
                 "topic_e": "Est aliquid sed eum quae in.",
                 "summary": "summary",
                 "summary_e": "summary",
+                "community_partner": "",
                 "is_keynote": false,
+                "is_online": false,
                 "started_at": 1571446800,
                 "ended_at": 1571450400,
                 "room": "R3",
@@ -389,7 +399,9 @@
         "topic_e": "Est aliquid sed eum quae in.",
         "summary": "summary",
         "summary_e": "summary",
+        "community_partner": "",
         "is_keynote": true,
+        "is_online": false,
         "started_at": 1571446800,
         "ended_at": 1571450400,
         "room": "R2",
@@ -506,7 +518,9 @@
       "topic_e": "Est aliquid sed eum quae in.",
       "summary": "summary",
       "summary_e": "summary",
+      "community_partner": "",
       "is_keynote": true,
+      "is_online": true,
       "started_at": 1571446800,
       "ended_at": 1571450400,
       "room": "R2",
