@@ -26,7 +26,9 @@
 - topic_e(string): 議程英文名稱
 - summary(string): 議程簡介中文
 - summary_e(string): 議程簡介英文
+- community_partner(string): 合作社群
 - is_keynote(bool): 是否為 keynote ，色碼為 `#ff4492`
+- is_online(bool): 是否為遠距議程
 - started_at(timestamp): 議程開始時間，單位為秒
 - ended_at(timestamp): 議程開始時間，單位為秒
 - room(string): 講師議程
@@ -89,7 +91,9 @@
           "topic_e": "Est aliquid sed eum quae in.",
           "summary": "Repudiandae voluptatem placeat qui modi quia dignissimos. Tempora in ex saepe officiis sunt laborum. Quia eum qui totam dolor numquam.",
           "summary_e": "Aut ducimus odio distinctio vitae. Iure delectus quam voluptatem iste reiciendis nisi et. Temporibus nihil repellat earum molestiae. Autem ut a eveniet omnis quidem. Eveniet ducimus et quaerat. Vitae porro sed molestiae architecto veritatis modi. Earum et consequuntur ut qui quas ex et. Neque eos dolore ut maiores perspiciatis dolor.",
+          "community_partner": "",
           "is_keynote": true,
+          "is_online": false,
           "started_at": "1571446800",
           "ended_at": "1571450400",
           "room": "R2",
@@ -154,7 +158,9 @@
 - topic_e(string): 議程英文名稱
 - summary(string): 議程簡介中文
 - summary_e(string): 議程簡介英文
+- community_partner(string): 合作社群
 - is_keynote(bool): 是否為 keynote ，色碼為 `#ff4492`
+- is_online(bool): 是否為遠距議程
 - started_at(timestamp): 議程開始時間，單位為秒
 - ended_at(timestamp): 議程開始時間，單位為秒
 - room(string): 講師議程
@@ -218,7 +224,9 @@
         "topic_e": "Est aliquid sed eum quae in.",
         "summary": "Repudiandae voluptatem placeat qui modi quia dignissimos. Tempora in ex saepe officiis sunt laborum. Quia eum qui totam dolor numquam.",
         "summary_e": "Aut ducimus odio distinctio vitae. Iure delectus quam voluptatem iste reiciendis nisi et. Temporibus nihil repellat earum molestiae. Autem ut a eveniet omnis quidem. Eveniet ducimus et quaerat. Vitae porro sed molestiae architecto veritatis modi. Earum et consequuntur ut qui quas ex et. Neque eos dolore ut maiores perspiciatis dolor.",
+        "community_partner": "MO",
         "is_keynote": true,
+        "is_online": false,
         "started_at": "1571446800",
         "ended_at": "1571450400",
         "room": "R2",

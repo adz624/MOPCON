@@ -29,6 +29,7 @@ class BaseSessionController extends Controller
         'ended_at',
         'tags',
         'is_keynote',
+        'is_online',
         'recordable',
         'level',
         'room',
@@ -36,6 +37,7 @@ class BaseSessionController extends Controller
         'sponsor_id',
         'summary',
         'summary_e',
+        'community_partner',
     ];
     protected $locations = [
         'R1' => '3F一廳',
