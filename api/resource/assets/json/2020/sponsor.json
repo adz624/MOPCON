@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_31",
+    "name": "祐生研究基金會",
+    "name_e": "Archilife Research Foundation",
+    "sponsor_id": 31,
+    "about_us": "祐生研究基金會自 1987 年推動建築與環境永續發展之研究開始，推動長期的知識累積與人才培養。除了過去建築、環境、生態、健康與資訊社會與文化等面向之碩士論文獎助主題外，本會目前定期舉辦的聯誼會及讀書會，強化祐生成員的知識密度。 其後，於 2011 年起，本會持續針對國內開源活動進行贊助，也針對國內獨立遊戲開發者，推動知識與資訊分享聚會，並贊助台灣開發者前往特定國際遊戲競賽，期能幫助國內相關社群之發展。",
+    "about_us_e": "Since 1987, the Archilife Research Foundation started long-term researches in architecture, sustainability, and go on to other areas of knowledge integration. Efforts including previously giving scholarships in aforementioned areas, and currently holding reading group meetings and communion events for knowledge keepers to better our understandings of the world. Starting from 2011, we also have been sponsoring various open source related events, holding meetups and game jams for local game developers’ community, and giving out scholarships to support indie game teams and encourage them to go to international game festivals.",
+    "facebook_url": "",
+    "official_website": "https://www.archilife.org",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_32",
+    "name": "KKBOX",
+    "name_e": "KKBOX",
+    "sponsor_id": 32,
+    "about_us": "KKBOX 是由一群熱愛技術及音樂的工程師於 2005 年創立的品牌，以獨創的雲端技術提供音樂串流服務，讓使用者透過網路即可播放儲存在雲端的歌曲；並以技術加密媒體檔成功為線上音樂和智慧財產權取得完美的平衡，打開了線上音樂合法授權的版權觀念，更成為亞洲市場的標竿品牌。至今，KKBOX 擁有超過 5000 萬首曲目，服務地區包括台灣、香港、日本、新加坡及馬來西亞。KKBOX 服務在電腦、智慧型手機或其他行動裝置上都能使用，不只能線上聽音樂，還能下載到裝置中離線收聽，給消費者方便自由、沒有界限的音樂世界！",
+    "about_us_e": "KKBOX, Asia's leading music streaming service, was established in 2005 by a group of Taiwanese software programmers with a shared passion for technology and music. KKBOX features over 50 million legal tracks and is currently available in Taiwan, Hong Kong, Japan, Singapore and Malaysia with over 10 million users. We are committed to creating a truly immersive online music experience to users, and to empower artists and their music through technological innovation.",
+    "facebook_url": "https://www.facebook.com/InnovationChat/",
+    "official_website": "https://www.kkbox.com/",
+    "sponsor_type": "hacker",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_33",
+    "name": "甲骨文公司台灣分公司 MySQL",
+    "name_e": "Oracle",
+    "sponsor_id": 33,
+    "about_us": "With more than 380.000 customers—including 100 of the Fortune 100—and with deployments across a wide variety of industries in more than 145 countries around the globe, Oracle offers an optimized and fully integrated stack of business HW&SW.",
+    "about_us_e": "甲骨文在全球有超過 380,000 個客戶(包括所有全球百大企業),且客戶群跨越各種產業,145 個國家.甲骨文為客戶提供優化且完全整合的硬體和軟體方案",
+    "facebook_url": "https://twitter.com/mysql",
+    "official_website": "https://www.mysql.com",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_35",
+    "name": "台灣敏捷協會",
+    "name_e": "Agile Community Taiwan",
+    "sponsor_id": 35,
+    "about_us": "我們致力於提供並推廣敏捷價值、思維與務實導向理念，是內政部正式登記的社團法人協會，藉由推動敏捷文化引擎以驅動轉化、改善台灣這塊土地上的人們的生活、學習、社群、產業與經濟。",
+    "about_us_e": "Agile Community Taiwan (ACT) is a non-profit organization dedicated to promoting and Appling the agile value, principles and Practices to improve the learning of individuals and communities based in Taiwan. Forming the agile as a cultural engine for vibrant transformation in our lives, schools, communities, and economy.",
+    "facebook_url": "https://www.facebook.com/AgileTourTaipei",
+    "official_website": "https://www.act.club.tw/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_40",
+    "name": "奧義智慧科技",
+    "name_e": "CyCraft",
+    "sponsor_id": 40,
+    "about_us": "奧義智慧科技是世界領先 AI 資安公司，以獨家創新的 CyCraft AI 技術自動化資安防護，獲得逾五十個政府機關、警政、國防單位，以及三成金融機構、數十家關鍵領域龍頭企業、財星 500 大企業的信賴及採用，市佔率國內第一。2020 年獲頒國際網路安全卓越獎的「亞洲最快速成長資安公司」及於日本最大 ICT 展會 Interop Tokyo 中奪下資安最大賞等獎項。",
+    "about_us_e": "CyCraft secures government agencies, Fortune Global 500 firms, top banks and financial institutions, critical infrastructure, airlines, telecommunications, hi-tech firms, and powers security operation centers with our proprietary and multi-award-winning AI-driven MDR/EDR/NDR/XDR, Threat Intelligence, Health Check/CA, IR, and Secure From Home services.",
+    "facebook_url": "https://www.facebook.com/cycrafttechnology/",
+    "official_website": "https://www.cycarrier.com/",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_42",
+    "name": "如梭世代有限公司",
+    "name_e": "ZUSO Generation",
+    "sponsor_id": 42,
+    "about_us": "如梭世代 資安團隊擁有 10 年以上滲透測試經驗。\n 在資訊安全的防護上，為企業量身定制客製化方案，在風險中企圖為企業找回行業領先優勢、建立品牌形象地位。\n 我們提供了不同角度來檢視企業間的資訊安全，秉持「最好的防禦就是攻擊」 的信念。                                                \n 市面上提供大同小異的服務，而我們提供小同大異的解決方案。\nZUSO Generation 將與您永遠在同一陣線，為您翻開「幸福永遠」的新篇章！",
+    "about_us_e": "Our team members have more than 10 years PT experiences. \nIn Cyber Security areas, we provide a diversity of the most optimal portfolio of solutions to your budget preference and for your selection.\nDefend as the majority of companies may, in the aspects of hackers we consider it to the contrary; say, \"\"THE BEST DEFENSE IS OFFENSE.\"\"\nOther companies provide general services while we provide more customized and in-depth services for you.\nWe are your trustworthiest ally going by name... ZUSO Generation that is always on the same page with you and turns over a new leaf of \"\"happily-ever-after\"\" for you!",
+    "facebook_url": "https://www.facebook.com/ZUSOGeneration",
+    "official_website": "https://zuso.ai/",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_44",
+    "name": "凱鈿行動科技",
+    "name_e": "Kdan Mobile Software Ltd.",
+    "sponsor_id": 44,
+    "about_us": "凱鈿行動科技 (Kdan Mobile)是國際化的軟體服務(SaaS)廠商，在台灣、中國、美國及日本皆設有據點，全球員工 150 人。凱鈿創立於 2009 年，致力提供生產力與創造力系列工具，包含 Document 365 PDF 文件編輯、Creativity 365 多媒體內容創作、點點簽(DottedSign)電子簽名以及 Kdan Cloud 雲端共享服務，至今全球已有破 2 億的下載量。個人或企業可以透過凱鈿的服務隨時隨地在各種裝置上管理大量訊息、生成多媒體內容和分享想法，提升工作效率。",
+    "about_us_e": "Kdan Mobile was founded in 2009 with a mission to empower modern professionals to better leverage their productivity and unleash their creativity. Kdan Mobile is a global SaaS provider, whose work is supported by over 200 million downloads, and over 8 million active members worldwide. Their solutions include an e-signature service and a portfolio of different productivity and creativity-related tools. Kdan Mobile is headquartered in Taiwan, with operations in China, the U.S., and Japan.",
+    "facebook_url": "https://www.facebook.com/KdanMobileTW",
+    "official_website": "https://www.kdanmobile.com/zh-tw",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_45",
+    "name": "25sprout 新芽網路股份有限公司",
+    "name_e": "25sprout, LLC.",
+    "sponsor_id": 45,
+    "about_us": "25sprout 專注於最新的 UI/UX 設計、網路技術與雲端應用的新創公司，客戶包含各產業的領導性品牌。主要產品包括企業級雲端問卷服務 SurveyCake 和強大的內容管理後台 BackStage。在數位的領域裡，我們專注於提供給客戶最有效的解決方案，透過友善的介面設計，以及出色的程式技術團隊，共同打造出優異的專案和數位產品，幫助客戶在網路世界裡，奠定最穩固的基礎。",
+    "about_us_e": "25sprout is a startup that focuses on the latest UI/UX design, network technology, and cloud applications. Our clients include leading brands of Fortune 500. The main services of 25sprout include SurveyCake, an enterprise-level cloud survey service which focuses more on the answers and interprets data into meaningful insights, and Backstage, the powerful backend content management system. We strive to provide the most effective solutions for our customers in the digital field. We aim to create excellent projects and digital services through the combination of friendly interface design and outstanding technical and customized solutions, helping our clients lay the most solid foundation in the digital world.",
+    "facebook_url": "https://www.facebook.com/25sprout",
+    "official_website": "https://www.25sprout.com/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_47",
+    "name": "Oursky",
+    "name_e": "Oursky",
+    "sponsor_id": 47,
+    "about_us": "Oursky 由一群熱愛行動科技的開發者於 2008 年在香港創立，目前在香港及台北設有辦公室，部分團隊成員在不同國家遠端工作。我們以開發開源軟體解決方案為己任，協助企業進行數位轉型，以及幫助開發者打造安全及重視隱私的軟體。我們的技術團隊致力打造各種創新數位產品，為使用者提供優秀的用戶體驗，客戶包括嶄露頭角的新創公司，以及大型企業例如渣打銀行、屈臣氏集團及 Nvidia 等等。 \n\n 瞭解更多：https://oursky.com\n\n 加入我們：https://jobs.oursky.com/tw",
+    "about_us_e": "Oursky is founded in Hong Kong by a group of passionate developers who love mobile tech since 2008. We are based in Hong Kong and Taipei, while some team members are working remotely from different locations. Our mission is to create open-source solutions to help enterprises in digital transformation and support developers in building secure and privacy-aware software. Our Professional Services team builds creative digital products with great user experience for clients that range from rockstar startups to multinationals like Standard Chartered Bank, A.S. Watson Group, and Nvidia.\n\nWe are dedicated to open-source with our cool flagship products: Authgear, FormExtractor and Gesprek. Authgear is an open-source auth-as-a-service solution for web and mobile applications, while Gesprek is an open-source social commerce software for SMEs. We also have a machine learning team that provides machine learning and data warehouse services, and our FormExtractor is an API service that extracts structured information from mobile device-captured documents or forms.\n\nWe are a technology-oriented and developer-driven team who value craftsmanship and being socially progressive. Welcome to exchange open-source ideas with us!\n\nLearn more about us: https://oursky.com\n\nJoin our team: https://jobs.oursky.com",
+    "facebook_url": "https://www.facebook.com/oursky.hk/",
+    "official_website": "https://oursky.com",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_49",
+    "name": "Slasify",
+    "name_e": "Slasify",
+    "sponsor_id": 49,
+    "about_us": "Slasify 針對遠距工作趨勢而打造的一站式平台，我們提供遠距人才媒合、全球跨境薪轉、跨境人事代理、以及權益稅務合規化等服務，服務涵蓋全球超過 200 個國家，為超過 100 個企業部署人力到超過 100 個以上的城市和地區。",
+    "about_us_e": "Slasify is a Singapore based one-stop online remote workforce management platform started in 2016. Slasify offers solutions to help both remote workers and clients to mitigate the risk on remote working projects. Slasify's main focuses are on the virtual and team-oriented working styles.\n\nWe believe that key to success in any remote working model is in flexibility and efficiency and we have the tools to make that happen. With our up-to-date web site design, we have created a user friendly and easy to operate website to manage your remote workforce management needs. We provide not only the remote job boards, but also can conduct global payroll with multiple currencies and staffing services to our clients around the globe. Working with a remote team to deliver outstanding results has never be so easy!",
+    "facebook_url": "https://www.facebook.com/slasify",
+    "official_website": "https://slasify.com/en/",
+    "sponsor_type": "remote_developer",
+    "career_information": ""
+  }
+]
