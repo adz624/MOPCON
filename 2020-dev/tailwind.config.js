@@ -54,7 +54,7 @@ module.exports = {
       orange: {
         100: '#fffaf0',
         200: '#feebc8',
-        300: '#fbd38d',
+        300: '#f1896f', // schedule card border
         400: '#f6ad55',
         500: '#ed8936',
         600: '#dd6b20',
@@ -76,7 +76,7 @@ module.exports = {
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
-        300: '#9ae6b4',
+        300: '#8ed797', // schedule card border
         400: '#68d391',
         500: '#48bb78',
         600: '#38a169',
@@ -98,7 +98,7 @@ module.exports = {
       blue: {
         100: '#ebf8ff',
         200: '#bee3f8',
-        300: '#90cdf4',
+        300: '#377afb', // schedule card border
         400: '#63b3ed',
         500: '#051f4c', // community, sponsor block bg
         600: '#3182ce',
