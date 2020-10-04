@@ -10,13 +10,14 @@ use App\Http\Controllers\ApiTrait;
 class BaseSponsorController extends Controller
 {
     use ApiTrait;
-    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support', 'ita_support', 'sscs_support', 'edbkcg'];
+    private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'remote_developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support', 'ita_support', 'sscs_support', 'edbkcg'];
     private $displayName = [
         ['name' => 'Tony Stark'],
         ['name' => 'Bruce Wayne'],
         ['name' => 'Hacker'],
         ['name' => 'Geek'],
         ['name' => 'Developer'],
+        ['name' => 'Remote Developer'],
         ['name' => '教育贊助', 'name_e' => 'Education Sponsor'],
         ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
         ['name' => '協辦單位', 'name_e' => 'Co Organizer'],
