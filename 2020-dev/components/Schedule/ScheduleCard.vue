@@ -135,10 +135,10 @@ h2 {
   @apply flex flex-col;
   .img {
     transform: rotate(45deg);
-    @apply w-6 h-6 bg-indigo-300 rounded-md mr-4;
+    @apply w-6 h-6 bg-indigo-300 rounded-md mr-4 overflow-hidden;
   }
   img {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scale(1.2);
   }
   li {
     @apply mb-4;
