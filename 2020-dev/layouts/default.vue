@@ -3,18 +3,21 @@
     <Navbar :nav-open="navOpen" :inner-width="innerWidth" :sub-nav-open="subNavOpen" :is-mobile="isMobile" @update="closeNav" />
     <div class="main">
       <nuxt />
+      <NoticeModal />
     </div>
     <Footer />
   </div>
 </template>
 
 <script>
+import NoticeModal from '~/components/NoticeModal'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    NoticeModal
   },
   data () {
     return {
