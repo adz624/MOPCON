@@ -6,9 +6,10 @@
     <ul class="flex flex-col">
       <li
         v-for="speaker in Array.isArray(speakers) ? speakers : [speakers]"
-        :key="speaker.speaker_id"
-        class="flex items-center pt-3 flex-col md:flex-row text-center md:text-left mb-2"
+        :key="'speaker' + speaker.speaker_id"
+        class="flex items-center pt-3 flex-col md:flex-row text-center md:text-left mb-2 cursor-pointer"
         :class="{'pb-4': !speakerContactVisible(speaker)}"
+        @click="linkToSpeaker(speaker.speaker_id)"
       >
         <div class="flex flex-col items-start">
           <div v-if="speaker.img.web" class="img-wrap">
@@ -23,6 +24,12 @@
         </div>
       </li>
     </ul>
+    <a v-if="!notitle && sponsorId !== 0" class="mt-4 block" :href="`/2020/sponsor/${sponsorId}`">
+      <h2 class="mb-6">
+        贊助廠商
+      </h2>
+      <img :src="sponsorInfo.logo_path" class="logo logo-default" alt="">
+    </a>
   </section>
 </template>
 
@@ -42,11 +49,27 @@ export default {
     notitle: {
       type: Boolean,
       default: false
+    },
+    sponsorInfo: {
+      type: Object,
+      default: () => {}
+    },
+    sponsorId: {
+      type: Number,
+      default: 0
+    }
+  },
+  data () {
+    return {
+      imgUrl: ''
     }
   },
   methods: {
     speakerContactVisible (speaker) {
       return Object.entries(speaker).some(([key, value]) => key.startsWith('link_') && value)
+    },
+    linkToSpeaker (id) {
+      location.href = `/2020/speaker/${id}`
     }
   }
 }
@@ -91,6 +114,13 @@ export default {
     .text-wrap {
       height: 135px;
     }
+  }
+  .logo-default {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    transform: rotate(0deg) scale(1);
+    @apply bg-purple-300 inline-block;
   }
 }
 </style>
