@@ -28,7 +28,7 @@ export default {
       dialogShow: false
     }
   },
-  created () {
+  mounted () {
     this.dialogShow = this.$cookies.get('covid19Modal') ? !this.$cookies.get('covid19Modal') === 'already-seen' : true
   },
   methods: {
