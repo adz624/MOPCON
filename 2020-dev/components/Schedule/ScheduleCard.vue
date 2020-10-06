@@ -32,7 +32,6 @@
         </button>
       </li>
     </ul>
-
     <ul v-if="!noHashTag" class="hashtag-wrap">
       <li v-if="roomInfo.sponsor_id !== 0">
         <a href=""># 夥伴議程</a>
@@ -42,6 +41,12 @@
       </li>
       <li v-if="roomInfo.isBroadCast">
         <a href="#"># Panel</a>
+      </li>
+      <li v-if="roomInfo.community_partner !== ''">
+        <a href="#"># {{ roomInfo.community_partner }}</a>
+      </li>
+      <li v-if="roomInfo.is_online">
+        <a href="#"># 遠距議程</a>
       </li>
     </ul>
   </div>
@@ -135,10 +140,10 @@ h2 {
   @apply flex flex-col;
   .img {
     transform: rotate(45deg);
-    @apply w-6 h-6 bg-indigo-300 rounded-md mr-4;
+    @apply w-6 h-6 bg-indigo-300 rounded-md mr-4 overflow-hidden;
   }
   img {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scale(1.2);
   }
   li {
     @apply mb-4;

@@ -120,7 +120,8 @@ module.exports = {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'cookie-universal-nuxt', ['cookie-universal-nuxt', { parseJSON: true }]
   ],
   sitemap: {
     path: '/sitemap.xml',
@@ -137,6 +138,7 @@ module.exports = {
     }
   },
   env: {
+    covid_cookie_expire: process.env.COVID_COOKIE_EXPIRE || 3,
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
     buyTicketUrl: '',
     // route 變數前面加 route_
