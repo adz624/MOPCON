@@ -299,7 +299,7 @@
     "topic_e": "",
     "summary": "CSS 誕生到至今 26 個年頭，為了符合瀏覽器使用者的需求而不停演化。本議程將帶領會眾，探討近年設計模式與框架的演進，深入了解 CSS/SCSS Component、Utility 發展史，同時將分享 Bootstrap 5、Tailwind CSS 來介紹未來 CSS 架構趨勢。",
     "summary_e": "",
-    "community_partner": "高雄前端社群",
+    "community_partner": "高雄前端社群(test)",
     "is_keynote": false,
     "is_online": false,
     "recordable": true,
@@ -1193,6 +1193,7 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
+      "Panel",
       "社會參與",
       "Business Thinking",
       "職涯發展"
@@ -1234,6 +1235,7 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
+      "Panel",
       "Business Thinking",
       "社會參與",
       "職涯發展"
@@ -1275,6 +1277,7 @@
     "recordable": true,
     "level": "Basic",
     "tags": [
+      "Panel",
       "社會參與",
       "職涯發展",
       "Business Thinking"
@@ -1322,7 +1325,7 @@
     "ended_at": 1603528800,
     "room": "R1",
     "floor": "3F",
-    "sponsor_id": 0
+    "sponsor_id": 32
   },
   {
     "name": "陳仲寬",
@@ -1363,6 +1366,6 @@
     "ended_at": 1603532100,
     "room": "R2",
     "floor": "4F",
-    "sponsor_id": 0
+    "sponsor_id": 40
   }
 ]
