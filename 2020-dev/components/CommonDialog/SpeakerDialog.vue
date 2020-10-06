@@ -20,10 +20,10 @@
         @handle-tag-click="toggleTag($event); $emit('update:visible', false);"
       />
 
-      <!-- <section class="sponser">
+      <section v-if="speaker.sponsor_id !== 0" class="sponser">
         <h2>贊助廠商</h2>
-        <img class="logo logo-kkbox">
-      </section> -->
+        <img :src="getSponsorInfo(speaker.sponsor_id)" class="logo logo-kkbox">
+      </section>
     </div>
     <div slot="footer">
       <share-btn :speaker="speaker" :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
@@ -61,6 +61,7 @@ export default {
   },
   data () {
     return {
+      imgUrl: '',
       btnListShow: false
     }
   },
@@ -72,6 +73,15 @@ export default {
   methods: {
     parseSummary (summary) {
       return summary.replace(/\n/gi, '<br>')
+    },
+    getSponsorInfo (id) {
+      this.$axios.$get(`/api/2020/sponsor?sponsor_id=${id}`)
+        .then(({ success, data, message }) => {
+          if (success) {
+            this.imgUrl = data[0].logo_path
+          }
+        })
+      return this.imgUrl
     }
   }
 }
