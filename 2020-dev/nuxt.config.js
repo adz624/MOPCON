@@ -186,7 +186,6 @@ module.exports = {
     // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
     routes () {
       const pages = []
-      pages.push('/schedule')
       const speakers = axios.get(`${process.env.BASE_URL}/api/2020/speaker`).then((res) => {
         pages.push('/speaker')
         res.data.data.forEach((speaker) => {
@@ -201,7 +200,19 @@ module.exports = {
           })
         })
       })
-      return Promise.all([speakers, sponsors]).then(() => {
+      const flatDeep = (arr, d = 1) => {
+        return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+          : arr.slice()
+      }
+      const schedules = axios.get(`${process.env.BASE_URL}/api/2020/session`).then((res) => {
+        pages.push('/schedule')
+        const allRooms = flatDeep(res.data.data.map(item => item.period.map(s => s.room)), 2)
+        allRooms.forEach((room) => {
+          pages.push(`/schedule/${room.session_id}`)
+        })
+      })
+
+      return Promise.all([speakers, sponsors, schedules]).then(() => {
         return pages
       })
     }
