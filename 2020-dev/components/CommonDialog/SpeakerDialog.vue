@@ -67,7 +67,7 @@ export default {
   },
   computed: {
     shareUrl () {
-      return process.client ? `${window.location.origin}/2020/schedule/${this.speaker.session_id}` : ''
+      return process.client ? `${window.location.origin}/2020/speaker/${this.speaker.speaker_id}` : ''
     }
   },
   methods: {
