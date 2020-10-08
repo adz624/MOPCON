@@ -13,7 +13,12 @@
         @handle-tag-click="toggleTag($event); $emit('update:visible', false);"
       />
 
-      <speaker-info :speakers="speaker.speakers" class="mt-8 mb-4" />
+      <speaker-info
+        :speakers="speaker.speakers"
+        :sponsor-id="speaker.sponsor_id"
+        :sponsor-info="speaker.sponsor_info"
+        class="mt-8 mb-4"
+      />
     </div>
     <div slot="footer">
       <share-btn :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
@@ -57,7 +62,7 @@ export default {
   },
   computed: {
     shareUrl () {
-      return process.client ? `${window.location.origin}/2020${this.$route.path}/${this.speaker.session_id}` : ''
+      return process.client ? `${window.location.origin}/2020/schedule/${this.speaker.session_id}` : ''
     }
   },
   methods: {
