@@ -72,13 +72,19 @@ class BaseBoardController extends Controller
     private const TAG_CLASS_SECONDARY = 'tag-badge-outline-secondary';
     private const TAG_CLASS_THIRD = 'tag-badge-outline-third';
 
-    private const PLAY_TIME_SESSION = 60;
-    private const PLAY_TIME_AD = 5;
-    private const PLAY_TIME_MAP = 5;
-    private const PLAY_TIME_TOTAL = 180;
-    private const SPONSOR_AD_NUM_A_TIME = 5;
-    private const PLAY_LIST_LENGTH_MAXIMUM = 14;
+    private const OUTROOM_PLAY_TIME_SESSION = 60;
+    private const OUTROOM_PLAY_TIME_AD = 5;
+    private const OUTROOM_PLAY_TIME_MAP = 5;
+    private const OUTROOM_PLAY_TIME_TOTAL = 180;
+    private const OUTROOM_SPONSOR_AD_NUM_A_TIME = 5;
+    private const OUTROOM_PLAY_LIST_LENGTH_MAXIMUM = 14;
 
+    private const INROOM_PLAY_TIME_SESSION = 30;
+    private const INROOM_PLAY_TIME_AD = 10;
+    private const INROOM_PLAY_TIME_MAP = 5;
+    private const INROOM_PLAY_TIME_TOTAL = 180;
+    private const INROOM_SPONSOR_AD_NUM_A_TIME = 10;
+    private const INROOM_PLAY_LIST_LENGTH_MAXIMUM = 14;
 
     private $board;
     private $sponsor_ads;
@@ -125,10 +131,16 @@ class BaseBoardController extends Controller
     public function index($room, Request $request)
     {
         $now = $request->input('now', 0);
+        $type = $request->input('type', 'outroom');
+
+        if ($type !== 'inroom' && $type !== 'outroom') {
+            return $this->returnError('Bad request');
+        }
+
         $this->outputBoard = $this->getOutputSession($this->board, $now);
         $outputSessoion = $this->formatSession($this->outputBoard, $room);
 
-        $content = $this->sortCarouselList($outputSessoion, $now);
+        $content = $this->sortCarouselList($outputSessoion, $type);
 
         global $app;
         $request = Request::create('/api/' . $this-> year . '/news', 'GET');
@@ -154,10 +166,35 @@ class BaseBoardController extends Controller
      * 排列輪播清單
      *
      * @param array $outputSessoion
+     * @param string $type
      * @return array
      */
-    private function sortCarouselList(array $outputSessoion)
+    private function sortCarouselList(array $outputSessoion, string $type)
     {
+        $is_inroom = $type === 'inroom';
+
+        $sessionPlayTime = 0;
+        $adPlayTime = 0;
+        $mapPlayTime = 0;
+        $totalPlayTime = 0;
+        $sponsorAdNumberPerTime = 0;
+        $maxPlayListLength = 0;
+        if ($is_inroom) {
+            $sessionPlayTime = BaseBoardController::INROOM_PLAY_TIME_SESSION;
+            $adPlayTime = BaseBoardController::INROOM_PLAY_TIME_AD;
+            $mapPlayTime = BaseBoardController::INROOM_PLAY_TIME_MAP;
+            $totalPlayTime =BaseBoardController::INROOM_PLAY_TIME_TOTAL;
+            $sponsorAdNumberPerTime = BaseBoardController::INROOM_SPONSOR_AD_NUM_A_TIME;
+            $maxPlayListLength = BaseBoardController::INROOM_PLAY_LIST_LENGTH_MAXIMUM;
+        } else {
+            $sessionPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_SESSION;
+            $adPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_AD;
+            $mapPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_MAP;
+            $totalPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_TOTAL;
+            $sponsorAdNumberPerTime = BaseBoardController::OUTROOM_SPONSOR_AD_NUM_A_TIME;
+            $maxPlayListLength = BaseBoardController::OUTROOM_PLAY_LIST_LENGTH_MAXIMUM;
+        }
+
         $list = [];
 
         $map = [
@@ -168,38 +205,38 @@ class BaseBoardController extends Controller
         $ad_num = count($this->sponsor_ads);
         $ad_index = rand(1, $ad_num) - 1;
         $total_time = 0;
-        while ($total_time < BaseBoardController::PLAY_TIME_TOTAL) {
+        while ($total_time < $totalPlayTime) {
             $list[] = [
                 'type' => 'map',
-                'play_time' => BaseBoardController::PLAY_TIME_MAP,
+                'play_time' => $mapPlayTime,
                 'data' => $map,
             ];
-            $total_time += BaseBoardController::PLAY_TIME_MAP;
+            $total_time += $mapPlayTime;
 
             if (!empty($outputSessoion)) {
                 $list[] = [
                     'type' => 'session',
-                    'play_time' => BaseBoardController::PLAY_TIME_SESSION,
+                    'play_time' => $sessionPlayTime,
                     'data' => $outputSessoion,
                 ];
-                $total_time += BaseBoardController::PLAY_TIME_SESSION;
+                $total_time += $sessionPlayTime;
             }
 
-            for ($i = 0; $i < BaseBoardController::SPONSOR_AD_NUM_A_TIME; $i++) {
+            for ($i = 0; $i < $sponsorAdNumberPerTime; $i++) {
                 $list[] = [
                     'type' => 'ad',
-                    'play_time' => BaseBoardController::PLAY_TIME_AD,
+                    'play_time' => $adPlayTime,
                     'data' => $this->sponsor_ads[$ad_index++],
                 ];
 
                 if ($ad_index === $ad_num) {
                     $ad_index = 0;
                 }
-                $total_time += BaseBoardController::PLAY_TIME_AD;
+                $total_time += $adPlayTime;
             }
             $total_num = count($list);
-            if ($total_num > BaseBoardController::PLAY_LIST_LENGTH_MAXIMUM) {
-                $slice_num = $total_num - BaseBoardController::PLAY_LIST_LENGTH_MAXIMUM;
+            if ($total_num > $maxPlayListLength) {
+                $slice_num = $total_num - $maxPlayListLength;
                 for ($i=1; $i <= $slice_num; $i++) {
                     unset($list[$total_num - $i]);
         }
