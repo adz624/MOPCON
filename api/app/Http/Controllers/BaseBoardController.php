@@ -183,7 +183,7 @@ class BaseBoardController extends Controller
             $sessionPlayTime = BaseBoardController::INROOM_PLAY_TIME_SESSION;
             $adPlayTime = BaseBoardController::INROOM_PLAY_TIME_AD;
             $mapPlayTime = BaseBoardController::INROOM_PLAY_TIME_MAP;
-            $totalPlayTime =BaseBoardController::INROOM_PLAY_TIME_TOTAL;
+            $totalPlayTime = BaseBoardController::INROOM_PLAY_TIME_TOTAL;
             $sponsorAdNumberPerTime = BaseBoardController::INROOM_SPONSOR_AD_NUM_A_TIME;
             $maxPlayListLength = BaseBoardController::INROOM_PLAY_LIST_LENGTH_MAXIMUM;
         } else {
@@ -237,9 +237,9 @@ class BaseBoardController extends Controller
             $total_num = count($list);
             if ($total_num > $maxPlayListLength) {
                 $slice_num = $total_num - $maxPlayListLength;
-                for ($i=1; $i <= $slice_num; $i++) {
+                for ($i = 1; $i <= $slice_num; $i++) {
                     unset($list[$total_num - $i]);
-        }
+                }
                 break;
             }
         }
@@ -420,7 +420,7 @@ class BaseBoardController extends Controller
 
     public function imagesView($type, $name)
     {
-        $dir = $this->imgPath . 'board/'. $type . '/' . $name . '.*';
+        $dir = $this->imgPath . 'board/' . $type . '/' . $name . '.*';
         $path = glob($dir);
         $path = end($path);
         $type = mime_content_type($path);
