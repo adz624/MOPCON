@@ -116,6 +116,10 @@
                     {
                         "session_id": 2020011,
                         "speaker_id": 20
+                    },
+                    {
+                        "session_id": 2020012,
+                        "speaker_id": 57
                     }
                 ]
             },
@@ -142,7 +146,10 @@
                     },
                     {
                         "session_id": 2020015,
-                        "speaker_id": 56
+                        "speaker_id": [
+                            55,
+                            56
+                        ]
                     }
                 ]
             },
