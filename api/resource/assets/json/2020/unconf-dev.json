@@ -1,159 +1,171 @@
 [
   {
-    "date": 1571414400,
+    "date": 1603468800,
     "period": [
       {
-        "started_at": 1571450400,
-        "ended_at": 1571452200,
+        "started_at": 1603503000,
+        "ended_at": 1603504800,
         "event": "",
         "room": {
-          "name": "",
+          "name": "公關組 - MOPCON",
           "name_e": "",
-          "topic": "敬請期待",
+          "topic": "貴賓接待及記者會",
+          "topic_e": "",
+          "session_id": 2020100
+        }
+      },
+      {
+        "started_at": 1603504800,
+        "ended_at": 1603506600,
+        "event": "",
+        "room": {
+          "name": "敬啟期待",
+          "name_e": "",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020101
         }
       },
       {
-        "started_at": 1571452200,
-        "ended_at": 1571454000,
+        "started_at": 1603506600,
+        "ended_at": 1603508400,
         "event": "",
         "room": {
-          "name": "Michael",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "High Availablity In Kubernetes",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020102
         }
       },
       {
-        "started_at": 1571454000,
-        "ended_at": 1571455800,
+        "started_at": 1603508400,
+        "ended_at": 1603510200,
         "event": "",
         "room": {
-          "name": "蔡仁勝 - SSCS",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "建構你的數位孿生",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020103
         }
       },
       {
-        "started_at": 1571455800,
-        "ended_at": 1571457600,
+        "started_at": 1603510200,
+        "ended_at": 1603512000,
         "event": "",
         "room": {
-          "name": "Scott Liao - 104",
+          "name": "Meet.jobs - MOPCON",
           "name_e": "",
-          "topic": "HybridCloud 一條通吃的 CI / CD Pipeline",
+          "topic": "MOPCON X Meet.jobs",
           "topic_e": "",
           "session_id": 2020104
         }
       },
       {
-        "started_at": 1571457600,
-        "ended_at": 1571461200,
-        "event": "午餐 Lunch",
-        "room": {}
+        "started_at": 1603512000,
+        "ended_at": 1603515600,
+        "event": "午餐",
+        "room": []
       },
       {
-        "started_at": 1571461200,
-        "ended_at": 1571463000,
+        "started_at": 1603515600,
+        "ended_at": 1603517400,
+        "event": "BOF",
+        "room": []
+      },
+      {
+        "started_at": 1603517400,
+        "ended_at": 1603519200,
         "event": "",
         "room": {
-          "name": "賴炫亦 - 捕夢網 PUMO",
-          "name_e": "Seven Lai - 捕夢網 PUMO",
-          "topic": "<script>alert('About XSS');</script>",
+          "name": "敬啟期待",
+          "name_e": "",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020105
         }
       },
       {
-        "started_at": 1571463000,
-        "ended_at": 1571464800,
+        "started_at": 1603519200,
+        "ended_at": 1603521000,
         "event": "",
         "room": {
-          "name": "Anistar & Sunny - Verizon Media",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "關於面試這檔事",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020106
         }
       },
       {
-        "started_at": 1571464800,
-        "ended_at": 1571466600,
+        "started_at": 1603521000,
+        "ended_at": 1603522800,
         "event": "",
         "room": {
-          "name": "Neo Chen ＆ Jeff Chen - AWS",
+          "name": "Yenchen Huang - KKBOX",
           "name_e": "",
-          "topic": "Infrastructure as Code: 在談笑間快速建置一個 flask app",
+          "topic": "那些軟體品質之間的量子糾纏",
           "topic_e": "",
           "session_id": 2020107
         }
       },
       {
-        "started_at": 1571466600,
-        "ended_at": 1571468400,
+        "started_at": 1603522800,
+        "ended_at": 1603524600,
         "event": "",
         "room": {
-          "name": "吳承宇 - 天鏡科技",
-          "name_e": "Ayres - Sky Mirror",
-          "topic": "AI For Trading - Reinforcement Learning",
+          "name": "謝小雨 - IxDA Taiwan",
+          "name_e": "",
+          "topic": "團隊中的敏捷設計師",
           "topic_e": "",
           "session_id": 2020108
         }
       },
       {
-        "started_at": 1571468400,
-        "ended_at": 1571470200,
+        "started_at": 1603524600,
+        "ended_at": 1603526400,
         "event": "",
         "room": {
-          "name": "Thomas Huang - Microsoft",
-          "name_e": "Thomas Huang - Microsoft",
-          "topic": "MLOps!! 是在 Ops 幾點!!! 你有想過蛋花湯的感受嘛!!!!",
+          "name": "敬啟期待",
+          "name_e": "",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020109
         }
       },
       {
-        "started_at": 1571470200,
-        "ended_at": 1571472000,
-        "event": "下午茶",
-        "room": {}
-      },
-      {
-        "started_at": 1571472000,
-        "ended_at": 1571473800,
+        "started_at": 1603526400,
+        "ended_at": 1603528200,
         "event": "",
         "room": {
-          "name": "Hunter Liu",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "那些被遺忘的 Vue 3.0 RFCs",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020110
         }
       },
       {
-        "started_at": 1571473800,
-        "ended_at": 1571475600,
+        "started_at": 1603528200,
+        "ended_at": 1603530000,
         "event": "",
         "room": {
-          "name": "劉艾霖",
+          "name": "Cheng Wei Chen - GitLab",
           "name_e": "",
-          "topic": "遠距開發團隊的文化建立",
+          "topic": "GitLab Auto DevOps 大解析 - CI/CD 原來可以這樣做",
           "topic_e": "",
           "session_id": 2020111
         }
       },
       {
-        "started_at": 1571475600,
-        "ended_at": 1571477400,
+        "started_at": 1603530000,
+        "ended_at": 1603531800,
         "event": "",
         "room": {
-          "name": "Malo",
+          "name": "Cheng Wei Chen - GitLab",
           "name_e": "",
-          "topic": "Py 車達人",
+          "topic": "GitLab Auto DevOps 大解析 - CI/CD 原來可以這樣做",
           "topic_e": "",
           "session_id": 2020112
         }
@@ -161,115 +173,139 @@
     ]
   },
   {
-    "date": 1571500800,
+    "date": 1603555200,
     "period": [
       {
-        "started_at": 1571538600,
-        "ended_at": 1571540400,
+        "started_at": 1603589400,
+        "ended_at": 1603591200,
         "event": "",
         "room": {
-          "name": "Hermes",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "敏捷啟動！敏捷轉型的3種模式",
+          "topic": "",
+          "topic_e": "",
+          "session_id": 2020113
+        }
+      },
+      {
+        "started_at": 1603591200,
+        "ended_at": 1603593000,
+        "event": "",
+        "room": {
+          "name": "敬啟期待",
+          "name_e": "",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020114
         }
       },
       {
-        "started_at": 1571540400,
-        "ended_at": 1571542200,
+        "started_at": 1603593000,
+        "ended_at": 1603594800,
         "event": "",
         "room": {
-          "name": "Lloyd - BiiLabs",
+          "name": "Hermes - 高雄敏捷",
           "name_e": "",
-          "topic": "Web 應用分散式帳本作數位身份驗証",
-          "topic_e": "DIDAuth: How do DLT & DID work with Open Web?",
+          "topic": "Be the Change，一年6.6萬公里！開啟南台灣票證公司的敏捷旅程",
+          "topic_e": "",
           "session_id": 2020115
         }
       },
       {
-        "started_at": 1571542200,
-        "ended_at": 1571544000,
+        "started_at": 1603594800,
+        "ended_at": 1603596600,
         "event": "",
         "room": {
-          "name": "趙永弘 - 捕夢網 PUMO",
-          "name_e": "Thomas Chao - 捕夢網 PUMO",
-          "topic": "善守者 敵不知其所攻",
+          "name": "敬啟期待",
+          "name_e": "",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020116
         }
       },
       {
-        "started_at": 1571544000,
-        "ended_at": 1571547600,
-        "event": "午餐 Lunch",
-        "room": {}
-      },
-      {
-        "started_at": 1571547600,
-        "ended_at": 1571549400,
+        "started_at": 1603596600,
+        "ended_at": 1603598400,
         "event": "",
         "room": {
-          "name": "Eric Pi - KKBOX",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "從消費者轉向開發者 2019 –- 談談 KKBOX 的開放 API 之路的第二年",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020117
         }
       },
       {
-        "started_at": 1571549400,
-        "ended_at": 1571551200,
+        "started_at": 1603598400,
+        "ended_at": 1603602000,
+        "event": "午餐",
+        "room": []
+      },
+      {
+        "started_at": 1603602000,
+        "ended_at": 1603603800,
         "event": "",
         "room": {
-          "name": "乾太",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "純靠北工程師架構談",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020118
         }
       },
       {
-        "started_at": 1571551200,
-        "ended_at": 1571553000,
+        "started_at": 1603603800,
+        "ended_at": 1603605600,
         "event": "",
         "room": {
-          "name": "Terence Huang",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "AI 模型可信嗎？模型調整的困境",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020119
         }
       },
       {
-        "started_at": 1571553000,
-        "ended_at": 1571554800,
+        "started_at": 1603605600,
+        "ended_at": 1603607400,
         "event": "",
         "room": {
-          "name": "Hash",
+          "name": "敬啟期待",
           "name_e": "",
-          "topic": "MOPCON 資訊組工作流程方法",
+          "topic": "",
           "topic_e": "",
           "session_id": 2020120
         }
       },
       {
-        "started_at": 1571554800,
-        "ended_at": 1571556600,
+        "started_at": 1603607400,
+        "ended_at": 1603609200,
         "event": "",
         "room": {
-          "name": "Ofa, Frank",
+          "name": "廖洧杰 - 火箭隊",
           "name_e": "",
-          "topic": "Data nomads - 遊民資料科學家甘苦談",
+          "topic": "軟體工程師養成計畫通",
           "topic_e": "",
           "session_id": 2020121
         }
       },
       {
-        "started_at": 1571556600,
-        "ended_at": 1571558400,
+        "started_at": 1603609200,
+        "ended_at": 1603611000,
+        "event": "",
+        "room": {
+          "name": "火箭隊學長姐們 - 火箭隊",
+          "name_e": "",
+          "topic": "菜鳥工程師經驗談",
+          "topic_e": "",
+          "session_id": 2020122
+        }
+      },
+      {
+        "started_at": 1603611000,
+        "ended_at": 1603612800,
         "event": "下午茶",
-        "room": {}
+        "room": []
       }
     ]
   }

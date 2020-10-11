@@ -133,8 +133,16 @@
         "event": "",
         "room": [
           {
+            "session_id": 2020013,
+            "speaker_id": 47
+          },
+          {
             "session_id": 2020014,
             "speaker_id": 36
+          },
+          {
+            "session_id": 2020015,
+            "speaker_id": 56
           }
         ]
       },
@@ -253,6 +261,10 @@
           {
             "session_id": 2020025,
             "speaker_id": 39
+          },
+          {
+            "session_id": 2020026,
+            "speaker_id": 54
           },
           {
             "session_id": 2020027,
