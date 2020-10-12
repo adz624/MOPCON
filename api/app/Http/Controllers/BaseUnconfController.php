@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Service\SessionService;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ApiTrait;
@@ -15,6 +14,7 @@ class BaseUnconfController extends Controller
     private $missingStructure = [
         'isBroadCast' => false,
         'room' => [
+            'link_slide' => '',
             'speaker_id' => 0,
             'company' => '',
             'company_e' => '',
@@ -22,7 +22,9 @@ class BaseUnconfController extends Controller
             'job_title_e' => '',
             'summary' => '',
             'summary_e' => '',
+            'community_partner' => '',
             'is_keynote' => false,
+            'is_online' => 'false',
             'room' => 'UnConf',
             'floor' => '3F',
             'img' => [
@@ -60,13 +62,13 @@ class BaseUnconfController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function getUnconfList(Request $request)
+    public function getUnconfList()
     {
         $result = [];
         // loop over everyday
         array_walk($this->jsonAry, function ($subset) use (&$result) {
             // loop over every period
-            array_walk($subset['period'], function ($unconf) use (&$result){
+            array_walk($subset['period'], function ($unconf) use (&$result) {
                 // merge specific data in result
                 if (!empty($unconf['room'])) {
                     $result[] = $unconf['room'][0];
@@ -122,7 +124,7 @@ class BaseUnconfController extends Controller
     private function mapMissingStructure()
     {
         // loop over everyday
-        foreach ($this->jsonAry as $key => &$subset){
+        foreach ($this->jsonAry as $key => &$subset) {
             // loop over every period
             array_walk($subset['period'], function (&$periodSubset) {
                 $result = array_merge_recursive($this->missingStructure, $periodSubset);
