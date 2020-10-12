@@ -24,7 +24,7 @@ class BaseUnconfController extends Controller
             'summary_e' => '',
             'community_partner' => '',
             'is_keynote' => false,
-            'is_online' => 'false',
+            'is_online' => false,
             'room' => 'UnConf',
             'floor' => '3F',
             'img' => [
