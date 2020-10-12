@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\App\Http\Controllers;
+namespace Tests\App\Http\Controllers\Test2019;
 
 use TestCase;
 
@@ -21,13 +21,13 @@ class SpeakerControllerTest extends TestCase
         /** assert **/
         $this->assertEquals(true, $result['success']);
         $this->assertEquals($assertCount, count($result['data']));
-        $this->assertJsonStringValidatedAgainstJsonSchemaFile('speaker.json', $response->getContent());
+        $this->assertJsonStringValidatedAgainstJsonSchemaFile('2019/speaker.json', $response->getContent());
     }
 
     public function testResourceFileNotFound()
     {
         /** arrange */
-        putenv('RESOURCE_PATH=' . __DIR__ . '/../../../');
+        putenv('RESOURCE_PATH=' . __DIR__ . '/../../../../');
 
         /** act */
         $response = $this->call('GET', '/api/2019/speaker');

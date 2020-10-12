@@ -1,5 +1,17 @@
 [
   {
+    "logo_path": "api/2020/sponsor/images/sponsor_18",
+    "name": "六角學院",
+    "name_e": "hexschool",
+    "sponsor_id": 18,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://www.hexschool.com/",
+    "sponsor_type": "education",
+    "career_information": ""
+  },
+  {
     "logo_path": "api/2020/sponsor/images/sponsor_31",
     "name": "祐生研究基金會",
     "name_e": "Archilife Research Foundation",
@@ -36,6 +48,18 @@
     "career_information": ""
   },
   {
+    "logo_path": "api/2020/sponsor/images/sponsor_34",
+    "name": "微軟",
+    "name_e": "Microsoft",
+    "sponsor_id": 34,
+    "about_us": "微軟是全球科技產業的領航者，提供全球領先的軟體、服務、設備和解決方案，自 1975 年成立以來，一直致力於幫助個人和企業用戶，全面發揮科技潛能，實現夢想。\n 四十多年來，微軟一直專注於技術創新與變革，透過卓越的軟體、設備和服務，能夠幫助用戶提昇生活和工作生產力，讓數億的使用者真正受益於科技。微軟公司總部位於美國華盛頓州 Redmond，在全世界超過 190 個國家和地區設有分公司或是分支機構，擁有超過 125,000 名員工。",
+    "about_us_e": "Microsoft is the leader of the global technology industry, providing world-leading software, services, equipment and solutions. Since its establishment in 1975, Microsoft has been committed to helping individuals and corporate users to fully realize their technological potential and realize their dreams.\nFor more than 40 years, Microsoft has been focusing on technological innovation and change. Through excellent software, equipment and services, it can help users improve their life and work productivity, allowing hundreds of millions of users to truly benefit from technology. Microsoft is headquartered in Redmond, Washington, USA, with branches or branches in more than 190 countries and regions around the world, and has more than 125,000 employees.\nAfter taking office, Microsoft CEO Satya Nadella put forward a new vision: \"In this action-first and cloud-first world, Microsoft’s core competitiveness is to become a company that provides productivity and a platform to help everyone on this planet achieve Every organization can contribute more and achieve greater success.\"\nTaiwan Microsoft was established in 1989. As the most trusted partner of the government, schools, and enterprises, it has always been committed to helping Taiwan to enhance its innovation, competitiveness, and economic prosperity, and to brighten Taiwan together!",
+    "facebook_url": "https://www.facebook.com/MicrosoftTaiwan/",
+    "official_website": "https://www.microsoft.com/taiwan/about/?fbclid=IwAR1RgOTddhCc7G0Ccnx2mrCCi_gfv1IIxU4fAUkx-fzQcKVnX2AQHJ-56Fg",
+    "sponsor_type": "bruce_wayne",
+    "career_information": ""
+  },
+  {
     "logo_path": "api/2020/sponsor/images/sponsor_35",
     "name": "台灣敏捷協會",
     "name_e": "Agile Community Taiwan",
@@ -48,6 +72,42 @@
     "career_information": ""
   },
   {
+    "logo_path": "api/2020/sponsor/images/sponsor_37",
+    "name": "國泰金控",
+    "name_e": "Cathay Financial Holdings",
+    "sponsor_id": 37,
+    "about_us": "國泰金控致力於推動集團數位轉型，設立數位數據暨科技發展中心（簡稱數數發中心），以數據驅動為理念，協助國泰金控打造數位數據生態圈。\n\n 國泰積極投入資源建構大數據基礎建設並且導入新技術，同時整合集團資源，提供創新體驗及服務，以數據驅動金融科技創新，提供有感有效的客戶數位體驗，致力成為亞洲數位生態圈及科技金融領頭羊。",
+    "about_us_e": "To keep up the momentum of global Fintech development, Cathay Financial Holdings established the Digital, Data & Technology (DDT) practice, contributing to Fintech developments and digital transformation, to build a digital and data ecosystem via “data-driven as culture” with its subsidiaries\n\nBy collaborating with Cathay’s subsidiaries and consolidating the group resources, DDT provides innovative digital products and services driven by data with brilliant customer experiences, aiming to become the top in Asia Pacific Fintech ecosystem.",
+    "facebook_url": "",
+    "official_website": "https://www.cathayholdings.com/holdings/",
+    "sponsor_type": "hacker",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_38",
+    "name": "狄卡科技股份有限公司",
+    "name_e": "Dcard",
+    "sponsor_id": 38,
+    "about_us": "Dcard 是全台灣最大的匿名社群，我們致力於打造一個讓分享更自由、更讓每個人都能找到共鳴的平台。我們提供的社群服務，目前擁有每個月一千六百萬的不重複訪客與十五億以上的瀏覽量。",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://join.dcard.today/",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_39",
+    "name": "捕夢網數位科技有限公司",
+    "name_e": "PUMO network Digital Technology Co., Ltd.",
+    "sponsor_id": 39,
+    "about_us": "身為國內主機商，從網路主機代管起家的捕夢網，近年來為因應企業需求，轉型踏入資訊安全防護的領域。有別於其他網路服務業者，捕夢網提供網路架構的安全服務，更以客戶立場出發，注重網站暨程式的資訊安全服務。代理國內外 SSL 憑證，獨家代理來自以色列的弱點掃描、WAF 應用程式防火牆及 DAF 資料庫防火牆等資安服務，打造加密、偵測、阻擋、掩護四點一環，全方位網站安全環境。累積多年經驗，能依據不同應用主機型態，如資料庫、網站連線、網站程式等等，提供客製化檢測服務，能夠找到隱藏的弱點與漏洞，有助提升應用主機的安全。",
+    "about_us_e": "As a reliable hosting provider in Taiwan, PUMO which started from hosting begins to provide the cybersecurity service due to the needs from the clients. As distinguished from other ISPs, PUMO not only emphasizes and provides network security services, but also focuses on the cybersecurity of websites. Being the agent of SSL of top brands from domestic and foreign, vulnerability scanning from Israel, WAF (web application firewall) and DAF (database firewall), PUMO build a comprehensive security environment of website, combined with encryption, detection, blocking and masking. With service experience for years, PUMO can provide customized services based on different hosting types such as database, website connection, website program, etc. To find the hidden weaknesses and vulnerabilities, to improve the hosting security.",
+    "facebook_url": "https://www.facebook.com/pumonetwork/",
+    "official_website": "https://www.pumo.com.tw/www/",
+    "sponsor_type": "bruce_wayne",
+    "career_information": ""
+  },
+  {
     "logo_path": "api/2020/sponsor/images/sponsor_40",
     "name": "奧義智慧科技",
     "name_e": "CyCraft",
@@ -57,6 +117,18 @@
     "facebook_url": "https://www.facebook.com/cycrafttechnology/",
     "official_website": "https://www.cycarrier.com/",
     "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_41",
+    "name": "領投肯科技股份有限公司",
+    "name_e": "LeadBest Consulting Group",
+    "sponsor_id": 41,
+    "about_us": "LeadBest Consulting Group 是一個跨國執行顧問集團，從兩大顧問服務「Venture Studio」、「數位賦能」出發，與企業共同開發創新事業，並透過數位化、區塊鏈、敏捷思維、資訊安全等成熟的軟體技術，幫助客戶精準切入市場，解決營運難題，打造高獲利的商業模式。",
+    "about_us_e": "LeadBest is a multinational executive consultant group. They develop new business models with enterprises by applying the \"Venture Studio\" model. We aim at \"digital empowerment\" through blockchain, agile thinking, digital transformation, and information security. Our ultimate objective is to help customers successfully penetrate the market, overcome operational challenges, and create high-profit business models.",
+    "facebook_url": "https://zh-tw.facebook.com/LeadBest.io/",
+    "official_website": "https://www.leadbestconsultant.com/",
+    "sponsor_type": "special_thanks",
     "career_information": ""
   },
   {
@@ -96,6 +168,18 @@
     "career_information": ""
   },
   {
+    "logo_path": "api/2020/sponsor/images/sponsor_46",
+    "name": "蜂電綠能",
+    "name_e": "Bee Charge",
+    "sponsor_id": 46,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
     "logo_path": "api/2020/sponsor/images/sponsor_47",
     "name": "Oursky",
     "name_e": "Oursky",
@@ -108,6 +192,18 @@
     "career_information": ""
   },
   {
+    "logo_path": "api/2020/sponsor/images/sponsor_48",
+    "name": "Hahow 好學校",
+    "name_e": "Hahow Corp.",
+    "sponsor_id": 48,
+    "about_us": "「Hahow 好學校」是一間成立於 2015 年的新創教育科技公司，由七年級生團隊以「知識技能分享」概念所創的線上學習課程平台。取名自台語的『學校』(ha̍k-hāu) ，透過全球首創「群募開課」的機制，打造多元跨領域的課程平台，更是內容轉譯製課專家，專注於挖掘知識與技能，創造知識有價、分享創作的舞台。",
+    "about_us_e": "Hahow, which means “school” in Taiwanese, is Asia’s leading crowdfunding platform for online courses. We believe that education is a way of life. Through proper utilization of technology and creativity, we hope to catalyze the sharing of knowledge and skills, and to make learning enjoyable/fun for everyone.",
+    "facebook_url": "https://www.facebook.com/hahow.in/",
+    "official_website": "https://hahow.in/",
+    "sponsor_type": "remote_developer",
+    "career_information": ""
+  },
+  {
     "logo_path": "api/2020/sponsor/images/sponsor_49",
     "name": "Slasify",
     "name_e": "Slasify",
@@ -117,6 +213,114 @@
     "facebook_url": "https://www.facebook.com/slasify",
     "official_website": "https://slasify.com/en/",
     "sponsor_type": "remote_developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_50",
+    "name": "JetBrains",
+    "name_e": "JetBrains",
+    "sponsor_id": 50,
+    "about_us": "JetBrains 是知名 IntelliJ IDEA、ReSharper、GoLand、PyCharm、WebStorm、PhpStorm…等 IDE 工具及 Kotlin 程式語言背後的公司。過去 20 年來我們專注於生產能提升開發效率的工具，透過智能提示、快速修正，自動化地處理繁瑣且重複性高的任務，讓開發者有更多時間和精神專注在創新、設計、架構及更多美好的事物上。目前全球已有超過 800 萬使用者、225 多個國家信任我們的產品。",
+    "about_us_e": "JetBrains is the creators of IntelliJ IDEA, ReSharper, GoLand, PyCharm, WebStorm, PhpStorm and Kotlin. We create industry leading software development tools. For over 20 years we have strived to make the strongest, most effective developer tools on Earth. By automating routine checks and corrections, our products speed up production, freeing developers to grow, discover and create. Today, eight million customers in 225 countries trust our tools.",
+    "facebook_url": "https://www.facebook.com/JetBrains",
+    "official_website": "https://www.jetbrains.com/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_51",
+    "name": "Meet.jobs",
+    "name_e": "",
+    "sponsor_id": 51,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_52",
+    "name": "新加坡商鈦坦科技",
+    "name_e": "Titansoft",
+    "sponsor_id": 52,
+    "about_us": "鈦坦科技，是⼀間總部位於新加坡的軟體開發公司，專注於線上軟體平台的開發與維護。⾝處快速變動的軟體產業，我們採⽤敏捷開發，同時全⾯導入敏捷管理，【實⾏彈性⼯時】、【採⽤⾃主申請升遷】、【實踐薪資透明化】、【不再實施個⼈績效評量】。 \n\n 在這裡沒有 Boss，但要有⾃組織的 Guts，我們重視團隊合作勝於個⼈英雄主義，有貢獻就有回饋。「改變」是這世上唯⼀不變的事物，我們擁抱改變，並隨機應變，不斷＂超越⾃我 Never  Stop Improving＂。",
+    "about_us_e": "Titansoft is a software development company dedicated to the development and maintenance of  online software platforms through Agile Software Development. With extensive experience in  software engineering, we offer a wide range of consulting services, including market research,  server and network development and management, network infrastructure, and cloud deployment. Our product lines are diversified, best known for: Project Management Systems,  System Performance Monitoring Centers, Subscriber Accounting Systems, and Business Intelligence Management Systems.",
+    "facebook_url": "https://www.facebook.com/TitansoftTW",
+    "official_website": "https://www.titansoft.com/tw",
+    "sponsor_type": "hacker",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_53",
+    "name": "可立可股份有限公司",
+    "name_e": "KlickKlack Communications",
+    "sponsor_id": 53,
+    "about_us": "KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。",
+    "about_us_e": "KlickKlack Communications provide professional wired and wireless Internet networks, reducing digital divide between individuals. With rich experience, our team has crafted custom solutions, including on-site monitoring, backup systems and real-time advertising. We’ve done hundreds of events of any scale from Esports, live streamings, conferences, product launches, concerts, exhibitions, outdoor events and festivals.",
+    "facebook_url": "https://www.facebook.com/KlickKlackTaiwan",
+    "official_website": "https://www.kkco.com.tw/",
+    "sponsor_type": "hacker",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_54",
+    "name": "QSearch",
+    "name_e": "QSearch",
+    "sponsor_id": 54,
+    "about_us": "QSearch 數解人意的社群輿情分析，讓你了解 你 / 品牌 / 議題 在各社群平台中的現況。\n\n 具備社群輿情分析服務多年的經驗，QSearch 每日處理超過 100GB 的網路聲量資料，協助品牌、媒體代理商、政府機關進行市場調查與行銷監測服務。\n\n 社群時代，持有行動裝置的使用者就可能使用數種不同的社群平台，掌握社群就能轉換商機。QSearch 社群網路平台數據系統，藉由簡單直覺的系統操作，多種互動數據的排序指標，協助你了解受眾熱議主題、內容溝通成效、社群領袖動態，推升品牌影響力一次搞定。",
+    "about_us_e": "",
+    "facebook_url": "https://www.facebook.com/QSearch2012",
+    "official_website": "https://zh-tw.qsearch.cc/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_55",
+    "name": "1111 人力銀行",
+    "name_e": "",
+    "sponsor_id": 55,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_56",
+    "name": "樂創媒體",
+    "name_e": "LaFun Media",
+    "sponsor_id": 56,
+    "about_us": "樂創媒體早期為自由行旅遊媒體「發現台灣」之共同創辦人暨產品開發行銷團隊所組成，成員包含數位媒體製作、網站開發、行銷媒體人與活動企劃所組成。自 2010 年起，持續累積數位內容媒體行銷經驗，近 3 年進一步跨足活動策展與媒體公關委託專案，執行媒體採購、新聞暨廣告服務、專題報導撰寫、記者會活動、數位與媒體操作等全通路策略行銷服務。未來將以媒體服務、科技內容暨活動策展工作、科技賽事人材培育為發展方向。",
+    "about_us_e": "LaFun Media was formed by the co-founder and product development and marketing team of the travel media \"Discovery Taiwan\". The members include digital media production, website development, marketing and event planning. \n\nSince 2010, we have continued to accumulate experience in digital content media marketing. In the past three years, it has further stepped into event curation and media public relations commissioned projects, implementing media procurement, news and advertising, press conference activities.\n\nIn the future, media services, technology and event curatorial work, and the cultivation of talents for technological events will be the development direction.",
+    "facebook_url": "",
+    "official_website": "http://xrun.tw/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_57",
+    "name": "awoo 阿物股份有限公司",
+    "name_e": "awoo Inc.",
+    "sponsor_id": 57,
+    "about_us": "awoo 作為 AI 驅動 的 MarTech 新創，我們結合人工智慧與行銷智慧，推出台灣第一個由本土團隊自行打造的全通路行銷自動化平台：nununi 協助客戶取得流量、優化轉換、再行銷與會員留存，打造流暢的顧客體驗。\n\nawoo 成立於 2015 年， 2017 年起獲得矽谷多位知名軟體投資家與企業家連續投資，打造的行銷平台(Marketing Platform) 超過 13000 家企業註冊使用。目前於東京、嘉義與台北皆設有營運據點，並擁有超過 10 位科學家的 AI Lab。",
+    "about_us_e": "",
+    "facebook_url": "https://www.facebook.com/nununi.supersales",
+    "official_website": "https://nununi.com/",
+    "sponsor_type": "developer",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_58",
+    "name": "HackMD",
+    "name_e": "",
+    "sponsor_id": 58,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "",
+    "sponsor_type": "special_thanks",
     "career_information": ""
   }
 ]
