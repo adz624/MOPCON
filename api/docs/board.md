@@ -85,7 +85,7 @@ content 的實際內容為
 ### Request
 - **URL**
 
-    /api/2019/board/:room?now=:timestamp
+    /api/2019/board/:room?type=:string&now=:timestamp
 
 - **URL Params**
 
@@ -95,6 +95,9 @@ content 的實際內容為
 
   **Optional:**
 
+  - type=[string] (default: `outroom`)
+    - e.g., `/api/2020/board/:room?type=inroom&now=:timestamp`
+    - e.g., `/api/2020/board/:room?type=outroom&now=:timestamp`
   - now=[integer]
     - e.g., `/api/2019/board/:room?now=1571447700`
 
