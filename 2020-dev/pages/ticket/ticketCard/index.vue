@@ -55,11 +55,11 @@ export default {
         ga('send', 'event', 'Ticket', 'Purchase', type)
       }
       if (window.fbq) {
-        fbq('track', 'Purchase', {
+        fbq('track', 'ViewContent', {
           content_name: type,
           content_type: 'product',
           currency: 'TWD',
-          num_items: price
+          value: price
         })
       }
       window.open(link)
