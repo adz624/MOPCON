@@ -7,12 +7,12 @@
       <a
         href="https://play.google.com/store/apps/details?id=org.mopcon.session.app"
         target="_blank"
-        class="logo logo-google-play"
+        class="logo logo-google-play logo-google"
       />
       <a
         href="https://apps.apple.com/tw/app/mopcon/id721411970"
         target="_blank"
-        class="logo logo-app-store"
+        class="logo logo-app-store logo-apple"
       />
     </div>
     <div class="promotion-r">
@@ -24,7 +24,8 @@
 <style lang="scss" scoped>
 @import '~@/assets/styles/_mix';
 $logo_map: (
-  png: mobile google-play app-store
+  png: mobile google-play,
+  svg: app-store
 );
 @include logo_map_mix(app-section);
 
@@ -33,8 +34,6 @@ $logo_map: (
   &-l {
     @apply text-center;
     .logo {
-      width: 143px;
-      height: 43px;
       background-size: cover;
       @apply inline-block mt-6 mx-2;
     }
@@ -71,5 +70,13 @@ $logo_map: (
       @apply text-3xl;
     }
   }
+}
+.logo-google {
+  width: 143px;
+  height: 43px;
+}
+.logo-apple {
+  width: 129px;
+  height: 43px;
 }
 </style>
