@@ -61,41 +61,34 @@ export default {
       infoList: [
         {
           id: 1,
-          img: '<span class="material-icons">public</span>',
-          link: 'https://mopcon.org/2020/',
-          title: '官方網站',
-          content: '更多活動相關資訊，都在 MOPCON 2020 官方網站。'
-        },
-        {
-          id: 2,
           img: '<span class="material-icons">facebook</span>',
           link: 'https://www.facebook.com/mopcon/',
           title: 'MOPCON 粉絲專頁',
           content: '粉專按讚追蹤起來，最新、最夯資訊通通報你知。'
         },
         {
-          id: 3,
+          id: 2,
           img: '<span class="material-icons">history_edu</span>',
           link: 'https://medium.com/mopcon-%E5%B7%A5%E4%BA%BA%E6%99%BA%E6%85%A7%E8%A8%98%E4%BA%8B%E6%9C%AC  ',
           title: 'MOPCON攻略',
           content: 'MOPCON的 好好行、好好聽、好好買、好好說和好好玩，統統幫你整理好啦！參加 MOPCON 不忙不亂。'
         },
         {
-          id: 4,
+          id: 3,
           img: '<span class="material-icons">restaurant_menu</span>',
           link: 'https://rdr.mopcon.org/foodmap',
           title: '美食地圖',
           content: '大會中午不供餐，在此附上精選私藏美食地圖，好吃的傳統美食、必喝的在地飲料，都在這份 MOPCON 的私藏美食地圖中（別忘了回來聽議程啊，下午的演講也很精彩）'
         },
         {
-          id: 5,
+          id: 4,
           img: '<span class="material-icons">people</span>',
           link: 'https://hackmd.io/@mopcon/MOPCON2020_BoF',
           title: 'BoF',
           content: 'BoF 就像是社群同樂會！你可以是發起者，也可以是參與者，把握這個難得的交流機會！只要到此共筆連結，做發起或報名參加，依上面說明的時間地點參加即可。'
         }
         // {
-        //   id: 6,
+        //   id: 5,
         //   img: '<span class="material-icons">description</span>',
         //   link: '#',
         //   title: 'HackMD 大會共筆',
@@ -111,7 +104,8 @@ export default {
 <style lang="scss" scoped>
 @import '~@/assets/styles/_mix';
 $logo_map: (
-  png: bg-circle app-store google-play
+  png: bg-circle google-play,
+  svg: app-store
 );
 @include logo_map_mix(info);
 
@@ -129,13 +123,13 @@ $logo_map: (
 }
 .logo-google {
   width: 120px;
-  height: 40px;
+  height: 60px;
   @include bg-contain
   @apply block;
 }
 .logo-apple {
   width: 180px;
-  height: 60px;
+  height: 38px;
   @include bg-contain
   @apply block;
 }
