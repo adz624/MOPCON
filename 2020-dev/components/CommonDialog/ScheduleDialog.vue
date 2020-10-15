@@ -19,6 +19,13 @@
         :sponsor-info="speaker.sponsor_info"
         class="mt-8 mb-4"
       />
+
+      <section v-if="speaker.community_partner !== ''" class="mt-5 info">
+        <h2>合作社群</h2>
+        <h4 class="text-white text-xl mt-5 font-bold">
+          {{ speaker.community_partner }}
+        </h4>
+      </section>
     </div>
     <div slot="footer">
       <share-btn :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
@@ -81,6 +88,17 @@ export default {
   }
   @screen xl {
     width: 60%;
+  }
+}
+.info {
+  @apply text-white;
+  h2 {
+    @apply text-lg pl-4 relative mr-4;
+    &::before {
+      content: '\\\\';
+      left: -5px;
+      @apply absolute text-yellow-500 text-lg font-medium;
+    }
   }
 }
 </style>
