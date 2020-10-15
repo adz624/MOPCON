@@ -23,6 +23,10 @@
                 "event": "",
                 "room": [
                     {
+                        "session_id": 2020001,
+                        "speaker_id": 52
+                    },
+                    {
                         "session_id": 2020002,
                         "speaker_id": 27
                     },
@@ -45,6 +49,10 @@
                 "ended_at": 1603508100,
                 "event": "",
                 "room": [
+                    {
+                        "session_id": 2020004,
+                        "speaker_id": 50
+                    },
                     {
                         "session_id": 2020005,
                         "speaker_id": 3
@@ -173,6 +181,10 @@
                     {
                         "session_id": 2020017,
                         "speaker_id": 35
+                    },
+                    {
+                        "session_id": 2020018,
+                        "speaker_id": 58
                     }
                 ]
             },
@@ -196,6 +208,10 @@
                     {
                         "session_id": 2020020,
                         "speaker_id": 53
+                    },
+                    {
+                        "session_id": 2020021,
+                        "speaker_id": 59
                     }
                 ]
             },
@@ -407,6 +423,10 @@
                             45,
                             46
                         ]
+                    },
+                    {
+                        "session_id": 2020041,
+                        "speaker_id": 61
                     }
                 ]
             },
