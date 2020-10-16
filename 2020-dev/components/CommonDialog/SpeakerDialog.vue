@@ -6,7 +6,7 @@
     @click.native="btnListShow && (btnListShow = false)"
   >
     <div slot="body" class="dialog-body">
-      <speaker-info :speakers="speaker" notitle />
+      <speaker-info :speakers="speaker" notitle type="speaker" />
 
       <section class="about">
         <h2>介紹</h2>
