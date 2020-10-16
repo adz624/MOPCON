@@ -7,8 +7,8 @@
       <li
         v-for="speaker in Array.isArray(speakers) ? speakers : [speakers]"
         :key="'speaker' + speaker.speaker_id"
-        class="flex items-center pt-3 flex-col md:flex-row text-center md:text-left mb-2 cursor-pointer"
-        :class="{'pb-4': !speakerContactVisible(speaker)}"
+        class="flex items-center pt-3 flex-col md:flex-row text-center md:text-left mb-2"
+        :class="{'pb-4': !speakerContactVisible(speaker), 'cursor-pointer': type === 'schedule'}"
         @click="linkToSpeaker(speaker.speaker_id)"
       >
         <div class="flex flex-col items-start">
@@ -57,6 +57,10 @@ export default {
     sponsorId: {
       type: Number,
       default: 0
+    },
+    type: {
+      type: String,
+      default: ''
     }
   },
   data () {
@@ -69,7 +73,7 @@ export default {
       return Object.entries(speaker).some(([key, value]) => key.startsWith('link_') && value)
     },
     linkToSpeaker (id) {
-      location.href = `/2020/speaker/${id}`
+      if (this.type === 'schedule') { location.href = `/2020/speaker/${id}` }
     }
   }
 }

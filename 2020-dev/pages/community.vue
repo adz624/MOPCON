@@ -614,7 +614,7 @@ $logo_map: (
       }
     }
     &-pic{
-      @include bg-cover;
+      @apply bg-contain bg-center bg-no-repeat;
       width:119px;
       height:90px;
     }
