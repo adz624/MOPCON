@@ -18,6 +18,7 @@
         :sponsor-id="speaker.sponsor_id"
         :sponsor-info="speaker.sponsor_info"
         class="mt-8 mb-4"
+        type="schedule"
       />
 
       <section v-if="speaker.community_partner !== ''" class="mt-5 info">
