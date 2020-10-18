@@ -149,7 +149,7 @@ export default {
           url: 'https://mopcon.org/album.php',
           subNav: [],
           subIsOpen: false,
-          open: 'https://mopcon.org/album.php',
+          open: false,
           targetEnabled: true
         }
       ],
