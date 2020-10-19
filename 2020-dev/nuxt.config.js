@@ -185,7 +185,11 @@ module.exports = {
     dir: path.resolve(__dirname, '../2020/'),
     // 從 api 抓取所有講者 id 後動態產生所有講者 html 頁面
     routes () {
-      const pages = []
+      const pages = [
+        '/edashboard/R1',
+        '/edashboard/R2',
+        '/edashboard/R3'
+      ]
       const speakers = axios.get(`${process.env.BASE_URL}/api/2020/speaker`).then((res) => {
         pages.push('/speaker')
         res.data.data.forEach((speaker) => {
