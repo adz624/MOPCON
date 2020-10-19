@@ -19,9 +19,9 @@
         "ended_at": 1603506600,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "",
           "name_e": "",
-          "topic": "",
+          "topic": "歡迎現場報名",
           "topic_e": "",
           "session_id": 2020101
         }
@@ -31,9 +31,9 @@
         "ended_at": 1603508400,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "Bruno Chen",
           "name_e": "",
-          "topic": "",
+          "topic": "本土化不只是翻譯，開發者的 Localization 踩坑紀錄",
           "topic_e": "",
           "session_id": 2020102
         }
@@ -43,9 +43,9 @@
         "ended_at": 1603510200,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "柯克 - Chatbot 社群",
           "name_e": "",
-          "topic": "",
+          "topic": "用拖拉的方式來建立聊天機器人",
           "topic_e": "",
           "session_id": 2020103
         }
@@ -79,9 +79,9 @@
         "ended_at": 1603519200,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "朱庭宏 - Wikidata 地方學專題社群",
           "name_e": "",
-          "topic": "",
+          "topic": "開放資料的在地化與結構化",
           "topic_e": "",
           "session_id": 2020105
         }
@@ -174,9 +174,9 @@
         "ended_at": 1603591200,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "",
           "name_e": "",
-          "topic": "",
+          "topic": "歡迎現場報名",
           "topic_e": "",
           "session_id": 2020112
         }
@@ -186,9 +186,9 @@
         "ended_at": 1603593000,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "",
           "name_e": "",
-          "topic": "",
+          "topic": "歡迎現場報名",
           "topic_e": "",
           "session_id": 2020113
         }
@@ -210,9 +210,9 @@
         "ended_at": 1603596600,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "敬請期待 - Dakuo",
           "name_e": "",
-          "topic": "",
+          "topic": "敬請期待",
           "topic_e": "",
           "session_id": 2020115
         }
@@ -222,9 +222,9 @@
         "ended_at": 1603598400,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "范聖佑 - Kotlin 社群",
           "name_e": "",
-          "topic": "",
+          "topic": "以 Kotlin 快速打造 Mobile Backend",
           "topic_e": "",
           "session_id": 2020116
         }
@@ -240,9 +240,9 @@
         "ended_at": 1603603800,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "Hunter Liu - Vue.js Taiwan",
           "name_e": "",
-          "topic": "",
+          "topic": "Vue Final Modal，開源專案分享",
           "topic_e": "",
           "session_id": 2020117
         }
@@ -252,9 +252,9 @@
         "ended_at": 1603605600,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "Gipi - 商業思維學院",
           "name_e": "",
-          "topic": "",
+          "topic": "打造一個讓團隊成員勇敢做自己的「青色組織」之旅",
           "topic_e": "",
           "session_id": 2020118
         }
@@ -264,9 +264,9 @@
         "ended_at": 1603607400,
         "event": "",
         "room": {
-          "name": "敬請期待",
+          "name": "",
           "name_e": "",
-          "topic": "",
+          "topic": "歡迎現場報名",
           "topic_e": "",
           "session_id": 2020119
         }
