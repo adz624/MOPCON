@@ -222,17 +222,19 @@ class BaseBoardController extends Controller
                 $total_time += $sessionPlayTime;
             }
 
-            for ($i = 0; $i < $sponsorAdNumberPerTime; $i++) {
-                $list[] = [
-                    'type' => 'ad',
-                    'play_time' => $adPlayTime,
-                    'data' => $this->sponsor_ads[$ad_index++],
-                ];
+            if (!empty($this->sponsor_ads)) {
+                for ($i = 0; $i < $sponsorAdNumberPerTime; $i++) {
+                    $list[] = [
+                        'type' => 'ad',
+                        'play_time' => $adPlayTime,
+                        'data' => $this->sponsor_ads[$ad_index++],
+                    ];
 
-                if ($ad_index === $ad_num) {
-                    $ad_index = 0;
+                    if ($ad_index === $ad_num) {
+                        $ad_index = 0;
+                    }
+                    $total_time += $adPlayTime;
                 }
-                $total_time += $adPlayTime;
             }
             $total_num = count($list);
             if ($total_num > $maxPlayListLength) {
