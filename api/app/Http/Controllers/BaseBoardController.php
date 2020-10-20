@@ -49,8 +49,8 @@ class BaseBoardController extends Controller
     private $sessionSpeakerMapping = [];
     private $speakerService;
 
-    private const MOPCON_FIRST_DAY = 1571414400;
-    private const MOPCON_LAST_SESSION_END = 1571562000;
+    private const MOPCON_FIRST_DAY = 1603468800;
+    private const MOPCON_LAST_SESSION_END = 1603616400;
 
     private const BEFORE_START = 3*60;
     private const START_AFTER = 10*60;
@@ -64,9 +64,9 @@ class BaseBoardController extends Controller
     private const TAG_BROADCAST_TXT = '同步轉播';
     private const TAG_LIVE_TXT = '議程現場';
 
-    private const BEFORE_START_CLASS = 'color-third';
-    private const START_AFTER_CLASS = 'color-third';
-    private const PREVIEW_CLASS = 'color-secondary';
+    private const BEFORE_START_CLASS = 'text-yellow-500';
+    private const START_AFTER_CLASS = 'text-yellow-500';
+    private const PREVIEW_CLASS = 'text-purple-400';
 
     private const TAG_CLASS_PRIMARY = 'tag-badge-outline-primary';
     private const TAG_CLASS_SECONDARY = 'tag-badge-outline-secondary';
@@ -143,7 +143,7 @@ class BaseBoardController extends Controller
         $content = $this->sortCarouselList($outputSessoion, $type);
 
         global $app;
-        $request = Request::create('/api/' . $this-> year . '/news', 'GET');
+        $request = Request::create('/api/' . $this->year . '/news', 'GET');
         $response = json_decode($app->dispatch($request)->getContent(), true);
         $news = [];
         if (!is_null($response) && is_array($response['data'])) {
@@ -180,19 +180,19 @@ class BaseBoardController extends Controller
         $sponsorAdNumberPerTime = 0;
         $maxPlayListLength = 0;
         if ($is_inroom) {
-            $sessionPlayTime = BaseBoardController::INROOM_PLAY_TIME_SESSION;
-            $adPlayTime = BaseBoardController::INROOM_PLAY_TIME_AD;
-            $mapPlayTime = BaseBoardController::INROOM_PLAY_TIME_MAP;
-            $totalPlayTime = BaseBoardController::INROOM_PLAY_TIME_TOTAL;
+            $sessionPlayTime        = BaseBoardController::INROOM_PLAY_TIME_SESSION;
+            $adPlayTime             = BaseBoardController::INROOM_PLAY_TIME_AD;
+            $mapPlayTime            = BaseBoardController::INROOM_PLAY_TIME_MAP;
+            $totalPlayTime          = BaseBoardController::INROOM_PLAY_TIME_TOTAL;
             $sponsorAdNumberPerTime = BaseBoardController::INROOM_SPONSOR_AD_NUM_A_TIME;
-            $maxPlayListLength = BaseBoardController::INROOM_PLAY_LIST_LENGTH_MAXIMUM;
+            $maxPlayListLength      = BaseBoardController::INROOM_PLAY_LIST_LENGTH_MAXIMUM;
         } else {
-            $sessionPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_SESSION;
-            $adPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_AD;
-            $mapPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_MAP;
-            $totalPlayTime = BaseBoardController::OUTROOM_PLAY_TIME_TOTAL;
+            $sessionPlayTime        = BaseBoardController::OUTROOM_PLAY_TIME_SESSION;
+            $adPlayTime             = BaseBoardController::OUTROOM_PLAY_TIME_AD;
+            $mapPlayTime            = BaseBoardController::OUTROOM_PLAY_TIME_MAP;
+            $totalPlayTime          = BaseBoardController::OUTROOM_PLAY_TIME_TOTAL;
             $sponsorAdNumberPerTime = BaseBoardController::OUTROOM_SPONSOR_AD_NUM_A_TIME;
-            $maxPlayListLength = BaseBoardController::OUTROOM_PLAY_LIST_LENGTH_MAXIMUM;
+            $maxPlayListLength      = BaseBoardController::OUTROOM_PLAY_LIST_LENGTH_MAXIMUM;
         }
 
         $list = [];
