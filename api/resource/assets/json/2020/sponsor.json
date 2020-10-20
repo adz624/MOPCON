@@ -322,5 +322,29 @@
     "official_website": "",
     "sponsor_type": "special_thanks",
     "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_59",
+    "name": "社團法人台灣駭客協會",
+    "name_e": "Association of Hackers in Taiwan",
+    "sponsor_id": 59,
+    "about_us": "台灣駭客年會成立迄今已十五年，期間除舉辦每年一度的研討會外，亦成立「社團法人台灣駭客協會」，希望能替臺灣的資訊安全盡心盡力。HITCON 致力於推廣資訊安全，自 2005 年起舉辦大型研討會與中小型座談會，結合時事探討全球熱門的資安議題，從而引入國內外專業講者的教育訓練，協助政府、企業、民間建立友善的溝通管道與培訓資源，引領世界資安技術的脈動。我們期待以駭客的力量幫助社會、改變台灣，而安全的達成並非一蹴可及，需要不斷的奮鬥及改革，透過各項計畫將真正的駭客精神帶給大家，是我們的核心價值與不變的目標。",
+    "about_us_e": "In the 15 years since its establishment, the hack In Taiwan Conference (HITCON) has organized annual conference and also established HIT, a corporate body, to contribute to information security In Taiwan.\n\nHITCON is dedicated to promoting information security. Since 2005, we have started to hold seminars and symposiums to discuss hot issues related to information security worldwide in combination with current affairs, so as to introduce education training courses for professional lecturers at home and abroad, assist governments, enterprises and the public in establishing friendly communication channels and providing training resources, and lead the world in the pulse of information security technology. We have also supported domestic security communities and worked with the country to cultivate Taiwan's future talents.",
+    "facebook_url": "https://www.facebook.com/HITCON",
+    "official_website": "https://www.hacker.org.tw/",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_60",
+    "name": "銘圃資訊",
+    "name_e": "MingPu Computer co.,",
+    "sponsor_id": 60,
+    "about_us": "銘圃資訊有限公司(Ming Pu Computer Co., Ltd )成立於 1989 年，專門從事光學劃記閱讀機(OMR)之機器銷售、軟體設計及電腦卡片印刷之業務。",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "http://www.sekonicmp.com.tw",
+    "sponsor_type": "special_thanks",
+    "career_information": ""
   }
 ]
