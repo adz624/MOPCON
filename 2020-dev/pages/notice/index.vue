@@ -22,7 +22,11 @@
           \\ 防疫聲明：
         </h3>
         <ol class="list-decimal pl-6">
-          <li>本活動採實聯制入場，參與者須填寫個人健康聲明書，於報到時檢核無誤後，領取識別證件，即能參與 MOPCON 2020 大會活動。(如有填寫不實等行為，依傳染病防治法第 62 條，最高可處 50 萬元罰鍰。)</li>
+          <li>
+            本活動採實聯制入場，參與者須填寫個人<a class="text-yellow-500" href="https://docs.google.com/forms/d/1ukO8EBA9cTWToWsISWzVjkYGyel7naUv7YAhafJqKDY/viewform?edit_requested=true" target="_blank">
+              【 健康聲明書 】
+            </a>，於報到時檢核無誤後，領取識別證件，即能參與 MOPCON 2020 大會活動。(如有填寫不實等行為，依傳染病防治法第 62 條，最高可處 50 萬元罰鍰。)
+          </li>
           <li>活動期間會場內須全程配戴口罩，因服藥、飲食、補充水份等狀況不在此限，並於服用完畢後立即戴回口罩。</li>
           <li>各議程廳採人數總量管制，請聽從工作人員指示，若會議室已達人數上限請勿進入。</li>
           <li>活動期間會場提供酒精與肥皂，入內時請消毒雙手。</li>
