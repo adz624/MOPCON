@@ -20,7 +20,10 @@
       <div class="header-width">
         <ol class="list-decimal pl-6">
           <li>
-            MOPCON 2020 adopts contact-information-based measures. Upon entry, participants are required to submit a health declaration form. Once tested, participants will receive an identification badge and will thus be allowed to participate in the events. (According to Article 62 of the Communicable Disease Control Act, participants who submit false information will incur a fine of 500,000 NTD maximum.)
+            MOPCON 2020 adopts contact-information-based measures. Upon entry, participants are required to submit
+            <a class="text-yellow-500" href="https://docs.google.com/forms/d/1ukO8EBA9cTWToWsISWzVjkYGyel7naUv7YAhafJqKDY/viewform?edit_requested=true" target="_blank">
+              a health declaration form
+            </a>. Once tested, participants will receive an identification badge and will thus be allowed to participate in the events. (According to Article 62 of the Communicable Disease Control Act, participants who submit false information will incur a fine of 500,000 NTD maximum.)
           </li>
           <li>All participants must wear masks throughout the course of the event, with the exception of specific circumstances, e.g. eating, drinking, taking medicine etc.</li>
           <li>

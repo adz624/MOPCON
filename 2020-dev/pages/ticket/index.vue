@@ -117,23 +117,23 @@ export default {
             description: '最低起購五張',
             lists: ['兩日議程'], // 項目說明
             link: 'https://mopcon.kktix.cc/events/2020-group'
-          },
-          {
-            title: '現場票',
-            id: 4,
-            status: 0,
-            count: 10, // 限量張數
-            price: 1000, // 票價
-            class: {
-              bg: 'bg-purple-700',
-              text: 'text-white',
-              btn: 'btn-white',
-              cardBg: 'normal-card-bg-circle'
-            },
-            description: '',
-            lists: ['兩日議程'], // 項目說明
-            link: ''
           }
+          // {
+          //   title: '現場票',
+          //   id: 4,
+          //   status: 0,
+          //   count: 10, // 限量張數
+          //   price: 1000, // 票價
+          //   class: {
+          //     bg: 'bg-purple-700',
+          //     text: 'text-white',
+          //     btn: 'btn-white',
+          //     cardBg: 'normal-card-bg-circle'
+          //   },
+          //   description: '',
+          //   lists: ['兩日議程'], // 項目說明
+          //   link: ''
+          // }
         ],
         vipTicket: [
           {
