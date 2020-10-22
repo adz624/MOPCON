@@ -95,25 +95,16 @@ class BaseBoardController extends Controller
 
         if (env('APP_ENV') === 'production') {
             $speaker_resource_path = $this->path . 'speaker.json';
-            $board_resource_path = $this->path . 'board.json';
             $tag_group_resource_path = $this->path . 'tag-group.json';
         } else {
             $speaker_resource_path = $this->path . 'speaker-dev.json';
-            $board_resource_path = $this->path . 'board-dev.json';
             $tag_group_resource_path = $this->path . 'tag-group-dev.json';
         }
 
         $this->map_path = 'api/' . $this-> year . '/board/images/field/map';
 
         $speakers = json_decode(file_get_contents($speaker_resource_path), true);
-        $board_ads = json_decode(file_get_contents($board_resource_path), true);
         $tagGroupSetting = json_decode(file_get_contents($tag_group_resource_path), true);
-        $this->sponsor_ads = [];
-        foreach ($board_ads as $ad) {
-            $this->sponsor_ads[] = [
-                'sponsor_ad_img' => url($ad['board_path']),
-            ];
-        }
 
         $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
@@ -132,6 +123,26 @@ class BaseBoardController extends Controller
     {
         $now = $request->input('now', 0);
         $type = $request->input('type', 'outroom');
+
+        $json_path = $type === 'inroom' ? 'slide' : 'board';
+
+        if (env('APP_ENV') === 'production') {
+            $board_resource_path = $this->path . $json_path . '.json';
+        } else {
+            $board_resource_path = $this->path . $json_path . '-dev.json';
+        }
+
+        $board_ads = [];
+        if (file_exists($board_resource_path)) {
+            $board_ads = json_decode(file_get_contents($board_resource_path), true);
+        }
+
+        $this->sponsor_ads = [];
+        foreach ($board_ads as $ad) {
+            $this->sponsor_ads[] = [
+                'sponsor_ad_img' => url($ad['board_path']),
+            ];
+        }
 
         if ($type !== 'inroom' && $type !== 'outroom') {
             return $this->returnError('Bad request');
