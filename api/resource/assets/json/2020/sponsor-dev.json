@@ -346,5 +346,17 @@
     "official_website": "http://www.sekonicmp.com.tw",
     "sponsor_type": "developer",
     "career_information": ""
+  },
+  {
+    "logo_path": "api/2020/sponsor/images/sponsor_100",
+    "name": "高雄市經濟發展局獎勵會議展覽活動計畫贊助",
+    "name_e": "",
+    "sponsor_id": 100,
+    "about_us": "",
+    "about_us_e": "",
+    "facebook_url": "",
+    "official_website": "https://edbkcg.kcg.gov.tw",
+    "sponsor_type": "edbkcg",
+    "career_information": ""
   }
 ]
