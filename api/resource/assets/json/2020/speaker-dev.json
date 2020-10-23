@@ -217,7 +217,7 @@
     "link_slide": "",
     "topic": "如何使用 iframe 製作一個易於更新及更安全的前端套件",
     "topic_e": "How to make a JS heatmap library",
-    "summary": "Funliday 即將提供熱點圖的 library 給網站開發者，可以把熱點圖嵌入到網頁內，用地圖的方式呈現未來旅遊熱點圖，讓大家了解哪些地區比較熱門。 \n\n 而這場 talk 會分享如何利用 Leaflet, iframe 及 expressjs 建置一套熱點圖 library，內容包括\n\n1. 如何快速使用 iframe 開發 library\n2. 如何驗證 domain 及 API 呼叫次數\n3. 想將內部數據公開但又想避免內部數據外流",
+    "summary": "Funliday 即將提供熱點圖的 library 給網站開發者，可以把熱點圖嵌入到網頁內，用地圖的方式呈現未來旅遊熱點圖，讓大家了解哪些地區比較熱門。 \n\n 而這場 talk 會分享如何利用 Leaflet, iframe 及 expressjs 建置一套熱點圖 library，內容包括\n\n1. 如何快速使用 iframe 開發 library\n2. 如何驗證 domain 及 API 呼叫次數\n3. 想將內部數據公開但又想避免內部數據外流\n\n相關關鍵字： CORS 、 HSTS 、 web security 、 iframe 、 expressjs",
     "summary_e": "Funliday provides JS library about heatmap for everyone. You can embed the heatmap to web page.\n\nThe talk will share that how to make a JS heatmap library via leaflet, iframe and expressjs.\n\nThe talk includes (1) how to make a JS library rapidly. (2) how to verify domain and API calls. (3) how to expose internal data and avoid to leak data.",
     "community_partner": "",
     "is_keynote": false,
