@@ -17,9 +17,7 @@
     <h5 v-if="nowSponsor.about_us !== ''" class="sponsor-dialog-subtitle">
       <span>\\</span> 關於我們
     </h5>
-    <p>
-      {{ nowSponsor.about_us }}
-    </p>
+    <p v-html="parseSummary(nowSponsor.about_us)" />
     <div v-if="nowSponsor.speaker_information.length > 0" class="mt-8">
       <h5 class="sponsor-dialog-subtitle">
         <span>\\ </span>相關講者資訊
@@ -80,6 +78,9 @@ export default {
       const startTime = this.$moment.unix(start).format('HH:mm')
       const endTime = this.$moment.unix(end).format('HH:mm')
       return `${startDate} ${startTime} ~ ${endTime}`
+    },
+    parseSummary (summary) {
+      return summary.replace(/\n/gi, '<br>')
     }
   }
 }
