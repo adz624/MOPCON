@@ -188,7 +188,8 @@ module.exports = {
       const pages = [
         '/edashboard/R1',
         '/edashboard/R2',
-        '/edashboard/R3'
+        '/edashboard/R3',
+        '/survey'
       ]
       const speakers = axios.get(`${process.env.BASE_URL}/api/2020/speaker`).then((res) => {
         pages.push('/speaker')
