@@ -86,21 +86,14 @@ export default {
           link: 'https://hackmd.io/@mopcon/MOPCON2020_BoF',
           title: 'BoF',
           content: 'BoF 就像是社群同樂會！你可以是發起者，也可以是參與者，把握這個難得的交流機會！只要到此共筆連結，做發起或報名參加，依上面說明的時間地點參加即可。'
+        },
+        {
+          id: 5,
+          img: '<span class="material-icons">Assignment</span>',
+          link: 'https://www.surveycake.com/s/mDYkB',
+          title: '會後問卷',
+          content: ''
         }
-        // {
-        //   id: 5,
-        //   img: '<span class="material-icons">Assignment</span>',
-        //   link: 'https://www.surveycake.com/s/mDYkB',
-        //   title: '會後問卷',
-        //   content: ''
-        // }
-        // {
-        //   id: 5,
-        //   img: '<span class="material-icons">description</span>',
-        //   link: '#',
-        //   title: 'HackMD 大會共筆',
-        //   content: ''
-        // }
       ]
     }
   },
