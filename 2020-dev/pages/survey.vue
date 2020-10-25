@@ -5,20 +5,23 @@
       <div class="relative h-full top">
         <h2 class="relative mt-10 mb-12 md:text-4xl text-3xl text-white text-center z-10">
           <div class="logo logo-circles logo-circles-l" />MOPCON
-          <span class="text-yellow-500">會後問券</span>
+          <span class="text-yellow-500">會後問卷</span>
           <div class="logo logo-circles logo-circles-r" />
         </h2>
       </div>
     </section>
     <section class="container mx-auto">
-      <a class="btn-primary disabled" href="#" disabled>尚未開放</a>
+      <a class="btn-primary" href="https://www.surveycake.com/s/mDYkB" target="_blank">會後問卷</a>
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Survey'
+  name: 'Survey',
+  mounted () {
+    location.href = 'https://www.surveycake.com/s/mDYkB'
+  }
 }
 </script>
 
