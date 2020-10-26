@@ -17,9 +17,6 @@
         <!-- section 核心贊助商夥伴 -->
         <SectionSponsorCore id="sectionSponsorCore" />
 
-        <!-- section fb 動態牆 -->
-        <SectionFbNews id="sectionFbNews" />
-
         <!-- section 歷年 MOPCON -->
         <SectionPastYears id="sectionPastYears" />
 
@@ -38,7 +35,6 @@ import SectionSpeaker from './SectionSpeaker';
 import SectionAbout from './SectionAbout';
 import SectionPlace from './SectionPlace';
 import SectionSponsorCore from './SectionSponsorCore';
-import SectionFbNews from './SectionFbNews';
 import SectionPastYears from './SectionPastYears';
 import SectionBuy from './SectionBuy';
 
@@ -57,7 +53,6 @@ export default {
         SectionAbout,
         SectionPlace,
         SectionSponsorCore,
-        SectionFbNews,
         SectionPastYears,
         SectionBuy,
     },
