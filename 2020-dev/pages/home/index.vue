@@ -149,25 +149,17 @@
       <div class="logo logo-hr" />
     </div>
 
-    <section-fb-news :posts="posts" />
-
-    <div class="container">
-      <div class="logo logo-hr" />
-    </div>
-
     <section-past-years />
   </div>
 </template>
 
 <script>
 import { fbNews } from '@/api/url'
-import SectionFbNews from './components/SectionFbNews'
 import SectionPastYears from './components/SectionPastYears'
 
 export default {
   name: 'Home',
   components: {
-    SectionFbNews,
     SectionPastYears
   },
   async asyncData ({ $axios }) {
@@ -213,8 +205,8 @@ export default {
         '/2020/og-image.png'
       ],
       url: 'https://mopcon.org/2020/',
-      startDate: '2020-09-24T08:30:00+08:00',
-      endDate: '2020-09-25T18:00:00+08:00',
+      startDate: '2020-10-24T08:30:00+08:00',
+      endDate: '2020-10-25T18:00:00+08:00',
       location: {
         '@type': 'Place',
         name: '高雄國際會議中心',
