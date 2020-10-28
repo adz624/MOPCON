@@ -9,9 +9,10 @@ use Exception;
 class FacebookController extends Controller
 {
     use ApiTrait;
+
     private $facebookUrl = 'https://www.facebook.com/';
     private $apiUrl = 'https://graph.facebook.com/';
-    private $mopconApiUrl = 'https://graph.facebook.com/mopcon/';
+    private $mopconApiUrl = 'https://graph.facebook.com/v8.0/mopcon';
     /**
      * get newest post from mopcon facebook fanspage.
      *
@@ -29,14 +30,14 @@ class FacebookController extends Controller
             return $this->returnSuccess('Success get posts', Cache::get($facebookPostsKey));
         }
         try {
-            $facebookPosts = json_decode($this->dataProcesser($request, $limit)->getContent(), true)['data'];
+            $facebookPosts = json_decode($this->dataProcesser($limit)->getContent(), true)['data'];
             Cache::put($facebookPostsKey, $facebookPosts, 600);
             return $this->returnSuccess('Success get posts', $facebookPosts);
         } catch (Exception $e) {
             return $this->returnError($e->getMessage());
         }
     }
-    private function requestFacebookApi(String $url)
+    private function requestFacebookApi(string $url)
     {
         // request facebook api
         $ch = curl_init();
@@ -54,28 +55,27 @@ class FacebookController extends Controller
         curl_close($ch);
         return $this->returnSuccess('', $dataJson);
     }
-    private function dataProcesser(Request $request, Int $limit)
+    private function dataProcesser(int $limit)
     {
         $token = env('FACEBOOK_TOKEN');
-        $fields = ['full_picture', 'message', 'id', 'shares', 'created_time', 'likes.summary(true)', 'permalink_url'];
-        $baseUrl = $this->mopconApiUrl;
-        $baseUrl .= 'feed?fields=';
-        $baseUrl .= implode(',', $fields);
-        $baseUrl .= '&limit='.$limit;
-        $baseUrl .= '&access_token='.$token;
+        $fields = ['full_picture', 'message', 'id', 'shares', 'created_time', 'likes{id}', 'permalink_url'];
+        $baseUrl = $this->mopconApiUrl . '?fields=published_posts.limit(' . $limit . ')';
+        $baseUrl .= urlencode(sprintf('{%s}', implode(',', $fields)));
+        $baseUrl .= '&access_token=' . $token;
+
         try {
             $feedsData = json_decode($this->requestFacebookApi($baseUrl)->getContent(), true);
             // handle error;
-            if (!isset($feedsData['data']['data'])) {
+            if (!isset($feedsData['data']['published_posts']['data'])) {
                 throw new Exception("Not found");
             }
-            $postsData = $feedsData['data']['data'];
+            $postsData = $feedsData['data']['published_posts']['data'];
+
             foreach ($postsData as $key => $value) {
-                $postsData[$key]['shares'] = $postsData[$key]['shares']['count'] ?? 0;
-                $postsData[$key]['likes'] = $postsData[$key]['likes']['summary']['total_count'];
-                $postsData[$key]['url'] = $postsData[$key]['permalink_url'];
-                $postsData[$key]['created_time'] = strtotime($postsData[$key]['created_time']);
-                unset($postsData[$key]['permalink_url']);
+                $postsData[$key]['shares'] = $value['shares']['count'] ?? 0;
+                $postsData[$key]['likes'] = isset($value['likes']['data']) ? count($value['likes']['data']) : 0;
+                $postsData[$key]['url'] = $value['permalink_url'];
+                $postsData[$key]['created_time'] = strtotime($value['created_time']);
             }
             return $this->returnSuccess('Success get posts', $postsData);
         } catch (Exception $e) {
