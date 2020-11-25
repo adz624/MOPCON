@@ -87,6 +87,13 @@
     opacity: .8;
   }
 }
+.btn-ppt {
+  border-radius: 8px;
+  @apply bg-yellow-500 py-3 w-full mt-8 text-blue-950 text-lg outline-none;
+  &:hover {
+    opacity: .9;
+  }
+}
 
 .custom-overflow-hidden {
   overflow: hidden;

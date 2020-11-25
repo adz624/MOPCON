@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative w-full">
     <button class="btn-share" @click.stop="speaker ? $emit('update:btnListShow', !btnListShow) : copylink()">
       <span class="logo logo-share" />
       分享議程
