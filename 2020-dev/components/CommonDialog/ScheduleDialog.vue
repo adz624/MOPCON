@@ -29,7 +29,10 @@
       </section>
     </div>
     <div slot="footer">
-      <share-btn :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
+      <div class="flex">
+        <a v-if="speaker && speaker.link_slide" class="btn-ppt mr-4 text-center" :href="speaker? speaker.link_slide: '#'" target="_blank">簡報連結</a>
+        <share-btn :btn-list-show.sync="btnListShow" :share-url="shareUrl" />
+      </div>
     </div>
   </Dialog>
 </template>
