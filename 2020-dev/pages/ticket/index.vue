@@ -73,7 +73,7 @@ export default {
           {
             title: '會眾票',
             id: 1,
-            status: 1, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售
+            status: 2, // 0 => 敬請期待, 1 => 顯示價格, 2 => 已完售
             count: 400,
             price: 800,
             class: {
@@ -89,7 +89,7 @@ export default {
           {
             title: '社群優惠票',
             id: 2,
-            status: 1,
+            status: 2,
             count: 300, // 限量張數
             price: 700, // 票價
             class: {
@@ -105,7 +105,7 @@ export default {
           {
             title: '團購優惠票',
             id: 3,
-            status: 1,
+            status: 2,
             count: 100, // 限量張數
             price: 700, // 票價
             class: {
@@ -139,7 +139,7 @@ export default {
           {
             title: '豪華獨享 VIP',
             id: 5,
-            status: 1,
+            status: 2,
             count: 20, // 限量張數
             price: 2600, // 票價
             class: {
@@ -155,7 +155,7 @@ export default {
           {
             title: '尊絕不凡',
             id: 6,
-            status: 1,
+            status: 2,
             count: 10, // 限量張數
             price: 3200, // 票價
             class: {
@@ -173,7 +173,7 @@ export default {
           {
             title: '開源貢獻票',
             id: 7,
-            status: 1,
+            status: 2,
             count: 100, // 限量張數
             price: 400, // 票價
             class: {
