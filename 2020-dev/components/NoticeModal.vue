@@ -34,7 +34,7 @@ export default {
     }
   },
   mounted () {
-    this.dialogShow = this.$cookies.get('covid19Modal') ? !this.$cookies.get('covid19Modal') === 'already-seen' : true
+    this.dialogShow = this.$cookies.get('covid19Modal') ? !this.$cookies.get('covid19Modal') === 'already-seen' : false
   },
   methods: {
     setCloseCookie () {
