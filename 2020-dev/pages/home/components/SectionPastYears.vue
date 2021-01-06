@@ -68,7 +68,7 @@ export default {
 // logo
 @import '~@/assets/styles/_mix';
 $logo_map: (
-  jpg: 2014 2015 2016 2017 2018 2019,
+  jpg: 2014 2015 2016 2017 2018 2019 2020,
   svg: play
 );
 @include logo_map_mix(history);
