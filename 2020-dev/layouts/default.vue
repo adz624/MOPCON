@@ -4,6 +4,7 @@
     <div class="main">
       <nuxt />
       <NoticeModal />
+      <IndexModal />
     </div>
     <Footer />
   </div>
@@ -11,13 +12,15 @@
 
 <script>
 import NoticeModal from '~/components/NoticeModal'
+import IndexModal from '~/components/IndexModal'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Navbar,
     Footer,
-    NoticeModal
+    NoticeModal,
+    IndexModal
   },
   data () {
     return {

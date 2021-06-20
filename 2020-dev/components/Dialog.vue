@@ -86,7 +86,7 @@ $logo_map: (
 .dialog {
   max-width: 100%;
   border-radius: 12px;
-  @apply border-2 border-yellow-500 bg-blue-950 relative pt-16 pb-10 px-6;
+  @apply border-2 border-yellow-500 bg-blue-950 relative pt-10 pb-10 px-6;
   &-header {
     .logo-close {
       width: 32px;
