@@ -31,6 +31,33 @@
       </div>
     </section>
     <section class="sopOne">
+      <div class="sopOne-bg">
+        <div class="container">
+          <div class="sopOne-area">
+            <div class="sopOne-content">
+              <div class="sopOne-icon" />
+              <div class="title">
+                今年相約線上見！
+              </div>
+              <p class="description">
+                「堅持濁水溪以南」是 MOPCON 十年如一的口號，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！
+              </p>
+            </div>
+            <div class="sopOne-image-area">
+              <div class="sopOne-image">
+                <div class="image1" />
+                <div class="image2" />
+              </div>
+              <p class="sopOne-image-content">
+                2020 年論壇實影
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="sopTwo container" />
     </section>
   </div>
 </template>
@@ -160,7 +187,118 @@ export default {
   }
 }
 
-.sopOne {
-  min-height: 500px;
+.sopOne{
+  margin-top: 100px;
+  @include screen(sm) {
+    margin-top: 50px;
+  }
+  &:before {
+    content: '';
+    background-color: rgba(239, 234, 235, 0.3);
+    width: 100%;
+    height: calc(100% + 70px);
+    top: -100px;
+    left: -25%;
+    position: absolute;
+    @include screen(lg) {
+      left: 5%;
+      height: calc(100% + 100px);
+    }
+    @include screen(sm) {
+      height: calc(100% + 170px);
+    }
+  }
+  &-bg:before {
+    content: '';
+    background-color: #EFEAEB;
+    width: 70%;
+    height: calc(100% + 50px);
+    top: -50px;
+    position: absolute;
+    @include screen(lg) {
+      width: 75%;
+      height: calc(100% + 80px);
+    }
+    @include screen(sm) {
+      width: 100%;
+    }
+  }
+  &-area {
+    @include flex(space-between);
+  }
+  &-content {
+    @include flex(normal, column);
+    width: 410px;
+    margin-left: calc((100% - 1000px) / 2 - 3%);
+    @include screen(lg) {
+      margin-left: calc((100% - 680px) / 2 - 3%);
+    }
+    @include screen(md) {
+      width: 370px;
+    }
+    @include screen(pad) {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+    @include screen(sm) {
+      width: 100%;
+    }
+    .title {
+      color: $colorGrayDark;
+      font-weight: 600;
+      font-size: 40px;
+      letter-spacing: 0.12em;
+      margin-top: 32px;
+    }
+    .description {
+      margin-top: 32px;
+      font-size: 20px;
+    }
+  }
+  &-icon {
+    background-image: url('../../assets/home/sop01.svg');
+    width: 67px;
+    height: 48px;
+  }
+  &-image-area {
+    @include flex(normal, column, flex-end);
+    @include screen(sm) {
+      display: none;
+    }
+  }
+  &-image {
+    @include flex;
+    .image1 {
+      background-image: url('../../assets/home/sop01-image1.png');
+      width: 193px;
+      height: 400px;
+      border-radius: 8px;
+      margin-right: 20px;
+      @include screen(lg) {
+        display: none;
+      }
+    }
+    .image2 {
+      background-image: url('../../assets/home/sop01-image2.png');
+      width: 411px;
+      height: 400px;
+      border-radius: 8px;
+      @include screen(lg) {
+        width: 334px;
+        height: 374px;
+      }
+      @include screen(pad) {
+        width: 300px;
+      }
+    }
+  }
+  &-image-content {
+    color: $colorGrayLight;
+    font-size: 20px;
+  }
+}
+
+.sopTwo {
+  min-height: 50vh;
 }
 </style>
