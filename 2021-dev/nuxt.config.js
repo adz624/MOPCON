@@ -44,8 +44,18 @@ module.exports = {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    // 全域 sass 變數設定
+    '@nuxtjs/style-resources'
   ],
+
+  // 全域 sass (變數、mixin、extend... ) 檔案引入設定
+  styleResources: {
+    scss: [
+      './assets/styles/_variables.scss',
+      './assets/styles/_mixin.scss'
+    ]
+  },
 
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
