@@ -1,0 +1,108 @@
+body * {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: $fontStyle;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  color: $colorFont;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.home-bg {
+  @include bgCenter;
+  background-image: url($bg);
+  @include screen(pad){
+    background-image: url($bg-mobile);
+  }
+}
+
+.logo-vertival {
+  background-image: url($logo-vertical);
+  background-repeat: no-repeat;
+  height: 451px;
+  width: 20px;
+  @include screen(pad) {
+    display: none;
+  }
+}
+
+.logo-mopcon {
+  background-image: url($logo);
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 100px;
+  @include screen(pad) {
+    background-size: 80%;
+  }
+  @include screen(sm) {
+    width: 100%;
+    background-size: 100%;
+  }
+}
+
+.logo-fb {
+  background-image: url($fb-icon);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.logo-ig {
+  background-image: url($ig-icon);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn {
+  width: 231px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  background-color: transparent;
+  border: 2px solid $colorBlack;
+  border-radius: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  @include screen(pad) {
+    width: 185px;;
+    line-height: 2.5rem;
+  }
+  @include screen(sm) {
+    width: 96%;
+    line-height: 3rem;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: $colorGray;
+    color: $colorWhite;
+  }
+}
+
+.btn-circle {
+  @include flex(center, column, center);
+  background-color: $colorOrange;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  @include screen(pad) {
+    width: 126px;
+    height: 126px;
+  }
+  & p {
+    color: $colorPrimary;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  &:hover {
+    background-color: $colorOrangeLight;
+  }
+}
