@@ -46,6 +46,11 @@ body * {
   }
 }
 
+.logo-mopcon-s {
+  @include bgCenter(152px, 24px);
+  background-image: url($logo-s);
+}
+
 .logo-fb {
   background-image: url($fb-icon);
   width: 1.5rem;
