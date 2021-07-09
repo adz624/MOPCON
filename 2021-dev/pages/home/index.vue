@@ -56,9 +56,47 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="sopTwo container" />
+    <section class="sopTwo">
+      <div class="container">
+        <div class="sopTwo-icon" />
+        <div class="sopTwo-title">
+          線上研討會如何進行？
+        </div>
+        <div class="sopTwo-area">
+          <div class="sopTwo-item">
+            <div class="sopTwo-item-icon icon1" />
+            <div class="sopTwo-item-title">
+              不限時提問
+            </div>
+            <div class="sopTwo-item-content">
+              <p>預先錄製議程確保最佳品質</p>
+              <p>議程進行時講者將會即時與會眾互動</p>
+            </div>
+          </div>
+          <div class="sopTwo-item">
+            <div class="sopTwo-item-icon icon2" />
+            <div class="sopTwo-item-title">
+              7 天不限次數觀看
+            </div>
+            <div class="sopTwo-item-content">
+              <p>想回味的、錯過的議程</p>
+              <p>購票會眾可於 7 天內重複觀看</p>
+            </div>
+          </div>
+          <div class="sopTwo-item">
+            <div class="sopTwo-item-icon icon3" />
+            <div class="sopTwo-item-title">
+              決不錯過議程
+            </div>
+            <div class="sopTwo-item-content">
+              <p>自由規劃議程收看時刻表</p>
+              <p>專屬助理 Mo 孃將即時提醒你前往</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="sopThree" />
   </div>
 </template>
 
@@ -299,6 +337,66 @@ export default {
 }
 
 .sopTwo {
+  margin-top: 100px;
+  &-icon {
+    background-image: url('../../assets/home/sop02.svg');
+    width: 67px;
+    height: 48px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+    margin-top: 32px;
+  }
+  &-area {
+    @include flex(space-around);
+    flex-wrap: wrap;
+    margin-top: 100px;
+    @include screen(md) {
+      margin-top: 50px;
+    }
+    @include screen(pad) {
+      margin-top: 40px;
+    }
+  }
+  &-item {
+    @include flex(normal, column, center);
+    width: 340px;
+    margin-bottom: 100px;
+    @include screen(xs) {
+      width: 90%;
+    }
+    .icon1 {
+      background-image: url('../../assets/home/sop02-icon1.svg');
+    }
+    .icon2 {
+      background-image: url('../../assets/home/sop02-icon2.svg');
+    }
+    .icon3 {
+      background-image: url('../../assets/home/sop02-icon3.svg');
+    }
+    &-icon {
+      width: 120px;
+      height: 120px;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 24px;
+      margin-top: 24px;
+    }
+    &-content{
+      margin-top: 10px;
+      p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+.sopThree {
   min-height: 50vh;
 }
 </style>
