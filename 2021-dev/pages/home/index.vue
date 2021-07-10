@@ -2,7 +2,7 @@
   <div>
     <section class="home-bg">
       <div class="main container">
-        <div class="logo-vertival" />
+        <div class="vol10-gray" />
         <div class="main-content">
           <div class="logo-mopcon" />
           <div class="slogan">
@@ -79,7 +79,7 @@
       <div class="container content-style">
         <div class="sopThree-area">
           <div class="sopThree-main">
-            <div class="logo-vertival" />
+            <div class="vol10-gray" />
             <div class="sopThree-content">
               <div class="sopThree-icon" />
               <h2>期待Mo孃的大變身</h2>
@@ -97,6 +97,13 @@
         <span>ＭＯ孃也很期待！</span>
       </div>
     </section>
+    <section class="home-bg-lock">
+      <div class="lock container">
+        <div class="lock-icon" />
+        <h1>{ 內容預備解鎖... }</h1>
+        <div class="vol10-org" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -108,25 +115,31 @@ export default {
 
 <style lang="scss" scoped>
 section {
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    @include screen(sm) {
+      font-size: 2rem;
+    }
+  }
   h2 {
     color: $colorGrayDark;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2.5rem;
     letter-spacing: 0.12em;
   }
   h3 {
     color: $colorPrimary;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .content-style {
     p {
       color: $colorPrimary;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
     span {
       color: $colorGrayLight;
-      font-size: 16px;
     }
   }
 }
@@ -142,9 +155,9 @@ section {
   }
   @include screen(sm) {
     padding-top: 120px;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
   }
-  .logo-vertival {
+  .vol10-gray {
     @include screen(pad) {
       display: none;
     }
@@ -211,7 +224,7 @@ section {
           height: 3.4rem;
           p {
             font-weight: bold;
-            font-size: 16px;
+            font-size: 1rem;
             & ~ p {
               margin-left: 5px;
             }
@@ -330,7 +343,7 @@ section {
     span {
       color: $colorGrayLight;
       margin-top: 10px;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
   &-image {
@@ -431,7 +444,7 @@ section {
     @include screen(pad) {
       width: 100%;
     }
-    .logo-vertival {
+    .vol10-gray {
       @include screen(md) {
         display: none;
       }
@@ -516,6 +529,15 @@ section {
     @include screen(pad) {
       bottom: 120px;
     }
+  }
+}
+.lock {
+  min-height: calc(100vh - 140px);
+  @include flex(center, column, center);
+  &-icon {
+    background-image: url('../../assets/home/lock.svg');
+    width: 92px;
+    height: 92px;
   }
 }
 </style>

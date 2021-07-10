@@ -23,14 +23,38 @@ body * {
   background-image: url($bg);
   @include screen(pad){
     background-image: url($bg-mobile);
+    background-position: right;
   }
 }
 
-.logo-vertival {
-  background-image: url($logo-vertical);
+.home-bg-lock {
+  @include bgCenter;
+  background-image: url($bg-lock);
+  @include screen(pad){
+    background-image: url($bg-lock-mobile);
+  }
+}
+
+.vol10-gray {
+  background-image: url($vol10-gray);
   background-repeat: no-repeat;
   height: 451px;
   width: 25px;
+}
+
+.vol10-org {
+  background-image: url($vol10-org);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 635px;
+  @include screen(pad) {
+    background-image: url($vol10-2021);
+    width: 454px;
+  }
+  @include screen(sm) {
+    background-image: url($vol10-growingWithYou);
+    width: 310px;
+  }
 }
 
 .logo-mopcon {
@@ -49,7 +73,7 @@ body * {
 
 .logo-mopcon-s {
   @include bgCenter(152px, 24px);
-  background-image: url($logo-s);
+  background-image: url($logo-w);
 }
 
 .logo-fb {
