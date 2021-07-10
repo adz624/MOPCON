@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 body * {
   font-size: 16px;
   font-weight: normal;
@@ -26,10 +30,7 @@ body * {
   background-image: url($logo-vertical);
   background-repeat: no-repeat;
   height: 451px;
-  width: 20px;
-  @include screen(pad) {
-    display: none;
-  }
+  width: 25px;
 }
 
 .logo-mopcon {

@@ -34,12 +34,10 @@
       <div class="sopOne-bg">
         <div class="container">
           <div class="sopOne-area">
-            <div class="sopOne-content">
+            <div class="sopOne-content content-style">
               <div class="sopOne-icon" />
-              <div class="title">
-                今年相約線上見！
-              </div>
-              <p class="description">
+              <h2>今年相約線上見！</h2>
+              <p>
                 「堅持濁水溪以南」是 MOPCON 十年如一的口號，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！
               </p>
             </div>
@@ -48,9 +46,7 @@
                 <div class="image1" />
                 <div class="image2" />
               </div>
-              <p class="sopOne-image-content">
-                2020 年論壇實影
-              </p>
+              <span>2020 年論壇實影</span>
             </div>
           </div>
         </div>
@@ -59,44 +55,48 @@
     <section class="sopTwo">
       <div class="container">
         <div class="sopTwo-icon" />
-        <div class="sopTwo-title">
-          線上研討會如何進行？
-        </div>
-        <div class="sopTwo-area">
+        <h2>線上研討會如何進行？</h2>
+        <div class="sopTwo-area content-style">
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon1" />
-            <div class="sopTwo-item-title">
-              不限時提問
-            </div>
-            <div class="sopTwo-item-content">
-              <p>預先錄製議程確保最佳品質</p>
-              <p>議程進行時講者將會即時與會眾互動</p>
-            </div>
+            <h3>不限時提問</h3>
+            <p>預先錄製議程確保最佳品質<br>議程進行時講者將會即時與會眾互動</p>
           </div>
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon2" />
-            <div class="sopTwo-item-title">
-              7 天不限次數觀看
-            </div>
-            <div class="sopTwo-item-content">
-              <p>想回味的、錯過的議程</p>
-              <p>購票會眾可於 7 天內重複觀看</p>
-            </div>
+            <h3>7 天不限次數觀看</h3>
+            <p>想回味的、錯過的議程<br>購票會眾可於 7 天內重複觀看</p>
           </div>
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon3" />
-            <div class="sopTwo-item-title">
-              決不錯過議程
-            </div>
-            <div class="sopTwo-item-content">
-              <p>自由規劃議程收看時刻表</p>
-              <p>專屬助理 Mo 孃將即時提醒你前往</p>
-            </div>
+            <h3>決不錯過議程</h3>
+            <p>自由規劃議程收看時刻表<br>專屬助理 Mo 孃將即時提醒你前往</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="sopThree" />
+    <section class="sopThree">
+      <div class="container content-style">
+        <div class="sopThree-area">
+          <div class="sopThree-main">
+            <div class="logo-vertival" />
+            <div class="sopThree-content">
+              <div class="sopThree-icon" />
+              <h2>期待Mo孃的大變身</h2>
+              <div class="description">
+                <p>誕生於濁水溪以南的可愛女子，今年 8 歲了！</p>
+                <p>回顧每年的成長，深深覺得養成一個孩子真的不容易。</p>
+                <p>今年 Mo 孃將結合新科技，<br>以更「立體」的形式與大家見面囉！</p>
+              </div>
+            </div>
+          </div>
+          <div class="sopThree-mo">
+            <div class="sopThree-mo-image" />
+          </div>
+        </div>
+        <span>ＭＯ孃也很期待！</span>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -107,6 +107,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  h2 {
+    color: $colorGrayDark;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+  }
+  h3 {
+    color: $colorPrimary;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .content-style {
+    p {
+      color: $colorPrimary;
+      font-size: 20px;
+    }
+    span {
+      color: $colorGrayLight;
+      font-size: 16px;
+    }
+  }
+}
 .main {
   @include flex;
   min-height: 100vh;
@@ -120,6 +143,11 @@ export default {
   @include screen(sm) {
     padding-top: 120px;
     padding-bottom: 70px;
+  }
+  .logo-vertival {
+    @include screen(pad) {
+      display: none;
+    }
   }
   &-content {
     width: 100%;
@@ -234,13 +262,13 @@ export default {
     content: '';
     background-color: rgba(239, 234, 235, 0.3);
     width: 100%;
-    height: calc(100% + 70px);
+    height: calc(100% + 100px);
     top: -100px;
     left: -25%;
     position: absolute;
     @include screen(lg) {
       left: 5%;
-      height: calc(100% + 100px);
+      height: calc(100% + 120px);
     }
     @include screen(sm) {
       height: calc(100% + 170px);
@@ -250,12 +278,12 @@ export default {
     content: '';
     background-color: #EFEAEB;
     width: 70%;
-    height: calc(100% + 50px);
+    height: calc(100% + 70px);
     top: -50px;
     position: absolute;
     @include screen(lg) {
       width: 75%;
-      height: calc(100% + 80px);
+      height: calc(100% + 100px);
     }
     @include screen(sm) {
       width: 100%;
@@ -281,16 +309,12 @@ export default {
     @include screen(sm) {
       width: 100%;
     }
-    .title {
-      color: $colorGrayDark;
-      font-weight: 600;
-      font-size: 40px;
-      letter-spacing: 0.12em;
+    h2 {
       margin-top: 32px;
+      margin-bottom: 0px;
     }
-    .description {
+    p {
       margin-top: 32px;
-      font-size: 20px;
     }
   }
   &-icon {
@@ -302,6 +326,11 @@ export default {
     @include flex(normal, column, flex-end);
     @include screen(sm) {
       display: none;
+    }
+    span {
+      color: $colorGrayLight;
+      margin-top: 10px;
+      font-size: 20px;
     }
   }
   &-image {
@@ -330,10 +359,6 @@ export default {
       }
     }
   }
-  &-image-content {
-    color: $colorGrayLight;
-    font-size: 20px;
-  }
 }
 
 .sopTwo {
@@ -343,10 +368,7 @@ export default {
     width: 67px;
     height: 48px;
   }
-  &-title {
-    font-weight: 600;
-    font-size: 40px;
-    letter-spacing: 0.12em;
+  h2 {
     margin-top: 32px;
   }
   &-area {
@@ -380,23 +402,120 @@ export default {
       width: 120px;
       height: 120px;
     }
-    &-title {
-      font-weight: 600;
-      font-size: 24px;
+    h3 {
       margin-top: 24px;
+      margin-bottom: 0px;
     }
-    &-content{
+    p {
+      text-align: center;
       margin-top: 10px;
-      p {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
+      margin-bottom: 0px;
     }
   }
 }
 .sopThree {
-  min-height: 50vh;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  @include screen(pad) {
+    margin-top: 50px;
+  }
+  &-area {
+    @include flex(space-between);
+    @include screen(pad) {
+      @include flex(normal, column);
+    }
+  }
+  &-main {
+    @include flex;
+    width: 45%;
+    @include screen(pad) {
+      width: 100%;
+    }
+    .logo-vertival {
+      @include screen(md) {
+        display: none;
+      }
+    }
+  }
+  &-content {
+    width: 100%;
+    margin-left: 10%;
+    @include screen(md) {
+      margin-left: 0%;
+    }
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 0px;
+    }
+    .description {
+      margin-top: 32px;
+    }
+  }
+  &-icon {
+    background-image: url('../../assets/home/sop03.svg');
+    width: 67px;
+    height: 48px;
+  }
+  &-mo {
+    width: 50%;
+    height: 760px;
+    @include screen(pad) {
+      width: 100%;
+      margin-top: 50px;
+    }
+    &:before {
+      content: '';
+      background-color: rgba(239, 234, 235, 0.3);
+      width: 120%;
+      height: 92%;
+      left: 5%;
+      position: absolute;
+      @include screen(pad) {
+        height: 70%;
+        top: 80px;
+        left: 0%;
+      }
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+      &:before {
+        content: '';
+        background-color: #EFEAEB;
+        width: 100%;
+        height: 92%;
+        top: -6%;
+        left: 12%;
+        position: absolute;
+        @include screen(pad) {
+          height: 70%;
+          top: 50px;
+          left: 7%;
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        background-image: url('../../assets/home/sop03-mo.png');
+        width: 402px;
+        height: 738px;
+        right: calc((50% - 220px));
+        @include screen(pad) {
+          right: calc((50% - 215px));
+        }
+      }
+    }
+  }
+  span {
+    display: none;
+    @include screen(md) {
+      position: absolute;
+      bottom: 50px;
+      display: block;
+    }
+    @include screen(pad) {
+      bottom: 120px;
+    }
+  }
 }
 </style>
