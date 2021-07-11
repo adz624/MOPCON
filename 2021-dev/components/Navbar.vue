@@ -20,15 +20,17 @@
         <a
           v-for="item in navOpenList"
           :key="item.url"
+          :href="item.url"
+          :target="item.target"
           :class="item.class"
           class="navbar-item"
         >
           {{ item.name }}
         </a>
-        <a v-if="!isMobile" class="navbar-item">
+        <a v-if="!isMobile" class="navbar-item" href="https://www.facebook.com/mopcon/" target="_blank">
           <IconFB />
         </a>
-        <a v-if="!isMobile" class="navbar-item">
+        <a v-if="!isMobile" class="navbar-item" href="https://www.instagram.com/mopcon.tw/" target="_blank">
           <IconIG />
         </a>
       </div>
@@ -69,18 +71,20 @@ export default {
         {
           name: '講者募集',
           class: '',
-          url: '1',
+          url: 'https://www.accupass.com/event/2106151141012050302398',
           subNav: [],
           subIsOpen: false,
-          open: ''
+          open: '',
+          target: '_blank'
         },
         {
           name: '時光機',
           class: '',
-          url: '2',
+          url: 'https://mopcon.org/album.php',
           subNav: [],
           subIsOpen: false,
-          open: ''
+          open: '',
+          target: '_blank'
         }
       ]
     }
@@ -193,6 +197,9 @@ export default {
       line-height: 1.7rem;
       margin-left: 40px;
       cursor: pointer;
+      @include screen(pad) {
+        margin-left: 25px;
+      }
       &:hover {
         color: $colorOrange;
         svg path {

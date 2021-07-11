@@ -10,15 +10,15 @@
             <p>最強科技研討會</p>
           </div>
           <div class="button-area">
-            <button class="btn">
+            <button class="btn" @click="openWindow('https://sites.google.com/view/mopcon2020edm?utm_source=edm&utm_medium=edm&utm_campaign=EDM0708&utm_term=edm_sub&fbclid=IwAR0wZqEpf98ZYjwWZGCFaXgBobG1I5WyXaAl2rJQ5rBpcvUmnG6U4nXXhH4&authuser=6')">
               ＋ 追蹤最新消息
             </button>
-            <button class="btn">
+            <button class="btn" @click="openWindow('https://calendar.google.com/calendar/u/0/r/eventedit?text=MOPCON+2021+%E7%B7%9A%E4%B8%8A%E7%A0%94%E8%A8%8E%E6%9C%83&dates=20211023/20211025&trp=false&sf=true')">
               加入行事曆
             </button>
           </div>
           <div class="collect-area">
-            <div class="btn-circle">
+            <div class="btn-circle" @click="openWindow('https://www.accupass.com/event/2106151141012050302398')">
               <p>{ 講者 }</p>
               <p>募集中</p>
             </div>
@@ -142,6 +142,9 @@ export default {
   methods: {
     resize () {
       this.innerWidth = window.innerWidth
+    },
+    openWindow (url) {
+      window.open(url)
     }
   }
 }
