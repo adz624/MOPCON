@@ -1,64 +1,86 @@
 <template>
-  <div class="navbar">
-    <nav class="container">
-      <div class="navbar-content">
+  <div
+    class="navbar"
+    :class="{'fixed': navFixed && !isMobile, 'fixed-open': navFixedOpen && !isMobile}"
+  >
+    <nav
+      class="container navbar-container"
+      :class="{'navbar-container-around': navFixed && !isMobile, 'navbar-container-mobile': navOpen}"
+    >
+      <div v-if="isMobile || navFixed">
+        <div
+          v-if="navOpen || navFixed"
+          class="logo-w"
+          :class="{'primary': navFixed && !isMobile}"
+        >
+          <LogoW />
+        </div>
+      </div>
+      <div class="navbar-content" :class="{'active': navOpen}">
         <a
           v-for="item in navOpenList"
           :key="item.url"
           :class="item.class"
-          class="nav-item"
+          class="navbar-item"
         >
           {{ item.name }}
         </a>
+        <a v-if="!isMobile" class="navbar-item">
+          <IconFB />
+        </a>
+        <a v-if="!isMobile" class="navbar-item">
+          <IconIG />
+        </a>
       </div>
-      <div class="navbar-mobile-btn" />
+      <div
+        v-if="isMobile"
+        class="navbar-item navbar-mobile-btn"
+        @click="openNav"
+      >
+        <IconMenu v-if="!navOpen" />
+        <div v-if="navOpen" class="navbar-close">
+          <fa :icon="['fas', 'times-circle']" />
+        </div>
+      </div>
     </nav>
   </div>
 </template>
 
 <script>
+import LogoW from '../assets/base/logo-w.svg?inline'
+import IconFB from '../assets/base/fb.svg?inline'
+import IconIG from '../assets/base/ig.svg?inline'
+import IconMenu from '../assets/base/menu.svg?inline'
 export default {
+  components: {
+    LogoW,
+    IconFB,
+    IconIG,
+    IconMenu
+  },
   props: {
     isMobile: Boolean
   },
   data () {
     return {
+      navOpen: false,
+      windowTop: null,
       navList: [
         {
           name: '講者募集',
           class: '',
-          url: '',
+          url: '1',
           subNav: [],
           subIsOpen: false,
-          open: '',
-          isIcon: false
+          open: ''
         },
         {
           name: '時光機',
           class: '',
-          url: '',
+          url: '2',
           subNav: [],
           subIsOpen: false,
-          open: '',
-          isIcon: false
-        },
-        {
-          name: '',
-          class: 'logo-fb',
-          url: '',
-          subNav: [],
-          subIsOpen: false,
-          open: '',
-          isIcon: true
-        },
-        {
-          name: '',
-          class: 'logo-ig',
-          url: '',
-          subNav: [],
-          subIsOpen: false,
-          open: '',
-          isIcon: true
+          open: ''
         }
       ]
     }
@@ -66,6 +88,24 @@ export default {
   computed: {
     navOpenList () {
       return this.navList.filter(nav => nav.open !== false)
+    },
+    navFixed () {
+      return this.windowTop > 200
+    },
+    navFixedOpen () {
+      return this.windowTop > 500
+    }
+  },
+  mounted () {
+    this.windowTop = window.top.scrollY
+    window.addEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    openNav () {
+      this.navOpen = !this.navOpen
+    },
+    onScroll () {
+      this.windowTop = window.top.scrollY
     }
   }
 }
@@ -77,32 +117,111 @@ export default {
   position: absolute;
   margin-top: 32px;
   z-index: 100;
+  &.fixed {
+    position: fixed;
+    transition: all 0.3s;
+    top: -110px;
+    .navbar-container {
+      width: 94%;
+      background-color: $colorWhite;
+      box-shadow: 0px 4px 12px 4px rgb(0 0 0 / 12%);
+      border-radius: 8px;
+      padding: 1.3rem 1.5rem 1rem;
+    }
+    .navbar-container-around {
+      @include flex(space-between);
+    }
+  }
+  &.fixed-open {
+    top: 0px;
+  }
+  .logo-w.primary path {
+    fill: $colorPrimary;
+  }
   nav {
     @include flex(flex-end);
+    @include screen(sm) {
+      @include flex(space-between);
+      .logo-w {
+        margin-top: 4px;
+        z-index: 1;
+      }
+    }
+    .logo-w {
+      z-index: 1;
+    }
+    &.navbar-container-mobile {
+      position: fixed;
+      left: 5%;
+    }
     .navbar-content {
       @include flex(flex-end);
       @include screen(sm) {
-        display: none;
+        background: $colorPrimary;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 6rem;
+        transform: translateX(100%);
+        transition: all 0.3s;
+        &.active {
+          transform: translateX(0);
+          .navbar-item {
+            display: block;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            color: $colorWhite;
+            margin-left: 0px;
+            &:hover {
+              color: $colorOrange;
+            }
+          }
+        }
       }
-      .nav-item {
-        color: $colorPrimary;
-        font-size: 1.5rem;
-        font-weight: 600;
-        line-height: 1.5rem;
-        margin-left: 40px;
-        cursor: pointer;
-        &:hover {
-          color: $colorOrange;
+    }
+    .navbar-item {
+      color: $colorPrimary;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.7rem;
+      margin-left: 40px;
+      cursor: pointer;
+      &:hover {
+        color: $colorOrange;
+        svg path {
+          fill: $colorOrange;
+        }
+      }
+      svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        path {
+          fill: $colorPrimary;
         }
       }
     }
     .navbar-mobile-btn {
-      display: none;
-      background-image: url(../assets/base/menu.svg);
-      width: 32px;
-      height: 32px;
-      @include screen(sm) {
-        display: block;
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+      &:hover svg circle {
+        fill: $colorOrange;
+      }
+      .navbar-close{
+        &:hover svg path {
+          fill: $colorOrange;
+        }
+        svg path {
+          fill: $colorWhite;
+        }
       }
     }
   }

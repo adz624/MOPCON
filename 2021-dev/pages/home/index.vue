@@ -52,6 +52,9 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="line-deco line-deco-first" />
+    </div>
     <section class="sopTwo">
       <div class="container">
         <div class="sopTwo-icon" />
@@ -75,6 +78,9 @@
         </div>
       </div>
     </section>
+    <div v-if="isPad" class="container">
+      <div class="line-deco" />
+    </div>
     <section class="sopThree">
       <div class="container content-style">
         <div class="sopThree-area">
@@ -97,6 +103,7 @@
         <span>ＭＯ孃也很期待！</span>
       </div>
     </section>
+    <div class="line-gray" />
     <section class="home-bg-lock">
       <div class="lock container">
         <div class="lock-icon" />
@@ -109,7 +116,34 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  data () {
+    return {
+      innerWidth: null
+    }
+  },
+  computed: {
+    isPad () {
+      return this.innerWidth < 768
+    }
+  },
+  watch: {
+    isPad (val) {
+      if (!val) {
+        this.subNavOpen = false
+        this.navOpen = false
+      }
+    }
+  },
+  mounted () {
+    this.innerWidth = window.innerWidth
+    window.addEventListener('resize', this.resize)
+  },
+  methods: {
+    resize () {
+      this.innerWidth = window.innerWidth
+    }
+  }
 }
 </script>
 
@@ -141,6 +175,15 @@ section {
     span {
       color: $colorGrayLight;
     }
+  }
+}
+.line-deco {
+  right: 0px;
+  position: absolute;
+}
+.line-deco-first {
+  @include screen(sm) {
+    top: -80px;
   }
 }
 .main {
@@ -268,6 +311,7 @@ section {
 
 .sopOne{
   margin-top: 100px;
+  margin-bottom: 100px;
   @include screen(sm) {
     margin-top: 50px;
   }
@@ -375,7 +419,7 @@ section {
 }
 
 .sopTwo {
-  margin-top: 100px;
+  // margin-top: 100px;
   &-icon {
     background-image: url('../../assets/home/sop02.svg');
     width: 67px;
@@ -475,6 +519,7 @@ section {
     @include screen(pad) {
       width: 100%;
       margin-top: 50px;
+      height: 483px;
     }
     &:before {
       content: '';
@@ -510,11 +555,15 @@ section {
         content: '';
         position: absolute;
         background-image: url('../../assets/home/sop03-mo.png');
+        background-repeat: no-repeat;
+        background-position: center;
         width: 402px;
         height: 738px;
         right: calc((50% - 220px));
         @include screen(pad) {
           right: calc((50% - 215px));
+          background-size: 65%;
+          height: 483px;
         }
       }
     }
@@ -527,7 +576,7 @@ section {
       display: block;
     }
     @include screen(pad) {
-      bottom: 120px;
+      bottom: 35px;
     }
   }
 }

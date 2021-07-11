@@ -14,6 +14,11 @@ export default {
     Navbar,
     Footer
   },
+  data () {
+    return {
+      innerWidth: null
+    }
+  },
   computed: {
     isMobile () {
       return this.innerWidth < 568
@@ -25,6 +30,15 @@ export default {
         this.subNavOpen = false
         this.navOpen = false
       }
+    }
+  },
+  mounted () {
+    this.innerWidth = window.innerWidth
+    window.addEventListener('resize', this.resize)
+  },
+  methods: {
+    resize () {
+      this.innerWidth = window.innerWidth
     }
   }
 }

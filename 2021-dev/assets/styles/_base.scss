@@ -71,7 +71,7 @@ body * {
   }
 }
 
-.logo-mopcon-s {
+.logo-mopcon-w {
   @include bgCenter(152px, 24px);
   background-image: url($logo-w);
 }
@@ -86,6 +86,17 @@ body * {
   background-image: url($ig-icon);
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.line-deco {
+  background-image: url($line-deco);
+  width: 310px;
+  height: 8px;
+}
+
+.line-gray {
+  @include bgCenter(100%, 1rem);
+  background-image: url($line-gray);
 }
 
 .btn {
@@ -121,6 +132,7 @@ body * {
   width: 150px;
   height: 150px;
   border-radius: 75px;
+  cursor: pointer;
   @include screen(pad) {
     width: 126px;
     height: 126px;

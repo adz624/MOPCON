@@ -27,8 +27,9 @@ module.exports = {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [{
+    src: '~/plugins/font-awesome'
+  }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -36,7 +37,8 @@ module.exports = {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/svg'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,7 +48,8 @@ module.exports = {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // 全域 sass 變數設定
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'nuxt-fontawesome'
   ],
 
   // 全域 sass (變數、mixin、extend... ) 檔案引入設定
@@ -54,6 +57,17 @@ module.exports = {
     scss: [
       './assets/styles/_variables.scss',
       './assets/styles/_mixin.scss'
+    ]
+  },
+  fontawesome: {
+    // icon 的標籤使用 <fa>，這邊不設定就會依照 plugin 裡的設定<font-awesome-icon>
+    component: 'fa',
+    imports: [
+      // 引入 fas 所有的icon
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
     ]
   },
 

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="logo-mopcon-s" />
+    <div class="logo-mopcon-w" />
     <p>堅持濁水溪以南，最大行動科技年會</p>
   </footer>
 </template>
