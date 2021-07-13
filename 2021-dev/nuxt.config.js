@@ -41,7 +41,7 @@ module.exports = {
       {
         hid: 'og-image',
         property: 'og:image',
-        content: '/2021/og-image.png'
+        content: '/2021/og-2021.png'
       },
       { hid: 'og-locale', property: 'og:locale', content: 'zh_tw' },
       // twitter seo
