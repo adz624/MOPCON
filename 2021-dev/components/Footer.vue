@@ -8,8 +8,14 @@
 footer {
   @include flex(center, column, center);
   background-color: $colorPrimary;
-  width: 100%;
   height: 140px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  @include screen(pad) {
+    height: 171px;
+    padding-top: 54px;
+    padding-bottom: 30px;
+  }
   p {
     color: $colorWhite;
   }

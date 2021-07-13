@@ -584,8 +584,11 @@ section {
   }
 }
 .lock {
-  min-height: calc(100vh - 140px);
   @include flex(center, column, center);
+  min-height: calc(100vh - 140px);
+  @include screen(pad) {
+    min-height: calc(100vh - 171px);
+  }
   &-icon {
     background-image: url('../../assets/home/lock.svg');
     width: 92px;
