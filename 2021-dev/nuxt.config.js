@@ -14,7 +14,59 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'MOPCON 2021 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！' },
+      // fb seo
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: '行動科技年會 2021 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'og-description',
+        property: 'og:description',
+        content:
+          'MOPCON 2021 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！'
+      },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og-site_name',
+        property: 'og:site_name',
+        content: '行動科技年會 2021 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'https://mopcon.org/2021/'
+      },
+      {
+        hid: 'og-image',
+        property: 'og:image',
+        content: '/2021/og-image.png'
+      },
+      { hid: 'og-locale', property: 'og:locale', content: 'zh_tw' },
+      // twitter seo
+      { hid: 'twitter-card', name: 'twitter:card', content: 'app' },
+      {
+        hid: 'twitter-site',
+        name: 'twitter:site',
+        content: '行動科技年會 2021 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'twitter-description',
+        name: 'twitter:description',
+        content:
+          'MOPCON 2021 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！'
+      },
+      {
+        hid: 'twitter-app:name:iphone',
+        name: 'twitter:app:name:iphone',
+        content: '行動科技年會 2021 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'twitter-app:name:ipad',
+        name: 'twitter:app:name:ipad',
+        content: '行動科技年會 2021 | Mobile / Open / Platform Conference'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
