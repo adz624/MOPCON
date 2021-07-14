@@ -41,7 +41,7 @@ module.exports = {
       {
         hid: 'og-image',
         property: 'og:image',
-        content: '/2021/og-2021.png'
+        content: '/2021/og-image.png'
       },
       { hid: 'og-locale', property: 'og:locale', content: 'zh_tw' },
       // twitter seo
@@ -98,7 +98,7 @@ module.exports = {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     // 全域 sass 變數設定
     '@nuxtjs/style-resources',
     'nuxt-fontawesome'
@@ -140,11 +140,11 @@ module.exports = {
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en'
-    }
-  },
+  // pwa: {
+  //   manifest: {
+  //     lang: 'en'
+  //   }
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
