@@ -156,7 +156,7 @@ export default {
     }
     &.navbar-container-mobile {
       position: fixed;
-      left: 5%;
+      // left: 5%;
     }
     .navbar-content {
       @include flex(flex-end);
