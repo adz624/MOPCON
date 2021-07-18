@@ -1,0 +1,102 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  * {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: $fontStyle;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    color: $colorFont;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.home-bg {
+  @include bgCenter;
+  background-image: url($bg);
+  @include screen(pad){
+    background-image: url($bg-mobile);
+    background-position: right;
+  }
+}
+
+.home-bg-lock {
+  @include bgCenter;
+  background-image: url($bg-lock);
+  @include screen(pad){
+    background-image: url($bg-lock-mobile);
+  }
+}
+
+.vol10-gray {
+  background-image: url($vol10-gray);
+  background-repeat: no-repeat;
+  height: 451px;
+  width: 25px;
+}
+
+.vol10-org {
+  background-image: url($vol10-org);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 635px;
+  @include screen(pad) {
+    background-image: url($vol10-2021);
+    width: 454px;
+  }
+  @include screen(sm) {
+    background-image: url($vol10-growingWithYou);
+    width: 310px;
+  }
+}
+
+.logo-mopcon {
+  background-image: url($logo);
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 100px;
+  @include screen(pad) {
+    background-size: 80%;
+  }
+  @include screen(sm) {
+    width: 100%;
+    background-size: 100%;
+  }
+}
+
+.logo-mopcon-w {
+  @include bgCenter(152px, 24px);
+  background-image: url($logo-w);
+}
+
+.logo-fb {
+  background-image: url($fb-icon);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.logo-ig {
+  background-image: url($ig-icon);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.line-deco {
+  background-image: url($line-deco);
+  width: 310px;
+  height: 8px;
+}
+
+.line-gray {
+  @include bgCenter(100%, 1rem);
+  background-image: url($line-gray);
+}
