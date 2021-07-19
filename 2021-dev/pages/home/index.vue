@@ -6,8 +6,8 @@
         <div class="main-content">
           <div class="logo-mopcon" />
           <div class="slogan">
-            <p>// 堅持濁水溪以南，</p>
-            <p>最強科技研討會</p>
+            <p>// 線上科技研討會 </p>
+            <p> 10/23（六）～10/24（日）</p>
           </div>
           <div class="button-area">
             <button class="btn" @click="openWindow('https://sites.google.com/view/mopcon2020edm?utm_source=edm&utm_medium=edm&utm_campaign=EDM0708&utm_term=edm_sub&fbclid=IwAR0wZqEpf98ZYjwWZGCFaXgBobG1I5WyXaAl2rJQ5rBpcvUmnG6U4nXXhH4&authuser=6')">
@@ -230,6 +230,7 @@ section {
         font-weight: 600;
         margin-top: 0px;
         margin-bottom: 0px;
+        margin-right: 8px;
       }
     }
     .button-area {
@@ -355,11 +356,10 @@ section {
   &-content {
     @include flex(normal, column);
     width: 410px;
-    margin-left: calc((100% - 1000px) / 2 - 3%);
-    @include screen(lg) {
-      margin-left: calc((100% - 680px) / 2 - 3%);
-    }
+    margin-left: 8.3333333333%;
+    margin-right: 18px;
     @include screen(md) {
+      margin-left: 0px;
       width: 370px;
     }
     @include screen(pad) {
@@ -402,6 +402,9 @@ section {
       border-radius: 8px;
       margin-right: 20px;
       @include screen(lg) {
+        height: 374px;
+      }
+      @include screen(md) {
         display: none;
       }
     }
@@ -499,7 +502,7 @@ section {
   }
   &-content {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 15.33333%;
     @include screen(md) {
       margin-left: 0%;
     }
