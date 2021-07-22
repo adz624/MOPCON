@@ -79,9 +79,11 @@ module.exports = {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{
-    src: '~/plugins/font-awesome'
-  }],
+  plugins: [
+    { src: '~/plugins/font-awesome' },
+    { src: '~/plugins/pixel', mode: 'client' },
+    { src: '~/plugins/ga', mode: 'client' }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
