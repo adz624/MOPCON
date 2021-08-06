@@ -18,7 +18,7 @@
             </button>
           </div>
           <div class="collect-area">
-            <div class="btn-circle" @click="openWindow('https://mopcon.kktix.cc/events/mopcon2021')">
+            <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
               <p>{ 盲鳥票 }</p>
               <p>開賣</p>
             </div>
