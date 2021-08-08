@@ -103,8 +103,24 @@ module.exports = {
     // '@nuxtjs/pwa',
     // 全域 sass 變數設定
     '@nuxtjs/style-resources',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    '@nuxtjs/i18n'
   ],
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.json'
+      }, {
+        code: 'zh',
+        name: 'Chinese',
+        file: 'zh.json'
+      }
+    ],
+    defaultLocale: 'zh',
+    langDir: 'locales/'
+  },
 
   // 全域 sass (變數、mixin、extend... ) 檔案引入設定
   styleResources: {
