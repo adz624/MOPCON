@@ -49,10 +49,10 @@
 </template>
 
 <script>
-import LogoW from '../assets/base/logo-w.svg?inline'
-import IconFB from '../assets/base/fb.svg?inline'
-import IconIG from '../assets/base/ig.svg?inline'
-import IconMenu from '../assets/base/menu.svg?inline'
+import LogoW from '../assets/images/logo-w.svg?inline'
+import IconFB from '../assets/images/fb.svg?inline'
+import IconIG from '../assets/images/ig.svg?inline'
+import IconMenu from '../assets/images/menu.svg?inline'
 export default {
   components: {
     LogoW,

@@ -387,7 +387,7 @@ section {
     }
   }
   &-icon {
-    background-image: url('../../assets/home/sop01.svg');
+    background-image: url('../../assets/images/sop01.svg');
     width: 67px;
     height: 48px;
   }
@@ -405,7 +405,7 @@ section {
   &-image {
     @include flex;
     .image1 {
-      background-image: url('../../assets/home/sop01-image1.png');
+      background-image: url('../../assets/images/sop01-image1.png');
       width: 193px;
       height: 400px;
       border-radius: 8px;
@@ -418,7 +418,7 @@ section {
       }
     }
     .image2 {
-      background-image: url('../../assets/home/sop01-image2.png');
+      background-image: url('../../assets/images/sop01-image2.png');
       width: 411px;
       height: 400px;
       border-radius: 8px;
@@ -436,7 +436,7 @@ section {
 .sopTwo {
   // margin-top: 100px;
   &-icon {
-    background-image: url('../../assets/home/sop02.svg');
+    background-image: url('../../assets/images/sop02.svg');
     width: 67px;
     height: 48px;
   }
@@ -462,13 +462,13 @@ section {
       width: 90%;
     }
     .icon1 {
-      background-image: url('../../assets/home/sop02-icon1.svg');
+      background-image: url('../../assets/images/sop02-icon1.svg');
     }
     .icon2 {
-      background-image: url('../../assets/home/sop02-icon2.svg');
+      background-image: url('../../assets/images/sop02-icon2.svg');
     }
     .icon3 {
-      background-image: url('../../assets/home/sop02-icon3.svg');
+      background-image: url('../../assets/images/sop02-icon3.svg');
     }
     &-icon {
       width: 120px;
@@ -524,7 +524,7 @@ section {
     }
   }
   &-icon {
-    background-image: url('../../assets/home/sop03.svg');
+    background-image: url('../../assets/images/sop03.svg');
     width: 67px;
     height: 48px;
   }
@@ -569,7 +569,7 @@ section {
       &:after {
         content: '';
         position: absolute;
-        background-image: url('../../assets/home/sop03-mo.png');
+        background-image: url('../../assets/images/sop03-mo.png');
         background-repeat: no-repeat;
         background-position: center;
         width: 402px;
@@ -602,7 +602,7 @@ section {
     min-height: calc(100vh - 171px);
   }
   &-icon {
-    background-image: url('../../assets/home/lock.svg');
+    background-image: url('../../assets/images/lock.svg');
     width: 92px;
     height: 92px;
   }
