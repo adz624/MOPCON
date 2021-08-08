@@ -72,7 +72,7 @@
           </div>
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon3" />
-            <h3>決不錯過議程</h3>
+            <h3>絕不錯過議程</h3>
             <p>自由規劃議程收看時刻表<br>專屬助理 Mo 孃將即時提醒你前往</p>
           </div>
         </div>
