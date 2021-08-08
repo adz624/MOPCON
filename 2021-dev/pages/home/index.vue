@@ -18,9 +18,9 @@
             </button>
           </div>
           <div class="collect-area">
-            <div class="btn-circle" @click="openWindow('https://www.accupass.com/event/2106151141012050302398')">
-              <p>{ 講者 }</p>
-              <p>募集中</p>
+            <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
+              <p>{ 盲鳥票 }</p>
+              <p>開賣</p>
             </div>
             <div class="growing">
               <p>我們10歲囉</p>
@@ -72,7 +72,7 @@
           </div>
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon3" />
-            <h3>決不錯過議程</h3>
+            <h3>絕不錯過議程</h3>
             <p>自由規劃議程收看時刻表<br>專屬助理 Mo 孃將即時提醒你前往</p>
           </div>
         </div>
@@ -264,7 +264,15 @@ section {
         margin-top: 0px;
       }
       .btn-circle {
+        position: fixed;
+        right: calc((100vw - 1280px)/2);
+        z-index: 99;
+        @media (max-width: 1280px){
+          right: 24px;
+        }
         @include screen(sm) {
+          position: relative;
+          right: auto;
           @include flex(center, row, center);
           width: 96%;
           line-height: 3rem;
@@ -279,11 +287,12 @@ section {
         }
       }
       .growing {
-        text-align: right;
+        text-align: left;
         @include screen(pad) {
           padding-top: 35px;
         }
         @include screen(sm) {
+          text-align: right;
           padding-top: 80px;
         }
         p {
