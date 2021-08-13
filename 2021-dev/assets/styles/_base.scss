@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 body {
@@ -24,7 +25,7 @@ body {
   @include screen(md) {
     max-width: 960px;
   }
-  @include screen(pad){
+  @include screen(pad) {
     max-width: 720px;
   }
   @include screen(sm) {
@@ -35,7 +36,7 @@ body {
 .home-bg {
   @include bgCenter;
   background-image: url($bg);
-  @include screen(pad){
+  @include screen(pad) {
     background-image: url($bg-mobile);
     background-position: right;
   }
@@ -44,7 +45,7 @@ body {
 .home-bg-lock {
   @include bgCenter;
   background-image: url($bg-lock);
-  @include screen(pad){
+  @include screen(pad) {
     background-image: url($bg-lock-mobile);
   }
 }
@@ -69,6 +70,13 @@ body {
     background-image: url($vol10-growingWithYou);
     width: 310px;
   }
+}
+.vol10-mobile {
+  height: 95px;
+  width: 30px;
+  background-image: url($vol10-mobile-2), url($vol10-mobile-1);
+  background-position: top left, bottom center;
+  background-repeat: no-repeat;
 }
 
 .logo-mopcon {
@@ -111,4 +119,26 @@ body {
 .line-gray {
   @include bgCenter(100%, 1rem);
   background-image: url($line-gray);
+}
+.line-gray-transform {
+  @include bgCenter(100%, 1rem);
+  background-image: url($line-gray);
+  transform: rotate(180deg);
+}
+
+// 共同 sop icon
+.sopOne-icon {
+  background-image: url('../../assets/images/sop01.svg');
+  width: 67px;
+  height: 48px;
+}
+.sopTwo-icon {
+  background-image: url('../../assets/images/sop02.svg');
+  width: 67px;
+  height: 48px;
+}
+.sopThree-icon {
+  background-image: url('../../assets/images/sop03.svg');
+  width: 67px;
+  height: 48px;
 }
