@@ -69,6 +69,15 @@ export default {
       windowTop: null,
       navList: [
         {
+          name: '票種介紹',
+          class: '',
+          url: '/ticket',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_ticket,
+          target: ''
+        },
+        {
           name: '講者募集',
           class: '',
           url: 'https://www.accupass.com/event/2106151141012050302398',

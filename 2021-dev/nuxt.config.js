@@ -142,7 +142,13 @@ module.exports = {
   },
 
   env: {
-    BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
+    BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
+    route_speaker: process.env.SPEAKER !== 'false',
+    route_schedule: process.env.SCHEDULE !== 'false',
+    route_schedule_unconf: process.env.SCHEDULE_UNCONF !== 'false',
+    route_sponsor: process.env.SPONSOR !== 'false',
+    route_community: process.env.COMMUNITY !== 'false',
+    route_ticket: process.env.TICKET !== 'false'
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
