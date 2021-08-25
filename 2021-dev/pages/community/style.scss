@@ -1,0 +1,242 @@
+$bg_map: (
+  png: IxDA-Taiwan ocf SITCON Vue pyConTaiwan
+);
+@include bgImg(community);
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.12em;
+  color: #202020;
+  br {
+    display: none;
+  }
+}
+
+span {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+@include screen(sm) {
+  h2 {
+    br {
+      display: block;
+    }
+  }
+}
+.title-container {
+  @include flex(start, row, end);
+  padding-top: 182px;
+  padding-bottom: 113px;
+}
+@include screen(pad) {
+  .title-container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    justify-content: center;
+  }
+}
+@include screen(sm) {
+  .title-container {
+    padding-top: 46px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    & div:first-child {
+      margin-bottom: 32px;
+    }
+  }
+}
+.line-deco-container {
+  @include flex(flex-end, row, center);
+  padding-bottom: 100px;
+}
+@include screen(pad) {
+  .line-deco-container {
+    display: none;
+  }
+}
+
+// 內容 css
+.slogan {
+  .container {
+    padding-top: 220px;
+  }
+  .vol10-gray {
+    top: 0;
+    left: 0;
+  }
+  .vol10-mobile {
+    top: 50px;
+    left: 20px;
+    display: none;
+  }
+  &-content {
+    list-style: none;
+    li {
+      color: #202020;
+    }
+    li:last-child {
+      color: $colorOrange;
+      margin-bottom: 88px;
+      font-weight: 700;
+      br {
+        display: none;
+      }
+    }
+    span {
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+  }
+  .btn {
+    width: 382px;
+    transition: all 0.25s;
+    background-color: $colorOrange;
+    color: $colorWhite;
+    border: none;
+    &:hover {
+      background-color: $colorOrangeLight;
+      border-color: $colorOrange;
+    }
+  }
+}
+@include screen(pad) {
+  .slogan {
+    .container {
+      padding-top: 178px;
+    }
+    &-title {
+      br {
+        display: block;
+      }
+    }
+    .vol10-gray {
+      display: none;
+    }
+    .vol10-mobile {
+      display: block;
+    }
+    .btn-container {
+      padding-bottom: 110px;
+    }
+  }
+}
+@include screen(sm) {
+  .slogan {
+    .container {
+      padding-top: 90px;
+    }
+    &-content {
+      li:last-child {
+        br {
+          display: block;
+        }
+      }
+    }
+    p {
+      display: none;
+    }
+    .btn {
+      width: 310px;
+    }
+  }
+}
+@include screen(xs) {
+  .slogan {
+    .container {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+}
+
+.community {
+  &-list {
+    @include flex(space-around, row);
+    flex-wrap: wrap;
+    .vol10-gray {
+      top: 150px;
+      left: 0;
+    }
+  }
+  .card {
+    @include flex(center, column, center);
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    &-pic {
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+    }
+    &:hover {
+      border: 2px solid #fb8628;
+      border-radius: 10px;
+    }
+  }
+}
+@include screen(pad) {
+  .community {
+    &-title-container {
+      padding-top: 100px;
+      margin-bottom: 100px;
+      justify-content: flex-start;
+    }
+    &-list {
+      margin-bottom: 100px;
+      .vol10-gray {
+        display: none;
+      }
+    }
+  }
+}
+@include screen(sm) {
+  .community {
+    &-list {
+      margin-bottom: 90px;
+    }
+    .card {
+      @include flex(center, row, center);
+      &-pic {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+.rule {
+  background-color: #efeaeb;
+  &-content {
+    display: flex;
+    padding-bottom: 45px;
+    p {
+      font-size: 18px;
+      span {
+        color: $colorOrange;
+      }
+    }
+  }
+}
+@include screen(pad) {
+  .rule {
+    &-content {
+      padding-bottom: 100px;
+      flex-direction: column;
+    }
+  }
+}
+@include screen(sm) {
+  .rule {
+    &-content {
+      padding-bottom: 80px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@mixin screen ($width) {
+@mixin screen($width) {
   @if $width == xs {
     @media (max-width: 375px) {
       @content;
@@ -44,4 +44,23 @@
   justify-content: $content;
   flex-direction: $direction;
   align-items: $align;
+}
+
+// 背景圖地圖
+@mixin bgImg($page_name, $map_name: $bg_map, $folder_name: images) {
+  //為了串檔案字串使用,把檔案格式先取出來
+  $map-keys: map-keys($map_name);
+  @each $key in $map-keys {
+    $list: map-get($map_name, $key);
+    $list_length: length($list);
+    @for $index from 1 through $list_length {
+      // nth (先寫你要用哪個變數，第幾個)
+      .bg-#{nth($list,$index)} {
+        background: url('../../assets/#{$folder_name}/#{$page_name}/#{nth($list, $index)}.#{$key}');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
 }
