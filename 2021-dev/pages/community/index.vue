@@ -42,6 +42,63 @@
         </div>
       </div>
     </section>
+    <section class="volunteer">
+      <div class="container">
+        <div class="volunteer-title">
+          <div class="sopOne-icon" />
+          <h2>MOPCON<br>志工團隊</h2>
+        </div>
+        <div class="volunteer-content">
+          <div
+            v-for="volunteer in volunteerList"
+            :key="volunteer.id"
+            class="group-box"
+            :class="{
+              'active': group === volunteer.id,
+              'no-active': group !== volunteer.id && group !== null && groupExpand,
+              'hide': groupChange}"
+          >
+            <div class="group-main" @click="expandGroup(volunteer.id)">
+              <div :class="['image-' + volunteer.id ]" />
+              <p class="group-title">
+                {{ volunteer.name_e }}
+              </p>
+              <span class="group-name">“{{ volunteer.name }}”</span>
+            </div>
+            <div class="group-content">
+              <div
+                v-for="(team, teamIndex) in volunteerData.teams"
+                :key="team.name"
+                class="team-box"
+              >
+                <div class="team-title">
+                  <span>{{ team.name }}</span>
+                  <div
+                    class="team-expand"
+                    :class="{'team-expand-hide': !team.expand}"
+                    @click="expandTeam(teamIndex)"
+                  />
+                </div>
+                <div
+                  class="team-content"
+                  :class="{'team-content-hide': !team.expand && canHideTeam}"
+                >
+                  <span
+                    v-for="member in team.members"
+                    :key="member"
+                  >
+                    {{ member }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-deco-container">
+          <div class="line-deco " />
+        </div>
+      </div>
+    </section>
     <div class="line-gray-transform" />
     <section class="community">
       <div class="container">
@@ -126,4 +183,79 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Community',
+  data () {
+    return {
+      innerWidth: null,
+      group: null,
+      groupExpand: false,
+      groupChange: false,
+      volunteerList: [],
+      volunteerData: []
+    }
+  },
+  computed: {
+    canHideTeam () {
+      return this.innerWidth > 1024
+    }
+  },
+  created () {
+    this.getVolunteerList()
+  },
+  mounted () {
+    this.innerWidth = window.innerWidth
+    window.addEventListener('resize', this.resize)
+  },
+  methods: {
+    resize () {
+      this.innerWidth = window.innerWidth
+    },
+    openWindow (url) {
+      window.open(url)
+    },
+    getVolunteerList () {
+      const vm = this
+      vm.$axios.$get('volunteer.json')
+        .then((data) => {
+          vm.volunteerList = data
+        })
+    },
+    getVolunteerData (name) {
+      const vm = this
+      vm.$axios.$get('volunteer-' + name + '.json')
+        .then((data) => {
+          vm.volunteerData = data
+        })
+    },
+    expandGroup (group) {
+      if (this.group === group) {
+        this.groupChange = true
+        setTimeout(() => {
+          this.group = null
+          this.groupExpand = false
+          this.groupChange = false
+        }, 500)
+      } else {
+        this.groupExpand = true
+        this.getVolunteerData(group)
+        if (this.group) {
+          this.group = group
+        } else {
+          this.groupChange = true
+          setTimeout(() => {
+            this.group = group
+            this.groupChange = false
+          }, 500)
+        }
+      }
+    },
+    expandTeam (teamIndex) {
+      this.volunteerData.teams[teamIndex].expand = !this.volunteerData.teams[teamIndex].expand
+    }
+  }
+}
+</script>
 <style lang="scss" src='./style.scss' scoped></style>
