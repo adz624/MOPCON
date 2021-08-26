@@ -1,0 +1,62 @@
+{
+  "name": "產品部",
+  "name_e": "PRODUCT",
+  "teams": [
+    {
+      "name": "產品部長",
+      "expand": true,
+      "members": [
+        "Karas"
+      ]
+    },
+    {
+      "name": "產品組",
+      "expand": true,
+      "members": [
+        "Jason",
+        "Cubbe",
+        "黛黛",
+        "Straw",
+        "Vicky",
+        "MO孃"
+      ]
+    },
+    {
+      "name": "研發組",
+      "expand": true,
+      "members": [
+        "方威",
+        "葉子",
+        "Hinrick",
+        "Keith",
+        "Chita",
+        "DADA",
+        "Yuuna",
+        "UnciaX",
+        "Leo Yan",
+        "Steven"
+      ]
+    },
+    {
+      "name": "設計組",
+      "expand": true,
+      "members": [
+        "小孫",
+        "黃尹俞",
+        "薛羽婷",
+        "小伍",
+        "Clara",
+        "陳詠霖"
+      ]
+    },
+    {
+      "name": "行銷組",
+      "expand": true,
+      "members": [
+        "Eddie",
+        "地瓜",
+        "小林"
+      ]
+    }
+  ]
+}
