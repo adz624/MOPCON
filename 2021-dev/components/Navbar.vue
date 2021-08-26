@@ -73,7 +73,7 @@ export default {
         {
           name: '主辦社群',
           class: '',
-          url: '/community',
+          url: './community',
           subNav: [],
           subIsOpen: false,
           open: process.env.route_community,
@@ -82,7 +82,7 @@ export default {
         {
           name: '票種介紹',
           class: '',
-          url: '/ticket',
+          url: './ticket',
           subNav: [],
           subIsOpen: false,
           open: process.env.route_ticket,
