@@ -137,7 +137,7 @@
 //width
 @for $i from 1 through 5 {
   .col-#{$i} {
-    width: calc(100% / $i);
+    width: calc(100% / #{$i});
   }
 }
 
@@ -146,7 +146,7 @@
   @include screen($value) {
     @for $i from 1 through 5 {
       .col-#{$value}-#{$i} {
-        width: calc(100% / $i);
+        width: calc(100% / #{$i});
       }
     }
   }

@@ -1,5 +1,5 @@
 $bg_map: (
-  png: IxDA-Taiwan ocf SITCON Vue pyConTaiwan
+  svg: IxDA-Taiwan OCF SITCON Vue pyConTaiwan COSCUP
 );
 @include bgImg(community);
 
@@ -36,6 +36,7 @@ span {
   .title-container {
     padding-top: 100px;
     padding-bottom: 70px;
+    align-items: flex-start;
     justify-content: center;
   }
 }
@@ -149,14 +150,14 @@ span {
     }
   }
 }
-@include screen(xs) {
-  .slogan {
-    .container {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-  }
-}
+// @include screen(xs) {
+//   .slogan {
+//     .container {
+//       padding-left: 3px;
+//       padding-right: 3px;
+//     }
+//   }
+// }
 
 .volunteer {
   padding-top: 100px;
