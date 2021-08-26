@@ -3,6 +3,7 @@
     <section class="home-bg">
       <div class="main container">
         <div class="vol10-gray pad-hidden" />
+        <div class="vol10-mobile position-absolute pad-show" />
         <div class="main-content">
           <h1 class="title">
             <p class="title-orange">
@@ -30,6 +31,9 @@
               <div class="icon">
                 <img src="../../assets/images/ticket/gameIcon.svg" alt="">
               </div>
+              <div class="c-logo">
+                <img src="../../assets/images/ticket/GatherLogo.svg" alt="">
+              </div>
               <h3>攤位/大地遊戲</h3>
               <p>
                 進入 Gather town<br>
@@ -40,6 +44,9 @@
               <div class="icon">
                 <img src="../../assets/images/ticket/playIcon.svg" alt="">
               </div>
+              <div class="c-logo">
+                <img src="../../assets/images/ticket/YouTubeLogo.svg" alt="">
+              </div>
               <h3>議程直播平台</h3>
               <p>
                 MOPCON 2021
@@ -49,6 +56,9 @@
             <div class="sopCard-item">
               <div class="icon">
                 <img src="../../assets/images/ticket/Frame.svg" alt="">
+              </div>
+              <div class="c-logo">
+                <img src="../../assets/images/ticket/DiscordLogo.svg" alt="">
               </div>
               <h3>交流/客服頻道</h3>
               <p>提供 Discord 頻道<br>讓會眾互相交流議程內容</p>
@@ -85,8 +95,8 @@
                 <div class="ticket-card">
                   <h4>學生票 / FREE</h4>
                   <p>- 2日議程</p>
-                  <a href="#" target="_blank" class="ticket-card-button waiting" @click.prevent="">
-                    尚未開放購票
+                  <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
+                    已完售
                   </a>
                 </div>
               </div>
@@ -99,17 +109,17 @@
                     <h4>VIP</h4>
                     <p>- 2日議程</p>
                     <p>- 紀念 T</p>
-                    <a href="#" target="_blank" class="ticket-card-button waiting" @click.prevent="">
-                      尚未開放購票
+                    <a href="https://lihipro.com/mopcon2021/webcta" target="_blank" class="ticket-card-button active">
+                      前往購票
                     </a>
                   </div>
                   <div class="ticket-card">
                     <h4>VVIP</h4>
                     <p>- 2日議程</p>
                     <p>- 紀念 T</p>
-                    <p>- VIP 獨家紀念品</p>
-                    <a href="#" target="_blank" class="ticket-card-button waiting" @click.prevent="">
-                      尚未開放購票
+                    <p>- 獨家紀念品</p>
+                    <a href="https://lihipro.com/mopcon2021/webcta" target="_blank" class="ticket-card-button active">
+                      前往購票
                     </a>
                   </div>
                 </div>
@@ -192,6 +202,12 @@ export default {
     display: block;
   }
 }
+.pad-show {
+  display: none;
+  @include screen(pad) {
+    display: block;
+  }
+}
 .pad-hidden {
   display: block;
   @include screen(pad) {
@@ -205,6 +221,9 @@ export default {
   @include screen(pad) {
     min-height: unset;
     padding: 150px 24px;
+  }
+  .vol10-mobile {
+    top: 10vh;
   }
   &-content {
     width: 100%;
@@ -286,14 +305,10 @@ export default {
       @include flex(center, row, center);
       height: 178px;
     }
-    .icon1 {
-      background-image: url('../../assets/images/ticket/gameIcon.svg');
-    }
-    .icon2 {
-      background-image: url('../../assets/images/ticket/playIcon.svg');
-    }
-    .icon3 {
-      background-image: url('../../assets/images/ticket/Frame.svg');
+    .c-logo {
+      text-align: center;
+      @include flex(center, row, center);
+      height: 40px;
     }
     &-icon {
       width: 120px;
@@ -304,7 +319,7 @@ export default {
       padding: 0px 1rem;
       font-size: 1.5rem;
       font-weight: bold;
-      margin-top: 24px;
+      margin-top: 40px;
       margin-bottom: 0px;
     }
     p {

@@ -13,7 +13,9 @@
           class="logo-w"
           :class="{'primary': navFixed && !isMobile}"
         >
-          <LogoW />
+          <a href="/">
+            <LogoW />
+          </a>
         </div>
       </div>
       <div class="navbar-content" :class="{'active': navOpen}">
@@ -162,7 +164,7 @@ export default {
   }
   nav {
     @include flex(flex-end);
-    @include screen(sm) {
+    @include screen(pad) {
       @include flex(space-between);
       .logo-w {
         margin-top: 4px;
@@ -178,7 +180,7 @@ export default {
     }
     .navbar-content {
       @include flex(flex-end);
-      @include screen(sm) {
+      @include screen(pad) {
         background: $colorPrimary;
         position: fixed;
         left: 0;

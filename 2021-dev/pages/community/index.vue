@@ -9,26 +9,26 @@
         </h2>
         <ul class="slogan-content p-0 text-center">
           <li
-            class="mb-5 fz-5 fz-pad-6"
+            class="mb-5 fz-5 fz-pad-6 fz-sm-5"
           >
             MOPCON 為締造人、知識與產業的連結，旨在實現三項目標：
           </li>
           <li
-            class="mb-5 fz-5 fz-pad-6"
+            class="mb-5 fz-5 fz-pad-6 fz-sm-5"
           >
             1.帶動南台灣高經濟產業循環
           </li>
           <li
-            class="mb-5 fz-5 fz-pad-6"
+            class="mb-5 fz-5 fz-pad-6 fz-sm-5"
           >
             2.培養高知識產值人才
           </li>
           <li
-            class="mb-10 fz-5 fz-pad-6"
+            class="mb-10 fz-5 fz-pad-6 fz-sm-5"
           >
             3.匯聚知識、人流、投資，促進創新創業機會。
           </li>
-          <li class="fz-5 fz-pad-6 mb-pad-10">
+          <li class="fz-5 fz-pad-6 mb-pad-10 fz-sm-5">
             <span>為使目標達成，</span><br>MOPCON 志在打造出一座「高速資訊交流圈」！
           </li>
         </ul>
@@ -117,7 +117,7 @@
           >
             <a href="#" class="card p-5 p-sm-3" @click.prevent="openModal(community.id)">
               <div class="card-pic col-sm-2 mr-sm-3" :class="`bg-${community.logo_file_name}`" />
-              <p class="card-title col-sm-2 fz-5 fz-pad-6">
+              <p class="card-title col-sm-2 fz-5 fz-pad-6 fz-sm-5">
                 {{ community.name }}
               </p>
             </a>
@@ -134,7 +134,7 @@
                 {{ modalData.name }}
               </h4>
             </div>
-            <h3 class="fs-5 mb-3 mb-pad-5">
+            <h3 v-if="modalData.intro" class="fs-5 mb-3 mb-pad-5">
               介紹
             </h3>
             <p>{{ modalData.intro }}</p>
@@ -196,7 +196,7 @@ export default {
           name: 'IxDA Taiwan',
           name_ch: '社團法人台灣互動設計協會',
           logo_file_name: 'IxDA-Taiwan',
-          intro: '社團法人台灣互動設計協會 - 我們是充滿熱情活力的開拓者，永遠在前方為設計開闢更寬廣的道路! IxDA 每年都會舉辦國際性研討活動，廣泛邀請世界各地從事產品與服務的設計者們與會(包括產品經理，創意總監，互動設計師，人機互動工程師，使用性工程師，使用者經驗與研究員，及學術先進等)。除了聆聽國際學者、專家最新的互動設計理論或實務發展外，也提供所有與會者直接交流的機會。IxDA Taiwan 於2010年成立，透過實體聚會、線上交流以及大型研討會的方式，專注於將互動設計推廣到台灣的各個角落，截至今日已經舉辦過15次公開活動，超過1000人實際參與，迄今亦有387位來自產官學界的菁英加入IxDA Taiwan的行列，形成一個互動設計的大家庭。去年4月舉行的互動設計大會，更讓台灣能與其他12個協辦國接軌，為台灣的互動設計劃下新的一頁。今年10月舉辦的 Interaction 13 也讓台灣互動設計及與會的專業人士跟國際大師產生更多交流！',
+          intro: '社團法人台灣互動設計協會 - 我們是充滿熱情活力的開拓者，永遠在前方為設計開闢更寬廣的道路!IxDA 每年都會舉辦國際性研討活動，廣泛邀請世界各地從事產品與服務的設計者們與會(包括產品經理，創意總監，互動設計師，人機互動工程師，使用性工程師，使用者經驗與研究員，及學術先進等) 。除了聆聽國際學者、專家最新的互動設計理論或實務發展外，也提供所有與會者直接交流的機會。IxDA Taiwan 於2010年成立，透過實體聚會、線上交流以及大型研討會的方式，專注於將互動設計推廣到台灣的各個角落，截至今日已經舉辦過15次公開活動，超過1000人實際參與，迄今亦有387位來自產官學界的菁英加入IxDA Taiwan的行列，形成一個互動設計的大家庭。去年4月舉行的互動設計大會，更讓台灣能與其他12個協辦國接軌，為台灣的互動設計劃下新的一頁。今年10月舉辦的 Interaction 13 也讓台灣互動設計及與會的專業人士跟國際大師產生更多交流！',
           fb: 'https://www.facebook.com/ixda.tw/',
           website: 'https://www.ixda.org.tw/'
         },
@@ -205,7 +205,7 @@ export default {
           name: 'PyCon Taiwan',
           name_ch: 'Python 年會',
           logo_file_name: 'pyConTaiwan',
-          intro: 'PyCon，亦即 Python 年會，是全球 Python 社群的年度盛會。PyCon 由各地同好自發籌辦，而現在台灣也有自己的 Python 年會了。這個活動旨在聚集台灣各領域應用 Python 的組織與個人，交流彼此的經驗心得，分享最新的技術發展，並親身體驗社群獨有的熱情。對 Python 技術感到興趣嗎?我們致力籌辦一個高品質的技術聚會，除了竭誠歡迎你的參與，也請幫助我們，讓我們把台灣 Python 年會辦得更好。',
+          intro: 'PyCon ，亦即 Python 年會，是全球 Python 社群年度盛會。PyCon 由各地同好自發籌辦，而現在台灣也有自己的 Python 年會了。這個活動旨在聚集台灣各領域應用 Python 的人，交流彼此的經驗心得，分享最新的技術發展，並親身體驗社群獨有的熱情。年會除了有從 Python 的語言特性到各方面應用案例實例的精彩演講之外，我們也很重視與會者之間的交流與促成開發者與廠商合作可能，提供創業者交流討論的園地，達到社群技能和發展的目的。',
           fb: 'https://www.facebook.com/pycontw/',
           website: 'https://tw.pycon.org/2021/zh-hant'
         },
@@ -213,8 +213,8 @@ export default {
           id: 2,
           name: '開放文化基金會',
           name_ch: '開放文化基金會',
-          logo_file_name: 'ocf',
-          intro: '2014年，多個開源、科技社群和活動組織聚在一起，共同發起「開放文化基金會」，期許能支援社群活耀發展，促進政府與民間在各領域有豐富的開放源碼、開放資料可取用，使公民科技趨於成熟，簡單來說就是要：用開源協作改造社會！',
+          logo_file_name: 'OCF',
+          intro: '什麼是開放文化？開放原始碼的開發機制，讓軟體界快速蓬勃發展，至今深深影響每個人的生活。近年來，這套開放的機制跨出了軟體開發領域，往文藝、政治、教育等領域擴散，形成一股新興的文化，為許多社會議題帶來新的視野。開放文化基金會的起源。2014 年，多個台灣開源社群共同發起開放文化基金會（Open Culture Foundation，簡稱 OCF），期望以法人組織的力量推廣開放文化，在產、官、學、民之間激起開放協作的火花。提供社群支援、組織合作、國際交流、顧問諮詢的服務',
           fb: 'https://www.facebook.com/www.ocf.tw/',
           website: 'https://ocf.tw/'
         },
@@ -223,16 +223,25 @@ export default {
           name: 'SITCON',
           name_ch: '學生計算機年會',
           logo_file_name: 'SITCON',
-          intro: '學生計算機年會（SITCON）以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。SITCON 也是一個屬於學生的舞台，讓學子們實踐、體驗開源社群精神：開放、分享、協作，貢獻一己之長一同讓 SITCON 更好。SITCON 也提供發表自身所學所長的舞台，讓更多人看見你的努力、你的改變！每年三月的研討會、暑期的夏令營、十二月的 Hour of Code，讓資訊更貼近生活，讓科技改變世界，改變，從你開始。讓我們一同翱遊在資訊的海洋！即使你不會寫程式，但總有你可以做的事！不要害羞，現在就加入我們吧！歡迎在各大社群媒體平台與我們互動！',
+          intro: '學生計算機年會（SITCON）是由學生自發舉辦，投身學生資訊教育與推廣開源精神的社群， 也是一個由學生主辦、學生擔任講者、以學生為主軸的資訊研討會，給學生們一個發表交流技術的舞台。除了技術研討之外，還有許多從學生角度出發的經驗分享、專題研究成果或探討學生相關議題等等議程。 我們也曾舉辦黑客松、工作坊，和各地學校社團舉辦聯合講座等等。',
           fb: 'https://www.facebook.com/SITCONtw/',
           website: 'https://sitcon.org/'
         },
         {
           id: 4,
+          name: 'COSCUP',
+          name_ch: 'COSCUP',
+          logo_file_name: 'COSCUP',
+          intro: 'COSCUP 是由台灣開放原始碼社群聯合推動的年度研討會，起源於 2006 年，是台灣自由軟體運動 (FOSSM) 重要的推動者之一。活動包括有講座、攤位、社團同樂會等，除了邀請國際的重量級演講者之外，台灣本土的自由軟體推動者也經常在此發表演說，會議的發起人、工作人員與講者都是志願參與的志工。COSCUP 的宗旨在於提供一個聯結開放原始碼開發者、使用者與推廣者的平台。希望藉由每年一度的研討會，來推動自由及開放原始碼軟體 (FLOSS)。由於有許多贊助商及熱心捐助者，所有議程都是免費參加，但因會場人數限制，通常在一開放網路報名後就會立刻額滿。',
+          fb: 'https://www.facebook.com/groups/vuejs.tw/',
+          website: ''
+        },
+        {
+          id: 5,
           name: 'Vue.js 台灣',
           name_ch: 'Vue.js Taiwan',
           logo_file_name: 'Vue',
-          intro: '歡迎大家討論簡單好學的 Vue.js',
+          intro: '',
           fb: 'https://www.facebook.com/groups/vuejs.tw/',
           website: ''
         }
