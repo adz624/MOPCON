@@ -1,0 +1,60 @@
+{
+  "name": "商務部",
+  "name_e": "BUSINESS",
+  "teams": [
+    {
+      "name": "商務部長",
+      "expand": true,
+      "members": [
+        "Hash"
+      ]
+    },
+    {
+      "name": "商務組",
+      "expand": true,
+      "members": [
+        "江品陞",
+        "Tony"
+      ]
+    },
+    {
+      "name": "商業開發組",
+      "expand": true,
+      "members": [
+        "賴逸駿",
+        "柯柯",
+        "Cassie",
+        "黃靖涵",
+        "薛智謙",
+        "林易亭",
+        "鍾詠年",
+        "張瓊云"
+      ]
+    },
+    {
+      "name": "公關組",
+      "expand": true,
+      "members": [
+        "Gobby",
+        "陳姸君",
+        "Eric",
+        "dlspm",
+        "Joyce",
+        "鄭宇翔",
+        "陳思宇",
+        "陳慧螢"
+      ]
+    },
+    {
+      "name": "媒體組",
+      "expand": true,
+      "members": [
+        "Leo Pan",
+        "Ofa",
+        "YoYo",
+        "何品萱",
+        "山葵泥"
+      ]
+    }
+  ]
+}

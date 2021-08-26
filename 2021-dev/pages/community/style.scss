@@ -28,7 +28,7 @@ span {
   }
 }
 .title-container {
-  @include flex(start, row, end);
+  @include flex(flex-start, row, flex-end);
   padding-top: 182px;
   padding-bottom: 113px;
 }
@@ -154,6 +154,368 @@ span {
     .container {
       padding-left: 3px;
       padding-right: 3px;
+    }
+  }
+}
+
+.volunteer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #EFEAEB;
+  &-area {
+    @include flex(space-between);
+  }
+  &-title {
+    @include flex(normal, row);
+    width: 100%;
+    h2 {
+      line-height: 52px;
+      margin-left: 30px;
+    }
+  }
+  &-content{
+    @include flex(space-between);
+    margin-top: 100px;
+    .group-box {
+      @include flex(center);
+      padding: 2rem;
+      background-color: #EFEAEB;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
+      width: 300px;
+      &:hover {
+        outline: 2px solid $colorWhite;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+      .group-main {
+        @include flex(normal, column, center);
+        cursor: pointer;
+        &:before {
+          content: '';
+          background-color: #FB8628;
+          width: 151px;
+          height: 17px;
+          border-radius: 10px;
+          position: absolute;
+          bottom: -4px;
+        }
+        .image-admim {
+          background-image: url('../../assets/images/community/volunteer-admim.svg');
+          width: 206px;
+          height: 206px;
+        }
+        .image-product {
+          background-image: url('../../assets/images/community/volunteer-product.svg');
+          width: 238px;
+          height: 206px;
+        }
+        .image-business {
+          background-image: url('../../assets/images/community/volunteer-business.svg');
+          width: 184px;
+          height: 206px;
+        }
+        .group-title {
+          font-family: Roboto;
+          font-size: 3rem;
+          font-weight: bold;
+          margin-top: 1.5rem;
+          margin-bottom: 0rem;
+          letter-spacing: 0.08em;
+        }
+        .group-name {
+          font-family: Roboto;
+          font-size: 1.5rem;
+          margin-top: 0.5rem;
+        }
+      }
+      .group-content {
+        display: none;
+        padding: 1rem;
+        flex-grow: 1;
+      }
+      &.active {
+        opacity: 1;
+        width: 70%;
+        outline: 2px solid $colorWhite;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        .group-main {
+          &:before {
+            width: 89px;
+            top: 416px;
+          }
+        }
+        .group-content {
+          display: block;
+        }
+      }
+      &.no-active {
+        opacity: 0.4;
+        width: 120px;
+        .group-main {
+          &:before {
+            content: none;
+          }
+        }
+      }
+      &.no-active, &.active {
+        .group-main {
+          padding-top: 350px;
+          min-width: 90px;
+        }
+        .group-title {
+          position: absolute;
+          writing-mode: vertical-lr;
+          top: 0px;
+        }
+        .group-name {
+          font-size: 1.25rem;
+        }
+        .image-admim {
+          background-size: 48px 48px;
+          width: 48px;
+          height: 48px;
+        }
+        .image-product {
+          background-size: 55px 48px;
+          width: 55px;
+          height: 48px;
+        }
+        .image-business {
+          background-size: 43px 48px;
+          width: 43px;
+          height: 48px;
+        }
+      }
+      &.hide {
+        opacity: 0;
+      }
+    }
+    .team-box {
+      border-bottom: 1px solid $colorOrange;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
+      .team-title {
+        @include flex(normal, row, center);
+        span {
+          font-family: Roboto;
+          font-size: 1.25rem;
+        }
+        .team-expand {
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top: 12px solid #FB8628;
+          left: 5px;
+          cursor: pointer;
+          &.team-expand-hide {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .team-content {
+        margin-top: 1rem;
+        &.team-content-hide {
+          display: none;
+        }
+        span {
+          font-family: Roboto;
+          font-size: 1.25rem;
+          color: rgba(0, 0, 0, 0.6);
+          padding-right: 2.25rem;
+          padding-bottom: 0.5rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .line-deco-container {
+    display: none;
+  }
+}
+
+@include screen(md) {
+  .volunteer {
+    &-content{
+      @include flex(normal, column, center);
+    }
+    .group-box {
+      @include flex(normal, column, normal);
+      margin-bottom: 4rem;
+      padding: 1rem;
+      width: fit-content;
+      .group-main {
+        @include flex(normal, column, flex-start);
+        flex-wrap: wrap;
+        width: 500px;
+        height: 150px;
+        &:before {
+          width: 89px;
+          right: 180px;
+          bottom: 12px;
+        }
+        .image-admim {
+          background-size: 150px 150px;
+          background-position: 50%;
+          background-repeat: no-repeat;
+          width: 200px;
+          height: 150px;
+        }
+        .image-product {
+          background-size: 173.3px 150px;
+          background-position: 50%;
+          background-repeat: no-repeat;
+          width: 200px;
+          height: 150px;
+        }
+        .image-business {
+          background-size: 133.98px 150px;
+          background-position: 50%;
+          background-repeat: no-repeat;
+          width: 200px;
+          height: 150px;
+        }
+        .group-title {
+          width: 250px;
+        }
+        .group-name {
+          width: 250px;
+        }
+      }
+      &.no-active, &.active {
+        width: 100%;
+        min-width: unset;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        outline: unset;
+        filter: unset;
+        .group-main {
+          @include flex(center, row, center);
+          width: fit-content;
+          align-self: center;
+          padding-top: 0px;
+          height: 100px;
+          &:before {
+            content: '';
+            top: 50px;
+            right: 0px;
+          }
+        }
+        .group-title {
+          writing-mode: initial;
+          position: relative;
+          margin-top: 0px;
+          width: initial;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        .group-name {
+          width: initial;
+        }
+        .image-admim {
+          background-size: 48px 48px;
+          width: 48px;
+          height: 48px;
+        }
+        .image-product {
+          background-size: 55px 48px;
+          width: 55px;
+          height: 48px;
+        }
+        .image-business {
+          background-size: 43px 48px;
+          width: 43px;
+          height: 48px;
+        }
+      }
+    }
+    .team-box {
+      @include flex(normal, row, flex-start);
+      .team-expand {
+        display: none;
+      }
+      .team-title {
+        min-width: 120px;
+      }
+      .team-content {
+        margin-top: 0px;
+      }
+    }
+    .line-deco-container {
+      @include flex(center);
+      padding-bottom: 0px;
+    }
+  }
+}
+@include screen(sm) {
+  .volunteer {
+    padding-top: 50px;
+    &-title {
+      @include flex(normal, column);
+      h2 {
+        margin-left: 0px;
+        margin-top: 1rem;
+      }
+    }
+    &-content {
+      margin-top: 50px;
+    }
+    .group-box {
+      margin-bottom: 2rem;
+      .group-main {
+        height: 80px;
+        width: 300px;
+        &:before {
+          right: 93px;
+          bottom: 4px;
+        }
+        .group-title {
+          font-size: 2rem;
+          margin-top: 0.5rem;
+          line-height: 2rem;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .group-name {
+          font-size: 1.25rem;
+        }
+        .image-admim {
+          background-size: 78px 78px;
+          width: 120px;
+          height: 78px;
+        }
+        .image-product {
+          background-size: 80px 69px;
+          width: 120px;
+          height: 69px;
+        }
+        .image-business {
+          background-size: 72px 80px;
+          width: 120px;
+          height: 80px;
+        }
+      }
+      &.no-active, &.active {
+        .group-main {
+          @include flex(normal, column, flex-start);
+          width: 300px;
+          &:before {
+            top: 63px;
+            right: 93px;
+          }
+        }
+        .group-title {
+          width: 250px;
+        }
+      }
+    }
+    .team-box {
+      flex-wrap: wrap;
+      .team-title {
+        margin-bottom: 10px;
+      }
     }
   }
 }

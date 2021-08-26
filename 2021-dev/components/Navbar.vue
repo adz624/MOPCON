@@ -69,6 +69,15 @@ export default {
       windowTop: null,
       navList: [
         {
+          name: '主辦社群',
+          class: '',
+          url: '/community',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_community,
+          target: ''
+        },
+        {
           name: '票種介紹',
           class: '',
           url: '/ticket',
