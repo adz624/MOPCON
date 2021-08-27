@@ -3,15 +3,19 @@
   "name_e": "ADMIM",
   "teams": [
     {
+      "name": "總召",
+      "members": [
+        "江品陞"
+      ]
+    },
+    {
       "name": "行政部長",
-      "expand": true,
       "members": [
         "Brook"
       ]
     },
     {
       "name": "行政組",
-      "expand": true,
       "members": [
         "pin",
         "阿空",
@@ -20,7 +24,6 @@
     },
     {
       "name": "活動組",
-      "expand": true,
       "members": [
         "Mac Taylor",
         "小紀",
@@ -56,7 +59,6 @@
     },
     {
       "name": "議程組",
-      "expand": true,
       "members": [
         "Justin",
         "劉容之",

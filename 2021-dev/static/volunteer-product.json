@@ -4,14 +4,12 @@
   "teams": [
     {
       "name": "產品部長",
-      "expand": true,
       "members": [
         "Karas"
       ]
     },
     {
       "name": "產品組",
-      "expand": true,
       "members": [
         "Jason",
         "Cubbe",
@@ -23,7 +21,6 @@
     },
     {
       "name": "研發組",
-      "expand": true,
       "members": [
         "方威",
         "葉子",
@@ -39,7 +36,6 @@
     },
     {
       "name": "設計組",
-      "expand": true,
       "members": [
         "小孫",
         "黃尹俞",
@@ -51,7 +47,6 @@
     },
     {
       "name": "行銷組",
-      "expand": true,
       "members": [
         "Eddie",
         "地瓜",
