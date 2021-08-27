@@ -18,6 +18,9 @@ span {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+  &.link {
+    cursor: pointer;
+  }
 }
 
 @include screen(sm) {
@@ -28,25 +31,22 @@ span {
   }
 }
 .title-container {
-  @include flex(flex-start, row, flex-end);
-  padding-top: 182px;
-  padding-bottom: 113px;
-}
-@include screen(pad) {
-  .title-container {
-    padding-top: 100px;
-    padding-bottom: 70px;
-    align-items: flex-start;
-    justify-content: center;
+  @include flex(normal, row);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2 {
+    line-height: 52px;
+    margin-left: 30px;
   }
 }
 @include screen(sm) {
   .title-container {
     padding-top: 46px;
     padding-bottom: 40px;
-    flex-direction: column;
-    & div:first-child {
-      margin-bottom: 32px;
+    @include flex(normal, column);
+    h2 {
+      margin-left: 0px;
+      margin-top: 1rem;
     }
   }
 }
@@ -161,23 +161,13 @@ span {
 // }
 
 .volunteer {
-  padding-top: 100px;
   padding-bottom: 100px;
   background-color: #EFEAEB;
   &-area {
     @include flex(space-between);
   }
-  &-title {
-    @include flex(normal, row);
-    width: 100%;
-    h2 {
-      line-height: 52px;
-      margin-left: 30px;
-    }
-  }
   &-content{
     @include flex(space-between);
-    margin-top: 100px;
     .group-box {
       @include flex(center);
       padding: 2rem;
@@ -453,17 +443,6 @@ span {
 }
 @include screen(sm) {
   .volunteer {
-    padding-top: 50px;
-    &-title {
-      @include flex(normal, column);
-      h2 {
-        margin-left: 0px;
-        margin-top: 1rem;
-      }
-    }
-    &-content {
-      margin-top: 50px;
-    }
     .group-box {
       margin-bottom: 2rem;
       .group-main {
@@ -535,6 +514,7 @@ span {
     @include flex(center, column, center);
     border: 2px solid transparent;
     transition: all 0.2s;
+    min-width: 205px;
     &-pic {
       width: 200px;
       height: 200px;
@@ -580,7 +560,7 @@ span {
   background-color: #efeaeb;
   &-content {
     display: flex;
-    padding-bottom: 45px;
+    padding-bottom: 60px;
     p {
       font-size: 18px;
       span {
