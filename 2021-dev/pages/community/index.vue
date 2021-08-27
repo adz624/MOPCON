@@ -143,7 +143,6 @@
         <div class="line-deco-container">
           <div class="line-deco " />
         </div>
-        </modal>
       </div>
     </section>
     <div class="line-gray" />
