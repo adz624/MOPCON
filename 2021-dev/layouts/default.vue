@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     isMobile () {
-      return this.innerWidth < 568
+      return this.innerWidth < 769
     }
   },
   watch: {

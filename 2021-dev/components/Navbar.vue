@@ -13,7 +13,9 @@
           class="logo-w"
           :class="{'primary': navFixed && !isMobile}"
         >
-          <LogoW />
+          <a href="/">
+            <LogoW />
+          </a>
         </div>
       </div>
       <div class="navbar-content" :class="{'active': navOpen}">
@@ -49,10 +51,10 @@
 </template>
 
 <script>
-import LogoW from '../assets/base/logo-w.svg?inline'
-import IconFB from '../assets/base/fb.svg?inline'
-import IconIG from '../assets/base/ig.svg?inline'
-import IconMenu from '../assets/base/menu.svg?inline'
+import LogoW from '../assets/images/logo-w.svg?inline'
+import IconFB from '../assets/images/fb.svg?inline'
+import IconIG from '../assets/images/ig.svg?inline'
+import IconMenu from '../assets/images/menu.svg?inline'
 export default {
   components: {
     LogoW,
@@ -68,6 +70,24 @@ export default {
       navOpen: false,
       windowTop: null,
       navList: [
+        {
+          name: '主辦社群',
+          class: '',
+          url: './community',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_community,
+          target: ''
+        },
+        {
+          name: '票種介紹',
+          class: '',
+          url: './ticket',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_ticket,
+          target: ''
+        },
         {
           name: '講者募集',
           class: '',
@@ -144,7 +164,7 @@ export default {
   }
   nav {
     @include flex(flex-end);
-    @include screen(sm) {
+    @include screen(pad) {
       @include flex(space-between);
       .logo-w {
         margin-top: 4px;
@@ -160,7 +180,7 @@ export default {
     }
     .navbar-content {
       @include flex(flex-end);
-      @include screen(sm) {
+      @include screen(pad) {
         background: $colorPrimary;
         position: fixed;
         left: 0;
