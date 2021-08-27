@@ -412,13 +412,13 @@ export default {
         }
       }
       &.over {
-        cursor: default;
+        cursor: not-allowed;
         background-color: $colorPrimary;
         border: 2px solid $colorPrimary;
         color: $colorWhite;
       }
       &.waiting {
-        cursor: default;
+        cursor: not-allowed;
         background-color: transparent;
         border: 2px solid $colorPrimary;
         color: $colorPrimary;
