@@ -36,19 +36,19 @@
           有興趣加入我們嗎？
         </p>
         <div class="btn-container">
-          <button class="btn" @click="linkTo('https://www.facebook.com/mopcon')">
+          <button class="btn" @click="openWindow('https://www.facebook.com/mopcon')">
             ＋ 追蹤我們的 Facebook
           </button>
         </div>
       </div>
     </section>
-    <section class="volunteer">
+    <section class="volunteer pt-10">
       <div class="container">
-        <div class="volunteer-title">
+        <div class="title-container">
           <div class="sopOne-icon" />
           <h2>MOPCON<br>志工團隊</h2>
         </div>
-        <div class="volunteer-content">
+        <div class="volunteer-content mt-10">
           <div
             v-for="volunteer in volunteerList"
             :key="volunteer.id"
@@ -67,7 +67,7 @@
             </div>
             <div class="group-content">
               <div
-                v-for="(team, teamIndex) in volunteerData.teams"
+                v-for="team in volunteerData.teams"
                 :key="team.name"
                 class="team-box"
               >
@@ -75,13 +75,13 @@
                   <span>{{ team.name }}</span>
                   <div
                     class="team-expand"
-                    :class="{'team-expand-hide': !team.expand}"
-                    @click="expandTeam(teamIndex)"
+                    :class="{'team-expand-hide': teamExpand !== team.name}"
+                    @click="expandTeam(team.name)"
                   />
                 </div>
                 <div
                   class="team-content"
-                  :class="{'team-content-hide': !team.expand && canHideTeam}"
+                  :class="{'team-content-hide': teamExpand !== team.name && canHideTeam}"
                 >
                   <span
                     v-for="member in team.members"
@@ -100,13 +100,11 @@
       </div>
     </section>
     <div class="line-gray-transform" />
-    <section class="community">
+    <section class="community pt-10">
       <div class="container">
         <div class="title-container">
-          <div class="sopTwo-icon mr-5 " />
-          <h2 class="fz-10 m-0">
-            MOPCON<br>參與社群
-          </h2>
+          <div class="sopTwo-icon" />
+          <h2>MOPCON<br>參與社群</h2>
         </div>
         <div class="community-list position-relative">
           <div class="vol10-gray position-absolute" />
@@ -146,10 +144,10 @@
       </div>
     </section>
     <div class="line-gray" />
-    <section class="rule">
+    <section class="rule pt-10">
       <div class="container">
-        <div class="title-container">
-          <div class="sopThree-icon mr-5" />
+        <div class="title-container mb-5">
+          <div class="sopThree-icon" />
           <h2>MOPCON<br>行為準則</h2>
         </div>
         <div class="rule-content">
@@ -162,7 +160,7 @@
           <p class="col-2 col-pad-1 m-0 pl-4 pl-pad-0">
             工作人員會很樂意幫助參與者聯繫酒店/場地警衛或當地警察、提供護送，或以其他方式幫助那些遇到騷擾的參與者感到安全。我們非常重視您的參與。
             我們希望參與者在各活動場合、會議有關的社群活動都能遵循這些規則。
-            此行為準則是基於<span class="mx-1">Conference Code of Conduct</span>而訂定。
+            此行為準則是基於<span class="mx-1 link" @click="openWindow('http://confcodeofconduct.com/')">Conference Code of Conduct</span>而訂定。
           </p>
         </div>
         <div class="line-deco-container">
@@ -187,6 +185,7 @@ export default {
       group: null,
       groupExpand: false,
       groupChange: false,
+      teamExpand: null,
       volunteerList: [],
       volunteerData: [],
       communityData: [
@@ -269,9 +268,6 @@ export default {
     openWindow (url) {
       window.open(url)
     },
-    linkTo (url) {
-      window.open(url, '_blank')
-    },
     getVolunteerList () {
       const vm = this
       vm.$axios.$get(process.env.BASE_URL + '/2021/volunteer.json')
@@ -287,6 +283,7 @@ export default {
         })
     },
     expandGroup (group) {
+      this.teamExpand = null
       if (this.group === group) {
         this.groupChange = true
         setTimeout(() => {
@@ -308,8 +305,8 @@ export default {
         }
       }
     },
-    expandTeam (teamIndex) {
-      this.volunteerData.teams[teamIndex].expand = !this.volunteerData.teams[teamIndex].expand
+    expandTeam (name) {
+      this.teamExpand = this.teamExpand === name ? null : name
     },
     openModal (id) {
       const vm = this

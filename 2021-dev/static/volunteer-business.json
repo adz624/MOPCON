@@ -4,22 +4,18 @@
   "teams": [
     {
       "name": "商務部長",
-      "expand": true,
       "members": [
         "Hash"
       ]
     },
     {
       "name": "商務組",
-      "expand": true,
       "members": [
-        "江品陞",
         "Tony"
       ]
     },
     {
       "name": "商業開發組",
-      "expand": true,
       "members": [
         "賴逸駿",
         "柯柯",
@@ -33,7 +29,6 @@
     },
     {
       "name": "公關組",
-      "expand": true,
       "members": [
         "Gobby",
         "陳姸君",
@@ -47,7 +42,6 @@
     },
     {
       "name": "媒體組",
-      "expand": true,
       "members": [
         "Leo Pan",
         "Ofa",
