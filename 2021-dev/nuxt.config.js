@@ -92,7 +92,8 @@ module.exports = {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxtjs/moment'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -104,7 +105,8 @@ module.exports = {
     // 全域 sass 變數設定
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'vue-social-sharing/nuxt'
   ],
   i18n: {
     locales: [
@@ -152,7 +154,9 @@ module.exports = {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: `${process.env.PROXY_URL}${process.env.BASE_URL}`
+  },
 
   router: {
     base: path.resolve(__dirname, '/2021/'),
@@ -172,5 +176,8 @@ module.exports = {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  moment: {
+    locales: ['zh-tw']
   }
 }

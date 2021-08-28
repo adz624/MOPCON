@@ -46,6 +46,13 @@
   align-items: $align;
 }
 
+// 字體大小
+@mixin font($font-size: 16px, $font-color: $colorBlack, $font-weight: 400) {
+  font-size: $font-size;
+  color: $font-color;
+  font-weight: $font-weight;
+}
+
 // 背景圖地圖
 @mixin bgImg($page_name, $map_name: $bg_map, $folder_name: images) {
   //為了串檔案字串使用,把檔案格式先取出來
