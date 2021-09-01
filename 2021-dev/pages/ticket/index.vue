@@ -77,15 +77,15 @@
                   <div class="ticket-card">
                     <h4>盲鳥票</h4>
                     <p>- 2日議程</p>
-                    <a href="https://mopcon.kktix.cc/events/mopcon2021" target="_blank" class="ticket-card-button active">
-                      前往購票
+                    <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
+                      已售完
                     </a>
                   </div>
                   <div class="ticket-card">
                     <h4>一般會眾票</h4>
                     <p>- 2日議程</p>
-                    <a href="#" target="_blank" class="ticket-card-button waiting" @click.prevent="">
-                      尚未開放購票
+                    <a href="https://lihipro.com/mopcon2021/webcta" target="_blank" class="ticket-card-button active">
+                      前往購票
                     </a>
                   </div>
                 </div>
