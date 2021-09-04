@@ -164,7 +164,16 @@ module.exports = {
   },
 
   generate: {
-    dir: path.resolve(__dirname, '../2021/')
+    dir: path.resolve(__dirname, '../2021/'),
+    routes () {
+      const pages = []
+      pages.push('/speaker')
+      const data = require('./static/speaker.json')
+      data.data.forEach((speaker) => {
+        pages.push(`/speaker/${speaker.speaker_id}`)
+      })
+      return pages
+    }
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

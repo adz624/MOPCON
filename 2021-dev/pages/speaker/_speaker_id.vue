@@ -43,10 +43,12 @@
               </div>
               <div class="hover-box position-absolute" />
             </div>
-            <h3 class="pb-2">
+            <h3 class="pb-2 my-2">
               {{ speaker.name }}
             </h3>
-            <p>{{ speaker.company }}</p>
+            <p class="mb-1 mt-0">
+              {{ speaker.company }}
+            </p>
             <div class="speaker-btn-wrap">
               <button v-for="(tag,idx) in speaker.tags" :key="`tags-${idx}`" class="mr-2 mt-2">
                 {{ tag.name }}
@@ -57,19 +59,19 @@
         <Modal :modal-open="modalOpen" @modal-close="closeModal">
           <div v-if="singleSpeaker.length>0" class="modalBody mb-8 mb-pad-5">
             <div class="modalHeader mb-8 mb-pad-5">
-              <div class="speaker-img-modal px-8 mt-4">
+              <div class="speaker-img-modal px-6 mt-4">
                 <div class="speaker-img-wrap ">
                   <img :src="singleSpeaker[0].img.web" alt="">
                 </div>
               </div>
-              <div class="speaker-text-modal px-8 px-sm-0">
+              <div class="speaker-text-modal px-6 px-sm-0">
                 <h3 class="mb-1">
                   {{ singleSpeaker[0].name }}
                 </h3>
-                <p class="mb-1">
+                <p class="my-0">
                   {{ singleSpeaker[0].company }}
                 </p>
-                <p class="mb-4">
+                <p class="mb-4 mt-0">
                   {{ singleSpeaker[0].job_title }}
                 </p>
                 <div class="speaker-community-wrap">
@@ -90,11 +92,11 @@
                 <span>\\</span>
                 介紹
               </h4>
-              <p class="mb-8">
+              <p class="mb-8 mt-1">
                 {{ singleSpeaker[0].bio }}
               </p>
               <div class="modal-summary-header">
-                <h4 class="mb-2 mr-2 mb-pad-0 mr-pad-0">
+                <h4 class="mr-3 mb-pad-0 mr-pad-0 mb-0 mt-2">
                   <span>\\</span>
                   議程主題
                 </h4>
@@ -102,13 +104,13 @@
                   <button
                     v-for="(tag,idx) in singleSpeaker[0].tags"
                     :key="`modalag-${idx}`"
-                    class="mr-2 mt-4"
+                    class="mr-2 mt-2"
                   >
                     {{ tag.name }}
                   </button>
                 </div>
               </div>
-              <h3 class="mt-2 mb-3">
+              <h3 class="mt-4 mb-3">
                 {{ singleSpeaker[0].topic }}
               </h3>
               <div class="modal-summary-info-wrap">
@@ -128,11 +130,11 @@
               <p class="mb-8">
                 {{ singleSpeaker[0].summary }}
               </p>
-              <h4 v-if="singleSpeaker[0].sponsor_id !== 0" class="mb-2">
+              <h4 v-if="false" class="mb-2">
                 <span>\\</span>
                 贊助廠商
               </h4>
-              <img v-if="singleSpeaker[0].sponsor_id !== 0" :src="getSponsorInfo (singleSpeaker[0].sponsor_id)" alt="" class="sponsor-logo">
+              <img v-if="false" :src="getSponsorInfo (singleSpeaker[0].sponsor_id)" alt="" class="sponsor-logo">
             </div>
             <div class="modalFooter">
               <a v-if="singleSpeaker[0].link_slide.length !== 0" :href="singleSpeaker[0].link_slide" target="_blank" class="text-center py-3 mr-3">簡報連結</a>
@@ -145,7 +147,7 @@
                   <client-only>
                     <ShareNetwork
                       network="facebook"
-                      url="https://news.vuejs.org/issues/180"
+                      :url="shareUrl"
                       :title="`${singleSpeaker[0].name} | 2021 MOPCON 講者`"
                       :description="`${singleSpeaker[0].summary}`"
                       :quote="`${singleSpeaker[0].name} | 2021 MOPCON 講者`"
@@ -157,7 +159,7 @@
                   <client-only>
                     <ShareNetwork
                       network="Twitter"
-                      url="https://news.vuejs.org/issues/180"
+                      :url="shareUrl"
                       :title="`${singleSpeaker[0].name} | 2021 MOPCON 講者`"
                       :description="`${singleSpeaker[0].summary}`"
                       :quote="`${singleSpeaker[0].name} | 2021 MOPCON 講者`"
@@ -166,7 +168,7 @@
                       分享 Twitter
                     </ShareNetwork>
                   </client-only>
-                  <a href="#" class="py-3 px-2">複製講者連結</a>
+                  <a href="#" class="py-3 px-2" @click.prevent="copylink">複製講者連結</a>
                 </div>
               </div>
             </div>
@@ -184,15 +186,94 @@ export default {
   components: {
     Modal
   },
+  async asyncData ({ $axios, params }) {
+    try {
+      let data = []
+      if (process.server) {
+        const res = await $axios.get(process.env.BASE_URL + '/2021/speaker.json')
+        data = res.data
+      } else {
+        const res = '../static/speaker.json'
+        data = res.data
+      }
+
+      const res = await $axios.get(process.env.BASE_URL + '/2021/speaker-tags.json')
+
+      const config = {
+        speakerData: data.data,
+        tags: res.data.data.map(tag => tag.name)
+      }
+      if (params.speaker_id) {
+        config.activeSpeaker = +params.speaker_id
+        config.modalOpen = true
+      }
+
+      return config
+    } catch (err) {}
+  },
   data () {
     return {
       speakerData: [],
       tags: [],
-      singleSpeaker: [],
+      activeSpeaker: 0,
       modalOpen: false,
       checkTag: [],
       imgUrl: '',
       shareShow: false
+    }
+  },
+  head () {
+    return {
+      title: this.modalOpen ? `${this.singleSpeaker[0].name} | 講者 MOPCON 2021` : '講者陣容 | MOPCON 2021',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.modalOpen ? this.singleSpeaker[0].summary : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.modalOpen ? `${this.singleSpeaker[0].name} | 講者 MOPCON 2021` : '講者陣容 | MOPCON 2021'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.modalOpen ? this.singleSpeaker[0].summary : ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/speaker/${this.singleSpeaker[0].speaker_id}` : `${process.env.BASE_URL}/2021/speaker`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.modalOpen ? `${this.singleSpeaker[0].img.web}` : `${process.env.BASE_URL}/2021/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: this.modalOpen ? `${this.singleSpeaker[0].name} | 講者 MOPCON 2021` : '講者陣容 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.modalOpen ? this.singleSpeaker[0].summary : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: this.modalOpen ? `${this.singleSpeaker[0].name} | 講者 MOPCON 2021` : '講者陣容 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: this.modalOpen ? `${this.singleSpeaker[0].name} | 講者 MOPCON 2021` : '講者陣容 | MOPCON 2021'
+        }
+      ]
     }
   },
   computed: {
@@ -203,42 +284,28 @@ export default {
         filterArr = filterArr.filter(speaker => speaker.tags.some(tag => vm.checkTag.includes(tag.name)))
       }
       return filterArr
+    },
+    singleSpeaker () {
+      return this.speakerData.filter(speaker => speaker.speaker_id === this.activeSpeaker)
+    },
+    shareUrl () {
+      return process.client ? `${window.location.origin}/2021/speaker/${this.singleSpeaker[0].speaker_id}` : ''
     }
   },
-  created () {
-    const vm = this
-    vm.getSpeakerData()
-    vm.getTagsData()
-  },
   methods: {
-    getTagsData () {
-      const vm = this
-      vm.$axios
-        .get('/api/2020/speaker/tags')
-        .then((data) => {
-          for (let i = 0; i < data.data.data.length; i++) {
-            vm.tags.push(data.data.data[i].name)
-          }
-        })
-    },
-    getSpeakerData () {
-      const vm = this
-      vm.$axios
-        .get('/api/2020/speaker')
-        .then((data) => {
-          if (data.data.success) {
-            vm.speakerData = data.data.data
-            console.log(vm.speakerData)
-          }
-        })
+    copylink () {
+      navigator.clipboard.writeText(this.shareUrl).then(() => {
+        this.copySuccess = true
+        setTimeout(() => {
+          this.copySuccess = false
+        }, 1000)
+      }).catch(() => {})
     },
     openModal (id) {
       const vm = this
-      vm.singleSpeaker = []
-      // 取得單一講者資料
-      vm.singleSpeaker = vm.speakerData.filter(function (item) {
-        return item.speaker_id === id
-      })
+      vm.modalOpen = false
+      vm.activeSpeaker = 0
+      vm.activeSpeaker = id
       vm.modalOpen = true
     },
     closeModal (show) {
@@ -252,7 +319,7 @@ export default {
         return
       }
       vm.$axios
-        .get(`/api/2020/sponsor?sponsor_id=${id}`)
+        .get(`/api/2021/sponsor?sponsor_id=${id}`)
         .then((data) => {
           if (data.data.success) {
             vm.imgUrl = data.data.data[0].logo_path
