@@ -133,6 +133,34 @@
     position: #{$value};
   }
 }
+//position breakpoints
+@each $valueOne in $breakpoints {
+  @include screen($valueOne) {
+    @each $valueTwo in $position {
+      .position-#{$valueOne}-#{$valueTwo} {
+        position: #{$valueTwo};
+      }
+    }
+  }
+}
+
+//display
+@each $value in $display {
+  .d-#{$value} {
+    display: #{$value};
+  }
+}
+
+//display breakpoints
+@each $valueOne in $breakpoints {
+  @include screen($valueOne) {
+    @each $valueTwo in $display {
+      .d-#{$valueOne}-#{$valueTwo} {
+        display: #{$valueTwo};
+      }
+    }
+  }
+}
 
 //width
 @for $i from 1 through 5 {
@@ -141,7 +169,7 @@
   }
 }
 
-//width breakpoinst
+//width breakpoints
 @each $value in $breakpoints {
   @include screen($value) {
     @for $i from 1 through 5 {
