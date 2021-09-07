@@ -1,139 +1,107 @@
-{
-  "success": true,
-  "message": "Success.",
-  "data": [
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Business Thinking"
+[
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Web"
+    "name": "Agile"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "\u9060\u8ddd"
+    "name": "數位轉型"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "UI\/UX"
+    "name": "Cross-platform"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Data Analyzing"
+    "name": "Mobile App"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Cloud"
+    "name": "UI/UX"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "\u8077\u6daf\u767c\u5c55"
+    "name": "社會參與"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Cross-platform"
+    "name": "Web"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "\u793e\u6703\u53c3\u8207"
+    "name": "AI"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Startup"
+    "name": "Data Analyzing"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "IoT"
+    "name": "Open Source"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "DevOps"
+    "name": "DevOps"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "\u6578\u4f4d\u8f49\u578b"
+    "name": "Cloud"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Agile"
+    "name": "IoT"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "AI"
+    "name": "Startup"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
     },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Panel"
-    },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Mobile App"
-    },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "5G \/ 6G"
-    },
-    {
-      "color": {
-        "web": "#651fff",
-        "mobile": "#ffcc00"
-      },
-      "name": "Community"
-    }
-  ]
-}
+    "name": "遠距"
+  }
+]

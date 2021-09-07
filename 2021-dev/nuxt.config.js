@@ -169,7 +169,7 @@ module.exports = {
       const pages = []
       pages.push('/speaker')
       const data = require('./static/speaker.json')
-      data.data.forEach((speaker) => {
+      data.forEach((speaker) => {
         pages.push(`/speaker/${speaker.speaker_id}`)
       })
       return pages

@@ -114,26 +114,45 @@
                 {{ singleSpeaker[0].topic }}
               </h3>
               <div class="modal-summary-info-wrap">
-                <div class="modal-summary-info mr-6 mr-sm-0">
+                <div v-if="singleSpeaker[0].started_at > 0" class="modal-summary-info mr-6 mr-sm-0">
                   <div class="bg-calendar mr-1" />
                   <p class="m-0">
                     {{ $moment(singleSpeaker[0].started_at * 1000).format('MM/DD HH:mm') }} ~ {{ $moment(singleSpeaker[0].ended_at * 1000).format('MM/DD HH:mm') }}
                   </p>
                 </div>
-                <div class="modal-summary-info mt-sm-2">
+                <div v-if="singleSpeaker[0].room" class="modal-summary-info mt-sm-2">
                   <div class="bg-location mr-1" />
                   <p class="m-0">
                     {{ singleSpeaker[0].room }}({{ singleSpeaker[0].floor }})
                   </p>
                 </div>
               </div>
-              <p class="mb-8">
-                {{ singleSpeaker[0].summary }}
-              </p>
-              <h4 v-if="false" class="mb-2">
-                <span>\\</span>
-                贊助廠商
-              </h4>
+              <!-- eslint-disable-next-line vue/no-v-html -->
+              <p class="mb-8" v-html="parseContent(singleSpeaker[0].summary)" />
+              <div v-if="singleSpeaker[0].target">
+                <h4 class="mb-1">
+                  <span>\\</span>
+                  目標會眾
+                </h4>
+                <!-- eslint-disable-next-line vue/no-v-html -->
+                <p class="mb-8 mt-2" v-html="parseContent(singleSpeaker[0].target)" />
+              </div>
+              <div v-if="singleSpeaker[0].prior_knowledge">
+                <h4 class="mb-1">
+                  <span>\\</span>
+                  先備知識
+                </h4>
+                <!-- eslint-disable-next-line vue/no-v-html -->
+                <p class="mb-8 mt-2" v-html="parseContent(singleSpeaker[0].prior_knowledge)" />
+              </div>
+              <div v-if="singleSpeaker[0].expected_gain">
+                <h4 class="mb-1">
+                  <span>\\</span>
+                  會中預期收穫
+                </h4>
+                <!-- eslint-disable-next-line vue/no-v-html -->
+                <p class="mb-8 mt-2" v-html="parseContent(singleSpeaker[0].expected_gain)" />
+              </div>
               <img v-if="false" :src="getSponsorInfo (singleSpeaker[0].sponsor_id)" alt="" class="sponsor-logo">
             </div>
             <div class="modalFooter">
@@ -200,8 +219,8 @@ export default {
       const res = await $axios.get(process.env.BASE_URL + '/2021/speaker-tags.json')
 
       const config = {
-        speakerData: data.data,
-        tags: res.data.data.map(tag => tag.name)
+        speakerData: data,
+        tags: res.data.map(tag => tag.name)
       }
       if (params.speaker_id) {
         config.activeSpeaker = +params.speaker_id
@@ -293,6 +312,9 @@ export default {
     }
   },
   methods: {
+    parseContent (content) {
+      return content.replace(/\n/gi, '<br>')
+    },
     copylink () {
       navigator.clipboard.writeText(this.shareUrl).then(() => {
         this.copySuccess = true
