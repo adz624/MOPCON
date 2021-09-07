@@ -148,7 +148,7 @@
               <div v-if="singleSpeaker[0].expected_gain">
                 <h4 class="mb-1">
                   <span>\\</span>
-                  會中預期收穫
+                  會眾預期收穫
                 </h4>
                 <!-- eslint-disable-next-line vue/no-v-html -->
                 <p class="mb-8 mt-2" v-html="parseContent(singleSpeaker[0].expected_gain)" />
