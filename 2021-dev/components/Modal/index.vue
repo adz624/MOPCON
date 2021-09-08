@@ -1,6 +1,11 @@
 <template>
   <div>
-    <div id="myModal" class="modal fade">
+    <div
+      id="myModal"
+      class="modal fade"
+      :class="{'show': show}"
+      :style="{'display: block': show }"
+    >
       <div class="modal-content">
         <div class="clearfix">
           <span class="close mr-1" @click="close()">&times;</span>
@@ -33,6 +38,9 @@ export default {
   },
   mounted () {
     const vm = this
+    if (this.show) {
+      vm.modalChange(true)
+    }
     window.onclick = function (event) {
       const modal = document.getElementById('myModal')
       if (event.target === modal) {
@@ -46,14 +54,11 @@ export default {
       this.show = false
     },
     modalChange (status = false) {
-      const body = document.querySelector('body')
+      const body = document.querySelector('html, body')
       const modal = document.getElementById('myModal')
       if (status) {
         body.classList.add('modal-open')
         modal.style.display = 'block'
-        setTimeout(function () {
-          modal.classList.add('show')
-        }, 5)
       } else {
         modal.style.display = 'none'
         modal.classList.remove('show')

@@ -89,13 +89,13 @@ export default {
           target: ''
         },
         {
-          name: '講者募集',
+          name: '講者陣容',
           class: '',
-          url: 'https://www.accupass.com/event/2106151141012050302398',
+          url: './speaker',
           subNav: [],
           subIsOpen: false,
-          open: '',
-          target: '_blank'
+          open: process.env.route_speaker,
+          target: ''
         },
         {
           name: '時光機',

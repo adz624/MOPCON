@@ -34,7 +34,10 @@
   max-width: 609px;
   transform: translate(0, -50px);
   transition: transform 0.3s ease-out;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
+  @include screen(pad) {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .modal.show .modal-content {
