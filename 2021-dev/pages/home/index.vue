@@ -36,9 +36,9 @@
           <div class="sopOne-area">
             <div class="sopOne-content content-style">
               <div class="sopOne-icon" />
-              <h2>今年相約線上見！</h2>
+              <h2>堅持十年，很「南」</h2>
               <p>
-                「堅持濁水溪以南」是 MOPCON 十年如一的口號，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！
+                MOPCON (Mobile Open Platform Conference) 堅持濁水溪以南的行動科技年會，南台灣千人軟體圈盛事。時逢第十周年，秉持著 Growing with you 精神與您一同成長，今年主題聚焦 Mobile 與 AIoT，期待能邀請老朋友和新同學，我們線上見！
               </p>
             </div>
             <div class="sopOne-image-area">
