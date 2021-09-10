@@ -7,28 +7,54 @@
       class="container navbar-container"
       :class="{'navbar-container-around': navFixed && !isMobile, 'navbar-container-mobile': navOpen}"
     >
-      <div v-if="isMobile || navFixed">
-        <div
-          v-if="navOpen || navFixed"
-          class="logo-w"
-          :class="{'primary': navFixed && !isMobile}"
-        >
-          <a href="/">
-            <LogoW />
-          </a>
-        </div>
-      </div>
       <div class="navbar-content" :class="{'active': navOpen}">
-        <a
-          v-for="item in navOpenList"
-          :key="item.url"
-          :href="item.url"
-          :target="item.target"
-          :class="item.class"
-          class="navbar-item"
-        >
-          {{ item.name }}
-        </a>
+        <div v-if="isMobile || navFixed">
+          <div
+            v-if="navOpen || navFixed"
+            class="logo-w"
+            :class="{'primary': navFixed && !isMobile}"
+          >
+            <a href="/">
+              <LogoW />
+            </a>
+          </div>
+        </div>
+        <div class="menu-content">
+          <div v-for="item in navOpenList" :key="item.url">
+            <a
+              v-if="item.subNav.length > 0"
+              :href="item.url"
+              :target="item.target"
+              :class="item.class"
+              class="navbar-item"
+              @click.prevent="toggleSubNav(item.name, item.subIsOpen)"
+            >
+              {{ item.name }}
+              <span v-if="item.subNav.length > 0" class="material-icons" :class="{'subActive': item.subIsOpen && nowSubOpen == item.name }">
+                expand_more
+              </span>
+            </a>
+            <a
+              v-else
+              :key="item.url"
+              :href="item.url"
+              :target="item.target"
+              :class="item.class"
+              class="navbar-item"
+            >
+              {{ item.name }}
+            </a>
+            <div v-if="item.subNav.length > 0 && item.name == '時光機' && nowSubOpen == item.name" class="dropdown" :class="{'active': item.subIsOpen}">
+              <h4>歷年網站</h4>
+              <ul>
+                <li v-for="(subNav, index) in item.subNav" :key="`subNav_${index}`">
+                  <a :href="subNav.url" :target="item.target"><span>{{ subNav.name }}</span></a>
+                </li>
+              </ul>
+              <a href="https://mopcon.org/album.php" target="_blank" class="btn btn-photo">歷年相簿</a>
+            </div>
+          </div>
+        </div>
         <a v-if="!isMobile" class="navbar-item" href="https://www.facebook.com/mopcon/" target="_blank">
           <IconFB />
         </a>
@@ -66,9 +92,11 @@ export default {
     isMobile: Boolean
   },
   data () {
+    const [startYear, currentYear] = [2012, new Date().getFullYear()]
     return {
       navOpen: false,
       windowTop: null,
+      nowSubOpen: '',
       navList: [
         {
           name: '主辦社群',
@@ -100,9 +128,16 @@ export default {
         {
           name: '時光機',
           class: '',
-          url: 'https://mopcon.org/album.php',
-          subNav: [],
-          subIsOpen: false,
+          url: '#',
+          subNav: Array.from(Array(currentYear - startYear).keys())
+            .map(function (item) {
+              return {
+                open: true,
+                url: `https://mopcon.org/${startYear + item}/`,
+                name: startYear + item
+              }
+            }).reverse(),
+          subIsOpen: true,
           open: '',
           target: '_blank'
         }
@@ -125,6 +160,13 @@ export default {
     window.addEventListener('scroll', this.onScroll)
   },
   methods: {
+    toggleSubNav (name, hasSub) {
+      if (hasSub) {
+        this.nowSubOpen !== name ? (this.nowSubOpen = name) : (this.nowSubOpen = '')
+      } else {
+        this.nowSubOpen = ''
+      }
+    },
     openNav () {
       this.navOpen = !this.navOpen
     },
@@ -167,7 +209,9 @@ export default {
     @include screen(pad) {
       @include flex(space-between);
       .logo-w {
-        margin-top: 4px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
         z-index: 1;
       }
     }
@@ -189,9 +233,8 @@ export default {
         bottom: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         justify-content: flex-start;
-        padding-top: 6rem;
         transform: translateX(100%);
         transition: all 0.3s;
         &.active {
@@ -206,6 +249,111 @@ export default {
             &:hover {
               color: $colorOrange;
             }
+          }
+        }
+      }
+      .menu-content {
+        display: flex;
+        @include screen(pad) {
+          flex-direction: column;
+          overflow-y: auto;
+          height: 100%;
+          padding: 2rem;
+        }
+      }
+      .material-icons {
+        vertical-align: top;
+        transform: rotate(0deg);
+        transition: 0.3s;
+        @include screen(pad) {
+          color: white;
+        }
+        &.subActive {
+          transform: rotate(180deg);
+        }
+      }
+      .dropdown {
+        max-height: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.4s;
+        margin-top: 16px;
+        position: absolute;
+        right: 0;
+        background: #0d1336;
+        padding: 24px;
+        width: 280px;
+        border-radius: 8px;
+        top: 100%;
+         &.active {
+          max-height: 800px;
+          opacity: 1;
+          overflow: auto;
+        }
+        @include screen(pad) {
+          left: 0;
+          width: 100%;
+          padding: 0px 24px 36px 24px;
+          text-align: left;
+        }
+        h4 {
+          color: white;
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: 0px;
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+          display: flex;
+          padding-right: 12px;
+          flex-wrap: wrap;
+          margin: 0;
+        }
+        li {
+          width: 50%;
+          text-align: right;
+          @include screen(pad) {
+            text-align: left;
+          }
+        }
+        a {
+          display: block;
+          padding-bottom: 40px;
+          @include screen(pad) {
+            padding-left: 12px;
+            padding-bottom: 32px;
+          }
+          &:hover span::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background-color: $colorOrange;
+            @include screen(pad) {
+              content: none;
+            }
+          }
+          span {
+            position: relative;
+            display: block;
+            font-size: 24px;
+            color: white;
+          }
+        }
+        .btn-photo {
+          border: none;
+          background-color: $colorOrange;
+          color: white;
+          display: block;
+          text-align: center;
+          padding-bottom: 0px;
+          &:hover {
+            background-color: $colorOrangeLight;
           }
         }
       }
@@ -225,6 +373,9 @@ export default {
         svg path {
           fill: $colorOrange;
         }
+        .material-icons {
+          color: $colorOrange;
+        }
       }
       svg {
         width: 1.7rem;
@@ -235,6 +386,8 @@ export default {
       }
     }
     .navbar-mobile-btn {
+      position: absolute;
+      right: 24px;
       svg {
         width: 2rem;
         height: 2rem;
