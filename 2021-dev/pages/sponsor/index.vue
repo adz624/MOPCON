@@ -128,14 +128,16 @@
         <div class="modal-title-image">
           <img :src="sponsorData.logo_path">
         </div>
-        <h4>{{ sponsorData.name }}</h4>
-        <div class="modal-title-button">
-          <button v-if="sponsorData.official_website" class="btn btn-tiny" @click="openWindow(sponsorData.official_website)">
-            官方網站
-          </button>
-          <button v-if="sponsorData.facebook_url" class="btn btn-tiny" @click="openWindow(sponsorData.facebook_url)">
-            Facebook
-          </button>
+        <div class="modal-title-content">
+          <h4>{{ sponsorData.name }}</h4>
+          <div class="modal-title-button">
+            <button v-if="sponsorData.official_website" class="btn btn-tiny" @click="openWindow(sponsorData.official_website)">
+              官方網站
+            </button>
+            <button v-if="sponsorData.facebook_url" class="btn btn-tiny" @click="openWindow(sponsorData.facebook_url)">
+              Facebook
+            </button>
+          </div>
         </div>
       </div>
       <div v-if="sponsorData.about_us" class="modal-body">
@@ -658,31 +660,31 @@ h6 {
 
 .modal {
   &-title {
-    @include flex(center, column, flex-start);
+    @include flex(flex-start, row, center);
     @include screen(sm) {
-      @include flex(flex-start, row, center);
-      height: unset;
+      @include flex(center, column, center);
     }
-    flex-wrap: wrap;
-    height: 120px;
     &-image {
       width: 120px;
       height: 120px;
     }
-    h4 {
-      margin-bottom: 0rem;
+    &-content {
       margin-left: 1rem;
-      width: 60%;
       @include screen(sm) {
-        width: unset;
+        margin-left: 0rem;
+        width: 100%;
+      }
+      h4 {
+        @include screen(sm) {
+          margin-left: 0rem;
+          margin-top: 1rem;
+        }
       }
     }
     &-button {
       @include flex;
-      margin-top: 0.5rem;
       @include screen(sm) {
         @include flex(normal, column);
-        flex: 0 0 100%;
         margin-top: 2rem;
       }
       .btn-tiny {
