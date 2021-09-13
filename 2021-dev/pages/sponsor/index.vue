@@ -129,7 +129,7 @@
       </div>
     </section>
     <Modal :modal-open="modalOpen" @modal-close="closeModal">
-      <div class="modal-title">
+      <div v-if="sponsorData" class="modal-title">
         <div class="modal-title-image">
           <img :src="sponsorData.logo_path">
         </div>
@@ -145,7 +145,7 @@
           </div>
         </div>
       </div>
-      <div v-if="sponsorData.about_us" class="modal-body">
+      <div v-if="sponsorData && sponsorData.about_us" class="modal-body">
         <h5 v-if="!isMobile">
           關於我們
         </h5>
@@ -153,7 +153,7 @@
         <p v-html="parseSummary(sponsorData.about_us)" />
       </div>
       <div
-        v-if="sponsorData.speaker_information && sponsorData.speaker_information.length > 0"
+        v-if="sponsorData && sponsorData.speaker_information && sponsorData.speaker_information.length > 0"
         class="modal-extend"
       >
         <h5>相關講者資訊</h5>
@@ -190,14 +190,95 @@
 </template>
 
 <script>
+import Modal from '../../components/Modal'
 export default {
-  name: 'Home',
+  name: 'Sponsor',
+  components: {
+    Modal
+  },
+  async asyncData ({ $axios, params }) {
+    try {
+      let data = []
+      const res = await $axios.get(process.env.BASE_URL + '/2021/sponsor.json')
+      data = res.data
+
+      const config = {
+        sponsorList: data
+      }
+
+      if (params.sponsor_id) {
+        data.forEach((sponsor) => {
+          sponsor.data.forEach((item) => {
+            if (item.sponsor_id === +params.sponsor_id) {
+              config.sponsorData = item
+            }
+          })
+        })
+        config.modalOpen = true
+      }
+      return config
+    } catch (err) {}
+  },
   data () {
     return {
       innerWidth: null,
       sponsorData: {},
       modalOpen: false,
       sponsorList: []
+    }
+  },
+  head () {
+    return {
+      title: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.modalOpen ? this.sponsorData.about_us : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.modalOpen ? this.sponsorData.about_us : ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/sponsor/${this.sponsorData.sponsor_id}` : `${process.env.BASE_URL}/2021/sponsor`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.modalOpen ? `${this.sponsorData.logo_path}` : `${process.env.BASE_URL}/2021/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.modalOpen ? this.sponsorData.about_us : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+        }
+      ]
     }
   },
   computed: {
@@ -215,9 +296,6 @@ export default {
         this.navOpen = false
       }
     }
-  },
-  created () {
-    this.getSponsorList()
   },
   mounted () {
     this.innerWidth = window.innerWidth
@@ -237,13 +315,6 @@ export default {
     },
     closeModal (show) {
       this.modalOpen = show
-    },
-    getSponsorList () {
-      const vm = this
-      vm.$axios.$get(process.env.BASE_URL + '/2021/sponsor.json')
-        .then((data) => {
-          vm.sponsorList = data
-        })
     },
     parseSummary (summary) {
       return summary.replace(/\n/gi, '<br>')

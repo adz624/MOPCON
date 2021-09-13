@@ -173,6 +173,14 @@ module.exports = {
       data.forEach((speaker) => {
         pages.push(`/speaker/${speaker.speaker_id}`)
       })
+
+      pages.push('/sponsor')
+      const sponsors = require('./static/sponsor.json')
+      sponsors.forEach((sponsor) => {
+        sponsor.data.forEach((item) => {
+          pages.push(`/sponsor/${item.sponsor_id}`)
+        })
+      })
       return pages
     }
   },
