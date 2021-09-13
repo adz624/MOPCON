@@ -416,6 +416,12 @@ h6 {
   margin-top: 120px;
   margin-bottom: 120px;
   &-content {
+    margin-left: 6%;
+    margin-right: 6%;
+    @include screen(sm) {
+      margin-left: 0;
+      margin-right: 0;
+    }
     .sponsor {
       &-title {
         @include flex;
