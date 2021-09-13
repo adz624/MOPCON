@@ -79,8 +79,9 @@
           <h2>加入我們，最實質的收穫是....</h2>
           <div class="sopTwo-gain">
             <div class="sopTwo-gain-area">
-              <!-- TODO: 調整顯示圖片 -->
-              <div class="sopTwo-gain-image" />
+              <div class="sopTwo-gain-image">
+                <img src="../../assets/images/sponsor/sop02-img1.svg">
+              </div>
               <h2>品牌曝光</h2>
               <p>
                 場間休息、廣告輪播，<br class="hidden md-show">
@@ -89,13 +90,15 @@
               </p>
             </div>
             <div class="sopTwo-gain-area">
-              <!-- TODO: 調整顯示圖片 -->
-              <div class="sopTwo-gain-image" />
+              <div class="sopTwo-gain-image">
+                <img src="../../assets/images/sponsor/sop02-img2.svg">
+              </div>
               <h2>徵才媒合</h2>
               <p>
                 今年 MOPCON 以嶄新的線上活動模式，<br class="hidden md-show">
                 更能打破距離的障礙匯集人才，<br class="hidden md-show">
-                同時也能夠將貴司的產品及公司推向國內外的工程師、學生與關鍵決策者。
+                同時也能夠將貴司的產品及公司<br class="hidden md-show">
+                推向國內外的工程師、學生與關鍵決策者。
               </p>
             </div>
           </div>
@@ -110,8 +113,10 @@
               <span>Top 2 想聽取不同領域的相關議題</span>
               <span>Top 3 有感興趣的議題</span>
             </div>
-            <!-- TODO: 調整顯示圖片 -->
-            <div class="sopTwo-meet-image" />
+            <div class="sopTwo-meet-image">
+              <img src="../../assets/images/sponsor/sop02-img3.svg" class="pad-hidden sm-show" alt="">
+              <img src="../../assets/images/sponsor/sop02-768px-img3.svg" class="hidden pad-show sm-hidden" alt="">
+            </div>
           </div>
           <div class="sopTwo-join">
             <div class="sponsor-icon bg-BruceWayne" />
@@ -539,14 +544,16 @@ h6 {
     @include flex(space-evenly);
     margin-top: 3rem;
     margin-bottom: 5rem;
+    width: 100%;
     @include screen(sm) {
       @include flex(space-evenly, column);
-      margin-bottom: 0rem;
+      margin-bottom: 3rem;
     }
     h2 {
       color: $colorPrimary;
       margin-top: 2rem;
       @include screen(sm) {
+        margin-top: 0;
         font-size: 1.5rem;
       }
     }
@@ -570,13 +577,11 @@ h6 {
       }
     }
     &-image {
-      max-width: 95%;
-      width: 288px;
-      height: 272px;
-      background-color: #B0B0B0;
+      width: 100%;
+      height: 270px;
       border-radius: 8px;
       @include screen(sm) {
-        width: 100%;
+        height: 200px;
       }
     }
   }
@@ -590,6 +595,7 @@ h6 {
     }
     @include screen(sm) {
       @include flex(space-around, column, center);
+      margin-bottom: 2rem;
     }
     &-content {
       @include flex(center, column, flex-start);
@@ -612,9 +618,11 @@ h6 {
     &-image {
       width: 45%;
       height: 400px;
-      background-color: #B0B0B0;
       border-radius: 8px;
       @include screen(sm) {
+        width: 100%;
+      }
+      img {
         width: 100%;
       }
     }
