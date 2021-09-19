@@ -77,26 +77,28 @@
                 </div>
               </div>
               <div class="speaker-text-modal px-4 px-sm-0">
-                <h3 class="mb-1">
-                  {{ speaker.name }}
-                </h3>
-                <p class="my-0">
-                  {{ speaker.company }}
-                </p>
-                <p class="mb-4 mt-0">
-                  {{ speaker.job_title }}
-                </p>
-                <!-- <div class="speaker-community-wrap">
-              <p v-if="session.link_fb ||session.link_github||session.link_other||session.link_twitter" class="mr-4 mr-sm-0 mb-sm-4">
-                講者社群
-              </p>
-              <div class="speaker-community-icon d-flex">
-                <a v-if="session.link_fb" class="bg-facebook_icon" :href="session.link_fb" target="_blank" />
-                <a v-if="session.link_github" :href="session.link_github" class="bg-github_icon" target="_blank" />
-                <a v-if="session.link_other" :href="session.link_other" class="bg-website_icon" target="_blank" />
-                <a v-if="session.link_twitter" :href="session.link_twitter" class="bg-twitter_icon" target="_blank" />
-              </div>
-            </div> -->
+                <div class="speaker-title">
+                  <h3 class="mb-1">
+                    {{ speaker.name }}
+                  </h3>
+                  <p class="my-0">
+                    {{ speaker.company }}
+                  </p>
+                  <p class="mb-4 mt-0">
+                    {{ speaker.job_title }}
+                  </p>
+                </div>
+                <div class="speaker-community-wrap">
+                  <p v-if="speaker.link_fb ||speaker.link_github||speaker.link_other||speaker.link_twitter" class="my-0 mr-3 pad-hidden">
+                    講者社群
+                  </p>
+                  <div class="speaker-community-icon d-flex">
+                    <a v-if="speaker.link_fb" class="bg-facebook_icon" :href="speaker.link_fb" target="_blank" />
+                    <a v-if="speaker.link_github" :href="speaker.link_github" class="bg-github_icon" target="_blank" />
+                    <a v-if="speaker.link_other" :href="speaker.link_other" class="bg-website_icon" target="_blank" />
+                    <a v-if="speaker.link_twitter" :href="speaker.link_twitter" class="bg-twitter_icon" target="_blank" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

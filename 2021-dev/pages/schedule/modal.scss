@@ -8,6 +8,10 @@ $bg_map: (
   @include flex(flex-start, row, center);
 }
 .speaker-text-modal {
+  @include screen(sm) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   h3 {
     @include font(20px, $colorBlack, 700);
   }
@@ -18,6 +22,9 @@ $bg_map: (
 }
 .speaker-community-wrap {
   @include flex(content, row, center);
+  @include screen(sm) {
+    margin-top: 28px;
+  }
   p {
     @include font(14px);
     text-align: center;
@@ -36,6 +43,11 @@ $bg_map: (
   }
 }
 .modalBody {
+  .speaker-title {
+    @include screen(sm) {
+      text-align: center;
+    }
+  }
   span {
     color: $colorOrange;
   }
@@ -183,12 +195,12 @@ $bg_map: (
       align-items: center;
     }
     &-img-list {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
     }
     &-img-wrap {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       transform: rotate(45deg);
       border-radius: 28px;
       overflow: hidden;
