@@ -181,6 +181,16 @@ module.exports = {
           pages.push(`/sponsor/${item.sponsor_id}`)
         })
       })
+
+      pages.push('/schedule')
+      const session = require('./static/session.json')
+      session.forEach((period) => {
+        period.period.forEach((session) => {
+          session.room.forEach((ele) => {
+            pages.push(`/schedule/${ele.session_id}`)
+          })
+        })
+      })
       return pages
     }
   },
