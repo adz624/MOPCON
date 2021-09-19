@@ -269,7 +269,7 @@ export default {
         {
           hid: 'og-image',
           property: 'og:image',
-          content: this.modalOpen ? `${this.singleSpeaker[0].img.web}` : `${process.env.BASE_URL}/2021/og-image.png`
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/${this.singleSpeaker[0].img.web}` : `${process.env.BASE_URL}/2021/og-image.png`
         },
         // twitter seo
         {

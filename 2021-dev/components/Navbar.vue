@@ -108,6 +108,15 @@ export default {
           target: ''
         },
         {
+          name: '贊助社群',
+          class: '',
+          url: './sponsor',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_sponsor,
+          target: ''
+        },
+        {
           name: '票種介紹',
           class: '',
           url: './ticket',

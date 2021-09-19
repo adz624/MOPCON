@@ -714,6 +714,59 @@
     "sponsor": []
   },
   {
+    "name": "Weizhong Yang a.k.a zonble",
+    "name_e": "",
+    "speaker_id": 120,
+    "company": "Cerence Inc.",
+    "company_e": "",
+    "job_title": "Engineering Manager",
+    "job_title_e": "",
+    "bio": "- Flutter GDE (2019-)\n- Engineering Manager @ Cerence Taipei (2020-)\n- iOS Developer Team Lead @ KKBOX (2011-2020)",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/120.png",
+      "mobile": "assets/images/speakers/120.png"
+    },
+    "link_fb": "",
+    "link_github": "https://github.com/zonble",
+    "link_twitter": "https://twitter.com/zonble",
+    "link_other": "https://zonble.net",
+    "link_slide": "",
+    "topic": "使用 Flutter 開發 Windows 應用",
+    "topic_e": "",
+    "summary": "從今年起，Flutter 開始正式支援 Web、以及 Windows、macOS 與 Linux 等桌面平台，讓行動平台上做開發工作的 Flutter 工程師，能夠進一步將觸手拓展到桌面平台上。\n\n 我們在今年上半年，便用了 Flutter，為公司開發了一款 Windows 應用程式。在開發這個程式的過程中，我學習到了從行動平台轉往桌面平台需要注意的地方，並且希望與你分享。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Cross-platform"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "IoT"
+      }
+    ],
+    "target": "* 有興趣開發 Windows 應用的 Mobile 工程師\n* 有興趣被勸退不要開發 Windows 應用的工程師",
+    "prior_knowledge": "* 聽過/用過 Flutter\n* 聽過/用過 Windows\n* 有一些 App 開發基礎\n* 聽過 C/Win32/.Net/Visual Studio 等 Windows 開發相關知識",
+    "expected_gain": "應該...很多吧（？）",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
     "name": "鄭行健（Hiking）",
     "name_e": "",
     "speaker_id": 122,
@@ -1059,7 +1112,7 @@
     "link_slide": "",
     "topic": "Speed Up Your App with Web Vitals",
     "topic_e": "",
-    "summary": "- 使用者怎麼看待「速度快」？\n- RAIL\n- Web Vitals\n- 工具\n- 案例研討：趨勢科技 Deep Discovery Director、露天拍賣手機版商品頁 - 問與答、Mixitini",
+    "summary": "- 使用者怎麼看待「速度快」？\n- RAIL\n- Web Vitals\n- 工具\n- 案例研討：趨勢科技 Deep Discovery Director、露天拍賣手機版商品頁 - 問與答、Mixtini",
     "summary_e": "",
     "community_partner": "",
     "is_keynote": false,
@@ -1291,13 +1344,6 @@
           "web": "#651fff",
           "mobile": "#ffcc00"
         },
-        "name": "Mobile App"
-      },
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
         "name": "Open Source"
       },
       {
@@ -1326,28 +1372,7 @@
           "web": "#651fff",
           "mobile": "#ffcc00"
         },
-        "name": "DevOps"
-      },
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
-        "name": "Startup"
-      },
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
         "name": "社會參與"
-      },
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
-        "name": "數位轉型"
       },
       {
         "color": {
@@ -1540,6 +1565,274 @@
     "target": "App (Android 也可因 Google 也開始注重隱私)\n 後端 可以了解哪些資料屬於個人隱私\nPM 可以知道哪些事不能做",
     "prior_knowledge": "了解業界現況是如何搜集個人資料並用於廣告投放或個人化項目，並稍微\b知道這幾年 iOS 關於隱私的新功能調整。",
     "expected_gain": "- 了解隱私的重要\n- 了解蘋果的政策理念及業界領頭羊的角色\n- 了解蘋果這幾年針對隱私的調整 (Why)\n- 了解 iOS 跟隱私有關的功能調整演進 (從古至今)\n 除了在未來的開發上，能遵守 Apple 的隱私政策外也能自主的更注重隱私。",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "黃猷珵",
+    "name_e": "",
+    "speaker_id": 185,
+    "company": "高雄市立三民高級中學",
+    "company_e": "",
+    "job_title": "學生",
+    "job_title_e": "",
+    "bio": "秉持著以小工具的理念解決日常問題的高三少年，工具雖小，卻能一再解決問題。同時也任職 CSCheckin 專案及築夢學院發起人，累積至少五年以上程式及專案開發經驗，以網頁前後端、專案開發為主，對框架、AIoT、Android 也有些涉略。",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/185.png",
+      "mobile": "assets/images/speakers/185.png"
+    },
+    "link_fb": "https://fb.me/yc97463",
+    "link_github": "https://github.com/yc97463",
+    "link_twitter": "",
+    "link_other": "https://imych.one",
+    "link_slide": "",
+    "topic": "應到未到，一看就知道！",
+    "topic_e": "",
+    "summary": "「怎麼樣的點名方式，才能達成簡便、高效且無失誤呢？」\n\n\n\nCSCheckin 課程簽到系統在 2021 年抗疫期間誕生。我們在觀察近一個月的遠距上課狀況後，發現到不少老師都需要挪出 2~10 分鐘的時間用於課堂點名。因為這繁瑣的點名程序，不少老師認為網課百害無一利；不少學生也因為這些時間的耽誤，不僅失去了真正學習的時間，甚至還會因為沒被點到名以致誤記曠課。\n\n\n\n 我們深受這種情況所苦。因此我們利用 Google for Education 所提供的 API，搭配各種現代 Web 前端與後端技術，開發出一個既美觀又實用的線上課程輔助工具。這個議程中我們會介紹我們所使用的技術、其中遇到的困難、在多次重構中學習到的經驗以及心得分享。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Cloud"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "UI/UX"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Web"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "社會參與"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "遠距"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Open Source"
+      }
+    ],
+    "target": "學生與教師、Web 工程師/開發者，以及對相關內容有興趣的 MOPCON 與會者。",
+    "prior_knowledge": "大部分內容老少皆宜，但部分比較 hardcore 的知識可能需要基礎的程式開發能力與工程經驗。",
+    "expected_gain": "倘若您有相關開發經驗，您可以將我們的經驗或技術套用到自己的系統上。\n\n 倘若您是對這方面有興趣的 Web 開發者或是學生，您可以透過此議程的內容學習到現代 Web 前後端技術及專案宣傳技巧。我們希望這些內容能讓您找到自己的方向，亦能避免踩過來人的坑。",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "潘奕濬",
+    "name_e": "",
+    "speaker_id": 186,
+    "company": "高雄市立三民高級中學",
+    "company_e": "",
+    "job_title": "學生",
+    "job_title_e": "",
+    "bio": "要求程式工程品質的高三學生。有七年程式開發、三年的軟體中英本地化（翻譯）、一年的 UI/UX 設計經驗及文章寫作經驗。以網頁開發，尤其前端為主，並涉略 CI 自動化、CLI 工具程式及自動化 script 等。",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/186.png",
+      "mobile": "assets/images/speakers/186.png"
+    },
+    "link_fb": "https://www.facebook.com/pan93412TW",
+    "link_github": "https://github.com/pan93412",
+    "link_twitter": "https://twitter.com/byStarTW",
+    "link_other": "https://keybase.io/pan93412",
+    "link_slide": "",
+    "topic": "應到未到，一看就知道！",
+    "topic_e": "",
+    "summary": "「怎麼樣的點名方式，才能達成簡便、高效且無失誤呢？」\n\n\n\nCSCheckin 課程簽到系統在 2021 年抗疫期間誕生。我們在觀察近一個月的遠距上課狀況後，發現到不少老師都需要挪出 2~10 分鐘的時間用於課堂點名。因為這繁瑣的點名程序，不少老師認為網課百害無一利；不少學生也因為這些時間的耽誤，不僅失去了真正學習的時間，甚至還會因為沒被點到名以致誤記曠課。\n\n\n\n 我們深受這種情況所苦。因此我們利用 Google for Education 所提供的 API，搭配各種現代 Web 前端與後端技術，開發出一個既美觀又實用的線上課程輔助工具。這個議程中我們會介紹我們所使用的技術、其中遇到的困難、在多次重構中學習到的經驗以及心得分享。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Cloud"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "UI/UX"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Web"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "社會參與"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "遠距"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Open Source"
+      }
+    ],
+    "target": "學生與教師、Web 工程師/開發者，以及對相關內容有興趣的 MOPCON 與會者。",
+    "prior_knowledge": "大部分內容老少皆宜，但部分比較 hardcore 的知識可能需要基礎的程式開發能力與工程經驗。",
+    "expected_gain": "倘若您有相關開發經驗，您可以將我們的經驗與使用的技術套用到自己的系統上；對這方面有興趣的 Web 開發者或是學生，可以透過此議程的內容學習到現代 Web 前後端技術及專案宣傳技巧。我們希望這些內容能讓您找到自己的方向，亦能避免踩過來人的坑。",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "Recca Chao",
+    "name_e": "",
+    "speaker_id": 187,
+    "company": "",
+    "company_e": "",
+    "job_title": "後端工程師",
+    "job_title_e": "",
+    "bio": "後端工程師，撰寫 Laravel 和 Kotlin，相信自動測試是自己還能勉強待在業界的理由。",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/187.png",
+      "mobile": "assets/images/speakers/187.png"
+    },
+    "link_fb": "https://www.facebook.com/flamerecca711",
+    "link_github": "https://github.com/flamerecca/",
+    "link_twitter": "",
+    "link_other": "https://www.youtube.com/channel/UCkUFhKft61_i3Mn_4KSzYbg",
+    "link_slide": "",
+    "topic": "Kotlin 的自動測試怎麼做？",
+    "topic_e": "",
+    "summary": "Kotlin 除了寫 Android APP 以外，也可以用來寫後端開發的專案。\n\n 今天我們不僅要用 Kotlin 來寫一個簡單的專案，還要用自動測試的方式，來幫我們驗證寫好的功能有沒有問題。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Community"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Open Source"
+      }
+    ],
+    "target": "* 沒有寫過 Kotlin，對 Kotlin 程式語言感興趣的人\n* 會寫一點 Kotlin，但不會自動測試的人",
+    "prior_knowledge": "* 這裡說的 Kotlin 是程式語言（不是俄羅斯附近的一座島嶼）\n* 這裡說的自動測試不是手動執行測試，或請 QA 幫你做的自動化測試",
+    "expected_gain": "學會怎麼建立一個 Kotlin 專案，並且可以加上自動測試。",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "盧韋伸",
+    "name_e": "",
+    "speaker_id": 188,
+    "company": "美商世紀新訊",
+    "company_e": "",
+    "job_title": "資深工程師",
+    "job_title_e": "",
+    "bio": "Kotlin 讀書會志工/導讀、Android 開發者。\n 最近也開始使用 Flutter 開發。\n 金屬音樂愛好者 XD",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/188.png",
+      "mobile": "assets/images/speakers/188.png"
+    },
+    "link_fb": "https://www.facebook.com/andy.coding.journey/",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "https://andyludeveloper.medium.com/",
+    "link_slide": "",
+    "topic": "Kotlin 開發者你還在使用 Gson 嗎？ 有更支持 Kotlin 的工具等你來使用。",
+    "topic_e": "",
+    "summary": "Gson 是在 Java 開發中不可或缺的一個工具，它可以用來將 JSON 格式轉換成物件，亦或是將物件轉換成 JSON 格式。\n 但是，Gson 是純 Java 所開發的一套函式庫，它無法支援部分 Kotlin 的特性。\n\n 本場演講將介紹 Moshi 以及 kotlinx.serialization，幫助你輕鬆轉換成支援 Kotlin 的序列化工具。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Mobile App"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Open Source"
+      }
+    ],
+    "target": "Kotlin 開發者。",
+    "prior_knowledge": "Kotlin 的基本觀念。",
+    "expected_gain": "可以使用更適合 Kotlin 的 序列化/反序列化的函式庫。",
     "started_at": 0,
     "ended_at": 0,
     "room": "",
