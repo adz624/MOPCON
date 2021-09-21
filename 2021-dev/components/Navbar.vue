@@ -20,13 +20,13 @@
           </div>
         </div>
         <div class="menu-content">
-          <div v-for="item in navOpenList" :key="item.url">
+          <div v-for="item in navOpenList" :key="item.url" :class="{'timeline': item.subNav.length > 0, 'timeline-padding': !navFixed && !isMobile}">
             <a
               v-if="item.subNav.length > 0"
               :href="item.url"
               :target="item.target"
               :class="item.class"
-              class="navbar-item"
+              class="navbar-item timeline"
               @click.prevent="toggleSubNav(item.name, item.subIsOpen)"
             >
               {{ item.name }}
@@ -44,15 +44,17 @@
             >
               {{ item.name }}
             </a>
-            <div v-if="item.subNav.length > 0 && item.name == '時光機' && nowSubOpen == item.name" class="dropdown" :class="{'active': item.subIsOpen}">
+            <!-- 時光機 的下拉選單 -->
+            <div v-if="item.subNav.length > 0 && item.name == '時光機'" class="dropdown" :class="{'active': item.subIsOpen && isMobile && nowSubOpen == item.name}">
               <h4>歷年網站</h4>
               <ul>
                 <li v-for="(subNav, index) in item.subNav" :key="`subNav_${index}`">
                   <a :href="subNav.url" :target="item.target"><span>{{ subNav.name }}</span></a>
                 </li>
               </ul>
-              <a href="https://mopcon.org/album.php" target="_blank" class="btn btn-photo">歷年相簿</a>
+              <a href="https://mopcon.org/album.php" target="_blank" class="btn btn-photo w-100">歷年相簿</a>
             </div>
+            <!-- 時光機 的下拉選單 -->
           </div>
         </div>
         <a v-if="!isMobile" class="navbar-item" href="https://www.facebook.com/mopcon/" target="_blank">
@@ -105,6 +107,26 @@ export default {
           subNav: [],
           subIsOpen: false,
           open: process.env.route_community,
+          target: ''
+        },
+        {
+          name: '議程表',
+          class: '',
+          url: './schedule',
+          subNav: [
+            {
+              name: '主要議程',
+              url: './schedule',
+              open: process.env.route_schedule
+            },
+            {
+              name: '交流議程',
+              url: './schedule_unconf',
+              open: process.env.route_schedule_unconf
+            }
+          ],
+          subIsOpen: false,
+          open: process.env.route_schedule,
           target: ''
         },
         {
@@ -215,7 +237,7 @@ export default {
   }
   nav {
     @include flex(flex-end);
-    @include screen(pad) {
+    @include screen(md) {
       @include flex(space-between);
       .logo-w {
         margin-top: 2rem;
@@ -233,7 +255,7 @@ export default {
     }
     .navbar-content {
       @include flex(flex-end);
-      @include screen(pad) {
+      @include screen(md) {
         background: $colorPrimary;
         position: fixed;
         left: 0;
@@ -263,7 +285,7 @@ export default {
       }
       .menu-content {
         display: flex;
-        @include screen(pad) {
+        @include screen(md) {
           flex-direction: column;
           overflow-y: auto;
           height: 100%;
@@ -274,19 +296,41 @@ export default {
         vertical-align: top;
         transform: rotate(0deg);
         transition: 0.3s;
-        @include screen(pad) {
+        @include screen(md) {
           color: white;
         }
         &.subActive {
           transform: rotate(180deg);
         }
       }
+      .timeline-padding {
+        padding-bottom: 18px;
+      }
+      @media (min-width: 1025px) {
+        .timeline:hover .dropdown {
+          max-height: 800px;
+          opacity: 1;
+          overflow: auto;
+          display: block;
+        }
+        .timeline:hover + .dropdown {
+          max-height: 800px;
+          opacity: 1;
+          overflow: auto;
+          display: block;
+        }
+        .timeline:hover .material-icons, .timeline:hover + .material-icons {
+          transform: rotate(180deg);
+        }
+      }
       .dropdown {
+        display: none;
+        max-width: 480px;
+        margin: auto;
         max-height: 0px;
         overflow: hidden;
         opacity: 0;
         transition: 0.4s;
-        margin-top: 16px;
         position: absolute;
         right: 0;
         background: #0d1336;
@@ -294,12 +338,13 @@ export default {
         width: 280px;
         border-radius: 8px;
         top: 100%;
-         &.active {
+        &:hover, &.active {
           max-height: 800px;
           opacity: 1;
           overflow: auto;
+          display: block;
         }
-        @include screen(pad) {
+        @include screen(md) {
           left: 0;
           width: 100%;
           padding: 0px 24px 36px 24px;
@@ -322,14 +367,14 @@ export default {
         li {
           width: 50%;
           text-align: right;
-          @include screen(pad) {
+          @include screen(md) {
             text-align: left;
           }
         }
         a {
           display: block;
           padding-bottom: 40px;
-          @include screen(pad) {
+          @include screen(md) {
             padding-left: 12px;
             padding-bottom: 32px;
           }
@@ -343,7 +388,7 @@ export default {
             transform: translateY(-50%);
             border-radius: 50%;
             background-color: $colorOrange;
-            @include screen(pad) {
+            @include screen(md) {
               content: none;
             }
           }
@@ -356,6 +401,7 @@ export default {
         }
         .btn-photo {
           border: none;
+          width: 100%;
           background-color: $colorOrange;
           color: white;
           display: block;
@@ -374,7 +420,7 @@ export default {
       line-height: 1.7rem;
       margin-left: 40px;
       cursor: pointer;
-      @include screen(pad) {
+      @include screen(md) {
         margin-left: 25px;
       }
       &:hover {
