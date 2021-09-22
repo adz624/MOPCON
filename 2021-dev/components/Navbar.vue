@@ -5,19 +5,17 @@
   >
     <nav
       class="container navbar-container"
-      :class="{'navbar-container-around': navFixed && !isMobile, 'navbar-container-mobile': navOpen}"
+      :class="{'navbar-container-mobile': navOpen}"
     >
       <div class="navbar-content" :class="{'active': navOpen}">
-        <div v-if="isMobile || navFixed">
-          <div
-            v-if="navOpen || navFixed"
-            class="logo-w"
-            :class="{'primary': navFixed && !isMobile}"
-          >
-            <a href="/">
-              <LogoW />
-            </a>
-          </div>
+        <div
+          v-if="!isMobile || (isMobile && navOpen)"
+          class="logo-w"
+          :class="{'primary': !isMobile}"
+        >
+          <a href="/">
+            <LogoW />
+          </a>
         </div>
         <div class="menu-content">
           <div v-for="item in navOpenList" :key="item.url" :class="{'timeline': item.subNav.length > 0, 'timeline-padding': !navFixed && !isMobile}">
@@ -56,13 +54,16 @@
             </div>
             <!-- 時光機 的下拉選單 -->
           </div>
+          <a v-if="!isMobile" class="navbar-item" href="https://www.facebook.com/mopcon/" target="_blank">
+            <IconFB />
+          </a>
+          <a v-if="!isMobile" class="navbar-item" href="https://www.instagram.com/mopcon.tw/" target="_blank">
+            <IconIG />
+          </a>
+          <a v-if="!isMobile" class="navbar-item" href="https://open.firstory.me/user/mopcon/" target="_blank">
+            <IconPodcast />
+          </a>
         </div>
-        <a v-if="!isMobile" class="navbar-item" href="https://www.facebook.com/mopcon/" target="_blank">
-          <IconFB />
-        </a>
-        <a v-if="!isMobile" class="navbar-item" href="https://www.instagram.com/mopcon.tw/" target="_blank">
-          <IconIG />
-        </a>
       </div>
       <div
         v-if="isMobile"
@@ -82,12 +83,14 @@
 import LogoW from '../assets/images/logo-w.svg?inline'
 import IconFB from '../assets/images/fb.svg?inline'
 import IconIG from '../assets/images/ig.svg?inline'
+import IconPodcast from '../assets/images/podcast.svg?inline'
 import IconMenu from '../assets/images/menu.svg?inline'
 export default {
   components: {
     LogoW,
     IconFB,
     IconIG,
+    IconPodcast,
     IconMenu
   },
   props: {
@@ -217,16 +220,19 @@ export default {
   &.fixed {
     position: fixed;
     transition: all 0.3s;
-    top: -110px;
+    top: -150px;
     .navbar-container {
       width: 94%;
       background-color: $colorWhite;
       box-shadow: 0px 4px 12px 4px rgb(0 0 0 / 12%);
       border-radius: 8px;
       padding: 1.3rem 1.5rem 1rem;
-    }
-    .navbar-container-around {
-      @include flex(space-between);
+      .navbar-item {
+        margin-left: 2rem;
+        @include screen(lg) {
+          margin-left: 1.25rem;
+        }
+      }
     }
   }
   &.fixed-open {
@@ -236,9 +242,7 @@ export default {
     fill: $colorPrimary;
   }
   nav {
-    @include flex(flex-end);
     @include screen(md) {
-      @include flex(space-between);
       .logo-w {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -254,7 +258,7 @@ export default {
       // left: 5%;
     }
     .navbar-content {
-      @include flex(flex-end);
+      @include flex(space-between);
       @include screen(md) {
         background: $colorPrimary;
         position: fixed;
@@ -415,11 +419,14 @@ export default {
     }
     .navbar-item {
       color: $colorPrimary;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 600;
       line-height: 1.7rem;
       margin-left: 40px;
       cursor: pointer;
+      @include screen(lg) {
+        margin-left: 1.5rem;
+      }
       @include screen(md) {
         margin-left: 25px;
       }
