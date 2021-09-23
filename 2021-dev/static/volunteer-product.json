@@ -3,14 +3,9 @@
   "name_e": "PRODUCT",
   "teams": [
     {
-      "name": "產品部長",
+      "name": "產品部",
       "members": [
-        "Karas"
-      ]
-    },
-    {
-      "name": "產品組",
-      "members": [
+        "Karas",
         "Jason",
         "Cubbe",
         "黛黛",

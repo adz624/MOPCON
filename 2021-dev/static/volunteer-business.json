@@ -3,14 +3,9 @@
   "name_e": "BUSINESS",
   "teams": [
     {
-      "name": "商務部長",
+      "name": "商務部",
       "members": [
-        "Hash"
-      ]
-    },
-    {
-      "name": "商務組",
-      "members": [
+        "Hash",
         "Tony"
       ]
     },

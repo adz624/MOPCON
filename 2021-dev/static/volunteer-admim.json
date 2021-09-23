@@ -9,14 +9,9 @@
       ]
     },
     {
-      "name": "行政部長",
+      "name": "行政部",
       "members": [
-        "Brook"
-      ]
-    },
-    {
-      "name": "行政組",
-      "members": [
+        "Brook",
         "pin",
         "阿空",
         "lina"
@@ -70,6 +65,19 @@
         "Jonathan Yeh",
         "Waverly",
         "冠伃"
+      ]
+    },
+    {
+      "name": "議程委員",
+      "members": [
+        "Eric",
+        "Mikimoto",
+        "Ant",
+        "良葛格",
+        "李紅豆",
+        "Ethan(weak self)",
+        "TonyQ",
+        "曾冠諭"
       ]
     }
   ]
