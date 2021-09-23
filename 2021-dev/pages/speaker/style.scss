@@ -371,10 +371,23 @@ h2 {
     margin-right: auto;
     width: 100%;
   }
+  .community-share-outline {
+    @include flex(center, row, center);
+    cursor: pointer;
+    position: relative;
+    border: 2px solid $colorOrange;
+    background-color: $colorWhite;
+    border-radius: 8px;
+    width: 100%;
+    p {
+      font-size: 18px;
+    }
+  }
   .community-share {
     @include flex(center, row, center);
     cursor: pointer;
     position: relative;
+    border: 2px solid $colorOrange;
     background-color: $colorOrange;
     border-radius: 8px;
     width: 100%;

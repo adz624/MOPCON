@@ -42,6 +42,15 @@
             >
               {{ item.name }}
             </a>
+            <!-- 議程表 的下拉選單 -->
+            <div v-if="item.subNav.length > 0 && item.name == '議程表'" class="dropdown schedule" :class="{'active': item.subIsOpen && isMobile && nowSubOpen == item.name}">
+              <ul>
+                <li v-for="(subNav, index) in item.subNav" :key="`subNav_${index}`">
+                  <a :href="subNav.url" :target="item.target"><span>{{ subNav.name }}</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- 議程表 的下拉選單 -->
             <!-- 時光機 的下拉選單 -->
             <div v-if="item.subNav.length > 0 && item.name == '時光機'" class="dropdown" :class="{'active': item.subIsOpen && isMobile && nowSubOpen == item.name}">
               <h4>歷年網站</h4>
@@ -413,6 +422,28 @@ export default {
           padding-bottom: 0px;
           &:hover {
             background-color: $colorOrangeLight;
+          }
+        }
+      }
+      .dropdown.schedule {
+        width: auto;
+        ul {
+          padding-right: 0px;
+        }
+        li {
+          width: 100%;
+          a {
+            white-space: nowrap;
+            padding-bottom: 8px;
+            span {
+              font-size: 1.25rem;
+            }
+            &:hover span {
+              color: $colorOrange;
+              &::after {
+                content: none;
+              }
+            }
           }
         }
       }
