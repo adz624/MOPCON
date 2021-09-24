@@ -111,7 +111,7 @@
     "speaker_id": 107,
     "company": "weak self",
     "company_e": "",
-    "job_title": "Co-host",
+    "job_title": "iOS 工程師",
     "job_title_e": "",
     "bio": "Co-host of weak self podcast.\n\nAn iOS developer.\n\nA Swift lover.",
     "bio_e": "",
@@ -493,7 +493,7 @@
     "summary": "Jetpack Compose is definitely the next big thing in Android development.\nWith the help of declarative UI, we can build Android UI easier and faster.\nAs it’s now production ready, it’s also the best time for us to lean/adopt it.\nIn this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
     "summary_e": "",
     "community_partner": "",
-    "is_keynote": false,
+    "is_keynote": true,
     "is_online": true,
     "recordable": true,
     "level": "Basic",
@@ -737,7 +737,7 @@
     "summary": "從今年起，Flutter 開始正式支援 Web、以及 Windows、macOS 與 Linux 等桌面平台，讓行動平台上做開發工作的 Flutter 工程師，能夠進一步將觸手拓展到桌面平台上。\n\n 我們在今年上半年，便用了 Flutter，為公司開發了一款 Windows 應用程式。在開發這個程式的過程中，我學習到了從行動平台轉往桌面平台需要注意的地方，並且希望與你分享。",
     "summary_e": "",
     "community_partner": "",
-    "is_keynote": false,
+    "is_keynote": true,
     "is_online": true,
     "recordable": true,
     "level": "Basic",
@@ -760,6 +760,59 @@
     "target": "* 有興趣開發 Windows 應用的 Mobile 工程師\n* 有興趣被勸退不要開發 Windows 應用的工程師",
     "prior_knowledge": "* 聽過/用過 Flutter\n* 聽過/用過 Windows\n* 有一些 App 開發基礎\n* 聽過 C/Win32/.Net/Visual Studio 等 Windows 開發相關知識",
     "expected_gain": "應該...很多吧（？）",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "陳宥瑜",
+    "name_e": "",
+    "speaker_id": 121,
+    "company": "日月光半導體",
+    "company_e": "",
+    "job_title": "AI 首席資料科學家",
+    "job_title_e": "",
+    "bio": "陳宥瑜 (Yannis Chen) 現任於日月光半導體擔任資料科學家，熱愛數據分析及作業研究，在半導體產業有超過 15 年程式開發經驗，曾在 Kaggle 競賽中多次取得前十名的成績，共獲 6 金 8 銀 4 銅，最高排名全球第 11。",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/121.png",
+      "mobile": "assets/images/speakers/121.png"
+    },
+    "link_fb": "",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "",
+    "link_slide": "",
+    "topic": "人工智慧在半導體製造業的實務應用",
+    "topic_e": "",
+    "summary": "人工智慧（Artificial Intelligence, AI）正在改變全球的產業發展，如何將 AI 技術運用於產業，進而提升作業效率、改善生產品質、降低人力需求或數位轉型為重要課題。\n 目前在業界都有一些實際應用之例子，像是透過擷取機台生產時拋出的機台訊號，預測機台何時產生異常；透過影像辨識模組的建立，用以降低目檢人員檢查的頻率與作業量；利用原物料特性因子與生產的作業參數，用以預測成品之結果與狀態，進而協助開發和設計人員減少實驗之次數。\n 本次演講將著重於 AI 應用於半導體封裝製程之經驗分享與數位轉型心路歷程。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "AI"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "數位轉型"
+      }
+    ],
+    "target": "企業管理階層、對 AI 實務應用有興趣的人、想事從 AI 工作的學生或 IT 工程師。",
+    "prior_knowledge": "對於機器學習技術有基本的認識",
+    "expected_gain": "1. 認識企業進入 AI 領域的起手式\n2. 了解 AI 如何協助工程設計及智慧製造\n3. 掌握 AI 應用踏上數位轉型浪潮，實現數位轉型的 AI 藍圖",
     "started_at": 0,
     "ended_at": 0,
     "room": "",
@@ -1833,6 +1886,147 @@
     "target": "Kotlin 開發者。",
     "prior_knowledge": "Kotlin 的基本觀念。",
     "expected_gain": "可以使用更適合 Kotlin 的 序列化/反序列化的函式庫。",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "Ivan",
+    "name_e": "",
+    "speaker_id": 189,
+    "company": "Oracle / MySQL",
+    "company_e": "",
+    "job_title": "Master Principal Solution Engineer",
+    "job_title_e": "",
+    "bio": "Ivan Ma has over 20+ years IT experience with Databases (Sybase, Oracle, MySQL), Java, Architecture, Hardware & Storage.",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/189.png",
+      "mobile": "assets/images/speakers/189.png"
+    },
+    "link_fb": "https://www.facebook.com/groups/hkmysqlusergroup",
+    "link_github": "https://github.com/ivanxma",
+    "link_twitter": "",
+    "link_other": "http://mysqlhk.blogspot.com",
+    "link_slide": "",
+    "topic": "Building InnoDB Cluster using MySQL Operator for Kubernetes [ Preview ]",
+    "topic_e": "",
+    "summary": "The session will share about MySQL deployment under container environment with Newly developed MySQL Operator for Kubernetes.   Although it is still in preview stage, developers can try using it for testing.   We will explore the setup, configuration and scaleup + integration with applications.   Come and join us to explore more about MySQL.",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "IoT"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Cross-platform"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Community"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Open Source"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "DevOps"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Data Analyzing"
+      }
+    ],
+    "target": "Dev/Ops\n\nDevelopers\n\nDBA",
+    "prior_knowledge": "Container/Kubernetes\n\nDatabase",
+    "expected_gain": "The expecting take-aways will be the in-&-out about MySQL Operator usage for MySQL InnoDB Cluster in K8s Env.",
+    "started_at": 0,
+    "ended_at": 0,
+    "room": "",
+    "floor": "",
+    "sponsor": []
+  },
+  {
+    "name": "余虹儀（小魚）",
+    "name_e": "",
+    "speaker_id": 191,
+    "company": "通用設計工作室",
+    "company_e": "",
+    "job_title": "創辦人",
+    "job_title_e": "",
+    "bio": "自 2007 年開始，以寫作、授課、擔任計畫與展覽顧問等多種形式，在台灣推動通用設計至今。擅長以系統化與遊戲化方式講授通用設計、提升洞察力的方法，引導企業創新產品或服務。著有《愛 x 通用設計》、《善用 UX 來提升 UU：打造滿足新手和專家的 UI》。",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/191.png",
+      "mobile": "assets/images/speakers/191.png"
+    },
+    "link_fb": "https://www.facebook.com/loveudfish/",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "https://udfish.tw/",
+    "link_slide": "",
+    "topic": "善用 UX 來提升 UU，打造滿足新手和專家的 UI",
+    "topic_e": "",
+    "summary": "通用使用性（UU, Universal Usability）強調使用者介面應考量到所有使用者的需求，包括不同操作經驗、不同感官能力，以及各種身心障礙使用者皆能自行完成任務。在充滿各式各樣介面的現代生活，符合通用使用性的介面設計將有助減少人力負擔、人與人接觸的頻率，在疫情流行期間更顯重要。\n\n 然而，生活中越來越多新的介面，光是網站和手機應用程式的設計就不勝枚舉，要讓初次使用者都能順利完成任務，並非一件容易的事。此外，現代人生活忙碌，介面設計如何讓使用者快速完成任務也很重要。善用使用者經驗可以幫助初次使用者快速找到其所需要的服務，也能提供熟練使用者常用的服務，有助提升介面設計的通用使用性。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Mobile App"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Web"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "UI/UX"
+      }
+    ],
+    "target": "1. UI/UX 設計師\n2. 對 UI/UX 有興趣的人\n3. 想了解 UU（通用使用性）的人",
+    "prior_knowledge": "知道什麼是 UI、什麼是 UX 就可以了",
+    "expected_gain": "1. 新手與專家操作介面常見的問題\n2. 善用使用者經驗與紀錄的做法\n3. 提升介面通用使用性的設計方法",
     "started_at": 0,
     "ended_at": 0,
     "room": "",
