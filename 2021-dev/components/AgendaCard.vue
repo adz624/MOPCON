@@ -5,6 +5,7 @@
       :key="room.topic"
       href="#"
       class="agenda-card"
+      :class="{'disabled': room.topic === 'Coming Soon'}"
       @click.prevent="$emit('open', room)"
     >
       <p class="agenda-card-title">
@@ -33,7 +34,14 @@
             </p>
           </div>
         </div>
-        <p>{{ room.room }} 議程</p>
+        <div>
+          <p v-if="parentClass === 'agenda-filter' && (room.started_at && room.ended_at)" class="agenda-date">
+            {{ room.started_at? parseDate(room.started_at*1000) :'' }}
+            -
+            {{ room.ended_at? parseDate(room.ended_at*1000) :'' }}
+          </p>
+          <p class="agenda-card-room">{{ room.room }} 議程</p>
+        </div>
       </div>
     </a>
   </div>
@@ -52,6 +60,13 @@ export default {
     data: {
       type: Array,
       default: () => {}
+    }
+  },
+  methods: {
+    parseDate (date) {
+      const hour = new Date(date).getHours() > 9 ? new Date(date).getHours() : `0${new Date(date).getHours()}`
+      const min = new Date(date).getMinutes() > 9 ? new Date(date).getMinutes() : `0${new Date(date).getMinutes()}`
+      return `${hour}:${min}`
     }
   }
 }
@@ -115,6 +130,15 @@ export default {
       margin-bottom: 4px;
     }
   }
+  &-room {
+    white-space: nowrap;
+    margin-left: 8px;
+    text-align: right;
+  }
+}
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
 }
 .agenda-filter {
   display: flex;
