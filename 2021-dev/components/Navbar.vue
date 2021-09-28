@@ -137,7 +137,7 @@ export default {
               open: process.env.route_schedule_unconf
             }
           ],
-          subIsOpen: false,
+          subIsOpen: true,
           open: process.env.route_schedule,
           target: ''
         },
@@ -426,6 +426,14 @@ export default {
         }
       }
       .dropdown.schedule {
+        &.active {
+          position: relative;
+          top: 0;
+          padding: 0;
+          li {
+            text-align: center;
+          }
+        }
         width: auto;
         ul {
           padding-right: 0px;

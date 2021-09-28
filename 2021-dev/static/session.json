@@ -22,7 +22,7 @@
             "topic_e": "",
             "summary": "Jetpack Compose is definitely the next big thing in Android development.\nWith the help of declarative UI, we can build Android UI easier and faster.\nAs it’s now production ready, it’s also the best time for us to lean/adopt it.\nIn this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
             "summary_e": "",
-            "is_keynote": false,
+            "is_keynote": true,
             "is_online": true,
             "recordable": true,
             "level": "Basic",
@@ -38,8 +38,12 @@
                 "name": "Mobile App"
               }
             ],
+            "started_at": 1634951700,
+            "ended_at": 1634954400,
             "speakers": [
               {
+                "started_at": 1634951700,
+                "ended_at": 1634954400,
                 "speaker_id": 114,
                 "name": "Jintin Lin",
                 "name_e": "",
@@ -96,6 +100,8 @@
                 "name": "Mobile App"
               }
             ],
+            "started_at": 1634955000,
+            "ended_at": 1634957700,
             "speakers": [
               {
                 "speaker_id": 106,
@@ -146,6 +152,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "started_at": 1634955000,
+            "ended_at": 1634957700,
             "speakers": [
               {
                 "speaker_id": 111,
@@ -189,6 +197,8 @@
                 "name": "Web"
               }
             ],
+            "started_at": 1634955000,
+            "ended_at": 1634957700,
             "speakers": [
               {
                 "speaker_id": 110,
@@ -247,6 +257,8 @@
                 "name": "Mobile App"
               }
             ],
+            "started_at": 1634958300,
+            "ended_at": 1634961000,
             "speakers": [
               {
                 "speaker_id": 107,
@@ -290,6 +302,8 @@
                 "name": "IoT"
               }
             ],
+            "started_at": 1634958300,
+            "ended_at": 1634961000,
             "speakers": [
               {
                 "speaker_id": 140,
@@ -340,6 +354,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1634958300,
+            "ended_at": 1634961000,
             "speakers": [
               {
                 "speaker_id": 142,
@@ -412,6 +428,8 @@
                 "name": "UI/UX"
               }
             ],
+            "started_at": 1634965200,
+            "ended_at": 1634967900,
             "speakers": [
               {
                 "speaker_id": 190,
@@ -462,6 +480,8 @@
                 "name": "IoT"
               }
             ],
+            "started_at": 1634965200,
+            "ended_at": 1634967900,
             "speakers": [
               {
                 "speaker_id": 144,
@@ -505,6 +525,8 @@
                 "name": "Web"
               }
             ],
+            "started_at": 1634965200,
+            "ended_at": 1634967900,
             "speakers": [
               {
                 "speaker_id": 109,
@@ -584,6 +606,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1634968500,
+            "ended_at": 1634971200,
             "speakers": [
               {
                 "speaker_id": 113,
@@ -641,6 +665,8 @@
                 "name": "AI"
               }
             ],
+            "started_at": 1634968500,
+            "ended_at": 1634971200,
             "speakers": [
               {
                 "speaker_id": 143,
@@ -698,6 +724,8 @@
                 "name": "UI/UX"
               }
             ],
+            "started_at": 1634968500,
+            "ended_at": 1634971200,
             "speakers": [
               {
                 "speaker_id": 191,
@@ -763,6 +791,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1634971800,
+            "ended_at": 1634974500,
             "speakers": [
               {
                 "speaker_id": 187,
@@ -813,6 +843,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "started_at": 1634971800,
+            "ended_at": 1634974500,
             "speakers": [
               {
                 "speaker_id": 139,
@@ -856,6 +888,8 @@
                 "name": "Agile"
               }
             ],
+            "started_at": 1634971800,
+            "ended_at": 1634974500,
             "speakers": [
               {
                 "speaker_id": 112,
@@ -914,6 +948,8 @@
                 "name": "Mobile App"
               }
             ],
+            "started_at": 1634975100,
+            "ended_at": 1634977800,
             "speakers": [
               {
                 "speaker_id": 116,
@@ -964,6 +1000,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1634975100,
+            "ended_at": 1634977800,
             "speakers": [
               {
                 "speaker_id": 119,
@@ -1021,6 +1059,8 @@
                 "name": "Cross-platform"
               }
             ],
+            "started_at": 1634975100,
+            "ended_at": 1634977800,
             "speakers": [
               {
                 "speaker_id": 105,
@@ -1070,7 +1110,9 @@
             "target": "",
             "prior_knowledge": "",
             "expected_gain": "",
-            "tags": ""
+            "tags": "",
+            "started_at": 1634978400,
+            "ended_at": 1634981100
           },
           {
             "session_id": 2021023,
@@ -1086,7 +1128,9 @@
             "target": "",
             "prior_knowledge": "",
             "expected_gain": "",
-            "tags": ""
+            "tags": "",
+            "started_at": 1634978400,
+            "ended_at": 1634981100
           },
           {
             "session_id": 2021024,
@@ -1102,7 +1146,9 @@
             "target": "",
             "prior_knowledge": "",
             "expected_gain": "",
-            "tags": ""
+            "tags": "",
+            "started_at": 1634978400,
+            "ended_at": 1634981100
           }
         ]
       },
@@ -1138,7 +1184,9 @@
             "target": "",
             "prior_knowledge": "",
             "expected_gain": "",
-            "tags": ""
+            "tags": "",
+            "started_at": 1635037200,
+            "ended_at": 1635041400
           }
         ]
       },
@@ -1206,6 +1254,8 @@
                 "name": "Web"
               }
             ],
+            "started_at": 1635042000,
+            "ended_at": 1635044700,
             "speakers": [
               {
                 "speaker_id": 183,
@@ -1263,6 +1313,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1635042000,
+            "ended_at": 1635044700,
             "speakers": [
               {
                 "speaker_id": 138,
@@ -1306,6 +1358,8 @@
                 "name": "Web"
               }
             ],
+            "started_at": 1635042000,
+            "ended_at": 1635044700,
             "speakers": [
               {
                 "speaker_id": 136,
@@ -1371,6 +1425,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1635045300,
+            "ended_at": 1635048000,
             "speakers": [
               {
                 "speaker_id": 188,
@@ -1421,6 +1477,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "started_at": 1635045300,
+            "ended_at": 1635048000,
             "speakers": [
               {
                 "speaker_id": 181,
@@ -1471,6 +1529,8 @@
                 "name": "Cloud"
               }
             ],
+            "started_at": 1635045300,
+            "ended_at": 1635048000,
             "speakers": [
               {
                 "speaker_id": 117,
@@ -1543,6 +1603,8 @@
                 "name": "Mobile App"
               }
             ],
+            "started_at": 1635051600,
+            "ended_at": 1635054300,
             "speakers": [
               {
                 "speaker_id": 108,
@@ -1593,6 +1655,8 @@
                 "name": "IoT"
               }
             ],
+            "started_at": 1635051600,
+            "ended_at": 1635054300,
             "speakers": [
               {
                 "speaker_id": 182,
@@ -1671,6 +1735,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "started_at": 1635051600,
+            "ended_at": 1635054300,
             "speakers": [
               {
                 "speaker_id": 189,
@@ -1750,6 +1816,8 @@
                 "name": "Cross-platform"
               }
             ],
+            "started_at": 1635054900,
+            "ended_at": 1635057600,
             "speakers": [
               {
                 "speaker_id": 122,
@@ -1800,6 +1868,8 @@
                 "name": "AI"
               }
             ],
+            "started_at": 1635054900,
+            "ended_at": 1635057600,
             "speakers": [
               {
                 "speaker_id": 137,
@@ -1878,6 +1948,8 @@
                 "name": "Open Source"
               }
             ],
+            "started_at": 1635054900,
+            "ended_at": 1635057600,
             "speakers": [
               {
                 "speaker_id": 186,
@@ -1970,6 +2042,8 @@
                 "name": "Mobile App"
               }
             ],
+            "started_at": 1635058200,
+            "ended_at": 1635060900,
             "speakers": [
               {
                 "speaker_id": 115,
@@ -2020,6 +2094,8 @@
                 "name": "數位轉型"
               }
             ],
+            "started_at": 1635058200,
+            "ended_at": 1635060900,
             "speakers": [
               {
                 "speaker_id": 121,
@@ -2070,6 +2146,8 @@
                 "name": "Web"
               }
             ],
+            "started_at": 1635058200,
+            "ended_at": 1635060900,
             "speakers": [
               {
                 "speaker_id": 141,
@@ -2112,7 +2190,7 @@
             "topic_e": "",
             "summary": "從今年起，Flutter 開始正式支援 Web、以及 Windows、macOS 與 Linux 等桌面平台，讓行動平台上做開發工作的 Flutter 工程師，能夠進一步將觸手拓展到桌面平台上。\n\n 我們在今年上半年，便用了 Flutter，為公司開發了一款 Windows 應用程式。在開發這個程式的過程中，我學習到了從行動平台轉往桌面平台需要注意的地方，並且希望與你分享。",
             "summary_e": "",
-            "is_keynote": false,
+            "is_keynote": true,
             "is_online": true,
             "recordable": true,
             "level": "Basic",
@@ -2135,6 +2213,8 @@
                 "name": "IoT"
               }
             ],
+            "started_at": 1635061500,
+            "ended_at": 1635064200,
             "speakers": [
               {
                 "speaker_id": 120,

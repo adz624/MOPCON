@@ -269,7 +269,7 @@ export default {
         this.scheduleData.forEach((period) => {
           period.period.forEach((session) => {
             session.room.forEach((ele) => {
-              if (ele.tags.some(tag => this.checkTag.includes(tag.name))) {
+              if (ele.tags && ele.tags.some(tag => this.checkTag.includes(tag.name))) {
                 arr.push(ele)
               }
             })
