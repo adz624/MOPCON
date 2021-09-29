@@ -71,7 +71,7 @@ li {
   }
 }
 .row {
-  @include flex(space-between, row, start);
+  @include flex(space-between, row, flex-start);
   padding-bottom: 56px;
 }
 @include screen(pad) {
@@ -104,7 +104,7 @@ h3 {
   }
 }
 .content {
-  @include flex(space-between, row, start);
+  @include flex(space-between, row, flex-start);
   flex-wrap: wrap;
   width: 77%;
   h4 {
