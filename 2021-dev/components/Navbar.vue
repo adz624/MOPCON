@@ -45,7 +45,7 @@
             <div v-if="item.subNav.length > 0 && item.name == '議程表'" class="dropdown schedule" :class="{'active': item.subIsOpen && isMobile && nowSubOpen == item.name}">
               <ul>
                 <li v-for="(subNav, index) in filterOpen(item.subNav)" :key="`subNav_${index}`">
-                  <a :href="subNav.url" :target="item.target"><span>{{ subNav.name }}</span></a>
+                  <a :href="subNav.url"><span>{{ subNav.name }}</span></a>
                 </li>
               </ul>
             </div>
@@ -123,7 +123,7 @@ export default {
         {
           name: '議程表',
           class: '',
-          url: './schedule',
+          url: '',
           subNav: [
             {
               name: '主要議程',
@@ -137,7 +137,7 @@ export default {
             }
           ],
           subIsOpen: true,
-          open: process.env.route_schedule,
+          open: process.env.route_schedule || process.env.route_schedule,
           target: ''
         },
         {
