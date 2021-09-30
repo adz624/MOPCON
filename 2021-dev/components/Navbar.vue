@@ -106,7 +106,7 @@ export default {
     isMobile: Boolean
   },
   data () {
-    const [startYear, currentYear] = [2012, new Date().getFullYear()]
+    // const [startYear, currentYear] = [2012, new Date().getFullYear()]
     return {
       navOpen: false,
       windowTop: null,
@@ -137,7 +137,7 @@ export default {
               open: process.env.route_schedule_unconf
             }
           ],
-          subIsOpen: false,
+          subIsOpen: true,
           open: process.env.route_schedule,
           target: ''
         },
@@ -171,18 +171,11 @@ export default {
         {
           name: '時光機',
           class: '',
-          url: '#',
-          subNav: Array.from(Array(currentYear - startYear).keys())
-            .map(function (item) {
-              return {
-                open: true,
-                url: `https://mopcon.org/${startYear + item}/`,
-                name: startYear + item
-              }
-            }).reverse(),
-          subIsOpen: true,
+          url: './timeMachine',
+          subNav: [],
+          subIsOpen: false,
           open: '',
-          target: '_blank'
+          target: ''
         }
       ]
     }
@@ -426,6 +419,14 @@ export default {
         }
       }
       .dropdown.schedule {
+        &.active {
+          position: relative;
+          top: 0;
+          padding: 0;
+          li {
+            text-align: center;
+          }
+        }
         width: auto;
         ul {
           padding-right: 0px;

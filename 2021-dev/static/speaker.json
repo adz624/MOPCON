@@ -53,11 +53,12 @@
     "target": "CxOs, Architects, PO/BA/SA, Project Managers, Developers",
     "prior_knowledge": "在持續演進的架構設計中，主要萃取了來自知名了 System Software Architecture 的核心思想，擁抱多元的系統構面設計，並融入常見的領域驅動設計中的戰略設計指引，以及在面對評估戰術實踐設計時，如何選擇採納市場上的成熟方案",
     "expected_gain": "聽眾應當能在參與本議程後理解到 1) 什麼是持續架構, 2)如何從多元視角中兼顧不同角色的期望, 3)如何將之與領域驅動設計銜接, 4)對應市場可行方案選擇時的思考脈絡",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634975100,
+    "ended_at": 1634977800,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021021
   },
   {
     "name": "13",
@@ -99,11 +100,12 @@
     "target": "對 SwiftUI 或 iOS 開發有興趣的人",
     "prior_knowledge": "熟悉 iOS app 基本操作",
     "expected_gain": "SwiftUI 深層知識，以及研究的過程",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634955000,
+    "ended_at": 1634957700,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021004
   },
   {
     "name": "Pofat",
@@ -145,11 +147,12 @@
     "target": "1. App 開發者\n\n2. 對於 UI 開發方式，思考與工具有興趣的開發者",
     "prior_knowledge": "必須對 Swift 有基礎認知\n\n 最好對 UIKit、SwiftUI 有基礎認識",
     "expected_gain": "現代化的 app 開發思想與認知。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634958300,
+    "ended_at": 1634961000,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021007
   },
   {
     "name": "卓致遠",
@@ -205,11 +208,12 @@
     "target": "UI/UX 設計師、PM、想做出好產品的人",
     "prior_knowledge": "無",
     "expected_gain": "能實際操作的易用性測試案例與做法",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635051600,
+    "ended_at": 1635054300,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021034
   },
   {
     "name": "PJCHENder",
@@ -251,11 +255,12 @@
     "target": "想對 TypeScript 的型別定義有更深入理解的開發者",
     "prior_knowledge": "對於 TypeScript 有最基本的了解",
     "expected_gain": "能過對型別做操作和轉換\n 能夠了解套件中常見的 Type Utility\n 能夠撰寫自己的 Type Utility 來對型別做轉換",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634965200,
+    "ended_at": 1634967900,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021012
   },
   {
     "name": "Huli",
@@ -297,11 +302,12 @@
     "target": "1. 前端工程師\n2. 對 JavaScript 有興趣的人",
     "prior_knowledge": "1. JavaScript 基礎知識，大概看得懂 JavaScript 程式碼",
     "expected_gain": "1. 希望能讓大家更了解 JavaScript",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634955000,
+    "ended_at": 1634957700,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021006
   },
   {
     "name": "黃志勝 Tommy Huang",
@@ -350,11 +356,12 @@
     "target": "公司進行 AI 專案的管理層、AI 應用開發工程師、AI 核心演算法工程師等。",
     "prior_knowledge": "理解基礎 AI 在做什麼即可。",
     "expected_gain": "1. 如何開始進行機器學習/深度學習專案開發\n2. 機器學習/深度學習相關開發實務上首先要先考慮的議題。\n3. 實務上的應用問題怎麼來解。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634955000,
+    "ended_at": 1634957700,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021005
   },
   {
     "name": "柯仁傑 David Ko",
@@ -396,11 +403,12 @@
     "target": "軟體開發人員\n 軟體專案經理\nProduct Owner",
     "prior_knowledge": "scrum 在做什麼\nagile development process",
     "expected_gain": "了解 Agile 如何看待可持續性步調 (Sustainable Pace)\n 有哪些方法能維持可持續性步調",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634971800,
+    "ended_at": 1634974500,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021018
   },
   {
     "name": "范聖佑",
@@ -463,11 +471,12 @@
     "target": "對 Kotlin 多平台有興趣、想了解如何用一個 Kotlin 語言開發橫跨兩個手機平台及後端等三種平台的開發者。",
     "prior_knowledge": "對 Mobile 及 Server-side 開發有基礎概念，知道如何用 JSON API 讓前後端彼此交換資料。若寫過 Kotlin 或接觸過 Java、C# 等強型別語言尤佳。",
     "expected_gain": "聽完這場分享後，對 Kotlin 多平台應用會有更具體的認識，也能從分享的案例裡了解如何導入 KMM 生態系及使用 Ktor 框架開發 API 服務。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634968500,
+    "ended_at": 1634971200,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021013
   },
   {
     "name": "Jintin Lin",
@@ -493,7 +502,7 @@
     "summary": "Jetpack Compose is definitely the next big thing in Android development.\nWith the help of declarative UI, we can build Android UI easier and faster.\nAs it’s now production ready, it’s also the best time for us to lean/adopt it.\nIn this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
     "summary_e": "",
     "community_partner": "",
-    "is_keynote": true,
+    "is_keynote": false,
     "is_online": true,
     "recordable": true,
     "level": "Basic",
@@ -509,11 +518,12 @@
     "target": "Android 開發者",
     "prior_knowledge": "基礎 Android / Kotlin 知識",
     "expected_gain": "了解 Jetpack Compose 運作機制以及掌握使用方式",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634951700,
+    "ended_at": 1634954400,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021001
   },
   {
     "name": "Chang John",
@@ -555,11 +565,12 @@
     "target": "- 還在評估是否要學習 Kotlin 的人\n- 想知道如何善用 Kotlin 來做 Android 開發的人",
     "prior_knowledge": "- 有 Java 和 Android 開發經驗的人\n- 知道 Kotlin 可以用來做 Android 開發就行了\n- 如果會一點 Kotlin，可能更能感受",
     "expected_gain": "相較於 Java，瞭解 Kotlin 對於開發的好處",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635058200,
+    "ended_at": 1635060900,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021040
   },
   {
     "name": "Andy Yang - 楊哲偉",
@@ -601,11 +612,12 @@
     "target": "- 寫過 Android 的開發者\n- 熟悉 Kotlin 語法\n- 想要試試不同的 Android UI 體驗",
     "prior_knowledge": "- Kotlin\n- Android UI 開發經驗",
     "expected_gain": "- 知道 Compose 如何與既有 UI 協作\n- 理解 Compose 如何運作及撰寫\n- 理解 Compose 帶來的好處",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634975100,
+    "ended_at": 1634977800,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021019
   },
   {
     "name": "Jian-Min (Vincent) Huang",
@@ -654,11 +666,12 @@
     "target": "接觸部署議題、執行部署任務、設計部署流程、雲服務帳單的支付者",
     "prior_knowledge": "#Deployment #Cloud",
     "expected_gain": "一同回顧一下隨著雲服務的迅速發展，Deployment 這個議題在執行與設計上需考量的一些面向 (可用性、性能、安全、成本)",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635045300,
+    "ended_at": 1635048000,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021033
   },
   {
     "name": "李宏毅",
@@ -707,11 +720,12 @@
     "target": "希望對於最前瞻的機器學習技術有所了解",
     "prior_knowledge": "對於機器學習技術有基本的認識",
     "expected_gain": "了解機器學習技術在人類語言處理上的發展",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634975100,
+    "ended_at": 1634977800,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021020
   },
   {
     "name": "Weizhong Yang a.k.a zonble",
@@ -737,7 +751,7 @@
     "summary": "從今年起，Flutter 開始正式支援 Web、以及 Windows、macOS 與 Linux 等桌面平台，讓行動平台上做開發工作的 Flutter 工程師，能夠進一步將觸手拓展到桌面平台上。\n\n 我們在今年上半年，便用了 Flutter，為公司開發了一款 Windows 應用程式。在開發這個程式的過程中，我學習到了從行動平台轉往桌面平台需要注意的地方，並且希望與你分享。",
     "summary_e": "",
     "community_partner": "",
-    "is_keynote": true,
+    "is_keynote": false,
     "is_online": true,
     "recordable": true,
     "level": "Basic",
@@ -760,11 +774,12 @@
     "target": "* 有興趣開發 Windows 應用的 Mobile 工程師\n* 有興趣被勸退不要開發 Windows 應用的工程師",
     "prior_knowledge": "* 聽過/用過 Flutter\n* 聽過/用過 Windows\n* 有一些 App 開發基礎\n* 聽過 C/Win32/.Net/Visual Studio 等 Windows 開發相關知識",
     "expected_gain": "應該...很多吧（？）",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635061500,
+    "ended_at": 1635064200,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021043
   },
   {
     "name": "陳宥瑜",
@@ -813,11 +828,12 @@
     "target": "企業管理階層、對 AI 實務應用有興趣的人、想事從 AI 工作的學生或 IT 工程師。",
     "prior_knowledge": "對於機器學習技術有基本的認識",
     "expected_gain": "1. 認識企業進入 AI 領域的起手式\n2. 了解 AI 如何協助工程設計及智慧製造\n3. 掌握 AI 應用踏上數位轉型浪潮，實現數位轉型的 AI 藍圖",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635058200,
+    "ended_at": 1635060900,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021041
   },
   {
     "name": "鄭行健（Hiking）",
@@ -880,11 +896,12 @@
     "target": "前後端工程師；或非工程師，但喜歡 emoji，或是好奇 Unicode 如何編碼文字的人。",
     "prior_knowledge": "這是一個輕鬆的議程，你不需要什麼硬底子。",
     "expected_gain": "了解各種 emoji 的組合原理，以及 Unicode Grapheme Clusters 和正規化的意義。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635054900,
+    "ended_at": 1635057600,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021037
   },
   {
     "name": "Bo-Yi Wu",
@@ -926,11 +943,12 @@
     "target": "任何需要權限控管機制的系統或工具都可以使用",
     "prior_knowledge": "無",
     "expected_gain": "對 OPA 會有初期的了解及適用場景",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635042000,
+    "ended_at": 1635044700,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021030
   },
   {
     "name": "陳皓遠",
@@ -979,11 +997,12 @@
     "target": "以身處各產業界的科技背景從業人員為目標聽眾，分享運用開源技術與系統設計的能力，打造服務並快速落地於既有的資訊架構。",
     "prior_knowledge": "自然語言處理與機器學習的概念性知識",
     "expected_gain": "知識獲得往往很容易，經驗通常很難，雖然不見得百分之百同意，但透過他人的實際經驗（好或是壞皆可），讓具有科技背景的人才能得以互相觀摩，激發靈感，在各產業自我摸索出探索問題、定義問題、解決問題的能力。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635054900,
+    "ended_at": 1635057600,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021038
   },
   {
     "name": "張維珍",
@@ -1039,11 +1058,12 @@
     "target": "本次主題，適合給對 Python 或單機板 (SBC) 開發稍有概念的聽眾。但聽眾不一定需要具備機器學習知識的相關背景。",
     "prior_knowledge": "聽眾僅需要具備簡單的 Python 程式撰寫技能，以及最好有過市面上任一單機板的開發經驗 (例如:Raspberry Pi)，不需要具備電腦視覺 (例如：OpenCV ) 及機器學習 (machine learning) 的相關。",
     "expected_gain": "演講主題中，將示範以 Teachable Machine 線上工具，來訓練與產生 OpenCV 辨識物品所需要的資料庫。會眾可在不需要具備相關的知識下完成以下目標：\n- 以線上工具訓練影像識別資料庫\n- 匯出可以直接在樹莓派上運行的程式碼",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635042000,
+    "ended_at": 1635044700,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021029
   },
   {
     "name": "張維元",
@@ -1092,11 +1112,12 @@
     "target": "對於爬蟲程式有興趣",
     "prior_knowledge": "有程式開發經驗者（Python 尤佳）",
     "expected_gain": "了解爬蟲程式是什麼，以及驗證碼該如何處理",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634971800,
+    "ended_at": 1634974500,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021017
   },
   {
     "name": "黃志賢",
@@ -1138,11 +1159,12 @@
     "target": "對電、環保、工控感興趣\n\n 想多認識除了 x86 以外的資訊設備，例如 Pi\n\n 或只是單純想聽脫口秀 XD",
     "prior_knowledge": "使用過電器\n\n 繳過電費\n\n 經歷過停電",
     "expected_gain": "知道政府「EMS 班班有冷氣」政策\n\n 知道地球人圍繞在用電需量的努力\n\n 知道台灣可以考慮買 TaiSEIA 家電 DIY 智能居家\n\n 知道地球上 Pi 這個選擇，不是只有樹莓 Pi",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634958300,
+    "ended_at": 1634961000,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021008
   },
   {
     "name": "Summer Tang",
@@ -1191,11 +1213,12 @@
     "target": "想要以使用者觀點改善效能的前端工程師、想要了解與學習基本優化效能概念與技術的非前端工程師、想要評估成本、參考業界範例的管理者。",
     "prior_knowledge": "不需要先備知識。",
     "expected_gain": "了解如何以使用者的觀點做效能調校、各指標的成因與解法，並結合工具至日常開發流程。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635058200,
+    "ended_at": 1635060900,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021042
   },
   {
     "name": "Marcus Tung",
@@ -1244,11 +1267,12 @@
     "target": "對於監控系統有興趣的開發者",
     "prior_knowledge": "無",
     "expected_gain": "➊ SigNoz 基本原理與使用方式\n➋ OpenTelemetry 如何做到服務之間的數據追蹤、蒐集與分析\n➌ SigNoz 優點與缺點",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634958300,
+    "ended_at": 1634961000,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021009
   },
   {
     "name": "游騰林",
@@ -1304,11 +1328,12 @@
     "target": "適合學生、求職者或好奇 ML/DL 如何應用在客服領域的朋友來聽講",
     "prior_knowledge": "對於資料科學的領域知識有基本的認識",
     "expected_gain": "1. 了解機器學習/深度學習模型專案的建模流程與應用\n2. 掌握透過數據驅動專案的推動技巧與注意事項\n3. 對於工作內容有興趣的夥伴歡迎加入國泰數據部",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634968500,
+    "ended_at": 1634971200,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021014
   },
   {
     "name": "Peter",
@@ -1357,11 +1382,12 @@
     "target": "對於後端開發以及軟體架構設計，還有對於智慧電網有興趣的人。",
     "prior_knowledge": "1. 基本的後端程式開發，如 PHP, Python 與 GO 程式語言等\n2. 對於容器虛擬化有一定程度的了解，如 Docker，Podman 或是 K8s 等",
     "expected_gain": "1. 了解軟體架構該如何選擇與適用在智慧電網上的應用系統設計\n2. 了解 OpenADR 是什麼東西，這個標準解決了什麼樣的問題\n3. 了解如何使用容器化等相關虛擬化技術解決問題",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634965200,
+    "ended_at": 1634967900,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021011
   },
   {
     "name": "陳思惟",
@@ -1438,11 +1464,12 @@
     "target": "學生與教師、Web 工程師/開發者，以及對相關內容有興趣的 MOPCON 與會者。",
     "prior_knowledge": "大部分內容老少皆宜，但部分比較 hardcore 的知識可能需要基礎的程式開發能力與工程經驗。",
     "expected_gain": "倘若您有相關開發經驗，您可以將我們的經驗或技術套用到自己的系統上。\n\n 倘若您是對這方面有興趣的 Web 開發者或是學生，您可以透過此議程的內容學習到現代 Web 前後端技術及專案宣傳技巧。我們希望這些內容能讓您找到自己的方向，亦能避免踩過來人的坑。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635054900,
+    "ended_at": 1635057600,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021039
   },
   {
     "name": "張漢育",
@@ -1491,11 +1518,12 @@
     "target": "1. 目前是軟體工程師，有興趣轉往 AI 領域的人\n2. 對新技術保持熱忱的人",
     "prior_knowledge": "1. 具備基礎程式(不限語言)開發能力",
     "expected_gain": "對機器學習領域有一個完整認識，尤其對非數理背景的軟體工程師在踏入這個領域時有一個可遵循的方向，並知道如何一步步建構在這個領域所需要的知識系統。對非從事此領域的聽眾，也可以知道機器學習領域的能與不能。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635045300,
+    "ended_at": 1635048000,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021032
   },
   {
     "name": "林殿智",
@@ -1544,11 +1572,12 @@
     "target": "想要了解車載資訊安全發展的會眾",
     "prior_knowledge": "無",
     "expected_gain": "了解現在與未來汽車所面臨的威脅與車廠可行的防禦方式",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635051600,
+    "ended_at": 1635054300,
+    "room": "R2",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021035
   },
   {
     "name": "ZhgChgLi (Harry)",
@@ -1618,11 +1647,12 @@
     "target": "App (Android 也可因 Google 也開始注重隱私)\n 後端 可以了解哪些資料屬於個人隱私\nPM 可以知道哪些事不能做",
     "prior_knowledge": "了解業界現況是如何搜集個人資料並用於廣告投放或個人化項目，並稍微\b知道這幾年 iOS 關於隱私的新功能調整。",
     "expected_gain": "- 了解隱私的重要\n- 了解蘋果的政策理念及業界領頭羊的角色\n- 了解蘋果這幾年針對隱私的調整 (Why)\n- 了解 iOS 跟隱私有關的功能調整演進 (從古至今)\n 除了在未來的開發上，能遵守 Apple 的隱私政策外也能自主的更注重隱私。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635042000,
+    "ended_at": 1635044700,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021028
   },
   {
     "name": "黃猷珵",
@@ -1699,11 +1729,12 @@
     "target": "學生與教師、Web 工程師/開發者，以及對相關內容有興趣的 MOPCON 與會者。",
     "prior_knowledge": "大部分內容老少皆宜，但部分比較 hardcore 的知識可能需要基礎的程式開發能力與工程經驗。",
     "expected_gain": "倘若您有相關開發經驗，您可以將我們的經驗或技術套用到自己的系統上。\n\n 倘若您是對這方面有興趣的 Web 開發者或是學生，您可以透過此議程的內容學習到現代 Web 前後端技術及專案宣傳技巧。我們希望這些內容能讓您找到自己的方向，亦能避免踩過來人的坑。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635054900,
+    "ended_at": 1635057600,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021039
   },
   {
     "name": "潘奕濬",
@@ -1780,11 +1811,12 @@
     "target": "學生與教師、Web 工程師/開發者，以及對相關內容有興趣的 MOPCON 與會者。",
     "prior_knowledge": "大部分內容老少皆宜，但部分比較 hardcore 的知識可能需要基礎的程式開發能力與工程經驗。",
     "expected_gain": "倘若您有相關開發經驗，您可以將我們的經驗與使用的技術套用到自己的系統上；對這方面有興趣的 Web 開發者或是學生，可以透過此議程的內容學習到現代 Web 前後端技術及專案宣傳技巧。我們希望這些內容能讓您找到自己的方向，亦能避免踩過來人的坑。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635054900,
+    "ended_at": 1635057600,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021039
   },
   {
     "name": "Recca Chao",
@@ -1833,11 +1865,12 @@
     "target": "* 沒有寫過 Kotlin，對 Kotlin 程式語言感興趣的人\n* 會寫一點 Kotlin，但不會自動測試的人",
     "prior_knowledge": "* 這裡說的 Kotlin 是程式語言（不是俄羅斯附近的一座島嶼）\n* 這裡說的自動測試不是手動執行測試，或請 QA 幫你做的自動化測試",
     "expected_gain": "學會怎麼建立一個 Kotlin 專案，並且可以加上自動測試。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634971800,
+    "ended_at": 1634974500,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021016
   },
   {
     "name": "盧韋伸",
@@ -1886,11 +1919,12 @@
     "target": "Kotlin 開發者。",
     "prior_knowledge": "Kotlin 的基本觀念。",
     "expected_gain": "可以使用更適合 Kotlin 的 序列化/反序列化的函式庫。",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635045300,
+    "ended_at": 1635048000,
+    "room": "R1",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021031
   },
   {
     "name": "Ivan",
@@ -1967,11 +2001,73 @@
     "target": "Dev/Ops\n\nDevelopers\n\nDBA",
     "prior_knowledge": "Container/Kubernetes\n\nDatabase",
     "expected_gain": "The expecting take-aways will be the in-&-out about MySQL Operator usage for MySQL InnoDB Cluster in K8s Env.",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1635051600,
+    "ended_at": 1635054300,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021036
+  },
+  {
+    "name": "Craig",
+    "name_e": "",
+    "speaker_id": 190,
+    "company": "宅電 ChargeSmith",
+    "company_e": "",
+    "job_title": "共同創辦人",
+    "job_title_e": "",
+    "bio": "宅電 ChargeSmith 共同創辦人與營運長。前 Kika Tech 全球設計總監暨台灣區總經理、ASUS 設計中心資深策略規劃師，從業產品與設計領域十年，經歷物聯網、AI、移動互聯網與電商等產業。現任實踐大學 SCID《界面設計》課程講師。",
+    "bio_e": "",
+    "img": {
+      "web": "assets/images/speakers/190.png",
+      "mobile": "assets/images/speakers/190.png"
+    },
+    "link_fb": "",
+    "link_github": "",
+    "link_twitter": "",
+    "link_other": "https://www.linkedin.com/in/craigkuo/",
+    "link_slide": "",
+    "topic": "讓產品設計成為連結用戶與客戶間的語言",
+    "topic_e": "",
+    "summary": "電動車（EV）與充電站的發展已快速影響產業變革，產品團隊對外不斷地洞察用戶對充電行為的轉換，對內則需將技術發展融入使用旅程，設計更好的科技適配，降低轉換時的學習曲線。然而，充電服務的設計挑戰，不僅在物聯網科技的採用與整合，更在乎如何連接用戶的需求（ToC）與客戶的期望（ToB），這使得產品發展的過程中，將迭代流程沈浸在用戶研究中，自然地收集用戶與客戶的反饋，能更拉近彼此距離。\n\n 生態化服務的特性存在「領域（Domain）」的知識門檻和「企業端（Enterprise）」的解決方案。宅電 ChargeSmith 現為全台最受電動車主歡迎的充電站地圖，2021 年為市場發布 EV PLUS 充電站營運平台，同時為電動車車主和生態策略夥伴（場域主和充電站營運商）服務，運用同理心地圖「說」、「做」與「想」定義設計原則，並發展設計策略，提高產品在新用戶的留存以及搜尋和使用的黏性，並跟著市場的成長邁向客戶成功。",
+    "summary_e": "",
+    "community_partner": "",
+    "is_keynote": false,
+    "is_online": true,
+    "recordable": true,
+    "level": "Basic",
+    "tags": [
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Mobile App"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "Startup"
+      },
+      {
+        "color": {
+          "web": "#651fff",
+          "mobile": "#ffcc00"
+        },
+        "name": "UI/UX"
+      }
+    ],
+    "target": "・對電動車與充電感興趣\n・為 ToC 與 ToB 努力的產品、設計、BD 或 AM \n・在新創團隊中因資源受限無法伸展用戶研究者",
+    "prior_knowledge": "・設計流程\n・用戶研究（有概念即可）",
+    "expected_gain": "・從設計原則「說、做、想」發展策略\n・列舉加速融入用戶觀察與體驗的方法\n・探索客戶團隊與產品團隊的協作力量",
+    "started_at": 1634965200,
+    "ended_at": 1634967900,
+    "room": "R1",
+    "floor": "",
+    "sponsor": [],
+    "session_id": 2021010
   },
   {
     "name": "Craig",
@@ -2087,10 +2183,11 @@
     "target": "1. UI/UX 設計師\n2. 對 UI/UX 有興趣的人\n3. 想了解 UU（通用使用性）的人",
     "prior_knowledge": "知道什麼是 UI、什麼是 UX 就可以了",
     "expected_gain": "1. 新手與專家操作介面常見的問題\n2. 善用使用者經驗與紀錄的做法\n3. 提升介面通用使用性的設計方法",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
+    "started_at": 1634968500,
+    "ended_at": 1634971200,
+    "room": "R3",
     "floor": "",
-    "sponsor": []
+    "sponsor": [],
+    "session_id": 2021015
   }
 ]
