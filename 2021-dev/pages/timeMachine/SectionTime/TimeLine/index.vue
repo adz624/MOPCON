@@ -66,7 +66,7 @@ export default {
         {
           year: '2017',
           title: '聊天機器人、數據分析、機器學習',
-          intro: '連續六年舉辦的 MOPCON，已是南台灣最⼤科技研討會',
+          intro: '連續六年舉辦的 MOPCON，已是南台灣最⼤科技研討會，今年我們將以 " Hyperconnectivity － 互聯、互動、智慧 "，為核心宗旨，更廣泛地涵蓋聊天機器人、穿戴式裝置、物聯網的應用、數據分析及機器學習、VR 虛擬實境、AR 擴增實境等相關議題，帶領與會者探討更⾼度連結的未來世界。',
           webLink: 'https://mopcon.org/2017',
           photoLink: 'https://photos.app.goo.gl/rCZtsUq2cfSXEuKB6'
         },
@@ -75,7 +75,7 @@ export default {
           title: 'VR虛擬實境、AR擴增實境、物聯網',
           intro: 'MOPCON 2016 在各方支持下，穩定邁入了第五年，本年度「行動科技年會」精神意涵為" Connect Everything "，以精確表達出在這個資料為王的時代，「軟應用」與「硬載體」正在把每個人納入數據洪流之中，行動科技將是獲取使用者資料的最後一哩。',
           webLink: 'https://mopcon.org/2016',
-          photoLink: 'https://photos.app.goo.gl/nMYdBXJrUPjApzGAA'
+          photoLink: 'https://photos.app.goo.gl/2in2JD3oTKrqoqhQ7'
         },
         {
           year: '2015',
