@@ -148,7 +148,7 @@ h3 {
 }
 @for $i from 2012 through 2020 {
   .bg-#{$i} {
-    background: url('./images/#{$i}.jpeg');
+    background: url('./images/#{$i}.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

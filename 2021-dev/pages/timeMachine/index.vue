@@ -4,7 +4,7 @@
       <div class="container">
         <div class="vol10-mobile position-absolute d-none d-pad-block" />
         <div class="mo-container position-relatvie mb-8 mb-sm-0">
-          <div class="bg-mario" />
+          <div class="bg-mosume" />
           <div class="vol10-gray d-pad-none position-absolute" />
         </div>
         <h2 class="main-title text-center mb-8">

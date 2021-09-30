@@ -1,5 +1,5 @@
 $bg_map: (
-  png: mario
+  png: mosume
 );
 @include bgImg(timeMachine);
 
@@ -34,7 +34,7 @@ h2 {
   .mo-container {
     @include flex(center, row, center);
   }
-  .bg-mario {
+  .bg-mosume {
     width: 600px;
     height: 400px;
     background-size: contain;
@@ -56,7 +56,7 @@ h2 {
       padding-top: 80px;
     }
     .bg-mosume {
-      height: 200px;
+      height: 345px;
     }
   }
 }
