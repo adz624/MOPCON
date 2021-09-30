@@ -27,8 +27,7 @@
               class="navbar-item timeline"
               @click.prevent="toggleSubNav(item.name, item.subIsOpen)"
             >
-              {{ item.name }}
-              <span v-if="item.subNav.length > 0" class="material-icons" :class="{'subActive': item.subIsOpen && nowSubOpen == item.name }">
+              {{ item.name }}<span v-if="item.subNav.length > 0" class="material-icons" :class="{'subActive': item.subIsOpen && nowSubOpen == item.name }">
                 expand_more
               </span>
             </a>
@@ -45,7 +44,7 @@
             <!-- 議程表 的下拉選單 -->
             <div v-if="item.subNav.length > 0 && item.name == '議程表'" class="dropdown schedule" :class="{'active': item.subIsOpen && isMobile && nowSubOpen == item.name}">
               <ul>
-                <li v-for="(subNav, index) in item.subNav" :key="`subNav_${index}`">
+                <li v-for="(subNav, index) in filterOpen(item.subNav)" :key="`subNav_${index}`">
                   <a :href="subNav.url" :target="item.target"><span>{{ subNav.name }}</span></a>
                 </li>
               </ul>
@@ -202,6 +201,9 @@ export default {
       } else {
         this.nowSubOpen = ''
       }
+    },
+    filterOpen (data) {
+      return data.filter(nav => nav.open !== false)
     },
     openNav () {
       this.navOpen = !this.navOpen
@@ -381,8 +383,11 @@ export default {
           display: block;
           padding-bottom: 40px;
           @include screen(md) {
-            padding-left: 12px;
+            padding-left: 0px;
             padding-bottom: 32px;
+          }
+          @include screen(sm) {
+            padding-left: 0px;
           }
           &:hover span::after {
             content: "";
