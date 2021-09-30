@@ -152,7 +152,8 @@ module.exports = {
     route_schedule_unconf: process.env.SCHEDULE_UNCONF !== 'false',
     route_sponsor: process.env.SPONSOR !== 'false',
     route_community: process.env.COMMUNITY !== 'false',
-    route_ticket: process.env.TICKET !== 'false'
+    route_ticket: process.env.TICKET !== 'false',
+    route_guide: process.env.GUIDE !== 'false'
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
