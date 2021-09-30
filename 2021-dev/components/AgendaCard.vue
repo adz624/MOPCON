@@ -35,7 +35,7 @@
           </div>
         </div>
         <div>
-          <p v-if="parentClass === 'agenda-filter' && (room.started_at && room.ended_at)" class="agenda-date">
+          <p v-if="parentClass === 'agenda-filter' && (room.started_at && room.ended_at)" class="agenda-card-date">
             {{ room.started_at? parseDate(room.started_at*1000) :'' }}
             -
             {{ room.ended_at? parseDate(room.ended_at*1000) :'' }}
@@ -129,6 +129,9 @@ export default {
       margin-left: 16px;
       margin-bottom: 4px;
     }
+  }
+  &-date {
+    white-space: nowrap;
   }
   &-room {
     white-space: nowrap;
