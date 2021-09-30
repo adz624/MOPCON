@@ -2070,66 +2070,6 @@
     "session_id": 2021010
   },
   {
-    "name": "Craig",
-    "name_e": "",
-    "speaker_id": 190,
-    "company": "宅電 ChargeSmith",
-    "company_e": "",
-    "job_title": "共同創辦人",
-    "job_title_e": "",
-    "bio": "宅電 ChargeSmith 共同創辦人與營運長。前 Kika Tech 全球設計總監暨台灣區總經理、ASUS 設計中心資深策略規劃師，從業產品與設計領域十年，經歷物聯網、AI、移動互聯網與電商等產業。現任實踐大學 SCID《界面設計》課程講師。",
-    "bio_e": "",
-    "img": {
-      "web": "assets/images/speakers/190.png",
-      "mobile": "assets/images/speakers/190.png"
-    },
-    "link_fb": "",
-    "link_github": "",
-    "link_twitter": "",
-    "link_other": "https://www.linkedin.com/in/craigkuo/",
-    "link_slide": "",
-    "topic": "讓產品設計成為連結用戶與客戶間的語言",
-    "topic_e": "",
-    "summary": "電動車（EV）與充電站的發展已快速影響產業變革，產品團隊對外不斷地洞察用戶對充電行為的轉換，對內則需將技術發展融入使用旅程，設計更好的科技適配，降低轉換時的學習曲線。然而，充電服務的設計挑戰，不僅在物聯網科技的採用與整合，更在乎如何連接用戶的需求（ToC）與客戶的期望（ToB），這使得產品發展的過程中，將迭代流程沈浸在用戶研究中，自然地收集用戶與客戶的反饋，能更拉近彼此距離。\n\n 生態化服務的特性存在「領域（Domain）」的知識門檻和「企業端（Enterprise）」的解決方案。宅電 ChargeSmith 現為全台最受電動車主歡迎的充電站地圖，2021 年為市場發布 EV PLUS 充電站營運平台，同時為電動車車主和生態策略夥伴（場域主和充電站營運商）服務，運用同理心地圖「說」、「做」與「想」定義設計原則，並發展設計策略，提高產品在新用戶的留存以及搜尋和使用的黏性，並跟著市場的成長邁向客戶成功。",
-    "summary_e": "",
-    "community_partner": "",
-    "is_keynote": false,
-    "is_online": true,
-    "recordable": true,
-    "level": "Basic",
-    "tags": [
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
-        "name": "Mobile App"
-      },
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
-        "name": "Startup"
-      },
-      {
-        "color": {
-          "web": "#651fff",
-          "mobile": "#ffcc00"
-        },
-        "name": "UI/UX"
-      }
-    ],
-    "target": "・對電動車與充電感興趣\n・為 ToC 與 ToB 努力的產品、設計、BD 或 AM \n・在新創團隊中因資源受限無法伸展用戶研究者",
-    "prior_knowledge": "・設計流程\n・用戶研究（有概念即可）",
-    "expected_gain": "・從設計原則「說、做、想」發展策略\n・列舉加速融入用戶觀察與體驗的方法\n・探索客戶團隊與產品團隊的協作力量",
-    "started_at": 0,
-    "ended_at": 0,
-    "room": "",
-    "floor": "",
-    "sponsor": []
-  },
-  {
     "name": "余虹儀（小魚）",
     "name_e": "",
     "speaker_id": 191,
