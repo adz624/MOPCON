@@ -141,6 +141,15 @@ export default {
           target: ''
         },
         {
+          name: '講者陣容',
+          class: '',
+          url: './speaker',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_speaker,
+          target: ''
+        },
+        {
           name: '贊助社群',
           class: '',
           url: './sponsor',
@@ -159,12 +168,12 @@ export default {
           target: ''
         },
         {
-          name: '講者陣容',
+          name: '大會指南',
           class: '',
-          url: './speaker',
+          url: './guide',
           subNav: [],
           subIsOpen: false,
-          open: process.env.route_speaker,
+          open: process.env.route_guide,
           target: ''
         },
         {
@@ -232,9 +241,9 @@ export default {
       border-radius: 8px;
       padding: 1.3rem 1.5rem 1rem;
       .navbar-item {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         @include screen(lg) {
-          margin-left: 1.25rem;
+          margin-left: 12px;
         }
       }
     }
@@ -459,10 +468,10 @@ export default {
       font-size: 1.25rem;
       font-weight: 600;
       line-height: 1.7rem;
-      margin-left: 40px;
+      margin-left: 32px;
       cursor: pointer;
       @include screen(lg) {
-        margin-left: 1.5rem;
+        margin-left: 14px;
       }
       @include screen(md) {
         margin-left: 25px;
