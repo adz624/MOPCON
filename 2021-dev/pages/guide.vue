@@ -113,7 +113,9 @@
             <p>依議程聽分為不同頻道，您可以在這裡與他人一起分享、聊聊自己今天的收穫，有任何疑問服務台也能及時幫您解決</p>
             <div class="btn-group">
               <a href="#" class="guide-btn">
-                Discord 連結
+                Discord 連結 <span class="material-icons icon">
+                  open_in_new
+                </span>
               </a>
             </div>
           </div>
