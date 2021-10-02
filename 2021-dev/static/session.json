@@ -38,12 +38,12 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634951700,
             "ended_at": 1634954400,
             "speakers": [
               {
-                "started_at": 1634951700,
-                "ended_at": 1634954400,
                 "speaker_id": 114,
                 "name": "Jintin Lin",
                 "name_e": "",
@@ -100,6 +100,8 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634955000,
             "ended_at": 1634957700,
             "speakers": [
@@ -152,6 +154,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634955000,
             "ended_at": 1634957700,
             "speakers": [
@@ -197,6 +201,8 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634955000,
             "ended_at": 1634957700,
             "speakers": [
@@ -257,6 +263,8 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634958300,
             "ended_at": 1634961000,
             "speakers": [
@@ -302,6 +310,8 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634958300,
             "ended_at": 1634961000,
             "speakers": [
@@ -354,6 +364,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634958300,
             "ended_at": 1634961000,
             "speakers": [
@@ -428,6 +440,8 @@
                 "name": "UI/UX"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634965200,
             "ended_at": 1634967900,
             "speakers": [
@@ -480,6 +494,8 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634965200,
             "ended_at": 1634967900,
             "speakers": [
@@ -525,6 +541,8 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634965200,
             "ended_at": 1634967900,
             "speakers": [
@@ -606,6 +624,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634968500,
             "ended_at": 1634971200,
             "speakers": [
@@ -665,6 +685,8 @@
                 "name": "AI"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634968500,
             "ended_at": 1634971200,
             "speakers": [
@@ -724,6 +746,8 @@
                 "name": "UI/UX"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634968500,
             "ended_at": 1634971200,
             "speakers": [
@@ -791,6 +815,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634971800,
             "ended_at": 1634974500,
             "speakers": [
@@ -843,6 +869,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634971800,
             "ended_at": 1634974500,
             "speakers": [
@@ -888,6 +916,8 @@
                 "name": "Agile"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634971800,
             "ended_at": 1634974500,
             "speakers": [
@@ -948,6 +978,8 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634975100,
             "ended_at": 1634977800,
             "speakers": [
@@ -1000,6 +1032,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634975100,
             "ended_at": 1634977800,
             "speakers": [
@@ -1059,6 +1093,8 @@
                 "name": "Cross-platform"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1634975100,
             "ended_at": 1634977800,
             "speakers": [
@@ -1254,6 +1290,8 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635042000,
             "ended_at": 1635044700,
             "speakers": [
@@ -1313,6 +1351,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635042000,
             "ended_at": 1635044700,
             "speakers": [
@@ -1358,6 +1398,8 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635042000,
             "ended_at": 1635044700,
             "speakers": [
@@ -1425,6 +1467,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635045300,
             "ended_at": 1635048000,
             "speakers": [
@@ -1477,6 +1521,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635045300,
             "ended_at": 1635048000,
             "speakers": [
@@ -1529,6 +1575,8 @@
                 "name": "Cloud"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635045300,
             "ended_at": 1635048000,
             "speakers": [
@@ -1603,6 +1651,8 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635051600,
             "ended_at": 1635054300,
             "speakers": [
@@ -1655,6 +1705,12 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 70,
+            "sponsor": {
+              "logo_path": "assets/images/sponsors/70.png",
+              "name": "奧義智慧科技",
+              "name_e": "CyCraft"
+            },
             "started_at": 1635051600,
             "ended_at": 1635054300,
             "speakers": [
@@ -1735,6 +1791,8 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635051600,
             "ended_at": 1635054300,
             "speakers": [
@@ -1816,6 +1874,8 @@
                 "name": "Cross-platform"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635054900,
             "ended_at": 1635057600,
             "speakers": [
@@ -1868,6 +1928,8 @@
                 "name": "AI"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635054900,
             "ended_at": 1635057600,
             "speakers": [
@@ -1948,6 +2010,8 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635054900,
             "ended_at": 1635057600,
             "speakers": [
@@ -2042,6 +2106,8 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635058200,
             "ended_at": 1635060900,
             "speakers": [
@@ -2094,6 +2160,8 @@
                 "name": "數位轉型"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635058200,
             "ended_at": 1635060900,
             "speakers": [
@@ -2146,6 +2214,8 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635058200,
             "ended_at": 1635060900,
             "speakers": [
@@ -2213,6 +2283,8 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor_info": [],
             "started_at": 1635061500,
             "ended_at": 1635064200,
             "speakers": [

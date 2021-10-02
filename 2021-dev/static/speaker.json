@@ -57,7 +57,8 @@
     "ended_at": 1634977800,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021021
   },
   {
@@ -104,7 +105,8 @@
     "ended_at": 1634957700,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021004
   },
   {
@@ -151,7 +153,8 @@
     "ended_at": 1634961000,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021007
   },
   {
@@ -212,7 +215,8 @@
     "ended_at": 1635054300,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021034
   },
   {
@@ -259,7 +263,8 @@
     "ended_at": 1634967900,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021012
   },
   {
@@ -306,7 +311,8 @@
     "ended_at": 1634957700,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021006
   },
   {
@@ -360,7 +366,8 @@
     "ended_at": 1634957700,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021005
   },
   {
@@ -407,7 +414,8 @@
     "ended_at": 1634974500,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021018
   },
   {
@@ -475,7 +483,8 @@
     "ended_at": 1634971200,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021013
   },
   {
@@ -502,7 +511,7 @@
     "summary": "Jetpack Compose is definitely the next big thing in Android development.\nWith the help of declarative UI, we can build Android UI easier and faster.\nAs it’s now production ready, it’s also the best time for us to lean/adopt it.\nIn this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
     "summary_e": "",
     "community_partner": "",
-    "is_keynote": false,
+    "is_keynote": true,
     "is_online": true,
     "recordable": true,
     "level": "Basic",
@@ -522,7 +531,8 @@
     "ended_at": 1634954400,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021001
   },
   {
@@ -569,7 +579,8 @@
     "ended_at": 1635060900,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021040
   },
   {
@@ -616,7 +627,8 @@
     "ended_at": 1634977800,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021019
   },
   {
@@ -670,7 +682,8 @@
     "ended_at": 1635048000,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021033
   },
   {
@@ -724,7 +737,8 @@
     "ended_at": 1634977800,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021020
   },
   {
@@ -751,7 +765,7 @@
     "summary": "從今年起，Flutter 開始正式支援 Web、以及 Windows、macOS 與 Linux 等桌面平台，讓行動平台上做開發工作的 Flutter 工程師，能夠進一步將觸手拓展到桌面平台上。\n\n 我們在今年上半年，便用了 Flutter，為公司開發了一款 Windows 應用程式。在開發這個程式的過程中，我學習到了從行動平台轉往桌面平台需要注意的地方，並且希望與你分享。",
     "summary_e": "",
     "community_partner": "",
-    "is_keynote": false,
+    "is_keynote": true,
     "is_online": true,
     "recordable": true,
     "level": "Basic",
@@ -778,7 +792,8 @@
     "ended_at": 1635064200,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021043
   },
   {
@@ -832,7 +847,8 @@
     "ended_at": 1635060900,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021041
   },
   {
@@ -900,7 +916,8 @@
     "ended_at": 1635057600,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021037
   },
   {
@@ -947,7 +964,8 @@
     "ended_at": 1635044700,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021030
   },
   {
@@ -1001,7 +1019,8 @@
     "ended_at": 1635057600,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021038
   },
   {
@@ -1062,7 +1081,8 @@
     "ended_at": 1635044700,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021029
   },
   {
@@ -1116,7 +1136,8 @@
     "ended_at": 1634974500,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021017
   },
   {
@@ -1163,7 +1184,8 @@
     "ended_at": 1634961000,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021008
   },
   {
@@ -1217,7 +1239,8 @@
     "ended_at": 1635060900,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021042
   },
   {
@@ -1271,7 +1294,8 @@
     "ended_at": 1634961000,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021009
   },
   {
@@ -1332,7 +1356,8 @@
     "ended_at": 1634971200,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021014
   },
   {
@@ -1386,7 +1411,8 @@
     "ended_at": 1634967900,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021011
   },
   {
@@ -1468,7 +1494,8 @@
     "ended_at": 1635057600,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021039
   },
   {
@@ -1522,7 +1549,8 @@
     "ended_at": 1635048000,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021032
   },
   {
@@ -1576,7 +1604,12 @@
     "ended_at": 1635054300,
     "room": "R2",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 70,
+    "sponsor_info": {
+      "logo_path": "assets/images/sponsors/70.png",
+      "name": "奧義智慧科技",
+      "name_e": "CyCraft"
+    },
     "session_id": 2021035
   },
   {
@@ -1651,7 +1684,8 @@
     "ended_at": 1635044700,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021028
   },
   {
@@ -1733,7 +1767,8 @@
     "ended_at": 1635057600,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021039
   },
   {
@@ -1815,7 +1850,8 @@
     "ended_at": 1635057600,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021039
   },
   {
@@ -1869,7 +1905,8 @@
     "ended_at": 1634974500,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021016
   },
   {
@@ -1923,7 +1960,8 @@
     "ended_at": 1635048000,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021031
   },
   {
@@ -2005,7 +2043,8 @@
     "ended_at": 1635054300,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021036
   },
   {
@@ -2066,7 +2105,8 @@
     "ended_at": 1634967900,
     "room": "R1",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021010
   },
   {
@@ -2127,7 +2167,8 @@
     "ended_at": 1634971200,
     "room": "R3",
     "floor": "",
-    "sponsor": [],
+    "sponsor_id": 0,
+    "sponsor_info": [],
     "session_id": 2021015
   }
 ]
