@@ -154,7 +154,15 @@
             </h4>
             <p class="mb-8 mt-2" v-html="parseContent(session.expected_gain)" />
           </div>
-          <img v-if="false" :src="getSponsorInfo (session.sponsor_id)" alt="" class="sponsor-logo">
+          <div v-if="session.sponsor && session.sponsor.hasOwnProperty('logo_path')">
+            <h4 class="mb-1">
+              <span>\\</span>
+              贊助商
+            </h4>
+            <a :href="'/sponsor/' + session.sponsor_id">
+              <img :src="session.sponsor.logo_path" alt="" class="sponsor-logo">
+            </a>
+          </div>
         </div>
         <div class="modalFooter">
           <a :href="`https://calendar.google.com/calendar/u/0/r/eventedit?text=MOPCON+2021+${session.topic}&dates=${$moment(session.started_at*1000).format('YYYYMMDDTHHmmss')}/${$moment(session.ended_at*1000).format('YYYYMMDDTHHmmss')}&trp=false&sf=true`" target="_blank" class="text-center py-3 mr-3">+ 加入行事曆</a>
@@ -251,6 +259,60 @@ export default {
       modalOpen: false,
       session: {},
       shareShow: false
+    }
+  },
+  head () {
+    return {
+      title: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.modalOpen ? this.session.summary : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.modalOpen ? this.session.summary : ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/schedule/${this.session.session_id}` : `${process.env.BASE_URL}/2021/schedule`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/${this.session.speakers[0].img.web}` : `${process.env.BASE_URL}/2021/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.modalOpen ? this.session.summary : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        }
+      ]
     }
   },
   computed: {
