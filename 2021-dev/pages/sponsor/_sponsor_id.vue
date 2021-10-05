@@ -159,10 +159,10 @@
         <h5>相關講者資訊</h5>
         <div
           v-for="speaker in sponsorData.speaker_information"
-          :key="speaker.name"
+          :key="speaker.speaker_id"
           class="modal-extend-content"
         >
-          <div class="modal-extend-speaker">
+          <a :href="'/speaker/' + speaker.speaker_id" class="modal-extend-speaker">
             <div class="modal-extend-speaker-image">
               <img v-if="!isPad" :src="speaker.img.web">
               <img v-if="isPad" :src="speaker.img.mobile">
@@ -171,7 +171,7 @@
               <h6>{{ speaker.name }}</h6>
               <span>{{ speaker.job_title }}</span>
             </div>
-          </div>
+          </a>
           <div class="hidden sm-show line-tiny" />
           <div class="modal-extend-session">
             <h6>議程主題</h6>
@@ -815,15 +815,15 @@ h6 {
       &-image {
         width: 115px;
         height: 115px;
+        border-radius: 40px;
+        overflow: hidden;
+        transform: rotate(45deg) scale(0.9);
+        img {
+          transform: rotate(-45deg) scale(1.2);
+        }
         @include screen(pad) {
           width: 136px;
           height: 136px;
-          border-radius: 40px;
-          overflow: hidden;
-          transform: rotate(45deg) scale(0.9);
-          img {
-            transform: rotate(-45deg) scale(1.2);
-          }
         }
       }
       &-content {

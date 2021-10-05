@@ -153,7 +153,15 @@
                 <!-- eslint-disable-next-line vue/no-v-html -->
                 <p class="mb-8 mt-2" v-html="parseContent(singleSpeaker[0].expected_gain)" />
               </div>
-              <img v-if="false" :src="getSponsorInfo (singleSpeaker[0].sponsor_id)" alt="" class="sponsor-logo">
+              <div v-if="singleSpeaker[0].sponsor_info.hasOwnProperty('logo_path')">
+                <h4 class="mb-1">
+                  <span>\\</span>
+                  贊助商
+                </h4>
+                <a :href="'/sponsor/' + singleSpeaker[0].sponsor_id">
+                  <img :src="singleSpeaker[0].sponsor_info.logo_path" alt="" class="sponsor-logo">
+                </a>
+              </div>
             </div>
             <div class="modalFooter">
               <!-- <a v-if="singleSpeaker[0].link_slide.length !== 0" :href="singleSpeaker[0].link_slide" target="_blank" class="text-center py-3 mr-3">簡報連結</a> -->
@@ -337,23 +345,6 @@ export default {
     closeModal (show) {
       this.modalOpen = show
       this.shareShow = false
-    },
-    getSponsorInfo (id) {
-      const vm = this
-      if (id === 0) {
-        vm.imgUrl = ''
-        return
-      }
-      vm.$axios
-        .get(`/api/2021/sponsor?sponsor_id=${id}`)
-        .then((data) => {
-          if (data.data.success) {
-            vm.imgUrl = data.data.data[0].logo_path
-          } else {
-            console.log('error')
-          }
-        })
-      return vm.imgUrl
     }
   }
 }
