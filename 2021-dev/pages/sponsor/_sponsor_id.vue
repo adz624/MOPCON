@@ -6,10 +6,10 @@
         <div class="vol10-mobile position-absolute pad-show" />
         <div class="main-content">
           <h1 class="title">
-            我們感謝<br class="hidden md-show pad-hidden"> 今年<br class="hidden sm-show">支持<br class="hidden pad-show sm-hidden"> MOPCON<br class="hidden sm-show"> 的贊助商
+            我們感謝<br class="hidden md-show pad-hidden">今年<br class="hidden sm-show">支持<br class="hidden pad-show sm-hidden"> MOPCON<br class="hidden sm-show"> 的贊助商
           </h1>
           <p class="subTitle sm-hidden">
-            MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 10 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和I知識，共同成長、學習！
+            MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 10 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！
           </p>
           <p class="subTitle">
             想了解成為贊助商的優勢嗎？
@@ -229,7 +229,7 @@ export default {
   },
   head () {
     return {
-      title: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021',
+      title: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助伙伴 | MOPCON 2021',
       meta: [
         {
           hid: 'description',
@@ -240,7 +240,7 @@ export default {
         {
           hid: 'og-title',
           property: 'og:title',
-          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助伙伴 | MOPCON 2021'
         },
         {
           hid: 'og-description',
@@ -261,7 +261,7 @@ export default {
         {
           hid: 'twitter-site',
           name: 'twitter:site',
-          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助伙伴 | MOPCON 2021'
         },
         {
           hid: 'twitter-description',
@@ -271,12 +271,12 @@ export default {
         {
           hid: 'twitter-app:name:iphone',
           name: 'twitter:app:name:iphone',
-          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助伙伴 | MOPCON 2021'
         },
         {
           hid: 'twitter-app:name:ipad',
           name: 'twitter:app:name:ipad',
-          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助社群 | MOPCON 2021'
+          content: this.modalOpen ? `${this.sponsorData.name} | 贊助商 MOPCON 2021` : '贊助伙伴 | MOPCON 2021'
         }
       ]
     }

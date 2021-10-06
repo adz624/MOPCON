@@ -150,7 +150,7 @@ export default {
           target: ''
         },
         {
-          name: '贊助社群',
+          name: '贊助伙伴',
           class: '',
           url: './sponsor',
           subNav: [],
