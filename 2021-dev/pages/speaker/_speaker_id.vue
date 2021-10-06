@@ -158,7 +158,7 @@
                   <span>\\</span>
                   贊助商
                 </h4>
-                <a :href="'/sponsor/' + singleSpeaker[0].sponsor_id">
+                <a :href="'/2021/sponsor/' + singleSpeaker[0].sponsor_id">
                   <img :src="singleSpeaker[0].sponsor_info.logo_path" alt="" class="sponsor-logo">
                 </a>
               </div>

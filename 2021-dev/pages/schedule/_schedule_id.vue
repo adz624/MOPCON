@@ -159,7 +159,7 @@
               <span>\\</span>
               贊助商
             </h4>
-            <a :href="'/sponsor/' + session.sponsor_id">
+            <a :href="'/2021/sponsor/' + session.sponsor_id">
               <img :src="session.sponsor.logo_path" alt="" class="sponsor-logo">
             </a>
           </div>
