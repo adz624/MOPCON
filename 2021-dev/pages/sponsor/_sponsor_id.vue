@@ -102,22 +102,6 @@
               </p>
             </div>
           </div>
-          <h2>會遇到什麼樣的與會民眾嗎？</h2>
-          <div class="sopTwo-meet">
-            <div class="sopTwo-meet-content">
-              <span># 濁水溪以南破千人研討會</span>
-              <span># 與會者以軟體開發者居多，也有設計師、學生等等</span>
-              <span># 每年超過 30 場高品質議程，邀請超過 25 位講師</span>
-              <h4>參與者目的</h4>
-              <span>Top 1 支持濁水溪以南科技研討會</span>
-              <span>Top 2 想聽取不同領域的相關議題</span>
-              <span>Top 3 有感興趣的議題</span>
-            </div>
-            <div class="sopTwo-meet-image">
-              <img src="../../assets/images/sponsor/sop02-img3.svg" class="pad-hidden sm-show" alt="">
-              <img src="../../assets/images/sponsor/sop02-768px-img3.svg" class="hidden pad-show sm-hidden" alt="">
-            </div>
-          </div>
           <div class="sopTwo-join">
             <div class="sponsor-icon bg-BruceWayne" />
             <button class="btn" @click="mailTo">
