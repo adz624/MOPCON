@@ -162,7 +162,7 @@
           :key="speaker.speaker_id"
           class="modal-extend-content"
         >
-          <a :href="'/speaker/' + speaker.speaker_id" class="modal-extend-speaker">
+          <a :href="'/2021/speaker/' + speaker.speaker_id" class="modal-extend-speaker">
             <div class="modal-extend-speaker-image">
               <img v-if="!isPad" :src="speaker.img.web">
               <img v-if="isPad" :src="speaker.img.mobile">
