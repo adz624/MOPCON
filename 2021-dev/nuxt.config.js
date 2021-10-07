@@ -84,7 +84,8 @@ module.exports = {
   plugins: [
     { src: '~/plugins/font-awesome' },
     { src: '~/plugins/pixel', mode: 'client' },
-    { src: '~/plugins/ga', mode: 'client' }
+    { src: '~/plugins/ga', mode: 'client' },
+    { src: '~/plugins/vue-swiper', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
