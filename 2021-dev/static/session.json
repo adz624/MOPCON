@@ -20,7 +20,7 @@
             "room": "R1",
             "topic": "Jetpack Compose introduction",
             "topic_e": "",
-            "summary": "Jetpack Compose is definitely the next big thing in Android development.\nWith the help of declarative UI, we can build Android UI easier and faster.\nAs it’s now production ready, it’s also the best time for us to lean/adopt it.\nIn this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
+            "summary": "Jetpack Compose is definitely the next big thing in Android development. With the help of declarative UI, we can build Android UI easier and faster. As it’s now production ready, it’s also the best time for us to lean/adopt it. In this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
             "summary_e": "Jetpack Compose is definitely the next big thing in Android development. With the help of declarative UI, we can build Android UI easier and faster. As it’s now production ready, it’s also the best time for us to lean/adopt it. In this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
             "is_keynote": true,
             "is_online": true,
