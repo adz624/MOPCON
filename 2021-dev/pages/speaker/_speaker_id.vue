@@ -12,10 +12,10 @@
         </h2>
         <p class="main-content">
           每年我們都邀請了超過 25 位講師來到現場，包含知名的前端開發者、軟體工程師、資深架構師、設計師，以及專案經理等等，讓這場活動更加多元，也貫徹
-          MOPCON 的精神，使參與的會眾都能從中獲得養分，甚至達到近一步的交流。
+          MOPCON 的精神，使參與的會眾都能從中獲得養分，甚至達到進一步的交流。
           <br>
           <span class="d-block py-8">
-            為使目標達成，MOPCON 志在打造出一座「高速資訊交流圈」！
+            MOPCON 志在打造出一座「高速資訊交流圈」！
           </span>
         </p>
       </div>
@@ -153,7 +153,15 @@
                 <!-- eslint-disable-next-line vue/no-v-html -->
                 <p class="mb-8 mt-2" v-html="parseContent(singleSpeaker[0].expected_gain)" />
               </div>
-              <img v-if="false" :src="getSponsorInfo (singleSpeaker[0].sponsor_id)" alt="" class="sponsor-logo">
+              <div v-if="singleSpeaker[0].sponsor_info.hasOwnProperty('logo_path')">
+                <h4 class="mb-1">
+                  <span>\\</span>
+                  贊助商
+                </h4>
+                <a :href="'/2021/sponsor/' + singleSpeaker[0].sponsor_id">
+                  <img :src="singleSpeaker[0].sponsor_info.logo_path" alt="" class="sponsor-logo">
+                </a>
+              </div>
             </div>
             <div class="modalFooter">
               <!-- <a v-if="singleSpeaker[0].link_slide.length !== 0" :href="singleSpeaker[0].link_slide" target="_blank" class="text-center py-3 mr-3">簡報連結</a> -->
@@ -337,23 +345,6 @@ export default {
     closeModal (show) {
       this.modalOpen = show
       this.shareShow = false
-    },
-    getSponsorInfo (id) {
-      const vm = this
-      if (id === 0) {
-        vm.imgUrl = ''
-        return
-      }
-      vm.$axios
-        .get(`/api/2021/sponsor?sponsor_id=${id}`)
-        .then((data) => {
-          if (data.data.success) {
-            vm.imgUrl = data.data.data[0].logo_path
-          } else {
-            console.log('error')
-          }
-        })
-      return vm.imgUrl
     }
   }
 }

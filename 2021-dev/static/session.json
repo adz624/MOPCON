@@ -20,9 +20,9 @@
             "room": "R1",
             "topic": "Jetpack Compose introduction",
             "topic_e": "",
-            "summary": "Jetpack Compose is definitely the next big thing in Android development.\nWith the help of declarative UI, we can build Android UI easier and faster.\nAs it’s now production ready, it’s also the best time for us to lean/adopt it.\nIn this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
-            "summary_e": "",
-            "is_keynote": false,
+            "summary": "Jetpack Compose is definitely the next big thing in Android development. With the help of declarative UI, we can build Android UI easier and faster. As it’s now production ready, it’s also the best time for us to lean/adopt it. In this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
+            "summary_e": "Jetpack Compose is definitely the next big thing in Android development. With the help of declarative UI, we can build Android UI easier and faster. As it’s now production ready, it’s also the best time for us to lean/adopt it. In this talk we’ll see what’s Jetpack Compose and how it improve our daily life of building UIs.",
+            "is_keynote": true,
             "is_online": true,
             "recordable": true,
             "level": "Basic",
@@ -38,6 +38,10 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634951700,
+            "ended_at": 1634954400,
             "speakers": [
               {
                 "speaker_id": 114,
@@ -76,17 +80,17 @@
           {
             "session_id": 2021004,
             "room": "R1",
-            "topic": "SwiftUI 導覽狀態探究",
+            "topic": "從 UIKit 到 SwiftUI 的思維轉移",
             "topic_e": "",
-            "summary": "SwiftUI 是用 state 來管理 view。只要 state 改變了， view 就跟著改變。但是傳統 iOS app 操作常見的畫面切換，如 navigation push 與 presentation，原生 SwiftUI 的作法比較陽春，或者可以說是沿用了 UIViewController 的結構。本題想探究 SwiftUI 能否比較簡便的 state 來統一管理 view 的 navigation 與 presentation",
+            "summary": "UIKit 十多年來一直是 iOS app 開發者的主力 UI 框架，其基礎元件和 layout 工具都提供了多樣化的設定，以承擔 app 在這些年間不停變化的需求，但從 Swift 開始出現後，事情開始逐漸有了變化。\n\n 首先出現了利用 Swift 語言能力與性質提供了以往不同的 UIKit 開發典範。後來在 FRP 盛行數年後，2019 年 Combine 的到來宣告第一方的 FRP solution 終於出現，與此相伴的是基於 Combine 並帶來全新 app 開發體驗，在當年轟動了整個 Apple 開發生態系的 SwiftUI。\n\n 從 UIKit 到 SwiftUI ，其中開發的思維落差極大，讓我們一起來聊聊之中的差異以及 Apple 如何一步步地引導這個過程。",
             "summary_e": "",
             "is_keynote": false,
             "is_online": true,
             "recordable": true,
             "level": "Basic",
-            "target": "對 SwiftUI 或 iOS 開發有興趣的人",
-            "prior_knowledge": "熟悉 iOS app 基本操作",
-            "expected_gain": "SwiftUI 深層知識，以及研究的過程",
+            "target": "1. App 開發者\n\n2. 對於 UI 開發方式，思考與工具有興趣的開發者",
+            "prior_knowledge": "必須對 Swift 有基礎認知\n\n 最好對 UIKit、SwiftUI 有基礎認識",
+            "expected_gain": "現代化的 app 開發思想與認知。",
             "tags": [
               {
                 "color": {
@@ -96,22 +100,26 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634955000,
+            "ended_at": 1634957700,
             "speakers": [
               {
-                "speaker_id": 106,
-                "name": "13",
+                "speaker_id": 107,
+                "name": "Pofat",
                 "name_e": "",
                 "job_title": "iOS 工程師",
                 "job_title_e": "",
                 "company": "weak self",
                 "company_e": "",
                 "img": {
-                  "web": "assets/images/speakers/106.png",
-                  "mobile": "assets/images/speakers/106.png"
+                  "web": "assets/images/speakers/107.png",
+                  "mobile": "assets/images/speakers/107.png"
                 },
-                "link_github": "https://github.com/ethanhuang13",
-                "link_twitter": "https://twitter.com/ethanhuang13",
-                "link_other": "https://13h.tw",
+                "link_github": "https://github.com/pofat",
+                "link_twitter": "https://twitter.com/PofatTseng",
+                "link_other": "https://pofat.dev",
                 "link_fb": ""
               }
             ]
@@ -146,6 +154,10 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634955000,
+            "ended_at": 1634957700,
             "speakers": [
               {
                 "speaker_id": 111,
@@ -189,6 +201,10 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634955000,
+            "ended_at": 1634957700,
             "speakers": [
               {
                 "speaker_id": 110,
@@ -227,17 +243,17 @@
           {
             "session_id": 2021007,
             "room": "R1",
-            "topic": "從 UIKit 到 SwiftUI 的思維轉移",
+            "topic": "SwiftUI 導覽狀態探究",
             "topic_e": "",
-            "summary": "UIKit 十多年來一直是 iOS app 開發者的主力 UI 框架，其基礎元件和 layout 工具都提供了多樣化的設定，以承擔 app 在這些年間不停變化的需求，但從 Swift 開始出現後，事情開始逐漸有了變化。\n\n 首先出現了利用 Swift 語言能力與性質提供了以往不同的 UIKit 開發典範。後來在 FRP 盛行數年後，2019 年 Combine 的到來宣告第一方的 FRP solution 終於出現，與此相伴的是基於 Combine 並帶來全新 app 開發體驗，在當年轟動了整個 Apple 開發生態系的 SwiftUI。\n\n 從 UIKit 到 SwiftUI ，其中開發的思維落差極大，讓我們一起來聊聊之中的差異以及 Apple 如何一步步地引導這個過程。",
+            "summary": "SwiftUI 是用 state 來管理 view。只要 state 改變了， view 就跟著改變。但是傳統 iOS app 操作常見的畫面切換，如 navigation push 與 presentation，原生 SwiftUI 的作法比較陽春，或者可以說是沿用了 UIViewController 的結構。本題想探究 SwiftUI 能否比較簡便的 state 來統一管理 view 的 navigation 與 presentation",
             "summary_e": "",
             "is_keynote": false,
             "is_online": true,
             "recordable": true,
             "level": "Basic",
-            "target": "1. App 開發者\n\n2. 對於 UI 開發方式，思考與工具有興趣的開發者",
-            "prior_knowledge": "必須對 Swift 有基礎認知\n\n 最好對 UIKit、SwiftUI 有基礎認識",
-            "expected_gain": "現代化的 app 開發思想與認知。",
+            "target": "對 SwiftUI 或 iOS 開發有興趣的人",
+            "prior_knowledge": "熟悉 iOS app 基本操作",
+            "expected_gain": "SwiftUI 深層知識，以及研究的過程",
             "tags": [
               {
                 "color": {
@@ -247,22 +263,26 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634958300,
+            "ended_at": 1634961000,
             "speakers": [
               {
-                "speaker_id": 107,
-                "name": "Pofat",
+                "speaker_id": 106,
+                "name": "13",
                 "name_e": "",
                 "job_title": "iOS 工程師",
                 "job_title_e": "",
                 "company": "weak self",
                 "company_e": "",
                 "img": {
-                  "web": "assets/images/speakers/107.png",
-                  "mobile": "assets/images/speakers/107.png"
+                  "web": "assets/images/speakers/106.png",
+                  "mobile": "assets/images/speakers/106.png"
                 },
-                "link_github": "https://github.com/pofat",
-                "link_twitter": "https://twitter.com/PofatTseng",
-                "link_other": "https://pofat.dev",
+                "link_github": "https://github.com/ethanhuang13",
+                "link_twitter": "https://twitter.com/ethanhuang13",
+                "link_other": "https://13h.tw",
                 "link_fb": ""
               }
             ]
@@ -290,6 +310,10 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634958300,
+            "ended_at": 1634961000,
             "speakers": [
               {
                 "speaker_id": 140,
@@ -340,6 +364,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634958300,
+            "ended_at": 1634961000,
             "speakers": [
               {
                 "speaker_id": 142,
@@ -412,6 +440,10 @@
                 "name": "UI/UX"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634965200,
+            "ended_at": 1634967900,
             "speakers": [
               {
                 "speaker_id": 190,
@@ -462,6 +494,10 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634965200,
+            "ended_at": 1634967900,
             "speakers": [
               {
                 "speaker_id": 144,
@@ -505,6 +541,10 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634965200,
+            "ended_at": 1634967900,
             "speakers": [
               {
                 "speaker_id": 109,
@@ -584,6 +624,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634968500,
+            "ended_at": 1634971200,
             "speakers": [
               {
                 "speaker_id": 113,
@@ -641,6 +685,10 @@
                 "name": "AI"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634968500,
+            "ended_at": 1634971200,
             "speakers": [
               {
                 "speaker_id": 143,
@@ -698,6 +746,10 @@
                 "name": "UI/UX"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634968500,
+            "ended_at": 1634971200,
             "speakers": [
               {
                 "speaker_id": 191,
@@ -763,6 +815,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634971800,
+            "ended_at": 1634974500,
             "speakers": [
               {
                 "speaker_id": 187,
@@ -813,6 +869,10 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634971800,
+            "ended_at": 1634974500,
             "speakers": [
               {
                 "speaker_id": 139,
@@ -856,6 +916,10 @@
                 "name": "Agile"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634971800,
+            "ended_at": 1634974500,
             "speakers": [
               {
                 "speaker_id": 112,
@@ -896,7 +960,7 @@
             "room": "R1",
             "topic": "Thinking in Jetpack Compose\n- 以 Todo App 來比較 compose 與傳統 android UI 的差異",
             "topic_e": "",
-            "summary": "Google 在 2021 年 7 月底終於發佈了 Jetpack Compose 的 1.0 版本\n 在 Compose 出現後 android 的生態系有帶來什麼樣不同的變化呢？\n 演講以 Todo app 為例比較 Compose 與傳統寫法的差異\n 內容會包含\n\n- Custom View 在兩者寫法有何不同\n- 列表在 Compose 又如何處理\n- 如何跟 ViewModel 協作",
+            "summary": "Google 在 2021 年 7 月底終於發佈了 Jetpack Compose 的 1.0 版本。在 Compose 出現後 android 的生態系有帶來什麼樣不同的變化呢？演講以 Todo app 為例比較 Compose 與傳統寫法的差異。內容會包含：\n\n- Custom View 在兩者寫法有何不同\n- 列表在 Compose 又如何處理\n- 如何跟 ViewModel 協作",
             "summary_e": "",
             "is_keynote": false,
             "is_online": true,
@@ -914,6 +978,10 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634975100,
+            "ended_at": 1634977800,
             "speakers": [
               {
                 "speaker_id": 116,
@@ -964,6 +1032,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634975100,
+            "ended_at": 1634977800,
             "speakers": [
               {
                 "speaker_id": 119,
@@ -1021,6 +1093,10 @@
                 "name": "Cross-platform"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1634975100,
+            "ended_at": 1634977800,
             "speakers": [
               {
                 "speaker_id": 105,
@@ -1158,7 +1234,7 @@
           {
             "session_id": 2021028,
             "room": "R1",
-            "topic": "iOS 關於個人隱私的前世今生",
+            "topic": "iOS 隱私與便利的前世今生",
             "topic_e": "",
             "summary": "Apple 關於個人隱私的政策及 iOS 歷年根據隱私政策的功能調整。",
             "summary_e": "",
@@ -1206,6 +1282,10 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635042000,
+            "ended_at": 1635044700,
             "speakers": [
               {
                 "speaker_id": 183,
@@ -1263,6 +1343,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635042000,
+            "ended_at": 1635044700,
             "speakers": [
               {
                 "speaker_id": 138,
@@ -1306,6 +1390,10 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635042000,
+            "ended_at": 1635044700,
             "speakers": [
               {
                 "speaker_id": 136,
@@ -1371,6 +1459,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635045300,
+            "ended_at": 1635048000,
             "speakers": [
               {
                 "speaker_id": 188,
@@ -1421,6 +1513,10 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635045300,
+            "ended_at": 1635048000,
             "speakers": [
               {
                 "speaker_id": 181,
@@ -1471,6 +1567,10 @@
                 "name": "Cloud"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635045300,
+            "ended_at": 1635048000,
             "speakers": [
               {
                 "speaker_id": 117,
@@ -1543,6 +1643,10 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635051600,
+            "ended_at": 1635054300,
             "speakers": [
               {
                 "speaker_id": 108,
@@ -1593,6 +1697,14 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 70,
+            "sponsor": {
+              "logo_path": "assets/images/sponsors/70.png",
+              "name": "奧義智慧科技",
+              "name_e": "CyCraft"
+            },
+            "started_at": 1635051600,
+            "ended_at": 1635054300,
             "speakers": [
               {
                 "speaker_id": 182,
@@ -1671,6 +1783,10 @@
                 "name": "Data Analyzing"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635051600,
+            "ended_at": 1635054300,
             "speakers": [
               {
                 "speaker_id": 189,
@@ -1750,6 +1866,10 @@
                 "name": "Cross-platform"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635054900,
+            "ended_at": 1635057600,
             "speakers": [
               {
                 "speaker_id": 122,
@@ -1800,6 +1920,10 @@
                 "name": "AI"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635054900,
+            "ended_at": 1635057600,
             "speakers": [
               {
                 "speaker_id": 137,
@@ -1878,6 +2002,10 @@
                 "name": "Open Source"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635054900,
+            "ended_at": 1635057600,
             "speakers": [
               {
                 "speaker_id": 186,
@@ -1970,6 +2098,10 @@
                 "name": "Mobile App"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635058200,
+            "ended_at": 1635060900,
             "speakers": [
               {
                 "speaker_id": 115,
@@ -2020,6 +2152,10 @@
                 "name": "數位轉型"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635058200,
+            "ended_at": 1635060900,
             "speakers": [
               {
                 "speaker_id": 121,
@@ -2070,6 +2206,10 @@
                 "name": "Web"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635058200,
+            "ended_at": 1635060900,
             "speakers": [
               {
                 "speaker_id": 141,
@@ -2135,6 +2275,10 @@
                 "name": "IoT"
               }
             ],
+            "sponsor_id": 0,
+            "sponsor": [],
+            "started_at": 1635061500,
+            "ended_at": 1635064200,
             "speakers": [
               {
                 "speaker_id": 120,

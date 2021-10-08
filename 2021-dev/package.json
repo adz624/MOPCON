@@ -28,6 +28,8 @@
     "nuxt-fontawesome": "^0.4.0",
     "sass": "^1.35.1",
     "sass-loader": "^10.0.0",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-social-sharing": "^3.0.8"
   },
   "devDependencies": {

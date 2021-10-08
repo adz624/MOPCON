@@ -9,7 +9,7 @@
             每一場 <br class="sm-show"> 都讓你收穫滿滿的議程規劃
           </h1>
           <p class="subTitle">
-            MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 7 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！
+            MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 10 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！
           </p>
           <div class="agenda-link">
             <a href="#" class="disabled">R1 連結</a>
@@ -154,7 +154,15 @@
             </h4>
             <p class="mb-8 mt-2" v-html="parseContent(session.expected_gain)" />
           </div>
-          <img v-if="false" :src="getSponsorInfo (session.sponsor_id)" alt="" class="sponsor-logo">
+          <div v-if="session.sponsor && session.sponsor.hasOwnProperty('logo_path')">
+            <h4 class="mb-1">
+              <span>\\</span>
+              贊助商
+            </h4>
+            <a :href="'/2021/sponsor/' + session.sponsor_id">
+              <img :src="session.sponsor.logo_path" alt="" class="sponsor-logo">
+            </a>
+          </div>
         </div>
         <div class="modalFooter">
           <a :href="`https://calendar.google.com/calendar/u/0/r/eventedit?text=MOPCON+2021+${session.topic}&dates=${$moment(session.started_at*1000).format('YYYYMMDDTHHmmss')}/${$moment(session.ended_at*1000).format('YYYYMMDDTHHmmss')}&trp=false&sf=true`" target="_blank" class="text-center py-3 mr-3">+ 加入行事曆</a>
@@ -251,6 +259,60 @@ export default {
       modalOpen: false,
       session: {},
       shareShow: false
+    }
+  },
+  head () {
+    return {
+      title: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.modalOpen ? this.session.summary : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.modalOpen ? this.session.summary : ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/schedule/${this.session.session_id}` : `${process.env.BASE_URL}/2021/schedule`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.modalOpen ? `${process.env.BASE_URL}/2021/${this.session.speakers[0].img.web}` : `${process.env.BASE_URL}/2021/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.modalOpen ? this.session.summary : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: this.modalOpen ? `${this.session.topic} | 主要議程 MOPCON 2021` : '主要議程 | MOPCON 2021'
+        }
+      ]
     }
   },
   computed: {
