@@ -63,7 +63,7 @@
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon1" />
             <h3>不限時提問</h3>
-            <p>預先錄製議程確保最佳品質<br>議程進行時講者將會即時與會眾互動</p>
+            <p>確保議程進行最佳品質 <br>講者將會於專屬互動區即時與會眾互動</p>
           </div>
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon2" />
@@ -73,7 +73,7 @@
           <div class="sopTwo-item">
             <div class="sopTwo-item-icon icon3" />
             <h3>絕不錯過議程</h3>
-            <p>自由規劃議程收看時刻表<br>專屬助理 Mo 孃將即時提醒你前往</p>
+            <p>自由規劃議程收看時刻表 <br> 加入日曆提醒你即時前往議程</p>
           </div>
         </div>
       </div>
@@ -88,11 +88,20 @@
             <div class="vol10-gray" />
             <div class="sopThree-content">
               <div class="sopThree-icon" />
-              <h2>期待Mo孃的大變身</h2>
+              <h2>MO 孃</h2>
               <div class="description">
-                <p>誕生於濁水溪以南的可愛女子，今年 8 歲了！</p>
-                <p>回顧每年的成長，深深覺得養成一個孩子真的不容易。</p>
-                <p>今年 Mo 孃將結合新科技，<br>以更「立體」的形式與大家見面囉！</p>
+                <p>
+                  MOPCON 的形象大使！過去總是以平面的形式默默陪伴大家。今年 8 歲的 MO 孃，個性變得更活潑，也學了許多才藝準備和大家分享。於是 ... MO 孃決定當起 Vtuber 來和大家互動啦！
+                </p>
+                <p>
+                  MO 孃為自己取了藝名：MOすめ_Mosume_高雄某素梅
+                  平常喜歡在 YouTube 直播和大家玩遊戲、唱唱歌，或是來場工程師的甘苦談。
+                </p>
+                <p>想與 MO 孃本人交流嗎？可別錯過今年與她相遇的機會囉！也請記得按讚訂閱 MO 孃唷</p>
+                <div class="btn-group">
+                  <a href="https://www.youtube.com/channel/UCFpr5TjvP6tFqccS_oTfWHw/about" target="_blank">Youtube</a>
+                  <a href="https://www.instagram.com/mopcon.tw/" target="_blank">Instagram</a>
+                </div>
               </div>
             </div>
           </div>
@@ -101,6 +110,15 @@
           </div>
         </div>
         <span>ＭＯ孃也很期待！</span>
+      </div>
+    </section>
+    <section class="container mb-13">
+      <div v-swiper="swiperOption" class="w-5/6 ml-auto relative" :loadtheme="false">
+        <div class="swiper-wrapper">
+          <div v-for="(data, index) in sponsorLogoList" :key="'sponsor_logo' + index" class="swiper-slide">
+            <img :src="data" alt="" class="img-fluid">
+          </div>
+        </div>
       </div>
     </section>
     <div class="line-gray" />
@@ -115,14 +133,68 @@
 </template>
 
 <script>
+import { directive } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 export default {
   name: 'Home',
+  directives: {
+    swiper: directive
+  },
+  async asyncData ({ $axios }) {
+    try {
+      let data = []
+      const res = await $axios.get(process.env.BASE_URL + '/2021/sponsor.json')
+      data = res.data
+
+      const config = {
+        sponsorList: data
+      }
+      return config
+    } catch (err) {}
+  },
   data () {
     return {
+      sponsorList: [],
+      swiperOption: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      },
       innerWidth: null
     }
   },
   computed: {
+    sponsorLogoList () {
+      const path = []
+      Object.values(this.sponsorList).forEach((item) => {
+        item.data.forEach((sp) => {
+          path.push(sp.logo_path)
+        })
+      })
+      return path
+    },
     isPad () {
       return this.innerWidth < 768
     }
@@ -151,6 +223,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.img-fluid {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
 section {
   h1 {
     font-weight: 600;
@@ -456,7 +533,7 @@ section {
   }
   &-item {
     @include flex(normal, column, center);
-    width: 340px;
+    width: 360px;
     margin-bottom: 100px;
     @include screen(xs) {
       width: 90%;
@@ -561,24 +638,23 @@ section {
         left: 12%;
         position: absolute;
         @include screen(pad) {
-          height: 70%;
-          top: 50px;
           left: 7%;
+          top: 1px;
         }
       }
       &:after {
         content: '';
         position: absolute;
-        background-image: url('../../assets/images/sop03-mo.png');
+        background-image: url('../../assets/images/home-mo.png');
         background-repeat: no-repeat;
+        background-size: contain;
         background-position: center;
-        width: 402px;
+        width: 80%;
         height: 738px;
-        right: calc((50% - 220px));
+        left: 20%;
         @include screen(pad) {
           right: calc((50% - 215px));
-          background-size: 65%;
-          height: 483px;
+          height: 430px;
         }
       }
     }
@@ -591,7 +667,21 @@ section {
       display: block;
     }
     @include screen(pad) {
-      bottom: 35px;
+      bottom: 10px;
+    }
+  }
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      display: inline-block;
+      background-color: $colorOrange;
+      padding: 7px 34px;
+      border-radius: 30rem;
+      margin-right: 16px;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

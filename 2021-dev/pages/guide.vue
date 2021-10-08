@@ -43,7 +43,7 @@
             <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
           </div>
           <div class="guide-content">
-            <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「MO 娘陪你看議程」活動！</p>
+            <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「Mo 孃專屬時段」!」</p>
             <div class="btn-group">
               <a href="#" class="guide-btn">
                 購買門票
@@ -71,7 +71,7 @@
             <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
           </div>
           <div class="guide-content">
-            <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「MO 娘陪你看議程」活動！</p>
+            <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「Mo 孃專屬時段」!」</p>
             <div class="btn-group">
               <a href="#" class="guide-btn">
                 如何使用 GatherTown
@@ -135,7 +135,18 @@
             <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
           </div>
           <div class="guide-content">
-            <p>大地遊戲的介紹文字</p>
+            <p>
+              Mosume 居然被綁架了？
+              臭蟲帝國覬覦 MO 國豐厚資產，居然聯合其他王國攻打 MO 國的城堡，
+              甚至把 Mosume 俘虜到了臭蟲帝國！
+              身為 MO 國護衛軍的你，能成功拯救心愛的 Mosume 嗎？
+            </p>
+            <ul class="pl-4">
+              <li>
+                遊戲過程中需搭配 MOPCON Gather Town 地圖，並至指定贊助商及社群攤位中獲取線索。
+              </li>
+              <li> 在完成遊戲的過程中會有小驚喜，如果能全部完成的話還能額外獲得抽獎資格哦！</li>
+            </ul>
             <div class="btn-group">
               <a href="#" class="guide-btn">
                 遊戲連結 <span class="material-icons icon">
