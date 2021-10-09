@@ -1617,8 +1617,12 @@
     "ended_at": 1635054300,
     "room": "R3",
     "floor": "",
-    "sponsor_id": 0,
-    "sponsor_info": [],
+    "sponsor_id": 71,
+    "sponsor_info": {
+      "logo_path": "assets/images/sponsors/71.png",
+      "name": "甲骨文公司台灣分公司 MySQL",
+      "name_e": "Oracle"
+    },
     "session_id": 2021036
   },
   {
