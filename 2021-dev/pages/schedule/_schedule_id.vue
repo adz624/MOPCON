@@ -128,7 +128,7 @@
             <div v-if="session.room" class="modal-summary-info mt-sm-2">
               <div class="bg-location mr-1" />
               <p class="m-0">
-                {{ session.room }}({{ session.floor }})
+                {{ session.room }}{{ session.floor ? `(${session.floor})` : '' }}
               </p>
             </div>
           </div>
