@@ -9,7 +9,7 @@
             每一場 <br class="sm-show"> 都讓你收穫滿滿的議程規劃
           </h1>
           <p class="subTitle">
-            MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 7 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！
+            MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 10 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！
           </p>
           <div class="agenda-link">
             <a href="#" class="disabled">R1 連結</a>
@@ -49,16 +49,21 @@
                 </p>
               </div>
               <div class="agenda-table-content">
-                <p v-if="agenda.event" class="agenda-table-event" :class="{'rest': agenda.event == '休息 Break'}">
+                <p v-if="agenda.event && agenda.event != 'none'" class="agenda-table-event" :class="{'rest': agenda.event == '休息 Break'}">
                   {{ agenda.event }}
                 </p>
                 <div v-else class="agenda-table-card">
-                  <h4 class="agenda-table-card-title">
-                    {{ agenda.room[0].topic }}
+                  <a target="_blank" v-if="agenda.room.link" :href="agenda.room.link">
+                    <h4  class="agenda-table-card-title">
+                      {{ agenda.room.topic }}
+                    </h4>
+                  </a>
+                  <h4 v-else class="agenda-table-card-title">
+                    {{ agenda.room.topic }}
                   </h4>
                   <div class="agenda-table-card-detail">
-                    <p>{{ agenda.room[0].speakers[0].name }}</p>
-                    <p>{{ agenda.room[0].floor }}</p>
+                    <p>{{ agenda.room.name }}</p>
+                    <p>{{ agenda.room.floor }}</p>
                   </div>
                 </div>
               </div>
