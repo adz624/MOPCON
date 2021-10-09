@@ -164,7 +164,7 @@
               <br class="hidden sm-show">
               {{ $moment(speaker.started_at * 1000).format('HH:mm') }}
               ~
-              {{ $moment(speaker.endeded_at * 1000).format('HH:mm') }}
+              {{ $moment(speaker.ended_at * 1000).format('HH:mm') }}
             </span>
           </div>
         </div>
