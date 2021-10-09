@@ -1784,7 +1784,7 @@
               }
             ],
             "sponsor_id": 71,
-            "sponsor_info": {
+            "sponsor": {
               "logo_path": "assets/images/sponsors/71.png",
               "name": "甲骨文公司台灣分公司 MySQL",
               "name_e": "Oracle"
