@@ -29,7 +29,7 @@
             3.匯聚知識、人流、投資，促進創新創業機會。
           </li>
           <li class="fz-5 fz-pad-6 mb-pad-10 fz-sm-5">
-            <span>為使目標達成，</span><br>MOPCON 志在打造出一座「高速資訊交流圈」！
+            MOPCON 志在打造出一座「高速資訊交流圈」！
           </li>
         </ul>
         <p class="text-center fz-5">

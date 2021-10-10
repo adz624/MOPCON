@@ -123,7 +123,7 @@
                 <div v-if="singleSpeaker[0].room" class="modal-summary-info mt-sm-2">
                   <div class="bg-location mr-1" />
                   <p class="m-0">
-                    {{ singleSpeaker[0].room }}({{ singleSpeaker[0].floor }})
+                    {{ singleSpeaker[0].room }}{{ singleSpeaker[0].floor ? `(${ singleSpeaker[0].floor })` : '' }}
                   </p>
                 </div>
               </div>
