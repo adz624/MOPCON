@@ -11,16 +11,16 @@
           </p>
         </div>
         <div class="btn-group">
-          <a href="#" class="guide-btn">
+          <a href="#" class="guide-btn" @click.prevent="scrollToId('see')">
             看議程
           </a>
-          <a href="#" class="guide-btn">
+          <a href="#" class="guide-btn" @click.prevent="scrollToId('visit')">
             逛攤位
           </a>
-          <a href="#" class="guide-btn">
+          <a href="#" class="guide-btn" @click.prevent="scrollToId('find')">
             找交流
           </a>
-          <a href="#" class="guide-btn">
+          <a href="#" class="guide-btn" @click.prevent="scrollToId('playgame')">
             玩遊戲
           </a>
         </div>
@@ -28,7 +28,7 @@
     </section>
     <div class="line-gray pad-hidden" />
     <!--標籤-->
-    <div class="container">
+    <div id="see" class="container">
       <div class="guide-area">
         <section class="sopOne">
           <div class="sopOne-content">
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="guide-area second">
+    <div id="visit" class="guide-area second">
       <div class="container">
         <section class="sopOne reverse">
           <div class="sopOne-content">
@@ -96,7 +96,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="guide-area">
+      <div id="find" class="guide-area">
         <section class="sopOne">
           <div class="sopOne-content">
             <div class="sopOne-icon3" />
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="guide-area last">
+      <div id="playgame" class="guide-area last">
         <section class="sopOne reverse">
           <div class="sopOne-content">
             <div class="sopOne-icon4" />
@@ -173,6 +173,10 @@ export default {
 
   },
   methods: {
+    scrollToId (id) {
+      const element = document.getElementById(id)
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 }
 </script>

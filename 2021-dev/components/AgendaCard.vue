@@ -17,11 +17,12 @@
         </li>
       </ul>
       <div class="agenda-card-detail">
-        <div class="agenda-card-speakers">
+        <div class="agenda-card-speakers" :class="{'morethan6': room.speakers && room.speakers.length > 5}">
           <div
             v-for="speaker in room.speakers"
             :key="speaker.speaker_id"
             class="agenda-card-speaker"
+            :class="{'morethan6': room.speakers && room.speakers.length > 5}"
           >
             <div class="speaker-img-list position-relative">
               <div class="speaker-img-wrap">
@@ -117,6 +118,11 @@ export default {
   &-speakers {
     display: flex;
     flex-direction: column;
+    &.morethan6 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 650px;
+    }
   }
   &-speaker {
     &:not(:first-child) {
@@ -124,6 +130,12 @@ export default {
     }
     display: flex;
     align-items: center;
+    &.morethan6 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      min-width: 200px;
+    }
+
     &-name {
       margin-top: 0px;
       margin-left: 16px;
