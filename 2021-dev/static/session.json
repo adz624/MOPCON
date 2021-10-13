@@ -1129,64 +1129,9 @@
       {
         "started_at": 1634978400,
         "isBroadCast": false,
-        "ended_at": 1634981100,
-        "event": "",
-        "room": [
-          {
-            "session_id": 2021022,
-            "room": "R1",
-            "topic": "Coming Soon",
-            "topic_e": "",
-            "summary": "",
-            "summary_e": "",
-            "is_keynote": "",
-            "is_online": "",
-            "recordable": "",
-            "level": "",
-            "target": "",
-            "prior_knowledge": "",
-            "expected_gain": "",
-            "tags": "",
-            "started_at": 1634978400,
-            "ended_at": 1634981100
-          },
-          {
-            "session_id": 2021023,
-            "room": "R2",
-            "topic": "Coming Soon",
-            "topic_e": "",
-            "summary": "",
-            "summary_e": "",
-            "is_keynote": "",
-            "is_online": "",
-            "recordable": "",
-            "level": "",
-            "target": "",
-            "prior_knowledge": "",
-            "expected_gain": "",
-            "tags": "",
-            "started_at": 1634978400,
-            "ended_at": 1634981100
-          },
-          {
-            "session_id": 2021024,
-            "room": "R3",
-            "topic": "Coming Soon",
-            "topic_e": "",
-            "summary": "",
-            "summary_e": "",
-            "is_keynote": "",
-            "is_online": "",
-            "recordable": "",
-            "level": "",
-            "target": "",
-            "prior_knowledge": "",
-            "expected_gain": "",
-            "tags": "",
-            "started_at": 1634978400,
-            "ended_at": 1634981100
-          }
-        ]
+        "ended_at": 1634979600,
+        "event": "BOF",
+        "room": []
       },
       {
         "started_at": 0,

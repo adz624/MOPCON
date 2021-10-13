@@ -12,6 +12,12 @@
         "sponsor_id": 74
     },
     {
+        "logo_path": "assets/images/sponsors/81.png",
+        "name": "DAKUO 高雄市數位內容創意中心",
+        "name_e": "Digital Art Kaohsiung United Office",
+        "sponsor_id": 81
+    },
+    {
         "logo_path": "assets/images/sponsors/66.png",
         "name": "銘圃資訊",
         "name_e": "MingPu Computer co., Ltd.",
@@ -54,10 +60,16 @@
         "sponsor_id": 79
     },
     {
-        "logo_path": "assets/images/sponsors/68.png",
-        "name": "HackMD",
-        "name_e": "HackMD",
-        "sponsor_id": 68
+        "logo_path": "assets/images/sponsors/84.png",
+        "name": "商業思維學院",
+        "name_e": "Bizthinking Academy",
+        "sponsor_id": 84
+    },
+    {
+        "logo_path": "assets/images/sponsors/85.png",
+        "name": "光速火箭股份有限公司",
+        "name_e": "SPEEDING ROCKET CO., LTD.",
+        "sponsor_id": 85
     },
     {
         "logo_path": "assets/images/sponsors/78.png",
@@ -66,22 +78,22 @@
         "sponsor_id": 78
     },
     {
-        "logo_path": "assets/images/sponsors/82.png",
-        "name": "Gather Town",
-        "name_e": "Gather Town",
-        "sponsor_id": 82
-    },
-    {
         "logo_path": "assets/images/sponsors/83.png",
         "name": "KO-IN 智高點",
         "name_e": "KO-IN 智高點",
         "sponsor_id": 83
     },
     {
-        "logo_path": "assets/images/sponsors/84.png",
-        "name": "商業思維學院",
-        "name_e": "Bizthinking Academy",
-        "sponsor_id": 84
+        "logo_path": "assets/images/sponsors/82.png",
+        "name": "Gather Town",
+        "name_e": "Gather Town",
+        "sponsor_id": 82
+    },
+    {
+        "logo_path": "assets/images/sponsors/68.png",
+        "name": "HackMD",
+        "name_e": "HackMD",
+        "sponsor_id": 68
     },
     {
         "logo_path": "assets/images/sponsors/86.png",
