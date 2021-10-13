@@ -25,6 +25,13 @@
       "web": "#651fff",
       "mobile": "#ffcc00"
     },
+    "name": "Panel"
+  },
+  {
+    "color": {
+      "web": "#651fff",
+      "mobile": "#ffcc00"
+    },
     "name": "Startup"
   },
   {
