@@ -1127,17 +1127,10 @@
         "room": []
       },
       {
-        "started_at": 1634978400,
-        "isBroadCast": false,
-        "ended_at": 1634979600,
-        "event": "BOF",
-        "room": []
-      },
-      {
         "started_at": 0,
         "isBroadCast": false,
         "ended_at": 0,
-        "event": "END",
+        "event": "BOF",
         "room": []
       }
     ]
@@ -1164,7 +1157,7 @@
             "level": "Basic",
             "target": "已加入或未來想進入資訊相關領域的人",
             "prior_knowledge": "無",
-            "expected_gain": "無",
+            "expected_gain": "給予會眾學習上的想法及啟發",
             "tags": [
               {
                 "color": {
