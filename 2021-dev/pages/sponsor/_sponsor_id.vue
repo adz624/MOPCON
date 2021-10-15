@@ -126,6 +126,9 @@
             <button v-if="sponsorData.facebook_url" class="btn btn-tiny" @click="openWindow(sponsorData.facebook_url)">
               Facebook
             </button>
+            <button v-if="sponsorData.youtube_url" class="btn btn-tiny" @click="openWindow(sponsorData.youtube_url)">
+              Youtube
+            </button>
           </div>
         </div>
       </div>
