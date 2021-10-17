@@ -184,6 +184,15 @@ export default {
           subIsOpen: false,
           open: '',
           target: ''
+        },
+        {
+          name: '共筆連結',
+          class: '',
+          url: 'https://hackmd.io/@mopcon/2021/',
+          subNav: [],
+          subIsOpen: false,
+          open: '',
+          target: '_blank'
         }
       ]
     }
@@ -468,7 +477,7 @@ export default {
       font-size: 1.25rem;
       font-weight: 600;
       line-height: 1.7rem;
-      margin-left: 32px;
+      margin-left: 24px;
       cursor: pointer;
       @include screen(lg) {
         margin-left: 14px;
