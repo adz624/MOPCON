@@ -164,6 +164,7 @@
               <p>帆布手提後背包</p>
             </div>
           </div>
+          <a href="https://shop.mopcon.org/" target="_blank" class="buy-button">購買連結</a>
         </div>
       </div>
     </section>
@@ -469,12 +470,15 @@ export default {
   }
 }
 .lock {
-  padding: 80px 0px 20px 0px;
+  padding: 80px 80px 80px 80px;
   background-color: #F7F4F5;
   border-radius: 10px;
   width: 100%;
   margin-top: 55px;
   @include flex(normal, column, center);
+  @include screen(pad) {
+    padding: 80px 40px;
+  }
   &-title {
     color: rgba(0, 0, 0, 0.87);
     font-weight: 600;
@@ -492,12 +496,8 @@ export default {
   }
 }
 .souvenir {
-  padding: 0px 80px;
   display: flex;
   flex-wrap: wrap;
-  @include screen(pad) {
-    padding: 0px 40px;
-  }
   &_img {
     width: 28%;
     margin-right: 5%;
@@ -521,6 +521,22 @@ export default {
       margin-top: 0px;
       font-size: 24px;
     }
+  }
+}
+.buy-button {
+  padding: 18px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: $colorOrange;
+  border: 2px solid $colorOrange;
+  color: $colorBlack;
+  &:hover {
+    opacity: 0.7;
   }
 }
 </style>
