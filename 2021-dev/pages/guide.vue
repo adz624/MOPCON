@@ -7,7 +7,7 @@
             大會指南
           </h1>
           <p class="subTitle">
-            武漢肺炎肆虐全球，今年為了大家的安全，首次 MOPCON 改為線上大會的方式，但不要擔心！在科技的幫助下我們與你在線上相見沒有距離。
+            COVID-19 肆虐全球，今年為了大家的安全，首次 MOPCON 改為線上大會的方式，但不要擔心！在科技的幫助下我們與你在線上相見沒有距離。
           </p>
         </div>
         <div class="btn-group">
@@ -22,6 +22,9 @@
           </a>
           <a href="#" class="guide-btn" @click.prevent="scrollToId('playgame')">
             玩遊戲
+          </a>
+          <a href="https://hackmd.io/@mopcon/2021-readme" target="_blank" class="guide-btn">
+            行前通知信
           </a>
         </div>
       </div>
@@ -40,15 +43,15 @@
         </section>
         <div class="guide-card">
           <div class="guide-img">
-            <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
+            <img src="../assets/images/guide/session.png" alt="">
           </div>
           <div class="guide-content">
             <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「Mo 孃專屬時段」!」</p>
             <div class="btn-group">
-              <a href="#" class="guide-btn">
+              <a href="https://lihipro.com/mopcon2021/webcta" class="guide-btn">
                 購買門票
               </a>
-              <a href="#" class="guide-btn">
+              <a href="https://mopcon.org/2021/schedule" class="guide-btn">
                 議程清單
               </a>
             </div>
@@ -68,12 +71,12 @@
         </section>
         <div class="guide-card reverse">
           <div class="guide-img">
-            <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
+            <img src="../assets/images/guide/vendor.png" alt="">
           </div>
           <div class="guide-content">
-            <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「Mo 孃專屬時段」!」</p>
+            <p>您可以在 Gather 太空艙地圖與社群、商業攤位交流，並且可以在 Gather 海灘地圖舉辦或參加 BoF 活動。<br>MOPCON 2021 的線上虛擬會場將對所有人開放一起來參與，無論是否有票，都歡迎您邀請好朋友一起在大會兩天上來見面!</p>
             <div class="btn-group">
-              <a href="#" class="guide-btn">
+              <a href="https://hackmd.io/TTUJtFZCRwqWSlGZtypHzw" class="guide-btn">
                 如何使用 GatherTown
               </a>
             </div>
@@ -84,14 +87,11 @@
         選擇場地
       </h3>
       <div class="guide-place">
-        <a href="#">
-          <img src="../assets/images/guide/World_01.png" alt="">
+        <a href="https://gather.town/app/mWrzPVJE1RkrlWtz/Main-MOPCON-2021">
+          <img src="../assets/images/guide/gather_space.png" alt="太空艙 - 主會場">
         </a>
-        <a href="#">
-          <img src="../assets/images/guide/World_02.png" alt="">
-        </a>
-        <a href="#">
-          <img src="../assets/images/guide/World_03.png" alt="">
+        <a href="https://gather.town/app/YXEITGTyHFKAOgxF/mopcon21-act">
+          <img src="../assets/images/guide/gather_beach.png" alt="海灘 - BoF">
         </a>
       </div>
     </div>
@@ -107,13 +107,18 @@
         </section>
         <div class="guide-card">
           <div class="guide-img">
-            <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
+            <img src="../assets/images/guide/discord.png" alt="">
           </div>
           <div class="guide-content">
-            <p>依議程聽分為不同頻道，您可以在這裡與他人一起分享、聊聊自己今天的收穫，有任何疑問服務台也能及時幫您解決</p>
+            <p>您可以在 Discord 會場與講師進行 QA，同時也邀請您在 Discord 與其他觀看議程的會眾即時交流討論!<br>我們也將在 Discord 設立一個服務台，若您有票務相關事宜，歡迎您到 Discord 尋找工作人員協助。</p>
             <div class="btn-group">
-              <a href="#" class="guide-btn">
+              <a href="https://discord.gg/6ykDqsmBVt" class="guide-btn long-text">
                 Discord 連結 <span class="material-icons icon">
+                  open_in_new
+                </span>
+              </a>
+              <a href="https://hackmd.io/k3PSDZstTymscvBegmIiwg" class="guide-btn long-text">
+                如何使用 Discord <span class="material-icons icon">
                   open_in_new
                 </span>
               </a>
@@ -132,7 +137,7 @@
         </section>
         <div class="guide-card reverse">
           <div class="guide-img">
-            <img src="../assets/images/guide/thumbnail_youtube.png" alt="">
+            <img src="../assets/images/guide/game.png" alt="">
           </div>
           <div class="guide-content">
             <p>
@@ -148,7 +153,7 @@
               <li> 在完成遊戲的過程中會有小驚喜，如果能全部完成的話還能額外獲得抽獎資格哦！</li>
             </ul>
             <div class="btn-group">
-              <a href="#" class="guide-btn">
+              <a href="https://game.mopcon.org/" class="guide-btn" target="_blank">
                 遊戲連結 <span class="material-icons icon">
                   open_in_new
                 </span>
@@ -401,6 +406,15 @@ export default {
       margin-left: 4px;
       vertical-align: middle;
     }
+    &.long-text {
+      padding: 16px 36px;
+      @include screen(lg) {
+        padding: 16px 24px;
+      }
+      @include screen(md) {
+        padding: 16px 40px;
+      }
+    }
   }
 }
 
@@ -478,6 +492,10 @@ export default {
     display: block;
     margin: 0px 16px;
     img {
+      @include screen(md) {
+        width: 240px;
+        height: 240px;
+      }
       @include screen(pad) {
         width: 200px;
         height: 200px;

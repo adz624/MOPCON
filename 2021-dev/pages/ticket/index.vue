@@ -138,10 +138,33 @@
           紀念品
         </h2>
         <div class="lock">
-          <div class="lock-icon" />
-          <p class="lock-title">
-            { 內容預備解鎖... }
-          </p>
+          <div class="souvenir">
+            <div class="souvenir_img">
+              <img src="../../assets/images/ticket/souvenir/shirt.png" alt="">
+              <p>平行時空紀念 T</p>
+            </div>
+            <div class="souvenir_img">
+              <img src="../../assets/images/ticket/souvenir/table_mat.png" alt="">
+              <p>Mo 孃陪伴大鼠墊</p>
+            </div>
+            <div class="souvenir_img">
+              <img src="../../assets/images/ticket/souvenir/note_bag.png" alt="">
+              <p>星辰黑筆電包</p>
+            </div>
+            <div class="souvenir_img">
+              <img src="../../assets/images/ticket/souvenir/stickerpng.png" alt="">
+              <p>高雄某素梅貼圖</p>
+            </div>
+            <div class="souvenir_img">
+              <img src="../../assets/images/ticket/souvenir/raincoat.png" alt="">
+              <p>貓坑日系斗篷雨衣</p>
+            </div>
+            <div class="souvenir_img">
+              <img src="../../assets/images/ticket/souvenir/bag.png" alt="">
+              <p>帆布手提後背包</p>
+            </div>
+          </div>
+          <a href="https://shop.mopcon.org/" target="_blank" class="buy-button">購買連結</a>
         </div>
       </div>
     </section>
@@ -447,12 +470,15 @@ export default {
   }
 }
 .lock {
-  padding: 120px 0px;
+  padding: 80px 80px 80px 80px;
   background-color: #F7F4F5;
   border-radius: 10px;
   width: 100%;
   margin-top: 55px;
   @include flex(normal, column, center);
+  @include screen(pad) {
+    padding: 80px 40px;
+  }
   &-title {
     color: rgba(0, 0, 0, 0.87);
     font-weight: 600;
@@ -467,6 +493,50 @@ export default {
     background-image: url('../../assets/images/lock.svg');
     width: 92px;
     height: 92px;
+  }
+}
+.souvenir {
+  display: flex;
+  flex-wrap: wrap;
+  &_img {
+    width: 28%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    @include screen(pad) {
+      width: 47%;
+      &:nth-child(even) {
+        margin-right: 0%;
+      }
+    }
+    @include screen(sm) {
+      width: 100%;
+      margin-right: 0%;
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    p {
+      text-align: center;
+      margin-top: 0px;
+      font-size: 24px;
+    }
+  }
+}
+.buy-button {
+  padding: 18px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: $colorOrange;
+  border: 2px solid $colorOrange;
+  color: $colorBlack;
+  &:hover {
+    opacity: 0.7;
   }
 }
 </style>
