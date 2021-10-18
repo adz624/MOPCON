@@ -23,6 +23,9 @@
           <a href="#" class="guide-btn" @click.prevent="scrollToId('playgame')">
             玩遊戲
           </a>
+          <a href="https://hackmd.io/@mopcon/2021-readme" target="_blank" class="guide-btn">
+            行前通知信
+          </a>
         </div>
       </div>
     </section>
