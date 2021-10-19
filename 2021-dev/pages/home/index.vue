@@ -674,7 +674,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     a {
-      display: inline-block;
+      display: inline;
       background-color: $colorOrange;
       padding: 7px 34px;
       border-radius: 30rem;
