@@ -48,9 +48,9 @@
           <div class="guide-content">
             <p>今年會透過 Youtube 平台做各軌議程轉播，和親臨現場一樣及時和會眾一起聽大神分享，大會結束後也支援回放，不怕錯過任何議程。哦對了！敬請期待「Mo 孃專屬時段」!」</p>
             <div class="btn-group">
-              <a href="https://lihipro.com/mopcon2021/webcta" class="guide-btn">
+              <!-- <a href="https://lihipro.com/mopcon2021/webcta" class="guide-btn">
                 購買門票
-              </a>
+              </a> -->
               <a href="https://mopcon.org/2021/schedule" class="guide-btn">
                 議程清單
               </a>
