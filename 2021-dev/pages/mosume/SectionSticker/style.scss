@@ -24,6 +24,10 @@
   overflow: hidden;
   @include flex(center, row, center);
 }
+.stickerTextContainer a span {
+  border-bottom: 1px solid $colorBlack;
+}
+
 .stickergroup {
   @include flex(center, column, space-between);
   overflow: hidden;

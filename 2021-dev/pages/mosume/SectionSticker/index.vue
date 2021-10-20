@@ -8,6 +8,8 @@
         <p class="mb-sm-6">
           請支援輸贏！官方 Line 貼圖即將上市！讓 Mosume 成為你每日嘴砲的得力助手吧！
         </p>
+
+        <a href="https://store.line.me/stickershop/product/17127073"><span>前往貼圖小舖 >></span></a>
       </div>
       <div class="stickerImgContainer">
         <div class="stickergroup">
