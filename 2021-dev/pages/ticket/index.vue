@@ -84,8 +84,8 @@
                   <div class="ticket-card">
                     <h4>一般會眾票</h4>
                     <p>- 2日議程</p>
-                    <a href="https://lihipro.com/mopcon2021/webcta" target="_blank" class="ticket-card-button active">
-                      前往購票
+                    <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
+                      已售完
                     </a>
                   </div>
                 </div>
@@ -109,8 +109,8 @@
                     <h4>VIP</h4>
                     <p>- 2日議程</p>
                     <p>- 紀念 T</p>
-                    <a href="https://lihipro.com/mopcon2021/webcta" target="_blank" class="ticket-card-button active">
-                      前往購票
+                    <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
+                      已完售
                     </a>
                   </div>
                   <div class="ticket-card">
@@ -118,8 +118,8 @@
                     <p>- 2日議程</p>
                     <p>- 紀念 T</p>
                     <p>- 獨家紀念品</p>
-                    <a href="https://lihipro.com/mopcon2021/webcta" target="_blank" class="ticket-card-button active">
-                      前往購票
+                    <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
+                      已完售
                     </a>
                   </div>
                 </div>

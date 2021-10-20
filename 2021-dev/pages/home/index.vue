@@ -18,10 +18,10 @@
             </button>
           </div>
           <div class="collect-area">
-            <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
+            <!-- <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
               <p>{ 一般票 }</p>
               <p>開賣</p>
-            </div>
+            </div> -->
             <div class="growing">
               <p>我們10歲囉</p>
               <span>_Growing With You</span>
@@ -122,14 +122,14 @@
         </div>
       </div>
     </section>
-    <div class="line-gray" />
+    <!-- <div class="line-gray" />
     <section class="home-bg-lock">
       <div class="lock container">
         <div class="lock-icon" />
         <h1>{ 內容預備解鎖... }</h1>
         <div class="vol10-org" />
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -577,7 +577,7 @@ section {
   }
   &-main {
     @include flex;
-    width: 45%;
+    width: 48%;
     @include screen(pad) {
       width: 100%;
     }
@@ -674,12 +674,19 @@ section {
   .btn-group {
     display: flex;
     flex-wrap: wrap;
+    @include screen(pad) {
+      flex-direction: column;
+      text-align: center;
+    }
     a {
       display: inline;
       background-color: $colorOrange;
       padding: 7px 23px;
       border-radius: 30rem;
-      margin-right: 16px;
+      margin-right: 12px;
+      @include screen(pad) {
+        margin-bottom: 8px;
+      }
       &:hover {
         opacity: 0.8;
       }
