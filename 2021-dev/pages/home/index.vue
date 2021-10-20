@@ -18,10 +18,10 @@
             </button>
           </div>
           <div class="collect-area">
-            <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
+            <!-- <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
               <p>{ 一般票 }</p>
               <p>開賣</p>
-            </div>
+            </div> -->
             <div class="growing">
               <p>我們10歲囉</p>
               <span>_Growing With You</span>
@@ -122,14 +122,14 @@
         </div>
       </div>
     </section>
-    <div class="line-gray" />
+    <!-- <div class="line-gray" />
     <section class="home-bg-lock">
       <div class="lock container">
         <div class="lock-icon" />
         <h1>{ 內容預備解鎖... }</h1>
         <div class="vol10-org" />
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 

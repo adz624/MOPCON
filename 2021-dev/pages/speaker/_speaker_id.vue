@@ -165,10 +165,10 @@
             </div>
             <div class="modalFooter">
               <!-- <a v-if="singleSpeaker[0].link_slide.length !== 0" :href="singleSpeaker[0].link_slide" target="_blank" class="text-center py-3 mr-3">簡報連結</a> -->
-              <a href="https://lihipro.com/mopcon2021/speaker" target="_blank" class="text-center py-3 mr-3">
+              <!-- <a href="https://lihipro.com/mopcon2021/speaker" target="_blank" class="text-center py-3 mr-3">
                 <i class="material-icons mr-2" style="transform: rotate(-45deg); vertical-align: middle">
                   local_activity
-                </i>前往買票</a>
+                </i>前往買票</a> -->
               <div class="community-share-outline py-3" @click.prevent="shareShow=!shareShow">
                 <div class="bg-share mr-2" />
                 <p class="my-0">
