@@ -101,6 +101,7 @@
                 <div class="btn-group">
                   <a href="https://www.youtube.com/channel/UCFpr5TjvP6tFqccS_oTfWHw/about" target="_blank">Youtube</a>
                   <a href="https://www.instagram.com/mopcon.tw/" target="_blank">Instagram</a>
+                  <a href="/2021/mosume" target="_blank">MO 孃介紹</a>
                 </div>
               </div>
             </div>
@@ -676,7 +677,7 @@ section {
     a {
       display: inline;
       background-color: $colorOrange;
-      padding: 7px 34px;
+      padding: 7px 23px;
       border-radius: 30rem;
       margin-right: 16px;
       &:hover {
