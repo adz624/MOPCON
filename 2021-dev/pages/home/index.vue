@@ -18,10 +18,9 @@
             </button>
           </div>
           <div class="collect-area">
-            <!-- <div class="btn-circle" @click="openWindow('https://lihipro.com/mopcon2021/webcta')">
-              <p>{ 一般票 }</p>
-              <p>開賣</p>
-            </div> -->
+            <div class="btn-circle" @click="openWindow('https://game.mopcon.org/')">
+              <p>{ 大地遊戲 }</p>
+            </div>
             <div class="growing">
               <p>我們10歲囉</p>
               <span>_Growing With You</span>
