@@ -96,7 +96,7 @@
                   <h4>學生票 / FREE</h4>
                   <p>- 2日議程</p>
                   <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
-                    已完售
+                    已售完
                   </a>
                 </div>
               </div>
@@ -110,7 +110,7 @@
                     <p>- 2日議程</p>
                     <p>- 紀念 T</p>
                     <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
-                      已完售
+                      已售完
                     </a>
                   </div>
                   <div class="ticket-card">
@@ -119,7 +119,7 @@
                     <p>- 紀念 T</p>
                     <p>- 獨家紀念品</p>
                     <a href="#" target="_blank" class="ticket-card-button over" @click.prevent="">
-                      已完售
+                      已售完
                     </a>
                   </div>
                 </div>
