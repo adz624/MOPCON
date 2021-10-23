@@ -76,7 +76,7 @@
           <div class="guide-content">
             <p>您可以在 Gather 太空艙地圖與社群、商業攤位交流，並且可以在 Gather 海灘地圖舉辦或參加 BoF 活動。<br>MOPCON 2021 的線上虛擬會場將對所有人開放一起來參與，無論是否有票，都歡迎您邀請好朋友一起在大會兩天上來見面!</p>
             <div class="btn-group">
-              <a href="https://hackmd.io/TTUJtFZCRwqWSlGZtypHzw" class="guide-btn">
+              <a target="_blank" href="https://hackmd.io/TTUJtFZCRwqWSlGZtypHzw" class="guide-btn">
                 如何使用 GatherTown
               </a>
             </div>
@@ -87,10 +87,10 @@
         選擇場地
       </h3>
       <div class="guide-place">
-        <a href="https://gather.town/app/mWrzPVJE1RkrlWtz/Main-MOPCON-2021">
+        <a target="_blank" href="https://gather.town/app/mWrzPVJE1RkrlWtz/Main-MOPCON-2021">
           <img src="../assets/images/guide/gather_space.png" alt="太空艙 - 主會場">
         </a>
-        <a href="https://gather.town/app/YXEITGTyHFKAOgxF/mopcon21-act">
+        <a target="_blank" href="https://gather.town/app/YXEITGTyHFKAOgxF/mopcon21-act">
           <img src="../assets/images/guide/gather_beach.png" alt="海灘 - BoF">
         </a>
       </div>
@@ -112,12 +112,12 @@
           <div class="guide-content">
             <p>您可以在 Discord 會場與講師進行 QA，同時也邀請您在 Discord 與其他觀看議程的會眾即時交流討論!<br>我們也將在 Discord 設立一個服務台，若您有票務相關事宜，歡迎您到 Discord 尋找工作人員協助。</p>
             <div class="btn-group">
-              <a href="https://discord.gg/6ykDqsmBVt" class="guide-btn long-text">
+              <a target="_blank" href="https://discord.gg/6ykDqsmBVt" class="guide-btn long-text">
                 Discord 連結 <span class="material-icons icon">
                   open_in_new
                 </span>
               </a>
-              <a href="https://hackmd.io/k3PSDZstTymscvBegmIiwg" class="guide-btn long-text">
+              <a target="_blank" href="https://discord.gg/hackmd.io/k3PSDZstTymscvBegmIiwg" class="guide-btn long-text">
                 如何使用 Discord <span class="material-icons icon">
                   open_in_new
                 </span>
