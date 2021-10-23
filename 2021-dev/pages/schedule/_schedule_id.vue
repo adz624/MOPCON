@@ -12,10 +12,10 @@
             MOPCON 目前已是南台灣最大技術社群研討會，成立宗旨為連結產業與資訊工程技術，以培養更多資訊科技人才，推動高雄產業創新發展，而沒有夥伴們的支持，這個願景就不可能成真！謝謝這 10 年來每一位夥伴的加入，和我們一起凝聚南臺灣的人才和知識，共同成長、學習！
           </p>
           <div class="agenda-link">
-            <a href="https://www.youtube.com/watch?v=zRkNelfmQbU&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=1">R1 連結</a>
-            <a href="https://www.youtube.com/watch?v=kINJhSmiiXA&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=2">R2 連結</a>
-            <a href="https://www.youtube.com/watch?v=yVP4x6LFcO0&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=3">R3 連結</a>
-            <a href="https://www.youtube.com/watch?v=IgDIbx0FY8s&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=5">Unconf 連結</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=zRkNelfmQbU&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=1">R1 連結</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=kINJhSmiiXA&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=2">R2 連結</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=yVP4x6LFcO0&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=3">R3 連結</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=IgDIbx0FY8s&list=PL0ny0trU2gnBthRYKJ5s7YGXiqWZpkktF&index=5">Unconf 連結</a>
           </div>
         </div>
       </div>
