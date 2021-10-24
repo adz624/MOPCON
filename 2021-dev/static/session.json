@@ -1669,7 +1669,7 @@
           {
             "session_id": 2021034,
             "room": "R1",
-            "topic": "報稅手機版的 UX 優化與 JBTD 的用法實踐。",
+            "topic": "報稅手機版的 UX 優化與 JTBD 的用法實踐。",
             "topic_e": "",
             "summary": "JTBD (Jobs to be done) 創新的用途理論不是一故事書，是可以實際運用在軟體開發上而且十分好用的方法，裡面的 Jobs Story 在 UX/UI 的做法上可以比 User Story 發現更多細節。演講中會以今年實際上線的報稅手機版為案例，說明如何運用 Jobs Story 做易用性測試。",
             "summary_e": "",
