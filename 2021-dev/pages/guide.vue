@@ -152,13 +152,6 @@
               </li>
               <li> 在完成遊戲的過程中會有小驚喜，如果能全部完成的話還能額外獲得抽獎資格哦！</li>
             </ul>
-            <div class="btn-group">
-              <a href="https://game.mopcon.org/" class="guide-btn" target="_blank">
-                遊戲連結 <span class="material-icons icon">
-                  open_in_new
-                </span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -503,4 +496,5 @@ export default {
     }
   }
 }
+
 </style>
