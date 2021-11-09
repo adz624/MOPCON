@@ -2028,7 +2028,7 @@
     "link_github": "",
     "link_twitter": "",
     "link_other": "https://www.linkedin.com/in/circlelychen/",
-    "link_slide": "https://speakerdeck.com/circlelychen/",
+    "link_slide": "https://speakerdeck.com/circlelychen/yun-yong-fei-jian-du-shi-xue-xi-ji-fa-da-zao-feng-xian-jing-shi-xi-tong-yi-guo-ji-mao-yi-zuo-ye-chang-jing-wei-li",
     "topic": "運用非監督式學習技法打造風險警示系統：以國際貿易作業場景為例",
     "topic_e": "",
     "summary": "建構風險警示機制去降低作業風險一直是金融機構營運的關鍵議題，所謂的作業風險是指因內部作業及人員之失誤，所造成損失之風險。本演講以國貿作業為場景，分享如何以數據科技打造低成本且高解釋性的風險警示系統。我們以國貿業務中頻繁往來的文本內容為資料，搭配自然語言處理與基於無監督式學習的異常檢測演算法，辨識出潛藏著風險事件的往來訊息，協助作業單位在不擴增胃納量的前提下，實現強化作業效能的願景。",
