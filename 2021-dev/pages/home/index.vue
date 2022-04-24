@@ -1,5 +1,29 @@
 <template>
   <div>
+    <Modal
+      :modal-open="modalOpen"
+      @modal-close="closeModal(false)"
+    >
+      <div class="modal-body">
+        <div class="logo-w">
+          <LogoW />
+        </div>
+        <h2 class="text-center">
+          2022 年度<span>官網籌備中</span>
+        </h2>
+        <div class="mosume mt-5" />
+        <h3 class="mt-5 text-center">
+          2022/10/15-16
+        </h3>
+        <h4 class="mt-2 text-center">
+          // 高雄國際會議中心與你見面
+        </h4>
+        <div class="btnGroup mt-8">
+          <a href="https://www.facebook.com/mopcon" target="_blank" class="mr-6 mr-sm-0">最新消息</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDzT1iBQc3Jwes9PWm9S8EUiht9rf3Zu4aJfri58PhNPU16w/viewform" class="mt-sm-4" target="_blank">志工招募</a>
+        </div>
+      </div>
+    </Modal>
     <section class="home-bg">
       <div class="main container">
         <div class="vol10-gray" />
@@ -132,10 +156,17 @@
 <script>
 import { directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+import Modal from '../../components/Modal'
+import LogoW from '../../assets/images/logo-w.svg?inline'
+
 export default {
   name: 'Home',
   directives: {
     swiper: directive
+  },
+  components: {
+    Modal,
+    LogoW
   },
   async asyncData ({ $axios }) {
     try {
@@ -179,7 +210,8 @@ export default {
           }
         }
       },
-      innerWidth: null
+      innerWidth: null,
+      modalOpen: true
     }
   },
   computed: {
@@ -214,8 +246,12 @@ export default {
     },
     openWindow (url) {
       window.open(url)
+    },
+    closeModal (show) {
+      this.modalOpen = show
     }
   }
+
 }
 </script>
 
@@ -699,6 +735,90 @@ section {
     background-image: url('../../assets/images/lock.svg');
     width: 92px;
     height: 92px;
+  }
+}
+
+// 2020 AD
+.modal-body{
+  position: relative;
+  .logo-w{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    path{
+      fill: $colorPrimary;
+    }
+  }
+  h2{
+    @include font(40px,#000000,600);
+    @include screen(sm){
+      font-size: 24px;
+    }
+    span{
+      @include font(40px,#000000,600);
+      position: relative;
+      z-index: 5;
+      @include screen(sm){
+        font-size: 24px;
+      }
+      &::after{
+        content:"";
+        width: 100%;
+        height:8px;
+        background-color:$colorOrange;
+        position: absolute;
+        bottom:2px;
+        right:0;
+        border-radius: 4px;
+        z-index: -1;
+      }
+    }
+  }
+  .mosume{
+    height: 326px;
+    width: 300px;
+    margin: 0 auto;
+    background-image: url('../../assets/images/MosumeCircle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  h3{
+    @include font(24px,$colorOrange,700)
+  }
+  h4{
+    @include font(16px,#0D1336,400)
+  }
+  .btnGroup{
+    @include flex (center,row,center);
+    margin-bottom: 64px;
+    @include screen(sm){
+      flex-direction: column;
+    }
+    a{
+      display: block;
+      padding: 16px 56px;
+      border-radius:32px;
+      transition: all .3s;
+      font-size: 20px;
+      font-weight: 500;
+      &:first-child{
+        color:$colorOrange;
+        border:1px solid $colorOrange;
+        &:hover{
+          color:white;
+          background-color: $colorOrange;
+        }
+      }
+      &:last-child{
+        color:white;
+        background-color: $colorOrange;
+        border:1px solid transparent;
+        &:hover{
+          background-color: $colorOrangeLight;
+          border-color:$colorOrange;
+        }
+      }
+    }
   }
 }
 </style>
