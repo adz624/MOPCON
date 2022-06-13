@@ -13,8 +13,9 @@ class BaseNewsController extends Controller
     private $columns = ['id', 'date', 'title', 'description', 'link'];
     public function __construct()
     {
-        $url = "https://spreadsheets.google.com/feeds/list/" . env($this->year . '_SHEET_KEY') . "/" . env($this->year . '_NEWS_ID') . "/public/values?alt=json";
-        $this->rawMap = $this->mapSheetData(json_decode($this->getSheetData($url), true));
+        $url = "https://sheets.googleapis.com/v4/spreadsheets/" . env($this->year . '_NEWS_ID') . "/values/sheet1?alt=json&key=" . env($this->year . '_SHEET_KEY');
+        // $this->rawMap = $this->mapSheetData(json_decode($this->getSheetData($url), true));
+        $this->rawMap = json_decode($this->getSheetData($url), true)['values'];
     }
     /**
      * 取得 APP news API data
