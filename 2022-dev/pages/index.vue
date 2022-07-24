@@ -1,16 +1,4 @@
-<template>
-  <div>
-    首頁
-  </div>
-</template>
-
 <script>
-
-export default {
-  name: 'IndexPage'
-}
+import Index from './home'
+export default Index
 </script>
-
-<style lang="scss" scoped>
-
-</style>

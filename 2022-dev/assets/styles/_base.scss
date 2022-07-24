@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  background-color: $colorPrimary;
 }
 body {
   * {
@@ -9,10 +10,13 @@ body {
     font-family: $fontStyle;
     line-height: 1.5;
     letter-spacing: 0.8px;
-    color: $colorFont;
     box-sizing: border-box;
     position: relative;
     text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6, div, span {
+    color: $colorFont
   }
 }
 .container {
