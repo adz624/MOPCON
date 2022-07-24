@@ -29,6 +29,9 @@ export default {
     this.innerWidth = window.innerWidth
     window.addEventListener('resize', this.resize)
   },
+  destroyed () {
+    window.removeEventListener('resize', this.resize)
+  },
   methods: {
     resize () {
       this.innerWidth = window.innerWidth

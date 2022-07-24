@@ -1,7 +1,7 @@
 .btn {
   background-color: transparent;
   border-radius: 2rem;
-  border: #51A3D3 solid 2px;
+  border: $colorPrimaryLight solid 2px;
   color: $colorPrimary;
   line-height: 3rem;
   box-sizing: border-box;
@@ -12,7 +12,7 @@
   transition: all 0.3s;
   &:hover {
     border-color: $colorPrimary;
-    color: #51A3D3;
+    color: $colorPrimaryLight;
   }
   @include screen(sm) {
     width: 100%;
@@ -35,8 +35,8 @@
   border-color: $colorPrimary;
   color: $colorWhite;
   &:hover {
-    background-color: #51A3D3;
-    border-color: #51A3D3;
+    background-color: $colorPrimaryLight;
+    border-color: $colorPrimaryLight;
     color: $colorWhite;
   }
 }

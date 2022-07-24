@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="banner ml-5 ml-md-0">
-          <img src="../../assets/images/home/image_banner.png" alt="">
+          <img src="../../assets/images/home/image_banner.png" alt="banner image">
         </div>
       </div>
     </section>
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="../../assets/images/home/2021.png" alt="">
+            <img src="../../assets/images/home/2021.png" alt="2021 image">
           </div>
         </div>
         <div class="history-2020 mb-15">
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="../../assets/images/home/2020.png" alt="">
+            <img src="../../assets/images/home/2020.png" alt="2020 image">
           </div>
         </div>
         <div class="history-button pt-15">
@@ -194,7 +194,7 @@ export default {
     width: 100%;
     left: 0;
     position: absolute;
-    border: #51A3D3 solid 2px;
+    border: $colorPrimaryLight solid 2px;
     border-radius: 2rem;
     background-color: white;
     z-index: 10;
@@ -211,7 +211,7 @@ export default {
           font-size: 1.25rem;
           color: $colorPrimary;
           &:hover {
-            color: #51A3D3;
+            color: $colorPrimaryLight;
           }
         }
         & + li {
