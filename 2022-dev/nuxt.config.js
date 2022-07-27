@@ -6,7 +6,7 @@ require('dotenv').config()
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '2022-dev',
+    title: '行動科技年會 2022 | Mobile / Open / Platform Conference',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
