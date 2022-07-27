@@ -32,7 +32,7 @@
         <h2>歷年資料</h2>
         <div class="history-2021 mb-15">
           <div class="content">
-            <h3>2021 Mobile x AioT</h3>
+            <h3>2021 Mobile x AIoT</h3>
             <p>
               MOPCON 2021年精神意涵" Growing with you"<br>
               時逢第十周年，主題聚焦 Mobile 與 AIoT，以與您一同成長的心情，締造最多老朋友、新同學線上見面實績！
