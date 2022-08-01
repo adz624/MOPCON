@@ -10,13 +10,51 @@
         </div>
       </div>
       <div class="navbar-content">
-        <div v-if="!isMobile || (isMobile && !navOpen)">
+        <div v-if="!isMobile || (isMobile && !navOpen)" class="mopcon-logo">
           <a href="/"><Logo /></a>
         </div>
         <div class="menu-content" :class="{'active': navOpen}">
-          <div class="menu-item mr-8 mr-md-0 mb-md-6">
-            <a href="/timeMachine">時光機</a>
-          </div>
+          <!--選單-->
+          <ul v-if="!isMobile || (isMobile && navOpen)" class="menu-list">
+            <li
+              v-for="item in navOpenList"
+              :key="item.url"
+            >
+              <a
+                v-if="item.subIsOpen"
+                :href="item.url"
+                class="menu-list-link hasSub"
+                :target="item.target"
+                @click.prevent="isMobile && subListOpen($event,item.name)"
+                @mouseover="!isMobile && subListOpen($event,item.name)"
+              >
+                {{ item.name }}
+                <no-ssr>
+                  <span
+                    v-if="item.subIsOpen"
+                    class="iconify"
+                    data-icon="ant-design:down-outlined"
+                    :class="{'transform':isMobile}"
+                  />
+                </no-ssr>
+              </a>
+              <a
+                v-else
+                :href="
+                  item.url"
+                class="menu-list-link"
+                :target="item.target"
+              >
+                {{ item.name }}
+              </a>
+              <!--下拉選單-->
+              <ul v-if="nowSubOpen == item.name" class="menu-subList">
+                <li v-for="(subNav,index) in item.subNav" :key="`subNav_${index}`">
+                  <a :href="subNav.url" class="menu-subList-link">{{ subNav.name }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
           <div class="menu-icon">
             <a href="https://www.facebook.com/mopcon/" target="_blank">
               <no-ssr><span class="iconify" data-icon="fa-brands:facebook-square" /></no-ssr>
@@ -46,12 +84,114 @@ export default {
   },
   data () {
     return {
-      navOpen: false
+      navOpen: false,
+      nowSubOpen: '',
+      navList: [
+        {
+          // name: '主辦社群',
+          // class: '',
+          // url: './community',
+          // subNav: [],
+          // subIsOpen: false,
+          // open: process.env.route_community,
+          // target: ''
+        },
+        {
+          // name: '議程表',
+          // class: '',
+          // url: '',
+          // subNav: [
+          //   {
+          //     name: '主要議程',
+          //     url: './schedule',
+          //     open: process.env.route_schedule
+          //   },
+          //   {
+          //     name: '交流議程',
+          //     url: './schedule_unconf',
+          //     open: process.env.route_schedule_unconf
+          //   }
+          // ],
+          // subIsOpen: true,
+          // open: process.env.route_schedule || process.env.route_schedule,
+          // target: ''
+        },
+        {
+          // name: '講者陣容',
+          // class: '',
+          // url: './speaker',
+          // subNav: [],
+          // subIsOpen: false,
+          // open: process.env.route_speaker,
+          // target: ''
+        },
+        {
+          // name: '贊助伙伴',
+          // class: '',
+          // url: './sponsor',
+          // subNav: [],
+          // subIsOpen: false,
+          // open: process.env.route_sponsor,
+          // target: ''
+        },
+        {
+          // name: '票種介紹',
+          // class: '',
+          // url: './ticket',
+          // subNav: [],
+          // subIsOpen: false,
+          // open: process.env.route_ticket,
+          // target: ''
+        },
+        {
+          // name: '大會指南',
+          // class: '',
+          // url: './guide',
+          // subNav: [],
+          // subIsOpen: false,
+          // open: process.env.route_guide,
+          // target: ''
+        },
+        {
+          name: '時光機',
+          class: '',
+          url: './timeMachine',
+          subNav: [],
+          subIsOpen: false,
+          open: '',
+          target: ''
+        },
+        {
+          // name: '共筆連結',
+          // class: '',
+          // url: 'https://hackmd.io/@mopcon/2021/',
+          // subNav: [],
+          // subIsOpen: false,
+          // open: '',
+          // target: '_blank'
+        }
+      ]
+    }
+  },
+  computed: {
+    navOpenList () {
+      return this.navList.filter(nav => nav.open !== false)
     }
   },
   methods: {
     openNav () {
       this.navOpen = !this.navOpen
+    },
+    subListOpen (event, name) {
+      if (this.isMobile && this.nowSubOpen === '') {
+        this.nowSubOpen = name
+        event.target.firstElementChild.classList.remove('transform')
+      } else if (this.isMobile && this.nowSubOpen !== '') {
+        this.nowSubOpen = ''
+        event.target.firstElementChild.classList.add('transform')
+      } else if (!this.isMobile) {
+        this.nowSubOpen = name
+      }
     }
   }
 }
@@ -70,10 +210,18 @@ export default {
     @include flex(space-between, row, center);
   }
   &-content {
+    @include flex(normalce,row,center);
     width: 100%;
-    @include flex(space-between);
     @include screen(md) {
       @include flex(center);
+    }
+    .mopcon-logo{
+      padding-right:1rem;
+      margin-right: auto;
+      @include screen(md){
+        padding-right: 0px;
+        margin-right: 0px;
+      }
     }
   }
   &-mobile {
@@ -91,31 +239,96 @@ export default {
   .menu-content {
     @include flex;
     @include screen(md) {
-      @include flex(center, column, center);
+      @include flex(flex-start, column, center);
       background: $colorPrimary;
       position: fixed;
       left: 0;
       right: 0;
-      top: 110px;
+      top: 112px;
       bottom: 0;
       transform: translateX(-100%);
       transition: all 0.3s;
+      height: calc(100% - 112px);
       &.active {
         transform: translateX(0);
       }
     }
   }
-  .menu-item {
-    a {
-      color: $colorWhite;
-      font-size: 1.25rem;
+  .menu-list{
+    position: relative;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    @include flex(space-around, row, center);
+    @include screen(md){
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+    }
+    > li{
+      padding: 0 0.5rem;
+      &:hover{
+        .menu-subList{
+          opacity:1;
+          height: auto;
+        }
+        .menu-list-link{
+          color:$colorPink;
+        }
+      }
+      @include screen (md){
+        padding: 1rem 0;
+        width: 100%;
+        flex-wrap:wrap;
+      }
+      @include screen(xs){
+        padding: 0.8rem 0;
+      }
+    }
+    &-link{
+      @include font(20px,$colorWhite,500);
+      transition: .3s;
+      display: block;
+      @include flex(center,row,center);
+      .transform{
+        transform: rotate(180deg);
+      }
+    }
+    .menu-subList{
+      height: 0;
+      opacity:0;
+      position: absolute;
+      top:calc(100% + 5px);
+      width:100%;
+      left:0px;
+      transition: opacity 1s ease-out;
+      @include screen(md){
+        position: static
+      }
+      >li{
+        @include flex (center,column,center);
+        background-color: $colorPink;
+        padding:.5rem;
+        &:hover{
+          background-color: $colorPinkLight;
+        }
+        @include screen(md){
+          &:nth-child(1){
+            margin-top: 10px;
+          }
+        }
+      }
+      &-link{
+        display: block;
+        @include font(18px,$colorWhite,500);
+      }
     }
   }
   .menu-icon {
+    @include flex(center,row,center);
     a {
       color: $colorWhite;
       & + a {
-        margin-left: 2rem;
+        margin-left: 1rem;
       }
     }
     svg {

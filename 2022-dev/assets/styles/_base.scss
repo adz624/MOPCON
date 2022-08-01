@@ -19,6 +19,12 @@ body {
     color: $colorFont
   }
 }
+ul{
+  padding: 0;
+  li{
+    list-style-type: none;
+  }
+}
 .container {
   margin: 0 auto;
   padding-left: 24px;
