@@ -11,8 +11,34 @@
   },
   "pages": {
     "home": {
-      "subscribe": "Subscribe",
-      "addToCalendar": "Add to calendar"
+      "title": "Activate 2022 Next Giant Conf ",
+      "intro":{
+        "1":"MOPCON (Mobile Open Platform Conference)  The most iconic software technology conference in Southern Taiwan.  Looking back on the past ten years, we actively encouraging discussions on advanced technology and sharing hands-on practices and local industry experiences. We provide opportunities for local social communities and create a valuable interactive environment for enterprises and techies alike.",
+        "2":"This year, with the theme of “Next Giant Conf“, we invite partners from various industries to share technologies and hands-on experiences, in order to inspire more innovative ideas, bring new programming perspectives in and create infinite collaborative possibilities for mobile services."
+      },
+      "speaker":{
+        "1":"Become a Speaker",
+        "2":"Recommend a Speaker"
+      },
+      "history":{
+        "title":"Years-In-Review ",
+        "2021_title":"2021 Mobile x AioT",
+        "2021_intro":{
+          "1":"MOPCON 2021 \" Growing with You \",Celebrating our 10th anniversary, MOPCON 2021 focused on the topics of Mobile and AIoT, creating an online opportunity to grow together with you, as well as meeting old friends and making new friends online.",
+          "2":""
+        },
+        "2020_title":"2020 Social Engagement, Remote Working, Digital Transformation",
+        "2020_intro":{
+          "1":"Facing the global pandemic and dramatic industry changes in 2020, from the perspective of “What MOPCON can help?”, MOPCON completed the technology exchange convention in South Taiwan under the three themes of “Social Engagement”, “Digital Transformation”, and “Remote Working”, in conjunction with the core ideals of mobile technologies.",
+          "2":""
+        },
+        "more":"More Memories",
+        "newline":false
+      },
+      "btn":{
+        "web":"Website",
+        "album":"Album"
+      }
     }
   }
 }
