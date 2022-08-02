@@ -1,5 +1,5 @@
 <template>
-  <div @click="toggleDropdown('', $event)">
+  <div @click="!isMobile && toggleDropdown('', $event)">
     <section id="hero" class="pt-8 pb-15 pb-md-6">
       <div class="container main pb-5">
         <div class="content mt-md-10">
@@ -57,15 +57,15 @@
             </p>
             <div class="button-area">
               <div class="mr-10 mr-sm-0 mb-sm-6">
-                <div class="btn" name="2020" @click="toggleDropdown('2020', $event)">
+                <div class="btn" name="2020" @click.prevent="toggleDropdown('2020', $event)">
                   <no-ssr><span class="iconify" data-icon="ep:arrow-down-bold" /></no-ssr>
                   活動花絮
                 </div>
-                <div class="dropdown" :class="{'active': nowDropdownOpen === '2020'}">
+                <div v-if="!isMobile" class="dropdown" :class="{'active': nowDropdownOpen === '2020'}">
                   <ul>
-                    <li><a href="https://photos.app.goo.gl/iv5XLYf5J8mUz7Ka9" target="_blank">第一天</a></li>
-                    <li><a href="https://photos.app.goo.gl/wCtHc9VYPqGRSC7k9" target="_blank">第二天</a></li>
-                    <li><a href="https://photos.app.goo.gl/2snqVCqgKD2jY5Qc6" target="_blank">晚宴</a></li>
+                    <li v-for="(item,i) in recordData" :key="`record-${i}`">
+                      <a :href="item.url" :target="item.target">{{ item.name }}</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -87,30 +87,83 @@
         </div>
       </div>
     </section>
+    <Modal v-if="isMobile" :modal-open="modalOpen" @modal-close="closeModal">
+      <ul class="modalList">
+        <li v-for="(item,i) in recordData" :key="`record-${i}`">
+          <a :href="item.url" :target="item.target">{{ item.name }}</a>
+        </li>
+      </ul>
+    </Modal>
   </div>
 </template>
 
 <script>
+import Modal from '../home/homeDropdownModal'
 export default {
   name: 'HomePage',
+  components: {
+    Modal
+  },
   data () {
     return {
-      nowDropdownOpen: ''
+      nowDropdownOpen: '',
+      innerWidth: null,
+      modalOpen: false,
+      recordData: [
+        {
+          name: '第一天',
+          url: 'https://photos.app.goo.gl/iv5XLYf5J8mUz7Ka9',
+          target: '_blank'
+        },
+        {
+          name: '第二天',
+          url: 'https://photos.app.goo.gl/wCtHc9VYPqGRSC7k9',
+          target: '_blank'
+        },
+        {
+          name: '晚宴',
+          url: 'https://photos.app.goo.gl/2snqVCqgKD2jY5Qc6',
+          target: '_blank'
+        }
+      ]
     }
   },
+  computed: {
+    isMobile () {
+      return this.innerWidth < 568
+    }
+  },
+  mounted () {
+    this.innerWidth = window.innerWidth
+    window.addEventListener('resize', this.resize)
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.resize)
+  },
   methods: {
+    resize () {
+      this.innerWidth = window.innerWidth
+    },
     openWindow (url) {
       window.open(url)
     },
     toggleDropdown (name, event) {
-      const hasDropdown = event.target.closest('.dropdown') !== null
-      if (hasDropdown) {
-        return
+      const vm = this
+      if (!this.isMobile) {
+        const hasDropdown = event.target.closest('.dropdown') !== null
+        if (hasDropdown) {
+          return
+        }
+        const attrName = event.target.getAttribute('name')
+        if (attrName === null || attrName === name || (attrName !== name && (attrName === 2021 || attrName === 2020))) {
+          vm.nowDropdownOpen = vm.nowDropdownOpen === name ? '' : name
+        }
+      } else if (this.isMobile) {
+        vm.modalOpen = true
       }
-      const attrName = event.target.getAttribute('name')
-      if (attrName === null || attrName === name || (attrName !== name && (attrName === 2021 || attrName === 2020))) {
-        this.nowDropdownOpen = this.nowDropdownOpen === name ? '' : name
-      }
+    },
+    closeModal (show) {
+      this.modalOpen = show
     }
   }
 }
@@ -252,6 +305,18 @@ export default {
     .button-area {
       @include flex(normal, column);
     }
+  }
+}
+.modalList{
+  @include flex(center,column,center);
+  li{
+    width: 100%;
+  }
+  a{
+    display: flex;
+    justify-content: center;
+    @include font(20px,$colorPrimary,500);
+    padding: 8px 0px;
   }
 }
 </style>
