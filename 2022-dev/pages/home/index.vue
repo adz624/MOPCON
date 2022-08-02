@@ -3,22 +3,21 @@
     <section id="hero" class="pt-8 pb-15 pb-md-6">
       <div class="container main pb-5">
         <div class="content mt-md-10">
-          <h1>啟動 2022 Next Giant Conf</h1>
+          <h1>{{ $t('pages.home.title') }}</h1>
           <p>
-            MOPCON (Mobile Open Platform Conference)行動科技年會，是南台灣最具有指標性的軟體科技研討會。
-            回顧過去十年，我們堅持在濁水溪以南，積極鼓勵探討前沿技術、實務歷程及在地產業經驗的分享，提供在地社群運作潛力，並打造企業與科技人的優質互動環境。
+            {{ $t('pages.home.intro.1') }}
           </p>
           <p>
-            今年，我們以「 Next Giant Conf 」為號召，透過來自各種產業的夥伴，分享不同領域的技術與實務經驗，帶來更多創新想法，帶入發展新觀點，共同為行動服務締造無限可能。
+            {{ $t('pages.home.intro.2') }}
           </p>
           <div class="button-area mt-15 mt-md-6 pt-6">
             <div class="btn btn-pink mr-10 mb-md-6" @click="openWindow('https://reurl.cc/GxQ5bD')">
               <no-ssr><span class="iconify" data-icon="carbon:recommend" /></no-ssr>
-              成為講者
+              {{ $t('pages.home.speaker.1') }}
             </div>
             <div class="btn btn-pink" @click="openWindow('https://reurl.cc/DyeK6R')">
               <no-ssr><span class="iconify" data-icon="akar-icons:circle-check-fill" /></no-ssr>
-              推薦講者
+              {{ $t('pages.home.speaker.2') }}
             </div>
           </div>
         </div>
@@ -29,18 +28,17 @@
     </section>
     <section id="history" class="pt-8 pb-14">
       <div class="container">
-        <h2>歷年資料</h2>
+        <h2>{{ $t('pages.home.history.title') }}</h2>
         <div class="history-2021 mb-15">
           <div class="content">
-            <h3>2021 Mobile x AIoT</h3>
+            <h3>{{ $t('pages.home.history.2021_title') }}</h3>
             <p>
-              MOPCON 2021年精神意涵" Growing with you"<br>
-              時逢第十周年，主題聚焦 Mobile 與 AIoT，以與您一同成長的心情，締造最多老朋友、新同學線上見面實績！
+              {{ $t('pages.home.history.2021_intro.1') }}<br v-if="$t('pages.home.history.newline')">{{ $t('pages.home.history.2021_intro.2') }}
             </p>
             <div class="button-area">
               <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2021/')">
                 <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
-                進入網站
+                {{ $t('pages.home.btn.web') }}
               </div>
             </div>
           </div>
@@ -50,16 +48,15 @@
         </div>
         <div class="history-2020 mb-15">
           <div class="content">
-            <h3>2020 社會參與、遠距職場、數位轉型</h3>
+            <h3>{{ $t('pages.home.history.2020_title') }}</h3>
             <p>
-              MOPCON 2020年精神意涵 “ $｛ con ｝ With Us ! "<br>
-              在面臨全球疫情與產業巨變的2020年，我們站在 What MOPCON can help？的角度，以「社會參與」、「數位轉型」與「遠距職場」為三大主軸，搭配行動科技的核心理念，完成南部科技產業交流的知識盛會！
+              {{ $t('pages.home.history.2020_intro.1') }}<br v-if="$t('pages.home.history.newline')">{{ $t('pages.home.history.2020_intro.2') }}
             </p>
             <div class="button-area">
               <div class="mr-10 mr-sm-0 mb-sm-6">
                 <div class="btn" name="2020" @click.prevent="toggleDropdown('2020', $event)">
                   <no-ssr><span class="iconify" data-icon="ep:arrow-down-bold" /></no-ssr>
-                  活動花絮
+                  {{ $t('pages.home.btn.album') }}
                 </div>
                 <div v-if="!isMobile" class="dropdown" :class="{'active': nowDropdownOpen === '2020'}">
                   <ul>
@@ -71,7 +68,7 @@
               </div>
               <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2020/')">
                 <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
-                進入網站
+                {{ $t('pages.home.btn.web') }}
               </div>
             </div>
           </div>
@@ -82,7 +79,7 @@
         <div class="history-button pt-15">
           <a class="btn btn-primary" href="/timeMachine">
             <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
-            更多歷年介紹
+            {{ $t('pages.home.history.more') }}
           </a>
         </div>
       </div>
