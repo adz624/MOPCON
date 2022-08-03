@@ -41,70 +41,46 @@
             <p class="m-0">
               {{ speaker.company }}
             </p>
+            <div class="button-area">
+              <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2021/')">
+                <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
+                進入網站
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="../../assets/images/home/2021.png" alt="2021 image">
           </div>
         </div>
-      </div>
-    </section>
-    <section id="schedule" class="pt-8 pb-14 pb-sm-0">
-      <div class="container">
-        <h2 class="mb-5">
-          {{ $t('pages.home.schedule.title') }}
-        </h2>
-        <p class="mb-5">
-          {{ $t('pages.home.schedule.intro.1') }}
-          <br><br>
-          {{ $t('pages.home.schedule.intro.2') }}
-          <br>
-          {{ $t('pages.home.schedule.intro.3') }}
-        </p>
-        <div class="content pt-15">
-          <div class="schedule-area pb-15">
-            <div class="schedule-img">
-              <img src="../../assets/images/home/schedule-1.png" alt="schedule">
-              <span class="mt-3">
-                {{ $t('pages.home.schedule.1.imageTitle') }}
-              </span>
-            </div>
-            <div class="schedule-content ml-15 ml-sm-0 mt-sm-4">
-              <h3 class="mt-0 mb-0">
-                {{ $t('pages.home.schedule.1.title') }}
-                <br class="hidden sm-show">
-                {{ $t('pages.home.schedule.1.subTitle') }}
-              </h3>
-              <p class="mt-4">
-                {{ $t('pages.home.schedule.1.intro') }}
-              </p>
-              <div class="button-area mt-5">
-                <a href="schedule" class="btn btn-primary">
-                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                  {{ $t('pages.home.btn.more') }}
-                </a>
+        <div class="history-2020 mb-15">
+          <div class="content">
+            <h3>2020 社會參與、遠距職場、數位轉型</h3>
+            <p>
+              MOPCON 2020年精神意涵 “ $｛ con ｝ With Us ! "<br>
+              在面臨全球疫情與產業巨變的2020年，我們站在 What MOPCON can help？的角度，以「社會參與」、「數位轉型」與「遠距職場」為三大主軸，搭配行動科技的核心理念，完成南部科技產業交流的知識盛會！
+            </p>
+            <div class="button-area">
+              <div class="mr-10 mr-sm-0 mb-sm-6">
+                <div class="btn" name="2020" @click="toggleDropdown('2020', $event)">
+                  <no-ssr><span class="iconify" data-icon="ep:arrow-down-bold" /></no-ssr>
+                  活動花絮
+                </div>
+                <div class="dropdown" :class="{'active': nowDropdownOpen === '2020'}">
+                  <ul>
+                    <li><a href="https://photos.app.goo.gl/iv5XLYf5J8mUz7Ka9" target="_blank">第一天</a></li>
+                    <li><a href="https://photos.app.goo.gl/wCtHc9VYPqGRSC7k9" target="_blank">第二天</a></li>
+                    <li><a href="https://photos.app.goo.gl/2snqVCqgKD2jY5Qc6" target="_blank">晚宴</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2020/')">
+                <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
+                進入網站
               </div>
             </div>
           </div>
-          <div class="schedule-area mt-10 pb-15">
-            <div class="schedule-img">
-              <img src="../../assets/images/home/schedule-2.png" alt="schedule">
-              <span class="mt-3">
-                {{ $t('pages.home.schedule.2.imageTitle') }}
-              </span>
-            </div>
-            <div class="schedule-content ml-15 ml-sm-0 mt-sm-4">
-              <h3 class="mt-0 mb-0">
-                {{ $t('pages.home.schedule.2.title') }}
-                <br class="hidden sm-show">
-                {{ $t('pages.home.schedule.2.subTitle') }}
-              </h3>
-              <p class="mt-4">
-                {{ $t('pages.home.schedule.2.intro') }}
-              </p>
-              <div class="button-area mt-5">
-                <a href="schedule" class="btn btn-primary">
-                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                  {{ $t('pages.home.btn.more') }}
-                </a>
-              </div>
-            </div>
+          <div class="image">
+            <img src="../../assets/images/home/2020.png" alt="2020 image">
           </div>
           <div class="schedule-area mt-10 pb-15">
             <div class="schedule-img">
