@@ -17,21 +17,21 @@
           <!--選單-->
           <ul v-if="!isMobile || (isMobile && navOpen)" class="menu-list">
             <li
-              v-for="item in navOpenList"
-              :key="item.url"
+              v-for="nav in navList"
+              :key="nav.url"
             >
               <a
-                v-if="item.subIsOpen"
-                :href="item.url"
+                v-if="nav.subIsOpen"
+                :href="nav.url"
                 class="menu-list-link hasSub"
-                :target="item.target"
-                @click.prevent="isMobile && subListOpen($event,item.name)"
-                @mouseover="!isMobile && subListOpen($event,item.name)"
+                :target="nav.target"
+                @click.prevent="isMobile && subListOpen($event,nav.name)"
+                @mouseover="!isMobile && subListOpen($event,nav.name)"
               >
-                {{ item.name }}
+                {{ $t( `navbar.${nav.name}`) }}
                 <no-ssr>
                   <span
-                    v-if="item.subIsOpen"
+                    v-if="nav.subIsOpen"
                     class="iconify"
                     data-icon="ant-design:down-outlined"
                     :class="{'transform':isMobile}"
@@ -41,16 +41,16 @@
               <a
                 v-else
                 :href="
-                  item.url"
+                  nav.url"
                 class="menu-list-link"
-                :target="item.target"
+                :target="nav.target"
               >
-                {{ item.name }}
+                {{ $t(`navbar.${nav.name}`) }}
               </a>
               <!--下拉選單-->
-              <ul v-if="nowSubOpen == item.name" class="menu-subList">
-                <li v-for="(subNav,index) in item.subNav" :key="`subNav_${index}`">
-                  <a :href="subNav.url" class="menu-subList-link">{{ subNav.name }}</a>
+              <ul v-if="nowSubOpen == nav.name" class="menu-subList">
+                <li v-for="(subNav,index) in nav.subNav" :key="`subNav_${index}`">
+                  <a :href="subNav.url" class="menu-subList-link">{{ $t(`navbar.${subNav.name}`) }}</a>
                 </li>
               </ul>
             </li>
@@ -87,95 +87,83 @@ export default {
       navOpen: false,
       nowSubOpen: '',
       navList: [
+        // {
+        //   name: 'community',
+        //   url: './community',
+        //   subNav: [],
+        //   subIsOpen: false,
+        //   open: process.env.route_community,
+        //   target: ''
+        // },
+        // {
+        //   name: 'schedule',
+        //   url: '',
+        //   subNav: [
+        //     {
+        //       name: 'scheduleMain',
+        //       url: './schedule',
+        //       open: process.env.route_schedule
+        //     },
+        //     {
+        //       name: 'scheduleUnconf',
+        //       url: './schedule_unconf',
+        //       open: process.env.route_schedule_unconf
+        //     }
+        //   ],
+        //   subIsOpen: true,
+        //   open: process.env.route_schedule || process.env.route_schedule,
+        //   target: ''
+        // },
+        // {
+        //   name: 'speaker',
+        //   url: './speaker',
+        //   subNav: [],
+        //   subIsOpen: false,
+        //   open: process.env.route_speaker,
+        //   target: ''
+        // },
+        // {
+        //   name: 'sponsor',
+        //   url: './sponsor',
+        //   subNav: [],
+        //   subIsOpen: false,
+        //   open: process.env.route_sponsor,
+        //   target: ''
+        // },
+        // {
+        //   name: 'ticket',
+        //   url: './ticket',
+        //   subNav: [],
+        //   subIsOpen: false,
+        //   open: process.env.route_ticket,
+        //   target: ''
+        // },
+        // {
+        //   name: 'guide',
+        //   class: '',
+        //   url: './guide',
+        //   subNav: [],
+        //   subIsOpen: false,
+        //   open: process.env.route_guide,
+        //   target: ''
+        // },
         {
-          // name: '主辦社群',
-          // class: '',
-          // url: './community',
-          // subNav: [],
-          // subIsOpen: false,
-          // open: process.env.route_community,
-          // target: ''
-        },
-        {
-          // name: '議程表',
-          // class: '',
-          // url: '',
-          // subNav: [
-          //   {
-          //     name: '主要議程',
-          //     url: './schedule',
-          //     open: process.env.route_schedule
-          //   },
-          //   {
-          //     name: '交流議程',
-          //     url: './schedule_unconf',
-          //     open: process.env.route_schedule_unconf
-          //   }
-          // ],
-          // subIsOpen: true,
-          // open: process.env.route_schedule || process.env.route_schedule,
-          // target: ''
-        },
-        {
-          // name: '講者陣容',
-          // class: '',
-          // url: './speaker',
-          // subNav: [],
-          // subIsOpen: false,
-          // open: process.env.route_speaker,
-          // target: ''
-        },
-        {
-          // name: '贊助伙伴',
-          // class: '',
-          // url: './sponsor',
-          // subNav: [],
-          // subIsOpen: false,
-          // open: process.env.route_sponsor,
-          // target: ''
-        },
-        {
-          // name: '票種介紹',
-          // class: '',
-          // url: './ticket',
-          // subNav: [],
-          // subIsOpen: false,
-          // open: process.env.route_ticket,
-          // target: ''
-        },
-        {
-          // name: '大會指南',
-          // class: '',
-          // url: './guide',
-          // subNav: [],
-          // subIsOpen: false,
-          // open: process.env.route_guide,
-          // target: ''
-        },
-        {
-          name: '時光機',
-          class: '',
+          name: 'timeMachine',
           url: './timeMachine',
           subNav: [],
           subIsOpen: false,
           open: '',
           target: ''
-        },
-        {
-          // name: '共筆連結',
-          // class: '',
-          // url: 'https://hackmd.io/@mopcon/2021/',
-          // subNav: [],
-          // subIsOpen: false,
-          // open: '',
-          // target: '_blank'
         }
+        // {
+        //   name: 'coWriting',
+        //   url: 'https://hackmd.io/@mopcon/2021/',
+        //   subNav: [],
+        //   subIsOpen: false,
+        //   open: '',
+        //   target: '_blank'
+        // }
       ]
-    }
-  },
-  computed: {
-    navOpenList () {
-      return this.navList.filter(nav => nav.open !== false)
     }
   },
   methods: {
@@ -210,7 +198,7 @@ export default {
     @include flex(space-between, row, center);
   }
   &-content {
-    @include flex(normalce,row,center);
+    @include flex(normal,row,center);
     width: 100%;
     @include screen(md) {
       @include flex(center);
