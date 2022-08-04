@@ -7,7 +7,9 @@
     "scheduleUnconf": "Unconf",
     "speaker": "Speaker",
     "sponsor": "Sponsor",
-    "ticket": "Ticket"
+    "ticket": "Ticket",
+    "timeMachine":"Time Machine",
+    "guide":"Guide"
   },
   "pages": {
     "home": {
