@@ -11,13 +11,13 @@
             {{ $t('pages.home.intro.2') }}
           </p>
           <div class="button-area mt-15 mt-md-6 pt-6">
-            <div class="btn btn-pink mr-10 mb-md-6" @click="openWindow('https://reurl.cc/GxQ5bD')">
-              <no-ssr><span class="iconify" data-icon="carbon:recommend" /></no-ssr>
-              {{ $t('pages.home.speaker.1') }}
+            <div class="btn btn-pink mr-10 mb-md-6" @click="openWindow('https://www.facebook.com/mopcon')">
+              <client-only><span class="iconify" data-icon="carbon:recommend" /></client-only>
+              {{ $t('pages.home.heroImgBtn.1') }}
             </div>
-            <div class="btn btn-pink" @click="openWindow('https://reurl.cc/DyeK6R')">
-              <no-ssr><span class="iconify" data-icon="akar-icons:circle-check-fill" /></no-ssr>
-              {{ $t('pages.home.speaker.2') }}
+            <div class="btn btn-pink" @click="openWindow('https://docs.google.com/forms/d/e/1FAIpQLSf6fHcsyL3Wv649VDA2FnzUn2vO6K6sv1vAe47urvkcf0F_ig/viewform')">
+              <client-only><span class="iconify" data-icon="akar-icons:circle-check-fill" /></client-only>
+              {{ $t('pages.home.heroImgBtn.2') }}
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
             </p>
             <div class="button-area">
               <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2021/')">
-                <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
+                <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
                 {{ $t('pages.home.btn.web') }}
               </div>
             </div>
@@ -55,7 +55,7 @@
             <div class="button-area">
               <div class="mr-10 mr-sm-0 mb-sm-6">
                 <div class="btn" name="2020" @click.prevent="toggleDropdown('2020', $event)">
-                  <no-ssr><span class="iconify" data-icon="ep:arrow-down-bold" /></no-ssr>
+                  <client-only><span class="iconify" data-icon="ep:arrow-down-bold" /></client-only>
                   {{ $t('pages.home.btn.album') }}
                 </div>
                 <div v-if="!isMobile" class="dropdown" :class="{'active': nowDropdownOpen === '2020'}">
@@ -67,7 +67,7 @@
                 </div>
               </div>
               <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2020/')">
-                <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
+                <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
                 {{ $t('pages.home.btn.web') }}
               </div>
             </div>
@@ -78,7 +78,7 @@
         </div>
         <div class="history-button pt-15">
           <a class="btn btn-primary" href="/timeMachine">
-            <no-ssr><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></no-ssr>
+            <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
             {{ $t('pages.home.history.more') }}
           </a>
         </div>
