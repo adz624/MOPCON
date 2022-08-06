@@ -18,9 +18,9 @@
         "1":"MOPCON (Mobile Open Platform Conference)  The most iconic software technology conference in Southern Taiwan.  Looking back on the past ten years, we actively encouraging discussions on advanced technology and sharing hands-on practices and local industry experiences. We provide opportunities for local social communities and create a valuable interactive environment for enterprises and techies alike.",
         "2":"This year, with the theme of “Next Giant Conf“, we invite partners from various industries to share technologies and hands-on experiences, in order to inspire more innovative ideas, bring new programming perspectives in and create infinite collaborative possibilities for mobile services."
       },
-      "speaker":{
-        "1":"Become a Speaker",
-        "2":"Recommend a Speaker"
+      "heroImgBtn":{
+        "1":"Follow Us",
+        "2":"Join Us"
       },
       "history":{
         "title":"Years-In-Review ",

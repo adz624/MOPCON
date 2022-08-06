@@ -9,9 +9,61 @@ export default {
     title: '行動科技年會 2022 | Mobile / Open / Platform Conference',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' },
+      { hid: 'description', name: 'description', content: 'MOPCON 2022 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！' },
+      // fb seo
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'og-description',
+        property: 'og:description',
+        content:
+          'MOPCON 2022 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！'
+      },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og-site_name',
+        property: 'og:site_name',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'https://mopcon.org/2022/'
+      },
+      {
+        hid: 'og-image',
+        property: 'og:image',
+        content: ''
+        // content: '/2022/og-image.png'
+      },
+      { hid: 'og-locale', property: 'og:locale', content: 'zh_tw' },
+      // twitter seo
+      { hid: 'twitter-card', name: 'twitter:card', content: 'app' },
+      {
+        hid: 'twitter-site',
+        name: 'twitter:site',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'twitter-description',
+        name: 'twitter:description',
+        content:
+          'MOPCON 2022 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！'
+      },
+      {
+        hid: 'twitter-app:name:iphone',
+        name: 'twitter:app:name:iphone',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'twitter-app:name:ipad',
+        name: 'twitter:app:name:ipad',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/2022/favicon.ico' },
@@ -41,7 +93,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxtjs/moment',
+    'vue-social-sharing/nuxt'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -116,7 +170,33 @@ export default {
 
   generate: {
     dir: path.resolve(__dirname, '../2022/')
+    // routes () {
+    //   const pages = []
+    //   pages.push('/speaker')
+    //   const data = require('./static/speaker.json')
+    //   data.forEach((speaker) => {
+    //     pages.push(`/speaker/${speaker.speaker_id}`)
+    //   })
 
+    //   pages.push('/sponsor')
+    //   const sponsors = require('./static/sponsor.json')
+    //   sponsors.forEach((sponsor) => {
+    //     sponsor.data.forEach((item) => {
+    //       pages.push(`/sponsor/${item.sponsor_id}`)
+    //     })
+    //   })
+
+    //   pages.push('/schedule')
+    //   const session = require('./static/session.json')
+    //   session.forEach((period) => {
+    //     period.period.forEach((session) => {
+    //       session.room.forEach((ele) => {
+    //         pages.push(`/schedule/${ele.session_id}`)
+    //       })
+    //     })
+    //   })
+    //   return pages
+    // }
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

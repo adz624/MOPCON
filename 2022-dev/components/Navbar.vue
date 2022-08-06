@@ -3,10 +3,10 @@
     <nav class="container navbar-container">
       <div v-if="isMobile" class="navbar-mobile">
         <div :class="{'hidden': navOpen}" @click="openNav">
-          <no-ssr><span class="iconify" data-icon="carbon:menu" /></no-ssr>
+          <client-only><span class="iconify" data-icon="carbon:menu" /></client-only>
         </div>
         <div :class="{'hidden': !navOpen}" @click="openNav">
-          <no-ssr><span class="iconify" data-icon="ic:baseline-cancel" /></no-ssr>
+          <client-only><span class="iconify" data-icon="ic:baseline-cancel" /></client-only>
         </div>
       </div>
       <div class="navbar-content">
@@ -29,14 +29,14 @@
                 @mouseover="!isMobile && subListOpen($event,nav.name)"
               >
                 {{ $t( `navbar.${nav.name}`) }}
-                <no-ssr>
+                <client-only>
                   <span
                     v-if="nav.subIsOpen"
                     class="iconify"
                     data-icon="ant-design:down-outlined"
                     :class="{'transform':isMobile}"
                   />
-                </no-ssr>
+                </client-only>
               </a>
               <a
                 v-else
@@ -57,13 +57,13 @@
           </ul>
           <div class="menu-icon">
             <a href="https://www.facebook.com/mopcon/" target="_blank">
-              <no-ssr><span class="iconify" data-icon="fa-brands:facebook-square" /></no-ssr>
+              <client-only><span class="iconify" data-icon="fa-brands:facebook-square" /></client-only>
             </a>
             <a href="https://www.instagram.com/mopcon.tw/" target="_blank">
-              <no-ssr><span class="iconify" data-icon="ant-design:instagram-filled" /></no-ssr>
+              <client-only><span class="iconify" data-icon="ant-design:instagram-filled" /></client-only>
             </a>
             <a href="https://open.firstory.me/user/mopcon/" target="_blank">
-              <no-ssr><span class="iconify" data-icon="material-symbols:perm-camera-mic-rounded" /></no-ssr>
+              <client-only><span class="iconify" data-icon="material-symbols:perm-camera-mic-rounded" /></client-only>
             </a>
           </div>
         </div>
