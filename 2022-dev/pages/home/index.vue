@@ -1,9 +1,10 @@
 <template>
-  <div @click="!isMobile && toggleDropdown('', $event)">
-    <section id="hero" class="pt-8 pb-15 pb-md-6">
+  <div>
+    <section id="hero" class="pt-8 pb-6">
       <div class="container main pb-5">
         <div class="content mt-md-10">
           <h1>{{ $t('pages.home.title') }}</h1>
+          <h2>{{ $t('pages.home.subTitle') }}</h2>
           <p>
             {{ $t('pages.home.intro.1') }}
           </p>
@@ -26,103 +27,181 @@
         </div>
       </div>
     </section>
-    <section id="history" class="pt-8 pb-14">
+    <section id="speaker" class="pt-8 pb-14">
       <div class="container">
-        <h2>{{ $t('pages.home.history.title') }}</h2>
-        <div class="history-2021 mb-15">
-          <div class="content">
-            <h3>{{ $t('pages.home.history.2021_title') }}</h3>
-            <p>
-              {{ $t('pages.home.history.2021_intro.1') }}<br v-if="$t('pages.home.history.newline')">{{ $t('pages.home.history.2021_intro.2') }}
-            </p>
-            <div class="button-area">
-              <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2021/')">
-                <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                {{ $t('pages.home.btn.web') }}
-              </div>
-            </div>
+        <h2 class="mb-15">
+          {{ $t('pages.home.speaker.title') }}
+        </h2>
+        <div class="content pt-5">
+          <div class="speaker-area">
+            <img src="../../assets/images/home/tmp.png" alt="speaker">
+            <h3 class="mt-4 mb-4">講者姓名</h3>
+            <p class="m-0">公司名稱公司名稱公司名稱公司名稱公司</p>
           </div>
-          <div class="image">
-            <img src="../../assets/images/home/2021.png" alt="2021 image">
+          <div class="speaker-area">
+            <img src="../../assets/images/home/tmp.png" alt="speaker">
+            <h3 class="mt-4 mb-4">講者姓名</h3>
+            <p class="m-0">公司名稱公司名稱公司名稱公司名稱公司</p>
           </div>
-        </div>
-        <div class="history-2020 mb-15">
-          <div class="content">
-            <h3>{{ $t('pages.home.history.2020_title') }}</h3>
-            <p>
-              {{ $t('pages.home.history.2020_intro.1') }}<br v-if="$t('pages.home.history.newline')">{{ $t('pages.home.history.2020_intro.2') }}
-            </p>
-            <div class="button-area">
-              <div class="mr-10 mr-sm-0 mb-sm-6">
-                <div class="btn" name="2020" @click.prevent="toggleDropdown('2020', $event)">
-                  <client-only><span class="iconify" data-icon="ep:arrow-down-bold" /></client-only>
-                  {{ $t('pages.home.btn.album') }}
-                </div>
-                <div v-if="!isMobile" class="dropdown" :class="{'active': nowDropdownOpen === '2020'}">
-                  <ul>
-                    <li v-for="(item,i) in recordData" :key="`record-${i}`">
-                      <a :href="item.url" :target="item.target">{{ item.name }}</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="btn btn-primary" @click="openWindow('https://mopcon.org/2020/')">
-                <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                {{ $t('pages.home.btn.web') }}
-              </div>
-            </div>
-          </div>
-          <div class="image">
-            <img src="../../assets/images/home/2020.png" alt="2020 image">
-          </div>
-        </div>
-        <div class="history-button pt-15">
-          <a class="btn btn-primary" href="/timeMachine">
-            <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-            {{ $t('pages.home.history.more') }}
-          </a>
         </div>
       </div>
     </section>
-    <Modal v-if="isMobile" :modal-open="modalOpen" @modal-close="closeModal">
-      <ul class="modalList">
-        <li v-for="(item,i) in recordData" :key="`record-${i}`">
-          <a :href="item.url" :target="item.target">{{ item.name }}</a>
-        </li>
-      </ul>
-    </Modal>
+    <section id="schedule" class="pt-8 pb-14 pb-sm-0">
+      <div class="container">
+        <h2 class="mb-5">
+          {{ $t('pages.home.schedule.title') }}
+        </h2>
+        <p class="mb-5">
+          {{ $t('pages.home.schedule.intro.1') }}
+          <br><br>
+          {{ $t('pages.home.schedule.intro.2') }}
+          <br>
+          {{ $t('pages.home.schedule.intro.3') }}
+        </p>
+        <div class="content pt-15">
+          <div class="schedule-area pb-15">
+            <div class="schedule-img">
+              <img src="../../assets/images/home/schedule-1.png" alt="schedule">
+              <span class="mt-3">
+                {{ $t('pages.home.schedule.1.imageTitle') }}
+              </span>
+            </div>
+            <div class="schedule-content ml-15 ml-sm-0 mt-sm-4">
+              <h3 class="mt-0 mb-0">
+                {{ $t('pages.home.schedule.1.title') }}
+                <br class="hidden sm-show">
+                {{ $t('pages.home.schedule.1.subTitle') }}
+              </h3>
+              <p class="mt-4">
+                {{ $t('pages.home.schedule.1.intro') }}
+              </p>
+              <div class="button-area mt-5">
+                <div class="btn btn-primary">
+                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
+                  {{ $t('pages.home.btn.more') }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-area mt-10 pb-15">
+            <div class="schedule-img">
+              <img src="../../assets/images/home/schedule-2.png" alt="schedule">
+              <span class="mt-3">
+                {{ $t('pages.home.schedule.2.imageTitle') }}
+              </span>
+            </div>
+            <div class="schedule-content ml-15 ml-sm-0 mt-sm-4">
+              <h3 class="mt-0 mb-0">
+                {{ $t('pages.home.schedule.2.title') }}
+                <br class="hidden sm-show">
+                {{ $t('pages.home.schedule.2.subTitle') }}
+              </h3>
+              <p class="mt-4">
+                {{ $t('pages.home.schedule.2.intro') }}
+              </p>
+              <div class="button-area mt-5">
+                <div class="btn btn-primary">
+                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
+                  {{ $t('pages.home.btn.more') }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-area mt-10 pb-15">
+            <div class="schedule-img">
+              <img src="../../assets/images/home/schedule-3.png" alt="schedule">
+              <span class="mt-3">
+                {{ $t('pages.home.schedule.3.imageTitle') }}
+              </span>
+            </div>
+            <div class="schedule-content ml-15 ml-sm-0 mt-sm-4">
+              <h3 class="mt-0 mb-0">
+                {{ $t('pages.home.schedule.3.title') }}
+                <br class="hidden sm-show">
+                {{ $t('pages.home.schedule.3.subTitle') }}
+              </h3>
+              <p class="mt-4">
+                {{ $t('pages.home.schedule.3.intro') }}
+              </p>
+              <div class="button-area mt-5">
+                <div class="btn btn-primary">
+                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
+                  {{ $t('pages.home.btn.more') }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="traffic" class="pt-8 pb-15 pr-10 pl-10 pr-sm-0 pl-sm-0">
+      <div class="container box pb-15 pr-4 pl-4 pb-sm-0">
+        <h2 class="mb-5">
+          {{ $t('pages.home.traffic.title') }}
+        </h2>
+        <p class="sub-title">
+          {{ $t('pages.home.traffic.subTitle') }}
+        </p>
+        <div class="content">
+          <div class="traffic-img-area">
+            <div class="traffic-img">
+              <img class="pad-hidden" src="../../assets/images/home/traffic-1.png" alt="schedule">
+              <img class="hidden pad-show sm-hidden" src="../../assets/images/home/traffic-m-1.png" alt="schedule">
+              <img class="hidden sm-show" src="../../assets/images/home/traffic-s-1.png" alt="schedule">
+            </div>
+            <div class="traffic-img-sub-area mt-3">
+              <div class="traffic-img">
+                <img class="pad-hidden" src="../../assets/images/home/traffic-2.png" alt="schedule">
+                <img class="hidden pad-show sm-hidden" src="../../assets/images/home/traffic-m-2.png" alt="schedule">
+                <img class="hidden sm-show" src="../../assets/images/home/traffic-s-2.png" alt="schedule">
+              </div>
+              <div class="traffic-img ml-6 ml-sm-0 mt-sm-3">
+                <img class="pad-hidden" src="../../assets/images/home/traffic-3.png" alt="schedule">
+                <img class="hidden pad-show sm-hidden" src="../../assets/images/home/traffic-m-3.png" alt="schedule">
+                <img class="hidden sm-show" src="../../assets/images/home/traffic-s-3.png" alt="schedule">
+              </div>
+            </div>
+          </div>
+          <div class="traffic-content-area">
+            <h3 class="mb-3">
+              {{ $t('pages.home.traffic.bus') }}
+            </h3>
+            <p class="mb-5">
+              {{ $t('pages.home.traffic.busIntro') }}
+            </p>
+            <h3 class="mb-3">
+              {{ $t('pages.home.traffic.thsr') }}
+            </h3>
+            <p class="mb-5">
+              {{ $t('pages.home.traffic.thsrIntro') }}
+            </p>
+            <h3 class="mb-3">
+              {{ $t('pages.home.traffic.tra') }}
+            </h3>
+            <p class="mb-5">
+              {{ $t('pages.home.traffic.traIntro') }}
+            </p>
+            <h3 class="mb-3">
+              {{ $t('pages.home.traffic.mrt') }}
+            </h3>
+            <p class="mb-5">
+              {{ $t('pages.home.traffic.mrtIntro') }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import Modal from '../home/homeDropdownModal'
 export default {
   name: 'HomePage',
-  components: {
-    Modal
-  },
   data () {
     return {
       nowDropdownOpen: '',
       innerWidth: null,
-      modalOpen: false,
-      recordData: [
-        {
-          name: '第一天',
-          url: 'https://photos.app.goo.gl/iv5XLYf5J8mUz7Ka9',
-          target: '_blank'
-        },
-        {
-          name: '第二天',
-          url: 'https://photos.app.goo.gl/wCtHc9VYPqGRSC7k9',
-          target: '_blank'
-        },
-        {
-          name: '晚宴',
-          url: 'https://photos.app.goo.gl/2snqVCqgKD2jY5Qc6',
-          target: '_blank'
-        }
-      ]
+      modalOpen: false
     }
   },
   computed: {
@@ -143,34 +222,58 @@ export default {
     },
     openWindow (url) {
       window.open(url)
-    },
-    toggleDropdown (name, event) {
-      const vm = this
-      if (!this.isMobile) {
-        const hasDropdown = event.target.closest('.dropdown') !== null
-        if (hasDropdown) {
-          return
-        }
-        const attrName = event.target.getAttribute('name')
-        if (attrName === null || attrName === name || (attrName !== name && (attrName === 2021 || attrName === 2020))) {
-          vm.nowDropdownOpen = vm.nowDropdownOpen === name ? '' : name
-        }
-      } else if (this.isMobile) {
-        vm.modalOpen = true
-      }
-    },
-    closeModal (show) {
-      this.modalOpen = show
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.hidden {
+  display: none;
+}
+.pad-show {
+  @include screen(pad) {
+    display: block;
+  }
+}
+.pad-hidden {
+  @include screen(pad) {
+    display: none;
+  }
+}
+.sm-show {
+  @include screen(sm) {
+    display: block;
+  }
+}
+.sm-hidden {
+  @include screen(sm) {
+    display: none;
+  }
+}
 #hero {
   background-color: #0074A2;
+  background-image: url('../../assets/images/banner.svg');
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include screen(md) {
+    background-size: contain;
+  }
+  @include screen(pad) {
+    background-image: url('../../assets/images/banner_short_ipad.svg');
+  }
+  @include screen(sm) {
+    background-image: url('../../assets/images/banner_short_mobile.svg');
+  }
   h1 {
     @include font(40px, $colorWhite, bold);
+  }
+  h2 {
+    @include font(1.5rem, $colorWhite);
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
   }
   p {
     @include font(1rem, $colorWhite);
@@ -213,107 +316,147 @@ export default {
   }
 }
 
-#history {
+#speaker {
   background: $colorWhite;
   h2 {
-    @include font(40px, $colorPrimary, bold);
+    @include font(2.5rem, $colorPrimary, bold);
     text-align: center;
   }
-  h3 {
-    @include font(40px, $colorPrimary, bold);
-  }
-  p {
-    height: 240px;
-    color: $colorBlueLight;
-  }
   .content {
-    width: 55%;
-  }
-  .image {
-    @include flex(center, row, center);
-    width: 35%;
-  }
-  .button-area {
     @include flex;
-    .btn svg {
-      font-size: 20px;
-      top: 4px;
+    flex-wrap: wrap;
+  }
+  .speaker-area {
+    @include flex(normal, column, center);
+    width: 33.3333%;
+    padding: 1rem 1.5rem;
+    @include screen(md) {
+      width: 50%;
     }
-  }
-  .dropdown {
-    width: 100%;
-    left: 0;
-    position: absolute;
-    border: $colorPrimaryLight solid 2px;
-    border-radius: 2rem;
-    background-color: white;
-    z-index: 10;
-    display: none;
-    &.active {
-      display: block;
+    @include screen(sm) {
+      width: 100%;
     }
-    ul {
-      @include flex(normal, column, center);
-      padding-left: 0;
-      list-style: none;
-      li {
-        a {
-          font-size: 1.25rem;
-          color: $colorPrimary;
-          &:hover {
-            color: $colorPrimaryLight;
-          }
-        }
-        & + li {
-          margin-top: 0.5rem;
-        }
-      }
-    }
-  }
-  .history-2021 {
-    @include flex(space-between, row, center);
-  }
-  .history-2020 {
-    @include flex(space-between, row-reverse, center);
-  }
-  .history-2021, .history-2020 {
     img {
-      width: 100%;
+      max-width: 213px;
+      width: 95%;
     }
-  }
-  .history-button {
-    @include flex(center);
-  }
-  @include screen(md) {
-    .content, .image {
-      width: 100%;
+    h3 {
+      @include font(2rem, $colorPrimary, bold);
     }
-    .history-2021, .history-2020 {
-      @include flex(normal, column-reverse, center);
-      img {
-        max-width: 464px;
-      }
-    }
-    .button-area {
-      @include flex(flex-end);
-    }
-  }
-  @include screen(sm) {
-    .button-area {
-      @include flex(normal, column);
+    p {
+      color: $colorBlueLight;
+      text-align: center;
     }
   }
 }
-.modalList{
-  @include flex(center,column,center);
-  li{
-    width: 100%;
+
+#schedule {
+  background: $colorWhite;
+  h2 {
+    @include font(2.5rem, $colorPrimary, bold);
+    text-align: center;
   }
-  a{
-    display: flex;
-    justify-content: center;
-    @include font(20px,$colorPrimary,500);
-    padding: 8px 0px;
+  p {
+    color: $colorBlueLight;
+    text-align: center;
+  }
+  .schedule-area {
+    @include flex(normal, row, center);
+    @include screen(sm) {
+      @include flex(normal, column, center);
+    }
+    .schedule-img {
+      @include flex(normal, column, center);
+      img {
+        max-width: 190px;
+        width: 95%;
+        @include screen(sm) {
+          max-width: 130px;
+        }
+      }
+      span {
+        color: $colorBlack;
+      }
+    }
+    .schedule-content {
+      @include flex(space-between, column);
+      width: 75%;
+      h3 {
+        @include font(2rem, $colorPrimary, bold);
+        line-height: 2.5rem;
+      }
+      p {
+        text-align: left;
+      }
+      .button-area {
+        @include flex(normal, row-reverse);
+        @include screen(sm) {
+          @include flex(center);
+          .btn {
+            width: auto;
+          }
+        }
+      }
+      @include screen(sm) {
+        width: 100%;
+        &, p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+#traffic {
+  background: $colorWhite;
+  .box {
+    border: 1px #0074A2 solid;
+    border-radius: 94px;
+    @include screen(sm) {
+      border-width: 0px;
+    }
+  }
+  h2 {
+    @include font(2.5rem, $colorPrimary, bold);
+    text-align: center;
+  }
+  h3 {
+    @include font(1.5rem, $colorPrimary, bold);
+  }
+  .sub-title {
+    color: $colorBlueLight;
+    text-align: center;
+  }
+  .content {
+    @include flex(space-around, row, center);
+    .traffic-img-area {
+      width: 50%;
+      img {
+        width: 100%;
+        border-radius: 16px;
+      }
+      .traffic-img-sub-area {
+        @include flex(space-between);
+        @include screen(sm) {
+          @include flex(space-between, column);
+        }
+      }
+    }
+    .traffic-content-area {
+      width: 40%;
+      p {
+        color: $colorBlack;
+      }
+      @include screen(sm) {
+        text-align: center;
+      }
+    }
+    @include screen(sm) {
+      @include flex(space-around, column);
+      .traffic-img-area, .traffic-content-area {
+        width: 100%;
+      }
+    }
   }
 }
 </style>
