@@ -10,7 +10,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' },
-      { hid: 'description', name: 'description', content: 'MOPCON 2022 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！' },
+      { hid: 'description', name: 'description', content: 'MOPCON 2022 堅持濁水溪以南，是南台灣最大行動科技年會。今年，我們以「 Next Giant Conf 」為號召，透過來自各種產業的夥伴，分享不同領域的技術與實務經驗，帶來更多創新想法，帶入發展新觀點，共同為行動服務締造無限可能。' },
       // fb seo
       {
         hid: 'og-title',
@@ -21,7 +21,7 @@ export default {
         hid: 'og-description',
         property: 'og:description',
         content:
-          'MOPCON 2022 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！'
+          'MOPCON 2022 堅持濁水溪以南，是南台灣最大行動科技年會。今年，我們以「 Next Giant Conf 」為號召，透過來自各種產業的夥伴，分享不同領域的技術與實務經驗，帶來更多創新想法，帶入發展新觀點，共同為行動服務締造無限可能。'
       },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
@@ -37,8 +37,7 @@ export default {
       {
         hid: 'og-image',
         property: 'og:image',
-        content: ''
-        // content: '/2022/og-image.png'
+        content: '/2022/og-image.png'
       },
       { hid: 'og-locale', property: 'og:locale', content: 'zh_tw' },
       // twitter seo
@@ -52,7 +51,7 @@ export default {
         hid: 'twitter-description',
         name: 'twitter:description',
         content:
-          'MOPCON 2022 堅持濁水溪以南，南台灣最大行動科技年會，為了更安全的交流，今年我們將實體大會改以「預錄議程＋直播交流互動」形式呈現，保留多元議程的大會精神，影響力將更不受時空所限！'
+          'MOPCON 2022 堅持濁水溪以南，是南台灣最大行動科技年會。今年，我們以「 Next Giant Conf 」為號召，透過來自各種產業的夥伴，分享不同領域的技術與實務經驗，帶來更多創新想法，帶入發展新觀點，共同為行動服務締造無限可能。'
       },
       {
         hid: 'twitter-app:name:iphone',
