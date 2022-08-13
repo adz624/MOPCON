@@ -33,15 +33,14 @@
           {{ $t('pages.home.speaker.title') }}
         </h2>
         <div class="content pt-5">
-          <div class="speaker-area">
-            <img src="../../assets/images/home/tmp.png" alt="speaker">
-            <h3 class="mt-4 mb-4">講者姓名</h3>
-            <p class="m-0">公司名稱公司名稱公司名稱公司名稱公司</p>
-          </div>
-          <div class="speaker-area">
-            <img src="../../assets/images/home/tmp.png" alt="speaker">
-            <h3 class="mt-4 mb-4">講者姓名</h3>
-            <p class="m-0">公司名稱公司名稱公司名稱公司名稱公司</p>
+          <div v-for="speaker in speakerList" :key="speaker.id" class="speaker-area">
+            <img :src="speaker.img" alt="speaker">
+            <h3 class="mt-4 mb-4">
+              {{ speaker.name }}
+            </h3>
+            <p class="m-0">
+              {{ speaker.company }}
+            </p>
           </div>
         </div>
       </div>
@@ -197,11 +196,28 @@
 <script>
 export default {
   name: 'HomePage',
+  async asyncData ({ $axios }) {
+    try {
+      let data = []
+      if (process.server) {
+        const res = await $axios.get(process.env.BASE_URL + '/2022/home-speakers.json')
+        data = res.data
+      } else {
+        const res = '../../static/home-speakers.json'
+        data = res.data
+      }
+
+      return {
+        speakerList: data
+      }
+    } catch (err) {}
+  },
   data () {
     return {
       nowDropdownOpen: '',
       innerWidth: null,
-      modalOpen: false
+      modalOpen: false,
+      speakerList: []
     }
   },
   computed: {
