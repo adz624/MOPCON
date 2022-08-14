@@ -4,6 +4,10 @@ const path = require('path')
 require('dotenv').config()
 
 export default {
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+  telemetry: false,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '行動科技年會 2022 | Mobile / Open / Platform Conference',

@@ -75,10 +75,10 @@
                 {{ $t('pages.home.schedule.1.intro') }}
               </p>
               <div class="button-area mt-5">
-                <div class="btn btn-primary">
+                <a href="schedule" class="btn btn-primary">
                   <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
                   {{ $t('pages.home.btn.more') }}
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -99,10 +99,10 @@
                 {{ $t('pages.home.schedule.2.intro') }}
               </p>
               <div class="button-area mt-5">
-                <div class="btn btn-primary">
+                <a href="schedule" class="btn btn-primary">
                   <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
                   {{ $t('pages.home.btn.more') }}
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -123,10 +123,10 @@
                 {{ $t('pages.home.schedule.3.intro') }}
               </p>
               <div class="button-area mt-5">
-                <div class="btn btn-primary">
+                <a href="schedule" class="btn btn-primary">
                   <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
                   {{ $t('pages.home.btn.more') }}
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -196,28 +196,67 @@
 <script>
 export default {
   name: 'HomePage',
-  async asyncData ({ $axios }) {
-    try {
-      let data = []
-      if (process.server) {
-        const res = await $axios.get(process.env.BASE_URL + '/2022/home-speakers.json')
-        data = res.data
-      } else {
-        const res = '../../static/home-speakers.json'
-        data = res.data
-      }
-
-      return {
-        speakerList: data
-      }
-    } catch (err) {}
-  },
   data () {
     return {
       nowDropdownOpen: '',
       innerWidth: null,
       modalOpen: false,
-      speakerList: []
+      speakerList: [
+        {
+          id: 1,
+          name: 'Sam Huang',
+          company: 'RevtelTech 忻旅科技 / Co-Founder',
+          img: 'assets/images/home/speaker-1.png'
+        },
+        {
+          id: 2,
+          name: '范聖佑',
+          company: 'JetBrains Developer Advocate',
+          img: 'assets/images/home/speaker-2.jpeg'
+        },
+        {
+          id: 3,
+          name: 'wiwi',
+          company: 'tits technology / 前端打工仔',
+          img: 'assets/images/home/speaker-3.jpg'
+        },
+        {
+          id: 4,
+          name: '楊博荏',
+          company: 'FANSI & MetaBoom / Product Head',
+          img: 'assets/images/home/speaker-4.png'
+        },
+        {
+          id: 5,
+          name: 'York Chang',
+          company: 'Engineer',
+          img: 'assets/images/home/speaker-5.jpg'
+        },
+        {
+          id: 6,
+          name: 'John Lu',
+          company: '時刻科技股份有限公司 Android Developer',
+          img: 'assets/images/home/speaker-6.png'
+        },
+        {
+          id: 7,
+          name: 'Marvin Lin',
+          company: 'CMoney',
+          img: 'assets/images/home/speaker-7.JPG'
+        },
+        {
+          id: 8,
+          name: 'Mike',
+          company: 'Taipei HakerSpace 常務理事 / BitoPro App工程師',
+          img: 'assets/images/home/speaker-8.jpeg'
+        },
+        {
+          id: 9,
+          name: 'jserv',
+          company: 'jserv',
+          img: 'assets/images/home/speaker-9.png'
+        }
+      ]
     }
   },
   computed: {
@@ -355,6 +394,7 @@ export default {
     img {
       max-width: 213px;
       width: 95%;
+      border-radius: 50%;
     }
     h3 {
       @include font(2rem, $colorPrimary, bold);
