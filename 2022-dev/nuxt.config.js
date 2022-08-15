@@ -66,10 +66,25 @@ export default {
         hid: 'twitter-app:name:ipad',
         name: 'twitter:app:name:ipad',
         content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: '行動科技年會 2022 | Mobile / Open / Platform Conference'
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/2022/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/2022/favicon.ico?v=2' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Icons' }
     ],
     script: [
