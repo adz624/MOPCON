@@ -212,13 +212,13 @@ export default {
           id: 2,
           name: '范聖佑',
           company: 'JetBrains Developer Advocate',
-          img: 'assets/images/home/speaker-2.jpeg'
+          img: 'assets/images/home/speaker-2.png'
         },
         {
           id: 3,
           name: 'wiwi',
           company: 'tits technology / 前端打工仔',
-          img: 'assets/images/home/speaker-3.jpg'
+          img: 'assets/images/home/speaker-3.png'
         },
         {
           id: 4,
@@ -230,7 +230,7 @@ export default {
           id: 5,
           name: 'York Chang',
           company: 'Engineer',
-          img: 'assets/images/home/speaker-5.jpg'
+          img: 'assets/images/home/speaker-5.png'
         },
         {
           id: 6,
@@ -242,13 +242,13 @@ export default {
           id: 7,
           name: 'Marvin Lin',
           company: 'CMoney',
-          img: 'assets/images/home/speaker-7.JPG'
+          img: 'assets/images/home/speaker-7.png'
         },
         {
           id: 8,
           name: 'Mike',
           company: 'Taipei HakerSpace 常務理事 / BitoPro App工程師',
-          img: 'assets/images/home/speaker-8.jpeg'
+          img: 'assets/images/home/speaker-8.png'
         },
         {
           id: 9,
