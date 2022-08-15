@@ -14,6 +14,9 @@
     border-color: $colorPrimary;
     color: $colorPrimaryLight;
   }
+  @include screen(md) {
+    padding: 5px 2rem;
+  }
   @include screen(sm) {
     width: 100%;
   }
