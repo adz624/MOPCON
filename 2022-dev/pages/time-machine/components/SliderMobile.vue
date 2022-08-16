@@ -1,38 +1,44 @@
 <template>
-  <div class="info">
-    <div class="slider">
-      <div @click="onLastSlide">
-        <span class="iconify"
-          data-icon="entypo:triangle-left"
-          style="color: #ff7987;"
-          data-width="24"
-          data-height="24">
-        </span>
+  <div>
+    <div class="info">
+      <div class="slider">
+        <div @click="onLastSlide">
+          <span class="iconify"
+            data-icon="entypo:triangle-left"
+            style="color: #ff7987;"
+            data-width="24"
+            data-height="24">
+          </span>
+        </div>
+        <Splide ref="slider" :options="mobileOptions">
+          <SplideSlide v-for="year in years" :key="year">
+            {{ year }}
+          </SplideSlide>
+        </Splide>
+        <div @click="onNextSlide">
+          <span class="iconify"
+            data-icon="entypo:triangle-right"
+            style="color: #ff7987;"
+            data-width="24"
+            data-height="24">
+          </span>
+        </div>
       </div>
-      <Splide ref="slider" :options="mobileOptions">
-        <SplideSlide v-for="year in years" :key="year">
-          {{ year }}
-        </SplideSlide>
-      </Splide>
-      <div @click="onNextSlide">
-        <span class="iconify"
-          data-icon="entypo:triangle-right"
-          style="color: #ff7987;"
-          data-width="24"
-          data-height="24">
-        </span>
+
+      <div class="content">
+        <TimeMachineContent
+          :year="slideContent.year"
+          :title="slideContent.title"
+          :subtitle="slideContent.subtitle"
+          :text="slideContent.text"
+          :album="slideContent.album"
+          :websiteLink="slideContent.websiteLink" />
       </div>
     </div>
 
-    <div class="content">
-      <TimeMachineContent
-        :year="slideContent.year"
-        :title="slideContent.title"
-        :subtitle="slideContent.subtitle"
-        :text="slideContent.text"
-        :album="slideContent.album"
-        :websiteLink="slideContent.websiteLink" />
-    </div>
+    <!-- <div class="mosume">
+      <img :src="imgSrc" alt="mosume">
+    </div> -->
   </div>
 </template>
 
@@ -143,6 +149,9 @@ export default {
         album: this.content[this.slideActiveIndex].album,
         websiteLink: this.content[this.slideActiveIndex].websiteLink
       }
+    },
+    imgSrc () {
+      return require(`~/assets/images/timeMachine/mo-${this.years[this.slideActiveIndex]}-mobile.webp`)
     }
   },
   mounted () {
@@ -154,28 +163,9 @@ export default {
   methods: {
     onNextSlide () {
       this.$refs.slider.splide.go('<')
-      this.onSlideChange('<')
     },
     onLastSlide () {
       this.$refs.slider.splide.go('>')
-      this.onSlideChange('>')
-    },
-    onSlideChange (action) {
-      if (action === '<') {
-        const index = this.slideActiveIndex - 1
-        if (index < 0) {
-          this.slideActiveIndex = this.years.length - 1
-          return
-        }
-        this.slideActiveIndex = index
-      } else {
-        const index = this.slideActiveIndex + 1
-        if (index === this.years.length) {
-          this.slideActiveIndex = 0
-          return
-        }
-        this.slideActiveIndex = index
-      }
     }
   }
 }
@@ -258,6 +248,18 @@ export default {
     @media (max-width: 640px) {
       padding: 20px 0px;
       border-top: 4px solid $colorPink;
+    }
+  }
+}
+
+.mosume {
+  margin-top: 4rem;
+
+  img {
+    @media (max-width: 640px) {
+      width: 330px;
+      height: 310px;
+      object-fit: cover;
     }
   }
 }

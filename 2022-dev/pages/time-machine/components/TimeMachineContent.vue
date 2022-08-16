@@ -8,7 +8,7 @@
     </div>
 
     <div class="button-area">
-      <div v-if="album.length" ref="dropdownWrapper" class="mr-10 mr-md-4 mr-pad-2 mr-sm-0 mb-sm-6">
+      <div v-if="album.length" ref="dropdownWrapper" class="mr-10 mr-md-4 mr-pad-2 mr-sm-0 mb-sm-6 activities">
         <div @click="toggleDropdown" class="btn">
           <client-only><span class="iconify" data-icon="ep:arrow-down-bold" /></client-only>
           活動花絮
@@ -143,9 +143,24 @@ export default {
 
 .button-area {
   @include flex(flex-end);
-  .btn svg {
-    font-size: 20px;
-    top: 4px;
+
+  .activities {
+    width: 100%;
+  }
+
+  @include screen(sm) {
+    @include flex(center, column, center);
+  }
+
+  .btn {
+    @include screen(pad) {
+      width: 100%;
+    }
+
+    svg {
+      font-size: 20px;
+      top: 4px;
+    }
   }
 
   .dropdown {

@@ -18,7 +18,7 @@
       <div class="bg-pink-image-left">
         <img src="~/assets/images/timeMachine/bg-left-pink.webp" alt="left" >
       </div>
-      <div class="content-left-pink"></div>
+
       <section>
         <!-- desktop slider -->
         <SliderPC v-if="!isMobile" />
@@ -128,9 +128,9 @@ export default {
         object-fit: scale-down;
         height: 400px;
 
-        @include screen(pad) {
+        @include screen(md) {
           width: 260px;
-          height: 300px;
+          height: 280px;
         }
 
         @include screen(sm) {
@@ -142,16 +142,26 @@ export default {
 
     .bg-pink-image-left {
       margin-top: 300px;
+      padding-bottom: 380px;
       display: flex;
+
+      @include screen(md) {
+        margin-top: 30px;
+        padding-bottom: 410px;
+      }
+
+      @media (max-width: 640px) {
+        padding-bottom: 880px;
+      }
 
       img {
         object-fit: scale-down;
         height: 400px;
 
-        @include screen(pad) {
+        @include screen(md) {
           width: 260px;
-          height: 300px;
-          margin-top: 150px;
+          height: 280px;
+          margin-top: 120px;
         }
 
         @include screen(sm) {
@@ -168,6 +178,10 @@ export default {
       left: 50%;
       top: 0;
       transform: translate(-44%, 20%);
+
+      @include screen(md) {
+        transform: translate(-44%, 7%);
+      }
 
       @include screen(sm) {
         transform: translate(-44%, 15%);
