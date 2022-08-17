@@ -145,7 +145,9 @@ export default {
   @include flex(flex-end);
 
   .activities {
-    width: 100%;
+    @include screen(pad) {
+      width: 100%;
+    }
   }
 
   @include screen(sm) {
