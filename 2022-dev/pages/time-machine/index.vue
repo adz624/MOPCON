@@ -185,7 +185,7 @@ export default {
       }, {
         year: 2014,
         title: this.$t('pages.timeline.content.2014.title'),
-        subtitle: this.$t('pages.timeline.content.2014.subtitle'),
+        subtitle: '',
         text: this.$t('pages.timeline.content.2014.text'),
         album: [],
         websiteLink: 'https://mopcon.org/2014/'

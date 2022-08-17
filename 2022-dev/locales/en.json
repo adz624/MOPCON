@@ -84,6 +84,67 @@
         "mrt": "捷運",
         "mrtIntro": "捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場"
       }
+    },
+    "timeline": {
+      "title": {
+        "1": "South of the Zhuoshui River,",
+        "2": " Always & Forever"
+      },
+      "content": {
+        "album": {
+          "speakersDinner": "講者晚宴",
+          "celebration": "After Party",
+          "preparation": "醞釀之夜",
+          "warmUp": "暖身場",
+          "meetUp": "同樂會"
+        },
+        "2021": {
+          "subtitle": "MOPCON 2021 \"Growing with You\"",
+          "text": "Celebrating our 10th anniversary, MOPCON 2021 focused on the topics of Mobile and AIoT, creating an online opportunity to grow together with you, as well as meeting old friends and making new friends online."
+        },
+        "2020": {
+          "title": "Social Engagement, Remote Working, Digital Transformation",
+          "subtitle": "MOPCON 2020 \" $｛ con ｝ With Us ! \"",
+          "text": "Facing the global pandemic and dramatic industry changes in 2020, from the perspective of “What MOPCON can help?”, MOPCON completed the technology exchange convention in South Taiwan under the three themes of “Social Engagement”, “Digital Transformation”, and “Remote Working”, in conjunction with the core ideals of mobile technologies."
+        },
+        "2019": {
+          "title": "Artificial Intelligence, Quantitative Investment",
+          "subtitle": "MOPCON 2019 \"here, we $｛ con ｝\"",
+          "text": "In 2019, MOPCON focused on the popular topics of AI and Quantitative Investment, as well as topics from previous years, including Startups, Mobile App, IoT, Cross-Platform Development, UI/UX, and Agile. Most importantly, we worked with local communities, and held panels to discuss engineering careers and agile implementation, which has become an annual tradition."
+        },
+        "2018": {
+          "subtitle": "MOPCON 2018 \"Connect Everything－Interconnect, Interact, Integrate\"",
+          "text": "At MOPCON 2018, in addition to the popular topics of Mobile App, AR/VR, and UI/UX, we also continued to explore the rapidly expanding technology of IoT, AI, and Blockchain. This year’s core topic, “Connect Everything - Interconnect, Interact, Integrate”, welcomes attendees and professionals to interact and explore new topics of our ubiquitous world, and to create an intelligent future."
+        },
+        "2017": {
+          "title": "Chatbots, Data Analytics, Machine Learning",
+          "subtitle": "MOPCON 2017 \"Hyperconnectivity － Interconnect, Interact, Intelligence\"",
+          "text": "In its sixth consecutive year, MOPCON has become the biggest technology conference in Southern Taiwan. This year, our core value of \"Hyperconnectivity - Interconnect, Interact, Intelligence\" broadly included the topics of Chatbots, Wearable Tech, Application of IoT, Data Analysis, Machine Learning, VR, and AR to guide event audiences to explore the hyperconnectivity of the future."
+        },
+        "2016": {
+          "title": "Virtual Reality, Augmented Reality, IoT",
+          "subtitle": "MOPCON 2016 \"Connect Everything\"",
+          "text": "\"Connect Everything\" was the spirit of MOPCON 2016, which expresses that data is king in the modern era, as software applications and hardware have incorporated all of us into the digital world, and mobile technology would be the final milestone for user data access and acquisition."
+        },
+        "2015": {
+          "title": "Digital Content, Wearable Tech, Healthcare Tech",
+          "subtitle": "MOPCON 2015 \"Connect\"",
+          "text": "Officially named \"Mobile Tech Meetup\", MOPCON 2015 focused on Mobile Development Technology, Service Operations, and Cloud Services, as well as covered broad mobile technology topics such as Digital Content, Wearable Tech, Healthcare Tech, Home Automation, and UX."
+        },
+        "2014": {
+          "title": "Wearable Tech, Sports & Healthcare Tech, Home Automation",
+          "text": "The theme \"I code, I spread, I connect\" of MOPCON 2014 focused not only on App Development, Cloud Services, Digital Content, and Operational Innovation, but also major topics covered at WWDC and Google I/O, such as Big Data, Wearable Tech, Sports & Healthcare Tech, Home Automation, TV/HD Content, Minimalistic Design, and Development Process."
+        },
+        "2013": {
+          "title": "E-Commerce, Digital Content, Business Services",
+          "subtitle": "MOPCON 2013 \"I code, I spread, I connect\"",
+          "text": "Focusing on 3 major practical mobile applications - operation, development, and digital content - which have become the spotlight of the media, due to recent major active developments in related fields ranging from e-commerce, digital content, and business services to consumer applications."
+        },
+        "2012": {
+          "title": "e-Ticketing",
+          "text": "The \"e-Ticketing\" theme of MOPCON 2012 was inspired by recent developments in mobile camera, NFC, and software technology, such as cloud services and QR codes. It was anticipated to inspire new applications throughout the industry supply chain, therefore, MOPCON invited engineers and manufacturers with relevant practical experience to discuss and share their experiences."
+        }
+      }
     }
   }
 }
