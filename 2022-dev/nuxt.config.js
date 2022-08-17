@@ -127,7 +127,7 @@ export default {
     // 全域 sass 變數設定
     '@nuxtjs/style-resources',
     '@nuxtjs/i18n',
-    'nuxt-fontawesome',
+    'nuxt-fontawesome'
   ],
 
   i18n: {
