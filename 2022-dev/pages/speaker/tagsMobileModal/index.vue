@@ -7,9 +7,9 @@
       :style="{'display: block': show }"
     >
       <div class="modal-content">
-        <div class="clearfix">
+        <!-- <div class="clearfix">
           <span class="close mr-1" @click="close()">&times;</span>
-        </div>
+        </div> -->
         <slot />
       </div>
     </div>

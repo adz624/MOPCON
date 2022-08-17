@@ -24,20 +24,28 @@
             <input :id="`tag-${i}`" v-model="checkTag" :value="item" type="checkbox" class="mr-1">
           </label>
         </div>
-        <button class="speaker-filter-button btn btn-primary" @click="tagsModalOpen = true">
+        <button class="speaker-filter-button btn btn-primary" @click="openTagModal()">
           <client-only><span class="iconify" data-icon="ci:filter" /></client-only>
           {{ $t('pages.speaker.filter_tag') }}
         </button>
-        <Modal v-if="isMobile" :modal-open="tagsModalOpen" @modal-close="closeTagModal">
-          <h3 class="text-center fz-6">
+        <Modal v-if="isMobile" :modal-open="tagsModalOpen">
+          <h3 class="text-center fz-6 mt-2 mobile-tag-title">
             {{ $t('pages.speaker.filter_tag') }}
           </h3>
-          <div class="tags">
-            <label v-for="(item,i) in tags" :key="`m-tags-${i}`" :for="`tag-${i}`" class="tags-item" :class="{'active': checkTag.includes(item) }">
+          <div class="tags mb-10">
+            <label v-for="(item,i) in tags" :key="`m-tags-${i}`" :for="`m-tag-${i}`" class="tags-item" :class="{'active': tempCheckTag.includes(item) }">
               {{ item }}
-              <input :id="`tag-${i}`" v-model="checkTag" :value="item" type="checkbox" class="mr-1">
+              <input :id="`m-tag-${i}`" v-model="tempCheckTag" :value="item" type="checkbox" class="mr-1">
             </label>
           </div>
+          <button class="mobile-tag-button btn btn-primary mb-4" @click="mobileCheckFilter()">
+            <client-only><span class="iconify mr-2" data-icon="fa:search" /></client-only>
+            {{ $t('pages.speaker.filter_tag_button') }}
+          </button>
+          <button class="mobile-tag-button btn btn-outline-primary" @click="closeTagModal(!tagsModalOpen)">
+            <client-only><span class="iconify fz-7 color-pink" data-icon="carbon:close" /></client-only>
+            {{ $t('pages.speaker.close') }}
+          </button>
         </Modal>
         <div class="speakers">
           <div
@@ -107,6 +115,7 @@ export default {
       tagsModalOpen: false,
       tags: [],
       checkTag: [],
+      tempCheckTag: [],
       speakerData: [],
       activeSpeaker: {}
     }
@@ -198,9 +207,18 @@ export default {
     },
     closeTagModal (show) {
       this.tagsModalOpen = show
+      this.tempCheckTag = []
+    },
+    openTagModal () {
+      this.tempCheckTag = [...this.checkTag]
+      this.tagsModalOpen = true
     },
     closeModal (show) {
       this.modalOpen = show
+    },
+    mobileCheckFilter () {
+      this.checkTag = [...this.tempCheckTag]
+      this.closeTagModal(!this.tagsModalOpen)
     }
   }
 }
@@ -209,6 +227,20 @@ export default {
 <style lang="scss" scoped>
 .banner {
   background-color: #0074A2;
+  background-image: url('../../assets/images/banner.svg');
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include screen(md) {
+    background-size: contain;
+  }
+  @include screen(pad) {
+    background-image: url('../../assets/images/banner_short_ipad.svg');
+  }
+  @include screen(sm) {
+    background-image: url('../../assets/images/banner_short_mobile.svg');
+  }
   h1 {
     @include font(40px, $colorWhite, bold);
   }
@@ -345,6 +377,17 @@ export default {
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
+}
+.mobile-tag {
+  &-title {
+    border-bottom: 4px solid $colorPink;
+  }
+  &-button {
+    @include flex(center, row, center);
+  }
+}
+.color-pink {
+  color: $colorPink;
 }
 
 </style>

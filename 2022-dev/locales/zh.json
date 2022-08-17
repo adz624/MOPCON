@@ -94,6 +94,8 @@
         "2": "MOPCON 志在打造出一座「高速資訊交流圈」！"
       },
       "filter_tag": "主題篩選",
+      "filter_tag_button": "搜尋主題",
+      "close": "關閉視窗",
       "modal": {
         "topic": "議程主題名稱",
         "target": "目標會眾",

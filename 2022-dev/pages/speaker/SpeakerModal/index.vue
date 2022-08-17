@@ -71,9 +71,41 @@
           <!-- eslint-disable-next-line vue/no-v-html -->
           <p class="speaker-content mb-5 mt-0" v-html="parseContent(data.expected_gain)" />
         </div>
-        <button class="btn btn-primary mb-4 speaker-modal-button">
-          <client-only><span class="iconify fz-5 mr-2" data-icon="bi:share-fill" /></client-only>              {{ $t('pages.speaker.modal.share') }}
-        </button>
+        <div class="share-dropdown">
+          <button class="btn btn-primary mb-4 speaker-modal-button" @click="shareShow=!shareShow">
+            <client-only><span class="iconify fz-5 mr-2" data-icon="bi:share-fill" /></client-only>              {{ $t('pages.speaker.modal.share') }}
+          </button>
+          <div v-if="shareShow" class="share-list">
+            <client-only>
+              <ShareNetwork
+                network="facebook"
+                :url="shareUrl"
+                :title="`${data.name} | 2022 MOPCON 講者`"
+                :description="`${data.summary}`"
+                :quote="`${data.name} | 2022 MOPCON 講者`"
+                hashtags="MOPCON"
+              >
+                分享 Facebook
+              </ShareNetwork>
+            </client-only>
+            <client-only>
+              <ShareNetwork
+                network="Twitter"
+                :url="shareUrl"
+                :title="`${data.name} | 2022 MOPCON 講者`"
+                :description="`${data.summary}`"
+                :quote="`${data.name} | 2022 MOPCON 講者`"
+                hashtags="MOPCON"
+              >
+                分享 Twitter
+              </ShareNetwork>
+            </client-only>
+            <a href="#" class="py-3 px-2" @click.prevent="copylink">複製講者連結</a>
+          </div>
+          <p v-if="copySuccess" key="success" class="copy-success">
+            連結複製成功！
+          </p>
+        </div>
         <a :href="`https://calendar.google.com/calendar/u/0/r/eventedit?text=MOPCON+2022+${data.topic}&dates=${$moment(data.started_at*1000).format('YYYYMMDDTHHmmss')}/${$moment(data.ended_at*1000).format('YYYYMMDDTHHmmss')}&trp=false&sf=true`" target="_blank" class="btn btn-outline-primary speaker-modal-button mb-4">
           <client-only>
             <span class="iconify fz-6 mr-1" data-icon="bxs:calendar-check" />
@@ -97,7 +129,14 @@ export default {
   },
   data () {
     return {
+      shareShow: false,
+      copySuccess: false,
       show: this.modalOpen
+    }
+  },
+  computed: {
+    shareUrl () {
+      return process.client ? `${window.location.origin}/2022/speaker/${this.data.speaker_id}` : ''
     }
   },
   watch: {
@@ -123,6 +162,15 @@ export default {
     }
   },
   methods: {
+    copylink () {
+      navigator.clipboard.writeText(this.shareUrl).then(() => {
+        this.copySuccess = true
+        this.shareShow = false
+        setTimeout(() => {
+          this.copySuccess = false
+        }, 1500)
+      }).catch(() => {})
+    },
     parseContent (content) {
       if (content) {
         return content.replace(/\n/gi, '<br>')

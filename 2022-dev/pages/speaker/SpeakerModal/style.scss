@@ -127,11 +127,44 @@
       color: $colorWhite;
       padding: 0.5rem 1rem;
       border: 0px;
-      margin-right: 1rem;
+      margin-right: 0.75rem;
+      margin-bottom: 0.5rem;
     }
   }
   &-modal-button {
     width: 100%;
     @include flex(center, row, center);
   }
+}
+.share-dropdown {
+  position: relative;
+}
+.share-list {
+  position: absolute;
+  right: 10px;
+  top: 85%;
+  background: white;
+  z-index: 2;
+  border-radius: 6px;
+  overflow: hidden;
+  a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    @include font(16px,$colorPrimary,400);
+    &:hover{
+      background: $colorPrimaryLight;
+    }
+  }
+}
+.copy-success {
+  position: absolute;
+  right: 10px;
+  top: 85%;
+  background: $colorPrimaryLight;
+  z-index: 2;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0.75rem 1.5rem;
+  @include font(16px,$colorPrimary,400);
 }
