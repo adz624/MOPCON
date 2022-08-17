@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section id="traffic" class="pt-8 pb-15 pr-10 pl-10 pr-sm-0 pl-sm-0">
+    <section id="traffic" class="pt-8 pb-8 pr-10 pl-10 pr-sm-0 pl-sm-0">
       <div class="container box pb-15 pr-4 pl-4 pb-sm-0">
         <h2 class="mb-5">
           {{ $t('pages.home.traffic.title') }}
@@ -190,12 +190,26 @@
         </div>
       </div>
     </section>
+    <section v-if="false" id="sponsor" class="container pb-8">
+      <div v-swiper="swiperOption" class="ml-auto relative" :loadtheme="false">
+        <div class="swiper-wrapper">
+          <div v-for="(data, index) in sponsorLogoList" :key="'sponsor_logo' + index" class="swiper-slide">
+            <img :src="data" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
+import { directive } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 export default {
   name: 'HomePage',
+  directives: {
+    swiper: directive
+  },
   data () {
     return {
       nowDropdownOpen: '',
@@ -249,13 +263,46 @@ export default {
           name: 'Mike',
           company: 'Taipei HakerSpace 常務理事 / BitoPro App工程師',
           img: 'assets/images/home/speaker-8.png'
-        },
-        {
-          id: 9,
-          name: 'jserv',
-          company: 'jserv',
-          img: 'assets/images/home/speaker-9.png'
         }
+      ],
+      swiperOption: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      },
+      sponsorLogoList: [
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png',
+        'assets/images/home/sponsor-tmp.png'
       ]
     }
   },
@@ -383,7 +430,7 @@ export default {
   }
   .speaker-area {
     @include flex(normal, column, center);
-    width: 33.3333%;
+    width: 25%;
     padding: 1rem 1.5rem;
     @include screen(md) {
       width: 50%;
@@ -513,6 +560,23 @@ export default {
         width: 100%;
       }
     }
+  }
+}
+
+#sponsor {
+  background: $colorWhite;
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+  .img-fluid {
+    max-width: 100%;
+    display: block;
+    margin: auto;
   }
 }
 </style>
