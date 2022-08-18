@@ -103,7 +103,7 @@ export default {
   plugins: [
     { src: '~/plugins/font-awesome' },
     { src: '~/plugins/vue-swiper', mode: 'client' },
-    { src: '~/plugins/swiper.js', mode: 'client' }
+    { src: '~/plugins/splide.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
