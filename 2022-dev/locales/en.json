@@ -98,6 +98,10 @@
           "warmUp": "暖身場",
           "meetUp": "同樂會"
         },
+        "buttons": {
+          "album": "Album",
+          "website": "Website"
+        },
         "2021": {
           "subtitle": "MOPCON 2021 \"Growing with You\"",
           "text": "Celebrating our 10th anniversary, MOPCON 2021 focused on the topics of Mobile and AIoT, creating an online opportunity to grow together with you, as well as meeting old friends and making new friends online."
