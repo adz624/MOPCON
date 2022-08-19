@@ -1,7 +1,5 @@
 <template>
   <div class="time-machine">
-    <!-- header -->
-
     <!-- banner image -->
     <div class="banner">
       <div class="image" />
@@ -10,13 +8,13 @@
     <!-- content -->
     <main>
       <h1>
-        {{ $t('pages.timeline.title.1') }}<br />{{ $t('pages.timeline.title.2') }}
+        {{ $t('pages.timeline.title.1') }}<br>{{ $t('pages.timeline.title.2') }}
       </h1>
       <div class="bg-pink-image-right">
-        <img src="~/assets/images/timeMachine/bg-right-pink.webp" alt="right" />
+        <img src="~/assets/images/timeMachine/bg-right-pink.webp" alt="right">
       </div>
       <div class="bg-pink-image-left">
-        <img src="~/assets/images/timeMachine/bg-left-pink.webp" alt="left" >
+        <img src="~/assets/images/timeMachine/bg-left-pink.webp" alt="left">
       </div>
 
       <section>
