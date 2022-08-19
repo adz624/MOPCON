@@ -40,3 +40,14 @@
     color: $colorWhite;
   }
 }
+
+.btn-primary-light {
+  background-color: $colorPrimaryLight;
+  border-color: $colorPrimaryLight;
+  color: $colorWhite;
+  &:hover {
+    background-color: $colorPink;
+    border-color: $colorPink;
+    color: $colorWhite;
+  }
+}
