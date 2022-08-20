@@ -143,12 +143,12 @@ export default {
         {
           hid: 'og-url',
           property: 'og:url',
-          content: this.modalOpen ? `${process.env.BASE_URL}/2021/speaker/${this.activeSpeaker.speaker_id}` : `${process.env.BASE_URL}/2021/speaker`
+          content: this.modalOpen ? `${process.env.BASE_URL}/2022/speaker/${this.activeSpeaker.speaker_id}` : `${process.env.BASE_URL}/2022/speaker`
         },
         {
           hid: 'og-image',
           property: 'og:image',
-          content: this.modalOpen ? `${process.env.BASE_URL}/2021/${this.activeSpeaker.img.web}` : `${process.env.BASE_URL}/2021/og-image.png`
+          content: this.modalOpen ? `${process.env.BASE_URL}/2022/${this.activeSpeaker.img.web}` : `${process.env.BASE_URL}/2022/og-image.png`
         },
         // twitter seo
         {
