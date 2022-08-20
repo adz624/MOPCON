@@ -21,7 +21,7 @@
         </div>
         <div class="community-content">
           <h2 class="community-title text-center">
-            來看看成員有誰
+            {{ $t('pages.community.see_member') }}
           </h2>
           <div class="community-member">
             <p v-for="(member, i) in data.member" :key="`member_${i}`" class="mr-4 my-3">

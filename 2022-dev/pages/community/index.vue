@@ -20,7 +20,7 @@
     <section class="main-content pt-8 pb-14">
       <div class="container">
         <h2 class="subTitle text-center">
-          志工團隊
+          {{ $t('pages.community.volunteer_team') }}
         </h2>
         <div class="community">
           <div
