@@ -75,8 +75,8 @@
 </template>
 
 <script>
-import SpeakerModal from '../speaker/SpeakerModal'
-import Modal from '../speaker/tagsMobileModal'
+import SpeakerModal from '~/components/speaker/SpeakerModal'
+import Modal from '~/components/speaker/tagsMobileModal'
 export default {
   name: 'SpeakerPage',
   components: {
