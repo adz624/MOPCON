@@ -99,12 +99,27 @@
   &-bio {
     @include font(16px,$colorBlueLight,400);
   }
+  &-community-icon {
+    @include flex(flex-end, row, center);
+    @include screen(sm) {
+      @include flex(center, row, center);
+    }
+    a, svg{
+      color: $colorPrimaryLight;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
   &-date {
     @include flex(flex-end, row, center);
+    @include screen(sm) {
+      @include flex(center, row, center);
+    }
     .text {
       @include flex(normal, row, center);
       svg {
-        color: $colorBlue;
+        color: $colorPrimaryLight;
       }
       span {
         @include font(16px,$colorBlueLight,400);

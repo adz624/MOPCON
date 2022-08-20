@@ -25,8 +25,18 @@
             </p>
           </div>
         </div>
+        <div class="speaker-community-wrap">
+          <div class="speaker-community-icon mt-3">
+            <client-only>
+              <a v-if="data.link_twitter" :href="data.link_twitter" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:twitter-fill" /></a>
+              <a v-if="data.link_other" :href="data.link_other" target="_blank"><span class="iconify fz-6 mr-2" data-icon="ri:global-fill" /></a>
+              <a v-if="data.link_github" :href="data.link_github" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:github-fill" /></a>
+              <a v-if="data.link_fb" :href="data.link_fb" target="_blank"><span class="iconify fz-6" data-icon="akar-icons:facebook-fill" /></a>
+            </client-only>
+          </div>
+        </div>
         <div class="speaker-date">
-          <p class="text my-4">
+          <p class="text mt-3 mb-4">
             <span v-if="data.started_at > 0" class="pr-2">{{ $moment(data.started_at * 1000).format('MM/DD HH:mm') }} - {{ $moment(data.ended_at * 1000).format('HH:mm') }}</span>
             <span v-if="data.room">{{ data.room }}{{ data.floor ? `(${ data.floor })` : '' }}</span>
             <client-only><span class="iconify fz-5" data-icon="bxs:map" /></client-only>
