@@ -10,11 +10,13 @@
             data-height="24">
           </span>
         </div>
-        <Splide ref="slider" :options="mobileOptions">
-          <SplideSlide v-for="year in years" :key="year">
-            {{ year }}
-          </SplideSlide>
-        </Splide>
+        <client-only>
+          <Splide ref="slider" :options="mobileOptions">
+            <SplideSlide v-for="year in years" :key="year">
+              {{ year }}
+            </SplideSlide>
+          </Splide>
+        </client-only>
         <div @click="onNextSlide">
           <span class="iconify"
             data-icon="entypo:triangle-right"
@@ -79,12 +81,12 @@ export default {
   computed: {
     slideContent () {
       return {
-        year: this.content[this.slideActiveIndex].year,
-        title: this.content[this.slideActiveIndex].title,
-        subtitle: this.content[this.slideActiveIndex].subtitle,
-        text: this.content[this.slideActiveIndex].text,
-        album: this.content[this.slideActiveIndex].album,
-        websiteLink: this.content[this.slideActiveIndex].websiteLink
+        year: this.content && this.content[this.slideActiveIndex].year,
+        title: this.content && this.content[this.slideActiveIndex].title,
+        subtitle: this.content && this.content[this.slideActiveIndex].subtitle,
+        text: this.content && this.content[this.slideActiveIndex].text,
+        album: this.content && this.content[this.slideActiveIndex].album,
+        websiteLink: this.content && this.content[this.slideActiveIndex].websiteLink
       }
     },
     imgSrc () {
@@ -92,10 +94,12 @@ export default {
     }
   },
   mounted () {
-    const splide = this.$refs.slider.splide
-    splide.on('move', () => {
-      this.slideActiveIndex = splide.index
-    })
+    const splide = this.$refs.slider?.splide
+    if (splide) {
+      splide.on('move', () => {
+        this.slideActiveIndex = splide.index
+      })
+    }
   },
   unmounted () {
     this.$refs.slider.splide.destroy(true)

@@ -8,7 +8,7 @@
     </div>
 
     <div class="button-area">
-      <div v-if="album.length" ref="dropdownWrapper" class="mr-10 mr-md-4 mr-pad-2 mr-sm-0 mb-sm-6 activities">
+      <div v-if="album?.length" ref="dropdownWrapper" class="mr-10 mr-md-4 mr-pad-2 mr-sm-0 mb-sm-6 activities">
         <div @click="toggleDropdown" class="btn">
           <client-only><span class="iconify" data-icon="ep:arrow-down-bold" /></client-only>
           {{ $t('pages.timeline.content.buttons.album') }}
