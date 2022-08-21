@@ -11,13 +11,11 @@
             data-height="24">
           </span>
         </div>
-        <client-only>
-          <Splide ref="slider" :options="desktopOptions">
-            <SplideSlide v-for="year in years" :key="year">
-              {{ year }}
-            </SplideSlide>
-          </Splide>
-        </client-only>
+        <Splide ref="slider" :options="desktopOptions">
+          <SplideSlide v-for="year in years" :key="year">
+            {{ year }}
+          </SplideSlide>
+        </Splide>
         <div @click="onNextSlide">
           <span
             class="iconify"
