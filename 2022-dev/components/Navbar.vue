@@ -149,7 +149,7 @@ export default {
         // },
         {
           name: 'timeMachine',
-          url: './timeMachine',
+          url: './time-machine',
           subNav: [],
           subIsOpen: false,
           open: '',
