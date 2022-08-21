@@ -11,11 +11,13 @@
             data-height="24">
           </span>
         </div>
-        <Splide ref="slider" :options="desktopOptions">
-          <SplideSlide v-for="year in years" :key="year">
-            {{ year }}
-          </SplideSlide>
-        </Splide>
+        <client-only>
+          <Splide ref="slider" :options="desktopOptions">
+            <SplideSlide v-for="year in years" :key="year">
+              {{ year }}
+            </SplideSlide>
+          </Splide>
+        </client-only>
         <div @click="onNextSlide">
           <span
             class="iconify"
@@ -97,12 +99,14 @@ export default {
     }
   },
   mounted () {
-    const splide = this.$refs.slider?.splide
-    if (splide) {
-      splide.on('move', () => {
-        this.slideActiveIndex = splide.index
-      })
-    }
+    this.$nextTick(function () {
+      const splide = this.$refs.slider?.splide
+      if (splide) {
+        splide.on('move', () => {
+          this.slideActiveIndex = splide.index
+        })
+      }
+    })
   },
   unmounted () {
     this.$refs.slider.splide.destroy(true)

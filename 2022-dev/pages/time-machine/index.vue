@@ -22,7 +22,7 @@
         <SliderPC v-if="!isMobile" :years="years" :content="content" />
 
         <!-- mobile slider -->
-        <SliderMobile v-if="isMobile" :years="years" :content="content" />
+        <SliderMobile v-else :years="years" :content="content" />
       </section>
     </main>
   </div>
