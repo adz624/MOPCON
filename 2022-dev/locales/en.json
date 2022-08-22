@@ -149,6 +149,42 @@
           "text": "The \"e-Ticketing\" theme of MOPCON 2012 was inspired by recent developments in mobile camera, NFC, and software technology, such as cloud services and QR codes. It was anticipated to inspire new applications throughout the industry supply chain, therefore, MOPCON invited engineers and manufacturers with relevant practical experience to discuss and share their experiences."
         }
       }
+    },
+    "ticket": {
+      "title": "票種介紹",
+      "subTitle": "現在就跟我們 一起參與這場盛會",
+      "intro": {
+        "1": "啟動 2022 Next Giant Conf",
+        "2": "不管你是新手入村，還是專家級高手，都歡迎共同參與每天精彩的議程。我們針對不同族群需求，開出各種票種，就是希望每個人都可以找到最適合自己的方案，年輕學生可以選擇以划算價格來現場見到心中的大神，或你是超級 VIP，就可以享有更多好康。"
+      },
+      "vvip": "{ VVIP }",
+      "vip": "{ VIP }",
+      "blindBird": "{ 盲鳥票 }",
+      "general": "{ 一般票 }",
+      "student": "{ 學生票 }",
+      "contain": {
+        "1": "兩日議程＋線上限期回放",
+        "2": "含 2022 全套紀念品 * 1套",
+        "3": "再贈全體志工誠摯感恩的心＋總招的膝蓋",
+        "4": "3000元 / 張",
+        "5": "含 2022 紀念T * 1件",
+        "6": "再贈全體志工誠摯感恩的心",
+        "7": "1800元 / 張",
+        "8": "兩日議程＋線上限期回放。精彩不錯過！",
+        "9": "單人票 $900／張 ＝原價 7 折",
+        "10": "三人套票 $700／張＝原價 54 折【最優惠價格】",
+        "11": "1250元 / 張",
+        "12": "雙人套票 $900／張",
+        "13": "多跟一個朋友分享，可省350元",
+        "14": "五人套票 $750／張",
+        "15": "揪團報名，最多可省500元"
+      },
+      "goToBuy": "前往購票",
+      "product": {
+        "title": "周邊商品",
+        "intro": "今年商品除了現賞販售外，也提供預購現場取貨！",
+        "description": "周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念"
+      }
     }
   }
 }

@@ -130,14 +130,14 @@ export default {
         //   open: process.env.route_sponsor,
         //   target: ''
         // },
-        // {
-        //   name: 'ticket',
-        //   url: './ticket',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_ticket,
-        //   target: ''
-        // },
+        {
+          name: 'ticket',
+          url: './ticket',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_ticket,
+          target: ''
+        },
         // {
         //   name: 'guide',
         //   class: '',
