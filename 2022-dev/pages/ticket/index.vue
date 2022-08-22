@@ -30,6 +30,7 @@
               <li>{{ $t('pages.ticket.contain.1') }}</li>
               <li>{{ $t('pages.ticket.contain.2') }}</li>
               <li>{{ $t('pages.ticket.contain.3') }}</li>
+              <li>{{ $t('pages.ticket.contain.4') }}</li>
             </ul>
             <div class="btn btn-pink">
               {{ $t('pages.ticket.goToBuy') }}
@@ -46,7 +47,9 @@
           <div class="ticket-content">
             <ul>
               <li>{{ $t('pages.ticket.contain.1') }}</li>
-              <li>{{ $t('pages.ticket.contain.1') }}</li>
+              <li>{{ $t('pages.ticket.contain.5') }}</li>
+              <li>{{ $t('pages.ticket.contain.6') }}</li>
+              <li>{{ $t('pages.ticket.contain.7') }}</li>
             </ul>
             <div class="btn btn-pink">
               {{ $t('pages.ticket.goToBuy') }}
@@ -62,7 +65,9 @@
           </div>
           <div class="ticket-content">
             <ul>
-              <li>{{ $t('pages.ticket.contain.1') }}</li>
+              <li>{{ $t('pages.ticket.contain.8') }}</li>
+              <li>{{ $t('pages.ticket.contain.9') }}</li>
+              <li>{{ $t('pages.ticket.contain.10') }}</li>
             </ul>
             <div class="btn btn-primary">
               {{ $t('pages.ticket.goToBuy') }}
@@ -78,14 +83,17 @@
           </div>
           <div class="ticket-content">
             <ul>
-              <li>{{ $t('pages.ticket.contain.1') }}</li>
+              <li>{{ $t('pages.ticket.contain.8') }}</li>
+              <li>{{ $t('pages.ticket.contain.11') }}</li>
+              <li>{{ $t('pages.ticket.contain.12') }} 👉 {{ $t('pages.ticket.contain.13') }}</li>
+              <li>{{ $t('pages.ticket.contain.14') }} 👉 {{ $t('pages.ticket.contain.15') }}</li>
             </ul>
             <div class="btn btn-primary">
               {{ $t('pages.ticket.goToBuy') }}
             </div>
           </div>
         </div>
-        <div class="ticket-box ticket-primary-light">
+        <!-- <div class="ticket-box ticket-primary-light">
           <div class="ticket-title">
             <div class="img">
               <Student />
@@ -100,7 +108,7 @@
               {{ $t('pages.ticket.goToBuy') }}
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section id="product" class="pt-2 pb-14">
@@ -149,7 +157,7 @@ import VVIP from '../../assets/images/ticket/vvip.svg?inline'
 import VIP from '../../assets/images/ticket/vip.svg?inline'
 import BlindBird from '../../assets/images/ticket/blind_bird.svg?inline'
 import General from '../../assets/images/ticket/general.svg?inline'
-import Student from '../../assets/images/ticket/student.svg?inline'
+// import Student from '../../assets/images/ticket/student.svg?inline'
 export default {
   name: 'TicketPage',
   components: {
@@ -157,8 +165,8 @@ export default {
     VVIP,
     VIP,
     BlindBird,
-    General,
-    Student
+    General
+    // Student
   },
   data () {
     return {
@@ -211,6 +219,9 @@ export default {
   @include screen(sm) {
     display: none;
   }
+}
+.btn {
+  min-width: 185px;
 }
 #hero {
   background-color: #0074A2;
