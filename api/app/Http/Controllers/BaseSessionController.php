@@ -39,12 +39,6 @@ class BaseSessionController extends Controller
         'summary_e',
         'community_partner',
     ];
-    protected $locations = [
-        'R1' => '4F一廳',
-        'R2' => '4F二廳',
-        'R3' => '3F三廳',
-        'R4' => '3F四廳',
-    ];
     private $sessions;
     private $sponsors;
     private $sessionSpeakerMapping = [];
