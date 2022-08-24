@@ -12,7 +12,7 @@
         </div>
         <!-- {{ JSON.stringify(data) }} -->
         <div class="speaker-info">
-          <img :src="'https://fakeimg.pl/300/'" :alt="data.name" class="speaker-image mr-4">
+          <img :src="data?.img?.web" :alt="data.name" class="speaker-image mr-4">
           <div>
             <h4 class="speaker-title my-0 mt-sm-4">
               <p class="name pr-3 my-0">

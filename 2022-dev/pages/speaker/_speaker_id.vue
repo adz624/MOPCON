@@ -54,7 +54,7 @@
             class="speakers-item col-3 col-md-2 col-sm-1 my-11 py-4 px-10 px-sm-4"
             @click="openSpeakerModal(item)"
           >
-            <img :src="'https://fakeimg.pl/300/'" :alt="item.name" class="speakers-img">
+            <img :src="item.img.web" :alt="item.name" class="speakers-img">
             <h4 class="speakers-title mt-4 mb-0">
               {{ item.name }}
             </h4>
@@ -77,6 +77,7 @@
 <script>
 import SpeakerModal from '~/components/speaker/SpeakerModal'
 import Modal from '~/components/speaker/tagsMobileModal'
+import { speaker, tags } from '@/api/url'
 export default {
   name: 'SpeakerPage',
   components: {
@@ -85,21 +86,14 @@ export default {
   },
   async asyncData ({ $axios, params }) {
     try {
-      let data = []
-      if (process.server) {
-        const res = await $axios.get(process.env.BASE_URL + '/2022/speaker.json')
-        data = res.data
-      } else {
-        const res = '../static/speaker.json'
-        data = res.data
-      }
-      const res = await $axios.get(process.env.BASE_URL + '/2022/speaker-tags.json')
+      const { data } = await $axios.get(speaker)
+      const res = await $axios.get(tags)
       const config = {
-        speakerData: data,
-        tags: res.data.map(tag => tag.name)
+        speakerData: data.data,
+        tags: res.data.data.map(tag => tag.name)
       }
       if (params.speaker_id) {
-        const filterSpeaker = data.filter(speaker => speaker.speaker_id === +params.speaker_id)
+        const filterSpeaker = data.data.filter(speaker => speaker.speaker_id === +params.speaker_id)
         config.activeSpeaker = filterSpeaker && filterSpeaker.length > 0 ? filterSpeaker[0] : {}
         config.modalOpen = !!(filterSpeaker && filterSpeaker.length > 0)
       }
