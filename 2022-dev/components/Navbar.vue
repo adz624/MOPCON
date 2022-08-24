@@ -95,25 +95,25 @@ export default {
         //   open: process.env.route_community,
         //   target: ''
         // },
-        // {
-        //   name: 'schedule',
-        //   url: '',
-        //   subNav: [
-        //     {
-        //       name: 'scheduleMain',
-        //       url: './schedule',
-        //       open: process.env.route_schedule
-        //     },
-        //     {
-        //       name: 'scheduleUnconf',
-        //       url: './schedule_unconf',
-        //       open: process.env.route_schedule_unconf
-        //     }
-        //   ],
-        //   subIsOpen: true,
-        //   open: process.env.route_schedule || process.env.route_schedule,
-        //   target: ''
-        // },
+        {
+          name: 'schedule',
+          url: '',
+          subNav: [
+            {
+              name: 'scheduleMain',
+              url: './schedule',
+              open: process.env.route_schedule
+            },
+            {
+              name: 'scheduleUnconf',
+              url: './schedule_unconf',
+              open: process.env.route_schedule_unconf
+            }
+          ],
+          subIsOpen: true,
+          open: process.env.route_schedule || process.env.route_schedule,
+          target: ''
+        },
         // {
         //   name: 'speaker',
         //   url: './speaker',

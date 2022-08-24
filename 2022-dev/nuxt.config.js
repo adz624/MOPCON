@@ -1,6 +1,7 @@
 // import { Icon } from '@iconify/vue'
 
 const path = require('path')
+const axios = require('axios')
 require('dotenv').config()
 
 export default {
@@ -189,34 +190,27 @@ export default {
   },
 
   generate: {
-    dir: path.resolve(__dirname, '../2022/')
-    // routes () {
-    //   const pages = []
-    //   pages.push('/speaker')
-    //   const data = require('./static/speaker.json')
-    //   data.forEach((speaker) => {
-    //     pages.push(`/speaker/${speaker.speaker_id}`)
-    //   })
+    dir: path.resolve(__dirname, '../2022/'),
+    routes () {
+      const pages = []
 
-    //   pages.push('/sponsor')
-    //   const sponsors = require('./static/sponsor.json')
-    //   sponsors.forEach((sponsor) => {
-    //     sponsor.data.forEach((item) => {
-    //       pages.push(`/sponsor/${item.sponsor_id}`)
-    //     })
-    //   })
+      const flatDeep = (arr, d = 1) => {
+        return d > 0
+          ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+          : arr.slice()
+      }
+      const schedules = axios.get(`${process.env.BASE_URL}/api/2022/session`).then((res) => {
+        pages.push('/schedule')
+        const allRooms = flatDeep(res.data.data.map(item => item.period.map(s => s.room)), 2)
+        allRooms.forEach((room) => {
+          pages.push(`/schedule/${room.session_id}`)
+        })
+      })
 
-    //   pages.push('/schedule')
-    //   const session = require('./static/session.json')
-    //   session.forEach((period) => {
-    //     period.period.forEach((session) => {
-    //       session.room.forEach((ele) => {
-    //         pages.push(`/schedule/${ele.session_id}`)
-    //       })
-    //     })
-    //   })
-    //   return pages
-    // }
+      return Promise.all([schedules]).then(() => {
+        return pages
+      })
+    }
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
