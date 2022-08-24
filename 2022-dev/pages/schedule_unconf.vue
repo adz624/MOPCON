@@ -17,7 +17,7 @@
         </div>
       </div>
     </section>
-    <div class="agenda-content">
+    <div class="agenda-content pt-10">
       <div class="container">
         <section class="agenda-date">
           <div class="agenda-choose">

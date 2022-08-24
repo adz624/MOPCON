@@ -190,11 +190,13 @@
         </div>
       </div>
     </section>
-    <section v-if="false" id="sponsor" class="container pb-8">
-      <div v-swiper="swiperOption" class="ml-auto relative" :loadtheme="false">
-        <div class="swiper-wrapper">
-          <div v-for="(data, index) in sponsorLogoList" :key="'sponsor_logo' + index" class="swiper-slide">
-            <img :src="data" alt="" class="img-fluid">
+    <section id="sponsor" class="pb-8">
+      <div class="container">
+        <div v-swiper="swiperOption" class="ml-auto relative" :loadtheme="false">
+          <div class="swiper-wrapper">
+            <div v-for="(data, index) in sponsorLogoList" :key="'sponsor_logo' + index" class="swiper-slide">
+              <img :src="data" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
@@ -293,16 +295,12 @@ export default {
         }
       },
       sponsorLogoList: [
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png',
-        'assets/images/home/sponsor-tmp.png'
+        'assets/images/home/sponsor-1.svg',
+        'assets/images/home/sponsor-2.svg',
+        'assets/images/home/sponsor-3.svg',
+        'assets/images/home/sponsor-1.svg',
+        'assets/images/home/sponsor-2.svg',
+        'assets/images/home/sponsor-3.svg'
       ]
     }
   },
