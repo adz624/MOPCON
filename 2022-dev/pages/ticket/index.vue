@@ -121,27 +121,27 @@
         </p>
         <div class="product-area">
           <div class="product-box">
-            <img src="../../assets/images/ticket/收納包_合成照1.jpg" alt="product">
+            <img src="../../assets/images/ticket/product-1.jpg" alt="product">
             <h3>{{ $t('pages.ticket.product.1.title') }}</h3>
             <p v-if="false">{{ $t('pages.ticket.product.1.description') }}</p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/收納包_合成照2.jpg" alt="product">
+            <img src="../../assets/images/ticket/product-2.jpg" alt="product">
             <h3>{{ $t('pages.ticket.product.2.title') }}</h3>
             <p v-if="false">{{ $t('pages.ticket.product.2.description') }}</p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/2022_會眾T.png" alt="product">
+            <img src="../../assets/images/ticket/product-3.png" alt="product">
             <h3>{{ $t('pages.ticket.product.3.title') }}</h3>
             <p v-if="false">{{ $t('pages.ticket.product.3.description') }}</p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/2022_宮廟帽正面.png" alt="product">
+            <img src="../../assets/images/ticket/product-4.png" alt="product">
             <h3>{{ $t('pages.ticket.product.4.title') }}</h3>
             <p v-if="false">{{ $t('pages.ticket.product.4.description') }}</p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/2022_宮廟帽背面.png" alt="product">
+            <img src="../../assets/images/ticket/product-5.png" alt="product">
             <h3>{{ $t('pages.ticket.product.5.title') }}</h3>
             <p v-if="false">{{ $t('pages.ticket.product.5.description') }}</p>
           </div>
