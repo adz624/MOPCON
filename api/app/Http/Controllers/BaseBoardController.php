@@ -23,6 +23,10 @@ class BaseBoardController extends Controller
         'job_title',
         'job_title_e',
         'img',
+        'link_fb' => '',
+        'link_github' => '',
+        'link_twitter' => '',
+        'link_other' => '',
         'topic',
         'topic_e',
         'started_at',
@@ -52,8 +56,8 @@ class BaseBoardController extends Controller
     private const MOPCON_FIRST_DAY = 1603468800;
     private const MOPCON_LAST_SESSION_END = 1603616400;
 
-    private const BEFORE_START = 3*60;
-    private const START_AFTER = 10*60;
+    private const BEFORE_START = 3 * 60;
+    private const START_AFTER = 10 * 60;
 
     private const BEFORE_START_TXT = '議程即將開始';
     private const START_AFTER_TXT = '議程進行中';
@@ -101,7 +105,7 @@ class BaseBoardController extends Controller
             $tag_group_resource_path = $this->path . 'tag-group-dev.json';
         }
 
-        $this->map_path = 'api/' . $this-> year . '/board/images/field/map';
+        $this->map_path = 'api/' . $this->year . '/board/images/field/map';
 
         $speakers = json_decode(file_get_contents($speaker_resource_path), true);
         $tagGroupSetting = json_decode(file_get_contents($tag_group_resource_path), true);
@@ -356,7 +360,7 @@ class BaseBoardController extends Controller
         foreach ($boardAry[$day] as $key => $sessionSet) {
             $before_start = $sessionSet['started_at'] - BaseBoardController::BEFORE_START;
             $start_after = $sessionSet['started_at'] + BaseBoardController::START_AFTER;
-            $next_before_start = isset($boardAry[$day][$key+1]) ? $boardAry[$day][$key+1]['started_at'] - BaseBoardController::BEFORE_START : 0;
+            $next_before_start = isset($boardAry[$day][$key + 1]) ? $boardAry[$day][$key + 1]['started_at'] - BaseBoardController::BEFORE_START : 0;
             if ($before_start <= $now && $now < $sessionSet['started_at']) {
                 $result['playing'] = false;
                 $result['title'] = BaseBoardController::BEFORE_START_TXT;
