@@ -49,7 +49,7 @@
               </a>
               <!--下拉選單-->
               <ul v-if="nowSubOpen == nav.name" class="menu-subList">
-                <li v-for="(subNav,index) in nav.subNav" :key="`subNav_${index}`">
+                <li v-for="(subNav,index) in nav.subNav" :key="`subNav_${index}`" :style="subNav.class">
                   <a :href="subNav.url" class="menu-subList-link">{{ $t(`navbar.${subNav.name}`) }}</a>
                 </li>
               </ul>
@@ -102,12 +102,14 @@ export default {
             {
               name: 'scheduleMain',
               url: './schedule',
-              open: process.env.route_schedule
+              open: process.env.route_schedule,
+              class: 'border-top-left-radius: 10px; border-top-right-radius: 10px;'
             },
             {
               name: 'scheduleUnconf',
               url: './schedule_unconf',
-              open: process.env.route_schedule_unconf
+              open: process.env.route_schedule_unconf,
+              class: 'border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'
             }
           ],
           subIsOpen: true,
@@ -314,6 +316,7 @@ export default {
   .menu-icon {
     @include flex(center,row,center);
     a {
+      line-height: initial;
       color: $colorWhite;
       & + a {
         margin-left: 1rem;
