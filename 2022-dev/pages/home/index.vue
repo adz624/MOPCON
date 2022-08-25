@@ -12,14 +12,14 @@
             {{ $t('pages.home.intro.2') }}
           </p>
           <div class="button-area mt-15 mt-md-6 pt-6">
-            <div class="btn btn-pink mr-10 mb-md-6" @click="openWindow('https://www.facebook.com/mopcon')">
+            <a class="btn btn-pink mr-10 mb-md-6" href="./ticket">
               <client-only><span class="iconify" data-icon="carbon:recommend" /></client-only>
               {{ $t('pages.home.heroImgBtn.1') }}
-            </div>
-            <div class="btn btn-pink" @click="openWindow('https://docs.google.com/forms/d/e/1FAIpQLSf6fHcsyL3Wv649VDA2FnzUn2vO6K6sv1vAe47urvkcf0F_ig/viewform')">
+            </a>
+            <a class="btn btn-pink" href="./schedule">
               <client-only><span class="iconify" data-icon="akar-icons:circle-check-fill" /></client-only>
               {{ $t('pages.home.heroImgBtn.2') }}
-            </div>
+            </a>
           </div>
         </div>
         <div class="banner ml-5 ml-md-0">
@@ -74,12 +74,6 @@
               <p class="mt-4">
                 {{ $t('pages.home.schedule.1.intro') }}
               </p>
-              <div class="button-area mt-5">
-                <a href="schedule" class="btn btn-primary">
-                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                  {{ $t('pages.home.btn.more') }}
-                </a>
-              </div>
             </div>
           </div>
           <div class="schedule-area mt-10 pb-15">
@@ -98,12 +92,6 @@
               <p class="mt-4">
                 {{ $t('pages.home.schedule.2.intro') }}
               </p>
-              <div class="button-area mt-5">
-                <a href="schedule" class="btn btn-primary">
-                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                  {{ $t('pages.home.btn.more') }}
-                </a>
-              </div>
             </div>
           </div>
           <div class="schedule-area mt-10 pb-15">
@@ -122,13 +110,13 @@
               <p class="mt-4">
                 {{ $t('pages.home.schedule.3.intro') }}
               </p>
-              <div class="button-area mt-5">
-                <a href="schedule" class="btn btn-primary">
-                  <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
-                  {{ $t('pages.home.btn.more') }}
-                </a>
-              </div>
             </div>
+          </div>
+          <div class="button-area">
+            <a href="schedule" class="btn btn-primary">
+              <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
+              {{ $t('pages.home.btn.schedule') }}
+            </a>
           </div>
         </div>
       </div>
@@ -461,6 +449,18 @@ export default {
     color: $colorBlueLight;
     text-align: center;
   }
+  .button-area {
+    @include flex(center);
+    a svg {
+      font-size: 1.5rem;
+      top: 3px;
+    }
+    @include screen(sm) {
+      .btn {
+        width: auto;
+      }
+    }
+  }
   .schedule-area {
     @include flex(normal, row, center);
     @include screen(sm) {
@@ -488,15 +488,6 @@ export default {
       }
       p {
         text-align: left;
-      }
-      .button-area {
-        @include flex(normal, row-reverse);
-        @include screen(sm) {
-          @include flex(center);
-          .btn {
-            width: auto;
-          }
-        }
       }
       @include screen(sm) {
         width: 100%;
