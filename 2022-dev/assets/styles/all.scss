@@ -6,3 +6,7 @@
 @import './components/button';
 @import './components/background';
 @import './components/bannerPinkCircle';
+
+html.modal-open {
+  overflow-y: hidden;
+}

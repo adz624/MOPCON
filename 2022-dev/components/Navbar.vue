@@ -114,14 +114,14 @@ export default {
           open: process.env.route_schedule || process.env.route_schedule,
           target: ''
         },
-        // {
-        //   name: 'speaker',
-        //   url: './speaker',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_speaker,
-        //   target: ''
-        // },
+        {
+          name: 'speaker',
+          url: './speaker',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_speaker,
+          target: ''
+        },
         // {
         //   name: 'sponsor',
         //   url: './sponsor',

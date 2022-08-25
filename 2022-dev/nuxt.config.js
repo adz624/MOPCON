@@ -193,7 +193,12 @@ export default {
     dir: path.resolve(__dirname, '../2022/'),
     routes () {
       const pages = []
-
+      const speakers = axios.get(`${process.env.BASE_URL}/api/2022/speaker`).then((res) => {
+        pages.push('/speaker')
+        res.data.data.forEach((speaker) => {
+          pages.push(`/speaker/${speaker.speaker_id}`)
+        })
+      })
       const flatDeep = (arr, d = 1) => {
         return d > 0
           ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
@@ -207,7 +212,7 @@ export default {
         })
       })
 
-      return Promise.all([schedules]).then(() => {
+      return Promise.all([schedules, speakers]).then(() => {
         return pages
       })
     }
