@@ -9,7 +9,8 @@
     "sponsor": "Sponsor",
     "ticket": "Ticket",
     "timeMachine":"Time Machine",
-    "guide":"Guide"
+    "guide":"Guide",
+    "workshop":"Workshop"
   },
   "pages": {
     "home": {

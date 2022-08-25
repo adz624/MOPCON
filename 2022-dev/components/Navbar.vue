@@ -138,6 +138,14 @@ export default {
           open: process.env.route_ticket,
           target: ''
         },
+        {
+          name: 'workshop',
+          url: './workshop',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_workshop,
+          target: ''
+        },
         // {
         //   name: 'guide',
         //   class: '',
