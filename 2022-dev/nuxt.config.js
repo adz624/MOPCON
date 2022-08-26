@@ -175,7 +175,8 @@ export default {
     route_sponsor: process.env.SPONSOR !== 'false',
     route_community: process.env.COMMUNITY !== 'false',
     route_ticket: process.env.TICKET !== 'false',
-    route_guide: process.env.GUIDE !== 'false'
+    route_guide: process.env.GUIDE !== 'false',
+    route_workshop: process.env.WORKSHOP !== 'false'
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
