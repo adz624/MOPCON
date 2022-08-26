@@ -20,8 +20,8 @@
         "2":"This year, with the theme of “Next Giant Conf“, we invite partners from various industries to share technologies and hands-on experiences, in order to inspire more innovative ideas, bring new programming perspectives in and create infinite collaborative possibilities for mobile services."
       },
       "heroImgBtn":{
-        "1":"Follow Us",
-        "2":"Join Us"
+        "1":"Ticket",
+        "2":"Schedule"
       },
       "history":{
         "title":"Years-In-Review ",
@@ -41,7 +41,8 @@
       "btn":{
         "web":"Website",
         "album":"Album",
-        "more": "觀看更多"
+        "more": "觀看更多",
+        "schedule": "查看議程"
       },
       "speaker": {
         "title": "MOPCON 2022 講者曝光"
@@ -202,7 +203,7 @@
         "title": "周邊商品",
         "intro": "今年商品也有提供現場販售歐！",
         "1": {
-          "title": "收納包",
+          "title": "飄帶",
           "description": "周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念"
         },
         "2": {
@@ -210,15 +211,15 @@
           "description": "周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念"
         },
         "3": {
-          "title": "會眾T",
+          "title": "宮廟帽",
           "description": "周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念"
         },
         "4": {
-          "title": "宮廟帽正面",
+          "title": "黑襪",
           "description": "周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念"
         },
         "5": {
-          "title": "宮廟帽背面",
+          "title": "會眾T",
           "description": "周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念周邊商品設計理念"
         }
       }
