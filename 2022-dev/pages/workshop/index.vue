@@ -96,11 +96,11 @@ export default {
         },
         {
           id: '04',
-          name: 'DDD',
+          name: 'Android Taipei',
           title: 'Jetpack Compose 從 0 到 1 繪製圖表',
           sub: '',
           intro: '本次課程總共分成上下半場，上半場為介紹基本繪圖 API ，了解 Canvas 的基本用法。下半場將帶領各位如何運用上半場介紹的知識繪製出好看的折線圖。',
-          img: 'assets/images/workshop/DDD.png',
+          img: 'assets/images/workshop/AndroidTaipei.png',
           add: '高軟 亞灣新創園',
           time: '9/4（日）下午 13:00 ~ 17:00'
         }
@@ -226,10 +226,11 @@ export default {
     height: 268px;
     width: 486px;
     img{
-      width: 100%;
-      height: 100%;
-      object-fit:cover;
-      border-radius: 50rem;
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin:auto;
+      border-radius: 298.5px;
     }
     @include screen(md){
       width: 100%;
