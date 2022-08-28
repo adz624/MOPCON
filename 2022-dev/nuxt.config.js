@@ -212,8 +212,16 @@ export default {
           pages.push(`/schedule/${room.session_id}`)
         })
       })
+      const sponsors = axios.get(`${process.env.BASE_URL}/api/2022/sponsor`).then((res) => {
+        pages.push('/sponsor')
+        res.data.data.forEach((sponsor) => {
+          sponsor.data.forEach((item) => {
+            pages.push(`/sponsor/${item.sponsor_id}`)
+          })
+        })
+      })
 
-      return Promise.all([schedules, speakers]).then(() => {
+      return Promise.all([schedules, speakers, sponsors]).then(() => {
         return pages
       })
     }
