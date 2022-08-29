@@ -138,9 +138,6 @@ export default {
 </script>
 
 <style lang="scss" scoped >
-*{
-  // outline:1px dotted green;
-}
 #hero{
   .hero-content{
     @include flex(space-between,row,center);
@@ -191,7 +188,7 @@ export default {
 .workshop-table{
   @include flex(space-between,row,center);
   padding: 64px 86px;
-    border-radius: 48px;
+  border-radius: 48px;
   &:nth-child(odd){
     border:2px solid #004973;
   }
@@ -211,6 +208,11 @@ export default {
     }
     padding-left: 24px;
     padding-right: 24px;
+  }
+  &:last-child{
+    img{
+      border:1px solid #f4435a;
+    }
   }
 }
 .imgPart, .contentPart{
