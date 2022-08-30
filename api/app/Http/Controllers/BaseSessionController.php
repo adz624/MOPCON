@@ -98,7 +98,9 @@ class BaseSessionController extends Controller
                     continue;
                 }
                 foreach ($period['room'] as &$room) {
-                    $room = $this->sessions[$room['session_id']];
+                    if (isset($this->sessions[$room['session_id']])) {
+                        $room = $this->sessions[$room['session_id']];
+                    }
                 }
             }
         }
