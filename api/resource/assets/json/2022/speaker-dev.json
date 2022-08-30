@@ -10,8 +10,8 @@
         "bio": "超級喜歡 Apple，因此從事 Apple 相關的各種工作。開發了一點點 iOS App，寫了一點點 Swift 程式的書和文章，開了一點點 iOS App 開發的課，認識了很多同樣熱愛開發 iOS App 的可愛學生。",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/1.png",
-            "mobile": "assets/images/speakers/1.png"
+            "web": "api/2022/speaker/images/speaker_1",
+            "mobile": "api/2022/speaker/images/speaker_1"
         },
         "link_fb": "https://www.facebook.com/iphone.peterpan",
         "link_github": "",
@@ -40,7 +40,7 @@
                     "web": "#51A3D3",
                     "mobile": "#51A3D3"
                 },
-                "name": "Cross-Platform"
+                "name": "Cross-platform"
             }
         ],
         "target": "- iOS App 開發者\n- 想認識有趣的 SwiftUI",
@@ -67,8 +67,8 @@
         "bio": "嫁給 RD 的 UI Designer",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/2.png",
-            "mobile": "assets/images/speakers/2.png"
+            "web": "api/2022/speaker/images/speaker_2",
+            "mobile": "api/2022/speaker/images/speaker_2"
         },
         "link_fb": "https://www.facebook.com/uiux.akane",
         "link_github": "",
@@ -117,8 +117,8 @@
         "bio": "Phil Huang 黃秉鈞，社群暱稱小飛機，一名熱愛分享及交流有限所知的自宅工程師。徜徉於 Cloud Native / Networking / Automation 的世界，近期相當熱愛研究雲地網路混合架構及實踐。現任 Microso",
         "bio_e": "He currently serves as Senior Cloud Solution Architect at Microsoft. Phil is passionate about implementation, sharing and problem solving. In his free time, he also write a blog, Phil Workspace (blog.pichuang.com.tw/), that share knowledges and write-up posts to the world.",
         "img": {
-            "web": "assets/images/speakers/3.png",
-            "mobile": "assets/images/speakers/3.png"
+            "web": "api/2022/speaker/images/speaker_3",
+            "mobile": "api/2022/speaker/images/speaker_3"
         },
         "link_fb": "https://www.facebook.com/paulintoro",
         "link_github": "github.com/pichuang",
@@ -167,8 +167,8 @@
         "bio": "嗨大家好我是 Nic\n 透過網路遊戲喜歡上了寫程式，有喜歡解決問題的人格特質，也有追求工匠的精神，擅長的技能跟不會的一樣有很多。\n 沒事就喜歡在地上滾，畢竟人生就只活一次，You only live once\n 我相信我會是你看過最有趣的工程師！",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/4.png",
-            "mobile": "assets/images/speakers/4.png"
+            "web": "api/2022/speaker/images/speaker_4",
+            "mobile": "api/2022/speaker/images/speaker_4"
         },
         "link_fb": "https://www.facebook.com/niclin.dev/",
         "link_github": "https://github.com/niclin",
@@ -217,8 +217,8 @@
         "bio": "你好，我是 John。\n 擅長 Web 全端開發與資料庫系統，體驗過多種語言和開發框架，最近最常研究 PHP 和 Javascript，喜歡針對不同問題使用不同語言技術了結它。\n\n 目前在矽谷公司 Netskope 擔任全端工程師，協助開發資安",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/5.png",
-            "mobile": "assets/images/speakers/5.png"
+            "web": "api/2022/speaker/images/speaker_5",
+            "mobile": "api/2022/speaker/images/speaker_5"
         },
         "link_fb": "https://www.facebook.com/johnliu.software.thinking",
         "link_github": "https://github.com/johnliu-tw",
@@ -267,8 +267,8 @@
         "bio": "蔡雅文，北漂 UX，定居台北的熱情高雄人。現任鈦坦商業分析師, 一個任性的斜槓人。累績 13 年職涯, 從國小老師->視覺設計師->UI 設計師->UX 設計師->使用者研究員->專案經理->產品業務->商業分析師。一路走來風光甚美，最愛 UX.",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/6.png",
-            "mobile": "assets/images/speakers/6.png"
+            "web": "api/2022/speaker/images/speaker_6",
+            "mobile": "api/2022/speaker/images/speaker_6"
         },
         "link_fb": "https://www.facebook.com/scarlert.tsai",
         "link_github": "",
@@ -331,8 +331,8 @@
         "bio": "熱愛前端技術的前端工程師，是《打造高速網站，從網站指標開始！全方位提升使用者體驗與流量的關鍵》與技術部落格「Summer。桑莫。夏天」的作者。相信知識的分享能打破隔閡、讓世界更加美好。",
         "bio_e": "Summer is a developer who loves front-end technologies, and the author of \"Speed Up Your App with Web Vitals\" and the blog \"Summer。桑莫。夏天\". She believes that knowledge sharing can connect people from different fields and make the world a better place.",
         "img": {
-            "web": "assets/images/speakers/7.png",
-            "mobile": "assets/images/speakers/7.png"
+            "web": "api/2022/speaker/images/speaker_7",
+            "mobile": "api/2022/speaker/images/speaker_7"
         },
         "link_fb": "https://www.facebook.com/cythilya",
         "link_github": "https://github.com/cythilya",
@@ -388,8 +388,8 @@
         "bio": "多年技術社群志工，積極參與 Kotlin User Group 運作，並建立 Kotlin 讀書會/練功場等活動。目前在 JetBrains 擔任技術傳教士，負責推廣 IDE 工具及技術。平時醉心於技術研究，期待能將複雜的技術名詞用通俗易懂",
         "bio_e": "Shengyou is a developer advocate at JetBrains. He is fascinated with researching new technology and try to introduce it in an easy-understand way. He has been involved in the technical community for many years, founded Kotlin study jam, and coding exercise, etc. By the way, he has a sweet tooth!",
         "img": {
-            "web": "assets/images/speakers/8.png",
-            "mobile": "assets/images/speakers/8.png"
+            "web": "api/2022/speaker/images/speaker_8",
+            "mobile": "api/2022/speaker/images/speaker_8"
         },
         "link_fb": "https://fb.me/shengyoufan",
         "link_github": "http://github.com/shengyou",
@@ -425,7 +425,7 @@
                     "web": "#51A3D3",
                     "mobile": "#51A3D3"
                 },
-                "name": "Cross-Platform"
+                "name": "Cross-platform"
             }
         ],
         "target": "對多平台開發有興趣的開發者",
@@ -452,8 +452,8 @@
         "bio": "資深前端開發者與程式開發講師，授課資歷十年以上。\n 擅長 HTML、CSS、JavaScript、jQuery、Vue、React 開發應用與 Webpack 前端打包工具等，專修各種前端跨平台的疑難雜症。",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/9.png",
-            "mobile": "assets/images/speakers/9.png"
+            "web": "api/2022/speaker/images/speaker_9",
+            "mobile": "api/2022/speaker/images/speaker_9"
         },
         "link_fb": "https://www.facebook.com/milkmidifans",
         "link_github": "https://github.com/milkmidi",
@@ -502,8 +502,8 @@
         "bio": "Vincent 是一個興趣廣泛的開發者，主要專精在 JVM Backend 和 DevOps。",
         "bio_e": "Vincent is a coder, speaker, mentor and leader has wide range skill set. He specializes in JVM Backend and DevOps.",
         "img": {
-            "web": "assets/images/speakers/10.png",
-            "mobile": "assets/images/speakers/10.png"
+            "web": "api/2022/speaker/images/speaker_10",
+            "mobile": "api/2022/speaker/images/speaker_10"
         },
         "link_fb": "https://www.facebook.com/yfr.huang/",
         "link_github": "https://github.com/Jian-Min-Huang",
@@ -559,8 +559,8 @@
         "bio": "前端開發者，Vue.js Taiwan 社群主辦人。\n 長期專注網頁前端標準技術，也多次參與前端技術社群分享心得。",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/11.png",
-            "mobile": "assets/images/speakers/11.png"
+            "web": "api/2022/speaker/images/speaker_11",
+            "mobile": "api/2022/speaker/images/speaker_11"
         },
         "link_fb": "https://www.facebook.com/kurotanshi",
         "link_github": "https://github.com/kurotanshi",
@@ -609,8 +609,8 @@
         "bio": "TBD",
         "bio_e": "TBD",
         "img": {
-            "web": "assets/images/speakers/12.png",
-            "mobile": "assets/images/speakers/12.png"
+            "web": "api/2022/speaker/images/speaker_12",
+            "mobile": "api/2022/speaker/images/speaker_12"
         },
         "link_fb": "https://www.facebook.com/Larry850806",
         "link_github": "https://github.com/LarryLuTW/",
@@ -659,8 +659,8 @@
         "bio": "- 六角學院執行長\n- 高雄火箭隊前端教練\n- 2019~2020 年 MOPCON 議程講者\n- 2018 年 Modern Web 講者\n- 2016 年 中國第三屆 CSS 開發者大會講者",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/13.png",
-            "mobile": "assets/images/speakers/13.png"
+            "web": "api/2022/speaker/images/speaker_13",
+            "mobile": "api/2022/speaker/images/speaker_13"
         },
         "link_fb": "https://www.facebook.com/sfismy/",
         "link_github": "",
@@ -709,8 +709,8 @@
         "bio": "擅長 JavaScript (Node.js, Express.js)、Java、PostgreSQL (PostGIS)、MongoDB、Hadoop 生態系 (HBase)，也喜歡玩各種先進的前後端技術。現在則是專注在 DevOps，C",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/14.png",
-            "mobile": "assets/images/speakers/14.png"
+            "web": "api/2022/speaker/images/speaker_14",
+            "mobile": "api/2022/speaker/images/speaker_14"
         },
         "link_fb": "https://www.facebook.com/kewang.information",
         "link_github": "https://github.com/kewang",
@@ -766,8 +766,8 @@
         "bio": "雜食性軟體工程師，任何有興趣的技術都想要親自嘗試，其中又尤其熱愛 Web 前端領域。喜歡分享技術與經驗，一陣子沒寫技術文章就會感到全身不舒服。",
         "bio_e": "Web.Developer who loves sharing",
         "img": {
-            "web": "assets/images/speakers/15.png",
-            "mobile": "assets/images/speakers/15.png"
+            "web": "api/2022/speaker/images/speaker_15",
+            "mobile": "api/2022/speaker/images/speaker_15"
         },
         "link_fb": "https://www.facebook.com/profile.php?id=100006903696165",
         "link_github": "https://github.com/kylemocode",
@@ -816,8 +816,8 @@
         "bio": "Jerry 老師目前是 Google 機器學習開發專家(GDE)，同時也是亞太智能機器(APMIC)創辦人兼執行長，帶領團隊所開發的 AI 產品已累計用戶數超過 36 萬人。過去曾擔任過國立大學講師、機器學習技術講師、汽車業數據科學家、外商數據顧問、軟",
         "bio_e": "JerryWu is a Google Developer Expert (GDE) in Machine Learning. He is also a Founder & Chief Executive Officer (CEO) in the Asia Pacific Machine Intelligence Company (APMIC). Jerry Wu’s teaching and research interests include Machine Intelligence, Machine Reading Comprehension and Natural Language Understanding (NLU). He eager to do research related to data technology, share them with people and solve problems. He also has many years of experience in predictive analysis with traditional industry",
         "img": {
-            "web": "assets/images/speakers/16.png",
-            "mobile": "assets/images/speakers/16.png"
+            "web": "api/2022/speaker/images/speaker_16",
+            "mobile": "api/2022/speaker/images/speaker_16"
         },
         "link_fb": "https://www.facebook.com/jerrywu2016/",
         "link_github": "https://github.com/jerrywu2013",
@@ -873,8 +873,8 @@
         "bio": "目前是資安工程師，從事情資威脅和惡意檔案研究，並且對於區塊鏈和分散式帳本有所研究。曾經在 COSCUP 發表過演講，也發表過 Symmetry 的論文。",
         "bio_e": "I am a cyber security engineer.  I have in-depth research on blockchain and cyber security. I have spoken at COSCUP and published a paper on Symmetry.",
         "img": {
-            "web": "assets/images/speakers/17.png",
-            "mobile": "assets/images/speakers/17.png"
+            "web": "api/2022/speaker/images/speaker_17",
+            "mobile": "api/2022/speaker/images/speaker_17"
         },
         "link_fb": "",
         "link_github": "",
@@ -930,8 +930,8 @@
         "bio": "前端開發 / 區塊鏈信仰者",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/18.png",
-            "mobile": "assets/images/speakers/18.png"
+            "web": "api/2022/speaker/images/speaker_18",
+            "mobile": "api/2022/speaker/images/speaker_18"
         },
         "link_fb": "",
         "link_github": "",
@@ -986,8 +986,8 @@
         "bio": "來自網路的深淵，試圖為各位男性觀眾（特別是宅取向）謀福利的二次元中毒者，立志跟 AV 帝王一樣成為支配尻尻圖海的航海王（預定）\n\n9 年的開發經驗、15 年以上的手沖大師、Lewd Pics (https://lewd.art) 的發起人。",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/19.png",
-            "mobile": "assets/images/speakers/19.png"
+            "web": "api/2022/speaker/images/speaker_19",
+            "mobile": "api/2022/speaker/images/speaker_19"
         },
         "link_fb": "",
         "link_github": "",
@@ -1057,8 +1057,8 @@
         "bio": "5+ years in software startup as product design \nA creative experiment planner with UI/UX skills in Web3 & NFT products\nI",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/20.png",
-            "mobile": "assets/images/speakers/20.png"
+            "web": "api/2022/speaker/images/speaker_20",
+            "mobile": "api/2022/speaker/images/speaker_20"
         },
         "link_fb": "https://www.facebook.com/doz.yang/",
         "link_github": "",
@@ -1121,8 +1121,8 @@
         "bio": "曾任職於晨星半導體/聯發科技股份有限公司, KKStream Limited 影音串流技術公司, 工作經驗遊走過地端與雲端, 經歷過 DRM 開發與研究, Streaming 與數位保護方法的攜手共好, 跨語言跨平台跨地雲端, RD 生涯是一",
         "bio_e": "",
         "img": {
-            "web": "assets/images/speakers/21.png",
-            "mobile": "assets/images/speakers/21.png"
+            "web": "api/2022/speaker/images/speaker_21",
+            "mobile": "api/2022/speaker/images/speaker_21"
         },
         "link_fb": "https://www.facebook.com/weichih.lien.1",
         "link_github": "",
@@ -1165,7 +1165,7 @@
                     "web": "#51A3D3",
                     "mobile": "#51A3D3"
                 },
-                "name": "Cross-Platform"
+                "name": "Cross-platform"
             }
         ],
         "target": "對於影音串流保護或跨平台數位內容保護有興趣者",
