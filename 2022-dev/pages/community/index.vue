@@ -153,15 +153,9 @@ export default {
         .$get(`${volunteer}/${data.id}`)
         .then(({ success, data, message }) => {
           if (success) {
-            console.log(data)
             vm.modalOpen = true
             vm.activeCommunity = data
-          } else {
-            console.log('error', message)
           }
-        })
-        .catch((error) => {
-          console.log(error)
         })
     },
     closeTagModal (show) {

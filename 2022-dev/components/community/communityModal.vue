@@ -16,6 +16,7 @@
             <h2 class="community-title mb-2 mt-md-4 mt-0">
               {{ data.name }}
             </h2>
+            <!-- eslint-disable-next-line vue/no-v-html -->
             <p v-if="data.introduction" class="community-introduction mt-0" v-html="parseContent(data.introduction)" />
           </div>
         </div>
