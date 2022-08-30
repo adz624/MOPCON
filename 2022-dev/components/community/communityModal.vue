@@ -24,7 +24,7 @@
             {{ $t('pages.community.see_member') }}
           </h2>
           <div class="community-member">
-            <p v-for="(member, i) in data.member" :key="`member_${i}`" class="mr-4 my-3">
+            <p v-for="(member, i) in data.members" :key="`member_${i}`" class="mr-4 my-3">
               {{ member }}
             </p>
           </div>

@@ -45,23 +45,17 @@
 
 <script>
 import communityModal from '~/components/community/communityModal'
+import { volunteer } from '@/api/url'
 export default {
   name: 'CommunityPage',
   components: {
     communityModal
   },
-  async asyncData ({ $axios, params }) {
+  async asyncData ({ $axios }) {
     try {
-      let data = []
-      if (process.server) {
-        const res = await $axios.get(process.env.BASE_URL + '/2022/community.json')
-        data = res.data
-      } else {
-        const res = '../static/community.json'
-        data = res.data
-      }
+      const { data } = await $axios.get(volunteer)
       const config = {
-        communityData: data.community
+        communityData: data.data.volunteer
       }
 
       return config
@@ -154,8 +148,21 @@ export default {
       window.open(url)
     },
     openCommunityModal (data) {
-      this.modalOpen = true
-      this.activeCommunity = data
+      const vm = this
+      this.$axios
+        .$get(`${volunteer}/${data.id}`)
+        .then(({ success, data, message }) => {
+          if (success) {
+            console.log(data)
+            vm.modalOpen = true
+            vm.activeCommunity = data
+          } else {
+            console.log('error', message)
+          }
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     },
     closeTagModal (show) {
       this.tagsModalOpen = show
