@@ -53,7 +53,6 @@
                   </div>
                   <div v-else class="agenda-table-reg">
                     <h3>分享你的想法</h3>
-                    <a href="#">{{ agenda.room[0].topic }}</a>
                   </div>
                 </div>
               </div>
