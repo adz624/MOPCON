@@ -2,13 +2,15 @@
   <div>
     <section class="banner pt-8 pb-15 pb-md-6">
       <div class="container main pb-5">
-        <div class="banner-image ">
-          <img src="../../assets/images/home/image_banner.png" alt="banner image">
+        <div class="banner-image">
+          <div class="pinkCircle">
+            <h1>主辦社群</h1>
+          </div>
         </div>
         <div class="content ml-5 ml-md-0 mt-md-10">
-          <h1 class="my-6">
+          <h2 class="my-6">
             {{ $t('pages.community.title') }}
-          </h1>
+          </h2>
           <p>
             {{ $t('pages.community.intro.1') }}
             <br>{{ $t('pages.community.intro.2') }}
@@ -194,7 +196,7 @@ export default {
   @include screen(sm) {
     background-image: url('../../assets/images/banner_short_mobile.svg');
   }
-  h1 {
+  h2 {
     @include font(40px, $colorWhite, bold);
   }
   p {
@@ -223,9 +225,9 @@ export default {
       }
     }
     .banner-image {
-      @include flex(center, row, center);
-      width: 100%;
-      img {
+      width: 50%;
+      @include flex(center,row,center);
+      @include screen(md){
         width: 100%;
       }
     }
