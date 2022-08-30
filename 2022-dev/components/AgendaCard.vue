@@ -10,7 +10,7 @@
       @click.prevent="$emit('open', room)"
     >
 
-      <div v-if="room.speakers.length>1" class="speakerNum">
+      <div v-if="room.speakers && room.speakers.length>1" class="speakerNum">
         <div class="agenda-card-speaker">
           <!--相片-->
           <div class="speaker-img-wrap">
@@ -39,7 +39,7 @@
         >
           <!--相片-->
           <div class="speaker-img-wrap">
-            <img :src="speaker.img.web" alt="">
+            <img :src="getSpeakerImg(speaker.img.web)" alt="">
           </div>
           <!--講者姓名-->
           <p class="speaker-name">
@@ -90,8 +90,12 @@ export default {
       type: Array,
       default: () => {}
     }
+  },
+  methods: {
+    getSpeakerImg (img) {
+      return `${process.env.BASE_URL}/${img}`
+    }
   }
-
 }
 </script>
 
