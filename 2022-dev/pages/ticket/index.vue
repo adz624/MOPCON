@@ -124,36 +124,46 @@
           <div class="product-box">
             <img src="../../assets/images/ticket/product-1.png" alt="product">
             <h3>{{ $t('pages.ticket.product.1.title') }}</h3>
-            <p v-if="false">
-              {{ $t('pages.ticket.product.1.description') }}
+            <p>
+              {{ $t('pages.ticket.product.1.description.1') }}<br>
+              {{ $t('pages.ticket.product.1.description.2') }}<br>
+              {{ $t('pages.ticket.product.1.description.3') }}
             </p>
           </div>
           <div class="product-box">
             <img src="../../assets/images/ticket/product-2.png" alt="product">
             <h3>{{ $t('pages.ticket.product.2.title') }}</h3>
-            <p v-if="false">
-              {{ $t('pages.ticket.product.2.description') }}
+            <p>
+              {{ $t('pages.ticket.product.2.description.1') }}<br>
+              {{ $t('pages.ticket.product.2.description.2') }}<br>
+              {{ $t('pages.ticket.product.2.description.3') }}
             </p>
           </div>
           <div class="product-box">
             <img src="../../assets/images/ticket/product-3.png" alt="product">
             <h3>{{ $t('pages.ticket.product.3.title') }}</h3>
-            <p v-if="false">
-              {{ $t('pages.ticket.product.3.description') }}
+            <p>
+              {{ $t('pages.ticket.product.3.description.1') }}<br>
+              {{ $t('pages.ticket.product.3.description.2') }}<br>
+              {{ $t('pages.ticket.product.3.description.3') }}
             </p>
           </div>
           <div class="product-box">
             <img src="../../assets/images/ticket/product-4.png" alt="product">
             <h3>{{ $t('pages.ticket.product.4.title') }}</h3>
-            <p v-if="false">
-              {{ $t('pages.ticket.product.4.description') }}
+            <p>
+              {{ $t('pages.ticket.product.4.description.1') }}<br>
+              {{ $t('pages.ticket.product.4.description.2') }}<br>
+              {{ $t('pages.ticket.product.4.description.3') }}
             </p>
           </div>
           <div class="product-box">
             <img src="../../assets/images/ticket/product-5.png" alt="product">
             <h3>{{ $t('pages.ticket.product.5.title') }}</h3>
-            <p v-if="false">
-              {{ $t('pages.ticket.product.5.description') }}
+            <p>
+              {{ $t('pages.ticket.product.5.description.1') }}<br>
+              {{ $t('pages.ticket.product.5.description.2') }}<br>
+              {{ $t('pages.ticket.product.5.description.3') }}
             </p>
           </div>
         </div>

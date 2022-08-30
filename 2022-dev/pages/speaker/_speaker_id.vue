@@ -56,7 +56,7 @@
             class="speakers-item col-3 col-md-2 col-sm-1 my-11 py-4 px-10 px-sm-4"
             @click="openSpeakerModal(item)"
           >
-            <img :src="item.img.web" :alt="item.name" class="speakers-img">
+            <img :src="getSpeakerImg(item.img.web)" :alt="item.name" class="speakers-img">
             <h4 class="speakers-title mt-4 mb-0">
               {{ item.name }}
             </h4>
@@ -215,6 +215,9 @@ export default {
     mobileCheckFilter () {
       this.checkTag = [...this.tempCheckTag]
       this.closeTagModal(!this.tagsModalOpen)
+    },
+    getSpeakerImg (img) {
+      return `${process.env.BASE_URL}/${img}`
     }
   }
 }
