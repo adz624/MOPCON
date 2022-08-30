@@ -87,14 +87,14 @@ export default {
       navOpen: false,
       nowSubOpen: '',
       navList: [
-        // {
-        //   name: 'community',
-        //   url: './community',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_community,
-        //   target: ''
-        // },
+        {
+          name: 'community',
+          url: './community',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_community,
+          target: ''
+        },
         {
           name: 'schedule',
           url: '',
