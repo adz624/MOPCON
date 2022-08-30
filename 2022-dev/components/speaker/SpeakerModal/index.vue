@@ -12,7 +12,7 @@
         </div>
         <!-- {{ JSON.stringify(data) }} -->
         <div class="speaker-info">
-          <img :src="data?.img?.web" :alt="data.name" class="speaker-image mr-4">
+          <img :src="getSpeakerImg(data?.img?.web)" :alt="data.name" class="speaker-image mr-4">
           <div>
             <h4 class="speaker-title my-0 mt-sm-4">
               <p class="name pr-3 my-0">
@@ -201,6 +201,9 @@ export default {
         modal.classList.remove('show')
         body.classList.remove('modal-open')
       }
+    },
+    getSpeakerImg (img) {
+      return `${process.env.BASE_URL}/${img}`
     }
 
   }
