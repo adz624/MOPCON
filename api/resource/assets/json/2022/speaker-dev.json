@@ -23,9 +23,9 @@
         "summary": "Apple 在 2019 推出全新的 App 開發技術 SwiftUI，經歷了 4 年的時間，在 2022 它已進入成熟的第 4 代。Apple 的工程師也在 WWDC22 提到，SwiftUI 是開發 App 的最佳技術，現在正是開始使用 SwiftUI 開發 App 的最佳時機。\n\nSwiftUI 有許多優點。利用它我們可以更方便地開發跨平台 App，使用同樣的 API，就能開發出 iOS、macOS、watchOS、tvOS 都能使用的 App。它的程式可讀性更好，更容易理解，也能用更少的程式實現 App 功能，非常適合新手學習。在開發時不僅資料跟畫面可自動同步，而且還能即時預覽畫面，大幅提升 App 開發的速度並減少 bug 發生的機率。綜合以上優點，它將讓我們成為早點下班的幸福工程師。\n\n 接下來讓我們快快啟動 Xcode，展開美好的 SwiftUI App 開發初體驗吧。",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -80,9 +80,9 @@
         "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -130,9 +130,9 @@
         "summary": "隨著這三四年進展，Kubernetes 已經是當今業界公認的顯學，身為一個正在這條 Cloud Native 道路上的旅者，想要跟大家分享一下關於 Kubernetes 為何會紅的背景，且你應該要用怎樣的視野看待這種繼續以及建議的作法。本演講並不會講太深奧的技巧，希望有具備公有雲及私有雲任意經驗的人皆可聆聽",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -180,9 +180,9 @@
         "summary": "2021 年刷起了一波元宇宙旋風後，這 2 年絕對是 Web3 最火熱的時刻\n\n 如果 Web3 真能改變些什麼，我應該如何調整我的技能樹為未來作準備呢？\n\n 對於現代的開發者來說，無論你是前端、後端、QA、維運工程師又或是設計師\n\n 你手上的技能和 Web3 還差多遠？\n\n 在這場演講中，希望透過在區塊鏈開發產品 5 年的經驗\n\n 說明在 Web2.0 + Web3.0 整合開發過程需要的技能變化\n\n 拉近彼此與 Web 3.0 的距離！",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -230,9 +230,9 @@
         "summary": "Laravel Bagisto 是 Laravel 生態系中，eCommerce 架站熱門的套件之一，具備現代化的 UI 以及強大的管理功能。透過分析 Bagisto 的技術架構，可以幫助我們了解一個提供軟體修改性的成熟框架，會有的程式碼架構。",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "2",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -280,9 +280,9 @@
         "summary": "1. 身為一個 UX 背景的 BA 工作日常\n2. 從 UX 視角評估 BA 技能\n3. 敏捷環境下 \"End to End\" 各角色分工(UI.UX.BA.PD)及產品成效評估流程 \n4. 帶領 UI 一起發揮商業價值",
         "summary_e": "1. As a UX background how is a typical BA day\n2. How we evaluate the BA role based on the UX perspective \n3. \"End to End\" product development with different role (UI.UX.BA.PO.PD) in Agile environment \n4. How to co-create business value with UI designer",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -344,9 +344,9 @@
         "summary": "前端工程師遇到什麼問題？\n 什麼是 Visual Testing？\n 怎麼做  Visual Testing？\n 專案範例 👏🏻\n 工作流程💡\n 疑難雜症 🤔",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -401,9 +401,9 @@
         "summary": "經過多年發展，Kotlin 已是一個支援多平台開發的程式語言，讓開發者能用一個程式語言開發包括 Server-Side、Desktop、Mobile、Frontend 等不同平台的應用程式。在這場分享裡，將介紹 Kotlin Multiplatform 的發展藍圖，並示範多平台開發時的專案架構、工作流程及開發生態系。聽完這場分享後，將能感受到 Kotlin 多平台開發的威力！",
         "summary_e": "Kotlin is a multiplatform language that allowing developers to develop applications for different platforms including Server-Side, Desktop, Mobile, Frontend, etc. In this talk, we will share the blueprint of Kotlin multiplatform, the project structure, development workflow and ecosystem. After listening to this talk, you will feel the potential of Kotlin multi-platform development.",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -465,9 +465,9 @@
         "summary": "1. 2022 年 CSS 的決解方案\n2. 導入 tailwindcss 的優點\n3. 透過 tailwindcss 與設計師優雅的溝通",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -515,9 +515,9 @@
         "summary": "以 Spring Framework 的 web 開發作為例子，加入 Functional Programming 的函式庫 Arrow-Kt，學習 Option, Either 和 Validated 等觀念如何應用在 web 開發上",
         "summary_e": "In this session, we will use Spring Framework and Arrow-Kt as example and introducing how to apply Option, Either and Validated to web development",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -572,9 +572,9 @@
         "summary": "Vite 公開發佈至今已有一段時間，身為同家族的 Vue.js 也將它納入官方生態圈 (a.k.a 全家桶) 的一員。\n\n 就在今年七月，Vite 也迎來它的三個版本，在這場議程除了快速介紹 Vite 3 帶來的新特性之外，同時也為各位說明，我們是如何將過往的 Vue CLI 專案轉移至 Vite，享受現代前端開發工具所帶來的各種好處。",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -622,9 +622,9 @@
         "summary": "除了泛型（Generics）之外，Go 1.18 還推出另一個很厲害的 feature - Fuzzing Test。比起一成不變的單元測試，Fuzzing Test 可以自動調整 input，並且幫你檢查那些開發者常常沒想到的 input，輕輕鬆鬆就幫你找出有問題的 edge cases 哦。",
         "summary_e": "In addition to Generics, Go 1.18 also introduced another great feature “Fuzzing Test”. Compared with traditional Unit Test, Fuzzing Test can automatically manipulate inputs and help check the inputs that developers often miss, so it can easily help you find problematic edge cases.",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -672,9 +672,9 @@
         "summary": "本議程將介紹多年優化學習體驗設計的過程中，如何協助 1,000 位軟體工程師掌握「學習如何學習」，同時分享他們如何挖掘自身天賦，透過各種有效的學習方法，讓自己逐步成為軟體工程師。",
         "summary_e": "null",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -722,9 +722,9 @@
         "summary": "autocomplete 是現代軟體服務最重要的特性之一，使用者在輸入框輸入了文字，軟體服務就會回傳最適當的選項給使用者，而使用者可以依照回傳的各個選項中選擇其中一個執行動作。\n\n 一般的技術文章，大都從前端的角度探討如何在輸入文字時，利用 debounce 和 throttle 這兩個技術，提升使用者的操作體驗及減少後端的負擔。極少探討後端如何實作 autocomplete 的資料結構，讓資料能夠快速回傳給前端。\n\n 這次的分享主要就是完全從後端的角度來探討如何利用 Redis 或 Elasticsearch 這類 NoSQL 實作 autocomplete，也會分享多個 autocomplete 常見的情境。\n\n 最後也會分享進入正式環境時的技術選型，應該用 Redis 還是用 Elasticsearch 比較好。\n\n#autocomplete #elasticsearch #redis #backend",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -779,9 +779,9 @@
         "summary": "網頁的效能對於前端應用來說非常重要，而 Lighthouse 是其中一個功能完整的效能檢測工具，其推出的 Lighthouse CI 可以更進一步將效能檢測綁進 CI 流程中，扮演前端應用效能守門員的角色。\n\n 這次議程將說明 Lighthouse CI 的基礎概念，以及分享實際導入過程中遇到的困難與挑戰，並分享最後的成果與價值。",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -829,9 +829,9 @@
         "summary": "LaMDA 是 Google 最新發表的語言模型，LaMDA 是基於 Transformer 的自然語言理解(NLU)模型，專門應用於對話使用。本次分享會針對基本對話理解的自然語言理解(NLU)概念做簡單趨勢的介紹，接著針對 LaMDA 的運作方式、模型微調、衡量指標等內容做分享。",
         "summary_e": "LaMDA builds on earlier Google research, published in 2020, that showed Transformer-based language models trained on dialogue could learn to talk about virtually anything. Since then, we’ve also found that, once trained, LaMDA can be fine-tuned to significantly improve the sensibleness and specificity of its responses.",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -886,9 +886,9 @@
         "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
         "summary_e": "As technologies such as defi and NFT are widely known to the public, the economic model of earning while playing is gradually emerging. By developing games on the blockchain, the characters and props in the game are sold in the form of NFT. In addition, the cryptocurrencies and NFT assets earned in the game can be traded on the blockchain, allowing GameFi players to earn money while playing, realizing the Play-to-Earn business model. Different game rules can be created through smart contracts. Since smart contracts are open and cannot be tampered with, the game experience is relatively fair, realizing the concept of Game+NFT+DeFi.",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -943,9 +943,9 @@
         "summary": "web3 與傳統 web2 開發在前端上都完全一樣最大差異在於從與後端互動改為區塊鏈合約互動，並且需要考慮更多的狀態恢復。\n\n 這次演講將會分享開發上的差異以及實作該如何讀取使用者錢包以及實際與區塊鏈合約互動。",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -999,9 +999,9 @@
         "summary": "這邊簡單地告訴你一個小故事：「就算是日用量極大的美國最大論壇 reddit 也是從爬別人的內容起家」\n\n 沒錯，作為一個 StartUp，沒有用戶進來，但極需內容來充滿網站的時候，爬蟲是你的好幫手；但同樣作為 StartUp，在缺乏資金與人力的情況下需要在有限的預算下控管運算資源的使用，以及在短時間內蒐集大量內容的高效，讓團隊保持速度維持競爭力。\n\n 在這個議程裡，你們將會了解到分散式爬蟲的建置、設計、與成本壓縮的訣竅，一方面了解如何拆解目標的服務，與 ETL 的整合考量。\n\n 也邀請大家一起色色 (?)",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "2",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {
@@ -1070,9 +1070,9 @@
         "summary": "區塊鏈技術熱潮，各種項目、新概念與產品服務在市場上相繼推出，聚焦在未來 Web3 內容稱霸的網路生態，數位資產的保存與持有將會是未來趨勢。FANSI 在持續思考 NFT 獨一無二的特性如何應用在產品服務上；如何解決音樂產業的問題，進而去定義 Web3 的音樂體驗樣貌。\n\n 因此發展出兩個面向的產品：\nFANSI 是專注在華人音樂市場發行音樂 NFT 收藏品；MetaBoom 是面向歐美發行 Web3 NFT 音樂播放器項目，NFT 播放器可自行讓用戶匯入鏈上所購買的 NFT 歌曲，在幣圈樂於「分享」的文化上也能有 Listen to Earn 的收益回饋，實現 Web3 資料能夠跨平台互動的價值。\n\n 在 UX 產品設計上的挑戰應如何讓用戶快速理解區塊鏈錢包與智能合約的基本概念，立即購買到 NFT 音樂商品與享受 Web3 音樂聆聽體驗。產品規劃時更必須投入到社群互動，讓用戶皆能參與產品發展的過程、意見回饋與投票。有別於過去 UX 的研究方式，在區塊鏈世界「使用者也即是產品規劃者」。長遠目標希望將區塊鏈網路化繁為簡，成為人人都能輕易上手的網路生態。",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "1",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Basic ",
         "tags": [
             {
@@ -1134,9 +1134,9 @@
         "summary": "行動裝置的數位內容分享如何同時兼顧安全性與誇平台是門藝術. DRM 是保護數位內容眾多方法中一環, 眾多的 DRM spec 各有適用的裝置環境平台,不同的 platform 平台有個別的預設 DRM 實作, 本次分享主題設定為介紹 DRM 跨平台方法與數位保護方法.",
         "summary_e": "",
         "community_partner": "",
-        "is_keynote": "0",
-        "is_online": true,
-        "recordable": true,
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": false,
         "level": "Normal ",
         "tags": [
             {

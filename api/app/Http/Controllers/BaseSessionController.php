@@ -69,7 +69,10 @@ class BaseSessionController extends Controller
             $this->sponsors[(int) $sponsor['sponsor_id']] = [
                 'name' => $sponsor['name'],
                 'name_e' => $sponsor['name_e'],
-                'logo_path' => url($sponsor['logo_path']),
+                'logo_path' => !is_array($sponsor['logo_path']) ? $sponsor['logo_path'] : [
+                    'web' => url($sponsor['logo_path']['web']),
+                    'mobile' => url($sponsor['logo_path']['mobile']),
+                ]
             ];
         }
         $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);

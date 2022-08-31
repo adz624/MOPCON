@@ -145,7 +145,7 @@ $router->group(['prefix' => 'api'], function ($router) {
             });
             $router->group(['prefix' => 'sponsor'], function ($router) {
                 $router->get('', 'SponsorController@index');
-                $router->get('images/{name}', 'SponsorController@imagesView');
+                $router->get('images/{platform}/{name}', 'SponsorController@platformImagesView');
             });
             $router->group(['prefix' => 'unconf'], function ($router) {
                 $router->get('/', 'UnconfController@index');

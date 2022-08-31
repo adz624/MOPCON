@@ -1,6 +1,9 @@
 [
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_88",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_88",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_88"
+        },
         "name": "Meet.Jobs",
         "name_e": "Meet.Jobs",
         "sponsor_id": 88,
@@ -12,7 +15,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_89",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_89",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_89"
+        },
         "name": "六角學院",
         "name_e": "",
         "sponsor_id": 89,
@@ -24,7 +30,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_90",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_90",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_90"
+        },
         "name": "優比快",
         "name_e": "",
         "sponsor_id": 90,
@@ -36,7 +45,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_91",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_91",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_91"
+        },
         "name": "JetBrains",
         "name_e": "JetBrains",
         "sponsor_id": 91,
@@ -48,7 +60,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_92",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_92",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_92"
+        },
         "name": "嗨筆記股份有限公司",
         "name_e": "HackMD",
         "sponsor_id": 92,
@@ -60,7 +75,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_93",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_93",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_93"
+        },
         "name": "新加坡商鈦坦科技股份有限公司",
         "name_e": "Titansoft Pte Ltd",
         "sponsor_id": 93,
@@ -72,7 +90,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_94",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_94",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_94"
+        },
         "name": "台灣亞馬遜網路服務有限公司",
         "name_e": "Amazon Web Services (AWS)",
         "sponsor_id": 94,
@@ -84,7 +105,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_95",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_95",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_95"
+        },
         "name": "狄卡科技股份有限公司",
         "name_e": "Dcard",
         "sponsor_id": 95,
@@ -96,7 +120,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_96",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_96",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_96"
+        },
         "name": "捕夢網數位科技有限公司",
         "name_e": "PUMO network Digital Technology Co., Ltd.",
         "sponsor_id": 96,
@@ -108,7 +135,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_97",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_97",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_97"
+        },
         "name": "奧義智慧科技",
         "name_e": "CyCraft",
         "sponsor_id": 97,
@@ -120,7 +150,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_98",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_98",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_98"
+        },
         "name": "戴夫寇爾",
         "name_e": "DEVCORE",
         "sponsor_id": 98,
@@ -132,7 +165,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_99",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_99",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_99"
+        },
         "name": "科科世界股份有限公司",
         "name_e": "",
         "sponsor_id": 99,
@@ -144,7 +180,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_100",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_100",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_100"
+        },
         "name": "ViewSonic",
         "name_e": "",
         "sponsor_id": 100,
@@ -156,7 +195,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_101",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_101",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_101"
+        },
         "name": "祐生研究基金會",
         "name_e": "Archilife Research Foundation",
         "sponsor_id": 101,
@@ -168,7 +210,10 @@
         "career_information": ""
     },
     {
-        "logo_path": "api/2022/sponsor/images/sponsor_102",
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_102",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_102"
+        },
         "name": "Jira",
         "name_e": "",
         "sponsor_id": 102,
