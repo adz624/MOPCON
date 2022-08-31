@@ -136,7 +136,10 @@ Returns json data about sponsor information.
           "name_e": "Bruce Wayne",
           "data": [
             {
-              "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+              "logo_path": {
+                "web": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+                "mobile": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+              },
               "sponsor": "史塔克",
               "sponsor_e": "Stark-industry0",
               "sponsor_id": 1,
@@ -190,7 +193,10 @@ Returns json data about sponsor information.
         "message": "success",
         "data": [
             {
-                "logo_path": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+                "logo_path": {
+                    "web": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+                    "mobile": "https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png",
+                },
                 "sponsor": "史塔克",
                 "sponsor_e": "Stark-industry0",
                 "sponsor_id": 1,

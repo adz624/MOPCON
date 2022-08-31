@@ -8,9 +8,9 @@
         "introduction_e": "When you say nothing at all.",
         "members": [
             "Mac Taylor",
-            "柯柯",
+            "柯品陞 / 柯柯",
             "Gobby",
-            "Karas"
+            "陳彥宇 Karas"
         ]
     },
     {
@@ -33,8 +33,8 @@
         "introduction": "研討會維運。",
         "introduction_e": "Maintenence and operation of the conference.",
         "members": [
-            "Hamlet",
-            "皇上"
+            "廖御鈞 / Hamlet",
+            "黃上豪 / 皇上"
         ]
     },
     {
@@ -46,13 +46,11 @@
         "introduction_e": "Friends of the volunteers. Responsible for volunteer recruitment and relationship management with volunteers.",
         "members": [
             "Gobby",
-            "韓吉",
-            "地瓜",
-            "Jill Hsu",
+            "蔡筑涵 / 地瓜",
             "培根",
-            "Jack",
+            "孫碩隆 / Jack",
             "全全",
-            "Jason"
+            "侯景隆 / Jason"
         ]
     },
     {
@@ -66,17 +64,19 @@
             "Andy Tsai",
             "Hyman",
             "Nina",
-            "東霖",
-            "Jonathan",
+            "東霖 / Kent",
+            "葉昱震 / Jonathan",
             "Dory",
             "Waverly",
             "Sandy",
-            "Risa",
-            "Tim",
+            "張怡雯 / Risa",
+            "林宏政 / Tim",
             "若涵",
-            "死老百姓",
-            "林韻如",
-            "Ruby"
+            "沈宜婷 / 死老百姓",
+            "Ruby",
+            "樂樂",
+            "Riva",
+            "方錡"
         ]
     },
     {
@@ -88,11 +88,11 @@
         "introduction_e": "Contact and negotiate with sponsors and expand the base of potential partners.",
         "members": [
             "Straw",
-            "Alex",
-            "Hope",
+            "林秉呈 / Alex",
+            "王怡涵 / Hope",
             "Wilson",
-            "57",
-            "芃予"
+            "黃雯琪 / 57",
+            "鄭芃予 / 芃予"
         ]
     },
     {
@@ -105,11 +105,15 @@
         "members": [
             "Gobby",
             "Eric Chen",
-            "東霖",
+            "東霖 / Kent",
             "森森",
             "Meghan",
             "Recca Chao",
-            "Jill Hsu"
+            "Jill Hsu",
+            "Kevin / 小K",
+            "Andy / AWD",
+            "張永麒 / Matt",
+            "潘駿諺"
         ]
     },
     {
@@ -120,9 +124,9 @@
         "introduction": "廣告投放、廣告文案 。",
         "introduction_e": "Advertising and copywriting writing.",
         "members": [
-            "小林",
-            "小儀",
-            "于庭"
+            "林子雲／小林",
+            "楊雅儀／小儀",
+            "林于庭／于庭"
         ]
     },
     {
@@ -130,26 +134,27 @@
         "name": "品牌形象組",
         "name_e": "Brand & Design",
         "photo": "api/2022/volunteer/images/brand_design",
-        "introduction": "廣告投放、廣告文案 。",
-        "introduction_e": "提供你從概念到實現的最佳舞台！\n催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
+        "introduction": "提供你從概念到實現的最佳舞台！\n催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
+        "introduction_e": "",
         "members": [
-            "Nina",
-            "小孫",
-            "Clara",
-            "Ulysses",
-            "33",
+            "尹俞 / Nina",
+            "孫郁婷 / 小孫",
+            "李心慈 / Clara",
+            "龜人 / Ulysses",
+            "徐瑀珊 / 33",
             "Chad",
             "薛羽婷",
-            "小Jo",
-            "阿努",
-            "Clara",
-            "Tammi",
+            "張怡雯 / Risa",
+            "楊筑茵 / 小Jo",
+            "李彥儒 / 阿努",
+            "陳家琪 / Clara",
+            "王純敏 / Tammi",
             "余大年",
             "Jill Hsu",
-            "Teresa",
-            "豪萱",
-            "EG",
-            "Fanny"
+            "盧姳儒 / Teresa",
+            "劉豪萱 / 豪萱",
+            "潘宜君 / EG",
+            "周家妃 / Fanny"
         ]
     },
     {
@@ -183,23 +188,38 @@
         "introduction_e": "",
         "members": [
             "Pin",
-            "柯柯",
-            "Jonathan",
+            "柯品陞 / 柯柯",
+            "葉昱震 / Jonathan",
+            "陳思惟",
+            "林彥葶 / 彥葶",
+            "許智佳 / kevin",
+            "呂映霆",
             "郭尚蓁",
-            "Fanny",
-            "Jack",
-            "邱惠琳",
-            "蛋糕",
+            "周家妃 / Fanny",
+            "何雋永 / Jack",
+            "羅昱翔 / Nickolas",
+            "黃律銓",
+            "蘇怡如",
+            "邱惠琳 / Huei Lin",
+            "陳冠廷 / 蛋糕",
             "楊麗蓉",
-            "Huei Lin",
-            "韓吉",
+            "蘇奕幃",
+            "陳柏元",
+            "黃俊嵃",
+            "廖彥璋",
+            "李恊順",
             "陳擴屹",
             "凌俊豪",
-            "Ruby",
+            "游紹宏",
             "陳育萱",
-            "圈圈:o:️",
-            "Kalvin",
-            "阿年"
+            "圈圈⭕️",
+            "姚佳凱 / Kalvin",
+            "鍾詠年 / 阿年",
+            "張嘉文 / 薯泥",
+            "林士堯 / Simon",
+            "劉伯暘",
+            "黃聖允",
+            "王禾偉"
         ]
     },
     {
@@ -211,9 +231,11 @@
         "introduction_e": "Say hello to everyone in the form of digital media.\nShuttle back and forth the conference to record the amusing side of everyone.\nPhotographing and planning and producing of YouTube videos and Podcasts.",
         "members": [
             "YoYo",
-            "御痕",
+            "王俊勝 / 御痕",
             "阿緯",
-            "Kuan"
+            "Kuan",
+            "Athena",
+            "Hamster"
         ]
     }
 ]
