@@ -44,7 +44,7 @@
             <div v-if="isModalDropdown">
               <div v-for="speaker in session.speakers" :key="'m' + speaker.speaker_id" class="modal-speaker">
                 <div class="modal-speaker-img  mt-4 mt-sm-0">
-                  <img :src="speaker.img.web" alt="">
+                  <img :src="getSpeakerImg(speaker.img.web)" alt="">
                 </div>
                 <div class="modal-speaker-text pl-4 pl-sm-0 mb-sm-6">
                   <p class="speaker-title">
@@ -353,6 +353,9 @@ export default {
     },
     modalDropdown () {
       this.isModalDropdown = !this.isModalDropdown
+    },
+    getSpeakerImg (img) {
+      return `${process.env.BASE_URL}/${img}`
     }
   }
 }
