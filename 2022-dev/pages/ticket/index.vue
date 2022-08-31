@@ -122,7 +122,7 @@
         </p>
         <div class="product-area">
           <div class="product-box">
-            <img src="../../assets/images/ticket/product-1.png" alt="product">
+            <img src="../../assets/images/ticket/product-1.png?v=1" alt="product">
             <h3>{{ $t('pages.ticket.product.1.title') }}</h3>
             <p>
               {{ $t('pages.ticket.product.1.description.1') }}<br>
@@ -131,8 +131,11 @@
             </p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/product-2.png" alt="product">
-            <h3>{{ $t('pages.ticket.product.2.title') }}</h3>
+            <img src="../../assets/images/ticket/product-2.png?v=1" alt="product">
+            <h3>
+              {{ $t('pages.ticket.product.2.title.1') }}<br>
+              {{ $t('pages.ticket.product.2.title.2') }}
+            </h3>
             <p>
               {{ $t('pages.ticket.product.2.description.1') }}<br>
               {{ $t('pages.ticket.product.2.description.2') }}<br>
@@ -140,8 +143,11 @@
             </p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/product-3.png" alt="product">
-            <h3>{{ $t('pages.ticket.product.3.title') }}</h3>
+            <img src="../../assets/images/ticket/product-3.png?v=1" alt="product">
+            <h3>
+              {{ $t('pages.ticket.product.3.title.1') }}<br>
+              {{ $t('pages.ticket.product.3.title.2') }}
+            </h3>
             <p>
               {{ $t('pages.ticket.product.3.description.1') }}<br>
               {{ $t('pages.ticket.product.3.description.2') }}<br>
@@ -149,7 +155,7 @@
             </p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/product-4.png" alt="product">
+            <img src="../../assets/images/ticket/product-4.png?v=1" alt="product">
             <h3>{{ $t('pages.ticket.product.4.title') }}</h3>
             <p>
               {{ $t('pages.ticket.product.4.description.1') }}<br>
@@ -158,8 +164,11 @@
             </p>
           </div>
           <div class="product-box">
-            <img src="../../assets/images/ticket/product-5.png" alt="product">
-            <h3>{{ $t('pages.ticket.product.5.title') }}</h3>
+            <img src="../../assets/images/ticket/product-5.png?v=1" alt="product">
+            <h3>
+              {{ $t('pages.ticket.product.5.title.1') }}<br>
+              {{ $t('pages.ticket.product.5.title.2') }}
+            </h3>
             <p>
               {{ $t('pages.ticket.product.5.description.1') }}<br>
               {{ $t('pages.ticket.product.5.description.2') }}<br>
@@ -441,7 +450,7 @@ export default {
     text-align: center;
   }
   h3 {
-    @include font(2rem, $colorPrimary, bold);
+    @include font(1.5rem, $colorPrimary, bold);
     text-align: center;;
   }
   p {
