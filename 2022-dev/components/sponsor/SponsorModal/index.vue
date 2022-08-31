@@ -12,7 +12,7 @@
         </div>
         <div class="sponsor-info">
           <div class="sponsor-image mr-4  mr-pad-0">
-            <img :src="data?.logo_path" :alt="data.name">
+            <img :src="data?.logo_path.web" :alt="data.name">
           </div>
           <div class="sponsor-content">
             <h4>{{ data.name }}</h4>

@@ -42,7 +42,7 @@
           <div class="sponsor-content">
             <div v-for="detail in item.data" :key="detail.sponsor_id" class="sponsor-card" @click="openSponsorModal(detail)">
               <div class="sponsor-card-image">
-                <img :src="detail.logo_path" :alt="detail.name">
+                <img :src="detail.logo_path.web" :alt="detail.name">
               </div>
               <span>{{ detail.name }}</span>
             </div>
@@ -86,10 +86,10 @@
           </div>
         </div>
         <div class="button-area mt-10 mb-10">
-          <div class="btn btn-primary">
+          <a class="btn btn-primary" href="mailto:sponsor@mopcon.org">
             <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
             {{ $t('pages.sponsor.info.btn') }}
-          </div>
+          </a>
         </div>
       </div>
     </section>
