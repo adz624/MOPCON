@@ -48,11 +48,8 @@
           <!--議程廳-->
           <p class="agenda-room">
             <span>{{ room.room }} 議程</span>
-            <span v-if="room.is_keynote">R2 議程</span>
-            <span v-if="room.is_keynote">R3 議程</span>
-            <span v-if="room.is_keynote">R4 議程</span>
-          </p>
-        </div>
+            <span v-if="room.is_keynote">四廳聯播</span>
+          </p></div>
       </div>
 
       <div class="agenda-card-content">
