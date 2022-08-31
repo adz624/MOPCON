@@ -86,10 +86,10 @@
           </div>
         </div>
         <div class="button-area mt-10 mb-10">
-          <div class="btn btn-primary">
+          <a class="btn btn-primary" href="mailto:sponsor@mopcon.org">
             <client-only><span class="iconify" data-icon="fluent:cursor-click-24-filled" /></client-only>
             {{ $t('pages.sponsor.info.btn') }}
-          </div>
+          </a>
         </div>
       </div>
     </section>
