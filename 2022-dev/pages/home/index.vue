@@ -280,12 +280,14 @@ export default {
         }
       },
       sponsorLogoList: [
-        'assets/images/home/sponsor-1.svg',
-        'assets/images/home/sponsor-2.svg',
-        'assets/images/home/sponsor-3.svg',
-        'assets/images/home/sponsor-1.svg',
-        'assets/images/home/sponsor-2.svg',
-        'assets/images/home/sponsor-3.svg'
+        'assets/images/home/logo_banner_1.png',
+        'assets/images/home/logo_banner_2.png',
+        'assets/images/home/logo_banner_3.png',
+        'assets/images/home/logo_banner_4.png',
+        'assets/images/home/logo_banner_5.png',
+        'assets/images/home/logo_banner_6.png',
+        'assets/images/home/logo_banner_7.png',
+        'assets/images/home/logo_banner_8.png'
       ]
     }
   },
