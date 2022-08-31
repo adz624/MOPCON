@@ -42,7 +42,7 @@
           <div class="sponsor-content">
             <div v-for="detail in item.data" :key="detail.sponsor_id" class="sponsor-card" @click="openSponsorModal(detail)">
               <div class="sponsor-card-image">
-                <img :src="detail.logo_path" :alt="detail.name">
+                <img :src="detail.logo_path.web" :alt="detail.name">
               </div>
               <span>{{ detail.name }}</span>
             </div>
