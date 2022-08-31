@@ -8,7 +8,8 @@
             data-icon="emojione-monotone:red-triangle-pointed-up"
             style="color: #ff7987;"
             data-width="24"
-            data-height="24">
+            data-height="24"
+          >
           </span>
         </div>
         <client-only>
@@ -24,7 +25,8 @@
             data-icon="emojione-monotone:red-triangle-pointed-down"
             style="color: #ff7987;"
             data-width="24"
-            data-height="24">
+            data-height="24"
+          >
           </span>
         </div>
       </div>
@@ -36,13 +38,14 @@
           :subtitle="slideContent.subtitle"
           :text="slideContent.text"
           :album="slideContent.album"
-          :websiteLink="slideContent.websiteLink" />
+          :website-link="slideContent.websiteLink"
+        />
       </div>
     </div>
 
-    <!-- <div class="mosume">
+    <div v-if="slideActiveIndex !== 9" :class="`mosume-${years[slideActiveIndex]}`">
       <img :src="imgSrc" alt="mosume">
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -136,10 +139,6 @@ export default {
     padding: 32px 20px;
   }
 
-  @include screen(sm) {
-    @include flex(center, column, center);
-  }
-
   .slider {
     width: 30%;
     padding: 15px;
@@ -149,11 +148,6 @@ export default {
     @include screen(md) {
       width: 40%;
       padding-left: 0;
-    }
-
-    @include screen(sm) {
-      width: 80%;
-      @include flex(center, row, center);
     }
 
     svg {
@@ -187,24 +181,240 @@ export default {
   }
 }
 
-.mosume {
+img {
+  object-fit: cover;
+}
+
+.mosume-2021 {
   position: absolute;
-  bottom: -80%;
+  bottom: -93%;
   right: 10%;
 
   @include screen(md) {
-    bottom: -60%;
-    right: 10%;
+    bottom: -74%;
+  }
+
+  @include screen(pad) {
+    bottom: -80%;
   }
 
   img {
-    width: 680px;
-    height: 500px;
-    object-fit: cover;
+    width: 690px;
 
     @include screen(md) {
-      width: 460px;
-      height: 340px;
+      width: 470px;
+    }
+
+    @include screen(pad) {
+      width: 500px;
+    }
+  }
+}
+
+.mosume-2020 {
+  position: absolute;
+  bottom: -85%;
+  right: 10%;
+
+  @include screen(md) {
+    bottom: -78%;
+  }
+
+  @include screen(pad) {
+    bottom: -80%;
+  }
+
+  img {
+    width: 640px;
+
+    @include screen(md) {
+      width: 500px;
+    }
+
+    @include screen(pad) {
+      width: 500px;
+    }
+  }
+}
+
+.mosume-2019 {
+  position: absolute;
+  bottom: -75%;
+  right: 12%;
+
+  @include screen(md) {
+    bottom: -74%;
+  }
+
+  @include screen(pad) {
+    bottom: -69%;
+  }
+
+  img {
+    width: 580px;
+
+    @include screen(md) {
+      width: 470px;
+    }
+  }
+}
+
+.mosume-2018 {
+  position: absolute;
+  bottom: -78%;
+  right: 12%;
+
+  @include screen(md) {
+    bottom: -74%;
+  }
+
+  @include screen(pad) {
+    bottom: -79%;
+  }
+
+  img {
+    width: 580px;
+
+    @include screen(md) {
+      width: 470px;
+    }
+
+    @include screen(pad) {
+      width: 500px;
+    }
+  }
+}
+
+.mosume-2017 {
+  position: absolute;
+  bottom: -78%;
+  right: 12%;
+
+  @include screen(md) {
+    bottom: -74%;
+  }
+
+  @include screen(pad) {
+    bottom: -64%;
+  }
+
+  img {
+    width: 580px;
+
+    @include screen(md) {
+      width: 470px;
+    }
+
+    @include screen(pad) {
+      width: 420px;
+    }
+  }
+}
+
+.mosume-2016 {
+  position: absolute;
+  bottom: -78%;
+  right: 12%;
+
+  @include screen(md) {
+    bottom: -74%;
+  }
+
+  @include screen(pad) {
+    bottom: -68%;
+  }
+
+  img {
+    width: 580px;
+
+    @include screen(md) {
+      width: 470px;
+    }
+
+    @include screen(pad) {
+      width: 420px;
+    }
+  }
+}
+
+.mosume-2015 {
+  position: absolute;
+  bottom: -78%;
+  right: 12%;
+
+  @include screen(md) {
+    bottom: -79%;
+  }
+
+  @include screen(pad) {
+    bottom: -66%;
+  }
+
+  @media (max-width: 670px) {
+    bottom: -59%;
+  }
+
+  img {
+    width: 580px;
+
+    @include screen(md) {
+      width: 500px;
+    }
+
+    @include screen(pad) {
+      width: 400px;
+    }
+  }
+}
+
+.mosume-2014 {
+  position: absolute;
+  bottom: -78%;
+  right: 8%;
+
+  @include screen(md) {
+    bottom: -87%;
+  }
+
+  @include screen(pad) {
+    bottom: -74%;
+  }
+
+  img {
+    width: 580px;
+
+    @include screen(md) {
+      width: 550px;
+    }
+
+    @include screen(pad) {
+      width: 470px;
+    }
+  }
+}
+
+.mosume-2013 {
+  position: absolute;
+  bottom: -84%;
+  right: 8%;
+
+  @include screen(md) {
+    bottom: -87%;
+  }
+
+  @include screen(pad) {
+    bottom: -74%;
+  }
+
+  img {
+    width: 620px;
+
+    @include screen(md) {
+      width: 550px;
+    }
+
+    @include screen(pad) {
+      width: 470px;
     }
   }
 }
