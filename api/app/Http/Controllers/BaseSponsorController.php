@@ -124,7 +124,10 @@ class BaseSponsorController extends Controller
      */
     private function extractor($sponsor)
     {
-        $sponsor['logo_path'] = $this->generagePhotoUrl($sponsor['logo_path']);
+        $sponsor['logo_path'] = !is_array($sponsor['logo_path']) ? $this->generagePhotoUrl($sponsor['logo_path']) : [
+            'web' => $this->generagePhotoUrl($sponsor['logo_path']['web']),
+            'mobile' => $this->generagePhotoUrl($sponsor['logo_path']['mobile']),
+        ];
         $sponsor['speaker_information'] = [];
         foreach ($this->speakerAry as $speaker) {
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {
