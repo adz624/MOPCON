@@ -126,9 +126,6 @@
         <h2 class="mb-5">
           {{ $t('pages.home.traffic.title') }}
         </h2>
-        <p class="sub-title">
-          {{ $t('pages.home.traffic.subTitle') }}
-        </p>
         <div class="content">
           <div class="traffic-img-area">
             <div class="traffic-img">

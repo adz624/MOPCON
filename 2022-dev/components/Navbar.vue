@@ -326,8 +326,12 @@ export default {
     a {
       line-height: initial;
       color: $colorWhite;
+      transition: all .3s;
       & + a {
         margin-left: 1rem;
+      }
+      &:hover{
+        color:$colorPink;
       }
     }
     svg {
