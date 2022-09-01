@@ -11,7 +11,7 @@
           <p>{{ $t('pages.sponsor.intro.1') }}</p>
           <p>{{ $t('pages.sponsor.intro.2') }}</p>
           <div class="button-area mt-10 mb-10">
-            <div class="btn btn-pink">
+            <div class="btn btn-pink" @click="gotoAnchor('#info')">
               <client-only><span class="iconify" data-icon="carbon:recommend" /></client-only>
               {{ $t('pages.sponsor.btn') }}
             </div>
@@ -234,6 +234,13 @@ export default {
     },
     closeModal (show) {
       this.modalOpen = show
+    },
+    gotoAnchor (idName) {
+      const yOffset = -112
+      const element = document.querySelector(idName)
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+
+      window.scrollTo({ top: y, behavior: 'smooth' })
     }
   }
 }
