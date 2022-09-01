@@ -401,7 +401,7 @@
         "summary": "經過多年發展，Kotlin 已是一個支援多平台開發的程式語言，讓開發者能用一個程式語言開發包括 Server-Side、Desktop、Mobile、Frontend 等不同平台的應用程式。在這場分享裡，將介紹 Kotlin Multiplatform 的發展藍圖，並示範多平台開發時的專案架構、工作流程及開發生態系。聽完這場分享後，將能感受到 Kotlin 多平台開發的威力！",
         "summary_e": "Kotlin is a multiplatform language that allowing developers to develop applications for different platforms including Server-Side, Desktop, Mobile, Frontend, etc. In this talk, we will share the blueprint of Kotlin multiplatform, the project structure, development workflow and ecosystem. After listening to this talk, you will feel the potential of Kotlin multi-platform development.",
         "community_partner": "",
-        "is_keynote": false,
+        "is_keynote": true,
         "is_online": false,
         "recordable": false,
         "level": "Basic ",
