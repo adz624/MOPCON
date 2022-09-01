@@ -1,0 +1,227 @@
+[
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_88",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_88"
+        },
+        "name": "Meet.Jobs",
+        "name_e": "Meet.Jobs",
+        "sponsor_id": 88,
+        "about_us": "Meet.jobs 是一個專注於國際與資訊人才的社交求職平台。自 2015 年成立迄今，Meet.jobs 共有來自 71 個不同國家的人才、企業用戶以及工作機會。\n\n\n\nMeet.jobs 網站揭露了所有的薪資資訊，對求職者公平，也提高企業招募效率。人選透過 Meet.jobs 錄取，可獲得 100 美元的「就職祝賀金」。\n\n\n\nMeet.jobs 採用「社群推薦」的制度，讓專業人才相互推薦。工程師總是知道哪裡找到其他工程師；也唯有工程師知道誰是更好的工程師（專業人才皆然）。",
+        "about_us_e": "Maximize your value in the world! Meet.jobs, focusing on international and IT talents, is a headhunting platform leveraging on social network and community referral. Founded in 2015, Meet.jobs nowadays has talent users, employers and job opportunities from 71 different countries.\n\n\n\nCrowd Sourcing and Peer Review are key elements of social referral. An engineer is always knowing how to find other engineers. And only engineers know who is a good engineer. Meet.jobs provides a half of monthly salary of the position to the referrer while a recommended candidate has been confirmed hired.\n\n\n\nMeet.jobs reveals the salary information of all job vacancies. Talents who get a job via Meet.jobs can have $100 USD “Onboard Reward” from Meet.jobs. And we welcome you share job searching experience to help more people on Meet.jobs.",
+        "facebook_url": "https://www.facebook.com/gomeetjobs",
+        "official_website": "https://meet.jobs/",
+        "sponsor_type": "developer",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_89",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_89"
+        },
+        "name": "六角學院",
+        "name_e": "",
+        "sponsor_id": 89,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "education",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_90",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_90"
+        },
+        "name": "優比快",
+        "name_e": "",
+        "sponsor_id": 90,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "special_thanks",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_91",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_91"
+        },
+        "name": "JetBrains",
+        "name_e": "JetBrains",
+        "sponsor_id": 91,
+        "about_us": "JetBrains 是創造 Kotlin 程式語言及打造 IntelliJ IDEA、ReSharper、GoLand、PyCharm、WebStorm、PhpStorm…等 IDE 工具的公司。過去 20 年來專注於開發能提升效率的工具，透過智能提示、快速修正，自動化地處理繁瑣且重複性高的任務，讓開發者有更多時間和精神專注在創新、設計、架構及更多美好的事物上。目前全球已有超過 800 萬使用者、225 多個國家信任我們的產品。",
+        "about_us_e": "JetBrains is the creators of Kotlin and IntelliJ IDEA, ReSharper, GoLand, PyCharm, WebStorm, PhpStorm. We create industry leading software development tools. For over 20 years we have strived to make the strongest, most effective developer tools on Earth. By automating routine checks and corrections, our products speed up production, freeing developers to grow, discover and create. Today, eight million customers in 225 countries trust our tools.",
+        "facebook_url": "https://www.facebook.com/JetBrains",
+        "official_website": "https://www.jetbrains.com/",
+        "sponsor_type": "special_thanks",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_92",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_92"
+        },
+        "name": "嗨筆記股份有限公司",
+        "name_e": "HackMD",
+        "sponsor_id": 92,
+        "about_us": "HackMD 是以 Markdown 為本，追求流暢、簡潔的線上協作筆記。\n\n 無論是社群多人編輯、團隊溝通共筆、個人便捷紀錄，HackMD 支援多種語法、圖表、數學表達式，搭配書本模式、簡報模式跟留言互動功能。讓筆記，不只是筆記。\n\n 上線至今，已經有超過 3,000,000 份筆記，以及超過 13,000 個團隊空間使用。HackMD 能夠便捷寫作、版面俐落，聰明的筆記整理方法，受到國內外用戶的喜愛。\n\n 從下筆、編輯、共筆到發表，HackMD 讓你的知識最有效率地呈現，跟人們以最流暢的速度分享。",
+        "about_us_e": "HackMD is where you collaborate with your team and communicate with your community in Markdown notes.\n\nYou write in Markdown and HackMD presents source code, slides, charts, and math expressions for you. You control who can view/edit your notes and share them with flexible permissions.\n\nSince launch, more than 3,000,000 notes have been created and more than 13,000 teams have collaborated in HackMD.\n\nHackMD is where your short-term and long-term memory live together.",
+        "facebook_url": "https://www.facebook.com/hackmdio/",
+        "official_website": "https://bit.ly/3w7AezQ",
+        "sponsor_type": "special_thanks",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_93",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_93"
+        },
+        "name": "新加坡商鈦坦科技股份有限公司",
+        "name_e": "Titansoft Pte Ltd",
+        "sponsor_id": 93,
+        "about_us": "新加坡商鈦坦科技是一間軟體開發公司，專注於線上軟體平台的開發與維護。身處快速變動的軟體產業，我們採用敏捷開發，同時將敏捷思維注入公司文化，實行〔彈性工時〕、〔自主升遷〕及〔薪資透明〕，榮獲亞洲權威人力資源刊物 HR Asia《台灣企業雇主獎》；台灣最具代表性的企業表揚獎項《國家品牌玉山獎》。\n\n\n\n 因應環境快速的變動，開始打造遠距工作模式，並成為軟體專案管理平台 Atlassian 及線上協作工具 Miro 代理商，同時也協助企業敏捷轉型諮詢及課程服務。「改變」是這世上唯一不變的事物，我們擁抱改變，",
+        "about_us_e": "Titansoft is a software development company dedicated to the development and maintenance of online software platforms, with over 150 countries served. We are firm believers of agile development, aiming for rapid and flexible reaction to changes, while adopting flexible working hours, a self-initiated promotion process, and transparent developer salaries at the same time. Awarded \"Best Company to Work for\" in Asia by Human Resources Director Magazine and \"National Brand Yushan Award\", which is one of Taiwan's most prestigious enterprise awards. Due to the accelerating pace of rapid changes, we began working remotely and acted as Atlassian and Miro agent, as well as agile transformation consulting and course services to businesses. We believe that“Change is the only constant”, and we are learning to accept it by being adaptable.",
+        "facebook_url": "https://www.facebook.com/TitansoftTW",
+        "official_website": "https://titansoft.com/tw",
+        "sponsor_type": "hacker",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_94",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_94"
+        },
+        "name": "台灣亞馬遜網路服務有限公司",
+        "name_e": "Amazon Web Services (AWS)",
+        "sponsor_id": 94,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "https://www.facebook.com/amazonwebservices.tw/",
+        "official_website": "https://aws.amazon.com/",
+        "sponsor_type": "tony_stark",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_95",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_95"
+        },
+        "name": "狄卡科技股份有限公司",
+        "name_e": "Dcard",
+        "sponsor_id": 95,
+        "about_us": "Dcard 每月不重複訪客高達 1,800 萬，用戶來自世界各地。近年我們逐步成長最有影響力的社群。除了既有服務與版圖，我們正全力發展新型業務及跨國市場，如香港日本服務、廣告投放平台、社交電商好物研究室、Dcard Video 影音品牌與 dtto friends 角色品牌等。我們期待台灣有可以邁向國際的團隊，而 Dcard 成為其中台灣首屈一指的團隊，提供服務給世界各地的使用者。在 Dcard，你可以親身參與各類新想法、新產品甚至是新市場的誕生。我們充滿熱情，希望能邀請優秀的你加入我們！",
+        "about_us_e": "Dcard is a community that has high penetration and influence among the young generation, where the users can freely exchange their thoughts and opinions while finding connections with each other. Dcard users come from all over the world, with an average of 1.8 billion unique visitors per month. Besides our existing community and services, we are also actively growing our new business and also overseas market.\n\n\n\nWe hope to build a bridge between technology and culture, enrich everyone's life and connect the world. We have been aspiring Taiwan to have its own brands which are able to play important roles internationally. Therefore, our goal is to become a leading Taiwanese internet company that brings our positive social influence worldwide.",
+        "facebook_url": "https://www.facebook.com/dcardlab",
+        "official_website": "https://join.dcard.today/",
+        "sponsor_type": "developer",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_96",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_96"
+        },
+        "name": "捕夢網數位科技有限公司",
+        "name_e": "PUMO network Digital Technology Co., Ltd.",
+        "sponsor_id": 96,
+        "about_us": "身為國內主機商，從網路主機代管起家的捕夢網，近年來為因應企業需求，轉型踏入資訊安全防護的領域。有別於其他網路服務業者，捕夢網提供網路架構的安全服務，更以客戶立場出發，注重網站暨程式的資訊安全服務。代理國內外 SSL 憑證，獨家代理來自以色列的弱點掃描、WAF 應用程式防火牆及 DAF 資料庫防火牆等資安服務，打造加密、偵測、阻擋、掩護四點一環，全方位網站安全環境。累積多年經驗，能依據不同應用主機型態，如資料庫、網站連線、網站程式等等，提供客製化檢測服務，能夠找到隱藏的弱點與漏洞，有助提升應用主機的安全。",
+        "about_us_e": "As a reliable hosting provider in Taiwan, PUMO which started from hosting begins to provide the cybersecurity service due to the needs from the clients. As distinguished from other ISPs, PUMO not only emphasizes and provides network security services, but also focuses on the cybersecurity of websites. Being the agent of SSL of top brands from domestic and foreign, vulnerability scanning from Israel, WAF (web application firewall) and DAF (database firewall), PUMO build a comprehensive security environment of website, combined with encryption, detection, blocking and masking. With service experience for years, PUMO can provide customized services based on different hosting types such as database, website connection, website program, etc. To find the hidden weaknesses and vulnerabilities, to improve the hosting security.",
+        "facebook_url": "https://www.facebook.com/pumonetwork/",
+        "official_website": "https://www.pumo.com.tw/www/",
+        "sponsor_type": "bruce_wayne",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_97",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_97"
+        },
+        "name": "奧義智慧科技",
+        "name_e": "CyCraft",
+        "sponsor_id": 97,
+        "about_us": "世界領先 AI 資安公司，企業總部設立於臺灣，並拓展至日本與新加坡等國。以創新 AI 技術自動化資安防護，內建 EDR、CTI、TIG 並整合建構新一代 AI 資安戰情中心，獲得逾五十個政府機關、警政、國防單位，以及三成金融機構、數十家高科技與關鍵領域龍頭企業的信賴，市佔率國內第一。從端點到網路、從調查到阻擋、從自建到託管，CyCraft AIR 涵蓋企業安全所需的一切面向，遵循 F/A/S/T 量化指標，提供客戶主動防禦，達到「威脅，視可而止」。",
+        "about_us_e": "CyCraft’s autonomous cybersecurity platform CyCraft AIR secures government agencies, Fortune Global 500 companies, financial institutions, critical infrastructure, and more every day worldwide using advanced AI-driven technology to automate cybersecurity protection with built-in MDR, CTI surveillance, auto-generated IR reports, and enterprise-wide CA. CyCraft’s team of more than 100 experienced professionals is dedicated to helping businesses focus on success by keeping their cybersecurity solutions Fast, Accurate, Simple, and Thorough.",
+        "facebook_url": "https://www.facebook.com/cycrafttechnology/",
+        "official_website": "https://www.cycarrier.com/",
+        "sponsor_type": "developer",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_98",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_98"
+        },
+        "name": "戴夫寇爾",
+        "name_e": "DEVCORE",
+        "sponsor_id": 98,
+        "about_us": "戴夫寇爾 DEVCORE 是世界級攻擊型資安公司，透過具駭客思維的主動式攻擊服務，滲透並實質檢測組織的資安防禦，進而提升資安體質。DEVCORE 由最貼近駭客思維的團隊組成，致力於挖掘世界級漏洞、讓攻擊先於防禦，並擁有世界級檢測能力，曾挖掘多個世界級漏洞，全方位檢驗企業資安部署策略，客戶產業橫跨政府、金融、電商、半導體、醫療，並積極培育資安人才，協防國家整體資安體質。",
+        "about_us_e": "",
+        "facebook_url": "https://zh-tw.facebook.com/D3VC0RE/",
+        "official_website": "https://devco.re/",
+        "sponsor_type": "education",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_99",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_99"
+        },
+        "name": "科科世界股份有限公司",
+        "name_e": "",
+        "sponsor_id": 99,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "hacker",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_100",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_100"
+        },
+        "name": "ViewSonic",
+        "name_e": "",
+        "sponsor_id": 100,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "bruce_wayne",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_101",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_101"
+        },
+        "name": "祐生研究基金會",
+        "name_e": "Archilife Research Foundation",
+        "sponsor_id": 101,
+        "about_us": "祐生研究基金會自 1987 年推動建築與環境永續發展之研究開始，推動長期的知識累積與人才培養。除了過去建築、環境、生態、健康與資訊社會與文化等面向之碩士論文獎助主題外，本會目前定期舉辦的聯誼會及讀書會，強化祐生成員的知識密度。 其後，於 2011 年起，本會持續針對國內開源活動進行贊助，也針對國內獨立遊戲開發者，推動知識與資訊分享聚會，期能幫助國內相關社群之發展。",
+        "about_us_e": "Since 1987, the Archilife Research Foundation started long-term researches in architecture, sustainability, and go on to other areas of knowledge integration. Efforts including previously giving scholarships in aforementioned areas, and currently holding reading group meetings and communion events for knowledge keepers to better our understandings of the world. Starting from 2011, we also have been sponsoring various open source related events, holding meetups and game jams for local game developers' groups, in the hope of supporting the growth of relevant communities in these fields.",
+        "facebook_url": "",
+        "official_website": "https://www.archilife.org",
+        "sponsor_type": "developer",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_102",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_102"
+        },
+        "name": "Jira",
+        "name_e": "",
+        "sponsor_id": 102,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "special_thanks",
+        "career_information": ""
+    }
+]

@@ -36,22 +36,23 @@ class SpeakerService
             'photo_for_' . $type . '_web',
             'photo_for_' . $type . '_mobile'
         ];
-        foreach ($filterKeys as $filterkey) {
-            if (!filter_var($filterkey, FILTER_VALIDATE_URL)) {
-                $row[$filterkey] = url($row[$filterkey]);
+        if (isset($row[$filterKeys[0]]) || isset($row[$filterKeys[0]])) {
+            foreach ($filterKeys as $filterkey) {
+                if (!filter_var($filterkey, FILTER_VALIDATE_URL)) {
+                    $row[$filterkey] = url($row[$filterkey]);
+                }
             }
+            $row['img'] = [
+                'web' => $row['photo_for_' . $type . '_web'],
+                'mobile' => $row['photo_for_' . $type . '_mobile'],
+            ];
         }
-        $row['img'] = [
-            'web' => $row['photo_for_' . $type . '_web'],
-            'mobile' => $row['photo_for_' . $type . '_mobile'],
-        ];
         foreach ($row as $key => $value) {
             if (in_array($key, $this->hidden_fields)) {
                 unset($row[$key]);
             }
         }
         $row['tags'] = $tags;
-
         return $row;
     }
 
@@ -73,11 +74,10 @@ class SpeakerService
             if (!$found) {
                 $result[] = [
                     'color' => $this->tagDefaultColor,
-                    'name' => $tag,
+                    'name' => is_array($tag) ? $tag['name'] : $tag,
                 ];
             }
         }
-
         return $result;
     }
 
@@ -85,20 +85,29 @@ class SpeakerService
      * 初始化講者與議程對應
      * @param array $sessionAry
      */
-    private function initSessionSpeakerMapping(array $sessionAry) {
+    private function initSessionSpeakerMapping(array $sessionAry)
+    {
         foreach ($sessionAry as $schedule) {
             foreach ($schedule['period'] as &$period) {
                 if (empty($period['room'])) {
                     continue;
                 }
                 foreach ($period['room'] as $room) {
-                    if (is_array($room['speaker_id'])) {
-                        foreach ($room['speaker_id'] as $id) {
-                            $this->sessionSpeakerMapping[$id] = $room['session_id'];
+                    if (isset($room['speaker_id'])) {
+                        if (is_array($room['speaker_id'])) {
+                            foreach ($room['speaker_id'] as $id) {
+                                $this->sessionSpeakerMapping[$id] = $room['session_id'];
+                            }
+                            continue;
                         }
-                        continue;
+                        $this->sessionSpeakerMapping[$room['speaker_id']] = $room['session_id'];
+                    } else {
+                        if (isset($room['speakers'])) {
+                            foreach ($room['speakers'] as $speaker) {
+                                $this->sessionSpeakerMapping[$speaker['speaker_id']] = $room['session_id'];
+                            }
+                        }
                     }
-                    $this->sessionSpeakerMapping[$room['speaker_id']] = $room['session_id'];
                 }
             }
         }
@@ -108,7 +117,8 @@ class SpeakerService
      * 初始化標籤群組
      * @param object $tagGroupSetting
      */
-    private function initTagGroup($tagGroupSetting) {
+    private function initTagGroup($tagGroupSetting)
+    {
         $this->tagGroup = $tagGroupSetting["group"];
         $this->tagDefaultColor = $tagGroupSetting["defaultColor"];
     }

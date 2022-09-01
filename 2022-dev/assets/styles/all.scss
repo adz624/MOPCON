@@ -1,0 +1,12 @@
+@import 'normalize.css';
+@import './variables';
+@import './mixin';
+@import './base';
+@import './utility';
+@import './components/button';
+@import './components/background';
+@import './components/bannerPinkCircle';
+
+html.modal-open {
+  overflow-y: hidden;
+}

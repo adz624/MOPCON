@@ -15,6 +15,10 @@ class SessionService
             'job_title',
             'job_title_e',
             'img',
+            'link_fb',
+            'link_github',
+            'link_twitter',
+            'link_other',
         ];
 
         $result = [];

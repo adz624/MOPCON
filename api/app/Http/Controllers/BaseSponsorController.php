@@ -11,20 +11,38 @@ class BaseSponsorController extends Controller
 {
     use ApiTrait;
     private $sponsorTypes = ['tony_stark', 'bruce_wayne', 'hacker', 'geek', 'developer', 'remote_developer', 'education', 'special_thanks', 'co-organizer', 'ksg_support', 'ita_support', 'sscs_support', 'edbkcg'];
+    private $specificDisplayNameYear = [2022];
     private $displayName = [
-        ['name' => 'Tony Stark'],
-        ['name' => 'Bruce Wayne'],
-        ['name' => 'Hacker'],
-        ['name' => 'Geek'],
-        ['name' => 'Developer'],
-        ['name' => 'Remote Developer'],
-        ['name' => '教育贊助', 'name_e' => 'Education Sponsor'],
-        ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
-        ['name' => '協辦單位', 'name_e' => 'Co Organizer'],
-        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
-        ['name' => '教育部智慧創新跨域人才培育計畫推動中心'],
-        ['name' => '智慧感知與雲端服務產學聯盟'],
-        ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
+        2022 => [
+            ['name' => '宇宙級', 'name_e' => 'Universe'],
+            ['name' => '銀河級', 'name_e' => 'Galaxy'],
+            ['name' => '行星級', 'name_e' => 'Planet'],
+            ['name' => ''],
+            ['name' => '彗星級', 'name_e' => 'Comet'],
+            ['name' => ''],
+            ['name' => '教育贊助', 'name_e' => 'Educational'],
+            ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
+            ['name' => ''],
+            ['name' => ''],
+            ['name' => ''],
+            ['name' => ''],
+            ['name' => ''],
+        ],
+        0 => [ // default
+            ['name' => 'Tony Stark'],
+            ['name' => 'Bruce Wayne'],
+            ['name' => 'Hacker'],
+            ['name' => 'Geek'],
+            ['name' => 'Developer'],
+            ['name' => 'Remote Developer'],
+            ['name' => '教育贊助', 'name_e' => 'Education Sponsor'],
+            ['name' => '特別感謝', 'name_e' => 'Special Thanks'],
+            ['name' => '協辦單位', 'name_e' => 'Co Organizer'],
+            ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
+            ['name' => '教育部智慧創新跨域人才培育計畫推動中心'],
+            ['name' => '智慧感知與雲端服務產學聯盟'],
+            ['name' => '高雄市經濟發展局獎勵會議展覽活動計畫贊助'],
+        ]
     ];
     private $speakerAry = [];
     protected $function = 'sponsor';
@@ -64,12 +82,13 @@ class BaseSponsorController extends Controller
     private function getAllSponsors($sponsorJson)
     {
         $data = [];
+        $requestYear = in_array($this->year, $this->specificDisplayNameYear) ? $this->year : 0;
         foreach ($sponsorJson as $sponsor) {
             $index = array_search($sponsor['sponsor_type'], $this->sponsorTypes);
             if (!array_key_exists($index, $data)) {
                 $data[$index] = [
-                    'name' => $this->displayName[$index]['name'],
-                    'name_e' => $this->displayName[$index]['name_e'] ?? $this->displayName[$index]['name'],
+                    'name' => $this->displayName[$requestYear][$index]['name'],
+                    'name_e' => $this->displayName[$requestYear][$index]['name_e'] ?? $this->displayName[$requestYear][$index]['name'],
                     'data' => [],
                 ];
             }
@@ -105,7 +124,10 @@ class BaseSponsorController extends Controller
      */
     private function extractor($sponsor)
     {
-        $sponsor['logo_path'] = $this->generagePhotoUrl($sponsor['logo_path']);
+        $sponsor['logo_path'] = !is_array($sponsor['logo_path']) ? $this->generagePhotoUrl($sponsor['logo_path']) : [
+            'web' => $this->generagePhotoUrl($sponsor['logo_path']['web']),
+            'mobile' => $this->generagePhotoUrl($sponsor['logo_path']['mobile']),
+        ];
         $sponsor['speaker_information'] = [];
         foreach ($this->speakerAry as $speaker) {
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {

@@ -22,6 +22,10 @@ class BaseSessionController extends Controller
         'job_title',
         'job_title_e',
         'img',
+        'link_fb',
+        'link_github',
+        'link_twitter',
+        'link_other',
         'topic',
         'topic_e',
         'link_slide',
@@ -38,11 +42,6 @@ class BaseSessionController extends Controller
         'summary',
         'summary_e',
         'community_partner',
-    ];
-    protected $locations = [
-        'R1' => '3F一廳',
-        'R2' => '4F二廳',
-        'R3' => '4F三廳',
     ];
     private $sessions;
     private $sponsors;
@@ -70,7 +69,10 @@ class BaseSessionController extends Controller
             $this->sponsors[(int) $sponsor['sponsor_id']] = [
                 'name' => $sponsor['name'],
                 'name_e' => $sponsor['name_e'],
-                'logo_path' => url($sponsor['logo_path']),
+                'logo_path' => !is_array($sponsor['logo_path']) ? $sponsor['logo_path'] : [
+                    'web' => url($sponsor['logo_path']['web']),
+                    'mobile' => url($sponsor['logo_path']['mobile']),
+                ]
             ];
         }
         $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);
@@ -99,7 +101,9 @@ class BaseSessionController extends Controller
                     continue;
                 }
                 foreach ($period['room'] as &$room) {
-                    $room = $this->sessions[$room['session_id']];
+                    if (isset($this->sessions[$room['session_id']])) {
+                        $room = $this->sessions[$room['session_id']];
+                    }
                 }
             }
         }

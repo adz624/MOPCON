@@ -1,0 +1,1845 @@
+[
+    {
+        "date": 1634227200,
+        "period": [
+            {
+                "started_at": 1634258700,
+                "isBroadCast": true,
+                "ended_at": 1634259600,
+                "event": "開幕 Opening",
+                "room": []
+            },
+            {
+                "started_at": 1634259600,
+                "isBroadCast": true,
+                "ended_at": 1634262300,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022001,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634262300,
+                "isBroadCast": true,
+                "ended_at": 1634262900,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634262900,
+                "isBroadCast": true,
+                "ended_at": 1634265600,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022005,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022006,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022007,
+                        "room": "R3",
+                        "topic": "打造邊走邊玩的區塊鏈遊戲",
+                        "topic_e": "Walk-to-Earn Blockchain Game",
+                        "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
+                        "summary_e": "As technologies such as defi and NFT are widely known to the public, the economic model of earning while playing is gradually emerging. By developing games on the blockchain, the characters and props in the game are sold in the form of NFT. In addition, the cryptocurrencies and NFT assets earned in the game can be traded on the blockchain, allowing GameFi players to earn money while playing, realizing the Play-to-Earn business model. Different game rules can be created through smart contracts. Since smart contracts are open and cannot be tampered with, the game experience is relatively fair, realizing the concept of Game+NFT+DeFi.",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "對區塊鏈和 GameFi 有興趣，並且想要開發 Dapp 等應用的會眾。",
+                        "target_e": "The person who is interesting in Blockchain and GameFi, and want to build a Dapp.",
+                        "prior_knowledge": "區塊鏈基本知識、solidity 基本語法",
+                        "prior_knowledge_e": "Blockchain basic knowledge, solidity Language",
+                        "expected_gain": "了解 GameFi 的應用和價值，對區塊鏈 Dapp 開發產生濃厚興趣，進而開發出許多區塊鏈遊戲的應用。",
+                        "expected_gain_e": "Understand the application and value of GameFi, have a strong interest in blockchain Dapp development, and then develop many blockchain game applications.",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 17,
+                                "name": "York Chang",
+                                "name_e": "York Chang",
+                                "job_title": "工程師",
+                                "job_title_e": "Engineer",
+                                "company": "  ",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_17",
+                                    "mobile": "api/2022/speaker/images/speaker_17"
+                                },
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/YorkChang01",
+                                "link_other": "https://yorkisinhere.medium.com/",
+                                "link_fb": ""
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022008,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634265600,
+                "isBroadCast": true,
+                "ended_at": 1634266200,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634266200,
+                "isBroadCast": true,
+                "ended_at": 1634268900,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022009,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022010,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022011,
+                        "room": "R3",
+                        "topic": "透過 Laravel Bagisto 電商架站框架，了解架站軟體",
+                        "topic_e": "Through the Laravel Bagisto e-commerce platform framework, understand the source code structure of the platform software",
+                        "summary": "Laravel Bagisto 是 Laravel 生態系中，eCommerce 架站熱門的套件之一，具備現代化的 UI 以及強大的管理功能。透過分析 Bagisto 的技術架構，可以幫助我們了解一個提供軟體修改性的成熟框架，會有的程式碼架構。",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "有過網頁框架開發經驗，並稍微了解 PHP 語法的開發者",
+                        "target_e": "",
+                        "prior_knowledge": "PHP, Web Framework",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "希望能幫助聽眾啟發，對於架站類型軟體開發，或是極高模組化風格的程式碼，組織架構與運作方式的設計",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 5,
+                                "name": "劉奕為",
+                                "name_e": "John Liu",
+                                "job_title": "Full Stack Engineer",
+                                "job_title_e": "",
+                                "company": "Netskope",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_5",
+                                    "mobile": "api/2022/speaker/images/speaker_5"
+                                },
+                                "link_github": "https://github.com/johnliu-tw",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/johnliu.software.thinking"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022012,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634268900,
+                "isBroadCast": true,
+                "ended_at": 1634269500,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634269500,
+                "isBroadCast": true,
+                "ended_at": 1634272200,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022013,
+                        "room": "R1",
+                        "topic": "SwiftUI 跨平台 App 開發初體驗",
+                        "topic_e": "Beginning SwiftUI Multiplatform App Development",
+                        "summary": "Apple 在 2019 推出全新的 App 開發技術 SwiftUI，經歷了 4 年的時間，在 2022 它已進入成熟的第 4 代。Apple 的工程師也在 WWDC22 提到，SwiftUI 是開發 App 的最佳技術，現在正是開始使用 SwiftUI 開發 App 的最佳時機。\n\nSwiftUI 有許多優點。利用它我們可以更方便地開發跨平台 App，使用同樣的 API，就能開發出 iOS、macOS、watchOS、tvOS 都能使用的 App。它的程式可讀性更好，更容易理解，也能用更少的程式實現 App 功能，非常適合新手學習。在開發時不僅資料跟畫面可自動同步，而且還能即時預覽畫面，大幅提升 App 開發的速度並減少 bug 發生的機率。綜合以上優點，它將讓我們成為早點下班的幸福工程師。\n\n 接下來讓我們快快啟動 Xcode，展開美好的 SwiftUI App 開發初體驗吧。",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "- iOS App 開發者\n- 想認識有趣的 SwiftUI",
+                        "target_e": "",
+                        "prior_knowledge": "Swift 程式語法",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "認識 SwiftUI 的美好，變心投入 SwiftUI App 開發的懷抱",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 1,
+                                "name": "彼得潘",
+                                "name_e": "Peter Pan",
+                                "job_title": "iOS App 開發作家兼講師兼工程師",
+                                "job_title_e": "",
+                                "company": "彼得潘的 iOS App Neverland",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_1",
+                                    "mobile": "api/2022/speaker/images/speaker_1"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "https://apppeterpan.mystrikingly.com",
+                                "link_fb": "https://www.facebook.com/iphone.peterpan"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022014,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022015,
+                        "room": "R3",
+                        "topic": "從 Vue CLI 到 Vite",
+                        "topic_e": "Migrating From Vue CLI to Vite",
+                        "summary": "Vite 公開發佈至今已有一段時間，身為同家族的 Vue.js 也將它納入官方生態圈 (a.k.a 全家桶) 的一員。\n\n 就在今年七月，Vite 也迎來它的三個版本，在這場議程除了快速介紹 Vite 3 帶來的新特性之外，同時也為各位說明，我們是如何將過往的 Vue CLI 專案轉移至 Vite，享受現代前端開發工具所帶來的各種好處。",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "曾經使用過 Vue.js 的開發者，對 Vite 有興趣的開發者。",
+                        "target_e": "",
+                        "prior_knowledge": "有 Vue.js，或其他前端框架開發經驗者佳，沒有也沒關係。",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "理解 Vite 這套開發工具是什麼，並將 Vue 2.x/3.x 的專案轉移至 Vite 開發環境。",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 11,
+                                "name": "許國政",
+                                "name_e": "Kuro Hsu",
+                                "job_title": "Frontend Developer",
+                                "job_title_e": "",
+                                "company": "好房網",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_11",
+                                    "mobile": "api/2022/speaker/images/speaker_11"
+                                },
+                                "link_github": "https://github.com/kurotanshi",
+                                "link_twitter": "https://twitter.com/kurotanshi",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/kurotanshi"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022016,
+                        "room": "R4",
+                        "topic": "一個專門用於對話應用的自然語言理解模型 LaMDA",
+                        "topic_e": "Language Model for Dialogue Applications(LaMDA)",
+                        "summary": "LaMDA 是 Google 最新發表的語言模型，LaMDA 是基於 Transformer 的自然語言理解(NLU)模型，專門應用於對話使用。本次分享會針對基本對話理解的自然語言理解(NLU)概念做簡單趨勢的介紹，接著針對 LaMDA 的運作方式、模型微調、衡量指標等內容做分享。",
+                        "summary_e": "LaMDA builds on earlier Google research, published in 2020, that showed Transformer-based language models trained on dialogue could learn to talk about virtually anything. Since then, we’ve also found that, once trained, LaMDA can be fine-tuned to significantly improve the sensibleness and specificity of its responses.",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "學生、研究生、工程師、對話設計師",
+                        "target_e": "Students, Graduate Students, Engineers, Conversation Designers",
+                        "prior_knowledge": "深度學習",
+                        "prior_knowledge_e": "Deeplearning",
+                        "expected_gain": "了解最新的對話語言模型",
+                        "expected_gain_e": "Learn about the SOTA conversational language models.",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "AI"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Data Analyzing"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 16,
+                                "name": "Jerry 老師",
+                                "name_e": "JerryWu",
+                                "job_title": "執行長",
+                                "job_title_e": "CEO",
+                                "company": "亞太智能機器股份有限公司",
+                                "company_e": "Asia Pacific Machine Intelligence Company",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_16",
+                                    "mobile": "api/2022/speaker/images/speaker_16"
+                                },
+                                "link_github": "https://github.com/jerrywu2013",
+                                "link_twitter": "",
+                                "link_other": "https://dataology.blogspot.com/",
+                                "link_fb": "https://www.facebook.com/jerrywu2016/"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634272200,
+                "isBroadCast": true,
+                "ended_at": 1634275200,
+                "event": "午餐 Lunch",
+                "room": []
+            },
+            {
+                "started_at": 1634275200,
+                "isBroadCast": true,
+                "ended_at": 1634277900,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022017,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022018,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022019,
+                        "room": "R3",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022020,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634277900,
+                "isBroadCast": true,
+                "ended_at": 1634278500,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634278500,
+                "isBroadCast": true,
+                "ended_at": 1634281200,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022021,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022022,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022023,
+                        "room": "R3",
+                        "topic": "前端好朋友 - tailwindcss",
+                        "topic_e": "How to Use Tailwind CSS",
+                        "summary": "1. 2022 年 CSS 的決解方案\n2. 導入 tailwindcss 的優點\n3. 透過 tailwindcss 與設計師優雅的溝通",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "前端網頁開發人員",
+                        "target_e": "",
+                        "prior_knowledge": "本主題需 CSS 基礎，適合覺得改別人的 style 是件很痛苦的工程師們。",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "了解什麼是 tailwindcss，並解決什麼樣的問題",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 9,
+                                "name": "奶綠茶",
+                                "name_e": "milkmidi",
+                                "job_title": "Staff frontend engineer",
+                                "job_title_e": "Staff frontend engineer",
+                                "company": "Positive Grid",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_9",
+                                    "mobile": "api/2022/speaker/images/speaker_9"
+                                },
+                                "link_github": "https://github.com/milkmidi",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/milkmidifans"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022024,
+                        "room": "R4",
+                        "topic": "高效、省錢，挑戰極限的爬蟲",
+                        "topic_e": "Beyond limit! The effective, and cost down crawler.",
+                        "summary": "這邊簡單地告訴你一個小故事：「就算是日用量極大的美國最大論壇 reddit 也是從爬別人的內容起家」\n\n 沒錯，作為一個 StartUp，沒有用戶進來，但極需內容來充滿網站的時候，爬蟲是你的好幫手；但同樣作為 StartUp，在缺乏資金與人力的情況下需要在有限的預算下控管運算資源的使用，以及在短時間內蒐集大量內容的高效，讓團隊保持速度維持競爭力。\n\n 在這個議程裡，你們將會了解到分散式爬蟲的建置、設計、與成本壓縮的訣竅，一方面了解如何拆解目標的服務，與 ETL 的整合考量。\n\n 也邀請大家一起色色 (?)",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "希望對爬蟲有興趣、或是對於降低成本遇到貧頸的工程師會有幫助",
+                        "target_e": "",
+                        "prior_knowledge": "前端、後端都可能有些認識，加上一些 cloud service 前置知識",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "更深的了解到 Crawler 的運作、或許可以知道一些 ETL",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Data Analyzing"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 19,
+                                "name": "MTP",
+                                "name_e": "MTP",
+                                "job_title": "Founder",
+                                "job_title_e": "Founder",
+                                "company": "https://lewd.art/",
+                                "company_e": "https://lewd.art/",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_19",
+                                    "mobile": "api/2022/speaker/images/speaker_19"
+                                },
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/lewdart_",
+                                "link_other": "https://lewd.art",
+                                "link_fb": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634281200,
+                "isBroadCast": true,
+                "ended_at": 1634281800,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634281800,
+                "isBroadCast": true,
+                "ended_at": 1634284500,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022025,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022026,
+                        "room": "R2",
+                        "topic": "為什麼你的產品像縫合怪？",
+                        "topic_e": "Why Product Looks Scrambled？",
+                        "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "對 UI、UX 、品牌形象有興趣的人",
+                        "target_e": "",
+                        "prior_knowledge": "無",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "輕鬆學習到如何建立品牌形象、思考的方法，能立刻活用到自家產品的 UI 和 UX 設計上。",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 2,
+                                "name": "Akane Lee",
+                                "name_e": "Akane Lee",
+                                "job_title": "公司負責人",
+                                "job_title_e": "",
+                                "company": "染絳設計有限公司",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_2",
+                                    "mobile": "api/2022/speaker/images/speaker_2"
+                                },
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/akane_lee",
+                                "link_other": "https://blog.akanelee.me/",
+                                "link_fb": "https://www.facebook.com/uiux.akane"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022027,
+                        "room": "R3",
+                        "topic": "Web3 區塊鏈的 NFT 音樂聆聽體驗會是什麼樣子",
+                        "topic_e": "What will the NFT music listening experience be like on the Web3 blockchain",
+                        "summary": "區塊鏈技術熱潮，各種項目、新概念與產品服務在市場上相繼推出，聚焦在未來 Web3 內容稱霸的網路生態，數位資產的保存與持有將會是未來趨勢。FANSI 在持續思考 NFT 獨一無二的特性如何應用在產品服務上；如何解決音樂產業的問題，進而去定義 Web3 的音樂體驗樣貌。\n\n 因此發展出兩個面向的產品：\nFANSI 是專注在華人音樂市場發行音樂 NFT 收藏品；MetaBoom 是面向歐美發行 Web3 NFT 音樂播放器項目，NFT 播放器可自行讓用戶匯入鏈上所購買的 NFT 歌曲，在幣圈樂於「分享」的文化上也能有 Listen to Earn 的收益回饋，實現 Web3 資料能夠跨平台互動的價值。\n\n 在 UX 產品設計上的挑戰應如何讓用戶快速理解區塊鏈錢包與智能合約的基本概念，立即購買到 NFT 音樂商品與享受 Web3 音樂聆聽體驗。產品規劃時更必須投入到社群互動，讓用戶皆能參與產品發展的過程、意見回饋與投票。有別於過去 UX 的研究方式，在區塊鏈世界「使用者也即是產品規劃者」。長遠目標希望將區塊鏈網路化繁為簡，成為人人都能輕易上手的網路生態。",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "對區塊鏈有興趣的開發者/設計師",
+                        "target_e": "",
+                        "prior_knowledge": "區塊鏈、以太坊等專有名詞/基礎知識",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "在 Web3 做 UI/UX 產品的思維與反思",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 20,
+                                "name": "楊博荏",
+                                "name_e": "Doz Yang",
+                                "job_title": "Product Head",
+                                "job_title_e": "",
+                                "company": "FANSI Me Inc.",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_20",
+                                    "mobile": "api/2022/speaker/images/speaker_20"
+                                },
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/yang_doz",
+                                "link_other": "https://www.behance.net/doz5480",
+                                "link_fb": "https://www.facebook.com/doz.yang/"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022028,
+                        "room": "R4",
+                        "topic": "Visual Testing",
+                        "topic_e": "Visual Testing",
+                        "summary": "前端工程師遇到什麼問題？\n 什麼是 Visual Testing？\n 怎麼做  Visual Testing？\n 專案範例 👏🏻\n 工作流程💡\n 疑難雜症 🤔",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "無任何限制",
+                        "target_e": "",
+                        "prior_knowledge": "無任何限制",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "沒事多測試，測試多沒事 💪🏻",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 7,
+                                "name": "Summer Tang",
+                                "name_e": "Summer Tang",
+                                "job_title": "資深前端工程師",
+                                "job_title_e": "Senior Front-end Developer",
+                                "company": "趨勢科技",
+                                "company_e": "Trend Micro",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_7",
+                                    "mobile": "api/2022/speaker/images/speaker_7"
+                                },
+                                "link_github": "https://github.com/cythilya",
+                                "link_twitter": "https://twitter.com/cythilya",
+                                "link_other": "部落格（http://cythilya.github.io）書（http://bit.ly/3Ec1P4U）",
+                                "link_fb": "https://www.facebook.com/cythilya"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634284500,
+                "isBroadCast": true,
+                "ended_at": 1634285100,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634285100,
+                "isBroadCast": true,
+                "ended_at": 1634287800,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022029,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022030,
+                        "room": "R2",
+                        "topic": "深入淺出 autocomplete",
+                        "topic_e": "Practical autocomplete",
+                        "summary": "autocomplete 是現代軟體服務最重要的特性之一，使用者在輸入框輸入了文字，軟體服務就會回傳最適當的選項給使用者，而使用者可以依照回傳的各個選項中選擇其中一個執行動作。\n\n 一般的技術文章，大都從前端的角度探討如何在輸入文字時，利用 debounce 和 throttle 這兩個技術，提升使用者的操作體驗及減少後端的負擔。極少探討後端如何實作 autocomplete 的資料結構，讓資料能夠快速回傳給前端。\n\n 這次的分享主要就是完全從後端的角度來探討如何利用 Redis 或 Elasticsearch 這類 NoSQL 實作 autocomplete，也會分享多個 autocomplete 常見的情境。\n\n 最後也會分享進入正式環境時的技術選型，應該用 Redis 還是用 Elasticsearch 比較好。\n\n#autocomplete #elasticsearch #redis #backend",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "對後端開發、Elasticsearch、Redis 有興趣的朋友",
+                        "target_e": "",
+                        "prior_knowledge": "無",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "希望聽眾可以藉由這次的分享，了解如何利用 Elasticsearch 及 Redis 開發 autocomplete 功能",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 14,
+                                "name": "王慕羣",
+                                "name_e": "Kewang",
+                                "job_title": "技術長",
+                                "job_title_e": "",
+                                "company": "Funliday",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_14",
+                                    "mobile": "api/2022/speaker/images/speaker_14"
+                                },
+                                "link_github": "https://github.com/kewang",
+                                "link_twitter": "",
+                                "link_other": "個人 Facebook：https://www.facebook.com/kewangtw 公司技術部落格：https://techblog.funliday.com",
+                                "link_fb": "https://www.facebook.com/kewang.information"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022031,
+                        "room": "R3",
+                        "topic": "提升學習 UX 體驗的極致 - 以培訓軟體工程師為例",
+                        "topic_e": "null",
+                        "summary": "本議程將介紹多年優化學習體驗設計的過程中，如何協助 1,000 位軟體工程師掌握「學習如何學習」，同時分享他們如何挖掘自身天賦，透過各種有效的學習方法，讓自己逐步成為軟體工程師。",
+                        "summary_e": "null",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "- 對使用者體驗（UX）、服務設計（Service Design）有興趣的受眾",
+                        "target_e": "",
+                        "prior_knowledge": "新手小白都可聽取",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "- 瞭解如何透過使用者體驗（UX）、服務設計（Service Design），優化學習歷程體驗\n- 瞭解「學習如何學習」\n- 瞭解要成為軟體工程師，需要歷經哪些學習階段",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 13,
+                                "name": "廖洧杰",
+                                "name_e": "liao wei chien",
+                                "job_title": "執行長",
+                                "job_title_e": "CEO",
+                                "company": "波利馬資訊科技有限公司",
+                                "company_e": "hexschool",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_13",
+                                    "mobile": "api/2022/speaker/images/speaker_13"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/sfismy/"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022032,
+                        "room": "R4",
+                        "topic": "善用 Go fuzzing，幫助你寫出更完整的單元測試",
+                        "topic_e": "Utilize Go fuzzing to write more complete unit tests",
+                        "summary": "除了泛型（Generics）之外，Go 1.18 還推出另一個很厲害的 feature - Fuzzing Test。比起一成不變的單元測試，Fuzzing Test 可以自動調整 input，並且幫你檢查那些開發者常常沒想到的 input，輕輕鬆鬆就幫你找出有問題的 edge cases 哦。",
+                        "summary_e": "In addition to Generics, Go 1.18 also introduced another great feature “Fuzzing Test”. Compared with traditional Unit Test, Fuzzing Test can automatically manipulate inputs and help check the inputs that developers often miss, so it can easily help you find problematic edge cases.",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "剛入門 Go 的開發者",
+                        "target_e": "Developers who just getting started with Go",
+                        "prior_knowledge": "- 看得懂基本 Go 的語法\n- 知道什麼是單元測試",
+                        "prior_knowledge_e": "- Understand basic Go syntax\n- Know what is Unit Testing",
+                        "expected_gain": "- 如何在 Go 裡面寫 Fuzzing Test\n- 知道 Fuzzing Test 可以用在哪些地方",
+                        "expected_gain_e": "- How to write fuzzing Test in Go\n- Know where to use Fuzzing Test",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 12,
+                                "name": "盧承億",
+                                "name_e": "Larry Lu",
+                                "job_title": "TBD",
+                                "job_title_e": "TBD",
+                                "company": "TBD",
+                                "company_e": "TBD",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_12",
+                                    "mobile": "api/2022/speaker/images/speaker_12"
+                                },
+                                "link_github": "https://github.com/LarryLuTW/",
+                                "link_twitter": "",
+                                "link_other": "https://larry850806.medium.com/",
+                                "link_fb": "https://www.facebook.com/Larry850806"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634287800,
+                "isBroadCast": true,
+                "ended_at": 1634288400,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634288400,
+                "isBroadCast": true,
+                "ended_at": 1634291100,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022033,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634291100,
+                "isBroadCast": true,
+                "ended_at": 0,
+                "event": "END",
+                "room": []
+            },
+            {
+                "started_at": 1634293800,
+                "isBroadCast": true,
+                "ended_at": 0,
+                "event": "MOPNight(講者晚宴)",
+                "room": []
+            }
+        ]
+    },
+    {
+        "date": 1634313600,
+        "period": [
+            {
+                "started_at": 1634346000,
+                "isBroadCast": true,
+                "ended_at": 1634350200,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022037,
+                        "room": "R1",
+                        "topic": "以 Kotlin Multiplatform 制霸全平台",
+                        "topic_e": "Build Multiplatform Applications using Kotlin",
+                        "summary": "經過多年發展，Kotlin 已是一個支援多平台開發的程式語言，讓開發者能用一個程式語言開發包括 Server-Side、Desktop、Mobile、Frontend 等不同平台的應用程式。在這場分享裡，將介紹 Kotlin Multiplatform 的發展藍圖，並示範多平台開發時的專案架構、工作流程及開發生態系。聽完這場分享後，將能感受到 Kotlin 多平台開發的威力！",
+                        "summary_e": "Kotlin is a multiplatform language that allowing developers to develop applications for different platforms including Server-Side, Desktop, Mobile, Frontend, etc. In this talk, we will share the blueprint of Kotlin multiplatform, the project structure, development workflow and ecosystem. After listening to this talk, you will feel the potential of Kotlin multi-platform development.",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "對多平台開發有興趣的開發者",
+                        "target_e": "Anyone interested in multiplatform development",
+                        "prior_knowledge": "聽眾需要對多平台開發有基本的認識，並了解多平台開發的難度與挑戰為何",
+                        "prior_knowledge_e": "The audience needs to have a basic understanding of multiplatform development and knows the difficulties and challenges of multiplatform development.",
+                        "expected_gain": "聽完這場分享後，聽眾將能了解使用 Kotlin 程式語言開發多平台應用的潛力並對整體流程有初步的認識。",
+                        "expected_gain_e": "After attending this talk, the audience will be able to understand the potential of using the Kotlin to develop multiplatform applications and have a brief understanding of the development workflow.",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 8,
+                                "name": "范聖佑",
+                                "name_e": "Shengyou Fan",
+                                "job_title": "技術傳教士",
+                                "job_title_e": "Developer Advocate",
+                                "company": "JetBrains",
+                                "company_e": "JetBrains",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_8",
+                                    "mobile": "api/2022/speaker/images/speaker_8"
+                                },
+                                "link_github": "http://github.com/shengyou",
+                                "link_twitter": "https://twitter.com/shengyou",
+                                "link_other": "https://kraftsman.tw/",
+                                "link_fb": "https://fb.me/shengyoufan"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634350200,
+                "isBroadCast": true,
+                "ended_at": 1634350800,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634350800,
+                "isBroadCast": true,
+                "ended_at": 1634353500,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022041,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022042,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022043,
+                        "room": "R3",
+                        "topic": "拉近現代開發者與 Web 3 的距離",
+                        "topic_e": "Bringing the modern developer closer to the Web 3",
+                        "summary": "2021 年刷起了一波元宇宙旋風後，這 2 年絕對是 Web3 最火熱的時刻\n\n 如果 Web3 真能改變些什麼，我應該如何調整我的技能樹為未來作準備呢？\n\n 對於現代的開發者來說，無論你是前端、後端、QA、維運工程師又或是設計師\n\n 你手上的技能和 Web3 還差多遠？\n\n 在這場演講中，希望透過在區塊鏈開發產品 5 年的經驗\n\n 說明在 Web2.0 + Web3.0 整合開發過程需要的技能變化\n\n 拉近彼此與 Web 3.0 的距離！",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "- 對區塊鏈產業有興趣的開發者\n- 已經有 Web 2 開發經驗，想嘗試往 Web3 移動的開發者",
+                        "target_e": "",
+                        "prior_knowledge": "- 知道去中心化、中心化基本概念\n- 聽過虛擬貨幣",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "- Web 2.0 與 Web 3.0 差異\n- 交易所的挑戰\n- 私鏈應用場景的價值\n- 區塊鏈工作機會",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 4,
+                                "name": "在地上滾的工程師 Nic",
+                                "name_e": "Nic",
+                                "job_title": "技術總監",
+                                "job_title_e": "VP of engineering",
+                                "company": "幣託科技",
+                                "company_e": "BitoEX",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_4",
+                                    "mobile": "api/2022/speaker/images/speaker_4"
+                                },
+                                "link_github": "https://github.com/niclin",
+                                "link_twitter": "",
+                                "link_other": "https://blog.niclin.tw/",
+                                "link_fb": "https://www.facebook.com/niclin.dev/"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022044,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634353500,
+                "isBroadCast": true,
+                "ended_at": 1634354100,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634354100,
+                "isBroadCast": true,
+                "ended_at": 1634356800,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022045,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022046,
+                        "room": "R2",
+                        "topic": "UX 背景讓 BA 不一樣 - 敏捷環境為例, 讓 UX 離商業更靠近",
+                        "topic_e": "UX and Business Analysis - How to combine these skills efficiently",
+                        "summary": "1. 身為一個 UX 背景的 BA 工作日常\n2. 從 UX 視角評估 BA 技能\n3. 敏捷環境下 \"End to End\" 各角色分工(UI.UX.BA.PD)及產品成效評估流程 \n4. 帶領 UI 一起發揮商業價值",
+                        "summary_e": "1. As a UX background how is a typical BA day\n2. How we evaluate the BA role based on the UX perspective \n3. \"End to End\" product development with different role (UI.UX.BA.PO.PD) in Agile environment \n4. How to co-create business value with UI designer",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "UI/UX 設計師, 使用者研究員, PM, PO, 對商業分析師有興趣的人",
+                        "target_e": "UI/UX Designer, UR, PM, PO, Anyone who interested in BA role",
+                        "prior_knowledge": "有基礎的 UX 知識 (知道什麼是 UX,對這個詞彙跟職位不陌生), 有產品開發經驗 ",
+                        "prior_knowledge_e": "Have basic UX know-how,  Have product development experience",
+                        "expected_gain": "1.了解 UX 與 BA 角色的結合\n2. 理解敏捷環境下,各角色的流程分工(UI.UX.BA.PO.PD)到產品產出價值\n3. BA 角色如何帶領 UI 一起發揮商業價值",
+                        "expected_gain_e": "1. Understand how UX. BA work together\n2. Understand \"End to End\" product development with different role (UI.UX.BA.PO.PD) in Agile environment \n3. Understand how BA cocreate business with UI",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Agile"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Data Analyzing"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 6,
+                                "name": "蔡雅文",
+                                "name_e": "Scarlett Tsai",
+                                "job_title": "資深商業分析師",
+                                "job_title_e": "Senior Business Analyst ",
+                                "company": "新加坡商鈦坦科技",
+                                "company_e": "Titansoft",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_6",
+                                    "mobile": "api/2022/speaker/images/speaker_6"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "https://www.linkedin.com/in/scarlett-tsai/",
+                                "link_fb": "https://www.facebook.com/scarlert.tsai"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022047,
+                        "room": "R3",
+                        "topic": "幫你的 Web 開發添加一點 Functional Progra",
+                        "topic_e": "Let's add Functional Programming flavor to your web development",
+                        "summary": "以 Spring Framework 的 web 開發作為例子，加入 Functional Programming 的函式庫 Arrow-Kt，學習 Option, Either 和 Validated 等觀念如何應用在 web 開發上",
+                        "summary_e": "In this session, we will use Spring Framework and Arrow-Kt as example and introducing how to apply Option, Either and Validated to web development",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "對 Functional Programming 有興趣的朋友",
+                        "target_e": "who interested in functional programming",
+                        "prior_knowledge": "開發 Web 開發的經驗",
+                        "prior_knowledge_e": "experience for developing web development",
+                        "expected_gain": "學習到 Functional Programming 的觀念然後學習如何應用在日常的工作上",
+                        "expected_gain_e": "They can learn some Functional Programming concepts and figure out how to apply in routine works",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 10,
+                                "name": "黃健旻",
+                                "name_e": "Vincent Huang",
+                                "job_title": "共同創辦人",
+                                "job_title_e": "Co-founder",
+                                "company": "純函式",
+                                "company_e": "$_purefunc",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_10",
+                                    "mobile": "api/2022/speaker/images/speaker_10"
+                                },
+                                "link_github": "https://github.com/Jian-Min-Huang",
+                                "link_twitter": "https://twitter.com/JianMin_V_Huang",
+                                "link_other": "https://jianminhuang.cc",
+                                "link_fb": "https://www.facebook.com/yfr.huang/"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022048,
+                        "room": "R4",
+                        "topic": "要如何直面到 Kubernetes 所帶來的技術能力影響",
+                        "topic_e": "How to face the technical difficulties of Kubernetes?",
+                        "summary": "隨著這三四年進展，Kubernetes 已經是當今業界公認的顯學，身為一個正在這條 Cloud Native 道路上的旅者，想要跟大家分享一下關於 Kubernetes 為何會紅的背景，且你應該要用怎樣的視野看待這種繼續以及建議的作法。本演講並不會講太深奧的技巧，希望有具備公有雲及私有雲任意經驗的人皆可聆聽",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "公有雲或私有雲使用者",
+                        "target_e": "Public Cloud / On-premise Users",
+                        "prior_knowledge": "Linux / Container / CNCF",
+                        "prior_knowledge_e": "Linux / Container / CNCF",
+                        "expected_gain": "期望能夠以比較淺顯的方式讓會眾知道 Cloud Native 所帶來的影響、現況及建議作法",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 3,
+                                "name": "黃秉鈞",
+                                "name_e": "Phil Huang",
+                                "job_title": "社群志工",
+                                "job_title_e": "Volunteer",
+                                "company": "Cloud Native Taiwan User Group",
+                                "company_e": "Cloud Native Taiwan User Group",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_3",
+                                    "mobile": "api/2022/speaker/images/speaker_3"
+                                },
+                                "link_github": "github.com/pichuang",
+                                "link_twitter": "",
+                                "link_other": "https://blog.pichuang.com.tw",
+                                "link_fb": "https://www.facebook.com/paulintoro"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634356800,
+                "isBroadCast": true,
+                "ended_at": 1634359800,
+                "event": "午餐 Lunch",
+                "room": []
+            },
+            {
+                "started_at": 1634359800,
+                "isBroadCast": true,
+                "ended_at": 1634362500,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022049,
+                        "room": "R1",
+                        "topic": "數位轉型之跨平台內容保護技術實踐",
+                        "topic_e": "Cross-platform DRM Implementations",
+                        "summary": "行動裝置的數位內容分享如何同時兼顧安全性與誇平台是門藝術. DRM 是保護數位內容眾多方法中一環, 眾多的 DRM spec 各有適用的裝置環境平台,不同的 platform 平台有個別的預設 DRM 實作, 本次分享主題設定為介紹 DRM 跨平台方法與數位保護方法.",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "對於影音串流保護或跨平台數位內容保護有興趣者",
+                        "target_e": "",
+                        "prior_knowledge": "粗略影音串流概念, 密碼學運用",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "瞭解 DRM 科普知識, 與其在影音串流運用上之角色, 進一步探討 DRM 其他運用.",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 21,
+                                "name": "連偉智",
+                                "name_e": "Henry Lien",
+                                "job_title": "Staff Engineer",
+                                "job_title_e": "",
+                                "company": "KKStream Limited",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_21",
+                                    "mobile": "api/2022/speaker/images/speaker_21"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/weichih.lien.1"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022050,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022051,
+                        "room": "R3",
+                        "topic": "導入 Lighthouse CI 作為前端應用的效能守門員",
+                        "topic_e": "Lighthouse CI Integrating Experience Sharing",
+                        "summary": "網頁的效能對於前端應用來說非常重要，而 Lighthouse 是其中一個功能完整的效能檢測工具，其推出的 Lighthouse CI 可以更進一步將效能檢測綁進 CI 流程中，扮演前端應用效能守門員的角色。\n\n 這次議程將說明 Lighthouse CI 的基礎概念，以及分享實際導入過程中遇到的困難與挑戰，並分享最後的成果與價值。",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "前端開發者",
+                        "target_e": "Frontend Developer",
+                        "prior_knowledge": "前端基礎",
+                        "prior_knowledge_e": "Frontend Basic Knowledge",
+                        "expected_gain": "思索在專案中導入 Lighthouse CI 的可能性與應用方式",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 15,
+                                "name": "莫力全",
+                                "name_e": "Kyle Mo",
+                                "job_title": "Software Engineer",
+                                "job_title_e": "Software Engineer",
+                                "company": "LINE Taiwan",
+                                "company_e": "LINE Taiwan",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_15",
+                                    "mobile": "api/2022/speaker/images/speaker_15"
+                                },
+                                "link_github": "https://github.com/kylemocode",
+                                "link_twitter": "",
+                                "link_other": "https://medium.com/@oldmo860617",
+                                "link_fb": "https://www.facebook.com/profile.php?id=100006903696165"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022052,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634362500,
+                "isBroadCast": true,
+                "ended_at": 1634363100,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634363100,
+                "isBroadCast": true,
+                "ended_at": 1634365800,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022053,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022054,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022055,
+                        "room": "R3",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022056,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634365800,
+                "isBroadCast": true,
+                "ended_at": 1634366400,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634366400,
+                "isBroadCast": true,
+                "ended_at": 1634369100,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022057,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022058,
+                        "room": "R2",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022059,
+                        "room": "R3",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    },
+                    {
+                        "session_id": 2022060,
+                        "room": "R4",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634369100,
+                "isBroadCast": true,
+                "ended_at": 1634369700,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634369700,
+                "isBroadCast": true,
+                "ended_at": 1634373900,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022061,
+                        "room": "R1",
+                        "topic": "Coming Soon",
+                        "topic_e": "",
+                        "summary": "",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": "",
+                        "recordable": "",
+                        "level": "",
+                        "target": "",
+                        "prior_knowledge": "",
+                        "expected_gain": "",
+                        "tags": ""
+                    }
+                ]
+            },
+            {
+                "started_at": 1634373900,
+                "isBroadCast": true,
+                "ended_at": 1634374500,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634374500,
+                "isBroadCast": true,
+                "ended_at": 1634376600,
+                "event": "閃電秀 Lightning Talk",
+                "room": []
+            },
+            {
+                "started_at": 1634376600,
+                "isBroadCast": true,
+                "ended_at": 1634377500,
+                "event": "閉幕 Closing",
+                "room": []
+            },
+            {
+                "started_at": 1634377500,
+                "isBroadCast": true,
+                "ended_at": 0,
+                "event": "END",
+                "room": []
+            }
+        ]
+    }
+]

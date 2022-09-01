@@ -125,7 +125,7 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('', 'SpeakerController@index');
                 $router->get('tags', 'SpeakerController@getTags');
                 $router->get('{id}', 'SpeakerController@show');
-                $router->get('images/{platform}/{name}', 'SpeakerController@imagesView');
+                $router->get('images/{name}', 'SpeakerController@singleImageView');
             });
             $router->group(['prefix' => 'volunteer'], function ($router) {
                 $router->get('/', 'VolunteerController@index');
@@ -145,7 +145,7 @@ $router->group(['prefix' => 'api'], function ($router) {
             });
             $router->group(['prefix' => 'sponsor'], function ($router) {
                 $router->get('', 'SponsorController@index');
-                $router->get('images/{name}', 'SponsorController@imagesView');
+                $router->get('images/{platform}/{name}', 'SponsorController@platformImagesView');
             });
             $router->group(['prefix' => 'unconf'], function ($router) {
                 $router->get('/', 'UnconfController@index');
