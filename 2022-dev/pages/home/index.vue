@@ -280,14 +280,14 @@ export default {
         }
       },
       sponsorLogoList: [
-        'assets/images/home/logo_banner_1.png',
-        'assets/images/home/logo_banner_2.png',
-        'assets/images/home/logo_banner_3.png',
-        'assets/images/home/logo_banner_4.png',
-        'assets/images/home/logo_banner_5.png',
-        'assets/images/home/logo_banner_6.png',
-        'assets/images/home/logo_banner_7.png',
-        'assets/images/home/logo_banner_8.png'
+        'assets/images/home/logo_banner_1.png?v=1',
+        'assets/images/home/logo_banner_2.png?v=1',
+        'assets/images/home/logo_banner_3.png?v=1',
+        'assets/images/home/logo_banner_4.png?v=1',
+        'assets/images/home/logo_banner_5.png?v=1',
+        'assets/images/home/logo_banner_6.png?v=1',
+        'assets/images/home/logo_banner_7.png?v=1',
+        'assets/images/home/logo_banner_8.png?v=1'
       ]
     }
   },
