@@ -175,6 +175,10 @@ export default {
   .content {
     padding: 40px 104px;
 
+    @include screen(lg) {
+      padding: 30px 40px 30px 50px;
+    }
+
     @include screen(md) {
       padding: 20px 0px 20px 20px;
     }
