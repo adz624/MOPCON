@@ -93,16 +93,6 @@ export default {
           img: 'assets/images/workshop/DDD.png',
           add: '高軟 亞灣新創園',
           time: '9/3（六）整天 09:00~12:00、13:00 ~ 17:00'
-        },
-        {
-          id: '04',
-          name: 'Android Taipei',
-          title: 'Jetpack Compose 從 0 到 1 繪製圖表',
-          sub: '',
-          intro: '本次課程總共分成上下半場，上半場為介紹基本繪圖 API ，了解 Canvas 的基本用法。下半場將帶領各位如何運用上半場介紹的知識繪製出好看的折線圖。',
-          img: 'assets/images/workshop/AndroidTaipei.png',
-          add: '高軟 亞灣新創園',
-          time: '9/4（日）下午 13:00 ~ 17:00'
         }
       ],
       innerWidth: null,
@@ -208,11 +198,6 @@ export default {
     }
     padding-left: 24px;
     padding-right: 24px;
-  }
-  &:last-child{
-    img{
-      border:1px solid #f4435a;
-    }
   }
 }
 .imgPart, .contentPart{
