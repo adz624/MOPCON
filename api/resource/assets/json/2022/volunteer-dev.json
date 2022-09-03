@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "總召組",
         "name_e": "Coordinators",
         "photo": "api/2022/volunteer/images/coordinators",
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "財務組",
         "name_e": "Finance",
         "photo": "api/2022/volunteer/images/finance",
@@ -26,7 +26,7 @@
         ]
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "行政組",
         "name_e": "Administration",
         "photo": "api/2022/volunteer/images/administration",
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "id": "4",
+        "id": 4,
         "name": "招募組",
         "name_e": "Recruitment",
         "photo": "api/2022/volunteer/images/recruitment",
@@ -54,7 +54,7 @@
         ]
     },
     {
-        "id": "5",
+        "id": 5,
         "name": "議程組",
         "name_e": "Program",
         "photo": "api/2022/volunteer/images/program",
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "id": "6",
+        "id": 6,
         "name": "商務開發組",
         "name_e": "Sponsor",
         "photo": "api/2022/volunteer/images/sponsor",
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "id": "7",
+        "id": 7,
         "name": "公關組",
         "name_e": "Public Relations",
         "photo": "api/2022/volunteer/images/public_relations",
@@ -117,7 +117,7 @@
         ]
     },
     {
-        "id": "8",
+        "id": 8,
         "name": "行銷組",
         "name_e": "Marketing",
         "photo": "api/2022/volunteer/images/marketing",
@@ -130,7 +130,7 @@
         ]
     },
     {
-        "id": "9",
+        "id": 9,
         "name": "品牌形象組",
         "name_e": "Brand & Design",
         "photo": "api/2022/volunteer/images/brand_design",
@@ -158,7 +158,7 @@
         ]
     },
     {
-        "id": "10",
+        "id": 10,
         "name": "研發組",
         "name_e": "Rsearch & Development",
         "photo": "api/2022/volunteer/images/research_development",
@@ -180,7 +180,7 @@
         ]
     },
     {
-        "id": "11",
+        "id": 11,
         "name": "場務組",
         "name_e": "Exhibitions",
         "photo": "api/2022/volunteer/images/exhibitions",
@@ -223,7 +223,7 @@
         ]
     },
     {
-        "id": "12",
+        "id": 12,
         "name": "媒體組",
         "name_e": "Media",
         "photo": "api/2022/volunteer/images/media",
