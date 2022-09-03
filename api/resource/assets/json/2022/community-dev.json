@@ -2,7 +2,7 @@
     "community": [],
     "participant": [
         {
-            "id": "1",
+            "id": 1,
             "name": "GDG Cloud Kaohsiung",
             "name_e": "GDG Cloud Kaohsiung",
             "photo": "api/2020/community/images/gdg-cloud-kh",
@@ -16,7 +16,7 @@
         },
 
         {
-            "id": "2",
+            "id": 2,
             "name": "Kaohsiung Python User Group",
             "name_e": "Kaohsiung Python User Group",
             "photo": "api/2020/community/images/pythonkh",
@@ -29,7 +29,7 @@
             "event": "https://www.meetup.com/Kaohsiung-Python-Meetup/"
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "IxDA Taiwan",
             "name_e": "IxDA Taiwan",
             "photo": "api/2020/community/images/IxDA-Taiwan",
@@ -42,7 +42,7 @@
             "event": "http://www.ixda.org.tw/"
         },
         {
-            "id": "4",
+            "id": 4,
             "name": "好想工作室",
             "name_e": "Goodideas Studio",
             "photo": "api/2020/community/images/goodideals-studio",
@@ -55,7 +55,7 @@
             "event": "https://goodideas-studio.com/"
         },
         {
-            "id": "5",
+            "id": 5,
             "name": "Chatbot Developers Taiwan",
             "name_e": "Chatbot Developers Taiwan",
             "photo": "api/2020/community/images/chatbot",
@@ -68,7 +68,7 @@
             "event": ""
         },
         {
-            "id": "6",
+            "id": 6,
             "name": "開放文化基金會",
             "name_e": "Open Culture Foundation",
             "photo": "api/2020/community/images/ocf",
@@ -81,7 +81,7 @@
             "event": "https://ocf.tw"
         },
         {
-            "id": "7",
+            "id": 7,
             "name": "火箭隊培訓營",
             "name_e": "火箭隊培訓營",
             "photo": "api/2020/community/images/rocket",
@@ -94,7 +94,7 @@
             "event": ""
         },
         {
-            "id": "8",
+            "id": 8,
             "name": "學生計算機年會",
             "name_e": "Students’ Information Technology Conference",
             "photo": "api/2020/community/images/sitcon",
@@ -107,7 +107,7 @@
             "event": "https://hackfoldr.sitcon.org/"
         },
         {
-            "id": "9",
+            "id": 9,
             "name": "Vue.js Taiwan",
             "name_e": "Vue.js Taiwan",
             "photo": "api/2020/community/images/vue-js-tw",
@@ -120,7 +120,7 @@
             "event": ""
         },
         {
-            "id": "10",
+            "id": 10,
             "name": "臺灣好植地",
             "name_e": "臺灣好植地",
             "photo": "api/2020/community/images/tree",
@@ -133,7 +133,7 @@
             "event": "https://sites.google.com/view/tree-taiwan/?fbclid=IwAR2Mmc1aqlrz4mrwp7BONrCGcigsO_nGfBU_9RPcbN2-o_i6_aHu2Wn1mqk"
         },
         {
-            "id": "11",
+            "id": 11,
             "name": "PyCon",
             "name_e": "PyCon",
             "photo": "api/2020/community/images/pycon2020",
@@ -146,7 +146,7 @@
             "event": "https://tw.pycon.org/"
         },
         {
-            "id": "12",
+            "id": 12,
             "name": "g0v Summit",
             "name_e": "g0v Summit",
             "photo": "api/2020/community/images/g0v",

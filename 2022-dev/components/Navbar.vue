@@ -113,7 +113,7 @@ export default {
             }
           ],
           subIsOpen: true,
-          open: process.env.route_schedule || process.env.route_schedule,
+          open: process.env.route_schedule || process.env.route_schedule_unconf,
           target: ''
         },
         // {

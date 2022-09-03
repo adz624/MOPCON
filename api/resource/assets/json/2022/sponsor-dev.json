@@ -20,12 +20,12 @@
             "mobile": "api/2022/sponsor/images/mobile/sponsor_89"
         },
         "name": "六角學院",
-        "name_e": "",
+        "name_e": "Hexschool",
         "sponsor_id": 89,
-        "about_us": "",
+        "about_us": "六角學院是一所線上程式開發學習單位，目前已累積超過 30,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命，而我們也希望讓世界各地的學員，能透過線上學習，擁有更好的職涯發展機會。",
         "about_us_e": "",
-        "facebook_url": "",
-        "official_website": "",
+        "facebook_url": "https://www.facebook.com/hexschool",
+        "official_website": "https://www.hexschool.com",
         "sponsor_type": "education",
         "career_information": ""
     },
@@ -34,14 +34,14 @@
             "web": "api/2022/sponsor/images/web/sponsor_90",
             "mobile": "api/2022/sponsor/images/mobile/sponsor_90"
         },
-        "name": "優比快",
-        "name_e": "",
+        "name": "香港商優比快科技有限公司台灣分公司",
+        "name_e": "Ubiquiti Inc",
         "sponsor_id": 90,
         "about_us": "",
         "about_us_e": "",
         "facebook_url": "",
         "official_website": "",
-        "sponsor_type": "special_thanks",
+        "sponsor_type": "bruce_wayne",
         "career_information": ""
     },
     {
@@ -140,12 +140,12 @@
             "mobile": "api/2022/sponsor/images/mobile/sponsor_97"
         },
         "name": "奧義智慧科技",
-        "name_e": "CyCraft",
+        "name_e": "CyCraft Technology",
         "sponsor_id": 97,
-        "about_us": "世界領先 AI 資安公司，企業總部設立於臺灣，並拓展至日本與新加坡等國。以創新 AI 技術自動化資安防護，內建 EDR、CTI、TIG 並整合建構新一代 AI 資安戰情中心，獲得逾五十個政府機關、警政、國防單位，以及三成金融機構、數十家高科技與關鍵領域龍頭企業的信賴，市佔率國內第一。從端點到網路、從調查到阻擋、從自建到託管，CyCraft AIR 涵蓋企業安全所需的一切面向，遵循 F/A/S/T 量化指標，提供客戶主動防禦，達到「威脅，視可而止」。",
+        "about_us": "奧義智慧 (CyCraft) 是世界領先的臺灣 AI 資安科技公司，於日本、新加坡、美國設有子公司，以創新 AI 技術自動化資安防護，整合 EDR、CTI、TIG 建構新一代 AI 資安戰情中心，獲關鍵領域企業採用，市佔率國內第一。\n\n2021 年入選 Gartner《大中華區 AI 新創公司指南》與 IDC《Intelligence-led Cybersecurity》等報告代表性案例。從端點到網路、從調查到阻擋、從自建到託管，CyCraft AIR 提供客戶主動式防禦，達到「威脅，視可而止」。",
         "about_us_e": "CyCraft’s autonomous cybersecurity platform CyCraft AIR secures government agencies, Fortune Global 500 companies, financial institutions, critical infrastructure, and more every day worldwide using advanced AI-driven technology to automate cybersecurity protection with built-in MDR, CTI surveillance, auto-generated IR reports, and enterprise-wide CA. CyCraft’s team of more than 100 experienced professionals is dedicated to helping businesses focus on success by keeping their cybersecurity solutions Fast, Accurate, Simple, and Thorough.",
         "facebook_url": "https://www.facebook.com/cycrafttechnology/",
-        "official_website": "https://www.cycarrier.com/",
+        "official_website": "https://cycraft.com/zh-hant/",
         "sponsor_type": "developer",
         "career_information": ""
     },
@@ -169,13 +169,13 @@
             "web": "api/2022/sponsor/images/web/sponsor_99",
             "mobile": "api/2022/sponsor/images/mobile/sponsor_99"
         },
-        "name": "科科世界股份有限公司",
-        "name_e": "",
+        "name": "KKCompany",
+        "name_e": "KKCompany",
         "sponsor_id": 99,
-        "about_us": "",
-        "about_us_e": "",
+        "about_us": "亞洲領先媒體科技集團 KKCompany 以「Freeways to Inspiration」為使命，為服務各行各業的內容創作者與內容提供者，提供「易取得、易負擔、易享受」的技術，降低科技導入門檻，協助各產業內容創作者擁抱新科技、解決痛點實現數位轉型。",
+        "about_us_e": "KKCompany is Asia's leading media technology group headquartered in Taipei, Taiwan. The company's mission is to make transformational technology accessible, affordable and enjoyable to the burgeoning global creator economy. Its shareholders include KDDI, GIC and HTC. More information [Official Website] www.kkcompany.com ; [Blog] blog.kkcompany.com",
         "facebook_url": "",
-        "official_website": "",
+        "official_website": "https://www.kkcompany.com/",
         "sponsor_type": "hacker",
         "career_information": ""
     },
@@ -222,6 +222,51 @@
         "facebook_url": "",
         "official_website": "",
         "sponsor_type": "special_thanks",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_103",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_103"
+        },
+        "name": "國泰金融控股公司",
+        "name_e": "",
+        "sponsor_id": 103,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "bruce_wayne",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_104",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_104"
+        },
+        "name": "Oracle (MySQL)",
+        "name_e": "Oracle (MySQL)",
+        "sponsor_id": 104,
+        "about_us": "",
+        "about_us_e": "MySQL is the World’s Most Popular Open Source Database. It powers the most innovative companies including Facebook, Booking, Uber, and Tesla. It is available on-premises and as the MySQL Database Service on Oracle Cloud. For developers, it’s an easy to use, reliable and high-performance database with NoSQL and SQL support. SaaS, ecommerce, financial, telecom, and Fortune 1000 companies rely on the MySQL Enterprise edition advanced security features to protect the privacy of information, prevent data breaches and help meet regulatory requirements such as GDPR, PCI, HIPAA. MySQL High Availability has native HA, fully integrated into the MySQL Server for 99.99% uptime.",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "hacker",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_105",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_105"
+        },
+        "name": "PicCollage 拼貼趣",
+        "name_e": "",
+        "sponsor_id": 105,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "",
+        "official_website": "",
+        "sponsor_type": "developer",
         "career_information": ""
     }
 ]
