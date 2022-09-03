@@ -132,10 +132,12 @@ class BaseSponsorController extends Controller
         foreach ($this->speakerAry as $speaker) {
             if ((int) $speaker['sponsor_id'] === (int) $sponsor['sponsor_id']) {
                 $tags = $this->speakerService->parseTags($speaker['tags']);
+                $speakerMobileImage = isset($speaker['photo_for_sponsor_mobile']) ? $speaker['photo_for_sponsor_mobile'] : $speaker['img']['mobile'];
+                $speakerWebImage = isset($speaker['photo_for_sponsor_web']) ? $speaker['photo_for_sponsor_web'] : $speaker['img']['web'];
                 $sponsor['speaker_information'][] = [
                     'img' => [
-                        'mobile' => $this->generagePhotoUrl($speaker['photo_for_sponsor_mobile']),
-                        'web' => $this->generagePhotoUrl($speaker['photo_for_sponsor_web']), // extra
+                        'mobile' => $this->generagePhotoUrl($speakerMobileImage),
+                        'web' => $this->generagePhotoUrl($speakerWebImage), // extra
                     ],
                     'speaker_id' => $speaker['speaker_id'],
                     'session_id' => $this->sessionSpeakerMapping[$speaker['speaker_id']],
