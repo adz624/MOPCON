@@ -72,7 +72,6 @@ export default {
       desktopOptions: {
         direction: 'ttb',
         height: '30rem',
-        width: '50rem',
         type: 'loop',
         wheel: true,
         perPage: 5,
@@ -146,7 +145,7 @@ export default {
     border-right: 4px solid $colorPink;
 
     @include screen(md) {
-      width: 40%;
+      width: 45%;
       padding-left: 0;
     }
 
@@ -167,6 +166,10 @@ export default {
           font-size: 48px;
           color: $colorPrimary;
           border: none;
+
+          @media (max-width: 690px) {
+            font-size: 44px;
+          }
         }
       }
     }
@@ -228,6 +231,10 @@ img {
     bottom: -80%;
   }
 
+  @media (max-width: 690px) {
+    bottom: -77%;
+  }
+
   img {
     width: 640px;
 
@@ -276,6 +283,10 @@ img {
     bottom: -79%;
   }
 
+  @media (max-width: 690px) {
+    bottom: -72%;
+  }
+
   img {
     width: 580px;
 
@@ -285,6 +296,10 @@ img {
 
     @include screen(pad) {
       width: 500px;
+    }
+
+    @media (max-width: 690px) {
+      width: 450px;
     }
   }
 }
@@ -410,6 +425,10 @@ img {
     bottom: -74%;
   }
 
+  @media (max-width: 690px) {
+    bottom: -68%;
+  }
+
   img {
     width: 620px;
 
@@ -419,6 +438,10 @@ img {
 
     @include screen(pad) {
       width: 470px;
+    }
+
+    @media (max-width: 690px) {
+      width: 430px;
     }
   }
 }

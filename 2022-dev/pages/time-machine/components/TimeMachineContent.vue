@@ -163,6 +163,10 @@ export default {
       width: 100%;
     }
 
+    @media (max-width: 690px) {
+      padding: 5px 1.5rem;
+    }
+
     svg {
       font-size: 20px;
       top: 4px;
