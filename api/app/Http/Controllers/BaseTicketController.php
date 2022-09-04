@@ -51,8 +51,7 @@ class BaseTicketController extends Controller
             return $this->returnNotFoundError();
         }
         $path = end($path);
-        $type = mime_content_type($path);
-        // print_r($type);
+
         return (new Response(file_get_contents($path), 200))->header('Content-Type', 'application/vnd.apple.pkpass');
     }
 }
