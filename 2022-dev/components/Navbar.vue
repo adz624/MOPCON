@@ -147,7 +147,7 @@ export default {
           subIsOpen: false,
           open: process.env.route_workshop,
           target: ''
-        }
+        },
         // {
         //   name: 'guide',
         //   class: '',
@@ -157,14 +157,14 @@ export default {
         //   open: process.env.route_guide,
         //   target: ''
         // },
-        // {
-        //   name: 'timeMachine',
-        //   url: './time-machine',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: '',
-        //   target: ''
-        // }
+        {
+          name: 'timeMachine',
+          url: './time-machine',
+          subNav: [],
+          subIsOpen: false,
+          open: '',
+          target: ''
+        }
         // {
         //   name: 'coWriting',
         //   url: 'https://hackmd.io/@mopcon/2021/',

@@ -3,11 +3,13 @@
     <div class="info">
       <div class="slider">
         <div @click="onLastSlide">
-          <span class="iconify"
+          <span
+            class="iconify"
             data-icon="entypo:triangle-left"
             style="color: #ff7987;"
             data-width="24"
-            data-height="24">
+            data-height="24"
+          >
           </span>
         </div>
         <client-only>
@@ -18,11 +20,13 @@
           </Splide>
         </client-only>
         <div @click="onNextSlide">
-          <span class="iconify"
+          <span
+            class="iconify"
             data-icon="entypo:triangle-right"
             style="color: #ff7987;"
             data-width="24"
-            data-height="24">
+            data-height="24"
+          >
           </span>
         </div>
       </div>
@@ -34,13 +38,14 @@
           :subtitle="slideContent.subtitle"
           :text="slideContent.text"
           :album="slideContent.album"
-          :websiteLink="slideContent.websiteLink" />
+          :website-link="slideContent.websiteLink"
+        />
       </div>
     </div>
 
-    <!-- <div class="mosume">
+    <div v-if="slideActiveIndex !== 9" :class="`mosume-${years[slideActiveIndex]}`">
       <img :src="imgSrc" alt="mosume">
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -90,7 +95,7 @@ export default {
       }
     },
     imgSrc () {
-      return require(`~/assets/images/timeMachine/mo-${this.years[this.slideActiveIndex]}-mobile.webp`)
+      return require(`~/assets/images/timeMachine/mo-${this.years[this.slideActiveIndex]}.webp`)
     }
   },
   mounted () {
@@ -127,10 +132,6 @@ export default {
   padding: 88px 40px;
   box-shadow: 0px 4px 4px 0px #00000033;
 
-  @include screen(md) {
-    padding: 32px 20px;
-  }
-
   @media (max-width: 640px) {
     @include flex(center, column, center);
     padding: 32px 18px;
@@ -141,11 +142,6 @@ export default {
     padding: 15px;
     @include flex(center, column, center);
     border-right: 4px solid $colorPink;
-
-    @include screen(md) {
-      width: 40%;
-      padding-left: 0;
-    }
 
     @media (max-width: 640px) {
       width: 85%;
@@ -187,10 +183,6 @@ export default {
   .content {
     padding: 40px 104px;
 
-    @include screen(md) {
-      padding: 20px 0px 20px 20px;
-    }
-
     @media (max-width: 640px) {
       padding: 20px 0px;
       border-top: 4px solid $colorPink;
@@ -198,14 +190,178 @@ export default {
   }
 }
 
-.mosume {
-  margin-top: 4rem;
+img {
+  object-fit: cover;
+
+  @media (max-width: 640px) {
+    width: 500px;
+  }
+}
+
+.mosume-2021 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 5%;
+  }
+
+  @include screen(sm) {
+    bottom: -70%;
+    right: 0;
+  }
 
   img {
-    @media (max-width: 640px) {
-      width: 330px;
-      height: 310px;
-      object-fit: cover;
+    @include screen(sm) {
+      width: 380px;
+    }
+  }
+}
+
+.mosume-2020 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 0;
+  }
+
+  @include screen(sm) {
+    bottom: -55%;
+    right: -5%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 385px;
+    }
+  }
+}
+
+.mosume-2019 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 10%;
+  }
+
+  @include screen(sm) {
+    bottom: -45%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 335px;
+    }
+  }
+}
+
+.mosume-2018 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 10%;
+  }
+
+  @include screen(sm) {
+    bottom: -50%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 335px;
+    }
+  }
+}
+
+.mosume-2017 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 5%;
+  }
+
+  @include screen(sm) {
+    bottom: -45%;
+    right: 10%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 335px;
+    }
+  }
+}
+
+.mosume-2016 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 5%;
+  }
+
+  @include screen(sm) {
+    bottom: -45%;
+    right: 6%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 345px;
+    }
+  }
+}
+
+.mosume-2015 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 5%;
+  }
+
+  @include screen(sm) {
+    bottom: -42%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 355px;
+    }
+  }
+}
+
+.mosume-2014 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 5%;
+  }
+
+  @include screen(sm) {
+    bottom: -60%;
+    right: 0;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 375px;
+    }
+  }
+}
+
+.mosume-2013 {
+  @media (max-width: 640px) {
+    position: absolute;
+    bottom: -85%;
+    right: 0;
+  }
+
+  @include screen(sm) {
+    bottom: -55%;
+    right: -7%;
+  }
+
+  img {
+    @include screen(sm) {
+      width: 400px;
     }
   }
 }

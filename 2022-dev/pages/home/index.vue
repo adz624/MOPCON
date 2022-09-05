@@ -45,7 +45,7 @@
         </div>
       </div>
     </section>
-    <section id="schedule" class="pt-8 pb-14 pb-sm-0">
+    <section id="schedule" class="pt-8 pb-14">
       <div class="container">
         <h2 class="mb-5">
           {{ $t('pages.home.schedule.title') }}
@@ -119,6 +119,32 @@
             </a>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="mo" class="pt-14 pb-14">
+      <div class="container mo-area">
+        <div class="mo-content">
+          <h2 class="mt-0 mb-4 mt-md-8">
+            {{ $t('pages.home.mo.title') }}
+          </h2>
+          <p>
+            {{ $t('pages.home.mo.intro.1') }}<br><br>
+            {{ $t('pages.home.mo.intro.2') }}<br><br>
+            {{ $t('pages.home.mo.intro.3') }}<span class="ml-2" style="color: red;">❤</span>
+          </p>
+          <div class="btn-area mt-6 mt-md-8">
+            <div class="btn btn-primary" @click="openWindow('https://www.youtube.com/channel/UCFpr5TjvP6tFqccS_oTfWHw/about')">
+              {{ $t('pages.home.mo.btn.youtube') }}
+            </div>
+            <div class="btn btn-primary" @click="openWindow('https://www.instagram.com/mopcon.tw/')">
+              {{ $t('pages.home.mo.btn.instagram') }}
+            </div>
+            <div v-if="false" class="btn btn-primary" @click="openWindow('')">
+              {{ $t('pages.home.mo.btn.mo') }}
+            </div>
+          </div>
+        </div>
+        <div class="mo-image" />
       </div>
     </section>
     <section id="traffic" class="pt-8 pb-8 pr-10 pl-10 pr-sm-0 pl-sm-0">
@@ -287,7 +313,10 @@ export default {
         'assets/images/home/logo_banner_5.png?v=1',
         'assets/images/home/logo_banner_6.png?v=1',
         'assets/images/home/logo_banner_7.png?v=1',
-        'assets/images/home/logo_banner_8.png?v=1'
+        'assets/images/home/logo_banner_8.png?v=1',
+        'assets/images/home/logo_banner_9.png?v=1',
+        'assets/images/home/logo_banner_10.png?v=1',
+        'assets/images/home/logo_banner_11.png?v=1'
       ]
     }
   },
@@ -493,6 +522,71 @@ export default {
         &, p{
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+#mo {
+  background: $colorWhite;
+  h2 {
+    @include font(2.5rem, $colorPrimary, bold);
+  }
+  p {
+    @include font(1rem, $colorBlueLight)
+  }
+  .mo-area {
+    @include flex(space-around, row, center);
+    .mo-content {
+      width: 60%;
+      .btn-area {
+        @include flex(space-around);
+      }
+    }
+    .mo-image {
+      width: 396px;
+      height: 248px;
+      margin-left: 0.5rem;
+      background: url('../../assets/images/home/mo.jpg');
+      background-size: cover;
+      border-radius: 298.5px;
+      background-position-y: center;
+    }
+  }
+  @include screen(md) {
+    h2 {
+      text-align: center;
+    }
+    .mo-area {
+      @include flex(normal, column-reverse, center);
+      .mo-content {
+        width: 85%;
+      }
+      .mo-image {
+        width: 464px;
+        height: 290px;
+      }
+    }
+  }
+  @include screen(pad) {
+    .mo-area {
+      .mo-content {
+        width: 90%;
+        .btn-area {
+          @include flex(normal, column, center);
+          .btn {
+            width: 205px;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @include screen(sm) {
+    .mo-area {
+      .mo-image {
+        width: 263px;
+        height: 164px;
       }
     }
   }
