@@ -313,7 +313,10 @@ export default {
         'assets/images/home/logo_banner_5.png?v=1',
         'assets/images/home/logo_banner_6.png?v=1',
         'assets/images/home/logo_banner_7.png?v=1',
-        'assets/images/home/logo_banner_8.png?v=1'
+        'assets/images/home/logo_banner_8.png?v=1',
+        'assets/images/home/logo_banner_9.png?v=1',
+        'assets/images/home/logo_banner_10.png?v=1',
+        'assets/images/home/logo_banner_11.png?v=1'
       ]
     }
   },
