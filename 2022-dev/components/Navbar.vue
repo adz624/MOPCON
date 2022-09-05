@@ -87,14 +87,14 @@ export default {
       navOpen: false,
       nowSubOpen: '',
       navList: [
-        // {
-        //   name: 'community',
-        //   url: './community',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_community,
-        //   target: ''
-        // },
+        {
+          name: 'community',
+          url: './community',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_community,
+          target: ''
+        },
         {
           name: 'schedule',
           url: '',
@@ -103,35 +103,35 @@ export default {
               name: 'scheduleMain',
               url: './schedule',
               open: process.env.route_schedule,
-              class: 'border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'
-            // },
-            // {
-            //   name: 'scheduleUnconf',
-            //   url: './schedule_unconf',
-            //   open: process.env.route_schedule_unconf,
-            //   class: 'border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'
+              class: 'border-top-left-radius: 10px; border-top-right-radius: 10px;'
+            },
+            {
+              name: 'scheduleUnconf',
+              url: './schedule_unconf',
+              open: process.env.route_schedule_unconf,
+              class: 'border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'
             }
           ],
           subIsOpen: true,
           open: process.env.route_schedule || process.env.route_schedule_unconf,
           target: ''
         },
-        // {
-        //   name: 'speaker',
-        //   url: './speaker',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_speaker,
-        //   target: ''
-        // },
-        // {
-        //   name: 'sponsor',
-        //   url: './sponsor',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_sponsor,
-        //   target: ''
-        // },
+        {
+          name: 'speaker',
+          url: './speaker',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_speaker,
+          target: ''
+        },
+        {
+          name: 'sponsor',
+          url: './sponsor',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_sponsor,
+          target: ''
+        },
         {
           name: 'ticket',
           url: './ticket',
