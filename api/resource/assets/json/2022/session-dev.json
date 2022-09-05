@@ -49,25 +49,55 @@
                     {
                         "session_id": 2022005,
                         "room": "R1",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
+                        "topic": "品味相片：以 Jetpack Compose 實作一個相片評分應",
+                        "topic_e": "TasteGram: An Image Assessment App Built with Jetpack Compose",
+                        "summary": "Jetpack Compose 是 Android 的新一代 UI 工具，可用來建構原生 UI。這可簡化及加快 Android 平台上的 UI 開發作業。透過較少的程式碼、強大的工具和直觀的 Kotlin API，讓你輕鬆簡單地實做 App UI。\n\n\n\n 本次演講的目的是幫助開發者熟悉 Compose 在 Modern Android Development (MAD) 中可以完成什麼以及如何完成。為此，我們將完全從頭開始打造一個相片評分 App：品味相片。\n\n\n\n 本次演講對於了解 Android 新一代 UI 工具的特性非常有幫助，開發者可以很簡單地使用 Kotlin 語言特性和 Jetpack Compose 來把設計草圖變成手機裡真正會動的 App。",
+                        "summary_e": "Jetpack Compose is the new next generation UI toolkit. It uses a declarative component based paradigm for building UIs easily and quickly. It’s written entirely in Kotlin and embraces the style and ergonomics of the Kotlin language. The goal of this talk is to help developers get familiar with this new programming model. To do so, we’re going to build an image assessment application, TasteGram, completely from scratch.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "level": "Normal ",
+                        "target": "目標會眾是具有 Android 開發經驗的人員，並希望熟悉 Compose 在 Modern Android Development (MAD) 中可以完成什麼以及如何完成。並了解 Compose 「宣告式」式特性與過去基於 View 的方法有何不同。",
+                        "target_e": "Targeted at developers with Android development experience, and would like to get familiar with what and how Compose can achieve in modern Android development. And learn how the declarative approach of Compose is different from the view-based approach you may have used in the past.",
+                        "prior_knowledge": "具有 Android 開發經驗",
+                        "prior_knowledge_e": "Android development experience",
+                        "expected_gain": "熟悉 Compose 在 Modern Android Development (MAD) 中可以完成什麼以及如何完成。並了解 Compose 「宣告式」式特性與過去基於 View 的方法有何不同。",
+                        "expected_gain_e": "Get familiar with what and how Compose can achieve in modern Android development. And learn how the declarative approach of Compose is different from the view-based approach you may have used in the past.",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 236,
+                                "name": "盧聖約",
+                                "name_e": "John Lu",
+                                "job_title": "Android 工程師",
+                                "job_title_e": "Android Developer",
+                                "company": "",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_236",
+                                    "mobile": "api/2022/speaker/images/speaker_236"
+                                },
+                                "link_github": "https://github.com/lush93gh/",
+                                "link_twitter": "",
+                                "link_other": "https://lush93md.medium.com/",
+                                "link_fb": ""
+                            }
+                        ]
                     },
                     {
                         "session_id": 2022006,
                         "room": "R2",
                         "topic": "從 Domain-Driven Design 看網站開發框架隱藏",
                         "topic_e": "Deep into Web framework via Domain-Driven Design",
-                        "summary": "Domain-Driven Design 在近年是經常被討論的一種系統設計的方式，在學習思考方式的過程中，意外的發現在實作上有許多地方可以解釋我們在使用網站開發框架時無法清晰解釋的細節。\n\n 以 Ruby on Rails 經常被濫用的 Service Object 為例子，從 Domain-Driven Design 角度的思考，實際上就是 Domain Service 的角色，該在怎樣的時機使用、該封裝怎樣的內容馬上就變得明確。\n\n 讓我們試著以 Domain-Driven Design 的戰術（程式實作）來分析網站開發框架將哪些細節簡化使我們得以容易入門，又開如何重新細化來對應不斷發展成更複雜的系統。",
+                        "summary": "Domain-Driven Design 在近年是經常被討論的一種系統設計的方式，在學習思考方式的過程中，意外的發現在實作上有許多地方可以解釋我們在使用網站開發框架時無法清晰解釋的細節。\n\n\n\n 以 Ruby on Rails 經常被濫用的 Service Object 為例子，從 Domain-Driven Design 角度的思考，實際上就是 Domain Service 的角色，該在怎樣的時機使用、該封裝怎樣的內容馬上就變得明確。\n\n\n\n 讓我們試著以 Domain-Driven Design 的戰術（程式實作）來分析網站開發框架將哪些細節簡化使我們得以容易入門，又開如何重新細化來對應不斷發展成更複雜的系統。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -77,9 +107,17 @@
                         "target_e": "",
                         "prior_knowledge": "對物件導向、Model-View-Controller 類型框架有基礎概念，有嘗試使用像是 Service Object、Form Object 等物件類型解決過問題（不同框架用詞可能不同）",
                         "prior_knowledge_e": "",
-                        "expected_gain": "對 Domain-Driven Design 在實作上有基本概念，能夠善用語言、框架本身的特性，根據問題分析適合的實作方式。\n\n 附註：依然推薦學習完整的 Domain-Driven Design 以及其他知識技巧互相比對應用",
+                        "expected_gain": "對 Domain-Driven Design 在實作上有基本概念，能夠善用語言、框架本身的特性，根據問題分析適合的實作方式。\n\n\n\n 附註：依然推薦學習完整的 Domain-Driven Design 以及其他知識技巧互相比對應用",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 225,
@@ -95,7 +133,7 @@
                                 },
                                 "link_github": "https://github.com/elct9620",
                                 "link_twitter": "https://twitter.com/elct9620",
-                                "link_other": "網站 - https://aotoki.me/, 網誌 - https://blog.aotoki.me",
+                                "link_other": "https://aotoki.me/",
                                 "link_fb": "https://fb.me/aotoki.me"
                             }
                         ]
@@ -105,7 +143,7 @@
                         "room": "R3",
                         "topic": "前端好朋友 - tailwindcss",
                         "topic_e": "How to Use Tailwind CSS",
-                        "summary": "1. 2022 年 CSS 的決解方案\n2. 導入 tailwindcss 的優點\n3. 透過 tailwindcss 與設計師優雅的溝通",
+                        "summary": "1. 2022 年 CSS 的決解方案\n\n2. 導入 tailwindcss 的優點\n\n3. 透過 tailwindcss 與設計師優雅的溝通",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -117,7 +155,15 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "了解什麼是 tailwindcss，並解決什麼樣的問題",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 202,
@@ -155,7 +201,15 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "準時下班",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Agile"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 222,
@@ -319,19 +373,34 @@
                         "room": "R1",
                         "topic": "SwiftUI 跨平台 App 開發初體驗",
                         "topic_e": "Beginning SwiftUI Multiplatform App Development",
-                        "summary": "Apple 在 2019 推出全新的 App 開發技術 SwiftUI，經歷了 4 年的時間，在 2022 它已進入成熟的第 4 代。Apple 的工程師也在 WWDC22 提到，SwiftUI 是開發 App 的最佳技術，現在正是開始使用 SwiftUI 開發 App 的最佳時機。\n\nSwiftUI 有許多優點。利用它我們可以更方便地開發跨平台 App，使用同樣的 API，就能開發出 iOS、macOS、watchOS、tvOS 都能使用的 App。它的程式可讀性更好，更容易理解，也能用更少的程式實現 App 功能，非常適合新手學習。在開發時不僅資料跟畫面可自動同步，而且還能即時預覽畫面，大幅提升 App 開發的速度並減少 bug 發生的機率。綜合以上優點，它將讓我們成為早點下班的幸福工程師。\n\n 接下來讓我們快快啟動 Xcode，展開美好的 SwiftUI App 開發初體驗吧。",
+                        "summary": "Apple 在 2019 推出全新的 App 開發技術 SwiftUI，經歷了 4 年的時間，在 2022 它已進入成熟的第 4 代。Apple 的工程師也在 WWDC22 提到，SwiftUI 是開發 App 的最佳技術，現在正是開始使用 SwiftUI 開發 App 的最佳時機。\n\n\n\nSwiftUI 有許多優點。利用它我們可以更方便地開發跨平台 App，使用同樣的 API，就能開發出 iOS、macOS、watchOS、tvOS 都能使用的 App。它的程式可讀性更好，更容易理解，也能用更少的程式實現 App 功能，非常適合新手學習。在開發時不僅資料跟畫面可自動同步，而且還能即時預覽畫面，大幅提升 App 開發的速度並減少 bug 發生的機率。綜合以上優點，它將讓我們成為早點下班的幸福工程師。\n\n\n\n 接下來讓我們快快啟動 Xcode，展開美好的 SwiftUI App 開發初體驗吧。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
                         "level": "Normal ",
-                        "target": "- iOS App 開發者\n- 想認識有趣的 SwiftUI",
+                        "target": "- iOS App 開發者\n\n- 想認識有趣的 SwiftUI",
                         "target_e": "",
                         "prior_knowledge": "Swift 程式語法",
                         "prior_knowledge_e": "",
                         "expected_gain": "認識 SwiftUI 的美好，變心投入 SwiftUI App 開發的懷抱",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 214,
@@ -385,7 +454,15 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "介紹 Atomic CSS 流派的發展，以及認識 UnoCSS 工具",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 221,
@@ -423,12 +500,27 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "了解虛擬策展的使用者體驗如何設計、網站前端 WebGL 開發如何開始以及 Babylon.js 開發須知",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 197,
-                                "name": "健樺",
-                                "name_e": "古",
+                                "name": "古健樺",
+                                "name_e": "",
                                 "job_title": "創意總監",
                                 "job_title_e": "Creative Director",
                                 "company": "黑洞創造",
@@ -480,7 +572,7 @@
                         "room": "R2",
                         "topic": "打造邊走邊玩的區塊鏈遊戲",
                         "topic_e": "Walk-to-Earn Blockchain Game",
-                        "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
+                        "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\n\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
                         "summary_e": "As technologies such as defi and NFT are widely known to the public, the economic model of earning while playing is gradually emerging. By developing games on the blockchain, the characters and props in the game are sold in the form of NFT. In addition, the cryptocurrencies and NFT assets earned in the game can be traded on the blockchain, allowing GameFi players to earn money while playing, realizing the Play-to-Earn business model. Different game rules can be created through smart contracts. Since smart contracts are open and cannot be tampered with, the game experience is relatively fair, realizing the concept of Game+NFT+DeFi.",
                         "is_keynote": false,
                         "is_online": false,
@@ -492,7 +584,22 @@
                         "prior_knowledge_e": "Blockchain basic knowledge, solidity Language",
                         "expected_gain": "了解 GameFi 的應用和價值，對區塊鏈 Dapp 開發產生濃厚興趣，進而開發出許多區塊鏈遊戲的應用。",
                         "expected_gain_e": "Understand the application and value of GameFi, have a strong interest in blockchain Dapp development, and then develop many blockchain game applications.",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 203,
@@ -542,11 +649,19 @@
                         "level": "Normal ",
                         "target": "對於自駕車或資安有興趣者",
                         "target_e": "",
-                        "prior_knowledge": "* 簡易電子電路知識\n* linux\n* C++",
+                        "prior_knowledge": "* 簡易電子電路知識\n\n* linux\n\n* C++",
                         "prior_knowledge_e": "",
                         "expected_gain": "了解現行自駕車架構概論與可能會遭遇的攻擊",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "IoT"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 227,
@@ -587,7 +702,7 @@
                         "room": "R1",
                         "topic": "醫療產業開發 App 的血淚史",
                         "topic_e": "What I've seen and heard in the medical industry",
-                        "summary": "之前在一間醫療新創待了四年，在裡面開發了用戶端的 App、醫生端的 Web、後台管理系統等等 ...\n 我想這年頭寫 App 的人很多，但在醫療產業又是新創的肯定沒幾個，\n 應該可以透過這次機會，把在醫療產業開發的一些血淚史與大家分享，\n 也會聊聊裡頭印象深刻的趣事。",
+                        "summary": "之前在一間醫療新創待了四年，在裡面開發了用戶端的 App、醫生端的 Web、後台管理系統等等 ...\n\n 我想這年頭寫 App 的人很多，但在醫療產業又是新創的肯定沒幾個，\n\n 應該可以透過這次機會，把在醫療產業開發的一些血淚史與大家分享，\n\n 也會聊聊裡頭印象深刻的趣事。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -599,7 +714,22 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "可以更了解健康產業會遇到的問題，並且自我評估適不適合自己。",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "IoT"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 228,
@@ -640,9 +770,9 @@
                         "session_id": 2022023,
                         "room": "R3",
                         "topic": "提升學習 UX 體驗的極致 - 以培訓軟體工程師為例",
-                        "topic_e": "null",
+                        "topic_e": "",
                         "summary": "本議程將介紹多年優化學習體驗設計的過程中，如何協助 1,000 位軟體工程師掌握「學習如何學習」，同時分享他們如何挖掘自身天賦，透過各種有效的學習方法，讓自己逐步成為軟體工程師。",
-                        "summary_e": "null",
+                        "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
@@ -651,9 +781,17 @@
                         "target_e": "",
                         "prior_knowledge": "新手小白都可聽取",
                         "prior_knowledge_e": "",
-                        "expected_gain": "- 瞭解如何透過使用者體驗（UX）、服務設計（Service Design），優化學習歷程體驗\n- 瞭解「學習如何學習」\n- 瞭解要成為軟體工程師，需要歷經哪些學習階段",
+                        "expected_gain": "- 瞭解如何透過使用者體驗（UX）、服務設計（Service Design），優化學習歷程體驗\n\n- 瞭解「學習如何學習」\n\n- 瞭解要成為軟體工程師，需要歷經哪些學習階段",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 201,
@@ -722,7 +860,22 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "了解 Maker 精神以及 Side Project Vodkender 的發想過程與原理",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "IoT"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 199,
@@ -758,9 +911,24 @@
                         "target_e": "",
                         "prior_knowledge": "了解基本的 Python 語法以及使用的方式",
                         "prior_knowledge_e": "",
-                        "expected_gain": "1. 了解 FHIR 資料格式標準，與可以用 Python 來開發出符合 FHIR 資料格式的程式\n2. 了解 FHIR 資料標準在台灣的發展\n3. 了解聯測松在台灣的目的與參加的方法",
+                        "expected_gain": "1. 了解 FHIR 資料格式標準，與可以用 Python 來開發出符合 FHIR 資料格式的程式\n\n2. 了解 FHIR 資料標準在台灣的發展\n\n3. 了解聯測松在台灣的目的與參加的方法",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 206,
@@ -786,7 +954,7 @@
                         "room": "R3",
                         "topic": "Web3 區塊鏈的 NFT 音樂聆聽體驗會是什麼樣子",
                         "topic_e": "What will the NFT music listening experience be like on the Web3 blockchain",
-                        "summary": "區塊鏈技術熱潮，各種項目、新概念與產品服務在市場上相繼推出，聚焦在未來 Web3 內容稱霸的網路生態，數位資產的保存與持有將會是未來趨勢。FANSI 在持續思考 NFT 獨一無二的特性如何應用在產品服務上；如何解決音樂產業的問題，進而去定義 Web3 的音樂體驗樣貌。\n\n 因此發展出兩個面向的產品：\nFANSI 是專注在華人音樂市場發行音樂 NFT 收藏品；MetaBoom 是面向歐美發行 Web3 NFT 音樂播放器項目，NFT 播放器可自行讓用戶匯入鏈上所購買的 NFT 歌曲，在幣圈樂於「分享」的文化上也能有 Listen to Earn 的收益回饋，實現 Web3 資料能夠跨平台互動的價值。\n\n 在 UX 產品設計上的挑戰應如何讓用戶快速理解區塊鏈錢包與智能合約的基本概念，立即購買到 NFT 音樂商品與享受 Web3 音樂聆聽體驗。產品規劃時更必須投入到社群互動，讓用戶皆能參與產品發展的過程、意見回饋與投票。有別於過去 UX 的研究方式，在區塊鏈世界「使用者也即是產品規劃者」。長遠目標希望將區塊鏈網路化繁為簡，成為人人都能輕易上手的網路生態。",
+                        "summary": "區塊鏈技術熱潮，各種項目、新概念與產品服務在市場上相繼推出，聚焦在未來 Web3 內容稱霸的網路生態，數位資產的保存與持有將會是未來趨勢。FANSI 在持續思考 NFT 獨一無二的特性如何應用在產品服務上；如何解決音樂產業的問題，進而去定義 Web3 的音樂體驗樣貌。\n\n\n\n 因此發展出兩個面向的產品：\n\nFANSI 是專注在華人音樂市場發行音樂 NFT 收藏品；MetaBoom 是面向歐美發行 Web3 NFT 音樂播放器項目，NFT 播放器可自行讓用戶匯入鏈上所購買的 NFT 歌曲，在幣圈樂於「分享」的文化上也能有 Listen to Earn 的收益回饋，實現 Web3 資料能夠跨平台互動的價值。\n\n\n\n 在 UX 產品設計上的挑戰應如何讓用戶快速理解區塊鏈錢包與智能合約的基本概念，立即購買到 NFT 音樂商品與享受 Web3 音樂聆聽體驗。產品規劃時更必須投入到社群互動，讓用戶皆能參與產品發展的過程、意見回饋與投票。有別於過去 UX 的研究方式，在區塊鏈世界「使用者也即是產品規劃者」。長遠目標希望將區塊鏈網路化繁為簡，成為人人都能輕易上手的網路生態。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -798,7 +966,29 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "在 Web3 做 UI/UX 產品的思維與反思",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 211,
@@ -824,8 +1014,8 @@
                         "room": "R4",
                         "topic": "不能相信的相信我之術: 網路連線雙方驗證時，那些意想不到的坑",
                         "topic_e": "Don't bieleve Believe me\" - the pitfalls of authentication",
-                        "summary": "在能輕易竊聽、偽造身分、又不能當面驗明正身的網路世界，網路連線除了加密傳輸之外，連線端之前雙方如何驗證身份，也是一項重要的環節。\n\n 服務需要確認使用者真身，才可以避免身份盜用情事。而確認手段除了帳號密碼之外，也可以用 one-time code，甚至是結合兩者以 2FA 強化使用者是否為真身的可信度。\n\n 反過來說，使用者也有需求確認服務是否為官方正品，因此也需要一套相信我之術。而由 root CA 起頭，經過層層中間保證人串起來的數位憑證樹狀鏈，成為了使用者信任服務端的普遍機制。\n\n 然而這些機制並不是完美無缺，一但保證人出事，使用者對其下游被保證者的信任也跟著瓦解。即使有撤銷機制可以緊急廢除憑證，但撤銷通知卻又不會像你所想的一樣發揮效用，該怎麼辦？\n\n 這個講題，將會採討網路世界中，相信的根基是什麼，以及分享一些經驗給大家。",
-                        "summary_e": "In the online world, it is full of sniffer, fake identities, and we are unable to verify people offline. In addition to encrypted network connections, how to verify the peer to connect is also an important link.\n\nThe service needs to confirm the identity of the user to avoid account theft. In addition to the password, the confirmation method can also use the one-time code, or even combine the two into 2FA, to strengthen the possibility whether the user is really him/herself.\n\nOn the other hand, users also need to confirm whether the server is genuine, so they also need a set of trust me\" mechanism. Starting from the root CA, the graph of digital certificate chains has become a common foundation for users to guarantees the server is genuine.\n\nHowever, these mechanisms are not perfect. Once the guarantor gone, the trust chains will also collapse. Even if there is a revocation mechanism to revoke the certificates, but the revocation mechanism does not work as well as you think, what shoul",
+                        "summary": "在能輕易竊聽、偽造身分、又不能當面驗明正身的網路世界，網路連線除了加密傳輸之外，連線端之前雙方如何驗證身份，也是一項重要的環節。\n\n\n\n 服務需要確認使用者真身，才可以避免身份盜用情事。而確認手段除了帳號密碼之外，也可以用 one-time code，甚至是結合兩者以 2FA 強化使用者是否為真身的可信度。\n\n\n\n 反過來說，使用者也有需求確認服務是否為官方正品，因此也需要一套相信我之術。而由 root CA 起頭，經過層層中間保證人串起來的數位憑證樹狀鏈，成為了使用者信任服務端的普遍機制。\n\n\n\n 然而這些機制並不是完美無缺，一但保證人出事，使用者對其下游被保證者的信任也跟著瓦解。即使有撤銷機制可以緊急廢除憑證，但撤銷通知卻又不會像你所想的一樣發揮效用，該怎麼辦？\n\n\n\n 這個講題，將會採討網路世界中，相信的根基是什麼，以及分享一些經驗給大家。",
+                        "summary_e": "In the online world, it is full of sniffer, fake identities, and we are unable to verify people offline. In addition to encrypted network connections, how to verify the peer to connect is also an important link.\n\n\n\nThe service needs to confirm the identity of the user to avoid account theft. In addition to the password, the confirmation method can also use the one-time code, or even combine the two into 2FA, to strengthen the possibility whether the user is really him/herself.\n\n\n\nOn the other hand, users also need to confirm whether the server is genuine, so they also need a set of trust me\" mechanism. Starting from the root CA, the graph of digital certificate chains has become a common foundation for users to guarantees the server is genuine.\n\n\n\nHowever, these mechanisms are not perfect. Once the guarantor gone, the trust chains will also collapse. Even if there is a revocation mechanism to revoke the certificates, but the revocation mechanism does not work as well as you think, what shoul",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
@@ -836,7 +1026,29 @@
                         "prior_knowledge_e": "Large kinds of authentications and authorizations, from password based to certificates.",
                         "expected_gain": "讓工程師可以從全局的角度，重新看待與檢視系統與使用者之間的信任強度與安全性，以及驗證機制出包時，如何應變與緊急處置。",
                         "expected_gain_e": "Make programmers to re-inspect the trust foundation and security between servers and users from a global perspective.  And how to deal with it when the trust mechanism is broken.",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 226,
@@ -877,19 +1089,27 @@
                         "room": "R1",
                         "topic": "神奇的 Debug 工具 － ＬＬＤＢ",
                         "topic_e": "Let's Debug code with LLDB",
-                        "summary": "工欲善其事，必先利其器\u2028\n 使用 LLDB Debug 是我們 iOS 工程師開發日常與基本功之一\n\u2028雖然是這麼的頻繁使用\u2028的一個工具\n 但我們真的理解其中的底層做的事情以及延伸的技巧嗎?\n\u2028因此透過這次講題我會一步一步由淺入深的介紹 LLDB\u2028\n 讓我們可以更加瞭解這項工具\n 提升我們日常開發的效率",
+                        "summary": "工欲善其事，必先利其器\u2028\n\n 使用 LLDB Debug 是我們 iOS 工程師開發日常與基本功之一\n\n\u2028雖然是這麼的頻繁使用\u2028的一個工具\n\n 但我們真的理解其中的底層做的事情以及延伸的技巧嗎?\n\n\u2028因此透過這次講題我會一步一步由淺入深的介紹 LLDB\u2028\n\n 讓我們可以更加瞭解這項工具\n\n 提升我們日常開發的效率",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
                         "level": "Normal ",
-                        "target": "1. Mobile App 開發者\n2. 想了解 LLDB 底層運作內容",
+                        "target": "1. Mobile App 開發者\n\n2. 想了解 LLDB 底層運作內容",
                         "target_e": "",
-                        "prior_knowledge": "對 Swift 有基礎知識\n 最好是有使用過 Xcode 的 Console 經驗 ",
+                        "prior_knowledge": "對 Swift 有基礎知識\n\n 最好是有使用過 Xcode 的 Console 經驗",
                         "prior_knowledge_e": "",
-                        "expected_gain": "1.更加了解日常使用的 LLDB 底層運作方式\n2.提升 Debug 的效率",
+                        "expected_gain": "1.更加了解日常使用的 LLDB 底層運作方式\n\n2.提升 Debug 的效率",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 212,
@@ -915,7 +1135,7 @@
                         "room": "R2",
                         "topic": "深入淺出 autocomplete",
                         "topic_e": "Practical autocomplete",
-                        "summary": "autocomplete 是現代軟體服務最重要的特性之一，使用者在輸入框輸入了文字，軟體服務就會回傳最適當的選項給使用者，而使用者可以依照回傳的各個選項中選擇其中一個執行動作。\n\n 一般的技術文章，大都從前端的角度探討如何在輸入文字時，利用 debounce 和 throttle 這兩個技術，提升使用者的操作體驗及減少後端的負擔。極少探討後端如何實作 autocomplete 的資料結構，讓資料能夠快速回傳給前端。\n\n 這次的分享主要就是完全從後端的角度來探討如何利用 Redis 或 Elasticsearch 這類 NoSQL 實作 autocomplete，也會分享多個 autocomplete 常見的情境。\n\n 最後也會分享進入正式環境時的技術選型，應該用 Redis 還是用 Elasticsearch 比較好。\n\n#autocomplete #elasticsearch #redis #backend",
+                        "summary": "autocomplete 是現代軟體服務最重要的特性之一，使用者在輸入框輸入了文字，軟體服務就會回傳最適當的選項給使用者，而使用者可以依照回傳的各個選項中選擇其中一個執行動作。\n\n\n\n 一般的技術文章，大都從前端的角度探討如何在輸入文字時，利用 debounce 和 throttle 這兩個技術，提升使用者的操作體驗及減少後端的負擔。極少探討後端如何實作 autocomplete 的資料結構，讓資料能夠快速回傳給前端。\n\n\n\n 這次的分享主要就是完全從後端的角度來探討如何利用 Redis 或 Elasticsearch 這類 NoSQL 實作 autocomplete，也會分享多個 autocomplete 常見的情境。\n\n\n\n 最後也會分享進入正式環境時的技術選型，應該用 Redis 還是用 Elasticsearch 比較好。\n\n\n\n#autocomplete #elasticsearch #redis #backend",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -927,7 +1147,22 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "希望聽眾可以藉由這次的分享，了解如何利用 Elasticsearch 及 Redis 開發 autocomplete 功能",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 215,
@@ -943,7 +1178,7 @@
                                 },
                                 "link_github": "https://github.com/kewang",
                                 "link_twitter": "",
-                                "link_other": "個人 Facebook：https://www.facebook.com/kewangtw 公司技術部落格：https://techblog.funliday.com",
+                                "link_other": "https://techblog.funliday.com",
                                 "link_fb": "https://www.facebook.com/kewang.information"
                             }
                         ]
@@ -953,7 +1188,7 @@
                         "room": "R3",
                         "topic": "Visual Testing",
                         "topic_e": "Visual Testing",
-                        "summary": "前端工程師遇到什麼問題？\n 什麼是 Visual Testing？\n 怎麼做  Visual Testing？\n 專案範例 👏🏻\n 工作流程💡\n 疑難雜症 🤔",
+                        "summary": "前端工程師遇到什麼問題？\n\n 什麼是 Visual Testing？\n\n 怎麼做  Visual Testing？\n\n 專案範例 👏🏻\n\n 工作流程💡\n\n 疑難雜症 🤔",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -965,7 +1200,22 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "沒事多測試，測試多沒事 💪🏻",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 200,
@@ -981,7 +1231,7 @@
                                 },
                                 "link_github": "https://github.com/cythilya",
                                 "link_twitter": "https://twitter.com/cythilya",
-                                "link_other": "部落格（http://cythilya.github.io）書（http://bit.ly/3Ec1P4U）",
+                                "link_other": "http://cythilya.github.io",
                                 "link_fb": "https://www.facebook.com/cythilya"
                             }
                         ]
@@ -999,11 +1249,19 @@
                         "level": "Basic ",
                         "target": "剛入門 Go 的開發者",
                         "target_e": "Developers who just getting started with Go",
-                        "prior_knowledge": "- 看得懂基本 Go 的語法\n- 知道什麼是單元測試",
-                        "prior_knowledge_e": "- Understand basic Go syntax\n- Know what is Unit Testing",
-                        "expected_gain": "- 如何在 Go 裡面寫 Fuzzing Test\n- 知道 Fuzzing Test 可以用在哪些地方",
-                        "expected_gain_e": "- How to write fuzzing Test in Go\n- Know where to use Fuzzing Test",
-                        "tags": [],
+                        "prior_knowledge": "- 看得懂基本 Go 的語法\n\n- 知道什麼是單元測試",
+                        "prior_knowledge_e": "- Understand basic Go syntax\n\n- Know what is Unit Testing",
+                        "expected_gain": "- 如何在 Go 裡面寫 Fuzzing Test\n\n- 知道 Fuzzing Test 可以用在哪些地方",
+                        "expected_gain_e": "- How to write fuzzing Test in Go\n\n- Know where to use Fuzzing Test",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 216,
@@ -1044,9 +1302,9 @@
                         "room": "R1",
                         "topic": "從 IoT 到 Web2，從 Web2 到 Web3：那些開發路",
                         "topic_e": "-",
-                        "summary": "技術演化、平台衍生及各式商模野蠻發展是這十幾年的技術底色\n「唯一不變的是變化」這句話對工程人員來說是每天的日常\n\n 因緣際會和 React Native 結了緣而打開了眼界\n 以這個技術為基底接觸了十來個不同領域\n 從看盤軟體、物聯網、電商系統到區塊鏈冷錢包都有涉獵\n\n 跨平台技術不只是弭平了平台的差異\n 同時也為跨領域及技術落地指出了一些可能的路徑\n\n 一起來聊聊那些在開發路上看到的奇怪及有趣的經驗及心得",
+                        "summary": "技術演化、平台衍生及各式商模野蠻發展是這十幾年的技術底色\n\n「唯一不變的是變化」這句話對工程人員來說是每天的日常\n\n\n\n 因緣際會和 React Native 結了緣而打開了眼界\n\n 以這個技術為基底接觸了十來個不同領域\n\n 從看盤軟體、物聯網、電商系統到區塊鏈冷錢包都有涉獵\n\n\n\n 跨平台技術不只是弭平了平台的差異\n\n 同時也為跨領域及技術落地指出了一些可能的路徑\n\n\n\n 一起來聊聊那些在開發路上看到的奇怪及有趣的經驗及心得",
                         "summary_e": "",
-                        "is_keynote": false,
+                        "is_keynote": true,
                         "is_online": false,
                         "recordable": true,
                         "level": "Normal ",
@@ -1056,7 +1314,43 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "真實世界的軟體開發不只是技術議題，還包含了資源、維護及管理等多種考量。期待能藉由這個分享拋磚引玉，啟發一些技術之外的思考。",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "IoT"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 233,
@@ -1072,7 +1366,7 @@
                                 },
                                 "link_github": "https://github.com/sailplaneTW",
                                 "link_twitter": "https://twitter.com/sailplaneTW",
-                                "link_other": "website: https://www.sam-huang.info/",
+                                "link_other": "https://www.sam-huang.info/",
                                 "link_fb": "https://www.facebook.com/sailplaneTW/"
                             }
                         ]
@@ -1111,7 +1405,7 @@
                         "topic_e": "Build Multiplatform Applications using Kotlin",
                         "summary": "經過多年發展，Kotlin 已是一個支援多平台開發的程式語言，讓開發者能用一個程式語言開發包括 Server-Side、Desktop、Mobile、Frontend 等不同平台的應用程式。在這場分享裡，將介紹 Kotlin Multiplatform 的發展藍圖，並示範多平台開發時的專案架構、工作流程及開發生態系。聽完這場分享後，將能感受到 Kotlin 多平台開發的威力！",
                         "summary_e": "Kotlin is a multiplatform language that allowing developers to develop applications for different platforms including Server-Side, Desktop, Mobile, Frontend, etc. In this talk, we will share the blueprint of Kotlin multiplatform, the project structure, development workflow and ecosystem. After listening to this talk, you will feel the potential of Kotlin multi-platform development.",
-                        "is_keynote": false,
+                        "is_keynote": true,
                         "is_online": false,
                         "recordable": true,
                         "level": "Basic ",
@@ -1121,7 +1415,29 @@
                         "prior_knowledge_e": "The audience needs to have a basic understanding of multiplatform development and knows the difficulties and challenges of multiplatform development.",
                         "expected_gain": "聽完這場分享後，聽眾將能了解使用 Kotlin 程式語言開發多平台應用的潛力並對整體流程有初步的認識。",
                         "expected_gain_e": "After attending this talk, the audience will be able to understand the potential of using the Kotlin to develop multiplatform applications and have a brief understanding of the development workflow.",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 217,
@@ -1176,18 +1492,62 @@
                     {
                         "session_id": 2022042,
                         "room": "R2",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
+                        "topic": "UX 背景讓 BA 不一樣 - 敏捷環境為例, 讓 UX 離商業更靠近",
+                        "topic_e": "UX and Business Analysis - How to combine these skills efficiently",
+                        "summary": "1. 身為一個 UX 背景的 BA 工作日常\n\n2. 從 UX 視角評估 BA 技能\n\n3. 敏捷環境下 End to End\" 各角色分工(UI.UX.BA.PD)及產品成效評估流程 \n\n4. 帶領 UI 一起發揮商業價值",
+                        "summary_e": "1. As a UX background how is a typical BA day\n\n2. How we evaluate the BA role based on the UX perspective \n\n3. End to End\" product development with different role (UI.UX.BA.PO.PD) in Agile environment \n\n4. How to co-create business value with UI designer",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "level": "Normal ",
+                        "target": "UI/UX 設計師, 使用者研究員, PM, PO, 對商業分析師有興趣的人",
+                        "target_e": "UI/UX Designer, UR, PM, PO, Anyone who interested in BA role",
+                        "prior_knowledge": "有基礎的 UX 知識 (知道什麼是 UX,對這個詞彙跟職位不陌生), 有產品開發經驗",
+                        "prior_knowledge_e": "Have basic UX know-how,  Have product development experience",
+                        "expected_gain": "1.了解 UX 與 BA 角色的結合\n\n2. 理解敏捷環境下,各角色的流程分工(UI.UX.BA.PO.PD)到產品產出價值\n\n3. BA 角色如何帶領 UI 一起發揮商業價值",
+                        "expected_gain_e": "1. Understand how UX. BA work together\n\n2. Understand End to End\" product development with different role (UI.UX.BA.PO.PD) in Agile environment \n\n3. Understand how BA cocreate business with UI",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Agile"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Data Analyzing"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 220,
+                                "name": "蔡雅文",
+                                "name_e": "Scarlett Tsai",
+                                "job_title": "資深商業分析師",
+                                "job_title_e": "Senior Business Analyst",
+                                "company": "新加坡商鈦坦科技",
+                                "company_e": "Titansoft",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_220",
+                                    "mobile": "api/2022/speaker/images/speaker_220"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "https://www.linkedin.com/in/scarlett-tsai/",
+                                "link_fb": "https://www.facebook.com/scarlert.tsai"
+                            }
+                        ]
                     },
                     {
                         "session_id": 2022043,
@@ -1206,7 +1566,15 @@
                         "prior_knowledge_e": "Syntax of Swift",
                         "expected_gain": "可以開始使用 SwiftUI 進行開發",
                         "expected_gain_e": "Start using SwiftUI to developing",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 209,
@@ -1275,7 +1643,15 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "了解需求拆分的技巧，在價值與工作量之間取得平衡。",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Agile"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 208,
@@ -1329,7 +1705,22 @@
                         "prior_knowledge_e": "experience for developing web development",
                         "expected_gain": "學習到 Functional Programming 的觀念然後學習如何應用在日常的工作上",
                         "expected_gain_e": "They can learn some Functional Programming concepts and figure out how to apply in routine works",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 232,
@@ -1367,7 +1758,15 @@
                         "prior_knowledge_e": "Linux / Container / CNCF",
                         "expected_gain": "期望能夠以比較淺顯的方式讓會眾知道 Cloud Native 所帶來的影響、現況及建議作法",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 234,
@@ -1420,7 +1819,36 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "瞭解 DRM 科普知識, 與其在影音串流運用上之角色, 進一步探討 DRM 其他運用.",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 224,
@@ -1444,25 +1872,62 @@
                     {
                         "session_id": 2022050,
                         "room": "R2",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "設計與開發的協作心法",
+                        "topic_e": "What Problems between us? - developers and designers.",
+                        "summary": "設計與開發佔據產品開發的核心，但往往在產品開發過程中仍然有著五花八門的摩擦；結合業界的回饋從客觀數據洞察痛點，並且從設計思考及目標導向作為束收點建立解決方案。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "level": "Normal ",
+                        "target": "具備設計與開發端協作經驗的 UIUX 設計師、產品設計師、前端工程師、APP 工程師",
+                        "target_e": "",
+                        "prior_knowledge": "具有產品開發經驗的設計師或工程師",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "從客觀數據更了解設計師與工程師之間的矛盾，重新檢視現在的協作方式",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 235,
+                                "name": "陳郁文",
+                                "name_e": "Alan Chen",
+                                "job_title": "介面設計師/設計顧問",
+                                "job_title_e": "",
+                                "company": "叡揚資訊設計顧問",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_235",
+                                    "mobile": "api/2022/speaker/images/speaker_235"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": ""
+                            }
+                        ]
                     },
                     {
                         "session_id": 2022051,
                         "room": "R3",
                         "topic": "導入 Lighthouse CI 作為前端應用的效能守門員",
                         "topic_e": "Lighthouse CI Integrating Experience Sharing",
-                        "summary": "網頁的效能對於前端應用來說非常重要，而 Lighthouse 是其中一個功能完整的效能檢測工具，其推出的 Lighthouse CI 可以更進一步將效能檢測綁進 CI 流程中，扮演前端應用效能守門員的角色。\n\n 這次議程將說明 Lighthouse CI 的基礎概念，以及分享實際導入過程中遇到的困難與挑戰，並分享最後的成果與價值。",
+                        "summary": "網頁的效能對於前端應用來說非常重要，而 Lighthouse 是其中一個功能完整的效能檢測工具，其推出的 Lighthouse CI 可以更進一步將效能檢測綁進 CI 流程中，扮演前端應用效能守門員的角色。\n\n\n\n 這次議程將說明 Lighthouse CI 的基礎概念，以及分享實際導入過程中遇到的困難與挑戰，並分享最後的成果與價值。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -1474,7 +1939,15 @@
                         "prior_knowledge_e": "Frontend Basic Knowledge",
                         "expected_gain": "思索在專案中導入 Lighthouse CI 的可能性與應用方式",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 218,
@@ -1500,8 +1973,8 @@
                         "room": "R4",
                         "topic": "AI 背誦學習助手的開發與評估",
                         "topic_e": "Developing and Evaluating a tool using AI help you to memorize",
-                        "summary": "這是一場關於 AI 與教育及使用者體驗評估的系統開發與使用者體驗研究分享。在其中你會了解 AI 如何幫助人背誦、人機互動評估的研究方法、及我們執行此專案的心路歷程。\n\n 背誦，是學習時非常重要的一環。透過反覆朗讀並記憶，可以將重要的資訊完整的儲存在長期記憶中，讓學習者受用一輩子。因為經過背誦的資訊，在大腦中彼此的神經元會緊密的聯繫在一起，只要有其中一個部分被促發，整個段落都能立刻回憶起來。但既有的背誦方法較為繁雜。往往需要另一個人輔助，像是在背不下去時給予提示，又或是更正錯誤的字句。這導致背誦非常費時、費心、費力，且不被現在的高等教育採納。\n\n 為此，我們透過 Web API 打造一使用 AI 輔助背誦文章的系統，並且使用嚴謹的研究方法評估之。使用者可在瀏覽器打開此系統的網頁，貼上想要記憶的內容並開始背誦，此系統不僅能透過語音提示使用者目前背誦的進度，更辨識使用者背誦的內容並予以糾正。讓使用者可透過此系統即時且精確的回饋，持續改善自己還不記得的部分，讓使用者只要靠自己就能高效率的將整篇文章背起來。希望藉此未來能幫助世界各地的人，有更輕鬆愉快的背誦體驗",
-                        "summary_e": "This is a system development and user experience research sharing on AI and education and user experience evaluation. In it, you'll learn how AI helps people memorize, research methods for human-computer interaction assessment, and our mental journey to implement this project.\n\nRecitation is a very important part of learning. Through repeated reading and memorization, important information can be completely stored in long-term memory, so that learners can use it for a lifetime. Because of the recited information, the neurons in the brain are closely linked to each other, and as long as one part is triggered, the entire passage can be recalled at once. But the existing memorization method is more complicated. Often another person is needed to assist, such as to give hints when it is difficult to memorize, or to correct wrong words. This results in memorization that is very time-consuming, laborious, and laborious, and is not adopted by current higher education.\n\nTo this end, we built a ",
+                        "summary": "這是一場關於 AI 與教育及使用者體驗評估的系統開發與使用者體驗研究分享。在其中你會了解 AI 如何幫助人背誦、人機互動評估的研究方法、及我們執行此專案的心路歷程。\n\n\n\n 背誦，是學習時非常重要的一環。透過反覆朗讀並記憶，可以將重要的資訊完整的儲存在長期記憶中，讓學習者受用一輩子。因為經過背誦的資訊，在大腦中彼此的神經元會緊密的聯繫在一起，只要有其中一個部分被促發，整個段落都能立刻回憶起來。但既有的背誦方法較為繁雜。往往需要另一個人輔助，像是在背不下去時給予提示，又或是更正錯誤的字句。這導致背誦非常費時、費心、費力，且不被現在的高等教育採納。\n\n\n\n 為此，我們透過 Web API 打造一使用 AI 輔助背誦文章的系統，並且使用嚴謹的研究方法評估之。使用者可在瀏覽器打開此系統的網頁，貼上想要記憶的內容並開始背誦，此系統不僅能透過語音提示使用者目前背誦的進度，更辨識使用者背誦的內容並予以糾正。讓使用者可透過此系統即時且精確的回饋，持續改善自己還不記得的部分，讓使用者只要靠自己就能高效率的將整篇文章背起來。希望藉此未來能幫助世界各地的人，有更輕鬆愉快的背誦體驗",
+                        "summary_e": "This is a system development and user experience research sharing on AI and education and user experience evaluation. In it, you'll learn how AI helps people memorize, research methods for human-computer interaction assessment, and our mental journey to implement this project.\n\n\n\nRecitation is a very important part of learning. Through repeated reading and memorization, important information can be completely stored in long-term memory, so that learners can use it for a lifetime. Because of the recited information, the neurons in the brain are closely linked to each other, and as long as one part is triggered, the entire passage can be recalled at once. But the existing memorization method is more complicated. Often another person is needed to assist, such as to give hints when it is difficult to memorize, or to correct wrong words. This results in memorization that is very time-consuming, laborious, and laborious, and is not adopted by current higher education.\n\n\n\nTo this end, we built a",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
@@ -1510,9 +1983,45 @@
                         "target_e": "Developers who want to integrate AI on web pages, users who are interested in recitation, People interested in combining education and technology",
                         "prior_knowledge": "無",
                         "prior_knowledge_e": "無",
-                        "expected_gain": "1. 關於背誦的教育與心理學知識\n2. 關於 AI 在網頁部署的經驗心得\n3. 關於從學術、人機互動角度上要如何評估一個系統的方法",
-                        "expected_gain_e": "1. Educational and psychological knowledge about recitation\n2. Experience in deploying AI on web pages\n3. How to evaluate a system from an academic and human-computer interaction perspective",
-                        "tags": [],
+                        "expected_gain": "1. 關於背誦的教育與心理學知識\n\n2. 關於 AI 在網頁部署的經驗心得\n\n3. 關於從學術、人機互動角度上要如何評估一個系統的方法",
+                        "expected_gain_e": "1. Educational and psychological knowledge about recitation\n\n2. Experience in deploying AI on web pages\n\n3. How to evaluate a system from an academic and human-computer interaction perspective",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "AI"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 229,
@@ -1565,7 +2074,29 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "了解如何有效推進設計溝通，並認識更多 UI/UX 工具",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Project Management"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 204,
@@ -1591,7 +2122,7 @@
                         "room": "R2",
                         "topic": "為什麼你的產品像縫合怪？",
                         "topic_e": "Why Product Looks Scrambled？",
-                        "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
+                        "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -1603,7 +2134,15 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "輕鬆學習到如何建立品牌形象、思考的方法，能立刻活用到自家產品的 UI 和 UX 設計上。",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 207,
@@ -1641,7 +2180,15 @@
                         "prior_knowledge_e": "",
                         "expected_gain": "對無障礙設計有更近一步的了解，並實際應用在開發上",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 230,
@@ -1656,7 +2203,7 @@
                                     "mobile": "api/2022/speaker/images/speaker_230"
                                 },
                                 "link_github": "https://github.com/kjj6198",
-                                "link_twitter": "@kalanyei",
+                                "link_twitter": "https://twitter.com/kalanyei",
                                 "link_other": "https://blog.kalan.dev",
                                 "link_fb": ""
                             }
@@ -1667,7 +2214,7 @@
                         "room": "R4",
                         "topic": "Low-Code IoT 平台的興起，是曇花一現還是永續商機？",
                         "topic_e": "What are low-code IoT platforms?",
-                        "summary": "No-Code、Low-Code 時代來臨，各產業將降低招募工程師需求 ! \n 這真的能辦到嗎？又或是能做到什麼程度呢？此講題將分享今年最新的 Low-Code IoT 平台，包含開源/非開源的火熱項目，讓聽眾不僅能了解開發 IoT 應用的完整流程，且議程中也會完整解析市面上主流 IoT 開發板，藉由開放或免費資源達到快速上手，體驗或親自打造專屬自己的 IoT App !",
+                        "summary": "No-Code、Low-Code 時代來臨，各產業將降低招募工程師需求 ! \n\n 這真的能辦到嗎？又或是能做到什麼程度呢？此講題將分享今年最新的 Low-Code IoT 平台，包含開源/非開源的火熱項目，讓聽眾不僅能了解開發 IoT 應用的完整流程，且議程中也會完整解析市面上主流 IoT 開發板，藉由開放或免費資源達到快速上手，體驗或親自打造專屬自己的 IoT App !",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -1677,9 +2224,45 @@
                         "target_e": "",
                         "prior_knowledge": "IoT 概念，Web (HTML / JS) 概念，低代碼開發平台，基礎程式設計",
                         "prior_knowledge_e": "",
-                        "expected_gain": "1. 了解 Low-Code 平台扮演的角色，在需要的時候從容面對\n2. 了解市面上大部分主流開發板的優缺點，挑選符合自己需求的開發板\n3. 聽完就可以自己一步步打造自己專屬的 IoT 應用，從 30 天縮短為 3 小時",
+                        "expected_gain": "1. 了解 Low-Code 平台扮演的角色，在需要的時候從容面對\n\n2. 了解市面上大部分主流開發板的優缺點，挑選符合自己需求的開發板\n\n3. 聽完就可以自己一步步打造自己專屬的 IoT 應用，從 30 天縮短為 3 小時",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "IoT"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Agile"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "AI"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 223,
@@ -1732,7 +2315,22 @@
                         "prior_knowledge_e": "Deeplearning",
                         "expected_gain": "了解最新的對話語言模型",
                         "expected_gain_e": "Learn about the SOTA conversational language models.",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "AI"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Data Analyzing"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 198,
@@ -1764,13 +2362,28 @@
                         "is_online": false,
                         "recordable": true,
                         "level": "Basic ",
-                        "target": "對 App 開發有興趣者\n 對 UX/UX 有興趣者",
+                        "target": "對 App 開發有興趣者\n\n 對 UX/UX 有興趣者",
                         "target_e": "",
                         "prior_knowledge": "無",
                         "prior_knowledge_e": "",
                         "expected_gain": "了解工程師該做好哪些事來提升 App 的使用體驗",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 231,
@@ -1796,7 +2409,7 @@
                         "room": "R3",
                         "topic": "web3 網頁入門 101",
                         "topic_e": "web3 frontend 101",
-                        "summary": "web3 與傳統 web2 開發在前端上都完全一樣最大差異在於從與後端互動改為區塊鏈合約互動，並且需要考慮更多的狀態恢復。\n\n 這次演講將會分享開發上的差異以及實作該如何讀取使用者錢包以及實際與區塊鏈合約互動。",
+                        "summary": "web3 與傳統 web2 開發在前端上都完全一樣最大差異在於從與後端互動改為區塊鏈合約互動，並且需要考慮更多的狀態恢復。\n\n\n\n 這次演講將會分享開發上的差異以及實作該如何讀取使用者錢包以及實際與區塊鏈合約互動。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -1806,9 +2419,24 @@
                         "target_e": "",
                         "prior_knowledge": "- 使用過 React 開發",
                         "prior_knowledge_e": "",
-                        "expected_gain": "- 了解什麼是區塊鏈合約\n- 能夠自己實作 React 前端並且操作鏈上合約",
+                        "expected_gain": "- 了解什麼是區塊鏈合約\n\n- 能夠自己實作 React 前端並且操作鏈上合約",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 213,
@@ -1832,18 +2460,40 @@
                     {
                         "session_id": 2022060,
                         "room": "R4",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
+                        "topic": "無密碼時代來臨 ? 初探 FIDO 驗證標準",
+                        "topic_e": "Going Passwordless? Introducing the FIDO Authentication Standard",
+                        "summary": "密碼一直是讓人又愛又恨的東西，隨著網路的世界越來越複雜，對於密碼複雜度與安全性的要求也越來越高，不時資安大廠都會發表關於密碼外洩的新聞，使用者為了方便使用相同帳密遭到破解造成的經濟損失不計其數，有沒有一個更好更安全的方式可以解決困擾已久問題呢 ? \n 無密碼認證（Passwordless Authentication）技術在這幾年越來越多人開始討論，在今年全球密碼日當天，Google、微軟、蘋果共同發出聲明將支持 ( FIDO Fast Identity Online）身分認證方式，為何科技大廠會選擇 FIDO 網路身分驗證呢 ? 其背後的原理到底是如何做到無密碼登入的呢 ? 手機裝置要如何支援呢 ? 在這 Session 預計與大家分享\n 1. 甚麼是 FIDO \n 2. 原理與特性\n 3. FIDO 的下一步",
+                        "summary_e": "Passwords have always been something that people love and hate, as the world of the Internet becomes more and more complex, the complexity of passwords and security requirements are also becoming higher and higher, from time to time the major information security companies will publish news about password leaks, users for the convenience of using the same account password has been cracked resulting in countless economic losses, is there a better and more secure way to solve the long-standing problem? \n In this year's Global Password Day, Google, Microsoft and Apple jointly issued a statement that they will support (FIDO Fast Identity Online) identity authentication. authentication? The principle behind it is how to achieve password-free login? How do mobile devices support it? In this session, we expect to share with you\n 1. what is FIDO \n 2. Principles and features\n 3. The feature of FIDO",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "level": "Basic ",
+                        "target": "PO/BA/SA, RD/Project Managers, Developers",
+                        "target_e": "PO/BA/SA, RD/Project Managers, Developers",
+                        "prior_knowledge": "對驗證與授權有基本了解",
+                        "prior_knowledge_e": "Basic understanding of authentication and authorization",
+                        "expected_gain": "・FIDO 基本知識與原理\n ・為何受到關注及各大瀏覽器開始支援\n ・如何在網路上做到驗證 / 登入機制",
+                        "expected_gain_e": "・What is FIDO?\n ・Why is it attracting attention and supported by major browsers?\n ・How to authenticate / login on the Internet",
+                        "tags": [],
+                        "speakers": [
+                            {
+                                "speaker_id": 219,
+                                "name": "董淳吉",
+                                "name_e": "Marcus Tung",
+                                "job_title": "總監",
+                                "job_title_e": "Technical Director",
+                                "company": "鼎恒數位科技",
+                                "company_e": "MAYO Human Capital",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_219",
+                                    "mobile": "api/2022/speaker/images/speaker_219"
+                                },
+                                "link_github": "https://github.com/marcustung",
+                                "link_twitter": "",
+                                "link_other": "https://marcus116.blogspot.tw",
+                                "link_fb": "https://www.facebook.com/marcus.tung.3"
+                            }
+                        ]
                     }
                 ]
             },
