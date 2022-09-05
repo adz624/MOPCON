@@ -308,7 +308,11 @@ export default {
       }
 
       @media (max-width: 640px) {
-        padding-bottom: 880px;
+        padding-bottom: 700px;
+      }
+
+      @include screen(sm) {
+        padding-bottom: 830px;
       }
 
       img {

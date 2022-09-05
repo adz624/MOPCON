@@ -155,9 +155,16 @@ export default {
   }
 
   .btn {
+    @include screen(lg) {
+      padding: 5px 2rem;
+    }
+
     @include screen(pad) {
       width: 100%;
-      padding: 5px 2rem;
+    }
+
+    @media (max-width: 690px) {
+      padding: 5px 1.5rem;
     }
 
     svg {
