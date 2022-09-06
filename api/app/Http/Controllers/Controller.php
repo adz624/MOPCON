@@ -12,6 +12,7 @@ class Controller extends BaseController
     protected $jsonAry;
     protected $path = __DIR__ . '/../../../resource/assets/json/';
     protected $imgPath = __DIR__ . '/../../../resource/assets/images/';
+    protected $ticketPath = __DIR__ . '/../../../resource/assets/tickets/';
 
     public function __construct()
     {
@@ -23,6 +24,7 @@ class Controller extends BaseController
         }
         $this->path = $this->path . $this->year . '/';
         $this->imgPath = $this->imgPath . $this->year . '/';
+        $this->ticketPath = $this->ticketPath . $this->year . '/';
 
         if (getenv('RESOURCE_PATH')) {
             // 主要設計給測試使用
