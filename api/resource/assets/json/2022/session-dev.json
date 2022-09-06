@@ -141,55 +141,62 @@
                     {
                         "session_id": 2022007,
                         "room": "R3",
-                        "topic": "前端好朋友 - tailwindcss",
-                        "topic_e": "How to Use Tailwind CSS",
-                        "summary": "1. 2022 年 CSS 的決解方案\n\n2. 導入 tailwindcss 的優點\n\n3. 透過 tailwindcss 與設計師優雅的溝通",
-                        "summary_e": "",
+                        "topic": "打造邊走邊玩的區塊鏈遊戲",
+                        "topic_e": "Walk-to-Earn Blockchain Game",
+                        "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\n\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
+                        "summary_e": "As technologies such as defi and NFT are widely known to the public, the economic model of earning while playing is gradually emerging. By developing games on the blockchain, the characters and props in the game are sold in the form of NFT. In addition, the cryptocurrencies and NFT assets earned in the game can be traded on the blockchain, allowing GameFi players to earn money while playing, realizing the Play-to-Earn business model. Different game rules can be created through smart contracts. Since smart contracts are open and cannot be tampered with, the game experience is relatively fair, realizing the concept of Game+NFT+DeFi.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
                         "level": "Normal ",
-                        "target": "前端網頁開發人員",
-                        "target_e": "",
-                        "prior_knowledge": "本主題需 CSS 基礎，適合覺得改別人的 style 是件很痛苦的工程師們。",
-                        "prior_knowledge_e": "",
-                        "expected_gain": "了解什麼是 tailwindcss，並解決什麼樣的問題",
-                        "expected_gain_e": "",
+                        "target": "對區塊鏈和 GameFi 有興趣，並且想要開發 Dapp 等應用的會眾。",
+                        "target_e": "The person who is interesting in Blockchain and GameFi, and want to build a Dapp.",
+                        "prior_knowledge": "區塊鏈基本知識、solidity 基本語法",
+                        "prior_knowledge_e": "Blockchain basic knowledge, solidity Language",
+                        "expected_gain": "了解 GameFi 的應用和價值，對區塊鏈 Dapp 開發產生濃厚興趣，進而開發出許多區塊鏈遊戲的應用。",
+                        "expected_gain_e": "Understand the application and value of GameFi, have a strong interest in blockchain Dapp development, and then develop many blockchain game applications.",
                         "tags": [
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "Web Development"
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 202,
-                                "name": "奶綠茶",
-                                "name_e": "milkmidi",
-                                "job_title": "Staff frontend engineer",
-                                "job_title_e": "Staff frontend engineer",
-                                "company": "Positive Grid",
+                                "name": "York Chang",
+                                "name_e": "York Chang",
+                                "job_title": "工程師",
+                                "job_title_e": "Engineer",
+                                "company": "",
                                 "company_e": "",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_201",
-                                    "mobile": "api/2022/speaker/images/speaker_201"
+                                    "web": "api/2022/speaker/images/speaker_202",
+                                    "mobile": "api/2022/speaker/images/speaker_202"
                                 },
-                                "link_github": "https://github.com/milkmidi",
-                                "link_twitter": "",
-                                "link_other": "",
-                                "link_fb": "https://www.facebook.com/milkmidifans"
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/YorkChang01",
+                                "link_other": "https://yorkisinhere.medium.com/",
+                                "link_fb": ""
                             }
                         ]
                     },
                     {
                         "session_id": 2022008,
                         "room": "R4",
-                        "topic": "越沒時間，越要寫單元測試 - 單元測試如何助我每天準時下班（以 ",
+                        "topic": "越沒時間，越要寫單元測試 - 單元測試如何助我每天準時下班（以 Java 為例）",
                         "topic_e": "No time no test? No test no time!",
-                        "summary": "好的工程師要寫單元測試，這我當然知道，但：\n\n* 我現在光程式寫完直接丟給 QA 測，都寫到要加班了，再加寫測試，要幾點才能回家？\n* PO 說客戶有保證需求不會變，這樣還要寫測試嗎？\n* 程式一動，測試就壞了，好花時間喔！我不寫測試，不就不會壞了嗎？\n* 我上次有問主管，主管說等有時間再回頭補單元測試就好，然後…就沒有然後了…\n\n 在人家都上太空的年代，我也不想殺豬公啊！但是「時程就是很趕」，我要趕快把程式寫完丟給 QA ，才有時間寫下一份程式啊！為什麼去研討會那些講者每個都又有時間寫測試，還有時間重構跟改架構？啊我知道了，他們一定很閒！\n\n「你才閒！你全家都閒！」\n\n 單元測試不是目的，測試是軟體工程多數實踐的地基。你要切微服務、要套 DDD，還是要套用整套 Google 的 SRE 實踐，都無法不以單元測試為基礎。這跟你敏不敏捷、De 不 DevOps 無關。只跟你的「職責」有關。單元測試不是測試，它是功能的一部份。\n\n 因此，我們不能把單元測試視為附加的工作，一但它變成你工作的一部份，你就責無旁貸地不能讓它拖慢你的開發進度，就像你不能讓自已寫的",
+                        "summary": "好的工程師要寫單元測試，這我當然知道，但：\n\n\n\n* 我現在光程式寫完直接丟給 QA 測，都寫到要加班了，再加寫測試，要幾點才能回家？\n\n* PO 說客戶有保證需求不會變，這樣還要寫測試嗎？\n\n* 程式一動，測試就壞了，好花時間喔！我不寫測試，不就不會壞了嗎？\n\n* 我上次有問主管，主管說等有時間再回頭補單元測試就好，然後…就沒有然後了…\n\n\n\n 在人家都上太空的年代，我也不想殺豬公啊！但是「時程就是很趕」，我要趕快把程式寫完丟給 QA ，才有時間寫下一份程式啊！為什麼去研討會那些講者每個都又有時間寫測試，還有時間重構跟改架構？啊我知道了，他們一定很閒！\n\n\n\n「你才閒！你全家都閒！」\n\n\n\n 單元測試不是目的，測試是軟體工程多數實踐的地基。你要切微服務、要套 DDD，還是要套用整套 Google 的 SRE 實踐，都無法不以單元測試為基礎。這跟你敏不敏捷、De 不 DevOps 無關。只跟你的「職責」有關。單元測試不是測試，它是功能的一部份。\n\n\n\n 因此，我們不能把單元測試視為附加的工作，一但它變成你工作的一部份，你就責無旁貸地不能讓它拖慢你的開發進度，就像你不能讓自已寫的爛程式延遲你的下班時間一樣。如何又把程式寫完、又把測試做完，還不會給後人（也就是三個月後的你自己）造成困擾，這是講者這次想與大家分享的主題。\n\n\n\n 本次演講將包含以下內容\n\n\n\n* 用真實案例，介紹單元測試的意圖與解決的問題\n\n* 用簡單的方法，介紹單元測試的基本寫法\n\n* 用一個複雜案例，介紹龐大系統中如何「演化」出程式與測試\n\n* 用講者自身的經驗，給想開始或進化單元測試技能的人一些建議\n\n\n\n 期待能以一些實戰中真正會遇到的場景與解法，幫助大家早日脫離天天加班的苦日子。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -280,76 +287,99 @@
                     {
                         "session_id": 2022011,
                         "room": "R3",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
+                        "topic": "透過 Laravel Bagisto 電商架站框架，了解架站軟體",
+                        "topic_e": "Understand the codebase structure of the platform software via Laravel Bagisto",
+                        "summary": "Laravel Bagisto 是 Laravel 生態系中，eCommerce 架站熱門的套件之一，具備現代化的 UI 以及強大的管理功能。透過分析 Bagisto 的技術架構，可以幫助我們了解一個提供軟體修改性的框架，會有的程式碼架構。",
+                        "summary_e": "Laravel Bagisto is one of the most popular suites for eCommerce platform software in the Laravel ecosystem, with a modern UI and powerful features.\n\n\n\nBy analyzing the source code architecture of Bagisto, it can help us understand the code architecture of a framework that provides flexible software modification capability.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "target_e": "",
-                        "prior_knowledge": "",
-                        "prior_knowledge_e": "",
-                        "expected_gain": "",
-                        "expected_gain_e": "",
-                        "tags": [],
+                        "level": "Normal ",
+                        "target": "初中階 Web 工程師",
+                        "target_e": "Junior/Intermediate web engineer",
+                        "prior_knowledge": "PHP, Web Framework 經驗",
+                        "prior_knowledge_e": "PHP, Web Framework experience",
+                        "expected_gain": "希望能幫助聽眾啟發，對於此類型軟體開發，或是極高模組化風格的程式碼，會是怎麼樣的程式碼架構。",
+                        "expected_gain_e": "Hope to inspire audiences on how to organize and compose this extremely modular source code",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 195,
-                                "name": "",
-                                "name_e": "",
-                                "job_title": "",
-                                "job_title_e": "",
-                                "company": "",
-                                "company_e": "",
+                                "name": "劉奕為",
+                                "name_e": "John Liu",
+                                "job_title": "Full stack engineer",
+                                "job_title_e": "Full stack engineer",
+                                "company": "Netskope",
+                                "company_e": "Netskope",
                                 "img": {
-                                    "web": "",
-                                    "mobile": ""
+                                    "web": "api/2022/speaker/images/speaker_195",
+                                    "mobile": "api/2022/speaker/images/speaker_195"
                                 },
                                 "link_github": "",
                                 "link_twitter": "",
-                                "link_other": "",
-                                "link_fb": ""
+                                "link_other": "https://medium.com/johnliu-%E7%9A%84%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%B6%AD?fbclid=IwAR1M_p_xEcxb3rqELwzHvDJuIJ4RfOJrEtrT0i4H82JPxfkxcbyZlE4XSqw",
+                                "link_fb": "https://www.facebook.com/johnliu.software.thinking"
                             }
                         ]
                     },
                     {
                         "session_id": 2022012,
                         "room": "R4",
-                        "topic": "利用動態特效網站 SOP 概念，讓你作品煞有其事",
-                        "topic_e": "How to Make Your Website Magnificent with Website Effects SOP.",
-                        "summary": "集結「設計、開發、創作、藝術」為一身的動態特效網站的誘人之處到底在哪裡？\n\n 台灣的網站產業近年變化，公部門在網站上也有所突破，有別於傳統制式的官網，動態特效網站在台灣近年開始發展起來，目前還算是新興領域。對於這領域的概念理解、運行流程、動態思維、未來趨勢、開發方向，透過版塊近年的專案分享、網站觀察，帶大家一探究竟。",
+                        "topic": "FHIR, Vaccine QRCode Passport an",
+                        "topic_e": "FHIR, Vaccine QRCode Passport and Python",
+                        "summary": "FHIR 之中文全名為快捷式醫療服務互操作資源，主要目的是可以讓醫事單位有統一的資料標準進行資料的交換，目前此資料標準由台灣醫療影像資訊標準協會進行在台灣發展資料標準的格式推廣與定義。本議程，講者主要分享透過此 FHIR 資料格式為基礎，開發出符合 FHIR 資料格式標準的數位疫苗護照應用，並以此應用參與協會舉辦的 2021 聯測松的過程，以及參賽的心得，期望透過此議程的分享讓聽眾更了解 FHIR 資料標準之外，也可以了解目前醫學資料交換標準目前在台灣的發展過程以及舉辦並參與聯測松的目的。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "Basic ",
-                        "target": "前端工程師、網站設計師",
+                        "level": "Normal ",
+                        "target": "對 FHIR 資料標準有興趣、Python 使用者與醫學資訊有興趣的人",
                         "target_e": "",
-                        "prior_knowledge": "了解網站",
+                        "prior_knowledge": "了解基本的 Python 語法以及使用的方式",
                         "prior_knowledge_e": "",
-                        "expected_gain": "1. 網站趨勢\n2. 動態特效網站入門\n3. 設計公司之工程師具備能力",
+                        "expected_gain": "1. 了解 FHIR 資料格式標準，與可以用 Python 來開發出符合 FHIR 資料格式的程式\n\n2. 了解 FHIR 資料標準在台灣的發展\n\n3. 了解聯測松在台灣的目的與參加的方法",
                         "expected_gain_e": "",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 205,
-                                "name": "李明",
-                                "name_e": "Leeming",
-                                "job_title": "創辦人暨設計總監",
-                                "job_title_e": "Founder & Director",
-                                "company": "版塊創意有限公司",
-                                "company_e": "Block Studio",
+                                "name": "李昀陞",
+                                "name_e": "Peter Li",
+                                "job_title": "副工程師",
+                                "job_title_e": "Associate engineer",
+                                "company": "財團法人資訊工業策進會",
+                                "company_e": "Institute for Information Industry",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_204",
-                                    "mobile": "api/2022/speaker/images/speaker_204"
+                                    "web": "api/2022/speaker/images/speaker_205",
+                                    "mobile": "api/2022/speaker/images/speaker_205"
                                 },
-                                "link_github": "",
-                                "link_twitter": "",
-                                "link_other": "https://blockstudio.tw/blog/",
-                                "link_fb": "https://www.facebook.com/blockstudiotw"
+                                "link_github": "https://github.com/peter279k",
+                                "link_twitter": "https://twitter.com/peter279k",
+                                "link_other": "https://peterli.website",
+                                "link_fb": "https://facebook.com/peter279k"
                             }
                         ]
                     }
@@ -486,53 +516,53 @@
                     {
                         "session_id": 2022016,
                         "room": "R4",
-                        "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon",
-                        "topic_e": "Digital Launching - Virtual curation design and WebGL (Babylon.js)",
-                        "summary": "第一部分帶大家了解從 virsody.io 平台設計發想到開發上線的過程，說明虛擬策展的使用者體驗如何設計；第二部分為網站前端 WebGL 開發要如何開始，以及我們在開發 Babylon.js 過程中累積的心得",
-                        "summary_e": "",
+                        "topic": "一個專門用於對話應用的自然語言理解模型 LaMDA",
+                        "topic_e": "Language Model for Dialogue Applications(LaMDA)",
+                        "summary": "LaMDA 是 Google 最新發表的語言模型，LaMDA 是基於 Transformer 的自然語言理解(NLU)模型，專門應用於對話使用。本次分享會針對基本對話理解的自然語言理解(NLU)概念做簡單趨勢的介紹，接著針對 LaMDA 的運作方式、模型微調、衡量指標等內容做分享。",
+                        "summary_e": "LaMDA builds on earlier Google research, published in 2020, that showed Transformer-based language models trained on dialogue could learn to talk about virtually anything. Since then, we’ve also found that, once trained, LaMDA can be fine-tuned to significantly improve the sensibleness and specificity of its responses.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
                         "level": "Basic ",
-                        "target": "對設計網頁虛擬空間體驗或者 WebGL 有興趣的人",
-                        "target_e": "",
-                        "prior_knowledge": "無",
-                        "prior_knowledge_e": "",
-                        "expected_gain": "了解虛擬策展的使用者體驗如何設計、網站前端 WebGL 開發如何開始以及 Babylon.js 開發須知",
-                        "expected_gain_e": "",
+                        "target": "學生、研究生、工程師、對話設計師",
+                        "target_e": "Students, Graduate Students, Engineers, Conversation Designers",
+                        "prior_knowledge": "深度學習",
+                        "prior_knowledge_e": "Deeplearning",
+                        "expected_gain": "了解最新的對話語言模型",
+                        "expected_gain_e": "Learn about the SOTA conversational language models.",
                         "tags": [
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "Web Development"
+                                "name": "AI"
                             },
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "UI/UX"
+                                "name": "Data Analyzing"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 197,
-                                "name": "古健樺",
-                                "name_e": "",
-                                "job_title": "創意總監",
-                                "job_title_e": "Creative Director",
-                                "company": "黑洞創造",
-                                "company_e": "BlackHole Creative",
+                                "name": "Jerry 老師",
+                                "name_e": "JerryWu",
+                                "job_title": "執行長",
+                                "job_title_e": "CEO",
+                                "company": "亞太智能機器股份有限公司",
+                                "company_e": "Asia Pacific Machine Intelligence Company",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_196",
-                                    "mobile": "api/2022/speaker/images/speaker_196"
+                                    "web": "api/2022/speaker/images/speaker_197",
+                                    "mobile": "api/2022/speaker/images/speaker_197"
                                 },
-                                "link_github": "",
+                                "link_github": "https://github.com/jerrywu2013",
                                 "link_twitter": "",
-                                "link_other": "https://bkhole.com",
-                                "link_fb": "https://www.facebook.com/mypstom"
+                                "link_other": "https://dataology.blogspot.com/",
+                                "link_fb": "https://www.facebook.com/jerrywu2016/"
                             }
                         ]
                     }
@@ -570,52 +600,59 @@
                     {
                         "session_id": 2022018,
                         "room": "R2",
-                        "topic": "打造邊走邊玩的區塊鏈遊戲",
-                        "topic_e": "Walk-to-Earn Blockchain Game",
-                        "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\n\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
-                        "summary_e": "As technologies such as defi and NFT are widely known to the public, the economic model of earning while playing is gradually emerging. By developing games on the blockchain, the characters and props in the game are sold in the form of NFT. In addition, the cryptocurrencies and NFT assets earned in the game can be traded on the blockchain, allowing GameFi players to earn money while playing, realizing the Play-to-Earn business model. Different game rules can be created through smart contracts. Since smart contracts are open and cannot be tampered with, the game experience is relatively fair, realizing the concept of Game+NFT+DeFi.",
+                        "topic": "如何巧用 UI/UX 工具，提升設計溝通品質",
+                        "topic_e": "How might we : use UI/UX tools to improve the quality of design communication？",
+                        "summary": "不論是 Web 或是 APP 專案，設計規格的溝通一直是 UI/UX 任務的一大挑戰，對於許多設計師來說，最難的常常不是如何設計出漂亮介面，而是釐清專案團隊對於規格的共識；正所謂「工欲善其事，必先利其器」，本此演講的主軸，希望與各位分享如何巧用各類 UI/UX 工具，搭建 PM、設計師、工程師、客戶等不同利害關係人之間的思維橋樑，提升整體 UI/UX 專案溝通品質。",
+                        "summary_e": "The communication of design specifications for UI/UX activities has always been difficult, whether in website or APP projects. Clarifying the project team's agreement on the specifications is often more challenging for designers than creating a beautiful interface; This speech's main objective is to share techniques about using UI/UX tools to bridge PM, designers, engineers, and clients with various stakeholder groups, and improve communication across the whole UI/UX project.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "Normal ",
-                        "target": "對區塊鏈和 GameFi 有興趣，並且想要開發 Dapp 等應用的會眾。",
-                        "target_e": "The person who is interesting in Blockchain and GameFi, and want to build a Dapp.",
-                        "prior_knowledge": "區塊鏈基本知識、solidity 基本語法",
-                        "prior_knowledge_e": "Blockchain basic knowledge, solidity Language",
-                        "expected_gain": "了解 GameFi 的應用和價值，對區塊鏈 Dapp 開發產生濃厚興趣，進而開發出許多區塊鏈遊戲的應用。",
-                        "expected_gain_e": "Understand the application and value of GameFi, have a strong interest in blockchain Dapp development, and then develop many blockchain game applications.",
+                        "level": "Basic ",
+                        "target": "對於設計溝通苦手的人們（包括設計師、PM、工程師等）",
+                        "target_e": "",
+                        "prior_knowledge": "無，會參與研討會的人應該都是沒問題的",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "了解如何有效推進設計溝通，並認識更多 UI/UX 工具",
+                        "expected_gain_e": "",
                         "tags": [
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "Web3"
+                                "name": "Web Development"
                             },
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "Mobile App"
+                                "name": "UI/UX"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Project Management"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 203,
-                                "name": "York Chang",
-                                "name_e": "York Chang",
-                                "job_title": "工程師",
-                                "job_title_e": "Engineer",
-                                "company": "",
-                                "company_e": "",
+                                "name": "彭其捷",
+                                "name_e": "Jack Peng",
+                                "job_title": "UIUX / Data Lead",
+                                "job_title_e": "",
+                                "company": "卡米爾股份有限公司",
+                                "company_e": "Cameo",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_202",
-                                    "mobile": "api/2022/speaker/images/speaker_202"
+                                    "web": "api/2022/speaker/images/speaker_203",
+                                    "mobile": "api/2022/speaker/images/speaker_203"
                                 },
                                 "link_github": "",
-                                "link_twitter": "https://twitter.com/YorkChang01",
-                                "link_other": "https://yorkisinhere.medium.com/",
+                                "link_twitter": "",
+                                "link_other": "https://www.visualization.tw/",
                                 "link_fb": ""
                             }
                         ]
@@ -623,18 +660,55 @@
                     {
                         "session_id": 2022019,
                         "room": "R3",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon",
+                        "topic_e": "Digital Launching - Virtual curation design and WebGL (Babylon.js)",
+                        "summary": "第一部分帶大家了解從 virsody.io 平台設計發想到開發上線的過程，說明虛擬策展的使用者體驗如何設計；第二部分為網站前端 WebGL 開發要如何開始，以及我們在開發 Babylon.js 過程中累積的心得",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "level": "Basic ",
+                        "target": "對設計網頁虛擬空間體驗或者 WebGL 有興趣的人",
+                        "target_e": "",
+                        "prior_knowledge": "無",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "了解虛擬策展的使用者體驗如何設計、網站前端 WebGL 開發如何開始以及 Babylon.js 開發須知",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 196,
+                                "name": "古健樺",
+                                "name_e": "",
+                                "job_title": "創意總監",
+                                "job_title_e": "Creative Director",
+                                "company": "黑洞創造",
+                                "company_e": "BlackHole Creative",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_196",
+                                    "mobile": "api/2022/speaker/images/speaker_196"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "https://bkhole.com",
+                                "link_fb": "https://www.facebook.com/mypstom"
+                            }
+                        ]
                     },
                     {
                         "session_id": 2022020,
@@ -702,7 +776,7 @@
                         "room": "R1",
                         "topic": "醫療產業開發 App 的血淚史",
                         "topic_e": "What I've seen and heard in the medical industry",
-                        "summary": "之前在一間醫療新創待了四年，在裡面開發了用戶端的 App、醫生端的 Web、後台管理系統等等 ...\n\n 我想這年頭寫 App 的人很多，但在醫療產業又是新創的肯定沒幾個，\n\n 應該可以透過這次機會，把在醫療產業開發的一些血淚史與大家分享，\n\n 也會聊聊裡頭印象深刻的趣事。",
+                        "summary": "之前在一間醫療新創待了四年，在裡面開發了用戶端的 App、醫生端的 Web、後台管理系統等等 ...\n\n 我想這年頭寫 App 的人很多，但在醫療產業又是新創的肯定沒幾個，應該可以透過這次機會，把在醫療產業開發的一些血淚史與大家分享，也會聊聊裡頭印象深刻的趣事。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -753,35 +827,72 @@
                     {
                         "session_id": 2022022,
                         "room": "R2",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
+                        "topic": "Gerber 格式於 AIoT",
+                        "topic_e": "Gerber files for AIoT",
+                        "summary": "Gerber 格式是 AIoT 的重要技術之一，也是電子電路設計不可或缺的一部分。同時，AIoT 又站在人工智能，第三代互聯網，以及雲運算的交會點。不管你是在開發下一代的比特幣挖礦機，類神經網路照相機，或者是 5G 崁入式裝置，你將會使用 Gerber 在你的工作中。這場演講將幫助你於這個任務上。",
+                        "summary_e": "Gerber files are central to AIoT and indispensable for electronic circuit design. At the same time, AIoT stands at the intersection of AI, web3, and the Cloud. Whether you are developing the next generation Bitcoin miner, Neural network based camara, or 5G aware embedded device, you will have to be working with Gerber files. This talk aims to help you with this task",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "level": "Normal ",
+                        "target": "對電子電路設計有興趣的朋友",
+                        "target_e": "Friends interested electronic circuit design.",
+                        "prior_knowledge": "基本編程，SVG 圖像格式",
+                        "prior_knowledge_e": "Basic programming, SVG image format",
+                        "expected_gain": "足夠知識於 Gerber 格式進行工作",
+                        "expected_gain_e": "Sufficient knowledge in working with Gerber files",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cross-platform"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "IoT"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 240,
+                                "name": "少愚",
+                                "name_e": "Shaoyu",
+                                "job_title": "工程師",
+                                "job_title_e": "Engineer",
+                                "company": "Nandalu & Co.",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_240",
+                                    "mobile": "api/2022/speaker/images/speaker_240"
+                                },
+                                "link_github": "https://github.com/fumin",
+                                "link_twitter": "https://twitter.com/awawfumin",
+                                "link_other": "http://fumin.github.io/bio/",
+                                "link_fb": "https://www.facebook.com/awawfumin/"
+                            }
+                        ]
                     },
                     {
                         "session_id": 2022023,
                         "room": "R3",
-                        "topic": "提升學習 UX 體驗的極致 - 以培訓軟體工程師為例",
-                        "topic_e": "",
-                        "summary": "本議程將介紹多年優化學習體驗設計的過程中，如何協助 1,000 位軟體工程師掌握「學習如何學習」，同時分享他們如何挖掘自身天賦，透過各種有效的學習方法，讓自己逐步成為軟體工程師。",
+                        "topic": "前端好朋友 - tailwindcss",
+                        "topic_e": "How to Use Tailwind CSS",
+                        "summary": "1. 2022 年 CSS 的決解方案\n\n2. 導入 tailwindcss 的優點\n\n3. 透過 tailwindcss 與設計師優雅的溝通",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "Basic ",
-                        "target": "- 對使用者體驗（UX）、服務設計（Service Design）有興趣的受眾",
+                        "level": "Normal ",
+                        "target": "前端網頁開發人員",
                         "target_e": "",
-                        "prior_knowledge": "新手小白都可聽取",
+                        "prior_knowledge": "本主題需 CSS 基礎，適合覺得改別人的 style 是件很痛苦的工程師們。",
                         "prior_knowledge_e": "",
-                        "expected_gain": "- 瞭解如何透過使用者體驗（UX）、服務設計（Service Design），優化學習歷程體驗\n\n- 瞭解「學習如何學習」\n\n- 瞭解要成為軟體工程師，需要歷經哪些學習階段",
+                        "expected_gain": "了解什麼是 tailwindcss，並解決什麼樣的問題",
                         "expected_gain_e": "",
                         "tags": [
                             {
@@ -789,44 +900,95 @@
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "UI/UX"
+                                "name": "Web Development"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 201,
-                                "name": "廖洧杰",
-                                "name_e": "liao wei chien",
-                                "job_title": "執行長",
-                                "job_title_e": "CEO",
-                                "company": "波利馬資訊科技有限公司",
-                                "company_e": "hexschool",
+                                "name": "奶綠茶",
+                                "name_e": "milkmidi",
+                                "job_title": "Staff frontend engineer",
+                                "job_title_e": "Staff frontend engineer",
+                                "company": "Positive Grid",
+                                "company_e": "",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_200",
-                                    "mobile": "api/2022/speaker/images/speaker_200"
+                                    "web": "api/2022/speaker/images/speaker_201",
+                                    "mobile": "api/2022/speaker/images/speaker_201"
                                 },
-                                "link_github": "",
+                                "link_github": "https://github.com/milkmidi",
                                 "link_twitter": "",
                                 "link_other": "",
-                                "link_fb": "https://www.facebook.com/sfismy/"
+                                "link_fb": "https://www.facebook.com/milkmidifans"
                             }
                         ]
                     },
                     {
                         "session_id": 2022024,
                         "room": "R4",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "高效、省錢，挑戰極限的爬蟲",
+                        "topic_e": "Beyond limit! The effective, and cost down crawler.",
+                        "summary": "這邊簡單地告訴你一個小故事：「就算是日用量極大的美國最大論壇 reddit 也是從爬別人的內容起家」\n\n\n\n 沒錯，作為一個 StartUp，沒有用戶進來，但極需內容來充滿網站的時候，爬蟲是你的好幫手；但同樣作為 StartUp，在缺乏資金與人力的情況下需要在有限的預算下控管運算資源的使用，以及在短時間內蒐集大量內容的高效，讓團隊保持速度維持競爭力。\n\n\n\n 在這個議程裡，你們將會了解到分散式爬蟲的建置、設計、與成本壓縮的訣竅，一方面了解如何拆解目標的服務，與 ETL 的整合考量。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
-                        "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
+                        "recordable": false,
+                        "level": "Normal ",
+                        "target": "希望對爬蟲有興趣、或是對於降低成本遇到貧頸的工程師會有幫助",
+                        "target_e": "",
+                        "prior_knowledge": "前端、後端都可能有些認識，加上一些 cloud service 前置知識",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "更深的了解到 Crawler 的運作、或許可以知道一些 ETL",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Data Analyzing"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 241,
+                                "name": "MTP",
+                                "name_e": "MTP",
+                                "job_title": "Founder",
+                                "job_title_e": "",
+                                "company": "project LUDE",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_241",
+                                    "mobile": "api/2022/speaker/images/speaker_241"
+                                },
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/lewdart_",
+                                "link_other": "",
+                                "link_fb": ""
+                            }
+                        ]
                     }
                 ]
             },
@@ -846,106 +1008,99 @@
                     {
                         "session_id": 2022025,
                         "room": "R1",
-                        "topic": "Maker 精神與 Vodkender",
-                        "topic_e": "The core of Maker and Vodkender",
-                        "summary": "分享這幾年兼具工程師以及 Maker 身份的好處，並透過兩個 Side Project 案例，讓大家理解 Maker 的出發點，鼓勵大家弄髒自己的手，享受創造的過程。",
-                        "summary_e": "",
-                        "is_keynote": false,
-                        "is_online": false,
-                        "recordable": true,
-                        "level": "Basic ",
-                        "target": "不限",
-                        "target_e": "",
-                        "prior_knowledge": "無",
-                        "prior_knowledge_e": "",
-                        "expected_gain": "了解 Maker 精神以及 Side Project Vodkender 的發想過程與原理",
-                        "expected_gain_e": "",
-                        "tags": [
-                            {
-                                "color": {
-                                    "web": "#51A3D3",
-                                    "mobile": "#51A3D3"
-                                },
-                                "name": "Mobile App"
-                            },
-                            {
-                                "color": {
-                                    "web": "#51A3D3",
-                                    "mobile": "#51A3D3"
-                                },
-                                "name": "IoT"
-                            }
-                        ],
-                        "speakers": [
-                            {
-                                "speaker_id": 199,
-                                "name": "呂昱辰",
-                                "name_e": "Mike_Lu",
-                                "job_title": "App 工程師",
-                                "job_title_e": "App mobile developer",
-                                "company": "Bitopro",
-                                "company_e": "",
-                                "img": {
-                                    "web": "api/2022/speaker/images/speaker_198",
-                                    "mobile": "api/2022/speaker/images/speaker_198"
-                                },
-                                "link_github": "",
-                                "link_twitter": "",
-                                "link_other": "",
-                                "link_fb": ""
-                            }
-                        ]
-                    },
-                    {
-                        "session_id": 2022026,
-                        "room": "R2",
-                        "topic": "FHIR, Vaccine QRCode Passport an",
-                        "topic_e": "FHIR, Vaccine QRCode Passport and Python",
-                        "summary": "FHIR 之中文全名為快捷式醫療服務互操作資源，主要目的是可以讓醫事單位有統一的資料標準進行資料的交換，目前此資料標準由台灣醫療影像資訊標準協會進行在台灣發展資料標準的格式推廣與定義。本議程，講者主要分享透過此 FHIR 資料格式為基礎，開發出符合 FHIR 資料格式標準的數位疫苗護照應用，並以此應用參與協會舉辦的 2021 聯測松的過程，以及參賽的心得，期望透過此議程的分享讓聽眾更了解 FHIR 資料標準之外，也可以了解目前醫學資料交換標準目前在台灣的發展過程以及舉辦並參與聯測松的目的。",
+                        "topic": "Visual Testing",
+                        "topic_e": "Visual Testing",
+                        "summary": "前端工程師遇到什麼問題？\n\n 什麼是 Visual Testing？\n\n 怎麼做  Visual Testing？\n\n 專案範例 👏🏻\n\n 工作流程💡\n\n 疑難雜症 🤔",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
                         "level": "Normal ",
-                        "target": "對 FHIR 資料標準有興趣、Python 使用者與醫學資訊有興趣的人",
+                        "target": "無任何限制",
                         "target_e": "",
-                        "prior_knowledge": "了解基本的 Python 語法以及使用的方式",
+                        "prior_knowledge": "無任何限制",
                         "prior_knowledge_e": "",
-                        "expected_gain": "1. 了解 FHIR 資料格式標準，與可以用 Python 來開發出符合 FHIR 資料格式的程式\n\n2. 了解 FHIR 資料標準在台灣的發展\n\n3. 了解聯測松在台灣的目的與參加的方法",
+                        "expected_gain": "沒事多測試，測試多沒事 💪🏻",
                         "expected_gain_e": "",
                         "tags": [
-                            {
-                                "color": {
-                                    "web": "#51A3D3",
-                                    "mobile": "#51A3D3"
-                                },
-                                "name": "Cloud Service"
-                            },
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
                                 "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 199,
+                                "name": "Summer Tang",
+                                "name_e": "Summer Tang",
+                                "job_title": "資深前端工程師",
+                                "job_title_e": "Senior Front-end Developer",
+                                "company": "趨勢科技",
+                                "company_e": "Trend Micro",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_199",
+                                    "mobile": "api/2022/speaker/images/speaker_199"
+                                },
+                                "link_github": "https://github.com/cythilya",
+                                "link_twitter": "https://twitter.com/cythilya",
+                                "link_other": "http://cythilya.github.io",
+                                "link_fb": "https://www.facebook.com/cythilya"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022026,
+                        "room": "R2",
+                        "topic": "為什麼你的產品像縫合怪？",
+                        "topic_e": "Why Product Looks Scrambled？",
+                        "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": false,
+                        "level": "Basic ",
+                        "target": "對 UI、UX 、品牌形象有興趣的人",
+                        "target_e": "",
+                        "prior_knowledge": "無",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "輕鬆學習到如何建立品牌形象、思考的方法，能立刻活用到自家產品的 UI 和 UX 設計上。",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 206,
-                                "name": "李昀陞",
-                                "name_e": "Peter Li",
-                                "job_title": "副工程師",
-                                "job_title_e": "Associate engineer",
-                                "company": "財團法人資訊工業策進會",
-                                "company_e": "Institute for Information Industry",
+                                "name": "Akane Lee",
+                                "name_e": "Akane Lee",
+                                "job_title": "公司負責人",
+                                "job_title_e": "",
+                                "company": "染絳設計有限公司",
+                                "company_e": "",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_205",
-                                    "mobile": "api/2022/speaker/images/speaker_205"
+                                    "web": "api/2022/speaker/images/speaker_206",
+                                    "mobile": "api/2022/speaker/images/speaker_206"
                                 },
-                                "link_github": "https://github.com/peter279k",
-                                "link_twitter": "https://twitter.com/peter279k",
-                                "link_other": "https://peterli.website",
-                                "link_fb": "https://facebook.com/peter279k"
+                                "link_github": "",
+                                "link_twitter": "https://twitter.com/akane_lee",
+                                "link_other": "https://blog.akanelee.me/",
+                                "link_fb": "https://www.facebook.com/uiux.akane"
                             }
                         ]
                     },
@@ -1015,7 +1170,7 @@
                         "topic": "不能相信的相信我之術: 網路連線雙方驗證時，那些意想不到的坑",
                         "topic_e": "Don't bieleve Believe me\" - the pitfalls of authentication",
                         "summary": "在能輕易竊聽、偽造身分、又不能當面驗明正身的網路世界，網路連線除了加密傳輸之外，連線端之前雙方如何驗證身份，也是一項重要的環節。\n\n\n\n 服務需要確認使用者真身，才可以避免身份盜用情事。而確認手段除了帳號密碼之外，也可以用 one-time code，甚至是結合兩者以 2FA 強化使用者是否為真身的可信度。\n\n\n\n 反過來說，使用者也有需求確認服務是否為官方正品，因此也需要一套相信我之術。而由 root CA 起頭，經過層層中間保證人串起來的數位憑證樹狀鏈，成為了使用者信任服務端的普遍機制。\n\n\n\n 然而這些機制並不是完美無缺，一但保證人出事，使用者對其下游被保證者的信任也跟著瓦解。即使有撤銷機制可以緊急廢除憑證，但撤銷通知卻又不會像你所想的一樣發揮效用，該怎麼辦？\n\n\n\n 這個講題，將會採討網路世界中，相信的根基是什麼，以及分享一些經驗給大家。",
-                        "summary_e": "In the online world, it is full of sniffer, fake identities, and we are unable to verify people offline. In addition to encrypted network connections, how to verify the peer to connect is also an important link.\n\n\n\nThe service needs to confirm the identity of the user to avoid account theft. In addition to the password, the confirmation method can also use the one-time code, or even combine the two into 2FA, to strengthen the possibility whether the user is really him/herself.\n\n\n\nOn the other hand, users also need to confirm whether the server is genuine, so they also need a set of trust me\" mechanism. Starting from the root CA, the graph of digital certificate chains has become a common foundation for users to guarantees the server is genuine.\n\n\n\nHowever, these mechanisms are not perfect. Once the guarantor gone, the trust chains will also collapse. Even if there is a revocation mechanism to revoke the certificates, but the revocation mechanism does not work as well as you think, what shoul",
+                        "summary_e": "In the online world, it is full of sniffer, fake identities, and we are unable to verify people offline. In addition to encrypted network connections, how to verify the peer to connect is also an important link.\n\n\n\nThe service needs to confirm the identity of the user to avoid account theft. In addition to the password, the confirmation method can also use the one-time code, or even combine the two into 2FA, to strengthen the possibility whether the user is really him/herself.\n\n\n\nOn the other hand, users also need to confirm whether the server is genuine, so they also need a set of trust me\" mechanism. Starting from the root CA, the graph of digital certificate chains has become a common foundation for users to guarantees the server is genuine.\n\n\n\nHowever, these mechanisms are not perfect. Once the guarantor gone, the trust chains will also collapse. Even if there is a revocation mechanism to revoke the certificates, but the revocation mechanism does not work as well as you think, what should we do?\n\n\n\nIn this topic, we will discuss what is the foundation of \"trust me\" in the online world, and share some experiences to everyone.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
@@ -1089,7 +1244,7 @@
                         "room": "R1",
                         "topic": "神奇的 Debug 工具 － ＬＬＤＢ",
                         "topic_e": "Let's Debug code with LLDB",
-                        "summary": "工欲善其事，必先利其器\u2028\n\n 使用 LLDB Debug 是我們 iOS 工程師開發日常與基本功之一\n\n\u2028雖然是這麼的頻繁使用\u2028的一個工具\n\n 但我們真的理解其中的底層做的事情以及延伸的技巧嗎?\n\n\u2028因此透過這次講題我會一步一步由淺入深的介紹 LLDB\u2028\n\n 讓我們可以更加瞭解這項工具\n\n 提升我們日常開發的效率",
+                        "summary": "工欲善其事，必先利其器\n\n 使用 LLDB Debug 是我們 iOS 工程師開發日常與基本功之一\n\n 雖然是這麼的頻繁使用的一個工具\n\n 但我們真的理解其中的底層做的事情以及延伸的技巧嗎?\n\n 因此透過這次講題我會一步一步由淺入深的介紹 - LLDB\n\n 讓我們可以更加瞭解這項工具\n\n 提升我們日常開發的效率",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -1186,28 +1341,21 @@
                     {
                         "session_id": 2022031,
                         "room": "R3",
-                        "topic": "Visual Testing",
-                        "topic_e": "Visual Testing",
-                        "summary": "前端工程師遇到什麼問題？\n\n 什麼是 Visual Testing？\n\n 怎麼做  Visual Testing？\n\n 專案範例 👏🏻\n\n 工作流程💡\n\n 疑難雜症 🤔",
+                        "topic": "提升學習 UX 體驗的極致 - 以培訓軟體工程師為例",
+                        "topic_e": "",
+                        "summary": "本議程將介紹多年優化學習體驗設計的過程中，如何協助 1,000 位軟體工程師掌握「學習如何學習」，同時分享他們如何挖掘自身天賦，透過各種有效的學習方法，讓自己逐步成為軟體工程師。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "Normal ",
-                        "target": "無任何限制",
+                        "level": "Basic ",
+                        "target": "- 對使用者體驗（UX）、服務設計（Service Design）有興趣的受眾",
                         "target_e": "",
-                        "prior_knowledge": "無任何限制",
+                        "prior_knowledge": "新手小白都可聽取",
                         "prior_knowledge_e": "",
-                        "expected_gain": "沒事多測試，測試多沒事 💪🏻",
+                        "expected_gain": "- 瞭解如何透過使用者體驗（UX）、服務設計（Service Design），優化學習歷程體驗\n\n- 瞭解「學習如何學習」\n\n- 瞭解要成為軟體工程師，需要歷經哪些學習階段",
                         "expected_gain_e": "",
                         "tags": [
-                            {
-                                "color": {
-                                    "web": "#51A3D3",
-                                    "mobile": "#51A3D3"
-                                },
-                                "name": "Web Development"
-                            },
                             {
                                 "color": {
                                     "web": "#51A3D3",
@@ -1219,20 +1367,20 @@
                         "speakers": [
                             {
                                 "speaker_id": 200,
-                                "name": "Summer Tang",
-                                "name_e": "Summer Tang",
-                                "job_title": "資深前端工程師",
-                                "job_title_e": "Senior Front-end Developer",
-                                "company": "趨勢科技",
-                                "company_e": "Trend Micro",
+                                "name": "廖洧杰",
+                                "name_e": "liao wei chien",
+                                "job_title": "執行長",
+                                "job_title_e": "CEO",
+                                "company": "波利馬資訊科技有限公司",
+                                "company_e": "hexschool",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_199",
-                                    "mobile": "api/2022/speaker/images/speaker_199"
+                                    "web": "api/2022/speaker/images/speaker_200",
+                                    "mobile": "api/2022/speaker/images/speaker_200"
                                 },
-                                "link_github": "https://github.com/cythilya",
-                                "link_twitter": "https://twitter.com/cythilya",
-                                "link_other": "http://cythilya.github.io",
-                                "link_fb": "https://www.facebook.com/cythilya"
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/sfismy/"
                             }
                         ]
                     },
@@ -1300,7 +1448,7 @@
                     {
                         "session_id": 2022033,
                         "room": "R1",
-                        "topic": "從 IoT 到 Web2，從 Web2 到 Web3：那些開發路",
+                        "topic": "從 IoT 到 Web2，從 Web2 到 Web3：那些開發路上的奇妙風景",
                         "topic_e": "-",
                         "summary": "技術演化、平台衍生及各式商模野蠻發展是這十幾年的技術底色\n\n「唯一不變的是變化」這句話對工程人員來說是每天的日常\n\n\n\n 因緣際會和 React Native 結了緣而打開了眼界\n\n 以這個技術為基底接觸了十來個不同領域\n\n 從看盤軟體、物聯網、電商系統到區塊鏈冷錢包都有涉獵\n\n\n\n 跨平台技術不只是弭平了平台的差異\n\n 同時也為跨領域及技術落地指出了一些可能的路徑\n\n\n\n 一起來聊聊那些在開發路上看到的奇怪及有趣的經驗及心得",
                         "summary_e": "",
@@ -1492,13 +1640,13 @@
                     {
                         "session_id": 2022042,
                         "room": "R2",
-                        "topic": "UX 背景讓 BA 不一樣 - 敏捷環境為例, 讓 UX 離商業更靠近",
+                        "topic": "如何讓 UX 離商業更靠近 - 敏捷環境為例",
                         "topic_e": "UX and Business Analysis - How to combine these skills efficiently",
-                        "summary": "1. 身為一個 UX 背景的 BA 工作日常\n\n2. 從 UX 視角評估 BA 技能\n\n3. 敏捷環境下 End to End\" 各角色分工(UI.UX.BA.PD)及產品成效評估流程 \n\n4. 帶領 UI 一起發揮商業價值",
-                        "summary_e": "1. As a UX background how is a typical BA day\n\n2. How we evaluate the BA role based on the UX perspective \n\n3. End to End\" product development with different role (UI.UX.BA.PO.PD) in Agile environment \n\n4. How to co-create business value with UI designer",
+                        "summary": "1. 什麼商業分析師? 具備的技能與日常\n\n2. 敏捷環境下 'End to End' 各角色分工(UI.UX.BA.PD.SM)及產品成效評估流程",
+                        "summary_e": "1. What's the Business Analyst? The skill set and a typical day. \n\n2. 'End to End' product development - Collaborated with the different role (UI.UX.BA.PO.PD.SM) in a Agile environment.",
                         "is_keynote": false,
                         "is_online": false,
-                        "recordable": true,
+                        "recordable": false,
                         "level": "Normal ",
                         "target": "UI/UX 設計師, 使用者研究員, PM, PO, 對商業分析師有興趣的人",
                         "target_e": "UI/UX Designer, UR, PM, PO, Anyone who interested in BA role",
@@ -1552,6 +1700,151 @@
                     {
                         "session_id": 2022043,
                         "room": "R3",
+                        "topic": "拉近現代開發者與 Web 3 的距離",
+                        "topic_e": "Bringing the modern developer closer to the Web 3",
+                        "summary": "2021 年刷起了一波元宇宙旋風後，這 2 年絕對是 Web3 最火熱的時刻\n\n\n\n 如果 Web3 真能改變些什麼，我應該如何調整我的技能樹為未來作準備呢？\n\n\n\n 對於現代的開發者來說，無論你是前端、後端、QA、維運工程師又或是設計師\n\n\n\n 你手上的技能和 Web3 還差多遠？\n\n\n\n 在這場演講中，希望透過在區塊鏈開發產品 5 年的經驗\n\n\n\n 說明在 Web2.0 + Web3.0 整合開發過程需要的技能變化\n\n\n\n 拉近彼此與 Web 3.0 的距離！",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": true,
+                        "level": "Basic ",
+                        "target": "- 對區塊鏈產業有興趣的開發者\n\n- 已經有 Web 2 開發經驗，想嘗試往 Web3 移動的開發者",
+                        "target_e": "",
+                        "prior_knowledge": "- 知道去中心化、中心化基本概念\n\n- 聽過虛擬貨幣",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "- Web 2.0 與 Web 3.0 差異\n\n- 交易所的挑戰\n\n- 私鏈應用場景的價值\n\n- 區塊鏈工作機會",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 209,
+                                "name": "在地上滾的工程師 Nic",
+                                "name_e": "Nic",
+                                "job_title": "技術總監",
+                                "job_title_e": "VP of engineering",
+                                "company": "幣託科技",
+                                "company_e": "BitoEX",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_209",
+                                    "mobile": "api/2022/speaker/images/speaker_209"
+                                },
+                                "link_github": "https://github.com/niclin",
+                                "link_twitter": "",
+                                "link_other": "https://blog.niclin.tw/",
+                                "link_fb": "https://www.facebook.com/niclin.dev/"
+                            }
+                        ]
+                    },
+                    {
+                        "session_id": 2022044,
+                        "room": "R4",
+                        "topic": "用 DDD 事件風暴來展開你對 Kubernetes 的認知！",
+                        "topic_e": "Use DDD Event Storming to open your understanding on Kubernetes",
+                        "summary": "2022 年，大雲端時代新技術層出不窮，無論你是 Dev 還是 Ops ，都必須擁抱 DevOps 文化的興起而爆學一波雲端技術知識，要學的技術一堆啊 Kubernetes、Traefik、Grafana、Service Mesh mesh, eBPF, CNI, traefik, istio, envoy, cilium⋯⋯\n\n\n\n 而今天要推出的分享，並不是要和大家介紹任何一門新技術；我們要做的事是把知名雲端技術「Kubernetes」視為「大體老師」，邊在大家面前解剖 Kubernetes，邊實驗：「到底要如何高效率地學習這些新技術？」。\n\n\n\n🤔 在研究新技術時，你是否只是不斷翻閱官方教學，並期望能夠從這一系列碎片化的文字中拼湊出一些認知？\n\n\n\n🤔 你知道該如何「視覺化」你對新技術的「認知」嗎？你能夠在閱讀完教學文件之後，立刻把該技術的運作流程完整且富有結構性地敘述給他人嗎？\n\n\n\n「學習，要像一台 GPU，只是一個全體渲染的過程，把全貌給畫清了。」\n\n\n\n 這一次演講中，我們要來做一個實驗💡💡——我們是否能夠善用在領域驅動設計和物件導向領域中學到的「建模」方法，藉由上帝視角來加速我們的學習效率！？？\n\n\n\n 為了能夠帶大家和我們走一趟這一場實驗，水球（主修軟體設計模式和物件導向）和 Yiyu （主修雲端技術、Kubernetes）要來在大家面前透過事件風暴和物件導向的建模技巧，來實際藉由大量的對話建構出共同對於 Kubernetes 的認知；快速用上帝視角來把 Kubernetes 的各種行為流程和元素給摸個清楚。\n\n\n\n 因此我們不只會一起複習 Kubernetes 的元素，還會熟悉領域驅動設計和物件導向的核心思想和技法！會有什麼樣子的火花呢，水球和 Yiyu 邀請大家和我們一起走一趟！",
+                        "summary_e": "",
+                        "is_keynote": false,
+                        "is_online": false,
+                        "recordable": true,
+                        "level": "Normal ",
+                        "target": "1. 【想科普的人】：對雲端技術 Kubernetes 扮演之角色（Orchestrator）有興趣的人\n\n2. 【所有軟體工程師（尤其是維運、SRE 相關工作）】：因應雲端大時代新技術層出不窮，所有軟體工程師都該學會如何用更短的時間內學習各式各樣的雲端技術。\n\n3. 【進階軟體設計者】對領域驅動設計和物件導向分析等 Modeling 思維有興趣，並十分好奇該如何將這些方法做跨領域應用的人",
+                        "target_e": "",
+                        "prior_knowledge": "1. 物件導向基礎\n\n2. 雲端技術、維運基礎",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "1. 了解如何運用軟體工程內各方法論的 Modeling 思維來建立 Model-Driven Learning 的學習習慣，來讓自己「越學越快」，以因應雲端時代下層出不窮的技術。\n\n2. 了解領域驅動設計 (Domain-Driven Design）以及其中事件風暴 (Event Storming) 的核心思想，不再侷限於自身的技術崗位，而是能實際感受到特定「思維模式」的養成對於職涯的極大幫助。\n\n3. 認識最經典的物件導向分析 (OOA) 方法 和了解 UML 類別圖在學習上的極大幫助。\n\n4. 了解該如何切入才能在最短時間內了解 Kubernetes 的各行為流程。",
+                        "expected_gain_e": "",
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "DevOps"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Domain-Driven Design"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 238,
+                                "name": "水球潘",
+                                "name_e": "Waterball",
+                                "job_title": "院長",
+                                "job_title_e": "",
+                                "company": "水球軟體學院",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_238",
+                                    "mobile": "api/2022/speaker/images/speaker_238"
+                                },
+                                "link_github": "https://github.com/johnny850807",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": "https://www.facebook.com/johnny807"
+                            },
+                            {
+                                "speaker_id": 239,
+                                "name": "張逸于",
+                                "name_e": "Kyle Chang (yiyu0x)",
+                                "job_title": "Cloud Support Engineer",
+                                "job_title_e": "",
+                                "company": "Amazon",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_239",
+                                    "mobile": "api/2022/speaker/images/speaker_239"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "started_at": 1634352900,
+                "isBroadCast": true,
+                "ended_at": 1634353500,
+                "event": "休息 Break",
+                "room": []
+            },
+            {
+                "started_at": 1634353500,
+                "isBroadCast": true,
+                "ended_at": 1634356200,
+                "event": "",
+                "room": [
+                    {
+                        "session_id": 2022045,
+                        "room": "R1",
                         "topic": "使用 SwiftUI 寫出有趣的 Apps",
                         "topic_e": "Using SwiftUI implements your idea to apps",
                         "summary": "Apple 官方有寫了大量的文件和範例，在 WWDC22 上，還補充了很多實際的 App 範例，讓開發者可以更快的上手 SwiftUI。這個 talk 則是嘗試融合這些案例，製作出有趣的 app。最後，也會和大家分享，如果真的要用 SwiftUI 在公司產品上，和個人專案上，需要注意的地方。",
@@ -1577,7 +1870,7 @@
                         ],
                         "speakers": [
                             {
-                                "speaker_id": 209,
+                                "speaker_id": 208,
                                 "name": "Marvin Lin",
                                 "name_e": "Marvin Lin",
                                 "job_title": "iOS 開發",
@@ -1592,83 +1885,6 @@
                                 "link_twitter": "https://twitter.com/atimisMoon",
                                 "link_other": "",
                                 "link_fb": "https://www.facebook.com/moonandeye"
-                            }
-                        ]
-                    },
-                    {
-                        "session_id": 2022044,
-                        "room": "R4",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
-                        "is_keynote": false,
-                        "is_online": false,
-                        "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "started_at": 1634352900,
-                "isBroadCast": true,
-                "ended_at": 1634353500,
-                "event": "休息 Break",
-                "room": []
-            },
-            {
-                "started_at": 1634353500,
-                "isBroadCast": true,
-                "ended_at": 1634356200,
-                "event": "",
-                "room": [
-                    {
-                        "session_id": 2022045,
-                        "room": "R1",
-                        "topic": "PM 說我全都要！工程師自救的 7 種拆分需求技巧",
-                        "topic_e": "7 Requirement Management Skills for Engineers",
-                        "summary": "需求溝通是個難題，需要團隊所有人的參與。當需求如隕石般落下，工程師身為專案中的最後一棒，往往是時程被壓縮到最緊迫的那一個。這場議程會分享 7 種需求拆分的技巧，讓工程師也能在專案前期的需求討論階段，就對需求進行拆分。讓我們在工作上能持續交付價值給客戶之虞，還有保有健康的工作型態。",
-                        "summary_e": "",
-                        "is_keynote": false,
-                        "is_online": false,
-                        "recordable": true,
-                        "level": "Normal ",
-                        "target": "工程師或是對敏捷開發有興趣的人",
-                        "target_e": "",
-                        "prior_knowledge": "具有軟體開發經驗",
-                        "prior_knowledge_e": "",
-                        "expected_gain": "了解需求拆分的技巧，在價值與工作量之間取得平衡。",
-                        "expected_gain_e": "",
-                        "tags": [
-                            {
-                                "color": {
-                                    "web": "#51A3D3",
-                                    "mobile": "#51A3D3"
-                                },
-                                "name": "Agile"
-                            }
-                        ],
-                        "speakers": [
-                            {
-                                "speaker_id": 208,
-                                "name": "Jayden Lin",
-                                "name_e": "Jayden Lin",
-                                "job_title": "Lead Engineer",
-                                "job_title_e": "Lead Engineer",
-                                "company": "Yahoo",
-                                "company_e": "Yahoo",
-                                "img": {
-                                    "web": "api/2022/speaker/images/speaker_207",
-                                    "mobile": "api/2022/speaker/images/speaker_207"
-                                },
-                                "link_github": "",
-                                "link_twitter": "",
-                                "link_other": "https://banana4coder.cc/blog",
-                                "link_fb": "https://www.facebook.com/banana4coder"
                             }
                         ]
                     },
@@ -1807,7 +2023,7 @@
                         "room": "R1",
                         "topic": "數位轉型之跨平台內容保護技術實踐",
                         "topic_e": "Cross-platform DRM Implementations",
-                        "summary": "行動裝置的數位內容分享如何同時兼顧安全性與誇平台是門藝術. DRM 是保護數位內容眾多方法中一環, 眾多的 DRM spec 各有適用的裝置環境平台,不同的 platform 平台有個別的預設 DRM 實作, 本次分享主題設定為介紹 DRM 跨平台方法與數位保護方法.",
+                        "summary": "行動裝置的數位內容分享如何同時兼顧安全性與誇平台是門藝術，DRM 是保護數位內容眾多方法中一環，眾多的 DRM spec 各有適用的裝置環境平台，不同的 platform 平台有個別的預設 DRM 實作，本次分享主題設定為介紹 DRM 跨平台方法與數位保護方法。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -1815,9 +2031,9 @@
                         "level": "Normal ",
                         "target": "對於影音串流保護或跨平台數位內容保護有興趣者",
                         "target_e": "",
-                        "prior_knowledge": "粗略影音串流概念, 密碼學運用",
+                        "prior_knowledge": "粗略影音串流概念、密碼學運用",
                         "prior_knowledge_e": "",
-                        "expected_gain": "瞭解 DRM 科普知識, 與其在影音串流運用上之角色, 進一步探討 DRM 其他運用.",
+                        "expected_gain": "瞭解 DRM 科普知識，與其在影音串流運用上之角色，進一步探討 DRM 其他運用。",
                         "expected_gain_e": "",
                         "tags": [
                             {
@@ -1973,8 +2189,8 @@
                         "room": "R4",
                         "topic": "AI 背誦學習助手的開發與評估",
                         "topic_e": "Developing and Evaluating a tool using AI help you to memorize",
-                        "summary": "這是一場關於 AI 與教育及使用者體驗評估的系統開發與使用者體驗研究分享。在其中你會了解 AI 如何幫助人背誦、人機互動評估的研究方法、及我們執行此專案的心路歷程。\n\n\n\n 背誦，是學習時非常重要的一環。透過反覆朗讀並記憶，可以將重要的資訊完整的儲存在長期記憶中，讓學習者受用一輩子。因為經過背誦的資訊，在大腦中彼此的神經元會緊密的聯繫在一起，只要有其中一個部分被促發，整個段落都能立刻回憶起來。但既有的背誦方法較為繁雜。往往需要另一個人輔助，像是在背不下去時給予提示，又或是更正錯誤的字句。這導致背誦非常費時、費心、費力，且不被現在的高等教育採納。\n\n\n\n 為此，我們透過 Web API 打造一使用 AI 輔助背誦文章的系統，並且使用嚴謹的研究方法評估之。使用者可在瀏覽器打開此系統的網頁，貼上想要記憶的內容並開始背誦，此系統不僅能透過語音提示使用者目前背誦的進度，更辨識使用者背誦的內容並予以糾正。讓使用者可透過此系統即時且精確的回饋，持續改善自己還不記得的部分，讓使用者只要靠自己就能高效率的將整篇文章背起來。希望藉此未來能幫助世界各地的人，有更輕鬆愉快的背誦體驗",
-                        "summary_e": "This is a system development and user experience research sharing on AI and education and user experience evaluation. In it, you'll learn how AI helps people memorize, research methods for human-computer interaction assessment, and our mental journey to implement this project.\n\n\n\nRecitation is a very important part of learning. Through repeated reading and memorization, important information can be completely stored in long-term memory, so that learners can use it for a lifetime. Because of the recited information, the neurons in the brain are closely linked to each other, and as long as one part is triggered, the entire passage can be recalled at once. But the existing memorization method is more complicated. Often another person is needed to assist, such as to give hints when it is difficult to memorize, or to correct wrong words. This results in memorization that is very time-consuming, laborious, and laborious, and is not adopted by current higher education.\n\n\n\nTo this end, we built a",
+                        "summary": "這是一場關於 AI 與教育及使用者體驗評估的系統開發與使用者體驗研究分享。在其中你會了解 AI 如何幫助人背誦、人機互動評估的研究方法、及我們執行此專案的心路歷程。\n\n\n\n 背誦，是學習時非常重要的一環。透過反覆朗讀並記憶，可以將重要的資訊完整的儲存在長期記憶中，讓學習者受用一輩子。因為經過背誦的資訊，在大腦中彼此的神經元會緊密的聯繫在一起，只要有其中一個部分被促發，整個段落都能立刻回憶起來。但既有的背誦方法較為繁雜。往往需要另一個人輔助，像是在背不下去時給予提示，又或是更正錯誤的字句。這導致背誦非常費時、費心、費力，且不被現在的高等教育採納。\n\n\n\n 為此，我們透過 Web API 打造一使用 AI 輔助背誦文章的系統，並且使用嚴謹的研究方法評估之。使用者可在瀏覽器打開此系統的網頁，貼上想要記憶的內容並開始背誦，此系統不僅能透過語音提示使用者目前背誦的進度，更辨識使用者背誦的內容並予以糾正。讓使用者可透過此系統即時且精確的回饋，持續改善自己還不記得的部分，讓使用者只要靠自己就能高效率的將整篇文章背起來。希望藉此未來能幫助世界各地的人，有更輕鬆愉快的背誦體驗。此系統有高度的可用性與潛力，不僅只要有瀏覽器任何裝置都能使用，還有強大的 AI 支援支援超過 40 種語言的背誦。在未來我們計畫用實驗評估此平台，並讓此系統能結合社群與遊戲化元素，讓背誦不再麻煩，而是一種新的教育潮流。",
+                        "summary_e": "This is a system development and user experience research sharing on AI and education and user experience evaluation. In it, you'll learn how AI helps people memorize, research methods for human-computer interaction assessment, and our mental journey to implement this project.\n\n\n\nRecitation is a very important part of learning. Through repeated reading and memorization, important information can be completely stored in long-term memory, so that learners can use it for a lifetime. Because of the recited information, the neurons in the brain are closely linked to each other, and as long as one part is triggered, the entire passage can be recalled at once. But the existing memorization method is more complicated. Often another person is needed to assist, such as to give hints when it is difficult to memorize, or to correct wrong words. This results in memorization that is very time-consuming, laborious, and laborious, and is not adopted by current higher education.\n\n\n\nTo this end, we built a system that uses AI to assist in reciting articles through a Web API, and evaluated it using rigorous research methods.",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
@@ -2060,19 +2276,19 @@
                     {
                         "session_id": 2022053,
                         "room": "R1",
-                        "topic": "如何巧用 UI/UX 工具，提升設計溝通品質",
-                        "topic_e": "How might we : use UI/UX tools to improve the quality of design communication？",
-                        "summary": "不論是 Web 或是 APP 專案，設計規格的溝通一直是 UI/UX 任務的一大挑戰，對於許多設計師來說，最難的常常不是如何設計出漂亮介面，而是釐清專案團隊對於規格的共識；正所謂「工欲善其事，必先利其器」，本此演講的主軸，希望與各位分享如何巧用各類 UI/UX 工具，搭建 PM、設計師、工程師、客戶等不同利害關係人之間的思維橋樑，提升整體 UI/UX 專案溝通品質。",
-                        "summary_e": "The communication of design specifications for UI/UX activities has always been difficult, whether in website or APP projects. Clarifying the project team's agreement on the specifications is often more challenging for designers than creating a beautiful interface; This speech's main objective is to share techniques about using UI/UX tools to bridge PM, designers, engineers, and clients with various stakeholder groups, and improve communication across the whole UI/UX project.",
+                        "topic": "利用動態特效網站 SOP 概念，讓你作品煞有其事",
+                        "topic_e": "How to Make Your Website Magnificent with Website Effects SOP.",
+                        "summary": "集結「設計、開發、創作、藝術」為一身的動態特效網站的誘人之處到底在哪裡？\n\n\n\n 台灣的網站產業近年變化，公部門在網站上也有所突破，有別於傳統制式的官網，動態特效網站在台灣近年開始發展起來，目前還算是新興領域。對於這領域的概念理解、運行流程、動態思維、未來趨勢、開發方向，透過版塊近年的專案分享、網站觀察，帶大家一探究竟。",
+                        "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
-                        "recordable": true,
+                        "recordable": false,
                         "level": "Basic ",
-                        "target": "對於設計溝通苦手的人們（包括設計師、PM、工程師等）",
+                        "target": "前端工程師、網站設計師",
                         "target_e": "",
-                        "prior_knowledge": "無，會參與研討會的人應該都是沒問題的",
+                        "prior_knowledge": "了解網站",
                         "prior_knowledge_e": "",
-                        "expected_gain": "了解如何有效推進設計溝通，並認識更多 UI/UX 工具",
+                        "expected_gain": "1. 網站趨勢\n\n2. 動態特效網站入門\n\n3. 設計公司之工程師具備能力",
                         "expected_gain_e": "",
                         "tags": [
                             {
@@ -2088,51 +2304,44 @@
                                     "mobile": "#51A3D3"
                                 },
                                 "name": "UI/UX"
-                            },
-                            {
-                                "color": {
-                                    "web": "#51A3D3",
-                                    "mobile": "#51A3D3"
-                                },
-                                "name": "Project Management"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 204,
-                                "name": "彭其捷",
-                                "name_e": "Jack Peng",
-                                "job_title": "UIUX / Data Lead",
-                                "job_title_e": "",
-                                "company": "卡米爾股份有限公司",
-                                "company_e": "Cameo",
+                                "name": "李明",
+                                "name_e": "Leeming",
+                                "job_title": "創辦人暨設計總監",
+                                "job_title_e": "Founder & Director",
+                                "company": "版塊創意有限公司",
+                                "company_e": "Block Studio",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_203",
-                                    "mobile": "api/2022/speaker/images/speaker_203"
+                                    "web": "api/2022/speaker/images/speaker_204",
+                                    "mobile": "api/2022/speaker/images/speaker_204"
                                 },
                                 "link_github": "",
                                 "link_twitter": "",
-                                "link_other": "https://www.visualization.tw/",
-                                "link_fb": ""
+                                "link_other": "https://blockstudio.tw/blog/",
+                                "link_fb": "https://www.facebook.com/blockstudiotw"
                             }
                         ]
                     },
                     {
                         "session_id": 2022054,
                         "room": "R2",
-                        "topic": "為什麼你的產品像縫合怪？",
-                        "topic_e": "Why Product Looks Scrambled？",
-                        "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
+                        "topic": "PM 說我全都要！工程師自救的 7 種拆分需求技巧",
+                        "topic_e": "7 Requirement Management Skills for Engineers",
+                        "summary": "需求溝通是個難題，需要團隊所有人的參與。當需求如隕石般落下，工程師身為專案中的最後一棒，往往是時程被壓縮到最緊迫的那一個。這場議程會分享 7 種需求拆分的技巧，讓工程師也能在專案前期的需求討論階段，就對需求進行拆分。讓我們在工作上能持續交付價值給客戶之虞，還有保有健康的工作型態。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "Basic ",
-                        "target": "對 UI、UX 、品牌形象有興趣的人",
+                        "level": "Normal ",
+                        "target": "工程師或是對敏捷開發有興趣的人",
                         "target_e": "",
-                        "prior_knowledge": "無",
+                        "prior_knowledge": "具有軟體開發經驗",
                         "prior_knowledge_e": "",
-                        "expected_gain": "輕鬆學習到如何建立品牌形象、思考的方法，能立刻活用到自家產品的 UI 和 UX 設計上。",
+                        "expected_gain": "了解需求拆分的技巧，在價值與工作量之間取得平衡。",
                         "expected_gain_e": "",
                         "tags": [
                             {
@@ -2140,26 +2349,26 @@
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "UI/UX"
+                                "name": "Agile"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 207,
-                                "name": "Akane Lee",
-                                "name_e": "Akane Lee",
-                                "job_title": "公司負責人",
-                                "job_title_e": "",
-                                "company": "染絳設計有限公司",
-                                "company_e": "",
+                                "name": "Jayden Lin",
+                                "name_e": "Jayden Lin",
+                                "job_title": "Lead Engineer",
+                                "job_title_e": "Lead Engineer",
+                                "company": "Yahoo",
+                                "company_e": "Yahoo",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_206",
-                                    "mobile": "api/2022/speaker/images/speaker_206"
+                                    "web": "api/2022/speaker/images/speaker_207",
+                                    "mobile": "api/2022/speaker/images/speaker_207"
                                 },
                                 "link_github": "",
-                                "link_twitter": "https://twitter.com/akane_lee",
-                                "link_other": "https://blog.akanelee.me/",
-                                "link_fb": "https://www.facebook.com/uiux.akane"
+                                "link_twitter": "",
+                                "link_other": "https://banana4coder.cc/blog",
+                                "link_fb": "https://www.facebook.com/banana4coder"
                             }
                         ]
                     },
@@ -2301,53 +2510,53 @@
                     {
                         "session_id": 2022057,
                         "room": "R1",
-                        "topic": "一個專門用於對話應用的自然語言理解模型 LaMDA",
-                        "topic_e": "Language Model for Dialogue Applications(LaMDA)",
-                        "summary": "LaMDA 是 Google 最新發表的語言模型，LaMDA 是基於 Transformer 的自然語言理解(NLU)模型，專門應用於對話使用。本次分享會針對基本對話理解的自然語言理解(NLU)概念做簡單趨勢的介紹，接著針對 LaMDA 的運作方式、模型微調、衡量指標等內容做分享。",
-                        "summary_e": "LaMDA builds on earlier Google research, published in 2020, that showed Transformer-based language models trained on dialogue could learn to talk about virtually anything. Since then, we’ve also found that, once trained, LaMDA can be fine-tuned to significantly improve the sensibleness and specificity of its responses.",
+                        "topic": "Maker 精神與 Vodkender",
+                        "topic_e": "The core of Maker and Vodkender",
+                        "summary": "分享這幾年兼具工程師以及 Maker 身份的好處，並透過兩個 Side Project 案例，讓大家理解 Maker 的出發點，鼓勵大家弄髒自己的手，享受創造的過程。",
+                        "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
                         "level": "Basic ",
-                        "target": "學生、研究生、工程師、對話設計師",
-                        "target_e": "Students, Graduate Students, Engineers, Conversation Designers",
-                        "prior_knowledge": "深度學習",
-                        "prior_knowledge_e": "Deeplearning",
-                        "expected_gain": "了解最新的對話語言模型",
-                        "expected_gain_e": "Learn about the SOTA conversational language models.",
+                        "target": "不限",
+                        "target_e": "",
+                        "prior_knowledge": "無",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "了解 Maker 精神以及 Side Project Vodkender 的發想過程與原理",
+                        "expected_gain_e": "",
                         "tags": [
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "AI"
+                                "name": "Mobile App"
                             },
                             {
                                 "color": {
                                     "web": "#51A3D3",
                                     "mobile": "#51A3D3"
                                 },
-                                "name": "Data Analyzing"
+                                "name": "IoT"
                             }
                         ],
                         "speakers": [
                             {
                                 "speaker_id": 198,
-                                "name": "Jerry 老師",
-                                "name_e": "JerryWu",
-                                "job_title": "執行長",
-                                "job_title_e": "CEO",
-                                "company": "亞太智能機器股份有限公司",
-                                "company_e": "Asia Pacific Machine Intelligence Company",
+                                "name": "呂昱辰",
+                                "name_e": "Mike_Lu",
+                                "job_title": "App 工程師",
+                                "job_title_e": "App mobile developer",
+                                "company": "Bitopro",
+                                "company_e": "",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_197",
-                                    "mobile": "api/2022/speaker/images/speaker_197"
+                                    "web": "api/2022/speaker/images/speaker_198",
+                                    "mobile": "api/2022/speaker/images/speaker_198"
                                 },
-                                "link_github": "https://github.com/jerrywu2013",
+                                "link_github": "",
                                 "link_twitter": "",
-                                "link_other": "https://dataology.blogspot.com/",
-                                "link_fb": "https://www.facebook.com/jerrywu2016/"
+                                "link_other": "",
+                                "link_fb": ""
                             }
                         ]
                     },
@@ -2413,7 +2622,7 @@
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
-                        "recordable": true,
+                        "recordable": false,
                         "level": "Basic ",
                         "target": "- 有興趣了解什麼是區塊鏈合約以及該如何互動",
                         "target_e": "",
@@ -2462,8 +2671,8 @@
                         "room": "R4",
                         "topic": "無密碼時代來臨 ? 初探 FIDO 驗證標準",
                         "topic_e": "Going Passwordless? Introducing the FIDO Authentication Standard",
-                        "summary": "密碼一直是讓人又愛又恨的東西，隨著網路的世界越來越複雜，對於密碼複雜度與安全性的要求也越來越高，不時資安大廠都會發表關於密碼外洩的新聞，使用者為了方便使用相同帳密遭到破解造成的經濟損失不計其數，有沒有一個更好更安全的方式可以解決困擾已久問題呢 ? \n 無密碼認證（Passwordless Authentication）技術在這幾年越來越多人開始討論，在今年全球密碼日當天，Google、微軟、蘋果共同發出聲明將支持 ( FIDO Fast Identity Online）身分認證方式，為何科技大廠會選擇 FIDO 網路身分驗證呢 ? 其背後的原理到底是如何做到無密碼登入的呢 ? 手機裝置要如何支援呢 ? 在這 Session 預計與大家分享\n 1. 甚麼是 FIDO \n 2. 原理與特性\n 3. FIDO 的下一步",
-                        "summary_e": "Passwords have always been something that people love and hate, as the world of the Internet becomes more and more complex, the complexity of passwords and security requirements are also becoming higher and higher, from time to time the major information security companies will publish news about password leaks, users for the convenience of using the same account password has been cracked resulting in countless economic losses, is there a better and more secure way to solve the long-standing problem? \n In this year's Global Password Day, Google, Microsoft and Apple jointly issued a statement that they will support (FIDO Fast Identity Online) identity authentication. authentication? The principle behind it is how to achieve password-free login? How do mobile devices support it? In this session, we expect to share with you\n 1. what is FIDO \n 2. Principles and features\n 3. The feature of FIDO",
+                        "summary": "密碼一直是讓人又愛又恨的東西，隨著網路的世界越來越複雜，對於密碼複雜度與安全性的要求也越來越高，不時資安大廠都會發表關於密碼外洩的新聞，使用者為了方便使用相同帳密遭到破解造成的經濟損失不計其數，有沒有一個更好更安全的方式可以解決困擾已久問題呢 ? \n\n 無密碼認證（Passwordless Authentication）技術在這幾年越來越多人開始討論，在今年全球密碼日當天，Google、微軟、蘋果共同發出聲明將支持 ( FIDO Fast Identity Online）身分認證方式，為何科技大廠會選擇 FIDO 網路身分驗證呢 ? 其背後的原理到底是如何做到無密碼登入的呢 ? 手機裝置要如何支援呢 ? 在這 Session 預計與大家分享\n\n 1. 甚麼是 FIDO \n\n 2. 原理與特性\n\n 3. FIDO 的下一步",
+                        "summary_e": "Passwords have always been something that people love and hate, as the world of the Internet becomes more and more complex, the complexity of passwords and security requirements are also becoming higher and higher, from time to time the major information security companies will publish news about password leaks, users for the convenience of using the same account password has been cracked resulting in countless economic losses, is there a better and more secure way to solve the long-standing problem? \n\n In this year's Global Password Day, Google, Microsoft and Apple jointly issued a statement that they will support (FIDO Fast Identity Online) identity authentication. authentication? The principle behind it is how to achieve password-free login? How do mobile devices support it? In this session, we expect to share with you\n\n 1. what is FIDO \n\n 2. Principles and features\n\n 3. The feature of FIDO",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
@@ -2472,8 +2681,8 @@
                         "target_e": "PO/BA/SA, RD/Project Managers, Developers",
                         "prior_knowledge": "對驗證與授權有基本了解",
                         "prior_knowledge_e": "Basic understanding of authentication and authorization",
-                        "expected_gain": "・FIDO 基本知識與原理\n ・為何受到關注及各大瀏覽器開始支援\n ・如何在網路上做到驗證 / 登入機制",
-                        "expected_gain_e": "・What is FIDO?\n ・Why is it attracting attention and supported by major browsers?\n ・How to authenticate / login on the Internet",
+                        "expected_gain": "・FIDO 基本知識與原理\n\n ・為何受到關注及各大瀏覽器開始支援\n\n ・如何在網路上做到驗證 / 登入機制",
+                        "expected_gain_e": "・What is FIDO?\n\n ・Why is it attracting attention and supported by major browsers?\n\n ・How to authenticate / login on the Internet",
                         "tags": [],
                         "speakers": [
                             {
