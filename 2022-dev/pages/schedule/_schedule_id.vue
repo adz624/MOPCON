@@ -324,6 +324,14 @@ export default {
     window.removeEventListener('resize', this.resize)
   },
   methods: {
+    copylink () {
+      navigator.clipboard.writeText(this.shareUrl).then(() => {
+        this.copySuccess = true
+        setTimeout(() => {
+          this.copySuccess = false
+        }, 1000)
+      }).catch(() => {})
+    },
     resize () {
       this.innerWidth = window.innerWidth
     },
