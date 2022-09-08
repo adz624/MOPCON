@@ -127,6 +127,7 @@
   }
   .community-share-btn{
     @include flex(center,row,center);
+    cursor:pointer;
     position: relative;
     span{
       @include font(20px,$colorWhite,500);
