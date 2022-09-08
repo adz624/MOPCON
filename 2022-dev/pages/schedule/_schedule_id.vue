@@ -116,11 +116,11 @@
               <p class="modal-agenda-intro" v-html="parseContent(session.expected_gain)" />
             </div>
             <div v-if="session.sponsor_info && session.sponsor_info.hasOwnProperty('logo_path')">
-              <h4 class="mb-1">
+              <h4 class="modal-agenda-title mb-1">
                 贊助商
               </h4>
               <a :href="'/2022/sponsor/' + session.sponsor_id">
-                <img :src="session.sponsor_info.logo_path" alt="" class="sponsor-logo">
+                <img :src="session.sponsor_info.logo_path.web" alt="" class="sponsor-img">
               </a>
             </div>
           </div>
