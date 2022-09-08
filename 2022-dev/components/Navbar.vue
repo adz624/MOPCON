@@ -17,7 +17,7 @@
           <!--選單-->
           <ul v-if="!isMobile || (isMobile && navOpen)" class="menu-list">
             <li
-              v-for="nav in navList"
+              v-for="nav in navOpenList"
               :key="nav.url"
             >
               <a
@@ -87,14 +87,14 @@ export default {
       navOpen: false,
       nowSubOpen: '',
       navList: [
-        // {
-        //   name: 'community',
-        //   url: './community',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_community,
-        //   target: ''
-        // },
+        {
+          name: 'community',
+          url: './community',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_community,
+          target: ''
+        },
         {
           name: 'schedule',
           url: '',
@@ -116,14 +116,14 @@ export default {
           open: process.env.route_schedule || process.env.route_schedule_unconf,
           target: ''
         },
-        // {
-        //   name: 'speaker',
-        //   url: './speaker',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: process.env.route_speaker,
-        //   target: ''
-        // },
+        {
+          name: 'speaker',
+          url: './speaker',
+          subNav: [],
+          subIsOpen: false,
+          open: process.env.route_speaker,
+          target: ''
+        },
         {
           name: 'sponsor',
           url: './sponsor',
@@ -174,6 +174,11 @@ export default {
         //   target: '_blank'
         // }
       ]
+    }
+  },
+  computed: {
+    navOpenList () {
+      return this.navList.filter(nav => nav.open !== false)
     }
   },
   methods: {
