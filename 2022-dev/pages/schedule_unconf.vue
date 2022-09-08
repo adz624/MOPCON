@@ -21,8 +21,8 @@
       <div class="container">
         <section class="agenda-date">
           <div class="agenda-choose">
-            <a href="#" :class="{'active':day==1}" @click.prevent="day=1">Day 01</a>
-            <a href="#" :class="{'active':day==2}" @click.prevent="day=2">Day 02</a>
+            <a href="#" :class="{'active':day==1}" @click.prevent="day=1">10/15 Day 01</a>
+            <a href="#" :class="{'active':day==2}" @click.prevent="day=2">10/16 Day 02</a>
           </div>
         </section>
         <section class="agenda-table">
