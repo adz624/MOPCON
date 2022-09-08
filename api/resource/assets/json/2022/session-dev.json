@@ -1702,7 +1702,7 @@
                         "room": "R3",
                         "topic": "拉近現代開發者與 Web 3 的距離",
                         "topic_e": "Bringing the modern developer closer to the Web 3",
-                        "summary": "2021 年刷起了一波元宇宙旋風後，這 2 年絕對是 Web3 最火熱的時刻\n\n 如果 Web3 真能改變些什麼，我應該如何調整我的技能樹為未來作準備呢？\n\n 對於現代的開發者來說，無論你是前端、後端、QA、維運工程師又或是設計師\n\n 你手上的技能和 Web3 還差多遠？\n\n 在這場演講中，希望透過在區塊鏈開發產品 5 年的經驗\n\n 說明在 Web2.0 + Web3.0 整合開發過程需要的技能變化\n\n 拉近彼此與 Web 3.0 的距離！",
+                        "summary": "2021 年刷起了一波元宇宙旋風後，這 2 年絕對是 Web3 最火熱的時刻\n 如果 Web3 真能改變些什麼，我應該如何調整我的技能樹為未來作準備呢？\n 對於現代的開發者來說，無論你是前端、後端、QA、維運工程師又或是設計師\n 你手上的技能和 Web3 還差多遠？\n 在這場演講中，希望透過在區塊鏈開發產品 5 年的經驗\n 說明在 Web2.0 + Web3.0 整合開發過程需要的技能變化\n 拉近彼此與 Web 3.0 的距離！",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -2510,8 +2510,8 @@
                     {
                         "session_id": 2022057,
                         "room": "R1",
-                        "topic": "Maker 精神與 Vodkender",
-                        "topic_e": "The core of Maker and Vodkender",
+                        "topic": "讓 Maker 精神融入生活，醞釀發想更多的 Side Project",
+                        "topic_e": "Base on Maker life to create side project",
                         "summary": "分享這幾年兼具工程師以及 Maker 身份的好處，並透過兩個 Side Project 案例，讓大家理解 Maker 的出發點，鼓勵大家弄髒自己的手，享受創造的過程。",
                         "summary_e": "",
                         "is_keynote": false,
@@ -2522,7 +2522,7 @@
                         "target_e": "",
                         "prior_knowledge": "無",
                         "prior_knowledge_e": "",
-                        "expected_gain": "了解 Maker 精神以及 Side Project Vodkender 的發想過程與原理",
+                        "expected_gain": "透過 Maker 思維，醞釀屬於自己的 Side Project 以及專案分享",
                         "expected_gain_e": "",
                         "tags": [
                             {
