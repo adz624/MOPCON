@@ -164,6 +164,10 @@ $router->group(['prefix' => 'api'], function ($router) {
                 $router->get('/{room}', 'BoardController@index');
                 $router->get('images/{type}/{name}', 'BoardController@imagesView');
             });
+            $router->group(['prefix' => 'ticket'], function ($router) {
+                $router->post('/', 'TicketController@getTicket');
+                $router->get('/{ticketNo}', 'TicketController@getIOSWalletTicket');
+            });
         });
     });
 });

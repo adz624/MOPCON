@@ -45,7 +45,10 @@
     - sponsor_info(object): 如果沒有贊助廠商就不會有這個 key 存在
       - name(string): 贊助商中文名稱
       - name_e(string): 贊助商英文名稱
-      - logo_path(string): 贊助商圖片
+      - logo_path(object): 贊助商圖片 (2022)
+        - web(string): 網頁版使用
+        - mobile(string): 手機版使用
+      - logo_path(string): 贊助商圖片(2022以前)
 
 ### Request
 
@@ -137,7 +140,10 @@
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
-                  "logo_path": "https://picsum.photos/200"
+                  "logo_path": {
+                    "web": "https://picsum.photos/200",
+                    "mobile": "https://picsum.photos/200"
+                   }
                 }
               }
             ]
@@ -201,7 +207,10 @@
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
-                  "logo_path": "https://picsum.photos/200"
+                  "logo_path": {
+                        "web": "https://picsum.photos/200",
+                        "mobile": "https://picsum.photos/200"
+                    }
                 }
               },
               {
@@ -251,7 +260,10 @@
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
-                  "logo_path": "https://picsum.photos/200"
+                  "logo_path": {
+                        "web": "https://picsum.photos/200",
+                        "mobile": "https://picsum.photos/200"
+                    }
                 }
               },
               {
@@ -301,7 +313,10 @@
                 "sponsor_info": {
                   "name": "大國集團公司",
                   "name_e": "Da Kao",
-                  "logo_path": "https://picsum.photos/200"
+                  "logo_path": {
+                        "web": "https://picsum.photos/200",
+                        "mobile": "https://picsum.photos/200"
+                    }
                 }
               }
             ]
@@ -350,7 +365,10 @@
 - sponsor_info(object):
   - name(string): 贊助商中文名稱
   - name_e(string): 贊助商英文名稱
-  - logo_path(string): 贊助商圖片
+  - logo_path(object): 贊助商圖片 (2022)
+     - web(string): 網頁版使用
+     - mobile(string): 手機版使用
+  - logo_path(string): 贊助商圖片(2022以前)
 
 ### Request
 
@@ -426,7 +444,10 @@
         "sponsor_info": {
           "name": "大國集團公司",
           "name_e": "Da Kao",
-          "logo_path": "https://picsum.photos/200"
+          "logo_path": {
+            "web": "https://picsum.photos/200",
+            "mobile": "https://picsum.photos/200"
+          }
         }
       }
     ]
@@ -471,7 +492,10 @@
 - sponsor_info(object):
   - name(string): 贊助商中文名稱
   - name_e(string): 贊助商英文名稱
-  - logo_path(string): 贊助商圖片
+  - logo_path(object): 贊助商圖片 (2022)
+     - web(string): 網頁版使用
+     - mobile(string): 手機版使用
+  - logo_path(string): 贊助商圖片(2022以前)
 
 ### Request
 
@@ -545,7 +569,10 @@
       "sponsor_info": {
         "name": "大國集團公司",
         "name_e": "Da Kao",
-        "logo_path": "https://picsum.photos/200"
+        "logo_path": {
+            "web": "https://picsum.photos/200",
+            "mobile": "https://picsum.photos/200"
+          }
       }
     }
   }

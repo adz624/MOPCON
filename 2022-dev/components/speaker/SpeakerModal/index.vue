@@ -20,9 +20,8 @@
               </p>
               <span class="speaker-subtitle">{{ data.company }} {{ data.job_title }} </span>
             </h4>
-            <p class="speaker-bio my-0 my-sm-2">
-              {{ data.bio }}
-            </p>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p class="speaker-bio my-0 my-sm-2" v-html="parseContent(data.bio)" />
           </div>
         </div>
         <div class="speaker-community-wrap">

@@ -98,29 +98,29 @@
               </li>
             </ul>
             <div v-if="session.target" class="mb-4">
-              <h4 class="mb-1">
+              <h4 class="modal-agenda-title mb-1">
                 目標會眾
               </h4>
-              <p v-html="parseContent(session.target)" />
+              <p class="modal-agenda-intro" v-html="parseContent(session.target)" />
             </div>
             <div v-if="session.prior_knowledge" class="mb-4">
-              <h4 class="mb-1">
+              <h4 class="modal-agenda-title mb-1">
                 先備知識
               </h4>
-              <p v-html="parseContent(session.prior_knowledge)" />
+              <p class="modal-agenda-intro" v-html="parseContent(session.prior_knowledge)" />
             </div>
             <div v-if="session.expected_gain" class="mb-4">
-              <h4 class="mb-1">
+              <h4 class="modal-agenda-title mb-1">
                 會眾預期收穫
               </h4>
-              <p v-html="parseContent(session.expected_gain)" />
+              <p class="modal-agenda-intro" v-html="parseContent(session.expected_gain)" />
             </div>
             <div v-if="session.sponsor_info && session.sponsor_info.hasOwnProperty('logo_path')">
-              <h4 class="mb-1">
+              <h4 class="modal-agenda-title mb-1">
                 贊助商
               </h4>
               <a :href="'/2022/sponsor/' + session.sponsor_id">
-                <img :src="session.sponsor_info.logo_path" alt="" class="sponsor-logo">
+                <img :src="session.sponsor_info.logo_path.web" alt="" class="sponsor-img">
               </a>
             </div>
           </div>
@@ -324,6 +324,14 @@ export default {
     window.removeEventListener('resize', this.resize)
   },
   methods: {
+    copylink () {
+      navigator.clipboard.writeText(this.shareUrl).then(() => {
+        this.copySuccess = true
+        setTimeout(() => {
+          this.copySuccess = false
+        }, 1000)
+      }).catch(() => {})
+    },
     resize () {
       this.innerWidth = window.innerWidth
     },

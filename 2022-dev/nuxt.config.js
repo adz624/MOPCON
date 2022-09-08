@@ -28,6 +28,12 @@ export default {
         content:
           'MOPCON 2022 堅持濁水溪以南，是南台灣最大行動科技年會。今年，我們以「 Next Giant Conf 」為號召，透過來自各種產業的夥伴，分享不同領域的技術與實務經驗，帶來更多創新想法，帶入發展新觀點，共同為行動服務締造無限可能。'
       },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'MOPCON 2022 堅持濁水溪以南，是南台灣最大行動科技年會。今年，我們以「 Next Giant Conf 」為號召，透過來自各種產業的夥伴，分享不同領域的技術與實務經驗，帶來更多創新想法，帶入發展新觀點，共同為行動服務締造無限可能。'
+      },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
         hid: 'og-site_name',

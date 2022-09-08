@@ -53,7 +53,7 @@
     &:not(:last-child){
       margin-right: 8px;
     }
-  } 
+  }
   @include screen(sm){
     justify-content: center
   }
@@ -91,7 +91,7 @@
     }
   }
 }
-.sponsor-logo{
+.sponsor-img{
   width: 120px;
   height: 120px;
   object-fit: contain;
@@ -127,6 +127,7 @@
   }
   .community-share-btn{
     @include flex(center,row,center);
+    cursor:pointer;
     position: relative;
     span{
       @include font(20px,$colorWhite,500);

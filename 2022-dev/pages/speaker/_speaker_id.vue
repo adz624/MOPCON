@@ -60,9 +60,8 @@
             <h4 class="speakers-title mt-4 mb-0">
               {{ item.name }}
             </h4>
-            <p class="speakers-bio my-4">
-              {{ item.bio }}
-            </p>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p class="speakers-bio my-4" v-html="parseContent(item.bio)" />
             <div class="tags">
               <button v-for="(tag, tagIndex) in item.tags" :key="`speaker-tags-${tagIndex}`" class="speakers-tags-item">
                 {{ tag.name }}
@@ -218,6 +217,12 @@ export default {
     },
     getSpeakerImg (img) {
       return `${process.env.BASE_URL}/${img}`
+    },
+    parseContent (content) {
+      if (content) {
+        return content.replace(/\n/gi, '<br>')
+      }
+      return ''
     }
   }
 }

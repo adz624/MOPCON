@@ -41,6 +41,12 @@ class BaseSessionController extends Controller
         'sponsor_id',
         'summary',
         'summary_e',
+        'target',
+        'target_e',
+        'prior_knowledge',
+        'prior_knowledge_e',
+        'expected_gain',
+        'expected_gain_e',
         'community_partner',
     ];
     private $sessions;
