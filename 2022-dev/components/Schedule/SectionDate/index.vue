@@ -1,8 +1,8 @@
 <template>
   <div class="date">
     <div class="date-choose">
-      <a href="#" :class="{'active':day==1}" @click.prevent="selectedDay(1)">Day 01</a>
-      <a href="#" :class="{'active':day==2}" @click.prevent="selectedDay(2)">Day 02</a>
+      <a href="#" :class="{'active':day==1}" @click.prevent="selectedDay(1)">10/15 Day 01</a>
+      <a href="#" :class="{'active':day==2}" @click.prevent="selectedDay(2)">10/16 Day 02</a>
     </div>
   </div>
 </template>
