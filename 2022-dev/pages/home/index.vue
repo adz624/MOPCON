@@ -306,17 +306,23 @@ export default {
         }
       },
       sponsorLogoList: [
-        'assets/images/home/logo_banner_1.png?v=1',
-        'assets/images/home/logo_banner_2.png?v=1',
-        'assets/images/home/logo_banner_3.png?v=1',
-        'assets/images/home/logo_banner_4.png?v=1',
-        'assets/images/home/logo_banner_5.png?v=1',
-        'assets/images/home/logo_banner_6.png?v=1',
-        'assets/images/home/logo_banner_7.png?v=1',
-        'assets/images/home/logo_banner_8.png?v=1',
-        'assets/images/home/logo_banner_9.png?v=1',
-        'assets/images/home/logo_banner_10.png?v=1',
-        'assets/images/home/logo_banner_11.png?v=1'
+        'assets/images/home/logo_banner_0.png?v=2',
+        'assets/images/home/logo_banner_1.png?v=2',
+        'assets/images/home/logo_banner_2.png?v=2',
+        'assets/images/home/logo_banner_3.png?v=2',
+        'assets/images/home/logo_banner_4.png?v=2',
+        'assets/images/home/logo_banner_5.png?v=2',
+        'assets/images/home/logo_banner_6.png?v=2',
+        'assets/images/home/logo_banner_7.png?v=2',
+        'assets/images/home/logo_banner_8.png?v=2',
+        'assets/images/home/logo_banner_9.png?v=2',
+        'assets/images/home/logo_banner_10.png?v=2',
+        'assets/images/home/logo_banner_11.png?v=2',
+        'assets/images/home/logo_banner_12.png?v=2',
+        'assets/images/home/logo_banner_13.png?v=2',
+        'assets/images/home/logo_banner_14.png?v=2',
+        'assets/images/home/logo_banner_15.png?v=2',
+        'assets/images/home/logo_banner_16.png?v=2'
       ]
     }
   },
