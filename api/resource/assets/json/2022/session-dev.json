@@ -22,7 +22,7 @@
                         "topic_e": "",
                         "summary": "",
                         "summary_e": "",
-                        "is_keynote": false,
+                        "is_keynote": true,
                         "is_online": false,
                         "recordable": true,
                         "level": "",
@@ -75,7 +75,7 @@
                         "speakers": [
                             {
                                 "speaker_id": 236,
-                                "name": "盧聖約",
+                                "name": "John Lu",
                                 "name_e": "John Lu",
                                 "job_title": "Android 工程師",
                                 "job_title_e": "Android Developer",
@@ -313,7 +313,7 @@
                         "speakers": [
                             {
                                 "speaker_id": 195,
-                                "name": "劉奕為",
+                                "name": "John Liu",
                                 "name_e": "John Liu",
                                 "job_title": "Full stack engineer",
                                 "job_title_e": "Full stack engineer",
@@ -860,7 +860,7 @@
                         "speakers": [
                             {
                                 "speaker_id": 240,
-                                "name": "少愚",
+                                "name": "Shaoyu",
                                 "name_e": "Shaoyu",
                                 "job_title": "工程師",
                                 "job_title_e": "Engineer",
@@ -1680,7 +1680,7 @@
                         "speakers": [
                             {
                                 "speaker_id": 220,
-                                "name": "蔡雅文",
+                                "name": "Scarlett",
                                 "name_e": "Scarlett Tsai",
                                 "job_title": "資深商業分析師",
                                 "job_title_e": "Senior Business Analyst",
@@ -1907,7 +1907,7 @@
                     {
                         "session_id": 2022047,
                         "room": "R3",
-                        "topic": "幫你的 Web 開發添加一點 Functional Progra",
+                        "topic": "幫你的 Web 開發添加一點 Functional Programming 味",
                         "topic_e": "Let's add Functional Programming flavor to your web development",
                         "summary": "以 Spring Framework 的 Web 開發作為例子，加入 Functional Programming 的函式庫 Arrow-Kt，學習 Option, Either 和 Validated 等觀念如何應用在 web 開發上",
                         "summary_e": "In this session, we will use Spring Framework and Arrow-Kt as example and introducing how to apply Option, Either and Validated to web development",
@@ -2726,7 +2726,7 @@
                         "topic_e": "",
                         "summary": "",
                         "summary_e": "",
-                        "is_keynote": false,
+                        "is_keynote": true,
                         "is_online": false,
                         "recordable": true,
                         "level": "",

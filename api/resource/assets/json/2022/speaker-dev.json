@@ -1,6 +1,6 @@
 [
     {
-        "name": "劉奕為",
+        "name": "John Liu",
         "name_e": "John Liu",
         "speaker_id": 195,
         "company": "Netskope",
@@ -1304,7 +1304,7 @@
         "session_id": 2022060
     },
     {
-        "name": "蔡雅文",
+        "name": "Scarlett",
         "name_e": "Scarlett Tsai",
         "speaker_id": 220,
         "company": "新加坡商鈦坦科技",
@@ -2041,7 +2041,7 @@
         "link_twitter": "https://twitter.com/JianMin_V_Huang",
         "link_other": "https://jianminhuang.cc",
         "link_slide": "",
-        "topic": "幫你的 Web 開發添加一點 Functional Progra",
+        "topic": "幫你的 Web 開發添加一點 Functional Programming 味",
         "topic_e": "Let's add Functional Programming flavor to your web development",
         "summary": "以 Spring Framework 的 Web 開發作為例子，加入 Functional Programming 的函式庫 Arrow-Kt，學習 Option, Either 和 Validated 等觀念如何應用在 web 開發上",
         "summary_e": "In this session, we will use Spring Framework and Arrow-Kt as example and introducing how to apply Option, Either and Validated to web development",
@@ -2265,7 +2265,7 @@
         "session_id": 2022050
     },
     {
-        "name": "盧聖約",
+        "name": "John Lu",
         "name_e": "John Lu",
         "speaker_id": 236,
         "company": "",
@@ -2457,7 +2457,7 @@
         "session_id": 2022044
     },
     {
-        "name": "少愚",
+        "name": "Shaoyu",
         "name_e": "Shaoyu",
         "speaker_id": 240,
         "company": "Nandalu & Co.",
