@@ -17,7 +17,7 @@
           <!--選單-->
           <ul v-if="!isMobile || (isMobile && navOpen)" class="menu-list">
             <li
-              v-for="nav in navList"
+              v-for="nav in navOpenList"
               :key="nav.url"
             >
               <a
@@ -174,6 +174,11 @@ export default {
         //   target: '_blank'
         // }
       ]
+    }
+  },
+  computed: {
+    navOpenList () {
+      return this.navList.filter(nav => nav.open !== false)
     }
   },
   methods: {
