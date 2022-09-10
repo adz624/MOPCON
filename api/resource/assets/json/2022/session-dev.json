@@ -18,6 +18,7 @@
                     {
                         "session_id": 2022001,
                         "room": "R1",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -29,8 +30,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634259600,
+                        "ended_at": 1634262300,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     }
                 ]
             },
@@ -256,6 +261,7 @@
                     {
                         "session_id": 2022009,
                         "room": "R1",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -267,12 +273,17 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634266200,
+                        "ended_at": 1634268900,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     },
                     {
                         "session_id": 2022010,
                         "room": "R2",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -284,8 +295,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634266200,
+                        "ended_at": 1634268900,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     },
                     {
                         "session_id": 2022011,
@@ -457,6 +472,7 @@
                     {
                         "session_id": 2022014,
                         "room": "R2",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -468,8 +484,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634269500,
+                        "ended_at": 1634272200,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     },
                     {
                         "session_id": 2022015,
@@ -588,6 +608,7 @@
                     {
                         "session_id": 2022017,
                         "room": "R1",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -599,8 +620,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634272200,
+                        "ended_at": 1634275200,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     },
                     {
                         "session_id": 2022018,
@@ -1629,6 +1654,7 @@
                     {
                         "session_id": 2022041,
                         "room": "R1",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -1640,8 +1666,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634350200,
+                        "ended_at": 1634352900,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     },
                     {
                         "session_id": 2022042,
@@ -1897,6 +1927,7 @@
                     {
                         "session_id": 2022046,
                         "room": "R2",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -1908,8 +1939,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634353500,
+                        "ended_at": 1634356200,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     },
                     {
                         "session_id": 2022047,
@@ -2729,6 +2764,7 @@
                     {
                         "session_id": 2022061,
                         "room": "R1",
+                        "floor": "",
                         "topic": "Coming Soon",
                         "topic_e": "",
                         "summary": "",
@@ -2740,8 +2776,12 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
+                        "started_at": 1634369700,
+                        "ended_at": 1634373900,
                         "tags": [],
-                        "speakers": []
+                        "speakers": [],
+                        "sponsor_id": 0,
+                        "community_partner": ""
                     }
                 ]
             },
