@@ -29,7 +29,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     }
                 ]
             },
@@ -266,7 +267,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     },
                     {
                         "session_id": 2022010,
@@ -282,7 +284,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     },
                     {
                         "session_id": 2022011,
@@ -465,7 +468,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     },
                     {
                         "session_id": 2022015,
@@ -595,7 +599,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     },
                     {
                         "session_id": 2022018,
@@ -1635,7 +1640,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     },
                     {
                         "session_id": 2022042,
@@ -1812,7 +1818,7 @@
                                 "speaker_id": 239,
                                 "name": "張逸于",
                                 "name_e": "Kyle Chang (yiyu0x)",
-                                "job_title": "Amazon Cloud Support Engineer",
+                                "job_title": "Cloud Support Engineer",
                                 "job_title_e": "",
                                 "company": "Amazon",
                                 "company_e": "",
@@ -1820,7 +1826,7 @@
                                     "web": "api/2022/speaker/images/speaker_239",
                                     "mobile": "api/2022/speaker/images/speaker_239"
                                 },
-                                "link_github": "",
+                                "link_github": "https://github.com/yiyu0x",
                                 "link_twitter": "",
                                 "link_other": "",
                                 "link_fb": ""
@@ -1902,7 +1908,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     },
                     {
                         "session_id": 2022047,
@@ -2733,7 +2740,8 @@
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
-                        "tags": []
+                        "tags": [],
+                        "speakers": []
                     }
                 ]
             },
