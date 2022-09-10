@@ -2391,7 +2391,7 @@
         "speaker_id": 239,
         "company": "Amazon",
         "company_e": "",
-        "job_title": "Amazon Cloud Support Engineer",
+        "job_title": "Cloud Support Engineer",
         "job_title_e": "",
         "bio": "喜歡 cloud native 技術，嘗試成為一名海洋中的掌陀手。",
         "bio_e": "",
@@ -2400,7 +2400,7 @@
             "mobile": "api/2022/speaker/images/speaker_239"
         },
         "link_fb": "",
-        "link_github": "",
+        "link_github": "https://github.com/yiyu0x",
         "link_twitter": "",
         "link_other": "",
         "link_slide": "",
