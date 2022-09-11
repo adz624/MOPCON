@@ -26,7 +26,7 @@ class BaseTicketController extends Controller
         $dir = $this->ticketPath . $request->ticketNo;
         $path = glob($dir);
         if (empty($path)) {
-            $this->returnNotFoundError();
+            return $this->returnNotFoundError();
         }
 
         $file = fopen($dir . '/'. $request->ticketNo .'.txt','r');
