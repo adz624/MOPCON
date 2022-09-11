@@ -51,7 +51,7 @@
                     {{ speaker.name }}
                   </p>
                   <p class="speaker-company">
-                    {{ speaker.company }}{{ speaker.job_title }}
+                    {{ speaker.company }} {{ speaker.job_title }}
                   </p>
                   <div class="speaker-community-wrap">
                     <a v-if="speaker.link_twitter" :href="speaker.link_twitter" class="bg-twitter_icon" target="_blank">
