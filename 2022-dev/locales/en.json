@@ -1,7 +1,9 @@
 {
   "navbar": {
     "home": "MOPCON 2022",
-    "community": "Community",
+    "community": "社群組織",
+    "staff":"Staff",
+    "participant":"Community",
     "schedule": "Schedule",
     "scheduleMain": "Main",
     "scheduleUnconf": "Unconf",
