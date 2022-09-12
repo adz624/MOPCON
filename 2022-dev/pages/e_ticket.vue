@@ -33,6 +33,9 @@
             <a :href="ticketResult.google" target="_blank">
               <img src="../assets/images/e_ticket/google_pay.svg" alt="">
             </a>
+            <p class="mx-2 mx-sm-0 my-1">
+              或
+            </p>
             <a :href="ticketResult.apple" target="_blank">
               <img src="../assets/images/e_ticket/apple.svg" alt="">
             </a>
@@ -124,21 +127,32 @@ export default {
     }
     button {
       white-space: nowrap;
+      @media (max-width: 568px) {
+        width: 30%;
+        padding: 5px 1rem;
+      }
     }
   }
   .error-hint {
-    @include font(16px,$colorPink,400);
+    @include font(16px,$colorPink, bold);
   }
   .subtitle {
     text-align: center;
     @include font(36px, $colorPrimary, bold);
   }
   .download-link {
-    @include flex(center, column, center);
+    @include flex(center, row, center);
+    @media (max-width: 568px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
     img {
       display: block;
+      height: 60px;
+      width: 100%;
     }
     a {
+      display: block;
       margin-bottom: 8px;
     }
   }
