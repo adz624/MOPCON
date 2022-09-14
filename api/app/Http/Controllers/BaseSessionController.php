@@ -177,7 +177,7 @@ class BaseSessionController extends Controller
             }
             $session_id = $this->sessionSpeakerMapping[$speaker['speaker_id']] ?? 0;
             $session['session_id'] = $session_id;
-            if ($this->year < 2022) $this->convertToMultipleSpeaker($sessions, $session, $session_id);
+            $this->convertToMultipleSpeaker($sessions, $session, $session_id);
         }
 
         return $sessions;
@@ -196,6 +196,7 @@ class BaseSessionController extends Controller
             $sessions[$session_id] = $session;
         } else {
             $sessions[$session_id]['speakers'][] = SessionService::transportMultipleSpeaker($session);
+            if ($this->year > 2021) $sessions[$session_id] = array_merge($sessions[$session_id], $session);
         }
     }
 }

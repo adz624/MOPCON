@@ -18,10 +18,10 @@
         "link_twitter": "",
         "link_other": "https://medium.com/johnliu-%E7%9A%84%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%B6%AD?fbclid=IwAR1M_p_xEcxb3rqELwzHvDJuIJ4RfOJrEtrT0i4H82JPxfkxcbyZlE4XSqw",
         "link_slide": "",
-        "topic": "透過 Laravel Bagisto 電商架站框架，了解架站軟體",
-        "topic_e": "Understand the codebase structure of the platform software via Laravel Bagisto",
-        "summary": "Laravel Bagisto 是 Laravel 生態系中，eCommerce 架站熱門的套件之一，具備現代化的 UI 以及強大的管理功能。透過分析 Bagisto 的技術架構，可以幫助我們了解一個提供軟體修改性的框架，會有的程式碼架構。",
-        "summary_e": "Laravel Bagisto is one of the most popular suites for eCommerce platform software in the Laravel ecosystem, with a modern UI and powerful features.\n\nBy analyzing the source code architecture of Bagisto, it can help us understand the code architecture of a framework that provides flexible software modification capability.",
+        "topic": "現代 Web 框架效能優化技巧分享",
+        "topic_e": "",
+        "summary": "Web 框架層出不窮，但各種重要元件的使用方式漸漸殊途同歸。而在效能優化上，許多坊間的做法較為著重在程式語言層、高併發等實務上其實較少遇到的效能瓶頸處，真正的效能瓶頸通常是運用的不是那麼洽當的解決方案，例如 ORM 的濫用、邏輯結構設計不良... 等等，這部分的效能優化通常成本低廉但效益十足。這個議程將會分享在 Web 的技術專案中，常見的效能優化技巧與思維。",
+        "summary_e": "",
         "community_partner": "",
         "is_keynote": false,
         "is_online": false,
@@ -36,12 +36,12 @@
                 "name": "Web Development"
             }
         ],
-        "target": "初中階 Web 工程師",
+        "target": "初階 or 入門工程師",
         "target_e": "Junior/Intermediate web engineer",
-        "prior_knowledge": "PHP, Web Framework 經驗",
-        "prior_knowledge_e": "PHP, Web Framework experience",
-        "expected_gain": "希望能幫助聽眾啟發，對於此類型軟體開發，或是極高模組化風格的程式碼，會是怎麼樣的程式碼架構。",
-        "expected_gain_e": "Hope to inspire audiences on how to organize and compose this extremely modular source code",
+        "prior_knowledge": "任意 Web 後端框架經驗，PHP or Laravel 尤佳",
+        "prior_knowledge_e": "",
+        "expected_gain": "理解低成本且易有效用的效能優化知識，適用於更廣泛的中小型專案，並提升平時程式撰寫品質。",
+        "expected_gain_e": "",
         "started_at": 1665802200,
         "ended_at": 1665804900,
         "room": "R3",
@@ -1041,7 +1041,7 @@
         "session_id": 2022013
     },
     {
-        "name": "王慕羣",
+        "name": "Kewang",
         "name_e": "Kewang",
         "speaker_id": 215,
         "company": "Funliday",
@@ -2585,7 +2585,7 @@
         "session_id": 2022024
     },
     {
-        "name": "丁冠綸",
+        "name": "Eligos",
         "name_e": "Eligos",
         "speaker_id": 242,
         "company": "Vinnovation INC.",
@@ -2629,13 +2629,13 @@
         "expected_gain_e": "",
         "started_at": 1665905700,
         "ended_at": 1665909900,
-        "room": "R2",
+        "room": "R1",
         "floor": "",
         "sponsor_id": 0,
         "session_id": 2022061
     },
     {
-        "name": "黃敬群",
+        "name": "jserv",
         "name_e": "jserv",
         "speaker_id": 243,
         "company": "國立成功大學資訊工程系",
@@ -2679,7 +2679,7 @@
         "expected_gain_e": "",
         "started_at": 1665905700,
         "ended_at": 1665909900,
-        "room": "R2",
+        "room": "R1",
         "floor": "",
         "sponsor_id": 0,
         "session_id": 2022061
