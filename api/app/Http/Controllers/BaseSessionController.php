@@ -177,7 +177,7 @@ class BaseSessionController extends Controller
             }
             $session_id = $this->sessionSpeakerMapping[$speaker['speaker_id']] ?? 0;
             $session['session_id'] = $session_id;
-            $this->convertToMultipleSpeaker($sessions, $session, $session_id);
+            if ($this->year < 2022) $this->convertToMultipleSpeaker($sessions, $session, $session_id);
         }
 
         return $sessions;
