@@ -2583,5 +2583,205 @@
         "floor": "",
         "sponsor_id": 0,
         "session_id": 2022024
+    },
+    {
+        "name": "丁冠綸",
+        "name_e": "Eligos",
+        "speaker_id": 242,
+        "company": "Vinnovation INC.",
+        "company_e": "Vinnovation INC.",
+        "job_title": "產品負責人",
+        "job_title_e": "",
+        "bio": "過去曾參與過各種區塊鏈的冒險者－如 Ethereum, Dfinity, Solana, Polkadot 等，目前則主要以開發各種 DApp 與 Web3 應用為主，喜歡發想各種腦洞 Brainstorming！",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_242",
+            "mobile": "api/2022/speaker/images/speaker_242"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "https://www.cakeresume.com/s--cbCRoT0eRYJyeBtlzNiFIw--/eligos",
+        "link_slide": "",
+        "topic": "談區塊鏈的意義、現況及未來",
+        "topic_e": "",
+        "summary": "近年來區塊鏈相關技術蓬勃發展，但生活中除了幾位參與交易、挖礦的人們外，大多人只能從新聞中略知一二: 薩爾瓦多瘋狂抄底、LUNA 幣跌到變廢紙...等，整體而言似乎對我們的生活影響並不大。透過這場對談，邀請到從學界到業界的專家告訴我們，區塊鏈如何默默地改變我們的生活，未來又能帶給我們什麼樣的機會。",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": true,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Panel"
+            }
+        ],
+        "target": "",
+        "target_e": "",
+        "prior_knowledge": "",
+        "prior_knowledge_e": "",
+        "expected_gain": "更深入、更真實地了解區塊鏈\n幫助會眾汲取不同觀點，進行反思及批判性思考\n了解產業現況及趨勢",
+        "expected_gain_e": "",
+        "started_at": 1665905700,
+        "ended_at": 1665909900,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 0,
+        "session_id": 2022061
+    },
+    {
+        "name": "黃敬群",
+        "name_e": "jserv",
+        "speaker_id": 243,
+        "company": "國立成功大學資訊工程系",
+        "company_e": "",
+        "job_title": "助理教授",
+        "job_title_e": "",
+        "bio": "網上慣用 \"jserv\" 代稱，任教於國立成功成功大學，專注作業系統、編譯器，和虛擬機等領域。曾任聯發科技、台達電子、鴻海科技集團，和工業技術研究院的技術顧問，並長期投入開放原始碼軟體開發。",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_243",
+            "mobile": "api/2022/speaker/images/speaker_243"
+        },
+        "link_fb": "https://www.facebook.com/JservFans/",
+        "link_github": "https://github.com/jserv",
+        "link_twitter": "https://twitter.com/jserv",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "談區塊鏈的意義、現況及未來",
+        "topic_e": "",
+        "summary": "近年來區塊鏈相關技術蓬勃發展，但生活中除了幾位參與交易、挖礦的人們外，大多人只能從新聞中略知一二: 薩爾瓦多瘋狂抄底、LUNA 幣跌到變廢紙...等，整體而言似乎對我們的生活影響並不大。透過這場對談，邀請到從學界到業界的專家告訴我們，區塊鏈如何默默地改變我們的生活，未來又能帶給我們什麼樣的機會。",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": true,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Panel"
+            }
+        ],
+        "target": "",
+        "target_e": "",
+        "prior_knowledge": "",
+        "prior_knowledge_e": "",
+        "expected_gain": "更深入、更真實地了解區塊鏈\n幫助會眾汲取不同觀點，進行反思及批判性思考\n了解產業現況及趨勢",
+        "expected_gain_e": "",
+        "started_at": 1665905700,
+        "ended_at": 1665909900,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 0,
+        "session_id": 2022061
+    },
+    {
+        "name": "MOPCON 2022 品牌形象組",
+        "name_e": "MOPCON 2022 Branding & Design",
+        "speaker_id": 250,
+        "company": "MOPCON",
+        "company_e": "MOPCON",
+        "job_title": "品牌形象組設計師",
+        "job_title_e": "Branding & Design Designer",
+        "bio": "提供你從概念到實現的最佳舞台！催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
+        "bio_e": "Responsible for the visual design of MOPCON – everything from website and app design, to souvenirs! Comprised of talented people from all over Taiwan, we experience a new adventure every year~",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_250",
+            "mobile": "api/2022/speaker/images/speaker_250"
+        },
+        "link_fb": "https://www.facebook.com/mopcon/",
+        "link_github": "https://github.com/MOPCON/",
+        "link_twitter": "https://twitter.com/mopcon",
+        "link_other": "https://mopcon.org/",
+        "link_slide": "",
+        "topic": "萬能設計師與他們的產地 - 解密品牌形象組",
+        "topic_e": "",
+        "summary": "MOPCON 的紀念商品是如何生出來的？MO 孃的老媽是誰？App 和官網又是怎麼規劃的？讓設計師們在這 45 分鐘，從產地直送他們的解答到你手上吧！\n我們將解密品牌形象組的日常，從 0 到 1 、合作到分工和產出，以座談形式，訪問 2022 參與設計活動的小夥伴，深入淺出讓大家了解 MOPCON 活動中，品牌形象組到底在做些什麼！",
+        "summary_e": "How were the souvenirs of MOPCON created? Who is the mother of Mosume? How were offical website and APP designed? Let the designers deliver the answers straight to you through this 45-minute speech!\nWe will unpuzzle the daily routine of Branding & Design Team, how we cooperate and put ideas into practice.Designers and volunteers in charge of the activities will be interviewed in this sharing session to explain what the Branding & Design Team do in MOPCON in simple words!",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Basic",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "UI/UX"
+            }
+        ],
+        "target": "2023 願意加入品牌形象組的新血志工夥伴",
+        "target_e": "",
+        "prior_knowledge": "無須先備知識，適合對社群、研討會或品牌形象營造等有興趣",
+        "prior_knowledge_e": "",
+        "expected_gain": "1.了解 MOPCON 研討會品牌如何營造\n2.剖析品牌形象組的任務及純遠距協作\n3.社群工作長跑半年甘苦談",
+        "expected_gain_e": "",
+        "started_at": 1665802200,
+        "ended_at": 1665804900,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 0,
+        "session_id": 2022010
+    },
+    {
+        "name": "MOPCON 2022 品牌形象組",
+        "name_e": "MOPCON 2022 Branding & Design",
+        "speaker_id": 251,
+        "company": "MOPCON",
+        "company_e": "MOPCON",
+        "job_title": "品牌形象組設計師",
+        "job_title_e": "Branding & Design Designer",
+        "bio": "提供你從概念到實現的最佳舞台！催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
+        "bio_e": "Responsible for the visual design of MOPCON – everything from website and app design, to souvenirs! Comprised of talented people from all over Taiwan, we experience a new adventure every year~",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_250",
+            "mobile": "api/2022/speaker/images/speaker_250"
+        },
+        "link_fb": "https://www.facebook.com/mopcon/",
+        "link_github": "https://github.com/MOPCON/",
+        "link_twitter": "https://twitter.com/mopcon",
+        "link_other": "https://mopcon.org/",
+        "link_slide": "",
+        "topic": "萬能設計師與他們的乾貨 - 工作幕後大公開",
+        "topic_e": "",
+        "summary": "MOPCON 品牌形象組有許多神奇的工作流程，也創造不少令社群驚艷的結果。今天將公開組內三大幕後流程 － 涵蓋遠端會議中進行的大小工作坊，Mo 孃晉升 Vtuber 的幕後故事，以及如何化解會議中尷尬不前的溝通心法！",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Basic ",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "UI/UX"
+            }
+        ],
+        "target": "2023 願意加入品牌形象組的新血志工夥伴",
+        "target_e": "",
+        "prior_knowledge": "對設計有興趣，好奇又好學開放的心態\n想了解 MOPCON 志工如何遠距合作(Figma/FigJam)",
+        "prior_knowledge_e": "",
+        "expected_gain": "1.誕生創意與實際落地的工作坊流程\n2.將 Mo 孃打造成為社群 Vtuber 的幕後公開\n3.說話的藝術：線上協作的溝通技巧",
+        "expected_gain_e": "",
+        "started_at": 1665889500,
+        "ended_at": 1665892200,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 0,
+        "session_id": 2022046
     }
 ]

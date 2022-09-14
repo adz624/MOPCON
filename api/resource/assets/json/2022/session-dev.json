@@ -284,7 +284,7 @@
                         "session_id": 2022010,
                         "room": "R2",
                         "floor": "",
-                        "topic": "Coming Soon",
+                        "topic": "萬能設計師與他們的產地 - 解密品牌形象組",
                         "topic_e": "",
                         "summary": "",
                         "summary_e": "",
@@ -297,8 +297,34 @@
                         "expected_gain": "",
                         "started_at": 1665802200,
                         "ended_at": 1665804900,
-                        "tags": [],
-                        "speakers": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 250,
+                                "name": "MOPCON 2022 品牌形象組",
+                                "name_e": "MOPCON 2022 Branding & Design",
+                                "company": "MOPCON",
+                                "company_e": "MOPCON",
+                                "job_title": "品牌形象組設計師",
+                                "job_title_e": "Branding & Design Designer",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_250",
+                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                },
+                                "link_fb": "https://www.facebook.com/mopcon/",
+                                "link_github": "https://github.com/MOPCON/",
+                                "link_twitter": "https://twitter.com/mopcon",
+                                "link_other": "https://mopcon.org/"
+                            }
+                        ],
                         "sponsor_id": 0,
                         "community_partner": ""
                     },
@@ -1928,21 +1954,47 @@
                         "session_id": 2022046,
                         "room": "R2",
                         "floor": "",
-                        "topic": "Coming Soon",
+                        "topic": "萬能設計師與他們的乾貨 - 工作幕後大公開",
                         "topic_e": "",
                         "summary": "",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
+                        "level": "Normal",
                         "target": "",
                         "prior_knowledge": "",
                         "expected_gain": "",
                         "started_at": 1665889500,
                         "ended_at": 1665892200,
-                        "tags": [],
-                        "speakers": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "UI/UX"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 251,
+                                "name": "MOPCON 2022 品牌形象組",
+                                "name_e": "MOPCON 2022 Branding & Design",
+                                "company": "MOPCON",
+                                "company_e": "MOPCON",
+                                "job_title": "品牌形象組設計師",
+                                "job_title_e": "Branding & Design Designer",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_250",
+                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                },
+                                "link_fb": "https://www.facebook.com/mopcon/",
+                                "link_github": "https://github.com/MOPCON/",
+                                "link_twitter": "https://twitter.com/mopcon",
+                                "link_other": "https://mopcon.org/"
+                            }
+                        ],
                         "sponsor_id": 0,
                         "community_partner": ""
                     },
@@ -2725,7 +2777,15 @@
                         "prior_knowledge_e": "Basic understanding of authentication and authorization",
                         "expected_gain": "・FIDO 基本知識與原理\n ・為何受到關注及各大瀏覽器開始支援\n ・如何在網路上做到驗證 / 登入機制",
                         "expected_gain_e": "・What is FIDO?\n ・Why is it attracting attention and supported by major browsers?\n ・How to authenticate / login on the Internet",
-                        "tags": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            }
+                        ],
                         "speakers": [
                             {
                                 "speaker_id": 219,
@@ -2765,21 +2825,81 @@
                         "session_id": 2022061,
                         "room": "R1",
                         "floor": "",
-                        "topic": "Coming Soon",
+                        "topic": "談區塊鏈的意義、現況及未來",
                         "topic_e": "",
-                        "summary": "",
+                        "summary": "近年來區塊鏈相關技術蓬勃發展，但生活中除了幾位參與交易、挖礦的人們外，大多人只能從新聞中略知一二: 薩爾瓦多瘋狂抄底、LUNA 幣跌到變廢紙...等，整體而言似乎對我們的生活影響並不大。透過這場對談，邀請到從學界到業界的專家告訴我們，區塊鏈如何默默地改變我們的生活，未來又能帶給我們什麼樣的機會。",
                         "summary_e": "",
                         "is_keynote": true,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
+                        "level": "Normal",
                         "target": "",
                         "prior_knowledge": "",
-                        "expected_gain": "",
+                        "expected_gain": "更深入、更真實地了解區塊鏈\n幫助會眾汲取不同觀點，進行反思及批判性思考\n了解產業現況及趨勢",
                         "started_at": 1665905700,
                         "ended_at": 1665909900,
-                        "tags": [],
-                        "speakers": [],
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Panel"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 243,
+                                "name": "黃敬群",
+                                "name_e": "jserv",
+                                "job_title": "助理教授",
+                                "job_title_e": "",
+                                "company": "國立成功大學資訊工程系",
+                                "company_e": "",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_243",
+                                    "mobile": "api/2022/speaker/images/speaker_243"
+                                },
+                                "link_fb": "https://www.facebook.com/JservFans/",
+                                "link_github": "https://github.com/jserv",
+                                "link_twitter": "https://twitter.com/jserv",
+                                "link_other": ""
+                            },
+                            {
+                                "speaker_id": 242,
+                                "name": "丁冠綸",
+                                "name_e": "Eligos",
+                                "job_title": "產品負責人",
+                                "job_title_e": "",
+                                "company": "Vinnovation INC.",
+                                "company_e": "Vinnovation INC.",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_242",
+                                    "mobile": "api/2022/speaker/images/speaker_242"
+                                },
+                                "link_fb": "",
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "https://www.cakeresume.com/s--cbCRoT0eRYJyeBtlzNiFIw--/eligos"
+                            },
+                            {
+                                "speaker_id": 233,
+                                "name": "黃奕翔",
+                                "name_e": "Sam Huang",
+                                "job_title": "共同創辦人 / 技術策略長",
+                                "job_title_e": "Co-Founder",
+                                "company": "忻旅科技 / 奕果雲端",
+                                "company_e": "RevtelTech / EcultureTech",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_233",
+                                    "mobile": "api/2022/speaker/images/speaker_233"
+                                },
+                                "link_fb": "https://www.facebook.com/sailplaneTW/",
+                                "link_github": "https://github.com/sailplaneTW",
+                                "link_twitter": "https://twitter.com/sailplaneTW",
+                                "link_other": "https://www.sam-huang.info/"
+                            }
+                        ],
                         "sponsor_id": 0,
                         "community_partner": ""
                     }
