@@ -84,4 +84,18 @@ trait ApiTrait
             'data'    => $data
         ], 401);
     }
+
+    /**
+     * generage the photo url if not validate
+     *
+     * @param string $path
+     * @return url
+     */
+    public function generatePhotoUrl($path)
+    {
+        if (filter_var($path, FILTER_VALIDATE_URL)) {
+            return $path;
+        }
+        return url(str_replace('api/', '/', $path));
+    }
 }

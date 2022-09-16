@@ -124,9 +124,9 @@ class BaseSponsorController extends Controller
      */
     private function extractor($sponsor)
     {
-        $sponsor['logo_path'] = !is_array($sponsor['logo_path']) ? $this->generagePhotoUrl($sponsor['logo_path']) : [
-            'web' => $this->generagePhotoUrl($sponsor['logo_path']['web']),
-            'mobile' => $this->generagePhotoUrl($sponsor['logo_path']['mobile']),
+        $sponsor['logo_path'] = !is_array($sponsor['logo_path']) ? $this->generatePhotoUrl($sponsor['logo_path']) : [
+            'web' => $this->generatePhotoUrl($sponsor['logo_path']['web']),
+            'mobile' => $this->generatePhotoUrl($sponsor['logo_path']['mobile']),
         ];
         $sponsor['speaker_information'] = [];
         foreach ($this->speakerAry as $speaker) {
@@ -136,8 +136,8 @@ class BaseSponsorController extends Controller
                 $speakerWebImage = isset($speaker['photo_for_sponsor_web']) ? $speaker['photo_for_sponsor_web'] : $speaker['img']['web'];
                 $sponsor['speaker_information'][] = [
                     'img' => [
-                        'mobile' => $this->generagePhotoUrl($speakerMobileImage),
-                        'web' => $this->generagePhotoUrl($speakerWebImage), // extra
+                        'mobile' => $this->generatePhotoUrl($speakerMobileImage),
+                        'web' => $this->generatePhotoUrl($speakerWebImage), // extra
                     ],
                     'speaker_id' => $speaker['speaker_id'],
                     'session_id' => $this->sessionSpeakerMapping[$speaker['speaker_id']],
@@ -175,15 +175,5 @@ class BaseSponsorController extends Controller
         $path = end($path);
         $type = mime_content_type($path);
         return (new Response(file_get_contents($path), 200))->header('Content-Type', $type);
-    }
-    /**
-     * generage the photo url if not validate
-     *
-     * @param string $path
-     * @return url
-     */
-    public function generagePhotoUrl($path)
-    {
-        return filter_var($path, FILTER_VALIDATE_URL) ? $path : url($path);
     }
 }

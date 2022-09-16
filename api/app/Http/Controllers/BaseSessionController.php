@@ -76,8 +76,8 @@ class BaseSessionController extends Controller
                 'name' => $sponsor['name'],
                 'name_e' => $sponsor['name_e'],
                 'logo_path' => !is_array($sponsor['logo_path']) ? $sponsor['logo_path'] : [
-                    'web' => url($sponsor['logo_path']['web']),
-                    'mobile' => url($sponsor['logo_path']['mobile']),
+                    'web' => $this->generatePhotoUrl($sponsor['logo_path']['web']),
+                    'mobile' => $this->generatePhotoUrl($sponsor['logo_path']['mobile']),
                 ]
             ];
         }

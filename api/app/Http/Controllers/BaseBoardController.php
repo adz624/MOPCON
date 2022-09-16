@@ -144,7 +144,7 @@ class BaseBoardController extends Controller
         $this->sponsor_ads = [];
         foreach ($board_ads as $ad) {
             $this->sponsor_ads[] = [
-                'sponsor_ad_img' => url($ad['board_path']),
+                'sponsor_ad_img' => $this->generatePhotoUrl($ad['board_path']),
             ];
         }
 
@@ -215,7 +215,7 @@ class BaseBoardController extends Controller
         $map = [
             'title' => '休息一下！後續還有精彩議程！',
             'subtitle' => '會場地圖',
-            'map' => url($this->map_path)
+            'map' => $this->generatePhotoUrl($this->map_path)
         ];
         $ad_num = count($this->sponsor_ads);
         $ad_index = rand(1, $ad_num) - 1;

@@ -34,7 +34,7 @@ class AppHomeController extends TestCase
         $response = $this->get('/api/2019/home/');
         $compared = [];
         $compared['banner'] = array_map(function ($value) {
-            $value['img'] = url($value['img']);
+            $value['img'] = url(str_replace('api/', '/', $value['img']));
             return $value;
         }, $this->banner);
 

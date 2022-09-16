@@ -20,7 +20,7 @@ class BaseAppHomeController extends Controller
         parent::__construct();
 
         $this->output['banner'] = array_map(function ($value) {
-            $value['img'] = url($value['img']);
+            $value['img'] = $this->generatePhotoUrl($value['img']);
             return $value;
         }, $this->jsonAry);
 
