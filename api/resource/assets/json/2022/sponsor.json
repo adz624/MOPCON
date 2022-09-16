@@ -196,6 +196,21 @@
     },
     {
         "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_102",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_102"
+        },
+        "name": "Atlassian JIRA",
+        "name_e": "Atlassian JIRA",
+        "sponsor_id": 102,
+        "about_us": "Atlassian in partnership with Titansoft\nTitansoft 新加坡商鈦坦科技是 Atlassian 服務代理商，以自身敏捷轉型實戰經驗，協助企業一站式服務導入「敏捷思維」與「實踐工具」。歡迎與鈦坦聯繫，體驗 Jira 的 Best Practice 敏捷模組。",
+        "about_us_e": "Atlassian in partnership with Titansoft",
+        "facebook_url": "",
+        "official_website": "https://gotica.io/MOPCON",
+        "sponsor_type": "special_thanks",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
             "web": "api/2022/sponsor/images/web/sponsor_103",
             "mobile": "api/2022/sponsor/images/mobile/sponsor_103"
         },
