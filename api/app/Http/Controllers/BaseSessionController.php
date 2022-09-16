@@ -76,8 +76,8 @@ class BaseSessionController extends Controller
                 'name' => $sponsor['name'],
                 'name_e' => $sponsor['name_e'],
                 'logo_path' => !is_array($sponsor['logo_path']) ? $sponsor['logo_path'] : [
-                    'web' => url($sponsor['logo_path']['web']),
-                    'mobile' => url($sponsor['logo_path']['mobile']),
+                    'web' => $this->generatePhotoUrl($sponsor['logo_path']['web']),
+                    'mobile' => $this->generatePhotoUrl($sponsor['logo_path']['mobile']),
                 ]
             ];
         }
@@ -196,6 +196,7 @@ class BaseSessionController extends Controller
             $sessions[$session_id] = $session;
         } else {
             $sessions[$session_id]['speakers'][] = SessionService::transportMultipleSpeaker($session);
+            if ($this->year > 2021) $sessions[$session_id] = array_merge($sessions[$session_id], $session);
         }
     }
 }

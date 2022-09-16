@@ -39,7 +39,7 @@ class SpeakerService
         if (isset($row[$filterKeys[0]]) || isset($row[$filterKeys[0]])) {
             foreach ($filterKeys as $filterkey) {
                 if (!filter_var($filterkey, FILTER_VALIDATE_URL)) {
-                    $row[$filterkey] = url($row[$filterkey]);
+                    $row[$filterkey] = url(str_replace('/api', '/', $row[$filterkey]));
                 }
             }
             $row['img'] = [
