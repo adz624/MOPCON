@@ -37,7 +37,7 @@ class BaseTicketController extends Controller
         fclose($file);
 
         $data = [
-            'apple' => url('api/2022/ticket/' . $request->ticketNo),
+            'apple' => url('2022/ticket/' . $request->ticketNo),
             'google' => $link,
         ];
 

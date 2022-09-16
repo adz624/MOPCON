@@ -18,7 +18,7 @@ class BaseVolunteerController extends Controller
     {
         $result = [];
         $result['volunteer'] = array_map(function ($value) {
-            $value['photo'] = url($value['photo']);
+            $value['photo'] = $this->generatePhotoUrl($value['photo']);
             unset($value['introduction'], $value['introduction_en'], $value['members'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
             return $value;
         }, $this->jsonAry);
@@ -76,7 +76,7 @@ class BaseVolunteerController extends Controller
         });
         $result = array_pop($result);
         if (isset($result['photo']) && $result['photo'] !== '') {
-            $result['photo'] = url($result['photo']);
+            $result['photo'] = $this->generatePhotoUrl($result['photo']);
         }
         if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
             $result['introduction_en'] = $result['introduction'];

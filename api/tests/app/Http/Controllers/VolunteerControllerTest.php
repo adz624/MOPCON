@@ -24,7 +24,7 @@ class VolunteerController extends TestCase
         $response = $this->get('/api/2019/volunteer/');
         $compared = [];
         $compared['volunteer'] = array_map(function ($value) {
-            $value['photo'] = url($value['photo']);
+            $value['photo'] = url(str_replace('api/', '/', $value['photo']));
             unset($value['introduction'], $value['introduction_en'], $value['members'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
             return $value;
         }, $this->dataset);
@@ -95,7 +95,7 @@ class VolunteerController extends TestCase
         $result = array_pop($result);
 
         if (isset($result['photo']) && $result['photo'] !== '') {
-            $result['photo'] = url($result['photo']);
+            $result['photo'] = url(str_replace('api/', '/', $result['photo']));
         }
         if (isset($result['introduction_en']) && $result['introduction_en'] === '') {
             $result['introduction_en'] = $result['introduction'];
