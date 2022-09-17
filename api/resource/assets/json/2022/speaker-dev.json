@@ -68,7 +68,7 @@
         "link_twitter": "",
         "link_other": "https://bkhole.com",
         "link_slide": "",
-        "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon",
+        "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon.js)",
         "topic_e": "Digital Launching - Virtual curation design and WebGL (Babylon.js)",
         "summary": "第一部分帶大家了解從 virsody.io 平台設計發想到開發上線的過程，說明虛擬策展的使用者體驗如何設計；第二部分為網站前端 WebGL 開發要如何開始，以及我們在開發 Babylon.js 過程中累積的心得",
         "summary_e": "",
@@ -1620,9 +1620,9 @@
         "name": "蒼時弦也",
         "name_e": "Aotokitsuruya",
         "speaker_id": 225,
-        "company": "無",
+        "company": "五倍紅寶石軟體開發",
         "company_e": "",
-        "job_title": "資深軟體工程師",
+        "job_title": "技術總監",
         "job_title_e": "",
         "bio": "求道者，熟悉 Ruby 語言，認為好的程式是經過良好設計，具有美感的存在，因而尋找這樣的道路。",
         "bio_e": "",
@@ -2685,7 +2685,7 @@
         "session_id": 2022061
     },
     {
-        "name": "徐紹銘",
+        "name": "Samick Hsu",
         "name_e": "Samick Hsu",
         "speaker_id": 247,
         "company": "優派國際股份有限公司",
@@ -2742,7 +2742,7 @@
         "session_id": 2022041
     },
     {
-        "name": "盧業達",
+        "name": "Angus",
         "name_e": "Angus",
         "speaker_id": 248,
         "company": "優派國際股份有限公司",
