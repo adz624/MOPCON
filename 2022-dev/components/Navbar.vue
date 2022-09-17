@@ -89,10 +89,23 @@ export default {
       navList: [
         {
           name: 'community',
-          url: './community',
-          subNav: [],
-          subIsOpen: false,
-          open: process.env.route_community,
+          url: '',
+          subNav: [
+            {
+              name: 'staff',
+              url: './staff',
+              open: process.env.route_staff,
+              class: 'border-top-left-radius: 10px; border-top-right-radius: 10px;'
+            },
+            {
+              name: 'participant',
+              url: './community',
+              open: process.env.route_community,
+              class: 'border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'
+            }
+          ],
+          subIsOpen: true,
+          open: process.env.route_community || process.env.route_staff,
           target: ''
         },
         {
