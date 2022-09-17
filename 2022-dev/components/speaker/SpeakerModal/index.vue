@@ -26,12 +26,13 @@
         </div>
         <div class="speaker-community-wrap">
           <div class="speaker-community-icon mt-3">
-            <client-only>
-              <a v-if="data.link_twitter" :href="data.link_twitter" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:twitter-fill" /></a>
-              <a v-if="data.link_other" :href="data.link_other" target="_blank"><span class="iconify fz-6 mr-2" data-icon="ri:global-fill" /></a>
-              <a v-if="data.link_github" :href="data.link_github" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:github-fill" /></a>
-              <a v-if="data.link_fb" :href="data.link_fb" target="_blank"><span class="iconify fz-6" data-icon="akar-icons:facebook-fill" /></a>
-            </client-only>
+            <a v-if="data.link_twitter" :href="data.link_twitter" target="_blank">
+              <client-only><span id="link_twitter" class="iconify fz-6 ml-2" data-icon="akar-icons:twitter-fill" /></client-only></a>
+            <a v-if="data.link_other" :href="data.link_other" target="_blank">
+              <client-only><span id="link_other" class="iconify fz-6 ml-2" data-icon="ri:global-fill" /></client-only></a>
+            <a v-if="data.link_github" :href="data.link_github" target="_blank">
+              <client-only><span id="link_github" class="iconify fz-6 ml-2" data-icon="akar-icons:github-fill" /></client-only></a>
+            <a v-if="data.link_fb" :href="data.link_fb" target="_blank"><client-only><span id="link_fb" class="iconify fz-6 ml-2" data-icon="akar-icons:facebook-fill" /></client-only></a>
           </div>
         </div>
         <div class="speaker-date">
