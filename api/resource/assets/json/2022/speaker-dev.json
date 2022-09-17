@@ -1037,7 +1037,7 @@
         "ended_at": 1665808200,
         "room": "R1",
         "floor": "",
-        "sponsor_id": 88,
+        "sponsor_id": 0,
         "session_id": 2022013
     },
     {
@@ -2683,6 +2683,120 @@
         "floor": "",
         "sponsor_id": 0,
         "session_id": 2022061
+    },
+    {
+        "name": "徐紹銘",
+        "name_e": "Samick Hsu",
+        "speaker_id": 247,
+        "company": "優派國際股份有限公司",
+        "company_e": "ViewSonic Corporation",
+        "job_title": "資深工程師",
+        "job_title_e": "Sr. Developer I",
+        "bio": "常駐前端的 ViewSonic 的工程師\n不侷限特定程式語言,偶爾活躍於 npm/pub.dev\n自從碰上 Elixir 之後,過著愜意的生活\n負責 myViewBoard 網頁版產品端軟體系統",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_247",
+            "mobile": "api/2022/speaker/images/speaker_247"
+        },
+        "link_fb": "",
+        "link_github": "https://github.com/samick17",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "後端靈藥 Elixir - 24 小時彈潤不間斷",
+        "topic_e": "Elixir introduction - build a reliable web server",
+        "summary": "自從 Internet 問世以來, 透過 Web/Internet 解決問題的軟體如雨後春筍般出現.\n而各種雲端架構如 IaaS, SaaS, PaaS 已被廣泛應用.\n微觀而言, 如何打造容錯高, 以及可擴展性的軟體服務節點, 是值得被一探究竟的議題.\n\n今天要向大家介紹 Elixir 以及 Elixir 相關的生態系.\nElixir 是基於 Erlang OTP 的程式語言.\n具有高容錯, 可擴展, 平行處理等雲端服務所需之要素.\n因此可以很容易的處理,後端應用上常見的問題,使開發資源有更有效的使用.",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Cloud Service"
+            }
+        ],
+        "target": "在後端開發遇到障礙, 或是想學習新語言的朋友",
+        "target_e": "",
+        "prior_knowledge": "基本的 Google 能力, 英文閱讀能力, 參與過至少一次後端開發",
+        "prior_knowledge_e": "",
+        "expected_gain": "拓展 Elixir 社群, 聽眾可以省下許多學習 Elixir 的前置時間.及如何應用至既有系統.",
+        "expected_gain_e": "",
+        "started_at": 1665886200,
+        "ended_at": 1665888900,
+        "room": "R1",
+        "floor": "",
+        "sponsor_id": 100,
+        "session_id": 2022041
+    },
+    {
+        "name": "盧業達",
+        "name_e": "Angus",
+        "speaker_id": 248,
+        "company": "優派國際股份有限公司",
+        "company_e": "ViewSonic Corporation",
+        "job_title": "資深工程師",
+        "job_title_e": "Sr. Developer I",
+        "bio": "myViewBoard ClassRoom team 的 Backend engineer，處理 terraform 部屬、service 開發、相關 cloud service 整合、承載量壓力測試等等。\n並根據不同情境，使用不同語言。自從碰上 Elixir 之後，更充實了我的幹話日常",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_248",
+            "mobile": "api/2022/speaker/images/speaker_248"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "後端靈藥 Elixir - 24 小時彈潤不間斷",
+        "topic_e": "Elixir introduction - build a reliable web server",
+        "summary": "自從 Internet 問世以來, 透過 Web/Internet 解決問題的軟體如雨後春筍般出現.\n而各種雲端架構如 IaaS, SaaS, PaaS 已被廣泛應用.\n微觀而言, 如何打造容錯高, 以及可擴展性的軟體服務節點, 是值得被一探究竟的議題.\n\n今天要向大家介紹 Elixir 以及 Elixir 相關的生態系.\nElixir 是基於 Erlang OTP 的程式語言.\n具有高容錯, 可擴展, 平行處理等雲端服務所需之要素.\n因此可以很容易的處理,後端應用上常見的問題,使開發資源有更有效的使用.",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Cloud Service"
+            }
+        ],
+        "target": "在後端開發遇到障礙, 或是想學習新語言的朋友",
+        "target_e": "",
+        "prior_knowledge": "基本的 Google 能力, 英文閱讀能力, 參與過至少一次後端開發",
+        "prior_knowledge_e": "",
+        "expected_gain": "拓展 Elixir 社群, 聽眾可以省下許多學習 Elixir 的前置時間.及如何應用至既有系統.",
+        "expected_gain_e": "",
+        "started_at": 1665886200,
+        "ended_at": 1665888900,
+        "room": "R1",
+        "floor": "",
+        "sponsor_id": 100,
+        "session_id": 2022041
     },
     {
         "name": "MOPCON 2022 品牌形象組",
