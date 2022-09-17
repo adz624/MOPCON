@@ -129,9 +129,9 @@
                                 "speaker_id": 225,
                                 "name": "蒼時弦也",
                                 "name_e": "Aotokitsuruya",
-                                "job_title": "資深軟體工程師",
+                                "job_title": "技術總監",
                                 "job_title_e": "",
-                                "company": "無",
+                                "company": "五倍紅寶石軟體開發",
                                 "company_e": "",
                                 "img": {
                                     "web": "api/2022/speaker/images/speaker_225",
@@ -716,7 +716,7 @@
                     {
                         "session_id": 2022019,
                         "room": "R3",
-                        "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon",
+                        "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon.js)",
                         "topic_e": "Digital Launching - Virtual curation design and WebGL (Babylon.js)",
                         "summary": "第一部分帶大家了解從 virsody.io 平台設計發想到開發上線的過程，說明虛擬策展的使用者體驗如何設計；第二部分為網站前端 WebGL 開發要如何開始，以及我們在開發 Babylon.js 過程中累積的心得",
                         "summary_e": "",
@@ -1716,7 +1716,7 @@
                         "speakers": [
                             {
                                 "speaker_id": 247,
-                                "name": "徐紹銘",
+                                "name": "Samick Hsu",
                                 "name_e": "Samick Hsu",
                                 "job_title": "資深工程師",
                                 "job_title_e": "Sr. Developer I",
@@ -1733,7 +1733,7 @@
                             },
                             {
                                 "speaker_id": 248,
-                                "name": "盧業達",
+                                "name": "Angus",
                                 "name_e": "Angus",
                                 "job_title": "資深工程師",
                                 "job_title_e": "Sr. Developer I",
