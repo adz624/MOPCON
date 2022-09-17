@@ -322,7 +322,8 @@ export default {
         'assets/images/home/logo_banner_13.png?v=2',
         'assets/images/home/logo_banner_14.png?v=2',
         'assets/images/home/logo_banner_15.png?v=2',
-        'assets/images/home/logo_banner_16.png?v=2'
+        'assets/images/home/logo_banner_16.png?v=2',
+        'assets/images/home/logo_banner_17.png?v=2'
       ]
     }
   },
