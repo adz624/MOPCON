@@ -18,7 +18,7 @@
           <ul v-if="!isMobile || (isMobile && navOpen)" class="menu-list">
             <li
               v-for="nav in navOpenList"
-              :key="nav.url"
+              :key="nav.name"
             >
               <a
                 v-if="nav.subIsOpen"

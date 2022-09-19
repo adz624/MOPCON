@@ -205,6 +205,60 @@ export default {
       innerWidth: null
     }
   },
+  head () {
+    return {
+      title: '時光機 | MOPCON 2022',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: '時光機 | MOPCON 2022'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}/2022/time-machine`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/2022/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: '時光機 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: '時光機 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: '時光機 | MOPCON 2022'
+        }
+      ]
+    }
+  },
   computed: {
     isMobile () {
       return this.innerWidth <= 640

@@ -58,7 +58,7 @@
         <h3>{{ filterParticipant.name }}</h3>
         <div class="modal-community-icon mt-3">
           <client-only>
-            <a v-if="filterParticipant.event" :href="filterParticipant.event" class="bg-website_icon" target="_blank"><span class="iconify" data-icon="foundation:web" style="color: #51a3d3;" data-width="24" /></a>
+            <a v-if="filterParticipant.event" :href="filterParticipant.event" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:globe" /></a>
             <a v-if="filterParticipant.facebook" :href="filterParticipant.facebook" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:facebook-fill" /></a>
             <a v-if="filterParticipant.twitter" :href="filterParticipant.twitter" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:twitter-fill" /></a>
             <a v-if="filterParticipant.instagram" :href="filterParticipant.instagram" target="_blank"><span class="iconify fz-6" data-icon="akar-icons:instagram-fill" /></a>
