@@ -27,7 +27,7 @@
         </section>
         <section class="agenda-table">
           <ul>
-            <li v-for="agenda in agendaList" :key="agenda.session_id" class="agenda-table-list">
+            <li v-for="agenda in agendaList" :key="`schedule_unconf${agenda.session_id}`" class="agenda-table-list">
               <!--時間-->
               <div v-if="agenda.event !== '休息 Break'" class="agenda-table-date">
                 {{ agenda.started_at? $moment(agenda.started_at*1000).format('HH:mm') :'' }} - {{ agenda.started_at? $moment(agenda.ended_at*1000).format('HH:mm') :'' }}
@@ -93,7 +93,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '交流議程 | MOPCON 2022'
+          content: ''
         },
         // fb
         {
@@ -125,7 +125,7 @@ export default {
         {
           hid: 'twitter-description',
           name: 'twitter:description',
-          content: '交流議程 | MOPCON 2022'
+          content: ''
         },
         {
           hid: 'twitter-app:name:iphone',

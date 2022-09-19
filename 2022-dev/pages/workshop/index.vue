@@ -23,7 +23,7 @@
           社群工作坊
         </h2>
         <ul>
-          <li v-for="act in shopList" :key="act.id" class="workshop-table">
+          <li v-for="act in shopList" :key="`workshop${act.id}`" class="workshop-table">
             <div class="imgPart">
               <div class="imgWrap">
                 <img :src="act.img" alt="">
@@ -97,6 +97,60 @@ export default {
       ],
       innerWidth: null,
       show: null
+    }
+  },
+  head () {
+    return {
+      title: '社群工作坊 | MOPCON 2022',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: '社群工作坊 | MOPCON 2022'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}/2022/workshop`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/2022/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: '社群工作坊 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: '社群工作坊 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: '社群工作坊 | MOPCON 2022'
+        }
+      ]
     }
   },
   computed: {
