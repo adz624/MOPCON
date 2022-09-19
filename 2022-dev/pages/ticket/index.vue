@@ -70,9 +70,9 @@
               <li>{{ $t('pages.ticket.contain.9') }}</li>
               <li>{{ $t('pages.ticket.contain.10') }}</li>
             </ul>
-            <div class="btn btn-primary" @click="openWindow('https://mopcon.kktix.cc/events/mopcon2022-blind-bird')">
-              {{ $t('pages.ticket.goToBuy') }}
-            </div>
+            <button class="btn btn-primary" disabled>
+              {{ $t('pages.ticket.soldOut') }}
+            </button>
           </div>
         </div>
         <div class="ticket-box ticket-primary">
