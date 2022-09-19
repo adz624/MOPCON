@@ -4,7 +4,7 @@
       <div class="container main pb-5">
         <div class="banner-image">
           <div class="pinkCircle">
-            <h1>主辦社群</h1>
+            <h1>主辦團隊</h1>
           </div>
         </div>
         <div class="content ml-5 ml-md-0 mt-md-10">
@@ -78,7 +78,7 @@ export default {
   },
   head () {
     return {
-      title: '主辦社群 | MOPCON 2022',
+      title: '主辦團隊 | MOPCON 2022',
       meta: [
         {
           hid: 'description',
@@ -89,7 +89,7 @@ export default {
         {
           hid: 'og-title',
           property: 'og:title',
-          content: '主辦社群 | MOPCON 2022'
+          content: '主辦團隊 | MOPCON 2022'
         },
         {
           hid: 'og-description',
@@ -99,7 +99,7 @@ export default {
         {
           hid: 'og-url',
           property: 'og:url',
-          content: `${process.env.BASE_URL}/2022/community`
+          content: `${process.env.BASE_URL}/2022/staff`
         },
         {
           hid: 'og-image',
@@ -110,7 +110,7 @@ export default {
         {
           hid: 'twitter-site',
           name: 'twitter:site',
-          content: '主辦社群 | MOPCON 2022'
+          content: '主辦團隊 | MOPCON 2022'
         },
         {
           hid: 'twitter-description',
@@ -120,12 +120,12 @@ export default {
         {
           hid: 'twitter-app:name:iphone',
           name: 'twitter:app:name:iphone',
-          content: '主辦社群 | MOPCON 2022'
+          content: '主辦團隊 | MOPCON 2022'
         },
         {
           hid: 'twitter-app:name:ipad',
           name: 'twitter:app:name:ipad',
-          content: '主辦社群 | MOPCON 2022'
+          content: '主辦團隊 | MOPCON 2022'
         }
       ]
     }

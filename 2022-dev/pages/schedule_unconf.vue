@@ -86,6 +86,60 @@ export default {
       day: 1
     }
   },
+  head () {
+    return {
+      title: '交流議程 | MOPCON 2022',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '交流議程 | MOPCON 2022'
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}/2022/schedule_unconf`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/2022/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: '交流議程 | MOPCON 2022'
+        }
+      ]
+    }
+  },
   computed: {
     agendaList () {
       return this.scheduleData[this.day - 1].period
