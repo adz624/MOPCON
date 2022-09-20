@@ -56,7 +56,7 @@
                         "session_id": 2022005,
                         "room": "R1",
                         "floor": "",
-                        "topic": "品味相片：以 Jetpack Compose 實作一個相片評分應",
+                        "topic": "品味相片：以 Jetpack Compose 實作一個相片評分應用",
                         "topic_e": "TasteGram: An Image Assessment App Built with Jetpack Compose",
                         "summary": "Jetpack Compose 是 Android 的新一代 UI 工具，可用來建構原生 UI。這可簡化及加快 Android 平台上的 UI 開發作業。透過較少的程式碼、強大的工具和直觀的 Kotlin API，讓你輕鬆簡單地實做 App UI。\n\n 本次演講的目的是幫助開發者熟悉 Compose 在 Modern Android Development (MAD) 中可以完成什麼以及如何完成。為此，我們將完全從頭開始打造一個相片評分 App：品味相片。\n\n 本次演講對於了解 Android 新一代 UI 工具的特性非常有幫助，開發者可以很簡單地使用 Kotlin 語言特性和 Jetpack Compose 來把設計草圖變成手機裡真正會動的 App。",
                         "summary_e": "Jetpack Compose is the new next generation UI toolkit. It uses a declarative component based paradigm for building UIs easily and quickly. It’s written entirely in Kotlin and embraces the style and ergonomics of the Kotlin language. The goal of this talk is to help developers get familiar with this new programming model. To do so, we’re going to build an image assessment application, TasteGram, completely from scratch.",

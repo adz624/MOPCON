@@ -79,6 +79,19 @@
             "instagram": "",
             "telegram": "",
             "event": "https://gdg.community.dev/gdg-kaohsiung/"
+        },
+        {
+            "id": 7,
+            "name": "開放文化基金會",
+            "name_e": "Open Culture Foundation",
+            "photo": "api/2020/community/images/community_7",
+            "introduction": "OCF 希望能夠藉由法人組織的力量，協助台灣的開放文化相關社群，包含開放原始碼軟體、開放資料、開放政府三個主要領域的發展和應用。期許能將開源自由的精神，更廣泛地應用在各個領域。",
+            "introduction_e": "",
+            "facebook": "https://www.facebook.com/groups/1416205511963346",
+            "twitter": "",
+            "instagram": "",
+            "telegram": "",
+            "event": "https://gdg.community.dev/gdg-kaohsiung/"
         }
     ]
 }
