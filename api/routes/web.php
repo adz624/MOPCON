@@ -135,7 +135,7 @@ $router->group(['prefix' => '2022'], function ($router) {
             $router->get('/', 'CommunityController@index');
             $router->get('/organizer/{id}', 'CommunityController@getOrganizer');
             $router->get('/participant/{id}', 'CommunityController@getParticipant');
-            $router->get('images/{platform}/{name}', 'CommunityController@platformImagesView');
+            $router->get('/images/{platform}/{name}', 'CommunityController@platformImagesView');
         });
         $router->group(['prefix' => 'session'], function ($router) {
             $router->get('/', 'SessionController@index');
@@ -144,7 +144,7 @@ $router->group(['prefix' => '2022'], function ($router) {
         });
         $router->group(['prefix' => 'sponsor'], function ($router) {
             $router->get('', 'SponsorController@index');
-            $router->get('images/{platform}/{name}', 'SponsorController@platformImagesView');
+            $router->get('/images/{platform}/{name}', 'SponsorController@platformImagesView');
         });
         $router->group(['prefix' => 'unconf'], function ($router) {
             $router->get('/', 'UnconfController@index');
