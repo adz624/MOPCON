@@ -135,7 +135,7 @@ $router->group(['prefix' => '2022'], function ($router) {
             $router->get('/', 'CommunityController@index');
             $router->get('/organizer/{id}', 'CommunityController@getOrganizer');
             $router->get('/participant/{id}', 'CommunityController@getParticipant');
-            $router->get('/images/{name}', 'CommunityController@imagesView');
+            $router->get('images/{platform}/{name}', 'CommunityController@platformImagesView');
         });
         $router->group(['prefix' => 'session'], function ($router) {
             $router->get('/', 'SessionController@index');
