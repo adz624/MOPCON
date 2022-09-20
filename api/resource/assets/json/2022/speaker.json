@@ -1773,12 +1773,12 @@
         "prior_knowledge_e": "",
         "expected_gain": "了解現行自駕車架構概論與可能會遭遇的攻擊",
         "expected_gain_e": "",
-        "started_at": 1665811200,
-        "ended_at": 1665813900,
+        "started_at": 1665895800,
+        "ended_at": 1665898500,
         "room": "R4",
         "floor": "",
         "sponsor_id": 0,
-        "session_id": 2022020
+        "session_id": 2022052
     },
     {
         "name": "陳建霖",
@@ -1856,10 +1856,10 @@
         "link_twitter": "https://twitter.com/Eason_C13",
         "link_other": "https://eason.best",
         "link_slide": "",
-        "topic": "AI 背誦學習助手的開發與評估",
-        "topic_e": "Developing and Evaluating a tool using AI help you to memorize",
-        "summary": "這是一場關於 AI 與教育及使用者體驗評估的系統開發與使用者體驗研究分享。在其中你會了解 AI 如何幫助人背誦、人機互動評估的研究方法、及我們執行此專案的心路歷程。\n\n 背誦，是學習時非常重要的一環。透過反覆朗讀並記憶，可以將重要的資訊完整的儲存在長期記憶中，讓學習者受用一輩子。因為經過背誦的資訊，在大腦中彼此的神經元會緊密的聯繫在一起，只要有其中一個部分被促發，整個段落都能立刻回憶起來。但既有的背誦方法較為繁雜。往往需要另一個人輔助，像是在背不下去時給予提示，又或是更正錯誤的字句。這導致背誦非常費時、費心、費力，且不被現在的高等教育採納。\n\n 為此，我們透過 Web API 打造一使用 AI 輔助背誦文章的系統，並且使用嚴謹的研究方法評估之。使用者可在瀏覽器打開此系統的網頁，貼上想要記憶的內容並開始背誦，此系統不僅能透過語音提示使用者目前背誦的進度，更辨識使用者背誦的內容並予以糾正。讓使用者可透過此系統即時且精確的回饋，持續改善自己還不記得的部分，讓使用者只要靠自己就能高效率的將整篇文章背起來。希望藉此未來能幫助世界各地的人，有更輕鬆愉快的背誦體驗。此系統有高度的可用性與潛力，不僅只要有瀏覽器任何裝置都能使用，還有強大的 AI 支援支援超過 40 種語言的背誦。在未來我們計畫用實驗評估此平台，並讓此系統能結合社群與遊戲化元素，讓背誦不再麻煩，而是一種新的教育潮流。",
-        "summary_e": "This is a system development and user experience research sharing on AI and education and user experience evaluation. In it, you'll learn how AI helps people memorize, research methods for human-computer interaction assessment, and our mental journey to implement this project.\n\nRecitation is a very important part of learning. Through repeated reading and memorization, important information can be completely stored in long-term memory, so that learners can use it for a lifetime. Because of the recited information, the neurons in the brain are closely linked to each other, and as long as one part is triggered, the entire passage can be recalled at once. But the existing memorization method is more complicated. Often another person is needed to assist, such as to give hints when it is difficult to memorize, or to correct wrong words. This results in memorization that is very time-consuming, laborious, and laborious, and is not adopted by current higher education.\n\nTo this end, we built a system that uses AI to assist in reciting articles through a Web API, and evaluated it using rigorous research methods.",
+        "topic": "Focus 讓 AI 來記錄與分析你的電腦使用狀況",
+        "topic_e": "Focus: lets AI record and analyze your computer usage",
+        "summary": "在使用電腦時，人往往會不自覺地分心，或者做出一些沒有效率的操作，導致花費更多時間，比方只是要回應臉書留言，結果被動態推播影響分心了。\n\n這些沒有效率的分心，在學生進行數位學習時尤其嚴重，因為會影響學生完成學習目標的時間。這讓講者思考有沒有辦法透過「自我調整學習」的策略，來收集學生使用電腦的記錄檔，並且經過 AI 標注後，供學生評估並改進自己的電腦使用效率。\n\n為此講者開發了 Focus，一個在網頁利用 Web API 與 Tensorflow.js 做本地運算收集使用者的面部表情與視線軌跡的應用，允許使用者在記錄並回放自己的電腦使用過程，據此反省改進。Focus 投稿至英國的人工智慧與教育國際研討會（AIED 2022）作為海報發表。\n\n此議程將探討人在使用電腦時避免分心的各種做法，並分享講者開發 Focus 的心路歷程，包含理論基礎、開發過程、在發表時收到的回饋以及未來規劃。",
+        "summary_e": "When using a computer, people tend to be distracted unconsciously, or do some inefficient operations, which lead to more time spent, for example, just responding to Facebook messages, and as a result, they are distracted by dynamic push broadcasts.\n\nThese ineffective distractions are especially severe when students are engaged in digital learning, as they affect the time students take to accomplish their learning goals. This made the speaker think about whether there is a way to use the \"self-adjusted learning\" strategy to collect records of students' computer use, and mark them with AI for students to evaluate and improve their computer use efficiency.\n\nTo this end, the speaker developed Focus, an application that uses Web API and Tensorflow.js to perform local operations on web pages to collect users' facial expressions and gaze trajectories, allowing users to record and play back their computer usage process and reflect on improvements accordingly. . Focus contributed as a poster to the International Symposium on Artificial Intelligence and Education in the UK (AIED 2022).",
         "community_partner": "",
         "is_keynote": false,
         "is_online": false,
@@ -1885,7 +1885,7 @@
                     "web": "#51A3D3",
                     "mobile": "#51A3D3"
                 },
-                "name": "Cross-platform"
+                "name": "Data Analyzing "
             },
             {
                 "color": {
@@ -1902,18 +1902,18 @@
                 "name": "UI/UX"
             }
         ],
-        "target": "想在網頁整合 AI 的開發者、對背誦感興趣的使用者、對教育與科技結合感興趣的人",
-        "target_e": "Developers who want to integrate AI on web pages, users who are interested in recitation, People interested in combining education and technology",
+        "target": "想在網頁整合 AI 的開發者，對跨領域專案（整合AI、教育、心理學、學習科學、使用者體驗）感興趣的人",
+        "target_e": "Developers who want to integrate AI on the web, those interested in cross-disciplinary projects (integrating AI, education, psychology, learning science, user experience)",
         "prior_knowledge": "無",
         "prior_knowledge_e": "無",
-        "expected_gain": "1. 關於背誦的教育與心理學知識\n2. 關於 AI 在網頁部署的經驗心得\n3. 關於從學術、人機互動角度上要如何評估一個系統的方法",
-        "expected_gain_e": "1. Educational and psychological knowledge about recitation\n2. Experience in deploying AI on web pages\n3. How to evaluate a system from an academic and human-computer interaction perspective",
-        "started_at": 1665895800,
-        "ended_at": 1665898500,
+        "expected_gain": "1. 關於幫助專心使用電腦的小工具\n2. 講者在網頁整合 AI 進行本地運算的心路歷程\n3. 講者在國際研討會發表海報論文的心得",
+        "expected_gain_e": "1. Tools that help you concentrate on using your computer\n2. The speaker's mental journey of integrating AI on the web for local computing\n3. Speaker's experience in publishing poster papers at international seminars",
+        "started_at": 1665811200,
+        "ended_at": 1665813900,
         "room": "R4",
         "floor": "",
         "sponsor_id": 0,
-        "session_id": 2022052
+        "session_id": 2022020
     },
     {
         "name": "愷開",
@@ -2268,11 +2268,11 @@
         "name": "John Lu",
         "name_e": "John Lu",
         "speaker_id": 236,
-        "company": "",
+        "company": "時刻科技股份有限公司",
         "company_e": "",
-        "job_title": "Android 工程師",
+        "job_title": "Android Developer",
         "job_title_e": "Android Developer",
-        "bio": "John 是一名 Android 開發者。\n\n 他深受挑戰的驅使，並對於打破傳統的思維和行為方式感到興奮。 憑藉兩年的 Modern Android Development (MAD) 開發經驗，他致力於結合最新的 Jetpack Libra",
+        "bio": "John 是「時刻科技」的 Android 工程師，目前負責開發一款遊戲化的待辦事項 app「水球清單」。\n\n他深受挑戰的驅使，並對於打破傳統的思維和行為方式感到興奮。 具有兩年的 Modern Android Development (MAD) 開發經驗，他致力於結合最新的 Jetpack Libraries 和架構設計，以構建有趣且富有創意的應用程式。",
         "bio_e": "John is an Android Developer. \n\nHe is deeply motivated by challenges and tends to be excited by breaking conventional ways of thinking and doing. With two years of experience in Modern Android Development, he works on combining the latest Jetpack libraries and architecture design to build fun and creative applications.",
         "img": {
             "web": "api/2022/speaker/images/speaker_236",
@@ -2797,6 +2797,56 @@
         "floor": "",
         "sponsor_id": 100,
         "session_id": 2022041
+    },
+    {
+        "name": "許祐誠",
+        "name_e": "YouCheng Hsu",
+        "speaker_id": 249,
+        "company": "Ubiquiti",
+        "company_e": "Ubiquiti",
+        "job_title": "前端工程師",
+        "job_title_e": "Frontend Engineer",
+        "bio": "肩頸狀況不是很好",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_249",
+            "mobile": "api/2022/speaker/images/speaker_249"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "如何寫個 JS 小工具分析 Shared Components 的效益",
+        "topic_e": "How to implement a JS tool to analysis shared components",
+        "summary": "老闆說要看 Design System 的效益怎麼辦！？好慌啊我這個小小前端工程師！！！只好用 JS 寫個小工具自救了ＱＱ",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            }
+        ],
+        "target": "Frontend Engineer",
+        "target_e": "Frontend Engineer",
+        "prior_knowledge": "Javascript, Nodejs, Typescript",
+        "prior_knowledge_e": "Javascript, Nodejs, Typescript",
+        "expected_gain": "稍微懂一點 code transformer 怎麼運作的",
+        "expected_gain_e": "",
+        "started_at": 1665805500,
+        "ended_at": 1665808200,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 90,
+        "session_id": 2022014
     },
     {
         "name": "MOPCON 2022 品牌形象組",
