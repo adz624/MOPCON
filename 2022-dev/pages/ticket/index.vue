@@ -70,9 +70,9 @@
               <li>{{ $t('pages.ticket.contain.9') }}</li>
               <li>{{ $t('pages.ticket.contain.10') }}</li>
             </ul>
-            <div class="btn btn-primary" @click="openWindow('https://mopcon.kktix.cc/events/mopcon2022-blind-bird')">
-              {{ $t('pages.ticket.goToBuy') }}
-            </div>
+            <button class="btn btn-primary" disabled>
+              {{ $t('pages.ticket.soldOut') }}
+            </button>
           </div>
         </div>
         <div class="ticket-box ticket-primary">
@@ -201,6 +201,60 @@ export default {
   data () {
     return {
       innerWidth: null
+    }
+  },
+  head () {
+    return {
+      title: '票種介紹 | MOPCON 2022',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '票種介紹 | MOPCON 2022'
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: '票種介紹 | MOPCON 2022'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}/2022/ticket`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/2022/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: '票種介紹 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: '票種介紹 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: '票種介紹 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: '票種介紹 | MOPCON 2022'
+        }
+      ]
     }
   },
   computed: {

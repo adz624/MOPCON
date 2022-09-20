@@ -27,7 +27,7 @@
         </section>
         <section class="agenda-table">
           <ul>
-            <li v-for="agenda in agendaList" :key="agenda.session_id" class="agenda-table-list">
+            <li v-for="agenda in agendaList" :key="`schedule_unconf${agenda.session_id}`" class="agenda-table-list">
               <!--時間-->
               <div v-if="agenda.event !== '休息 Break'" class="agenda-table-date">
                 {{ agenda.started_at? $moment(agenda.started_at*1000).format('HH:mm') :'' }} - {{ agenda.started_at? $moment(agenda.ended_at*1000).format('HH:mm') :'' }}
@@ -84,6 +84,60 @@ export default {
     return {
       scheduleData: [],
       day: 1
+    }
+  },
+  head () {
+    return {
+      title: '交流議程 | MOPCON 2022',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}/2022/schedule_unconf`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/2022/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: '交流議程 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: '交流議程 | MOPCON 2022'
+        }
+      ]
     }
   },
   computed: {

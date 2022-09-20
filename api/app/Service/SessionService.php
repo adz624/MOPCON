@@ -29,4 +29,21 @@ class SessionService
 
         return $result;
     }
+
+    public static function transToSession($jsonArray, $sponsor): array
+    {
+        $period = array_column($jsonArray, 'period');
+        $sections = array_column(array_merge(...$period), 'room');
+        $sessions = [];
+        foreach ($sections as $section) {
+            if (empty($section)) continue;
+            foreach ($section as $room) {
+                if (isset($sponsor[$room['sponsor_id']])) {
+                    $room['sponsor_info'] = $sponsor[$room['sponsor_id']];
+                }
+                $sessions[$room['session_id']] = $room;
+            }
+        }
+        return $sessions;
+    }
 }

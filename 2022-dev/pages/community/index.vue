@@ -58,6 +58,7 @@
         <h3>{{ filterParticipant.name }}</h3>
         <div class="modal-community-icon mt-3">
           <client-only>
+            <a v-if="filterParticipant.event" :href="filterParticipant.event" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:globe" /></a>
             <a v-if="filterParticipant.facebook" :href="filterParticipant.facebook" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:facebook-fill" /></a>
             <a v-if="filterParticipant.twitter" :href="filterParticipant.twitter" target="_blank"><span class="iconify fz-6 mr-2" data-icon="akar-icons:twitter-fill" /></a>
             <a v-if="filterParticipant.instagram" :href="filterParticipant.instagram" target="_blank"><span class="iconify fz-6" data-icon="akar-icons:instagram-fill" /></a>
@@ -96,7 +97,56 @@ export default {
   },
   head () {
     return {
-      title: '主辦社群 | MOPCON 2022'
+      title: '參與社群 | MOPCON 2022',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.modalOpen ? this.filterParticipant.name : ''
+        },
+        // fb
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: '參與社群 | MOPCON 2022'
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}/2022/community`
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/2022/og-image.png`
+        },
+        // twitter seo
+        {
+          hid: 'twitter-site',
+          name: 'twitter:site',
+          content: '參與社群 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-description',
+          name: 'twitter:description',
+          content: this.modalOpen ? this.filterParticipant.name : ''
+        },
+        {
+          hid: 'twitter-app:name:iphone',
+          name: 'twitter:app:name:iphone',
+          content: '參與社群 | MOPCON 2022'
+        },
+        {
+          hid: 'twitter-app:name:ipad',
+          name: 'twitter:app:name:ipad',
+          content: '參與社群 | MOPCON 2022'
+        }
+      ]
     }
   },
   methods: {
