@@ -19,7 +19,12 @@ class BaseCommunityController extends Controller
         $result = [];
         array_walk($this->jsonAry, function ($subset, $key) use (&$result) {
             $result[$key] = array_map(function ($value) {
-                $value['photo'] = $this->generatePhotoUrl($value['photo']);
+                if ($this->year <= 2021) {
+                    $value['photo'] = $this->generatePhotoUrl($value['photo']);
+                } else {
+                    $result['photo']['web'] = $this->generatePhotoUrl($value['photo']['web']);
+                    $result['photo']['mobile'] = $this->generatePhotoUrl($value['photo']['mobile']);
+                }
                 unset($value['introduction'], $value['introduction_e'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
                 return $value;
             }, $subset);
@@ -96,8 +101,13 @@ class BaseCommunityController extends Controller
             }
         });
         $result = array_pop($result);
-        if (isset($result['photo']) && $result['photo'] !== '') {
-            $result['photo'] = $this->generatePhotoUrl($result['photo']);
+        if (isset($result['photo'])) {
+            if ($this->year <= 2021) {
+                if ($result['photo'] !== '') $result['photo'] = $this->generatePhotoUrl($result['photo']);
+            } else {
+                $result['photo']['web'] = $this->generatePhotoUrl($result['photo']['web']);
+                $result['photo']['mobile'] = $this->generatePhotoUrl($result['photo']['mobile']);
+            }
         }
         if (isset($result['introduction_e']) && $result['introduction_e'] === '') {
             $result['introduction_e'] = $result['introduction'];
