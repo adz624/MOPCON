@@ -83,7 +83,13 @@ class BaseSessionController extends Controller
         }
         $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
-        $this->sessions = $this->transSpeakerToSession($speakers);
+
+        // 配合 2022 資料調整
+        if ($this->year <= 2021) {
+            $this->sessions = $this->transSpeakerToSession($speakers);
+        } else {
+            $this->sessions = SessionService::transToSession($this->jsonAry, $this->sponsors);
+        }
     }
 
     /**
@@ -196,7 +202,6 @@ class BaseSessionController extends Controller
             $sessions[$session_id] = $session;
         } else {
             $sessions[$session_id]['speakers'][] = SessionService::transportMultipleSpeaker($session);
-            if ($this->year > 2021) $sessions[$session_id] = array_merge($sessions[$session_id], $session);
         }
     }
 }
