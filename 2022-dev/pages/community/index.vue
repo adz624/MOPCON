@@ -28,7 +28,7 @@
           <ul class="participantList">
             <li v-for="data in participantData" :key="`participant${data.id}`">
               <a href="#" @click.prevent="openModal(data.id)">
-                <div class="participantBg" :style="{ backgroundImage: 'url(' + data.photo + ')' }" />
+                <div class="participantBg" :style="{ backgroundImage: 'url(' + data.photo.web + ')' }" />
                 <h3>{{ data.name }}</h3>
               </a>
             </li>
@@ -54,7 +54,7 @@
     </div>
     <Modal :modal-open="modalOpen" @modal-close="closeModal">
       <div class="modal-content-wrap">
-        <div class="modalBg" :style="{ backgroundImage: 'url(' + filterParticipant.photo + ')' }" />
+        <div class="modalBg" :style="{ backgroundImage: 'url(' + filterParticipant.photo?.web + ')' }" />
         <h3>{{ filterParticipant.name }}</h3>
         <div class="modal-community-icon mt-3">
           <client-only>

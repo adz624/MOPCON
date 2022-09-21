@@ -19,7 +19,10 @@ class BaseCommunityController extends Controller
         $result = [];
         array_walk($this->jsonAry, function ($subset, $key) use (&$result) {
             $result[$key] = array_map(function ($value) {
-                $value['photo'] = $this->generatePhotoUrl($value['photo']);
+                $value['photo'] = !is_array($value['photo']) ? $this->generatePhotoUrl($value['photo']) : [
+                    'web' => $this->generatePhotoUrl($value['photo']['web']),
+                    'mobile' => $this->generatePhotoUrl($value['photo']['mobile'])
+                ];
                 unset($value['introduction'], $value['introduction_e'], $value['facebook'], $value['twitter'], $value['instagram'], $value['telegram'], $value['event']);
                 return $value;
             }, $subset);
@@ -96,8 +99,11 @@ class BaseCommunityController extends Controller
             }
         });
         $result = array_pop($result);
-        if (isset($result['photo']) && $result['photo'] !== '') {
-            $result['photo'] = $this->generatePhotoUrl($result['photo']);
+        if (isset($result['photo'])) {
+            $result['photo'] = !is_array($result['photo']) ? $this->generatePhotoUrl($result['photo']) : [
+                'web' => $this->generatePhotoUrl($result['photo']['web']),
+                'mobile' => $this->generatePhotoUrl($result['photo']['mobile'])
+            ];
         }
         if (isset($result['introduction_e']) && $result['introduction_e'] === '') {
             $result['introduction_e'] = $result['introduction'];
