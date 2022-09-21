@@ -1646,10 +1646,10 @@
                                 "speaker_id": 216,
                                 "name": "盧承億",
                                 "name_e": "Larry Lu",
-                                "job_title": "後端工程師",
-                                "job_title_e": "Backend Engineer",
-                                "company": "ImBee",
-                                "company_e": "ImBee",
+                                "job_title": "Software Developer",
+                                "job_title_e": "Software Developer",
+                                "company": "SariSuki",
+                                "company_e": "SariSuki",
                                 "img": {
                                     "web": "api/2022/speaker/images/speaker_216",
                                     "mobile": "api/2022/speaker/images/speaker_216"

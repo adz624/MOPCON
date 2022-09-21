@@ -121,6 +121,21 @@
     },
     {
         "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_96",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_96"
+        },
+        "name": "捕夢網數位科技有限公司",
+        "name_e": "PUMO network Digital Technology Co., Ltd.",
+        "sponsor_id": 96,
+        "about_us": "身為國內主機商，從網路主機代管起家的捕夢網，近年來為因應企業需求，轉型踏入資訊安全防護的領域。有別於其他網路服務業者，捕夢網提供網路架構的安全服務，更以客戶立場出發，注重網站暨程式的資訊安全服務。代理國內外SSL憑證，獨家代理來自以色列的弱點掃描、WAF應用程式防火牆及DAF資料庫防火牆等資安服務，打造加密、偵測、阻擋、掩護四點一環，全方位網站安全環境。累積多年經驗，能依據不同應用主機型態，如資料庫、網站連線、網站程式等等，提供客製化檢測服務，能夠找到隱藏的弱點與漏洞，有助提升應用主機的安全。",
+        "about_us_e": "As a reliable hosting provider in Taiwan, PUMO which started from hosting begins to provide the cybersecurity service due to the needs from the clients. As distinguished from other ISPs, PUMO not only emphasizes and provides network security services, but also focuses on the cybersecurity of websites. Being the agent of SSL of top brands from domestic and foreign, vulnerability scanning from Israel, WAF (web application firewall) and DAF (database firewall), PUMO build a comprehensive security environment of website, combined with encryption, detection, blocking and masking. With service experience for years, PUMO can provide customized services based on different hosting types such as database, website connection, website program, etc. To find the hidden weaknesses and vulnerabilities, to improve the hosting security.",
+        "facebook_url": "https://www.facebook.com/pumonetwork/",
+        "official_website": "https://www.pumo.com.tw/www/",
+        "sponsor_type": "bruce_wayne",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
             "web": "api/2022/sponsor/images/web/sponsor_97",
             "mobile": "api/2022/sponsor/images/mobile/sponsor_97"
         },

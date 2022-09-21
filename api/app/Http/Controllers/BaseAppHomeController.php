@@ -24,7 +24,7 @@ class BaseAppHomeController extends Controller
             return $value;
         }, $this->jsonAry);
 
-        $request = Request::create('/api/' . $this->year . '/news', 'GET');
+        $request = Request::create($this->year . '/news', 'GET');
         $response = json_decode($app->dispatch($request)->getContent(), true);
         $this->output['news'] = $response['data'] ?? [];
     }
