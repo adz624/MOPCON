@@ -282,9 +282,9 @@
                         "session_id": 2022009,
                         "room": "R1",
                         "floor": "",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "Web3.0背後看不見的戰爭",
+                        "topic_e": "World Wile War Behind Web3.0",
+                        "summary": "從虛擬幣、AI智慧到區塊鏈、物聯網再到NFT及元宇宙，一連串嶄新的知識及應用引爆了Web3.0風光熱潮。引起社會、企業及許多莘莘學子前仆後繼地投入Web3.0領域。\n\n風光的背後必然藏著許多暗潮洶湧，駭客早就不care什麼置換網頁、竊取資料庫等雕蟲小技。他們瞄準的是NFT、虛擬幣、元宇宙等更有價值的資產。 \n\nWeb3.0風光的表面，背後一場光明與黑暗、正與邪的戰爭，正悄然無聲地開打中。一不注意，你是否就在戰爭中犧牲了？",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -295,9 +295,42 @@
                         "expected_gain": "",
                         "started_at": 1665802200,
                         "ended_at": 1665804900,
-                        "tags": [],
-                        "speakers": [],
-                        "sponsor_id": 0,
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 250,
+                                "name": "Jackey Huang",
+                                "name_e": "Jackey Huang",
+                                "company": "捕夢網數位科技有限公司",
+                                "company_e": "PUMO Digital Network Technology Co., Ltd.",
+                                "job_title": "總監",
+                                "job_title_e": "Director",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_250",
+                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                },
+                                "link_fb": "",
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": ""
+                            }
+                        ],
+                        "sponsor_id": 96,
                         "community_partner": ""
                     },
                     {
@@ -328,7 +361,7 @@
                         ],
                         "speakers": [
                             {
-                                "speaker_id": 250,
+                                "speaker_id": 260,
                                 "name": "MOPCON 2022 品牌形象組",
                                 "name_e": "MOPCON 2022 Branding & Design",
                                 "company": "MOPCON",
@@ -336,8 +369,8 @@
                                 "job_title": "品牌形象組設計師",
                                 "job_title_e": "Branding & Design Designer",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_250",
-                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                    "web": "api/2022/speaker/images/speaker_260",
+                                    "mobile": "api/2022/speaker/images/speaker_260"
                                 },
                                 "link_fb": "https://www.facebook.com/mopcon/",
                                 "link_github": "https://github.com/MOPCON/",
@@ -534,9 +567,9 @@
                         "session_id": 2022014,
                         "room": "R2",
                         "floor": "",
-                        "topic": "如何寫個 JS 小工具分析 Shared Components 的效益",
+                        "topic": "如何以 JS 實作 Shared Components 的效益分析工具",
                         "topic_e": "How to implement a JS tool to analysis shared components",
-                        "summary": "老闆說要看 Design System 的效益怎麼辦！？好慌啊我這個小小前端工程師！！！只好用 JS 寫個小工具自救了ＱＱ",
+                        "summary": "Design System 能為產品帶來更為一致性的體驗。\n但 Design System 需要時間醞釀、開發，而其影響並不容易直觀的觀測、闡述，也因此難以闡述其影響力。\n\n講者爬梳網路上各種 Design System 效益分析的文章，並以 JS 實作分析工具，讓 Design System 的效益得以統計、分析。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -709,22 +742,58 @@
                         "session_id": 2022017,
                         "room": "R1",
                         "floor": "",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "Meet Passkeys, 與你不知道的金融驗證工具",
+                        "topic_e": "Meet Passkeys, and  verification tool in Bank",
+                        "summary": "帳號密碼安全嗎？詐騙、駭客等安全問題，如何在行動應用技術年代，實踐即安全又使用體驗良好的驗證機制，在銀行端又如何做到交易方便又安全無疑，此次的內容將介紹給大家。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
+                        "level": "Basic",
+                        "target": "App開發者、對金融業有興趣人、對驗證機制想瞭解人員",
+                        "target_e": "",
+                        "prior_knowledge": "App開發、基礎client-server溝通機制、驗證技術(SSH、FIDO、生物驗證)",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "驗證工具、金融業",
+                        "expected_gain_e": "",
                         "started_at": 1665811200,
                         "ended_at": 1665813900,
-                        "tags": [],
-                        "speakers": [],
-                        "sponsor_id": 0,
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 251,
+                                "name": "Diman",
+                                "name_e": "Diman",
+                                "job_title": "技術組長",
+                                "job_title_e": "App Development Leader",
+                                "company": "國泰世華銀行",
+                                "company_e": "Cathay United Bank",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_251",
+                                    "mobile": "api/2022/speaker/images/speaker_251"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": ""
+                            }
+                        ],
+                        "sponsor_id": 103,
                         "community_partner": ""
                     },
                     {
@@ -2272,7 +2341,7 @@
                         ],
                         "speakers": [
                             {
-                                "speaker_id": 251,
+                                "speaker_id": 261,
                                 "name": "MOPCON 2022 品牌形象組",
                                 "name_e": "MOPCON 2022 Branding & Design",
                                 "company": "MOPCON",
@@ -2280,8 +2349,8 @@
                                 "job_title": "品牌形象組設計師",
                                 "job_title_e": "Branding & Design Designer",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_250",
-                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                    "web": "api/2022/speaker/images/speaker_260",
+                                    "mobile": "api/2022/speaker/images/speaker_260"
                                 },
                                 "link_fb": "https://www.facebook.com/mopcon/",
                                 "link_github": "https://github.com/MOPCON/",
@@ -3237,6 +3306,23 @@
                                 "link_github": "https://github.com/sailplaneTW",
                                 "link_twitter": "https://twitter.com/sailplaneTW",
                                 "link_other": "https://www.sam-huang.info/"
+                            },
+                            {
+                                "speaker_id": 252,
+                                "name": "Ryan",
+                                "name_e": "Ryan",
+                                "job_title": "Technical Project Manager",
+                                "job_title_e": "Technical Project Manager",
+                                "company": "Perpetual Protocol",
+                                "company_e": "Perpetual Protocol",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_252",
+                                    "mobile": "api/2022/speaker/images/speaker_252"
+                                },
+                                "link_fb": "",
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": ""
                             }
                         ],
                         "sponsor_id": 0,
