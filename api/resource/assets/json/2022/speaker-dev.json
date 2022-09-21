@@ -2817,9 +2817,9 @@
         "link_twitter": "",
         "link_other": "",
         "link_slide": "",
-        "topic": "如何寫個 JS 小工具分析 Shared Components 的效益",
+        "topic": "如何以 JS 實作 Shared Components 的效益分析工具",
         "topic_e": "How to implement a JS tool to analysis shared components",
-        "summary": "老闆說要看 Design System 的效益怎麼辦！？好慌啊我這個小小前端工程師！！！只好用 JS 寫個小工具自救了ＱＱ",
+        "summary": "Design System 能為產品帶來更為一致性的體驗。\n但 Design System 需要時間醞釀、開發，而其影響並不容易直觀的觀測、闡述，也因此難以闡述其影響力。\n\n講者爬梳網路上各種 Design System 效益分析的文章，並以 JS 實作分析工具，讓 Design System 的效益得以統計、分析。",
         "summary_e": "",
         "community_partner": "",
         "is_keynote": false,
@@ -2849,9 +2849,173 @@
         "session_id": 2022014
     },
     {
+        "name": "Jackey Huang",
+        "name_e": "Jackey Huang",
+        "speaker_id": 250,
+        "company": "捕夢網數位科技有限公司",
+        "company_e": "PUMO Digital Network Technology Co., Ltd.",
+        "job_title": "總監",
+        "job_title_e": "Director",
+        "bio": "曾任職電信產業、IT及資訊產業多年，累積多年實際客戶服務經驗，深感近年資訊安全對於各行各業各領域的重要性，轉身投入資訊安全的領域。將用最實際最切身的分享，帶領與會聽眾歷經一場看不到，你甚至不知道自己正身處其中的戰爭。",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_250",
+            "mobile": "api/2022/speaker/images/speaker_250"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "Web3.0背後看不見的戰爭",
+        "topic_e": "World Wile War Behind Web3.0",
+        "summary": "從虛擬幣、AI智慧到區塊鏈、物聯網再到NFT及元宇宙，一連串嶄新的知識及應用引爆了Web3.0風光熱潮。引起社會、企業及許多莘莘學子前仆後繼地投入Web3.0領域。\n\n風光的背後必然藏著許多暗潮洶湧，駭客早就不care什麼置換網頁、竊取資料庫等雕蟲小技。他們瞄準的是NFT、虛擬幣、元宇宙等更有價值的資產。 \n\nWeb3.0風光的表面，背後一場光明與黑暗、正與邪的戰爭，正悄然無聲地開打中。一不注意，你是否就在戰爭中犧牲了？",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Basic",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Cloud Service"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web3"
+            }
+        ],
+        "target": "任何想知道Web3.0背後看不見的戰爭的會眾",
+        "target_e": "",
+        "prior_knowledge": "無，不走高深的知識或技術分享，以最簡單易懂的話語與會眾分享",
+        "prior_knowledge_e": "",
+        "expected_gain": "讓會眾更加明白現在的自己是身處在多危險的資訊風險中",
+        "expected_gain_e": "",
+        "started_at": 1665802200,
+        "ended_at": 1665804900,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 0,
+        "session_id": 2022009
+    },
+    {
+        "name": "Diman",
+        "name_e": "Diman",
+        "speaker_id": 251,
+        "company": "國泰世華銀行",
+        "company_e": "Cathay United Bank",
+        "job_title": "技術組長",
+        "job_title_e": "App Development Leader",
+        "bio": "工作十餘年，待過中國大陸，在家SOHO，SI公司，OTT影音公司，從資料分析，後端開發，一直做到前端應用開發，近年來專注於APP開發，CI/CD等相關技術，是一個一直想追求軟體開發品質的程式設計師。",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_251",
+            "mobile": "api/2022/speaker/images/speaker_251"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "Meet Passkeys, 與你不知道的金融驗證工具",
+        "topic_e": "Meet Passkeys, and  verification tool in Bank",
+        "summary": "帳號密碼安全嗎？詐騙、駭客等安全問題，如何在行動應用技術年代，實踐即安全又使用體驗良好的驗證機制，在銀行端又如何做到交易方便又安全無疑，此次的內容將介紹給大家。",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Basic",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Mobile App"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            }
+        ],
+        "target": "App開發者、對金融業有興趣人、對驗證機制想瞭解人員",
+        "target_e": "",
+        "prior_knowledge": "App開發、基礎client-server溝通機制、驗證技術(SSH、FIDO、生物驗證)",
+        "prior_knowledge_e": "",
+        "expected_gain": "驗證工具、金融業",
+        "expected_gain_e": "",
+        "started_at": 1665811200,
+        "ended_at": 1665813900,
+        "room": "R2",
+        "floor": "",
+        "sponsor_id": 103,
+        "session_id": 2022017
+    },
+    {
+        "name": "Ryan",
+        "name_e": "Ryan",
+        "speaker_id": 252,
+        "company": "Perpetual Protocol",
+        "company_e": "Perpetual Protocol",
+        "job_title": "Technical Project Manager",
+        "job_title_e": "Technical Project Manager",
+        "bio": "Perpetual Protocol 技術專案經理，曾於 HTC 負責區塊鏈手機、國泰金控負責區塊鏈產品策略",
+        "bio_e": "Perpetual Protocol technical project manager, was responsible for blockchain phone at HTC and blockchain strategy at Cathay Financial Holdings",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_252",
+            "mobile": "api/2022/speaker/images/speaker_252"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "談區塊鏈的意義、現況及未來",
+        "topic_e": "",
+        "summary": "近年來區塊鏈相關技術蓬勃發展，但生活中除了幾位參與交易、挖礦的人們外，大多人只能從新聞中略知一二: 薩爾瓦多瘋狂抄底、LUNA 幣跌到變廢紙...等，整體而言似乎對我們的生活影響並不大。透過這場對談，邀請到從學界到業界的專家告訴我們，區塊鏈如何默默地改變我們的生活，未來又能帶給我們什麼樣的機會。",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": true,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Panel"
+            }
+        ],
+        "target": "",
+        "target_e": "",
+        "prior_knowledge": "",
+        "prior_knowledge_e": "",
+        "expected_gain": "更深入、更真實地了解區塊鏈\n幫助會眾汲取不同觀點，進行反思及批判性思考\n了解產業現況及趨勢",
+        "expected_gain_e": "",
+        "started_at": 1665905700,
+        "ended_at": 1665909900,
+        "room": "R1",
+        "floor": "",
+        "sponsor_id": 0,
+        "session_id": 2022061
+    },
+    {
         "name": "MOPCON 2022 品牌形象組",
         "name_e": "MOPCON 2022 Branding & Design",
-        "speaker_id": 250,
+        "speaker_id": 260,
         "company": "MOPCON",
         "company_e": "MOPCON",
         "job_title": "品牌形象組設計師",
@@ -2859,8 +3023,8 @@
         "bio": "提供你從概念到實現的最佳舞台！催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
         "bio_e": "Responsible for the visual design of MOPCON – everything from website and app design, to souvenirs! Comprised of talented people from all over Taiwan, we experience a new adventure every year~",
         "img": {
-            "web": "api/2022/speaker/images/speaker_250",
-            "mobile": "api/2022/speaker/images/speaker_250"
+            "web": "api/2022/speaker/images/speaker_260",
+            "mobile": "api/2022/speaker/images/speaker_260"
         },
         "link_fb": "https://www.facebook.com/mopcon/",
         "link_github": "https://github.com/MOPCON/",
@@ -2901,7 +3065,7 @@
     {
         "name": "MOPCON 2022 品牌形象組",
         "name_e": "MOPCON 2022 Branding & Design",
-        "speaker_id": 251,
+        "speaker_id": 261,
         "company": "MOPCON",
         "company_e": "MOPCON",
         "job_title": "品牌形象組設計師",
@@ -2909,8 +3073,8 @@
         "bio": "提供你從概念到實現的最佳舞台！催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
         "bio_e": "Responsible for the visual design of MOPCON – everything from website and app design, to souvenirs! Comprised of talented people from all over Taiwan, we experience a new adventure every year~",
         "img": {
-            "web": "api/2022/speaker/images/speaker_250",
-            "mobile": "api/2022/speaker/images/speaker_250"
+            "web": "api/2022/speaker/images/speaker_260",
+            "mobile": "api/2022/speaker/images/speaker_260"
         },
         "link_fb": "https://www.facebook.com/mopcon/",
         "link_github": "https://github.com/MOPCON/",
