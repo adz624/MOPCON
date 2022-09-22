@@ -19,22 +19,72 @@
                         "session_id": 2022001,
                         "room": "R1",
                         "floor": "",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
-                        "summary_e": "",
+                        "topic": "通過 Sociotechnical 打造產品競爭力",
+                        "topic_e": "Build Product Competitiveness with Sociotechnical",
+                        "summary": "在走入 Web3 的時代裡，很多東西都變得虛擬化，甚至也不在集中化管理，不變的核心宗旨是做出對的產品來解決商務問題，但是大部分場景下，並沒有很好的讓業務知識很好的與技術工程團隊結合，導致產品競爭力滑落，甚至喪失的客源。在這個演講中， Kim 會談到關於一個非常久遠的話題 - Sociotechnical，試圖帶大家去重新認識一次組織、業務、團隊、實踐的四大集合體，是怎麼運作可以讓產品走向獲取更好的適應力。",
+                        "summary_e": "In the era of entering Web 3, many things can be virtualized, and even centralized management. The core concept of products is to solve problems in a direction, but in various scenarios, there is no decent problem. The dissemination of business knowledge and knowledge leads to product In the midst of a team's long-established technology slips, or even bereaved clients, Kim talks about speeches. The four sets of business teams and practices are how to make products more adaptable.",
                         "is_keynote": true,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
+                        "level": "Normal",
+                        "target": "CxO, architects, Engineers, PM, PO, BA, SA, SD, QA, IT",
+                        "target_e": "CxO, architects, Engineers, PM, PO, BA, SA, SD, QA, IT",
+                        "prior_knowledge": "無須先備知識，僅需要有在軟體相關產業工作經驗即可。",
+                        "prior_knowledge_e": "No explicit knowledge is required, you may understand what Kim will share as long as you have some experience in IT/Software industries.",
+                        "expected_gain": "1. 理解什麼是 SocioTechnical\n2. 關注市場產品競爭力的核心來自於觀察市場動態\n3. 團隊協作時可關注的目標推進法\n4.領域驅動設計作為輔助的指引手法",
+                        "expected_gain_e": "1. What is social technology\n2. The core driving force of paying attention to market leadership comes from observing market dynamics\n3. The target behavior dynamics that can be paid attention to\n4. Domain design as an auxiliary guiding method",
                         "started_at": 1665795600,
                         "ended_at": 1665798300,
-                        "tags": [],
-                        "speakers": [],
-                        "sponsor_id": 0,
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Agile"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Domain-Driven Design"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 253,
+                                "name": "Kim Kao",
+                                "name_e": "Kim Kao",
+                                "job_title": "資深解決方案架構師, 開發者專家",
+                                "job_title_e": "Sr. Solutions Architect, Developer Specialist, DevAx",
+                                "company": "台灣亞馬遜網路服務有限公司 / 架構師團隊",
+                                "company_e": "Amazon Web Services / Solutions Architecture",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_253",
+                                    "mobile": "api/2022/speaker/images/speaker_253"
+                                },
+                                "link_fb": "https://www.facebook.com/kimkao.solid",
+                                "link_github": "https://github.com/humank",
+                                "link_twitter": "https://twitter.com/YiKaiKao",
+                                "link_other": "https://kimkao.medium.com/"
+                            }
+                        ],
+                        "sponsor_id": 93,
                         "community_partner": ""
                     }
                 ]
@@ -282,9 +332,9 @@
                         "session_id": 2022009,
                         "room": "R1",
                         "floor": "",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "Web3.0背後看不見的戰爭",
+                        "topic_e": "World Wile War Behind Web3.0",
+                        "summary": "從虛擬幣、AI智慧到區塊鏈、物聯網再到NFT及元宇宙，一連串嶄新的知識及應用引爆了Web3.0風光熱潮。引起社會、企業及許多莘莘學子前仆後繼地投入Web3.0領域。\n\n風光的背後必然藏著許多暗潮洶湧，駭客早就不care什麼置換網頁、竊取資料庫等雕蟲小技。他們瞄準的是NFT、虛擬幣、元宇宙等更有價值的資產。 \n\nWeb3.0風光的表面，背後一場光明與黑暗、正與邪的戰爭，正悄然無聲地開打中。一不注意，你是否就在戰爭中犧牲了？",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -295,9 +345,42 @@
                         "expected_gain": "",
                         "started_at": 1665802200,
                         "ended_at": 1665804900,
-                        "tags": [],
-                        "speakers": [],
-                        "sponsor_id": 0,
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Cloud Service"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web3"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 250,
+                                "name": "Jackey Huang",
+                                "name_e": "Jackey Huang",
+                                "company": "捕夢網數位科技有限公司",
+                                "company_e": "PUMO Digital Network Technology Co., Ltd.",
+                                "job_title": "總監",
+                                "job_title_e": "Director",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_250",
+                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                },
+                                "link_fb": "",
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": ""
+                            }
+                        ],
+                        "sponsor_id": 96,
                         "community_partner": ""
                     },
                     {
@@ -328,7 +411,7 @@
                         ],
                         "speakers": [
                             {
-                                "speaker_id": 250,
+                                "speaker_id": 260,
                                 "name": "MOPCON 2022 品牌形象組",
                                 "name_e": "MOPCON 2022 Branding & Design",
                                 "company": "MOPCON",
@@ -336,8 +419,8 @@
                                 "job_title": "品牌形象組設計師",
                                 "job_title_e": "Branding & Design Designer",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_250",
-                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                    "web": "api/2022/speaker/images/speaker_260",
+                                    "mobile": "api/2022/speaker/images/speaker_260"
                                 },
                                 "link_fb": "https://www.facebook.com/mopcon/",
                                 "link_github": "https://github.com/MOPCON/",
@@ -534,9 +617,9 @@
                         "session_id": 2022014,
                         "room": "R2",
                         "floor": "",
-                        "topic": "如何寫個 JS 小工具分析 Shared Components 的效益",
+                        "topic": "如何以 JS 實作 Shared Components 的效益分析工具",
                         "topic_e": "How to implement a JS tool to analysis shared components",
-                        "summary": "老闆說要看 Design System 的效益怎麼辦！？好慌啊我這個小小前端工程師！！！只好用 JS 寫個小工具自救了ＱＱ",
+                        "summary": "Design System 能為產品帶來更為一致性的體驗。\n但 Design System 需要時間醞釀、開發，而其影響並不容易直觀的觀測、闡述，也因此難以闡述其影響力。\n\n講者爬梳網路上各種 Design System 效益分析的文章，並以 JS 實作分析工具，讓 Design System 的效益得以統計、分析。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
@@ -546,7 +629,7 @@
                         "target_e": "Frontend Engineer",
                         "prior_knowledge": "Javascript, Nodejs, Typescript",
                         "prior_knowledge_e": "Javascript, Nodejs, Typescript",
-                        "expected_gain": "稍微懂一點 code transformer 怎麼運作的",
+                        "expected_gain": "學會如何透過 typescript compiler API 操作 Typescript AST",
                         "expected_gain_e": "",
                         "started_at": 1665805500,
                         "ended_at": 1665808200,
@@ -709,22 +792,58 @@
                         "session_id": 2022017,
                         "room": "R1",
                         "floor": "",
-                        "topic": "Coming Soon",
-                        "topic_e": "",
-                        "summary": "",
+                        "topic": "Meet Passkeys, 與你不知道的金融驗證工具",
+                        "topic_e": "Meet Passkeys, and  verification tool in Bank",
+                        "summary": "帳號密碼安全嗎？詐騙、駭客等安全問題，如何在行動應用技術年代，實踐即安全又使用體驗良好的驗證機制，在銀行端又如何做到交易方便又安全無疑，此次的內容將介紹給大家。",
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
                         "recordable": true,
-                        "level": "",
-                        "target": "",
-                        "prior_knowledge": "",
-                        "expected_gain": "",
+                        "level": "Basic",
+                        "target": "App開發者、對金融業有興趣人、對驗證機制想瞭解人員",
+                        "target_e": "",
+                        "prior_knowledge": "App開發、基礎client-server溝通機制、驗證技術(SSH、FIDO、生物驗證)",
+                        "prior_knowledge_e": "",
+                        "expected_gain": "驗證工具、金融業",
+                        "expected_gain_e": "",
                         "started_at": 1665811200,
                         "ended_at": 1665813900,
-                        "tags": [],
-                        "speakers": [],
-                        "sponsor_id": 0,
+                        "tags": [
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Mobile App"
+                            },
+                            {
+                                "color": {
+                                    "web": "#51A3D3",
+                                    "mobile": "#51A3D3"
+                                },
+                                "name": "Web Development"
+                            }
+                        ],
+                        "speakers": [
+                            {
+                                "speaker_id": 251,
+                                "name": "Diman",
+                                "name_e": "Diman",
+                                "job_title": "技術組長",
+                                "job_title_e": "App Development Leader",
+                                "company": "國泰世華銀行",
+                                "company_e": "Cathay United Bank",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_251",
+                                    "mobile": "api/2022/speaker/images/speaker_251"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": ""
+                            }
+                        ],
+                        "sponsor_id": 103,
                         "community_partner": ""
                     },
                     {
@@ -1646,10 +1765,10 @@
                                 "speaker_id": 216,
                                 "name": "盧承億",
                                 "name_e": "Larry Lu",
-                                "job_title": "後端工程師",
-                                "job_title_e": "Backend Engineer",
-                                "company": "ImBee",
-                                "company_e": "ImBee",
+                                "job_title": "Software Developer",
+                                "job_title_e": "Software Developer",
+                                "company": "SariSuki",
+                                "company_e": "SariSuki",
                                 "img": {
                                     "web": "api/2022/speaker/images/speaker_216",
                                     "mobile": "api/2022/speaker/images/speaker_216"
@@ -2272,7 +2391,7 @@
                         ],
                         "speakers": [
                             {
-                                "speaker_id": 251,
+                                "speaker_id": 261,
                                 "name": "MOPCON 2022 品牌形象組",
                                 "name_e": "MOPCON 2022 Branding & Design",
                                 "company": "MOPCON",
@@ -2280,8 +2399,8 @@
                                 "job_title": "品牌形象組設計師",
                                 "job_title_e": "Branding & Design Designer",
                                 "img": {
-                                    "web": "api/2022/speaker/images/speaker_250",
-                                    "mobile": "api/2022/speaker/images/speaker_250"
+                                    "web": "api/2022/speaker/images/speaker_260",
+                                    "mobile": "api/2022/speaker/images/speaker_260"
                                 },
                                 "link_fb": "https://www.facebook.com/mopcon/",
                                 "link_github": "https://github.com/MOPCON/",
@@ -3237,6 +3356,23 @@
                                 "link_github": "https://github.com/sailplaneTW",
                                 "link_twitter": "https://twitter.com/sailplaneTW",
                                 "link_other": "https://www.sam-huang.info/"
+                            },
+                            {
+                                "speaker_id": 252,
+                                "name": "Ryan",
+                                "name_e": "Ryan",
+                                "job_title": "Technical Project Manager",
+                                "job_title_e": "Technical Project Manager",
+                                "company": "Perpetual Protocol",
+                                "company_e": "Perpetual Protocol",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_252",
+                                    "mobile": "api/2022/speaker/images/speaker_252"
+                                },
+                                "link_fb": "",
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": ""
                             }
                         ],
                         "sponsor_id": 0,
