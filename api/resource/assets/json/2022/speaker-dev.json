@@ -2839,7 +2839,7 @@
         "target_e": "Frontend Engineer",
         "prior_knowledge": "Javascript, Nodejs, Typescript",
         "prior_knowledge_e": "Javascript, Nodejs, Typescript",
-        "expected_gain": "稍微懂一點 code transformer 怎麼運作的",
+        "expected_gain": "學會如何透過 typescript compiler API 操作 Typescript AST",
         "expected_gain_e": "",
         "started_at": 1665805500,
         "ended_at": 1665808200,
@@ -3011,6 +3011,77 @@
         "floor": "",
         "sponsor_id": 0,
         "session_id": 2022061
+    },
+    {
+        "name": "Kim Kao",
+        "name_e": "Kim Kao",
+        "speaker_id": 253,
+        "company": "台灣亞馬遜網路服務有限公司 / 架構師團隊",
+        "company_e": "Amazon Web Services / Solutions Architecture",
+        "job_title": "資深解決方案架構師, 開發者專家",
+        "job_title_e": "Sr. Solutions Architect, Developer Specialist, DevAx",
+        "bio": "人生已經被良好架構的三寶爸，現任職於 AWS 擔任資深解決方案架構師，主要關注在開發者專家加速計畫(Developer Acceleration, DevAx)，同時也是台灣領域驅動設計社群 (DDD Taiwan Community) 發起人之一。致力於投入大眾對於Sociotechnical的共鳴，推動企業透過 DDD 與便捷的雲端服務，打造更適切的系統方案，解決真切的商務問題。",
+        "bio_e": "Father of 3, life beings has been well architected by family, currently Kim is working with AWS as Sr. Solutions Architect, Developer Specialist, DevAx. Kim mainly focus on Developer Acceleration on AWS, help developers build up solutions from business scope discovering and lead the design for overall architecture design on AWS. In addition, Kim is the co-organizer of DDDesign Taiwan Community, he devotes to raise people awareness of resonance of Sociotechnical, bring stakeholders collaborating with DDD(Domain Driven Design) and agility cloud offerings to build up just-fit solutions for real business value.",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_253",
+            "mobile": "api/2022/speaker/images/speaker_253"
+        },
+        "link_fb": "https://www.facebook.com/kimkao.solid",
+        "link_github": "https://github.com/humank",
+        "link_twitter": "https://twitter.com/YiKaiKao",
+        "link_other": "https://kimkao.medium.com/",
+        "link_slide": "",
+        "topic": "通過 Sociotechnical 打造產品競爭力",
+        "topic_e": "Build Product Competitiveness with Sociotechnical",
+        "summary": "在走入 Web3 的時代裡，很多東西都變得虛擬化，甚至也不在集中化管理，不變的核心宗旨是做出對的產品來解決商務問題，但是大部分場景下，並沒有很好的讓業務知識很好的與技術工程團隊結合，導致產品競爭力滑落，甚至喪失的客源。在這個演講中， Kim 會談到關於一個非常久遠的話題 - Sociotechnical，試圖帶大家去重新認識一次組織、業務、團隊、實踐的四大集合體，是怎麼運作可以讓產品走向獲取更好的適應力。",
+        "summary_e": "In the era of entering Web 3, many things can be virtualized, and even centralized management. The core concept of products is to solve problems in a direction, but in various scenarios, there is no decent problem. The dissemination of business knowledge and knowledge leads to product In the midst of a team's long-established technology slips, or even bereaved clients, Kim talks about speeches. The four sets of business teams and practices are how to make products more adaptable.",
+        "community_partner": "",
+        "is_keynote": true,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web3"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Agile"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Domain-Driven Design"
+            }
+        ],
+        "target": "CxO, architects, Engineers, PM, PO, BA, SA, SD, QA, IT",
+        "target_e": "CxO, architects, Engineers, PM, PO, BA, SA, SD, QA, IT",
+        "prior_knowledge": "無須先備知識，僅需要有在軟體相關產業工作經驗即可。",
+        "prior_knowledge_e": "No explicit knowledge is required, you may understand what Kim will share as long as you have some experience in IT/Software industries.",
+        "expected_gain": "1. 理解什麼是 SocioTechnical\n2. 關注市場產品競爭力的核心來自於觀察市場動態\n3. 團隊協作時可關注的目標推進法\n4.領域驅動設計作為輔助的指引手法",
+        "expected_gain_e": "1. What is social technology\n2. The core driving force of paying attention to market leadership comes from observing market dynamics\n3. The target behavior dynamics that can be paid attention to\n4. Domain design as an auxiliary guiding method",
+        "started_at": 1665795600,
+        "ended_at": 1665798300,
+        "room": "R1",
+        "floor": "",
+        "sponsor_id": 93,
+        "session_id": 2022001
     },
     {
         "name": "MOPCON 2022 品牌形象組",
