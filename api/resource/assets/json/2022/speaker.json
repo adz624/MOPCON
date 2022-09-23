@@ -1289,7 +1289,22 @@
         "is_online": false,
         "recordable": true,
         "level": "Basic ",
-        "tags": [],
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            },
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Mobile App"
+            }
+        ],
         "target": "PO/BA/SA, RD/Project Managers, Developers",
         "target_e": "PO/BA/SA, RD/Project Managers, Developers",
         "prior_knowledge": "對驗證與授權有基本了解",
