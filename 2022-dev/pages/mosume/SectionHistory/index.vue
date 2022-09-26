@@ -62,7 +62,7 @@ ul {
   }
 }
 @include screen(sm) {
-  #History {
+  #history {
     padding-bottom: 72px;
   }
   h3 {
