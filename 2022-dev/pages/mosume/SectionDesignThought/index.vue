@@ -75,7 +75,7 @@
 }
 
 @include screen(sm) {
-  #Design {
+  #design {
     padding-top: 48px;
     padding-bottom: 96px;
   }
