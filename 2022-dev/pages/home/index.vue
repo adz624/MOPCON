@@ -139,9 +139,9 @@
             <div class="btn btn-primary" @click="openWindow('https://www.instagram.com/mopcon.tw/')">
               {{ $t('pages.home.mo.btn.instagram') }}
             </div>
-            <div v-if="false" class="btn btn-primary" @click="openWindow('')">
+            <a class="btn btn-primary" href="./mosume">
               {{ $t('pages.home.mo.btn.mo') }}
-            </div>
+            </a>
           </div>
         </div>
         <div class="mo-image" />
