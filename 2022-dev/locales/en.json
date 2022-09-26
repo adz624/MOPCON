@@ -321,6 +321,30 @@
       "getTicket": "Get Ticket",
       "error": "取票資訊有誤，請確認票號並重新輸入",
       "download": "Click To Download"
+    },
+    "mosume": {
+      "hello": "Hi there! I am",
+      "intro": {
+        "1": "The 11th anniversary festival is about to be held on ICCK planet. MOPCON battleships are dispatched to recruit the best staffs for holding the feast from all the planets.",
+        "2": "Bounty hunters from any corner of the universe are highly welcomed, and the most outstanding of all is likely to be shortlisted for the Annual Merit List! By then, battleships from various planets would dock and bring cultural exchange and experience heritage to the feast."
+      },
+      "about": {
+        "1": "It is said that an unexpected surprise was given birth to because an engineer forgot to shut down a program in a seminar.",
+        "2": "In MOPCON in southern Kaohsiung, a little seed gained consciousness after 10 years, and found its way to interact with human. Let’s look forward to meeting the agent named Mosume and how she share us with interesting stories!"
+      },
+      "youtube": {
+        "title": "Play with Me",
+        "intro": "Mosume and her friends will prepare various interesting activities and keep making efforts to improve Mosume. This year, other than the newly added hand movement, Easter eggs will be hidden in live streaming. Welcome to interact with us in the chat room!"
+      },
+      "designer": {
+        "title": "Creator’s words",
+        "intro": {
+          "1": "This year, MOPCON2022, the 11th anniverary fesitval will be held on ICCK planet, where the spokesperson, Mosume, will dress up to attend.",
+          "2": "The main idea of the design is letting Mosume become the NPC as the guide of the festival. Matching the font of the key vision, her ponytails curl as if time flows wriggly in the universe. Planets could also be found hidden within Mosume’s eyes. Accessories in the shape of planets are worn to correspond to the theme “Parallel universe”",
+          "3": "The heart-shaped ahoge not only represents Mosume’s adorable characteristics but also stands for the “M” of MOPCON.",
+          "4": "Hope that Mosume of this year could guide attendees and speakers to enjoy the conference held in parallel spacetimes!"
+        }
+      }
     }
   }
 }
