@@ -283,5 +283,20 @@
         "official_website": "https://www.nchc.org.tw/",
         "sponsor_type": "developer",
         "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_109",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_109"
+        },
+        "name": "CMoney",
+        "name_e": "CMoney",
+        "sponsor_id": 109,
+        "about_us": "CMoney 於 2003 年由一群對程式交易有高度熱情的技術團隊創立，有肇於多年來國內外諸多金融法人機構所採用的決策分析工具，幾乎沒有突破性的進展，CMoney 研發團隊於是著手打造獨步全球且採先進雲端技術的高速回測系統。\n\n\n\n 目前擁有超過百位研發工程師支援國內外 400 多家的法人投資機構，協助其更有效率地提升交易績效，深受業界歡迎及喜愛，目前市占率達 8 成以上，已成為金融軟體業界的領導品牌，並致力於 Fintech 金融科技創新作為未來深耕發展的領域，我們的願景是幫助每個人做好人生投資。",
+        "about_us_e": "CMoney was founded in 2003 by a group of technical teams with high enthusiasm for program trading. It originated from the decision analysis tools used by many financial institutions for many years, but almost no breakthrough progress. The CMoney R&D team set out to build a unique global And a high-speed backtesting system with advanced cloud technology.\n\n\n\nAt present, there are more than 100 R&D engineers supporting more than 400 legal person investment institutions, helping them to improve their transaction performance more efficiently. They are well received and loved by the industry. The current market share is more than 80%, and it has become a leader in the financial software industry. Leading the brand and dedicating to Fintech financial innovation as a field of deep development in the future, our vision is to help everyone make a good investment in life.",
+        "facebook_url": "",
+        "official_website": "https://www.cmoney.tw/jobs/",
+        "sponsor_type": "developer",
+        "career_information": "hacker"
     }
 ]
