@@ -16,7 +16,8 @@
           </div>
           <div class="sponsor-content">
             <h4>{{ data.name }}</h4>
-            <p>{{ data.about_us }}</p>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p v-html="parseContent(data.about_us)" />
           </div>
         </div>
         <div v-for="speaker in data.speaker_information" :key="speaker.speaker_id" class="speaker mt-5 pt-10">
@@ -31,9 +32,8 @@
                 </p>
                 <span class="speaker-subtitle">{{ speaker.company }} {{ speaker.job_title }} </span>
               </h4>
-              <p class="speaker-bio my-0 my-sm-2">
-                {{ getSpeakerBio(speaker.speaker_id) }}
-              </p>
+              <!-- eslint-disable-next-line vue/no-v-html -->
+              <p class="speaker-bio my-0 my-sm-2" v-html="parseContent(getSpeakerBio(speaker.speaker_id))" />
             </div>
           </div>
           <div class="speaker-date">
