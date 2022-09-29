@@ -143,7 +143,7 @@ export default {
         {
           hid: 'og-image',
           property: 'og:image',
-          content: this.modalOpen && this.activeSpeaker.img ? `${process.env.BASE_URL}/2022/${this.activeSpeaker.img.web}` : `${process.env.BASE_URL}/2022/og-image.png`
+          content: this.modalOpen && this.activeSpeaker.img ? `${process.env.BASE_URL}/${this.activeSpeaker.img.web}` : `${process.env.BASE_URL}/2022/og-image.png`
         },
         // twitter seo
         {
