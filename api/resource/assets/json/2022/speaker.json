@@ -1749,11 +1749,11 @@
         "name": "asef18766",
         "name_e": "asef18766",
         "speaker_id": 227,
-        "company": "奧義科技",
+        "company": "奧義智慧科技",
         "company_e": "",
         "job_title": "實習生",
         "job_title_e": "",
-        "bio": "目前在奧義科技擔任實習生，同時也是 NTU 電機資安班的準研究生。目前專注研究於智慧車安全與其他各式有趣的資安議題",
+        "bio": "目前在奧義智慧科技擔任實習生，同時也是NTU電機資安班的準研究生。目前專注研究於智慧車安全與其他各式有趣的資安議題",
         "bio_e": "",
         "img": {
             "web": "api/2022/speaker/images/speaker_227",
@@ -3099,59 +3099,59 @@
         "session_id": 2022001
     },
     {
-        "name": "MOPCON 2022 品牌形象組",
-        "name_e": "MOPCON 2022 Branding & Design",
-        "speaker_id": 260,
-        "company": "MOPCON",
-        "company_e": "MOPCON",
-        "job_title": "品牌形象組設計師",
-        "job_title_e": "Branding & Design Designer",
-        "bio": "提供你從概念到實現的最佳舞台！催生最強 Side Project！\nMOPCON 門面就靠我們了！從網站、 APP 、紀念品、會場佈置...等大小形象都包辦，凝聚全台灣各類設計人才，一起共創每年新體驗～",
-        "bio_e": "Responsible for the visual design of MOPCON – everything from website and app design, to souvenirs! Comprised of talented people from all over Taiwan, we experience a new adventure every year~",
+        "name": "王冠樺",
+        "name_e": "Guanhua Wang",
+        "speaker_id": 254,
+        "company": "酷遊天股份有限公司",
+        "company_e": "KKday",
+        "job_title": "iOS Developer",
+        "job_title_e": "iOS Developer",
+        "bio": "在 KKday 負責 iOS App 開發，喜歡跟其他同事亂嘴天馬行空的 Side Project，訂閱制的自動打卡服務 (笑) 之類的...\n除了 App 外，偶爾做點後端小工具\n是位用嘴寫程式的 Senior 普信男",
+        "bio_e": "",
         "img": {
-            "web": "api/2022/speaker/images/speaker_260",
-            "mobile": "api/2022/speaker/images/speaker_260"
+            "web": "api/2022/speaker/images/speaker_254",
+            "mobile": "api/2022/speaker/images/speaker_254"
         },
         "link_fb": "https://www.facebook.com/mopcon/",
         "link_github": "https://github.com/MOPCON/",
         "link_twitter": "https://twitter.com/mopcon",
         "link_other": "https://mopcon.org/",
         "link_slide": "",
-        "topic": "萬能設計師與他們的產地 - 解密品牌形象組",
-        "topic_e": "",
-        "summary": "MOPCON 的紀念商品是如何生出來的？MO 孃的老媽是誰？App 和官網又是怎麼規劃的？讓設計師們在這 45 分鐘，從產地直送他們的解答到你手上吧！\n我們將解密品牌形象組的日常，從 0 到 1 、合作到分工和產出，以座談形式，訪問 2022 參與設計活動的小夥伴，深入淺出讓大家了解 MOPCON 活動中，品牌形象組到底在做些什麼！",
-        "summary_e": "How were the souvenirs of MOPCON created? Who is the mother of Mosume? How were offical website and APP designed? Let the designers deliver the answers straight to you through this 45-minute speech!\nWe will unpuzzle the daily routine of Branding & Design Team, how we cooperate and put ideas into practice.Designers and volunteers in charge of the activities will be interviewed in this sharing session to explain what the Branding & Design Team do in MOPCON in simple words!",
+        "topic": "解放設計系統迭代 - 畫面構建器",
+        "topic_e": "Let design system go beyond it self - View Builder",
+        "summary": "面向全球的 KKday，如何在多語系以及快速變化的市場，讓非工程人員也能快速產出適合的頁面，將最佳的體驗呈現給全球使用者。",
+        "summary_e": "",
         "community_partner": "",
         "is_keynote": false,
         "is_online": false,
         "recordable": true,
-        "level": "Basic",
+        "level": "Normal",
         "tags": [
             {
                 "color": {
                     "web": "#51A3D3",
                     "mobile": "#51A3D3"
                 },
-                "name": "UI/UX"
+                "name": "Mobile App"
             }
         ],
-        "target": "2023 願意加入品牌形象組的新血志工夥伴",
-        "target_e": "",
-        "prior_knowledge": "無須先備知識，適合對社群、研討會或品牌形象營造等有興趣",
+        "target": "mobile app engineer, product manager, designer",
+        "target_e": "mobile app engineer, product manager, designer",
+        "prior_knowledge": "",
         "prior_knowledge_e": "",
-        "expected_gain": "1.了解 MOPCON 研討會品牌如何營造\n2.剖析品牌形象組的任務及純遠距協作\n3.社群工作長跑半年甘苦談",
+        "expected_gain": "非工程人員也能使用的頁面產生方案",
         "expected_gain_e": "",
         "started_at": 1665802200,
         "ended_at": 1665804900,
         "room": "R2",
         "floor": "",
-        "sponsor_id": 0,
+        "sponsor_id": 110,
         "session_id": 2022010
     },
     {
         "name": "MOPCON 2022 品牌形象組",
         "name_e": "MOPCON 2022 Branding & Design",
-        "speaker_id": 261,
+        "speaker_id": 260,
         "company": "MOPCON",
         "company_e": "MOPCON",
         "job_title": "品牌形象組設計師",
@@ -3175,7 +3175,7 @@
         "is_keynote": false,
         "is_online": false,
         "recordable": true,
-        "level": "Basic ",
+        "level": "Basic",
         "tags": [
             {
                 "color": {

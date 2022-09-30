@@ -296,7 +296,22 @@
         "about_us_e": "CMoney was founded in 2003 by a group of technical teams with high enthusiasm for program trading. It originated from the decision analysis tools used by many financial institutions for many years, but almost no breakthrough progress. The CMoney R&D team set out to build a unique global And a high-speed backtesting system with advanced cloud technology.\n\n\n\nAt present, there are more than 100 R&D engineers supporting more than 400 legal person investment institutions, helping them to improve their transaction performance more efficiently. They are well received and loved by the industry. The current market share is more than 80%, and it has become a leader in the financial software industry. Leading the brand and dedicating to Fintech financial innovation as a field of deep development in the future, our vision is to help everyone make a good investment in life.",
         "facebook_url": "",
         "official_website": "https://www.cmoney.tw/jobs/",
+        "sponsor_type": "hacker",
+        "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_110",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_110"
+        },
+        "name": "酷遊天國際旅行社股份有限公司",
+        "name_e": "Taiwanmania.com International Travel Service Co., Ltd.",
+        "sponsor_id": 110,
+        "about_us": "KKday，亞洲知名旅遊電子商務平台。\n在這個移動的世代，科技的革新應用讓出門旅行不再是一件複雜的事情，而旅遊與生活的疆界也正在被打破。\nKKday 提供全球超過 92 個國家、550 個城市的 30 萬筆以上在地旅遊體驗商品，有 800 萬月活躍用戶，目的是透過電商平台整合，讓來自全球的旅客都能夠更方便自在地挑選行程，創造專屬自己獨特的旅遊經驗。\n2014 從台灣出發，辦公室遍佈亞太區 12 個城市，在 2022 年 7 月完成 C+輪募資，於疫情後全力備戰跨境旅遊，已經為迎接出境、入境與國旅三大領域做好準備。",
+        "about_us_e": "KKday is the leading Asia-Pacific travel tech focused on local experience. We pioneered the digitalization of tours, activities, attraction products, and services, for travelers to easily search, discover, book, and change anytime, anywhere. Our products and services are highly curated and provide a unique and authentic off-grid experience. In 2022 July, we secured a series C+ round, preparing the inbound, outbound, and domestic travel after Covid.\n\nKKday currently hosts over 300K+ local experience products and services in over 92 countries and 550 cities. We have a local presence across the key Asia-Pacific markets. Our goal is to be easily accessible, make it more convenient, to help all types of travelers to find and create memorable, unique, and safe travel experiences.\n\nOur success is built on our exceptional people through innovation, a unique product portfolio, curation of travel experiences, and digital capability. With our hyper-growth ambitious plan, we are always looking for talents who are passionate about building businesses and developing themselves and our consumer's experience.\n\nWe provide talent with an environment where they have a combination of resources, scale, and autonomy to run for KKday business. Most importantly, we also provide our talents the opportunity to rotate across businesses, accelerate their career path and impact the business of the travel industry around the Asia-Pacific region.",
+        "facebook_url": "https://www.facebook.com/KKdayTaiwan/",
+        "official_website": "https://www.kkday.com/zh-tw",
         "sponsor_type": "developer",
-        "career_information": "hacker"
+        "career_information": ""
     }
 ]
