@@ -36,13 +36,13 @@ import eboardSchedule from '~/components/EboardSchedule'
 import eboardSponsor from '~/components/EboardSponsor'
 import eboardSite from '~/components/EboardSite'
 export default {
-  layout: 'dashboard',
   name: 'Edashboard',
   components: {
     eboardSchedule,
     eboardSponsor,
     eboardSite
   },
+  layout: 'dashboard',
   // eslint-disable-next-line require-await
   async asyncData ({ params }) {
     try {
