@@ -11,7 +11,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022101
                 }
             },
@@ -20,11 +19,10 @@
                 "ended_at": 1665802800,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "AWS",
                     "name_e": "",
-                    "topic": "AWS",
+                    "topic": "敬請期待",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022102
                 }
             },
@@ -37,7 +35,6 @@
                     "name_e": "",
                     "topic": "剖析品牌形象組的任務",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022103
                 }
             },
@@ -50,7 +47,6 @@
                     "name_e": "",
                     "topic": "剖析品牌形象組的任務",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022104
                 }
             },
@@ -61,9 +57,8 @@
                 "room": {
                     "name": "鈦坦",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "敬請期待",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022105
                 }
             },
@@ -80,9 +75,8 @@
                 "room": {
                     "name": "KKBOX",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "敬請期待",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022106
                 }
             },
@@ -95,7 +89,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022107
                 }
             },
@@ -106,9 +99,8 @@
                 "room": {
                     "name": "PUMO",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "敬請期待",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022108
                 }
             },
@@ -121,7 +113,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022109
                 }
             },
@@ -134,7 +125,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022110
                 }
             },
@@ -147,7 +137,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022111
                 }
             },
@@ -160,7 +149,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022112
                 }
             }
@@ -176,9 +164,8 @@
                 "room": {
                     "name": "MySQL",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "敬請期待",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022115
                 }
             },
@@ -191,7 +178,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022116
                 }
             },
@@ -204,7 +190,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022117
                 }
             },
@@ -219,11 +204,10 @@
                 "ended_at": 1665898200,
                 "event": "",
                 "room": {
-                    "name": "物理治療無所不在：改善科技人的疼痛問題",
+                    "name": "高醫物理治療系",
                     "name_e": "",
-                    "topic": "高醫物理治療系",
+                    "topic": "物理治療無所不在：改善科技人的疼痛問題",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022118
                 }
             },
@@ -232,11 +216,10 @@
                 "ended_at": 1665900000,
                 "event": "",
                 "room": {
-                    "name": "物理治療無所不在：改善科技人的疼痛問題",
+                    "name": "高醫物理治療系",
                     "name_e": "",
-                    "topic": "高醫物理治療系",
+                    "topic": "物理治療無所不在：改善科技人的疼痛問題",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022119
                 }
             },
@@ -245,11 +228,10 @@
                 "ended_at": 1665901800,
                 "event": "",
                 "room": {
-                    "name": "物理治療無所不在：改善科技人的疼痛問題",
+                    "name": "高醫物理治療系",
                     "name_e": "",
-                    "topic": "高醫物理治療系",
+                    "topic": "物理治療無所不在：改善科技人的疼痛問題",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022120
                 }
             },
@@ -258,11 +240,10 @@
                 "ended_at": 1665903600,
                 "event": "",
                 "room": {
-                    "name": "物理治療無所不在：改善科技人的疼痛問題",
+                    "name": "高醫物理治療系",
                     "name_e": "",
-                    "topic": "高醫物理治療系",
+                    "topic": "物理治療無所不在：改善科技人的疼痛問題",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022121
                 }
             },
@@ -275,7 +256,6 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
-                    "floor": "4F",
                     "session_id": 2022122
                 }
             }
