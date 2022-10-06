@@ -1,0 +1,20 @@
+.edashboard {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #004973;
+  .news {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    @apply border border-yellow-500 bg-blue-950;
+    marquee {
+      p {
+        font-size: 38px;
+        display: inline-block;
+      }
+    }
+  }
+}
