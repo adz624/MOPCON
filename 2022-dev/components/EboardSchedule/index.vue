@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="schedule__info">
-        <p class="delay-7 animated slideInUp tag text-yellow-500">
+        <p class="delay-7 animated slideInUp tag text-white">
           {{ scheduleData.room.main.room }} (
           {{ scheduleData.room.main.floor }} )
         </p>
@@ -39,13 +39,13 @@
       </div>
       <div v-if="scheduleData.room.main.speakers > 1" class="schedule__speaker">
         <div v-if="speaker in scheduleData.room.main.speakers" class="delay-9 animated slideInUp">
-          <img :src="speaker.img.mobile" alt="" width="140" height="140" class="speaker__pic">
+          <img :src="getSpeakerImg(speaker.img.mobile)" alt="" width="140" height="140" class="speaker__pic">
         </div>
       </div>
       <div v-else class="schedule__speaker">
         <div class="delay-9 animated slideInUp">
           <img
-            :src="scheduleData.room.main.speakers[0].img.mobile"
+            :src="getSpeakerImg(scheduleData.room.main.speakers[0].img.mobile)"
             alt=""
             width="140"
             height="140"
@@ -71,7 +71,7 @@
     <div v-if="scheduleData.room.sidecar.length > 0" class="otherSchedule">
       <div class="delay-10 animated slideInRight">
         <div class="schedule__info">
-          <p class="tag text-yellow-500">
+          <p class="tag text-white">
             {{ scheduleData.room.sidecar[0].room }}
             ({{ scheduleData.room.sidecar[0].floor }})
           </p>
@@ -91,13 +91,13 @@
         </div>
         <div v-if="scheduleData.room.sidecar[0].speakers.length > 1" class="schedule__speaker">
           <div v-for="speaker in scheduleData.room.sidecar[0].speakers" :key="speaker.id" class="animated slideInUp">
-            <img :src="speaker.img.mobile" alt="" width="80" height="80" class="speaker__pic">
+            <img :src="getSpeakerImg(speaker.img.mobile)" alt="" width="80" height="80" class="speaker__pic">
           </div>
         </div>
         <div v-else class="schedule__speaker">
           <div class="animated slideInUp">
             <img
-              :src="scheduleData.room.sidecar[0].speakers[0].img.mobile"
+              :src="getSpeakerImg(scheduleData.room.sidecar[0].speakers[0].img.mobile)"
               alt=""
               width="80"
               height="80"
@@ -118,7 +118,7 @@
       <!-- 判斷 第三個 -->
       <div v-if="scheduleData.room.sidecar.length > 1" class="delay-11 animated slideInRight third-schedule">
         <div class="schedule__info">
-          <p class="tag text-yellow-500">
+          <p class="tag text-white">
             {{ scheduleData.room.sidecar[1].room }}
             ({{ scheduleData.room.sidecar[1].floor }})
           </p>

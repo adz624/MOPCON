@@ -2,7 +2,7 @@
   <div class="edashboard logo-bg">
     <div v-if="hasNews" class="news" style="height: 152px;">
       <marquee scrollamount="10" align="middle">
-        <p class="text-yellow-500">
+        <p class="text-white">
           {{ newsData.title }}：
         </p>
         <p class="text-white">

@@ -9,7 +9,7 @@
             {{ siteData.title }}
           </p>
           <span class="line" />
-          <p class="text-yellow-500">
+          <p class="text-white">
             {{ siteData.subtitle }}
           </p>
         </div>
