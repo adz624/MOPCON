@@ -4,7 +4,7 @@
     <img src="./images/circle.png" width="872" alt="" class="bg-circle-2">
     <div class="sponsor__info" :class="{'hasNewsheight': hasNews}">
       <div class="area logo-bg" style="overflow: hidden;">
-        <img :src="getAdImg(sponsorData.sponsor_ad_img)" alt="" class="sponsor__img">
+        <img :src="sponsorData.sponsor_ad_img" alt="" class="sponsor__img">
       </div>
     </div>
   </div>
@@ -25,11 +25,6 @@ export default {
   },
   data () {
     return {
-    }
-  },
-  methods: {
-    getAdImg (img) {
-      return `${process.env.BASE_URL}/${img}`
     }
   }
 }
