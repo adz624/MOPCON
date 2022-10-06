@@ -4,6 +4,9 @@
   max-height: 100vh;
   overflow: hidden;
   background-color: #004973;
+  .text-white {
+    color: white;
+  }
   .news {
     position: relative;
     z-index: 2;

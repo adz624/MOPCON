@@ -14,11 +14,14 @@ $startSecond: 3s;
 }
 
 .eboardSchedule {
-  height: 100vh;     
+  height: 100vh;
   padding: 60px 8%;
   display: flex;
   justify-content: space-between;
-  @apply text-white;
+  .text-white {
+    color: white;
+  }
+
   .mainSchedule {
     width: 100%;
     animation-name: widthChange;
