@@ -200,7 +200,11 @@ export default {
   generate: {
     dir: path.resolve(__dirname, '../2022/'),
     routes () {
-      const pages = []
+      const pages = [
+        '/edashboard/R1',
+        '/edashboard/R2',
+        '/edashboard/R3',
+      ]
       const speakers = axios.get(`${process.env.BASE_URL}/api/2022/speaker`).then((res) => {
         pages.push('/speaker')
         res.data.data.forEach((speaker) => {
