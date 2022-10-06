@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="site__info__img">
-          <img :src="siteData.map" alt="">
+          <img :src="getMapImg(siteData.map)" alt="">
         </div>
       </div>
     </div>
@@ -40,6 +40,11 @@ export default {
   watch: {
     hasNews () {
       console.log(this)
+    }
+  },
+  methods: {
+    getMapImg (img) {
+      return `${process.env.BASE_URL}/${img}`
     }
   }
 }

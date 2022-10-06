@@ -138,13 +138,13 @@
         </div>
         <div v-if="scheduleData.room.sidecar[1].speakers.length > 1" class="schedule__speaker">
           <div v-for="speaker in scheduleData.room.sidecar[1].speakers" :key="'schedule_speaker' + speaker.id" class="animated slideInUp">
-            <img :src="speaker.img.mobile" alt="" width="80" height="80" class="speaker__pic">
+            <img :src="getSpeakerImg(speaker.img.mobile)" alt="" width="80" height="80" class="speaker__pic">
           </div>
         </div>
         <div v-else class="schedule__speaker">
           <div class="animated slideInUp">
             <img
-              :src="scheduleData.room.sidecar[1].speakers[0].img.mobile"
+              :src="getSpeakerImg(scheduleData.room.sidecar[1].speakers[0].img.mobile)"
               alt=""
               width="80"
               height="80"
@@ -192,6 +192,9 @@ export default {
       const endHour = (endDate.getHours() < 10 ? '0' + endDate.getHours() : endDate.getHours())
       const endMin = (endDate.getMinutes() < 10 ? '0' + endDate.getMinutes() : endDate.getMinutes())
       return `${startHour}:${startMin} ~ ${endHour}:${endMin}`
+    },
+    getSpeakerImg (img) {
+      return `${process.env.BASE_URL}/${img}`
     }
   }
 }
