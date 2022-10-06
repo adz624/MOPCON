@@ -11,6 +11,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022101
                 }
             },
@@ -21,8 +22,9 @@
                 "room": {
                     "name": "敬請期待",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "AWS",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022102
                 }
             },
@@ -31,10 +33,11 @@
                 "ended_at": 1665804600,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "品牌形象組",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "剖析品牌形象組的任務",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022103
                 }
             },
@@ -43,10 +46,11 @@
                 "ended_at": 1665806400,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "品牌形象組",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "剖析品牌形象組的任務",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022104
                 }
             },
@@ -55,10 +59,11 @@
                 "ended_at": 1665808200,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "鈦坦",
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022105
                 }
             },
@@ -73,10 +78,11 @@
                 "ended_at": 1665813600,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "KKBOX",
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022106
                 }
             },
@@ -89,6 +95,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022107
                 }
             },
@@ -97,10 +104,11 @@
                 "ended_at": 1665817200,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "PUMO",
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022108
                 }
             },
@@ -113,6 +121,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022109
                 }
             },
@@ -125,6 +134,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022110
                 }
             },
@@ -137,6 +147,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022111
                 }
             },
@@ -149,6 +160,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022112
                 }
             }
@@ -162,10 +174,11 @@
                 "ended_at": 1665887400,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "MySQL",
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022115
                 }
             },
@@ -178,6 +191,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022116
                 }
             },
@@ -190,6 +204,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022117
                 }
             },
@@ -204,10 +219,11 @@
                 "ended_at": 1665898200,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "物理治療無所不在：改善科技人的疼痛問題",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "高醫物理治療系",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022118
                 }
             },
@@ -216,10 +232,11 @@
                 "ended_at": 1665900000,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "物理治療無所不在：改善科技人的疼痛問題",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "高醫物理治療系",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022119
                 }
             },
@@ -228,10 +245,11 @@
                 "ended_at": 1665901800,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "物理治療無所不在：改善科技人的疼痛問題",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "高醫物理治療系",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022120
                 }
             },
@@ -240,10 +258,11 @@
                 "ended_at": 1665903600,
                 "event": "",
                 "room": {
-                    "name": "敬請期待",
+                    "name": "物理治療無所不在：改善科技人的疼痛問題",
                     "name_e": "",
-                    "topic": "歡迎現場報名",
+                    "topic": "高醫物理治療系",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022121
                 }
             },
@@ -256,6 +275,7 @@
                     "name_e": "",
                     "topic": "歡迎現場報名",
                     "topic_e": "",
+                    "floor": "4F",
                     "session_id": 2022122
                 }
             }
