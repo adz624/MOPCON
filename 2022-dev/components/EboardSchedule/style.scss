@@ -42,13 +42,13 @@ $startSecond: 3s;
         font-size: 56px;
         margin-right: 18px;
       }
-      /deep/ .color-primary {
+      :deep() .color-primary {
         text-shadow: 0 0 24px $colorPrimary;
       }
-      /deep/ .color-secondary {
+      :deep() .color-secondary {
         text-shadow: 0 0 24px $colorSecondary;
       }
-      /deep/ .color-third {
+      :deep() .color-third {
         text-shadow: 0 0 24px $colorThird;
       }
     }
@@ -73,7 +73,7 @@ $startSecond: 3s;
     .tag {
       font-size: 48px;
     }
-    /deep/ .tag-badge-outline-third {
+    :deep() .tag-badge-outline-third {
       font-size: 32px;
       border-radius: 5px;
       line-height: 1.5;
@@ -81,7 +81,7 @@ $startSecond: 3s;
       margin: 4px 32px;
       margin-top: auto;
     }
-    /deep/ .tag-badge-outline-secondary {
+    :deep() .tag-badge-outline-secondary {
       font-size: 32px;
       border-radius: 5px;
       line-height: 1.5;
@@ -89,7 +89,7 @@ $startSecond: 3s;
       margin: 4px 32px;
       margin-top: auto;
     }
-    /deep/ .tag-badge-outline-primary {
+    :deep() .tag-badge-outline-primary {
       font-size: 32px;
       border-radius: 5px;
       line-height: 1.5;
@@ -135,7 +135,7 @@ $startSecond: 3s;
         p {
           font-size: 32px;
         }
-        /deep/ .tag-badge-outline-third {
+        :deep() .tag-badge-outline-third {
           font-size: 28px;
           border-radius: 5px;
           line-height: 1.5;
@@ -290,4 +290,7 @@ $startSecond: 3s;
   padding: 0px 8%;
 }
 
+.text-purple-400 {
+  color: #b594ff;
+}
 

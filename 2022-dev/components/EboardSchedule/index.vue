@@ -22,7 +22,7 @@
         </p>
         <p
           v-for="tag in scheduleData.room.main.tags"
-          :key="tag"
+          :key="tag.name"
           class="delay-7 animated slideInUp tag"
           :class="tag.class_name"
         >
