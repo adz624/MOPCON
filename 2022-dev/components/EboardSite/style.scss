@@ -1,5 +1,6 @@
 .eboardSite {
-  @apply relative overflow-hidden;
+  position: relative;
+  overflow: hidden;
   .bg-circle-1 {
     position: absolute;
     transform: translate(-20%, 100%);
@@ -24,7 +25,7 @@
       margin-bottom: 48px;
       justify-content: space-between;
       align-items: center;
-      @apply text-yellow-500;
+      color: #ffcc02;
       p {
         display: inline-block;
         font-size: 56px;
@@ -44,7 +45,7 @@
     }
   }
   .hasNewsheight {
-    height: calc(100vh - 152px);   
+    height: calc(100vh - 152px);
   }
   .site__info__img img {
     max-width: 100%;
