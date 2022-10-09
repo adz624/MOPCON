@@ -1,23 +1,68 @@
 <template>
   <footer>
-    <Logo />
+    <div class="container footer">
+      <p class="mt-0 mb-3">下載 MOPCON App，一同來參與遊戲吧</p>
+      <div class="img mb-3">
+        <a href="https://apps.apple.com/us/app/mopcon/id721411970" class="apple mr-4" target="_blank">
+          <AppStore />
+        </a>
+        <a href='https://play.google.com/store/apps/details?id=org.mopcon.session.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="google" target="_blank">
+          <img alt='Google Play立即下載' src='https://play.google.com/intl/en_us/badges/static/images/badges/zh-tw_badge_web_generic.png' />
+        </a>
+      </div>
+      <Logo />
+    </div>
   </footer>
 </template>
 
 <script>
 import Logo from '../assets/images/footer_logo.svg?inline'
+import AppStore from '../assets/images/footer_app_store.svg?inline'
 export default {
   name: 'FooterComponent',
   components: {
-    Logo
+    Logo,
+    AppStore
   }
 }
 </script>
 
 <style lang="scss" scoped>
 footer {
-  @include flex(center, column, center);
   background-color: $colorPrimary;
-  height: 96px;
+
+  p {
+    @include font(2.5rem, $colorWhite, 900);
+    text-align: center;
+  }
+  .footer {
+    @include flex(center, column, center);
+    height: 282px;
+  }
+  .img {
+    @include flex;
+    .apple {
+      @include flex(normal, row, center);
+    }
+    .google {
+      @include flex(normal, row, center);
+      img {
+        height: 50px;
+      }
+    }
+  }
+  @include screen(md) {
+    p {
+      font-size: 2rem;
+    }
+  }
+  @include screen(sm) {
+    p {
+      font-size: 1.5rem;
+    }
+    .footer {
+      height: 258px;
+    }
+  }
 }
 </style>
