@@ -18,7 +18,7 @@
                     {
                         "session_id": 2022001,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "通過 Sociotechnical 打造產品競爭力",
                         "topic_e": "Build Product Competitiveness with Sociotechnical",
                         "summary": "在走入 Web3 的時代裡，很多東西都變得虛擬化，甚至也不在集中化管理，不變的核心宗旨是做出對的產品來解決商務問題，但是大部分場景下，並沒有很好的讓業務知識很好的與技術工程團隊結合，導致產品競爭力滑落，甚至喪失的客源。在這個演講中， Kim 會談到關於一個非常久遠的話題 - Sociotechnical，試圖帶大家去重新認識一次組織、業務、團隊、實踐的四大集合體，是怎麼運作可以讓產品走向獲取更好的適應力。",
@@ -105,7 +105,7 @@
                     {
                         "session_id": 2022005,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "品味相片：以 Jetpack Compose 實作一個相片評分應用",
                         "topic_e": "TasteGram: An Image Assessment App Built with Jetpack Compose",
                         "summary": "Jetpack Compose 是 Android 的新一代 UI 工具，可用來建構原生 UI。這可簡化及加快 Android 平台上的 UI 開發作業。透過較少的程式碼、強大的工具和直觀的 Kotlin API，讓你輕鬆簡單地實做 App UI。\n\n 本次演講的目的是幫助開發者熟悉 Compose 在 Modern Android Development (MAD) 中可以完成什麼以及如何完成。為此，我們將完全從頭開始打造一個相片評分 App：品味相片。\n\n 本次演講對於了解 Android 新一代 UI 工具的特性非常有幫助，開發者可以很簡單地使用 Kotlin 語言特性和 Jetpack Compose 來把設計草圖變成手機裡真正會動的 App。",
@@ -156,7 +156,7 @@
                     {
                         "session_id": 2022006,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "從 Domain-Driven Design 看網站開發框架隱藏",
                         "topic_e": "Deep into Web framework via Domain-Driven Design",
                         "summary": "Domain-Driven Design 在近年是經常被討論的一種系統設計的方式，在學習思考方式的過程中，意外的發現在實作上有許多地方可以解釋我們在使用網站開發框架時無法清晰解釋的細節。\n\n 以 Ruby on Rails 經常被濫用的 Service Object 為例子，從 Domain-Driven Design 角度的思考，實際上就是 Domain Service 的角色，該在怎樣的時機使用、該封裝怎樣的內容馬上就變得明確。\n\n 讓我們試著以 Domain-Driven Design 的戰術（程式實作）來分析網站開發框架將哪些細節簡化使我們得以容易入門，又開如何重新細化來對應不斷發展成更複雜的系統。",
@@ -207,7 +207,7 @@
                     {
                         "session_id": 2022007,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "打造邊走邊玩的區塊鏈遊戲",
                         "topic_e": "Walk-to-Earn Blockchain Game",
                         "summary": "隨著 DeFi 和 NFT 等技術被大眾廣為人知，邊玩邊賺的經濟模式正漸漸興起，透過在區塊鏈上開發遊戲，打造鏈遊，將遊戲中的角色、道具做成 NFT 的形式販售。除此之外，遊戲中賺取的加密貨幣、NFT 資產，可以在區塊鏈上進行交易，讓 GameFi 玩家可以邊玩邊賺錢，實現 Play-to-Earn 的商業模式，並且透過智慧合約可以達成不同的遊戲規則，由於智慧合約是公開且不可竄改，遊戲體驗也相對公正，做到 Game+NFT+DeFi 的理念。\n\nNFT 意即非同質化代幣，在遊戲中我們可以透過 ERC721 等代幣標準創造不同的遊戲角色和道具，給予特定的意義。Web3j 是由一個 Java 撰寫的程式庫，主要用於處理以太坊智慧合約及連接以太坊網路上的節點，透過 web3j 我們可以在 app 中呼叫智慧合約中的函數進行操作。除此之外，我們也可以建立屬於自己的智慧合約，制定遊戲規則，建立代幣池等功能。",
@@ -265,7 +265,7 @@
                     {
                         "session_id": 2022008,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "越沒時間，越要寫單元測試 - 單元測試如何助我每天準時下班（以 Java 為例）",
                         "topic_e": "No time no test? No test no time!",
                         "summary": "好的工程師要寫單元測試，這我當然知道，但：\n\n* 我現在光程式寫完直接丟給 QA 測，都寫到要加班了，再加寫測試，要幾點才能回家？\n* PO 說客戶有保證需求不會變，這樣還要寫測試嗎？\n* 程式一動，測試就壞了，好花時間喔！我不寫測試，不就不會壞了嗎？\n* 我上次有問主管，主管說等有時間再回頭補單元測試就好，然後…就沒有然後了…\n\n 在人家都上太空的年代，我也不想殺豬公啊！但是「時程就是很趕」，我要趕快把程式寫完丟給 QA ，才有時間寫下一份程式啊！為什麼去研討會那些講者每個都又有時間寫測試，還有時間重構跟改架構？啊我知道了，他們一定很閒！\n\n「你才閒！你全家都閒！」\n\n 單元測試不是目的，測試是軟體工程多數實踐的地基。你要切微服務、要套 DDD，還是要套用整套 Google 的 SRE 實踐，都無法不以單元測試為基礎。這跟你敏不敏捷、De 不 DevOps 無關。只跟你的「職責」有關。單元測試不是測試，它是功能的一部份。\n\n 因此，我們不能把單元測試視為附加的工作，一但它變成你工作的一部份，你就責無旁貸地不能讓它拖慢你的開發進度，就像你不能讓自已寫的爛程式延遲你的下班時間一樣。如何又把程式寫完、又把測試做完，還不會給後人（也就是三個月後的你自己）造成困擾，這是講者這次想與大家分享的主題。\n\n 本次演講將包含以下內容\n\n* 用真實案例，介紹單元測試的意圖與解決的問題\n* 用簡單的方法，介紹單元測試的基本寫法\n* 用一個複雜案例，介紹龐大系統中如何「演化」出程式與測試\n* 用講者自身的經驗，給想開始或進化單元測試技能的人一些建議\n\n 期待能以一些實戰中真正會遇到的場景與解法，幫助大家早日脫離天天加班的苦日子。",
@@ -331,7 +331,7 @@
                     {
                         "session_id": 2022009,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "Web3.0背後看不見的戰爭",
                         "topic_e": "World Wile War Behind Web3.0",
                         "summary": "從虛擬幣、AI智慧到區塊鏈、物聯網再到NFT及元宇宙，一連串嶄新的知識及應用引爆了Web3.0風光熱潮。引起社會、企業及許多莘莘學子前仆後繼地投入Web3.0領域。\n\n風光的背後必然藏著許多暗潮洶湧，駭客早就不care什麼置換網頁、竊取資料庫等雕蟲小技。他們瞄準的是NFT、虛擬幣、元宇宙等更有價值的資產。 \n\nWeb3.0風光的表面，背後一場光明與黑暗、正與邪的戰爭，正悄然無聲地開打中。一不注意，你是否就在戰爭中犧牲了？",
@@ -389,7 +389,7 @@
                     {
                         "session_id": 2022010,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "解放設計系統迭代 - 畫面構建器",
                         "topic_e": "Let design system go beyond it self - View Builder",
                         "summary": "面向全球的 KKday，如何在多語系以及快速變化的市場，讓非工程人員也能快速產出適合的頁面，將最佳的體驗呈現給全球使用者。",
@@ -440,7 +440,7 @@
                     {
                         "session_id": 2022011,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "現代 Web 框架效能優化技巧分享",
                         "topic_e": "",
                         "summary": "Web 框架層出不窮，但各種重要元件的使用方式漸漸殊途同歸。而在效能優化上，許多坊間的做法較為著重在程式語言層、高併發等實務上其實較少遇到的效能瓶頸處，真正的效能瓶頸通常是運用的不是那麼洽當的解決方案，例如 ORM 的濫用、邏輯結構設計不良... 等等，這部分的效能優化通常成本低廉但效益十足。這個議程將會分享在 Web 的技術專案中，常見的效能優化技巧與思維。",
@@ -491,7 +491,7 @@
                     {
                         "session_id": 2022012,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "FHIR, Vaccine QRCode Passport an",
                         "topic_e": "FHIR, Vaccine QRCode Passport and Python",
                         "summary": "FHIR 之中文全名為快捷式醫療服務互操作資源，主要目的是可以讓醫事單位有統一的資料標準進行資料的交換，目前此資料標準由台灣醫療影像資訊標準協會進行在台灣發展資料標準的格式推廣與定義。本議程，講者主要分享透過此 FHIR 資料格式為基礎，開發出符合 FHIR 資料格式標準的數位疫苗護照應用，並以此應用參與協會舉辦的 2021 聯測松的過程，以及參賽的心得，期望透過此議程的分享讓聽眾更了解 FHIR 資料標準之外，也可以了解目前醫學資料交換標準目前在台灣的發展過程以及舉辦並參與聯測松的目的。",
@@ -564,7 +564,7 @@
                     {
                         "session_id": 2022013,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "SwiftUI 跨平台 App 開發初體驗",
                         "topic_e": "Beginning SwiftUI Multiplatform App Development",
                         "summary": "Apple 在 2019 推出全新的 App 開發技術 SwiftUI，經歷了 4 年的時間，在 2022 它已進入成熟的第 4 代。Apple 的工程師也在 WWDC22 提到，SwiftUI 是開發 App 的最佳技術，現在正是開始使用 SwiftUI 開發 App 的最佳時機。\nSwiftUI 有許多優點。利用它我們可以更方便地開發跨平台 App，使用同樣的 API，就能開發出 iOS、macOS、watchOS、tvOS 都能使用的 App。它的程式可讀性更好，更容易理解，也能用更少的程式實現 App 功能，非常適合新手學習。在開發時不僅資料跟畫面可自動同步，而且還能即時預覽畫面，大幅提升 App 開發的速度並減少 bug 發生的機率。綜合以上優點，它將讓我們成為早點下班的幸福工程師。\n 接下來讓我們快快啟動 Xcode，展開美好的 SwiftUI App 開發初體驗吧。",
@@ -622,7 +622,7 @@
                     {
                         "session_id": 2022014,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "如何以 JS 實作 Shared Components 的效益分析工具",
                         "topic_e": "How to implement a JS tool to analysis shared components",
                         "summary": "Design System 能為產品帶來更為一致性的體驗。\n但 Design System 需要時間醞釀、開發，而其影響並不容易直觀的觀測、闡述，也因此難以闡述其影響力。\n\n講者爬梳網路上各種 Design System 效益分析的文章，並以 JS 實作分析工具，讓 Design System 的效益得以統計、分析。",
@@ -673,7 +673,7 @@
                     {
                         "session_id": 2022015,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "從 CSS 方法論看原子化 CSS 的極致 - UnoCSS",
                         "topic_e": "UnoCSS: All-in-one Atomic CSS Engine",
                         "summary": "隨著前端技術不斷地發展，除了 JavaScript 領域外， CSS 的重要性也日漸增長。 近年來，如 OOCSS、SMACSS 以及 BEM 等 CSS 開發方法論推陳出新，而原子化 (Atomic) CSS 這一流派也受到越來越多開發者的青睞，其中又以 Tailwind CSS、WindiCSS 等逐漸成為主流。 \n\n 而在這眾多工具裡，其中有一個名為 UnoCSS 的「異類」，它並非又是另一套新的 CSS 框架，更準確地說，他是一個 Atomic CSS 的引擎，無論你是用 TailwindCSS、WindiCSS，甚至是 Bootstrap，開發者都可以利用它自由打造出符合團隊規範的原子化 CSS 的工具。\n\n 在這個議程當中，我將從介紹原子化 (Atomic) CSS 流派的發展談起，搭配 vite 來介紹 UnoCSS 這套 CSS 引擎，以及我認為它為什麼有機會成為未來 CSS 開發的方向。",
@@ -724,7 +724,7 @@
                     {
                         "session_id": 2022016,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "一個專門用於對話應用的自然語言理解模型 LaMDA",
                         "topic_e": "Language Model for Dialogue Applications(LaMDA)",
                         "summary": "LaMDA 是 Google 最新發表的語言模型，LaMDA 是基於 Transformer 的自然語言理解(NLU)模型，專門應用於對話使用。本次分享會針對基本對話理解的自然語言理解(NLU)概念做簡單趨勢的介紹，接著針對 LaMDA 的運作方式、模型微調、衡量指標等內容做分享。",
@@ -797,7 +797,7 @@
                     {
                         "session_id": 2022017,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "Meet Passkeys, 與你不知道的金融驗證工具",
                         "topic_e": "Meet Passkeys, and  verification tool in Bank",
                         "summary": "帳號密碼安全嗎？詐騙、駭客等安全問題，如何在行動應用技術年代，實踐即安全又使用體驗良好的驗證機制，在銀行端又如何做到交易方便又安全無疑，此次的內容將介紹給大家。",
@@ -855,7 +855,7 @@
                     {
                         "session_id": 2022018,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "如何巧用 UI/UX 工具，提升設計溝通品質",
                         "topic_e": "How might we : use UI/UX tools to improve the quality of design communication？",
                         "summary": "不論是 Web 或是 APP 專案，設計規格的溝通一直是 UI/UX 任務的一大挑戰，對於許多設計師來說，最難的常常不是如何設計出漂亮介面，而是釐清專案團隊對於規格的共識；正所謂「工欲善其事，必先利其器」，本此演講的主軸，希望與各位分享如何巧用各類 UI/UX 工具，搭建 PM、設計師、工程師、客戶等不同利害關係人之間的思維橋樑，提升整體 UI/UX 專案溝通品質。",
@@ -920,7 +920,7 @@
                     {
                         "session_id": 2022019,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "數位登陸 - 虛擬策展設計與 WebGL 開發 (Babylon.js)",
                         "topic_e": "Digital Launching - Virtual curation design and WebGL (Babylon.js)",
                         "summary": "第一部分帶大家了解從 virsody.io 平台設計發想到開發上線的過程，說明虛擬策展的使用者體驗如何設計；第二部分為網站前端 WebGL 開發要如何開始，以及我們在開發 Babylon.js 過程中累積的心得",
@@ -978,7 +978,7 @@
                     {
                         "session_id": 2022020,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "Focus 讓 AI 來記錄與分析你的電腦使用狀況",
                         "topic_e": "Focus: lets AI record and analyze your computer usage",
                         "summary": "在使用電腦時，人往往會不自覺地分心，或者做出一些沒有效率的操作，導致花費更多時間，比方只是要回應臉書留言，結果被動態推播影響分心了。\n\n這些沒有效率的分心，在學生進行數位學習時尤其嚴重，因為會影響學生完成學習目標的時間。這讓講者思考有沒有辦法透過「自我調整學習」的策略，來收集學生使用電腦的記錄檔，並且經過 AI 標注後，供學生評估並改進自己的電腦使用效率。\n\n為此講者開發了 Focus，一個在網頁利用 Web API 與 Tensorflow.js 做本地運算收集使用者的面部表情與視線軌跡的應用，允許使用者在記錄並回放自己的電腦使用過程，據此反省改進。Focus 投稿至英國的人工智慧與教育國際研討會（AIED 2022）作為海報發表。\n\n此議程將探討人在使用電腦時避免分心的各種做法，並分享講者開發 Focus 的心路歷程，包含理論基礎、開發過程、在發表時收到的回饋以及未來規劃。",
@@ -1072,7 +1072,7 @@
                     {
                         "session_id": 2022021,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "醫療產業開發 App 的血淚史",
                         "topic_e": "What I've seen and heard in the medical industry",
                         "summary": "之前在一間醫療新創待了四年，在裡面開發了用戶端的 App、醫生端的 Web、後台管理系統等等 ...\n 我想這年頭寫 App 的人很多，但在醫療產業又是新創的肯定沒幾個，應該可以透過這次機會，把在醫療產業開發的一些血淚史與大家分享，也會聊聊裡頭印象深刻的趣事。",
@@ -1130,7 +1130,7 @@
                     {
                         "session_id": 2022022,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "Gerber 格式於 AIoT",
                         "topic_e": "Gerber files for AIoT",
                         "summary": "Gerber 格式是 AIoT 的重要技術之一，也是電子電路設計不可或缺的一部分。同時，AIoT 又站在人工智能，第三代互聯網，以及雲運算的交會點。不管你是在開發下一代的比特幣挖礦機，類神經網路照相機，或者是 5G 崁入式裝置，你將會使用 Gerber 在你的工作中。這場演講將幫助你於這個任務上。",
@@ -1188,7 +1188,7 @@
                     {
                         "session_id": 2022023,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "前端好朋友 - tailwindcss",
                         "topic_e": "How to Use Tailwind CSS",
                         "summary": "1. 2022 年 CSS 的決解方案\n2. 導入 tailwindcss 的優點\n3. 透過 tailwindcss 與設計師優雅的溝通",
@@ -1239,7 +1239,7 @@
                     {
                         "session_id": 2022024,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "高效、省錢，挑戰極限的爬蟲",
                         "topic_e": "Beyond limit! The effective, and cost down crawler.",
                         "summary": "這邊簡單地告訴你一個小故事：「就算是日用量極大的美國最大論壇 reddit 也是從爬別人的內容起家」\n\n 沒錯，作為一個 StartUp，沒有用戶進來，但極需內容來充滿網站的時候，爬蟲是你的好幫手；但同樣作為 StartUp，在缺乏資金與人力的情況下需要在有限的預算下控管運算資源的使用，以及在短時間內蒐集大量內容的高效，讓團隊保持速度維持競爭力。\n\n 在這個議程裡，你們將會了解到分散式爬蟲的建置、設計、與成本壓縮的訣竅，一方面了解如何拆解目標的服務，與 ETL 的整合考量。",
@@ -1326,7 +1326,7 @@
                     {
                         "session_id": 2022025,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "Visual Testing",
                         "topic_e": "Visual Testing",
                         "summary": "前端工程師遇到什麼問題？\n 什麼是 Visual Testing？\n 怎麼做  Visual Testing？\n 專案範例 👏🏻\n 工作流程💡\n 疑難雜症 🤔",
@@ -1384,7 +1384,7 @@
                     {
                         "session_id": 2022026,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "為什麼你的產品像縫合怪？",
                         "topic_e": "Why Product Looks Scrambled？",
                         "summary": "有沒有想過，為什麼有的產品用起來絲柔滑順，融入生活是日常的一部份，毫無違和感。\n 有的產品卻像雙磨腳的鞋，怎麼穿怎麼彆扭不舒服，磨出一堆水泡滿滿抱怨？\n\n 這麼痛苦的產品只要夠貴夠漂亮、使用時間不長，你就忍了？和鞋櫃裡冰封已久的那雙鞋一樣？\n\n 模仿就能改進產品嗎？照著流行雜誌穿搭，就能變帥變美？汲取各方優點集中到自己身上，就真的適合自己嗎？\n\n 你的產品注重 UI、在意 UX，但為什麼還是覺得哪裡怪怪的？",
@@ -1435,7 +1435,7 @@
                     {
                         "session_id": 2022027,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "Web3 區塊鏈的 NFT 音樂聆聽體驗會是什麼樣子",
                         "topic_e": "What will the NFT music listening experience be like on the Web3 blockchain",
                         "summary": "區塊鏈技術熱潮，各種項目、新概念與產品服務在市場上相繼推出，聚焦在未來 Web3 內容稱霸的網路生態，數位資產的保存與持有將會是未來趨勢。FANSI 在持續思考 NFT 獨一無二的特性如何應用在產品服務上；如何解決音樂產業的問題，進而去定義 Web3 的音樂體驗樣貌。\n\n 因此發展出兩個面向的產品：\nFANSI 是專注在華人音樂市場發行音樂 NFT 收藏品；MetaBoom 是面向歐美發行 Web3 NFT 音樂播放器項目，NFT 播放器可自行讓用戶匯入鏈上所購買的 NFT 歌曲，在幣圈樂於「分享」的文化上也能有 Listen to Earn 的收益回饋，實現 Web3 資料能夠跨平台互動的價值。\n\n 在 UX 產品設計上的挑戰應如何讓用戶快速理解區塊鏈錢包與智能合約的基本概念，立即購買到 NFT 音樂商品與享受 Web3 音樂聆聽體驗。產品規劃時更必須投入到社群互動，讓用戶皆能參與產品發展的過程、意見回饋與投票。有別於過去 UX 的研究方式，在區塊鏈世界「使用者也即是產品規劃者」。長遠目標希望將區塊鏈網路化繁為簡，成為人人都能輕易上手的網路生態。",
@@ -1500,7 +1500,7 @@
                     {
                         "session_id": 2022028,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "不能相信的相信我之術: 網路連線雙方驗證時，那些意想不到的坑",
                         "topic_e": "Don't bieleve Believe me\" - the pitfalls of authentication",
                         "summary": "在能輕易竊聽、偽造身分、又不能當面驗明正身的網路世界，網路連線除了加密傳輸之外，連線端之前雙方如何驗證身份，也是一項重要的環節。\n\n 服務需要確認使用者真身，才可以避免身份盜用情事。而確認手段除了帳號密碼之外，也可以用 one-time code，甚至是結合兩者以 2FA 強化使用者是否為真身的可信度。\n\n 反過來說，使用者也有需求確認服務是否為官方正品，因此也需要一套相信我之術。而由 root CA 起頭，經過層層中間保證人串起來的數位憑證樹狀鏈，成為了使用者信任服務端的普遍機制。\n\n 然而這些機制並不是完美無缺，一但保證人出事，使用者對其下游被保證者的信任也跟著瓦解。即使有撤銷機制可以緊急廢除憑證，但撤銷通知卻又不會像你所想的一樣發揮效用，該怎麼辦？\n\n 這個講題，將會採討網路世界中，相信的根基是什麼，以及分享一些經驗給大家。",
@@ -1580,7 +1580,7 @@
                     {
                         "session_id": 2022029,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "神奇的 Debug 工具 － ＬＬＤＢ",
                         "topic_e": "Let's Debug code with LLDB",
                         "summary": "工欲善其事，必先利其器\n 使用 LLDB Debug 是我們 iOS 工程師開發日常與基本功之一\n 雖然是這麼的頻繁使用的一個工具\n 但我們真的理解其中的底層做的事情以及延伸的技巧嗎?\n 因此透過這次講題我會一步一步由淺入深的介紹 - LLDB\n 讓我們可以更加瞭解這項工具\n 提升我們日常開發的效率",
@@ -1631,7 +1631,7 @@
                     {
                         "session_id": 2022030,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "深入淺出 autocomplete",
                         "topic_e": "Practical autocomplete",
                         "summary": "autocomplete 是現代軟體服務最重要的特性之一，使用者在輸入框輸入了文字，軟體服務就會回傳最適當的選項給使用者，而使用者可以依照回傳的各個選項中選擇其中一個執行動作。\n\n 一般的技術文章，大都從前端的角度探討如何在輸入文字時，利用 debounce 和 throttle 這兩個技術，提升使用者的操作體驗及減少後端的負擔。極少探討後端如何實作 autocomplete 的資料結構，讓資料能夠快速回傳給前端。\n\n 這次的分享主要就是完全從後端的角度來探討如何利用 Redis 或 Elasticsearch 這類 NoSQL 實作 autocomplete，也會分享多個 autocomplete 常見的情境。\n\n 最後也會分享進入正式環境時的技術選型，應該用 Redis 還是用 Elasticsearch 比較好。\n\n#autocomplete #elasticsearch #redis #backend",
@@ -1689,7 +1689,7 @@
                     {
                         "session_id": 2022031,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "提升學習 UX 體驗的極致 - 以培訓軟體工程師為例",
                         "topic_e": "",
                         "summary": "本議程將介紹多年優化學習體驗設計的過程中，如何協助 1,000 位軟體工程師掌握「學習如何學習」，同時分享他們如何挖掘自身天賦，透過各種有效的學習方法，讓自己逐步成為軟體工程師。",
@@ -1740,7 +1740,7 @@
                     {
                         "session_id": 2022032,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "善用 Go fuzzing，幫助你寫出更完整的單元測試",
                         "topic_e": "Utilize Go fuzzing to write more complete unit tests",
                         "summary": "除了泛型（Generics）之外，Go 1.18 還推出另一個很厲害的 feature - Fuzzing Test。比起一成不變的單元測試，Fuzzing Test 可以自動調整 input，並且幫你檢查那些開發者常常沒想到的 input，輕輕鬆鬆就幫你找出有問題的 edge cases 哦。",
@@ -1806,7 +1806,7 @@
                     {
                         "session_id": 2022033,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "從 IoT 到 Web2，從 Web2 到 Web3：那些開發路上的奇妙風景",
                         "topic_e": "-",
                         "summary": "Web3 在這幾年無疑是技術及商務熱點，幾乎每天都能看到相關的新聞。但作為一個非原生在 Web3 時代的開發者要怎樣因應這樣的變化呢？\n\n過往因緣際會和 React Native 結了緣而接觸了十來個不同領域，從看盤軟體、物聯網、電商系統到區塊鏈冷錢包都有涉獵。一路走來變化已經成為生活中的日常。\n\n試著從這個視角來聊聊那些在開發路上看到的奇怪及有趣的經驗及心得。",
@@ -1912,7 +1912,7 @@
                     {
                         "session_id": 2022037,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "以 Kotlin Multiplatform 制霸全平台",
                         "topic_e": "Build Multiplatform Applications using Kotlin",
                         "summary": "經過多年發展，Kotlin 已是一個支援多平台開發的程式語言，讓開發者能用一個程式語言開發包括 Server-Side、Desktop、Mobile、Frontend 等不同平台的應用程式。在這場分享裡，將介紹 Kotlin Multiplatform 的發展藍圖，並示範多平台開發時的專案架構、工作流程及開發生態系。聽完這場分享後，將能感受到 Kotlin 多平台開發的威力！",
@@ -2026,7 +2026,7 @@
                     {
                         "session_id": 2022041,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "後端靈藥 Elixir - 24 小時彈潤不間斷",
                         "topic_e": "Elixir introduction - build a reliable web server",
                         "summary": "自從 Internet 問世以來, 透過 Web/Internet 解決問題的軟體如雨後春筍般出現.\n而各種雲端架構如 IaaS, SaaS, PaaS 已被廣泛應用.\n微觀而言, 如何打造容錯高, 以及可擴展性的軟體服務節點, 是值得被一探究竟的議題.\n\n今天要向大家介紹 Elixir 以及 Elixir 相關的生態系.\nElixir 是基於 Erlang OTP 的程式語言.\n具有高容錯, 可擴展, 平行處理等雲端服務所需之要素.\n因此可以很容易的處理,後端應用上常見的問題,使開發資源有更有效的使用.",
@@ -2101,7 +2101,7 @@
                     {
                         "session_id": 2022042,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "如何讓 UX 離商業更靠近 - 敏捷環境為例",
                         "topic_e": "UX and Business Analysis - How to combine these skills efficiently",
                         "summary": "1. 什麼商業分析師? 具備的技能與日常\n2. 敏捷環境下 'End to End' 各角色分工(UI.UX.BA.PD.SM)及產品成效評估流程",
@@ -2166,7 +2166,7 @@
                     {
                         "session_id": 2022043,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "拉近現代開發者與 Web 3 的距離",
                         "topic_e": "Bringing the modern developer closer to the Web 3",
                         "summary": "2021 年刷起了一波元宇宙旋風後，這 2 年絕對是 Web3 最火熱的時刻\n 如果 Web3 真能改變些什麼，我應該如何調整我的技能樹為未來作準備呢？\n 對於現代的開發者來說，無論你是前端、後端、QA、維運工程師又或是設計師\n 你手上的技能和 Web3 還差多遠？\n 在這場演講中，希望透過在區塊鏈開發產品 5 年的經驗\n 說明在 Web2.0 + Web3.0 整合開發過程需要的技能變化\n 拉近彼此與 Web 3.0 的距離！",
@@ -2217,7 +2217,7 @@
                     {
                         "session_id": 2022044,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "用 DDD 事件風暴 & OOA 來展開你對 Kubernetes 的認知！",
                         "topic_e": "Use DDD Event Storming & OOA to open your understanding on Kubernetes",
                         "summary": "2022 年，大雲端時代新技術層出不窮，無論你是 Dev 還是 Ops ，都必須擁抱 DevOps 文化的興起而爆學一波雲端技術知識，要學的技術一堆啊 Kubernetes、Traefik、Grafana、Service Mesh mesh, eBPF, CNI, traefik, istio, envoy, cilium⋯⋯\n\n 而今天要推出的分享，並不是要和大家介紹任何一門新技術；我們要做的事是把知名雲端技術「Kubernetes」視為「大體老師」，邊在大家面前解剖 Kubernetes，邊實驗：「到底要如何高效率地學習這些新技術？」。\n\n🤔 在研究新技術時，你是否只是不斷翻閱官方教學，並期望能夠從這一系列碎片化的文字中拼湊出一些認知？\n\n🤔 你知道該如何「視覺化」你對新技術的「認知」嗎？你能夠在閱讀完教學文件之後，立刻把該技術的運作流程完整且富有結構性地敘述給他人嗎？\n\n「學習，要像一台 GPU，只是一個全體渲染的過程，把全貌給畫清了。」\n\n 這一次演講中，我們要來做一個實驗💡💡——我們是否能夠善用在領域驅動設計和物件導向領域中學到的「建模」方法，藉由上帝視角來加速我們的學習效率！？？\n\n 為了能夠帶大家和我們走一趟這一場實驗，水球（主修軟體設計模式和物件導向）和 Yiyu （主修雲端技術、Kubernetes）要來在大家面前透過事件風暴和物件導向的建模技巧，來實際藉由大量的對話建構出共同對於 Kubernetes 的認知；快速用上帝視角來把 Kubernetes 的各種行為流程和元素給摸個清楚。\n\n 因此我們不只會一起複習 Kubernetes 的元素，還會熟悉領域驅動設計和物件導向的核心思想和技法！會有什麼樣子的火花呢，水球和 Yiyu 邀請大家和我們一起走一趟！",
@@ -2321,7 +2321,7 @@
                     {
                         "session_id": 2022045,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "使用 SwiftUI 寫出有趣的 Apps",
                         "topic_e": "Using SwiftUI implements your idea to apps",
                         "summary": "Apple 官方有寫了大量的文件和範例，在 WWDC22 上，還補充了很多實際的 App 範例，讓開發者可以更快的上手 SwiftUI。這個 talk 則是嘗試融合這些案例，製作出有趣的 app。最後，也會和大家分享，如果真的要用 SwiftUI 在公司產品上，和個人專案上，需要注意的地方。",
@@ -2372,7 +2372,7 @@
                     {
                         "session_id": 2022046,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "萬能設計師與他們的乾貨 - 工作幕後大公開",
                         "topic_e": "",
                         "summary": "MOPCON 品牌形象組有許多神奇的工作流程，也創造不少令社群驚艷的結果。今天將公開組內三大幕後流程 － 涵蓋遠端會議中進行的大小工作坊，Mo 孃晉升 Vtuber 的幕後故事，以及如何化解會議中尷尬不前的溝通心法！",
@@ -2420,7 +2420,7 @@
                     {
                         "session_id": 2022047,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "幫你的 Web 開發添加一點 Functional Programming 味",
                         "topic_e": "Let's add Functional Programming flavor to your web development",
                         "summary": "以 Spring Framework 的 Web 開發作為例子，加入 Functional Programming 的函式庫 Arrow-Kt，學習 Option, Either 和 Validated 等觀念如何應用在 web 開發上",
@@ -2478,7 +2478,7 @@
                     {
                         "session_id": 2022048,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "要如何直面到 Kubernetes 所帶來的技術能力影響",
                         "topic_e": "How to face the technical difficulties of Kubernetes?",
                         "summary": "隨著這三四年進展，Kubernetes 已經是當今業界公認的顯學，身為一個正在這條 Cloud Native 道路上的旅者，想要跟大家分享一下關於 Kubernetes 為何會紅的背景，且你應該要用怎樣的視野看待這種繼續以及建議的作法。本演講並不會講太深奧的技巧，希望有具備公有雲及私有雲任意經驗的人皆可聆聽",
@@ -2544,7 +2544,7 @@
                     {
                         "session_id": 2022049,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "數位轉型之跨平台內容保護技術實踐",
                         "topic_e": "Cross-platform DRM Implementations",
                         "summary": "行動裝置的數位內容分享如何同時兼顧安全性與誇平台是門藝術，DRM 是保護數位內容眾多方法中一環，眾多的 DRM spec 各有適用的裝置環境平台，不同的 platform 平台有個別的預設 DRM 實作，本次分享主題設定為介紹 DRM 跨平台方法與數位保護方法。",
@@ -2616,7 +2616,7 @@
                     {
                         "session_id": 2022050,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "設計與開發的協作心法",
                         "topic_e": "What Problems between us? - developers and designers.",
                         "summary": "設計與開發佔據產品開發的核心，但往往在產品開發過程中仍然有著五花八門的摩擦；結合業界的回饋從客觀數據洞察痛點，並且從設計思考及目標導向作為束收點建立解決方案。",
@@ -2674,7 +2674,7 @@
                     {
                         "session_id": 2022051,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "導入 Lighthouse CI 作為前端應用的效能守門員",
                         "topic_e": "Lighthouse CI Integrating Experience Sharing",
                         "summary": "網頁的效能對於前端應用來說非常重要，而 Lighthouse 是其中一個功能完整的效能檢測工具，其推出的 Lighthouse CI 可以更進一步將效能檢測綁進 CI 流程中，扮演前端應用效能守門員的角色。\n\n 這次議程將說明 Lighthouse CI 的基礎概念，以及分享實際導入過程中遇到的困難與挑戰，並分享最後的成果與價值。",
@@ -2725,7 +2725,7 @@
                     {
                         "session_id": 2022052,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "從 0 開始的自架車靶機",
                         "topic_e": "Re:Zero - starting build a auto-driving mobile drone from scratch",
                         "summary": "由於當前自動駕駛當道，有不少家廠商皆投入了不少資源研發該項目，然而在龐大的經濟效應背後卻隱藏著重大的資安危機，在數年前時便有學者提出了基於擾亂自駕車感測模組的相關研究，並且已有相關影片證實該攻擊可在實體環境中複現，自駕車的資安議題是我們需要重視的，因此我們才有要架設一台自駕車做資安方面研究的需求。 本議程的目標將著重在搭建一台自駕車攻擊機，並且分析兩大主流的自駕車解決方案，接著深入分析其中一種自駕車解結方案的光達 (Lidar) 、相機感知模組與其他各零組件之間的關係，並於最後分享實際採購零件架設組裝的心酸血淚史與軟硬體解決思路。",
@@ -2791,7 +2791,7 @@
                     {
                         "session_id": 2022053,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "利用動態特效網站 SOP 概念，讓你作品煞有其事",
                         "topic_e": "How to Make Your Website Magnificent with Website Effects SOP.",
                         "summary": "集結「設計、開發、創作、藝術」為一身的動態特效網站的誘人之處到底在哪裡？\n\n 台灣的網站產業近年變化，公部門在網站上也有所突破，有別於傳統制式的官網，動態特效網站在台灣近年開始發展起來，目前還算是新興領域。對於這領域的概念理解、運行流程、動態思維、未來趨勢、開發方向，透過版塊近年的專案分享、網站觀察，帶大家一探究竟。",
@@ -2849,7 +2849,7 @@
                     {
                         "session_id": 2022054,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "PM 說我全都要！工程師自救的 7 種拆分需求技巧",
                         "topic_e": "7 Requirement Management Skills for Engineers",
                         "summary": "需求溝通是個難題，需要團隊所有人的參與。當需求如隕石般落下，工程師身為專案中的最後一棒，往往是時程被壓縮到最緊迫的那一個。這場議程會分享 7 種需求拆分的技巧，讓工程師也能在專案前期的需求討論階段，就對需求進行拆分。讓我們在工作上能持續交付價值給客戶之虞，還有保有健康的工作型態。",
@@ -2900,7 +2900,7 @@
                     {
                         "session_id": 2022055,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "單頁式應用中的無障礙設計",
                         "topic_e": "Web Accessibility in SPA",
                         "summary": "目前的網頁開發都會大量使用 JavaScript 與前端框架來改善使用者體驗，也有許多實時應用的需求。不過許多 UI 元件若沒有針對無障礙設計另外做考量的話，反而更容易影響使用者體驗。本演講會從無障礙設計的定義出發，並分享一些自己的開發經驗及如何為常見的 UI 元件加入無障礙設計。",
@@ -2951,7 +2951,7 @@
                     {
                         "session_id": 2022056,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "Low-Code IoT 平台的興起，是曇花一現還是永續商機？",
                         "topic_e": "What are low-code IoT platforms?",
                         "summary": "No-Code、Low-Code 時代來臨，各產業將降低招募工程師需求 ! \n 這真的能辦到嗎？又或是能做到什麼程度呢？此講題將分享今年最新的 Low-Code IoT 平台，包含開源/非開源的火熱項目，讓聽眾不僅能了解開發 IoT 應用的完整流程，且議程中也會完整解析市面上主流 IoT 開發板，藉由開放或免費資源達到快速上手，體驗或親自打造專屬自己的 IoT App !",
@@ -3045,7 +3045,7 @@
                     {
                         "session_id": 2022057,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "讓 Maker 精神融入生活，醞釀發想更多的 Side Project",
                         "topic_e": "Base on Maker life to create side project",
                         "summary": "分享這幾年兼具工程師以及 Maker 身份的好處，並透過兩個 Side Project 案例，讓大家理解 Maker 的出發點，鼓勵大家弄髒自己的手，享受創造的過程。",
@@ -3103,7 +3103,7 @@
                     {
                         "session_id": 2022058,
                         "room": "R2",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "從工程師角度看如何寫出好的 UI/UX App",
                         "topic_e": "How to develop a good UI/UX app from an engineer's perspective.",
                         "summary": "使用者體驗在 App 中很重要，工程師也經常被要求具備良好使用者體驗及設計敏感度。但具體來說，App 工程師需要會什麼樣的技能才叫做重視使用者體驗呢？這個講題就要以 Android 為例，來談工程師如何做出好的使用者體驗 App。",
@@ -3161,7 +3161,7 @@
                     {
                         "session_id": 2022059,
                         "room": "R3",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "web3 網頁入門 101",
                         "topic_e": "web3 frontend 101",
                         "summary": "web3 與傳統 web2 開發在前端上都完全一樣最大差異在於從與後端互動改為區塊鏈合約互動，並且需要考慮更多的狀態恢復。\n\n 這次演講將會分享開發上的差異以及實作該如何讀取使用者錢包以及實際與區塊鏈合約互動。",
@@ -3219,7 +3219,7 @@
                     {
                         "session_id": 2022060,
                         "room": "R4",
-                        "floor": "",
+                        "floor": "3F",
                         "topic": "無密碼時代來臨 ? 初探 FIDO 驗證標準",
                         "topic_e": "Going Passwordless? Introducing the FIDO Authentication Standard",
                         "summary": "密碼一直是讓人又愛又恨的東西，隨著網路的世界越來越複雜，對於密碼複雜度與安全性的要求也越來越高，不時資安大廠都會發表關於密碼外洩的新聞，使用者為了方便使用相同帳密遭到破解造成的經濟損失不計其數，有沒有一個更好更安全的方式可以解決困擾已久問題呢 ? \n 無密碼認證（Passwordless Authentication）技術在這幾年越來越多人開始討論，在今年全球密碼日當天，Google、微軟、蘋果共同發出聲明將支持 ( FIDO Fast Identity Online）身分認證方式，為何科技大廠會選擇 FIDO 網路身分驗證呢 ? 其背後的原理到底是如何做到無密碼登入的呢 ? 手機裝置要如何支援呢 ? 在這 Session 預計與大家分享\n 1. 甚麼是 FIDO \n 2. 原理與特性\n 3. FIDO 的下一步",
@@ -3292,7 +3292,7 @@
                     {
                         "session_id": 2022061,
                         "room": "R1",
-                        "floor": "",
+                        "floor": "4F",
                         "topic": "談區塊鏈的意義、現況及未來",
                         "topic_e": "",
                         "summary": "近年來區塊鏈相關技術蓬勃發展，但生活中除了幾位參與交易、挖礦的人們外，大多人只能從新聞中略知一二: 薩爾瓦多瘋狂抄底、LUNA 幣跌到變廢紙...等，整體而言似乎對我們的生活影響並不大。透過這場對談，邀請到從學界到業界的專家告訴我們，區塊鏈如何默默地改變我們的生活，未來又能帶給我們什麼樣的機會。",
