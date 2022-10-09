@@ -53,8 +53,8 @@ class BaseBoardController extends Controller
     private $sessionSpeakerMapping = [];
     private $speakerService;
 
-    private const MOPCON_FIRST_DAY = 1603468800;
-    private const MOPCON_LAST_SESSION_END = 1603616400;
+    private const MOPCON_FIRST_DAY = 1665763200;
+    private const MOPCON_LAST_SESSION_END = 1665914400;
 
     private const BEFORE_START = 3 * 60;
     private const START_AFTER = 10 * 60;
@@ -112,7 +112,12 @@ class BaseBoardController extends Controller
 
         $this->speakerService = new SpeakerService($this->jsonAry, $tagGroupSetting);
         $this->sessionSpeakerMapping = $this->speakerService->getSessionSpeakerMapping();
-        $this->sessions = $this->transSpeakerToSession($speakers);
+        // 配合 2022 資料調整
+        if ($this->year <= 2021) {
+            $this->sessions = $this->transSpeakerToSession($speakers);
+        } else {
+            $this->sessions = SessionService::transToSession($this->jsonAry, $this->sponsors);
+        }
         $this->board = $this->arrangeSessions($this->jsonAry);
     }
 
@@ -153,13 +158,14 @@ class BaseBoardController extends Controller
         }
 
         $this->outputBoard = $this->getOutputSession($this->board, $now);
-        $outputSessoion = $this->formatSession($this->outputBoard, $room);
+        $outputSession = $this->formatSession($this->outputBoard, $room);
 
-        $content = $this->sortCarouselList($outputSessoion, $type);
+        $content = $this->sortCarouselList($outputSession, $type);
 
         global $app;
-        $request = Request::create('/api/' . $this->year . '/news', 'GET');
+        $request = Request::create($this->year . '/news', 'GET');
         $response = json_decode($app->dispatch($request)->getContent(), true);
+
         $news = [];
         if (!is_null($response) && is_array($response['data'])) {
             foreach ($response['data'] as $value) {

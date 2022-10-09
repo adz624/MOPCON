@@ -1,0 +1,26 @@
+.edashboard {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #004973;
+  .text-white {
+    color: white;
+  }
+  .news {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffcc02;
+    background-color: #001333;
+    marquee {
+      p {
+        font-size: 38px;
+        display: inline-block;
+      }
+    }
+  }
+}

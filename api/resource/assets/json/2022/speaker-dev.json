@@ -45,7 +45,7 @@
         "started_at": 1665802200,
         "ended_at": 1665804900,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022011
     },
@@ -102,7 +102,7 @@
         "started_at": 1665811200,
         "ended_at": 1665813900,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022019
     },
@@ -159,7 +159,7 @@
         "started_at": 1665805500,
         "ended_at": 1665808200,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022016
     },
@@ -216,7 +216,7 @@
         "started_at": 1665902400,
         "ended_at": 1665905100,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022057
     },
@@ -273,7 +273,7 @@
         "started_at": 1665817800,
         "ended_at": 1665820500,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022025
     },
@@ -323,7 +323,7 @@
         "started_at": 1665821100,
         "ended_at": 1665823800,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022031
     },
@@ -373,7 +373,7 @@
         "started_at": 1665814500,
         "ended_at": 1665817200,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022023
     },
@@ -430,7 +430,7 @@
         "started_at": 1665798900,
         "ended_at": 1665801600,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022007
     },
@@ -494,7 +494,7 @@
         "started_at": 1665811200,
         "ended_at": 1665813900,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022018
     },
@@ -551,7 +551,7 @@
         "started_at": 1665899100,
         "ended_at": 1665901800,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022053
     },
@@ -608,7 +608,7 @@
         "started_at": 1665802200,
         "ended_at": 1665804900,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022012
     },
@@ -658,7 +658,7 @@
         "started_at": 1665817800,
         "ended_at": 1665820500,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022026
     },
@@ -708,7 +708,7 @@
         "started_at": 1665899100,
         "ended_at": 1665901800,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022054
     },
@@ -758,7 +758,7 @@
         "started_at": 1665889500,
         "ended_at": 1665892200,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022045
     },
@@ -808,7 +808,7 @@
         "started_at": 1665886200,
         "ended_at": 1665888900,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022043
     },
@@ -872,7 +872,7 @@
         "started_at": 1665817800,
         "ended_at": 1665820500,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022027
     },
@@ -922,7 +922,7 @@
         "started_at": 1665821100,
         "ended_at": 1665823800,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022029
     },
@@ -979,7 +979,7 @@
         "started_at": 1665902400,
         "ended_at": 1665905100,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022059
     },
@@ -1036,7 +1036,7 @@
         "started_at": 1665805500,
         "ended_at": 1665808200,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022013
     },
@@ -1093,7 +1093,7 @@
         "started_at": 1665821100,
         "ended_at": 1665823800,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022030
     },
@@ -1143,7 +1143,7 @@
         "started_at": 1665821100,
         "ended_at": 1665823800,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022032
     },
@@ -1207,7 +1207,7 @@
         "started_at": 1665882000,
         "ended_at": 1665885600,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022037
     },
@@ -1257,7 +1257,7 @@
         "started_at": 1665895800,
         "ended_at": 1665898500,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022051
     },
@@ -1314,7 +1314,7 @@
         "started_at": 1665902400,
         "ended_at": 1665905100,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022060
     },
@@ -1378,7 +1378,7 @@
         "started_at": 1665886200,
         "ended_at": 1665888900,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022042
     },
@@ -1428,7 +1428,7 @@
         "started_at": 1665805500,
         "ended_at": 1665808200,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022015
     },
@@ -1478,7 +1478,7 @@
         "started_at": 1665798900,
         "ended_at": 1665801600,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022008
     },
@@ -1556,7 +1556,7 @@
         "started_at": 1665899100,
         "ended_at": 1665901800,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022056
     },
@@ -1627,7 +1627,7 @@
         "started_at": 1665895800,
         "ended_at": 1665898500,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022049
     },
@@ -1677,7 +1677,7 @@
         "started_at": 1665798900,
         "ended_at": 1665801600,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022006
     },
@@ -1741,7 +1741,7 @@
         "started_at": 1665817800,
         "ended_at": 1665820500,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022028
     },
@@ -1791,7 +1791,7 @@
         "started_at": 1665895800,
         "ended_at": 1665898500,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022052
     },
@@ -1848,7 +1848,7 @@
         "started_at": 1665814500,
         "ended_at": 1665817200,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022021
     },
@@ -1926,7 +1926,7 @@
         "started_at": 1665811200,
         "ended_at": 1665813900,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022020
     },
@@ -1976,7 +1976,7 @@
         "started_at": 1665899100,
         "ended_at": 1665901800,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022055
     },
@@ -2033,7 +2033,7 @@
         "started_at": 1665902400,
         "ended_at": 1665905100,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022058
     },
@@ -2090,7 +2090,7 @@
         "started_at": 1665889500,
         "ended_at": 1665892200,
         "room": "R3",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022047
     },
@@ -2168,7 +2168,7 @@
         "started_at": 1665824400,
         "ended_at": 1665827100,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022033
     },
@@ -2218,7 +2218,7 @@
         "started_at": 1665889500,
         "ended_at": 1665892200,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022048
     },
@@ -2275,7 +2275,7 @@
         "started_at": 1665895800,
         "ended_at": 1665898500,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022050
     },
@@ -2325,7 +2325,7 @@
         "started_at": 1665798900,
         "ended_at": 1665801600,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022005
     },
@@ -2396,7 +2396,7 @@
         "started_at": 1665886200,
         "ended_at": 1665888900,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022044
     },
@@ -2467,7 +2467,7 @@
         "started_at": 1665886200,
         "ended_at": 1665888900,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022044
     },
@@ -2524,7 +2524,7 @@
         "started_at": 1665814500,
         "ended_at": 1665817200,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022022
     },
@@ -2595,7 +2595,7 @@
         "started_at": 1665814500,
         "ended_at": 1665817200,
         "room": "R4",
-        "floor": "",
+        "floor": "3F",
         "sponsor_id": 0,
         "session_id": 2022024
     },
@@ -2645,7 +2645,7 @@
         "started_at": 1665905700,
         "ended_at": 1665909900,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022061
     },
@@ -2695,7 +2695,7 @@
         "started_at": 1665905700,
         "ended_at": 1665909900,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022061
     },
@@ -2752,7 +2752,7 @@
         "started_at": 1665886200,
         "ended_at": 1665888900,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 100,
         "session_id": 2022041
     },
@@ -2809,7 +2809,7 @@
         "started_at": 1665886200,
         "ended_at": 1665888900,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 100,
         "session_id": 2022041
     },
@@ -2859,7 +2859,7 @@
         "started_at": 1665805500,
         "ended_at": 1665808200,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 90,
         "session_id": 2022014
     },
@@ -2916,7 +2916,7 @@
         "started_at": 1665802200,
         "ended_at": 1665804900,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 96,
         "session_id": 2022009
     },
@@ -2973,7 +2973,7 @@
         "started_at": 1665811200,
         "ended_at": 1665813900,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 103,
         "session_id": 2022017
     },
@@ -3023,7 +3023,7 @@
         "started_at": 1665905700,
         "ended_at": 1665909900,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022061
     },
@@ -3094,7 +3094,7 @@
         "started_at": 1665795600,
         "ended_at": 1665798300,
         "room": "R1",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 94,
         "session_id": 2022001
     },
@@ -3144,7 +3144,7 @@
         "started_at": 1665802200,
         "ended_at": 1665804900,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 110,
         "session_id": 2022010
     },
@@ -3194,7 +3194,7 @@
         "started_at": 1665889500,
         "ended_at": 1665892200,
         "room": "R2",
-        "floor": "",
+        "floor": "4F",
         "sponsor_id": 0,
         "session_id": 2022046
     }

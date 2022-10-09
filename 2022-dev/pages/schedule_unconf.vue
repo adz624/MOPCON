@@ -44,7 +44,7 @@
                     <h3>{{ agenda.room[0].topic }}</h3>
                     <div class="agenda-table-session-text">
                       <p>
-                        {{ agenda.room[0].speakers[0].name }} <span v-if="agenda.room[0].speakers[0].company">-</span> {{ agenda.room[0].speakers[0].company }}
+                        {{ agenda.room[0].speakers[0].name }}
                       </p>
                       <p>
                         {{ agenda.room[0].floor }}
