@@ -7,7 +7,7 @@
           <AppStore />
         </a>
         <a href='https://play.google.com/store/apps/details?id=org.mopcon.session.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="google" target="_blank">
-          <img alt='Google Play立即下載' src='https://play.google.com/intl/en_us/badges/static/images/badges/zh-tw_badge_web_generic.png' />
+          <img alt='Google Play立即下載' src='../assets/images/footer_google_play.png' />
         </a>
       </div>
       <Logo />
@@ -44,6 +44,9 @@ footer {
     .apple {
       @include flex(normal, row, center);
       width: 115px;
+      svg {
+        width: 108px;
+      }
     }
     .google {
       @include flex(normal, row, center);
