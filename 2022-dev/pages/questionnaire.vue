@@ -85,7 +85,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .questionnaire{
-    height: calc(100vh - 112px );
+    min-height: calc(100vh - 282px);
     background: $colorWhite;
     h1 {
       text-align: center;

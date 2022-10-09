@@ -32,7 +32,7 @@ footer {
   background-color: $colorPrimary;
 
   p {
-    @include font(2.5rem, $colorWhite, 900);
+    @include font(2.5rem, $colorWhite, 500);
     text-align: center;
   }
   .footer {
@@ -43,6 +43,7 @@ footer {
     @include flex;
     .apple {
       @include flex(normal, row, center);
+      width: 115px;
     }
     .google {
       @include flex(normal, row, center);
@@ -59,9 +60,6 @@ footer {
   @include screen(sm) {
     p {
       font-size: 1.5rem;
-    }
-    .footer {
-      height: 258px;
     }
   }
 }
