@@ -18,9 +18,6 @@ $startSecond: 3s;
   padding: 60px 8%;
   display: flex;
   justify-content: space-between;
-  .text-white {
-    color: white;
-  }
 
   .mainSchedule {
     width: 100%;
@@ -31,16 +28,20 @@ $startSecond: 3s;
     margin-top: auto;
     margin-bottom: auto;
     .main {
-      animation-name: typeTitleAni;
-      animation-duration: $startSecond;
       position: relative;
       display: flex;
       .type-title {
         position: relative;
         animation-name: typeTitleAni;
         animation-duration: $startSecond;
-        font-size: 56px;
-        margin-right: 18px;
+        font-size: 4rem;
+        margin-right: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: $colorWhite;
+      }
+      .main-time {
+        margin: 1rem 0;
       }
       :deep() .color-primary {
         text-shadow: 0 0 24px $colorPrimary;
@@ -54,7 +55,7 @@ $startSecond: 3s;
     }
     .schedule {
       &__info {
-        margin-top: 56px;
+        margin-top: 2rem;
         margin-bottom: 24px;
         display: flex;
         align-items: center;
@@ -66,12 +67,14 @@ $startSecond: 3s;
       }
       &__speaker {
         display: flex;
+        align-items: center;
         margin-top: 32px;
         @include contentOpacity(2)
       }
     }
     .tag {
-      font-size: 48px;
+      font-size: 3rem;
+      margin: 0rem;
     }
     :deep() .tag-badge-outline-third {
       font-size: 32px;
@@ -92,16 +95,21 @@ $startSecond: 3s;
     :deep() .tag-badge-outline-primary {
       font-size: 32px;
       border-radius: 5px;
-      line-height: 1.5;
-      padding: 2px 16px;
+      line-height: 1.7;
+      padding: 2px 1.5rem;
       margin: 4px 32px;
-      margin-top: auto;
+      color: #e1525e;
+      border-color: #e1525e;
+      border-style: solid;
+      font-weight: 500;
     }
     .topic {
       font-size: 120px;
     }
     .topic-sm {
-      font-size: 80px;
+      font-size: 5rem;
+      font-weight: 500;
+      margin: 0;
     }
     .speaker {
       &__pic {
@@ -113,10 +121,12 @@ $startSecond: 3s;
       }
       &__name {
         margin-top: 8px;
-        font-size: 48px;
+        margin-bottom: 8px;
+        font-size: 3rem;
       }
       &__job {
-        font-size: 32px;
+        font-size: 2rem;
+        margin: 0;
       }
     }
   }
@@ -129,30 +139,40 @@ $startSecond: 3s;
     animation-duration: $startSecond+3.5;
     .schedule {
       &__info {
-        margin-bottom: 24px;
+        margin: 3rem 0 0 0;
         display: flex;
         align-items: center;
         p {
           font-size: 32px;
         }
+        .tag {
+          font-size: 1.75rem;
+          margin: 0;
+        }
         :deep() .tag-badge-outline-third {
-          font-size: 28px;
+          font-size: 1.25rem;
           border-radius: 5px;
           line-height: 1.5;
           padding: 2px 16px;
           margin: 0px 32px;
           margin-top: auto;
+          color: #e1525e;
+          border-color: #e1525e;
+          border-style: solid;
+          font-weight: 500;
         }
       }
       &__topic {
         max-width: 610px;
         .topic {
-          font-size: 48px;
+          font-size: 2rem;
+          margin: 0.5rem 0;
         }
       }
       &__speaker {
         display: flex;
-        margin-top: 32px;
+        align-items: center;
+        margin-top: 0;
         .speaker {
           &__pic {
             border-radius: 50%;
@@ -162,11 +182,12 @@ $startSecond: 3s;
             margin-left: 16px;
           }
           &__name {
-            margin-top: 4px;
-            font-size: 28px;
+            margin: 4px 0;
+            font-size: 2rem;
           }
           &__job {
-            font-size: 20px;
+            font-size: 1.25rem;
+            margin: 2px 0;
           }
         }
       }
@@ -182,7 +203,7 @@ $startSecond: 3s;
   }
   // delay
   .delay {
-    font-size: 56px;
+    font-size: 4rem;
     animation-delay: $startSecond;
   }
   .delay-7 {
@@ -226,7 +247,7 @@ $startSecond: 3s;
     top: 0%;
     left: 0%;
     transform: translate(0%, 0%);
-    font-size: 56px;
+    font-size: 4rem;
   }
 }
 @keyframes opacity{
@@ -288,6 +309,7 @@ $startSecond: 3s;
 .hasNewsheight {
   height: calc(100vh - 152px);
   padding: 0px 8%;
+  background-position-y: -152px;
 }
 
 .text-purple-400 {

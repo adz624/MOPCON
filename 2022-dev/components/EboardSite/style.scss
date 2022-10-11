@@ -25,11 +25,12 @@
       margin-bottom: 48px;
       justify-content: space-between;
       align-items: center;
-      color: #ffcc02;
+      color: $colorWhite;
       p {
         display: inline-block;
         font-size: 56px;
         white-space: nowrap;
+        margin: 0;
       }
       .line {
         display: inline-block;
@@ -37,6 +38,9 @@
         height: 5px;
         background: white;
         margin: 0px 32px;
+      }
+      .subtitle {
+        color: $colorPink;
       }
     }
     &__img {

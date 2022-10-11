@@ -1,6 +1,6 @@
 <template>
-  <div class="edashboard logo-bg">
-    <div v-if="hasNews" class="news" style="height: 152px;">
+  <div class="edashboard eboard-bg" :class="boardBgClass">
+    <div v-if="hasNews" class="news" :class="newsDelay" style="height: 152px;">
       <marquee scrollamount="10" align="middle">
         <p class="text-white">
           {{ newsData.title }}：
@@ -77,16 +77,43 @@ export default {
         }
       },
       boardData: [],
-      testTime: 0
+      testTime: 0,
+      boardBgClass: 'eboard-bg',
+      newsDelay: ''
     }
   },
   watch: {
     nowActive () {
+      const vm = this
+      let bgClass = 'eboard-bg'
+      let newsClass = ''
+      if (this.boardData[this.nowActive].type === 'session') {
+        const roomCount = this.boardData[this.nowActive].data.room.sidecar.length
+        switch (this.boardData[this.nowActive].data.title) {
+          case '議程預告':
+            bgClass = roomCount === 0 ? 'eboard-session-bg' : 'eboard-session-multi-bg'
+            newsClass = 'news-delay'
+            break
+          case '議程即將開始':
+          case '議程進行中':
+          case '．本廳同步轉播中':
+            bgClass = roomCount === 0 ? 'eboard-session-start-bg' : 'eboard-session-start-multi-bg'
+            newsClass = 'news-delay'
+            break
+        }
+      }
+      vm.boardBgClass = bgClass
+      vm.newsDelay = newsClass
+
+      if (newsClass !== '') {
+        setTimeout(() => {
+          vm.newsDelay = ''
+        }, 1500)
+      }
     }
   },
   updated () {
     if (this.mySwiper) {
-      console.log(this.mySwiper)
       this.$nextTick(() => {
         this.mySwiper.loopDestroy()
         this.mySwiper.loopCreate()
