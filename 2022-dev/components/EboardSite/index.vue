@@ -1,7 +1,5 @@
 <template>
   <div class="eboardSite">
-    <img src="./images/bg.png" width="770" alt="" class="bg-circle-1">
-    <img src="./images/bg-r.png" width="354" alt="" class="bg-circle-2">
     <div class="site__info" :class="{'hasNewsheight': hasNews}">
       <div class="area">
         <div class="site__info__title">
@@ -9,7 +7,7 @@
             {{ siteData.title }}
           </p>
           <span class="line" />
-          <p class="text-white">
+          <p class="subtitle">
             {{ siteData.subtitle }}
           </p>
         </div>

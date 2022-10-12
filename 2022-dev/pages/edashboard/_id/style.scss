@@ -3,10 +3,6 @@
   min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
-  background-color: #004973;
-  .text-white {
-    color: white;
-  }
   .news {
     position: relative;
     z-index: 2;
@@ -14,13 +10,28 @@
     align-items: center;
     border-width: 1px;
     border-style: solid;
-    border-color: #ffcc02;
-    background-color: #001333;
+    border-color: $colorPrimaryLight;
     marquee {
       p {
         font-size: 38px;
         display: inline-block;
       }
     }
+  }
+  @keyframes news {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .news-delay {
+    opacity: 0;
+    animation-name: news;
+    animation-duration: 3s;
   }
 }

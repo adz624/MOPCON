@@ -42,9 +42,10 @@ class BaseBoardController extends Controller
         'summary_e',
     ];
     private $locations = [
-        'R1' => '3F',
+        'R1' => '4F',
         'R2' => '4F',
-        'R3' => '4F',
+        'R3' => '3F',
+        'R4' => '3F',
     ];
 
     private $map_path;
