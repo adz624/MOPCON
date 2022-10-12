@@ -204,6 +204,7 @@ export default {
         '/edashboard/R1',
         '/edashboard/R2',
         '/edashboard/R3',
+        '/edashboard/R4'
       ]
       const speakers = axios.get(`${process.env.BASE_URL}/api/2022/speaker`).then((res) => {
         pages.push('/speaker')
