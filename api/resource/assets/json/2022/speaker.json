@@ -3149,6 +3149,56 @@
         "session_id": 2022010
     },
     {
+        "name": "Michael Wu",
+        "name_e": "Michael Wu",
+        "speaker_id": 255,
+        "company": "Ubiquiti",
+        "company_e": "Ubiquiti",
+        "job_title": "Android Firmware Lead",
+        "job_title_e": "Android Firmware Lead",
+        "bio": "BSP Engineer，目前是 UI Android firmware team 的 lead。\n度過了新手主管的不安，現在帶著一群比我厲害的夥伴一起在 UI 打造有趣的產品。",
+        "bio_e": "",
+        "img": {
+            "web": "api/2022/speaker/images/speaker_255",
+            "mobile": "api/2022/speaker/images/speaker_255"
+        },
+        "link_fb": "",
+        "link_github": "",
+        "link_twitter": "",
+        "link_other": "",
+        "link_slide": "",
+        "topic": "如何以 JS 實作 Shared Components 的效益分析工具",
+        "topic_e": "How to implement a JS tool to analysis shared components",
+        "summary": "Design System 能為產品帶來更為一致性的體驗。\n但 Design System 需要時間醞釀、開發，而其影響並不容易直觀的觀測、闡述，也因此難以闡述其影響力。\n\n講者爬梳網路上各種 Design System 效益分析的文章，並以 JS 實作分析工具，讓 Design System 的效益得以統計、分析。",
+        "summary_e": "",
+        "community_partner": "",
+        "is_keynote": false,
+        "is_online": false,
+        "recordable": true,
+        "level": "Normal",
+        "tags": [
+            {
+                "color": {
+                    "web": "#51A3D3",
+                    "mobile": "#51A3D3"
+                },
+                "name": "Web Development"
+            }
+        ],
+        "target": "Frontend Engineer",
+        "target_e": "Frontend Engineer",
+        "prior_knowledge": "Javascript, Nodejs, Typescript",
+        "prior_knowledge_e": "Javascript, Nodejs, Typescript",
+        "expected_gain": "學會如何透過 typescript compiler API 操作 Typescript AST",
+        "expected_gain_e": "",
+        "started_at": 1665805500,
+        "ended_at": 1665808200,
+        "room": "R2",
+        "floor": "4F",
+        "sponsor_id": 90,
+        "session_id": 2022014
+    },
+    {
         "name": "MOPCON 2022 品牌形象組",
         "name_e": "MOPCON 2022 Branding & Design",
         "speaker_id": 260,

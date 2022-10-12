@@ -665,6 +665,23 @@
                                 "link_twitter": "",
                                 "link_other": "",
                                 "link_fb": ""
+                            },
+                            {
+                                "speaker_id": 255,
+                                "name": "Michael Wu",
+                                "name_e": "Michael Wu",
+                                "job_title": "Android Firmware Lead",
+                                "job_title_e": "Android Firmware Lead",
+                                "company": "Ubiquiti",
+                                "company_e": "Ubiquiti",
+                                "img": {
+                                    "web": "api/2022/speaker/images/speaker_255",
+                                    "mobile": "api/2022/speaker/images/speaker_255"
+                                },
+                                "link_github": "",
+                                "link_twitter": "",
+                                "link_other": "",
+                                "link_fb": ""
                             }
                         ],
                         "sponsor_id": 90,
@@ -2224,7 +2241,7 @@
                         "summary_e": "",
                         "is_keynote": false,
                         "is_online": false,
-                        "recordable": true,
+                        "recordable": false,
                         "level": "Normal ",
                         "target": "1. 【想科普的人】：對雲端技術 Kubernetes 扮演之角色（Orchestrator）有興趣的人\n2. 【所有軟體工程師（尤其是維運、SRE 相關工作）】：因應雲端大時代新技術層出不窮，所有軟體工程師都該學會如何用更短的時間內學習各式各樣的雲端技術。\n3. 【進階軟體設計者】對領域驅動設計和物件導向分析等 Modeling 思維有興趣，並十分好奇該如何將這些方法做跨領域應用的人",
                         "target_e": "",
