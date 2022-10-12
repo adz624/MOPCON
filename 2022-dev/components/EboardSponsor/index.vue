@@ -1,7 +1,7 @@
 <template>
   <div v-if="sponsorData.sponsor_ad_img" class="eboardSponsor">
     <div class="sponsor__info" :class="{'hasNewsheight': hasNews}">
-      <div class="area logo-bg" style="overflow: hidden;">
+      <div class="area" style="overflow: hidden;">
         <img :src="sponsorData.sponsor_ad_img" alt="" class="sponsor__img">
       </div>
     </div>
