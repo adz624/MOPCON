@@ -13,14 +13,16 @@
     <div class="slider sponsor_carrousel">
       <div v-if="boardData.length > 0" ref="mySwiper" v-swiper:mySwiper="swiperOption" class="slider-container" @load="slideChange()">
         <div class="swiper-wrapper">
-          <div v-for="(data, index) in boardData" :key="data.data.name" class="swiper-slide" :data-swiper-autoplay="(data.play_time*1000)">
-            <div v-if="data.type == 'ad'" v-show="nowActive == index">
+          <div v-for="(data, index) in boardData" :key="'swiper_'+index" class="swiper-slide" :data-swiper-autoplay="(data.play_time*1000)">
+            <div v-if="data.type == 'ad'">
               <eboardSponsor :sponsor-data="data.data" :has-news="hasNews" />
             </div>
-            <div v-else-if="data.type == 'session'" v-show="nowActive == index">
-              <eboardSchedule :schedule-data="data.data" :has-news="hasNews" />
+            <div v-else-if="data.type == 'session'">
+              <div v-show="sessionShow">
+                <eboardSchedule :schedule-data="data.data" :has-news="hasNews" />
+              </div>
             </div>
-            <div v-else-if="data.type == 'map'" v-show="nowActive == index">
+            <div v-else-if="data.type == 'map'">
               <eboardSite :site-data="data.data" :has-news="hasNews" />
             </div>
           </div>
@@ -79,7 +81,8 @@ export default {
       boardData: [],
       testTime: 0,
       boardBgClass: 'eboard-bg',
-      newsDelay: ''
+      newsDelay: '',
+      sessionShow: false
     }
   },
   watch: {
@@ -87,7 +90,7 @@ export default {
       const vm = this
       let bgClass = 'eboard-bg'
       let newsClass = ''
-      if (this.boardData[this.nowActive].type === 'session') {
+      if (this.boardData[this.nowActive] !== undefined && this.boardData[this.nowActive].type === 'session') {
         const roomCount = this.boardData[this.nowActive].data.room.sidecar.length
         switch (this.boardData[this.nowActive].data.title) {
           case '議程預告':
@@ -101,6 +104,9 @@ export default {
             newsClass = 'news-delay'
             break
         }
+        vm.sessionShow = true
+      } else {
+        vm.sessionShow = false
       }
       vm.boardBgClass = bgClass
       vm.newsDelay = newsClass
