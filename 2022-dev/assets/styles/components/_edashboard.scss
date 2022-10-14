@@ -1,7 +1,9 @@
 .eboard-bg {
   background-image: url("~@/assets/images/edashboard/bg-pages--2-sessions.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: $colorBlack;
 }
 
 @keyframes session-main {
