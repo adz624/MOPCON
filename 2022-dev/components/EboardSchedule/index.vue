@@ -190,7 +190,7 @@
         <div v-else class="schedule__speaker">
           <div class="animated slideInUp">
             <img
-              :src="getSpeakerImg(scheduleData.room.sidecar[1].speakers[0].img.mobile)"
+              :src="getSpeakerImg(scheduleData.room.sidecar[2].speakers[0].img.mobile)"
               alt=""
               width="80"
               height="80"
