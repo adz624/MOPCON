@@ -178,14 +178,14 @@ export default {
           open: '',
           target: ''
         }
-        // {
-        //   name: 'coWriting',
-        //   url: 'https://hackmd.io/@mopcon/2021/',
-        //   subNav: [],
-        //   subIsOpen: false,
-        //   open: '',
-        //   target: '_blank'
-        // }
+        {
+          name: 'coWriting',
+          url: 'https://hackmd.io/@mopcon/2022/',
+          subNav: [],
+          subIsOpen: false,
+          open: '',
+          target: '_blank'
+        }
       ]
     }
   },
