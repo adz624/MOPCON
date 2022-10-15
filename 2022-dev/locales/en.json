@@ -12,7 +12,8 @@
     "ticket": "Ticket",
     "timeMachine":"Time Machine",
     "guide":"Guide",
-    "workshop":"Workshop"
+    "workshop":"Workshop",
+    "coWriting":"CoWriting"
   },
   "pages": {
     "home": {
