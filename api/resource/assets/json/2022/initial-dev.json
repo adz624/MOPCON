@@ -3,5 +3,5 @@
 		"mopcon": "https://dev.mopcon.org",
 		"game": "https://game.mopcon.org"
 	},
-	"enable_game": true
+	"enable_game": false
 }
