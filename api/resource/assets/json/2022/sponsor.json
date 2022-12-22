@@ -313,5 +313,20 @@
         "official_website": "https://www.kkday.com/zh-tw",
         "sponsor_type": "developer",
         "career_information": ""
+    },
+    {
+        "logo_path": {
+            "web": "api/2022/sponsor/images/web/sponsor_111",
+            "mobile": "api/2022/sponsor/images/mobile/sponsor_111"
+        },
+        "name": "高雄市政府經濟發展局",
+        "name_e": "Economic Development Bureau,Kaohsiung City Government",
+        "sponsor_id": 110,
+        "about_us": "",
+        "about_us_e": "",
+        "facebook_url": "https://www.facebook.com/edbkh/",
+        "official_website": "https://edbkcg.kcg.gov.tw/",
+        "sponsor_type": "special_thanks",
+        "career_information": ""
     }
 ]
