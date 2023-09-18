@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/2023/static/css/main.5471f7d6.css",
-    "main.js": "/2023/static/js/main.5030c757.js",
+    "main.js": "/2023/static/js/main.d9a7d825.js",
     "static/css/253.25858203.chunk.css": "/2023/static/css/253.25858203.chunk.css",
     "static/js/253.ee92f6b9.chunk.js": "/2023/static/js/253.ee92f6b9.chunk.js",
     "static/css/640.6f30f2f2.chunk.css": "/2023/static/css/640.6f30f2f2.chunk.css",
-    "static/js/640.5d6e5fc1.chunk.js": "/2023/static/js/640.5d6e5fc1.chunk.js",
+    "static/js/640.afb28307.chunk.js": "/2023/static/js/640.afb28307.chunk.js",
     "static/css/547.331972e4.chunk.css": "/2023/static/css/547.331972e4.chunk.css",
     "static/js/547.9ecb7af8.chunk.js": "/2023/static/js/547.9ecb7af8.chunk.js",
     "static/css/187.6a7203bd.chunk.css": "/2023/static/css/187.6a7203bd.chunk.css",
@@ -57,11 +57,11 @@
     "static/media/FB.svg": "/2023/static/media/FB.d52e15e7ef1a5bc1dd79cd8befd8963a.svg",
     "static/media/fb-card.svg": "/2023/static/media/fb-card.2938ce07409a69271c68527bf86cd549.svg",
     "main.5471f7d6.css.map": "/2023/static/css/main.5471f7d6.css.map",
-    "main.5030c757.js.map": "/2023/static/js/main.5030c757.js.map",
+    "main.d9a7d825.js.map": "/2023/static/js/main.d9a7d825.js.map",
     "253.25858203.chunk.css.map": "/2023/static/css/253.25858203.chunk.css.map",
     "253.ee92f6b9.chunk.js.map": "/2023/static/js/253.ee92f6b9.chunk.js.map",
     "640.6f30f2f2.chunk.css.map": "/2023/static/css/640.6f30f2f2.chunk.css.map",
-    "640.5d6e5fc1.chunk.js.map": "/2023/static/js/640.5d6e5fc1.chunk.js.map",
+    "640.afb28307.chunk.js.map": "/2023/static/js/640.afb28307.chunk.js.map",
     "547.331972e4.chunk.css.map": "/2023/static/css/547.331972e4.chunk.css.map",
     "547.9ecb7af8.chunk.js.map": "/2023/static/js/547.9ecb7af8.chunk.js.map",
     "187.6a7203bd.chunk.css.map": "/2023/static/css/187.6a7203bd.chunk.css.map",
@@ -75,6 +75,6 @@
   },
   "entrypoints": [
     "static/css/main.5471f7d6.css",
-    "static/js/main.5030c757.js"
+    "static/js/main.d9a7d825.js"
   ]
 }
