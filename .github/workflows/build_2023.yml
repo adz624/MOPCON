@@ -1,0 +1,38 @@
+name: Build 2023 react
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!develop'
+      - '!deploy'
+    paths:
+      - '2023-react/**'
+      - '.github/workflows/build_2023.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3          
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: |
+          cd 2023-react
+          npm install react-scripts --save
+          npm install cross-env --save-dev
+          npm ci
+          npm run build
+          
+      - name: Move build files to 2023 folder
+        run: |
+          rm -rf 2023/*
+          mv 2023-react/build/* 2023/
+
+      - name: Push changes to repository
+        run: |
+          git config user.name "${{ github.event.pusher.name }}"
+          git config user.email "${{ github.event.pusher.email }}"
+          git add .
+          git commit -m "Update 2023 files [skip ci]"
+          git push origin ${{ github.ref }}
