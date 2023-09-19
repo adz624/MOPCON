@@ -1,0 +1,121 @@
+[
+  {
+    "text": "Android",
+    "type": "#Android",
+    "key": "a8b9125a-3c62-4fe7-9a51-7d79d1e24cfc",
+    "page": "speaker",
+    "id": 1
+  },
+  {
+    "text": "ChromeOS",
+    "type": "#ChromeOS",
+    "key": "9376a024-2ca6-4d60-a2b6-383a82c64ec0",
+    "page": "speaker",
+    "id": 2
+  },
+  {
+    "text": "IOS",
+    "type": "#IOS",
+    "key": "b8d98e4e-2a16-47a6-903b-4db493e879a2",
+    "page": "speaker",
+    "id": 3
+  },
+  {
+    "text": "watchOS",
+    "type": "#watchOS",
+    "key": "1270d0f6-9a0d-4373-9b44-c3d3f21f8d75",
+    "page": "speaker",
+    "id": 4
+  },
+  {
+    "text": "visionOS",
+    "type": "#visionOS",
+    "key": "6313e988-bf27-4db9-8f16-7514e77c92c5",
+    "page": "speaker",
+    "id": 5
+  },
+  {
+    "text": "IoT",
+    "type": "#IoT",
+    "key": "cda8ad46-9c2d-4c92-bd0a-e88a09e697c3",
+    "page": "speaker",
+    "id": 6
+  },
+  {
+    "text": "UI/UX",
+    "type": "#UI/UX",
+    "key": "e9e8f482-140b-4c63-9162-6a1a4dd7f7e2",
+    "page": "speaker",
+    "id": 7
+  },
+  {
+    "text": "Project Management",
+    "type": "#Project Management",
+    "key": "13b5fb88-4fe9-40f4-97d6-6a086e9e59b2",
+    "page": "speaker",
+    "id": 8
+  },
+  {
+    "text": "Service/Product Operations",
+    "type": "#Service/Product Operations",
+    "key": "825c1977-64d1-4ca1-9675-ef52c47293f6",
+    "page": "speaker",
+    "id": 9
+  },
+  {
+    "text": "Game Planning/Design",
+    "type": "#Game Planning/Design",
+    "key": "2f97f001-549b-46d5-90e6-25eb1a862e6b",
+    "page": "speaker",
+    "id": 10
+  },
+  {
+    "text": "Digital Contents",
+    "type": "#Digital Contents",
+    "key": "a7c9652a-3c39-4b07-96d2-2cfa8a6a7c5a",
+    "page": "speaker",
+    "id": 11
+  },
+  {
+    "text": "Big Data",
+    "type": "#Big Data",
+    "key": "b2a498bf-1a21-49e0-95c5-73a2b4e7d8b1",
+    "page": "speaker",
+    "id": 12
+  },
+  {
+    "text": "DevOps",
+    "type": "#DevOps",
+    "key": "f6311d06-d5f9-4d3c-9e42-6c11d050eb75",
+    "page": "speaker",
+    "id": 13
+  },
+  {
+    "text": "SRE",
+    "type": "#SRE",
+    "key": "f314a22e-0fb6-49e9-9e74-3446f5a666ed",
+    "page": "speaker",
+    "id": 14
+  },
+  {
+    "text": "Cloud Services & HA/HS Computing",
+    "type": "#Cloud Services & HA/HS Computing",
+    "key": "a7c06e8a-949f-432d-bcf4-75aaeaa65ed7",
+    "page": "speaker",
+    "id": 15
+  },
+  {
+    "text": "Machine Learning/AI",
+    "type": "#Machine Learning/AI",
+    "key": "987f6ac5-ec66-440c-b5d5-2c1f08da4317",
+    "page": "speaker",
+    "id": 16
+  },
+  {
+    "text": "VR/AR",
+    "type": "#VR/AR",
+    "key": "6aa8a379-9b8f-41ac-88b3-40a53c95aa96",
+    "page": "speaker",
+    "id": 17
+  }
+]
