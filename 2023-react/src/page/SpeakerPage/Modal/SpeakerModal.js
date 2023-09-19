@@ -37,9 +37,9 @@ const SpeakerModal = (props) => {
               <div className={classes["speaker-container"]} key={speaker.name}>
                 <div className={classes.social}>
                   <div className={classes["img-container"]}>
-                    <img src={speaker.Img} alt={speaker.name} />
+                    {/* <img src={speaker.Img} alt={speaker.name} /> */}
                   </div>
-                  <div className={classes["icon-container"]}>
+                  {/* <div className={classes["icon-container"]}>
                     <a href={speaker.fb} className={classes.icon}>
                       <FBIcon />
                     </a>
@@ -52,7 +52,7 @@ const SpeakerModal = (props) => {
                     <a href={speaker.website} className={classes.icon}>
                       <SiteIcon />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <p className={classes.name}>{speaker.name}</p>
@@ -71,7 +71,7 @@ const SpeakerModal = (props) => {
                 <span className={classes.title}>議程簡介</span>
                 <p>{speaker.introductionToTheAgenda}</p>
               </div>
-              <div className={classes.content}>
+              {/* <div className={classes.content}>
                 <span className={classes.title}>目標會眾</span>
                 <p>{speaker.targetAudience}</p>
               </div>
@@ -86,7 +86,7 @@ const SpeakerModal = (props) => {
               <div className={classes.content}>
                 <span className={classes.title}>議程地點</span>
                 <p>{speaker.agendaLocation}</p>
-              </div>
+              </div> */}
               <div className={classes["button-container"]}>
                 <a href="/link1" className={classes.button}>
                   <CalendarIcon />

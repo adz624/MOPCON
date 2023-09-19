@@ -45,13 +45,13 @@ const Navbar = () => {
             </li>
           </ul>
         )}
-      </li>
+      </li> */}
       <li className={classes.nav}>
         <Link to="/speaker" className={classes["nav-text"]}>
           講者陣容
         </Link>
       </li>
-      <li className={classes.nav}>
+      {/* <li className={classes.nav}>
         <Link to="/sponsor" className={classes["nav-text"]}>
           贊助夥伴
         </Link>
