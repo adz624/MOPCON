@@ -1,0 +1,33 @@
+.container {
+  /* padding-top: 7.5rem; */
+  padding: 7.5rem 0;
+}
+
+.location-img {
+  margin: 0 auto;
+  max-width: 792px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+.location-img img {
+  filter: blur(10px) brightness(50%);
+}
+.text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+@media screen and (max-width: 1023px) {
+  .location-img,
+  .location-img img {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .location-img,
+  .location-img img {
+    max-width: 343px;
+  }
+}
