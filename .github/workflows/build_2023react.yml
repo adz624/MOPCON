@@ -1,14 +1,11 @@
-name: Build 2023 react
+name: Build 2023 react and update 2023 web
 
 on:
-  push:
+  pull_request:
     branches:
       - '**'
-      - '!develop'
-      - '!deploy'
     paths:
       - '2023-react/**'
-      - '.github/workflows/build_2023.yml'
 jobs:
   build:
     runs-on: ubuntu-latest
