@@ -28,8 +28,8 @@ jobs:
 
       - name: Push changes to repository
         run: |
-          git config user.name "${{ github.event.pusher.name }}"
-          git config user.email "${{ github.event.pusher.email }}"
+          git config user.name "${{ github.event.pull_request.user.login }}"
+          git config user.email "${{ github.event.pull_request.user.email }}"        
           git add .
           git commit -m "Update 2023 files [skip ci]"
-          git push origin ${{ github.ref }}
+          git push -f origin HEAD:${{ github.head_ref }}

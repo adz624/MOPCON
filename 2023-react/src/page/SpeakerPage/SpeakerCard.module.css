@@ -41,7 +41,8 @@
   background-color: #f6ebcc;
   width: 384px;
   height: 300px;
-  object-fit: fill;
+  object-fit: cover;
+  overflow: hidden;
   position: relative;
 }
 .img-container img {
@@ -49,8 +50,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: auto;
 }
 .name {
   margin-top: 2.25rem;
