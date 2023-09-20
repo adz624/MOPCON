@@ -14,7 +14,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/高見龍.jpg"
   },
   {
     "name": "Akane Lee",
@@ -31,7 +31,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Akane Lee.jpg"
   },
   {
     "name": "余虹儀",
@@ -48,7 +48,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/余虹儀.jpg"
   },
   {
     "name": "PeterWolf",
@@ -65,7 +65,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/PeterWolf Wang.jpg"
   },
   {
     "name": "ihower",
@@ -82,7 +82,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/ihower.jpeg"
   },
   {
     "name": "黃敬群",
@@ -99,7 +99,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Jim Huang.jpeg"
   },
   {
     "name": "周詳",
@@ -116,7 +116,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/周詳.jpg"
   },
   {
     "name": "Avix Hsu",
@@ -133,7 +133,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Avix Hsu.jpeg"
   },
   {
     "name": "官順暉 (Drake Guan)",
@@ -150,7 +150,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Drake Guan.jpg"
   },
   {
     "name": "簡信昌",
@@ -167,7 +167,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Hsin-Chan Chien.jpg"
   },
   {
     "name": "范聖佑",
@@ -184,7 +184,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/范聖佑.jpg"
   },
   {
     "name": "Wig Cheng 鄭元誠",
@@ -201,7 +201,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Wig Cheng 鄭元誠.jpg"
   },
   {
     "name": "鄭重男",
@@ -218,7 +218,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/鄭重男.jpeg"
   },
   {
     "name": "沈宜婷&徐方繹",
@@ -235,7 +235,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/徐方繹.jpg"
   },
   {
     "name": "Kyle",
@@ -252,7 +252,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Kyle.jpg"
   },
   {
     "name": "Ian (陳葵懋)",
@@ -269,7 +269,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/Ian.jpg"
   },
   {
     "name": "游騰林",
@@ -286,7 +286,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/游騰林.jpg"
   },
   {
     "name": "John Lu",
@@ -303,6 +303,6 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": ""
+    "Img": "/assets/images/SpeakerImg/speaker.png"
   }
 ]

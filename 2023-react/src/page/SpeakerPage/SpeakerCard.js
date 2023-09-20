@@ -12,7 +12,10 @@ const SpeakerCard = (props) => {
           onClick={() => onOpenModal(speaker)}
         >
           <div className={classes["img-container"]}>
-            {/* <img src={speaker.Img} alt={speaker.name} /> */}
+            <img
+              src={`${process.env.PUBLIC_URL}${speaker.Img}`}
+              alt={speaker.name}
+            />
           </div>
           <div>
             <p className={classes.name}>{speaker.name}</p>

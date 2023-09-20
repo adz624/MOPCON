@@ -37,7 +37,10 @@ const SpeakerModal = (props) => {
               <div className={classes["speaker-container"]} key={speaker.name}>
                 <div className={classes.social}>
                   <div className={classes["img-container"]}>
-                    {/* <img src={speaker.Img} alt={speaker.name} /> */}
+                    <img
+                      src={`${process.env.PUBLIC_URL}${speaker.Img}`}
+                      alt={speaker.name}
+                    />
                   </div>
                   {/* <div className={classes["icon-container"]}>
                     <a href={speaker.fb} className={classes.icon}>
