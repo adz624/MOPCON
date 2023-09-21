@@ -27,7 +27,7 @@ exec("git pull origin {$release_branch} -f");
 echo "OK\n";
 
 // Build 2023 web site
-exec("cd {$doc_root}2023-dev && make", $output, $return_var);
+exec("cd {$doc_root}2023-dev && ls", $output, $return_var);
 echo "Result: {$return_var}, {$output}"
 
 // 如果有 composer.lock，跑 composer install
