@@ -55,6 +55,7 @@ exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
 exec(cd {$doc_root}2023-dev && rm -rf build);
 exec(cd {$doc_root}2023-dev && npm install);
 exec(cd {$doc_root}2023-dev && npm run build);
+exec(cd {$doc_root} && rm -rf 2023 && ln -s 2023 {$doc_root}2023-dev/build);
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
