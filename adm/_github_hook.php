@@ -53,8 +53,8 @@ exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
 
 // Build 2023 web site
 system(cd {$doc_root}2023-dev && rm -rf build);
-system("cd {$doc_root}2023-dev && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
-system("cd {$doc_root}2023-dev && /usr/local/nvm/versions/node/v8.11.0/bin/npm run build");
+system("cd {$doc_root}2023-dev && /root/.nvm/versions/node/v14.20.0/bin/npm install");
+system("cd {$doc_root}2023-dev && /root/.nvm/versions/node/v14.20.0/bin/npm run build");
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
