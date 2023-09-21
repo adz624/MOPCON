@@ -26,6 +26,10 @@ exec("git reset --hard");
 exec("git pull origin {$release_branch} -f");
 echo "OK\n";
 
+// Build 2023 web site
+exec("cd {$doc_root}2023-dev && make", $output, $return_var);
+echo "Result: {$return_var}, {$output}"
+
 // 如果有 composer.lock，跑 composer install
 $composer_lock_path = "{$doc_root}composer.json";
 if (is_file($composer_lock_path)) {
@@ -50,10 +54,6 @@ exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
 // Build 2019 web site
 //exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn install");
 //exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn run generate");
-
-// Build 2023 web site
-exec("cd {$doc_root}2023-dev && make", $output, $return_var);
-echo "Result: {$return_var}, {$output}"
 
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
