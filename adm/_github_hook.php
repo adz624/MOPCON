@@ -52,6 +52,7 @@ exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
 //exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn run generate");
 
 // Build 2023 web site
+// develop 時採用自動 build，deploy 時則採用靜態版本
 exec(cd {$doc_root}2023-dev && rm -rf build);
 exec(cd {$doc_root}2023-dev && npm install);
 exec(cd {$doc_root}2023-dev && npm run build);
