@@ -10,15 +10,7 @@
   object-position: center;
   position: relative;
 }
-.location-img img {
-  filter: blur(10px) brightness(50%);
-}
-.text {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
+
 @media screen and (max-width: 1023px) {
   .location-img,
   .location-img img {
