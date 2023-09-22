@@ -51,6 +51,10 @@ exec("cd {$doc_root} && /usr/local/nvm/versions/node/v8.11.0/bin/npm install");
 //exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn install");
 //exec("cd {$doc_root}2019-dev && /usr/local/nvm/versions/node/v8.11.0/bin/yarn run generate");
 
+// Build 2023 web site
+// exec("cd {$doc_root}2023-dev && ls", $output, $return_var);
+// echo "Result: {$return_var}, {$output}"
+
 // 如果有 memcache，把最新的 deploy 狀況寫入 memcache
 $memcache_ok = function_exists("memcache_connect");
 if ($memcache_ok) {
