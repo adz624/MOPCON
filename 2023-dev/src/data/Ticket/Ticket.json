@@ -1,0 +1,34 @@
+[
+  {
+    "key": 1,
+    "title": "學生票",
+    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
+    "price": "000",
+    "img": "/assets/images/Ticket/Student-Ticket.png",
+    "link": "/link"
+  },
+  {
+    "key": 2,
+    "title": "早鳥票",
+    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
+    "price": "000",
+    "img": "/assets/images/Ticket/EarlyBird-Ticket.png",
+    "link": "/link"
+  },
+  {
+    "key": 3,
+    "title": "一般票",
+    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
+    "price": "000",
+    "img": "/assets/images/Ticket/Regular-Tickets.png",
+    "link": "/link"
+  },
+  {
+    "key": 4,
+    "title": "VIP票",
+    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
+    "price": "000",
+    "img": "/assets/images/Ticket/VIP.png",
+    "link": "/link"
+  }
+]
