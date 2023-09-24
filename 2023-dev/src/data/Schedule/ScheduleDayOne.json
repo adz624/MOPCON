@@ -1,173 +1,116 @@
 [
   {
-    "start": "09:00 - 09:45",
+    "start": "10:15 - 11:00",
     "agenda": [
       {
-        "title": "議程名稱-1",
-        "tab": ["#IOS", "#Cloud Services & HA/HS Computing"],
-        "name": "講者1",
+        "title": "Git 和 DevOps：在混亂的流星群開發流程中找到小確幸",
+        "tab": ["#DevOps"],
+        "name": "高見龍",
         "location": "A廳"
       },
       {
-        "title": "議程名稱-2",
-        "tab": ["#Android", "#Cloud Services & HA/HS Computing"],
-        "name": "講者2",
+        "title": "以 Compose 及 Kotlin Multiplatform 打造多平台應用程式",
+        "tab": ["#Mobile Technologies"],
+        "name": "范聖佑",
         "location": "B廳"
       }
     ],
-    "break": "09:45 - 09:55",
+    "break": "11:00 - 11:15",
     "text": "休息 Break"
   },
   {
-    "start": "09:55 - 10:40",
+    "start": "11:15 - 12:00",
     "agenda": [
       {
-        "title": "議程名稱-3",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
+        "title": "打造落地 LLM 應用的正確姿勢 -- 不要和它講人話",
+        "tab": ["#Machine Learning/AI"],
+        "name": "PeterWolf",
         "location": "C廳"
       },
       {
         "title": "議程名稱-4",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
+        "tab": ["#"],
+        "name": "羅經凱",
         "location": "D廳"
       }
     ],
-    "break": "10:40 - 10:50",
-    "text": "休息 Break"
+    "break": "12:00 - 13:15",
+    "text": "午餐 Lunch"
   },
   {
-    "start": "10:50 - 11:35",
+    "start": "13:15 - 14:00",
     "agenda": [
       {
-        "title": "議程名稱-5",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
+        "title": "從新聞媒體看 AI 的機會與威脅",
+        "tab": ["#Machine Learning/AI"],
+        "name": "簡信昌",
         "location": "C廳"
       },
       {
-        "title": "議程名稱-6",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
+        "title": "介面設計的創新思維：通用使用性",
+        "tab": ["#UI/UX"],
+        "name": "余虹儀",
         "location": "D廳"
       }
     ],
-    "break": "11:35 - 11:45",
-    "text": "休息 Break"
-  },
-  {
-    "start": "11:45 - 12:30",
-    "agenda": [
-      {
-        "title": "議程名稱-7",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
-        "location": "C廳"
-      },
-      {
-        "title": "議程名稱-8",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
-        "location": "D廳"
-      }
-    ],
-    "break": "12:30 - 13:20",
-    "text": "休息 Break"
-  },
-  {
-    "start": "13:20 - 14:05",
-    "agenda": [
-      {
-        "title": "議程名稱-9",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
-        "location": "C廳"
-      },
-      {
-        "title": "議程名稱-10",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
-        "location": "D廳"
-      }
-    ],
-    "break": "14:05 - 14:15",
+    "break": "14:00 - 14:15",
     "text": "休息 Break"
   },
   {
     "start": "14:15 - 15:00",
     "agenda": [
       {
-        "title": "議程名稱-11",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
+        "title": "不是生成式 AI：影片超解析度成像技術之於電影數位修復",
+        "tab": ["#Machine Learning/AI"],
+        "name": "官順暉 (Drake Guan)",
         "location": "C廳"
       },
       {
-        "title": "議程名稱-12",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
+        "title": "議程名稱-8",
+        "tab": ["#"],
+        "name": "Sam Tu",
         "location": "D廳"
       }
     ],
-    "break": "15:00 - 15:10",
+    "break": "15:00 - 15:30",
+    "text": "下午茶交流"
+  },
+  {
+    "start": "15:30 - 16:15",
+    "agenda": [
+      {
+        "title": "從 Prompt 到 Schema: 淺談 LLM Function Calling",
+        "tab": ["#Machine Learning/AI"],
+        "name": "ihower",
+        "location": "C廳"
+      },
+      {
+        "title": "",
+        "tab": [""],
+        "name": "",
+        "location": ""
+      }
+    ],
+    "break": "16:15 - 16:30",
     "text": "休息 Break"
   },
   {
-    "start": "15:10 - 15:55",
+    "start": "16:30 - 17:15",
     "agenda": [
       {
-        "title": "議程名稱-13",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
+        "title": "生成式AI與遊戲體驗的一致性",
+        "tab": ["#Machine Learning/AI", "#Gaming"],
+        "name": "Avix Hsu",
         "location": "C廳"
       },
       {
-        "title": "議程名稱-14",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
+        "title": "換個位置就換個腦袋？",
+        "tab": ["#UIUX"],
+        "name": "Akane Lee",
         "location": "D廳"
       }
     ],
-    "break": "15:55 - 16:05",
-    "text": "休息 Break"
-  },
-  {
-    "start": "16:05 - 16:50",
-    "agenda": [
-      {
-        "title": "議程名稱-15",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
-        "location": "C廳"
-      },
-      {
-        "title": "議程名稱-16",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
-        "location": "D廳"
-      }
-    ],
-    "break": "16:50 - 17:00",
-    "text": "休息 Break"
-  },
-  {
-    "start": "17:00 - 17:45",
-    "agenda": [
-      {
-        "title": "議程名稱-17",
-        "tab": ["#UI/UX", "#Cloud Services & HA/HS Computing"],
-        "name": "講者3",
-        "location": "C廳"
-      },
-      {
-        "title": "議程名稱-18",
-        "tab": ["#Big Data", "#Cloud Services & HA/HS Computing"],
-        "name": "講者4",
-        "location": "D廳"
-      }
-    ],
-    "break": "17:45 - ",
+    "break": "17:15 - 17:30",
     "text": "END"
   }
 ]

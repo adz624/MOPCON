@@ -21,7 +21,7 @@
 .card {
   margin: 2.5rem 0;
   width: 384px;
-  height: 242px;
+  min-height: 242px;
   border-radius: 10px;
   border: 1px solid #dbdae1;
   background: rgba(240, 240, 241, 0.2);
@@ -81,6 +81,9 @@
   border-bottom: 1px solid #dbdae1;
   margin-bottom: 7.5rem;
 }
+.none {
+  opacity: 0;
+}
 
 @media screen and (max-width: 768px) {
   .wrap {
@@ -97,6 +100,9 @@
   .card {
     max-width: 375px;
     margin: 0 0 1.5rem 0;
+  }
+  .none {
+    display: none;
   }
   .break {
     display: flex;
@@ -120,6 +126,7 @@
     max-width: 343px;
     margin: 0 auto;
   }
+
   .card {
     max-width: 343px;
   }
