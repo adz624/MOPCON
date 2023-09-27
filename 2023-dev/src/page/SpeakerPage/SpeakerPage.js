@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import Head from "../../helper/Helmet";
 import Hero from "../../components/Layout/Hero";
 import TabBtn from "../../components/Tab/TabBtn";
 import SpeakerCard from "./SpeakerCard";
@@ -47,6 +48,7 @@ const SpeakerPage = () => {
 
   return (
     <Fragment>
+      <Head title="講者陣容" page="speaker"></Head>
       {openModal && (
         <SpeakerModal speaker={selectedSpeaker} onClose={hideModalHandle} />
       )}
