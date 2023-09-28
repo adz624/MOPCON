@@ -16,7 +16,7 @@ function Head({ title, page }) {
       />
       <meta
         property="og:image"
-        content={process.env.PUBLIC_URL + "/assets/images/Home/MOPCON-OG.jpg"}
+        content={process.env.PUBLIC_URL + "/assets/images/MOPCON-OG.jpg"}
       />
       <meta
         data-n-head="ssr"
@@ -58,7 +58,7 @@ function Head({ title, page }) {
         data-n-head="ssr"
         data-hid="og-image"
         property="og:image"
-        content="/2023/assets/images/Home/MOPCON-OG.jpg"
+        content="/2023/assets/images/MOPCON-OG.jpg"
       />
       <meta
         data-n-head="ssr"
