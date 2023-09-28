@@ -99,10 +99,10 @@ const SpeakerModal = (props) => {
                 <p>{speaker.agendaLocation}</p>
               </div> */}
               <div className={classes["button-container"]}>
-                <a href="/link1" className={classes.button}>
+                <button className={classes.button}>
                   <CalendarIcon />
                   加入行事曆
-                </a>
+                </button>
                 <button className={classes.button} onClick={shareOnFacebook}>
                   <ShareIcon />
                   分享議程
