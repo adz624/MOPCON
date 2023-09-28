@@ -127,6 +127,8 @@
   border: 1px solid #2b383c;
   color: #2b383c;
   padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
   border-radius: 28px;
   text-decoration: none;
   display: flex;
@@ -135,6 +137,9 @@
   width: 304px;
   gap: 8px;
   max-width: 304px;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 /* RWD */
 @media screen and (max-width: 768px) {

@@ -1,3 +1,4 @@
+import Head from "../../helper/Helmet";
 import Hero from "../../components/Layout/Hero";
 import { Fragment, useState } from "react";
 import UnconfData from "../../data/HeroContent/UnconfData.json";
@@ -15,6 +16,7 @@ const UnconfPage = () => {
   const contentData = selectedDate === "Day1" ? UnconfDayOne : UnconfDayTwo;
   return (
     <Fragment>
+      <Head title="交流議程" page="schedule_unconf"></Head>
       <Hero {...UnconfData} />
       <DateTab selectedDate={selectedDate} onDateClick={handDateClick} />
       <ComAgendaCard UnconfData={contentData} />

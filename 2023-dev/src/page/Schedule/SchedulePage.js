@@ -1,4 +1,5 @@
 import Hero from "../../components/Layout/Hero";
+import Head from "../../helper/Helmet";
 import React, { Fragment, useState } from "react";
 import TabBtn from "../../components/Tab/TabBtn";
 import ScheduleTab from "../../data/ScheduleTab";
@@ -51,6 +52,7 @@ const SchedulePage = () => {
 
   return (
     <Fragment>
+      <Head title="主要議程" page="schedule"></Head>
       <Hero {...ScheduleData} />
       <TabBtn
         tab={ScheduleTab}

@@ -17,7 +17,7 @@ const Navbar = () => {
           主辦社群
         </Link>
       </li>
-      {/* <li
+      {/*<li
         className={`${classes.nav} ${showDropdown ? classes.active : ""}`}
         onMouseEnter={handleDropdownToggle}
         onMouseLeave={handleDropdownToggle}
@@ -38,14 +38,14 @@ const Navbar = () => {
                 主要議程
               </Link>
             </li>
-            <li className={classes.menu}>
+            {/* <li className={classes.menu}>
               <Link to="/schedule_unconf" className={classes["nav-text"]}>
                 交流議程
               </Link>
-            </li>
+            </li> 
           </ul>
         )}
-      </li> */}
+        </li>*/}
       <li className={classes.nav}>
         <Link to="/speaker" className={classes["nav-text"]}>
           講者陣容

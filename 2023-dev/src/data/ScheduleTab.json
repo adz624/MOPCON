@@ -37,8 +37,22 @@
   {
     "text": "DevOps",
     "type": "#DevOps",
-    "key": "f6311d06-d5f9-4d3c-9e42-6c11d050eb75",
+    "key": "f6311d06-368a-4d3c-9e42-6c11d050eb75",
     "page": "speaker",
     "id": 6
+  },
+  {
+    "text": "AI/AR",
+    "type": "#AI/AR",
+    "key": "f856sd06-f59x-4d3c-9e42-8g64s086gt7a",
+    "page": "speaker",
+    "id": 7
+  },
+  {
+    "text": "Cloud",
+    "type": "#Cloud",
+    "key": "f8560d56-1v5s-4f3c-5e42-8c58d896eb85",
+    "page": "speaker",
+    "id": 7
   }
 ]

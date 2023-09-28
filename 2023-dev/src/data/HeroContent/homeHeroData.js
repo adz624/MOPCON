@@ -16,7 +16,7 @@ const homeHeroContent = {
   btn: "前往購票",
   btnIcon: <ExternalIcon />,
   page: "Home",
-  link: "https://mopcon.kktix.cc/events/2023-students?preview_token=8f8aadd1e4daf1c9f4c296ede5d3b58a",
+  link: "https://mopcon.kktix.cc/events/mopcon-2023",
 };
 
 export default homeHeroContent;

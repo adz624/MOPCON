@@ -10,7 +10,12 @@ const AgengaCard = ({ scheduleData }) => {
         <p>{timeSlot.start}</p>
         {/* 兩個不同的議程 */}
         {timeSlot.agenda.map((item, itemIndex) => (
-          <div key={itemIndex} className={classes.card}>
+          <div
+            key={itemIndex}
+            className={`${classes.card} ${
+              item.name === "" ? classes.none : ""
+            }`}
+          >
             <div className={classes.text}>
               <span>{item.title}</span>
               {/* 議程裡面的hashtag */}
@@ -40,12 +45,12 @@ const AgengaCard = ({ scheduleData }) => {
   return (
     <div className={classes.wrap}>
       {card}
-      <section className={classes.mopnight}>
+      {/* <section className={classes.mopnight}>
         <div className={classes.break}>
           <span>18:30-</span>
           <span>MOPNight(講者晚宴)</span>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -21,10 +21,7 @@ const NavModal = (props) => {
             <li className={classes.nav}>
               <Link to="/community">主辦社群</Link>
             </li>
-            <li className={classes.nav}>
-              <Link to="/speaker">講者陣容</Link>
-            </li>
-            {/* <li
+            <li
               className={`${classes.nav} ${showDropdown ? classes.active : ""}`}
               onClick={handleDropdownToggle}
             >
@@ -39,15 +36,18 @@ const NavModal = (props) => {
                       主要議程
                     </Link>
                   </li>
-                  <li className={classes.menu}>
+                  {/* <li className={classes.menu}>
                     <Link to="/schedule_unconf" onClick={props.onClose}>
                       交流議程
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               )}
             </li>
             <li className={classes.nav}>
+              <Link to="/speaker">講者陣容</Link>
+            </li>
+            {/* <li className={classes.nav}>
               <Link to="/sponsor">贊助夥伴</Link>
             </li> */}
             {/* <li className={classes.nav}>

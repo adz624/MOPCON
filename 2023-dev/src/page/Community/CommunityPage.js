@@ -1,4 +1,5 @@
 import Hero from "../../components/Layout/Hero";
+import Head from "../../helper/Helmet";
 import { Fragment, useState } from "react";
 import Card from "./Card";
 import TabBtn from "../../components/Tab/TabBtn";
@@ -26,6 +27,7 @@ const HostCommunityPage = () => {
   const contentData = selectedTab === "team" ? teamContent : communityContent;
   return (
     <Fragment>
+      <Head title="主辦團隊" page="community"></Head>
       <Hero {...communityHeroContent} btnIcon={<FBIcon />} />
 
       <TabBtn tab={tab} selectedTab={selectedTab} onTabClick={handleTabClick} />

@@ -25,6 +25,14 @@ const SpeakerModal = (props) => {
     );
   });
 
+  const shareOnFacebook = () => {
+    const shareUrl = "https://mopcon.org/2023/#/speaker";
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+      shareUrl
+    )}`;
+    window.open(facebookShareUrl, "_blank");
+  };
+
   return (
     <Fragment>
       {ReactDOM.createPortal(
@@ -91,14 +99,14 @@ const SpeakerModal = (props) => {
                 <p>{speaker.agendaLocation}</p>
               </div> */}
               <div className={classes["button-container"]}>
-                <a href="/link1" className={classes.button}>
+                <button className={classes.button}>
                   <CalendarIcon />
                   加入行事曆
-                </a>
-                <a href="/link2" className={classes.button}>
+                </button>
+                <button className={classes.button} onClick={shareOnFacebook}>
                   <ShareIcon />
                   分享議程
-                </a>
+                </button>
               </div>
             </div>
           </div>
