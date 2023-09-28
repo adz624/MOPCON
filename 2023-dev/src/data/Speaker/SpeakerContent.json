@@ -187,12 +187,12 @@
     "Img": "/assets/images/SpeakerImg/范聖佑.jpg"
   },
   {
-    "name": "Wig Cheng 鄭元誠",
+    "name": "Wig Cheng",
     "jobTitle": "Android OS engineering manager",
     "hashTag": ["#Mobile Technologies"],
     "introduce": "Open Source的愛好者, 沉浸在AOSP與Linux Kernel的世界. 目前在IEI集團擔任Android OS Manager",
     "agendaTopicName": "War story: Implementing a modular phone call subsystem in AOSP",
-    "introductionToTheAgenda": "本議程的故事是描述作者在剛報到就要接手離職前人改的面目全非的安卓系統案子source code, 在硬體不能修改, 軟體不知道有多少地雷, 開發時間非常有限的狀態下如何克服困難實作客戶要的4G/5G語音通話功能並順利出貨.一般AOSP的語音通話功能都是經由底層聲卡串接到硬體抽象層(HAL), 再往上串到framework給APK調用.但此案例的HAL已經被改的很亂, 在不動原本架構前提下, 作者想出一個利用tinyalsa在Android runtime (ART) 階段實作一個全新又簡易的語音子系統(背景跑daemon的方式), 也誤打誤撞實現了多聲卡隨意串接與AI語音功能導入在這個子系統. 除了會分享此語音子系統的架構外, 還會分享底層聲卡driver的移植與如何解決硬體方面遇到的問題, 全方面的分析希望能拋磚引玉, 讓在此行奮鬥的工程師有一個新的方式可以快速驗證4G/5G聲卡的硬體設計是否正確,與更好的解題思維.",
+    "introductionToTheAgenda": "本議程的故事是描述作者在剛報到就要接手離職前人留下未完成的安卓系統案子, 在硬體不能修改, 軟體不知道有多少地雷, 開發時間非常有限的狀態下如何克服困難實作客戶要的4G/5G語音通話功能並順利出貨.\n\n一般AOSP的語音通話功能都是經由底層聲卡串接到硬體抽象層(HAL), 再往上串到framework給APK調用.但此案例的HAL已經被改的很亂, 在不動原本架構前提下, 作者想出一個利用tinyalsa在Android runtime (ART) 階段實作一個全新又簡易的語音子系統(背景跑daemon的方式), 也誤打誤撞實現了多聲卡隨意串接與AI語音功能導入在這個子系統. 除了會分享此語音子系統的架構外, 還會分享底層聲卡driver的移植與如何解決硬體方面遇到的問題, 全方面的分析希望能拋磚引玉, 讓在此行奮鬥的工程師有一個新的方式可以快速驗證4G/5G聲卡的硬體設計是否正確,與更好的解題思維.",
     "targetAudience": "",
     "priorKnowledge": "",
     "expectedHarvest": "",
@@ -201,7 +201,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": "/assets/images/SpeakerImg/Wig Cheng 鄭元誠.jpg"
+    "Img": "/assets/images/SpeakerImg/Wig Cheng.jpg"
   },
   {
     "name": "鄭重男",

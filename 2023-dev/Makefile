@@ -22,6 +22,6 @@ build: install
 #upgrade:
 #	-composer self-update
 
-#test:
-#	vendor/bin/phpunit
+test:
+	-npm start
 
