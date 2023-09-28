@@ -22,9 +22,9 @@ if ($release_ref != $payload['ref']) {
 
 // pull 最新的 code 下來
 echo "deploy....";
-exec("git reset --hard");
-exec("git pull origin {$release_branch} -f");
-echo "OK\n";
+exec("cd {$doc_root} && git reset --hard");
+exec("cd {$doc_root} && git pull origin {$release_branch} -f");
+echo "in ".`pwd`." git pull origin {$release_branch} -f OK\n";
 
 // 如果有 composer.lock，跑 composer install
 $composer_lock_path = "{$doc_root}composer.json";
