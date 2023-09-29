@@ -374,10 +374,10 @@
     "Img": "/assets/images/SpeakerImg/邱文淇.jpg"
   },
   {
-    "name": "劉哲佑",
+    "name": "劉哲佑 (Jason)",
     "jobTitle": "",
     "hashTag": ["#AI/AR"],
-    "introduce": "就讀成大資訊系大二，也同時是成大 GDSC 雲端服務組的成員，興趣是寫一些小程式跟機器人，現在學習DevOps以及各種雲服務的運用及搭配。",
+    "introduce": "就讀成大資訊系大二。高中主要參與演算法競賽，目前專注於全端開發、CI/CD 和雲端整合技術。從高三就開始自由接案，負責大學 DSA 作業解題和網頁系統開發與維護。",
     "agendaTopicName": "透過Three.js製作AI訓練ROS地圖編輯器輸出fbx使用於Unity",
     "introductionToTheAgenda": "1.What is scene builder & ROS(robot operation system)\n 2.前後端分離架構\n 3.PROS(based on ROS data structure) API設計\n4.使用FastAPI與sqlalchemy(v1.4)\n5.Three.js + Vite 完成3D地圖編輯器\n6.地圖產生fbx使用於unity\n7.總結與下一步",
     "targetAudience": "",
@@ -391,10 +391,10 @@
     "Img": "/assets/images/SpeakerImg/劉哲佑.jpg"
   },
   {
-    "name": "李育衡",
+    "name": "李育衡 (Patrickuuuu)",
     "jobTitle": "",
     "hashTag": ["#AI/AR"],
-    "introduce": "就讀成大資訊系大二，高中主要參與演算法競賽，目前專注於全端開發、CI/CD 和雲端整合技術。從高三就開始自由接案，負責大學 DSA 作業解題和網頁系統開發與維護。",
+    "introduce": "就讀成大資訊系大二，也同時是成大 GDSC 雲端服務組的成員，興趣是寫一些小程式跟機器人，現在學習DevOps以及各種雲服務的運用及搭配。",
     "agendaTopicName": "透過Three.js製作AI訓練ROS地圖編輯器輸出fbx使用於Unity",
     "introductionToTheAgenda": "1.What is scene builder & ROS(robot operation system)\n 2.前後端分離架構\n 3.PROS(based on ROS data structure) API設計\n4.使用FastAPI與sqlalchemy(v1.4)\n5.Three.js + Vite 完成3D地圖編輯器\n6.地圖產生fbx使用於unity\n7.總結與下一步",
     "targetAudience": "",
