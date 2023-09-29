@@ -2,33 +2,65 @@
   {
     "key": 1,
     "title": "學生票",
-    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
-    "price": "000",
+    "content": [
+      "敬請期待敬請期待敬請期待敬請期待敬請期待",
+      "敬請期待敬請期待敬請期待",
+      "敬請期待",
+      "敬請期待",
+      "敬請期待"
+    ],
+    "price": "200",
     "img": "/assets/images/Ticket/Student-Ticket.png",
-    "link": "/link"
+    "link": "https://mopcon.kktix.cc/events/2023-students",
+    "disabled": false,
+    "btnText": "立即購買"
   },
   {
     "key": 2,
     "title": "早鳥票",
-    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
-    "price": "000",
+    "content": [
+      "敬請期待敬請期待敬請期待敬請期待敬請期待",
+      "敬請期待",
+      "敬請期待敬請期待敬請期待敬請期待敬請期待",
+      "敬請期待",
+      "敬請期待"
+    ],
+    "price": "699",
     "img": "/assets/images/Ticket/EarlyBird-Ticket.png",
-    "link": "/link"
+    "link": "https://mopcon.kktix.cc/events/mopcon-2023",
+    "disabled": false,
+    "btnText": "立即購買"
   },
   {
     "key": 3,
     "title": "一般票",
-    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
-    "price": "000",
+    "content": [
+      "敬請期待敬請期待敬請期待",
+      "敬請期待",
+      "敬請期待",
+      "敬請期待敬請期待敬請期待",
+      "敬請期待"
+    ],
+    "price": "900",
     "img": "/assets/images/Ticket/Regular-Tickets.png",
-    "link": "/link"
+    "link": "/link",
+    "disabled": true,
+    "btnText": "尚未開放"
   },
   {
     "key": 4,
     "title": "VIP票",
-    "content": ["敬請期待", "敬請期待", "敬請期待", "敬請期待", "敬請期待"],
+    "content": [
+      "敬請期待敬請期待敬請期待敬請期待敬請期待",
+      "敬請期待敬請期待敬請期待敬請期待敬請期待敬請期待敬請期待",
+      "敬請期待敬請期待",
+      "敬請期待敬請期待敬請期待敬請期待",
+      "敬請期待敬請期待敬請期待敬請期待"
+    ],
     "price": "000",
     "img": "/assets/images/Ticket/VIP.png",
-    "link": "/link"
+    "link": "/link",
+    "disabled": true,
+    "btnText": "尚未開放"
   }
 ]

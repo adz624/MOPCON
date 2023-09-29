@@ -25,6 +25,13 @@ const SpeakerModal = (props) => {
     );
   });
 
+  const paragraphs = speaker.introductionToTheAgenda.split(/[\n]/);
+  const agenda = paragraphs.map((content, index) => {
+    return <p key={index}>{content}</p>;
+  });
+
+  console.log(paragraphs);
+
   const shareOnFacebook = () => {
     const shareUrl = "https://mopcon.org/2023/#/speaker";
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
@@ -80,7 +87,7 @@ const SpeakerModal = (props) => {
               </div>
               <div className={classes.content}>
                 <span className={classes.title}>議程簡介</span>
-                <p>{speaker.introductionToTheAgenda}</p>
+                {agenda}
               </div>
               {/* <div className={classes.content}>
                 <span className={classes.title}>目標會眾</span>
