@@ -17,11 +17,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   color: #dbdae1;
   padding: 2.5rem 0;
 }
-.card ul {
+.content {
   padding: 0;
+  max-width: 10rem;
 }
 .text {
   margin: 1.25rem 0;
@@ -34,16 +36,33 @@
   padding: 0.75rem 2.5rem;
   border-radius: 24px;
   max-width: 186px;
-  color: #f47c57;
   font-weight: 700;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.btn-active {
+  cursor: pointer;
+  color: #f47c57;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #f47c57;
 }
+.btn-disabled {
+  pointer-events: none;
+  color: #dbdae1;
+  border: 1px solid #dbdae1;
+  background-color: rgba(0, 0, 0, 0);
+}
 
-.btn:hover {
+.btn-active:hover {
   color: #dbdae1;
   background-color: #f47c57;
+  transition: all 0.3s;
+}
+.btn-active:hover svg path {
+  fill: #dbdae1;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 1024px) {
