@@ -40,7 +40,7 @@
 .icon-container {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .container:nth-child(odd) .icon-container {
   justify-content: end;

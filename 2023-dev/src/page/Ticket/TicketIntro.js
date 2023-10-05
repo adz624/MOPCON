@@ -11,11 +11,7 @@ const TicketIntro = () => {
           <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="ticket" />
         </div>
         <h4>{item.title}</h4>
-        <ul className={classes.content}>
-          {item.content.map((content) => {
-            return <li>{content}</li>;
-          })}
-        </ul>
+        <p className={classes.content}>{item.content}</p>
         <span className={classes.text}>$ {item.price}元/張</span>
         <button
           className={`${classes.btn} ${
@@ -29,7 +25,7 @@ const TicketIntro = () => {
           disabled={item.disabled}
         >
           {item.disabled === true ? <Disabled /> : <Active />}
-          {item.btnText}
+          {item.disabled === true ? "尚未開放" : "立即購買"}
         </button>
       </div>
     );
