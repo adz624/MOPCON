@@ -50,9 +50,9 @@ const NavModal = (props) => {
             {/* <li className={classes.nav}>
               <Link to="/sponsor">贊助夥伴</Link>
             </li> */}
-            {/* <li className={classes.nav}>
+            <li className={classes.nav}>
               <Link to="/ticket">票種介紹</Link>
-            </li> */}
+            </li>
             {/* <li className={classes.nav}>
               <Link to="#">共筆文件</Link>
             </li> */}

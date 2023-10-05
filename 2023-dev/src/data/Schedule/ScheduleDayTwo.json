@@ -1,5 +1,6 @@
 [
   {
+    "Day": "Two",
     "start": "9:15 - 10:00",
     "agenda": [
       {
@@ -20,6 +21,7 @@
   },
 
   {
+    "Day": "Two",
     "start": "10:15 - 11:00",
     "agenda": [
       {
@@ -39,6 +41,7 @@
     "text": "休息 Break"
   },
   {
+    "Day": "Two",
     "start": "11:15 - 12:00",
     "agenda": [
       {
@@ -58,6 +61,7 @@
     "text": "午餐 Lunch"
   },
   {
+    "Day": "Two",
     "start": "13:15 - 14:00",
     "agenda": [
       {
@@ -67,9 +71,9 @@
         "location": ""
       },
       {
-        "title": "敬請期待",
-        "tab": ["敬請期待"],
-        "name": "敬請期待",
+        "title": "跨界駕馭：Kotlin Multiplatform x 電動輔助自行車SDK開放的技術革命",
+        "tab": ["#Mobile Technologies"],
+        "name": "Kyle",
         "location": ""
       }
     ],
@@ -77,6 +81,7 @@
     "text": "休息 Break"
   },
   {
+    "Day": "Two",
     "start": "14:15 - 15:00",
     "agenda": [
       {
@@ -96,6 +101,7 @@
     "text": "下午茶交流"
   },
   {
+    "Day": "Two",
     "start": "15:30 - 16:15",
     "agenda": [
       {
@@ -115,6 +121,7 @@
     "text": "休息 Break"
   },
   {
+    "Day": "Two",
     "start": "16:30 - 17:15",
     "agenda": [
       {
