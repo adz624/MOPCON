@@ -25,7 +25,7 @@ const TicketIntro = () => {
           disabled={item.disabled}
         >
           {item.disabled === true ? <Disabled /> : <Active />}
-          {item.disabled === true ? "尚未開放" : "立即購買"}
+          {item.text}
         </button>
       </div>
     );

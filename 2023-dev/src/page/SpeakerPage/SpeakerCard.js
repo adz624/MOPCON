@@ -7,7 +7,9 @@ const SpeakerCard = (props) => {
     <section className={classes["speak-container"]}>
       {SpeakerContent.map((speaker) => (
         <div
-          className={classes.card}
+          className={`${classes.card} ${
+            speaker.name === "鄭鎧尹" ? classes.keynote : ""
+          }`}
           key={speaker.name}
           onClick={() => onOpenModal(speaker)}
         >

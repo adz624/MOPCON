@@ -6,7 +6,9 @@
   margin: 0 auto 6.25rem auto;
   color: #2b383c;
 }
-
+.keynote {
+  grid-column: 1/-1;
+}
 .card {
   max-width: 384px;
   cursor: pointer;
