@@ -6,6 +6,7 @@ const AgengaCard = ({ scheduleData }) => {
   const day = scheduleData.map((item) => {
     return item.Day;
   });
+
   const keynote = day.includes("One") ? (
     <>
       <section className={classes.container}>
