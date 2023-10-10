@@ -109,6 +109,10 @@
   .container .card:first-of-type {
     margin-right: 0;
   }
+  .card-keynote {
+    width: 375px;
+    margin: 0 0 1.5rem 0;
+  }
   .card {
     max-width: 375px;
     margin: 0 0 1.5rem 0;
@@ -141,5 +145,8 @@
 
   .card {
     max-width: 343px;
+  }
+  .card-keynote {
+    width: 343px;
   }
 }
