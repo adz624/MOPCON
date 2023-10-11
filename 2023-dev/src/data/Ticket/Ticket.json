@@ -6,7 +6,8 @@
     "price": "200",
     "img": "/assets/images/Ticket/Student-Ticket.png",
     "link": "https://mopcon.kktix.cc/events/2023-students",
-    "disabled": false
+    "disabled": false,
+    "text": "立即購買"
   },
   {
     "key": 2,
@@ -15,7 +16,8 @@
     "price": "699",
     "img": "/assets/images/Ticket/EarlyBird-Ticket.png",
     "link": "https://mopcon.kktix.cc/events/mopcon-2023",
-    "disabled": true
+    "disabled": true,
+    "text": "已結束"
   },
   {
     "key": 3,
@@ -24,7 +26,8 @@
     "price": "900",
     "img": "/assets/images/Ticket/Regular-Tickets.png",
     "link": "https://mopcon.kktix.cc/events/mopcon-2023",
-    "disabled": false
+    "disabled": false,
+    "text": "立即購買"
   },
   {
     "key": 4,
@@ -33,6 +36,7 @@
     "price": "000",
     "img": "/assets/images/Ticket/VIP.png",
     "link": "https://mopcon.kktix.cc/events/mopcon-2023",
-    "disabled": true
+    "disabled": true,
+    "text": "尚未開放"
   }
 ]

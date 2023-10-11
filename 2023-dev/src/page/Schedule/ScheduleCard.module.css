@@ -75,7 +75,8 @@
 }
 .break {
   max-width: 971px;
-  margin: 2.6875rem auto 2.6875rem auto;
+  padding: 2.6875rem 0;
+  margin: 0 auto 0 auto;
   text-align: start;
   color: #f0f0f1;
   font-size: 1.5rem;
@@ -87,6 +88,11 @@
 .wrap .break:nth-last-child(2) span:first-child {
   margin-right: 28.25rem;
 }
+
+.border-bttom {
+  border-bottom: 1px solid #dbdae1;
+}
+
 .mopnight {
   border-top: 1px solid #dbdae1;
   max-width: 1200px;
@@ -109,6 +115,10 @@
   .container .card:first-of-type {
     margin-right: 0;
   }
+  .card-keynote {
+    width: 375px;
+    margin: 0 0 1.5rem 0;
+  }
   .card {
     max-width: 375px;
     margin: 0 0 1.5rem 0;
@@ -121,7 +131,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 1.5rem auto 1.5rem auto;
+    padding: 1.5rem 0;
+    margin: 0 auto;
     max-width: 386px;
   }
   .break span:first-child {
@@ -140,6 +151,9 @@
   }
 
   .card {
+    max-width: 343px;
+  }
+  .card-keynote {
     max-width: 343px;
   }
 }

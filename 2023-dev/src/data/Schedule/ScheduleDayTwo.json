@@ -4,9 +4,9 @@
     "start": "9:15 - 10:00",
     "agenda": [
       {
-        "title": "敬請期待",
-        "tab": ["敬請期待"],
-        "name": "敬請期待",
+        "title": "數位發展部導入自然人憑證無密碼驗證與零信任",
+        "tab": ["#Security"],
+        "name": "周詳",
         "location": ""
       },
       {
@@ -31,9 +31,9 @@
         "location": ""
       },
       {
-        "title": "敬請期待",
-        "tab": ["敬請期待"],
-        "name": "敬請期待",
+        "title": "我們醫院的數位轉型之路",
+        "tab": ["#DevOps", "#Cloud"],
+        "name": "Nickle",
         "location": ""
       }
     ],
@@ -45,9 +45,9 @@
     "start": "11:15 - 12:00",
     "agenda": [
       {
-        "title": "敬請期待",
-        "tab": ["敬請期待"],
-        "name": "敬請期待",
+        "title": "以平台開發模式為大型 VOD 系統建置 metadata 處理系統",
+        "tab": ["#DevOps", "#Cloud"],
+        "name": "Sam Tu",
         "location": ""
       },
       {
