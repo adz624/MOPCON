@@ -17,7 +17,7 @@ const Navbar = () => {
           主辦社群
         </Link>
       </li>
-      {/*<li
+      <li
         className={`${classes.nav} ${showDropdown ? classes.active : ""}`}
         onMouseEnter={handleDropdownToggle}
         onMouseLeave={handleDropdownToggle}
@@ -42,10 +42,10 @@ const Navbar = () => {
               <Link to="/schedule_unconf" className={classes["nav-text"]}>
                 交流議程
               </Link>
-            </li> 
+            </li>*/}
           </ul>
         )}
-        </li>*/}
+      </li>
       <li className={classes.nav}>
         <Link to="/speaker" className={classes["nav-text"]}>
           講者陣容
@@ -56,11 +56,11 @@ const Navbar = () => {
           贊助夥伴
         </Link>
       </li> */}
-      {/* <li className={classes.nav}>
+      <li className={classes.nav}>
         <Link to="/ticket" className={classes["nav-text"]}>
           票種介紹
         </Link>
-      </li> */}
+      </li>
       {/* <li className={classes.nav}>
         <Link to="#" className={classes["nav-text"]}>
           共筆文件

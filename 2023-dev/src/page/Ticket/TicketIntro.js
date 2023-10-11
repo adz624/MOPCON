@@ -1,5 +1,7 @@
 import classes from "./TicketIntro.module.css";
 import Ticket from "../../data/Ticket/Ticket.json";
+import { ReactComponent as Disabled } from "../../components/asset/Icon/disabled.svg";
+import { ReactComponent as Active } from "../../components/asset/Icon/active.svg";
 
 const TicketIntro = () => {
   const TicketCard = Ticket.map((item) => {
@@ -9,15 +11,22 @@ const TicketIntro = () => {
           <img src={`${process.env.PUBLIC_URL}${item.img}`} alt="ticket" />
         </div>
         <h4>{item.title}</h4>
-        <ul>
-          {item.content.map((content) => {
-            return <li>{content}</li>;
-          })}
-        </ul>
+        <p className={classes.content}>{item.content}</p>
         <span className={classes.text}>$ {item.price}元/張</span>
-        <a className={classes.btn} href={`${item.link}`}>
-          立即購買
-        </a>
+        <button
+          className={`${classes.btn} ${
+            item.disabled === true
+              ? classes["btn-disabled"]
+              : classes["btn-active"]
+          }`}
+          onClick={() => {
+            window.open(item.link, "_blank");
+          }}
+          disabled={item.disabled}
+        >
+          {item.disabled === true ? <Disabled /> : <Active />}
+          {item.text}
+        </button>
       </div>
     );
   });

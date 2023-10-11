@@ -1,5 +1,6 @@
 [
   {
+    "Day": "Two",
     "start": "9:15 - 10:00",
     "agenda": [
       {
@@ -11,7 +12,7 @@
       {
         "title": "飛龍在天：無人飛行載具和軟體開發的新契機",
         "tab": ["#Mobile Technologies"],
-        "name": "黃敬群",
+        "name": "Drone Jserv",
         "location": ""
       }
     ],
@@ -20,6 +21,7 @@
   },
 
   {
+    "Day": "Two",
     "start": "10:15 - 11:00",
     "agenda": [
       {
@@ -29,8 +31,8 @@
         "location": ""
       },
       {
-        "title": "議程名稱-3",
-        "tab": ["#"],
+        "title": "我們醫院的數位轉型之路",
+        "tab": ["#DevOps", "#Cloud"],
         "name": "Nickle",
         "location": ""
       }
@@ -39,18 +41,19 @@
     "text": "休息 Break"
   },
   {
+    "Day": "Two",
     "start": "11:15 - 12:00",
     "agenda": [
       {
-        "title": "Data Lineage: The Secret Weapon to Maintaining ML/DL Models. / 資料血緣: 營運機器/深度學習模型的秘密武器",
-        "tab": ["#Machine Learning/AI"],
-        "name": "游騰林",
+        "title": "以平台開發模式為大型 VOD 系統建置 metadata 處理系統",
+        "tab": ["#DevOps", "#Cloud"],
+        "name": "Sam Tu",
         "location": ""
       },
       {
-        "title": "War story: Implementing a modular phone call subsystem in AOSP",
-        "tab": ["#Mobile Technologies"],
-        "name": "Wig Cheng",
+        "title": "",
+        "tab": [""],
+        "name": "",
         "location": ""
       }
     ],
@@ -58,6 +61,7 @@
     "text": "午餐 Lunch"
   },
   {
+    "Day": "Two",
     "start": "13:15 - 14:00",
     "agenda": [
       {
@@ -77,6 +81,7 @@
     "text": "休息 Break"
   },
   {
+    "Day": "Two",
     "start": "14:15 - 15:00",
     "agenda": [
       {
@@ -96,10 +101,11 @@
     "text": "下午茶交流"
   },
   {
+    "Day": "Two",
     "start": "15:30 - 16:15",
     "agenda": [
       {
-        "title": "Kimoji：Kimoji：使用 On-device LLM 實作心情日記的智能撰稿系統",
+        "title": "Kimoji：使用 On-device LLM 實作心情日記的智能撰稿系統",
         "tab": ["#Machine Learning/AI"],
         "name": "John Lu",
         "location": ""
@@ -115,12 +121,13 @@
     "text": "休息 Break"
   },
   {
+    "Day": "Two",
     "start": "16:30 - 17:15",
     "agenda": [
       {
-        "title": "Lightning Talk",
-        "tab": ["", ""],
-        "name": "講者",
+        "title": "敬請期待",
+        "tab": ["敬請期待"],
+        "name": "敬請期待",
         "location": ""
       },
       {
