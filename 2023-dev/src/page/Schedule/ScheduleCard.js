@@ -70,8 +70,6 @@ const AgengaCard = ({ scheduleData }) => {
     </Fragment>
   ));
 
-  // const keynote = scheduleData
-
   return (
     <div className={classes.wrap}>
       {keynote}
