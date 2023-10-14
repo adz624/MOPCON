@@ -30,14 +30,31 @@ const SpeakerModal = (props) => {
     return <p key={index}>{content}</p>;
   });
 
-  console.log(paragraphs);
-
   const shareOnFacebook = () => {
     const shareUrl = "https://mopcon.org/2023/#/speaker";
+    const mopcon = "MOPCON2023";
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       shareUrl
-    )}`;
+    )}&hashtag=%23${mopcon}`;
     window.open(facebookShareUrl, "_blank");
+  };
+
+  const addToGoogleCalendar = () => {
+    const calendarUrl =
+      "https://www.google.com/calendar/render?action=TEMPLATE";
+    const speakerName = speaker.name;
+    const agendaName = speaker.agendaTopicName;
+    const startTime = "20231111T010000Z";
+    const endTime = "20231112T100000Z";
+    const eventLocation = "高雄展覽館";
+    const eventDetails = `講者：${speakerName}\n議程名稱：${agendaName}`;
+    const googleCalendarUrl = `${calendarUrl}&text=${encodeURIComponent(
+      agendaName
+    )}&dates=${startTime}/${endTime}&details=${encodeURIComponent(
+      eventDetails
+    )}&location=${encodeURIComponent(eventLocation)}`;
+
+    window.open(googleCalendarUrl, "_blank");
   };
 
   return (
@@ -106,7 +123,10 @@ const SpeakerModal = (props) => {
                 <p>{speaker.agendaLocation}</p>
               </div> */}
               <div className={classes["button-container"]}>
-                <button className={classes.button}>
+                <button
+                  className={classes.button}
+                  onClick={addToGoogleCalendar}
+                >
                   <CalendarIcon />
                   加入行事曆
                 </button>
