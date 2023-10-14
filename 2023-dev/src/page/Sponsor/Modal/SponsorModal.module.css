@@ -16,13 +16,18 @@
 .card {
   background-color: #fff;
   width: 600px;
-  height: 520px;
+  min-height: 520px;
+  max-height: 100%;
   z-index: 900;
   background-color: #fff;
   border: 1px solid #2b383c;
   color: #2b383c;
   border-radius: 20px;
   position: relative;
+  overflow-y: scroll;
+}
+.card::-webkit-scrollbar {
+  width: 3px;
 }
 .card h3 {
   color: #2b383c;
@@ -95,7 +100,16 @@
   transition: all 0.3s;
   fill: #fff;
 }
-
+.link {
+  text-decoration: none;
+  color: #2b383c;
+}
+.none {
+  display: none;
+}
+.link:hover {
+  color: #232f32;
+}
 @media screen and (max-width: 568px) {
   .card {
     width: 343px;

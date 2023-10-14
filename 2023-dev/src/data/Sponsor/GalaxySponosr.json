@@ -1,27 +1,30 @@
 [
   {
     "id": 1,
-    "name": "贊助廠商",
+    "name": "一卡通",
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   },
   {
     "id": 2,
-    "name": "贊助廠商2",
+    "name": "捕夢網",
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   },
   {
     "id": 3,
-    "name": "贊助廠商3",
+    "name": "國泰",
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   },
   {
     "id": 4,
@@ -29,6 +32,7 @@
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   }
 ]
