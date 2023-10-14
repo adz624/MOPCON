@@ -3,12 +3,14 @@ import { ReactComponent as FBlIcon } from "../../components/asset/Icon/fb-card.s
 import { ReactComponent as SitelIcon } from "../../components/asset/Icon/site.svg";
 
 const Card = (props) => {
+  const isLegal = props.selectedTab === "legal";
+  const isCommunity = props.selectedTab === "community";
   return (
     <section className={classes.container}>
       <div
-        className={`${classes.team} ${
-          props.selectedTab === "team" ? "" : classes.community
-        } ${
+        className={`${classes.team} 
+        ${isLegal ? classes.legal : ""} 
+        ${isCommunity ? classes.community : ""} ${
           props.team === "紀錄(攝影+直播)組" ? classes["team-position"] : ""
         }  ${
           props.team === "CocoaHeads Kaohsiung" ? classes["team-position"] : ""
@@ -38,11 +40,11 @@ const Card = (props) => {
             <a
               href={props.fb}
               target="blank"
-              className={`${classes.fb} ${
-                props.selectedTab === "team"
-                  ? classes["icon-none"]
-                  : classes.icon
-              }`}
+              className={`
+              ${props.selectedTab === "team" ? classes["icon-none"] : ""} 
+              ${isLegal ? classes["legal-link"] : ""} 
+              ${isCommunity ? classes["community-link"] : ""}
+              ${props.fb === "" ? classes["icon-none"] : classes.fb} `}
             >
               <FBlIcon />
               Facebook
@@ -50,11 +52,11 @@ const Card = (props) => {
             <a
               href={props.site}
               target="blank"
-              className={`${
-                props.selectedTab === "team"
-                  ? classes["icon-none"]
-                  : classes.icon
-              } ${props.site === "" ? classes["icon-none"] : classes.site} `}
+              className={`
+              ${props.selectedTab === "team" ? classes["icon-none"] : ""}
+              ${isLegal ? classes["legal-link"] : ""} 
+              ${isCommunity ? classes["community-link"] : ""} 
+              ${props.site === "" ? classes["icon-none"] : classes.site} `}
             >
               <SitelIcon />
               Site

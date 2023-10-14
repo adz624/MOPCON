@@ -4,7 +4,11 @@ const SponosorItem = (props) => {
   return (
     <div>
       <div className={classes.sponsor}>
-        <img src={props.logo} alt={props.logo}></img>
+        <img
+          src={`${process.env.PUBLIC_URL}${props.logo}`}
+          alt={props.logo}
+          className={classes.img}
+        ></img>
       </div>
       <span>{props.name}</span>
     </div>

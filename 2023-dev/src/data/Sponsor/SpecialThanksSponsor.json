@@ -5,7 +5,8 @@
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   },
   {
     "id": 4,
@@ -29,6 +32,7 @@
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/sponsor.png",
+    "link": ""
   }
 ]
