@@ -1,8 +1,44 @@
 import classes from "./ScheduleCard.module.css";
 import { ReactComponent as PinIcon } from "../../components/asset/Icon/location.svg";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import SpeakerModal from "../SpeakerPage/Modal/SpeakerModal";
+import SpeakerContent from "../../data/Speaker/SpeakerContent";
 
 const AgengaCard = ({ scheduleData }) => {
+  const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+  const [openModal, setOpenModal] = useState(false);
+
+  //抓取 keynote speaker 資料
+  const keynoteSpeakerClick = () => {
+    const keynoteSpeakerData = SpeakerContent.find(
+      (speaker) => speaker.agendaTopicName === "跨界創新：混出你的獨特價值"
+    );
+    setSelectedSpeaker(keynoteSpeakerData);
+    setOpenModal(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const handleSpeakerClick = (selectedSession) => {
+    // 使用選定的議程名稱找到相對應的講者
+    const matchingSpeaker = SpeakerContent.find(
+      (speaker) => speaker.agendaTopicName === selectedSession.title
+    );
+
+    if (!matchingSpeaker) {
+      return; // 如果沒有找到，直接返回
+    }
+
+    // 在組件的狀態中設置選定的講者
+    setSelectedSpeaker(matchingSpeaker);
+    setOpenModal(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const hideModalHandle = () => {
+    setOpenModal(false);
+    document.body.style.overflow = "auto";
+  };
+
   const day = scheduleData.map((item) => {
     return item.Day;
   });
@@ -11,7 +47,10 @@ const AgengaCard = ({ scheduleData }) => {
     <>
       <section className={classes.container}>
         <p>9:15 - 10:00</p>
-        <div className={classes["card-keynote"]}>
+        <div
+          className={classes["card-keynote"]}
+          onClick={() => keynoteSpeakerClick()}
+        >
           <div className={classes.text}>
             <span>跨界創新：混出你的獨特價值</span>
             <span className={classes.tab}>Keynote</span>
@@ -43,6 +82,7 @@ const AgengaCard = ({ scheduleData }) => {
             className={`${classes.card} ${
               item.name === "" ? classes.none : ""
             } `}
+            onClick={() => handleSpeakerClick(item)}
           >
             <div className={classes.text}>
               <span>{item.title}</span>
@@ -71,16 +111,21 @@ const AgengaCard = ({ scheduleData }) => {
   ));
 
   return (
-    <div className={classes.wrap}>
-      {keynote}
-      {card}
-      {/* <section className={classes.mopnight}>
+    <Fragment>
+      {openModal && (
+        <SpeakerModal speaker={selectedSpeaker} onClose={hideModalHandle} />
+      )}
+      <div className={classes.wrap}>
+        {keynote}
+        {card}
+        {/* <section className={classes.mopnight}>
         <div className={classes.break}>
           <span>18:30-</span>
           <span>MOPNight(講者晚宴)</span>
         </div>
       </section> */}
-    </div>
+      </div>
+    </Fragment>
   );
 };
 
