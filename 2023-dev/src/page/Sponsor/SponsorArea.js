@@ -6,14 +6,14 @@ import { ReactComponent as GalaxyIcon } from "../../components/asset/sponsorIcon
 import { ReactComponent as PlanetIcon } from "../../components/asset/sponsorIcon/planet.svg";
 import { ReactComponent as CometIcon } from "../../components/asset/sponsorIcon/comet.svg";
 import { ReactComponent as EducationIcon } from "../../components/asset/sponsorIcon/cil_education.svg";
-import { ReactComponent as ThanksIcon } from "../../components/asset/sponsorIcon/ph_hand-heart-thin.svg";
+// import { ReactComponent as ThanksIcon } from "../../components/asset/sponsorIcon/ph_hand-heart-thin.svg";
 //Sponsor
 // import UniverseSponsor from "../../data/Sponsor/UniverseSponsor.json";
 import GalaxySponsor from "../../data/Sponsor/GalaxySponosr.json";
 import PlanetSponsor from "../../data/Sponsor/PlanetSponsor.json";
 import CometSponsor from "../../data/Sponsor/CometSponsor.json";
 import EducationSponsor from "../../data/Sponsor/EducationSponsor.json";
-import SpecialThanksSponsor from "../../data/Sponsor/SpecialThanksSponsor.json";
+// import SpecialThanksSponsor from "../../data/Sponsor/SpecialThanksSponsor.json";
 //Modal
 import SponsorModal from "./Modal/SponsorModal";
 
