@@ -23,16 +23,7 @@
     "facebook": "/facebook",
     "site": "https://about.dcard.tw/",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": "/assets/images/sponsor/sponsor.png",
-    "link": ""
-  },
-  {
-    "id": 4,
-    "name": "贊助廠商4",
-    "facebook": "/facebook",
-    "site": "/Site",
-    "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": "/assets/images/sponsor/sponsor.png",
+    "Img": "/assets/images/sponsor/Comet/Dcard.svg",
     "link": ""
   }
 ]
