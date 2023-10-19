@@ -19,7 +19,7 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "Dcard",
-    logo: "",
+    logo: "/assets/images/sponsor/Comet/Dcard.svg",
   },
   {
     key: uuidv4(),
@@ -29,7 +29,7 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "一卡通",
-    logo: "",
+    logo: "/assets/images/sponsor/Galaxy/iPass.svg",
   },
   {
     key: uuidv4(),
@@ -39,32 +39,27 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "精誠資訊",
+    logo: "/assets/images/sponsor/Planet/精誠.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "KKBOX",
     logo: "",
   },
   {
     key: uuidv4(),
-    name: "敬請期待",
+    name: "咪卡",
     logo: "",
   },
   {
     key: uuidv4(),
-    name: "敬請期待",
+    name: "捕夢網",
     logo: "",
   },
   {
     key: uuidv4(),
-    name: "敬請期待",
-    logo: "",
-  },
-  {
-    key: uuidv4(),
-    name: "敬請期待",
-    logo: "",
-  },
-  {
-    key: uuidv4(),
-    name: "敬請期待",
-    logo: "",
+    name: "國泰",
+    logo: "/assets/images/sponsor/Galaxy/國泰金控.svg",
   },
 ];
 

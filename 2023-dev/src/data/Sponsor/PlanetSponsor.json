@@ -11,15 +11,15 @@
   {
     "id": 2,
     "name": "精誠資訊",
-    "facebook": "",
-    "site": "",
-    "description": "精誠以「a Data Software Company」為公司定位，透過5A（AP、APP、API、Appliance、Algorithm）跨界軟體能力，以及上雲、用雲、管雲、護雲等4C雲服務為核心技術，同時連結生態圈夥伴力量，協助客戶在多雲混合的架構下，以虛擬化、容器化、微服務化為手段，在數位平台上提供創新價值的數據服務與商業模式，協助企業客戶邁向國際市場，創造指數型成長曲線。",
-    "Img": "/assets/images/sponsor/sponsor.png",
+    "facebook": "/facebook",
+    "site": "/Site",
+    "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
+    "Img": "/assets/images/sponsor/Planet/精誠.svg",
     "link": ""
   },
   {
     "id": 3,
-    "name": "贊助廠商3",
+    "name": "KKBOX",
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "贊助廠商4",
+    "name": "咪卡",
     "facebook": "/facebook",
     "site": "/Site",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
