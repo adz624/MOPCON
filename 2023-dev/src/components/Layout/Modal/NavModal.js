@@ -19,7 +19,7 @@ const NavModal = (props) => {
         <div className={classes.modalBackdrop} onClick={props.onClose}>
           <ul className={classes.container}>
             <li className={classes.nav}>
-              <Link to="/community">主辦社群</Link>
+              <Link to="/community">主辦單位</Link>
             </li>
             <li
               className={`${classes.nav} ${showDropdown ? classes.active : ""}`}
