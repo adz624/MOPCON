@@ -7,13 +7,13 @@
         "title": "Git 和 DevOps：在混亂的流星群開發流程中找到小確幸",
         "tab": ["#DevOps"],
         "name": "高見龍",
-        "location": ""
+        "location": "A廳"
       },
       {
         "title": "日本OTT業界的推薦系統挑戰：元資料品質的重要性與解決方案",
         "tab": ["#AI/AR"],
         "name": "羅經凱",
-        "location": ""
+        "location": "B廳"
       }
     ],
     "break": "11:00 - 11:15",
@@ -27,13 +27,13 @@
         "title": "打造落地 LLM 應用的正確姿勢 -- 不要和它講人話",
         "tab": ["#Machine Learning/AI"],
         "name": "PeterWolf",
-        "location": ""
+        "location": "A廳"
       },
       {
         "title": "Data Lineage: The Secret Weapon to Maintaining ML/DL Models. / 資料血緣: 營運機器/深度學習模型的秘密武器",
         "tab": ["#AI/AR"],
         "name": "游騰林",
-        "location": ""
+        "location": "B廳"
       }
     ],
     "break": "12:00 - 13:15",
@@ -47,13 +47,13 @@
         "title": "從新聞媒體看 AI 的機會與威脅",
         "tab": ["#Machine Learning/AI"],
         "name": "簡信昌",
-        "location": ""
+        "location": "A廳"
       },
       {
         "title": "介面設計的創新思維：通用使用性",
         "tab": ["#UI/UX"],
         "name": "余虹儀",
-        "location": ""
+        "location": "B廳"
       }
     ],
     "break": "14:00 - 14:15",
@@ -67,13 +67,13 @@
         "title": "不是生成式 AI：影片超解析度成像技術之於電影數位修復",
         "tab": ["#Machine Learning/AI"],
         "name": "官順暉 (Drake Guan)",
-        "location": ""
+        "location": "A廳"
       },
       {
         "title": "以 Compose 及 Kotlin Multiplatform 打造多平台應用程式",
         "tab": ["#Mobile Technologies"],
         "name": "范聖佑",
-        "location": ""
+        "location": "B廳"
       }
     ],
     "break": "15:00 - 15:30",
@@ -87,13 +87,13 @@
         "title": "從 Prompt 到 Schema: 淺談 LLM Function Calling",
         "tab": ["#Machine Learning/AI"],
         "name": "ihower",
-        "location": ""
+        "location": "A廳"
       },
       {
         "title": "War Story: Quickly implement a 4G/5G voice call verification solution on AOSP",
         "tab": ["#Mobile Technologies"],
         "name": "Wig Cheng",
-        "location": ""
+        "location": "B廳"
       }
     ],
     "break": "16:15 - 16:30",
@@ -107,13 +107,13 @@
         "title": "敬請期待",
         "tab": ["敬請期待"],
         "name": "敬請期待",
-        "location": ""
+        "location": "A廳"
       },
       {
         "title": "換個位置就換個腦袋？",
         "tab": ["#UI/UX"],
         "name": "Akane Lee",
-        "location": ""
+        "location": "B廳"
       }
     ],
     "break": "17:15 - 17:30",

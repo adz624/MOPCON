@@ -10,7 +10,7 @@ const SponsorSection = ({ Icon, Content, Level, onCardClick }) => {
       <div className={classes.img}>
         <img src={`${process.env.PUBLIC_URL}${item.Img}`} alt="sponsor" />
       </div>
-      <p>{item.name}</p>
+      <p style={{ color: "#2B383C" }}>{item.name}</p>
     </div>
   ));
 

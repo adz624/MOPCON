@@ -9,6 +9,12 @@ const SponsorModal = ({ selectedCard, onClose }) => {
   const handleBackdropClick = (event) => {
     event.stopPropagation();
   };
+
+  const paragraphs = selectedCard.description.split(/[\n]/);
+  const description = paragraphs.map((content, index) => {
+    return <p key={index}>{content}</p>;
+  });
+
   return (
     <Fragment>
       {ReactDOM.createPortal(
@@ -20,21 +26,40 @@ const SponsorModal = ({ selectedCard, onClose }) => {
               <div className={classes.content}>
                 <div className={classes["img-container"]}>
                   <img
-                    src={`${process.env.PUBLIC_URL}${selectedCard.img}`}
+                    src={`${process.env.PUBLIC_URL}${selectedCard.Img}`}
                     alt="sponsor"
                   />
                 </div>
                 <div className={classes["icon-container"]}>
-                  <a href={selectedCard.facebook} className={classes.icon}>
+                  <a
+                    href={selectedCard.facebook}
+                    target="blank"
+                    className={classes.icon}
+                  >
                     <FBIcon />
                     <span>Facebook</span>
                   </a>
-                  <a href={selectedCard.site} className={classes.icon}>
+                  <a
+                    href={selectedCard.site}
+                    target="blank"
+                    className={classes.icon}
+                  >
                     <SiteIcon />
                     <span>Site</span>
                   </a>
                 </div>
-                <p>{selectedCard.description}</p>
+                <p style={{ "padding-bottom": "1rem" }}>
+                  {description}
+                  <a
+                    className={`${classes.link} ${
+                      selectedCard.link === "" ? classes.none : ""
+                    }`}
+                    href={selectedCard.link}
+                    target="blank"
+                  >
+                    相關職缺
+                  </a>
+                </p>
               </div>
             </div>
           </div>

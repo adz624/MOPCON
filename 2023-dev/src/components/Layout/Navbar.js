@@ -14,7 +14,7 @@ const Navbar = () => {
     <ul className={classes.button}>
       <li className={classes.nav}>
         <Link to="/community" className={classes["nav-text"]}>
-          主辦社群
+          主辦單位
         </Link>
       </li>
       {/*<li

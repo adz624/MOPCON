@@ -1,34 +1,29 @@
 [
   {
     "id": 1,
-    "name": "贊助廠商",
+    "name": "祐生研究基金會",
     "facebook": "/facebook",
-    "site": "/Site",
+    "site": "https://www.archilife.org/",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/Comet/祐生研究基金會.svg",
+    "link": ""
   },
   {
     "id": 2,
-    "name": "贊助廠商2",
+    "name": "奧義",
     "facebook": "/facebook",
-    "site": "/Site",
-    "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "site": "https://cycraft.com/zh-hant/",
+    "description": "奧義智慧科技 (CyCraft Technology) 是國際頂尖的 AI 資安科技公司，致力於使用自動化 AI 科技對抗威脅，幫助每位資安從業人員充分發揮自身潛力，進而打造更加安全的世界。核心價值 Value：C.A.R.E.S\nCustomers 以客為本：永遠將客戶需求放在心上，致力於為客戶提供嶄新的價值。\nAdapt 適應變革：樂於迎接與面對改變，永不停歇地追求進步、持續精進實力。\nReliance 彼此信賴：相互信任並依賴彼此的專業技能，激發出色的團隊合作效果。\nEmbrace 接納差異：擁抱每個人獨一無二的力量，適才適所與團隊成員共同成長。\nServing 利他為先：實現有價值的工作環境，專注於具有意義、利他而非利己的工作。\n加入奧義 Join Us\n若您跟我們擁有相同的願景與價值觀，願意與奧義智慧攜手奮鬥、共同現目標和使命，敬請與我們聯繫，我們將非常樂意跟您聊聊。期待有您加入奧義，發揮您獨一無二的才華及能力，在奧義實現自我價值。相關職缺",
+    "Img": "/assets/images/sponsor/Comet/CyCraft 奧義智慧科技.svg",
+    "link": "https://www.104.com.tw/company/1a2x6bk9u1"
   },
   {
     "id": 3,
-    "name": "贊助廠商3",
+    "name": "Dcard",
     "facebook": "/facebook",
-    "site": "/Site",
+    "site": "https://about.dcard.tw/",
     "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
-  },
-  {
-    "id": 4,
-    "name": "贊助廠商4",
-    "facebook": "/facebook",
-    "site": "/Site",
-    "description": "文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹",
-    "Img": ""
+    "Img": "/assets/images/sponsor/Comet/Dcard.svg",
+    "link": ""
   }
 ]

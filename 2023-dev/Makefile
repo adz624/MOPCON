@@ -1,6 +1,6 @@
 .PHONY: main build install
 
-BRANCH := $(shell cat .git/HEAD | awk -F/ '{ print $$3 }')
+BRANCH := $(shell cd .. && cat .git/HEAD | awk -F/ '{ print $$3 }')
 ROOTDIR := $(shell pwd)
 
 main: build

@@ -30,9 +30,9 @@
   transition: all 1s;
 }
 .btn-active {
-  border: 1px solid #fbc427;
-  background-color: #fbc427;
-  color: #fff;
+  border: 1px solid #fbc427 !important;
+  background-color: #fbc427 !important;
+  color: #fff !important;
 }
 .btn-default:hover {
   background-color: #fbc427;
@@ -46,12 +46,29 @@
   transition: all 1s;
 }
 .btn-community-active {
-  border: 1px solid #f47c57;
-  background-color: #f47c57;
-  color: #fff;
+  border: 1px solid #f47c57 !important;
+  background-color: #f47c57 !important;
+  color: #fff !important;
 }
 .btn-community-default:hover {
   background-color: #f47c57;
+  color: #ffffff;
+  transition: all 1s;
+}
+.btn-legal-active {
+  border: 1px solid #627991 !important;
+  background-color: #627991 !important;
+  color: #fff !important;
+}
+.btn-legal-default {
+  background-color: rgba(0, 0, 0, 0);
+  color: #627991;
+  border: 1px solid #627991;
+  transition: all 1s;
+}
+
+.btn-legal-default:hover {
+  background-color: #627991;
   color: #ffffff;
   transition: all 1s;
 }
@@ -79,7 +96,6 @@
   .tab-menu {
     margin: 0 auto;
     max-width: 343px;
-    flex-wrap: nowrap;
     white-space: nowrap;
   }
   .tab-menu-speaker {
@@ -96,7 +112,6 @@
     max-width: 343px;
     gap: 8px;
     white-space: nowrap;
-    flex-wrap: nowrap;
   }
   .tab-menu-speaker {
     flex-wrap: wrap;
@@ -112,7 +127,6 @@
     max-width: 343px;
     gap: 8px;
     white-space: nowrap;
-    flex-wrap: nowrap;
   }
   .tab-menu-speaker {
     flex-wrap: wrap;
