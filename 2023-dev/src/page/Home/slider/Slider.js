@@ -44,7 +44,7 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "KKBOX",
-    logo: "",
+    logo: "/assets/images/sponsor/Planet/kkcompany.svg",
   },
   {
     key: uuidv4(),
@@ -54,7 +54,7 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "捕夢網",
-    logo: "",
+    logo: "/assets/images/sponsor/Galaxy/PUMO Logo.svg",
   },
   {
     key: uuidv4(),

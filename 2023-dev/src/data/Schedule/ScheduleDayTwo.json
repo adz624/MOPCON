@@ -7,13 +7,13 @@
         "title": "數位發展部導入自然人憑證無密碼驗證與零信任",
         "tab": ["#Security"],
         "name": "周詳",
-        "location": "A廳"
+        "location": "R1"
       },
       {
         "title": "飛龍在天：無人飛行載具和軟體開發的新契機",
         "tab": ["#Mobile Technologies"],
         "name": "Drone Jserv",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "10:00 - 10:15",
@@ -26,15 +26,15 @@
     "agenda": [
       {
         "title": "CUBE一站式數位金融服務整合的挑戰與突破",
-        "tab": [""],
+        "tab": ["#Mobile Technologies"],
         "name": "黃淨祺",
-        "location": "A廳"
+        "location": "R1"
       },
       {
         "title": "我們醫院的數位轉型之路",
         "tab": ["#DevOps", "#Cloud"],
         "name": "Nickle",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "11:00 - 11:15",
@@ -48,13 +48,13 @@
         "title": "以平台開發模式為大型 VOD 系統建置 metadata 處理系統",
         "tab": ["#DevOps", "#Cloud"],
         "name": "Sam Tu",
-        "location": "A廳"
+        "location": "R1"
       },
       {
-        "title": "",
-        "tab": [""],
+        "title": "數位資產的威脅與保護 - 勒索病毒攻擊手法",
+        "tab": ["#Security"],
         "name": "賴炫亦 Seven",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "12:00 - 13:15",
@@ -68,13 +68,13 @@
         "title": "透過Three.js製作AI訓練ROS地圖編輯器輸出fbx使用於Unity",
         "tab": ["#AI/AR"],
         "name": "邱文淇&劉哲佑&李育衡",
-        "location": "A廳"
+        "location": "R1"
       },
       {
         "title": "跨界駕馭：Kotlin Multiplatform x 電動輔助自行車SDK開放的技術革命",
         "tab": ["#Mobile Technologies"],
         "name": "Kyle",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "14:00 - 14:15",
@@ -88,13 +88,13 @@
         "title": "使用開源 Semantic Kernel SDK整合Prompt、Plugins 與 Azure OpenAI 打造生成式AI應用",
         "tab": ["#Machine Learning/AI"],
         "name": "Ian (陳葵懋)",
-        "location": "A廳"
+        "location": "R1"
       },
       {
         "title": "Detecting and Mitigating Security Risks in Your Flutter Codebase",
         "tab": ["#Security"],
         "name": "沈宜婷&徐方繹",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "15:00 - 15:30",
@@ -108,13 +108,13 @@
         "title": "Kimoji：使用 On-device LLM 實作心情日記的智能撰稿系統",
         "tab": ["#Machine Learning/AI"],
         "name": "John Lu",
-        "location": "A廳"
+        "location": "R1"
       },
       {
         "title": "為什麼一卡通決定採用 KMP 作為跨平台方案 - Let's talking about KMP",
-        "tab": [""],
+        "tab": ["#Mobile Technologies"],
         "name": "Calvin Huang",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "16:15- 16:30",
@@ -128,13 +128,13 @@
         "title": "敬請期待",
         "tab": ["敬請期待"],
         "name": "敬請期待",
-        "location": "A廳"
+        "location": "R1"
       },
       {
         "title": "",
         "tab": [""],
         "name": "",
-        "location": "B廳"
+        "location": "R2"
       }
     ],
     "break": "17:15 - 17:30",
