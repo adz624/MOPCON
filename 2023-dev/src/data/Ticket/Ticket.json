@@ -33,10 +33,10 @@
     "key": 4,
     "title": "VIP票",
     "content": "",
-    "price": "000",
+    "price": "2,000~3,500",
     "img": "/assets/images/Ticket/VIP.png",
-    "link": "https://mopcon.kktix.cc/events/mopcon-2023",
-    "disabled": true,
-    "text": "尚未開放"
+    "link": "https://mopcon.kktix.cc/events/mopcon-2023-personal-sponsor",
+    "disabled": false,
+    "text": "立即購買"
   }
 ]
