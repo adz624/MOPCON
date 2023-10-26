@@ -459,6 +459,23 @@
     "Img": "/assets/images/SpeakerImg/speaker.png"
   },
   {
+    "name": "Calvin Huang",
+    "jobTitle": "一卡通票證有限公司 研發群副總經理",
+    "hashTag": ["#Mobile Technologies"],
+    "introduce": "一卡通票證有限公司 研發群副總經理",
+    "agendaTopicName": "為什麼一卡通決定採用 KMP 作為跨平台方案 - Let's talking about KMP",
+    "introductionToTheAgenda": "Mobile APP 的跨平台開發一直都是一個 big issue，近期以來聲量水漲船高的 Flutter、meta (formerly Facebook) 推出的 React Native，Kotlin Multiplatform for mobile 作為跨平台解決方案與上述提到的兩種不同，擁有對 Native UI 整合上的優勢在這個 session 裡，我們會介紹 Kotlin Multiplarform for mobile 在一卡通的實作、我們如何利用 Kotlin Multiplatform for mobile 對 Native UI 的整合優勢 reform legacy code，減少在開發中會重複遇到的問題，最終達到或提高 Native user 所期望的 UX 體驗",
+    "targetAudience": "",
+    "priorKnowledge": "",
+    "expectedHarvest": "",
+    "agendaLocation": "",
+    "fb": "",
+    "gitHub": "",
+    "twitter": "",
+    "website": "",
+    "Img": "/assets/images/SpeakerImg/speaker.png"
+  },
+  {
     "name": "林宇軒",
     "jobTitle": "一卡通票證有限公司 資深工程師",
     "hashTag": ["#Mobile Technologies"],
