@@ -84,13 +84,13 @@
     "start": "15:30 - 16:15",
     "agenda": [
       {
-        "title": "從 Prompt 到 Schema: 淺談 LLM Function Calling",
+        "title": "淺談 Generative AI Engineer: 給 Fullstack 開發者的上手指南",
         "tab": ["#Machine Learning/AI"],
         "name": "ihower",
         "location": "R1"
       },
       {
-        "title": "War Story: Quickly implement a 4G/5G voice call verification solution on AOSP",
+        "title": "War Story: Implementing solution for 4G/5G voice call verification on AOSP quickly",
         "tab": ["#Mobile Technologies"],
         "name": "Wig Cheng",
         "location": "R2"
