@@ -18,7 +18,7 @@
   {
     "share": "12:00 - 12:30",
     "title": "議程名稱-3",
-    "tab": ["#ChromeOS", "#Game Planning/Design"],
+    "tab": ["#"],
     "name": "王小明",
     "location": "C區",
     "start": "12:30 - 13:20"
@@ -33,9 +33,9 @@
   },
   {
     "share": "15:00 - 15:30",
-    "title": "議程名稱-5",
-    "tab": ["#DevOps", "#Cloud Services & HA/HS Computing"],
-    "name": "王小明",
+    "title": "在 Mobile First 的浪潮下, 只有 APP 用戶端的資料還可以被爬嗎? Android 爬蟲經驗談",
+    "tab": ["#"],
+    "name": "于真",
     "location": "C區",
     "start": "14:30 - 15:00"
   },
