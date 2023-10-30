@@ -70,7 +70,7 @@
   {
     "name": "PeterWolf",
     "jobTitle": "創辦人兼核心開發工程師",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "語言科學專家、卓騰語言科技創辦人及核心開發工程師。探究人類語言與認知之間的關係，主張自然語言處理需考慮語言的本質，而非直接套用現成的工具處理表面現象。正在執行的任務是透過打造自然語言理解的基礎建設，促成「具人類思維方式」的機器心智。",
     "agendaTopicName": "打造落地 LLM 應用的正確姿勢 -- 不要和它講人話",
     "introductionToTheAgenda": "MOPCON 結束後，再過 18 天，就是 ChatGPT 橫空出世一週年的日子。而在這一年裡，我們已經聽過太多不同 LLM 的「橫空出世」。考量到 LLM 背後需要的營運資源和訓練資料，絕大多數的企業根本沒有機會站在 LLM AI 的肩膀上打造自己的產品，甚至設立技術或是 Know-How 的護城河。本講題將指出打造自然語言 AI 應用所需的「倒數第二塊拼圖」，並以一個綜觀性的大藍圖，介紹如何設計一個可以站在 LLM 的肩膀上打造自己的產品，又不怕基礎模型一再改版而讓自家模型無法保持「可信賴」的方法。[類別] Product Design & Operations",
@@ -87,7 +87,7 @@
   {
     "name": "ihower",
     "jobTitle": "AI Engineer",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "張文鈿，網路代號 ihower。2002年開始從事 Web App 軟體開發工作，擅長使用 Ruby on Rails 和 LLM AI 技術。2018年成立愛好資訊科技有限公司。",
     "agendaTopicName": "淺談 Generative AI Engineer: 給 Fullstack 開發者的上手指南",
     "introductionToTheAgenda": "在這場分享中，我們將新定義 Generative AI Engineer (生成式 AI 工程師) 這一新興職位。除了 LLM 模型本身之外，要真正開發 AI 應用，我們還需要面對許多的挑戰和工作。隨著開發 AI 應用的門檻逐漸降低，許多原先沒有 AI 背景的應用軟體工程師，現在也能透過呼叫 LLM API 轉型成為 AI 工程師，不再需要從零開始學習訓練機器學習模型，而是專注在 Prompt Engineering (提示工程) 和開發各種 AI 應用，如 Chatbot、Retrieval Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的 AI 工程師角色。",
@@ -138,7 +138,7 @@
   {
     "name": "Avix Hsu",
     "jobTitle": "CEO / Co-Founder , Millo Games Inc",
-    "hashTag": ["#Machine Learning/AI", "#Gaming"],
+    "hashTag": ["#AI/AR", "#Gaming"],
     "introduce": "資深遊戲開發者與教師，20年以上遊戲開發經驗，曾在數間上市櫃遊戲公司擔任遊戲主企劃、企劃主管、執行製作、製作人等職位。2012年創立Millo Games並擔任CEO至今，目前開發中專案Immune Simulator入選2023東京電玩展精選獨立遊戲並預計於年底上架。",
     "agendaTopicName": "生成式AI與遊戲體驗的一致性",
     "introductionToTheAgenda": "生成式AI能夠即時快速產出各式內容，豐富遊戲體驗的多樣性。唯內容本身品質開發者無法及時測試與調整，以至於即時性產生的遊戲內容如NPC對話等，對不同的使用者，或同一使用者在不同環境參數下，其遊戲體驗將有極大浮動，難以維持體驗品質的一致性。本次演講首先將簡介目前生成式AI對遊戲內容的產生概況，再說明何謂遊戲體驗一致性以及其為何重要。最後再嘗試針對如何有效控管生成式內容，達成較高一致性的遊戲體驗，從遊戲設計面給出一些建議。",
@@ -155,7 +155,7 @@
   {
     "name": "官順暉 (Drake Guan)",
     "jobTitle": "KKCompany Technologies - 執行副總經理",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "官順暉博士，KKCompany Technologies (科科媒體科技股份有限公司) 執行副總經理，領導公司的長期研究計劃。在他加入集團將近十年中，領導技術團隊共同發展建立影音串流核心系統和影片推薦系統技術，並協助建立具備相關技術能力的團隊。他的專業知識涵蓋影音串流媒體、推薦系統、立體視覺和計算機圖形學等多個領域。他同時也投入在 PyCon Taiwan 以及 Taiwan Multimedia Tech meetup 的運作與推廣。",
     "agendaTopicName": "不是生成式 AI：影片超解析度成像技術之於電影數位修復",
     "introductionToTheAgenda": "計算機視覺是這一波蓬勃發展中人工智慧的最大受益者之一，不斷湧現突破性的研究和技術，一再超越以往的計算機視覺成就。儘管許多學術研究聲稱可以應用於現實世界，但究竟距離實際應用還有多遠呢？除了核心技術，還有哪些流程和非技術層面的挑戰需要克服呢？歡迎加入我們，我將分享我們在將最先進的影片超解析度成像技術應用於數位內容時所獲得的經驗、實驗成果和見解。我們將探討在結合學術技術、訓練數據庫、真實世界影像內容以及影像處理流程時所面臨的種種挑戰。",
@@ -172,7 +172,7 @@
   {
     "name": "簡信昌",
     "jobTitle": "HC",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "曾經協助舉辦 2003 P3P，2004-2005 YAPC::Taipei, 2006-2014 OSDC.tw 以及 2014 g0v summit. 2015 年進入新聞媒體，歷經報導者與鏡傳媒，目前正在進行一個新的媒體實驗—READr。",
     "agendaTopicName": "從新聞媒體看 AI 的機會與威脅",
     "introductionToTheAgenda": "自從 ChatGPT 之後，幾乎大家都在討論 AI，以及生成式 AI。從新聞編輯室，我們看到 AI 帶給資料研究者或文字工作者的一些機會。但從各種新聞事件中，卻也看到許多的挑戰。那麼我們可以用什麼角度來看 AI 呢？",
@@ -223,7 +223,7 @@
   {
     "name": "鄭重男",
     "jobTitle": "國軍高雄總醫院資訊室主任",
-    "hashTag": ["#DevOps"],
+    "hashTag": ["#DevOps", "#Cloud"],
     "introduce": "講者目前為國軍高雄總醫院資訊室主任，經歷地區、區域兩種不同層級醫院近 20 年，看到醫療 IT 的迭代及健保法規與總額管理的快速變動，深刻體會到醫療資訊人員和醫護人員一樣需要持續學習，也知道這些層級醫療院所相對於醫學中心，自行開發的能量及資訊人才都極為匱乏。約莫四、五年前，腦海一直出現一個念頭，心想：「如果可以快速寫出解決醫院痛點的自動化程式，哪怕是一個很簡單的服務，都一定是件快樂的事」。但開發從「零」開始談何容易？某天，無意間「一鍵啟動」了一個叫做「Redmine」的專案管理軟體，才發現，原來除了一般熟知的微軟（Windows, IIS, MS-SQL, ASP, .Net, C#...）及 LAMP（Linux, Apache, MySQL, PHP）開發架構外，還有一個叫 Ruby on Rails（一般通稱 Rails）的網頁開發框架（實際上，網頁發框架多到學不完），很訝異這個釋出超過 15 年的專案，仍然持續在更新維護且沒有任何落隊的跡象。更令人好奇的是，為什麼看似複雜的系統卻可以「一鍵啟動」？於是這便開啟了 Rails 學習及醫院系統轉型之路。筆者自以為是：\n● 開放原始碼的狂熱份子，喜歡分享及解決痛點。\n● 想以程式設計師及醫護人員的快樂為優先。\n● 想當醫院的 Ruby on Rails & DevOps 傳教士。\n● 想找到第一位 Rails Doctor。 【Rails doctor 想法源自於 [Rails girls]其目標是為女性提供工具和社群，讓她們了解技術並構建她們的想法】",
     "agendaTopicName": "我們醫院的數位轉型之路",
     "introductionToTheAgenda": "我喜歡用銀河系的概念來看我們醫院的醫療資訊系統，中間是資料庫，外圍除了主要的門急住檢查檢驗之外，還有陸續導入的周邊系統，運作上也一直沒有大的問題，我們都知道早期的HIS大部分都是以健保申報計價為主要核心，記得以前導入台腦的時候最重要的事情就是驗證有沒有漏漲，申報有沒有錯誤。但隨著資訊科技及醫療大環境不斷快速轉變，慢慢發現HIS還是是很重要沒錯，但其他管理資訊系統也日形重要，慢慢的發現，其實資料庫才是核心？系統跟系統之間就需要新的技術來協助整合及運作，因此，我們這幾年一直在發展右上角這個鯨魚的銀河系主要就是希望藉由新的技術來協助資料庫及系統的整合。我們很早就開始規劃 DevOps 的運作架構，以 Ruby on Rials 為主要開發框架，開發醫院內部各式應用程式，協助醫院醫師或臨床解決通點，後來也開始逐步導入 BI (tableau) 及 AI 的相關應用，及 RPA 的相關應用。智慧醫療、商業智慧或人工智慧，有一部分都提到自動化的RPA Robotic Process Automatic 及如何改善使用者的工作效率，因此我們也在行政部分做了一些努力，如用先前說的鯨魚架構自行建置了一套完整的線上問卷調查及自動化分析的平台，最近也協助行政組完成今年度的員工滿意度調查，也貫徹醫院無紙化的目標，早期行政組每年需要列印三百份紙本問卷，超過一千張的紙張，發放給員工，然後收集回來還要花一個月的時間keyin，再用 excel 去做分析，出報告，自動化之後，我們可以線上直接做問卷，大約在兩週內收集到 324 份員工的滿意度問卷，結束後，自動化將結果清洗並轉置到 tableau 專用的資料庫，套上是先設計好的 dashboard，大幅簡化員工滿意度調查的工作，也減輕了承辦人的工作 loading，未來也可以延伸到病患的滿意度調查。",
@@ -291,7 +291,7 @@
   {
     "name": "Ian (陳葵懋)",
     "jobTitle": "一等一科技/主任工程師",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "微軟 AI 人工智慧最有價值專家（MVP），同時也是微軟認證講師（MCT）。目前任職於「一等一科技股份有限公司」，熟悉 .NET 開發、Azure 雲端、Azure OpenAI 與 Cognitive Services 解決方案，微軟 TechDays、Devdays Asia 等研討會講師。共同著作：駕馭 ChatGPT 4: 探索 Azure OpenAI 與 Cognitive Service for Language 開發實踐 （使用 .NET 與 Node.js）。",
     "agendaTopicName": "使用開源 Semantic Kernel SDK整合Prompt、Plugins 與 Azure OpenAI 打造生成式AI應用",
     "introductionToTheAgenda": "提示工程（Prompt Engineering）在生成式AI的應用中發揮關鍵性的角色，對於簡單的應用，Prompt操作不難，但當面對稍複雜的場景，可能就不是那麼容易。除了Prompt，處理上下文記憶、Zero-Shot、Few-Shot、Embeddings、Plugins等強大機制，都是我們面臨的挑戰。開源的Semantic Kernel正能夠解決這些問題！以面向開發者角度發展的Semantic Kernel是一個輕量化的SDK，支援C#和Python程式語言，將開發生成式AI應用以Pipeline概念展開。在整合LLM（Language Model）過程中，它能夠有效拆解複雜問題，建立出更有效的Prompt以及整合外部資源，最終獲得更優質的LLM回覆。我將示範如何在開發過程中運用Semantic Kernel，融合GPT模型，透過Prompt及外部資源，打造生成式AI應用。",
@@ -308,7 +308,7 @@
   {
     "name": "游騰林",
     "jobTitle": "國泰金控 數據科技科/資料科學家",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "騰林是來自國泰數據部的資料科學家，擅長透過 Python, R 建置機器學習/深度學習模型、網路爬蟲、資料視覺化以及圖形演算法。曾在 PyCon, PyData, AIAcademic, MOPCON, COSCUP 等年會擔任講者代表的開源專案是 facebook-crawler 的 Python 套件，可以協助使用者快速收集 Facebook 粉絲頁/社團的貼文資料，發佈至今已經累積超過3萬次的下載量",
     "agendaTopicName": "Data Lineage: The Secret Weapon to Maintaining ML/DL Models. / 資料血緣: 營運機器/深度學習模型的秘密武器",
     "introductionToTheAgenda": "隨著企業採用越來越多的數據模型來取得快速的勝利時，營運這些模型也快速地變成繁重的工作負擔。如果進行資料血緣的工程將可以幫助企業梳理出各個前後端系統、資料表與數據模型間複雜的關係，降低企業在營運模型時所付出的維運成本。用說的很容易，但怎麼實踐卻又是另一項不容易的問題。通常在盤點前後端系統、資料表與數據模型間的關係時會需要由資料科學家/資料工程師人工登記上下游的關係，最後再彙整成一個大的表格。然而人工作業終歸容易有疏漏，維護這個關係表也需要投入大量心力。於是我們啟動了這項資料血緣的專案，希望有一套可以被自動執行、更新的數據模型，幫我們自動梳理出這些複雜的關係，取代掉過去繁雜的人工作業，讓數據團隊能更專注的投入在開發的工作上。想了解我們的實作成果，以及要如何一步步將這個商業需求轉化為具體的資料科學問題嗎? 歡迎你一起來參與這次的演講!\nWith enterprises adopting more and more machine learning(ML)/ deep learning(DL) models to get quick wins, maintaining these ML/DL models quickly becomes a heavy effort. The \"Data Lineage\" project can help enterprises extract and analyze the complex relationships between front-end and back-end systems, databases, tables, and ML/DL models to relieve data scientists and engineers' workload.It's easy to talk, but how to practice it is another difficult problem. Usually, data scientists and data engineers need to check the upstream and downstream relationships in each project manually and finally combine them into a large table. However, manual operations are prone to omissions, and maintaining this relationship table requires much effort.So we launched the \"Data Lineage\" project, hoping to relieve the maintenance effort and expect this project to automatically extract, analyze, and update these relationships. To replace the past cumbersome manual operations, allowing the data team to focus more on development work.Are you curious about our achievements and how to transform this business problem into specific data science requirements? Welcome to this talk, and I will share with you!",
@@ -325,7 +325,7 @@
   {
     "name": "John Lu",
     "jobTitle": "全曜財經資訊股份有限公司/資深軟體設計工程師",
-    "hashTag": ["#Machine Learning/AI"],
+    "hashTag": ["#AI/AR"],
     "introduce": "John 是「全曜財經」的 Android Group Lead，目前負責開發工程團隊的核心組件。他深受挑戰的驅使，並對於打破傳統的思維和行為方式成就滿懷。 具有三年的 Modern Android Development (MAD) 開發經驗，他致力於結合簡潔架構和流程設計，以構建高效且穩定的應用程式。",
     "agendaTopicName": "Kimoji：使用 On-device LLM 實作心情日記的智能撰稿系統",
     "introductionToTheAgenda": "LLM 的存儲空間非常大，並且通常需要大量的計算能力才能運行。 這意味著它們通常部署在雲端，並且由於行動裝置上的計算能力有限，因此對於 On-Device Machine Learning (ODML) 來說相當具有挑戰性。本次演講的目的是幫助開發者了解 LLM 運行在現代 Android 裝置上，可以達到什麼以及如何實現。 為此，我們將實作一款心情日記 App：Kimoji 中的智能撰稿系統。本次演講對於了解 On-Device Machine Learning 的實作非常有幫助，開發者可以很簡單地使用 KerasNLP 和 TensorFlow Lite 將 LLM 運行在 Android 裝置上。",
@@ -371,7 +371,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": "/assets/images/SpeakerImg/羅經凱.jpg"
+    "Img": "/assets/images/SpeakerImg/羅經凱.png"
   },
   {
     "name": "邱文淇",
@@ -456,7 +456,7 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": "/assets/images/SpeakerImg/speaker.png"
+    "Img": "/assets/images/SpeakerImg/Seven.png"
   },
   {
     "name": "Calvin Huang",
