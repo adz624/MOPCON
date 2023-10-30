@@ -52,7 +52,7 @@ const Navbar = () => {
         </Link>
       </li>
       {/* <li className={classes.nav}>
-        <Link to="/sponsor/" className={classes["nav-text"]}>
+        <Link to="/2023/sponsor/" className={classes["nav-text"]}>
           贊助夥伴
         </Link>
       </li> */}
