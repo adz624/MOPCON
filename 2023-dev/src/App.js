@@ -21,14 +21,14 @@ function App() {
       <ScrollToTop />
       <Suspense fallback={<h1>Loading...</h1>}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/community" element={<CommunityPage />} />
-          <Route path="/schedule" element={<SchedulePage />} />
-          <Route path="/schedule_unconf" element={<UnconfPage />} />
-          <Route path="/time-machine" element={<TimeMachinePage />} />
-          <Route path="/speaker" element={<SpeakerPage />} />
-          <Route path="/ticket" element={<TicketPage />} />
-          <Route path="/sponsor" element={<SponsorPage />} />
+          <Route path="/2023/" element={<HomePage />} />
+          <Route path="/2023/community/" element={<CommunityPage />} />
+          <Route path="/2023/schedule/" element={<SchedulePage />} />
+          <Route path="/2023/schedule_unconf/" element={<UnconfPage />} />
+          <Route path="/2023/time-machine/" element={<TimeMachinePage />} />
+          <Route path="/2023/speaker/" element={<SpeakerPage />} />
+          <Route path="/2023/ticket/" element={<TicketPage />} />
+          <Route path="/2023/sponsor/" element={<SponsorPage />} />
         </Routes>
       </Suspense>
       <Footer />
