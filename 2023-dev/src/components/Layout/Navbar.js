@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <ul className={classes.button}>
       <li className={classes.nav}>
-        <Link to="/community/" className={classes["nav-text"]}>
+        <Link to="/2023/community/" className={classes["nav-text"]}>
           主辦單位
         </Link>
       </li>
@@ -34,12 +34,12 @@ const Navbar = () => {
         {showDropdown && (
           <ul className={classes.dropdown}>
             <li className={classes.menu}>
-              <Link to="/schedule/" className={classes["nav-text"]}>
+              <Link to="/2023/schedule/" className={classes["nav-text"]}>
                 主要議程
               </Link>
             </li>
             {/* <li className={classes.menu}>
-              <Link to="/schedule_unconf/" className={classes["nav-text"]}>
+              <Link to="/2023/schedule_unconf/" className={classes["nav-text"]}>
                 交流議程
               </Link>
             </li>*/}
@@ -47,7 +47,7 @@ const Navbar = () => {
         )}
       </li>
       <li className={classes.nav}>
-        <Link to="/speaker/" className={classes["nav-text"]}>
+        <Link to="/2023/speaker/" className={classes["nav-text"]}>
           講者陣容
         </Link>
       </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
         </Link>
       </li> */}
       <li className={classes.nav}>
-        <Link to="/ticket/" className={classes["nav-text"]}>
+        <Link to="/2023/ticket/" className={classes["nav-text"]}>
           票種介紹
         </Link>
       </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
         </Link>
       </li> */}
       <li className={classes.nav}>
-        <Link to="/time-machine/" className={classes["nav-text"]}>
+        <Link to="/2023/time-machine/" className={classes["nav-text"]}>
           時光機
         </Link>
       </li>
