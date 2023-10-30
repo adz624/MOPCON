@@ -19,7 +19,7 @@ const NavModal = (props) => {
         <div className={classes.modalBackdrop} onClick={props.onClose}>
           <ul className={classes.container}>
             <li className={classes.nav}>
-              <Link to="/community">主辦單位</Link>
+              <Link to="/community/">主辦單位</Link>
             </li>
             <li
               className={`${classes.nav} ${showDropdown ? classes.active : ""}`}
@@ -32,12 +32,12 @@ const NavModal = (props) => {
               {showDropdown && (
                 <ul className={classes.dropdown}>
                   <li className={classes.menu}>
-                    <Link to="/schedule" onClick={props.onClose}>
+                    <Link to="/schedule/" onClick={props.onClose}>
                       主要議程
                     </Link>
                   </li>
                   {/* <li className={classes.menu}>
-                    <Link to="/schedule_unconf" onClick={props.onClose}>
+                    <Link to="/schedule_unconf/" onClick={props.onClose}>
                       交流議程
                     </Link>
                   </li> */}
@@ -45,19 +45,19 @@ const NavModal = (props) => {
               )}
             </li>
             <li className={classes.nav}>
-              <Link to="/speaker">講者陣容</Link>
+              <Link to="/speaker/">講者陣容</Link>
             </li>
             {/* <li className={classes.nav}>
-              <Link to="/sponsor">贊助夥伴</Link>
+              <Link to="/sponsor/">贊助夥伴</Link>
             </li> */}
             <li className={classes.nav}>
-              <Link to="/ticket">票種介紹</Link>
+              <Link to="/ticket/">票種介紹</Link>
             </li>
             {/* <li className={classes.nav}>
               <Link to="#">共筆文件</Link>
             </li> */}
             <li className={classes.nav}>
-              <Link to="/time-machine">時光機</Link>
+              <Link to="/time-machine/">時光機</Link>
             </li>
           </ul>
 
