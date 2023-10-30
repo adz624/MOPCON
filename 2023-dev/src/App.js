@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import HomePage from "./page/Home/HomePage";
@@ -16,7 +16,7 @@ const UnconfPage = lazy(() => import("./page/Unconf/UnconfPage"));
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <ScrollToTop />
       <Suspense fallback={<h1>Loading...</h1>}>
@@ -32,7 +32,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
