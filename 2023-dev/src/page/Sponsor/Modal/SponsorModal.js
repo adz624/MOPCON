@@ -35,6 +35,7 @@ const SponsorModal = ({ selectedCard, onClose }) => {
                     href={selectedCard.facebook}
                     target="blank"
                     className={classes.icon}
+                    style={selectedCard.facebook ? null : { display: "none" }}
                   >
                     <FBIcon />
                     <span>Facebook</span>
@@ -43,6 +44,7 @@ const SponsorModal = ({ selectedCard, onClose }) => {
                     href={selectedCard.site}
                     target="blank"
                     className={classes.icon}
+                    style={selectedCard.site ? null : { display: "none" }}
                   >
                     <SiteIcon />
                     <span>Site</span>

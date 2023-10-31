@@ -22,7 +22,7 @@ const Header = () => {
     <Fragment>
       <header className={classes.header}>
         <h1 className={classes.logo}>
-          <Link to="/">
+          <Link to="/2023/">
             M<span className={classes.textcolor}>O</span>PC
             <span className={classes.textcolor}>O</span>N
           </Link>

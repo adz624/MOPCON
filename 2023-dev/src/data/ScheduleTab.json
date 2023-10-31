@@ -14,8 +14,8 @@
     "id": 2
   },
   {
-    "text": "Machine Learning/AI",
-    "type": "#Machine Learning/AI",
+    "text": "AI/AR",
+    "type": "#AI/AR",
     "key": "825c1977-64d1-4ca1-9675-ef52c47293f6",
     "page": "speaker",
     "id": 3
@@ -40,13 +40,6 @@
     "key": "f6311d06-368a-4d3c-9e42-6c11d050eb75",
     "page": "speaker",
     "id": 6
-  },
-  {
-    "text": "AI/AR",
-    "type": "#AI/AR",
-    "key": "f856sd06-f59x-4d3c-9e42-8g64s086gt7a",
-    "page": "speaker",
-    "id": 7
   },
   {
     "text": "Cloud",
