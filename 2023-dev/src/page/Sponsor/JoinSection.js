@@ -18,7 +18,11 @@ const JoinSection = () => {
             sponsor@mopcon.org
           </a>
           <p>MOPCON 2023 贊助組 收</p>
-          <a href="/link" className={classes.btn}>
+          <a
+            href="https://mopcon.kktix.cc/events/mopcon-2023-personal-sponsor"
+            target="blank"
+            className={classes.btn}
+          >
             <SponosrIcon className={classes.icon} />
             <span>快來贊助我們吧~</span>
           </a>

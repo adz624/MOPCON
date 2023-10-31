@@ -49,7 +49,62 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "咪卡",
-    logo: "/assets/images/sponsor/Planet/咪卡創意-LOGO",
+    logo: "/assets/images/sponsor/Planet/咪卡創意-LOGO.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "捕夢網",
+    logo: "/assets/images/sponsor/Galaxy/PUMO Logo.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "國泰",
+    logo: "/assets/images/sponsor/Galaxy/國泰金控.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "祐生研究基金會",
+    logo: "/assets/images/sponsor/Comet/祐生研究基金會.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "奧義",
+    logo: "/assets/images/sponsor/Comet/CyCraft 奧義智慧科技.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "Dcard",
+    logo: "/assets/images/sponsor/Comet/Dcard.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "六角學院",
+    logo: "/assets/images/sponsor/Education/hexschool.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "一卡通",
+    logo: "/assets/images/sponsor/Galaxy/iPass.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "鈦坦科技",
+    logo: "/assets/images/sponsor/Planet/titansoft.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "精誠資訊",
+    logo: "/assets/images/sponsor/Planet/精誠.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "KKBOX",
+    logo: "/assets/images/sponsor/Planet/kkcompany.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "咪卡",
+    logo: "/assets/images/sponsor/Planet/咪卡創意-LOGO.svg",
   },
   {
     key: uuidv4(),
