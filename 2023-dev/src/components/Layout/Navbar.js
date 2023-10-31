@@ -51,11 +51,11 @@ const Navbar = () => {
           講者陣容
         </Link>
       </li>
-      {/* <li className={classes.nav}>
+      <li className={classes.nav}>
         <Link to="/2023/sponsor/" className={classes["nav-text"]}>
           贊助夥伴
         </Link>
-      </li> */}
+      </li>
       <li className={classes.nav}>
         <Link to="/2023/ticket/" className={classes["nav-text"]}>
           票種介紹

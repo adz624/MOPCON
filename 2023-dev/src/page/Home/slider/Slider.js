@@ -49,7 +49,7 @@ const sponsor = [
   {
     key: uuidv4(),
     name: "咪卡",
-    logo: "",
+    logo: "/assets/images/sponsor/Planet/咪卡創意-LOGO",
   },
   {
     key: uuidv4(),

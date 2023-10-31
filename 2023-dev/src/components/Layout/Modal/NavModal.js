@@ -47,9 +47,9 @@ const NavModal = (props) => {
             <li className={classes.nav}>
               <Link to="/2023/speaker/">講者陣容</Link>
             </li>
-            {/* <li className={classes.nav}>
+            <li className={classes.nav}>
               <Link to="/2023/sponsor/">贊助夥伴</Link>
-            </li> */}
+            </li>
             <li className={classes.nav}>
               <Link to="/2023/ticket/">票種介紹</Link>
             </li>
