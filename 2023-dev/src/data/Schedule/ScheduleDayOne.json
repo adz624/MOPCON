@@ -36,8 +36,28 @@
         "location": "R2"
       }
     ],
-    "break": "12:00 - 13:15",
+    "break": "12:00 - 12:30",
     "text": "午餐 Lunch"
+  },
+  {
+    "Day": "One",
+    "start": "12:30 - 13:00",
+    "agenda": [
+      {
+        "title": "Sponsor Talk",
+        "tab": [""],
+        "name": "Sponsor",
+        "location": "R1"
+      },
+      {
+        "title": "",
+        "tab": [""],
+        "name": "",
+        "location": ""
+      }
+    ],
+    "break": "13:00 - 13:15",
+    "text": "休息 Break"
   },
   {
     "Day": "One",
