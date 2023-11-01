@@ -439,14 +439,14 @@
     "gitHub": "",
     "twitter": "",
     "website": "",
-    "Img": "/assets/images/SpeakerImg/speaker.png"
+    "Img": "/assets/images/SpeakerImg/Judy.png"
   },
   {
     "name": "Seven",
     "jobTitle": "捕夢網 技術長 CTO",
     "hashTag": ["#Security"],
     "introduce": "",
-    "agendaTopicName": "數位資產的威脅與保護 - 勒索病毒攻擊手法",
+    "agendaTopicName": "數位資產的威脅與保護 - Ransomware & Forensic",
     "introductionToTheAgenda": "",
     "targetAudience": "",
     "priorKnowledge": "",
