@@ -1,19 +1,12 @@
 import { Fragment, useState } from "react";
 import SponsorSection from "./SponsorSection";
 // Icon
-// import { ReactComponent as UniverseIcon } from "../../components/asset/sponsorIcon/universe.svg";
 import { ReactComponent as GalaxyIcon } from "../../components/asset/sponsorIcon/galaxy.svg";
 import { ReactComponent as PlanetIcon } from "../../components/asset/sponsorIcon/planet.svg";
 import { ReactComponent as CometIcon } from "../../components/asset/sponsorIcon/comet.svg";
 import { ReactComponent as EducationIcon } from "../../components/asset/sponsorIcon/cil_education.svg";
-// import { ReactComponent as ThanksIcon } from "../../components/asset/sponsorIcon/ph_hand-heart-thin.svg";
 //Sponsor
-// import UniverseSponsor from "../../data/Sponsor/UniverseSponsor.json";
-import GalaxySponsor from "../../data/Sponsor/GalaxySponosr.json";
-import PlanetSponsor from "../../data/Sponsor/PlanetSponsor.json";
-import CometSponsor from "../../data/Sponsor/CometSponsor.json";
-import EducationSponsor from "../../data/Sponsor/EducationSponsor.json";
-// import SpecialThanksSponsor from "../../data/Sponsor/SpecialThanksSponsor.json";
+import SponsorData from "../../data/Sponsor/Sponsor.json";
 //Modal
 import SponsorModal from "./Modal/SponsorModal";
 
@@ -31,6 +24,10 @@ const SponsorArea = () => {
     setOpenModal(false);
     document.body.style.overflow = "auto";
   };
+  const galaxy = SponsorData.Galaxy;
+  const comet = SponsorData.Comet;
+  const planet = SponsorData.Planet;
+  const Education = SponsorData.Education;
 
   return (
     <Fragment>
@@ -40,25 +37,25 @@ const SponsorArea = () => {
       <h2>我們的夥伴們</h2>
       <SponsorSection
         Icon={<GalaxyIcon />}
-        Content={GalaxySponsor}
+        Content={galaxy}
         Level="銀河級"
         onCardClick={openModalHandle}
       />
       <SponsorSection
         Icon={<PlanetIcon />}
-        Content={PlanetSponsor}
+        Content={planet}
         Level="行星級"
         onCardClick={openModalHandle}
       />
       <SponsorSection
         Icon={<CometIcon />}
-        Content={CometSponsor}
+        Content={comet}
         Level="彗星級"
         onCardClick={openModalHandle}
       />
       <SponsorSection
         Icon={<EducationIcon />}
-        Content={EducationSponsor}
+        Content={Education}
         Level="教育贊助"
         onCardClick={openModalHandle}
       />

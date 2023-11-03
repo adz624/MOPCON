@@ -50,7 +50,7 @@ const SponsorModal = ({ selectedCard, onClose }) => {
                     <span>Site</span>
                   </a>
                 </div>
-                <p style={{ "padding-bottom": "1rem" }}>
+                <div style={{ paddingBottom: "1rem" }}>
                   {description}
                   <a
                     className={`${classes.link} ${
@@ -61,7 +61,7 @@ const SponsorModal = ({ selectedCard, onClose }) => {
                   >
                     相關職缺
                   </a>
-                </p>
+                </div>
               </div>
             </div>
           </div>
