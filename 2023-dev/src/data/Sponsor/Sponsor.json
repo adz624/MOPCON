@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "一卡通",
-      "facebook": "",
-      "site": "",
-      "description": "",
+      "facebook": "https://www.facebook.com/ipass.card/",
+      "site": "https://www.i-pass.com.tw/cht",
+      "description": "iPASS 一卡通是金管會核可的電子支付機構，致力於提供便捷的支付服務，並利用數據技術持續發展創新的商業模式。我們以成為支付的基礎建設為使命，實現讓生活支付簡單自由、四通八達的願景，積極研發、創造、與時俱進，開創支付服務的多元應用，成為支付服務的領導者，FinTech 產業的創新領導品牌！",
       "Img": "/assets/images/sponsor/Galaxy/iPass.svg",
       "link": ""
     },
@@ -13,8 +13,8 @@
       "id": 2,
       "name": "捕夢網",
       "facebook": "",
-      "site": "",
-      "description": "",
+      "site": "https://www.pumo.com.tw/",
+      "description": "由網路主機代管起家，轉型踏入資訊安全防護服務的捕夢網數位科技，近兩年分別在主機代管、資安服務的領域推出「雲端託管MSP」及「資安託管MSSP」兩大國際級服務。\n「雲端託管MSP」針對國際常見公有雲，包含GCP、AWS、AZURE等，提供企業從架構諮詢、雲端搬遷、架構優化、雲端管理到雲端資安，持續提供全面專業性的雲端服務。\n 「資安託管MSSP」則是從資安的技術諮詢切入，帶到近年政府大力提倡的法規遵循，包含內部人員訓練，做到資安最佳化，目的在於幫助企業提高整體資安水平。\n想了解更多服務細節，可洽1號捕夢網攤位。",
       "Img": "/assets/images/sponsor/Galaxy/PUMO Logo.svg",
       "link": ""
     },
@@ -81,9 +81,9 @@
       "name": "奧義",
       "facebook": "",
       "site": "https://cycraft.com/zh-hant/",
-      "description": "奧義智慧科技 (CyCraft Technology) 是國際頂尖的 AI 資安科技公司，致力於使用自動化 AI 科技對抗威脅，幫助每位資安從業人員充分發揮自身潛力，進而打造更加安全的世界。核心價值 Value：C.A.R.E.S\nCustomers 以客為本：永遠將客戶需求放在心上，致力於為客戶提供嶄新的價值。\nAdapt 適應變革：樂於迎接與面對改變，永不停歇地追求進步、持續精進實力。\nReliance 彼此信賴：相互信任並依賴彼此的專業技能，激發出色的團隊合作效果。\nEmbrace 接納差異：擁抱每個人獨一無二的力量，適才適所與團隊成員共同成長。\nServing 利他為先：實現有價值的工作環境，專注於具有意義、利他而非利己的工作。\n加入奧義 Join Us\n若您跟我們擁有相同的願景與價值觀，願意與奧義智慧攜手奮鬥、共同現目標和使命，敬請與我們聯繫，我們將非常樂意跟您聊聊。期待有您加入奧義，發揮您獨一無二的才華及能力，在奧義實現自我價值。相關職缺",
+      "description": "",
       "Img": "/assets/images/sponsor/Comet/CyCraft 奧義智慧科技.svg",
-      "link": "https://www.104.com.tw/company/1a2x6bk9u1"
+      "link": ""
     },
     {
       "id": 3,
