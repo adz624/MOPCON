@@ -51,9 +51,9 @@
         "location": "R1"
       },
       {
-        "title": "數位資產的威脅與保護 - 勒索病毒攻擊手法",
+        "title": "數位資產的威脅與保護 - Ransomware & Forensic",
         "tab": ["#Security"],
-        "name": "賴炫亦 Seven",
+        "name": "Seven",
         "location": "R2"
       }
     ],
@@ -125,9 +125,9 @@
     "start": "16:30 - 17:15",
     "agenda": [
       {
-        "title": "敬請期待",
-        "tab": ["敬請期待"],
-        "name": "敬請期待",
+        "title": "Lightening Talk",
+        "tab": [""],
+        "name": "Lightening Talk",
         "location": "R1"
       },
       {

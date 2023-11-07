@@ -88,7 +88,11 @@ const AgengaCard = ({ scheduleData }) => {
               <span>{item.title}</span>
               {/* 議程裡面的hashtag */}
               {item.tab.map((tab, tabIndex) => (
-                <span key={tabIndex} className={classes.tab}>
+                <span
+                  key={tabIndex}
+                  className={classes.tab}
+                  style={tab === "" ? { display: "none" } : null}
+                >
                   {tab}
                 </span>
               ))}

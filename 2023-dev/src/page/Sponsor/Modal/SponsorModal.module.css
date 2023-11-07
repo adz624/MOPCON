@@ -16,7 +16,7 @@
 .card {
   background-color: #fff;
   width: 600px;
-  min-height: 520px;
+  height: min-content;
   max-height: 100%;
   z-index: 900;
   background-color: #fff;

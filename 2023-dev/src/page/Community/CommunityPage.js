@@ -4,10 +4,7 @@ import { Fragment, useState, useEffect } from "react";
 import Card from "./Card";
 import TabBtn from "../../components/Tab/TabBtn";
 import Behaviour from "./Behaviour";
-import communityContent from "../../data/hostCommunity/communityData.json";
-import teamContent from "../../data/hostCommunity/teamData";
-import legalContent from "../../data/hostCommunity/legalPersonData.json";
-
+import data from "../../data/hostCommunity/hostData.json";
 import communityHeroContent from "../../data/HeroContent/CommunityHeroData";
 import { v4 as uuidv4 } from "uuid";
 import { ReactComponent as FBIcon } from "../../components/asset/Icon/FB.svg";
@@ -21,7 +18,7 @@ const tab = [
 // 初始 type 設定為 team
 const HostCommunityPage = () => {
   const [selectedTab, setSelectedTab] = useState("team");
-  const [contentData, setContentData] = useState(teamContent);
+  const [contentData, setContentData] = useState(data.team);
   // 取得對應的 type
   const handleTabClick = (tab) => {
     setSelectedTab(tab.type);
@@ -30,16 +27,16 @@ const HostCommunityPage = () => {
   useEffect(() => {
     switch (selectedTab) {
       case "team":
-        setContentData(teamContent);
+        setContentData(data.team);
         break;
       case "community":
-        setContentData(communityContent);
+        setContentData(data.community);
         break;
       case "legal":
-        setContentData(legalContent);
+        setContentData(data.legal);
         break;
       default:
-        setContentData(teamContent);
+        setContentData(data.team);
     }
   }, [selectedTab]);
 
@@ -52,7 +49,6 @@ const HostCommunityPage = () => {
       {contentData.map((card) => (
         <Card {...card} selectedTab={selectedTab} />
       ))}
-
       <Behaviour />
     </Fragment>
   );

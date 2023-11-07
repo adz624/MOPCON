@@ -43,7 +43,7 @@ const sponsor = [
   },
   {
     key: uuidv4(),
-    name: "KKBOX",
+    name: "科科科技集團",
     logo: "/assets/images/sponsor/Planet/kkcompany.svg",
   },
   {
@@ -98,7 +98,7 @@ const sponsor = [
   },
   {
     key: uuidv4(),
-    name: "KKBOX",
+    name: "科科科技集團",
     logo: "/assets/images/sponsor/Planet/kkcompany.svg",
   },
   {
