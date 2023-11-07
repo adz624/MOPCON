@@ -1,4 +1,15 @@
 {
+  "Direct": [
+    {
+      "id": 1,
+      "name": "高雄市政府經發局",
+      "facebook": "https://www.facebook.com/edbkh/",
+      "site": "https://edbkcg.kcg.gov.tw/",
+      "description": "",
+      "Img": "/assets/images/sponsor/Direct/高雄市經發局_logo_藍底.svg",
+      "link": ""
+    }
+  ],
   "Galaxy": [
     {
       "id": 1,

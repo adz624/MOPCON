@@ -24,6 +24,7 @@ const SponsorArea = () => {
     setOpenModal(false);
     document.body.style.overflow = "auto";
   };
+  const direct = SponsorData.Direct;
   const galaxy = SponsorData.Galaxy;
   const comet = SponsorData.Comet;
   const planet = SponsorData.Planet;
@@ -35,6 +36,11 @@ const SponsorArea = () => {
         <SponsorModal selectedCard={selectedCard} onClose={hideModalHandle} />
       )}
       <h2>我們的夥伴們</h2>
+      <SponsorSection
+        Content={direct}
+        Level="指導單位"
+        onCardClick={openModalHandle}
+      />
       <SponsorSection
         Icon={<GalaxyIcon />}
         Content={galaxy}
