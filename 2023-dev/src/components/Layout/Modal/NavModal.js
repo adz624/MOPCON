@@ -53,9 +53,9 @@ const NavModal = (props) => {
             <li className={classes.nav}>
               <Link to="/2023/ticket/">票種介紹</Link>
             </li>
-            {/* <li className={classes.nav}>
-              <Link to="#">共筆文件</Link>
-            </li> */}
+            <li className={classes.nav}>
+              <Link to="https://hackmd.io/@mopcon/2023">議程共筆</Link>
+            </li>
             <li className={classes.nav}>
               <Link to="/2023/time-machine/">時光機</Link>
             </li>
