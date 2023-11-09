@@ -63,6 +63,16 @@ const sponsor = [
   },
   {
     key: uuidv4(),
+    name: "高雄市政府經發局",
+    logo: "/assets/images/sponsor/Direct/高雄市經發局_logo_藍底.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "可立可",
+    logo: "/assets/images/sponsor/Comet/KlickKlack_Brand_Logo.svg",
+  },
+  {
+    key: uuidv4(),
     name: "祐生研究基金會",
     logo: "/assets/images/sponsor/Comet/祐生研究基金會.svg",
   },
@@ -115,6 +125,16 @@ const sponsor = [
     key: uuidv4(),
     name: "國泰",
     logo: "/assets/images/sponsor/Galaxy/國泰金控.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "高雄市政府經發局",
+    logo: "/assets/images/sponsor/Direct/高雄市經發局_logo_藍底.svg",
+  },
+  {
+    key: uuidv4(),
+    name: "可立可",
+    logo: "/assets/images/sponsor/Comet/KlickKlack_Brand_Logo.svg",
   },
 ];
 
