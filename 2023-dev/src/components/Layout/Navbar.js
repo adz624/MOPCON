@@ -61,11 +61,14 @@ const Navbar = () => {
           票種介紹
         </Link>
       </li>
-      {/* <li className={classes.nav}>
-        <Link to="#" className={classes["nav-text"]}>
-          共筆文件
+      <li className={classes.nav}>
+        <Link
+          to="https://hackmd.io/@mopcon/2023"
+          className={classes["nav-text"]}
+        >
+          議程共筆
         </Link>
-      </li> */}
+      </li>
       <li className={classes.nav}>
         <Link to="/2023/time-machine/" className={classes["nav-text"]}>
           時光機
