@@ -8,7 +8,7 @@ const VenueMap = () => {
       <div className={classes["location-img"]}>
         <LazyLoadImage
           effect="blur"
-          src={process.env.PUBLIC_URL + "/assets/images/Home/VenueMap.png"}
+          src={process.env.PUBLIC_URL + "/assets/images/Home/VenueMap1110.png"}
           alt="Location"
         />
       </div>
