@@ -1,0 +1,17 @@
+[
+  {
+    "id": "admim",
+    "name": "行政部",
+    "name_e": "ADMIM"
+  },
+  {
+    "id": "product",
+    "name": "產品部",
+    "name_e": "PRODUCT"
+  },
+  {
+    "id": "business",
+    "name": "商務部",
+    "name_e": "BUSINESS"
+  }
+]
